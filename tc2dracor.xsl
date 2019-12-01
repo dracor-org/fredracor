@@ -71,7 +71,11 @@
   </xsl:template>
 
   <!-- add DraCor ID, wikidata ID for play -->
-  <xsl:template match="tei:publicationStmt">
+  <!--
+    NB: the originals sometimes misspell publicationStmt which we fix here by
+    matching both the correct and misspelled element
+  -->
+  <xsl:template match="tei:publicationStmt|tei:publicationStmp">
     <publicationStmt>
       <xsl:apply-templates/>
       <xsl:text>  </xsl:text>
@@ -92,4 +96,7 @@
     </publicationStmt>
   </xsl:template>
 
+  <xsl:template match="tei:publicationStmp[tei:publicationStmp]">
+    <xsl:apply-templates select="./tei:publicationStmp"/>
+  </xsl:template>
 </xsl:stylesheet>
