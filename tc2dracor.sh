@@ -28,7 +28,7 @@ mkdir -p $TEI_DIR
 
 # retrieve TEI files from Theatre Classique
 for url in $($LYNX | $GREP); do
-  name=$(basename $url | sed 's/\.[Xx][Mm][Ll]$//')
+  name=$(basename $url | sed 's/\.[Xx][Mm][Ll]$//' | sed 's/%20//g')
   orig="$ORIG_DIR/$name.xml"
   tei="$TEI_DIR/$name.xml"
 
