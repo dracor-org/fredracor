@@ -1,1361 +1,1416 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="../css/tei.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>LA DÉSOLATION DES FILOUS, COMÉDIE</title>
-        <author ISNI="0000 0000 4320 3474">CHEVALIER, Jean Simonin dit</author>
-      </titleStmt>
-      <publicationStmt>
-        <editor>Texte établi par Paul FIEVRE, février 2018.</editor>
-        <publisher>publié par Paul FIEVRE, mars 2018.</publisher>
-        <idno>CHEVALIER_DESOLATIONDESFILOUS</idno>
-        <rights>Creative Commons BY-NC-SA</rights>
-        <idno type="orig">CHEVALIER_DESOLATIONDESFILOUS</idno>
-        <idno type="dracor" xml:base="https://dracor.org/id/">fre000272</idno>
-      </publicationStmt>
-      <SourceDesc>
-        <genre>Comédie</genre>
-        <inspiration>moeurs françaises</inspiration>
-        <structure>Trois actes</structure>
-        <type>vers</type>
-        <periode>1681-1690</periode>
-        <taille>500-750</taille>
-        <permalien/>
-      </SourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text>
-    <front>
-      <docTitle>
-        <titlePart type="main">LA DÉSOLATION DES FILOUS SUR LA DÉFENSE DES ARMES</titlePart>
-        <titlePart type="sub">OU LES MALADES QUI SE PORTENT BIEN</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1683">M. DC. LXXXIII.</docDate>
-      <docAuthor id="CHEVALIER, Jean Simonin dit" bio="chevalier">Par le Sieur CHEVALIER.</docAuthor>
-      <docImprint>
-        <imprimeur id="SOMMAVILLE">À LA HAYE, Chez ADRIAN MOETJENS.  Marchand Libraire près la Cour, à la Librairie Française.</imprimeur>
-      </docImprint>
-      <performance>
-        <premiere date="1665" location="Théâtre du Marais">Représenté pour le première fois [en décembre 1663] sur le Théâtre Royal du Marais.</premiere>
-      </performance>
-      <div type="dedicace">
-        <adresse>À MADEMOISELLE C. M. </adresse>
-        <head>MADEMOISELLE,</head>
-        <p>Vous serez surprise assurément, quand vous verrez que je vous dédie la Désolation des Filous, ou les Malades qui se portent bien, mais que cela ne vous surprenne point, puisque je ne vois pas à qui la mieux dédier qu’à vous, étant aussi grande voleuse, qui sont voleurs, et je pourrais même passer plus outre, en vous disant que vous volez tous les jours plus de coeurs, de franchises, de libertés, qu'il ne s'est fait de larcins depuis que le monde est monde ; de sorte MADEMOISELLE, que je souhaiterais que comme on m'a défendu de porter des armes, il eût été aussi possible de vous défendre de porter vos charmes, je ne serais pas si fort à plaindre que je suis, et l'on ne me verrait pas malade dans le moment que vous vous portez le mieux du monde, encor si mon mal vous pouvait toucher un peu, j'aurais quelque espèce de consolation, mais je crois que vous êtes de ces malades, qui se portent bien ; et que vous en ferez souffrir encor beaucoup avant que vous en ressentiez la moindre émotion, toutefois mon mal m'est si doux, que je l'endure avec patience, et pour vous le témoigner vous voyez bien que je ne fais point mentir le commun proverbe, qui dit qu'il faut faire le bien contre le mal, puisque je vous fais un présent dans le temps que vous me faites souffrir, cependant, MADEMOISELLE, je connais que j'ai tort de me plaindre de vous, voyant qu'alors que je vous aime, je ne fais que ce que je vois faire à toute la terre, pourquoi voudrais-je donc que vous eussiez plus pitié de moi que de tous les autres, non non je laisse tout à votre opinion, et me tiendrai trop heureux si vous daignez seulement agréer cette Comédie de la part de </p>
-        <p>Votre très humble, </p>
-        <p>et très obéissant serviteur, </p>
-        <p>CHEVALIER.</p>
-      </div>
-      <castList>
-        <head>LES ACTEURS</head>
-        <castItem><role id="LA ROCQUE" sex="1" type="H" statut="bourgeois" age="A" stat_amour="néant">LA ROCQUE</role>.</castItem>
-        <castItem><role id="GUILLOT" sex="1" type="H" statut="valet" age="A" stat_amour="néant">GUILLOT</role>, son Valet.</castItem>
-        <castItem><role id="LE CHEVALIER DE L'INDUSTRIE" sex="1" type="H" statut="voleur" age="A" stat_amour="néant">LE CHEVALIER DE L'INDUSTRIE</role>, filou. </castItem>
-        <castItem><role id="'&gt;LE COMTE DE PLUME SECHE" sex="1" type="H" statut="voleur" age="A" stat_amour="néant">LE COMTE DE PLUME SECHE</role>, filou. </castItem>
-        <castItem><role id="LE MARQUIS DE MACHE A VIDE" sex="1" type="H" statut="voleur" age="A" stat_amour="néant">LE MARQUIS DE MACHE A VIDE</role>, filou. </castItem>
-        <castItem><role id="LE BARON DE LA TRISTE-FIGURE" sex="1" type="H" statut="voleur" age="A" stat_amour="néant">LE BARON DE LA TRISTE-FIGURE</role>, filou. </castItem>
-      </castList>
-      <set location="Paris" country="France" periode="XVIIème" link="">La Scène est dans la rue.</set>
-    </front>
-    <body>
-      <div1 type="act" n="1">
-        <head>LA DÉSOLATION  DES FILOUS</head>
-        <div2 type="scene" n="1">
-          <head>SCÈNE I. Le Chevalier de l'Industrie, le Marquis de Mâche à Vide, le Comte de Plume Sèche, le Baron de la Triste-Figure. </head>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="1">Quoique la défense soit faite </l>
-            <l id="2">Des pistolets, et de la brette, </l>
-            <l id="3">Qu'on ne porte plus d'arme à feu </l>
-            <l id="4">Rêvons cherchons, voyons un peu, </l>
-            <l id="5">Si nous trouverons l'industrie </l>
-            <l id="6">Qu'il faut pour prolonger la vie, </l>
-            <l id="7">Il est aisé de deviner </l>
-            <l id="8">Qu'on ne peut vivre sans diner, </l>
-            <l id="9">Et l'homme est fort mal dans son centre </l>
-            <l id="10">Quand il a la famine au ventre, </l>
-            <l id="11">Donc si nous voulons l'éviter </l>
-            <l id="12">Il faut tâcher d'escamoter, </l>
-            <l id="13">Les premiers qui dans cette rue </l>
-            <l id="14">Viendront paraître à notre vue, </l>
-            <l id="15">Les armes étant sans crédit </l>
-            <l id="16">Servons-nous de tout notre esprit, </l>
-            <l id="17">L'esprit pour voler a des charmes </l>
-            <l id="18">Qui valent parfois bien les armes. </l>
-          </sp>
-          <sp who="LE MARQUIS DE MACHE A VIDE">
-            <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
-            <l id="19">De quel air nous y prendrons-nous </l>
-            <l id="20">Ce malheur me met en courroux, </l>
-            <l id="21">Mon cher Comte de Plume Sèche </l>
-            <l id="22">Dis de quel bois ferons-nous flèche. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="23">Que diable sais-je de quel bois </l>
-            <l id="24">Pour moi j'en suis presque aux abois, </l>
-            <l id="25">La malencontreuse aventure</l>
-            <l id="26">Baron de la Triste-Figure, </l>
-            <l id="27">N'as-tu point quelque invention. </l>
-          </sp>
-          <sp who="LE BARON DE LA TRISTE-FIGURE">
-            <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
-            <l id="28">Que faire en cette occasion, </l>
-            <l id="29">Sans armes je suis une bête. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="30">Quoi tu n'aurais point en ta tête </l>
-            <l id="31">Quelque moyen pour exceller </l>
-            <l id="32">Dans l'exercice de voler, </l>
-            <l id="33">Sans pistolet, et sans épée. </l>
-          </sp>
-          <sp who="LE BARON DE LA TRISTE-FIGURE">
-            <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
-            <l id="34">Mon âme en est préoccupée, </l>
-            <l id="35">Et si je ne vois pas comment </l>
-            <l id="36">Y réussir présentement, </l>
-            <l id="37">Ah, que la faim me rend avide </l>
-            <l id="38">Mais toi Marquis de la Mâche à Vide, </l>
-            <l id="39">Ne sais-tu point quelque secret. </l>
-          </sp>
-          <sp who="LE MARQUIS DE MACHE A VIDE">
-            <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
-            <note type="L">Rôlet : Terme familier. Petit rôle ; il ne se dit que figurément pour signifier la vie, le rôle de chacun. [L]</note>
-            <l id="40">Je suis au bout de mon rôlet, </l>
-            <l id="41">Ventre, j'enrage, je déteste. </l>
-          </sp>
-          <sp who="LE BARON DE LA TRISTE-FIGURE">
-            <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
-            <l id="42">Que cette défense est funeste. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="43">Ah, quelle malédiction. </l>
-          </sp>
-          <sp who="LE MARQUIS DE MACHE A VIDE">
-            <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
-            <l id="44">Ah, quelle désolation, </l>
-            <l id="45">Quand j'y pense j'entre en furie </l>
-            <l id="46">Mais Chevalier de l'Industrie, </l>
-            <l id="47">Dont l'esprit est grand à tel point. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="48">Messieurs ne vous affligez point, </l>
-            <l id="49">Je ne suis pas encor si buse </l>
-            <l id="50">Que je n'aie en moi quelque ruse, </l>
-            <l id="51">L'industrie a mille secrets </l>
-            <l id="52">Qui ne nous manquerons jamais, </l>
-            <l id="53">Je possède les avantages </l>
-            <l id="54">D'avoir bien fait des personnages, </l>
-            <l id="55">Et m'en pique sans vanité </l>
-            <l id="56">J'ai fait l'homme de qualité, </l>
-            <l id="57">J'ai fait, et le brave, et l'illustre </l>
-            <l id="58">Après cela j'ai fait le rustre, </l>
-            <l id="59">J'ai fait le Postillon aux champs </l>
-            <l id="60">Parfois un de ces gros marchands, </l>
-            <l id="61">Puis j'ai fait l'Ecclésiastique </l>
-            <l id="62">J'ai fait le courtaud de boutique </l>
-            <l id="63">Étant dessus le grand chemin </l>
-            <l id="64">J'ai fait le pauvre Pèlerin. </l>
-            <l id="65">Pour vous exprimer mon mérite </l>
-            <l id="66">J'ai même contrefait l'Hermite, </l>
-            <l id="67">Ensuite, à mon retour d'Arras </l>
-            <l id="68">J'y vendis de la mort aux rats. </l>
-            <l id="69">Si bien qu'il n'est point de rubrique </l>
-            <l id="70">Que je n'aie mis en pratique, </l>
-            <l id="71">Je fus depuis solliciteur </l>
-            <l id="72">Enfin je suis un grand acteur, </l>
-            <l id="73">J'ai crié jusqu'à des oublies </l>
-            <l id="74">Pour mieux faire mes fourberies, </l>
-            <l id="75">En ce temps-là j'étais fort bien </l>
-            <l id="76">J'étais tout, et ne suis plus rien, </l>
-            <l id="77">Mais quoi la défense en est cause </l>
-            <l id="78">Je veux être encor quelque chose, </l>
-            <l id="79">Et vous faire avouer à tous </l>
-            <l id="80">Que seul, je vaux tous les filous. </l>
-          </sp>
-          <sp who="LE MARQUIS DE MACHE A VIDE">
-            <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
-            <l id="81">Tu ne manques jamais d'adresse </l>
-            <l id="82">Quand tu veux faire quelque pièce. </l>
-          </sp>
-          <sp who="LE BARON DE LA TRISTE-FIGURE">
-            <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
-            <l id="83">Il est vrai que le Chevalier </l>
-            <l id="84">Est expert, en notre métier. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="85">Expert, de notre art c'est la perle </l>
-            <l id="86">La peste que c'est un fin merle, </l>
-            <l id="87">C'est le plus adroit des Larrons. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="88">Çà voyons ce que nous ferons, </l>
-            <l id="89">Et tâchons tous à si bien faire </l>
-            <l id="90">Que nous nous sortions de misère, </l>
-            <l id="91">Ayez donc toujours l'oeil sur moi </l>
-            <l id="92">Et je vous promets sur ma foi, </l>
-            <l id="93">Que mes soins et toutes mes veilles </l>
-            <l id="94">S'en vont produire des merveilles, </l>
-            <l id="95">Coulez-vous tous en quelque coin </l>
-            <l id="96">Pour me secourir au besoin, </l>
-            <l id="97">Surtout ayez en la mémoire </l>
-            <l id="98">D'avoir quelque jaquette noire, </l>
-            <l id="99">Que nos femmes, et nos valets </l>
-            <l id="100">Dans cette Maison soient tout prêts, </l>
-            <l id="101">Et que chacun de vous devine </l>
-            <l id="102">Au moindre mot ou moindre mine, </l>
-            <l id="103">Que votre esprit soit préparé </l>
-            <l id="104">À tout ce que j'entreprendrai, </l>
-            <l id="105">Mais j'entends quelqu'un qui s'avance </l>
-            <l id="106">Cachez-vous avec diligence. </l>
-            <stage type="hide">Les trois filous se cachent, et le Chevalier de l'Industrie écoute ce qui se dit.</stage>
-          </sp>
-        </div2>
-        <div2 type="scene" n="2">
-          <head>SCÈNE II. La Roque, Guillot.</head>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="107">Hélas que je suis malheureux ! </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="108" syll="3" part="i">Qu'avez-vous ? </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="108" syll="5" part="f">Je suis amoureux. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="109">Est-ce un si grand malheur mon Maître. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="110">Tout autant qu'il le saurait être, </l>
-            <l id="111">Puisque je me vois maintenant </l>
-            <l id="112">Fort amoureux et sans argent, </l>
-            <l id="113">Peut-on voir un malheur semblable. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="114">Il est vrai que c'est là le diable, </l>
-            <l id="115">Car le plus parfait amoureux </l>
-            <l id="116">N'est qu'une bête étant un gueux, </l>
-            <l id="117">Quoi Monsieur au clair de la Lune </l>
-            <l id="118">Espérez-vous faire fortune, </l>
-            <l id="119">En courant comme un loup-garou </l>
-            <l id="120">Sans savoir comment ni par où, </l>
-            <l id="121">Vous achèverez votre course </l>
-            <l id="122">Encor si votre pauvre bourse, </l>
-            <l id="123">Avait le ventre bien enflé </l>
-            <l id="124">Je serais un peu consolé, </l>
-            <l id="125">Mais hélas Monsieur la pauvrette </l>
-            <l id="126">Est si malingreuse et si nette, </l>
-            <l id="127">Et dans un si piteux état </l>
-            <l id="128">Que jamais rien ne fut si plat. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="129">C'est là ce qui gêne mon âme </l>
-            <l id="130">Parce qu'à l'objet qui m'enflamme, </l>
-            <l id="131">Il doit faire voir ce trésor </l>
-            <l id="132">Qu'on appelle la toison d'or, </l>
-            <l id="133">Dont les machines sans pareilles </l>
-            <l id="134">Passent pour autant de merveilles, </l>
-            <l id="135">Nous venons de faire dessein </l>
-            <l id="136">D'aller nous divertir demain, </l>
-            <l id="137">À cette illustre Comédie. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="138">Ce dessein est une folie </l>
-            <l id="139">Comment vous êtes assez fol </l>
-            <l id="140">Pour faire l'amour sans un sol, </l>
-            <l id="141">Si vous aviez donc la pistole </l>
-            <l id="142">Vous feriez diablement le drôle, </l>
-            <l id="143">C'est avoir l'esprit bien gaillard </l>
-            <l id="144">Qu'aimer quand on n'a pas le liard, </l>
-            <l id="145">L'argent fait aller la cuisine </l>
-            <l id="146">Vive l'amour pourvu qu'on dîne, </l>
-            <l id="147">On fait mal le passionné </l>
-            <l id="148">Alors que l'on n'a pas dîné, </l>
-            <l id="149">De sorte que si bon vous semble </l>
-            <l id="150">Nous resterons d'accord ensemble, </l>
-            <l id="151">Que pour être amant sans chagrin </l>
-            <l id="152">Il faut posséder le douzain, </l>
-            <l id="153">Je nomme donc votre entreprise </l>
-            <l id="154">Avec respect une sottise, </l>
-            <l id="155">Comme vous savez comme Guillot </l>
-            <l id="156">Qu'un pauvre homme n'est rien qu'un sot </l>
-            <l id="157">Ainsi jugez ce que vous êtes </l>
-            <l id="158">Aux entreprises que vous faites. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="159">Cesse de me pousser à bout </l>
-            <l id="160">Dis-moi peut-on songer à tout, </l>
-            <l id="161">Se voyant prêt d'une maîtresse </l>
-            <l id="162">Qui nous engage avec adresse, </l>
-            <l id="163">À faire tout ce qui lui plaît, </l>
-            <l id="164">Ah ! Si tu savais ce que c'est </l>
-            <l id="165">Qu'aimer nous serions sans conteste. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="166">Ah ! Monsieur je le sais de reste </l>
-            <l id="167">Quoique je ne sois qu'un lourdaud. </l>
-            <l id="168">J'aimerais peut-être ; et trop tôt, </l>
-            <l id="169">Mais comme il faut être bien riche </l>
-            <l id="170">Pour aimer, et n'être pas chiche, </l>
-            <l id="171">Je quitte là le féminin </l>
-            <l id="172">Pour ne m'attacher qu'au bon vin. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="173">Ah ! Guillot si tu savais comme... </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="174">Mais Monsieur quel était cet homme, </l>
-            <l id="175">Qui vous a naguère accosté </l>
-            <l id="176">Quand de vous j'étais écarté. </l>
-            <l id="177">Dont je n'ai pu par la distance </l>
-            <l id="178">Avoir aucune connaissance, </l>
-            <l id="179">À qui vous avez tant parlé. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="180">Un savant qui m'a consolé, </l>
-            <l id="181">Sans avoir l'heur de le connaître </l>
-            <l id="182">Mais Guillot qui m'a fait paraître, </l>
-            <l id="183">Tant d'esprit, et de jugement </l>
-            <l id="184">Que j'en suis dans l'étonnement, </l>
-            <l id="185">Et je n'aurai ni bien ni joie </l>
-            <l id="186">Jusqu'à ce que je le revoie, </l>
-            <l id="187">Ah ! Que sa conversation </l>
-            <l id="188">M'a donné d'admiration, </l>
-            <l id="189">Il s'est venu mettre en matière </l>
-            <l id="190">De la plus aimable manière, </l>
-            <l id="191">Que jamais aucun homme ait fait </l>
-            <l id="192">Bref, c'est un homme si parfait, </l>
-            <l id="193">Si charmant par son éloquence </l>
-            <l id="194">Que je veux avoir connaissance, </l>
-            <l id="195">De cet incomparable esprit, </l>
-            <l id="196">Tu sauras Guillot qu'il m'a dit, </l>
-            <l id="197">Mille choses touchant ma vie </l>
-            <l id="198">Qui font admirer son génie, </l>
-            <l id="199">Même il m'a promis en ce jour </l>
-            <l id="200">Sur le sujet de mon amour, </l>
-            <l id="201">Un moyen tout à fait extrême </l>
-            <l id="202">Pour être aimé de ce que j'aime, </l>
-            <l id="203">Conclusion, je le veux voir </l>
-            <l id="204">Pour cela de tout mon pouvoir, </l>
-            <l id="205">Je l'ai supplié plus d'une heure </l>
-            <l id="206">De dire son nom, sa demeure, </l>
-            <l id="207">Mais enfin tout notre entretien </l>
-            <l id="208">S'est fini sans en savoir rien, </l>
-            <l id="209">Je n'ai pu de lui rien apprendre </l>
-            <l id="210">Sinon qu'il se doit venir rendre, </l>
-            <l id="211">En quelque part autour d'ici </l>
-            <l id="212">J'espère lui parler ainsi. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="213">N'est-ce point quelque diable infâme </l>
-            <l id="214">Qui tâche d'attraper votre âme, </l>
-            <l id="215">Car assez souvent le démon </l>
-            <l id="216">Prend justement l'occasion, </l>
-            <l id="217">Que le malheur nous persécute </l>
-            <l id="218">Afin de trouver chape-chute. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="219">Tu me tiens un discours de fol. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="220">Il pourrait vous tordre le col, </l>
-            <l id="221">Le diable est une fine mouche. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="222">Bref de la nuit je ne me couche, </l>
-            <l id="223">Qu'après avoir entretenu </l>
-            <l id="224">Cet habile homme comme j'ai vu, </l>
-            <l id="225">Un désir curieux m'en presse </l>
-            <l id="226">Et toi mets toute ton adresse, </l>
-            <l id="227">À chercher sur ce diamant </l>
-            <l id="228">Cinquante louis promptement, </l>
-            <l id="229">Mais garde qu'on ne te le vole. </l>
-            <stage type="give">Il lui donne sa bague.</stage>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="230">Au diablezot je suis un drôle, </l>
-            <l id="231">Que l'on n'attrape pas ainsi </l>
-            <l id="232">Pour fin je le suis Dieu merci, </l>
-            <l id="233">Autant que filou puisse l'être </l>
-            <l id="234">En subtilité, je suis maître, </l>
-            <l id="235">Sachez que je ne suis pas niais </l>
-            <l id="236">Et que je sais bien tous les biais, </l>
-            <l id="237">Desquels on se sert pour la grippe </l>
-            <l id="238">Je sais comme quoi l'on accipe, </l>
-            <l id="239">Et je sais comme il m'en faut garder </l>
-            <l id="240">Allez-vous en sans plus tarder, </l>
-            <l id="241">Et me laissez seulement faire. </l>
-            <stage type="exit">Il sort.</stage>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="242">Adieu le ciel te soit prospère. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="3">
-          <head>SCÈNE III.</head>
-          <sp stage="alone" who="GUILLOT">
-            <speaker>GUILLOT, seul.</speaker>
-            <l id="243">Il me prend pour quelque innocent </l>
-            <l id="244">J'en duperais moi seul un cent, </l>
-            <l id="245">Et quand je veux faire un chef-d'oeuvre </l>
-            <l id="246">Je suis un fort rusé manoeuvre ? </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="4">
-          <head>SCÈNE IV. Le Chevalier de l'Industrie, Guillot.</head>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="247">Ah ! Votre serviteur mon bon. </l>
-          </sp>
-          <sp stage="aparte" who="GUILLOT">
-            <speaker>GUILLOT, à part.</speaker>
-            <l id="248">Voici quelque attrape-minon. </l>
-          </sp>
-          <sp stage="aparte" who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE, à part.</speaker>
-            <l id="249">Il faut de vrai que je t'attrape. </l>
-          </sp>
-          <sp stage="aparte" who="GUILLOT">
-            <speaker>GUILLOT, à part.</speaker>
-            <l id="250">Il croit déjà mordre à la grappe, </l>
-            <l id="251">Je suis le vôtre de bon coeur.</l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="252">Ah ! Vous me faites trop d'honneur, </l>
-            <l id="253">Et je vous en suis redevable </l>
-            <l id="254">Mais comme je suis secourable, </l>
-            <l id="255">Je viens ici pour votre bien. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="256">Pour mon bien, vous ne tenez rien, </l>
-            <l id="257">Si c'est mon bien, qui vous amène </l>
-            <l id="258">Vous n'avez qu'à prendre la peine </l>
-            <l id="259">Bientôt de vous en retourner. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="260">C'est tout à fait mal raisonner, </l>
-            <l id="261">Par ce bien je crois faire entendre, </l>
-            <l id="262">Que mon dessein est de vous rendre </l>
-            <l id="263">Mon service, effectivement. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="264">Je vous entends présentement, </l>
-            <l id="265">Mais aux offres que vous me faites </l>
-            <l id="266">Puis-je demander qui vous êtes. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="267">Qui je suis, homme de savoir </l>
-            <l id="268">Homme qui sait tout sans rien voir. </l>
-            <l id="269">Qui sais et tout dire et tout faire </l>
-            <l id="270">Enfin homme extraordinaire, </l>
-            <l id="271">Je sais quel est votre souci </l>
-            <l id="272">Et ce qui vous amène ici, </l>
-            <l id="273">Je sais quelles sont toutes choses </l>
-            <l id="274">Les effets de toutes les causes, </l>
-            <l id="275">Je sais le présent l'avenir </l>
-            <l id="276">Je sais les malheurs prévenir, </l>
-            <l id="277">Je sais de plus que votre maître. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="278">Mais quelqu'un vous l'a dit peut-être. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="279">Sans me rien dire je sais tout. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="280">Toutes choses de bout en bout. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="281">Toutes les sciences sont nôtres. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="282">Que diables savant donc les autres, </l>
-            <l id="283">Quel métier est le vôtre, enfin. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="284">Vous saurez que je suis devin. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="285">De quel vin, du vin de Sancerre </l>
-            <l id="286">De Chablis, de Beaune, d'Auxerre. </l>
-            <l id="287">Car vous voyez un altéré </l>
-            <l id="288">Qui boit comme un désespéré, </l>
-            <l id="289">Quelque bon vin que j'aperçoive, </l>
-            <l id="290">Il faut aussitôt que je le boive, </l>
-            <l id="291">Et je vous vais boire des yeux </l>
-            <l id="292">Si vous ne vous expliquez mieux, </l>
-            <l id="293">Dépêchez donc car j'ai la mine. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="294">N'est-il pas devin qui devine, </l>
-            <l id="295">Quoi suis-je un esprit mal tourné. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="296">Ah ! Le bon métier de damné, </l>
-            <l id="297">Car on ne peut sans diablerie </l>
-            <l id="298">Sans sortilège et sans magie, </l>
-            <l id="299">Nullement en venir à bout. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="300">Ah ! Vous vous trompez, point du tout, </l>
-            <l id="301">Ne montre-t-on pas la science </l>
-            <l id="302">Qui nous donne la connaissance, </l>
-            <l id="303">De ces choses sans nous damner. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="304">Puisque vous savez deviner </l>
-            <l id="305">Devinez un peu quelle affaire </l>
-            <l id="306">Mon maître m'a chargé de faire.</l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="307">Si vous en voulez voir l'effet </l>
-            <l id="308">Vous serez bientôt satisfait, </l>
-            <l id="309">Pour vous le dire en trois paroles </l>
-            <l id="310">Vous cherchez cinquante pistoles, </l>
-            <l id="311">Dessus un certain diamant </l>
-            <l id="312">Parlai-je véritablement, </l>
-            <l id="313">De plus il faut que je vous die </l>
-            <l id="314">Que c'est pour voir la Comédie, </l>
-            <l id="315">Où votre maître a fait dessein </l>
-            <l id="316">De mener des Dames demain, </l>
-            <l id="317">N'est-ce pas ce qui fait sa peine </l>
-            <l id="318">Et ce qui dans ce lieu vous mène. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="319">Parbleu vous l'avez deviné </l>
-            <l id="320">Votre esprit est bien raffiné, </l>
-            <l id="321">Pour savoir un secret semblable </l>
-            <l id="322">Il faut du moins parler au Diable. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="323">C'est là mon moindre effort d'esprit. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="324">Il faut que quelqu'un vous l'ait dit. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="325">Quoi doutez-vous de ma science. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="326">Vous en avez en abondance, </l>
-            <l id="327">Et vous y savez triompher </l>
-            <l id="328">Plus que tous les Diables d'Enfer. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="329">Je veux vous indiquer un homme </l>
-            <l id="330">Qui vous donnera votre somme, </l>
-            <l id="331">Lorsque vous le désirerez. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="332">Monsieur que vous m'obligerez, </l>
-            <l id="333">Enseignez-le moi je vous prie, </l>
-            <l id="334">Je suis à vous toute ma vie, </l>
-            <l id="335">Que les affligés sont contents </l>
-            <l id="336">Quand ils trouvent d'honnêtes gens, </l>
-            <l id="337">Sans vous je ne savais que faire. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="338">Appelons-le pour cette affaire, </l>
-            <l id="339">C'est un homme de probité </l>
-            <l id="340">Médecin expérimenté, </l>
-            <l id="341">Rempli d'esprit et d'éloquence </l>
-            <l id="342">Qui ne fait rien qui ne balance, </l>
-            <l id="343">Mais pour vous servir promptement </l>
-            <l id="344">Donnez-moi votre diamant, </l>
-            <l id="345">Pour lui présenter à la vue. </l>
-          </sp>
-          <sp stage="give" who="GUILLOT">
-            <speaker>GUILLOT, lui donne son diamant.</speaker>
-            <l id="346">Savez-vous la porte, et la rue, </l>
-            <l id="347">Car vous pourriez vous égarer </l>
-            <l id="348">Peut-être en allant lui montrer. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="349">Ah ! Non je ne suis pas personne </l>
-            <l id="350">Qu'il faille qu'aucune soupçonne, </l>
-            <l id="351">Je vous le rends de tout mon coeur. </l>
-          </sp>
-          <sp stage="push" who="GUILLOT">
-            <speaker>GUILLOT, le refusant.</speaker>
-            <l id="352">Non je suis votre serviteur, </l>
-            <l id="353">Je n'y trouve rien à redire</l>
-            <l id="354">Ce que j'en dis n'est que pour rire, </l>
-            <l id="355">Et suis tellement innocent </l>
-            <l id="356">Que même je veux être absent, </l>
-            <l id="357">Alors que vous ferez la chose</l>
-            <l id="358">Sur vous seul mon espoir repose, </l>
-            <l id="359">Car vous ferez le tout fort bien </l>
-            <l id="360">Sans que je me mêle de rien, </l>
-            <l id="361">Votre nom Monsieur je vous prie. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="362">Le Chevalier de l'Industrie. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="363">Ce Gentilhomme est de renom </l>
-            <l id="364">Car il s'appelle d'un beau nom. </l>
-          </sp>
-          <sp stage="call/imitate" who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE, appelant un autre filou en Médecin.</speaker>
-            <l id="365">Holà Docteur Illustrissime </l>
-            <l id="366">Vous peut-on dire un mot sans crime. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="5">
-          <head>SCÈNE V. Le Comte de Plume Sèche en Médecin, Le Chevalier de l'Industrie, Guillot.</head>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="367">Oui vous aurez attention </l>
-            <l id="368">Honneur, salut dilection, </l>
-            <l id="369">Désirez-vous quelque Ordonnance. </l>
-          </sp>
-          <sp stage="low/toward" who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE, bas à Plume Sèche.</speaker>
-            <l id="370">Voilà la fourbe qui s'avance, </l>
-            <l id="371">Je tiens déjà le diamant </l>
-            <l id="372">Amuse-le quelque moment, </l>
-            <l id="373">Dis-lui s'il parle de pistoles </l>
-            <l id="374">Que sa cervelle est des plus folles, </l>
-            <l id="375">Car quittant tous deux, par malheur, </l>
-            <l id="376">Peut-être il crierait au voleur, </l>
-            <l id="377">Et n'ayant rien pour nous défendre </l>
-            <l id="378">On nous pourrait aisément prendre, </l>
-            <l id="379">Demeure donc, et ne crains rien </l>
-            <l id="380" syll="3" part="i">Je vais faire. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <stage type="closer/toward/low">Il lui parle à l'oreille. </stage>
-            <l id="380" syll="5" part="f">Je t'entends bien. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="381">Appelle-moi de ce nom drôle. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="382">Va-t'en je jouerai bien mon rôle, </l>
-            <l id="383">Fais-le-moi venir maintenant. </l>
-          </sp>
-          <sp stage="toward" who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE, parlant à Guillot.</speaker>
-            <l id="384">Allez recevoir votre argent. </l>
-            <stage type="aparte">À part.</stage>
-            <l id="385">Moi je vais avec mon adresse </l>
-            <l id="386">Travailler à finir la pièce. </l>
-            <stage type="exit">Il sort.</stage>
-          </sp>
-        </div2>
-        <div2 type="scene" n="6">
-          <head>SCÈNE VI. Le Comte de Plume Sèche, Guillot.</head>
-          <sp stage="toward" who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE, à Guillot.</speaker>
-            <l id="387">Monsieur approchez-vous de moi </l>
-            <l id="388">Avant que d'entrer dans l'emploi, </l>
-            <l id="389">Afin que l'on y remédie </l>
-            <l id="390">Contez-moi votre maladie. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="391">Moi Monsieur je me porte bien. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="392">Ah ! Votre mal ne sera rien, </l>
-            <l id="393">Pourvu que vous soyez docile </l>
-            <l id="394">À prendre un remède facile, </l>
-            <l id="395">Donc pour vous guérir proprement </l>
-            <l id="396">On vous prépare un lavement, </l>
-            <l id="397">Holà Monsieur l'Apothicaire </l>
-            <l id="398">Que l'on apporte le clystère, </l>
-            <l id="399">Il faut que cette injection </l>
-            <l id="400">Prépare la purgation. </l>
-            <l id="401">Un Apothicaire sort une Seringue à la main. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="402">À quoi diable tout ce mystère </l>
-            <l id="403">Ils me vont flûter le derrière, </l>
-            <l id="404">Si je ne fais le résolu </l>
-            <l id="405">Apothicaire malotru, </l>
-            <l id="406">Vous me paierez cette folie. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="407">Allons vite qu'on le lie, </l>
-            <l id="408">L'apothicaire lui donne le lavement dans le nez, et s'en va. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="409">Ah ! Le chien de médicament </l>
-            <l id="410">Ils m'ont fait boire un lavement, </l>
-            <l id="411">Médecin que le Diable emporte </l>
-            <l id="412">Me payerez-vous de cette sorte. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="413">Ne songez point à ce métal </l>
-            <l id="414">C'est ce qui fait tout votre mal. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="415">Hélas tout ce qui fait ma peine </l>
-            <l id="416">C'est que ma bourse n'est pas pleine, </l>
-            <l id="417">Remplissez-la-moi promptement </l>
-            <l id="418">Et j'oublierai le lavement, </l>
-            <l id="419">Je pardonne à l'Apothicaire </l>
-            <l id="420">L'affront qu'il a voulu me faire, </l>
-            <l id="421">Mais qu'on me donne bien, et beau </l>
-            <l id="422">Ou de l'argent ou mon Anneau. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="423">Comme ce pauvre homme extravague. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="424">Rendez-moi s'il vous plaît ma bague, </l>
-            <l id="425">Ou bien me donnez de l'argent. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="426">Ô bons Dieux, que son mal est grand, </l>
-            <l id="427">Véritablement la folie </l>
-            <l id="428">Est une étrange maladie. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="429">Mes cinq cent livres s'il vous plaît </l>
-            <l id="430">On vous paiera bien l'intérêt. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="431">Qu'entends-je, hélas quelle boutade </l>
-            <l id="432">Monsieur que vous êtes malade, </l>
-            <l id="433">Tâchez de revenir à vous. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="434">On me met donc au rang des fous, </l>
-            <l id="435">Alors que mon bien je demande. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="436">Que son extravagance est grande. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="437">Quoi l'on traite d'extravagant </l>
-            <l id="438">Quiconque emprunte de l'argent, </l>
-            <l id="439">Que le Diable vous extravague </l>
-            <l id="440">Si vous ne me rendez ma bague. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="441">Ah ! Que son esprit est perdu. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="442">Vous en avez menti cocu. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="443">Chassez de votre fantaisie </l>
-            <l id="444">Cette incommode frénésie, </l>
-            <l id="445">Et rappelez votre raison. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="446">La peste soit du vieux barbon, </l>
-            <l id="447">Quoi Monsieur de la Médecine </l>
-            <l id="448">Nous prendrons donc ici racine, </l>
-            <l id="449">Çà délivrez-moi promptement </l>
-            <l id="450">De l'argent ou mon diamant, </l>
-            <l id="451">Et laissons-là l'extravagance. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="452">Cet homme est plus mal qu'on ne pense, </l>
-            <l id="453">Hélas ! Que j'ai pitié de lui </l>
-            <l id="454">N'avez-vous rien pris d'aujourd'hui. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="455">Non, mais je suis tout prêt à prendre </l>
-            <l id="456">L'argent qu'on me fait tant attendre, </l>
-            <l id="457">Ah ! Qu'on fait ici de façons </l>
-            <l id="458">Donnez-moi tout en patagons, </l>
-            <l id="459">En Louis ou bien en Louise </l>
-            <l id="460">Pourvu que l'argent soit de mise, </l>
-            <l id="461">En écus d'or, en écus blancs </l>
-            <l id="462">En pièces de quarante francs, </l>
-            <l id="463">Ou me le payez en monnoie </l>
-            <l id="464">Je n'en aurai pas moins de joie, </l>
-            <l id="465">Nous serons tous deux satisfaits. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="466">Nous ne le guérirons jamais. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="467">Voilà donc ta chanson première </l>
-            <l id="468">Épouvantail de chènevière. </l>
-            <l id="469">Comment nous ne conclurons rien. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="470">Ah ! Que ne vous portez-vous bien. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="471">Je me porte mieux que toi traître </l>
-            <l id="472">Je l'enverrais volontiers paître, </l>
-            <l id="473">Si je tenais mon diamant. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="474">Il n'a plus aucun jugement. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="475">Quoi donc nomme-t-on fol en France </l>
-            <l id="476">Tous ceux qui n'ont point de finance, </l>
-            <l id="477">Si celui qui n'a point d'argent </l>
-            <l id="478">Passe pour être extravagant, </l>
-            <l id="479">J'en vois bien à la Comédie </l>
-            <l id="480">Malade de ma maladie, </l>
-            <l id="481">Ah ! Médecin des Médecins </l>
-            <l id="482">Guérissez-nous, nous serons sains. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="483">Ah ! Je crois son mal incurable. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="484">Et moi je crois ton âme au Diable, </l>
-            <l id="485">En retenant présentement </l>
-            <l id="486">Et l'argent, et le diamant, </l>
-            <l id="487" syll="7" part="i">Pourquoi le retiens-tu donc. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="487" syll="1" part="f">Parce... </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="488">Nous jouons ici quelque farce, </l>
-            <l id="489">Personne, n'en saurait douter. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="490">Je vais vous médicamenter, </l>
-            <l id="491">Afin que votre mal s'apaise. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="492">Cinq cent francs me feraient bien aise. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="493">Votre bras, voyons votre pouls </l>
-            <l id="494">S'il est, ou trop vite, ou trop doux. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="495">Monsieur je n'ai ni poux ni puce </l>
-            <l id="496">Feu ma mère qu'on nommait luce, </l>
-            <l id="497">Eut grand soin de me les tuer </l>
-            <l id="498">Dépêchez donc d'effectuer, </l>
-            <l id="499">Tous les effets de vos paroles </l>
-            <l id="500">Me donnant cinquante pistoles. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="501">Sans doute qu'il est aux abois. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="502">Je ne veux que de l'or de poids. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="503">Ah ! Pauvre tête sans cervelle </l>
-            <l id="504">Comment est-ce qu'on vous appelle. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="505">M'appeler je suis diligent </l>
-            <l id="506">Quand c'est pour prendre de l'argent, </l>
-            <l id="507">Il n'est pas besoin qu'on me huche </l>
-            <l id="508">Vous me prenez pour une cruche ; </l>
-            <l id="509">Me parlant de cette façon </l>
-            <l id="510">J'irais dix ans pour un teston. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="511">Ce n'est pas pour cela pauvre homme </l>
-            <l id="512">Mais dites-moi comme on vous nomme. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="513">De l'argent, mon nom est Guillot. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="514">Votre nom est un nom bien sot, </l>
-            <l id="515">Et je n'en vois point un si dogue </l>
-            <l id="516">Au lieu de notre synagogue, </l>
-            <l id="517">Pour en avoir un à gogo </l>
-            <l id="518">On vous nommera virago. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="519">Que m'importe comme on me nomme </l>
-            <l id="520">Pourvu qu'on me donne ma somme. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="521" syll="4" part="i">Incontinent. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="521" syll="4" part="f">Dieu soit loué. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <stage type="call">Il appelle ses compagnons.</stage>
-            <l id="522">Je vais appeler Macaé, </l>
-            <l id="523">Macaé la chandelle noire </l>
-            <l id="524">Et le bonnet blanc comme ivoire, </l>
-            <l id="525">Vous serez guéris des premiers. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="526">Ah ! Ce sont ici des Sorciers, </l>
-            <l id="527">On ne parle que de magie. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <stage type="give/light">Il lui donne une bougie, et lui donne un bonnet blanc en forme de pain de sucre.</stage>
-            <l id="528">Tenez en main cette bougie. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="529">Moi pourquoi la tenir Monsieur. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="530" syll="3" part="i">Il le faut. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="530" syll="5" part="f">Ah ! Je meurs de peur. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="531">Voici toute notre cabale. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="532">Ou plutôt la troupe infernale. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="7">
-          <head>SCÈNE VII.</head>
-          <stage type="narration">Les trois autres filous viennent en robe noire, un bonnet blanc en forme de pain de sucre, et une bougie à la main, criant tous à la fois en tournant autour de Guillot, Virago, Macaé, Abdénago, et après avoir fait trois tours autour de lui, ils sortent et le laissent là, lequel demeure fort surpris. </stage>
-        </div2>
-        <div2 type="scene" n="8">
-          <head>SCÈNE VIII.</head>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT, seul planté tout droit, son bonnet en tête, et sa bougie en main.</speaker>
-            <l id="533">Ah ! Que d'inutiles paroles </l>
-            <l id="534">Pour donner cinquante pistoles, </l>
-            <l id="535">Comment loin de me les compter </l>
-            <l id="536">On s'amuse à viragoter. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="9">
-          <head>SCÈNE IX. La Rocque, Guillot.</head>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="537">Enfin voici l'heure venue </l>
-            <l id="538">Que je dois posséder la vue, </l>
-            <l id="539">De cet homme tout merveilleux </l>
-            <l id="540">Qui se doit trouver en ces lieux ; </l>
-            <l id="541">Mais que vois-je, quelle figure </l>
-            <l id="542">C'est Guillot, ah ! Quelle aventure, </l>
-            <l id="543">Dis-moi que fais-tu là Mago </l>
-            <l id="544" syll="5" part="i">Tu ne réponds rien. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="544" syll="3" part="f">Virago. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="545">Qu'est-ce que ce maraud veut dire </l>
-            <l id="546">Je ne suis pas d'humeur de rire, </l>
-            <l id="547">Ne fais pas ici l'enjoué </l>
-            <l id="548" syll="5" part="i">Parle-moi juste. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="548" syll="3" part="f">Macaé. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="549">Quoi l'insolence de ce traître </l>
-            <l id="550">Va jusqu'à railler de son Maître. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="551" syll="4" part="i">Abdenago. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="551" syll="4" part="f">Dis promptement </l>
-            <l id="552">Qu'as-tu fait de mon diamant. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="553">Son diamant, quelle incartade </l>
-            <l id="554">Monsieur que vous êtes malade, </l>
-            <l id="555">Vous êtes à ce que je vois </l>
-            <l id="556">Pour le moins aussi mal que moi. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="557">Ma bague et point de raillerie. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="558">À la méchante maladie, </l>
-            <l id="559">Monsieur il faudrait y songer. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="560">Tu me veux donc faire enrager, </l>
-            <l id="561">Stupide et détestable bête </l>
-            <l id="562">Si ma somme n'est toute prête, </l>
-            <l id="563">Je te vais accabler de coups. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="564">Mon maître et moi, sommes deux fous, </l>
-            <l id="565">Chassons de démon d'avarice </l>
-            <l id="566">Qui cause tout notre supplice, </l>
-            <l id="567">Je suis un homme fort subtil </l>
-            <l id="568">Depuis quand ce mal vous tient-il, </l>
-            <l id="569">Présentement une saignée </l>
-            <l id="570">Vous serait fort bien ordonnée, </l>
-            <l id="571">Mais il vous faut auparavant </l>
-            <l id="572">Un lavement dans le ponant. </l>
-            <stage type="touch">Il lui tâte le pouls.</stage>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="573">C'est trop, il faut perdre la vie. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="574">Arrêtez là votre furie </l>
-            <l id="575">Laissez-moi parler un moment </l>
-            <l id="576">Et vous aurez contentement. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="577">Armons-nous donc de patience, </l>
-            <l id="578">Savoir ce que dit et pense </l>
-            <l id="579">Ce pendard, ce maudit garçon. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="580">Monsieur comment vous nomme-t-on. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="581">Tu ne sais pas comme on m'appelle </l>
-            <l id="582">La Rocque, tête sans cervelle </l>
-            <l id="583">Patientons sans dire mot. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="584">Votre nom est un nom bien sot </l>
-            <l id="585">Et je n'en vois point un si dogue, </l>
-            <l id="586">Au lieu de notre synagogue </l>
-            <l id="587">Pour en avoir un à gogo, </l>
-            <l id="588">On vous nommera virago. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="589">Voyons si par ce qu'il veut faire, </l>
-            <l id="590">Nous découvrirons le mystère.</l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT, donne un bonnet et une bougie à son Maître comme à lui. Le regardant.</speaker>
-            <l id="591">Mettez en tête ce bonnet, </l>
-            <l id="592">Mon maître est beau marmouset, </l>
-            <l id="593">S'il en fut jamais à la foire </l>
-            <l id="594">Tenez cette chandelle noire. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="595">Tenons et voyons-en l'effet. </l>
-            <stage type="turn">Guillot, fait autour de son maître comme les Filous avaient fait autour de lui, disant les mêmes mots, Virago, Macaé, Abdénago.</stage>
-            <stage type="continue">LA ROCQUE, continue.</stage>
-            <l id="596">Et bien as-tu tout dit, tout fait </l>
-            <l id="597">Si je n'apprends tes artifices,</l>
-            <l id="598">Il faut qu'à présent tu périsses </l>
-            <l id="599">Oui tu te vois voir à ta fin. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="600">Monsieur suspendez mon destin, </l>
-            <l id="601">Et je m'en vais tout vous apprendre, </l>
-            <l id="602">Tantôt venant ici me rendre </l>
-            <l id="603">Pour aller emprunter l'argent </l>
-            <l id="604">Qu'il fallait sur ce diamant, </l>
-            <l id="605">J'ai rencontré le plus brave homme </l>
-            <l id="606">Qui soit de Paris jusqu'à Rome, </l>
-            <l id="607">Monsieur c'est un homme divin </l>
-            <l id="608">Il m'a dit qu'il était devin, </l>
-            <l id="609">Cet esprit extraordinaire </l>
-            <l id="610">Savait tout ce que j'allais faire, </l>
-            <l id="611">Mais si bien qu'il me l'a tout dit </l>
-            <l id="612">Ah ! Monsieur est un bel esprit, </l>
-            <l id="613">On ne peut aller au contraire </l>
-            <l id="614">Va je te ferai ton affaire, </l>
-            <l id="615">M'a-t-il dit, car un Médecin </l>
-            <l id="616">Qui demeure en ce lieu prochain, </l>
-            <l id="617">Te donnera dessus ton gage </l>
-            <l id="618">Ce que tu veux et davantage, </l>
-            <l id="619">Là-dessus j'ai fort bonnement </l>
-            <l id="620">Mis en ses mains mon diamant, </l>
-            <l id="621">Et lui d'une voix argentine </l>
-            <l id="622">Holà Docteur en médecine </l>
-            <l id="623">Descendez un peu jusqu'en bas </l>
-            <l id="624">Et puis s'étant parlé tout bas, </l>
-            <l id="625">Ils se sont séparés l'un l'autre </l>
-            <l id="626">En disant, Monsieur je suis vôtre, </l>
-            <l id="627">Et moi croyant qu'au Médecin, </l>
-            <l id="628">L'autre avait mis ma bague en main, </l>
-            <l id="629">Monsieur votre nom je vous prie </l>
-            <l id="630">Ai-je dit, Sieur de l'Industrie, </l>
-            <l id="631">En partant a-t-il répondu. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="632">Ah ! Mon diamant est perdu, </l>
-            <l id="633">Maudit Chien que tu m'es funeste. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="634">Écoutez, s'il vous plaît le reste, </l>
-            <l id="635">Après Monsieur le Médecin </l>
-            <l id="636">M'a dit que je n'étais pas sain, </l>
-            <l id="637">Et qu'en un mot ma maladie </l>
-            <l id="638">Était justement la folie, </l>
-            <l id="639">Quand j'ai demandé de l'argent </l>
-            <l id="640">Il m'a traité d'extravagant, </l>
-            <l id="641">Enfin ce Médecin maussade </l>
-            <l id="642">M'a dit que j'étais fort malade, </l>
-            <l id="643">Et tout aussitôt ordonné </l>
-            <l id="644">Qu'un lavement me fut donné, </l>
-            <l id="645">Certain maudit apothicaire </l>
-            <l id="646">M'est venu prendre par derrière ; </l>
-            <l id="647">Et m'a voulu clystériser </l>
-            <l id="648">Mais m'en voyant formaliser, </l>
-            <l id="649">Il a crié, que l'on le lie </l>
-            <l id="650">Pour le guérir de sa folie, </l>
-            <l id="651">Pour apaiser son Vertigo </l>
-            <l id="652">Qu'on fasse venir Virago, </l>
-            <l id="653">Macaé, des noms de grimoire </l>
-            <l id="654">Qui sont dans l'infernale Histoire</l>
-            <l id="655">Si bien qu'il les a fait venir </l>
-            <l id="656">Disant qu'il me voulait guérir, </l>
-            <l id="657">Le Chevalier de l'Industrie </l>
-            <l id="658">Était aussi de la partie, </l>
-            <l id="659">Et là tous d'un ton enroué </l>
-            <l id="660">Criaient Virago, Macaé, </l>
-            <l id="661">Tournant autour de ma personne </l>
-            <l id="662">Moi voyant cela je m'étonne, </l>
-            <l id="663">Abdenago, le Chevalier </l>
-            <l id="664">Se prêtaient tous deux le collier </l>
-            <l id="665">Virago, Macaé ce semble </l>
-            <l id="666">S'étendaient tout de même ensemble, </l>
-            <l id="667">Ainsi Monsieur ils m'ont joué </l>
-            <l id="668">Le Virago, le Macaé, </l>
-            <l id="669">Le Médecin et l'Industrie </l>
-            <l id="670">Étaient tous de la fourberie. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="671">Ah ! C'en est trop maraud tais-toi, </l>
-            <l id="672">Que je suis malheureux, suis-moi, </l>
-            <l id="673">Allons chercher sans plus attendre, </l>
-            <l id="674">Quelque ami pour les aller prendre. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="10">
-          <head>SCÈNE X. Les Filous : Le Chevalier de l'Industrie, le Marquis de Mâche à Vide, le Comte de Plume Sèche, le Baron de la Triste-Figure. </head>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="675">Et bien ai-je subtilement </l>
-            <l id="676">Escamoté le diamant, </l>
-            <l id="677">Messieurs qui ne vous en déplaise </l>
-            <l id="678">J'entends et le pair et la presse, </l>
-            <l id="679">Et je suis peut-être un des adroits </l>
-            <l id="680">Qui soit parmi les fins matois. </l>
-          </sp>
-          <sp who="LE COMTE DE PLUME SECHE">
-            <speaker>LE COMTE DE PLUME SECHE.</speaker>
-            <l id="681">Moi Médecin d'apprentissage </l>
-            <l id="682">Ai-je mal fait mon personnage. </l>
-          </sp>
-          <sp who="LE BARON DE LA TRISTE-FIGURE">
-            <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
-            <l id="683">Et quand mon rôle j'ai joué </l>
-            <l id="684">N'ai-je pas bien fait Macaé. </l>
-          </sp>
-          <sp who="LE MARQUIS DE MACHE A VIDE">
-            <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
-            <l id="685">Messieurs ; puisque chacun se loue </l>
-            <l id="686">Dans le personnage que je joue, </l>
-            <l id="687">Sans dire pâle Matago </l>
-            <l id="688">J'ai fort bien joué Virago, </l>
-            <l id="689" syll="2" part="i">Paix-là. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="11">
-          <head>SCÈNE XI. La Rocque, Le Chevalier de l'Industrie, Guillot, et un de ses amis.</head>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="689" syll="6" part="f">Furetons dans ces rues </l>
-            <l id="690">Ce sont ici les avenues, </l>
-            <l id="691">Où nous pourrons prendre au collet </l>
-            <l id="692">Ceux qui m'ont volé mon valet, </l>
-            <l id="693">Mais gardons-nous de nous méprendre </l>
-            <l id="694">Un rare esprit me doit attendre, </l>
-            <l id="695">En quelque part autour d'ici </l>
-            <l id="696">Et je pense que le voici, </l>
-            <l id="697">Monsieur, la rencontre agréable </l>
-            <l id="698">Mon bonheur n'a point de semblable, </l>
-            <l id="699">De vous trouver au rendez-vous. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="700">Ah ! Le mien est beaucoup plus doux </l>
-            <l id="701">Mais trêve de galanterie. </l>
-          </sp>
-          <sp stage="watch" who="GUILLOT">
-            <speaker>GUILLOT, lui regardant au nez.</speaker>
-            <l id="702">Ah ! Chevalier de l'Industrie, </l>
-            <l id="703">Qui m'avez pris mon diamant </l>
-            <l id="704">Rendez-le tout présentement, </l>
-            <l id="705">Autrement devin qui devine </l>
-            <l id="706">On vous donnera sur l'échine. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="707">Guillot, en es-tu bien certain. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="708">Oui Monsieur, c'est notre devin. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="709">Allons vite qu'on me le rende. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="710">Puis après il faut qu'on le pende. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="711">Monsieur traitez-moi doucement </l>
-            <l id="712">Vous l'aurez tout présentement. </l>
-          </sp>
-          <sp who="LA ROCQUE">
-            <speaker>LA ROCQUE.</speaker>
-            <l id="713">Dépêchons donc et sans mystère. </l>
-          </sp>
-          <sp who="LE CHEVALIER DE L'INDUSTRIE">
-            <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
-            <l id="714">Le voilà, mais Monsieur j'espère, </l>
-            <l id="715" syll="3" part="i">Un pardon. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <stage type="escape">Le Chevalier de l'Industrie s'enfuit.</stage>
-            <l id="715" syll="5" part="f">Gardez-vous-en bien </l>
-            <l id="716">Il faut qu'il ait du ros de Chien, </l>
-            <l id="717">Ah ! Vous aurez de la batille </l>
-            <l id="718">La malepeste comme il drille, </l>
-            <l id="719">Mais puisqu'il ne nous nous manque rien </l>
-            <l id="720">Les malades se portent bien, </l>
-            <l id="721">Allons voir nos chères poupines </l>
-            <l id="722">Et les menons voir les Machines. </l>
-          </sp>
-        </div2>
-      </div1>
-    </body>
-  </text>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">LA DÉSOLATION DES FILOUS SUR LA DÉFENSE DES ARMES</title>
+                <author key="isni:0000000043203474">CHEVALIER, Jean Simonin dit</author>
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000304</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY NC SA 3.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                    </licence>
+                </availability><!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/CHEVALIER_DESOLATIONDESFILOUS.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/CHEVALIER_DESOLATIONDESFILOUS.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY NC SA 3.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1683">1683</date>
+                        <date type="premiere" when="1665">Représenté pour le première fois [en décembre 1663] sur le Théâtre Royal du Marais.</date>
+                        <date type="written"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-chevalier-de-l-industrie" sex="MALE">
+                        <persName>Le chevalier de l'industrie</persName>
+                    </person>
+                    <person xml:id="le-marquis-de-mache-a-vide" sex="MALE">
+                        <persName>Le marquis de mache a vide</persName>
+                    </person>
+                    <person xml:id="le-comte-de-plume-seche" sex="UNKNOWN">
+                        <persName>Le-comte-de-plume-seche</persName>
+                    </person>
+                    <person xml:id="le-baron-de-la-triste-figure" sex="MALE">
+                        <persName>Le baron de la triste-figure</persName>
+                    </person>
+                    <person xml:id="la-rocque" sex="MALE">
+                        <persName>La rocque</persName>
+                    </person>
+                    <person xml:id="guillot" sex="MALE">
+                        <persName>Guillot</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords>
+                    <term type="genreTitle">Comédie</term>
+                    <term type="genreTitle">vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+		<front>
+			<docTitle>
+				<titlePart type="main">LA DÉSOLATION DES FILOUS SUR LA DÉFENSE DES ARMES</titlePart>
+				<titlePart type="sub">OU LES MALADES QUI SE PORTENT BIEN</titlePart>
+				<titlePart type="sub">COMÉDIE</titlePart>
+			</docTitle>
+			<docDate when="1683">M. DC. LXXXIII.</docDate>
+			<docAuthor>Par le Sieur CHEVALIER.</docAuthor><!--@bio="chevalier"-->
+			<div type="docImprint">
+				<imprimeur id="SOMMAVILLE">À LA HAYE, Chez ADRIAN MOETJENS.  Marchand Libraire près la Cour, à la Librairie Française.</imprimeur>
+			</div>
+			<performance>
+				<ab type="premiere">Représenté pour le première fois [en décembre 1663] sur le Théâtre Royal du Marais.</ab><!--date="1665"--><!--location="Théâtre du Marais"-->
+			</performance>
+	<div type="dedicace">
+                <opener>
+                    <salute>À MADEMOISELLE C. M. </salute>
+                </opener>
+		<head>MADEMOISELLE,</head>
+		<p n="">Vous serez surprise assurément, quand vous verrez que je vous dédie la Désolation des Filous, ou les Malades qui se portent bien, mais que cela ne vous surprenne point, puisque je ne vois pas à qui la mieux dédier qu’à vous, étant aussi grande voleuse, qui sont voleurs, et je pourrais même passer plus outre, en vous disant que vous volez tous les jours plus de coeurs, de franchises, de libertés, qu'il ne s'est fait de larcins depuis que le monde est monde ; de sorte MADEMOISELLE, que je souhaiterais que comme on m'a défendu de porter des armes, il eût été aussi possible de vous défendre de porter vos charmes, je ne serais pas si fort à plaindre que je suis, et l'on ne me verrait pas malade dans le moment que vous vous portez le mieux du monde, encor si mon mal vous pouvait toucher un peu, j'aurais quelque espèce de consolation, mais je crois que vous êtes de ces malades, qui se portent bien ; et que vous en ferez souffrir encor beaucoup avant que vous en ressentiez la moindre émotion, toutefois mon mal m'est si doux, que je l'endure avec patience, et pour vous le témoigner vous voyez bien que je ne fais point mentir le commun proverbe, qui dit qu'il faut faire le bien contre le mal, puisque je vous fais un présent dans le temps que vous me faites souffrir, cependant, MADEMOISELLE, je connais que j'ai tort de me plaindre de vous, voyant qu'alors que je vous aime, je ne fais que ce que je vois faire à toute la terre, pourquoi voudrais-je donc que vous eussiez plus pitié de moi que de tous les autres, non non je laisse tout à votre opinion, et me tiendrai trop heureux si vous daignez seulement agréer cette Comédie de la part de </p>
+		<p n="">Votre très humble, </p>
+		<p n="">et très obéissant serviteur, </p>
+		<p n="">CHEVALIER.</p>
+	</div>
+	<castList>
+                <head>LES ACTEURS</head>
+		<castItem>
+                    <role corresp="#la-rocque">LA ROCQUE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#guillot">GUILLOT</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour="néant"-->, son Valet.</castItem>
+		<castItem>
+                    <role corresp="#le-chevalier-de-l-industrie">LE CHEVALIER DE L'INDUSTRIE</role><!--@sex="1" @type="H" @statut="voleur" @age="A" @stat_amour="néant"-->, filou. </castItem>
+		<castItem>
+                    <role corresp="#&gt;le-comte-de-plume-seche">LE COMTE DE PLUME SECHE</role><!--@sex="1" @type="H" @statut="voleur" @age="A" @stat_amour="néant"-->, filou. </castItem>
+		<castItem>
+                    <role corresp="#le-marquis-de-mache-a-vide">LE MARQUIS DE MACHE A VIDE</role><!--@sex="1" @type="H" @statut="voleur" @age="A" @stat_amour="néant"-->, filou. </castItem>
+		<castItem>
+                    <role corresp="#le-baron-de-la-triste-figure">LE BARON DE LA TRISTE-FIGURE</role><!--@sex="1" @type="H" @statut="voleur" @age="A" @stat_amour="néant"-->, filou. </castItem>
+	</castList>
+	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La Scène est dans la rue.</set>-->
+</front>
+<body>
+<div type="act" n="1">
+                <head>LA DÉSOLATION  DES FILOUS</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Le Chevalier de l'Industrie, le Marquis de Mâche à Vide, le Comte de Plume Sèche, le Baron de la Triste-Figure. </head>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="1">Quoique la défense soit faite </l>
+	<l n="2">Des pistolets, et de la brette, </l>
+	<l n="3">Qu'on ne porte plus d'arme à feu </l>
+	<l n="4">Rêvons cherchons, voyons un peu, </l>
+	<l n="5">Si nous trouverons l'industrie </l>
+	<l n="6">Qu'il faut pour prolonger la vie, </l>
+	<l n="7">Il est aisé de deviner </l>
+	<l n="8">Qu'on ne peut vivre sans diner, </l>
+	<l n="9">Et l'homme est fort mal dans son centre </l>
+	<l n="10">Quand il a la famine au ventre, </l>
+	<l n="11">Donc si nous voulons l'éviter </l>
+	<l n="12">Il faut tâcher d'escamoter, </l>
+	<l n="13">Les premiers qui dans cette rue </l>
+	<l n="14">Viendront paraître à notre vue, </l>
+	<l n="15">Les armes étant sans crédit </l>
+	<l n="16">Servons-nous de tout notre esprit, </l>
+	<l n="17">L'esprit pour voler a des charmes </l>
+	<l n="18">Qui valent parfois bien les armes. </l>
+</sp>
+<sp who="#le-marquis-de-mache-a-vide">
+                        <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
+	<l n="19">De quel air nous y prendrons-nous </l>
+	<l n="20">Ce malheur me met en courroux, </l>
+	<l n="21">Mon cher Comte de Plume Sèche </l>
+	<l n="22">Dis de quel bois ferons-nous flèche. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="23">Que diable sais-je de quel bois </l>
+	<l n="24">Pour moi j'en suis presque aux abois, </l>
+	<l n="25">La malencontreuse aventure</l>
+	<l n="26">Baron de la Triste-Figure, </l>
+	<l n="27">N'as-tu point quelque invention. </l>
+</sp>
+<sp who="#le-baron-de-la-triste-figure">
+                        <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
+	<l n="28">Que faire en cette occasion, </l>
+	<l n="29">Sans armes je suis une bête. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="30">Quoi tu n'aurais point en ta tête </l>
+	<l n="31">Quelque moyen pour exceller </l>
+	<l n="32">Dans l'exercice de voler, </l>
+	<l n="33">Sans pistolet, et sans épée. </l>
+</sp>
+<sp who="#le-baron-de-la-triste-figure">
+                        <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
+	<l n="34">Mon âme en est préoccupée, </l>
+	<l n="35">Et si je ne vois pas comment </l>
+	<l n="36">Y réussir présentement, </l>
+	<l n="37">Ah, que la faim me rend avide </l>
+	<l n="38">Mais toi Marquis de la Mâche à Vide, </l>
+	<l n="39">Ne sais-tu point quelque secret. </l>
+</sp>
+<sp who="#le-marquis-de-mache-a-vide">
+                        <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
+<note type="L">Rôlet : Terme familier. Petit rôle ; il ne se dit que figurément pour signifier la vie, le rôle de chacun. [L]</note>
+	<l n="40">Je suis au bout de mon rôlet, </l>
+	<l n="41">Ventre, j'enrage, je déteste. </l>
+</sp>
+<sp who="#le-baron-de-la-triste-figure">
+                        <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
+	<l n="42">Que cette défense est funeste. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="43">Ah, quelle malédiction. </l>
+</sp>
+<sp who="#le-marquis-de-mache-a-vide">
+                        <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
+	<l n="44">Ah, quelle désolation, </l>
+	<l n="45">Quand j'y pense j'entre en furie </l>
+	<l n="46">Mais Chevalier de l'Industrie, </l>
+	<l n="47">Dont l'esprit est grand à tel point. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="48">Messieurs ne vous affligez point, </l>
+	<l n="49">Je ne suis pas encor si buse </l>
+	<l n="50">Que je n'aie en moi quelque ruse, </l>
+	<l n="51">L'industrie a mille secrets </l>
+	<l n="52">Qui ne nous manquerons jamais, </l>
+	<l n="53">Je possède les avantages </l>
+	<l n="54">D'avoir bien fait des personnages, </l>
+	<l n="55">Et m'en pique sans vanité </l>
+	<l n="56">J'ai fait l'homme de qualité, </l>
+	<l n="57">J'ai fait, et le brave, et l'illustre </l>
+	<l n="58">Après cela j'ai fait le rustre, </l>
+	<l n="59">J'ai fait le Postillon aux champs </l>
+	<l n="60">Parfois un de ces gros marchands, </l>
+	<l n="61">Puis j'ai fait l'Ecclésiastique </l>
+	<l n="62">J'ai fait le courtaud de boutique </l>
+	<l n="63">Étant dessus le grand chemin </l>
+	<l n="64">J'ai fait le pauvre Pèlerin. </l>
+	<l n="65">Pour vous exprimer mon mérite </l>
+	<l n="66">J'ai même contrefait l'Hermite, </l>
+	<l n="67">Ensuite, à mon retour d'Arras </l>
+	<l n="68">J'y vendis de la mort aux rats. </l>
+	<l n="69">Si bien qu'il n'est point de rubrique </l>
+	<l n="70">Que je n'aie mis en pratique, </l>
+	<l n="71">Je fus depuis solliciteur </l>
+	<l n="72">Enfin je suis un grand acteur, </l>
+	<l n="73">J'ai crié jusqu'à des oublies </l>
+	<l n="74">Pour mieux faire mes fourberies, </l>
+	<l n="75">En ce temps-là j'étais fort bien </l>
+	<l n="76">J'étais tout, et ne suis plus rien, </l>
+	<l n="77">Mais quoi la défense en est cause </l>
+	<l n="78">Je veux être encor quelque chose, </l>
+	<l n="79">Et vous faire avouer à tous </l>
+	<l n="80">Que seul, je vaux tous les filous. </l>
+</sp>
+<sp who="#le-marquis-de-mache-a-vide">
+                        <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
+	<l n="81">Tu ne manques jamais d'adresse </l>
+	<l n="82">Quand tu veux faire quelque pièce. </l>
+</sp>
+<sp who="#le-baron-de-la-triste-figure">
+                        <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
+	<l n="83">Il est vrai que le Chevalier </l>
+	<l n="84">Est expert, en notre métier. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="85">Expert, de notre art c'est la perle </l>
+	<l n="86">La peste que c'est un fin merle, </l>
+	<l n="87">C'est le plus adroit des Larrons. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="88">Çà voyons ce que nous ferons, </l>
+	<l n="89">Et tâchons tous à si bien faire </l>
+	<l n="90">Que nous nous sortions de misère, </l>
+	<l n="91">Ayez donc toujours l'oeil sur moi </l>
+	<l n="92">Et je vous promets sur ma foi, </l>
+	<l n="93">Que mes soins et toutes mes veilles </l>
+	<l n="94">S'en vont produire des merveilles, </l>
+	<l n="95">Coulez-vous tous en quelque coin </l>
+	<l n="96">Pour me secourir au besoin, </l>
+	<l n="97">Surtout ayez en la mémoire </l>
+	<l n="98">D'avoir quelque jaquette noire, </l>
+	<l n="99">Que nos femmes, et nos valets </l>
+	<l n="100">Dans cette Maison soient tout prêts, </l>
+	<l n="101">Et que chacun de vous devine </l>
+	<l n="102">Au moindre mot ou moindre mine, </l>
+	<l n="103">Que votre esprit soit préparé </l>
+	<l n="104">À tout ce que j'entreprendrai, </l>
+	<l n="105">Mais j'entends quelqu'un qui s'avance </l>
+	<l n="106">Cachez-vous avec diligence. </l>
+<stage type="hide">Les trois filous se cachent, et le Chevalier de l'Industrie écoute ce qui se dit.</stage>
+</sp>
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. La Roque, Guillot.</head>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="107">Hélas que je suis malheureux ! </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="108" part="I">Qu'avez-vous ? </l><!-- @syll="3"-->
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="108" part="F">Je suis amoureux. </l><!-- @syll="5"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="109">Est-ce un si grand malheur mon Maître. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="110">Tout autant qu'il le saurait être, </l>
+	<l n="111">Puisque je me vois maintenant </l>
+	<l n="112">Fort amoureux et sans argent, </l>
+	<l n="113">Peut-on voir un malheur semblable. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="114">Il est vrai que c'est là le diable, </l>
+	<l n="115">Car le plus parfait amoureux </l>
+	<l n="116">N'est qu'une bête étant un gueux, </l>
+	<l n="117">Quoi Monsieur au clair de la Lune </l>
+	<l n="118">Espérez-vous faire fortune, </l>
+	<l n="119">En courant comme un loup-garou </l>
+	<l n="120">Sans savoir comment ni par où, </l>
+	<l n="121">Vous achèverez votre course </l>
+	<l n="122">Encor si votre pauvre bourse, </l>
+	<l n="123">Avait le ventre bien enflé </l>
+	<l n="124">Je serais un peu consolé, </l>
+	<l n="125">Mais hélas Monsieur la pauvrette </l>
+	<l n="126">Est si malingreuse et si nette, </l>
+	<l n="127">Et dans un si piteux état </l>
+	<l n="128">Que jamais rien ne fut si plat. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="129">C'est là ce qui gêne mon âme </l>
+	<l n="130">Parce qu'à l'objet qui m'enflamme, </l>
+	<l n="131">Il doit faire voir ce trésor </l>
+	<l n="132">Qu'on appelle la toison d'or, </l>
+	<l n="133">Dont les machines sans pareilles </l>
+	<l n="134">Passent pour autant de merveilles, </l>
+	<l n="135">Nous venons de faire dessein </l>
+	<l n="136">D'aller nous divertir demain, </l>
+	<l n="137">À cette illustre Comédie. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="138">Ce dessein est une folie </l>
+	<l n="139">Comment vous êtes assez fol </l>
+	<l n="140">Pour faire l'amour sans un sol, </l>
+	<l n="141">Si vous aviez donc la pistole </l>
+	<l n="142">Vous feriez diablement le drôle, </l>
+	<l n="143">C'est avoir l'esprit bien gaillard </l>
+	<l n="144">Qu'aimer quand on n'a pas le liard, </l>
+	<l n="145">L'argent fait aller la cuisine </l>
+	<l n="146">Vive l'amour pourvu qu'on dîne, </l>
+	<l n="147">On fait mal le passionné </l>
+	<l n="148">Alors que l'on n'a pas dîné, </l>
+	<l n="149">De sorte que si bon vous semble </l>
+	<l n="150">Nous resterons d'accord ensemble, </l>
+	<l n="151">Que pour être amant sans chagrin </l>
+	<l n="152">Il faut posséder le douzain, </l>
+	<l n="153">Je nomme donc votre entreprise </l>
+	<l n="154">Avec respect une sottise, </l>
+	<l n="155">Comme vous savez comme Guillot </l>
+	<l n="156">Qu'un pauvre homme n'est rien qu'un sot </l>
+	<l n="157">Ainsi jugez ce que vous êtes </l>
+	<l n="158">Aux entreprises que vous faites. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="159">Cesse de me pousser à bout </l>
+	<l n="160">Dis-moi peut-on songer à tout, </l>
+	<l n="161">Se voyant prêt d'une maîtresse </l>
+	<l n="162">Qui nous engage avec adresse, </l>
+	<l n="163">À faire tout ce qui lui plaît, </l>
+	<l n="164">Ah ! Si tu savais ce que c'est </l>
+	<l n="165">Qu'aimer nous serions sans conteste. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="166">Ah ! Monsieur je le sais de reste </l>
+	<l n="167">Quoique je ne sois qu'un lourdaud. </l>
+	<l n="168">J'aimerais peut-être ; et trop tôt, </l>
+	<l n="169">Mais comme il faut être bien riche </l>
+	<l n="170">Pour aimer, et n'être pas chiche, </l>
+	<l n="171">Je quitte là le féminin </l>
+	<l n="172">Pour ne m'attacher qu'au bon vin. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="173">Ah ! Guillot si tu savais comme... </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="174">Mais Monsieur quel était cet homme, </l>
+	<l n="175">Qui vous a naguère accosté </l>
+	<l n="176">Quand de vous j'étais écarté. </l>
+	<l n="177">Dont je n'ai pu par la distance </l>
+	<l n="178">Avoir aucune connaissance, </l>
+	<l n="179">À qui vous avez tant parlé. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="180">Un savant qui m'a consolé, </l>
+	<l n="181">Sans avoir l'heur de le connaître </l>
+	<l n="182">Mais Guillot qui m'a fait paraître, </l>
+	<l n="183">Tant d'esprit, et de jugement </l>
+	<l n="184">Que j'en suis dans l'étonnement, </l>
+	<l n="185">Et je n'aurai ni bien ni joie </l>
+	<l n="186">Jusqu'à ce que je le revoie, </l>
+	<l n="187">Ah ! Que sa conversation </l>
+	<l n="188">M'a donné d'admiration, </l>
+	<l n="189">Il s'est venu mettre en matière </l>
+	<l n="190">De la plus aimable manière, </l>
+	<l n="191">Que jamais aucun homme ait fait </l>
+	<l n="192">Bref, c'est un homme si parfait, </l>
+	<l n="193">Si charmant par son éloquence </l>
+	<l n="194">Que je veux avoir connaissance, </l>
+	<l n="195">De cet incomparable esprit, </l>
+	<l n="196">Tu sauras Guillot qu'il m'a dit, </l>
+	<l n="197">Mille choses touchant ma vie </l>
+	<l n="198">Qui font admirer son génie, </l>
+	<l n="199">Même il m'a promis en ce jour </l>
+	<l n="200">Sur le sujet de mon amour, </l>
+	<l n="201">Un moyen tout à fait extrême </l>
+	<l n="202">Pour être aimé de ce que j'aime, </l>
+	<l n="203">Conclusion, je le veux voir </l>
+	<l n="204">Pour cela de tout mon pouvoir, </l>
+	<l n="205">Je l'ai supplié plus d'une heure </l>
+	<l n="206">De dire son nom, sa demeure, </l>
+	<l n="207">Mais enfin tout notre entretien </l>
+	<l n="208">S'est fini sans en savoir rien, </l>
+	<l n="209">Je n'ai pu de lui rien apprendre </l>
+	<l n="210">Sinon qu'il se doit venir rendre, </l>
+	<l n="211">En quelque part autour d'ici </l>
+	<l n="212">J'espère lui parler ainsi. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="213">N'est-ce point quelque diable infâme </l>
+	<l n="214">Qui tâche d'attraper votre âme, </l>
+	<l n="215">Car assez souvent le démon </l>
+	<l n="216">Prend justement l'occasion, </l>
+	<l n="217">Que le malheur nous persécute </l>
+	<l n="218">Afin de trouver chape-chute. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="219">Tu me tiens un discours de fol. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="220">Il pourrait vous tordre le col, </l>
+	<l n="221">Le diable est une fine mouche. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="222">Bref de la nuit je ne me couche, </l>
+	<l n="223">Qu'après avoir entretenu </l>
+	<l n="224">Cet habile homme comme j'ai vu, </l>
+	<l n="225">Un désir curieux m'en presse </l>
+	<l n="226">Et toi mets toute ton adresse, </l>
+	<l n="227">À chercher sur ce diamant </l>
+	<l n="228">Cinquante louis promptement, </l>
+	<l n="229">Mais garde qu'on ne te le vole. </l>
+<stage type="give">Il lui donne sa bague.</stage>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="230">Au diablezot je suis un drôle, </l>
+	<l n="231">Que l'on n'attrape pas ainsi </l>
+	<l n="232">Pour fin je le suis Dieu merci, </l>
+	<l n="233">Autant que filou puisse l'être </l>
+	<l n="234">En subtilité, je suis maître, </l>
+	<l n="235">Sachez que je ne suis pas niais </l>
+	<l n="236">Et que je sais bien tous les biais, </l>
+	<l n="237">Desquels on se sert pour la grippe </l>
+	<l n="238">Je sais comme quoi l'on accipe, </l>
+	<l n="239">Et je sais comme il m'en faut garder </l>
+	<l n="240">Allez-vous en sans plus tarder, </l>
+	<l n="241">Et me laissez seulement faire. </l>
+<stage type="exit">Il sort.</stage>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="242">Adieu le ciel te soit prospère. </l>
+</sp>
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III.</head>
+<sp who="#guillot">
+                        <speaker>GUILLOT, seul.</speaker>
+	<l n="243">Il me prend pour quelque innocent </l>
+	<l n="244">J'en duperais moi seul un cent, </l>
+	<l n="245">Et quand je veux faire un chef-d'oeuvre </l>
+	<l n="246">Je suis un fort rusé manoeuvre ? </l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Le Chevalier de l'Industrie, Guillot.</head>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="247">Ah ! Votre serviteur mon bon. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT, à part.</speaker>
+	<l n="248">Voici quelque attrape-minon. </l>
+</sp><!--@stage="aparte"-->
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE, à part.</speaker>
+	<l n="249">Il faut de vrai que je t'attrape. </l>
+</sp><!--@stage="aparte"-->
+<sp who="#guillot">
+                        <speaker>GUILLOT, à part.</speaker>
+	<l n="250">Il croit déjà mordre à la grappe, </l>
+	<l n="251">Je suis le vôtre de bon coeur.</l>
+</sp><!--@stage="aparte"-->
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="252">Ah ! Vous me faites trop d'honneur, </l>
+	<l n="253">Et je vous en suis redevable </l>
+	<l n="254">Mais comme je suis secourable, </l>
+	<l n="255">Je viens ici pour votre bien. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="256">Pour mon bien, vous ne tenez rien, </l>
+	<l n="257">Si c'est mon bien, qui vous amène </l>
+	<l n="258">Vous n'avez qu'à prendre la peine </l>
+	<l n="259">Bientôt de vous en retourner. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="260">C'est tout à fait mal raisonner, </l>
+	<l n="261">Par ce bien je crois faire entendre, </l>
+	<l n="262">Que mon dessein est de vous rendre </l>
+	<l n="263">Mon service, effectivement. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="264">Je vous entends présentement, </l>
+	<l n="265">Mais aux offres que vous me faites </l>
+	<l n="266">Puis-je demander qui vous êtes. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="267">Qui je suis, homme de savoir </l>
+	<l n="268">Homme qui sait tout sans rien voir. </l>
+	<l n="269">Qui sais et tout dire et tout faire </l>
+	<l n="270">Enfin homme extraordinaire, </l>
+	<l n="271">Je sais quel est votre souci </l>
+	<l n="272">Et ce qui vous amène ici, </l>
+	<l n="273">Je sais quelles sont toutes choses </l>
+	<l n="274">Les effets de toutes les causes, </l>
+	<l n="275">Je sais le présent l'avenir </l>
+	<l n="276">Je sais les malheurs prévenir, </l>
+	<l n="277">Je sais de plus que votre maître. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="278">Mais quelqu'un vous l'a dit peut-être. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="279">Sans me rien dire je sais tout. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="280">Toutes choses de bout en bout. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="281">Toutes les sciences sont nôtres. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="282">Que diables savant donc les autres, </l>
+	<l n="283">Quel métier est le vôtre, enfin. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="284">Vous saurez que je suis devin. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="285">De quel vin, du vin de Sancerre </l>
+	<l n="286">De Chablis, de Beaune, d'Auxerre. </l>
+	<l n="287">Car vous voyez un altéré </l>
+	<l n="288">Qui boit comme un désespéré, </l>
+	<l n="289">Quelque bon vin que j'aperçoive, </l>
+	<l n="290">Il faut aussitôt que je le boive, </l>
+	<l n="291">Et je vous vais boire des yeux </l>
+	<l n="292">Si vous ne vous expliquez mieux, </l>
+	<l n="293">Dépêchez donc car j'ai la mine. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="294">N'est-il pas devin qui devine, </l>
+	<l n="295">Quoi suis-je un esprit mal tourné. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="296">Ah ! Le bon métier de damné, </l>
+	<l n="297">Car on ne peut sans diablerie </l>
+	<l n="298">Sans sortilège et sans magie, </l>
+	<l n="299">Nullement en venir à bout. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="300">Ah ! Vous vous trompez, point du tout, </l>
+	<l n="301">Ne montre-t-on pas la science </l>
+	<l n="302">Qui nous donne la connaissance, </l>
+	<l n="303">De ces choses sans nous damner. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="304">Puisque vous savez deviner </l>
+	<l n="305">Devinez un peu quelle affaire </l>
+	<l n="306">Mon maître m'a chargé de faire.</l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="307">Si vous en voulez voir l'effet </l>
+	<l n="308">Vous serez bientôt satisfait, </l>
+	<l n="309">Pour vous le dire en trois paroles </l>
+	<l n="310">Vous cherchez cinquante pistoles, </l>
+	<l n="311">Dessus un certain diamant </l>
+	<l n="312">Parlai-je véritablement, </l>
+	<l n="313">De plus il faut que je vous die </l>
+	<l n="314">Que c'est pour voir la Comédie, </l>
+	<l n="315">Où votre maître a fait dessein </l>
+	<l n="316">De mener des Dames demain, </l>
+	<l n="317">N'est-ce pas ce qui fait sa peine </l>
+	<l n="318">Et ce qui dans ce lieu vous mène. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="319">Parbleu vous l'avez deviné </l>
+	<l n="320">Votre esprit est bien raffiné, </l>
+	<l n="321">Pour savoir un secret semblable </l>
+	<l n="322">Il faut du moins parler au Diable. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="323">C'est là mon moindre effort d'esprit. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="324">Il faut que quelqu'un vous l'ait dit. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="325">Quoi doutez-vous de ma science. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="326">Vous en avez en abondance, </l>
+	<l n="327">Et vous y savez triompher </l>
+	<l n="328">Plus que tous les Diables d'Enfer. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="329">Je veux vous indiquer un homme </l>
+	<l n="330">Qui vous donnera votre somme, </l>
+	<l n="331">Lorsque vous le désirerez. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="332">Monsieur que vous m'obligerez, </l>
+	<l n="333">Enseignez-le moi je vous prie, </l>
+	<l n="334">Je suis à vous toute ma vie, </l>
+	<l n="335">Que les affligés sont contents </l>
+	<l n="336">Quand ils trouvent d'honnêtes gens, </l>
+	<l n="337">Sans vous je ne savais que faire. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="338">Appelons-le pour cette affaire, </l>
+	<l n="339">C'est un homme de probité </l>
+	<l n="340">Médecin expérimenté, </l>
+	<l n="341">Rempli d'esprit et d'éloquence </l>
+	<l n="342">Qui ne fait rien qui ne balance, </l>
+	<l n="343">Mais pour vous servir promptement </l>
+	<l n="344">Donnez-moi votre diamant, </l>
+	<l n="345">Pour lui présenter à la vue. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT, lui donne son diamant.</speaker>
+	<l n="346">Savez-vous la porte, et la rue, </l>
+	<l n="347">Car vous pourriez vous égarer </l>
+	<l n="348">Peut-être en allant lui montrer. </l>
+</sp><!--@stage="give"-->
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="349">Ah ! Non je ne suis pas personne </l>
+	<l n="350">Qu'il faille qu'aucune soupçonne, </l>
+	<l n="351">Je vous le rends de tout mon coeur. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT, le refusant.</speaker>
+	<l n="352">Non je suis votre serviteur, </l>
+	<l n="353">Je n'y trouve rien à redire</l>
+	<l n="354">Ce que j'en dis n'est que pour rire, </l>
+	<l n="355">Et suis tellement innocent </l>
+	<l n="356">Que même je veux être absent, </l>
+	<l n="357">Alors que vous ferez la chose</l>
+	<l n="358">Sur vous seul mon espoir repose, </l>
+	<l n="359">Car vous ferez le tout fort bien </l>
+	<l n="360">Sans que je me mêle de rien, </l>
+	<l n="361">Votre nom Monsieur je vous prie. </l>
+</sp><!--@stage="push"-->
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="362">Le Chevalier de l'Industrie. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="363">Ce Gentilhomme est de renom </l>
+	<l n="364">Car il s'appelle d'un beau nom. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE, appelant un autre filou en Médecin.</speaker>
+	<l n="365">Holà Docteur Illustrissime </l>
+	<l n="366">Vous peut-on dire un mot sans crime. </l>
+</sp><!--@stage="call/imitate"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Le Comte de Plume Sèche en Médecin, Le Chevalier de l'Industrie, Guillot.</head>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="367">Oui vous aurez attention </l>
+	<l n="368">Honneur, salut dilection, </l>
+	<l n="369">Désirez-vous quelque Ordonnance. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE, bas à Plume Sèche.</speaker>
+	<l n="370">Voilà la fourbe qui s'avance, </l>
+	<l n="371">Je tiens déjà le diamant </l>
+	<l n="372">Amuse-le quelque moment, </l>
+	<l n="373">Dis-lui s'il parle de pistoles </l>
+	<l n="374">Que sa cervelle est des plus folles, </l>
+	<l n="375">Car quittant tous deux, par malheur, </l>
+	<l n="376">Peut-être il crierait au voleur, </l>
+	<l n="377">Et n'ayant rien pour nous défendre </l>
+	<l n="378">On nous pourrait aisément prendre, </l>
+	<l n="379">Demeure donc, et ne crains rien </l>
+	<l n="380" part="I">Je vais faire. </l><!-- @syll="3"-->
+</sp><!--@stage="low/toward"-->
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+<stage type="closer/toward/low">Il lui parle à l'oreille. </stage>
+	<l n="380" part="F">Je t'entends bien. </l><!-- @syll="5"-->
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="381">Appelle-moi de ce nom drôle. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="382">Va-t'en je jouerai bien mon rôle, </l>
+	<l n="383">Fais-le-moi venir maintenant. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE, parlant à Guillot.</speaker>
+	<l n="384">Allez recevoir votre argent. </l>
+<stage type="aparte">À part.</stage>
+	<l n="385">Moi je vais avec mon adresse </l>
+	<l n="386">Travailler à finir la pièce. </l>
+<stage type="exit">Il sort.</stage>
+</sp><!--@stage="toward"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Le Comte de Plume Sèche, Guillot.</head>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE, à Guillot.</speaker>
+	<l n="387">Monsieur approchez-vous de moi </l>
+	<l n="388">Avant que d'entrer dans l'emploi, </l>
+	<l n="389">Afin que l'on y remédie </l>
+	<l n="390">Contez-moi votre maladie. </l>
+</sp><!--@stage="toward"-->
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="391">Moi Monsieur je me porte bien. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="392">Ah ! Votre mal ne sera rien, </l>
+	<l n="393">Pourvu que vous soyez docile </l>
+	<l n="394">À prendre un remède facile, </l>
+	<l n="395">Donc pour vous guérir proprement </l>
+	<l n="396">On vous prépare un lavement, </l>
+	<l n="397">Holà Monsieur l'Apothicaire </l>
+	<l n="398">Que l'on apporte le clystère, </l>
+	<l n="399">Il faut que cette injection </l>
+	<l n="400">Prépare la purgation. </l>
+	<l n="401">Un Apothicaire sort une Seringue à la main. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="402">À quoi diable tout ce mystère </l>
+	<l n="403">Ils me vont flûter le derrière, </l>
+	<l n="404">Si je ne fais le résolu </l>
+	<l n="405">Apothicaire malotru, </l>
+	<l n="406">Vous me paierez cette folie. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="407">Allons vite qu'on le lie, </l>
+	<l n="408">L'apothicaire lui donne le lavement dans le nez, et s'en va. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="409">Ah ! Le chien de médicament </l>
+	<l n="410">Ils m'ont fait boire un lavement, </l>
+	<l n="411">Médecin que le Diable emporte </l>
+	<l n="412">Me payerez-vous de cette sorte. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="413">Ne songez point à ce métal </l>
+	<l n="414">C'est ce qui fait tout votre mal. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="415">Hélas tout ce qui fait ma peine </l>
+	<l n="416">C'est que ma bourse n'est pas pleine, </l>
+	<l n="417">Remplissez-la-moi promptement </l>
+	<l n="418">Et j'oublierai le lavement, </l>
+	<l n="419">Je pardonne à l'Apothicaire </l>
+	<l n="420">L'affront qu'il a voulu me faire, </l>
+	<l n="421">Mais qu'on me donne bien, et beau </l>
+	<l n="422">Ou de l'argent ou mon Anneau. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="423">Comme ce pauvre homme extravague. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="424">Rendez-moi s'il vous plaît ma bague, </l>
+	<l n="425">Ou bien me donnez de l'argent. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="426">Ô bons Dieux, que son mal est grand, </l>
+	<l n="427">Véritablement la folie </l>
+	<l n="428">Est une étrange maladie. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="429">Mes cinq cent livres s'il vous plaît </l>
+	<l n="430">On vous paiera bien l'intérêt. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="431">Qu'entends-je, hélas quelle boutade </l>
+	<l n="432">Monsieur que vous êtes malade, </l>
+	<l n="433">Tâchez de revenir à vous. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="434">On me met donc au rang des fous, </l>
+	<l n="435">Alors que mon bien je demande. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="436">Que son extravagance est grande. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="437">Quoi l'on traite d'extravagant </l>
+	<l n="438">Quiconque emprunte de l'argent, </l>
+	<l n="439">Que le Diable vous extravague </l>
+	<l n="440">Si vous ne me rendez ma bague. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="441">Ah ! Que son esprit est perdu. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="442">Vous en avez menti cocu. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="443">Chassez de votre fantaisie </l>
+	<l n="444">Cette incommode frénésie, </l>
+	<l n="445">Et rappelez votre raison. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="446">La peste soit du vieux barbon, </l>
+	<l n="447">Quoi Monsieur de la Médecine </l>
+	<l n="448">Nous prendrons donc ici racine, </l>
+	<l n="449">Çà délivrez-moi promptement </l>
+	<l n="450">De l'argent ou mon diamant, </l>
+	<l n="451">Et laissons-là l'extravagance. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="452">Cet homme est plus mal qu'on ne pense, </l>
+	<l n="453">Hélas ! Que j'ai pitié de lui </l>
+	<l n="454">N'avez-vous rien pris d'aujourd'hui. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="455">Non, mais je suis tout prêt à prendre </l>
+	<l n="456">L'argent qu'on me fait tant attendre, </l>
+	<l n="457">Ah ! Qu'on fait ici de façons </l>
+	<l n="458">Donnez-moi tout en patagons, </l>
+	<l n="459">En Louis ou bien en Louise </l>
+	<l n="460">Pourvu que l'argent soit de mise, </l>
+	<l n="461">En écus d'or, en écus blancs </l>
+	<l n="462">En pièces de quarante francs, </l>
+	<l n="463">Ou me le payez en monnoie </l>
+	<l n="464">Je n'en aurai pas moins de joie, </l>
+	<l n="465">Nous serons tous deux satisfaits. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="466">Nous ne le guérirons jamais. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="467">Voilà donc ta chanson première </l>
+	<l n="468">Épouvantail de chènevière. </l>
+	<l n="469">Comment nous ne conclurons rien. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="470">Ah ! Que ne vous portez-vous bien. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="471">Je me porte mieux que toi traître </l>
+	<l n="472">Je l'enverrais volontiers paître, </l>
+	<l n="473">Si je tenais mon diamant. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="474">Il n'a plus aucun jugement. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="475">Quoi donc nomme-t-on fol en France </l>
+	<l n="476">Tous ceux qui n'ont point de finance, </l>
+	<l n="477">Si celui qui n'a point d'argent </l>
+	<l n="478">Passe pour être extravagant, </l>
+	<l n="479">J'en vois bien à la Comédie </l>
+	<l n="480">Malade de ma maladie, </l>
+	<l n="481">Ah ! Médecin des Médecins </l>
+	<l n="482">Guérissez-nous, nous serons sains. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="483">Ah ! Je crois son mal incurable. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="484">Et moi je crois ton âme au Diable, </l>
+	<l n="485">En retenant présentement </l>
+	<l n="486">Et l'argent, et le diamant, </l>
+	<l n="487" part="I">Pourquoi le retiens-tu donc. </l><!-- @syll="7"-->
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="487" part="F">Parce... </l><!-- @syll="1"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="488">Nous jouons ici quelque farce, </l>
+	<l n="489">Personne, n'en saurait douter. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="490">Je vais vous médicamenter, </l>
+	<l n="491">Afin que votre mal s'apaise. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="492">Cinq cent francs me feraient bien aise. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="493">Votre bras, voyons votre pouls </l>
+	<l n="494">S'il est, ou trop vite, ou trop doux. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="495">Monsieur je n'ai ni poux ni puce </l>
+	<l n="496">Feu ma mère qu'on nommait luce, </l>
+	<l n="497">Eut grand soin de me les tuer </l>
+	<l n="498">Dépêchez donc d'effectuer, </l>
+	<l n="499">Tous les effets de vos paroles </l>
+	<l n="500">Me donnant cinquante pistoles. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="501">Sans doute qu'il est aux abois. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="502">Je ne veux que de l'or de poids. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="503">Ah ! Pauvre tête sans cervelle </l>
+	<l n="504">Comment est-ce qu'on vous appelle. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="505">M'appeler je suis diligent </l>
+	<l n="506">Quand c'est pour prendre de l'argent, </l>
+	<l n="507">Il n'est pas besoin qu'on me huche </l>
+	<l n="508">Vous me prenez pour une cruche ; </l>
+	<l n="509">Me parlant de cette façon </l>
+	<l n="510">J'irais dix ans pour un teston. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="511">Ce n'est pas pour cela pauvre homme </l>
+	<l n="512">Mais dites-moi comme on vous nomme. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="513">De l'argent, mon nom est Guillot. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="514">Votre nom est un nom bien sot, </l>
+	<l n="515">Et je n'en vois point un si dogue </l>
+	<l n="516">Au lieu de notre synagogue, </l>
+	<l n="517">Pour en avoir un à gogo </l>
+	<l n="518">On vous nommera virago. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="519">Que m'importe comme on me nomme </l>
+	<l n="520">Pourvu qu'on me donne ma somme. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="521" part="I">Incontinent. </l><!-- @syll="4"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="521" part="F">Dieu soit loué. </l><!-- @syll="4"-->
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+<stage type="call">Il appelle ses compagnons.</stage>
+	<l n="522">Je vais appeler Macaé, </l>
+	<l n="523">Macaé la chandelle noire </l>
+	<l n="524">Et le bonnet blanc comme ivoire, </l>
+	<l n="525">Vous serez guéris des premiers. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="526">Ah ! Ce sont ici des Sorciers, </l>
+	<l n="527">On ne parle que de magie. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+<stage type="give/light">Il lui donne une bougie, et lui donne un bonnet blanc en forme de pain de sucre.</stage>
+	<l n="528">Tenez en main cette bougie. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="529">Moi pourquoi la tenir Monsieur. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="530" part="I">Il le faut. </l><!-- @syll="3"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="530" part="F">Ah ! Je meurs de peur. </l><!-- @syll="5"-->
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="531">Voici toute notre cabale. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="532">Ou plutôt la troupe infernale. </l>
+</sp>
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII.</head>
+<stage type="narration">Les trois autres filous viennent en robe noire, un bonnet blanc en forme de pain de sucre, et une bougie à la main, criant tous à la fois en tournant autour de Guillot, Virago, Macaé, Abdénago, et après avoir fait trois tours autour de lui, ils sortent et le laissent là, lequel demeure fort surpris. </stage>
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII.</head>
+<sp who="#guillot">
+                        <speaker>GUILLOT, seul planté tout droit, son bonnet en tête, et sa bougie en main.</speaker>
+	<l n="533">Ah ! Que d'inutiles paroles </l>
+	<l n="534">Pour donner cinquante pistoles, </l>
+	<l n="535">Comment loin de me les compter </l>
+	<l n="536">On s'amuse à viragoter. </l>
+</sp>
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. La Rocque, Guillot.</head>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="537">Enfin voici l'heure venue </l>
+	<l n="538">Que je dois posséder la vue, </l>
+	<l n="539">De cet homme tout merveilleux </l>
+	<l n="540">Qui se doit trouver en ces lieux ; </l>
+	<l n="541">Mais que vois-je, quelle figure </l>
+	<l n="542">C'est Guillot, ah ! Quelle aventure, </l>
+	<l n="543">Dis-moi que fais-tu là Mago </l>
+	<l n="544" part="I">Tu ne réponds rien. </l><!-- @syll="5"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="544" part="F">Virago. </l><!-- @syll="3"-->
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="545">Qu'est-ce que ce maraud veut dire </l>
+	<l n="546">Je ne suis pas d'humeur de rire, </l>
+	<l n="547">Ne fais pas ici l'enjoué </l>
+	<l n="548" part="I">Parle-moi juste. </l><!-- @syll="5"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="548" part="F">Macaé. </l><!-- @syll="3"-->
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="549">Quoi l'insolence de ce traître </l>
+	<l n="550">Va jusqu'à railler de son Maître. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="551" part="I">Abdenago. </l><!-- @syll="4"-->
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="551" part="F">Dis promptement </l><!-- @syll="4"-->
+	<l n="552">Qu'as-tu fait de mon diamant. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="553">Son diamant, quelle incartade </l>
+	<l n="554">Monsieur que vous êtes malade, </l>
+	<l n="555">Vous êtes à ce que je vois </l>
+	<l n="556">Pour le moins aussi mal que moi. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="557">Ma bague et point de raillerie. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="558">À la méchante maladie, </l>
+	<l n="559">Monsieur il faudrait y songer. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="560">Tu me veux donc faire enrager, </l>
+	<l n="561">Stupide et détestable bête </l>
+	<l n="562">Si ma somme n'est toute prête, </l>
+	<l n="563">Je te vais accabler de coups. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="564">Mon maître et moi, sommes deux fous, </l>
+	<l n="565">Chassons de démon d'avarice </l>
+	<l n="566">Qui cause tout notre supplice, </l>
+	<l n="567">Je suis un homme fort subtil </l>
+	<l n="568">Depuis quand ce mal vous tient-il, </l>
+	<l n="569">Présentement une saignée </l>
+	<l n="570">Vous serait fort bien ordonnée, </l>
+	<l n="571">Mais il vous faut auparavant </l>
+	<l n="572">Un lavement dans le ponant. </l>
+<stage type="touch">Il lui tâte le pouls.</stage>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="573">C'est trop, il faut perdre la vie. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="574">Arrêtez là votre furie </l>
+	<l n="575">Laissez-moi parler un moment </l>
+	<l n="576">Et vous aurez contentement. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="577">Armons-nous donc de patience, </l>
+	<l n="578">Savoir ce que dit et pense </l>
+	<l n="579">Ce pendard, ce maudit garçon. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="580">Monsieur comment vous nomme-t-on. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="581">Tu ne sais pas comme on m'appelle </l>
+	<l n="582">La Rocque, tête sans cervelle </l>
+	<l n="583">Patientons sans dire mot. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="584">Votre nom est un nom bien sot </l>
+	<l n="585">Et je n'en vois point un si dogue, </l>
+	<l n="586">Au lieu de notre synagogue </l>
+	<l n="587">Pour en avoir un à gogo, </l>
+	<l n="588">On vous nommera virago. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="589">Voyons si par ce qu'il veut faire, </l>
+	<l n="590">Nous découvrirons le mystère.</l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT, donne un bonnet et une bougie à son Maître comme à lui. Le regardant.</speaker>
+	<l n="591">Mettez en tête ce bonnet, </l>
+	<l n="592">Mon maître est beau marmouset, </l>
+	<l n="593">S'il en fut jamais à la foire </l>
+	<l n="594">Tenez cette chandelle noire. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="595">Tenons et voyons-en l'effet. </l>
+<stage type="turn">Guillot, fait autour de son maître comme les Filous avaient fait autour de lui, disant les mêmes mots, Virago, Macaé, Abdénago.</stage>
+<stage type="continue">LA ROCQUE, continue.</stage>
+	<l n="596">Et bien as-tu tout dit, tout fait </l>
+	<l n="597">Si je n'apprends tes artifices,</l>
+	<l n="598">Il faut qu'à présent tu périsses </l>
+	<l n="599">Oui tu te vois voir à ta fin. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="600">Monsieur suspendez mon destin, </l>
+	<l n="601">Et je m'en vais tout vous apprendre, </l>
+	<l n="602">Tantôt venant ici me rendre </l>
+	<l n="603">Pour aller emprunter l'argent </l>
+	<l n="604">Qu'il fallait sur ce diamant, </l>
+	<l n="605">J'ai rencontré le plus brave homme </l>
+	<l n="606">Qui soit de Paris jusqu'à Rome, </l>
+	<l n="607">Monsieur c'est un homme divin </l>
+	<l n="608">Il m'a dit qu'il était devin, </l>
+	<l n="609">Cet esprit extraordinaire </l>
+	<l n="610">Savait tout ce que j'allais faire, </l>
+	<l n="611">Mais si bien qu'il me l'a tout dit </l>
+	<l n="612">Ah ! Monsieur est un bel esprit, </l>
+	<l n="613">On ne peut aller au contraire </l>
+	<l n="614">Va je te ferai ton affaire, </l>
+	<l n="615">M'a-t-il dit, car un Médecin </l>
+	<l n="616">Qui demeure en ce lieu prochain, </l>
+	<l n="617">Te donnera dessus ton gage </l>
+	<l n="618">Ce que tu veux et davantage, </l>
+	<l n="619">Là-dessus j'ai fort bonnement </l>
+	<l n="620">Mis en ses mains mon diamant, </l>
+	<l n="621">Et lui d'une voix argentine </l>
+	<l n="622">Holà Docteur en médecine </l>
+	<l n="623">Descendez un peu jusqu'en bas </l>
+	<l n="624">Et puis s'étant parlé tout bas, </l>
+	<l n="625">Ils se sont séparés l'un l'autre </l>
+	<l n="626">En disant, Monsieur je suis vôtre, </l>
+	<l n="627">Et moi croyant qu'au Médecin, </l>
+	<l n="628">L'autre avait mis ma bague en main, </l>
+	<l n="629">Monsieur votre nom je vous prie </l>
+	<l n="630">Ai-je dit, Sieur de l'Industrie, </l>
+	<l n="631">En partant a-t-il répondu. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="632">Ah ! Mon diamant est perdu, </l>
+	<l n="633">Maudit Chien que tu m'es funeste. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="634">Écoutez, s'il vous plaît le reste, </l>
+	<l n="635">Après Monsieur le Médecin </l>
+	<l n="636">M'a dit que je n'étais pas sain, </l>
+	<l n="637">Et qu'en un mot ma maladie </l>
+	<l n="638">Était justement la folie, </l>
+	<l n="639">Quand j'ai demandé de l'argent </l>
+	<l n="640">Il m'a traité d'extravagant, </l>
+	<l n="641">Enfin ce Médecin maussade </l>
+	<l n="642">M'a dit que j'étais fort malade, </l>
+	<l n="643">Et tout aussitôt ordonné </l>
+	<l n="644">Qu'un lavement me fut donné, </l>
+	<l n="645">Certain maudit apothicaire </l>
+	<l n="646">M'est venu prendre par derrière ; </l>
+	<l n="647">Et m'a voulu clystériser </l>
+	<l n="648">Mais m'en voyant formaliser, </l>
+	<l n="649">Il a crié, que l'on le lie </l>
+	<l n="650">Pour le guérir de sa folie, </l>
+	<l n="651">Pour apaiser son Vertigo </l>
+	<l n="652">Qu'on fasse venir Virago, </l>
+	<l n="653">Macaé, des noms de grimoire </l>
+	<l n="654">Qui sont dans l'infernale Histoire</l>
+	<l n="655">Si bien qu'il les a fait venir </l>
+	<l n="656">Disant qu'il me voulait guérir, </l>
+	<l n="657">Le Chevalier de l'Industrie </l>
+	<l n="658">Était aussi de la partie, </l>
+	<l n="659">Et là tous d'un ton enroué </l>
+	<l n="660">Criaient Virago, Macaé, </l>
+	<l n="661">Tournant autour de ma personne </l>
+	<l n="662">Moi voyant cela je m'étonne, </l>
+	<l n="663">Abdenago, le Chevalier </l>
+	<l n="664">Se prêtaient tous deux le collier </l>
+	<l n="665">Virago, Macaé ce semble </l>
+	<l n="666">S'étendaient tout de même ensemble, </l>
+	<l n="667">Ainsi Monsieur ils m'ont joué </l>
+	<l n="668">Le Virago, le Macaé, </l>
+	<l n="669">Le Médecin et l'Industrie </l>
+	<l n="670">Étaient tous de la fourberie. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="671">Ah ! C'en est trop maraud tais-toi, </l>
+	<l n="672">Que je suis malheureux, suis-moi, </l>
+	<l n="673">Allons chercher sans plus attendre, </l>
+	<l n="674">Quelque ami pour les aller prendre. </l>
+</sp>
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Les Filous : Le Chevalier de l'Industrie, le Marquis de Mâche à Vide, le Comte de Plume Sèche, le Baron de la Triste-Figure. </head>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="675">Et bien ai-je subtilement </l>
+	<l n="676">Escamoté le diamant, </l>
+	<l n="677">Messieurs qui ne vous en déplaise </l>
+	<l n="678">J'entends et le pair et la presse, </l>
+	<l n="679">Et je suis peut-être un des adroits </l>
+	<l n="680">Qui soit parmi les fins matois. </l>
+</sp>
+<sp who="#le-comte-de-plume-seche">
+                        <speaker>LE COMTE DE PLUME SECHE.</speaker>
+	<l n="681">Moi Médecin d'apprentissage </l>
+	<l n="682">Ai-je mal fait mon personnage. </l>
+</sp>
+<sp who="#le-baron-de-la-triste-figure">
+                        <speaker>LE BARON DE LA TRISTE-FIGURE.</speaker>
+	<l n="683">Et quand mon rôle j'ai joué </l>
+	<l n="684">N'ai-je pas bien fait Macaé. </l>
+</sp>
+<sp who="#le-marquis-de-mache-a-vide">
+                        <speaker>LE MARQUIS DE MACHE A VIDE.</speaker>
+	<l n="685">Messieurs ; puisque chacun se loue </l>
+	<l n="686">Dans le personnage que je joue, </l>
+	<l n="687">Sans dire pâle Matago </l>
+	<l n="688">J'ai fort bien joué Virago, </l>
+	<l n="689" part="I">Paix-là. </l><!-- @syll="2"-->
+</sp>
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. La Rocque, Le Chevalier de l'Industrie, Guillot, et un de ses amis.</head> 
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="689" part="F">Furetons dans ces rues </l><!-- @syll="6"-->
+	<l n="690">Ce sont ici les avenues, </l>
+	<l n="691">Où nous pourrons prendre au collet </l>
+	<l n="692">Ceux qui m'ont volé mon valet, </l>
+	<l n="693">Mais gardons-nous de nous méprendre </l>
+	<l n="694">Un rare esprit me doit attendre, </l>
+	<l n="695">En quelque part autour d'ici </l>
+	<l n="696">Et je pense que le voici, </l>
+	<l n="697">Monsieur, la rencontre agréable </l>
+	<l n="698">Mon bonheur n'a point de semblable, </l>
+	<l n="699">De vous trouver au rendez-vous. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="700">Ah ! Le mien est beaucoup plus doux </l>
+	<l n="701">Mais trêve de galanterie. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT, lui regardant au nez.</speaker>
+	<l n="702">Ah ! Chevalier de l'Industrie, </l>
+	<l n="703">Qui m'avez pris mon diamant </l>
+	<l n="704">Rendez-le tout présentement, </l>
+	<l n="705">Autrement devin qui devine </l>
+	<l n="706">On vous donnera sur l'échine. </l>
+</sp><!--@stage="watch"-->
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="707">Guillot, en es-tu bien certain. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="708">Oui Monsieur, c'est notre devin. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="709">Allons vite qu'on me le rende. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="710">Puis après il faut qu'on le pende. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="711">Monsieur traitez-moi doucement </l>
+	<l n="712">Vous l'aurez tout présentement. </l>
+</sp>
+<sp who="#la-rocque">
+                        <speaker>LA ROCQUE.</speaker>
+	<l n="713">Dépêchons donc et sans mystère. </l>
+</sp>
+<sp who="#le-chevalier-de-l-industrie">
+                        <speaker>LE CHEVALIER DE L'INDUSTRIE.</speaker>
+	<l n="714">Le voilà, mais Monsieur j'espère, </l>
+	<l n="715" part="I">Un pardon. </l><!-- @syll="3"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+<stage type="escape">Le Chevalier de l'Industrie s'enfuit.</stage>
+	<l n="715" part="F">Gardez-vous-en bien </l><!-- @syll="5"-->
+	<l n="716">Il faut qu'il ait du ros de Chien, </l>
+	<l n="717">Ah ! Vous aurez de la batille </l>
+	<l n="718">La malepeste comme il drille, </l>
+	<l n="719">Mais puisqu'il ne nous nous manque rien </l>
+	<l n="720">Les malades se portent bien, </l>
+	<l n="721">Allons voir nos chères poupines </l>
+	<l n="722">Et les menons voir les Machines. </l>
+</sp>
+</div>
+</div>
+</body>
+</text>
 </TEI>

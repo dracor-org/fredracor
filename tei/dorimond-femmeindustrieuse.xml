@@ -1,1512 +1,1572 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="../css/tei.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>LA FEMME INDUSTRIEUSE, COMÉDIE</title>
-        <author born="1628" born_location="" death="1673" death_location="" academie="">DORIMOND, Nicolas Drouin dit</author>
-      </titleStmt>
-      <publicationStmt>
-        <editor/>
-        <publisher>Publié par Paul FIEVRE, octobre 2015, revu avril 2017.</publisher>
-        <idno>DORIMOND_FEMMEINDUSTRIEUSE</idno>
-        <rights>Creative Commons BY-NC-SA</rights>
-        <idno type="orig">DORIMOND_FEMMEINDUSTRIEUSE</idno>
-        <idno type="dracor" xml:base="https://dracor.org/id/">fre000480</idno>
-      </publicationStmt>
-      <SourceDesc>
-        <genre>Comédie</genre>
-        <inspiration>moeurs françaises</inspiration>
-        <structure>Un acte</structure>
-        <type>vers</type>
-        <periode>1661-1670</periode>
-        <taille>500-750</taille>
-        <permalien>http://gallica.bnf.fr/ark:/12148/bpt6k726596</permalien>
-      </SourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text>
-    <front>
-      <docTitle>
-        <titlePart type="main">LA FEMME INDUSTRIEUSE</titlePart>
-        <titlePart type="sub">COMÉDIE</titlePart>
-      </docTitle>
-      <docDate value="1661">M. DC. LXI. AVEC PRIVILÈGE DU ROI.</docDate>
-      <docAuthor id="DORIMOND, Nicolas Drouin dit" bio="dorimont">Par monsieur DORIMOND, comédien de Mademoiselle.</docAuthor>
-      <docImprint>
-        <privilege value="1661-03-26">
-          <head>PRIVILÈGE DU ROI.</head>
-          <p>Par grâce et privilège du Roi donné à Paris le 26 mars 1661, Signé le Roi en son conseil DE FAYES, il et permis au sieur DORIMOND, comédien de Mademoiselle, de faire imprimer les pièces de théâtres, par lui composée, et représentées par la Troupe de Mademoiselle à Paris, par tel imprimeur et libraire qu'il voudra, pendant cinq années : et défenses sont faites à touts autres d'imprimer ni vendre d'autre édition que celle de l'exposant, ou de ceux qui auront droit de lui, à peine de deux mille livres d'amende, de tous dépens, dommages, et intérêts, comme il est porté plus amplement par lesdites lettres.</p>
-          <p>Et le sieur Dorimond a cédé et transporté son privilège à Jean Ribou marchand libraire à Paris, pour en jouir suivant l'accord fait entre eux.</p>
-          <p>Registré sur le Livre de la Communauté, suivant l'Arrest de la Cour.</p>
-          <p>Signé JOSSE, Syndic.</p>
-          <p>Les Exemplaires ont été fournis.</p>
-        </privilege>
-        <acheveImprime value="1661-08-06">Achevé d'imprimer pour la première fois, le 6. août 1661.</acheveImprime>
-        <printer id="RIBOU">À PARIS, Chez Jean RIBOU, sur le Quais des Augustins, à l'Image Saint-Louis.</printer>
-      </docImprint>
-      <performance>
-        <premiere date="(inconnue)" location="(inconnue)"/>
-      </performance>
-      <div type="dedicace">
-        <adresse>À MONSEIGNEUR DANGLURE</adresse>
-        <head>Monsieur,</head>
-        <p>S'il fallait proportionner les offrandes que l'on vous fait à la grandeur de votre mérite, on ne vous en ferait jamais, et je n'aurais pas eu la témérité de vous faire don de ce petit ouvrage : sur cette assurance, et dans la connaissance que j'ai de votre générosité, et de la beauté de votre âme, j'ai pris le liberté de vous le présenter ; si vous jetez les yeux sur la hardiesse que je prends, considérez aussi, MONSIEUR, que vos attirez les coeurs de tout le monde par votre bel esprit, par la douceur de votre accueil et votre conversation, et qu'on ne se peut défendre de vous le témoigner, et de s'honorer de la glorieuse qualité,  </p>
-        <p>MONSIEUR,</p>
-        <p>Votre très humble et très obéissant serviteur.</p>
-        <p>DORIMONT.</p>
-      </div>
-      <castList>
-        <head>ACTEURS</head>
-        <castItem><role id="ISABELLE" sex="2" type="H" statut="bourgeois" age="A" stat_amour="Léandre">ISABELLE</role>, femme du Capitan.</castItem>
-        <castItem><role id="LE CAPITAN" sex="1" type="H" statut="soldat" age="A" stat_amour="Isabelle">LE CAPITAN</role>.</castItem>
-        <castItem><role id="TRAPOLIN" sex="1" type="H" statut="valet" age="A" stat_amour="néant">TRAPOLIN</role>, valet du Capitan.</castItem>
-        <castItem><role id="LÉANDRE" sex="1" type="H" statut="bourgeois" age="A" stat_amour="Isabelle">LÉANDRE</role>, Amante d'Isabelle.</castItem>
-        <castItem><role id="LE DOCTEUR" sex="1" type="H" statut="précepteur" age="A" stat_amour="néant">LE DOCTEUR</role>, précepteur de Léandre.</castItem>
-        <castItem><role id="COLINETTE" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">COLINETTE</role>.</castItem>
-      </castList>
-      <set location="Paris" country="France" periode="XVIIème" link="">La scène est à Paris.</set>
-    </front>
-    <body>
-      <div1 type="act" n="1">
-        <head/>
-        <div2 type="scene" n="1">
-          <head>SCÈNE PREMIÈRE.</head>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="1">Impatient amour, Démon qui me possède,</l>
-            <l id="2">Pour le mal que tu fais, n'as tu point de remède :</l>
-            <l id="3">Tu me fais tant de de mal, informent en l'auteur :</l>
-            <l id="4">Va le blesser du trait dont tu perces mon coeur ;</l>
-            <l id="5">Va le brûler des feux dont je suis consommée,</l>
-            <l id="6">Si j'aime pour le moins faits que je sois aimée ;</l>
-            <l id="7">Celui pour qui je souffre ignore mon tourment ;</l>
-            <l id="8">Rends nos ennuis communs, faits qu'il m'aime en l'aimant,</l>
-            <l id="9">Malgré mes surveillants inspire moi l'adresse</l>
-            <l id="10">De lui faire savoir la douleur qui me presse :</l>
-            <l id="11">Tu viens à mon secours, amour le sens bien ;</l>
-            <l id="12">Il faut aller trouver certain homme de bien,</l>
-            <l id="13">Dont il suit les conseil ; c'est un vrai pédagogue,</l>
-            <l id="14">Dont la taille crochue, et la mine de dogue,</l>
-            <l id="15">Ne donne point d'ombrage aux maris de ces lieux :</l>
-            <l id="16">Je lui dirai, Monsieur, on me suit en tout lieux. </l>
-            <l id="17">Un jeune homme de qui vous avez la conduite ;</l>
-            <l id="18">Parce qu'il est bien fait, et qu'il a du mérite,</l>
-            <l id="19">S'imagine qu'il a déjà gagné mon coeur :</l>
-            <l id="20">Réprimez la folie, arrêtez son ardeur.</l>
-            <l id="21">Pour peu que ce jeune homme ait d'esprit et d'adresse,</l>
-            <l id="22">Il viendra droit au but, il verra ma finesse,</l>
-            <l id="23">Voilà le vrai moyen, malgré mes espions,</l>
-            <l id="24">DE voir l'heureux succès de mes intentions,</l>
-            <l id="25">Quand une femme veut, le plus jaloux fantasque </l>
-            <l id="26">Est arrêté tout court, court-il comme un basque.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="2">
-          <head>SCÈNE II. Le Capitan, Isabelle.</head>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="27">Écartez-vous blondins, alcouistes, galants</l>
-            <l id="28">Champions de l'amour, amoureu indolents,</l>
-            <l id="29">Petit fort soutenu de colonnes d'ivoire,</l>
-            <l id="30">Je vous garderai bien, et j'aurai de la gloire ;</l>
-            <l id="31">Mais le première femme a pour un bine chéri,</l>
-            <l id="32">Pour nos malheurs trompé le Ciel et son mari,</l>
-            <l id="33">Et les filles pourraient bine tenir de la mère,</l>
-            <l id="34">Tout le sexe est fragile, et la femme est légère.</l>
-            <l id="35">Faisons donc bonne garde à l'entour de ce fort,</l>
-            <l id="36">Faisons ronde. Qui vive ? Ah ! Coquets, par le mort</l>
-            <l id="37" part="i">Qui vive donc ?</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="37" part="m">Mari.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="37" part="m">Qui valà ?</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="37" part="f">Soupirs, plainte.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="38" part="i">Et pour qui ?</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="38" part="m">Pour mari.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="38" part="f">Passez donc et sans crainte.</l>
-            <l id="39">Si c'était pour galants, ils auraient pu rentrer,</l>
-            <l id="40">Quand vous en auriez dû mille fois suffoquer,</l>
-            <l id="41" part="i">Qui va là, qui va là.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="41" part="f">La foi de mariage.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="42">Bon cela, si c'était, Monsieur, concubinage,</l>
-            <l id="43">Il pourrait promptement retourner sur ses pas,</l>
-            <l id="44">Mais visitons un peu tous nos meilleurs soldats;</l>
-            <l id="45">Ma charge est du grand soin, et de plus elle est telle,</l>
-            <l id="46">Qu'un mari doit partout planter la sentinelle.</l>
-            <l id="47">Pour le front promptement, venez ici pudeur,</l>
-            <l id="48">Pour les yeux modestie est un garçon de coeur.</l>
-            <l id="49">Pour la bouche je sais un soldat d'importance</l>
-            <l id="50">Pose le caporal, il s'appelle Silence,</l>
-            <l id="51">Pour le sein, il nous faut mettre sincérité,</l>
-            <l id="52">Sur le coeur il nous faut mettre fidélité.</l>
-            <l id="53">Ces endroits là sont ceux des premières approches,</l>
-            <l id="54">Aussi nous y mettrons des soldats sans reproche,</l>
-            <l id="55">Pour l'endroit où l'amour ne fut jamais oisif.</l>
-            <l id="56">Que faire, il nous y faut mette Génératif.</l>
-            <l id="57">Voilà la place en ordre, et j'en laisse la garde</l>
-            <l id="58">Au brave Trapolin ; mais d'où vient qu'il retarde ?</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="59">C'est qu'il sait que je suis une femme de bien,</l>
-            <l id="60">Qu'il n'appartient qu'à moi de ma garder fort bien.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="3">
-          <head>SCÈNE III. Trapolin, Isabelle, Capitan.</head>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="61">Pour bien garder un fort, il faut chose certaine,</l>
-            <l id="62">Bien boire et bien manger, et remplir sa bedaine,</l>
-            <l id="63">La mienne l'en j'en jure, et j'en ai le hoquet ;</l>
-            <l id="64">Mais approchons du fort, vois-je pas un coquet ?</l>
-            <l id="65" part="i">Qui va la.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="65" part="m">C'est mari.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <note type="L">Suisse : valet qui gardait l'entrée d'une maison, homme de maison, portier.</note>
-            <l id="65" part="f">Je suis pire qu'un suisse,</l>
-            <l id="66">Je méconnais mon maître en lui rendant service,</l>
-            <l id="67" part="i">Morbleu retirez-vous.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="67" part="f">Arrête Trapolin.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="68">Je percerai ta panse, et ferai du boudin.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="69" part="i">Quoi, moi qui suis mari.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="69" part="f">Il n'est mai qui tienne.</l>
-            <l id="70">Je gouverne le fort, que personne n'y vienne.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="71">Extrait de ma valeur et de mes actions,</l>
-            <l id="72">Toi qui m'a vu dompter cent mille nations,</l>
-            <l id="73">Ton courage me plaît, je ne suis plus en peine, </l>
-            <l id="74">Tu garderas ma femme en brave capitaine ;</l>
-            <l id="75">Ainsi qu'un gros jambon, couvre toi de lauriers,</l>
-            <l id="76">Je m'en vais mettre au jour d'autres exploits guerrier :</l>
-            <l id="77">Certain petit état nommé Coquetterie;</l>
-            <l id="78">Gouverné par un roi nommé Galanterie,</l>
-            <l id="79">Attaque incessamment mariage et maris, </l>
-            <l id="80">Et de leur République, il poursuit les débris,</l>
-            <l id="81">N'aime que le désordre, et rien que l'inconstance,</l>
-            <l id="82">Et moi, j'en veux en réprimer l'insolence,</l>
-            <l id="83">Je vais premièrement dans l'île des coquets</l>
-            <note type="L">Poulet : signifie aussi un petit billet amoureux qu'on envoie aux Dames galantes, ainsi nommé, parce qu'en le pliant on y faisait deux pointes qui representaient les ailes d'un poulet. [F]</note>
-            <l id="84">Les vaincre, et mes goujats mangeront leurs poulets.</l>
-            <l id="85">Puis j'irai massacrer tous les peuples de tendre</l>
-            <l id="86">De leur coeur amoureux jeter au vent la cendre</l>
-            <l id="87">Villages, villes, bourgs, bourgades et châteaux</l>
-            <l id="88">De chansons, billets doux, stances et madrigaux</l>
-            <l id="89">Seront de mes soldats traités d'étrange sorte</l>
-            <l id="90">Ils en feront carnage, ou le diable m'emporte.</l>
-            <l id="91">Les soupirs, les sanglots, les plaintes à leur tour</l>
-            <l id="92">Par mes ordres verront avorter l'art d'amour,</l>
-            <l id="93">Doux regard pourrais bine en prendre la défense ;</l>
-            <l id="94">Suivi d'inquiétude et de persévérance ;</l>
-            <l id="95">Mais je veux que soupçon leur coupe le chemin</l>
-            <l id="96">C'est un chef admirable, il est homme de main,</l>
-            <l id="97">Protestations, sois, feu déclaré, visite,</l>
-            <l id="98">Larmes, vers amoureux, entreprise, conduite,</l>
-            <l id="99">Ces pays-là seront is à feu comme à sang,</l>
-            <l id="100">Sans que l'on ait regard à mettre ni rang :</l>
-            <l id="101">Enfin je reviendrai vainqueur et plein de vie,</l>
-            <l id="102">Du royaume orgueilleux de la Coquetterie.</l>
-            <l id="103">Je veux que les maris me doivent leur bonheur</l>
-            <l id="104">M'élèvent un trophée en superbe vainqueur :</l>
-            <l id="105">Le mariage enfin est une République,</l>
-            <l id="106">Qui doit durer malgré tout l'aristocratique,</l>
-            <l id="107">L'empire des Coquets est trop grand ma foi</l>
-            <l id="108">Je veux que leur débris ne se doive qu'à moi.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="109">Les maris vous devront leur nouvelle disgrâce ;</l>
-            <l id="110">Les jaloux ont toujours du pire quoi qu'on fasse :</l>
-            <l id="111">Mais, Monsieur, dans combine serez-vous de retour ?</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="112">Pour ces exploits je veux le demis quart d'un jour :</l>
-            <l id="113" part="i">Adieu.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="113" part="f">Faites, Amour, le succès de ma flamme,</l>
-            <l id="114">S'ils captivent mon corps ils n'ont rien sur mon âme,</l>
-            <l id="115">Et mon aimable amant sous votre autorité,</l>
-            <l id="116">Peut tout seul se vanter de la captivité.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="4">
-          <head>SCÈNE IV. Le Docteur, Léandre.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="117">Quoi tous mes documents, et toute ma doctrine</l>
-            <l id="118">Ne pourront réprimer votre humeur libertine</l>
-            <l id="119">De la philosophie avec vous le dégoût : </l>
-            <l id="120">Avec moi voulez-vous pousser Socrate à bout,</l>
-            <l id="121">Et le divin Platon se plaint de vous encore,</l>
-            <l id="122">Ferez-vous plus longtemps enrager Pythagore.</l>
-            <l id="123">Zénon se plaindra-t-il incessamment de vous ;</l>
-            <l id="124">Mettrez vous Demosthène en un plus grand courroux ?</l>
-            <l id="125">Et profitant si peu de leurs doctes merveilles,</l>
-            <l id="126">Voulez-vous que Bias, vous coupe les oreilles ?</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="127" part="i">Pour vivre en honnêtre homme.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="127" part="f">Et finissant mon souhait</l>
-            <l id="128">Veux-tu que Cicéron te donne ici le fouet ?</l>
-            <l id="129">Ou que voyant ta tête, une tête de mule,</l>
-            <note type="L">Férule : Petite palette de bois ou de cuir avec laquelle on frappe les écoliers dans la main. [L]</note>
-            <l id="130">Cet orateur du moins te donne la férule.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="131" part="i">Il faut être galant.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="131" part="f">Et que Sinecius,</l>
-            <l id="132">D'un coup de poing te mette au chemin des vertus ;</l>
-            <l id="133">Veux-tu qu'Anaximandre en de doctes manières</l>
-            <note type="L">Etrivière : Courroie de cuir, par laquelle les étriers sont suspendus. Donner les étrivières, c'est châtier des valets de livrée, les fouetter avec les étrivières. [F]</note>
-            <l id="134">Te vienne ici donner mille coup d'étrivières.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="135" part="i">Les pédants sont raillés.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <note type="C">Mauraux : On peut estimer sans certitude qu'il s'agit du mot marauds ; pas de référence trouvé à un Mauraux.</note>
-            <l id="135" part="f">Veux-tu que les Mauraux</l>
-            <l id="136">Te donnent mille coups, te mettent en morceaux ;</l>
-            <note type="L">Sénèque : (le Philosophe) né à Cordoue en l'an 3 de J.C., étudia l'éloquence sous son père et suivit d'abord le barreau. Son talent oratoire avait donné ombrage à Caligula, il quitta la carrière pour s'adonner à la philosophie. (....) A la mort de Caligula, il courut la carrière des honneurs et arriva à la questure. (...) Nous avons un grand nombre de d'écrits philosophiques de Sénèque. (...) Partout il prêche la morale le plus sévère et enseigne surtout le mépris de la mort. (...) On a sous le nom de Sénèque dix tragédies. [B]</note>
-            <l id="137">Que Sénèque t'applique avec une sentence</l>
-            <l id="138">Un soufflet qui t'apprenne à quitter l'insolence.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="139" part="i">J'aime d'indépendance.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="139" part="f">Et de nos Libertins</l>
-            <l id="140">Veux-tu suivre toujours les sentiments mutins ;</l>
-            <l id="141">Veux-tu tromper Philis, Amarante, Isabelle.</l>
-            <l id="142">De leur honneur perdu faire une bagatelle.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="143" part="i">Je veux ce que je veux.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="143" part="f">Et suivre une Cloris,</l>
-            <l id="144">Consommer ta jeunesse auprès de son teint de lys,</l>
-            <l id="145">Lui dire tous les jours, Madame, je vous aime,</l>
-            <l id="146">Admirez ma langueur, et mon amour extrême,</l>
-            <l id="147">Et puis dire du ton de nos courtisans.</l>
-            <l id="148">Ah ! Qu'elle est adorable, ah les beaux yeux mourants,</l>
-            <l id="149">L'insensibilité d'une âme indépendante,</l>
-            <l id="150">De périr à ses yeux ne se croit pas exempte;</l>
-            <l id="151">Dieu me damne beaux yeux, je perds la liberté,</l>
-            <l id="152">Faire la révérence, et le corps démonté,</l>
-            <l id="153">Mettre la tête à bas hausser les deux épaules,</l>
-            <l id="154">Du pied broder la chambre, et perdre cent paroles</l>
-            <note type="L">Oison : On dit par injure à un homme, que c'est un oison, qu'il se laisse mener comme un oison ; pour dire, que c'est un sot, qui ne sait pas se conduire qu'il n'agit que par l'organe d'autrui. [F]</note>
-            <l id="155">Faire le fat, enfin être au rang des oisons,</l>
-            <l id="156">Et secouer le jonc de toutes mes leçons.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="157">Docteur n'est-il pas temps que je quitte l'école,</l>
-            <note type="L">Cujas : Jurisconsulte français, brillant représentant de l'École historique du droit romain.</note>
-            <note type="L">Barthole : Célèbre jurisconsulte, né en 1313 en Ombrie, enseigna le droit à Pise et à Pérouse. Barthole est le premier qui a fait des commentaires suivis sur toutes les parties du texte. [B]</note>
-            <l id="158">En passant je verrai Cujas et Barthole ;</l>
-            <l id="159">Mais aussi j'irai voir et fort assidûment ;</l>
-            <l id="160">Les dames, compagnie, et je ferai l'amant.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="161">Et bien je te propose une fille admirable.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="162" part="i">De quelle qualité ?</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="162" part="m">De femme ?</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="162" part="f">Ah ! Misérable,</l>
-            <l id="163">Voulait couper la gorge au printemps de mes jours ;</l>
-            <l id="164">Vouloir m'assassiner, rengainez vos discours,</l>
-            <l id="165">Je vous ai fait sans doute une mortelle offense ;</l>
-            <l id="166">Comme me marier, je meure si j'y pense,</l>
-            <l id="167">Je veux me divertir, Adieu Docteur, Adieu.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <note type="L">Cupidon</note>
-            <l id="168">Cupido te conduise en un honnête lieu,</l>
-            <l id="169">Voilà comme il me traite, après que son étude</l>
-            <l id="170">M'a coûté mille soins, il n'a qu'un gratitude.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="5">
-          <head>SCÈNE V. Isabelle, Trapolin armé.</head>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="171">Vous fait, Tapolin, fort mal votre devoir,</l>
-            <l id="172">Devez vous endurer que l'on ne puisse voir ?</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="173" part="i">Ventre, qui vous a vue.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="173" part="f">Un papillon qui m'aime, </l>
-            <l id="174">Qui vole autour de moi ; mais je garde moi-même</l>
-            <l id="175">Ce que toute la terre aurait du mal à garder,</l>
-            <l id="176">Un tome devrait ne me pas regarder ?</l>
-            <l id="177">Si je pouvais j'irais jusqu'au fond de l'âme</l>
-            <l id="178" part="i">Corriger les désirs.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="178" part="f">Ah ! La pudique femme.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="179">Écoute, je connais un savant, un docteur</l>
-            <l id="180">Ami des bonnes moeurs, amoureux de l'honneur</l>
-            <l id="181">Il loge près d'ici, le voilà, va lui dire</l>
-            <l id="182">Que je lui veux parler, et que je le désire.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="183">Morbleu que cette femme a de sincérité</l>
-            <l id="184">Pour son bijou, je crois qu'il est en sûreté.</l>
-            <stage type="toward">Il s'adresse au docteur.</stage>
-            <l id="185">Mon révérend Docteur, une dame fort belle,</l>
-            <l id="186">(À ce qu'elle m'a dit, fort sage, et très fidèle)</l>
-            <l id="187">Voudrait bien vous parler sur un cas réservé ;</l>
-            <l id="188">Cas pour lequel je veille, et que j'ai conservé.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="189">Un cas ? Il est des cas de diverses manières,</l>
-            <l id="190">Et mes opinions y sont fort singulières ;</l>
-            <l id="191">Même il est des cas us, et des cas fortuits,</l>
-            <l id="192">Selon le cas, les cas sont bien ou mal conduits,</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="193" part="i">C'est une question.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="193" part="f">Question ? Pour le sages</l>
-            <l id="194">Il est des question barbares et sauvages ;</l>
-            <l id="195">Il est des questions, et des questionneurs,</l>
-            <l id="196">Qui sont très importants à tous les auditeurs.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="197" part="i">C'est un doute fondé.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR</speaker>
-            <l id="197" part="f">Débrouille ton langage,</l>
-            <l id="198">Un doute mal fondé cause bien du ravage.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="199" part="i">C'est un amour malin.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR</speaker>
-            <l id="199" part="f">L'amour ne l'est jamais ;</l>
-            <l id="200">Mais pour les amoureux, ils sont bons ou mauvais.</l>
-            <l id="201">Pour parler des amours, des amants, des amantes,</l>
-            <l id="202">Les homme sont constants, les femmes inconstantes.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="203" part="i">Ah ! Laissez-moi parler.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="203" part="f">Parler ? Auparavant</l>
-            <l id="204">Vois si tu peux passer pour un animal parlant,</l>
-            <l id="205">Quand on parle avec moi, l'ami toujours j'affecte,</l>
-            <l id="206">De savoir si l'on est bête, homme, ou bien infecte,</l>
-            <l id="207">Alors que je le sais, je mesure mon sens,</l>
-            <l id="208">Et le proportionne au fort de leurs accents,</l>
-            <l id="209">Peut-être en ta parlant j'offenserais mon être ;</l>
-            <l id="210">Parler te convient moins que heurter, et que pestre *???**.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="211" part="i">Je parlerai.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="211" part="f">Tais-toi ne hausse point le voix,</l>
-            <l id="212">Tu mettrais la raison dans les derniers abois :</l>
-            <l id="213">Le bon sens est choqué ; quand tu formes un langage ;</l>
-            <l id="214">Articuler la voix n'est pas de ton usage.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN l'emportant.</speaker>
-            <l id="215">Que le diable t'emporte avecque ton Latin,</l>
-            <l id="216">Ma maîtresse t'attend, il faut venir soudain.</l>
-            <l id="217">Voilà le révérend ennemi du profane :</l>
-            <l id="218">Qu'un docteur est fâcheux, j'aimerais mieux un âne,</l>
-            <note type="L">Harangueur : Fig. et familièrement. Celui qui parle beaucoup, celui qui fait des réprimandes sur toutes choses. [B]</note>
-            <l id="219">Je vous laisse avec lui, ce maudit harangueur,</l>
-            <l id="220">Tout aujourd'hui, je crois, me portera malheur.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="6">
-          <head>SCÈNE VI. Le Docteur, Isabelle.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="221">Brillant astre divin, belle reine des fières,</l>
-            <l id="222">Qui désire de moi vos beautés meurtrières ?</l>
-            <l id="223">Vos printaniers appas, vos attraits sans quartier,</l>
-            <l id="224">Qui font brûler les gens dans le mois de janvier.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="225">Monsieur, le bruit commun qui court de votre estime,</l>
-            <l id="226">Ma fait avoir recours à votre esprit sublime :</l>
-            <l id="227">Vous êtes précepteur d'un jeune homme bien fait :</l>
-            <l id="228">Mais qui sait mal son monde, et sait peu ce qu'il fait.</l>
-            <l id="229">Je suis femme d'honneur, ardente comme braise,</l>
-            <l id="230" part="i">Au combat des vertus.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="230" part="f">Hé bien, j'en suis bien aise.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="231">Ce jeune homme en un mot a la témérité </l>
-            <l id="232">De venir tous les jours insulter ma beauté,</l>
-            <l id="233">Avec des regards, dont le trop de licence</l>
-            <l id="234">Fait trembler ma pudeur, et craindre ma prudence.</l>
-            <l id="235">Or vous n'ignorez pas le faible des humains,</l>
-            <l id="236">Qu'honneur en vain souvent a fait de bons desseins,</l>
-            <l id="237">Et si dans les combats des mauvaises pensées,</l>
-            <l id="238">Satan ne voyait point ses forces repoussées,</l>
-            <l id="239">Par les gens comme vous, et d'honneur et de bien,</l>
-            <l id="240">L'honneur serait bien faible, et ne serait plus rien.</l>
-            <l id="241">Dites-lui donc, Monsieur, qu'il me doit mieux connaître,</l>
-            <l id="242">Et qu'il ne vienne plus autour de ma fenêtre ;</l>
-            <l id="243">Que mon honneur s'offense à l'y voir si souvent,</l>
-            <l id="244">Et que je ne suis pas une tête à l'évent,</l>
-            <l id="245">Que l'honneur m'est cent fois plus que ne m'est la vie ;</l>
-            <l id="246">Qu'il cesse, s'il ne veut voir punir sa folie.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="247">Ô femme singulière ! Et femme qui ne fut,</l>
-            <note type="L">Belzébuth : Prince des démons dans la Bible.</note>
-            <l id="248">S'il faut que vous soyez femme, et non Belzebuth,</l>
-            <l id="249">On vous doit élever un trophée admirable ;</l>
-            <l id="250">Comment, vous êtes femme, et n'êtes pas un diable :</l>
-            <l id="251">Comment, vous êtes femmes, et suivez la vertu ;</l>
-            <l id="252">Ah ! Sans doute l'amour ne vous a pas connu.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="253">Je connais bine l'amour, et j'y suis fort sensible ;</l>
-            <l id="254">Encore que son feu ne me soit pas nuisible,</l>
-            <l id="255">Ma vertu n'est point due à mon tempérament,</l>
-            <l id="256">Je la dois toute entière à mon raisonnement.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="257">Vous en savez beaucoup pour une vertueuse.</l>
-            <l id="258" part="i">Baste, vaille que vaille. </l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="258" part="f">En âme langoureuse</l>
-            <l id="259">À celui qui me garde il fait des compliments,</l>
-            <l id="260">Sous qui sont trop cachés ses tendres sentiments ;</l>
-            <l id="261">Et le pauvre garçon, peu fait au stratagème,</l>
-            <l id="262">Si je n'avais le soin de me garder moi-même,</l>
-            <l id="263">Tomberait dans le piège ; et mon honneur serait,</l>
-            <l id="264">Sans ma rare sagesse, ou le galant voudrait.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="265">Allez, vous valez trop, et vous êtes trop sage,</l>
-            <l id="266">Vous allez devenir l'exemple de note âge,</l>
-            <l id="267">Je le vais gourmander, et lui faire savoir</l>
-            <l id="268">Qu'il doit ainsi que vous, faire bien son devoir.</l>
-            <stage type="exit">Elle sort.</stage>
-            <l id="269">Est-ce une illusion est-ce chose réelle,</l>
-            <l id="270">Rencontrer dans ce temps une femme fidèle,</l>
-            <l id="271" part="i">Pour moi je suis confus.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="7">
-          <head>SCÈNE VII. Léandre, Le Docteur.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="271" part="f">Perdez-vous la raison</l>
-            <l id="272">D'aller roder sans cesse autour de cette maison;</l>
-            <l id="273">D'une femme d'honneur qui m'en a fait des plaintes,</l>
-            <l id="274">Qui dit qu'à son honneur vous donnés des atteintes.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="275">Moi ? Je n'ai point encor assez vu de beauté</l>
-            <l id="276">Pour voir mon cher docteur périr ma liberté,</l>
-            <l id="277" part="i">Je la possède encor ?</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="277" part="f">Et cette belle Dame,</l>
-            <l id="278">À qui si finement vous dites votre flamme,</l>
-            <l id="279">Par de faux compliments adressés au valet.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="280" part="i">Que me voulez-vous dire ?</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="280" part="f">Apprenez mon cadet </l>
-            <l id="281">Qu'il faut être plus sage, ou bine que votre vie</l>
-            <l id="282">Dans ses occasions sera bientôt finie.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="283">La maison, le valet, et la femme ma foi</l>
-            <l id="284">Sont connus mon cher père à tout autre qu'à moi.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="285">Ah ! Que vous êtes fort au dessus de la négative.</l>
-          </sp>
-          <sp stage="low" who="LÉANDRE">
-            <speaker>LÉANDRE, bas.</speaker>
-            <l id="286">Mais ne serait-ce point un bonheur qui m'arrive.</l>
-            <l id="287">Une bonne fortune, ah! Que je suis grossier,</l>
-            <l id="288" part="i">Apprenons la maison.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="288" part="f">Il ne faut plus lien.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="289">La maison seulement ne m'en est pas connue.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="290">La voilà franc pendard, détournez-en la vue,</l>
-            <l id="291">Ou bien j'airai moi-même avertir ses parents,</l>
-            <l id="292">Adieu, gouvernez-vous et rappelez vos sens.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="8">
-          <head>SCÈNE VIII.</head>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="293">Cette femme gardée à toute heure, sans cesse,</l>
-            <l id="294">Pour m'apprendre ses feux a trouvé cette adresse,</l>
-            <l id="295">Je ne l'ai jamais vue, et ne la connais pas,</l>
-            <l id="296">Il faut qu'elle ait en moi trouvé quelque appas,</l>
-            <l id="297">Et que pour arriver au bonheur que j'espère,</l>
-            <l id="298">Elle m'instruise ainsi de ce que je dois faire ;</l>
-            <l id="299">Profitons, s'il se peut, de cette occasion.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="9">
-          <head>SCÈNE IX. Léandre, Trapolin armé à la porte, Isabelle à la fenêtre.</head>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="300">Voilà le cher objet qui fait ma passion,</l>
-            <l id="301">La ruse a réussi, l'amour est un grand maître.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="302">Sans doute voilà la Dame à la fenêtre ;</l>
-            <l id="303">Dieux la rare merveille, amour je suis heureux,</l>
-            <l id="304">Il faut lui témoigner même ardeur, même feux,</l>
-            <l id="305">Adressons un discours à ce valet pour elle,</l>
-            <l id="306">C'est si je l'ai compris le désir de la belle.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="307">Qui vala, qui vala, qui vala, qui qui qui.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="308">Un homme qui vous aime, et votre bon ami,</l>
-            <l id="309">Mon brave je vous dois, oui je vous dois la vie,</l>
-            <l id="310">Sans vous par des voleurs elle m'était ravie.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="311">Moi je vous ai servi ? Quand ai-je fait cela ?</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="312">Tantôt mon brave Hector quand je passais par là</l>
-            <l id="313" part="i">Alexandre, Orondate, Achille.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="313" part="f">Je me nomme</l>
-            <l id="314">Trapolin, autrement le brave et galant homme ;</l>
-            <l id="315">Mais quand aurais-je fait cette belle action,</l>
-            <l id="316">Il est vrai que mon bras est d'exécution,</l>
-            <l id="317">Je frappe rudement, je suis inexorable.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="318">Lors que vous vous battez vous frappez comme un diable.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="319">LA nuit passée encore je songeais fortement</l>
-            <l id="320">Que je me battais bien, et généreusement,</l>
-            <l id="321">Peut-être en ce temps là je vous sauvai la vie.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="322">Certes je vous la dois, mon âme en est ravie.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="323" part="i">Je l'avais oublié.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="323" part="f">L'on ne se souvient pas</l>
-            <l id="324">Toujours des actions, et du coeur et du bras.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="325" part="i">Je commence à le voir.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="325" part="f">J'ai suivi les écoles,</l>
-            <l id="326">Et je ne sais pas mal arranger mes paroles ;</l>
-            <l id="327">Souffrez que je vous fasse un petit compliment,</l>
-            <l id="328">Que je vous veux donner mon brave en paiement.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="329">Je suis dans les honneurs, me voilà dans le lustre,</l>
-            <l id="330">Il n'est que de la faire et de se rendre illustre ;</l>
-            <l id="331">Parlez, je vous entends.</l>
-            <l id="332">...........................</l>
-          </sp>
-          <sp stage="toward" who="LÉANDRE">
-            <speaker>LÉANDRE, à sa dame.</speaker>
-            <p id="1">
-              <s id="1">Miracle de nos jours, admirable sujet d'estime, trésors de perfections, divinité visible, j'éprouve en ce moment que vous voir et devenir votre captif est une même chose : que de vous connaître et vous aimer, sont deux actes inséparables, et qu'il est constant qu'on ne peut plus vivre que pour vous, quand on s'est trouvé assez heureux pour vous connaître ; vous m'avez fait une grâce dont je m'avoue indigne ; car j'ai fort bien compris que vous me désirez à votre service, je vous consacre ma vie ; et pour vous faire un serment solennel, je jure par vous-même que tant qu'elle durera, je serai tout vôtre. </s>
-              <s id="2">Les dieux ne doivent point parler aux mortels, ils ont des façons muettes pour s'expliquer, usez-en de même, vous pouvez d'un regard m'apprendre si vous souhaitez que je continue à vous servir. Si vous m'aimez, et si vous désirez que je vous aime toujours.</s>
-            </p>
-            <stage type="wave">Elle lui fait signe, et lui témoigne qu'elle l'aime.</stage>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="333">Ah ! Vous avez de l'esprit, Trapolin vous le dit,</l>
-            <l id="334">On ne m'a jamais fait un si grand débit,</l>
-            <l id="335">Mais bine qu'en tout ici mon esprit vous admire,</l>
-            <l id="336">J'y trouve toutefois quelque chose à redire,</l>
-            <l id="337">Vous remuez les yeux beaucoup plus qu'il ne faut,</l>
-            <l id="338">Pour moi ce compliment est de deux pieds de haut,</l>
-            <l id="339">Il faut selon mon sens que l'on proportionne</l>
-            <l id="340">Les regards à l'objet, les mots à la personne.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="341">Hé bien, une autrefois Monsieur je le ferai,</l>
-            <l id="342">Vous devez cependant m'en savoir fort bon gré.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="343">Allez je suis content,, et je vous remercie,</l>
-            <l id="344">Employez-moi toujours à vous sauver la vie ;</l>
-            <l id="345">On me craint, on m'estime, et l'on fait ces de moi,</l>
-            <l id="346">Il n'est ma foi rien tel que d'être dans l'emploi ;</l>
-            <l id="347">Mais au combat je suis par trop inexorable,</l>
-            <l id="348">Trêve pour un moment, allons trinquer en diable.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="10">
-          <head>SCÈNE X.</head>
-          <sp stage="alone" who="COLINETTE">
-            <speaker>COLINETTE, seule.</speaker>
-            <l id="349">Je ne sais ma foi plus comment me ménager,</l>
-            <l id="350">Ces diables de blondins me font tous enrager,</l>
-            <l id="351">L'un me prend mes galants, l'autre me prend mes tresses,</l>
-            <l id="352">Ils me font mille maux à force de caresses,</l>
-            <l id="353">J'aimerais mieux mourir que perdre mon honneur,</l>
-            <l id="354">Je me souviens du jour que j'en perdis la fleur :</l>
-            <l id="355">Mais en ligne directe, et par le mariage,</l>
-            <l id="356">Je parus si pudique, et si simple, et si sage,</l>
-            <l id="357">Dame, j'étais jolie et j'avais des appas,</l>
-            <l id="358">Je suis encore passable, et je ne déplais pas,</l>
-            <l id="359">Le veuvage m'ennuie, il faut que je l'avoue.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="11">
-          <head>SCÈNE XI. Léandre, Colinette.</head>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="360">Ah ! Voici notre folle, il faut que je m'en joue.</l>
-          </sp>
-          <sp who="COLINETTE">
-            <speaker>COLINETTE.</speaker>
-            <l id="361">Dieux ! Fuyons ces coquets et leurs friands discours.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="362">Hé bien rare beauté me fuirez vous toujours ?</l>
-            <l id="363">Peut-on voir ce beau sein et cette belle gorge.</l>
-          </sp>
-          <sp who="COLINETTE">
-            <speaker>COLINETTE.</speaker>
-            <note type="L">Tredame : Jurement des femmes dans l'ancienne comédie ; abréviation de Notre-Dame. [L]</note>
-            <note type="L">Arder : Brûler. [L]</note>
-            <l id="364">Tredame vous ardez plus qu'une ardente forge,</l>
-            <l id="365">Laissez moi, laissez moi, que me voulez vous donc ?</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="366">Je veux toucher ce sein, cette aimable téton.</l>
-          </sp>
-          <sp who="COLINETTE">
-            <speaker>COLINETTE.</speaker>
-            <l id="367">Diable de suborneur, allons tu n'est pas sage ;</l>
-            <l id="368">On ne peut toucher là que par le mariage :</l>
-            <l id="369">Jeunes filles croyez que tous les cajoleurs,</l>
-            <l id="370">Sont tous des inconstants, des fourbes, des menteurs,</l>
-            <l id="371">On mène à billets doux, et puis à sérénades,</l>
-            <l id="372">De là vont à visite, à Bal, à promenades ;</l>
-            <note type="C">Vers 373, on lit monneaux dans le texte original.</note>
-            <l id="373">Et c'est là qu'on ne prend comme glue à moineaux</l>
-            <note type="L">Trébuchet : Fig. Prendre quelqu'un au trébuchet, l'amener par adresse à faire une chose qui lui est désavantageuse ou désagréable. [L]</note>
-            <note type="L">Godelureau : Jeune fanfaron, glorieux, pimpant et coquet qui se pique de galanterie, de bonne fortune auprès des femmes, qui est toujours bien propre et bien mis sans avoir d'autres perfections. Les vieux maris ont sujet d'être jaloux de ces godelureaux qui viennent cajoler leurs femmes. [F]</note>
-            <l id="374">Dedans le trébuchet de nos godelureaux,</l>
-            <l id="375">Avec tout cela je t'aime mon beau Léandre.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="376">Moi, je ne t'aime point, va-t-en de faire pendre,</l>
-            <l id="377">Je n'ai pas le loisir de jouer avec toi,</l>
-            <l id="378" part="i">J'ai trop affaire ailleurs.</l>
-          </sp>
-          <sp stage="alone" who="COLINETTE">
-            <speaker>COLINETTE, seule.</speaker>
-            <l id="378" part="f">Il est joli ma foi,</l>
-            <note type="L">Nivelle, Jean de : né en 1423, embrassa le parti du Duc de Bourgogne et refusa de marcher contre ce prince, malgré les ordres de Louis XI. (...) et devenu en France un objet de haine et de mépris et le peuple lui donne le surnom injurieux de "chien". [B] syn. de traître méprisable.</note>
-            <l id="379">Va fripon, va pendard, morveux, Jean de Nivelle,</l>
-            <l id="380">Il t'appartient vraiment d'avoir l'âme cruelle,</l>
-            <l id="381">D'avoir de la rigueur et de la cruauté,</l>
-            <l id="382">Sans doute vous verrez qu'il était dégoûté ;</l>
-            <l id="383">Nous somme fort mal faite et beaucoup déchirée,</l>
-            <l id="384">Encor un coup fripon, va chercher ta denrée,</l>
-            <note type="L">Frelampier : Terme populaire et vieilli. Homme de peu et qui n'est bon à rien. [L]</note>
-            <note tpe="L">Nique : Mocquerie, mépris qu'on fait de quelqu'un par quelque geste qui en donne témoignage, et particulièrement en haussant ou secouant le menton. [F] </note>
-            <l id="385">Monsieur de crique-nique, escroc, et frelampier,</l>
-            <l id="386">Maraud, croquant, fripon, pied-gris, pied plat, plat-pied,</l>
-            <l id="387">Va je ne t'aime plus, mon âme est enragée,</l>
-            <l id="388">Je te ferai périr, et je mourrai vengée :</l>
-            <l id="389">Hélas, je l'aime encor et je mourrai d'ennui,</l>
-            <l id="390">Allons dans un désert pour nous plaindre de lui.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="12">
-          <head>SCÈNE XII.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="391">Il faut un peu savoir de cette belle dame,</l>
-            <l id="392">Si Léandre s'obstine à lui montrer sa flamme,</l>
-            <l id="393" part="i">Ho ho là.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="13">
-          <head>SCÈNE XIII. Trapolin, La Docteur, Isabelle.</head>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="393" part="f">Qui va la, redoutez mon courroux,</l>
-            <l id="394">Ah ! Venez Révérend, on ne craint rien de vous.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="395">Hé bien notre étourdi cesse-t-il sa poursuite ?</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="396">Il fait pis que jamais, sans mentir, il m'irrite,</l>
-            <l id="397">Vous n'avez pas suivi ma juste intention,</l>
-            <l id="398">Ou bien il ne suit pas votre correction ;</l>
-            <l id="399">Loin de se corriger, et de venir plus sage,</l>
-            <l id="400">Il m'a désobligé par un nouvel outrage ;</l>
-            <l id="401">Il faut qu'il ait été consulter les démons,</l>
-            <l id="402">Que d'eux et non de vous il suive les leçons ;</l>
-            <l id="403">Il a su découvrir au bois de notre porte.</l>
-            <note type="L">Accorte : Qui est de gentil esprit, qui est à la fois avisé et gracieux. [L]</note>
-            <l id="404">Une petite fente, et sa malice accorte,</l>
-            <l id="405">A mis dans cette fente un petit billet doux,</l>
-            <l id="406">Qui le trouvant m'a mis dans un grand courroux.</l>
-            <l id="407">Mais ce qui m'a jeté dans le dernière rage,</l>
-            <l id="408">C'est que j'ai justement trouvé dans mon passage,</l>
-            <l id="409">Cette bourse qui tient quatre cent louis d'or,</l>
-            <l id="410">La voilà rendez-lui, puis lui dites encore</l>
-            <l id="411">Qu'il sait peu ce qu'il fait, que sans doute il ignore,</l>
-            <l id="412">Que pour la vertu même ici chacun m'honore,</l>
-            <l id="413">Que je ne suis pas femme à prendre ses louis,</l>
-            <l id="414">Que les yeux de quelqu'autre en seraient éblouis,</l>
-            <l id="415">Et que s'il revient plus auprès de cette porte,</l>
-            <l id="416">Il aura ce qu'on doit aux galants de la sorte.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="417">Allez je vous promets qu'il ne reviendra plus,</l>
-            <l id="418">Ah ! Le méchant pendard, me voilà tout confus.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="419">Ah ! S'il y revient plus, pour corriger sa flamme,</l>
-            <l id="420">Je le ferai tuer, j'en jure par mon âme.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="421">Veuillez lui pardonner encore cette fois.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="422">Comme moi que d'honneur il suivre donc les Lois</l>
-            <l id="423" part="i">Adieu.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="14">
-          <head>SCÈNE XIV. Le Docteur, Léandre.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="423" part="f">Vertu, vertu, comme avez vous pu faire,</l>
-            <l id="424">Pour trouver une femme et fidèle et sincère.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="425">Depuis que je t'ai vue adorable beauté,</l>
-            <l id="426">Je souffre incessamment, qui suis inquiété,</l>
-            <l id="427">Et dans l'espoir de voir ma flamme couronnée,</l>
-            <l id="428">Un moment m'est un jour, un jour m'est une année.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="429">Hé bien méchant garçon, orgueilleux suborneur,</l>
-            <l id="430">Tu n'as pas été voir cette femme d'honneur.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="431" part="i">Quoi, qu'est-il arrivé ?</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="431" part="f">La fente de la porte ;</l>
-            <l id="432">Tu vas de fente en fente, et la fente t'emporte, </l>
-            <l id="433">Prends bien garde à la fente, et que fente jamais,</l>
-            <l id="434">Ne te prote à porter d'impertinents poulets.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="435" part="i">Pater, expliquez-vous.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="435" part="f">Cette Dame est venue</l>
-            <l id="436">Se plaindre encor à moi de ton ardeur connue ;</l>
-            <l id="437">Mais elle t'avertit d'éviter son courroux,</l>
-            <l id="438">Et m'a dit que tu viens de mettre un billet doux</l>
-            <l id="439">Par la fente de l'huis, qu'à peine on peut connaître,</l>
-            <l id="440">Certes il faut que tu sois en amour un grand maître,</l>
-            <l id="441">Et que dessus le seuil se font trouver encor,</l>
-            <l id="442">Outre le billet doux quatre cent louis d'or ;</l>
-            <l id="443">Les voilà qu'elle rend, sa vertu s'en offense,</l>
-            <l id="444">Ils te feront besoin pour quelque autre dépense,</l>
-            <l id="445">Enfin elle m'a dit que toutes les vertus,</l>
-            <l id="446">Prennent son intérêt ne t'épargneront plus,</l>
-            <l id="447">La vertuchou viendra pour te casser la tête,</l>
-            <l id="448">La vertubleu le nez de même qu'à la fête,</l>
-            <l id="449">La vertu-guienne encor ne t'épargnera pas,</l>
-            <l id="450">Et les autres vertus te casseront les bras ;</l>
-            <l id="451">Enfin, prend garde à toi, ton âme est avertie,</l>
-            <l id="452">Bon averti veut deux, prends donc soin de ta vie.</l>
-            <stage type="exit">Le docteur sort.</stage>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="453">Bon averti veut deux en matière d'amour,</l>
-            <l id="454">Ah ! Bel astre plus beau que ne l'est l'astre du jour,</l>
-            <l id="455">Ô femme généreuse, et beauté sans pareille,</l>
-            <l id="456">Me donner cette bourse ? Amour, quelle merveille,</l>
-            <l id="457">Pour me faire un présent feindre que je l'ai fait,</l>
-            <l id="458">Quel esprit, quelle adresse, et quel bizarre effet,</l>
-            <l id="459">Supposant un billet, cette reine des belles,</l>
-            <l id="460">M'apprend qu'elle souhaite avoir de mes nouvelles,</l>
-            <l id="461">La fente de la porte, et le petit endroit,</l>
-            <l id="462">Par où je lui ferai tenir quelque billet,</l>
-            <l id="463">En me venant noircir, en me faisant coupable</l>
-            <l id="464">Elle m'instruit de tout, elle m'est favorable,</l>
-            <l id="465">Voici des vers tout prêts, allons les y porter,</l>
-            <l id="466">Par ce petit endroit qu'elle m'a su dicter,</l>
-            <l id="467">Il y faut ajouter quelque reconnaissance,</l>
-            <l id="468">Des quatre cent louis, et de sa bienveillance.</l>
-            <stage type="write">Léandre écrit au bas des vers quelque mot de prose.</stage>
-            <l id="469">Voilà la fente amour seconde mon dessein,</l>
-            <l id="470">Et faits que ce billet tombe en sa belle main.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="15">
-          <head>SCÈNE XV.</head>
-          <sp stage="location" who="ISABELLE">
-            <speaker>ISABELLE, à la fenêtre.</speaker>
-            <l id="471">Il a mis le billet, prenons le pour le lire,</l>
-            <l id="472">Il a fort bien compris qu'il me devait écrire.</l>
-            <stage type="read">Elle lit le billet.</stage>
-            <l id="473">Je suis un esclave soumis</l>
-            <l id="474">Dessous le joug de votre empire,</l>
-            <l id="475">Et je dirai s'il m'est permis</l>
-            <l id="476">Que pour vous seule je respire,</l>
-            <l id="477">Et que jusqu'aux Enfers</l>
-            <l id="478">Je porterai vos fers.</l>
-            <p id="1">
-              <s id="1">Je reçois votre présent, parce que je paraîtrai trop vain en le refusant : Mais sachez que mon amour s'irrite un peu de ce que vous lui voulez donner des liens dorés ; si vous aviez ce dessein, il ne fallait me donner que trois noeuds de vos cheveux, je suis trop généreux pour en recevoir d'autres, et je reçois ces quatre cent pistoles que pour vous plaire, et pou vous faire voir que je fais tout ce qui vous plaît ordonner à votre Léandre.</s>
-            </p>
-            <l id="479">Que son style est galant, il est indispensable</l>
-            <l id="480">De lui rien refuser, il est par trop aimable,</l>
-            <l id="481">Trouvons donc le moyen qu'il vienne en maison.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="16">
-          <head>SCÈNE XVI. Isabelle, Trapolin.</head>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="482" part="i">Quel billet tenez vous ?</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <note type="L">Oraison : Terme de grammaire. Assemblage de mots construits suivants les règles de la grammaire. Dans le langage didactique, ouvrage d'éloquence composé pour être prononcé en public. [L] </note>
-            <l id="482" part="f">Là ? C'est une oraison</l>
-            <l id="483">Merveilleuse à calmer un peu d'inquiétude,</l>
-            <l id="484">Pour apaiser l'aigreur du tourment le plus rude.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="485">Ah ! Ce ne sont pas là de ces femmes du temps,</l>
-            <l id="486">Qui ne lisent jamais que billets de galants,</l>
-            <l id="487">Prêtez moi l'oraison, femme en vertus indigne.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="488">Il faut jeûner trois jours afin d'en être digne ;</l>
-            <l id="489">Mais jeûner comme il faut, au pain sec à l'eau,</l>
-            <l id="490">Se bien discipliner, quitter le bon morceau,</l>
-            <l id="491">Quitter l'excellent vin, le chapon et la bisque.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="492">De ne la voir jamais je cours donc un grand risque,</l>
-            <l id="493">Quitter mes bons amis, les bons vins, les chapons,</l>
-            <l id="494">Une longe de veau vaut mieux que cent leçons,</l>
-            <l id="495">Jeûner, je suis trop pâle, Isabelle est si maigre,</l>
-            <l id="496">Je veux m'entretenir dans mon humeur allègre,</l>
-            <l id="497">Gardez votre billet, il me met en courroux,</l>
-            <l id="498">Belle, jeûnez pour moi, je mangerai pour vous.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="499">Laisse-moi, je te prie, avecque ce bon père,</l>
-            <l id="500">J'aime de ce docteur le conseil salutaire.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="17">
-          <head>SCÈNE XVII. Le Docteur, Isabelle.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="501">Ne voulez-vous jamais me laisser en repos,</l>
-            <l id="502">Vous plaindrez-vos toujours par de nouveaux propos.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="503">Quoi voulez-vous, Monsieur, que j'endure sans cesse,</l>
-            <l id="504">Les persécutions d'une sotte jeunesse ?</l>
-            <l id="505">Je ne vous ferai plus mes plaintes sans mentir,</l>
-            <l id="506">Mon mari saura tout, je vais l'en avertir,</l>
-            <l id="507">Je ménage ceci comme une femme sage,</l>
-            <l id="508">Mais il faut que j'éclate après un tel ouvrage.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="509">Hélas ! N'éclatez pas, car naturellement</l>
-            <l id="510">La femme éclate assez de son tempérament,</l>
-            <l id="511">Que vous a-t-il donc fait de nouveau, je vous prie.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="512">Le plus sanglant affront; ah ! J'en suis en furie.</l>
-            <l id="513">Il sait que mon mari est hors de la maison,</l>
-            <l id="514">Qu'il est à la campagne, et ce traître garçon :</l>
-            <l id="515">Mais il faut bien qu'il ait l'esprit diabolique,</l>
-            <l id="516">Voyant une grande ruse où son esprit s'applique ;</l>
-            <l id="517">Enfin il est venu par le mur du jardin,</l>
-            <l id="518">A monté par dessus, et s'est glissé soudain,</l>
-            <l id="519">Tout le long d'un figuier, et sans se faire entendre,</l>
-            <l id="520">Est venu justement au dessous de ma chambre,</l>
-            <l id="521">A grimpé comme comme un chat, et si subtilement;</l>
-            <l id="522">Qu'il est enfin entré dans mon appartement,</l>
-            <l id="523">Ma pudeur s'est émue, et d'une telle sorte,</l>
-            <l id="524">Que longtemps il m'a crue une personne morte,</l>
-            <l id="525" part="i">Ma vertu...</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="525" part="f">N'a-t-il rien fait à cette vertu ?</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="526">Ah ! Je l'ai fait sortir et l'ai bine battu,</l>
-            <l id="527">Qu'il sait bine à présent de quel bois je me chauffe,</l>
-            <l id="528">Et si je suis fidèle, ou de légère étoffe.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="529">Cette étoffe n'est pas de l'étoffe du temps,</l>
-            <l id="530">Nature n'en peut plus trouver chez les marchands,</l>
-            <l id="531">Aussi n'en fait-in plus de cette belle étoffe,</l>
-            <l id="532">Vous valez sage femme, un sage philosophe.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="533">Allez lui dire donc qu'il cache son ardeur,</l>
-            <l id="534">Pour la dernière fois, je vous parle docteur,</l>
-            <l id="535">Je ne plaindrai plus, mais si plus il m'outrage,</l>
-            <l id="536">Et s'il me prend jamais pour une autre qu'une sage,</l>
-            <l id="537">Si pour m'ôter l'honneur il fait aucun effort,</l>
-            <l id="538">Je le ferai donner cent coups après sa mort.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="539">Où le rencontrerai-je, il va perdre la vie,</l>
-            <l id="540">Car cette sage femme est en grande furie.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="18">
-          <head>SCÈNE XVIII. Léandre, Le Docteur.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="541">Hé bien qu'en dites-vous , vous a-t-on frotté ?</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="542">Comment ? Instruisez moi de cette nouveauté.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="543">Tu fais donc l'ignorant ah ! Grimpeur de murailles,</l>
-            <l id="544">Comme aux méchants chevaux il te faut des murailles.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="545">Mon père instruisez moi, que veut dire ceci ?</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="546">Cette Dame, fripon, vient d'encores d'ici,</l>
-            <l id="547">Elle s'est plainte à moi d'une nouvelle offense,</l>
-            <l id="548">Et m'a dit qu'ayant su de son mari l'offense,</l>
-            <l id="549">Tu t'es comme un pendard glissé dans sa maison</l>
-            <l id="550">Et que pour arriver à cette trahison</l>
-            <l id="551">Tu t'es jeté dedans par dessus la muraille</l>
-            <l id="552">De même qu'un voleur, et qu'un franc rien qui vaille,</l>
-            <l id="553">Que le long d'un figuier tu t'es laissé glisser,</l>
-            <l id="554">Et qu'après le jardin ayant su traverser,</l>
-            <l id="555">Tu t'es ainsi qu'un chat lancé dans sa fenêtre,</l>
-            <l id="556">Ou dès le même instant qu'elle t'a vu paraître,</l>
-            <l id="557">Elle en fait mention de sa grande vertu,</l>
-            <l id="558">S'est pâmée à tes yeux, et pus t'a bien battu :</l>
-            <l id="559">Mais tu mourras s'il faut que son mari le sache,</l>
-            <l id="560">Tu t'en dois assurer, car sa vertu se fâche.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="561">Docteur, vous m'instruisez plus que vous ne pensez,</l>
-            <l id="562">Mes feux par vos avis se verrons apaisés.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="563">Enfin il fut guérir le mal qui vous possède.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="564">Allez vous m'en venez d'apprendre le remède.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="565">Vous voilà me croyant plus heureux à mon gré.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="566">Pas encor, mais dans peu Docteur je le ferai.</l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="567">Adieu, travaillez donc à vous rendre plus sage.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="568">Oui je vais travailler, et pour mon avantage. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="19">
-          <head>SCÈNE XIX.</head>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN revenant de la guerre de Coquetterie.</speaker>
-            <l id="569">Enfin de tous côtés la gloire m'environne,</l>
-            <note type="L">Bellone : dieu qui personnifie la guerre et accompagne Mars.</note>
-            <l id="570">Pour le bien des maris dans les champs de Bellone,</l>
-            <l id="571">J'ai défaits de coquets, on n'en parlera plus,</l>
-            <l id="572">Nous vivrons ne repos, les galants sont vaincus,</l>
-            <l id="573">J'ai rasé leurs châteaux, j'ai saccagé leurs villes</l>
-            <l id="574">J'ai démoli leurs forts, j'ai désolé leurs îles,</l>
-            <l id="575">Et notre République est si bien en repos,</l>
-            <l id="576">Qu'on me doit ce qu'on doit aux plus vaillants héros.</l>
-            <l id="577" part="i">Ma belle.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="577" part="m">Qui va là ?</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="577" part="f">Mari couvert de gloire,</l>
-            <l id="578">Mari, mari qui vient d'emporter la victoire,</l>
-            <l id="579">Mais écoute, je vais te faire le portrait,</l>
-            <l id="580">Du plus âpre combat qui jamais se soit fait,</l>
-            <note type="L">Atropos : L'une des trois Parques qui tenaient les ciseaux qui coupaient le fil de la vie des hommes.</note>
-            <l id="581">Et jamais Atropos avec sa pâle trogne,</l>
-            <l id="582">Ne reçut tant de gloire, et n'eût tant de besogne,</l>
-            <l id="583">Aussitôt que je fus dans le camp des maris,</l>
-            <l id="584">Dont je fus général, l'ennemi fut surpris,</l>
-            <l id="585">Il se met en bataille, et nous veut reconnaître,</l>
-            <l id="586">Je mets l'ordre partout et le voyant paraître,</l>
-            <l id="587">Je le vais recevoir avec quatre escadrons,</l>
-            <l id="588">De jaloux irrités conduits par les soupçons,</l>
-            <l id="589">Chefs assez redoutés dans l'armée ennemie,</l>
-            <l id="590">Et dont l'âme jamais ne parut endormie ;</l>
-            <l id="591">Là, nous nous attaquons avec tant de fierté,</l>
-            <l id="592">Que la victoire va d'un et d'autre côté ;</l>
-            <l id="593">Je vole à l'aile droite, et je cours à la gauche,</l>
-            <l id="594">Je frappe incessamment, comme un pré je la fauche,</l>
-            <l id="595">Et pour tôt achever, courant de rang en rang,</l>
-            <l id="596">Pour les noyer je fais une mer de leur sang.</l>
-            <note type="L">Alcovistes : Nom donné chez les précieuses à celui qui remplissait l'office de chevalier servant, et qui les aidait à faire les honneurs de leur maison et à diriger la conversation ; ainsi dit de l'alcôve contenant la ruelle où les précieuses recevaient. [L]</note>
-            <l id="597">J'admirai la valeur de quelques Alcovistes,</l>
-            <note type="L">Ruellistes : Terme péjoratif qui définit une personne fréquentant les ruelles, c'est à dire les salons et chambres de précieuses.</note>
-            <l id="598">Je leur criai quartier, ainsi qu'aux Ruellistes,</l>
-            <l id="599">Ils n'en voulurent point, et j'aimai leur valeur,</l>
-            <l id="600">Et ne dédaignai pas d'en être le vainqueur,</l>
-            <l id="601">Le régiment constant fit merveille, fit rage,</l>
-            <l id="602">L'inconstant prit la suite, et manqua de courage,</l>
-            <l id="603">Les blondins tout d'un coup nous lâchèrent le pied,</l>
-            <l id="604">Et les voyant sans coeur, ils me firent pitié,</l>
-            <l id="605">La fortune partout nous fit craindre dans l'âme :</l>
-            <l id="606">Mais comme la victoire est une sage femme,</l>
-            <l id="607">Elle se vient ranger du côté des maris,</l>
-            <l id="608">Me fit maître du camp, et nous donna le prix,</l>
-            <l id="609">Maris ne craignez plus, vivez sans jalousie,</l>
-            <l id="610">J'ai conquis le pays de la Coquetterie.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="611">Moi, j'ai sauvé la vie à certains garde bien.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="612" part="i">Et comment as-tu fait ?</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="612" part="f">Ma fois je n'en sais rien,</l>
-            <l id="613">Sans tant verser de sang, sans se mettre en furie,</l>
-            <l id="614">Sans se peiner beaucoup, mon bras sauve la vie.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="615">Allons tôt voir ma femme, ouvrez la porte, ouvrez.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="20">
-          <head>SCÈNE XX. Isabelle à la fenêtre, Léandre, Trapolin, La Capitan.</head>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="616" part="i">Hélas ! Que ferons nous.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="616" part="f">Ouvrez tôt dépêchez.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="617" part="i">Dieux que je crains pour moi.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="617" part="f">Moi je crains pour vous même.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="618">Nous voilà l'un et l'autre en un péril extrême.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="619" part="i">Ouvrez, la vertu même.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="619" part="f">Ouvrez donc, et comment,</l>
-            <l id="620">Trapolin d'où procède un tel retardement ?</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="621">Ma foi, je n'en sais rien, je ne suis pas un diable.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="622">Et qui le doit savoir malheureux, misérable,</l>
-            <note type="L">Dariolette : Suivante qui a la confidence de sa maîtresse. Ce mot est tiré de l'Amadis. [F] Le masculin n'est pas attesté par Furetière.</note>
-            <l id="623">Je devais tout occire quelque dariolet</l>
-            <note type="L">Collet : Partie de l'habillement qui joint le cou, qui se met autour du cou. En ce sens on appelle Petit collet, un homme qui s'est mis dans la réforme, dans la dévotion, parce que les gens d'église portent par modestie de petits collets, tandis que les gens du monde en portent de grands ornés de points et de dentelles.</note>
-            <l id="624">Qui n'aura pas osé me prêter le collet,</l>
-            <l id="625">Qui se sera sauvé comme un poltron infâme,</l>
-            <l id="626">En trahison sera venu trouver ma femme,</l>
-            <l id="627">Voilà le fort surpris malgré le qui-vala,</l>
-            <l id="628" part="i">Aux armes Trapolin.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="628" part="f">Tout doux mon maître hola.</l>
-            <l id="629">N'aviez-vous pas conquis, dites sans raillerie,</l>
-            <l id="630">Le Royaume important de la Coquetterie,</l>
-            <l id="631" part="i">Dites donc grand vainqueur.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="631" part="f">Oui, oui j'en suis patron,</l>
-            <l id="632" part="i">J'en suis maître absolu.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="632" part="f">Qu'appréhendez-vous donc.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="633">Je crains qu'on m'ait joué d'un tour de vieille guerre, </l>
-            <l id="634">Ouvrez, ou je mettrai cette maison par terre.</l>
-          </sp>
-          <sp stage="location" who="ISABELLE">
-            <speaker>ISABELLE, à la fenêtre.</speaker>
-            <l id="635" part="i">Comment sortirez vous.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="635" part="f">Ne vous peinez de rien,</l>
-            <l id="636">Allez, allez ouvrir, je sortirai fort bien,</l>
-            <l id="637">Faites fort l'effrayée, et criez la première,</l>
-            <l id="638">Selon que j'agirai, secondez la manière.</l>
-            <stage type="low/toward">Il lui parle à l'oreille.</stage>
-            <l id="639" part="i">Il faut.</l>
-          </sp>
-          <sp who="ISABELLE">
-            <speaker>ISABELLE.</speaker>
-            <l id="639" part="m">Oui, je t'entends bine, ah ! Monsieur.</l>
-          </sp>
-          <sp stage="watch" who="LE CAPITAN">
-            <speaker>LE CAPITAN, voyant sortir un fantôme.</speaker>
-            <l id="639" part="f">Qu'avez-vous ?</l>
-            <l id="640" part="i">Qu'avez-vous ? Mais que vois-je ?</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="640" part="f">Ah ! Le Diable est chez nous,</l>
-            <l id="641">C'est bien pis qu'un amant, mon âme est effrayée,</l>
-            <note type="L">Galimafrée : Ragoût composé de plusieurs restes de viandes. Ce mot se dit figurément et bassement d'un discours, d'un ouvrage fait de plusieurs parties différentes, qui le rendent obscure, et embrouillé. [F]</note>
-            <l id="642">Et la frayeur a fait de la galimafrée, </l>
-            <l id="643">Dans mes chausses, l'esprit ayez pitié de moi,</l>
-            <l id="644">À vos genoux je suis très soumis par ma foi.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="645">Je suis trahis de peur, l'ESprit, je vous honore,</l>
-            <l id="646">C'est l'ombre d'un amant qui me poursuit encore,</l>
-            <l id="647">Une seconde fois pour vaincre les amants, </l>
-            <l id="648">Les irai-je chercher dedans leurs monuments.</l>
-          </sp>
-          <sp stage="think" who="LÉANDRE">
-            <speaker>LÉANDRE, en esprit.</speaker>
-            <l id="649">Capitan, Trapolin, rendez-moi vos épées.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="650">Les voilà, qui de sang sont encore trempées.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="651">Il n'en est plus besoin, ta femme à la vertu,</l>
-            <l id="652">Mais brave Trapolin, dis moi, me connais-tu ?</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="653">Fort mal, et je ne veux jamais vous mieux connaître.</l>
-          </sp>
-          <sp stage="toward" who="LÉANDRE">
-            <speaker>LÉANDRE, au Capitan.</speaker>
-            <l id="654" part="i">Et vous.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="654" part="f">Tout aussi mal, veillez vous disparaître.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="655">Je suis l'ombre de l'un de tes meilleurs parents,</l>
-            <l id="656">Qui tandis que tu vas désoler les galants,</l>
-            <l id="657">Veille comme il le faut à l'honneur de ta femme,</l>
-            <l id="658">Je te puis assurer qu'est est honnête dame ;</l>
-            <l id="659">La plus haute vertu partout lui dit céder :</l>
-            <l id="660">Mais s'il la faut garder, je la viendrai garder.</l>
-            <l id="661">Adieu Pluton m'attend, je vais en l'autre monde.</l>
-          </sp>
-          <sp stage="toxard" who="LE CAPITAN">
-            <speaker>LE CAPITAN, à sa femme.</speaker>
-            <l id="662">Ah ! Vertu sans pareille, ah ! Vertu sans seconde.</l>
-          </sp>
-          <sp stage="toward" who="ISABELLE">
-            <speaker>ISABELLE, à Léandre.</speaker>
-            <l id="663">Belle ombre, où fuyez vous, hélas ! Embrassez-moi.</l>
-            <l id="664" part="i">Bel esprit.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="664" part="f">Recevez ces marques de ma foi,</l>
-            <l id="665">Je vous promets ici que jusques dans la tombe,</l>
-            <l id="666">Mon coeur vous servira d'éternelle hécatombe.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="667" part="i">Ils s'embrassent.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="667" part="f">N'importe, ah ! Ma femme est sans peur !</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="668" part="i">Empêchez-le.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="668" part="f">Non pas il veille à son bonheur.</l>
-            <l id="669">Que cet esprit est bon, et qu'il est raisonnable.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="670" part="i">L'esprit a de l'esprit.</l>
-          </sp>
-          <sp stage="kiss" who="LÉANDRE">
-            <speaker>LÉANDRE, voulant embrasser Trapolin.</speaker>
-            <l id="670" part="m">Mon cher.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="670" part="f">Allez au diable !</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="671" part="i">Adieu, Monsieur l'esprit.</l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="671" part="f">Adieu, songez bien tous</l>
-            <l id="672">À mettre jamais de gardien chez vous.</l>
-          </sp>
-          <sp who="LE CAPITAN">
-            <speaker>LE CAPITAN.</speaker>
-            <l id="673">Non, je n'en mettrai plus, ma femme est par trop sage,</l>
-            <l id="674">À sa rare vertu je ferais trop d'outrage,</l>
-            <l id="675">Me voilà trop heureux, car me voilà vainqueur,</l>
-            <l id="676">Et de plus le mari d'une femme d'honneur.</l>
-          </sp>
-          <sp who="TRAPOLIN">
-            <speaker>TRAPOLIN.</speaker>
-            <l id="677">Au diable les maris avec leur jalousie,</l>
-            <l id="678">Je n'ai jamais reçu plus de peur de ma vie,</l>
-            <l id="679">Ne soyez plus jaloux de peur d'être repris,</l>
-            <l id="680">Et de trouver chez vous de semblable esprits.</l>
-          </sp>
-        </div2>
-      </div1>
-    </body>
-  </text>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">LA FEMME INDUSTRIEUSE</title>
+                <author>DORIMOND, Nicolas Drouin dit</author>
+                <editor/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000520</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY NC SA 3.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                    </licence>
+                </availability><!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/DORIMOND_FEMMEINDUSTRIEUSE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/DORIMOND_FEMMEINDUSTRIEUSE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY NC SA 3.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1661">1661</date>
+                        <date type="premiere"/>
+                        <date type="written"/>
+                        <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k726596</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="isabelle" sex="FEMALE">
+                        <persName>Isabelle</persName>
+                    </person>
+                    <person xml:id="le-capitan" sex="MALE">
+                        <persName>Le capitan</persName>
+                    </person>
+                    <person xml:id="trapolin" sex="MALE">
+                        <persName>Trapolin</persName>
+                    </person>
+                    <person xml:id="le-docteur" sex="MALE">
+                        <persName>Le docteur</persName>
+                    </person>
+                    <person xml:id="leandre" sex="MALE">
+                        <persName>Léandre</persName>
+                    </person>
+                    <person xml:id="colinette" sex="FEMALE">
+                        <persName>Colinette</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords>
+                    <term type="genreTitle">Comédie</term>
+                    <term type="genreTitle">vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LA FEMME INDUSTRIEUSE</titlePart>
+			<titlePart type="sub">COMÉDIE</titlePart>
+		</docTitle> 
+		<docDate when="1661">M. DC. LXI. AVEC PRIVILÈGE DU ROI.</docDate>
+		<docAuthor>Par monsieur DORIMOND, comédien de Mademoiselle.</docAuthor><!--@bio="dorimont"-->
+		<div type="docImprint">
+		<div value="1661-03-26" type="privilege">
+                    <head>PRIVILÈGE DU ROI.</head>
+			<p n="">Par grâce et privilège du Roi donné à Paris le 26 mars 1661, Signé le Roi en son conseil DE FAYES, il et permis au sieur DORIMOND, comédien de Mademoiselle, de faire imprimer les pièces de théâtres, par lui composée, et représentées par la Troupe de Mademoiselle à Paris, par tel imprimeur et libraire qu'il voudra, pendant cinq années : et défenses sont faites à touts autres d'imprimer ni vendre d'autre édition que celle de l'exposant, ou de ceux qui auront droit de lui, à peine de deux mille livres d'amende, de tous dépens, dommages, et intérêts, comme il est porté plus amplement par lesdites lettres.</p>
+			<p n="">Et le sieur Dorimond a cédé et transporté son privilège à Jean Ribou marchand libraire à Paris, pour en jouir suivant l'accord fait entre eux.</p>
+			<p n="">Registré sur le Livre de la Communauté, suivant l'Arrest de la Cour.</p>
+			<p n="">Signé JOSSE, Syndic.</p>
+			<p n="">Les Exemplaires ont été fournis.</p>
+		</div>
+		<div type="acheveImprime">
+                    <p>Achevé d'imprimer pour la première fois, le 6. août 1661.</p>
+                </div>
+		<div type="printer">
+                    <p>À PARIS, Chez Jean RIBOU, sur le Quais des Augustins, à l'Image Saint-Louis.</p>
+                </div><!--@id="RIBOU"-->
+		</div>
+		<performance>
+			<ab type="premiere"/><!--date="(inconnue)"--><!--location="(inconnue)"-->
+		</performance>
+	<div type="dedicace">
+                <opener>
+                    <salute>À MONSEIGNEUR DANGLURE</salute>
+                </opener>
+	<head>Monsieur,</head>
+		<p n="">S'il fallait proportionner les offrandes que l'on vous fait à la grandeur de votre mérite, on ne vous en ferait jamais, et je n'aurais pas eu la témérité de vous faire don de ce petit ouvrage : sur cette assurance, et dans la connaissance que j'ai de votre générosité, et de la beauté de votre âme, j'ai pris le liberté de vous le présenter ; si vous jetez les yeux sur la hardiesse que je prends, considérez aussi, MONSIEUR, que vos attirez les coeurs de tout le monde par votre bel esprit, par la douceur de votre accueil et votre conversation, et qu'on ne se peut défendre de vous le témoigner, et de s'honorer de la glorieuse qualité,  </p>
+		<p n="">MONSIEUR,</p>
+		<p n="">Votre très humble et très obéissant serviteur.</p>
+		<p n="">DORIMONT.</p>
+</div>
+
+		<castList>
+                <head>ACTEURS</head>
+		<castItem>
+                    <role corresp="#isabelle">ISABELLE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="Léandre"-->, femme du Capitan.</castItem>
+		<castItem>
+                    <role corresp="#le-capitan">LE CAPITAN</role><!--@sex="1" @type="H" @statut="soldat" @age="A" @stat_amour="Isabelle"-->.</castItem>
+		<castItem>
+                    <role corresp="#trapolin">TRAPOLIN</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour="néant"-->, valet du Capitan.</castItem>
+		<castItem>
+                    <role corresp="#leandre">LÉANDRE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="Isabelle"-->, Amante d'Isabelle.</castItem>
+		<castItem>
+                    <role corresp="#le-docteur">LE DOCTEUR</role><!--@sex="1" @type="H" @statut="précepteur" @age="A" @stat_amour="néant"-->, précepteur de Léandre.</castItem>
+		<castItem>
+                    <role corresp="#colinette">COLINETTE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem>	
+	</castList>
+	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène est à Paris.</set>-->
+</front>
+<body>
+<div type="act" n="1">
+                <head/>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="1">Impatient amour, Démon qui me possède,</l>
+	<l n="2">Pour le mal que tu fais, n'as tu point de remède :</l>
+	<l n="3">Tu me fais tant de de mal, informent en l'auteur :</l>
+	<l n="4">Va le blesser du trait dont tu perces mon coeur ;</l>
+	<l n="5">Va le brûler des feux dont je suis consommée,</l>
+	<l n="6">Si j'aime pour le moins faits que je sois aimée ;</l>
+	<l n="7">Celui pour qui je souffre ignore mon tourment ;</l>
+	<l n="8">Rends nos ennuis communs, faits qu'il m'aime en l'aimant,</l>
+	<l n="9">Malgré mes surveillants inspire moi l'adresse</l>
+	<l n="10">De lui faire savoir la douleur qui me presse :</l>
+	<l n="11">Tu viens à mon secours, amour le sens bien ;</l>
+	<l n="12">Il faut aller trouver certain homme de bien,</l>
+	<l n="13">Dont il suit les conseil ; c'est un vrai pédagogue,</l>
+	<l n="14">Dont la taille crochue, et la mine de dogue,</l>
+	<l n="15">Ne donne point d'ombrage aux maris de ces lieux :</l>
+	<l n="16">Je lui dirai, Monsieur, on me suit en tout lieux. </l>
+	<l n="17">Un jeune homme de qui vous avez la conduite ;</l>
+	<l n="18">Parce qu'il est bien fait, et qu'il a du mérite,</l>
+	<l n="19">S'imagine qu'il a déjà gagné mon coeur :</l>
+	<l n="20">Réprimez la folie, arrêtez son ardeur.</l>
+	<l n="21">Pour peu que ce jeune homme ait d'esprit et d'adresse,</l>
+	<l n="22">Il viendra droit au but, il verra ma finesse,</l>
+	<l n="23">Voilà le vrai moyen, malgré mes espions,</l>
+	<l n="24">DE voir l'heureux succès de mes intentions,</l>
+	<l n="25">Quand une femme veut, le plus jaloux fantasque </l>
+	<l n="26">Est arrêté tout court, court-il comme un basque.</l>
+</sp>
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Le Capitan, Isabelle.</head>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="27">Écartez-vous blondins, alcouistes, galants</l>
+	<l n="28">Champions de l'amour, amoureu indolents,</l>
+	<l n="29">Petit fort soutenu de colonnes d'ivoire,</l>
+	<l n="30">Je vous garderai bien, et j'aurai de la gloire ;</l>
+	<l n="31">Mais le première femme a pour un bine chéri,</l>
+	<l n="32">Pour nos malheurs trompé le Ciel et son mari,</l>
+	<l n="33">Et les filles pourraient bine tenir de la mère,</l>
+	<l n="34">Tout le sexe est fragile, et la femme est légère.</l>
+	<l n="35">Faisons donc bonne garde à l'entour de ce fort,</l>
+	<l n="36">Faisons ronde. Qui vive ? Ah ! Coquets, par le mort</l>
+	<l n="37" part="I">Qui vive donc ?</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="37" part="M">Mari.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="37" part="M">Qui valà ?</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="37" part="F">Soupirs, plainte.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="38" part="I">Et pour qui ?</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="38" part="M">Pour mari.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="38" part="F">Passez donc et sans crainte.</l>
+	<l n="39">Si c'était pour galants, ils auraient pu rentrer,</l>
+	<l n="40">Quand vous en auriez dû mille fois suffoquer,</l>
+	<l n="41" part="I">Qui va là, qui va là.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="41" part="F">La foi de mariage.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="42">Bon cela, si c'était, Monsieur, concubinage,</l>
+	<l n="43">Il pourrait promptement retourner sur ses pas,</l>
+	<l n="44">Mais visitons un peu tous nos meilleurs soldats;</l>
+	<l n="45">Ma charge est du grand soin, et de plus elle est telle,</l>
+	<l n="46">Qu'un mari doit partout planter la sentinelle.</l>
+	<l n="47">Pour le front promptement, venez ici pudeur,</l>
+	<l n="48">Pour les yeux modestie est un garçon de coeur.</l>
+	<l n="49">Pour la bouche je sais un soldat d'importance</l>
+	<l n="50">Pose le caporal, il s'appelle Silence,</l>
+	<l n="51">Pour le sein, il nous faut mettre sincérité,</l>
+	<l n="52">Sur le coeur il nous faut mettre fidélité.</l>
+	<l n="53">Ces endroits là sont ceux des premières approches,</l>
+	<l n="54">Aussi nous y mettrons des soldats sans reproche,</l>
+	<l n="55">Pour l'endroit où l'amour ne fut jamais oisif.</l>
+	<l n="56">Que faire, il nous y faut mette Génératif.</l>
+	<l n="57">Voilà la place en ordre, et j'en laisse la garde</l>
+	<l n="58">Au brave Trapolin ; mais d'où vient qu'il retarde ?</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="59">C'est qu'il sait que je suis une femme de bien,</l>
+	<l n="60">Qu'il n'appartient qu'à moi de ma garder fort bien.</l>
+</sp>
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Trapolin, Isabelle, Capitan.</head>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="61">Pour bien garder un fort, il faut chose certaine,</l>
+	<l n="62">Bien boire et bien manger, et remplir sa bedaine,</l>
+	<l n="63">La mienne l'en j'en jure, et j'en ai le hoquet ;</l>
+	<l n="64">Mais approchons du fort, vois-je pas un coquet ?</l>
+	<l n="65" part="I">Qui va la.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="65" part="M">C'est mari.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+<note type="L">Suisse : valet qui gardait l'entrée d'une maison, homme de maison, portier.</note>
+	<l n="65" part="F">Je suis pire qu'un suisse,</l>
+	<l n="66">Je méconnais mon maître en lui rendant service,</l>
+	<l n="67" part="I">Morbleu retirez-vous.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="67" part="F">Arrête Trapolin.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="68">Je percerai ta panse, et ferai du boudin.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="69" part="I">Quoi, moi qui suis mari.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="69" part="F">Il n'est mai qui tienne.</l>
+	<l n="70">Je gouverne le fort, que personne n'y vienne.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="71">Extrait de ma valeur et de mes actions,</l>
+	<l n="72">Toi qui m'a vu dompter cent mille nations,</l>
+	<l n="73">Ton courage me plaît, je ne suis plus en peine, </l>
+	<l n="74">Tu garderas ma femme en brave capitaine ;</l>
+	<l n="75">Ainsi qu'un gros jambon, couvre toi de lauriers,</l>
+	<l n="76">Je m'en vais mettre au jour d'autres exploits guerrier :</l>
+	<l n="77">Certain petit état nommé Coquetterie;</l>
+	<l n="78">Gouverné par un roi nommé Galanterie,</l>
+	<l n="79">Attaque incessamment mariage et maris, </l>
+	<l n="80">Et de leur République, il poursuit les débris,</l>
+	<l n="81">N'aime que le désordre, et rien que l'inconstance,</l>
+	<l n="82">Et moi, j'en veux en réprimer l'insolence,</l>
+	<l n="83">Je vais premièrement dans l'île des coquets</l>
+<note type="L">Poulet : signifie aussi un petit billet amoureux qu'on envoie aux Dames galantes, ainsi nommé, parce qu'en le pliant on y faisait deux pointes qui representaient les ailes d'un poulet. [F]</note>
+	<l n="84">Les vaincre, et mes goujats mangeront leurs poulets.</l>
+	<l n="85">Puis j'irai massacrer tous les peuples de tendre</l>
+	<l n="86">De leur coeur amoureux jeter au vent la cendre</l>
+	<l n="87">Villages, villes, bourgs, bourgades et châteaux</l>
+	<l n="88">De chansons, billets doux, stances et madrigaux</l>
+	<l n="89">Seront de mes soldats traités d'étrange sorte</l>
+	<l n="90">Ils en feront carnage, ou le diable m'emporte.</l>
+	<l n="91">Les soupirs, les sanglots, les plaintes à leur tour</l>
+	<l n="92">Par mes ordres verront avorter l'art d'amour,</l>
+	<l n="93">Doux regard pourrais bine en prendre la défense ;</l>
+	<l n="94">Suivi d'inquiétude et de persévérance ;</l>
+	<l n="95">Mais je veux que soupçon leur coupe le chemin</l>
+	<l n="96">C'est un chef admirable, il est homme de main,</l>
+	<l n="97">Protestations, sois, feu déclaré, visite,</l>
+	<l n="98">Larmes, vers amoureux, entreprise, conduite,</l>
+	<l n="99">Ces pays-là seront is à feu comme à sang,</l>
+	<l n="100">Sans que l'on ait regard à mettre ni rang :</l>
+	<l n="101">Enfin je reviendrai vainqueur et plein de vie,</l>
+	<l n="102">Du royaume orgueilleux de la Coquetterie.</l>
+	<l n="103">Je veux que les maris me doivent leur bonheur</l>
+	<l n="104">M'élèvent un trophée en superbe vainqueur :</l>
+	<l n="105">Le mariage enfin est une République,</l>
+	<l n="106">Qui doit durer malgré tout l'aristocratique,</l>
+	<l n="107">L'empire des Coquets est trop grand ma foi</l>
+	<l n="108">Je veux que leur débris ne se doive qu'à moi.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="109">Les maris vous devront leur nouvelle disgrâce ;</l>
+	<l n="110">Les jaloux ont toujours du pire quoi qu'on fasse :</l>
+	<l n="111">Mais, Monsieur, dans combine serez-vous de retour ?</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="112">Pour ces exploits je veux le demis quart d'un jour :</l>
+	<l n="113" part="I">Adieu.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="113" part="F">Faites, Amour, le succès de ma flamme,</l>
+	<l n="114">S'ils captivent mon corps ils n'ont rien sur mon âme,</l>
+	<l n="115">Et mon aimable amant sous votre autorité,</l>
+	<l n="116">Peut tout seul se vanter de la captivité.</l>
+</sp>
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Le Docteur, Léandre.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="117">Quoi tous mes documents, et toute ma doctrine</l>
+	<l n="118">Ne pourront réprimer votre humeur libertine</l>
+	<l n="119">De la philosophie avec vous le dégoût : </l>
+	<l n="120">Avec moi voulez-vous pousser Socrate à bout,</l>
+	<l n="121">Et le divin Platon se plaint de vous encore,</l>
+	<l n="122">Ferez-vous plus longtemps enrager Pythagore.</l>
+	<l n="123">Zénon se plaindra-t-il incessamment de vous ;</l>
+	<l n="124">Mettrez vous Demosthène en un plus grand courroux ?</l>
+	<l n="125">Et profitant si peu de leurs doctes merveilles,</l>
+	<l n="126">Voulez-vous que Bias, vous coupe les oreilles ?</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="127" part="I">Pour vivre en honnêtre homme.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="127" part="F">Et finissant mon souhait</l>
+	<l n="128">Veux-tu que Cicéron te donne ici le fouet ?</l>
+	<l n="129">Ou que voyant ta tête, une tête de mule,</l>
+<note type="L">Férule : Petite palette de bois ou de cuir avec laquelle on frappe les écoliers dans la main. [L]</note>
+	<l n="130">Cet orateur du moins te donne la férule.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="131" part="I">Il faut être galant.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="131" part="F">Et que Sinecius,</l>
+	<l n="132">D'un coup de poing te mette au chemin des vertus ;</l>
+	<l n="133">Veux-tu qu'Anaximandre en de doctes manières</l>
+<note type="L">Etrivière : Courroie de cuir, par laquelle les étriers sont suspendus. Donner les étrivières, c'est châtier des valets de livrée, les fouetter avec les étrivières. [F]</note>
+	<l n="134">Te vienne ici donner mille coup d'étrivières.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="135" part="I">Les pédants sont raillés.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+<note type="C">Mauraux : On peut estimer sans certitude qu'il s'agit du mot marauds ; pas de référence trouvé à un Mauraux.</note>
+	<l n="135" part="F">Veux-tu que les Mauraux</l>
+	<l n="136">Te donnent mille coups, te mettent en morceaux ;</l>
+<note type="L">Sénèque : (le Philosophe) né à Cordoue en l'an 3 de J.C., étudia l'éloquence sous son père et suivit d'abord le barreau. Son talent oratoire avait donné ombrage à Caligula, il quitta la carrière pour s'adonner à la philosophie. (....) A la mort de Caligula, il courut la carrière des honneurs et arriva à la questure. (...) Nous avons un grand nombre de d'écrits philosophiques de Sénèque. (...) Partout il prêche la morale le plus sévère et enseigne surtout le mépris de la mort. (...) On a sous le nom de Sénèque dix tragédies. [B]</note>
+	<l n="137">Que Sénèque t'applique avec une sentence</l>
+	<l n="138">Un soufflet qui t'apprenne à quitter l'insolence.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="139" part="I">J'aime d'indépendance.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="139" part="F">Et de nos Libertins</l>
+	<l n="140">Veux-tu suivre toujours les sentiments mutins ;</l>
+	<l n="141">Veux-tu tromper Philis, Amarante, Isabelle.</l>
+	<l n="142">De leur honneur perdu faire une bagatelle.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="143" part="I">Je veux ce que je veux.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="143" part="F">Et suivre une Cloris,</l>
+	<l n="144">Consommer ta jeunesse auprès de son teint de lys,</l>
+	<l n="145">Lui dire tous les jours, Madame, je vous aime,</l>
+	<l n="146">Admirez ma langueur, et mon amour extrême,</l>
+	<l n="147">Et puis dire du ton de nos courtisans.</l>
+	<l n="148">Ah ! Qu'elle est adorable, ah les beaux yeux mourants,</l>
+	<l n="149">L'insensibilité d'une âme indépendante,</l>
+	<l n="150">De périr à ses yeux ne se croit pas exempte;</l>
+	<l n="151">Dieu me damne beaux yeux, je perds la liberté,</l>
+	<l n="152">Faire la révérence, et le corps démonté,</l>
+	<l n="153">Mettre la tête à bas hausser les deux épaules,</l>
+	<l n="154">Du pied broder la chambre, et perdre cent paroles</l>
+<note type="L">Oison : On dit par injure à un homme, que c'est un oison, qu'il se laisse mener comme un oison ; pour dire, que c'est un sot, qui ne sait pas se conduire qu'il n'agit que par l'organe d'autrui. [F]</note>
+	<l n="155">Faire le fat, enfin être au rang des oisons,</l>
+	<l n="156">Et secouer le jonc de toutes mes leçons.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="157">Docteur n'est-il pas temps que je quitte l'école,</l>
+<note type="L">Cujas : Jurisconsulte français, brillant représentant de l'École historique du droit romain.</note>
+<note type="L">Barthole : Célèbre jurisconsulte, né en 1313 en Ombrie, enseigna le droit à Pise et à Pérouse. Barthole est le premier qui a fait des commentaires suivis sur toutes les parties du texte. [B]</note>
+	<l n="158">En passant je verrai Cujas et Barthole ;</l>
+	<l n="159">Mais aussi j'irai voir et fort assidûment ;</l>
+	<l n="160">Les dames, compagnie, et je ferai l'amant.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="161">Et bien je te propose une fille admirable.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="162" part="I">De quelle qualité ?</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="162" part="M">De femme ?</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="162" part="F">Ah ! Misérable,</l>
+	<l n="163">Voulait couper la gorge au printemps de mes jours ;</l>
+	<l n="164">Vouloir m'assassiner, rengainez vos discours,</l>
+	<l n="165">Je vous ai fait sans doute une mortelle offense ;</l>
+	<l n="166">Comme me marier, je meure si j'y pense,</l>
+	<l n="167">Je veux me divertir, Adieu Docteur, Adieu.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+<note type="L">Cupidon</note>
+	<l n="168">Cupido te conduise en un honnête lieu,</l>
+	<l n="169">Voilà comme il me traite, après que son étude</l>
+	<l n="170">M'a coûté mille soins, il n'a qu'un gratitude.</l>
+</sp>
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Isabelle, Trapolin armé.</head>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="171">Vous fait, Tapolin, fort mal votre devoir,</l>
+	<l n="172">Devez vous endurer que l'on ne puisse voir ?</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="173" part="I">Ventre, qui vous a vue.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="173" part="F">Un papillon qui m'aime, </l>
+	<l n="174">Qui vole autour de moi ; mais je garde moi-même</l>
+	<l n="175">Ce que toute la terre aurait du mal à garder,</l>
+	<l n="176">Un tome devrait ne me pas regarder ?</l>
+	<l n="177">Si je pouvais j'irais jusqu'au fond de l'âme</l>
+	<l n="178" part="I">Corriger les désirs.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="178" part="F">Ah ! La pudique femme.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="179">Écoute, je connais un savant, un docteur</l>
+	<l n="180">Ami des bonnes moeurs, amoureux de l'honneur</l>
+	<l n="181">Il loge près d'ici, le voilà, va lui dire</l>
+	<l n="182">Que je lui veux parler, et que je le désire.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="183">Morbleu que cette femme a de sincérité</l>
+	<l n="184">Pour son bijou, je crois qu'il est en sûreté.</l>
+<stage type="toward">Il s'adresse au docteur.</stage>
+	<l n="185">Mon révérend Docteur, une dame fort belle,</l>
+	<l n="186">(À ce qu'elle m'a dit, fort sage, et très fidèle)</l>
+	<l n="187">Voudrait bien vous parler sur un cas réservé ;</l>
+	<l n="188">Cas pour lequel je veille, et que j'ai conservé.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="189">Un cas ? Il est des cas de diverses manières,</l>
+	<l n="190">Et mes opinions y sont fort singulières ;</l>
+	<l n="191">Même il est des cas us, et des cas fortuits,</l>
+	<l n="192">Selon le cas, les cas sont bien ou mal conduits,</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="193" part="I">C'est une question.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="193" part="F">Question ? Pour le sages</l>
+	<l n="194">Il est des question barbares et sauvages ;</l>
+	<l n="195">Il est des questions, et des questionneurs,</l>
+	<l n="196">Qui sont très importants à tous les auditeurs.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="197" part="I">C'est un doute fondé.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR</speaker>
+	<l n="197" part="F">Débrouille ton langage,</l>
+	<l n="198">Un doute mal fondé cause bien du ravage.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="199" part="I">C'est un amour malin.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR</speaker>
+	<l n="199" part="F">L'amour ne l'est jamais ;</l>
+	<l n="200">Mais pour les amoureux, ils sont bons ou mauvais.</l>
+	<l n="201">Pour parler des amours, des amants, des amantes,</l>
+	<l n="202">Les homme sont constants, les femmes inconstantes.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="203" part="I">Ah ! Laissez-moi parler.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="203" part="F">Parler ? Auparavant</l>
+	<l n="204">Vois si tu peux passer pour un animal parlant,</l>
+	<l n="205">Quand on parle avec moi, l'ami toujours j'affecte,</l>
+	<l n="206">De savoir si l'on est bête, homme, ou bien infecte,</l>
+	<l n="207">Alors que je le sais, je mesure mon sens,</l>
+	<l n="208">Et le proportionne au fort de leurs accents,</l>
+	<l n="209">Peut-être en ta parlant j'offenserais mon être ;</l>
+	<l n="210">Parler te convient moins que heurter, et que pestre *???**.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="211" part="I">Je parlerai.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="211" part="F">Tais-toi ne hausse point le voix,</l>
+	<l n="212">Tu mettrais la raison dans les derniers abois :</l>
+	<l n="213">Le bon sens est choqué ; quand tu formes un langage ;</l>
+	<l n="214">Articuler la voix n'est pas de ton usage.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN l'emportant.</speaker>
+	<l n="215">Que le diable t'emporte avecque ton Latin,</l>
+	<l n="216">Ma maîtresse t'attend, il faut venir soudain.</l>
+	<l n="217">Voilà le révérend ennemi du profane :</l>
+	<l n="218">Qu'un docteur est fâcheux, j'aimerais mieux un âne,</l>
+<note type="L">Harangueur : Fig. et familièrement. Celui qui parle beaucoup, celui qui fait des réprimandes sur toutes choses. [B]</note>
+	<l n="219">Je vous laisse avec lui, ce maudit harangueur,</l>
+	<l n="220">Tout aujourd'hui, je crois, me portera malheur.</l>
+</sp>
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Le Docteur, Isabelle.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="221">Brillant astre divin, belle reine des fières,</l>
+	<l n="222">Qui désire de moi vos beautés meurtrières ?</l>
+	<l n="223">Vos printaniers appas, vos attraits sans quartier,</l>
+	<l n="224">Qui font brûler les gens dans le mois de janvier.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="225">Monsieur, le bruit commun qui court de votre estime,</l>
+	<l n="226">Ma fait avoir recours à votre esprit sublime :</l>
+	<l n="227">Vous êtes précepteur d'un jeune homme bien fait :</l>
+	<l n="228">Mais qui sait mal son monde, et sait peu ce qu'il fait.</l>
+	<l n="229">Je suis femme d'honneur, ardente comme braise,</l>
+	<l n="230" part="I">Au combat des vertus.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="230" part="F">Hé bien, j'en suis bien aise.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="231">Ce jeune homme en un mot a la témérité </l>
+	<l n="232">De venir tous les jours insulter ma beauté,</l>
+	<l n="233">Avec des regards, dont le trop de licence</l>
+	<l n="234">Fait trembler ma pudeur, et craindre ma prudence.</l>
+	<l n="235">Or vous n'ignorez pas le faible des humains,</l>
+	<l n="236">Qu'honneur en vain souvent a fait de bons desseins,</l>
+	<l n="237">Et si dans les combats des mauvaises pensées,</l>
+	<l n="238">Satan ne voyait point ses forces repoussées,</l>
+	<l n="239">Par les gens comme vous, et d'honneur et de bien,</l>
+	<l n="240">L'honneur serait bien faible, et ne serait plus rien.</l>
+	<l n="241">Dites-lui donc, Monsieur, qu'il me doit mieux connaître,</l>
+	<l n="242">Et qu'il ne vienne plus autour de ma fenêtre ;</l>
+	<l n="243">Que mon honneur s'offense à l'y voir si souvent,</l>
+	<l n="244">Et que je ne suis pas une tête à l'évent,</l>
+	<l n="245">Que l'honneur m'est cent fois plus que ne m'est la vie ;</l>
+	<l n="246">Qu'il cesse, s'il ne veut voir punir sa folie.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="247">Ô femme singulière ! Et femme qui ne fut,</l>
+<note type="L">Belzébuth : Prince des démons dans la Bible.</note>
+	<l n="248">S'il faut que vous soyez femme, et non Belzebuth,</l>
+	<l n="249">On vous doit élever un trophée admirable ;</l>
+	<l n="250">Comment, vous êtes femme, et n'êtes pas un diable :</l>
+	<l n="251">Comment, vous êtes femmes, et suivez la vertu ;</l>
+	<l n="252">Ah ! Sans doute l'amour ne vous a pas connu.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="253">Je connais bine l'amour, et j'y suis fort sensible ;</l>
+	<l n="254">Encore que son feu ne me soit pas nuisible,</l>
+	<l n="255">Ma vertu n'est point due à mon tempérament,</l>
+	<l n="256">Je la dois toute entière à mon raisonnement.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="257">Vous en savez beaucoup pour une vertueuse.</l>
+	<l n="258" part="I">Baste, vaille que vaille. </l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="258" part="F">En âme langoureuse</l>
+	<l n="259">À celui qui me garde il fait des compliments,</l>
+	<l n="260">Sous qui sont trop cachés ses tendres sentiments ;</l>
+	<l n="261">Et le pauvre garçon, peu fait au stratagème,</l>
+	<l n="262">Si je n'avais le soin de me garder moi-même,</l>
+	<l n="263">Tomberait dans le piège ; et mon honneur serait,</l>
+	<l n="264">Sans ma rare sagesse, ou le galant voudrait.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="265">Allez, vous valez trop, et vous êtes trop sage,</l>
+	<l n="266">Vous allez devenir l'exemple de note âge,</l>
+	<l n="267">Je le vais gourmander, et lui faire savoir</l>
+	<l n="268">Qu'il doit ainsi que vous, faire bien son devoir.</l>
+<stage type="exit">Elle sort.</stage>
+	<l n="269">Est-ce une illusion est-ce chose réelle,</l>
+	<l n="270">Rencontrer dans ce temps une femme fidèle,</l>
+	<l n="271" part="I">Pour moi je suis confus.</l>
+</sp>
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Léandre, Le Docteur.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="271" part="F">Perdez-vous la raison</l>
+	<l n="272">D'aller roder sans cesse autour de cette maison;</l>
+	<l n="273">D'une femme d'honneur qui m'en a fait des plaintes,</l>
+	<l n="274">Qui dit qu'à son honneur vous donnés des atteintes.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="275">Moi ? Je n'ai point encor assez vu de beauté</l>
+	<l n="276">Pour voir mon cher docteur périr ma liberté,</l>
+	<l n="277" part="I">Je la possède encor ?</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="277" part="F">Et cette belle Dame,</l>
+	<l n="278">À qui si finement vous dites votre flamme,</l>
+	<l n="279">Par de faux compliments adressés au valet.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="280" part="I">Que me voulez-vous dire ?</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="280" part="F">Apprenez mon cadet </l>
+	<l n="281">Qu'il faut être plus sage, ou bine que votre vie</l>
+	<l n="282">Dans ses occasions sera bientôt finie.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="283">La maison, le valet, et la femme ma foi</l>
+	<l n="284">Sont connus mon cher père à tout autre qu'à moi.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="285">Ah ! Que vous êtes fort au dessus de la négative.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE, bas.</speaker>
+	<l n="286">Mais ne serait-ce point un bonheur qui m'arrive.</l>
+	<l n="287">Une bonne fortune, ah! Que je suis grossier,</l>
+	<l n="288" part="I">Apprenons la maison.</l>
+</sp><!--@stage="low"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="288" part="F">Il ne faut plus lien.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="289">La maison seulement ne m'en est pas connue.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="290">La voilà franc pendard, détournez-en la vue,</l>
+	<l n="291">Ou bien j'airai moi-même avertir ses parents,</l>
+	<l n="292">Adieu, gouvernez-vous et rappelez vos sens.</l>
+</sp>
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII.</head>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="293">Cette femme gardée à toute heure, sans cesse,</l>
+	<l n="294">Pour m'apprendre ses feux a trouvé cette adresse,</l>
+	<l n="295">Je ne l'ai jamais vue, et ne la connais pas,</l>
+	<l n="296">Il faut qu'elle ait en moi trouvé quelque appas,</l>
+	<l n="297">Et que pour arriver au bonheur que j'espère,</l>
+	<l n="298">Elle m'instruise ainsi de ce que je dois faire ;</l>
+	<l n="299">Profitons, s'il se peut, de cette occasion.</l>
+</sp>
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Léandre, Trapolin armé à la porte, Isabelle à la fenêtre.</head> 
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="300">Voilà le cher objet qui fait ma passion,</l>
+	<l n="301">La ruse a réussi, l'amour est un grand maître.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="302">Sans doute voilà la Dame à la fenêtre ;</l>
+	<l n="303">Dieux la rare merveille, amour je suis heureux,</l>
+	<l n="304">Il faut lui témoigner même ardeur, même feux,</l>
+	<l n="305">Adressons un discours à ce valet pour elle,</l>
+	<l n="306">C'est si je l'ai compris le désir de la belle.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="307">Qui vala, qui vala, qui vala, qui qui qui.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="308">Un homme qui vous aime, et votre bon ami,</l>
+	<l n="309">Mon brave je vous dois, oui je vous dois la vie,</l>
+	<l n="310">Sans vous par des voleurs elle m'était ravie.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="311">Moi je vous ai servi ? Quand ai-je fait cela ?</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="312">Tantôt mon brave Hector quand je passais par là</l>
+	<l n="313" part="I">Alexandre, Orondate, Achille.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="313" part="F">Je me nomme</l>
+	<l n="314">Trapolin, autrement le brave et galant homme ;</l>
+	<l n="315">Mais quand aurais-je fait cette belle action,</l>
+	<l n="316">Il est vrai que mon bras est d'exécution,</l>
+	<l n="317">Je frappe rudement, je suis inexorable.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="318">Lors que vous vous battez vous frappez comme un diable.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="319">LA nuit passée encore je songeais fortement</l>
+	<l n="320">Que je me battais bien, et généreusement,</l>
+	<l n="321">Peut-être en ce temps là je vous sauvai la vie.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="322">Certes je vous la dois, mon âme en est ravie.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="323" part="I">Je l'avais oublié.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="323" part="F">L'on ne se souvient pas</l>
+	<l n="324">Toujours des actions, et du coeur et du bras.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="325" part="I">Je commence à le voir.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="325" part="F">J'ai suivi les écoles,</l>
+	<l n="326">Et je ne sais pas mal arranger mes paroles ;</l>
+	<l n="327">Souffrez que je vous fasse un petit compliment,</l>
+	<l n="328">Que je vous veux donner mon brave en paiement.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="329">Je suis dans les honneurs, me voilà dans le lustre,</l>
+	<l n="330">Il n'est que de la faire et de se rendre illustre ;</l>
+	<l n="331">Parlez, je vous entends.</l>
+	<l n="332">...........................</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE, à sa dame.</speaker>
+<p n="1">
+	<s n="1">Miracle de nos jours, admirable sujet d'estime, trésors de perfections, divinité visible, j'éprouve en ce moment que vous voir et devenir votre captif est une même chose : que de vous connaître et vous aimer, sont deux actes inséparables, et qu'il est constant qu'on ne peut plus vivre que pour vous, quand on s'est trouvé assez heureux pour vous connaître ; vous m'avez fait une grâce dont je m'avoue indigne ; car j'ai fort bien compris que vous me désirez à votre service, je vous consacre ma vie ; et pour vous faire un serment solennel, je jure par vous-même que tant qu'elle durera, je serai tout vôtre. </s>
+	<s n="2">Les dieux ne doivent point parler aux mortels, ils ont des façons muettes pour s'expliquer, usez-en de même, vous pouvez d'un regard m'apprendre si vous souhaitez que je continue à vous servir. Si vous m'aimez, et si vous désirez que je vous aime toujours.</s>
+</p>
+<stage type="wave">Elle lui fait signe, et lui témoigne qu'elle l'aime.</stage>
+</sp><!--@stage="toward"-->
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="333">Ah ! Vous avez de l'esprit, Trapolin vous le dit,</l>
+	<l n="334">On ne m'a jamais fait un si grand débit,</l>
+	<l n="335">Mais bine qu'en tout ici mon esprit vous admire,</l>
+	<l n="336">J'y trouve toutefois quelque chose à redire,</l>
+	<l n="337">Vous remuez les yeux beaucoup plus qu'il ne faut,</l>
+	<l n="338">Pour moi ce compliment est de deux pieds de haut,</l>
+	<l n="339">Il faut selon mon sens que l'on proportionne</l>
+	<l n="340">Les regards à l'objet, les mots à la personne.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="341">Hé bien, une autrefois Monsieur je le ferai,</l>
+	<l n="342">Vous devez cependant m'en savoir fort bon gré.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="343">Allez je suis content,, et je vous remercie,</l>
+	<l n="344">Employez-moi toujours à vous sauver la vie ;</l>
+	<l n="345">On me craint, on m'estime, et l'on fait ces de moi,</l>
+	<l n="346">Il n'est ma foi rien tel que d'être dans l'emploi ;</l>
+	<l n="347">Mais au combat je suis par trop inexorable,</l>
+	<l n="348">Trêve pour un moment, allons trinquer en diable.</l>
+</sp>
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X.</head>
+<sp who="#colinette">
+                        <speaker>COLINETTE, seule.</speaker>
+	<l n="349">Je ne sais ma foi plus comment me ménager,</l>
+	<l n="350">Ces diables de blondins me font tous enrager,</l>
+	<l n="351">L'un me prend mes galants, l'autre me prend mes tresses,</l>
+	<l n="352">Ils me font mille maux à force de caresses,</l>
+	<l n="353">J'aimerais mieux mourir que perdre mon honneur,</l>
+	<l n="354">Je me souviens du jour que j'en perdis la fleur :</l>
+	<l n="355">Mais en ligne directe, et par le mariage,</l>
+	<l n="356">Je parus si pudique, et si simple, et si sage,</l>
+	<l n="357">Dame, j'étais jolie et j'avais des appas,</l>
+	<l n="358">Je suis encore passable, et je ne déplais pas,</l>
+	<l n="359">Le veuvage m'ennuie, il faut que je l'avoue.</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. Léandre, Colinette.</head>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="360">Ah ! Voici notre folle, il faut que je m'en joue.</l>
+</sp>
+<sp who="#colinette">
+                        <speaker>COLINETTE.</speaker>
+	<l n="361">Dieux ! Fuyons ces coquets et leurs friands discours.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="362">Hé bien rare beauté me fuirez vous toujours ?</l>
+	<l n="363">Peut-on voir ce beau sein et cette belle gorge.</l>
+</sp>
+<sp who="#colinette">
+                        <speaker>COLINETTE.</speaker>
+<note type="L">Tredame : Jurement des femmes dans l'ancienne comédie ; abréviation de Notre-Dame. [L]</note>
+<note type="L">Arder : Brûler. [L]</note>
+	<l n="364">Tredame vous ardez plus qu'une ardente forge,</l>
+	<l n="365">Laissez moi, laissez moi, que me voulez vous donc ?</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="366">Je veux toucher ce sein, cette aimable téton.</l>
+</sp>
+<sp who="#colinette">
+                        <speaker>COLINETTE.</speaker>
+	<l n="367">Diable de suborneur, allons tu n'est pas sage ;</l>
+	<l n="368">On ne peut toucher là que par le mariage :</l>
+	<l n="369">Jeunes filles croyez que tous les cajoleurs,</l>
+	<l n="370">Sont tous des inconstants, des fourbes, des menteurs,</l>
+	<l n="371">On mène à billets doux, et puis à sérénades,</l>
+	<l n="372">De là vont à visite, à Bal, à promenades ;</l>
+<note type="C">Vers 373, on lit monneaux dans le texte original.</note>
+	<l n="373">Et c'est là qu'on ne prend comme glue à moineaux</l>
+<note type="L">Trébuchet : Fig. Prendre quelqu'un au trébuchet, l'amener par adresse à faire une chose qui lui est désavantageuse ou désagréable. [L]</note>
+<note type="L">Godelureau : Jeune fanfaron, glorieux, pimpant et coquet qui se pique de galanterie, de bonne fortune auprès des femmes, qui est toujours bien propre et bien mis sans avoir d'autres perfections. Les vieux maris ont sujet d'être jaloux de ces godelureaux qui viennent cajoler leurs femmes. [F]</note>
+	<l n="374">Dedans le trébuchet de nos godelureaux,</l>
+	<l n="375">Avec tout cela je t'aime mon beau Léandre.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="376">Moi, je ne t'aime point, va-t-en de faire pendre,</l>
+	<l n="377">Je n'ai pas le loisir de jouer avec toi,</l>
+	<l n="378" part="I">J'ai trop affaire ailleurs.</l>
+</sp>
+<sp who="#colinette">
+                        <speaker>COLINETTE, seule.</speaker>
+	<l n="378" part="F">Il est joli ma foi,</l>
+ <note type="L">Nivelle, Jean de : né en 1423, embrassa le parti du Duc de Bourgogne et refusa de marcher contre ce prince, malgré les ordres de Louis XI. (...) et devenu en France un objet de haine et de mépris et le peuple lui donne le surnom injurieux de "chien". [B] syn. de traître méprisable.</note>
+	<l n="379">Va fripon, va pendard, morveux, Jean de Nivelle,</l>
+	<l n="380">Il t'appartient vraiment d'avoir l'âme cruelle,</l>
+	<l n="381">D'avoir de la rigueur et de la cruauté,</l>
+	<l n="382">Sans doute vous verrez qu'il était dégoûté ;</l>
+	<l n="383">Nous somme fort mal faite et beaucoup déchirée,</l>
+	<l n="384">Encor un coup fripon, va chercher ta denrée,</l>
+<note type="L">Frelampier : Terme populaire et vieilli. Homme de peu et qui n'est bon à rien. [L]</note>
+<note tpe="L">Nique : Mocquerie, mépris qu'on fait de quelqu'un par quelque geste qui en donne témoignage, et particulièrement en haussant ou secouant le menton. [F] </note>
+	<l n="385">Monsieur de crique-nique, escroc, et frelampier,</l>
+	<l n="386">Maraud, croquant, fripon, pied-gris, pied plat, plat-pied,</l>
+	<l n="387">Va je ne t'aime plus, mon âme est enragée,</l>
+	<l n="388">Je te ferai périr, et je mourrai vengée :</l>
+	<l n="389">Hélas, je l'aime encor et je mourrai d'ennui,</l>
+	<l n="390">Allons dans un désert pour nous plaindre de lui.</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="391">Il faut un peu savoir de cette belle dame,</l>
+	<l n="392">Si Léandre s'obstine à lui montrer sa flamme,</l>
+	<l n="393" part="I">Ho ho là.</l>
+</sp>
+</div>
+<div type="scene" n="13">
+                    <head>SCÈNE XIII. Trapolin, La Docteur, Isabelle.</head>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="393" part="F">Qui va la, redoutez mon courroux,</l>
+	<l n="394">Ah ! Venez Révérend, on ne craint rien de vous.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="395">Hé bien notre étourdi cesse-t-il sa poursuite ?</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="396">Il fait pis que jamais, sans mentir, il m'irrite,</l>
+	<l n="397">Vous n'avez pas suivi ma juste intention,</l>
+	<l n="398">Ou bien il ne suit pas votre correction ;</l>
+	<l n="399">Loin de se corriger, et de venir plus sage,</l>
+	<l n="400">Il m'a désobligé par un nouvel outrage ;</l>
+	<l n="401">Il faut qu'il ait été consulter les démons,</l>
+	<l n="402">Que d'eux et non de vous il suive les leçons ;</l>
+	<l n="403">Il a su découvrir au bois de notre porte.</l>
+ <note type="L">Accorte : Qui est de gentil esprit, qui est à la fois avisé et gracieux. [L]</note>
+	<l n="404">Une petite fente, et sa malice accorte,</l>
+	<l n="405">A mis dans cette fente un petit billet doux,</l>
+	<l n="406">Qui le trouvant m'a mis dans un grand courroux.</l>
+	<l n="407">Mais ce qui m'a jeté dans le dernière rage,</l>
+	<l n="408">C'est que j'ai justement trouvé dans mon passage,</l>
+	<l n="409">Cette bourse qui tient quatre cent louis d'or,</l>
+	<l n="410">La voilà rendez-lui, puis lui dites encore</l>
+	<l n="411">Qu'il sait peu ce qu'il fait, que sans doute il ignore,</l>
+	<l n="412">Que pour la vertu même ici chacun m'honore,</l>
+	<l n="413">Que je ne suis pas femme à prendre ses louis,</l>
+	<l n="414">Que les yeux de quelqu'autre en seraient éblouis,</l>
+	<l n="415">Et que s'il revient plus auprès de cette porte,</l>
+	<l n="416">Il aura ce qu'on doit aux galants de la sorte.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="417">Allez je vous promets qu'il ne reviendra plus,</l>
+	<l n="418">Ah ! Le méchant pendard, me voilà tout confus.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="419">Ah ! S'il y revient plus, pour corriger sa flamme,</l>
+	<l n="420">Je le ferai tuer, j'en jure par mon âme.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="421">Veuillez lui pardonner encore cette fois.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="422">Comme moi que d'honneur il suivre donc les Lois</l>
+	<l n="423" part="I">Adieu.</l>
+</sp>
+</div>
+<div type="scene" n="14">
+                    <head>SCÈNE XIV. Le Docteur, Léandre.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="423" part="F">Vertu, vertu, comme avez vous pu faire,</l>
+	<l n="424">Pour trouver une femme et fidèle et sincère.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="425">Depuis que je t'ai vue adorable beauté,</l>
+	<l n="426">Je souffre incessamment, qui suis inquiété,</l>
+	<l n="427">Et dans l'espoir de voir ma flamme couronnée,</l>
+	<l n="428">Un moment m'est un jour, un jour m'est une année.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="429">Hé bien méchant garçon, orgueilleux suborneur,</l>
+	<l n="430">Tu n'as pas été voir cette femme d'honneur.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="431" part="I">Quoi, qu'est-il arrivé ?</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="431" part="F">La fente de la porte ;</l>
+	<l n="432">Tu vas de fente en fente, et la fente t'emporte, </l>
+	<l n="433">Prends bien garde à la fente, et que fente jamais,</l>
+	<l n="434">Ne te prote à porter d'impertinents poulets.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="435" part="I">Pater, expliquez-vous.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="435" part="F">Cette Dame est venue</l>
+	<l n="436">Se plaindre encor à moi de ton ardeur connue ;</l>
+	<l n="437">Mais elle t'avertit d'éviter son courroux,</l>
+	<l n="438">Et m'a dit que tu viens de mettre un billet doux</l>
+	<l n="439">Par la fente de l'huis, qu'à peine on peut connaître,</l>
+	<l n="440">Certes il faut que tu sois en amour un grand maître,</l>
+	<l n="441">Et que dessus le seuil se font trouver encor,</l>
+	<l n="442">Outre le billet doux quatre cent louis d'or ;</l>
+	<l n="443">Les voilà qu'elle rend, sa vertu s'en offense,</l>
+	<l n="444">Ils te feront besoin pour quelque autre dépense,</l>
+	<l n="445">Enfin elle m'a dit que toutes les vertus,</l>
+	<l n="446">Prennent son intérêt ne t'épargneront plus,</l>
+	<l n="447">La vertuchou viendra pour te casser la tête,</l>
+	<l n="448">La vertubleu le nez de même qu'à la fête,</l>
+	<l n="449">La vertu-guienne encor ne t'épargnera pas,</l>
+	<l n="450">Et les autres vertus te casseront les bras ;</l>
+	<l n="451">Enfin, prend garde à toi, ton âme est avertie,</l>
+	<l n="452">Bon averti veut deux, prends donc soin de ta vie.</l>
+<stage type="exit">Le docteur sort.</stage>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="453">Bon averti veut deux en matière d'amour,</l>
+	<l n="454">Ah ! Bel astre plus beau que ne l'est l'astre du jour,</l>
+	<l n="455">Ô femme généreuse, et beauté sans pareille,</l>
+	<l n="456">Me donner cette bourse ? Amour, quelle merveille,</l>
+	<l n="457">Pour me faire un présent feindre que je l'ai fait,</l>
+	<l n="458">Quel esprit, quelle adresse, et quel bizarre effet,</l>
+	<l n="459">Supposant un billet, cette reine des belles,</l>
+	<l n="460">M'apprend qu'elle souhaite avoir de mes nouvelles,</l>
+	<l n="461">La fente de la porte, et le petit endroit,</l>
+	<l n="462">Par où je lui ferai tenir quelque billet,</l>
+	<l n="463">En me venant noircir, en me faisant coupable</l>
+	<l n="464">Elle m'instruit de tout, elle m'est favorable,</l>
+	<l n="465">Voici des vers tout prêts, allons les y porter,</l>
+	<l n="466">Par ce petit endroit qu'elle m'a su dicter,</l>
+	<l n="467">Il y faut ajouter quelque reconnaissance,</l>
+	<l n="468">Des quatre cent louis, et de sa bienveillance.</l>
+<stage type="write">Léandre écrit au bas des vers quelque mot de prose.</stage>
+	<l n="469">Voilà la fente amour seconde mon dessein,</l>
+	<l n="470">Et faits que ce billet tombe en sa belle main.</l>
+</sp>
+</div>
+<div type="scene" n="15">
+                    <head>SCÈNE XV.</head>
+<sp who="#isabelle">
+                        <speaker>ISABELLE, à la fenêtre.</speaker>
+	<l n="471">Il a mis le billet, prenons le pour le lire,</l>
+	<l n="472">Il a fort bien compris qu'il me devait écrire.</l>
+<stage type="read">Elle lit le billet.</stage>
+	<l n="473">Je suis un esclave soumis</l>
+	<l n="474">Dessous le joug de votre empire,</l>
+	<l n="475">Et je dirai s'il m'est permis</l>
+	<l n="476">Que pour vous seule je respire,</l>
+	<l n="477">Et que jusqu'aux Enfers</l>
+	<l n="478">Je porterai vos fers.</l>
+<p n="1">
+	<s n="1">Je reçois votre présent, parce que je paraîtrai trop vain en le refusant : Mais sachez que mon amour s'irrite un peu de ce que vous lui voulez donner des liens dorés ; si vous aviez ce dessein, il ne fallait me donner que trois noeuds de vos cheveux, je suis trop généreux pour en recevoir d'autres, et je reçois ces quatre cent pistoles que pour vous plaire, et pou vous faire voir que je fais tout ce qui vous plaît ordonner à votre Léandre.</s>
+</p>
+	<l n="479">Que son style est galant, il est indispensable</l>
+	<l n="480">De lui rien refuser, il est par trop aimable,</l>
+	<l n="481">Trouvons donc le moyen qu'il vienne en maison.</l>
+</sp><!--@stage="location"-->
+</div>
+<div type="scene" n="16">
+                    <head>SCÈNE XVI. Isabelle, Trapolin.</head>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="482" part="I">Quel billet tenez vous ?</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+<note type="L">Oraison : Terme de grammaire. Assemblage de mots construits suivants les règles de la grammaire. Dans le langage didactique, ouvrage d'éloquence composé pour être prononcé en public. [L] </note>
+	<l n="482" part="F">Là ? C'est une oraison</l>
+	<l n="483">Merveilleuse à calmer un peu d'inquiétude,</l>
+	<l n="484">Pour apaiser l'aigreur du tourment le plus rude.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="485">Ah ! Ce ne sont pas là de ces femmes du temps,</l>
+	<l n="486">Qui ne lisent jamais que billets de galants,</l>
+	<l n="487">Prêtez moi l'oraison, femme en vertus indigne.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="488">Il faut jeûner trois jours afin d'en être digne ;</l>
+	<l n="489">Mais jeûner comme il faut, au pain sec à l'eau,</l>
+	<l n="490">Se bien discipliner, quitter le bon morceau,</l>
+	<l n="491">Quitter l'excellent vin, le chapon et la bisque.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="492">De ne la voir jamais je cours donc un grand risque,</l>
+	<l n="493">Quitter mes bons amis, les bons vins, les chapons,</l>
+	<l n="494">Une longe de veau vaut mieux que cent leçons,</l>
+	<l n="495">Jeûner, je suis trop pâle, Isabelle est si maigre,</l>
+	<l n="496">Je veux m'entretenir dans mon humeur allègre,</l>
+	<l n="497">Gardez votre billet, il me met en courroux,</l>
+	<l n="498">Belle, jeûnez pour moi, je mangerai pour vous.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="499">Laisse-moi, je te prie, avecque ce bon père,</l>
+	<l n="500">J'aime de ce docteur le conseil salutaire.</l>
+</sp>
+</div>
+<div type="scene" n="17">
+                    <head>SCÈNE XVII. Le Docteur, Isabelle.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="501">Ne voulez-vous jamais me laisser en repos,</l>
+	<l n="502">Vous plaindrez-vos toujours par de nouveaux propos.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="503">Quoi voulez-vous, Monsieur, que j'endure sans cesse,</l>
+	<l n="504">Les persécutions d'une sotte jeunesse ?</l>
+	<l n="505">Je ne vous ferai plus mes plaintes sans mentir,</l>
+	<l n="506">Mon mari saura tout, je vais l'en avertir,</l>
+	<l n="507">Je ménage ceci comme une femme sage,</l>
+	<l n="508">Mais il faut que j'éclate après un tel ouvrage.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="509">Hélas ! N'éclatez pas, car naturellement</l>
+	<l n="510">La femme éclate assez de son tempérament,</l>
+	<l n="511">Que vous a-t-il donc fait de nouveau, je vous prie.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="512">Le plus sanglant affront; ah ! J'en suis en furie.</l>
+	<l n="513">Il sait que mon mari est hors de la maison,</l>
+	<l n="514">Qu'il est à la campagne, et ce traître garçon :</l>
+	<l n="515">Mais il faut bien qu'il ait l'esprit diabolique,</l>
+	<l n="516">Voyant une grande ruse où son esprit s'applique ;</l>
+	<l n="517">Enfin il est venu par le mur du jardin,</l>
+	<l n="518">A monté par dessus, et s'est glissé soudain,</l>
+	<l n="519">Tout le long d'un figuier, et sans se faire entendre,</l>
+	<l n="520">Est venu justement au dessous de ma chambre,</l>
+	<l n="521">A grimpé comme comme un chat, et si subtilement;</l>
+	<l n="522">Qu'il est enfin entré dans mon appartement,</l>
+	<l n="523">Ma pudeur s'est émue, et d'une telle sorte,</l>
+	<l n="524">Que longtemps il m'a crue une personne morte,</l>
+	<l n="525" part="I">Ma vertu...</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="525" part="F">N'a-t-il rien fait à cette vertu ?</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="526">Ah ! Je l'ai fait sortir et l'ai bine battu,</l>
+	<l n="527">Qu'il sait bine à présent de quel bois je me chauffe,</l>
+	<l n="528">Et si je suis fidèle, ou de légère étoffe.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="529">Cette étoffe n'est pas de l'étoffe du temps,</l>
+	<l n="530">Nature n'en peut plus trouver chez les marchands,</l>
+	<l n="531">Aussi n'en fait-in plus de cette belle étoffe,</l>
+	<l n="532">Vous valez sage femme, un sage philosophe.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="533">Allez lui dire donc qu'il cache son ardeur,</l>
+	<l n="534">Pour la dernière fois, je vous parle docteur,</l>
+	<l n="535">Je ne plaindrai plus, mais si plus il m'outrage,</l>
+	<l n="536">Et s'il me prend jamais pour une autre qu'une sage,</l>
+	<l n="537">Si pour m'ôter l'honneur il fait aucun effort,</l>
+	<l n="538">Je le ferai donner cent coups après sa mort.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="539">Où le rencontrerai-je, il va perdre la vie,</l>
+	<l n="540">Car cette sage femme est en grande furie.</l>
+</sp>
+</div>
+<div type="scene" n="18">
+                    <head>SCÈNE XVIII. Léandre, Le Docteur.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="541">Hé bien qu'en dites-vous , vous a-t-on frotté ?</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="542">Comment ? Instruisez moi de cette nouveauté.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="543">Tu fais donc l'ignorant ah ! Grimpeur de murailles,</l>
+	<l n="544">Comme aux méchants chevaux il te faut des murailles.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="545">Mon père instruisez moi, que veut dire ceci ?</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="546">Cette Dame, fripon, vient d'encores d'ici,</l>
+	<l n="547">Elle s'est plainte à moi d'une nouvelle offense,</l>
+	<l n="548">Et m'a dit qu'ayant su de son mari l'offense,</l>
+	<l n="549">Tu t'es comme un pendard glissé dans sa maison</l>
+	<l n="550">Et que pour arriver à cette trahison</l>
+	<l n="551">Tu t'es jeté dedans par dessus la muraille</l>
+	<l n="552">De même qu'un voleur, et qu'un franc rien qui vaille,</l>
+	<l n="553">Que le long d'un figuier tu t'es laissé glisser,</l>
+	<l n="554">Et qu'après le jardin ayant su traverser,</l>
+	<l n="555">Tu t'es ainsi qu'un chat lancé dans sa fenêtre,</l>
+	<l n="556">Ou dès le même instant qu'elle t'a vu paraître,</l>
+	<l n="557">Elle en fait mention de sa grande vertu,</l>
+	<l n="558">S'est pâmée à tes yeux, et pus t'a bien battu :</l>
+	<l n="559">Mais tu mourras s'il faut que son mari le sache,</l>
+	<l n="560">Tu t'en dois assurer, car sa vertu se fâche.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="561">Docteur, vous m'instruisez plus que vous ne pensez,</l>
+	<l n="562">Mes feux par vos avis se verrons apaisés.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="563">Enfin il fut guérir le mal qui vous possède.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="564">Allez vous m'en venez d'apprendre le remède.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="565">Vous voilà me croyant plus heureux à mon gré.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="566">Pas encor, mais dans peu Docteur je le ferai.</l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="567">Adieu, travaillez donc à vous rendre plus sage.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="568">Oui je vais travailler, et pour mon avantage. </l>
+</sp>
+</div>
+<div type="scene" n="19">
+                    <head>SCÈNE XIX.</head>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN revenant de la guerre de Coquetterie.</speaker>
+	<l n="569">Enfin de tous côtés la gloire m'environne,</l>
+<note type="L">Bellone : dieu qui personnifie la guerre et accompagne Mars.</note>
+	<l n="570">Pour le bien des maris dans les champs de Bellone,</l>
+	<l n="571">J'ai défaits de coquets, on n'en parlera plus,</l>
+	<l n="572">Nous vivrons ne repos, les galants sont vaincus,</l>
+	<l n="573">J'ai rasé leurs châteaux, j'ai saccagé leurs villes</l>
+	<l n="574">J'ai démoli leurs forts, j'ai désolé leurs îles,</l>
+	<l n="575">Et notre République est si bien en repos,</l>
+	<l n="576">Qu'on me doit ce qu'on doit aux plus vaillants héros.</l>
+	<l n="577" part="I">Ma belle.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="577" part="M">Qui va là ?</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="577" part="F">Mari couvert de gloire,</l>
+	<l n="578">Mari, mari qui vient d'emporter la victoire,</l>
+	<l n="579">Mais écoute, je vais te faire le portrait,</l>
+	<l n="580">Du plus âpre combat qui jamais se soit fait,</l>
+<note type="L">Atropos : L'une des trois Parques qui tenaient les ciseaux qui coupaient le fil de la vie des hommes.</note>
+	<l n="581">Et jamais Atropos avec sa pâle trogne,</l>
+	<l n="582">Ne reçut tant de gloire, et n'eût tant de besogne,</l>
+	<l n="583">Aussitôt que je fus dans le camp des maris,</l>
+	<l n="584">Dont je fus général, l'ennemi fut surpris,</l>
+	<l n="585">Il se met en bataille, et nous veut reconnaître,</l>
+	<l n="586">Je mets l'ordre partout et le voyant paraître,</l>
+	<l n="587">Je le vais recevoir avec quatre escadrons,</l>
+	<l n="588">De jaloux irrités conduits par les soupçons,</l>
+	<l n="589">Chefs assez redoutés dans l'armée ennemie,</l>
+	<l n="590">Et dont l'âme jamais ne parut endormie ;</l>
+	<l n="591">Là, nous nous attaquons avec tant de fierté,</l>
+	<l n="592">Que la victoire va d'un et d'autre côté ;</l>
+	<l n="593">Je vole à l'aile droite, et je cours à la gauche,</l>
+	<l n="594">Je frappe incessamment, comme un pré je la fauche,</l>
+	<l n="595">Et pour tôt achever, courant de rang en rang,</l>
+	<l n="596">Pour les noyer je fais une mer de leur sang.</l>
+<note type="L">Alcovistes : Nom donné chez les précieuses à celui qui remplissait l'office de chevalier servant, et qui les aidait à faire les honneurs de leur maison et à diriger la conversation ; ainsi dit de l'alcôve contenant la ruelle où les précieuses recevaient. [L]</note>
+	<l n="597">J'admirai la valeur de quelques Alcovistes,</l>
+<note type="L">Ruellistes : Terme péjoratif qui définit une personne fréquentant les ruelles, c'est à dire les salons et chambres de précieuses.</note>
+	<l n="598">Je leur criai quartier, ainsi qu'aux Ruellistes,</l>
+	<l n="599">Ils n'en voulurent point, et j'aimai leur valeur,</l>
+	<l n="600">Et ne dédaignai pas d'en être le vainqueur,</l>
+	<l n="601">Le régiment constant fit merveille, fit rage,</l>
+	<l n="602">L'inconstant prit la suite, et manqua de courage,</l>
+	<l n="603">Les blondins tout d'un coup nous lâchèrent le pied,</l>
+	<l n="604">Et les voyant sans coeur, ils me firent pitié,</l>
+	<l n="605">La fortune partout nous fit craindre dans l'âme :</l>
+	<l n="606">Mais comme la victoire est une sage femme,</l>
+	<l n="607">Elle se vient ranger du côté des maris,</l>
+	<l n="608">Me fit maître du camp, et nous donna le prix,</l>
+	<l n="609">Maris ne craignez plus, vivez sans jalousie,</l>
+	<l n="610">J'ai conquis le pays de la Coquetterie.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="611">Moi, j'ai sauvé la vie à certains garde bien.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="612" part="I">Et comment as-tu fait ?</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="612" part="F">Ma fois je n'en sais rien,</l>
+	<l n="613">Sans tant verser de sang, sans se mettre en furie,</l>
+	<l n="614">Sans se peiner beaucoup, mon bras sauve la vie.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="615">Allons tôt voir ma femme, ouvrez la porte, ouvrez.</l>
+</sp>
+</div>
+<div type="scene" n="20">
+                    <head>SCÈNE XX. Isabelle à la fenêtre, Léandre, Trapolin, La Capitan.</head> 
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="616" part="I">Hélas ! Que ferons nous.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="616" part="F">Ouvrez tôt dépêchez.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="617" part="I">Dieux que je crains pour moi.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="617" part="F">Moi je crains pour vous même.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="618">Nous voilà l'un et l'autre en un péril extrême.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="619" part="I">Ouvrez, la vertu même.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="619" part="F">Ouvrez donc, et comment,</l>
+	<l n="620">Trapolin d'où procède un tel retardement ?</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="621">Ma foi, je n'en sais rien, je ne suis pas un diable.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="622">Et qui le doit savoir malheureux, misérable,</l>
+<note type="L">Dariolette : Suivante qui a la confidence de sa maîtresse. Ce mot est tiré de l'Amadis. [F] Le masculin n'est pas attesté par Furetière.</note>
+	<l n="623">Je devais tout occire quelque dariolet</l>
+<note type="L">Collet : Partie de l'habillement qui joint le cou, qui se met autour du cou. En ce sens on appelle Petit collet, un homme qui s'est mis dans la réforme, dans la dévotion, parce que les gens d'église portent par modestie de petits collets, tandis que les gens du monde en portent de grands ornés de points et de dentelles.</note>
+	<l n="624">Qui n'aura pas osé me prêter le collet,</l>
+	<l n="625">Qui se sera sauvé comme un poltron infâme,</l>
+	<l n="626">En trahison sera venu trouver ma femme,</l>
+	<l n="627">Voilà le fort surpris malgré le qui-vala,</l>
+	<l n="628" part="I">Aux armes Trapolin.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="628" part="F">Tout doux mon maître hola.</l>
+	<l n="629">N'aviez-vous pas conquis, dites sans raillerie,</l>
+	<l n="630">Le Royaume important de la Coquetterie,</l>
+	<l n="631" part="I">Dites donc grand vainqueur.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="631" part="F">Oui, oui j'en suis patron,</l>
+	<l n="632" part="I">J'en suis maître absolu.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="632" part="F">Qu'appréhendez-vous donc.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="633">Je crains qu'on m'ait joué d'un tour de vieille guerre, </l>
+	<l n="634">Ouvrez, ou je mettrai cette maison par terre.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE, à la fenêtre.</speaker>
+	<l n="635" part="I">Comment sortirez vous.</l>
+</sp><!--@stage="location"-->
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="635" part="F">Ne vous peinez de rien,</l>
+	<l n="636">Allez, allez ouvrir, je sortirai fort bien,</l>
+	<l n="637">Faites fort l'effrayée, et criez la première,</l>
+	<l n="638">Selon que j'agirai, secondez la manière.</l>
+<stage type="low/toward">Il lui parle à l'oreille.</stage>
+	<l n="639" part="I">Il faut.</l>
+</sp>
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+	<l n="639" part="M">Oui, je t'entends bine, ah ! Monsieur.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN, voyant sortir un fantôme.</speaker>
+	<l n="639" part="F">Qu'avez-vous ?</l>
+	<l n="640" part="I">Qu'avez-vous ? Mais que vois-je ?</l>
+</sp><!--@stage="watch"-->
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="640" part="F">Ah ! Le Diable est chez nous,</l>
+	<l n="641">C'est bien pis qu'un amant, mon âme est effrayée,</l>
+<note type="L">Galimafrée : Ragoût composé de plusieurs restes de viandes. Ce mot se dit figurément et bassement d'un discours, d'un ouvrage fait de plusieurs parties différentes, qui le rendent obscure, et embrouillé. [F]</note>
+	<l n="642">Et la frayeur a fait de la galimafrée, </l>
+	<l n="643">Dans mes chausses, l'esprit ayez pitié de moi,</l>
+	<l n="644">À vos genoux je suis très soumis par ma foi.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="645">Je suis trahis de peur, l'ESprit, je vous honore,</l>
+	<l n="646">C'est l'ombre d'un amant qui me poursuit encore,</l>
+	<l n="647">Une seconde fois pour vaincre les amants, </l>
+	<l n="648">Les irai-je chercher dedans leurs monuments.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE, en esprit.</speaker>
+	<l n="649">Capitan, Trapolin, rendez-moi vos épées.</l>
+</sp><!--@stage="think"-->
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="650">Les voilà, qui de sang sont encore trempées.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="651">Il n'en est plus besoin, ta femme à la vertu,</l>
+	<l n="652">Mais brave Trapolin, dis moi, me connais-tu ?</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="653">Fort mal, et je ne veux jamais vous mieux connaître.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE, au Capitan.</speaker>
+	<l n="654" part="I">Et vous.</l>
+</sp><!--@stage="toward"-->
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="654" part="F">Tout aussi mal, veillez vous disparaître.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="655">Je suis l'ombre de l'un de tes meilleurs parents,</l>
+	<l n="656">Qui tandis que tu vas désoler les galants,</l>
+	<l n="657">Veille comme il le faut à l'honneur de ta femme,</l>
+	<l n="658">Je te puis assurer qu'est est honnête dame ;</l>
+	<l n="659">La plus haute vertu partout lui dit céder :</l>
+	<l n="660">Mais s'il la faut garder, je la viendrai garder.</l>
+	<l n="661">Adieu Pluton m'attend, je vais en l'autre monde.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN, à sa femme.</speaker>
+	<l n="662">Ah ! Vertu sans pareille, ah ! Vertu sans seconde.</l>
+</sp><!--@stage="toxard"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE, à Léandre.</speaker>
+	<l n="663">Belle ombre, où fuyez vous, hélas ! Embrassez-moi.</l>
+	<l n="664" part="I">Bel esprit.</l>
+</sp><!--@stage="toward"-->
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="664" part="F">Recevez ces marques de ma foi,</l>
+	<l n="665">Je vous promets ici que jusques dans la tombe,</l>
+	<l n="666">Mon coeur vous servira d'éternelle hécatombe.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="667" part="I">Ils s'embrassent.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="667" part="F">N'importe, ah ! Ma femme est sans peur !</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="668" part="I">Empêchez-le.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="668" part="F">Non pas il veille à son bonheur.</l>
+	<l n="669">Que cet esprit est bon, et qu'il est raisonnable.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="670" part="I">L'esprit a de l'esprit.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE, voulant embrasser Trapolin.</speaker>
+	<l n="670" part="M">Mon cher.</l>
+</sp><!--@stage="kiss"-->
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="670" part="F">Allez au diable !</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="671" part="I">Adieu, Monsieur l'esprit.</l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="671" part="F">Adieu, songez bien tous</l>
+	<l n="672">À mettre jamais de gardien chez vous.</l>
+</sp>
+<sp who="#le-capitan">
+                        <speaker>LE CAPITAN.</speaker>
+	<l n="673">Non, je n'en mettrai plus, ma femme est par trop sage,</l>
+	<l n="674">À sa rare vertu je ferais trop d'outrage,</l>
+	<l n="675">Me voilà trop heureux, car me voilà vainqueur,</l>
+	<l n="676">Et de plus le mari d'une femme d'honneur.</l>
+</sp>
+<sp who="#trapolin">
+                        <speaker>TRAPOLIN.</speaker>
+	<l n="677">Au diable les maris avec leur jalousie,</l>
+	<l n="678">Je n'ai jamais reçu plus de peur de ma vie,</l>
+	<l n="679">Ne soyez plus jaloux de peur d'être repris,</l>
+	<l n="680">Et de trouver chez vous de semblable esprits.</l>
+</sp>
+</div>
+</div>
+</body>
+</text>
 </TEI>

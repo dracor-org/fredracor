@@ -1,1236 +1,1281 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="../css/tei.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>LES MORTS VIVANTS, opuscule dramatique.</title>
-        <author ISNI="0000 0000 8339 0649">SACY, Claude-Louis-Michel de (1746-1794)</author>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>publié par Paul FIEVRE, juillet 2017.</publisher>
-        <idno>SACY_MORTSVIVANTS</idno>
-        <rights>Creative Commons BY-NC-SA</rights>
-        <idno type="orig">SACY_MORTSVIVANTS</idno>
-        <idno type="dracor" xml:base="https://dracor.org/id/">fre001174</idno>
-      </publicationStmt>
-      <SourceDesc>
-        <genre>Opuscule dramatique</genre>
-        <inspiration>moeurs françaises</inspiration>
-        <structure>Un acte</structure>
-        <type>prose</type>
-        <periode>1771-1780</periode>
-        <taille>(mesure non pertinente)</taille>
-        <permalien/>
-      </SourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text>
-    <front>
-      <docTitle>
-        <titlePart type="main">LES MORTS VIVANTS</titlePart>
-        <titlePart type="sub">OPUSCULE DRAMATIQUE</titlePart>
-      </docTitle>
-      <docDate value="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
-      <docAuthor id="SACY, Claude-Louis-Michel de" bio="">De SACY, Claude-Louis-Michel de</docAuthor>
-      <docImprint>
-        <printer id="DEMONVILLE">À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</printer>
-      </docImprint>
-      <performance>
-        <premiere date="" location="(inconnue)"/>
-      </performance>
-      <castList>
-        <head>PERSONNAGES</head>
-        <castItem><role id="D'ORFEUIL" sex="1" type="H" statut="comédien" age="A" stat_amour="néant">D'ORFEUIL</role>, comédien.</castItem>
-        <castItem><role id="BLINVAL" sex="1" type="H" statut="comédien" age="A" stat_amour="néant">BLINVAL</role>, comédien.</castItem>
-        <castItem><role id="DURAND" sex="1" type="H" statut="caporal" age="A" stat_amour="néant">DURAND</role>, Secrétaire de l'Intendance.</castItem>
-        <castItem><role id="LA FLEUR" sex="1" type="H" statut="valet" age="A" stat_amour="néant">LA FLEUR</role>, Valet de Durand.</castItem>
-      </castList>
-      <set location="En Province" country="France" periode="XVIIIème" link="">La Scène est en Province.</set>
-      <note>Édition tirée de Claude-Louis-Michel de Sacy, Un Gascon à Paris, opuscule dramatique, dans Opuscules dramatiques, ou Nouveaux amusements de campagne, tome second, Paris, Chez Demonville, Imprimeur-Libraire de l'Académie française, 1778, p. 195-222. </note>
-    </front>
-    <body>
-      <div1 type="act" n="1">
-        <head>LES MORTS VIVANTS</head>
-        <div2 type="scene" n="1" stage="">
-          <head>SCÈNE PREMIÈRE. D'Orfeuil, Blinval, tous deux à moitié ivres, et sortant d'un Café.</head>
-          <stage type="">Le Théâtre représente une place publique, tant laquelle on voit l'Hôtel de l'Intendance, un café, et plusieurs maisons. La Scène se passe dans
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">LES MORTS VIVANTS</title>
+                <author key="isni:0000000083390649">SACY, Claude-Louis-Michel de (1746-1794)</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001286</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY NC SA 3.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                    </licence>
+                </availability><!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/SACY_MORTSVIVANTS.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/SACY_MORTSVIVANTS.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY NC SA 3.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1778">1778</date>
+                        <date type="premiere"/>
+                        <date type="written"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="blinval" sex="MALE">
+                        <persName>Blinval</persName>
+                    </person>
+                    <person xml:id="d-orfeuil" sex="MALE">
+                        <persName>D'orfeuil</persName>
+                    </person>
+                    <person xml:id="la-fleur" sex="MALE">
+                        <persName>La fleur</persName>
+                    </person>
+                    <person xml:id="durand" sex="MALE">
+                        <persName>Durand</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords>
+                    <term type="genreTitle">Opuscule dramatique</term>
+                    <term type="genreTitle">prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+		<front>
+			<docTitle>
+				<titlePart type="main">LES MORTS VIVANTS</titlePart>
+				<titlePart type="sub">OPUSCULE DRAMATIQUE</titlePart>
+			</docTitle> 
+			<docDate value="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
+			<docAuthor id="SACY, Claude-Louis-Michel de" bio="">De SACY, Claude-Louis-Michel de</docAuthor>
+			<docImprint>
+				<printer id="DEMONVILLE">À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</printer>
+			</docImprint>
+			<performance>
+				<premiere date="" location="(inconnue)"/>
+			</performance>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role id="D'ORFEUIL" sex="1" type="H" statut="comédien" age="A" stat_amour="néant">D'ORFEUIL</role>, comédien.</castItem>
+		<castItem>
+                    <role id="BLINVAL" sex="1" type="H" statut="comédien" age="A" stat_amour="néant">BLINVAL</role>, comédien.</castItem>
+		<castItem>
+                    <role id="DURAND" sex="1" type="H" statut="caporal" age="A" stat_amour="néant">DURAND</role>, Secrétaire de l'Intendance.</castItem>
+		<castItem>
+                    <role id="LA FLEUR" sex="1" type="H" statut="valet" age="A" stat_amour="néant">LA FLEUR</role>, Valet de Durand.</castItem>
+	</castList>
+	<set location="En Province" country="France" periode="XVIIIème" link="">La Scène est en Province.</set>
+	<note>Édition tirée de Claude-Louis-Michel de Sacy, Un Gascon à Paris, opuscule dramatique, dans Opuscules dramatiques, ou Nouveaux amusements de campagne, tome second, Paris, Chez Demonville, Imprimeur-Libraire de l'Académie française, 1778, p. 195-222. </note>
+</front>
+<body>
+<div1 type="act" n="1">
+                <head>LES MORTS VIVANTS</head>
+<div2 type="scene" n="1" stage="">
+                    <head>SCÈNE PREMIÈRE. D'Orfeuil, Blinval, tous deux à moitié ivres, et sortant d'un Café.</head>
+<stage type="">Le Théâtre représente une place publique, tant laquelle on voit l'Hôtel de l'Intendance, un café, et plusieurs maisons. La Scène se passe dans
 la nuit.</stage>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="1">
-              <s id="1">Parbleu, ce punch est délicieux.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="2">
-              <s id="">C'est un nectar.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="3">
-              <s id="1">Il a le rare avantage de désaltérer, sans troubler la raison.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="4">
-              <s id="1">On peut en boire pendant une journée entière sans s'enivrer.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="5">
-              <s id="1">Punch au rhum et au rach ! </s>
-              <s id="2">Que cette langue Anglaise est harmonieuse et douce ! </s>
-              <s id="3">Ces Anglais ont le génie créateur ; car on dit que ce font eux qui ont inventé le punch.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="6">
-              <s id="">Ma foi, cette invention-là leur fait beaucoup plus d'honneur que l'attraction et le Paradis perdu.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="7">
-              <s id="1">Pour moi, si j'étais Membre du Parlement d'Angleterre, je demanderais que la statue de celui qui inventa le punch fût placée entre celles de Shakespeare et de Garrick.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="8">
-              <s id="1">C'est bien le moindre honneur qu'on lui doive.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <note type="L">Caque : Espèce de barrique où l'on met les harengs salés. [L]</note>
-            <p id="9">
-              <s id="1">Sans doute. </s>
-              <s id="2">Je ne sais quel Empereur alla se prosterner devant la tombe de celui qui imagina la caque du hareng. </s>
-              <s id="3">L'inventeur du punch méritait bien aussi un mausolée et de pareils hommages.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <note type="L">Jatte : Espèce de vase rond, tout d'une pièce et sans rebord. [L]</note>
-            <p id="10">
-              <s id="1">Si nous rentrions au Café pour en boire encore une jatte ?...</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="11">
-              <s id="1">Il est trop tard, mon ami, il est trop tard. </s>
-              <s id="2">D'ailleurs, je ne fais qu'à moitié le rôle que
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="1">
+	<s id="1">Parbleu, ce punch est délicieux.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="2">
+	<s id="">C'est un nectar.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="3">
+	<s id="1">Il a le rare avantage de désaltérer, sans troubler la raison.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="4">
+	<s id="1">On peut en boire pendant une journée entière sans s'enivrer.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="5">
+	<s id="1">Punch au rhum et au rach ! </s>
+	<s id="2">Que cette langue Anglaise est harmonieuse et douce ! </s>
+	<s id="3">Ces Anglais ont le génie créateur ; car on dit que ce font eux qui ont inventé le punch.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="6">
+	<s id="">Ma foi, cette invention-là leur fait beaucoup plus d'honneur que l'attraction et le Paradis perdu.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="7">
+	<s id="1">Pour moi, si j'étais Membre du Parlement d'Angleterre, je demanderais que la statue de celui qui inventa le punch fût placée entre celles de Shakespeare et de Garrick.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="8">
+	<s id="1">C'est bien le moindre honneur qu'on lui doive.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<note type="L">Caque : Espèce de barrique où l'on met les harengs salés. [L]</note>
+<p id="9">
+	<s id="1">Sans doute. </s>
+	<s id="2">Je ne sais quel Empereur alla se prosterner devant la tombe de celui qui imagina la caque du hareng. </s>
+	<s id="3">L'inventeur du punch méritait bien aussi un mausolée et de pareils hommages.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<note type="L">Jatte : Espèce de vase rond, tout d'une pièce et sans rebord. [L]</note>
+<p id="10">
+	<s id="1">Si nous rentrions au Café pour en boire encore une jatte ?...</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="11">
+	<s id="1">Il est trop tard, mon ami, il est trop tard. </s>
+	<s id="2">D'ailleurs, je ne fais qu'à moitié le rôle que
 je dois jouer demain ; il faut que j'aille l'apprendre.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="12">
-              <s id="1">Cela est juste : il faut bien avoir quelque complaisance pour ce Public.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="13">
-              <s id="1">Nous ne sommes pas rentés, nous autres, comme Messieurs les Comédiens de Paris, qui, munis d'une douzaine de rôles, recueillent tranquillement leurs revenus pendant toute l'année.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="14">
-              <s id="1">Ils font heureux, ceux-là ! </s>
-              <s id="2">C'est un bénéfice simple, qu'une place dans la Troupe du Roi.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="15">
-              <s id="1">L'Hôtel des Comédiens de Paris est pour nous l'Hôtel des Invalides ; et à la fin de nos travaux, on nous y envoie pour nous reposer.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="16">
-              <s id="1">Je pense que la supériorité des talents peut balancer la longueur des services, et que j'ai quelques droits sur cette honorable et tranquille retraite. </s>
-              <s id="2">Ce n'est pas moi qui en juge ainsi, je ne fais que répéter le jugement des Connaisseurs.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="17">
-              <s id="1">S'il est ainsi, je crois qu'en m'accordant la même faveur, on ne serait que me rendre justice. </s>
-              <s id="2">Tu as dû t'apercevoir que je donne de l'importance aux plus petits rôles, et que j'ai tendu aujourd'hui le Philinte du Glorieux, avec un succès qu'aucun acteur n'a jamais eu dans un pareil rôle.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="18">
-              <s id="1">Je crois m'être acquitté de celui du Comte de Tuffière avec quelque distinction.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="19">
-              <s id="1">Cependant tu as dû convenir, au moment où nous avons tiré l'épée, que Philinte l'emportait sur le Glorieux.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="20">
-              <s id="1">C'est ce dont je ne conviens pas.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="21">
-              <s id="1">Mais les applaudissements qui se font élevés dans ce moment...</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="22">
-              <s id="1">Ne s'adressaient qu'à moi.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="23">
-              <s id="1">La méprise de ton amour-propre est plaisante.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="24">
-              <s id="1">Eh ! </s>
-              <s id="2">Dis-moi, qu'y avait-il donc alors de si étonnant dans ton jeu ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="25">
-              <s id="1">L'air terrible dont j'ai tiré l'épée.</s>
-            </p>
-          </sp>
-          <sp stage="laugh" who="BLINVAL">
-            <speaker>BLINVAL, riant.</speaker>
-            <p id="26">
-              <s id="1">L'air terrible de Monsieur d'Orfeuil ! </s>
-              <s id="2">L'air terrible !</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="27">
-              <s id="1">Oui, sans doute, l'air terrible ; je le prends quand je veux.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="28">
-              <s id="1">L'air terrible est fort bon. </s>
-              <s id="2">Ma foi, je ne soupçonnais pas que tu eusses l'air terrible.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="29">
-              <s id="">Si tu ne m'en crois pas l'apparence, je pourrais t'en faire voir la réalité.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="30">
-              <s id="1">Toi ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="31">
-              <s id="1">Moi-même.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="32">
-              <s id="1">J'en doute fort.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="33">
-              <s id="1">Tu n'en douteras pas longtemps. </s>
-              <s id="2">En garde !</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="34">
-              <s id="1">Quoi ! </s>
-              <s id="2">Cela est sérieux ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="35">
-              <s id="1">Très sérieux.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="36">
-              <s id="1">Il faut donc nous remettre en scène.</s>
-            </p>
-            <note type="C">Vers 1301-1302 de la comédie "Le Glorieux" de Néricault-Destouches (1732).</note>
-            <l id="1">Vous êtes téméraire ;</l>
-            <l id="2">Vous vous méconnaissez ; mais il faut vous complaire.</l>
-            <stage type="fight/fall">Ils se battent. D'Orfeuil fait un faux pas, et tombe sans être blessé.</stage>
-            <stage type="aparte">Blinval à part. </stage>
-            <p id="37">
-              <s id="1">Il est tombé ! </s>
-              <s id="2">Ô Ciel ! </s>
-              <s id="3">Je l'ai tué ! </s>
-              <s id="4">Que faire ? </s>
-              <s id="5">Que devenir ? </s>
-              <s id="6">Je suis ici sous la main du Gouvernement. </s>
-              <s id="7">L'Intendant peut me faire arrêter... </s>
-              <s id="8">Mais, quoi ! </s>
-              <s id="9">Ayons recours à lui-même. </s>
-              <s id="10">Je me suis battu est brave ; j'ai tout lieu d'espérer qu'il me bissera le temps de m'enfuir... </s>
-              <s id="11">Son Secrétaire est de mes amis. </s>
-              <s id="12">Entrons à l'Intendance... </s>
-            </p>
-            <stage type="walk/hesitate">Il marche à tâtons jufqu à l'Hâtd de l'Intendance.</stage>
-          </sp>
-        </div2>
-        <div2 type="scene" n="">
-          <head>SCÈNE II.</head>
-          <sp stage="alone" who="D'ORFEUIL">
-            <speaker>D'ORFEUIL, seul.</speaker>
-            <stage type="stand">D'Orfeuil est resté un moment étourdi de sa chute ; il se relève.</stage>
-            <p id="1">
-              <s id="1">Je crois pas être cause de ma chute ; un pur hasard m'a fait tomber. </s>
-              <s id="2">Je ne suis ni mort ni blessé. </s>
-              <s id="3">Recommençons le combat : en garde !</s>
-            </p>
-            <stage type="dress">Il tire plusieurs bottes. </stage>
-            <p id="2">
-              <s id="1">Je ne rencontre point son épée! </s>
-              <s id="2">Que veut dire ceci ? </s>
-              <s id="3">Blinval, où es-tu ?... </s>
-              <s id="4">Blinval ?... </s>
-              <s id="5">Il ne répond point. </s>
-              <s id="6">Aurait-il pris la fuite ?... </s>
-              <s id="7">Mais non, il n'est point lâche... </s>
-              <s id="8">Blinval ?... </s>
-              <s id="9">Dieux ! </s>
-              <s id="10">En allongeant ma botte, l'aurais-je percé ?... </s>
-              <s id="11">Il me semble en effet avoir senti de la résistance... </s>
-              <s id="12">Encore, si je voyais !... </s>
-              <s id="13">Mais la nuit est si noire !... </s>
-              <s id="14">Blinval ?... </s>
-              <s id="15">Blinval ?... </s>
-              <s id="16">Il n'en faut plus douter, il est mort. </s>
-              <s id="17">Ne relions pas ici plus longtemps, et prenons de sages précautions pour n'être pas arrêté.</s>
-            </p>
-          </sp>
-        </div2>
-        <div2 type="scene" n="3">
-          <head>SCÈNE III.</head>
-          <stage type="decor">Le Théâtre représente le Bureau de Durand.</stage>
-          <sp stage="alone" who="BLINVAL">
-            <speaker>BLINVAL, seul.</speaker>
-            <p id="1">
-              <s id="1">Que fais je ? </s>
-              <s id="2">Où vais-je ? </s>
-              <s id="3">En voulant me sauver, je cours peut-être à ma perte... </s>
-              <s id="4">Malheureux point d'honneur, à quoi m'exposes-tu ?... </s>
-              <s id="5">Mais Durand me connaît ; il me fait incapable d'une lâcheté ; il me laissera le temps de m'enfuir, avant de mettre ses Alguazils en campagne. </s>
-              <s id="6">Rassurons-nous... </s>
-              <s id="7">Aussi bien il n'est plus temps de reculer.</s>
-            </p>
-          </sp>
-        </div2>
-        <div2 type="scene" n="4">
-          <head>SCÈNE IV. Blinval, Lafleur.</head>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="1">
-              <s id="1">Lafleur ?... </s>
-              <s id="2">Lafleur ?</s>
-            </p>
-          </sp>
-          <sp who="LA FLEUR">
-            <speaker>LA FLEUR.</speaker>
-            <p id="2">
-              <s id="1">Que demandez-vous à cette heure ? </s>
-              <s id="2">Tous les bureaux sont fermés.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="3">
-              <s id="1">Cependant... il faut que je voie ton Maître.</s>
-            </p>
-          </sp>
-          <sp who="LA FLEUR">
-            <speaker>LA FLEUR.</speaker>
-            <p id="4">
-              <s id="1">Mon Maître ?... </s>
-              <s id="2">Il va se mettre au lit.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="5">
-              <s id="1">Ah ! </s>
-              <s id="2">Je t'en conjure, procure-moi une audience d'une minute.</s>
-            </p>
-          </sp>
-          <sp who="LA FLEUR">
-            <speaker>LA FLEUR.</speaker>
-            <p id="6">
-              <s id="1">Vous avez l'air bien effaré ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="7">
-              <s id="1">Ah ! </s>
-              <s id="2">Si tu savais l'embarras où je me trouve...</s>
-            </p>
-          </sp>
-          <sp who="LA FLEUR">
-            <speaker>LA FLEUR.</speaker>
-            <p id="8">
-              <s id="1">Que craignez- vous ? </s>
-              <s id="2">Qu'avez-vous ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="9">
-              <s id="1">Tout ce que je puis te dire, c'est que je suis perdu, si je ne vois pas ton maître.</s>
-            </p>
-          </sp>
-          <sp who="LA FLEUR">
-            <speaker>LA FLEUR.</speaker>
-            <p id="10">
-              <s id="1">Veut-on vous ôter un premier rôle pour le donner à d'Orfeuil ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="11">
-              <s id="1">Viendrais-je, à cette heure, importuner Monsieur Durand pour si peu de chose ?</s>
-            </p>
-          </sp>
-          <sp who="LA FLEUR">
-            <speaker>LA FLEUR.</speaker>
-            <p id="12">
-              <s id="1">Le Directeur vous a-t-il condamné à l'amende ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="13">
-              <s id="1">C'est cent fois pis que tout cela.</s>
-            </p>
-          </sp>
-          <sp who="LA FLEUR">
-            <speaker>LA FLEUR.</speaker>
-            <p id="14">
-              <s id="1">Cabale-t-on contre vous ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="15">
-              <s id="1">Qui l'oserait ?</s>
-            </p>
-          </sp>
-          <sp who="LA FLEUR">
-            <speaker>LA FLEUR.</speaker>
-            <p id="16">
-              <s id="1">Parlez ; je vous servirai de tout mon pouvoir. </s>
-              <s id="2">J'ai quelque crédit. </s>
-              <s id="3">Mon Maître me consulte volontiers sur les affaires de Théâtre ; et j'ai, il y a six mois, obtenu un ordre de début pour cette femme de chambre de mes amies, qui ne daigne plus me regarder, depuis qu'elle joue les Reines.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="17">
-              <s id="1">Lafleur, mon cher Lafleur, ne perdons point le temps en discours frivoles. </s>
-              <s id="2">Fais-moi parler à Monsieur Durand.</s>
-            </p>
-          </sp>
-          <sp who="LA FLEUR">
-            <speaker>LA FLEUR.</speaker>
-            <p id="18">
-              <s id="1">Je cours l'avertir.</s>
-            </p>
-          </sp>
-        </div2>
-        <div2 type="scene" n="5">
-          <head>SCÈNE V.</head>
-          <sp stage="alone" who="BLINVAL">
-            <speaker>BLINVAL, seul.</speaker>
-            <p id="1">
-              <s id="1">Si cependant cet homme allait jouer le Magistrat, le vengeur des Lois... </s>
-              <s id="2">Cruelle incertitude !... </s>
-              <s id="3">Sauvons-nous... </s>
-              <s id="4">Mais quoi, si je suis, on croira que j'ai assassiné d'Orfeuil... </s>
-              <s id="5">Demeurons.</s>
-            </p>
-          </sp>
-        </div2>
-        <div2 type="scene" n="6" stage="costume">
-          <head>SCENE VI. Blinval, Durand en robe de chambre.</head>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="1">
-              <s id="1">Qu'avez-vous donc, Blinval ? </s>
-              <s id="2">D'où vient ce trouble, cette frayeur ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="2">
-              <s id="1">Vous voyez le plus malheureux des hommes.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="3">
-              <s id="1">Que vous a-t-on fait ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="4">
-              <s id="1">Je suis perdu, si vous ne me secourez.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="5">
-              <s id="1">Parlez. </s>
-              <s id="2">De quel malheur vous plaignez vous ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="6">
-              <s id="1">D'Orfeuil...</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="7">
-              <s id="1">Eh bien, d'Orfeuil...</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="8">
-              <s id="1">Ah ! </s>
-              <s id="2">Dieu ! </s>
-              <s id="3">Que vais-je vous dire?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="9">
-              <s id="1">Cabale-t-il contre vous ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="10">
-              <s id="1">Plut à Dieu qu'il fût encore en état debaler contre moi !</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="11">
-              <s id="1">Le souhait est rare assurément.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="12">
-              <s id="1">Mais je lui en ai ôté le pouvoir et l'envie.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="13">
-              <s id="1">Que dites- vous ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="14">
-              <s id="1">Nous sortions tous deux du café, la tête un peu échauffée par le punch.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="15">
-              <s id="">Eh bien ?...</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="16">
-              <s id="1">Eh bien, il s'est élevé une querelle entre nous.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="17">
-              <s id="1">Et sur quel sujet ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="18">
-              <s id="1">Je suis si troublé, que je ne m'en souviens plus.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="19">
-              <s id="1">Et vous vous êtes battus ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="20">
-              <s id="1">En gens d'honneur tous deux.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="21">
-              <s id="1">Et d'Orfeuil ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="21">
-              <s id="1">Est tombé, percé d'un coup mortel.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="22">
-              <s id="1">Ah ! </s>
-              <s id="2">Malheureux, qu'avez-vous fait ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="23">
-              <s id="1">Il est étendu à deux pas d'ici, sans chaleur et sans vie.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="24">
-              <s id="1">Imprudent jeune homme ! </s>
-              <s id="2">Et vous n'avez pas pris la fuite ? </s>
-              <s id="3">Et lorsque mon devoir est de vous faire arrêter, c'est chez moi que vous venez chercher un asile ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="25">
-              <s id="1">J'ai compté sur votre amitié.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="26">
-              <s id="1">Et mon devoir, Monsieur, pensez-vous que je l'oublie ? </s>
-              <s id="2">Est-ce à moi de vous sauver, quand je dois vous punir ? </s>
-              <s id="3">Nous vivons sous un Roi juste, vengeur des lois, ennemi d'un préjugé sanguinaire...</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="27">
-              <s id="1">Il déteste le meurtre, sans doute, mais il aime le courage.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="28">
-              <s id="1">Oui, le courage utile, et non point cette homicide frénésie, qui arme un Français contre son ami.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="29">
-              <s id="1">Ah ! </s>
-              <s id="2">Monsieur, j'ai compté sur votre amitié. </s>
-              <s id="3">Je suis venu me jeter dans vos bras ; serrai-je la victime de ma confiance ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="30">
-              <s id="1">Et que me demandez-vous ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="31">
-              <s id="1">Le temps de m'enfuir... </s>
-              <s id="2">Vingt-quatre heures, c'est assez... </s>
-              <s id="3">Me refuserez-vous ce délai ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="32">
-              <s id="1">J'entends quelqu'un. </s>
-              <s id="2">Il n'est pas bon qu'on nous voie ensemble, entrons dans ce cabinet.</s>
-            </p>
-          </sp>
-        </div2>
-        <div2 type="scene" n="7">
-          <head>SCENE VII.</head>
-          <sp stage="alone" who="D'ORFEUIL">
-            <speaker>D'ORFEUIL, seul.</speaker>
-            <p id="1">
-              <s id="1">Oui, le parti que j'ai pris est le plus sage. </s>
-              <s id="2">Monsieur Durand sait les usages ; il me laissera le temps de m'enfuir, avant de me faire poursuivre... </s>
-              <s id="3">Je sais, à la vérité, qu'il était ami de Blinval : mais je jouerai si bien le repentir et le remords ; je lui ferai un Drame impromptu si touchant, si pathétique ; il verra tant de douleur dans mes regards, dans mes gestes, qu'il plaindra plus encore le vainqueur que le vaincu. </s>
-              <s id="4">Allons, d'Orfeuil, c'est ici que ton art te devient nécessaire. </s>
-              <s id="5">Tiens-toi bien en scène ; ne quitte pas ton rôle... </s>
-              <s id="6">Au fond, ce pauvre Blinval... </s>
-              <s id="7">Je le plains... </s>
-              <s id="8">Je voudrais qu'il vécût encore... </s>
-              <s id="9">Mais le coup est fait, mes regrets sont superflus :</s>
-            </p>
-            <note type="C">Vers 626 de "Phèdre" de Jean Racine (1677) mais aussi le vers 1516 de "Le Légataire" de Régnard : "Et l'avare Achéron lâche encore sa proie !".</note>
-            <l id="3">Et l'avare Achéron ne lâche point sa proie.</l>
-            <p id="2">
-              <s id="1">D'ailleurs... </s>
-              <s id="2">Il était si jaloux, si fier d'un faux talent... </s>
-              <s id="3">Ma foi, en le tuant, je n'ai pas fait un grand tort au Public... </s>
-              <s id="4">J'entends Monsieur Durand dans ce cabinet. </s>
-              <s id="5">Ce n'est point par le ministère d'un valet, c'est par des cris qu'il faut m'annoncer pour réussir... </s>
-              <s id="6">Ô Ciel ! </s>
-              <s id="7">Ô coup affreux ! </s>
-              <s id="8">Qu'ai-je fait misérable !</s>
-            </p>
-            <note type="C">Vers d'"Iphigénie en Tauride", tragédie en cinq actes de Claude Guimond La Touche en 1757, dont c'est la seule tragédie.</note>
-            <l id="4">Ainsi, dans ce moment, exécrable bourreau ,</l>
-            <l id="5">Au sein de mon ami, j'enfonce le couteau !</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="5">
-          <head>SCÈNE V. Durand, D'Orfeuil.</head>
-          <sp stage="aparte" who="DURAND">
-            <speaker>DURAND, à part.</speaker>
-            <p id="1">
-              <s id="1">Que vois-je ? </s>
-              <s id="2">C'est d'Orfeuil ? Se sont-ils joués de moi ? </s>
-              <s id="3">Que penser de cette aventure ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="2">
-              <s id="1">Un Chirurgien, Monsieur, un Chirurgien... </s>
-              <s id="2">De grâce, n'y en a-t-il point un dans cet Hôtel ?... </s>
-              <s id="3">Qu'il vienne... qu'il coure.... qu'il vole... </s>
-              <s id="4">Peut-être il est temps encore... </s>
-              <s id="5">Mais, non... </s>
-              <s id="6">Que dis-je ?... </s>
-              <s id="7">Ah ! Malheureux !...</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="3">
-              <s id="1">Grâce au Ciel, d'Orfeuil n'est que blessé.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="4">
-              <s id="1">Eh ! Vite, Monsieur, et vite un chirurgien . . .</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="5">
-              <s id="1">J'en vais appeler un. </s>
-              <s id="2">Mais, parlez, où le coup a-t-il porté ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="6">
-              <s id="1">Dans le coeur.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="7">
-              <s id="1">Dans le coeur ! </s>
-              <s id="2">Et vous parlez, vous marchez encore ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="8">
-              <s id="1">Et ce n'est pas moi, Monsieur, qui ai reçu le coup ; c'est cette main barbare qui l'a porté ; c'est Blinval qui en a été la victime.</s>
-            </p>
-          </sp>
-          <sp stage="aparte" who="DURAND">
-            <speaker>DURAND, à part.</speaker>
-            <p id="9">
-              <s id="1">Feignons : amusons-nous un instant de cette comédie.</s>
-            </p>
-            <stage type="loud">Haut.</stage>
-            <p id="10">
-              <s id="1">Mais si vous lui avez percé le coeur, à quoi servirait un chirurgien ? </s>
-              <s id="2">Toute blessure au coeur est mortelle ; et, s'il est ainsi, Blinval est mort.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="11">
-              <s id="1">Il est mort !... </s>
-              <s id="2">Ô mot épouvantable !... </s>
-              <s id="3">Il est mort !... </s>
-              <s id="4">Il n'est que trop vrai ; je cherche en vain à me faire illusion, je cherche en vain à douter de mon crime... </s>
-              <s id="5">Il est mort !... </s>
-              <s id="6">Oui, j'ai vu son sang couler à gros bouillons de son coeur entr'ouvert... </s>
-              <s id="7">Oui, j'ai vu ses yeux, couverts des ombres de la mort, se fermer pour jamais... </s>
-              <s id="8">Sa main, défaillante laissait échapper son épée...</s>
-            </p>
-            <note type="C">Les deux vers suivants sont les vers 1559-1560 de "Phèdre" de Jean Racine, dans le récit de Théramène.</note>
-            <l id="6">J'approche, je l'appelle, et me tendant la main ;</l>
-            <l id="7">II ouvre un oeil mourant, qu'il referme soudain...</l>
-            <p id="12">
-              <s id="1">Je le ferre dans mes bras... </s>
-              <s id="2">Je veux le réchauffer contre mon sein... </s>
-              <s id="3">Hélas ! la mort avait déjà glacé tout son sang dans ses veines. </s>
-              <s id="4">Il expire !... </s>
-              <s id="5">Et j'en doute encore !... </s>
-              <s id="6">Et je viens chercher des secours superflus ! </s>
-              <s id="7">Je viens exposer ma tête pour prolonger sa vie de quelques moments ! ... </s>
-              <s id="8">Ah ! </s>
-              <s id="9">Qu'on me traîne à l'échafaud, pourvu que mon ami respira une heure de plus. </s>
-              <s id="10">Ah ! S'il pouvait encore entr'ouvrir sa paupière, s'il pouvait être témoin de mon désespoir, je lui dirais : « Blinval, c'est ton barbare ami qui te donne la mort ; mais il va s'en punir ; il va te suivre dans la nuit éternelle... » </s>
-              <s id="11">Alors tirant cette épée, toute fumante encore de ce meurtre exécrable, je confondrais, dans mon sang, le sang de mon ami... </s>
-              <s id="12">Ô Blinval !... </s>
-              <s id="13">Cher Blinval !... </s>
-              <s id="14">Je crois le voir encore... </s>
-              <s id="15">Oui, le voilà... </s>
-              <s id="16">Je vois ses yeux mourants... son front couvert de la pâleur de la mort... </s>
-              <s id="17">Il semble se ranimer... </s>
-              <s id="18">Il reprend son épée... </s>
-              <s id="19">Ah ! </s>
-              <s id="20">Blinval ! </s>
-              <s id="21">Plonge-la dans mon sein... </s>
-              <s id="22">Me donner la mort, ce n'est point me punir, c'est terminer mon supplice... </s>
-              <s id="23">Mais non ; donne-moi-la , cette épée... </s>
-              <s id="24">Donne... </s>
-              <s id="25">Ta main ne serait pas aussi barbare que la mienne : elle aurait horreur de percer le coeur de ton ami... </s>
-              <s id="">La mienne est plus sûre ; c'est elle qui t'a donné la mort, c'est à elle de te venger.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="12">
-              <s id="1">Monsieur, n'ajoutez pas le suicide au meurtre.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="13">
-              <s id="1">Eh ! </s>
-              <s id="2">Puis-je survivre à mon ami ? </s>
-              <s id="3">Prolongerai-je mes jours, pour voir son image sanglante me poursuivre sans cesse ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="14">
-              <s id="">Ainsi donc Blinval est mort.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="15">
-              <s id="1">Il n'est que trop vrai.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="16">
-              <s id="1">Il est mort ?... mais bien mort ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="17">
-              <s id="1">Ah ! </s>
-              <s id="2">Que ne puis-je en douter ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="18">
-              <s id="1">Vous avez vu son coeur entr'ouvert ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="19">
-              <s id="1">Plût au Ciel que mes yeux m'eussent trompé !</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="20">
-              <s id="1">Vous avez vu les liens se fermer pour jamais ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="21">
-              <s id="1">Ah ! </s>
-              <s id="2">J'en frémis encore...</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="22">
-              <s id="1">Vous l'avez tenu expirant dans vos bras ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="23">
-              <s id="1">Que me rappellez-vous ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="24">
-              <s id="1">Je ne vous accusa point d'assassinat ni l'un ni l'autre ; vous vous êtes battus en braves !</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="25">
-              <s id="1">En braves, oui, sans doute.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="26">
-              <s id="1">L'Édit contre les duels, et la peine qu'il décerne, ne vous sont pas inconnus ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="27">
-              <s id="1">Comment, Monsieur ?...</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="28">
-              <s id="1">Mon devoir est de veiller à l'exécution des Lois.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="29">
-              <s id="1">Quoi ! </s>
-              <s id="2">Vous voudriez me faire arrêter ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="30">
-              <s id="1">Un ordre sévère m'y contraint.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="31">
-              <s id="1">Quoi ! </s>
-              <s id="2">Vous abuseriez de la confidence que je viens de vous faire ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="32">
-              <s id="1">Oui, Monsieur. </s>
-              <s id="2">Ce n'est pas moi qui vous punis, c'est la Loi.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="33">
-              <s id="1">Ah ! </s>
-              <s id="2">Monsieur, je sais bien que Blinval fut votre ami, et je sais ce qu'il en coûte pour le perdre. </s>
-              <s id="3">Je sens quelle juste indignation doit vous porter à venger sa mort ; mais mon supplice rendra-t-il la vie à Blinval ? </s>
-              <s id="4">Faudra-t-il qu'un homme d'honneur périsse par la main d'un infâme bourreau ? </s>
-              <s id="5">Ah ! </s>
-              <s id="6">Si Blinval pouvait se ranimer, il vous dirait : « Je lui pardonne, qu'il vive ; la Loi ne doit pas être plus sévère que moi, qui meurs de sa main... » </s>
-              <s id="7">Monsieur, par ces genoux que j'embrasse, par les mânes de Blinval qui vous fut cher, je vous en conjure, laissez-moi le temps de m'enfuir...</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="34">
-              <s id="1">Je n'y puis tenir... </s>
-              <s id="2">Je trahis mon devoir... mais vos remords font mon excuse.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="35">
-              <s id="1">Ah ! </s>
-              <s id="2">Monsieur, ma reconnaissance...</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="36">
-              <s id="1">N'en parlons point, mon ami. </s>
-              <s id="2">Jurez-moi seulement d'éviter à l'avenir toutes les occasions...</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="37">
-              <s id="1">Oh ! </s>
-              <s id="2">Je les fuirai, sans doute.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="38">
-              <s id="1">Puis-je compter sur votre parole ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="39">
-              <s id="1">Je vous jure...</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="40">
-              <s id="1">Allons, j'y consens, vous allez partir !</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="41">
-              <s id="1">Homme bienfaisant, que le Ciel !...</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="42">
-              <s id="1">Vous ne partirez pas seul.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="43">
-              <s id="1">Comment !</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="44">
-              <s id="1">Un de vos camarades sera le compagnon de votre fuite ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="45">
-              <s id="1">Que dites-vous ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="46">
-              <s id="1">Son aventure est pareille à celle qui vous amène ici. </s>
-              <s id="2">Il a tué son ennemi, tout comme vous avez tué le vôtre.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="47">
-              <s id="1">Et quel est-il ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="48">
-              <s id="1">Vous allez le voir dans un moment.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="49">
-              <s id="1">Quoi ! </s>
-              <s id="2">Deux duels dans un jour !</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="50">
-              <s id="1">Et moi, deux fois dans un jour je manque à mon devoir ; deux fois dans un jour je m'expose peut-être... </s>
-              <s id="2">Que sais-je ?... </s>
-              <s id="3">À perdre ma place... </s>
-              <s id="4">Avouez que, pour en agis ainsi, il faut bien aimer la Comédie.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="51">
-              <s id="1">Mais, Monsieur, tirez-moi d'inquiétude. </s>
-              <s id="2">Quel est donc ce comédien qui s'est battu ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="52">
-              <s id="1">Il est venu, comme vous, me demander vingt-quatre heures pour s'enfuir. </s>
-              <s id="2">Lui ayant accordé ce délai, je ne puis pas vous le refuser.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="53">
-              <s id="1">Mais, son nom ?</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="54">
-              <s id="1">Tout va s'éclaircir. </s>
-              <s id="2">Demeurez ici un moment.</s>
-            </p>
-          </sp>
-        </div2>
-        <div2 type="scene" n="9">
-          <head>SCÈNE IX.</head>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="1">
-              <s id="1">Que veut dire ceci ? </s>
-              <s id="2">Un de mes camarades a tué son adversaire ?... </s>
-              <s id="3">Mais moi-même, ai-je bien tué Blinval ?... </s>
-              <s id="4">La nuit était si obscure... </s>
-              <s id="5">Si je m'étais trompé !...</s>
-            </p>
-          </sp>
-        </div2>
-        <div2 type="scene" n="10">
-          <head>SCÈNE X. Durand, D'Orfeuil, Blinval.</head>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="1">
-              <s id="1">Partez ensemble, Messieurs, et dépêcher vous. </s>
-              <s id="2">La Justice va vous poursuivre tous deux. </s>
-              <s id="3">Chacun de vous a tué son adversaire.</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="2">
-              <s id="1">Eh quoi ! </s>
-              <s id="2">Blinval, c'est toi ?</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="3">
-              <s id="1">Eh quoi ! </s>
-              <s id="2">C'est toi, d'Orfeuil ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <note type="C">Vers 1675 de "Andromaque" de Jean Racine (1668).</note>
-            <l id="8">Percé de tant de coups, comment t'es-tu sauvé ?</l>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="4">
-              <s id="1">N'ajoutez pas : </s>
-            </p>
-            <note type="C">Vers 1676 de "Andromaque" de Jean Racine (1668).</note>
-            <l id="9">Tiens, tiens, voilà le coup que je t'ai réservé.</l>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="5">
-              <s id="1">Oh ! </s>
-              <s id="1">Parbleu, l'aventure est plaisante.</s>
-            </p>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="6">
-              <s id="1">Jamais on ne vit une pareille rencontre.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="7">
-              <s id="1">Je vous avoue que je la conçois à peine ! </s>
-              <s id="2">Car, vous Blinval, vous avez vu d'Orfeuil étendu sans chaleur et sans vie ; vous d'Orfeuil, vous avez tenu Blinval expirant dans vos bras. </s>
-              <s id="3">Mais sans doute vous avez pris, l'un et l'autre,</s>
-            </p>
-            <note type="C">Vers 1181-1182 de "La Veuve" de Pierre Corneille.</note>
-            <l id="10">Cette source de vie,</l>
-            <l id="11">Que nomment nos Guerriers poudre de sympathie.</l>
-          </sp>
-          <sp who="BLINVAL">
-            <speaker>BLINVAL.</speaker>
-            <p id="8">
-              <s id="1">Quoi ! </s>
-              <s id="2">Notre combat vous semble une fable ?</s>
-            </p>
-          </sp>
-          <sp who="D'ORFEUIL">
-            <speaker>D'ORFEUIL.</speaker>
-            <p id="9">
-              <s id="1">Je vous jure que nous nous sommes bien battus.</s>
-            </p>
-          </sp>
-          <sp who="DURAND">
-            <speaker>DURAND.</speaker>
-            <p id="10">
-              <s id="1">Que ce combat soit vrai ou faux, réconciliez-vous, Messieurs les Comédiens, et devenez amis, quoique vous soyez camarades.</s>
-            </p>
-          </sp>
-        </div2>
-      </div1>
-    </body>
-  </text>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="12">
+	<s id="1">Cela est juste : il faut bien avoir quelque complaisance pour ce Public.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="13">
+	<s id="1">Nous ne sommes pas rentés, nous autres, comme Messieurs les Comédiens de Paris, qui, munis d'une douzaine de rôles, recueillent tranquillement leurs revenus pendant toute l'année.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="14">
+	<s id="1">Ils font heureux, ceux-là ! </s>
+	<s id="2">C'est un bénéfice simple, qu'une place dans la Troupe du Roi.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="15">
+	<s id="1">L'Hôtel des Comédiens de Paris est pour nous l'Hôtel des Invalides ; et à la fin de nos travaux, on nous y envoie pour nous reposer.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="16">
+	<s id="1">Je pense que la supériorité des talents peut balancer la longueur des services, et que j'ai quelques droits sur cette honorable et tranquille retraite. </s>
+	<s id="2">Ce n'est pas moi qui en juge ainsi, je ne fais que répéter le jugement des Connaisseurs.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="17">
+	<s id="1">S'il est ainsi, je crois qu'en m'accordant la même faveur, on ne serait que me rendre justice. </s>
+	<s id="2">Tu as dû t'apercevoir que je donne de l'importance aux plus petits rôles, et que j'ai tendu aujourd'hui le Philinte du Glorieux, avec un succès qu'aucun acteur n'a jamais eu dans un pareil rôle.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="18">
+	<s id="1">Je crois m'être acquitté de celui du Comte de Tuffière avec quelque distinction.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="19">
+	<s id="1">Cependant tu as dû convenir, au moment où nous avons tiré l'épée, que Philinte l'emportait sur le Glorieux.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="20">
+	<s id="1">C'est ce dont je ne conviens pas.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="21">
+	<s id="1">Mais les applaudissements qui se font élevés dans ce moment...</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="22">
+	<s id="1">Ne s'adressaient qu'à moi.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="23">
+	<s id="1">La méprise de ton amour-propre est plaisante.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="24">
+	<s id="1">Eh ! </s>
+	<s id="2">Dis-moi, qu'y avait-il donc alors de si étonnant dans ton jeu ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="25">
+	<s id="1">L'air terrible dont j'ai tiré l'épée.</s>
+</p>
+</sp>
+<sp stage="laugh" who="BLINVAL">
+                        <speaker>BLINVAL, riant.</speaker>
+<p id="26">
+	<s id="1">L'air terrible de Monsieur d'Orfeuil ! </s>
+	<s id="2">L'air terrible !</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="27">
+	<s id="1">Oui, sans doute, l'air terrible ; je le prends quand je veux.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="28">
+	<s id="1">L'air terrible est fort bon. </s>
+	<s id="2">Ma foi, je ne soupçonnais pas que tu eusses l'air terrible.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="29">
+	<s id="">Si tu ne m'en crois pas l'apparence, je pourrais t'en faire voir la réalité.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="30">
+	<s id="1">Toi ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="31">
+	<s id="1">Moi-même.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="32">
+	<s id="1">J'en doute fort.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="33">
+	<s id="1">Tu n'en douteras pas longtemps. </s>
+	<s id="2">En garde !</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="34">
+	<s id="1">Quoi ! </s>
+	<s id="2">Cela est sérieux ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="35">
+	<s id="1">Très sérieux.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="36">
+	<s id="1">Il faut donc nous remettre en scène.</s>
+</p>
+<note type="C">Vers 1301-1302 de la comédie "Le Glorieux" de Néricault-Destouches (1732).</note>
+	<l id="1">Vous êtes téméraire ;</l>
+	<l id="2">Vous vous méconnaissez ; mais il faut vous complaire.</l>
+<stage type="fight/fall">Ils se battent. D'Orfeuil fait un faux pas, et tombe sans être blessé.</stage>
+<stage type="aparte">Blinval à part. </stage>
+<p id="37">
+	<s id="1">Il est tombé ! </s>
+	<s id="2">Ô Ciel ! </s>
+	<s id="3">Je l'ai tué ! </s>
+	<s id="4">Que faire ? </s>
+	<s id="5">Que devenir ? </s>
+	<s id="6">Je suis ici sous la main du Gouvernement. </s>
+	<s id="7">L'Intendant peut me faire arrêter... </s>
+	<s id="8">Mais, quoi ! </s>
+	<s id="9">Ayons recours à lui-même. </s>
+	<s id="10">Je me suis battu est brave ; j'ai tout lieu d'espérer qu'il me bissera le temps de m'enfuir... </s>
+	<s id="11">Son Secrétaire est de mes amis. </s>
+	<s id="12">Entrons à l'Intendance... </s>
+</p>
+<stage type="walk/hesitate">Il marche à tâtons jufqu à l'Hâtd de l'Intendance.</stage>
+</sp>
+</div2>
+<div2 type="scene" n="">
+                    <head>SCÈNE II.</head>
+<sp stage="alone" who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL, seul.</speaker>
+<stage type="stand">D'Orfeuil est resté un moment étourdi de sa chute ; il se relève.</stage>
+<p id="1">
+	<s id="1">Je crois pas être cause de ma chute ; un pur hasard m'a fait tomber. </s>
+	<s id="2">Je ne suis ni mort ni blessé. </s>
+	<s id="3">Recommençons le combat : en garde !</s>
+</p>
+<stage type="dress">Il tire plusieurs bottes. </stage>
+<p id="2">
+	<s id="1">Je ne rencontre point son épée! </s>
+	<s id="2">Que veut dire ceci ? </s>
+	<s id="3">Blinval, où es-tu ?... </s>
+	<s id="4">Blinval ?... </s>
+	<s id="5">Il ne répond point. </s>
+	<s id="6">Aurait-il pris la fuite ?... </s>
+	<s id="7">Mais non, il n'est point lâche... </s>
+	<s id="8">Blinval ?... </s>
+	<s id="9">Dieux ! </s>
+	<s id="10">En allongeant ma botte, l'aurais-je percé ?... </s>
+	<s id="11">Il me semble en effet avoir senti de la résistance... </s>
+	<s id="12">Encore, si je voyais !... </s>
+	<s id="13">Mais la nuit est si noire !... </s>
+	<s id="14">Blinval ?... </s>
+	<s id="15">Blinval ?... </s>
+	<s id="16">Il n'en faut plus douter, il est mort. </s>
+	<s id="17">Ne relions pas ici plus longtemps, et prenons de sages précautions pour n'être pas arrêté.</s>
+</p>
+</sp>
+</div2>
+<div2 type="scene" n="3">
+                    <head>SCÈNE III.</head>
+<stage type="decor">Le Théâtre représente le Bureau de Durand.</stage>
+<sp stage="alone" who="BLINVAL">
+                        <speaker>BLINVAL, seul.</speaker>
+<p id="1">
+	<s id="1">Que fais je ? </s>
+	<s id="2">Où vais-je ? </s>
+	<s id="3">En voulant me sauver, je cours peut-être à ma perte... </s>
+	<s id="4">Malheureux point d'honneur, à quoi m'exposes-tu ?... </s>
+	<s id="5">Mais Durand me connaît ; il me fait incapable d'une lâcheté ; il me laissera le temps de m'enfuir, avant de mettre ses Alguazils en campagne. </s>
+	<s id="6">Rassurons-nous... </s>
+	<s id="7">Aussi bien il n'est plus temps de reculer.</s>
+</p>
+</sp>
+</div2>
+<div2 type="scene" n="4">
+                    <head>SCÈNE IV. Blinval, Lafleur.</head>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="1">
+	<s id="1">Lafleur ?... </s>
+	<s id="2">Lafleur ?</s>
+</p>
+</sp>
+<sp who="LA FLEUR">
+                        <speaker>LA FLEUR.</speaker>
+<p id="2">
+	<s id="1">Que demandez-vous à cette heure ? </s>
+	<s id="2">Tous les bureaux sont fermés.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="3">
+	<s id="1">Cependant... il faut que je voie ton Maître.</s>
+</p>
+</sp>
+<sp who="LA FLEUR">
+                        <speaker>LA FLEUR.</speaker>
+<p id="4">
+	<s id="1">Mon Maître ?... </s>
+	<s id="2">Il va se mettre au lit.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="5">
+	<s id="1">Ah ! </s>
+	<s id="2">Je t'en conjure, procure-moi une audience d'une minute.</s>
+</p>
+</sp>
+<sp who="LA FLEUR">
+                        <speaker>LA FLEUR.</speaker>
+<p id="6">
+	<s id="1">Vous avez l'air bien effaré ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="7">
+	<s id="1">Ah ! </s>
+	<s id="2">Si tu savais l'embarras où je me trouve...</s>
+</p>
+</sp>
+<sp who="LA FLEUR">
+                        <speaker>LA FLEUR.</speaker>
+<p id="8">
+	<s id="1">Que craignez- vous ? </s>
+	<s id="2">Qu'avez-vous ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="9">
+	<s id="1">Tout ce que je puis te dire, c'est que je suis perdu, si je ne vois pas ton maître.</s>
+</p>
+</sp>
+<sp who="LA FLEUR">
+                        <speaker>LA FLEUR.</speaker>
+<p id="10">
+	<s id="1">Veut-on vous ôter un premier rôle pour le donner à d'Orfeuil ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="11">
+	<s id="1">Viendrais-je, à cette heure, importuner Monsieur Durand pour si peu de chose ?</s>
+</p>
+</sp>
+<sp who="LA FLEUR">
+                        <speaker>LA FLEUR.</speaker>
+<p id="12">
+	<s id="1">Le Directeur vous a-t-il condamné à l'amende ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="13">
+	<s id="1">C'est cent fois pis que tout cela.</s>
+</p>
+</sp>
+<sp who="LA FLEUR">
+                        <speaker>LA FLEUR.</speaker>
+<p id="14">
+	<s id="1">Cabale-t-on contre vous ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="15">
+	<s id="1">Qui l'oserait ?</s>
+</p>
+</sp>
+<sp who="LA FLEUR">
+                        <speaker>LA FLEUR.</speaker>
+<p id="16">
+	<s id="1">Parlez ; je vous servirai de tout mon pouvoir. </s>
+	<s id="2">J'ai quelque crédit. </s>
+	<s id="3">Mon Maître me consulte volontiers sur les affaires de Théâtre ; et j'ai, il y a six mois, obtenu un ordre de début pour cette femme de chambre de mes amies, qui ne daigne plus me regarder, depuis qu'elle joue les Reines.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="17">
+	<s id="1">Lafleur, mon cher Lafleur, ne perdons point le temps en discours frivoles. </s>
+	<s id="2">Fais-moi parler à Monsieur Durand.</s>
+</p>
+</sp>
+<sp who="LA FLEUR">
+                        <speaker>LA FLEUR.</speaker>
+<p id="18">
+	<s id="1">Je cours l'avertir.</s>
+</p>
+</sp>
+</div2>
+<div2 type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp stage="alone" who="BLINVAL">
+                        <speaker>BLINVAL, seul.</speaker>
+<p id="1">
+	<s id="1">Si cependant cet homme allait jouer le Magistrat, le vengeur des Lois... </s>
+	<s id="2">Cruelle incertitude !... </s>
+	<s id="3">Sauvons-nous... </s>
+	<s id="4">Mais quoi, si je suis, on croira que j'ai assassiné d'Orfeuil... </s>
+	<s id="5">Demeurons.</s>
+</p>
+</sp>
+</div2>
+<div2 type="scene" n="6" stage="costume">
+                    <head>SCENE VI. Blinval, Durand en robe de chambre.</head>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="1">
+	<s id="1">Qu'avez-vous donc, Blinval ? </s>
+	<s id="2">D'où vient ce trouble, cette frayeur ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="2">
+	<s id="1">Vous voyez le plus malheureux des hommes.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="3">
+	<s id="1">Que vous a-t-on fait ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="4">
+	<s id="1">Je suis perdu, si vous ne me secourez.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="5">
+	<s id="1">Parlez. </s>
+	<s id="2">De quel malheur vous plaignez vous ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="6">
+	<s id="1">D'Orfeuil...</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="7">
+	<s id="1">Eh bien, d'Orfeuil...</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="8">
+	<s id="1">Ah ! </s>
+	<s id="2">Dieu ! </s>
+	<s id="3">Que vais-je vous dire?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="9">
+	<s id="1">Cabale-t-il contre vous ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="10">
+	<s id="1">Plut à Dieu qu'il fût encore en état debaler contre moi !</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="11">
+	<s id="1">Le souhait est rare assurément.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="12">
+	<s id="1">Mais je lui en ai ôté le pouvoir et l'envie.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="13">
+	<s id="1">Que dites- vous ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="14">
+	<s id="1">Nous sortions tous deux du café, la tête un peu échauffée par le punch.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="15">
+	<s id="">Eh bien ?...</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="16">
+	<s id="1">Eh bien, il s'est élevé une querelle entre nous.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="17">
+	<s id="1">Et sur quel sujet ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="18">
+	<s id="1">Je suis si troublé, que je ne m'en souviens plus.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="19">
+	<s id="1">Et vous vous êtes battus ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="20">
+	<s id="1">En gens d'honneur tous deux.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="21">
+	<s id="1">Et d'Orfeuil ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="21">
+	<s id="1">Est tombé, percé d'un coup mortel.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="22">
+	<s id="1">Ah ! </s>
+	<s id="2">Malheureux, qu'avez-vous fait ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="23">
+	<s id="1">Il est étendu à deux pas d'ici, sans chaleur et sans vie.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="24">
+	<s id="1">Imprudent jeune homme ! </s>
+	<s id="2">Et vous n'avez pas pris la fuite ? </s>
+	<s id="3">Et lorsque mon devoir est de vous faire arrêter, c'est chez moi que vous venez chercher un asile ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="25">
+	<s id="1">J'ai compté sur votre amitié.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="26">
+	<s id="1">Et mon devoir, Monsieur, pensez-vous que je l'oublie ? </s>
+	<s id="2">Est-ce à moi de vous sauver, quand je dois vous punir ? </s>
+	<s id="3">Nous vivons sous un Roi juste, vengeur des lois, ennemi d'un préjugé sanguinaire...</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="27">
+	<s id="1">Il déteste le meurtre, sans doute, mais il aime le courage.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="28">
+	<s id="1">Oui, le courage utile, et non point cette homicide frénésie, qui arme un Français contre son ami.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="29">
+	<s id="1">Ah ! </s>
+	<s id="2">Monsieur, j'ai compté sur votre amitié. </s>
+	<s id="3">Je suis venu me jeter dans vos bras ; serrai-je la victime de ma confiance ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="30">
+	<s id="1">Et que me demandez-vous ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="31">
+	<s id="1">Le temps de m'enfuir... </s>
+	<s id="2">Vingt-quatre heures, c'est assez... </s>
+	<s id="3">Me refuserez-vous ce délai ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="32">
+	<s id="1">J'entends quelqu'un. </s>
+	<s id="2">Il n'est pas bon qu'on nous voie ensemble, entrons dans ce cabinet.</s>
+</p>
+</sp>
+</div2>
+<div2 type="scene" n="7">
+                    <head>SCENE VII.</head>
+<sp stage="alone" who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL, seul.</speaker>
+<p id="1">
+	<s id="1">Oui, le parti que j'ai pris est le plus sage. </s>
+	<s id="2">Monsieur Durand sait les usages ; il me laissera le temps de m'enfuir, avant de me faire poursuivre... </s>
+	<s id="3">Je sais, à la vérité, qu'il était ami de Blinval : mais je jouerai si bien le repentir et le remords ; je lui ferai un Drame impromptu si touchant, si pathétique ; il verra tant de douleur dans mes regards, dans mes gestes, qu'il plaindra plus encore le vainqueur que le vaincu. </s>
+	<s id="4">Allons, d'Orfeuil, c'est ici que ton art te devient nécessaire. </s>
+	<s id="5">Tiens-toi bien en scène ; ne quitte pas ton rôle... </s>
+	<s id="6">Au fond, ce pauvre Blinval... </s>
+	<s id="7">Je le plains... </s>
+	<s id="8">Je voudrais qu'il vécût encore... </s>
+	<s id="9">Mais le coup est fait, mes regrets sont superflus :</s>
+</p>
+<note type="C">Vers 626 de "Phèdre" de Jean Racine (1677) mais aussi le vers 1516 de "Le Légataire" de Régnard : "Et l'avare Achéron lâche encore sa proie !".</note>
+	<l id="3">Et l'avare Achéron ne lâche point sa proie.</l>
+<p id="2">
+	<s id="1">D'ailleurs... </s>
+	<s id="2">Il était si jaloux, si fier d'un faux talent... </s>
+	<s id="3">Ma foi, en le tuant, je n'ai pas fait un grand tort au Public... </s>
+	<s id="4">J'entends Monsieur Durand dans ce cabinet. </s>
+	<s id="5">Ce n'est point par le ministère d'un valet, c'est par des cris qu'il faut m'annoncer pour réussir... </s>
+	<s id="6">Ô Ciel ! </s>
+	<s id="7">Ô coup affreux ! </s>
+	<s id="8">Qu'ai-je fait misérable !</s>
+</p>
+<note type="C">Vers d'"Iphigénie en Tauride", tragédie en cinq actes de Claude Guimond La Touche en 1757, dont c'est la seule tragédie.</note>
+	<l id="4">Ainsi, dans ce moment, exécrable bourreau ,</l>
+	<l id="5">Au sein de mon ami, j'enfonce le couteau !</l>
+</sp>
+</div2>
+<div2 type="scene" n="5">
+                    <head>SCÈNE V. Durand, D'Orfeuil.</head>
+<sp stage="aparte" who="DURAND">
+                        <speaker>DURAND, à part.</speaker>
+<p id="1">
+	<s id="1">Que vois-je ? </s>
+	<s id="2">C'est d'Orfeuil ? Se sont-ils joués de moi ? </s>
+	<s id="3">Que penser de cette aventure ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="2">
+	<s id="1">Un Chirurgien, Monsieur, un Chirurgien... </s>
+	<s id="2">De grâce, n'y en a-t-il point un dans cet Hôtel ?... </s>
+	<s id="3">Qu'il vienne... qu'il coure.... qu'il vole... </s>
+	<s id="4">Peut-être il est temps encore... </s>
+	<s id="5">Mais, non... </s>
+	<s id="6">Que dis-je ?... </s>
+	<s id="7">Ah ! Malheureux !...</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="3">
+	<s id="1">Grâce au Ciel, d'Orfeuil n'est que blessé.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="4">
+	<s id="1">Eh ! Vite, Monsieur, et vite un chirurgien . . .</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="5">
+	<s id="1">J'en vais appeler un. </s>
+	<s id="2">Mais, parlez, où le coup a-t-il porté ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="6">
+	<s id="1">Dans le coeur.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="7">
+	<s id="1">Dans le coeur ! </s>
+	<s id="2">Et vous parlez, vous marchez encore ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="8">
+	<s id="1">Et ce n'est pas moi, Monsieur, qui ai reçu le coup ; c'est cette main barbare qui l'a porté ; c'est Blinval qui en a été la victime.</s>
+</p>
+</sp>
+<sp stage="aparte" who="DURAND">
+                        <speaker>DURAND, à part.</speaker>
+<p id="9">
+	<s id="1">Feignons : amusons-nous un instant de cette comédie.</s>
+</p>
+<stage type="loud">Haut.</stage>
+<p id="10">
+	<s id="1">Mais si vous lui avez percé le coeur, à quoi servirait un chirurgien ? </s>
+	<s id="2">Toute blessure au coeur est mortelle ; et, s'il est ainsi, Blinval est mort.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="11">
+	<s id="1">Il est mort !... </s>
+	<s id="2">Ô mot épouvantable !... </s>
+	<s id="3">Il est mort !... </s>
+	<s id="4">Il n'est que trop vrai ; je cherche en vain à me faire illusion, je cherche en vain à douter de mon crime... </s>
+	<s id="5">Il est mort !... </s>
+	<s id="6">Oui, j'ai vu son sang couler à gros bouillons de son coeur entr'ouvert... </s>
+	<s id="7">Oui, j'ai vu ses yeux, couverts des ombres de la mort, se fermer pour jamais... </s>
+	<s id="8">Sa main, défaillante laissait échapper son épée...</s>
+</p>
+<note type="C">Les deux vers suivants sont les vers 1559-1560 de "Phèdre" de Jean Racine, dans le récit de Théramène.</note>
+	<l id="6">J'approche, je l'appelle, et me tendant la main ;</l>
+	<l id="7">II ouvre un oeil mourant, qu'il referme soudain...</l>
+<p id="12">
+	<s id="1">Je le ferre dans mes bras... </s>
+	<s id="2">Je veux le réchauffer contre mon sein... </s>
+	<s id="3">Hélas ! la mort avait déjà glacé tout son sang dans ses veines. </s>
+	<s id="4">Il expire !... </s>
+	<s id="5">Et j'en doute encore !... </s>
+	<s id="6">Et je viens chercher des secours superflus ! </s>
+	<s id="7">Je viens exposer ma tête pour prolonger sa vie de quelques moments ! ... </s>
+	<s id="8">Ah ! </s>
+	<s id="9">Qu'on me traîne à l'échafaud, pourvu que mon ami respira une heure de plus. </s>
+	<s id="10">Ah ! S'il pouvait encore entr'ouvrir sa paupière, s'il pouvait être témoin de mon désespoir, je lui dirais : « Blinval, c'est ton barbare ami qui te donne la mort ; mais il va s'en punir ; il va te suivre dans la nuit éternelle... » </s>
+	<s id="11">Alors tirant cette épée, toute fumante encore de ce meurtre exécrable, je confondrais, dans mon sang, le sang de mon ami... </s>
+	<s id="12">Ô Blinval !... </s>
+	<s id="13">Cher Blinval !... </s>
+	<s id="14">Je crois le voir encore... </s>
+	<s id="15">Oui, le voilà... </s>
+	<s id="16">Je vois ses yeux mourants... son front couvert de la pâleur de la mort... </s>
+	<s id="17">Il semble se ranimer... </s>
+	<s id="18">Il reprend son épée... </s>
+	<s id="19">Ah ! </s>
+	<s id="20">Blinval ! </s>
+	<s id="21">Plonge-la dans mon sein... </s>
+	<s id="22">Me donner la mort, ce n'est point me punir, c'est terminer mon supplice... </s>
+	<s id="23">Mais non ; donne-moi-la , cette épée... </s>
+	<s id="24">Donne... </s>
+	<s id="25">Ta main ne serait pas aussi barbare que la mienne : elle aurait horreur de percer le coeur de ton ami... </s>
+	<s id="">La mienne est plus sûre ; c'est elle qui t'a donné la mort, c'est à elle de te venger.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="12">
+	<s id="1">Monsieur, n'ajoutez pas le suicide au meurtre.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="13">
+	<s id="1">Eh ! </s>
+	<s id="2">Puis-je survivre à mon ami ? </s>
+	<s id="3">Prolongerai-je mes jours, pour voir son image sanglante me poursuivre sans cesse ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="14">
+	<s id="">Ainsi donc Blinval est mort.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="15">
+	<s id="1">Il n'est que trop vrai.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="16">
+	<s id="1">Il est mort ?... mais bien mort ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="17">
+	<s id="1">Ah ! </s>
+	<s id="2">Que ne puis-je en douter ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="18">
+	<s id="1">Vous avez vu son coeur entr'ouvert ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="19">
+	<s id="1">Plût au Ciel que mes yeux m'eussent trompé !</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="20">
+	<s id="1">Vous avez vu les liens se fermer pour jamais ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="21">
+	<s id="1">Ah ! </s>
+	<s id="2">J'en frémis encore...</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="22">
+	<s id="1">Vous l'avez tenu expirant dans vos bras ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="23">
+	<s id="1">Que me rappellez-vous ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="24">
+	<s id="1">Je ne vous accusa point d'assassinat ni l'un ni l'autre ; vous vous êtes battus en braves !</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="25">
+	<s id="1">En braves, oui, sans doute.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="26">
+	<s id="1">L'Édit contre les duels, et la peine qu'il décerne, ne vous sont pas inconnus ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="27">
+	<s id="1">Comment, Monsieur ?...</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="28">
+	<s id="1">Mon devoir est de veiller à l'exécution des Lois.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="29">
+	<s id="1">Quoi ! </s>
+	<s id="2">Vous voudriez me faire arrêter ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="30">
+	<s id="1">Un ordre sévère m'y contraint.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="31">
+	<s id="1">Quoi ! </s>
+	<s id="2">Vous abuseriez de la confidence que je viens de vous faire ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="32">
+	<s id="1">Oui, Monsieur. </s>
+	<s id="2">Ce n'est pas moi qui vous punis, c'est la Loi.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="33">
+	<s id="1">Ah ! </s>
+	<s id="2">Monsieur, je sais bien que Blinval fut votre ami, et je sais ce qu'il en coûte pour le perdre. </s>
+	<s id="3">Je sens quelle juste indignation doit vous porter à venger sa mort ; mais mon supplice rendra-t-il la vie à Blinval ? </s>
+	<s id="4">Faudra-t-il qu'un homme d'honneur périsse par la main d'un infâme bourreau ? </s>
+	<s id="5">Ah ! </s>
+	<s id="6">Si Blinval pouvait se ranimer, il vous dirait : « Je lui pardonne, qu'il vive ; la Loi ne doit pas être plus sévère que moi, qui meurs de sa main... » </s>
+	<s id="7">Monsieur, par ces genoux que j'embrasse, par les mânes de Blinval qui vous fut cher, je vous en conjure, laissez-moi le temps de m'enfuir...</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="34">
+	<s id="1">Je n'y puis tenir... </s>
+	<s id="2">Je trahis mon devoir... mais vos remords font mon excuse.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="35">
+	<s id="1">Ah ! </s>
+	<s id="2">Monsieur, ma reconnaissance...</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="36">
+	<s id="1">N'en parlons point, mon ami. </s>
+	<s id="2">Jurez-moi seulement d'éviter à l'avenir toutes les occasions...</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="37">
+	<s id="1">Oh ! </s>
+	<s id="2">Je les fuirai, sans doute.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="38">
+	<s id="1">Puis-je compter sur votre parole ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="39">
+	<s id="1">Je vous jure...</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="40">
+	<s id="1">Allons, j'y consens, vous allez partir !</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="41">
+	<s id="1">Homme bienfaisant, que le Ciel !...</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="42">
+	<s id="1">Vous ne partirez pas seul.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="43">
+	<s id="1">Comment !</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="44">
+	<s id="1">Un de vos camarades sera le compagnon de votre fuite ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="45">
+	<s id="1">Que dites-vous ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="46">
+	<s id="1">Son aventure est pareille à celle qui vous amène ici. </s>
+	<s id="2">Il a tué son ennemi, tout comme vous avez tué le vôtre.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="47">
+	<s id="1">Et quel est-il ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="48">
+	<s id="1">Vous allez le voir dans un moment.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="49">
+	<s id="1">Quoi ! </s>
+	<s id="2">Deux duels dans un jour !</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="50">
+	<s id="1">Et moi, deux fois dans un jour je manque à mon devoir ; deux fois dans un jour je m'expose peut-être... </s>
+	<s id="2">Que sais-je ?... </s>
+	<s id="3">À perdre ma place... </s>
+	<s id="4">Avouez que, pour en agis ainsi, il faut bien aimer la Comédie.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="51">
+	<s id="1">Mais, Monsieur, tirez-moi d'inquiétude. </s>
+	<s id="2">Quel est donc ce comédien qui s'est battu ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="52">
+	<s id="1">Il est venu, comme vous, me demander vingt-quatre heures pour s'enfuir. </s>
+	<s id="2">Lui ayant accordé ce délai, je ne puis pas vous le refuser.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="53">
+	<s id="1">Mais, son nom ?</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="54">
+	<s id="1">Tout va s'éclaircir. </s>
+	<s id="2">Demeurez ici un moment.</s>
+</p>
+</sp>
+</div2>
+<div2 type="scene" n="9">
+                    <head>SCÈNE IX.</head>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="1">
+	<s id="1">Que veut dire ceci ? </s>
+	<s id="2">Un de mes camarades a tué son adversaire ?... </s>
+	<s id="3">Mais moi-même, ai-je bien tué Blinval ?... </s>
+	<s id="4">La nuit était si obscure... </s>
+	<s id="5">Si je m'étais trompé !...</s>
+</p>
+</sp>
+</div2>
+<div2 type="scene" n="10">
+                    <head>SCÈNE X. Durand, D'Orfeuil, Blinval.</head>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="1">
+	<s id="1">Partez ensemble, Messieurs, et dépêcher vous. </s>
+	<s id="2">La Justice va vous poursuivre tous deux. </s>
+	<s id="3">Chacun de vous a tué son adversaire.</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="2">
+	<s id="1">Eh quoi ! </s>
+	<s id="2">Blinval, c'est toi ?</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="3">
+	<s id="1">Eh quoi ! </s>
+	<s id="2">C'est toi, d'Orfeuil ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<note type="C">Vers 1675 de "Andromaque" de Jean Racine (1668).</note>
+	<l id="8">Percé de tant de coups, comment t'es-tu sauvé ?</l>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="4">
+	<s id="1">N'ajoutez pas : </s>
+</p>
+<note type="C">Vers 1676 de "Andromaque" de Jean Racine (1668).</note>
+	<l id="9">Tiens, tiens, voilà le coup que je t'ai réservé.</l>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="5">
+	<s id="1">Oh ! </s>
+	<s id="1">Parbleu, l'aventure est plaisante.</s>
+</p>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="6">
+	<s id="1">Jamais on ne vit une pareille rencontre.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="7">
+	<s id="1">Je vous avoue que je la conçois à peine ! </s>
+	<s id="2">Car, vous Blinval, vous avez vu d'Orfeuil étendu sans chaleur et sans vie ; vous d'Orfeuil, vous avez tenu Blinval expirant dans vos bras. </s>
+	<s id="3">Mais sans doute vous avez pris, l'un et l'autre,</s>
+</p>
+<note type="C">Vers 1181-1182 de "La Veuve" de Pierre Corneille.</note> 
+	<l id="10">Cette source de vie,</l>
+	<l id="11">Que nomment nos Guerriers poudre de sympathie.</l>
+</sp>
+<sp who="BLINVAL">
+                        <speaker>BLINVAL.</speaker>
+<p id="8">
+	<s id="1">Quoi ! </s>
+	<s id="2">Notre combat vous semble une fable ?</s>
+</p>
+</sp>
+<sp who="D'ORFEUIL">
+                        <speaker>D'ORFEUIL.</speaker>
+<p id="9">
+	<s id="1">Je vous jure que nous nous sommes bien battus.</s>
+</p>
+</sp>
+<sp who="DURAND">
+                        <speaker>DURAND.</speaker>
+<p id="10">
+	<s id="1">Que ce combat soit vrai ou faux, réconciliez-vous, Messieurs les Comédiens, et devenez amis, quoique vous soyez camarades.</s>
+</p>
+</sp>
+</div2>
+</div1>
+</body>
+</text>
 </TEI>

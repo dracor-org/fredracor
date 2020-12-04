@@ -1,0 +1,2718 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">ORESTE ET PYLADE</title>
+                <author key="isni:000000012119739X">François-Joseph de LA GRANGE-CHANCEL (1677-1758) </author>
+                <editor>Laura Ferrucci</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000835</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY NC SA 3.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                    </licence>
+                </availability><!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/LAGRANGECHANCEL_ORESTE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/LAGRANGECHANCEL_ORESTE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY NC SA 3.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1697">1697</date>
+                        <date type="premiere" when="1701-12-13">Représentée pour la première lois, le 13 décembre 1701. </date>
+                        <date type="written"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k1087822?rk=21459;2</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="hidaspe" sex="MALE">
+                        <persName>Hidaspe</persName>
+                    </person>
+                    <person xml:id="thoas" sex="MALE">
+                        <persName>Thoas</persName>
+                    </person>
+                    <person xml:id="anthenor" sex="MALE">
+                        <persName>Anthenor</persName>
+                    </person>
+                    <person xml:id="iphigenie" sex="FEMALE">
+                        <persName>Iphigénie</persName>
+                    </person>
+                    <person xml:id="taxis" sex="MALE">
+                        <persName>Taxis</persName>
+                    </person>
+                    <person xml:id="cyane" sex="FEMALE">
+                        <persName>Cyane</persName>
+                    </person>
+                    <person xml:id="thomiris" sex="FEMALE">
+                        <persName>Thomiris</persName>
+                    </person>
+                    <person xml:id="pylade" sex="MALE">
+                        <persName>Pylade</persName>
+                    </person>
+                    <person xml:id="erine" sex="FEMALE">
+                        <persName>Erine</persName>
+                    </person>
+                    <person xml:id="oreste" sex="MALE">
+                        <persName>Oreste</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords>
+                    <term type="genreTitle">Tragédie</term>
+                    <term type="genreTitle">vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">ORESTE ET PYLADE</titlePart>
+			<titlePart type="sub">TRAGÉDIE</titlePart>
+			</docTitle> 
+		<docDate when="1697">M. DC. XCIX. AVEC PRIVILÈGE DU ROI.</docDate>
+		
+		<div type="docImprint">
+			<div type="privilege">
+                    <head>EXTRAIT DU PRIVILÈGE du Roi.</head>
+				<p n="">Par Grace et Privilège du Roi, donné à Versailles le douzième Février 1699. Signé, Par le Roi en son Conseil, LE FEVRE. Il est permis à PIERRE RIBOU Marchand Libraire à Paris, de faire imprimer le Recueil des Tragédies du Sieur de la Grange, pendant le temps de huit années, à compter du jour que chaque Tragédie sera achevée d'imprimer pour la première fois ; Pendant lequel temps faisons très expresses défenses à toutes personnes de quelque qualité et condition qu'elles soient, de faire imprimer, vendre ni débiter d'autre édition que de celle de l'Exposant, ou de ceux qui auront droit de lui, à peine de quinze cents livres d'âmende, paiables sans déport par chacun des contrevenants, et de tous dépens, dommages et intérêts, et autres peines portées plus au long par lesdites Lettres de privilège.</p>
+				<p n="">Registré sur le Livre de la Communauté des Imprimeurs et Marchands Libraires de Paris le 26. Février 1699.</p>
+				<p n="">Signé, C. BALLARD, Syndic.</p>
+			</div><!--@id="1699-02-26"-->
+			<div type="acheveImprime">
+                    <p>Achevé d'imprimer pour la première fois le 20 Mars 1699.</p>
+                </div><!--@id="1699-03-20"-->
+			<div type="printer">
+                    <p>À PARIS, Chez PIERRE RIBOU, proche les Augustins, à la descente du Pont-neuf, à l'Image S. Loüis.</p>
+                </div><!--@id="RIBOU"-->
+		</div>
+
+		<performance>
+			<ab type="premiere">Représentée pour la première lois, le 13 décembre 1701. </ab><!--date="1701-12-13"--><!--location="Hôtel Guénégaud"-->
+		</performance>
+		<div type="preface">
+                <head>Préface.</head>
+			<p n="">Il y a long-temps qu'on aurait vu paraître sur la scène ce sujet, qui est un des plus grands et des plus beaux de l'antiquité, si nos meilleurs auteurs avoient crû pouvoir en surmonter les difficultés ; mais quand on est jeune on est toujours téméraire. Et l'on est quelquefois heureux. D'ailleurs comme l'on sait assez que la qualité d'Autheur n'est pas celle qui m'honore le plus, j'ai voulu traiter un sujet dont la réussite me déterminât à travailler pour le Théâtre, ou à employer mes moments de loisir à quelque occupation qui me fut plus convenable. Madame la Princesse de Conty, chez qui j'ai eu l'honneur d'être élevé, me choisit elle-même ce sujet préférablement à beaucoup d'autres. J'y ai donné tous mes soins ; et ce qui me confirme encore dans la bonne opinion que j'en ai, c'est qu'on le voit encore paraître tous les jours sur la scène avec autant de plaisir et d'applaudissements que dans les premières représentations, je puis dire que cet Ouvrage a été si généralement approuvé de tout le monde, que je ne répondrai pas seulement à la mauvaise critique de ceux qui ont condamné Thoas et Thomiris ; l'un est dans Euripide, sans lequel il n'y aurait point de pièce, et je me suis assez bien trouvé de l'autre pour ne m'en pas repentir. La perte que fit le Théâtre, en perdant Mademoiselle de Champmeslé, m'avait empêché de faire imprimer cette pièce; mais depuis qu'une jeune Actrice, qui a paru ces jours passez, nous en a rafraîchi la mémoire, je me suis laissé vaincre par les pressantes sollicitations de mes amis, qui, avec mes autres Ouvrages, m'ont persuadé de donner encore celui-ci au public, me flattant que la lecture ne lui en fera pas moins de plaisir que la représentation.</p>
+		</div>
+	<castList>
+                <head>ACTEURS.</head>
+		<castItem>
+                    <role corresp="#thoas">THOAS</role><!--@sex="1" @type="H" @statut="roi" @age="A" @stat_amour="néant"-->, Roi des Tauro-Scythes.</castItem>
+		<castItem>
+                    <role corresp="#iphigenie">IPHIGÉNIE</role><!--@sex="2" @type="H" @statut="" @age="A" @stat_amour="néant"-->, Fille d'Agamemnon, grande prêtresse de Diane.</castItem>
+		<castItem>
+                    <role corresp="#oreste">ORESTE</role><!--@sex="1" @type="H" @statut="prince" @age="A" @stat_amour="néant"-->, Frère d'Iphigénie.</castItem>
+		<castItem>
+                    <role corresp="#pylade">PYLADE</role><!--@sex="1" @type="H" @statut="prince" @age="A" @stat_amour="néant"-->, Prince, ami d'Oreste, Amant d'Iphigénie.</castItem>
+		<castItem>
+                    <role corresp="#thomiris">THOMIRIS</role><!--@sex="2" @type="H" @statut="prince" @age="A" @stat_amour="néant"-->, Princesse du sang Roial des Scythes.</castItem>
+		<castItem>
+                    <role corresp="#anthenor">ANTHENOR</role><!--@sex="1" @type="H" @statut="ministre" @age="A" @stat_amour="néant"-->, Ministre d'État.</castItem>
+		<castItem>
+                    <role corresp="#hidaspe">HIDASPE</role><!--@sex="1" @type="H" @statut="ministre" @age="A" @stat_amour="néant"-->, Ministres d'État, et les principaux d'entre les Scythes.</castItem>
+		<castItem>
+                    <role corresp="#cyane">CYANE</role><!--@sex="2" @type="H" @statut="prêtresse" @age="A" @stat_amour="néant"-->, Prêtresse de Diane, et confidente d'Iphigénie.</castItem>
+		<castItem>
+                    <role corresp="#erine">ERINE</role><!--@sex="2" @type="H" @statut="confident" @age="A" @stat_amour="néant"-->, Confidente de Thomiris.</castItem>
+		<castItem>
+                    <role corresp="#taxis">TAXIS</role><!--@sex="1" @type="H" @statut="capitaine" @age="A" @stat_amour="néant"-->, Capitaine des Gardes de Thoas.</castItem>
+
+	</castList>
+	<!--usage of set in correct place but with unknown attributes <set location="Anticire" country="Crimée" periode="Temps " gps="45;070971, 35.385293">La Scène est à Anticire, dans le Palais de Thoas.</set>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>ACTE I</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Thoas, Hidaspe.</head>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="1">Seigneur, voici le jour si longtemps souhaité,</l>
+	<l n="2">Où conduit par l'hymen à la félicité,</l>
+	<l n="3">Thoas, l'heureux Thoas, épouse ce qu'il aime.</l>
+	<l n="4">C'était peu qu'éloigné de la grandeur suprême,</l>
+	<l n="5">Par vos seules vertus, sans le secours du sang,  </l>
+	<l n="6">Vous eussiez pu monter à cet auguste rang :</l>
+	<l n="7">C'était peu que de voir les Scythes indomptables,</l>
+	<l n="8">Vous soUmettre à l'envi leur rives redoutables, </l>
+	<l n="9">Pour vous faire un destin digne de vos exploits,</l>
+	<l n="10">Et donner une épouse au plus grand de nos Rois. </l>
+	<l n="11">Nous avons vu Diane en ces lieux adorée,</l>
+	<l n="12">Dans un éclat pompeux, par la route azurée,</l>
+	<l n="13">Vous âmener, Seigneur, cette auguste beauté,</l>
+	<l n="14">De qui votre constance a vaincu la fierté.</l>
+	<l n="15">Tout vous rit : la splendeur qui dans ces lieux éclate, </l>
+	<l n="16">Est relevée encor par celle du Sarmate,</l>
+	<l n="17">Dont les ambassadeurs honorent votre Cour.</l>
+	<l n="18">Enfin pour vous combler de gloire ce grand jour...</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="19">A-t-on tout préparé ? Verrai-je la Princesse,</l>
+	<l n="20" part="I">Hidaspe ? </l><!-- @syll="2"-->
+</sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="20" part="F">Elle est encore aux pieds de la D2esse.</l><!-- @syll="10"-->
+	<l n="21">Tandis que de ce Grec à la mort destiné,</l>
+	<l n="22">On couronne de fleurs le front infortuné.</l>
+	<l n="23">Pleine d'un feu divin dans l'enceinte sacrée,</l>
+	<l n="24">Au fond du Sanctuaire elle s'est retirée ; </l>
+	<l n="25">Où son coeur attentif semble se préparer,</l>
+	<l n="26">Au mystère sanglant qu'elle va célébrer.</l>
+	<l n="27">Mais que vois-je ! En ce jour de gloire et d'allégresse,</l>
+	<l n="28">Qui n'attend que ce sang qu'exige la Déesse,</l>
+	<l n="29">Pour faire que sans crime un Roi victorieux </l>
+	<l n="30">Possède enfin un coeur réservé pour les Dieux :</l>
+	<l n="31">Lorsqu'à ces noeuds sacrés il n'est rien qui s'oppose,</l>
+	<l n="32">De ce sombre chagrin qui peut être la cause ?</l>
+	<l n="33">Me serait-il permis, sans sortir du devoir, </l>
+	<l n="34">D'oser m'en informer ? Ne le puis-je savoir ? </l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="35">Heureux qui sans remords, portant un Diadème,</l>
+	<l n="36">N'a point à redouter la vengeance suprême,</l>
+	<l n="37">Et n'est point obligé de conserver ce rang,</l>
+	<l n="38">Par des droits violés, et des fleuves de sang.</l>
+</sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="39">Qu'entends-je ? Quel discours, Seigneur, qui vous l'inspire ? </l>
+	<l n="40">Je n'ai pas oublié qu'en acceptant l'Empire,</l>
+	<l n="41">Vous jurâtes d'abord d'épouser Thomiris :</l>
+	<l n="42">Que son père en mourant mit le Sceptre à ce prix.</l>
+	<l n="43">Pour acquérir un Trône on ose tout promettre.</l>
+	<l n="44">Mais sur le Trône assis on se peut tout permettre. </l>
+	<l n="45">Tranquille Souverain, et vainqueur tant de fois,</l>
+	<l n="46">Vous n'avez qu'à parler, tout fléchit sous vos lois.</l>
+	<l n="47">Dans ses ressentiments Thomiris n'est qu'à plaindre.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="48">Dans ses ressentiments Thomiris est à craindre.</l>
+	<l n="49">Quelque trouble pourtant qu'elle puisse exciter </l>
+	<l n="50">De plus cruels chagrins viennent m'inquiéter :</l>
+	<l n="51">Elle n'est pas la seule ici que je redoute.</l>
+</sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="52" part="I">Et quel autre ennemi pouvez-vous craindre ?</l><!-- @syll="10"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="52" part="F">Écoute.</l><!-- @syll="2"-->
+	<l n="53">Quand le feu Roi, parmi tant de Scythes fameux, </l>
+	<l n="54">Daigna tourner sur moi ses regards et ses voeux,</l>
+	<l n="55">Et me faire en mourant l'appui de sa famille,</l>
+	<l n="56">En m'accordant le Sceptre, et me donnant sa fille ;</l>
+	<l n="57">Guidé par mon devoir plus que par mes serments,</l>
+	<l n="58">Je voyais chaque jour dans mes empressements, </l>
+	<l n="59">Thomiris s'applaudir d'augmenter ma tendresse. </l>
+	<l n="60">Hélas ! Je n'avais point encor vu la Prêtresse.</l>
+	<l n="61">Le jour qui l'amena dans toute sa splendeur,</l>
+	<l n="62">Éclaira son triomphe ensemble, et mon malheur.</l>
+	<l n="63">Mes yeux ne furent plus attachés que sur elle. </l>
+	<l n="64">Perfide à Thomiris, à ma gloire infidèle.</l>
+	<l n="65">Pour m'assurer le Trône, et régner sans effroi,</l>
+	<l n="66">De tous ceux que j'en crus aussi dignes que moi,</l>
+	<l n="67">Hidaspe, j'étouffai l'espoir avec la vie.</l>
+	<l n="68">Mes ennemis domptés, la Tauride asservie, </l>
+	<l n="69">Parez de ces grands noms, de ces fameux exploits,</l>
+	<l n="70">Que la victoire ajoute à la pourpre des Rois,</l>
+	<l n="71">Je parlai de mes feux en amant sûr de plaire.</l>
+	<l n="72">Quel revers ! La Prêtresse inconnue, étrangère,</l>
+	<l n="73">Ne crut pas mon amour digne d'être écouté. </l>
+	<l n="74">Que dis-je ? Elle poussa son injuste fierté</l>
+	<l n="75">Jusqu'à me refuser, soit mépris, soit prudence,</l>
+	<l n="76">De m'apprendre son nom, son pays, sa naissance.</l>
+	<l n="77">Cet orgueil imprévu ne fit que m'irriter.</l>
+	<l n="78">Pour fléchir sa rigueur on me vit tout tenter : </l>
+	<l n="79">Mais en vain : je ne fis qu'augmenter son audace.</l>
+	<l n="80">Des Dieux, toutes les nuits, éprouvant la menace,</l>
+	<l n="81">Je voulus de mon sort savoir la vérité.</l>
+	<l n="82">Voici, par Apollon, ce qui me fut dicté.</l>
+<poem type="oracle">
+<lg n="1">
+	<l n="83">Tu jouiras du Sceptre et de la vie, </l>
+	<l n="84">Tant que tu seras possesseur</l>
+	<l n="85">Du simulacre de ma soeur :</l>
+	<l n="86">Mais crains d'un Grec la main impie.</l>
+	<l n="87">La statue enlevée expiant sa fureur,</l>
+	<l n="88">Te menace d'un sort funeste. </l>
+	<l n="89">Tremble, Thoas, au nom d'Oreste.</l>
+</lg>
+</poem>
+                    </sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="90" part="I">Quel Oracle !</l><!-- @syll="3"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="90" part="F">En secret m'ayant été rendu, </l><!-- @syll="9"-->
+	<l n="91">Rappelant aussitôt mon esprit éperdu,</l>
+	<l n="92">Pour assurer mes jours contre ce coup funeste, </l>
+	<l n="93">Je crus que je devais cacher le nom d'Oreste ;</l>
+	<l n="94">Rejeter sur les Grecs ma crainte, et mon courroux,</l>
+	<l n="95">Et dans ce crime affreux les envelopper tous.</l>
+	<l n="96">Pour engager mon peuple à cet arrêt sinistre,</l>
+	<l n="97">Je fis parler des Dieux le plus zélé ministre. </l>
+	<l n="98">Les Scythes à sa voix tremblèrent pour l'État :</l>
+	<l n="99">Tous s'armèrent de cris contre cet attentat.</l>
+	<l n="100">De tous les étrangers la perte fut jurée.</l>
+	<l n="101">Leurs jours furent proscrits à Diane implorée.</l>
+	<l n="102">Que de sang a depuis arrosé son Autel ! </l>
+	<l n="103">Que d'innocents punis pour un seul criminel !</l>
+	<l n="104">Ces meurtres redoublés, ces sanglantes victimes,</l>
+	<l n="105">Sans adoucir mes maux multipliaient mes crimes.</l>
+	<l n="106">Rappelant ma raison dans ces obscurités ;</l>
+	<l n="107">Voulant de cet Oreste avoir quelques clartés ; </l>
+	<l n="108">Anthenor dont tu sais la prudence et l'adresse,</l>
+	<l n="109">Instruit de mon secret fit voile pour la Grèce.</l>
+	<l n="110">Depuis un an entier qu'il a quitté ce port,</l>
+	<l n="111">Il ne m'a point encor informé de son sort :</l>
+	<l n="112">Le mien traîne partout le chagrin qui m'accable ; </l>
+	<l n="113">Ce jour même, ce jour qu'un hymen favorable,</l>
+	<l n="114">Va mettre dans mon lit cette fière beauté,</l>
+	<l n="115">Ce prix de ma constance, et qui m'a tant coûté ;</l>
+	<l n="116">Je n'ai de mon bonheur qu'une joie inquiète.</l>
+	<l n="117">Étonné, traversé d'une crainte secrète, </l>
+	<l n="118">Sans relâche... Ah grands Dieux, que vois-je ! Est-ce Anthenor ?</l>
+</sp>
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. THOAS, HIDASPE, ANTHENOR.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="119">Ciel ! Il m'est donc permis de te revoir encor.</l>
+	<l n="120">Ami, de ton retour que faut-il que j'augure ?</l>
+	<l n="121">Qu'as-tu développé de ma triste aventure ?</l>
+	<l n="122">Parle : ai-je à craindre encor le céleste courroux ? </l>
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="123">Souffrez qu'auparavant j'embrasse vos genoux,</l>
+	<l n="124">Seigneur, que j'ai de fois tremblé pour votre vie !</l>
+	<l n="125">Quand par la trahison je la croyais ravie.</l>
+	<l n="126">Qu'heureusement, grands Dieux ! Vous calmez mon effroi ;</l>
+	<l n="127">Vous me rendez ici mon cher Maistre, mon Roi. </l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="128">Qui peut t'avoir causé cette crainte funeste ?</l>
+	<l n="129">Qu'as-tu vu ? Que sais-tu ? Connais-tu cet Oreste ?</l>
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="130">Je me suis vainement empressé pour le voir ;</l>
+	<l n="131">Mais son sort dans la Grèce est facile à savoir.</l>
+	<l n="132">Le grand Agamemnon lui donna la naissance. </l>
+	<l n="133">Mycènes est sous ses lois, Argos sous sa puissance.</l>
+	<l n="134">J'abordai son pays ; il venait d'en sortir.</l>
+	<l n="135">Un horrible dessein l'en avait fait partir.</l>
+	<l n="136">J'appris que pour venger le trépas de son père,</l>
+	<l n="137">Ayant trempé ses mains dans le sang de sa mère ; </l>
+	<l n="138">Tourmenté, déchiré de ce crime odieux,</l>
+	<l n="139">Également haï des hommes, et des Dieux,</l>
+	<l n="140">Il en traînait partout l'idée épouvantable ; </l>
+	<l n="141">Et que pour expier ce meurtre détestable,</l>
+	<l n="142">Avec un seul vaisseau, guidé par sa fureur, </l>
+	<l n="143">Portant dans vos États la rage, et la terreur,</l>
+	<l n="144">D'une âme au sacrilège instruite et parvenue,</l>
+	<l n="145">Il venait de Diane enlever la statue !</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="146">Le téméraire ! Après d'innombrables travaux :</l>
+	<l n="147">Si son père en dix ans avec mille vaisseaux, </l>
+	<l n="148">Vit à peine Illion soumis au sang Atride,</l>
+	<l n="149">Croit-il avec un seul étonner la Tauride ?</l>
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="150">Ne vous y trompez pas, il y vient inconnu.</l>
+	<l n="151">Mais quand avec son nom jusqu'à vous parvenu ;</l>
+	<l n="152">Vous auriez connaissance encor de son visage, </l>
+	<l n="153">Votre aspect ne ferait qu'augmenter son courage.</l>
+	<l n="154">Si sur la foi des Grecs on en croit son renom,</l>
+	<l n="155">Ce Prince, de la peur, ne connaît que le nom.</l>
+	<l n="156">Ses serments solennels ont juré votre perte :</l>
+	<l n="157">Et soit par la surprise, ou par la force ouverte, </l>
+	<l n="158">Il vient, quelque péril qu'il y puisse courir,</l>
+	<l n="159">Enlever la statue, ou vous perdre, ou périr.</l>
+	<l n="160">Ah ! Seigneur, quel devins-je à ce récit funeste ?</l>
+	<l n="161">Que ne tentai-je point pour prévenir Oreste ?</l>
+	<l n="162">Je combattis longtemps et les vents et les mers, </l>
+	<l n="163">Et cependant heureux que ces mêmes revers,</l>
+	<l n="164">Des projets du barbare aient suspendu la rage,</l>
+	<l n="165">Plus heureux si tous deux nous avions fait naufrage.</l>
+	<l n="166">S'il m'avait devancé qu'aurait-ce été, grands Dieux !</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="167">Il n'en faut point douter, ce Prince est en ces lieux. </l>
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="168" part="I">Lui ?</l><!-- @syll="1"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="168" part="F">C'est ce même Grec dont j'attends le supplice,</l><!-- @syll="11"-->
+	<l n="169">Et qu'aujourd'hui Diane accepte en sacrifice.</l>
+	<l n="170">Son front où d'un beau sang se répand la fierté,</l>
+	<l n="171">Cet orgueil qu'il oppose à mon autorité ; </l>
+	<l n="172">Surtout son nom qu'il cache, et qu'il s'obstine à taire,</l>
+	<l n="173">Confirme le récit que tu viens de m'en faire.</l>
+	<l n="174">Des vagues en fureurs seul des siens échappé,</l>
+	<l n="175">Sans espoir de secours dans ses projets trompé,</l>
+	<l n="176">À l'aspect d'une mort dont l'horreur est extrême, </l>
+	<l n="177">Il voit sans s'étonner ses malheurs. C'est lui-même.</l>
+	<l n="178">Dieux justes ! Dieux puissants ! Je reconnais vos traits.</l>
+	<l n="179">Votre prudence a mis un prix à vos bienfaits.</l>
+	<l n="180">Elle en fait aux mortels acheter l'allégresse.</l>
+	<l n="181">Je perds mon ennemi, j'épouse la Prêtresse. </l>
+	<l n="182">Quoi qu'il m'en ait coûté pour avoir attendu,</l>
+	<l n="183">Ce bonheur ne m'est point encore assez vendu.</l>
+	<l n="184">Cher ami que je suis redevable à ton zèle.</l>
+	<l n="185">Allons, courons au Temple en porter la nouvelle.</l>
+	<l n="186">Informons la Prêtresse... On ouvre, la voici. </l>
+</sp>
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Thoas, Iphigénie, Anthenor, Hidaspe, Cyane.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="187">Ah ! Madame, le sort enfin s'est adouci !</l>
+	<l n="188">Nous allons l'éprouver par l'hymen qui s'apprête :</l>
+	<l n="189" part="I">L'ordre...</l><!-- @syll="1"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="189" part="M">Arrête Thoas.</l><!-- @syll="5"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="189" part="M">Hé quoi ? </l><!-- @syll="2"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="189" part="F">Thoas, arrête.</l><!-- @syll="4"-->
+	<l n="190">Les Dieux n'approuvent point ton hymen avec moi.</l>
+	<l n="191">Diane a prononcé. Je ne puis être à toi :</l>
+	<l n="192">Ce n'est pas tout. De sang la Déesse se lasse :</l>
+	<l n="193">Devant son tribunal ce Grec a trouvé grâce : </l>
+	<l n="194" part="I">Elle s'en fait l'appui.</l><!-- @syll="5"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="194" part="M">Ciel !</l><!-- @syll="1"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="194" part="F">Au pied de l'autel,</l><!-- @syll="6"-->
+	<l n="195">Mon bras allait sur lui porter le coup mortel.</l>
+	<l n="196">Un prodige inouï me surprend, et m'arrête. </l>
+	<l n="197">Les sacrés ornements sont tombez de sa teste.</l>
+	<l n="198">Le Temple sous mes pas a paru s'ébranler. </l>
+	<l n="199">La statue, et l'autel ont semblé reculer.</l>
+	<l n="200">Sur mes sens interdits la nuit s'est répandue.</l>
+	<l n="201">Diane à mes regards est alors apparue. </l>
+	<l n="202">J'ai lu, j'ai reconnu dans ses yeux irrités,</l>
+	<l n="203">Que formant des projets contre ses volontés,</l>
+	<l n="204">Tu vas sur tes États attirer sa colère,</l>
+	<l n="205">Si d'en presser l'effet ton âme persévère.</l>
+	<l n="206">Cesse d'être rebelle aux menaces des Dieux. </l>
+	<l n="207">Ne verse plus du sang qui te rend odieux :</l>
+	<l n="208">Éteint de ton amour l'ardeur dèsavouée :</l>
+	<l n="209">Laisse en paix une fille aux autels dévouée,</l>
+	<l n="210">Et songe bien plutôt, détestant tes rigueurs,</l>
+	<l n="211">À gagner les esprits qu'à contraindre les coeurs. </l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="212">Où se replonge, ô Ciel ! Mon âme épouvantée ?</l>
+	<l n="213">Toujours entre la crainte et l'espoir agité,</l>
+	<l n="214">Ne peut-elle entrevoir un avenir certain ?</l>
+	<l n="215">Et vous qui m'accablez par un zèle inhumain,</l>
+	<l n="216">Mes malheurs, mes chagrins n'ont-ils rien qui vous touche ? </l>
+	<l n="217">En serai-je sans cesse instruit par vôtre bouche ?</l>
+	<l n="218">Madame, ouvrez les yeux, quand on le pousse about,</l>
+	<l n="219">Rien n'est plus dangereux qu'un amant qui peut tout.</l>
+	<l n="220">Prévenez-en l'éclat, c'est trop vous le redire :</l>
+	<l n="221">Un peu de sang versé vous assure un Empire. </l>
+	<l n="222">Ces refus outrageants ne vous sont plus permis.</l>
+	<l n="223">Vous devez être à moi. Vous me l'avez promis.</l>
+	<l n="224">La parole a ses lois qu'on ne doit point enfreindre,</l>
+	<l n="225" part="I">Qui le souffre est indigne...</l><!-- @syll="6"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="225" part="F">Est-ce à toi de t'en plaindre ? </l><!-- @syll="6"-->
+	<l n="226">Toi qui ne dois ce rang dont tu fais vanité, </l>
+	<l n="227">Qu'à ton manque de foi, qu'à ton impiété :</l>
+	<l n="228">Aux ordres du feu Roi cesse de faire injure.</l>
+	<l n="229">Épouse Thomiris, ou crains pour ton parjure.</l>
+	<l n="230">Mais la prospérité te rend sourd à ma voix. </l>
+	<l n="231">Un Tyran couronné ne connaît plus de lois.</l>
+	<l n="232">Tu veux par mon hymen combler tes injustices,</l>
+	<l n="233">Tu n'as plus de raison que pour flatter tes vices.</l>
+	<l n="234">Tu te crois revêtu d'un pouvoir qui peut tout ;</l>
+	<l n="235">Voyons ce qu'il destine à qui te pousse à bout. </l>
+	<l n="236">D'une odieuse main instruite dans le crime,</l>
+	<l n="237">Va toi-même à l'autel immoler la victime ;</l>
+	<l n="238">Et pour braver un coeur ferme à te refuser,</l>
+	<l n="239">Aux yeux de la Déesse ose, viens m'épouser,</l>
+	<l n="240" part="I">Je vais t'attendre. </l><!-- @syll="4"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="240" part="F">Hé bien, je vous suis, ma vengeance...</l><!-- @syll="8"-->
+</sp>
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE IV. Thoas, Iphigénie, Anthenor, Hidaspe, Taxis, Cyane.</head>
+<sp who="#taxis">
+                        <speaker>TAXIS.</speaker>
+	<l n="241">Le Sarmate, Seigneur, vous demande audience.</l>
+	<l n="242">Et de cette entrevue il presse le moment.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="243">Je vais l'entendre, et plein de mon ressentiment,</l>
+	<l n="244">Je reviens à l'autel, sans que rien m'épouvante, </l>
+	<l n="245">Immoler la victime, et d'une main sanglante,</l>
+	<l n="246">Vous épouser malgré vôtre audace, et vos Dieux. </l>
+	<l n="247">Mais pour vous détester, et vous être odieux, </l>
+	<l n="248" part="I">Vous le voulez, cruelle, attendez-moi.</l><!-- @syll="10"-->
+</sp>
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Iphigénie, Cyane.</head>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="248" part="F">Madame, </l><!-- @syll="2"-->
+	<l n="249">Quel est l'affreux dessein où s'emporte son âme !</l>
+	<l n="250">Que serait-ce, grands Dieux ! S'il venait à savoir</l>
+	<l n="251">Que ce prodige n'est que pour le décevoir :</l>
+	<l n="252">Que ce n'est qu'un mensonge inventé par vous-même.</l>
+	<l n="253">Que ne permettra-t-il à sa colère extrême ? </l>
+	<l n="254">Affermi dans ses feux par cette fausseté,</l>
+	<l n="255">Je crois déjà le voir furieux, irrité,</l>
+	<l n="256" part="I">Porter sur votre tête...</l><!-- @syll="6"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="256" part="F">Il n'oserait Cyane.</l><!-- @syll="6"-->
+	<l n="257">Consacrée aux autels, Prêtresse de Diane, </l>
+	<l n="258">Quelque audace qu'il eût ce frein l'arrêterait.</l>
+	<l n="259">Il a beau menacer Cyane, il n'oserait.</l>
+	<l n="260">Toi qui d'Iphigénie as pénétré la feinte,</l>
+	<l n="261">Qui connais de mon coeur, et le trouble, et la crainte.</l>
+	<l n="262">Diane, montre à tous, te déclarant pour moi, </l>
+	<l n="263">Que le sang de ton père est protégé par toi.</l>
+	<l n="264">Si ma fierté se porte à des démarches vaines,</l>
+	<l n="265">C'est l'orgueil de ce sang qui coule dans mes veines.</l>
+	<l n="266">Voudrais-tu qu'un tyran souillât sa pureté, </l>
+	<l n="267">Et pourrais-je descendre à cette indignité. </l>
+	<l n="268">Pardonne aussi, Déesse, à la pieuse estime,</l>
+	<l n="269">Que la pitié m'a fait prendre pour ta victime.</l>
+	<l n="270">L'appui de l'innocence est l'ouvrage des Cieux :</l>
+	<l n="271">Et c'est une vertu que d'imiter les Dieux.</l>
+</sp>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="272">Mais quand vous renoncez au devoir de Prêtresse, </l>
+	<l n="273">N'appréhendez-vous point d'irriter la Déesse.</l>
+	<l n="274">Le sang de tous les Grecs à sa vengeance est dû.</l>
+	<l n="275">Jusqu'ici, sans frémir, vous l'avez répandu.</l>
+	<l n="276">Une sainte ferveur animait ce beau zèle.</l>
+	<l n="277">D'où vient pour ce Grec seul que votre main chancelle ? </l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="278">Me le demandes-tu ? Tes yeux furent témoins</l>
+	<l n="279">Du déplorable état qui l'offrit à mes soins :</l>
+	<l n="280">Quitte de mes devoirs, j'allais sur le rivage</l>
+	<l n="281">Soupirer mes malheurs, pleurer mon esclavage.</l>
+	<l n="282">Les vents impétueux obscurcissaient les airs, </l>
+	<l n="283">Troublaient les éléments, faisaient mugir les Mers :</l>
+	<l n="284">Quand sur des mats brisés la vague épouvantable,</l>
+	<l n="285">Jeta ce malheureux étendu sur le sable :</l>
+	<l n="286">La pitié m'inspira de conserver ses jours :</l>
+	<l n="287">Dans nos empressements il trouva du secours. </l>
+	<l n="288">N'aurais-je pris le soin de le rendre à la vie,</l>
+	<l n="289">Qu'afin que par moi-même elle lui fût ravie.</l>
+	<l n="290">Non, si je me portais à cet excès d'horreur,</l>
+	<l n="291">Diane en punirait la barbare fureur.</l>
+</sp>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="292">Et songez-vous pour qui vôtre âme s'intéresse ? </l>
+	<l n="293">Pour qui vous offensez Thoas, et la Déesse.</l>
+	<l n="294">Ce Grec, dont la pitié vous fait prendre l'appui, </l>
+	<l n="295">Répond-il aux bontés que vous avez pour lui ?</l>
+	<l n="296">Vous a-t-il dit quel sang l'a transmis à la vie ?</l>
+	<l n="297">Lorsque de le savoir vous témoignez l'envie, </l>
+	<l n="298">Le visage interdit, les yeux pleins d'embarras :</l>
+	<l n="299">Il soupire, Madame, et ne vous répond pas.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="300">D'un sang illustre, et grand voilà le caractère,</l>
+	<l n="301">Et c'est ce même orgueil qui me force à me taire.</l>
+	<l n="302">Tu sais, quand de Calchas l'Oracle rigoureux, </l>
+	<l n="303">Eût prononcé la fin de mes jours malheureux,</l>
+	<l n="304">Et qu'aux feux du bûcher par Diane enlevée,</l>
+	<l n="305">À servir ses autels je me vis réservée,</l>
+	<l n="306">Que l'horreur de me voir chez les Scythes cruels ;</l>
+	<l n="307">Rougir, tremper mes mains dans le sang des mortels, </l>
+	<l n="308">M'a fait ensevelir le nom d'Iphigénie.</l>
+	<l n="309">Je n'ai conté qu'à toi les malheurs de ma vie.</l>
+</sp>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="310" part="I">Madame...</l><!-- @syll="2"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="310" part="F">De ce nom le fier ressentiment,</l><!-- @syll="10"-->
+	<l n="311">Déteste cet indigne, et lâche abaissement. </l>
+	<l n="312">Il veut briser un joug dont sa gloire est flétrie.</l>
+	<l n="313">Je brûle de revoir la Grèce, ma patrie,</l>
+	<l n="314">D'admirer, d'adorer couvert de tant d'exploits,</l>
+	<l n="315">Ce grand Agamemnon chef des Grecs, Roi des Rois :</l>
+	<l n="316">D'entendre, d'embrasser Clytemnestre ma mère, </l>
+	<l n="317">Les Princesses mes soeurs, Oreste mon cher frère.</l>
+	<l n="318">Quels transports à me voir ne sentiraient-ils pas ?</l>
+	<l n="319">Mon père, qui longtemps a pleuré mon trépas,</l>
+	<l n="320">Retrouvera sa joie à l'aspect d'une fille,</l>
+	<l n="321">Qui n'a point démenti son auguste famille. </l>
+	<l n="322">Pour cet heureux moment, qui fait tous mes souhaits : </l>
+	<l n="323">Ce Grec m'est important, et plus cher que jamais ;</l>
+	<l n="324">Je vais le délivrer, le charger d'une lettre,</l>
+	<l n="325">Qu'aux mains d'Agamemnon il jure de remettre.</l>
+	<l n="326" part="I">Quand mon père saura... </l><!-- @syll="6"-->
+</sp>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="326" part="F">Madame, y pensez-vous ?</l><!-- @syll="6"-->
+	<l n="327">Comment le dérober à Thoas en courroux ?</l>
+	<l n="328">Quand même à vôtre feinte il donnerait croyance,</l>
+	<l n="329">Pensez-vous d'un tyran tromper la prévoyance ?</l>
+	<l n="330">Quel vaisseau recevra l'Étranger sur son bord ? </l>
+	<l n="331">Sans l'ordre de Thoas, on ne sort point du port.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="332">Cyane, il partira de l'aveu du Barbare ;</l>
+	<l n="333">Il ne sait pas le coup que ma main lui prépare.</l>
+	<l n="334">Des volontés du Ciel incertain, et troublé,</l>
+	<l n="335">Le peuple, autour du Temple, est encor assemblé. </l>
+	<l n="336">Je vais le soulever contre le Tyran même :</l>
+	<l n="337">Viens me voir, empruntant une audace suprême,</l>
+	<l n="338">Confondre, épouvanter le superbe Thoas,</l>
+	<l n="339">Diane, en ce dessein ne m'abandonne pas.</l>
+</sp>
+</div>
+</div>
+<div type="acte" n="2">
+                <head>ACTE II</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Thomiris, Anthenor, Erine.</head>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="340">Anthenor, vous savez mes malheurs, mon injure, </l>
+	<l n="341">Thoas est un impie, un perfide, un parjure,</l>
+	<l n="342">Qui retient votre bras quand il faut le punir ?</l>
+	<l n="343">Mon père n'est-il plus dans votre souvenir ?</l>
+	<l n="344">Ingrat, à ses bienfaits perdez-vous la mémoire ?</l>
+	<l n="345">De ce que vous devez à sa fille, à sa gloire ? </l>
+	<l n="346">Au point où le Tyran se plaît à l'outrager,</l>
+	<l n="347">Thomiris n'attendait que vous pour se venger...</l>
+	<l n="348">Vous êtes de retour, vous voyez ma disgrâce,</l>
+	<l n="349">Et quand il faut agir votre coeur est de glace.</l>
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="350">Je sais ce que je dois, Madame, à vos malheurs ; </l>
+	<l n="351">Estimé du feu Roi, comblé de ses faveurs,</l>
+	<l n="352">Je n'ai pas oublié qu'à son heure dernière,</l>
+	<l n="353">Il attacha sur moi sa confiance entière ;</l>
+	<l n="354">Qu'ébloui du serment par Thoas attesté, </l>
+	<l n="355">Il n'en prit pour garant que ma fidélité. </l>
+	<l n="356">Il mourut. Si depuis, contre sa foi donnée,</l>
+	<l n="357">Thoas, de votre hymen, différait la journée :</l>
+	<l n="358">J'imputais ces délais, Madame, à son grand coeur,</l>
+	<l n="359">Qui pour vous affermir sur le Trône en vainqueur,</l>
+	<l n="360">Voulais que vous dussiez à sa propre victoire,  </l>
+	<l n="361">La paix de vos États, l'abondance et la gloire.</l>
+	<l n="362">L'Oracle d'Apollon qui menaçait ses jours,</l>
+	<l n="363">De vos prospérités vint traverser le cours.</l>
+	<l n="364">Pour bannir de ces lieux la crainte, et la tristesse,</l>
+	<l n="365">A ses ordres pressants je partis pour la Grèce. </l>
+	<l n="366">Jugez de ma douleur, Madame, à mon retour,</l>
+	<l n="367">Lorsque j'apprends qu'épris d'un malheureux amour,</l>
+	<l n="368">Thoas, sans respecter les Dieux, ni sa promesse,</l>
+	<l n="369">Veut d'une main impie épouser la Prêtresse,</l>
+	<l n="370">Et l'élever au Trône au mépris de vos droits. </l>
+	<l n="371">À ce triste récit interdit, et sans voix...</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="372">Il faut d'autres efforts pour laver mon offense.</l>
+	<l n="373">C'est la mort du tyran qu'exige ma vengeance.</l>
+	<l n="374">La Prêtresse aujourd'hui le verrait son époux.</l>
+	<l n="375" part="I">Prévenons... </l><!-- @syll="3"-->
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="375" part="F">Suspendez un moment ce courroux :</l><!-- @syll="9"-->
+	<l n="376">Tout semble s'opposer au sort qui vous menace.</l>
+	<l n="377">Tout semble présager qu'il va changer de face :</l>
+	<l n="378">Ce Grec dont le trépas est encore incertain,</l>
+	<l n="379">De quelque heureux retour flatte votre destin. </l>
+	<l n="380">J'allais pour détourner le malheur qui vous presse,</l>
+	<l n="381">Au pied de ses Autels implorer la Déesse.</l>
+	<l n="382">Son Temple était fermé, j'ai vu de toutes parts</l>
+	<l n="383">Le peuple pour entrer s'offrir à mes regards ;</l>
+	<l n="384">Lorsqu'avec un grand bruit la porte s'est ouverte.  </l>
+	<l n="385">Aussitôt la Prêtresse à nos yeux s'est offerte.</l>
+	<l n="386">Pâle, sans appareil, ses voiles déchirés,</l>
+	<l n="387">Les cheveux hérissés, les regards égarés :</l>
+	<l n="388">Elle a fait voir à tous par son maintien farouche,</l>
+	<l n="389">Que la Déesse allait s'expliquer par sa bouche. </l>
+	<l n="390">A son aspect, tremblant, interdit, consterné,</l>
+	<l n="391">Tout ce peuple à genoux est tombé prosterné :</l>
+	<l n="392">Une sainte terreur qu'imprimait sa présence,</l>
+	<l n="393">A sur les assistants répandu le silence.</l>
+	<l n="394">Scythes, a-t-elle dit, tremblez tous, frémissez, </l>
+	<l n="395">Des maux dont en ce jour vous êtes menacés :</l>
+	<l n="396">Diane de ce Grec protège l'infortune :</l>
+	<l n="397">Elle ménage un sang qu'a conservé Neptune.</l>
+	<l n="398">Attache votre sort au salut de ses jours.</l>
+	<l n="399">Vous défend par ma voix d'en abréger le cours : </l>
+	<l n="400">Marquez-lui vos respects, par votre obéissance :</l>
+	<l n="401">Imitez son exemple, ou craignez sa vengeance.</l>
+	<l n="402">À ces mots, pour jurer de maintenir ses lois,</l>
+	<l n="403">Tout ce peuple assemblé n'a formé qu'une voix.</l>
+	<l n="404">Surpris d'un tel spectacle, et pressé par mon zèle, </l>
+	<l n="405">J'ai couru chez le Roi porter cette nouvelle.</l>
+	<l n="406">Je l'ai trouvé sortant d'avec l'Ambassadeur ;</l>
+	<l n="407">Mon récit sur son front a porté la terreur ;</l>
+	<l n="408">Après s'être affranchi du trouble de son âme,</l>
+	<l n="409">Je l'ai vu s'empresser à vous parler, Madame. </l>
+	<l n="410">Il va venir. Les Dieux l'ont peut-être touché :</l>
+	<l n="411">Peut-être à son devoir désormais attaché,</l>
+	<l n="412" part="I">Qu'il vous rapporte un Sceptre...</l><!-- @syll="6"-->
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="412" part="F">Après sa perfidie,</l><!-- @syll="6"-->
+	<l n="413">Après l'impunité de son audace impie, </l>
+	<l n="414">Vous croyez qu'aux remords il se laisse ébranler,</l>
+	<l n="415">Et qu'il n'ait fait ce pas qu'afin de reculer,</l>
+	<l n="416">Non, non, plus de pitié quand sa mort est jurée. </l>
+	<l n="417">Des plus grands de l'État la foi m'est assurée.</l>
+	<l n="418">Par la voix de leurs Chefs, les Scythes mécontents, </l>
+	<l n="419">Excitent ma vengeance, en pressent les instants.</l>
+	<l n="420">L'Ambassadeur Sarmate est de l'intelligence.</l>
+	<l n="421" part="I">Tous contre le Tyran vont...</l><!-- @syll="6"-->
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="421" part="F">Madame, il s'avance.</l><!-- @syll="6"-->
+</sp>
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Thoas, Thomiris, Anthenor, Erine, Hidaspe.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="422">Je ne viens point, Madame, orné de vain discours, </l>
+	<l n="423">D'une frivole excuse emprunter les détours ;</l>
+	<l n="424">À régner avec moi vous êtes destinée,</l>
+	<l n="425">Je dois m'unir à vous par un saint hyménée :</l>
+	<l n="426">Mais ce serait vous faire un présent odieux,</l>
+	<l n="427">Que l'hommage d'un Roi brûlant pour d'autres yeux. </l>
+	<l n="428">Toutefois les transports d'un aveugle caprice,</l>
+	<l n="429">N'ont jamais de mon coeur écarté la justice :</l>
+	<l n="430">Je me souviens toujours qu'un Trône vous est dû,</l>
+	<l n="431">Par de plus dignes mains il vous sera rendu.</l>
+	<l n="432">Charmé de vos vertus, le vaillant Merodate, </l>
+	<l n="433">Vous offre, avec sa foi, l'Empire du Sarmate ;</l>
+	<l n="434">Avide, impatient de m'acquitter vers vous, </l>
+	<l n="435">J'ai reçu sa demande, il sera votre époux.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="436">Aux ordres de mon père est-ce ainsi que votre âme...</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="437">Il régnait. A sa voix tout fléchissait, Madame : </l>
+	<l n="438">J'obéissais. Son Sceptre a passé sous mes lois.</l>
+	<l n="439">Je règne. Obéissez pour la dernière fois.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="440">Vous régnez ! Sans nul titre, et de race commune,</l>
+	<l n="441" part="I">À qui le devez-vous, Seigneur ?</l><!-- @syll="8"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="441" part="F">À la fortune. </l><!-- @syll="4"-->
+	<l n="442">Destiné pour remplir le Trône où je me vois,</l>
+	<l n="443">Au feu Roi votre père elle imposa son choix.</l>
+	<l n="444">C'est d'elle, et non de lui, que je tiens ma Couronne.</l>
+	<l n="445">Arbitre des États qu'elle ôte, ou qu'elle donne :</l>
+	<l n="446">Elle élève et détruit l'ouvrage de ses mains, </l>
+	<l n="447">Par une intelligence inconnue aux humains.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="448">Quoi ! Loin de respecter les mânes de mon père...</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="449">Je vous estime encor, Madame, et vous révère.</l>
+	<l n="450">N'allez point, rappelant d'inutiles clartés,</l>
+	<l n="451">Soulever mon dépit, irriter mes bontés. </l>
+	<l n="452">J'ai dit. De Merodate acceptez l'hyménée.</l>
+	<l n="453">À ses Ambassadeurs ma parole est donnée ;</l>
+	<l n="454">Son Sceptre vous attend. Allez le recevoir.</l>
+	<l n="455">Tout est prêt : l'heure est prise, et vous partez ce soir.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="456">Perfide, car enfin je ne puis plus me taire, </l>
+	<l n="457">Tu veux par trop d'endroits mériter ma colère,</l>
+	<l n="458">Et je me sens forcée à perdre malgré moi,</l>
+	<l n="459">Ce reste de respect que je gardais pour toi.</l>
+	<l n="460">D'où te vient tant d'orgueil, et par quelle puissance, </l>
+	<l n="461">De promettre ta Reine, as-tu pris la licence ? </l>
+	<l n="462">Merodate m'épouse, et va me couronner ;</l>
+	<l n="463">Mais quelle dot, Tyran, penses-tu me donner ?</l>
+	<l n="464">Souveraine en naissant des lieux où je respire ;</l>
+	<l n="465">J'irais sous d'autres Cieux mendier un Empire ;</l>
+	<l n="466">Et ma fuite approuvant tes lâches attentats, </l>
+	<l n="467">Te laisserait paisible occuper mes États.</l>
+	<l n="468">Non, ne présume pas, quelque espoir qui te flatte,</l>
+	<l n="469">Que je coure si loin pour trouver un Sarmate.</l>
+	<l n="470">S'il me veut obtenir, qu'il vienne me chercher :</l>
+	<l n="471">Que d'un joug tyrannique il vienne m'arracher, </l>
+	<l n="472">Je le reçois alors, ma main est toute prête,</l>
+	<l n="473">Pour qu'avec la sienne il m'apporte ta tête.</l>
+	<l n="474">Voilà par quels efforts il me peut mériter,</l>
+	<l n="475">Et ce n'est qu'à ce prix que je puis l'accepter :</l>
+	<l n="476" part="I">Adieu. </l><!-- @syll="2"-->
+</sp>
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Thoas, Anthenor, Hidaspe.</head>
+<sp who="#thoas">
+                        <speaker>THOAS, à Hidaspe.</speaker>
+	<l n="476" part="M">Faites venir ce Grec.</l><!-- @syll="6"-->
+</sp><!--@stage="toward"-->
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="476" part="F">Quelle surprise !</l><!-- @syll="4"-->
+	<l n="477">Avez-vous pu, Seigneur, former cette entreprise ?</l>
+	<l n="478">Songez-vous bien à qui vous livrez Thomiris ? </l>
+	<l n="479">Au Sarmate, au plus grand de tous vos ennemis : </l>
+	<l n="480">N'espérez de ces noeuds qu'une guerre immortelle ;</l>
+	<l n="481">Superbe, armé des droits qu'elle porte avec elle ;</l>
+	<l n="482">Il joindra tôt ou tard votre Sceptre, et le sien.</l>
+	<l n="483" part="I">Vous le voyez, Seigneur, jamais...</l><!-- @syll="8"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="483" part="F">Je ne vois rien. </l><!-- @syll="4"-->
+	<l n="484">Dans les divers transports dont mon trouble m'anime ;</l>
+	<l n="485">Quand j'entends que les Dieux protègent ma victime,</l>
+	<l n="486">Quand je vois que mon peuple interdit, effraié,</l>
+	<l n="487">S'oppose à ma fureur, me tient le bras lié,</l>
+	<l n="488">Examiner ce Grec, éprouver la Prêtresse, </l>
+	<l n="489">Pénétrer la pitié qui pour lui s'intéresse ;</l>
+	<l n="490">Éclaircir des soupçons dont mon coeur est frappé :</l>
+	<l n="491">Voilà l'unique soin dont je suis occupé.</l>
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="492">Prenez-garde, Seigneur, les suprêmes Puissances,</l>
+	<l n="493">Ne sont pas à l'abri des célestes vengeances : </l>
+	<l n="494">Les Dieux tendent souvent un piège à nôtre orgueil ;</l>
+	<l n="495">L'hymen de la Prêtresse est peut-être l'écueil,</l>
+	<l n="496">Où pour faire échouer votre âme chancelante...</l>
+</sp>
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Thoas, Anthenor, Hidaspe.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="497">Quoi ! Sans ce Grec Hidaspe à mes yeux se présente !</l>
+	<l n="498">Qui l'arrête ? Ose-t-il méconnaître ma voix ? </l>
+	<l n="499">Est-ce que la Prêtresse est rebelle à mes lois ?</l>
+	<l n="500" part="I">Ne le verrai-je pas ?</l><!-- @syll="6"-->
+</sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="500" part="F">Seigneur, on vous l'amène :</l><!-- @syll="6"-->
+	<l n="501">Mais je ne l'ai du Peuple obtenu qu'avec peine :</l>
+	<l n="502">Inspiré par Diane à s'en faire l'appui, </l>
+	<l n="503">Son zèle, contre tous, se déclare pour lui ;</l>
+	<l n="504">À me l'abandonner il marquait sa contrainte ;</l>
+	<l n="505">Par les Dieux attestés j'ai dissipé sa crainte,</l>
+	<l n="506" part="I">J'ai promis son retour.</l><!-- @syll="6"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="506" part="F">Qu'il vienne. </l><!-- @syll="3"-->
+</sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="506" part="F">Le voici.</l><!-- @syll="3"-->
+</sp>
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Thoas, Pylade, Anthenor, Hidaspe, Taxis.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="507">Qu'on cherche la Prêtresse, et qu'on l'amène ici.</l>
+	<l n="508">Approche. Ce n'est plus ton nom, ni ta naissance</l>
+	<l n="509">Dont je veux par ta bouche avoir la connaissance.</l>
+	<l n="510">La Prêtresse t'arrache à mon inimitié, </l>
+	<l n="511">Je veux sauver des jours dont elle prend pitié :</l>
+	<l n="512">Le Sarmate est chargé du soin de te conduire ;</l>
+	<l n="513">Tu suivras Thomiris jusques dans leur Empire.</l>
+	<l n="514">Delà sur un vaisseau qu'ils doivent te donner,</l>
+	<l n="515">Dans ton pays natal tu pourras retourner : </l>
+	<l n="516">Mais s'il te reste encor quelque amour pour la vie,</l>
+	<l n="517">Si de la prolonger tu conserves l'envie,</l>
+	<l n="518">Prends garde qu'en ces lieux cet astre que tu vois,</l>
+	<l n="519">Ne te retrouve pas une seconde fois.</l>
+	<l n="520" part="I">Tu peux partir. </l><!-- @syll="4"-->
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="520" part="F">Le sang dont le Ciel m'a fait naître,</l><!-- @syll="8"-->
+	<l n="521">Dans ce vaste Univers ne connaît point de maître :</l>
+	<l n="522">Son sort indépendant en tout temps, en tous lieux,</l>
+	<l n="523">Ne reçoit ni de lois, ni d'ordres que des Dieux.</l>
+	<l n="524">Je venais en ces lieux animé par la gloire, </l>
+	<l n="525">J'y devais remporter une illustre victoire.</l>
+	<l n="526">Jamais projet ne fut plus dignement formé, </l>
+	<l n="527">Les Cieux armaient mon bras, les mers l'ont dèsarmé.</l>
+	<l n="528">De tes indignes mains si j'acceptais la vie,</l>
+	<l n="529">Je ne la traînerais qu'avec ignominie ; </l>
+	<l n="530">Supprime tes bontés, et puisque tes États</l>
+	<l n="531">N'ont point vu mon triomphe, ils verront mon trépas.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="532">Quel trouble à ce discours jette-t-il dans mon âme !</l>
+	<l n="533" part="I">Serait-ce l'ennemi...</l><!-- @syll="6"-->
+</sp>
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Thoas, Iphigénie, Pylade, Anthenor,  Hidaspse, Cyane, Taxis.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="533" part="F">Venez, venez, Madame. </l><!-- @syll="6"-->
+	<l n="534">Ce malheureux mortel se déclare aujourd'hui,</l>
+	<l n="535">Indigne des bontés que vous avez pour lui :</l>
+	<l n="536">Il mourra, rien ne peut retenir ma vengeance.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="537">Diane, par ma voix, t'en a fait la deffense :</l>
+	<l n="538">Oses-tu t'opposer aux volontés des Cieux ? </l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="539">Non, ne vous en prenez qu'à cet audacieux ;</l>
+	<l n="540">Ardent à satisfaire au désir qui vous presse,</l>
+	<l n="541">J'ouvrais à cet ingrat le chemin de la Grèce.</l>
+	<l n="542">Quoi que je m'apprêtasse un cruel repentir, </l>
+	<l n="543">Je ne songeais qu'à vous. Je le faisais partir. </l>
+	<l n="544">On voit par ses refus ce qu'il cache en son âme,</l>
+	<l n="545">Et quelqu'autre intérêt l'arrête ici, Madame.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="546">Et quel motif le peut retenir en des lieux</l>
+	<l n="547">Où sans cesse la mort est présente à ses yeux ?</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="548">Le voilà, je vous laisse, il pourra vous l'apprendre ; </l>
+	<l n="549">Surtout, inspirez-lui le parti qu'il doit prendre.</l>
+	<l n="550">Madame, il est encor l'arbitre de son sort.</l>
+	<l n="551">S'il part, j'oublierai tout ; s'il demeure, il est mort :</l>
+	<l n="552">Dût Jupiter sur moi faire tomber la foudre,</l>
+	<l n="553">Je ne vous donne plus qu'une heure à le résoudre. </l>
+</sp>
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Iphigénie, Pylade, Cyane.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="554">Malheureux étranger, où vous engagez-vous ?</l>
+	<l n="555">Quelle témérité vous retient parmi nous ?</l>
+	<l n="556">D'une sanglante mort elle sera suivie.</l>
+	<l n="557">Avez-vous tant de haine, et d'horreur pour la vie ?</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="558">Triste jouet du sort, abandonné des Dieux, </l>
+	<l n="559">Brûlant d'un vain désir, le jour m'est odieux,</l>
+	<l n="560">Je n'avais qu'un ami. La colère céleste</l>
+	<l n="561">Se plût à le former sous un astre funeste.</l>
+	<l n="562">Telle fut de son sort l'affreuse cruauté, </l>
+	<l n="563">Qu'il lui fit des forfaits une nécessité. </l>
+	<l n="564">De l'horrible ascendant qui l'entraînait au crime,</l>
+	<l n="565">Après l'avoir commis, il devint la victime.</l>
+	<l n="566">Quoi que juste, il n'en eût pour fruit que le remords :</l>
+	<l n="567">Tourmenté, déchiré de furieux transports,</l>
+	<l n="568">Il venait en Tauride expier son offense, </l>
+	<l n="569">Il y devait trouver, le repos, l'innocence.</l>
+	<l n="570">L'Oracle l'assurait, j'accompagnais ses pas.</l>
+	<l n="571">N'était-ce, malheureux, que pour voir son trépas ?</l>
+	<l n="572">J'ai perdu mon ami : témoin de son naufrage,</l>
+	<l n="573">Il ne me reste plus sur ce triste rivage, </l>
+	<l n="574">Privé de l'embrasser, et de l'ensevelir,</l>
+	<l n="575">Que d'apaiser ses Dieux, le pleurer, et mourir.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="576">D'un si pieux devoir nul ne peut vous reprendre :</l>
+	<l n="577">Mais n'en avez-vous point encor quelqu'autre à rendre ?</l>
+	<l n="578">Et ne peut-on de vous espérer un secours, </l>
+	<l n="579">Pour prix de tous les soins qu'on a pris de vos jours ?</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="580">De ces jours malheureux que pouvez-vous prétendre ?</l>
+	<l n="581">Madame, et quel secours en devez-vous attendre ?</l>
+	<l n="582">Cependant cet espoir dont vous m'osez flatter,</l>
+	<l n="583">Au jour que je fuyais peut encor m'arrêter. </l>
+	<l n="584">Commandez, je suis prêt. Pour vous que puis-je faire ?</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="585">Plus que vous ne croyez vous m'êtes nécessaire.</l>
+	<l n="586">Née au sein de la Grèce, où brillent mes aieux,</l>
+	<l n="587">Je me vois comme vous étrangère en ces lieux.</l>
+	<l n="588">Un Tyran m'y retient. Ministre de ses crimes,  </l>
+	<l n="589">Je rougis nos autels d'innocentes victimes.</l>
+	<l n="590">Que dis-je ? À m'épouser il porte sa fureur,</l>
+	<l n="591">Délivrez-moi d'un joug barbare et plein d'horreur.</l>
+	<l n="592">Vous pouvez de ces lieux m'aplanir la sortie.</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="593">Armez mon bras, Madame, et vous serez servie. </l>
+	<l n="594">Redevable à vos soins de mes malheureux jours,</l>
+	<l n="595">Heureux en vous servant d'en signaler le cours,</l>
+	<l n="596">Animé par vous-même, et pour votre défense,</l>
+	<l n="597">D'un zèle plus ardent que la reconnaissance,</l>
+	<l n="598">J'irai porter le fer dans le sein de Thoas. </l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="599">Non, ce serait vous perdre, et ne me sauver pas.</l>
+	<l n="600">Sans exposer vos jours, vous pouvez m'être utile,</l>
+	<l n="601">Le Tyran vous en ouvre un chemin plus facile ;</l>
+	<l n="602">Puisqu'il vous le permet pressez vôtre départ ;</l>
+	<l n="603">Portez dans votre Grèce un écrit de ma part : </l>
+	<l n="604">Contez mon infortune à ceux qui m'ont fait naître,</l>
+	<l n="605">Ils me viendront chercher, et se feront connaître,</l>
+	<l n="606">Suivis de plus de Rois, de Chefs, et de soldats,</l>
+	<l n="607">Qu'Hélène n'en a fait armer par Ménélas.</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="608">Contre votre Tyran prompt à tout entreprendre, </l>
+	<l n="609">Avec mes seuls vaisseaux je viendrais vous reprendre :</l>
+	<l n="610">Dans ce monde où mon nom sans tache est parvenu,</l>
+	<l n="611">Je ne suis point entré, Madame, en inconnu.</l>
+	<l n="612">Ma naissance est d'un rang respecté dans la Grèce ;</l>
+	<l n="613">Mais si je pars, quel est l'état où je vous laisse ! </l>
+	<l n="614">Un Tyran odieux... Je frémis d'y penser,</l>
+	<l n="615">À recevoir sa main osera vous forcer.</l>
+	<l n="616">Ô Ciel ! Je pourrais voir au pouvoir d'un barbare </l>
+	<l n="617">Ce que jamais les Dieux ont formé de plus rare,</l>
+	<l n="618">Pour qui d'un feu secret je me sens dévorer... </l>
+	<l n="619">Que fais-je ? Où ma raison va t-elle s'égarer ?</l>
+	<l n="620">Mes discours, mes regards, et mon trouble, Madame,</l>
+	<l n="621">Trahissent, malgré moi, le secret de mon âme.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="622">Qu'entends-je ? Ma pitié daignait vous secourir,</l>
+	<l n="623">Je voulais vous sauver, mais vous voulez mourir : </l>
+	<l n="624">Vous ajoutez l'audace au sort qui vous opprime.</l>
+	<l n="625">Ciel ! Cyane à l'Autel remenez la victime.</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="626">Vous ne m'étonnez point, j'ai prévu votre arrêt.</l>
+	<l n="627">Qu'ai-je affaire du jour si mon feu vous déplaît ?</l>
+	<l n="628">À la rigueur du coup que votre bras m'apprête, </l>
+	<l n="629">Soumis, sans murmurer, je vais porter ma tête.</l>
+	<l n="630">Trop heureux que ma mort remplisse vos désirs,</l>
+	<l n="631">Et plus heureux encor, que mes derniers soupirs,</l>
+	<l n="632">Vous redisent cent fois, par un aveu sincère,</l>
+	<l n="633">Tout ce que le respect me force de vous taire. </l>
+</sp>
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, seule.</speaker>
+	<l n="634">Que dit-il ? Je l'entends ? Je le laisse parler,</l>
+	<l n="635">Je sens à ses discours mon devoir chanceler.</l>
+	<l n="636">Qui suis-je ? Iphigénie aurais-tu la faiblesse...</l>
+	<l n="637">Que veux-je pénétrer ? Dans quel trouble... Ô Déesse !</l>
+	<l n="638">Je connais ta vengeance au malheur qui me suit.  </l>
+	<l n="639">De ma lâche pitié voilà quel est le fruit :</l>
+	<l n="640">Tu me punis d'avoir épargné ta victime,</l>
+	<l n="641">Ne porte pas plus loin la peine de ton crime.</l>
+	<l n="642">Tu n'auras pas longtemps à me le reprocher.</l>
+	<l n="643">Je vais percer son coeur. Je vais sur le bûcher </l>
+	<l n="644">Éteindre dans son sang son ardeur orgueilleuse.</l>
+	<l n="645">Où vas-tu ? Qu'oses-tu promettre, malheureuse !</l>
+	<l n="646">Quelque loi que t'impose un fier devoir, hélas !</l>
+	<l n="647">Esclave de ton coeur, réponds-tu de ton bras ?</l>
+	<l n="648">J'entends quelqu'un, cachons le trouble de mon âme. </l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Iphigénie, Hidaspe.</head>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="649">Un autre Grec se livre entre nos mains, Madame.</l>
+	<l n="650">Malgré tous ses efforts, en ces lieux arrivez...</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="651">Comment ? En quel état, où l'avez-vous trouvé ?</l>
+</sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="652">On allait ramasser les débris d'un naufrage,</l>
+	<l n="653">Lorsque entre les écueils qui bordent le rivage, </l>
+	<l n="654">Qu'un mortel sans frayeur n'oserait approcher,</l>
+	<l n="655">On en voit un, Madame, à l'abri d'un rocher.</l>
+	<l n="656">Sa vue est égarée, et bien loin de se rendre,</l>
+	<l n="657">Contre un peuple sans nombre, il ose se défendre.</l>
+	<l n="658">Il rompt, il perce, il frappe, il combat fièrement.  </l>
+	<l n="659">L'on dit même, et ce bruit n'est pas sans fondement :</l>
+	<l n="660">Qu'on a vu devant lui les fières Euménides,</l>
+	<l n="661">Promener leurs flambeaux, vengeurs des homicides,</l>
+	<l n="662">L'inciter au carnage ; et pour comble d'horreur,</l>
+	<l n="663">Lui souffler le venin de leur noire fureur. </l>
+	<l n="664">Cependant de cent cris les échos retentissent.</l>
+	<l n="665">On court de toutes parts ; ses forces s'affaiblissent.</l>
+	<l n="666">J'arrive, je le vois privé de sentiment ;</l>
+	<l n="667">On vient de l'apporter dans cet appartement.</l>
+	<l n="668">Voilà de quoi le Roi par moi vous fait instruire. </l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="669">Je ferai mon devoir. Hidaspe, allez lui dire,</l>
+	<l n="670">Que j'attends sa victime, et vais tout préparer.</l>
+</sp>
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X.</head>
+<sp syahe="alone" who="#iphigenie">
+                        <speaker>IPHIGÉNIE, seule.</speaker>
+	<l n="671">Le Ciel a fait mon crime, il va le réparer ;</l>
+	<l n="672">Dans le sang de ce Grec expions ma faiblesse ;</l>
+	<l n="673">Allons par son trépas apaiser la Déesse. </l>
+	<l n="674">Tâchons d'engager l'autre à quelque repentir ;</l>
+	<l n="675">Sauvons ce malheureux, et le faisons partir.</l>
+</sp>
+</div>
+</div>
+<div type="acte" n="3">
+                <head>ACTE III</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Thomiris, Erine.</head>
+<sp who="#erine">
+                        <speaker>ERINE.</speaker>
+	<l n="676">Madame, quel dessein en ces lieux vous rappelle ?</l>
+	<l n="677">Qui vous porte à revoir encore un infidèle ?</l>
+	<l n="678">Une seconde fois par d'inutiles cris, </l>
+	<l n="679">Venez-vous essuyer ses superbes mépris ?</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="680">Plus que tous mes malheurs, je déteste sa vue :</l>
+	<l n="681">Mais, Erine, aujourd'hui ma vengeance est perdue ;</l>
+	<l n="682">Cet étranger qui vient d'arriver sur nos bords,</l>
+	<l n="683">De mes secrets desseins renverse les efforts. </l>
+</sp>
+<sp who="#erine">
+                        <speaker>ERINE.</speaker>
+	<l n="684">Qu'a de commun son sort, Madame, avec le vôtre ?</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="685">Son abord m'est funeste. Il nous perd l'un et l'autre ;</l>
+	<l n="686">Thoas va l'exposer à la rigueur des lois.</l>
+	<l n="687">La Prêtresse y consent, elle a donné sa voix,</l>
+	<l n="688">Sa main va l'immoler, et dès ce moment même  </l>
+	<l n="689">Elle épouse Thoas, et prend le Diadème :</l>
+	<l n="690">Si ce fatal hymen s'achève avant la nuit,</l>
+	<l n="691">De ma vengeance, ô Ciel ! le projet est détruit,</l>
+	<l n="692">Le peuple qui redoute et chérit la Prêtresse,</l>
+	<l n="693">S'il la voit sur le Trône, oubliant sa Princesse, </l>
+	<l n="694">De la Religion se faisant une loi,</l>
+	<l n="695">Respectueux pour elle, osera moins pour moi.</l>
+	<l n="696">De l'hymen du Tyran troublons le sacrifice.</l>
+	<l n="697">Avant que l'Étranger soit conduit au supplice,</l>
+	<l n="698">Par l'ordre de Thoas on va faire un effort, </l>
+	<l n="699">Pour apprendre son nom, sa naissance, son sort.</l>
+	<l n="700">Je viens, par mes avis, l'exhorter à se taire,</l>
+	<l n="701">S'il obtient que par là sa peine se diffère,</l>
+	<l n="702">Si jusques à demain il peut gagner du temps,</l>
+	<l n="703">Mon entreprise est sûre, et mes désirs contents. </l>
+</sp>
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Thomiris, Anthenor, Erine.</head>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="704" part="I">Verrai-je l'Étranger, Anthenor ?</l><!-- @syll="9"-->
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="704" part="F">Oui, Madame :</l><!-- @syll="3"-->
+	<l n="705">Mais toujours agité des troubles de son âme,</l>
+	<l n="706">Je viens de le laisser pâle et sans mouvement ;</l>
+	<l n="707">Attendez pour le voir dans cet appartement, </l>
+	<l n="708">Que rappelant ses sens, et sa raison captive,</l>
+	<l n="709">Il prête à vos discours une oreille attentive.</l>
+	<l n="710">Nul ne peut en ces lieux traverser vos souhaits : </l>
+	<l n="711">On garde seulement les dehors du Palais.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="712">C'est assez. Pour sa vie, ô Ciel ! Fais qu'il m'écoute. </l>
+	<l n="713">Mais avec le Tyran prenons une autre route.</l>
+	<l n="714">Allez, pour l'abuser, lui faire concevoir,</l>
+	<l n="715">Que sur ses volontés je règle mon devoir.</l>
+	<l n="716">Mais jusqu'à mon départ, de l'hymen qu'il apprête,</l>
+	<l n="717">Anthenor, dites-lui qu'il suspende la fête. </l>
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="718">Je vais vous obéir ; mais je n'obtiendrai rien ;</l>
+	<l n="719">N'espérez pas fléchir un coeur comme le sien.</l>
+	<l n="720">Il est pour cet hymen trop plein d'impatience,</l>
+	<l n="721">Une pareille ardeur anime sa vengeance.</l>
+	<l n="722">Il croit que l'Étranger que l'on vient d'arrêter, </l>
+	<l n="723">Est celui dont l'Oracle a su l'épouvanter.</l>
+	<l n="724">Pensez-vous l'engager à la moindre contrainte,</l>
+	<l n="725">Qui suspende sa joie, et prolonge sa crainte ?</l>
+	<l n="726">Déjà par mes discours que n'ai-je point tenté !</l>
+	<l n="727">L'ingrat n'écoute plus que son iniquité. </l>
+	<l n="728">De ses plus chers amis il s'attire la haine :</l>
+	<l n="729">Il se livre en aveugle au penchant qui l'entraîne.</l>
+	<l n="730">Madame, c'est à nous d'avancer nos projets,</l>
+	<l n="731">Pour pouvoir de sa rage empêcher les effets.</l>
+	<l n="732">Obligez l'Étranger à garder le silence, </l>
+	<l n="733">Quand on viendra savoir son nom et sa naissance,</l>
+	<l n="734">Et que Thoas par là différant son arrêt...</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="735">Il suffit. Anthenor faites que tout soit prêt.</l>
+	<l n="736">Voyez Thoas, vous dis-je, et lui faites connaître,</l>
+	<l n="737">Que je pars cette nuit. Que demain il est maître.</l>
+	<l n="738" part="I">Le délai n'est pas long. Allez.</l><!-- @syll="8"-->
+</sp>
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Thomiris, Erine.</head>
+<sp who="#erine">
+                        <speaker>ERINE.</speaker>
+	<l n="738" part="F">Qu'ai-je entendu !</l><!-- @syll="4"-->
+	<l n="739">Quoi ! Vous renoncez donc au rang qui vous est dû,</l>
+	<l n="740">En faveur de Thoas, votre haine affaiblie...</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="741">Non, non, je ne suis pas Erine encor partie. </l>
+	<l n="742">Si je feins du Tyran d'approuver le dessein,</l>
+	<l n="743">C'est pour mieux lui plonger un poignard dans le sein.</l>
+	<l n="744">Au piège qu'il me tend j'oppose l'artifice.</l>
+	<l n="745">Des voiles les plus noirs couvrant son injustice,</l>
+	<l n="746">Il a pris cette nuit pour cacher mon départ ; </l>
+	<l n="747">De cette même nuit me faisant un rempart,</l>
+	<l n="748">Peuple, Sarmate, amis animez d'un beau zèle,</l>
+	<l n="749">À l'ennemi commun la rendront éternelle.</l>
+	<l n="750">Tous ont juré sa mort, m'en ont donné leur foi :</l>
+	<l n="751">Le reste de ce jour est à craindre pour moi. </l>
+	<l n="752">Tâchons donc à ce Grec d'imposer le silence.</l>
+	<l n="753">Que jusques à demain... Je l'entends. Il s'avance.</l>
+	<l n="754">Ses regards sont encor égarez, furieux.</l>
+	<l n="755">Le trouble de ses sens nous dérobe à ses yeux.</l>
+	<l n="756">Dissipe, juste Ciel ! le voile qui les couvre. </l>
+</sp>
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Oreste, Thomiris, Erine.</head>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="757">Sous mes pas chancelants quel abîme s'entrouvre !</l>
+	<l n="758">De ténèbres, de feux je suis enveloppé ;</l>
+	<l n="759">De troubles, de terreurs mon esprit est frappé :</l>
+	<l n="760">Noires filles du Styx, implacables Déesses,</l>
+	<l n="761">Souffrirai-je toujours vos fureurs vengeresses ? </l>
+	<l n="762">Ne vous lassez-vous point, ô destins ennemis !</l>
+	<l n="763">De punir des forfaits que vous avez permis ?</l>
+	<l n="764">Grace au Ciel je respire, et je vois la lumière :</l>
+	<l n="765">Où suis-je ? Quel Palais ! Quelle pompe étrangère,</l>
+	<l n="766">S'offre de toutes parts à mes regards surpris ! </l>
+	<l n="767">Que vois-je ? Quel objet vient frapper mes esprits ?</l>
+	<l n="768">Ce port majestueux, cet auguste visage,</l>
+	<l n="769">D'une Divinité me présente l'image.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="770">Étranger, rends le calme à tes sens agités.</l>
+	<l n="771">Remets dans leur repos tes esprits irrités. </l>
+	<l n="772">Le malheur qui te livre aux Déesses terribles,</l>
+	<l n="773">Dans ces funestes lieux trouve des coeurs sensibles.</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="774">En est-il qui pour moi se laissent attendrir ?</l>
+	<l n="775">Ô vous ! Dont la pitié daigne me secourir,</l>
+	<l n="776">Qui jetez sur mes jours un regard favorable, </l>
+	<l n="777">Achevez d'adoucir le sort d'un misérable.</l>
+	<l n="778">Où suis-je ? Sous quel Ciel me vois-je parvenu ?</l>
+	<l n="779">Comment, et par quel ordre y suis-je retenu ?</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="780">Quel Astre t'a conduit dans ce climat barbare ?</l>
+	<l n="781">Malheureux ! Je frémis du sort qu'on t'y prépare. </l>
+	<l n="782">L'Enfer est un séjour moins à craindre pour toi :</l>
+	<l n="783">Si tu veux l'éviter, prends confiance en moi.</l>
+	<l n="784">Fier devant tes bourreaux, dans un profond silence,</l>
+	<l n="785">Ensevelis ton nom, et cache ta naissance.</l>
+	<l n="786">C'est l'unique moyen de conserver tes jours. </l>
+	<l n="787">On tremble pour ta vie, on vole à ton secours ;</l>
+	<l n="788">D'une noble pitié seconde l'entreprise ;</l>
+	<l n="789">Le temps presse d'agir. Je crains d'être surprise.</l>
+	<l n="790">Pour t'affranchir du sort qui t'attend en ce lieu,</l>
+	<l n="791">Obéis à ma voix, ou crains la mort. Adieu. </l>
+</sp>
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE V.</head>
+<sp who="#oreste">
+                        <speaker>ORESTE, seul.</speaker>
+	<l n="792">Qu'entends-je ? À mes malheurs elle paraît sensible,</l>
+	<l n="793">Mon nom doit m'attirer une mort infaillible :</l>
+	<l n="794">Le supplice le suit, et pour m'en arracher,</l>
+	<l n="795">Sa bouche par pitié m'invite à le cacher.</l>
+	<l n="796">Du malheureux Oreste aurait-on connaissance ? </l>
+	<l n="797">Le sang de Jupiter m'a donné la naissance.</l>
+	<l n="798">Quelque éclat qu'à ma vie attache un sang si beau,</l>
+	<l n="799">Que ne m'a-t-il été ravi dès le berceau ?</l>
+	<l n="800">Mes yeux n'ont point en paix joui de la lumière, </l>
+	<l n="801">Ils ne se sont ouverts que pour voir ma misère. </l>
+	<l n="802">Le crime a sans relâche investi tous mes pas.</l>
+	<l n="803">Dès l'enfance étranger dans mes propres États,</l>
+	<l n="804">Un adultère affreux m'ôta le Diadème :</l>
+	<l n="805">Un meurtre détesté me l'a rendu de même :</l>
+	<l n="806">Mais ce qu'ont de charmant ses fastueux dehors, </l>
+	<l n="807">Ne mettent point une âme à l'abri des remords.</l>
+	<l n="808">Pour rendre à mes esprits le calme, et l'innocence,</l>
+	<l n="809">J'implorai d'Apollon la céleste puissance.</l>
+	<l n="810">Son prêtre m'ordonna, que fidèle à sa voix,</l>
+	<l n="811">J'allasse où de Diane on respecte les lois ; </l>
+	<l n="812">Que la tranquillité ne me serait rendue,</l>
+	<l n="813">Qu'après avoir du Temple enlevé sa statue.</l>
+	<l n="814">Je pars pour la Tauride avec ce doux espoir :</l>
+	<l n="815">Son rivage à mes yeux déjà se faisait voir,</l>
+	<l n="816">Quand tout à coup surpris par un cruel orage, </l>
+	<l n="817">Brisé contre un rocher mon vaisseau fit naufrage.</l>
+	<l n="818">J'ai vu périr ami, soldats, et matelots ;</l>
+	<l n="819">Moi-même enveloppé dans l'abîme des flots,</l>
+	<l n="820">J'ignore par quel sort la clarté m'est rendue.</l>
+	<l n="821">Furieux, il ne reste à mon âme éperdue, </l>
+	<l n="822">Qu'un triste souvenir de mes crimes passés,</l>
+	<l n="823">Qui, sur la foi du Ciel, allaient être effacés :</l>
+	<l n="824">Mais il s'est repenti. Grands Dieux ! Puisque ma vie,</l>
+	<l n="825">De forfaits inouïs devait être suivie,</l>
+	<l n="826">Pourquoi, dans les remords dont je suis combattu, </l>
+	<l n="827">Me laissez-vous un coeur sensible à la vertu !</l>
+	<l n="828">De ton orgueil, Oreste, étouffe l'imprudence,</l>
+	<l n="829">Le destin veut ta mort, meurs, meurs, avec constance,</l>
+	<l n="830">Et versant noblement le sang qu'il t'a donné, </l>
+	<l n="831">Fais rougir Jupiter de t'avoir condamné. </l>
+	<l n="832">Ne va point de ce sang avilir ce qui reste,</l>
+	<l n="833">Dans la nuit du tombeau cache le nom d'Oreste;</l>
+	<l n="834">Qu'il ne devienne point l'opprobre de ces lieux.</l>
+	<l n="835">Allons ! Quel autre objet se présente à mes yeux ?</l>
+	<l n="836">Quel trouble à son abord me saisit : je l'admire ! </l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Iphigénie, Oreste, Cyane, Taxis.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="837">Éloignez-vous, Cyane, et vous qu'on se retire.</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="838">Quelle grace, grands Dieux ! quelle noble fierté !</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="839">De crainte, en l'abordant, mon coeur est agité.</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="840">D'où vient, en la voyant, que ma fureur me quitte ?</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="841">D'où vient, qu'à son aspect, je me sens interdite ? </l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="842">Étonné de me voir sur ce bord étranger,</l>
+	<l n="843">Madame, de quels yeux vous dois-je envisager ?</l>
+	<l n="844">Quel sort m'annonce ici votre auguste présence ?</l>
+	<l n="845" part="I">Ne le puis-je savoir ?</l><!-- @syll="6"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="845" part="F">Armez-vous de constance. </l><!-- @syll="6"-->
+	<l n="846">Montrez de votre coeur toute la fermeté. </l>
+	<l n="847">C'est ici de Thoas l'Empire redouté.</l>
+	<l n="848">Nul Grec ne met le pied sur ce fatal rivage,</l>
+	<l n="849">Fut-il du sang des Dieux, qu'il n'immole à sa rage.</l>
+	<l n="850">À vous porter le coup mon bras est destiné : </l>
+	<l n="851">Le sacrifice est prêt, l'appareil ordonné :</l>
+	<l n="852">Sur l'autel de Diane, où vous allez me suivre,</l>
+	<l n="853">Avant la fin du jour vous cesserez de vivre.</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="854">Grâce au Ciel mon destin ne m'est plus inconnu ;</l>
+	<l n="855">Au port tant désiré je suis donc parvenu. </l>
+	<l n="856">Ô mort ! Heureuse mort ! Tu finis ma misère.</l>
+	<l n="857">Vous qui sur moi des Dieux épuisez la colère,</l>
+	<l n="858">Levez le bras, frappez, je m'abandonne à vous,</l>
+	<l n="859">Et déjà mon coeur vole au devant de vos coups.</l>
+	<l n="860" part="I">Me voilà prêt, marchons. </l><!-- @syll="6"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="860" part="F">Je demeure immobile.</l><!-- @syll="6"-->
+	<l n="861">Que vois-je ? Que la Grèce en héros est fertile !</l>
+	<l n="862">L'arrêt du coup mortel qui les doit accabler,</l>
+	<l n="863">N'a rien d'assez affreux pour les faire trembler.</l>
+	<l n="864">Magnanime Étranger, ne pourrai-je connaître </l>
+	<l n="865">Quel nom vous fut donné, quel sang vous a fait naître ?</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="866">Ah ! Que ce nom fatal, dans un profond oubli,</l>
+	<l n="867">Madame, avec mon sang n'est-il enseveli.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="868">Où vites-vous le jour ? Êtes-vous de Trézène ?</l>
+	<l n="869">De Thèbes, ou d'Elis, de Sparte, ou de Mycène ? </l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="870">Ô de tes sacrés murs, de ton riche Palais,</l>
+	<l n="871">Mycène, le destin m'éloigne pour jamais.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="872">Vous êtes de Mycènes ? Ô Ciel ! quelle est ma joie ! </l>
+	<l n="873">De quel oeil y voit-on le destructeur de Troie ?</l>
+	<l n="874">Que fait dans ses États le grand Agamemnon ! </l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="875">Ah ! Sans cesse, et partout, entendrai-je ce nom.</l>
+	<l n="876">Terre, pour le cacher n'as-tu point de contrée ?</l>
+	<l n="877">Source de tant d'horreur, malheureux sang d'Atrée,</l>
+	<l n="878">Parmi tant de héros ne pourra-t-on jamais</l>
+	<l n="879">Publier ta splendeur, sans conter tes forfaits ? </l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="880">Chef de la Grèce, issu d'une source divine,</l>
+	<l n="881">Son nom ne dément point son auguste origine.</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="882">Contre la perfidie, ô titres superflus !</l>
+	<l n="883" part="I">Agamemnon...</l><!-- @syll="4"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="883" part="M">Hé bien ? </l><!-- @syll="2"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="883" part="F">Madame, il ne vit plus.</l><!-- @syll="6"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="884">Il ne vit plus ! Jaloux d'une si belle vie,</l>
+	<l n="885">Dieux ! Avez-vous permis qu'elle lui fut ravie ?</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="886">Les Dieux n'écoutent plus quand ils sont irrités.</l>
+	<l n="887">Sur son Trône, au milieu de ses prospérités, </l>
+	<l n="888">Chargé d'ans et d'honneurs, ce Monarque intrépide</l>
+	<l n="889">A vu, dans un festin, une main parricide,</l>
+	<l n="890">Souiller, par son trépas, la plus sainte des lois.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="891" part="I">Quelle main ?</l><!-- @syll="3"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="891" part="F">À son nom, Ciel ! étouffe ma voix. </l><!-- @syll="9"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="892" part="I">Quel est ce monstre ? Ah Dieux ! </l><!-- @syll="6"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="892" part="F">Sans commettre un blasphème</l><!-- @syll="6"-->
+	<l n="893">Puis-je le prononcer ! c'est sa femme elle-même.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="894" part="I">Clytemnestre !</l><!-- @syll="3"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="894" part="F">Oui, Madame. Horrible souvenir ! </l><!-- @syll="9"-->
+	<l n="895">Ne puisses-tu jamais pénétrer l'avenir.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="896">Déplorable famille ! Ô triste Iphigénie !</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="897">Heureusement pour elle, elle a perdu la vie ;</l>
+	<l n="898">Des Grecs par son trépas assurant le départ,</l>
+	<l n="899">Aux crimes de sa race elle n'eut point de part, </l>
+	<l n="900">Et de tous ses parents n'a point vu la misère ;</l>
+	<l n="901">Mais hélas ! Que sa mort coûta cher à son père.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="902" part="I">Comment ?</l><!-- @syll="2"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="902" part="F">Agamemnon vainqueur de tant de Rois,</l><!-- @syll="10"-->
+	<l n="903">Revenait triomphant jouir de ses exploits. </l>
+	<l n="904">Egiste en son absence ayant séduit la Reine,</l>
+	<l n="905">De ses amours furtifs appréhendant la peine,</l>
+	<l n="906">Au sein de ce grand Roi, digne d'un sort plus beau,</l>
+	<l n="907">Inspira Clytemnestre à porter le couteau,</l>
+	<l n="908">Protestant, pour couvrir sa lâche perfidie, </l>
+	<l n="909">Quelle vengeait sur lui le sang d'Iphigénie.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="910">Malheureuse ! À quel meurtre as-tu prêté ton nom ?</l>
+	<l n="911">Oreste aura suivi le sort d' Agamemnon :</l>
+	<l n="912">Il n'aura pu survivre à l'affront de son père.</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="913">Oreste traîne encor sa honte, et sa misère.  </l>
+	<l n="914">Craint des hommes, chassé de leur société</l>
+	<l n="915">Profane, exclus des droits de l'hospitalité :</l>
+	<l n="916">Banni des saints autels, et des sacrés mystères,</l>
+	<l n="917">Privé des feux divins, et des eaux salutaires,</l>
+	<l n="918">Des vagues, et des vents déplorable jouet, </l>
+	<l n="919">Il cherche à fuir le jour qu'il ne voit qu'à regret.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="920">Funestes châtiments des crimes d'une mère !</l>
+	<l n="921">Femme, oses-tu jouir du soleil qui t'éclaire !</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="922">Un bras déterminé, par la rage conduit,</l>
+	<l n="923">A plongé la coupable en l'éternelle nuit. </l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="924">Ô crime ! Qui surpasse encor le crime même,</l>
+	<l n="925">Souverains protecteurs du sacré Diadème,</l>
+	<l n="926">A-t-on pu le souiller ? L'avez-vous approuvé ?</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="927">Non. Mais le châtiment vous en est réservé.</l>
+	<l n="928" part="I">Vous voyez devant vous le criminel. </l><!-- @syll="10"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="928" part="F">Impie,</l><!-- @syll="2"-->
+	<l n="929">As-tu pu, sans frémir, attenter à sa vie ?</l>
+	<l n="930">Diffamé par un meurtre horrible à réciter,</l>
+	<l n="931">Après l'avoir commis oses-tu t'en vanter ?</l>
+	<l n="932">Sensible à ton abord, je pleurais ta disgrâce ; </l>
+	<l n="933">Je louais dans mon coeur ta généreuse audace,</l>
+	<l n="934">Je plaignais la rigueur qui t'allait accabler :</l>
+	<l n="935">Ce n'était qu'à regret que j'allais t'immoler :</l>
+	<l n="936">Mais l'horrible forfait avoué par ta bouche,</l>
+	<l n="937">Cruel, va dissiper la pitié qui me touche </l>
+	<l n="938">Avec des yeux vengeurs sur tes crimes ouverts,</l>
+	<l n="939">Je vais d'un monstre affreux délivrer l'Univers.</l>
+	<l n="940">Avant la fin du jour ton âme détestable, </l>
+	<l n="941">Verra dans les Enfers son Juge épouvantable.</l>
+	<l n="942" part="I">Attends mon ordre. </l><!-- @syll="5"-->
+</sp>
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII.</head>
+<sp who="#oreste">
+                        <speaker>ORESTE, seul.</speaker>
+	<l n="942" part="F">Où vont ces transports furieux !</l><!-- @syll="7"-->
+	<l n="943">Quel intérêt prend-elle au sort de mes aïeux ?</l>
+	<l n="944">Ciel ! Mais pourquoi vouloir en pénétrer la cause :</l>
+	<l n="945">Elle m'offre la mort ; demandai-je autre chose ?</l>
+	<l n="946">Voici de mon bonheur le moment fortuné. </l>
+	<l n="947">Dieux ! Reprenez le sang que vous m'avez donné.</l>
+	<l n="948">Qu'il expie en coulant mon crime et votre haine.</l>
+	<l n="949">Et toi, dont l'amitié compagne de ma peine,</l>
+	<l n="950">A voulu, malgré moi, partager mes malheurs ;</l>
+	<l n="951">Pour te rejoindre enfin, cher Pylade, je meurs. </l>
+	<l n="952">Né pour un sort plus beau, vertueux, magnanime,</l>
+	<l n="953">D'un ami plus heureux tu méritais l'estime,</l>
+	<l n="954">Ta mort... La mienne approche. On vient. J'entends du bruit.</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Oreste, Pylade, Hidaspe, Taxis.</head>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="955">Que me demandez-vous ? Où m'avez-vous conduit ?</l>
+	<l n="956">Croit-on m'épouvanter de menaces pareilles ? </l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="957">Qu'entends-je ! Quelle voix vient frapper mes oreilles !</l>
+</sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE, à Pylade.</speaker>
+	<l n="958">Voyez ce Grec : domptez ses farouches esprits :</l>
+	<l n="959">Sachez quel est son nom : vos jours sont à ce prix.</l>
+</sp><!--@stage="toward"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE IX. Oreste, Pylade.</head>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="960">Ah ! Pour moi le trépas n'a plus rien de funeste.</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="961" part="I">C'est Pylade, grands Dieux ! </l><!-- @syll="6"-->
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="961" part="F">Que vois-je ? C'est Oreste.</l><!-- @syll="6"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="962">Pylade entre mes bras, qui l'aurait pu penser ?</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="963">Quel bonheur de vous voir, et de vous embrasser !</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="964">Fortune accable-moi, cesse de te contraindre,</l>
+	<l n="965">Tu me rends mon ami, je n'ai plus à me plaindre. </l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="966">Quel Dieu nous a rejoint ? Ô fortuné moment !</l>
+	<l n="967">Mais quel chagrin s'oppose à mon ravissement :</l>
+	<l n="968">De vos prochains malheurs je sens mon âme émue,</l>
+	<l n="969">Je frémis du bonheur qui vous offre à ma vue.</l>
+	<l n="970">Destin, où ton courroux nous fait-il parvenir ? </l>
+	<l n="971">Ne nous rassembles-tu que pour nous désunir ?</l>
+	<l n="972">Sans cesse fatigués d'éternelles alarmes,</l>
+	<l n="973">Nos yeux ne s'ouvrent plus que pour verser des larmes.</l>
+	<l n="974">Quelles rigueurs encor allons-nous éprouver :</l>
+	<l n="975">Ah Prince ! Sous quels Cieux venez-vous d'arriver... </l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="976">J'y vais trouver la mort, c'est ce que je désire.</l>
+	<l n="977">Une prêtresse, ami, vient de me la prescrire.</l>
+	<l n="978">Quelque soin qu'elle ait pris à me remplir d'effroi,</l>
+	<l n="979">Le trépas de sa main est un bonheur pour moi.</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="980">J'entends. Elle a soudain adouci vos alarmes ; </l>
+	<l n="981">Vous avez dans ses yeux trouvé les mêmes charmes...</l>
+	<l n="982">Qu'Agamemnon trouva dans ceux de Briséis.</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="983">Que me dis-tu ? Chargé de crimes inouïs,</l>
+	<l n="984">Détesté, méritant la céleste disgrâce,</l>
+	<l n="985">Ai-je un coeur où l'amour puisse encor trouver place ? </l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="986">Quel effort d'avoir pu résister à ses coups !</l>
+	<l n="987">Cher Prince, que Pylade est encor loin de vous.</l>
+	<l n="988">Séduit par les attraits de la même Prêtresse,</l>
+	<l n="989">Mon coeur a succombé... Mais où va ma tendresse,</l>
+	<l n="990">Est-ce à de tels pensers que je dois recourir, </l>
+	<l n="991">Quand je vois vos périls, quand nous allons mourir ?</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="992">Toi mourir ! Que mon coeur consente à cette envie !</l>
+	<l n="993">N'ajoute point ta mort aux crimes de ma vie :</l>
+	<l n="994">Le trépas que j'attends ne demande que moi ;</l>
+	<l n="995">La douceur qui me reste, est de revivre en toi. </l>
+	<l n="996">Vis, mon coeur t'en conjure, au nom de la Prêtresse.</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="997">Ah ! Ne me faites plus rougir de ma faiblesse.</l>
+	<l n="998">Son image en mon âme a pû vous balancer :</l>
+	<l n="999">Vous en serez vEngé, mon sang va l'effacer.</l>
+	<l n="1000">Mourons, n'attendons plus nulle pitié des hommes. </l>
+	<l n="1001">Mourons, mais en mourant déclarons qui nous sommes.</l>
+	<l n="1002">Que les Scythes cruels, que ces fiers inhumains,</l>
+	<l n="1003">Connaissent dans quel sang ils vont tremper leurs mains.</l>
+	<l n="1004" part="I">Allons, Seigneur.</l><!-- @syll="4"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="1004" part="F">Ami, que vas-tu faire ? Arrête. </l><!-- @syll="8"-->
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1005">Du coup qui va tomber suspendons la tempête,</l>
+	<l n="1006">Qu'au nom d'Agamemnon étonnez, et surpris,</l>
+	<l n="1007">Ils retiennent le bras qui va frapper son fils :</l>
+	<l n="1008">Ou qu'au moins l'immolant au milieu de leur joie, </l>
+	<l n="1009">Ils craignent plus de maux que n'en a souffert Troie. </l>
+	<l n="1010" part="I">On vient.</l><!-- @syll="2"-->
+</sp>
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Oreste, Pylade, Hidaspe, Taxis.</head>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="1010" part="F">Vous êtes-vous acquitté de l'emploi...</l><!-- @syll="10"-->
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1011">Pour en être informé, qu'on nous conduise au Roi.</l>
+</sp>
+</div>
+</div>
+<div type="acte" n="4">
+                <head>ACTE IV</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, seule.</speaker>
+	<l n="1012">À répondre à mes voeux que Cyane est tardive :</l>
+	<l n="1013">Qu'en un coeur outragé la vengeance est active : </l>
+	<l n="1014">Quoi qu'indigne du jour, Clytemnestre au tombeau,</l>
+	<l n="1015">Intéresse sa fille à punir son bourreau.</l>
+	<l n="1016">En vain, pour assouvir le courroux qui m'anime,</l>
+	<l n="1017">Des yeux, de toutes parts, je cherche la victime.</l>
+	<l n="1018">Qui la retient ; contraire à mes ressentiments, </l>
+	<l n="1019">Le Ciel a-t-il des coeurs éteint les mouvements ?</l>
+	<l n="1020">De ces retardements cherchons la certitude :</l>
+	<l n="1021">Mais où va le torrent de ton inquiétude ?</l>
+	<l n="1022">As-tu bien démêlé dans le fond de ton coeur,</l>
+	<l n="1023">Ce qui donne naissance à cette vive ardeur ? </l>
+	<l n="1024">Pour couvrir autrefois les amours de ta mère,</l>
+	<l n="1025">Tu servis de prétexte à la mort de ton père.</l>
+	<l n="1026">Pour l'un de ces captifs, ayant pris ce poison,</l>
+	<l n="1027">N'immole-tu point l'autre par la même raison.</l>
+	<l n="1028">Ah !... Qu'ils meurent tous deux, ma bouche le prononce. </l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Iphigénie, Cyane.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1029">Que vous tardez, Cyane, à me rendre réponse ;</l>
+	<l n="1030">Thoas sait-il mon ordre, en est-il informé ?</l>
+</sp>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="1031">Thoas avec les Grecs, Madame, est enfermé.</l>
+	<l n="1032">Hidaspe irrésolu, quand je me suis montrée,</l>
+	<l n="1033">De son appartement m'a défendu l'entrée : </l>
+	<l n="1034">En vain à ses refus j'ai voulu résister ;</l>
+	<l n="1035">Il a reçu votre ordre, et l'est allé porter.</l>
+	<l n="1036">J'espérais de Thoas une prompte audience ;</l>
+	<l n="1037">Mais sans vouloir répondre à mon impatience,</l>
+	<l n="1038">Le Roi m'a fait savoir que dans quelques moments, </l>
+	<l n="1039">On vous informerait de ses commandements.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1040">Le sacrifice est prêt, la pompe est avancée.</l>
+	<l n="1041">Que veut-il ? Attend-il que l'heure en soit passée ?</l>
+	<l n="1042">Sait-il que ces délais sont des moments perdus ?</l>
+	<l n="1043">Que l'ardeur qu'il avait ne retrouvera plus ? </l>
+</sp>
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Thomiris, Iphigénie, Cyane, Erine.</head>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1044">Le bruit qui se répand par votre ordre en ces lieux,</l>
+	<l n="1045">Madame, m'a contraint à paraître à vos yeux.</l>
+	<l n="1046">Quoi que la certitude en soit par tout semée, </l>
+	<l n="1047">J'ai cru que je devais, pour en être informée,</l>
+	<l n="1048">De mon destin par vous savoir la vérité.</l>
+	<l n="1049">Je vous vois un visage interdit, agité ;</l>
+	<l n="1050">Vous paraissez contrainte, étonnée, inquiète,</l>
+	<l n="1051">Madame, ma venue est peut-être indiscrète. </l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1052">Madame, à votre rang je sais ce que je dois ;</l>
+	<l n="1053">Mais, je vous l'avouerai, je ne suis pas à moi.</l>
+	<l n="1054">Diane en ce moment m'ordonne un sacrifice :</l>
+	<l n="1055">Elle en attend l'offrande, en presse la justice ;</l>
+	<l n="1056">Cet ordre souverain ne laisse en mon pouvoir </l>
+	<l n="1057">Que le temps qu'il me faut pour remplir mon devoir.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1058">Il est donc vrai, Madame, et ce Grec qu'on opprime,</l>
+	<l n="1059">De divers intérêts déplorable victime,</l>
+	<l n="1060">Sur ces funestes bords est à peine arrivé,</l>
+	<l n="1061">Que du jour, par vos mains, il se va voir privé. </l>
+	<l n="1062">Avez-vous prononcé cet arrêt sanguinaire ? </l>
+	<l n="1063">Madame, il est bien prompt pour être sans mystère.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1064">Ce qu'il a de profond et de mystérieux,</l>
+	<l n="1065">Est un compte que j'ai, Madame, à rendre aux Dieux.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1066">On abuse souvent des suprêmes sagesses, </l>
+	<l n="1067">Sous ces voiles pompeux nous cachons nos faiblesses ;</l>
+	<l n="1068">Ce n'est qu'à ces dehors que nous sacrifions,</l>
+	<l n="1069">Et quelquefois nos Dieux ce sont nos passions.</l>
+	<l n="1070">Je prends sur vos vertus une assurance entière,</l>
+	<l n="1071">De ce Trône usurpé légitime héritière. </l>
+	<l n="1072">Pour me laisser tranquille en mes propres États,</l>
+	<l n="1073">J'ai vu votre grand coeur résister à Thoas :</l>
+	<l n="1074">Vous avez dédaigné l'hymen qu'il vous propose,</l>
+	<l n="1075">Charmée à ces refus, j'en admire la cause.</l>
+	<l n="1076">Les Scythes étonnés vous louaient avec moi ; </l>
+	<l n="1077">Mais lors qu'enfin soumise aux volontés du Roi,</l>
+	<l n="1078">Vous allez de ce Grec trancher la destinée,</l>
+	<l n="1079">Que Thoas sur sa mort fonde votre hyménée,</l>
+	<l n="1080">Le peuple qui sait mal juger du fonds des coeurs,</l>
+	<l n="1081">Sur votre changement présage ses malheurs. </l>
+	<l n="1082">Vous le dirai-je enfin, Madame, on vous soupçonne</l>
+	<l n="1083">De vouloir, par sa perte, usurper la Couronne.</l>
+	<l n="1084">J'ai cru, de ce qu'on craint, devoir vous informer,</l>
+	<l n="1085">Quelque soit ce soupçon vous pouvez le calmer.</l>
+	<l n="1086">Différez cette mort où Thoas vous engage, </l>
+	<l n="1087">Par là vous ferez taire un bruit qui vous outrage.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1088">Souvent sur l'apparence on tombe dans l'erreur ;</l>
+	<l n="1089">Mais par l'événement on connaîtra mon coeur.</l>
+	<l n="1090">Ce n'est pas loin des lieux où je fus élevée, </l>
+	<l n="1091">Qu'on me rendra le rang dont le sort m'a privée. </l>
+	<l n="1092">Celui qu'on m'offre encor, malgré tous mes mépris,</l>
+	<l n="1093">Pour vous le disputer n'est pas d'assez haut prix ;</l>
+	<l n="1094">Et si pour moi ce Trône avait eu quelques charmes,</l>
+	<l n="1095">Je n'aurais pas si tard confirmé vos alarmes.</l>
+	<l n="1096">Diane et mon devoir m'appellent à l'autel ; </l>
+	<l n="1097">Je vais sur l'Étranger porter le coup mortel :</l>
+	<l n="1098">On ne peut l'arracher à la mort qu'il mèrite :</l>
+	<l n="1099">Le temps presse : on m'attend : souffrez que je vous quitte.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1100">Madame sur le sang que vous allez verser,</l>
+	<l n="1101">Je ne dis plus qu'un mot, c'est à vous d'y penser. </l>
+	<l n="1102">Sous ma protection j'ai pris votre victime,</l>
+	<l n="1103">Suspendez la rigueur du destin qui l'opprime,</l>
+	<l n="1104">Sans emprunter des Dieux d'inutiles détours,</l>
+	<l n="1105">Accordez ma prière, ou tremblez pour vos jours.</l>
+</sp>
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Iphigénie, Cyane.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1106">Quoi donc ! Elle menace, et de ce Grec impie, </l>
+	<l n="1107">Elle prend la défense, et protège la vie.</l>
+	<l n="1108">Quand de justes raisons n'armeraient point mon bras,</l>
+	<l n="1109">Quand mon coeur n'aurait point résolu son trépas,</l>
+	<l n="1110">Son audace, la peur qu'elle prétend me faire, </l>
+	<l n="1111">Hâteraient cette mort qu'elle veut qu'on diffère. </l>
+	<l n="1112">Rien ne peut m'ébranler. Allons, Cyane, allons.</l>
+</sp>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="1113">La justice a toujours guidé vos passions.</l>
+	<l n="1114">De tous leurs mouvements elle est inséparable,</l>
+	<l n="1115">Tantôt pour l'un des Grecs vous étiez équitable ;</l>
+	<l n="1116">Quel intérêt pour l'autre arme votre rigueur ? </l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1117">Ah ! Ne rappelle point ce qui me fait horreur.</l>
+	<l n="1118">Contre lui mon courroux à chaque instant s'augmente.</l>
+	<l n="1119">Il a tué ma mère, il l'avoue, il s'en vante :</l>
+	<l n="1120">Il me l'a dit, Cyane. A cette impiété</l>
+	<l n="1121">Oses-tu m'accuser de trop de cruauté ? </l>
+</sp>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="1122">Je demeure interdite et muette à ce crime ;</l>
+	<l n="1123">Votre fureur est juste, et sa mort légitime.</l>
+	<l n="1124">Il ne saurait trop tôt expirer sous vos coups.</l>
+	<l n="1125">Mais, ô Ciel ! Que la suite est à craindre pour vous.</l>
+	<l n="1126">Le Roi de cette mort attend sa destinée, </l>
+	<l n="1127">Et vous n'en pourrez plus retarder l'hyménée.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1128">Pour résister, Cyane, aux transports de Thoas,</l>
+	<l n="1129">Mon courage, les Dieux ne me manqueront pas.</l>
+	<l n="1130">Bravons la tyrannie où mon malheur m'expose.</l>
+	<l n="1131">Aux coeurs comme le mien la vie est peu de chose. </l>
+</sp>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="1132" part="I">Quoi vous...</l><!-- @syll="2"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1132" part="F">Allons savoir par quel soudain appui</l><!-- @syll="10"-->
+	<l n="1133" part="I">Ce Grec...</l><!-- @syll="2"-->
+</sp>
+<sp who="#cyane">
+                        <speaker>CYANE.</speaker>
+	<l n="1133" part="F">Hidaspe vient, vous l'apprendrez de lui.</l><!-- @syll="10"-->
+	<l n="1134" part="I">Votre rigueur ?</l><!-- @syll="4"-->
+</sp>
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Iphigénie, Hidaspe, Cyane.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1134" part="F">Où donc est l'Étranger, et par quelle injustice, </l><!-- @syll="12"-->
+	<l n="1135">Thoas recule-t-il ce fatal sacrifice ?</l>
+	<l n="1136">Ne craint-il point sur lui que les Dieux irritez...</l>
+</sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="1137">Le Roi plus que jamais a besoin de clartés.</l>
+	<l n="1138">Rien n'égale l'horreur du trouble qu'il éprouve,</l>
+	<l n="1139">Dans l'un de ces deux Grecs son ennemi se trouve : </l>
+	<l n="1140">Il le voit, et ne peut discerner quel il est ;</l>
+	<l n="1141">Il le cherche avec soin, chacun d'eux le paraît :</l>
+	<l n="1142">Et tous deux pour mourir prenant ce nom impie,</l>
+	<l n="1143">Aucun ne veut celui qui l'attache à la vie.</l>
+	<l n="1144">Dans ce trouble mortel... Mais les voici tous deux. </l>
+	<l n="1145" part="I">Sachez quel est celui...</l><!-- @syll="6"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1145" part="F">Qu'on me laisse avec eux.</l><!-- @syll="6"-->
+</sp>
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Iphigénie, Oreste, Pylade.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1146">Vous vous obstinez donc à refuser ma grâce,</l>
+	<l n="1147">Toujours dans vos regards je vois la même audace,</l>
+	<l n="1148">Et que vous préférez une sanglante mort, </l>
+	<l n="1149">Au soin que ma pitié prenait de votre sort.</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1150">Que mon destin, Madame, a bien changé de face.</l>
+	<l n="1151">Cet ami, dont tantôt je pleurais la disgrâce,</l>
+	<l n="1152">Échappé de Neptune et d'Éole en courroux,</l>
+	<l n="1153">Suivi de ses malheurs, Madame, est devant vous. </l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1154">Qu'entends-je ? Où cet aveu porte-t-il mon idée ?</l>
+	<l n="1155">Pitié mal reconnue, où m'aviez-vous guidée ?</l>
+	<l n="1156">Je plaignais un mortel, qui conte pour ami,</l>
+	<l n="1157">Un monstre furieux que l'Enfer a vomi.</l>
+	<l n="1158">Indigne que mon bras, au défaut du tonnerre, </l>
+	<l n="1159">Soit choisi par les Dieux pour en purger la terre.</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1160">Madame, cet ami ne vous est pas connu.</l>
+	<l n="1161">Si dans quelques honneurs mon nom est parvenu,</l>
+	<l n="1162">Et si parmi les Grecs je suis recommandable,</l>
+	<l n="1163">C'est à son amitié que j'en suis redevable : </l>
+	<l n="1164">L'un à l'autre liez par le plus saint des noeuds,</l>
+	<l n="1165">Ou nous vivrons ensemble, ou nous mourrons tous deux.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1166">N'attends pas que ma main te joigne à ce perfide :</l>
+	<l n="1167">Je vais devant tes yeux punir son parricide,</l>
+	<l n="1168">Dans les flots de son sang éteindre mon courroux. </l>
+	<l n="1169">Tu le verras tomber sous l'effort de mes coups,</l>
+	<l n="1170">Sans que ton lâche coeur, présent au sacrifice,</l>
+	<l n="1171">Puisse obtenir la mort par grâce, ou par supplice.</l>
+	<l n="1172" part="I">Venez.</l><!-- @syll="2"-->
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1172" part="F">Craignez vous-même, et tremblez d'y penser. </l><!-- @syll="10"-->
+	<l n="1173">C'est le pur sang des Dieux que vous allez verser.</l>
+	<l n="1174">Son bras, à vos desseins, peut servir mieux qu'un autre :</l>
+	<l n="1175">Sa haine, pour Thoas, est égale à la vôtre ;</l>
+	<l n="1176">Et ce motif m'oblige à ne vous plus cacher,</l>
+	<l n="1177">Ce que tous les tourments ne sauraient m'arracher. </l>
+	<l n="1178">Du grand Agamemnon respectez ce qui reste,</l>
+	<l n="1179">Héritier de son rang, c'est son fils, c'est Oreste.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1180" part="I">Oreste !</l><!-- @syll="2"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="1180" part="F">À cet ami n'ajoutez point de foi,</l><!-- @syll="10"-->
+	<l n="1181">Il vous peint des vertus qui ne sont point en moi. </l>
+	<l n="1182">Ce n'est que par pitié que sa bouche me loue.</l>
+	<l n="1183">Je suis du sang des Dieux, il est vrai, je l'avoue ;</l>
+	<l n="1184">Mais que ce même sang des mortels révéré,</l>
+	<l n="1185">Par mes cruels aïeux s'est vu déshonoré.</l>
+	<l n="1186">Leur rage a fait frémir jusqu'aux astres célestes, </l>
+	<l n="1187">Meurtres, impiété, adultères, incestes,</l>
+	<l n="1188">Sont de ce sang impur les crimes les plus doux ;</l>
+	<l n="1189">Né parmi leurs forfaits, je les surpasse tous :</l>
+	<l n="1190">Parricide altéré d'une soif sanguinaire,</l>
+	<l n="1191">J'ai poussé le poignard dans le sein de ma mère ; </l>
+	<l n="1192">J'ai souillé sans respect les flancs qui m'ont porté, </l>
+	<l n="1193">Et j'en ai retiré mon bras ensanglanté :</l>
+	<l n="1194">N'écoutez sur ma mort ni pitié, ni prière,</l>
+	<l n="1195" part="I">Oui, je vous la demande à genoux.</l><!-- @syll="9"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1195" part="F">Ah mon frère ! </l><!-- @syll="3"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="1196">Juste Ciel ! De quel nom vient-on de m'honorer !</l>
+	<l n="1197">L'ai-je bien entendu, dois-je m'en assurer !</l>
+	<l n="1198">Moi, votre frère ! Moi, quel Dieu, quel sang nous lie ?</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1199">Voyez, reconnaissez la triste Iphigénie,</l>
+	<l n="1200">Que son père en Aulide a livrée au trépas, </l>
+	<l n="1201">Que Diane sauva des fureurs de Calchas.</l>
+	<l n="1202">C'est cette même soeur qui s'offre à votre vue :</l>
+	<l n="1203">Mais hélas ! Dans quel temps vous est-elle rendue ?</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="1204">Ô miracle étonnant ! Ô surprenant bon-heur !</l>
+	<l n="1205">Iphigénie ici retrouvé : ah ma soeur ! </l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1206">Surpris d'étonnement, de surprise, et de joie,</l>
+	<l n="1207">Je prends part au bonheur que le Ciel vous envoie.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1208">Où nous emportez-vous, mouvements imprévus ?</l>
+	<l n="1209">Plût au Ciel que jamais nous ne nous fussions vus.</l>
+	<l n="1210">Le Tyran à mon bras impose un sacrilège. </l>
+	<l n="1211">Où tombera mon choix, et sur qui frapperai-je ?</l>
+	<l n="1212">Sur mon frère ; à ce nom je tremble, je frémis :</l>
+	<l n="1213">Sur son ami, quel crime, ô Ciel ! A-t-il commis ?</l>
+	<l n="1214">Pour sauver à mon bras cet affreux parricide,</l>
+	<l n="1215">Que la mort m'eût été favorable en Aulide. </l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1216">Entre ce frère et moi pouvez-vous balancer ?</l>
+	<l n="1217">Ignorez-vous le sang que vous devez verser ?</l>
+	<l n="1218">Vous connaissez mon coeur, du feu qui le dévore, </l>
+	<l n="1219">J'étais tantôt coupable, et je le suis encore.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1220" part="I">Hélas ! </l><!-- @syll="2"-->
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="1220" part="F">Il n'est plus temps de répandre des pleurs,</l><!-- @syll="10"-->
+	<l n="1221">À l'espoir dont le Ciel nous flatte, ouvrons nos coeurs :</l>
+	<l n="1222">Je me sens inspiré par ses vives lumières,</l>
+	<l n="1223">Et dans l'événement de ses profonds mystères,</l>
+	<l n="1224">Le destin qui se cache à nos sens aveuglez, </l>
+	<l n="1225">Ne nous a point ici vainement rassemblés.</l>
+	<l n="1226">Armons-nous d'une noble et sainte confiance,</l>
+	<l n="1227">L'image de Diane est en votre puissance.</l>
+	<l n="1228">Pour expier l'horreur dont mon nom est taché,</l>
+	<l n="1229">À son enlèvement mon sort est attaché. </l>
+	<l n="1230">Livrez-la moi. Comblez de gloire et d'allégresse,</l>
+	<l n="1231">Prenant heureusement les chemins de la Grèce,</l>
+	<l n="1232">Où mon crime par là doit enfin s'effacer.</l>
+	<l n="1233">Ma soeur, parmi nos Dieux nous irons la placer.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1234">Loin de blâmer en vous cette ardeur empressée, </l>
+	<l n="1235">J'approuverais, mon frère, une telle pensée,</l>
+	<l n="1236">Si je voyais assez la faveur des destins,</l>
+	<l n="1237">De l'Empire d'Argos nous tracer les chemins :</l>
+	<l n="1238">Mais seuls et désarmés, sans vaisseaux, sans défense,</l>
+	<l n="1239">Croyez-vous d'un tyran tromper la vigilance. </l>
+	<l n="1240">Combattre et traverser un monde d'ennemis,</l>
+	<l n="1241">Vous ouvrir un passage à ses ordres soumis,</l>
+	<l n="1242">Du Temple et de l'Autel enlever la statue,</l>
+	<l n="1243">Où sa fortune attache et ses soins, et sa vue.</l>
+	<l n="1244">Contre tant de périls qu'oserez-vous tenter ? </l>
+	<l n="1245">Quel miracle ! Quel Dieu pourraient les surmonter !</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1246">Madame, n'ayez point ces indignes alarmes,</l>
+	<l n="1247">Livrez-nous seulement la statue, et des armes,</l>
+	<l n="1248">Les Dieux de ce péril sauront nous dégager :</l>
+	<l n="1249">Qui ne craint point la mort surmonte le danger : </l>
+	<l n="1250">Enflammés du désir qu'inspire la victoire,</l>
+	<l n="1251">Le fer nous ouvrira les sentiers de la gloire,</l>
+	<l n="1252">Ou le suprême honneur d'une éclatante mort.</l>
+	<l n="1253">Souffrez, au nom des Dieux, que l'un ou l'autre sort,</l>
+	<l n="1254">Épargne à vôtre main l'horreur d'un sacrilège, </l>
+	<l n="1255" part="I">Qu'aux ordres de Thoas...</l><!-- @syll="6"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1255" part="F">Et moi que deviendrai-je ?</l><!-- @syll="6"-->
+	<l n="1256">Sanglant, enorgueilli d'un triomphe inhumain,</l>
+	<l n="1257">Je verrai le Tyran vos têtes à la main,</l>
+	<l n="1258">M'imposer un hymen que mon âme déteste. </l>
+	<l n="1259">Tombe plutôt sur moi la colère céleste.</l>
+	<l n="1260">Espérons toutefois, maîtresse de vos jours,</l>
+	<l n="1261">Je puis, de quelque temps, en prolonger le cours.</l>
+	<l n="1262">Quoi que Thoas, avide et de sang et de crimes,</l>
+	<l n="1263">N'ait pour religion que ses fières maximes, </l>
+	<l n="1264">Il n'ose, aux yeux du peuple, avec impunité,</l>
+	<l n="1265">Découvrir tout l'excès de son impiété.</l>
+	<l n="1266">Ma présence, le frein du sacré ministère,</l>
+	<l n="1267">Abaisse ses regards, trouble son front sévère.</l>
+	<l n="1268">Du temps que j'obtiendrai par mes retardements, </l>
+	<l n="1269">Songeons à ménager les précieux moments.</l>
+	<l n="1270">Allons lever au Ciel nos yeux baignés de larmes,</l>
+	<l n="1271">Pour fléchir sa rigueur ce sont nos seules armes :</l>
+	<l n="1272">Que si toujours sévère au sang d'Agamemnon,</l>
+	<l n="1273">Pour ce malheureux reste il n'est plus de pardon, </l>
+	<l n="1274">Fermant, sans murmurer les yeux sur nos mystères,</l>
+	<l n="1275">Descendons au tombeau, victimes de nos pères ;</l>
+	<l n="1276">Mais vous, qui n'avez point de part à leurs forfaits, </l>
+	<l n="1277">Vivez, Prince, étouffez d'inutiles souhaits.</l>
+	<l n="1278">Sans la haine des Dieux, croyez qu'Iphigénie, </l>
+	<l n="1279">Pour être unie à vous, aurait aimé la vie.</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1280">Que je vive, Madame, et respire sans vous :</l>
+	<l n="1281" part="I">Ah ! Plutôt tout mon sang...</l><!-- @syll="6"-->
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1281" part="F">Le Tyran vient à nous.</l><!-- @syll="6"-->
+</sp>
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Thoas, Iphigénie, Oreste, Pylade, Anthenor, Hidaspe, Taxis.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1282">Hé bien, Madame, Oreste enfin va-t-il paraître ? </l>
+	<l n="1283">S'obstinent-ils encor tous deux à vouloir l'être ?</l>
+	<l n="1284">Avez-vous dévoilé cette funeste erreur,</l>
+	<l n="1285">Qui le montre à mes yeux, et le cache à mon coeur ?</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1286">N'espère pas par moi voir ton erreur cessée,</l>
+	<l n="1287">Autant, et plus que toi, je suis embarrassée. </l>
+	<l n="1288">Mon âme est suspendue entre ces deux amis,</l>
+	<l n="1289">Tous deux d'un saint devoir également épris,</l>
+	<l n="1290">De mourir l'un pour l'autre ont la persévérence,</l>
+	<l n="1291">Aucun ne veut devoir la vie à ta clémence.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1292">Cette confusion commence à me lasser, </l>
+	<l n="1293">Madame, c'est à vous de la faire cesser.</l>
+	<l n="1294">Faites-moi voir Oreste, et me livrez sa tête,</l>
+	<l n="1295">Où pour tomber sur eux la foudre est toute prête.</l>
+</sp>
+<sp who="#pylade">
+                        <speaker>PYLADE.</speaker>
+	<l n="1296">Faut-il te le redire, Oreste est devant toi,</l>
+	<l n="1297">Il ne se cache point : frappe. Tyran, c'est moi. </l>
+	<l n="1298">C'est moi, qui dévoré d'une noble furie,</l>
+	<l n="1299">Venais pour t'enlever et tes Dieux, et ta vie ;</l>
+	<l n="1300">Et qui pour assouvir ces transports immortels,</l>
+	<l n="1301">Irais percer ton coeur jusques sur les autels :</l>
+	<l n="1302">Si tu veux t'obstiner dans ton erreur extrême, </l>
+	<l n="1303">Après un tel aveu ne t'en prends qu'à toi-même.</l>
+</sp>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+	<l n="1304">Admire d'un grand coeur les nobles mouvements :</l>
+	<l n="1305">Connais la vérité dans ses empressements !</l>
+	<l n="1306">Dépouillé quelque temps des transports de ta rage,</l>
+	<l n="1307">Vois jusqu'où l'amitié porte un noble courage. </l>
+	<l n="1308">Il veut, prenant mon nom, blasphémant contre toi,</l>
+	<l n="1309">S'attirer une mort qui ne cherche que moi :</l>
+	<l n="1310">Mais si tu veux jouir du fruit de ta vengeance,</l>
+	<l n="1311">Dans ton aveuglement discerne l'innocence.</l>
+	<l n="1312">Sur le coupable seul fais tomber ta fureur, </l>
+	<l n="1313">Ou des Dieux offensés crains le foudre vengeur.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1314">Ah ! C'est trop devant moi respirer l'imposture,</l>
+	<l n="1315">Madame, il faut venger notre commune injure :</l>
+	<l n="1316">Qu'à l'instant votre bras les immole tous deux :</l>
+	<l n="1317">Mon rang, ma sûreté l'exigent : je le veux. </l>
+	<l n="1318">Que de leurs Dieux après la fureur se déploie,</l>
+	<l n="1319">La Tauride verra ce qu'on vit devant Troie.</l>
+	<l n="1320">Ils se partageront en ce commun effroi,</l>
+	<l n="1321">Et s'il en est pour eux, il en sera pour moi.</l>
+</sp>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+	<l n="1322">Quel es-tu pour tenir ce superbe langage ? </l>
+	<l n="1323">Oses-tu commander à qui tu dois hommage ?</l>
+	<l n="1324">Plus haut que ton pouvoir n'élèves point ta voix,</l>
+	<l n="1325">C'est du Ciel, non de toi, que j'écoute les lois,</l>
+	<l n="1326">Lui seul peut prononcer des décrets légitimes ;</l>
+	<l n="1327">Je vais, pour décider du sort de ces victimes, </l>
+	<l n="1328">Savoir ses volontés, arbitre entre-eux et toi.</l>
+	<l n="1329">Thoas, attends mon ordre : et vous Grecs, suivez-moi.</l>
+</sp>
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Thoas, Hidaspe, Anthenor, Taxis.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1330">Qui suis-je ? Est-ce à Thoas qu'un tel discours s'adresse ?</l>
+	<l n="1331">À quoi m'exposes-tu malheureuse tendresse ?</l>
+	<l n="1332">Je puis tout, et malgré mon nom, ma dignité, </l>
+	<l n="1333">Une simple prêtresse étonne ma fierté.</l>
+	<l n="1334">Quand d'un ton plein d'audace elle ose me confondre,</l>
+	<l n="1335">Ma bouche est interdite, et ne sait que répondre.</l>
+	<l n="1336">Ah ! C'est trop abuser de mes indignes feux,</l>
+	<l n="1337">Ces Grecs sont mes captifs, que le Ciel soit pour eux ! </l>
+	<l n="1338">Ils recevront demain la mort qu'elle retarde.</l>
+	<l n="1339">Taxis autour du Temple allez ranger ma Garde ;</l>
+	<l n="1340">Observez avec elle un silence profond,</l>
+	<l n="1341">Veillez mes ennemis, votre tête en répond.</l>
+</sp>
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Thoas, Anthenor, Hidaspe.</head>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="1342">À votre sûreté cet ordre est nécessaire, </l>
+	<l n="1343">Seigneur ; mais d'un péril qu'on ne peut plus vous taire,</l>
+	<l n="1344">Votre Peuple alarmé semble vous menacer :</l>
+	<l n="1345">Il croit pour Thomiris devoir s'intéresser :</l>
+	<l n="1346">De son départ furtif il se fait une injure,</l>
+	<l n="1347">Il y veut mettre obstacle, il s'assemble, il murmure, </l>
+	<l n="1348">Et si l'on ne s'oppose à cette émotion,</l>
+	<l n="1349">Elle pourra causer quelque sédition.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1350">Non, il obéira. Je suis sûr de son zèle,</l>
+	<l n="1351">Anthenor, la Princesse à mes voeux moins rebelle,</l>
+	<l n="1352">Ne verra point l'hymen qui trahit son espoir, </l>
+	<l n="1353">Vous pouvez de ma part le lui faire savoir.</l>
+	<l n="1354" part="I">Allez.</l><!-- @syll="2"-->
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="1354" part="F">Jusques au Temple, où son zèle s'empresse</l><!-- @syll="10"-->
+	<l n="1355">D'aller pour son voyage implorer la Déesse,</l>
+	<l n="1356">Je vais de vos bontés, Seigneur, lui faire part. </l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1357">Dites-lui que sur tout elle songe au départ.</l>
+</sp>
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Thoas, Hidaspe.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1358">Et toi, favorisé de l'ombre et du silence,</l>
+	<l n="1359">Au peuple adroitement dérobe sa présence ;</l>
+	<l n="1360">J'attendrai ton retour dans cet appartement.</l>
+	<l n="1361">Va, cours tout préparer pour son embarquement, </l>
+	<l n="1362">Et songe, en ménageant cette importante fuite,</l>
+	<l n="1363">Que mon sort cette nuit dépend de ta conduite.</l>
+</sp>
+</div>
+</div>
+<div type="acte" n="5">
+                <head>ACTE V</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#thoas">
+                        <speaker>THOAS, seul.</speaker>
+	<l n="1364">Dieux ! Que l'impatience est un cruel tourment ?</l>
+	<l n="1365">Qu'Hidaspe répond mal à mon empressement !</l>
+	<l n="1366">Hidaspe à mes regards ne paraît point encore, </l>
+	<l n="1367">Lui qui dans ce Palais doit devancer l'Aurore.</l>
+	<l n="1368">Qu'une nuit inquiète est cruelle à passer !</l>
+	<l n="1369">Que de tristes objets viennent la traverser !</l>
+	<l n="1370">Mon coeur, dans l'embarras qui le trouble, l'agite,</l>
+	<l n="1371">Cherche ce qui le fuit, trouve ce qu'il évite. </l>
+	<l n="1372">La crainte, la terreur me suivent en tous lieux,</l>
+	<l n="1373">Et toujours le sommeil se refuse à mes yeux.</l>
+	<l n="1374">Mortels ambitieux dont les désirs rapides</l>
+	<l n="1375">N'ont que vos passions pour objets, et pour guides,</l>
+	<l n="1376">Qui de l'amour du Trône avidement épris, </l>
+	<l n="1377">N'envisagez la gloire, et l'honneur qu'à ce prix,</l>
+	<l n="1378">Et qui des plus grands noms enveloppant vos crimes,</l>
+	<l n="1379">Ne suivez, pour regner, que d'injustes maximes,</l>
+	<l n="1380">Temeraires tremblez, et craignez d'obtenir </l>
+	<l n="1381">Ce qui vous est donné des Dieux pour vous punir. </l>
+	<l n="1382">Le seul empressement d'éloigner la Princesse,</l>
+	<l n="1383">De perdre mes captifs, d'épouser la Prêtresse,</l>
+	<l n="1384">Tyrannise mon âme avec tant de pouvoir,</l>
+	<l n="1385">Que je n'écoûte plus ni raison, ni devoir.</l>
+	<l n="1386">Mille fâcheux objets roulent dans ma pensée. </l>
+	<l n="1387">Hidaspe ne vient point, la nuit est avancée.</l>
+	<l n="1388">Qui le retient ? Le peuple à mon ordre opposé,</l>
+	<l n="1389">Pour en troubler l'effet est-il assez osé ?</l>
+	<l n="1390">Je ne puis demeurer dans cette incertitude,</l>
+	<l n="1391">Elle augmente ma peine et mon inquiétude. </l>
+	<l n="1392" part="I">Allons... Mais je le vois.</l><!-- @syll="6"-->
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Thoas, Hidaspe.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1392" part="F">Par quels retardements...</l><!-- @syll="6"-->
+</sp>
+<sp who="#hidaspe">
+                        <speaker>HIDASPE.</speaker>
+	<l n="1393">Tout succède, Seigneur, à vos empressements.</l>
+	<l n="1394">La Princesse livrée au pouvoir du Sarmate,</l>
+	<l n="1395">Ne mettra plus d'obstacle à l'hymen qui vous flatte, </l>
+	<l n="1396">Je l'ai trouvée au temple, où du pied de l'autel</l>
+	<l n="1397">Elle s'est imposée un exil éternel.</l>
+	<l n="1398">Muette, et pour cacher ou sa honte, ou sa rage,</l>
+	<l n="1399">De ses voiles baissez se couvrant le visage,</l>
+	<l n="1400">Elle a suivi mes pas sans contrainte, et sans bruit, </l>
+	<l n="1401">Par de secrets détours dans l'ombre de la nuit.</l>
+	<l n="1402">Alors l'Ambassadeur, et sa nombreuse suite, </l>
+	<l n="1403">Que menait Anthenor, chargé de leur conduite ;</l>
+	<l n="1404">Traversant un grand peuple assemblé sur le port,</l>
+	<l n="1405">Sans obstacle, avec elle, ont passé sur leur bord. </l>
+	<l n="1406">Le Pilote attentif au devoir qui le guide,</l>
+	<l n="1407">N'attend plus que le vent pour quitter la Tauride :</l>
+	<l n="1408">Mais craignant que le jour qui va tout déclarer,</l>
+	<l n="1409">Ne retrouvât un peuple ardent à murmurer :</l>
+	<l n="1410">J'ai laissé sur le port une garde fidèle, </l>
+	<l n="1411">Et vous viens annoncer cette heureuse nouvelle.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1412">Ah ! Je respire, Hidaspe, et j'en rends grâce aux Dieux,</l>
+	<l n="1413">Thomiris suspendait mon pouvoir en ces lieux.</l>
+	<l n="1414">Quoi que fortifié de la toute-puissance,</l>
+	<l n="1415">Mon génie étonné tremblait en sa présence : </l>
+	<l n="1416">Mais retourne au rivage, et ne quitte son bord,</l>
+	<l n="1417">Qu'après que le Vaisseau sera parti du port ;</l>
+	<l n="1418">Qu'après que tu l'auras longtemps perdu de vue :</l>
+	<l n="1419">Et si dans sa fureur le peuple continue,</l>
+	<l n="1420">Montrant pour sa Princesse un front séditieux, </l>
+	<l n="1421">N'épargne point le sang des plus audacieux.</l>
+	<l n="1422">Va, cours, te dis-je. Et moi pour rompre cet obstacle,</l>
+	<l n="1423">Je m'en vais l'attirer par un autre spectacle.</l>
+</sp>
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III.</head>
+<sp who="#thoas">
+                        <speaker>THOAS, seul.</speaker>
+	<l n="1424">Déjà l'Astre naissant, qui luit sur mes desseins,</l>
+	<l n="1425">Du Temple, en m'éclairant, me montre les chemins. </l>
+	<l n="1426">Allons y commencer cette heureuse journée :</l>
+	<l n="1427">Et par un sacrifice, et par un hyménée,</l>
+	<l n="1428">Mes peuples attirés par cette nouveauté</l>
+	<l n="1429">Viendront... Mais que me veut Taxis épouvanté ?</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Thoas, Taxis.</head>
+<sp who="#taxis">
+                        <speaker>TAXIS.</speaker>
+	<l n="1430">Ah ! Seigneur, quels malheurs menacent votre Empire ! </l>
+	<l n="1431">Quels troubles... Sans horreur je ne puis vous le dire.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1432">Dieux ! Qu'ai-je à craindre encor, Taxis, explique toi.</l>
+</sp>
+<sp who="#taxis">
+                        <speaker>TAXIS.</speaker>
+	<l n="1433">Je remplissais les soins confiez à ma foi.</l>
+	<l n="1434">Votre garde fidèle imitait mon exemple, </l>
+	<l n="1435">Le silence avec nous régnait autour du Temple, </l>
+	<l n="1436">Déjà la nuit obscure allait se dissiper,</l>
+	<l n="1437">Quand un bruit étonnant est venu nous frapper.</l>
+	<l n="1438">On n'entend que des cris dans l'enceinte sacrée,</l>
+	<l n="1439">J'en approche en tremblant, on m'en livre l'entrée</l>
+	<l n="1440">Quels spectacles, grands Dieux ! Que d'affreuses douleurs ! </l>
+	<l n="1441">Les ministres confus, les prêtresses en pleurs,</l>
+	<l n="1442">Ont tristement fait voir à mon âme abattue,</l>
+	<l n="1443" part="I">Qu'on avait de Diane enlevé la statue.</l><!-- @syll="10"-->
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1443" part="F">Ciel !</l><!-- @syll="2"-->
+</sp>
+<sp who="#taxis">
+                        <speaker>TAXIS.</speaker>
+	<l n="1444">Accusant les Grecs de cette impiété, </l>
+	<l n="1445">À les chercher par tout mon zèle m'a porté.</l>
+	<l n="1446">Je fais entendre en vain partout leur nom funeste.</l>
+	<l n="1447">Aucun ne me répond quand je demande Oreste.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1448">Peut-on donner asile à ces noirs attentats ?</l>
+	<l n="1449">On menace mes jours, mon Peuple, mes États, </l>
+	<l n="1450">Et mon lâche ennemi trouve qui le protège.</l>
+	<l n="1451" part="I">Quel monstre dans ma Cour...</l><!-- @syll="6"-->
+</sp>
+<sp who="#taxis">
+                        <speaker>TAXIS.</speaker>
+	<l n="1451" part="F">Seigneur, vous le dirai-je,</l><!-- @syll="6"-->
+	<l n="1452">Une impie, une ingrate, une fière beauté,</l>
+	<l n="1453">Se vante, sans frémir, de cette impiété : </l>
+	<l n="1454">Elle ose aux yeux de tous avouer son offense,</l>
+	<l n="1455">Dépouillé du respect qu'on doit à sa naissance.</l>
+	<l n="1456">Je viens de l'amener dans votre appartement.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1457">Quelle entre ! À ce forfait commis impunément,</l>
+	<l n="1458">Je connais ton audace, infidèle Prêtresse : </l>
+	<l n="1459">Mais tu mourras. Que vois-je ? Ô Ciel ! C'est la Princesse.</l>
+</sp>
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Thoas, Thomiris, Taxis, Gardes.</head>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1460">Oui perfide, c'est moi, dissipe ton erreur,</l>
+	<l n="1461">C'est moi qui viens jouir de ta vaine fureur :</l>
+	<l n="1462">C'est moi, c'est cette main que les Dieux ont choisie,</l>
+	<l n="1463">Pour former le tissu des malheurs de ta vie, </l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1464">Hidaspe. Ah ! Malheureux, tu m'as manqué de foi !</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1465">Si tu te vois trahi n'en accuse que toi.</l>
+	<l n="1466">Ton artificieuse et coupable conduite,</l>
+	<l n="1467">Ta lâche politique à dérober ma fuite,</l>
+	<l n="1468">Ce sont les mêmes traits que j'ai su ménager, </l>
+	<l n="1469">Pour te percer le coeur, Tyran, et me venger.</l>
+	<l n="1470">Après t'être emparé du sceptre de ta Reine,</l>
+	<l n="1471">Après que tes mépris ont mérité ma haine,</l>
+	<l n="1472">As-tu pu concevoir que soumise à ta voix,</l>
+	<l n="1473">J'accepterais ailleurs un Empire à ton choix, </l>
+	<l n="1474">Et que de tes forfaits volontaire victime,</l>
+	<l n="1475">Je te ferais du mien possesseur légitime.</l>
+	<l n="1476">Cette nuit, profitant de son obscurité,</l>
+	<l n="1477">Sur mon départ ta haine avait déjà conté.</l>
+	<l n="1478">Mais loin de consentir à ta coupable envie,  </l>
+	<l n="1479">Je l'avais consacrée à t'arracher la vie,</l>
+	<l n="1480">Lorsqu'au Temple, où ma bouche allait se déclarer,</l>
+	<l n="1481">Un plus noble transport est venu m'inspirer.</l>
+	<l n="1482">Ton sang, que l'on devait m'offrir en sacrifice,</l>
+	<l n="1483">Ne me paraissait point un assez grand supplice. </l>
+	<l n="1484">Pour t'en faire un, Tyran, où ton coeur inhumain,</l>
+	<l n="1485">Sentit du désespoir le plus cruel venin.</l>
+	<l n="1486">Leur ouvrant jusqu'au port une secrète issue,</l>
+	<l n="1487">Entre les mains des Grecs j'ai remis la statue.</l>
+	<l n="1488">J'ai d'une même ardeur, m'opposant à tes voeux, </l>
+	<l n="1489">Arraché la Prêtresse à tes indignes feux.</l>
+	<l n="1490">J'ai fait que sous mon nom, favorisant sa fuite,</l>
+	<l n="1491">Au vaisseau du Sarmate Hidaspe l'a conduite,</l>
+	<l n="1492">Et qu'elle va, fuyant ta Couronne et ta foi,</l>
+	<l n="1493">Vivre sous d'autres Cieux pour un autre que toi. </l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1494">Gardes, qu'on la poursuive, allez. Et toi, barbare...</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1495">Penses-tu que pour toi le destin se déclare ?</l>
+	<l n="1496">Penses-tu que le Ciel, qui conduit ses desseins,</l>
+	<l n="1497">D'Argos en ta faveur, lui ferme les chemins ?</l>
+	<l n="1498">Fille d'Agamemnon, c'est cette Iphigénie, </l>
+	<l n="1499">Que l'on croit en Aulide avoir perdu la vie.</l>
+	<l n="1500">De ces Grecs que j'arrache à ton ardent courroux :</l>
+	<l n="1501">L'un est son frère Oreste, et l'autre est son époux.</l>
+	<l n="1502">L'hymen les a liez d'une chaîne éternelle :</l>
+	<l n="1503">Je viens d'être témoin de leur foi mutuelle. </l>
+	<l n="1504">Quel spectacle à mes yeux ! Quel triomphe pour moi ! </l>
+	<l n="1505">D'avoir forgé les traits qui me vengent de toi.</l>
+	<l n="1506">Le Ciel, en ce grand jour, met le comble à ma joie ;</l>
+	<l n="1507">De tourments infinis tu vas être la proie.</l>
+	<l n="1508">Sur ce Trône où ton coeur se croyait affermi, </l>
+	<l n="1509">Je te verrai toujours craindre ton ennemi ;</l>
+	<l n="1510">Je verrai le venin de la plus noire envie,</l>
+	<l n="1511">Te montrer ton rival aimé d'Iphigénie,</l>
+	<l n="1512">Et dans ton coeur jaloux répandre les remords,</l>
+	<l n="1513">Qu'Oreste en s'enfuyant t'a laissé sur ces bords. </l>
+	<l n="1514">Oui, ce m'est un plaisir qui flatte ma disgrâce,</l>
+	<l n="1515">D'avoir su par mes soins confondre ton audace.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1516">Ah ! Je t'épargnerai ce funeste plaisir.</l>
+	<l n="1517">Si bientôt dans l'horreur dont je me sens saisir,</l>
+	<l n="1518">Je ne vois ces captifs partis sous ta conduite, </l>
+	<l n="1519">Ta mort sera le prix d'avoir tramé leur fuite.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1520">Après ce que j'ai fait je brave ta fureur.</l>
+	<l n="1521" part="I">Je ne crains rien cruel, frappe.</l><!-- @syll="8"-->
+</sp>
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Thoas, Thomiris, Taxis.</head>
+<sp who="#taxis">
+                        <speaker>TAXIS.</speaker>
+	<l n="1521" part="F">Venez, Seigneur,</l><!-- @syll="4"-->
+	<l n="1522">Le jour nous a fait voir la troupe fugitive, </l>
+	<l n="1523">Qu'un orage imprévu retient prés de la rive.</l>
+	<l n="1524">Hidaspe par les vents les voyant arrêtez,</l>
+	<l n="1525">Entoure leur Vaisseau, les prend de tous côtés :</l>
+	<l n="1526">Mais le peuple à grand cris suspend vôtre vengeance,</l>
+	<l n="1527">Le perfide Anthenor embrasse leur défense, </l>
+	<l n="1528">À leur perte prochaine il prétend s'opposer,</l>
+	<l n="1529">Et sans votre présence ils peuvent tout oser.</l>
+</sp>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+	<l n="1530">Ah ! Courons dans leur sang éteindre leur furie,</l>
+	<l n="1531">Et toi dans ce palais garde mon ennemie.</l>
+</sp>
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Thomiris, Taxis.</head>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1532">Dieux ! Est-ce l'innocence à qui vous en voulez ? </l>
+	<l n="1533">Après tant de serments et de droits violés,</l>
+	<l n="1534">N'ayant dans ses transports aucune retenue,</l>
+	<l n="1535">Parmi tant de forfaits commis à votre vue,</l>
+	<l n="1536">Un Tyran trouve-t-il la faveur des destins,</l>
+	<l n="1537">Contre des malheureux qui vous lèvent les mains ? </l>
+	<l n="1538">Ah ! Courons empêcher le sort qui les menace.</l>
+	<l n="1539">Courons... quoi malheureux ! D'où te viens cette audace ?</l>
+	<l n="1540">Oses-tu m'arrêter, et ton zèle obstiné...</l>
+</sp>
+<sp who="#taxis">
+                        <speaker>TAXIS.</speaker>
+	<l n="1541">Madame, vous savez ce qui m'est ordonné.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1542">Ne te souvient-il plus du sang qui m'a fait naître. </l>
+	<l n="1543">En faveur de Thoas m'oses-tu méconnaître.</l>
+	<l n="1544">Attends-tu que sur moi son bras ensanglanté</l>
+	<l n="1545">Vienne... Mais c'est trop craindre en cette extrémité.</l>
+	<l n="1546">Tu me retiens en vain, ta lâche obéissance...</l>
+</sp>
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Thomiris, Taxis, Erine.</head>
+<sp who="#erine">
+                        <speaker>ERINE.</speaker>
+	<l n="1547">Madame, de Thoas fuyez la violence. </l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1548">De ces Grecs malheureux, Erine est-il vainqueur ?</l>
+	<l n="1549">Les a-t-on immolés à sa noire fureur ?</l>
+</sp>
+<sp who="#erine">
+                        <speaker>ERINE.</speaker>
+	<l n="1550">Ne me demandez rien. Étonnée, interdite,</l>
+	<l n="1551">Je ne puis revenir du trouble qui m'agite,</l>
+	<l n="1552">Le tumulte, le fer, le désordre, les cris, </l>
+	<l n="1553">De crainte, de terreur glacent tous les esprits.</l>
+	<l n="1554">Parmi tous ces objets dont mon âme est émue,</l>
+	<l n="1555">Le Tyran en fureur a seul frappé ma vue ;</l>
+	<l n="1556">Son intrépidité m'a fait trembler pour vous :</l>
+	<l n="1557">Fuyez, fuyez, Madame, évitez son courroux. </l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1558">Que je fuie. Ah ! plutôt courons sur le rivage,</l>
+	<l n="1559">Des Scythes, par ma vue, animer le courage,</l>
+	<l n="1560">C'est aujourd'hui le Sceptre, ou la mort que j'attends.</l>
+</sp>
+<sp who="#erine">
+                        <speaker>ERINE.</speaker>
+	<l n="1561">Ah ! Prévenez... Que dis-je ? On vient. Il n'est plus temps.</l>
+</sp>
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE DERNIÈRE. Thomiris, Anthenor, Erine.</head>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="1562">Vous triomphez, Madame, et le Ciel équitable, </l>
+	<l n="1563">À l'innocence enfin s'est montré favorable.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1564">Dieux ! Que viens-je d'entendre, et que me dites-vous ?</l>
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="1565">Que les Dieux hautement se déclarent pour nous.</l>
+	<l n="1566">Jamais jour aux mortels ne parut plus funeste,</l>
+	<l n="1567">Et plus propre à marquer la colère céleste. </l>
+	<l n="1568">On eût dit que les Dieux contre nous animés,</l>
+	<l n="1569">S'opposaient aux desseins que nous avions formés.</l>
+	<l n="1570">Les flots impétueux, et les vents en furie,</l>
+	<l n="1571">Du Sarmate et des Grecs empêchaient la sortie.</l>
+	<l n="1572">Hidaspe dans ce trouble informé de leur sort, </l>
+	<l n="1573">S'approche du Vaisseau, l'attaque avec transport,</l>
+	<l n="1574">Redemande à grands cris les Grecs, et la statue.</l>
+	<l n="1575">Oreste fièrement se présente à sa vue,</l>
+	<l n="1576">Au courage du Scythe oppose sa valeur,</l>
+	<l n="1577">Il fait face partout, partout il est vainqueur : </l>
+	<l n="1578">J'arrive accompagné d'une escorte fidèle,</l>
+	<l n="1579">De l'innocence, alors j'embrasse la querelle,</l>
+	<l n="1580">Le Peuple autour de moi courant de toutes parts,</l>
+	<l n="1581">Fait voler sur la garde un orage de dards,</l>
+	<l n="1582">Quand Thoas arrivé sur le fatal rivage,  </l>
+	<l n="1583">Aux siens épouvantés ramène le courage.</l>
+	<l n="1584">Dans toute son horreur la mort se montre à tous.</l>
+	<l n="1585">Pylade fait tomber Hidaspe sous ses coups.</l>
+	<l n="1586">Le Tyran qui du bord voit ce trépas funeste,</l>
+	<l n="1587">Sans songer qui le suit, s'avance vers Oreste, </l>
+	<l n="1588">Il le joint ; mais bientôt il a le même sort,</l>
+	<l n="1589" part="I">Sous le fer de ce Prince il expire.</l><!-- @syll="9"-->
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1589" part="F">Il est mort.</l><!-- @syll="3"-->
+</sp>
+<sp who="#anthenor">
+                        <speaker>ANTHENOR.</speaker>
+	<l n="1590">Oui, Madame, et la mer jusqu'alors soulevée,</l>
+	<l n="1591">De son sang qui s'écoule est à peine abreuvée, </l>
+	<l n="1592">Que les vents, dans les airs, ne sont plus déchaînés :</l>
+	<l n="1593">Les flots impétueux ne sont plus mutinés.</l>
+	<l n="1594">Le Ciel devient tranquille, et les Grecs pleins de gloire,</l>
+	<l n="1595">Vont jouir dans Argos du fruit de leur victoire ;</l>
+	<l n="1596">Tandis que remontant au rang de vos aïeux, </l>
+	<l n="1597">Vous allez commander dans ces paisibles lieux,</l>
+	<l n="1598">Et qu'un peuple ennemi des sanglantes maximes,</l>
+	<l n="1599">Brûle de recevoir vos ordres légitimes.</l>
+</sp>
+<sp who="#thomiris">
+                        <speaker>THOMIRIS.</speaker>
+	<l n="1600">Ciel ! Pour perdre un tyran quelle est ton équité !</l>
+	<l n="1601">Mais allons dans le Temple adorer sa bonté ; </l>
+	<l n="1602">Sur la rébellion que ma clémence éclate,</l>
+	<l n="1603">Et de notre bonheur faisons part au Sarmate.</l>
+</sp>
+</div>
+</div>
+</body>
+</text>
+</TEI>

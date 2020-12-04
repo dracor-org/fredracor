@@ -1,60 +1,343 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="../css/tei.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>VISITE À CORNEILLE, POÈME</title>
-        <author ISNI="000 0000 8086 1601">Émile BLÉMONT (1839-1927)</author>
-      </titleStmt>
-      <publicationStmt>
-        <editor>Texte établi par Paul FIEVRE, août 2019.</editor>
-        <publisher>publié par Paul FIEVRE, septembre 2019.</publisher>
-        <idno>BLEMONT_VISITEACORNEILLE</idno>
-        <rights>Creative Commons BY-NC-SA</rights>
-        <idno type="orig">BLEMONT_VISITEACORNEILLE</idno>
-        <idno type="dracor" xml:base="https://dracor.org/id/">fre000120</idno>
-      </publicationStmt>
-      <SourceDesc>
-        <genre>Poème</genre>
-        <inspiration>histoire littéraire</inspiration>
-        <type>vers</type>
-        <structure>Un acte</structure>
-        <periode>1821-1830</periode>
-        <taille>0-250</taille>
-        <permalien>https://gallica.bnf.fr/ark:/12148/bpt6k9736782g?rk=1072966;4</permalien>
-      </SourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text>
-    <front>
-      <docTitle>
-        <titlePart type="main">VISITE À CORNEILLE</titlePart>
-        <titlePart type="sub">POÈME</titlePart>
-        <titlePart type="sub">DIT PAR MADEMOISELLE J. BARTET AU THÉÂTRE-FRANÇAIS</titlePart>
-        <titlePart type="sub">le 6 juin 1886 à l'occasion du 280ème Anniversaire de la naissance de Pierre Corneille.</titlePart>
-      </docTitle>
-      <docDate value="1897">M DCCC XCVIII</docDate>
-      <docAuthor id="BLÉMOND, Émile" bio="blemond">EN COLLABORATION AVEC LÉON VALADE.</docAuthor>
-      <docImprint>
-        <printer id="MASSON">PARIS, ALPHONSE LEMERRE, EDITEUR, 23-31 PASSAGE CHOISEUL, 23-31.</printer>
-        <printer id="stahl">IMPRIMERIE DE STAHL.</printer>
-      </docImprint>
-      <performance>
-        <premiere date="" location=""/>
-      </performance>
-      <castList>
-        <head>PERSONNAGES ACTEURS qui ont créé les rôles.</head>
-        <castItem><role id="UNE JEUNE FEMME" sex="2" type="H" statut="écrivain" age="A" stat_amour="néant">UNE JEUNE FEMME</role>.</castItem>
-        <castItem><role id="TROUPE DE COMÉDIENS" sex="9" type="H" statut="écrivain" age="A" stat_amour="néant">TROUPE DE COMÉDIENS</role>, qui viennent de jouer Le Cid de Corneille.</castItem>
-      </castList>
-      <set location="Paris" country="France" periode="XIXème" link=""/>
-    </front>
-    <body>
-      <div1 type="acte" n="1"><head>VISITE À CORNEILLE</head>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">VISITE À CORNEILLE</title>
+                <author key="isni:000000080861601">Émile BLÉMONT (1839-1927)</author>
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000144</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY NC SA 3.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                    </licence>
+                </availability><!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/BLEMONT_VISITEACORNEILLE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/BLEMONT_VISITEACORNEILLE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY NC SA 3.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1897">1897</date>
+                        <date type="premiere"/>
+                        <date type="written"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k9736782g?rk=1072966;4</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-jeune-femme" sex="UNKNOWN">
+                        <persName>Le-jeune-femme</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords>
+                    <term type="genreTitle">Poème</term>
+                    <term type="genreTitle">vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">VISITE À CORNEILLE</titlePart>
+			<titlePart type="sub">POÈME</titlePart>
+			<titlePart type="sub">DIT PAR MADEMOISELLE J. BARTET AU THÉÂTRE-FRANÇAIS</titlePart>
+			<titlePart type="sub">le 6 juin 1886 à l'occasion du 280ème Anniversaire de la naissance de Pierre Corneille.</titlePart>
+		</docTitle> 
+		<docDate when="1897">M DCCC XCVIII</docDate>
+		<docAuthor>EN COLLABORATION AVEC LÉON VALADE.</docAuthor><!--@bio="blemond"-->
+		<div type="docImprint">
+			<div type="printer">
+                    <p>PARIS, ALPHONSE LEMERRE, EDITEUR, 23-31 PASSAGE CHOISEUL, 23-31.</p>
+                </div><!--@id="MASSON"-->
+			<div type="printer">
+                    <p>IMPRIMERIE DE STAHL.</p>
+                </div><!--@id="stahl"-->
+		</div>
+		<performance>
+			<ab type="premiere"/><!--date=""--><!--location=""-->
+		</performance>
+		<castList>
+                <head>PERSONNAGES ACTEURS qui ont créé les rôles.</head>
+			<castItem>
+                    <role corresp="#une-jeune-femme">UNE JEUNE FEMME</role><!--@sex="2" @type="H" @statut="écrivain" @age="A" @stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#troupe-de-comediens">TROUPE DE COMÉDIENS</role><!--@sex="9" @type="H" @statut="écrivain" @age="A" @stat_amour="néant"-->, qui viennent de jouer Le Cid de Corneille.</castItem>
+
+		</castList>
+	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>VISITE À CORNEILLE</head>
 madame Jules Claretie.
-<div2 type="scene" n="1"><head/><stage type="location">Autour du buste de Pierre Corneille, sont groupés les acteurs qui viennent de jouer le Cid ; une jeune femme, vêtue à la mode du dernier printemps, entre en scène et s'avance vers les comédiens.</stage><sp who="LE JEUNE FEMME"><speaker>[LA JEUNE FEMME].</speaker><poem type="poème"><lg n="1"><l id="1">Seigneurs, soyez cléments ; excusez-moi, Chimène !</l><l id="2">Dans ce monde idéal, votre illustre domaine,</l><l id="3">Je pénètre, affrontant l'immortelle beauté,</l><l id="4">Moi, le réel qui passe et la modernité !</l><l id="5">Je n'ai jamais régné dans un lointain magique ;</l><l id="6">Sur moi, le blanc peplum paraîtrait peu tragique ;</l><l id="7">Et ce n'est pas aux bords du Tibre, antiquement,</l><l id="8">Que l'on a chiffonné mon léger vêtement.</l><l id="9">Déesse je ne suis, je ne suis pas Infante ;</l><l id="10">Je n'ai rien du passé. Je suis femme, et vivante ;</l><l id="11">Et — ne m'en veuillez point si j'y mets quelque prix,</l><l id="12">Seigneurs ! — Je suis Française, et même de Paris.</l><l id="13">Or, maîtrisant mon trouble et surmontant mes doutes,</l><l id="14">Je viens, moi, spectatrice émue, au nom de toutes,</l><l id="15">Du balcon sur la scène, offrir, sans mot cherché,</l><l id="16">Quelques fleurs à l'auteur du Cid et de Psyché,</l><l id="17">Dont nous avons voulu fêter l'anniversaire.</l><stage type="give">Elle détache et consacre au poète les fleurs de son corsage.</stage></lg><lg n="2"><l id="18">Corneille, nous t'aimons d'un amour très sincère,</l><l id="19">Nous, filles de la France et de la Liberté,</l><l id="20">Parce que ta naïve et mâle austérité</l><l id="21">A su profondément sentir et faire entendre</l><l id="22">Tout ce qu'il est en nous d'héroïque et de tendre,</l><l id="23">Tout ce qu'en son instinct notre coeur ignorant</l><l id="24">Garde, et peut révéler, de vrai, de pur, de grand.</l><l id="25">Nous t'aimons d'autant plus, ô bienfaisant génie,</l><l id="26">Que nous sommes en proie à plus de calomnie.</l><l id="27">Hélas ! Que n'ont pas dit depuis peu contre nous</l><l id="28">Les gens d'esprit, les sots, les pédants, les jaloux,</l><l id="29">Les écoliers amers, les doucereux bellâtres !</l><l id="30">En prose, en vers, dans les salons, dans les théâtres,</l><l id="31">Le grave psychologue et le conteur galant</l><l id="32">Nous accablent, avec plus ou moins de talent,</l><l id="33">D'un pessimisme noir, brutal et tyrannique,</l><l id="34">Fait de brume allemande et de spleen britannique,</l><l id="35">Qui ternit l'or du ciel, qui flétrit l'âme en fleur,</l><l id="36">Qui change tout désir, toute joie en douleur,</l><l id="37">Où la beauté n'est plus, souveraine torture,</l><l id="38">Qu'un piège éternisant le mal dans la nature !</l><l id="39">Ils traduisent, dès qu'il s'agit de nous juger,</l><l id="40">Les arguments haineux d'un sophiste étranger ;</l><l id="41">Et quand on veut de nous un portrait plus fidèle,</l><l id="42">C'est quelque ange... déchu qu'ils prennent pour modèle,</l><l id="43">L'exhibant, pour avoir un succès plus certain,</l><l id="44">Dans un style à la fois vandale et byzantin.</l><l id="45">Devant leur joli monstre, on trouve Messaline</l><l id="46">Plus blanche que la blanche et sainte mousseline ;</l><l id="47">Un naïf doute-t-il de ce portrait charmant,</l><l id="48">Les amuseurs du jour le raillent finement.</l><l id="49">L'Europe, qui de loin nous guette et nous envie,</l><l id="50">Les écoute en riant, les prend au mot, ravie,</l><l id="51">Ajoute son gros sel, surcharge chaque trait,</l><l id="52">Vient chez nous en criant : « Je vais au cabaret ! »</l><l id="53">S'attable sans façon, court partout, fait la fête,</l><l id="54">Rentre, reprend son air guindé, cite un prophète,</l><l id="55">Et compare Paris, dévotement, sans fiel,</l><l id="56">Aux villes que brûla jadis le feu du ciel.</l></lg><lg n="3"><l id="57">Poète devant qui le plus fier est modeste,</l><l id="58">Ô toi qui fis pleurer Condé, je t'en atteste,</l><l id="59">Ces fous ne savent pas ce qu'ils disent. Et si</l><l id="60">Des mystificateurs, qu'on mystifie aussi,</l><l id="61">Font de la décadence en rimes transcendantes,</l><l id="62">Il n'est point parmi nous beaucoup de décadentes.</l><l id="63">Lorsqu'on n'a pas dans l'âme un coin du grand ciel bleu,</l><l id="64">On sait mal nous aimer et l'on nous connaît peu,</l><l id="65">Quoi qu'on ait de science ou de galanterie.</l><l id="66">Les habiles, malgré l'art de leur flatterie,</l><l id="67">Les importants, les fats, malgré leurs airs vainqueurs,</l><l id="68">Ne trouveront jamais la clef d'or de nos coeurs.</l><l id="69">Elle était dans ta main, poète, la clef sainte !</l><l id="70">Car tu la méritais ; car, si ta tempe est ceinte</l><l id="71">Du chêne et du laurier toujours verts, c'est que, toi,</l><l id="72">Tu vis la vérité sublime, ayant la foi !</l><l id="73">Tes guerrières d'antan, tes princesses, tes reines,</l><l id="74">Tes martyres marchant au ciel en souveraines,</l><l id="75">Où donc as-tu connu leur intime beauté ?</l><l id="76">Est-ce à Sparte ? Est-ce à Rome ? As-tu jamais été</l><l id="77">Conquérir leur secret dans la Castille Vieille ?</l><l id="78">Non ! Tu n'as pas cherché si loin cette merveille ;</l><l id="79">Elle était sous tes yeux, elle éclatait au jour,</l><l id="80">À Paris, à Rouen, à la ville, à la cour.</l><l id="81">Dans la soeur de Pascal respirait ta Pauline ;</l><l id="82">Émilie, en son coeur d'implacable orpheline,</l><l id="83">D'une belle Frondeuse a l'orgueil léonin ;</l><l id="84">Le nom de Cornélie est ton nom féminin.</l></lg><lg n="4"><l id="85">C'est l'âme du pays qui fait le vrai poète,</l><l id="86">Et qui, légère, ailée, ainsi que l'alouette,</l><l id="87">Chante, comme en plein ciel, dans les poèmes d'or.</l><l id="88">L'idéal, après tout, c'est le réel encor ;</l><l id="89">C'est le réel plus vrai, plus semblable à lui-même,</l><l id="90">Qui sait mieux ce qu'il veut, qui voit mieux ce qu'il aime,</l><l id="91">Et qui, prenant son vol, sans tarder, sans peser,</l><l id="92">Va cueillir dans le rêve un immortel baiser.</l><l id="93">Chaque patrie, en sa légende, en son histoire,</l><l id="94">Se fait femme, aux grands jours de deuil ou de victoire,</l><l id="95">Et dans une charmeuse agréable à ses dieux</l><l id="96">S'incarne, se résume, et se révèle aux yeux.</l><l id="97">Ruth, Esther et Judith ont la Judée en elles ;</l><l id="98">Hélène a le ciel grec au fond de ses prunelles,</l><note type="C">Ophélie est une personnage d'Hamlet de Shakespeare/</note><l id="99">Et la blonde Ophélie est la fleur d'outre-mer.</l><l id="100">Notre France a donné ce qu'elle a de plus cher</l><l id="101">À Jeanne, cette vierge, à la bonne Lorraine</l><l id="102">Dont la candeur sans tache et la grandeur sereine,</l><l id="103">Dominant de si haut nos vallons orageux,</l><l id="104">Règnent sur nous, au loin, comme un sommet neigeux.</l><l id="105">Tes héroïnes sont ses soeurs en poésie,</l><l id="106">Corneille ! Et quand soudain l'une ou l'autre est saisie</l><l id="107">Du saint transport, on sent qu'elles aussi, parfois,</l><l id="108">Elles prêtent l'oreille à de divines voix.</l><l id="109">Comme tout fait briller d'une lumière exquise</l><l id="110">Leur généreux courage ! Et comme la marquise</l><l id="111">De Sévigné sut bien expliquer leur succès !</l><l id="112">À leur bouche, en leur coeur, comme tout est français !</l><l id="113">La Française, la vraie, elle est là tout entière,</l><l id="114">Réfléchie, et pourtant vive et primesautière,</l><l id="115">Très personnelle et très ondoyante à la fois ;</l><l id="116">Ignorant l'égoïsme et l'ennui des coeurs froids,</l><l id="117">Docile et non servile, ardente mais lucide,</l><l id="118">Ayant l'éclair profond et le mot qui décide ;</l><l id="119">Possédant la justesse et la précision</l><l id="120">Du verbe qu'elle parle avec émotion,</l><l id="121">Introduisant partout d'une main fine et sûre,</l><l id="122">Sans paraître y toucher, le rythme et la mesure ;</l><l id="123">De la pointe de son aiguille dégonflant</l><l id="124">Toute vanité creuse et tout faste insolent ;</l><l id="125">Communiquant sa vie aux plus petites choses,</l><l id="126">Alliant avec grâce, et sans fadeurs moroses,</l><l id="127">Le bon goût au bon sens, la réserve à l'esprit,</l><l id="128">L'intrépidité calme à l'espoir qui sourit ;</l><l id="129">S'élevant au sublime à force d'être sage,</l><l id="130">Sans fausser la nature et sans froisser l'usage ;</l><l id="131">Trouvant dans le devoir, noblement accepté,</l><l id="132">Le charme d'une douce et pure volupté,</l><l id="133">Jugeant le bien trop beau pour que l'on s'en écarte ;</l><l id="134">Athénienne avec la volonté de Sparte,</l><l id="135">Et gouvernant son coeur d'assez haute façon</l><l id="136">Pour que l'amour y soit l'instinct de la raison.</l></lg><lg n="5"><l id="137">Telle était autrefois, ô rayonnante aurore,</l><l id="138">La Française accomplie ! Et telle elle est encore ;</l><l id="139">Telle on l'a retrouvée, intacte, à ciel ouvert,</l><l id="140">Dans l'épreuve terrible où l'on a tant souffert.</l><l id="141">Malgré l'isolement, long, sourd, plein de ténèbres,</l><l id="142">Malgré l'hiver, la faim, et les éclats funèbres</l><l id="143">Qui, dans l'ombre, abattaient les blessés par monceaux,</l><l id="144">Malgré les cris plaintifs qui sortaient des berceaux,</l><l id="145">Vous n'avez pas fléchi, pâles Parisiennes !</l><l id="146">Vous fîtes honte au sort. Toutes, patriciennes</l><l id="147">Ou peuple, les grands noms, les doigts fins, les beaux yeux,</l><l id="148">L'artiste au chant si doux, l'âme aspirant aux cieux,</l><l id="149">Toutes, d'un libre accord, filles, femmes et mères,</l><l id="150">Vous repoussiez la trêve offerte ; et, sans chimères,</l><l id="151">Mais sans peur, le front haut, fronçant votre sourcil,</l><l id="152">Vous ramassiez, de vos mains frêles, le fusil</l><l id="153">Que l'homme avait jeté, morne, avec un blasphème ;</l><l id="154">Vous baisiez l'arme sainte, et, d'un élan suprême,</l><l id="155">La lui rendiez, disant, tout bas, loin des clameurs :</l><l id="156">« Je t'aime, va te battre, et s'il faut mourir, meurs ! »</l></lg><lg n="6"><l id="157">Mais, en causant, j'ai fait une étrange sortie.</l><l id="158">Je crois que j'ai manqué pour vous de modestie,</l><l id="159">Mesdames ; et je crois qu'en ce jour glorieux</l><l id="160">Des larmes, je ne sais comment, mouillent mes yeux.</l><l id="161">Pardon ! Je suis distraite, encor que je surveille</l><l id="162">Mes paroles ; d'ailleurs, c'est la faute à... Corneille.</l><l id="163">Quittons la tragédie et sourions un peu !</l><l id="164">On peut être aussi grand avec un plus doux jeu ;</l><l id="165">Thalie, en qui fleurit une âme plus humaine,</l><l id="166">N'en reste pas moins muse et soeur de Melpomène ;</l><l id="167">Et Corneille eut parfois, - il était tendre et fin, -</l><l id="168">Bonhomme de génie, un sourire divin.</l><l id="169">Quoiqu'il fut déjà vieux et qu'il semblât plus gauche,</l><l id="170">Molière, un jour, n'ayant pu faire que l'ébauche</l><l id="171">D'une pièce promise au roi, vint, empêché,</l><l id="172">Le prier de l'écrire. Il écrivit Psyché.</l><l id="173">Et jamais, ô Patrie, ô moderne Cybèle,</l><l id="174">France, tu n'apparus plus touchante et plus belle</l><l id="175">Que dans cette figure ailée, âme et rayon,</l><l id="176">Fille d'un Prométhée et d'un Pygmalion.</l><l id="177">L'Amour antique, enfant dont Vénus est la mère,</l><l id="178">Est un bambin aveugle, un caprice éphémère ;</l><l id="179">C'est l'archer minuscule et prompt, le nain railleur,</l><l id="180">L'irrésistible dieu de la matière en fleur</l><l id="181">Que l'Asie idolâtre et qui désarme Rome.</l><l id="182">- En épousant Psyché, l'âme, il devient un homme.</l><l id="183">Délivré du bandeau qui lui couvrait les yeux,</l><l id="184">Il s'ouvre aux profondeurs lumineuses des cieux,</l><l id="185">S'élance, et, triomphant de la Mort souterraine,</l><l id="186">Chez les Olympiens conduit, blanche et sereine,</l><l id="187">À côté de Vénus, l'âme, cette Beauté.</l><l id="188">Ô France, en tes douleurs, en ta prospérité,</l><l id="189">Ne ressembles-tu pas à l'épouse suprême ?</l><l id="190">N'es-tu pas la Psyché réelle ? L'Amour t'aime !</l><l id="191">L'Amour, transfiguré, pur, viril et loyal,</l><l id="192">Par toi devient lumière et conquiert l'idéal.</l><l id="193">Laisse les appétits, dans l'ombre mensongère,</l><l id="194">S'agiter ! Toi, l'Aurore au front, libre, légère,</l><l id="195">Emplissant de clartés les plus obscurs séjours,</l><l id="196">Sois déesse, sois belle, et rayonne toujours !</l></lg><lg n="7"><l id="197">Voilà les conseils fiers qu'à travers les deux masques</l><l id="198">Corneille, en vers parfois rudes, parfois fantasques,</l><l id="199">Ne craint pas de donner, Patrie, à tes enfants.</l><l id="200">Permets-moi d'honorer ses mânes triomphants ;</l><l id="201">Permets que, les yeux pleins d'un orgueil juste et calme,</l><l id="202">J'apporte de ma main féminine la palme</l><l id="203">Dont il sied aujourd'hui d'orner son piédestal !</l><stage type="get/drop/turn/toward">Elle prend la palme que tient une des comédiennes, et la pose devant le buste du poète. Puis, se tournant vers le public.</stage></lg><lg n="8"><l id="204">Vous, en qui vibre encor sa rime au pur métal,</l><l id="205">Ô vous tous, selon lui poursuivez votre tâche ;</l><l id="206">Écartez à sa voix tout acte faux ou lâche ;</l><l id="207">Et, pour ne pas périr, pour vaincre, soyez tels</l><l id="208">Que ses héros : soyez dignes d'être immortels !</l><l id="209">Croyez au beau ; que vers le grand, le beau vous mène !</l><l id="210">Ressuscitez Rodrigue et vous aurez Chimène,</l><l id="211">Messieurs ! Et quand sur nous, Françaises d'aujourd'hui,</l><l id="212">Jaseront la laideur, l'ignorance et l'ennui,</l><l id="213">Défendez-nous bien haut, car c'est de notre argile,</l><l id="214">Si légère pourtant, si vaine, si fragile,</l><l id="215">Que Corneille a pétri de ses robustes mains</l><l id="216">Les plus purs et les plus vaillants des coeurs humains.</l></lg></poem></sp></div2>
-</div1>
-    </body>
-  </text>
+<div type="scene" n="1">
+                    <head/>
+<stage type="location">Autour du buste de Pierre Corneille, sont groupés les acteurs qui viennent de jouer le Cid ; une jeune femme, vêtue à la mode du dernier printemps, entre en scène et s'avance vers les comédiens.</stage>
+<sp who="#le-jeune-femme">
+                        <speaker>[LA JEUNE FEMME].</speaker>
+<poem type="poème">
+<lg n="1">
+	<l n="1">Seigneurs, soyez cléments ; excusez-moi, Chimène !</l>
+	<l n="2">Dans ce monde idéal, votre illustre domaine,</l>
+	<l n="3">Je pénètre, affrontant l'immortelle beauté,</l>
+	<l n="4">Moi, le réel qui passe et la modernité !</l>
+	<l n="5">Je n'ai jamais régné dans un lointain magique ;</l>
+	<l n="6">Sur moi, le blanc peplum paraîtrait peu tragique ;</l>
+	<l n="7">Et ce n'est pas aux bords du Tibre, antiquement,</l>
+	<l n="8">Que l'on a chiffonné mon léger vêtement.</l>
+	<l n="9">Déesse je ne suis, je ne suis pas Infante ;</l>
+	<l n="10">Je n'ai rien du passé. Je suis femme, et vivante ;</l>
+	<l n="11">Et — ne m'en veuillez point si j'y mets quelque prix,</l>
+	<l n="12">Seigneurs ! — Je suis Française, et même de Paris.</l>
+	<l n="13">Or, maîtrisant mon trouble et surmontant mes doutes,</l>
+	<l n="14">Je viens, moi, spectatrice émue, au nom de toutes,</l>
+	<l n="15">Du balcon sur la scène, offrir, sans mot cherché,</l>
+	<l n="16">Quelques fleurs à l'auteur du Cid et de Psyché,</l>
+	<l n="17">Dont nous avons voulu fêter l'anniversaire.</l>
+<stage type="give">Elle détache et consacre au poète les fleurs de son corsage.</stage>
+</lg>
+<lg n="2">
+	<l n="18">Corneille, nous t'aimons d'un amour très sincère,</l>
+	<l n="19">Nous, filles de la France et de la Liberté,</l>
+	<l n="20">Parce que ta naïve et mâle austérité</l>
+	<l n="21">A su profondément sentir et faire entendre</l>
+	<l n="22">Tout ce qu'il est en nous d'héroïque et de tendre,</l>
+	<l n="23">Tout ce qu'en son instinct notre coeur ignorant</l>
+	<l n="24">Garde, et peut révéler, de vrai, de pur, de grand.</l>
+	<l n="25">Nous t'aimons d'autant plus, ô bienfaisant génie,</l>
+	<l n="26">Que nous sommes en proie à plus de calomnie.</l>
+	<l n="27">Hélas ! Que n'ont pas dit depuis peu contre nous</l>
+	<l n="28">Les gens d'esprit, les sots, les pédants, les jaloux,</l>
+	<l n="29">Les écoliers amers, les doucereux bellâtres !</l>
+	<l n="30">En prose, en vers, dans les salons, dans les théâtres,</l>
+	<l n="31">Le grave psychologue et le conteur galant</l>
+	<l n="32">Nous accablent, avec plus ou moins de talent,</l>
+	<l n="33">D'un pessimisme noir, brutal et tyrannique,</l>
+	<l n="34">Fait de brume allemande et de spleen britannique,</l>
+	<l n="35">Qui ternit l'or du ciel, qui flétrit l'âme en fleur,</l>
+	<l n="36">Qui change tout désir, toute joie en douleur,</l>
+	<l n="37">Où la beauté n'est plus, souveraine torture,</l>
+	<l n="38">Qu'un piège éternisant le mal dans la nature !</l>
+	<l n="39">Ils traduisent, dès qu'il s'agit de nous juger,</l>
+	<l n="40">Les arguments haineux d'un sophiste étranger ;</l>
+	<l n="41">Et quand on veut de nous un portrait plus fidèle,</l>
+	<l n="42">C'est quelque ange... déchu qu'ils prennent pour modèle,</l>
+	<l n="43">L'exhibant, pour avoir un succès plus certain,</l>
+	<l n="44">Dans un style à la fois vandale et byzantin.</l>
+	<l n="45">Devant leur joli monstre, on trouve Messaline</l>
+	<l n="46">Plus blanche que la blanche et sainte mousseline ;</l>
+	<l n="47">Un naïf doute-t-il de ce portrait charmant,</l>
+	<l n="48">Les amuseurs du jour le raillent finement.</l>
+	<l n="49">L'Europe, qui de loin nous guette et nous envie,</l>
+	<l n="50">Les écoute en riant, les prend au mot, ravie,</l>
+	<l n="51">Ajoute son gros sel, surcharge chaque trait,</l>
+	<l n="52">Vient chez nous en criant : « Je vais au cabaret ! »</l>
+	<l n="53">S'attable sans façon, court partout, fait la fête,</l>
+	<l n="54">Rentre, reprend son air guindé, cite un prophète,</l>
+	<l n="55">Et compare Paris, dévotement, sans fiel,</l>
+	<l n="56">Aux villes que brûla jadis le feu du ciel.</l>
+</lg>
+<lg n="3">
+	<l n="57">Poète devant qui le plus fier est modeste,</l>
+	<l n="58">Ô toi qui fis pleurer Condé, je t'en atteste,</l>
+	<l n="59">Ces fous ne savent pas ce qu'ils disent. Et si</l>
+	<l n="60">Des mystificateurs, qu'on mystifie aussi,</l>
+	<l n="61">Font de la décadence en rimes transcendantes,</l>
+	<l n="62">Il n'est point parmi nous beaucoup de décadentes.</l>
+	<l n="63">Lorsqu'on n'a pas dans l'âme un coin du grand ciel bleu,</l>
+	<l n="64">On sait mal nous aimer et l'on nous connaît peu,</l>
+	<l n="65">Quoi qu'on ait de science ou de galanterie.</l>
+	<l n="66">Les habiles, malgré l'art de leur flatterie,</l>
+	<l n="67">Les importants, les fats, malgré leurs airs vainqueurs,</l>
+	<l n="68">Ne trouveront jamais la clef d'or de nos coeurs.</l>
+	<l n="69">Elle était dans ta main, poète, la clef sainte !</l>
+	<l n="70">Car tu la méritais ; car, si ta tempe est ceinte</l>
+	<l n="71">Du chêne et du laurier toujours verts, c'est que, toi,</l>
+	<l n="72">Tu vis la vérité sublime, ayant la foi !</l>
+	<l n="73">Tes guerrières d'antan, tes princesses, tes reines,</l>
+	<l n="74">Tes martyres marchant au ciel en souveraines,</l>
+	<l n="75">Où donc as-tu connu leur intime beauté ?</l>
+	<l n="76">Est-ce à Sparte ? Est-ce à Rome ? As-tu jamais été</l>
+	<l n="77">Conquérir leur secret dans la Castille Vieille ?</l>
+	<l n="78">Non ! Tu n'as pas cherché si loin cette merveille ;</l>
+	<l n="79">Elle était sous tes yeux, elle éclatait au jour,</l>
+	<l n="80">À Paris, à Rouen, à la ville, à la cour.</l>
+	<l n="81">Dans la soeur de Pascal respirait ta Pauline ;</l>
+	<l n="82">Émilie, en son coeur d'implacable orpheline,</l>
+	<l n="83">D'une belle Frondeuse a l'orgueil léonin ;</l>
+	<l n="84">Le nom de Cornélie est ton nom féminin.</l>
+</lg>
+<lg n="4">
+	<l n="85">C'est l'âme du pays qui fait le vrai poète,</l>
+	<l n="86">Et qui, légère, ailée, ainsi que l'alouette,</l>
+	<l n="87">Chante, comme en plein ciel, dans les poèmes d'or.</l>
+	<l n="88">L'idéal, après tout, c'est le réel encor ;</l>
+	<l n="89">C'est le réel plus vrai, plus semblable à lui-même,</l>
+	<l n="90">Qui sait mieux ce qu'il veut, qui voit mieux ce qu'il aime,</l>
+	<l n="91">Et qui, prenant son vol, sans tarder, sans peser,</l>
+	<l n="92">Va cueillir dans le rêve un immortel baiser.</l>
+	<l n="93">Chaque patrie, en sa légende, en son histoire,</l>
+	<l n="94">Se fait femme, aux grands jours de deuil ou de victoire,</l>
+	<l n="95">Et dans une charmeuse agréable à ses dieux</l>
+	<l n="96">S'incarne, se résume, et se révèle aux yeux.</l>
+	<l n="97">Ruth, Esther et Judith ont la Judée en elles ;</l>
+	<l n="98">Hélène a le ciel grec au fond de ses prunelles,</l>
+<note type="C">Ophélie est une personnage d'Hamlet de Shakespeare/</note>
+	<l n="99">Et la blonde Ophélie est la fleur d'outre-mer.</l>
+	<l n="100">Notre France a donné ce qu'elle a de plus cher</l>
+	<l n="101">À Jeanne, cette vierge, à la bonne Lorraine</l>
+	<l n="102">Dont la candeur sans tache et la grandeur sereine,</l>
+	<l n="103">Dominant de si haut nos vallons orageux,</l>
+	<l n="104">Règnent sur nous, au loin, comme un sommet neigeux.</l>
+	<l n="105">Tes héroïnes sont ses soeurs en poésie,</l>
+	<l n="106">Corneille ! Et quand soudain l'une ou l'autre est saisie</l>
+	<l n="107">Du saint transport, on sent qu'elles aussi, parfois,</l>
+	<l n="108">Elles prêtent l'oreille à de divines voix.</l>
+	<l n="109">Comme tout fait briller d'une lumière exquise</l>
+	<l n="110">Leur généreux courage ! Et comme la marquise</l>
+	<l n="111">De Sévigné sut bien expliquer leur succès !</l>
+	<l n="112">À leur bouche, en leur coeur, comme tout est français !</l>
+	<l n="113">La Française, la vraie, elle est là tout entière,</l>
+	<l n="114">Réfléchie, et pourtant vive et primesautière,</l>
+	<l n="115">Très personnelle et très ondoyante à la fois ;</l>
+	<l n="116">Ignorant l'égoïsme et l'ennui des coeurs froids,</l>
+	<l n="117">Docile et non servile, ardente mais lucide,</l>
+	<l n="118">Ayant l'éclair profond et le mot qui décide ;</l>
+	<l n="119">Possédant la justesse et la précision</l>
+	<l n="120">Du verbe qu'elle parle avec émotion,</l>
+	<l n="121">Introduisant partout d'une main fine et sûre,</l>
+	<l n="122">Sans paraître y toucher, le rythme et la mesure ;</l>
+	<l n="123">De la pointe de son aiguille dégonflant</l>
+	<l n="124">Toute vanité creuse et tout faste insolent ;</l>
+	<l n="125">Communiquant sa vie aux plus petites choses,</l>
+	<l n="126">Alliant avec grâce, et sans fadeurs moroses,</l>
+	<l n="127">Le bon goût au bon sens, la réserve à l'esprit,</l>
+	<l n="128">L'intrépidité calme à l'espoir qui sourit ;</l>
+	<l n="129">S'élevant au sublime à force d'être sage,</l>
+	<l n="130">Sans fausser la nature et sans froisser l'usage ;</l>
+	<l n="131">Trouvant dans le devoir, noblement accepté,</l>
+	<l n="132">Le charme d'une douce et pure volupté,</l>
+	<l n="133">Jugeant le bien trop beau pour que l'on s'en écarte ;</l>
+	<l n="134">Athénienne avec la volonté de Sparte,</l>
+	<l n="135">Et gouvernant son coeur d'assez haute façon</l>
+	<l n="136">Pour que l'amour y soit l'instinct de la raison.</l>
+</lg>
+<lg n="5">
+	<l n="137">Telle était autrefois, ô rayonnante aurore,</l>
+	<l n="138">La Française accomplie ! Et telle elle est encore ;</l>
+	<l n="139">Telle on l'a retrouvée, intacte, à ciel ouvert,</l>
+	<l n="140">Dans l'épreuve terrible où l'on a tant souffert.</l>
+	<l n="141">Malgré l'isolement, long, sourd, plein de ténèbres,</l>
+	<l n="142">Malgré l'hiver, la faim, et les éclats funèbres</l>
+	<l n="143">Qui, dans l'ombre, abattaient les blessés par monceaux,</l>
+	<l n="144">Malgré les cris plaintifs qui sortaient des berceaux,</l>
+	<l n="145">Vous n'avez pas fléchi, pâles Parisiennes !</l>
+	<l n="146">Vous fîtes honte au sort. Toutes, patriciennes</l>
+	<l n="147">Ou peuple, les grands noms, les doigts fins, les beaux yeux,</l>
+	<l n="148">L'artiste au chant si doux, l'âme aspirant aux cieux,</l>
+	<l n="149">Toutes, d'un libre accord, filles, femmes et mères,</l>
+	<l n="150">Vous repoussiez la trêve offerte ; et, sans chimères,</l>
+	<l n="151">Mais sans peur, le front haut, fronçant votre sourcil,</l>
+	<l n="152">Vous ramassiez, de vos mains frêles, le fusil</l>
+	<l n="153">Que l'homme avait jeté, morne, avec un blasphème ;</l>
+	<l n="154">Vous baisiez l'arme sainte, et, d'un élan suprême,</l>
+	<l n="155">La lui rendiez, disant, tout bas, loin des clameurs :</l>
+	<l n="156">« Je t'aime, va te battre, et s'il faut mourir, meurs ! »</l>
+</lg>
+<lg n="6">
+	<l n="157">Mais, en causant, j'ai fait une étrange sortie.</l>
+	<l n="158">Je crois que j'ai manqué pour vous de modestie,</l>
+	<l n="159">Mesdames ; et je crois qu'en ce jour glorieux</l>
+	<l n="160">Des larmes, je ne sais comment, mouillent mes yeux.</l>
+	<l n="161">Pardon ! Je suis distraite, encor que je surveille</l>
+	<l n="162">Mes paroles ; d'ailleurs, c'est la faute à... Corneille.</l>
+	<l n="163">Quittons la tragédie et sourions un peu !</l>
+	<l n="164">On peut être aussi grand avec un plus doux jeu ;</l>
+	<l n="165">Thalie, en qui fleurit une âme plus humaine,</l>
+	<l n="166">N'en reste pas moins muse et soeur de Melpomène ;</l>
+	<l n="167">Et Corneille eut parfois, - il était tendre et fin, -</l>
+	<l n="168">Bonhomme de génie, un sourire divin.</l>
+	<l n="169">Quoiqu'il fut déjà vieux et qu'il semblât plus gauche,</l>
+	<l n="170">Molière, un jour, n'ayant pu faire que l'ébauche</l>
+	<l n="171">D'une pièce promise au roi, vint, empêché,</l>
+	<l n="172">Le prier de l'écrire. Il écrivit Psyché.</l>
+	<l n="173">Et jamais, ô Patrie, ô moderne Cybèle,</l>
+	<l n="174">France, tu n'apparus plus touchante et plus belle</l>
+	<l n="175">Que dans cette figure ailée, âme et rayon,</l>
+	<l n="176">Fille d'un Prométhée et d'un Pygmalion.</l>
+	<l n="177">L'Amour antique, enfant dont Vénus est la mère,</l>
+	<l n="178">Est un bambin aveugle, un caprice éphémère ;</l>
+	<l n="179">C'est l'archer minuscule et prompt, le nain railleur,</l>
+	<l n="180">L'irrésistible dieu de la matière en fleur</l>
+	<l n="181">Que l'Asie idolâtre et qui désarme Rome.</l>
+	<l n="182">- En épousant Psyché, l'âme, il devient un homme.</l>
+	<l n="183">Délivré du bandeau qui lui couvrait les yeux,</l>
+	<l n="184">Il s'ouvre aux profondeurs lumineuses des cieux,</l>
+	<l n="185">S'élance, et, triomphant de la Mort souterraine,</l>
+	<l n="186">Chez les Olympiens conduit, blanche et sereine,</l>
+	<l n="187">À côté de Vénus, l'âme, cette Beauté.</l>
+	<l n="188">Ô France, en tes douleurs, en ta prospérité,</l>
+	<l n="189">Ne ressembles-tu pas à l'épouse suprême ?</l>
+	<l n="190">N'es-tu pas la Psyché réelle ? L'Amour t'aime !</l>
+	<l n="191">L'Amour, transfiguré, pur, viril et loyal,</l>
+	<l n="192">Par toi devient lumière et conquiert l'idéal.</l>
+	<l n="193">Laisse les appétits, dans l'ombre mensongère,</l>
+	<l n="194">S'agiter ! Toi, l'Aurore au front, libre, légère,</l>
+	<l n="195">Emplissant de clartés les plus obscurs séjours,</l>
+	<l n="196">Sois déesse, sois belle, et rayonne toujours !</l>
+</lg>
+<lg n="7">
+	<l n="197">Voilà les conseils fiers qu'à travers les deux masques</l>
+	<l n="198">Corneille, en vers parfois rudes, parfois fantasques,</l>
+	<l n="199">Ne craint pas de donner, Patrie, à tes enfants.</l>
+	<l n="200">Permets-moi d'honorer ses mânes triomphants ;</l>
+	<l n="201">Permets que, les yeux pleins d'un orgueil juste et calme,</l>
+	<l n="202">J'apporte de ma main féminine la palme</l>
+	<l n="203">Dont il sied aujourd'hui d'orner son piédestal !</l>
+<stage type="get/drop/turn/toward">Elle prend la palme que tient une des comédiennes, et la pose devant le buste du poète. Puis, se tournant vers le public.</stage>
+</lg>
+<lg n="8">
+	<l n="204">Vous, en qui vibre encor sa rime au pur métal,</l>
+	<l n="205">Ô vous tous, selon lui poursuivez votre tâche ;</l>
+	<l n="206">Écartez à sa voix tout acte faux ou lâche ;</l>
+	<l n="207">Et, pour ne pas périr, pour vaincre, soyez tels</l>
+	<l n="208">Que ses héros : soyez dignes d'être immortels !</l>
+	<l n="209">Croyez au beau ; que vers le grand, le beau vous mène !</l>
+	<l n="210">Ressuscitez Rodrigue et vous aurez Chimène,</l>
+	<l n="211">Messieurs ! Et quand sur nous, Françaises d'aujourd'hui,</l>
+	<l n="212">Jaseront la laideur, l'ignorance et l'ennui,</l>
+	<l n="213">Défendez-nous bien haut, car c'est de notre argile,</l>
+	<l n="214">Si légère pourtant, si vaine, si fragile,</l>
+	<l n="215">Que Corneille a pétri de ses robustes mains</l>
+	<l n="216">Les plus purs et les plus vaillants des coeurs humains.</l>
+</lg>
+</poem>
+</sp>
+</div>
+</div>
+</body>
+</text>
 </TEI>

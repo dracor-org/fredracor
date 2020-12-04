@@ -1,1521 +1,1587 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="../css/tei.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>LES GALANTS RIDICULES, COMÉDIE</title>
-        <author ISNI="0000 0000 4320 3474">CHEVALIER, Jean Simonin dit</author>
-      </titleStmt>
-      <publicationStmt>
-        <editor>Texte établi par Ernest FIEVRE, mars 2018.</editor>
-        <publisher>publié par Paul FIEVRE, avril 2018.</publisher>
-        <idno>CHEVALIER_GALANTSRIDICULES</idno>
-        <rights>Creative Commons BY-NC-SA</rights>
-        <idno type="orig">CHEVALIER_GALANTSRIDICULES</idno>
-        <idno type="dracor" xml:base="https://dracor.org/id/">fre000274</idno>
-      </publicationStmt>
-      <SourceDesc>
-        <genre>Comédie</genre>
-        <inspiration>moeurs françaises</inspiration>
-        <structure>Un acte</structure>
-        <type>vers</type>
-        <periode>1671-1680</periode>
-        <taille>500-750</taille>
-        <permalien/>
-      </SourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text>
-    <front>
-      <docTitle>
-        <titlePart type="main">LES GALANTS RIDICULES</titlePart>
-        <titlePart type="sub">OU LES AMOURS DE GUILLOT ET DE RAGOTIN. </titlePart>
-        <titlePart type="sub">Comédie représentée sur le Théâtre Royal du Marais.</titlePart>
-      </docTitle>
-      <docDate value="1672">M. DC. LXII. Avec Privilège du Roi.</docDate>
-      <docAuthor id="CHEVALIER, Jean Simonin dit" bio="chevalier">Par le Sieur CHEVALIER.</docAuthor>
-      <docImprint>
-        <imprimeur id="MOETJENS">Chez PIERRE BIENFAIT,  devant la Sainte Chapelle à l'Image Saint Pierre.</imprimeur>
-      </docImprint>
-      <div type="dedicace">
-        <adresse>À MADMOISELLE M.M.</adresse>
-        <head>Mademoiselle,</head>
-        <p>Il faut que je vous avoue que jamais homme ne se trouva plus embarrassé que je le fus, lorsque j'entrepris de vous adresser cette Comédie, parce que vous la donner c'est la donner à tout le monde, et que vous méritez sans doute quelque chose de plus particulier, n'ayant rien en vous que de fort extraordinaire, étant incomparable en tout comme vous êtes : cependant je me trouve contraint de faire comme les plus grands hommes ont fait, qui faisant imprimer leurs écrits, ce qui les rend communs à tous, se sont toujours servis des termes, je vous les offre, je vous les donne, je vous les dédie, je vous les consacre, comme si ne les eussent donnés qu'à une seule personne, et pourtant vous voyez que c'est en faire un présent à toute la nature, c'est pourquoi j'aurais bien voulu trouver quelque autre moyen, afin que cette Comédie pût être à vous seule : outre que j'aurais eu bien lieu de la joie qu'il n'y eut eu que vous à vous railler de moi et de mes ouvrages, sans être encor exposé à la censure de tout le monde, mais ce qui me console en ceci est, que je me suis raillé de moi-même le premier, ainsi cela ne me surprendra point ; peut-être me direz-vous que ce que je dis est ridicule, j'en demeurerai d'accord, et comme ma pièce se nomme les Galants Ridicules, je prétends que tout s'ensuive, et que l'Épître ne déroge point à l'ouvrage ; au reste si les Comédies sont bonnes quand elles font rire, je puis dire que celle-ci n'est pas mauvaise : mais comme quelquefois ces sortes de choses excitent à rire à force d'être méchantes, je ne sais ce que j'en dois croire, quoi qu'il en soit, je vous la donne comme si elle était meilleure, vous assurant que si j'eusse pu faire un chef-d'oeuvre il vous eût été présenté avec autant de zèle et d'affection que cette petite pièce vous est offerte par </p>
-        <p>Votre très humble,</p>
-        <p>et très obéissant serviteur,</p>
-        <p>CHEVALIER.</p>
-      </div>
-      <castList>
-        <head>LES ACTEURS.</head>
-        <castItem><role id="ANGÉLIQUE" sex="1" type="H" statut="bourgeois" age="A" stat_amour="Léandre">ANGÉLIQUE</role>, Fille du Docteur, Amante de Léandre.</castItem>
-        <castItem><role id="BÉATRIX" sex="1" type="H" statut="suivante" age="A" stat_amour="néant">BÉATRIX</role>, Suivante d'Angélique.</castItem>
-        <castItem><role id="RAGOTIN" sex="1" type="H" statut="valet" age="A" stat_amour="Béatrix">RAGOTIN</role>, Valet de Guillot, Amoureux de Béatrix.</castItem>
-        <castItem><role id="GUILLOT" sex="1" type="H" statut="bourgeois" age="A" stat_amour="Angélique">GUILLOT</role>, Amoureux d'Angélique.</castItem>
-        <castItem><role id="LE DOCTEUR" sex="1" type="H" statut="docteur" age="A" stat_amour="néant">LE DOCTEUR</role>. Père d'Angélique.</castItem>
-        <castItem><role id="LÉANDRE" sex="1" type="H" statut="bourgeois" age="A" stat_amour="Angélique">LÉANDRE</role>, Amant d'Angélique.</castItem>
-        <castItem><role id="LE BARON DE LA TOPINIÈRE" sex="1" type="H" statut="baron" age="A" stat_amour="Angélique">LE BARON DE LA TOPINIÈRE</role>, Amoureux d'Angélique.</castItem>
-        <castItem><role id="TARASQUIN" sex="1" type="H" statut="valet" age="A" stat_amour="néant">TARASQUIN</role>, Valet du Baron.</castItem>
-      </castList>
-      <set location="Paris" country="France" periode="XVIIème" link=""/>
-    </front>
-    <body>
-      <div1 type="act" n="1">
-        <head>LE CARTEL DE  GUILLOT.</head>
-        <div2 type="scene" n="1">
-          <head>SCÈNE I. Béatrix, Léandre.</head>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <note type="L">Ici, il manque tout le début de la 1ère Scène. </note>
-            <l id="1">D'emportement, de barbarie, </l>
-            <l id="2">Le père de ce digne objet </l>
-            <l id="3">M'a su quereller sans sujet, </l>
-            <l id="4">Quand j'espérais par mon hommage </l>
-            <l id="5">Cette merveille en mariage, </l>
-            <l id="6">Bien loin d'avoir cette beauté </l>
-            <l id="7">Tu vois comme il m'a rebuté. </l>
-          </sp>
-          <sp who="BÉATRIX">
-            <speaker>BÉATRIX.</speaker>
-            <l id="8">Léandre j'ai vu cette chose </l>
-            <l id="9">Mais enfin qu'elle ne vous cause, </l>
-            <l id="10">Aucun sujet d'être alarmé </l>
-            <l id="11">Étant parfaitement aimé, </l>
-            <l id="12">Car vous savez que ma maîtresse </l>
-            <l id="13">A pour vous beaucoup de tendresse, </l>
-            <l id="14">Donc au lieu de vous affliger </l>
-            <l id="15">Songez à ne rien négliger, </l>
-            <l id="16">Pour trouver les moyens de plaire </l>
-            <l id="17">À cet esprit bourru de père, </l>
-            <l id="18">Et dedans ce moment fatal </l>
-            <l id="19">Faites le bien contre le mal, </l>
-            <l id="20">Lorsqu'il vous montre son caprice </l>
-            <l id="21">Tachez à lui rendre service, </l>
-            <l id="22">Épiez en l'occasion </l>
-            <l id="23">Parfois une belle action, </l>
-            <l id="24">Donne aux choses une autre face. </l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="25">Ah ! Béatrix je te rends grâce, </l>
-            <l id="26">Oui depuis que tu m'as parlé </l>
-            <l id="27">Je me trouve un peu consolé, </l>
-            <l id="28">Je vais donc faire mon possible </l>
-            <l id="29">Pour servir ce père insensible, </l>
-            <l id="30">Cherchant s'il se peut le moyen </l>
-            <l id="31">De faire de mon mal un bien, </l>
-            <l id="32">Toi Béatrix, près de ma belle </l>
-            <l id="33">Jusqu'à la fin sois-moi fidèle, </l>
-            <l id="34">Moi je ferai de mon côté. </l>
-          </sp>
-          <sp who="BÉATRIX">
-            <speaker>BÉATRIX.</speaker>
-            <l id="35">Ne soyez plus inquiété, </l>
-            <l id="36">Et mettez en repos votre âme </l>
-            <l id="37">Vous l'aurez aujourd'hui pour femme, </l>
-            <l id="38">Mais quelqu'un s'en vient en ce lieu </l>
-            <l id="39" syll="6" part="i">Faites ce que j'ai dit. </l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="39" syll="2" part="f">Adieu. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="2">
-          <head>SCÈNE II. Guillot, Ragotin.</head>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="40">Ragotin l'amour me tourmente </l>
-            <l id="41">Je brûle d'une flamme ardente, </l>
-            <l id="42">Depuis que certain oeil vainqueur </l>
-            <l id="43">A mis le feu dedans mon coeur, </l>
-            <l id="44">En un mot c'est l'oeil d'Angélique </l>
-            <l id="45">Qui me perturbe et qui me pique, </l>
-            <l id="46">Oui ce petit fripon d'objet </l>
-            <note type="L">Trébuchet : Prendre quelqu'un au trébuchet, pour dire, L'engager par adresse, par de belles apparences, à faire une chose qui lui est désavantageuse, ou qui est contraire à ce qu'il avait résolu. [Acad 1762]</note>
-            <l id="47">A pris mon âme au trébuchet. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="48">Il est vrai qu'Angélique est belle </l>
-            <l id="49">Mais vous n'êtes pas moins beau qu'elle. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="50">Et bien Ragotin que dis-tu </l>
-            <l id="51">De l'habit dont je suis vêtu, </l>
-            <l id="52">La petite oie est-elle belle </l>
-            <note type="L">Empaumer : Au fig. se rendre maître de l'esprit d'une personne. [FC]</note>
-            <l id="53">Pour empaumer la Damoiselle, </l>
-            <l id="54">Et crois-tu qu'avec tant d'appas </l>
-            <l id="55">La drôlesse n'en tienne pas, </l>
-            <l id="56">Le Comte de la Guillotière </l>
-            <l id="57">Lui va donner dans la visière, </l>
-            <l id="58">Et d'abord qu'elle me verra </l>
-            <l id="59">Dieu sait si l'amour la prendra, </l>
-            <l id="60">De même qu'il m'a bien su prendre.</l>
-            <l id="61">Mais peut-on résister au tendre, </l>
-            <l id="62">Ce diable de tendre est fâcheux </l>
-            <l id="63">Et qui s'en pare est bien heureux. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="64">Pour moi je crois que qui s'en pare </l>
-            <l id="65">Possède un secret grand et rare, </l>
-            <l id="66">Et si le pauvre Ragotin </l>
-            <l id="67">S'en parait, il serait bien fin. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="68">Quoi le même mal te tourmente ? </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="69">Monsieur j'en tiens pour la Suivante, </l>
-            <l id="70">Et cette traîtresse aux yeux doux </l>
-            <l id="71">A mis aussi le feu chez nous. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="72">Nous voilà donc bien à notre aise </l>
-            <l id="73">Moi tout de feu, toi tout de braise </l>
-            <l id="74">Nous ne chercherons point l'Enfer </l>
-            <l id="75">À dessein de nous y chauffer, </l>
-            <l id="76">Je crois que nos ardeurs extrêmes </l>
-            <note type="L">Consommer : Achever, accomplir. [L]</note>
-            <l id="77">Consommeraient les diables mêmes, </l>
-            <l id="78">Et qu'en nous voyant ces démons </l>
-            <l id="79">Se transformeraient en charbons, </l>
-            <l id="80">Mais qu'ils brûlent, qu'ils se rôtissent, </l>
-            <l id="81">Qu'ils consomment, qu'ils s'engloutissent, </l>
-            <l id="82">Qu'ils gèlent, qu'ils soient tout glaçons </l>
-            <l id="83">Tout cela j'en dis, des chansons, </l>
-            <l id="84">Pourvu que ma chère Maîtresse </l>
-            <l id="85">Montre pour moi quelque tendresse, </l>
-            <l id="86">Et que la belle à mon abord </l>
-            <l id="87">Puisse être avecque moi d'accord, </l>
-            <l id="88">Car j'aurais l'âme mal contente </l>
-            <l id="89">Si ma femme était discordante, </l>
-            <l id="90">Ainsi pour nous bien accorder </l>
-            <l id="91">Il faut que tu l'aille aborder, </l>
-            <l id="92">Vois donc ce qu'il faut que tu fasses </l>
-            <l id="93">Pour me mettre en ses bonnes grâces </l>
-            <l id="94">Va-t'en lui dire de ma part </l>
-            <l id="95">Que c'est et sans feinte et sans fart, </l>
-            <l id="96">Que le brave et l'illustre Comte, </l>
-            <note type="L">Compte : On dit aussi, qu'un homme en a pour son compte, quand il lui est arrivé quelque malheur, quelque disgrâce, quand il a reçu quelque mauvais traitement. [T]</note>
-            <l id="97">En tient pour elle pour son compte, </l>
-            <l id="98">Que quand nous nous assemblerons </l>
-            <l id="99">Qu'ensemble enfin nous compterons, </l>
-            <l id="100">Et que pour la faire Comtesse </l>
-            <l id="101">Je viens la voir avec vitesse, </l>
-            <l id="102">Qu'elle sait si fort éclater </l>
-            <l id="103">Que je ne puis au mieux compter, </l>
-            <l id="104">Si bien que je veux qu'elle compte </l>
-            <l id="105">Avec moi sans aucune honte, </l>
-            <l id="106">Car en ne voulant pas compter </l>
-            <l id="107">Je pourrais bien me mécompter, </l>
-            <l id="108">Parce qu'en comptant sans son hôte </l>
-            <l id="109">Bien souvent l'on se trouve en faute, </l>
-            <l id="110">C'est pourquoi l'on dit d'une voix </l>
-            <l id="111">Que sans hôte on compte deux fois, </l>
-            <l id="112">Je veux donc compter avec elle </l>
-            <l id="113">D'une façon toute nouvelle, </l>
-            <l id="114">Puisque c'est un compte amoureux </l>
-            <l id="115">Qu'il nous faudra vider tous deux. </l>
-            <l id="116">Va la voir pour me satisfaire. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="117">Moi Monsieur j'ai mon compte à faire, </l>
-            <l id="118">Depuis que je suis avec vous </l>
-            <l id="119">Je n'ai pu recevoir deux sous. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="120">Tu te plains la Ragotinière. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="121">Oui Monsieur de la Guillotière. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="122">Je compterai je te promets. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="123">Oui, mais vous ne payez jamais, </l>
-            <l id="124">Vous comptez avec grand délice </l>
-            <l id="125">Mais payer n'est pas votre vice. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="126">Ragotin tu me fais affront. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="127">On fait payer à qui répond </l>
-            <l id="128">Ne répondez pas davantage. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="129">Va-t'en donc faire le message </l>
-            <l id="130">Dont naguère je t'ai prié. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="131">J'irai quand vous m'aurez payé. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="132">Ragotin, vois que je m'enflamme </l>
-            <l id="133">Veux-tu laisser griller mon âme, </l>
-            <l id="134">Parmi mille brûlants transports </l>
-            <note type="L">Fricasser : Fig. et très familièrement. Faire périr, perdre. [L]</note>
-            <l id="135">Qui me vont fricasser le corps. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="136">Votre amour n'est pas plus ardente </l>
-            <l id="137">Que la mienne est pour la Suivante, </l>
-            <l id="138">C'est pourquoi rôtissons, grillons, </l>
-            <l id="139">Consommons, brûlons, pétillons, </l>
-            <l id="140">Que tout le feu de la nature </l>
-            <note type="L">Fressure : Fig. et très familièrement. Le coeur, le foie où s'excitent les désirs. [L]</note>
-            <l id="141">Tombe dessus notre fressure, </l>
-            <l id="142">Quand nous deviendrions plus secs </l>
-            <note type="L">Saurets : Le même que saure, dont il est un diminutif. Maigre comme un hareng sauret, très maigre. [L]</note>
-            <l id="143">Que les harengs les plus saurets, </l>
-            <l id="144">Qu'amour nous réduirait en poudre </l>
-            <l id="145">Vous ne me pourriez pas résoudre, </l>
-            <note type="L">Fait : La part qui revient à quelqu'un. [L]</note>
-            <l id="146">À ne rien faire qu'ayant mon fait. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="147">Ah, quel obstiné de valet, </l>
-            <l id="148">Il nous laisserait tous deux cuire </l>
-            <l id="149">Tous deux sécher et tous deux frire, </l>
-            <l id="150">Si je ne le rendais content </l>
-            <l id="151">Il faut lui donner de l'argent, </l>
-            <l id="152">Tiens, Ragotin, voilà tes gages. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="153">Maintenant pour tous vos messages, </l>
-            <l id="154">Vous n'avez qu'à me commander. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="155">Va donc promptement aborder, </l>
-            <note type="L">Franchise : La liberté dont on jouit en un lieu. [L]</note>
-            <l id="156">La voleuse de ma franchise </l>
-            <l id="157">Car la brigande me la prise, </l>
-            <l id="158">Enfin tu lui feras savoir </l>
-            <note type="L">Gros : Qui a envie de, désireux. [L]</note>
-            <l id="159">Que je suis tout gros de la voir, </l>
-            <l id="160">Tiens donc toute prête ta langue </l>
-            <l id="161">À lui faire cette harangue, </l>
-            <l id="162">Heurte à sa porte la voilà. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="163">Holà, belle Angélique, holà, </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="3">
-          <head>SCÈNE III. Béatrix, Ragotin.</head>
-          <sp who="BÉATRIX">
-            <speaker>BÉATRIX.</speaker>
-            <l id="164">Que vous plaît-il de ma maîtresse. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="165">Je voudrais lui parler traîtresse. </l>
-          </sp>
-          <sp who="BÉATRIX">
-            <speaker>BÉATRIX.</speaker>
-            <l id="166">Pourquoi m'appeler de ce nom, </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="167">Excuse-moi petit tendron, </l>
-            <l id="168">Malade de ma maladie </l>
-            <l id="169">On peut bien dire une folie, </l>
-            <l id="170">Et de la dire j'ai bien lieu </l>
-            <l id="171">Puisqu'un petit Diable de Dieu, </l>
-            <l id="172">Cet amour ou plutôt ce traître </l>
-            <l id="173">M'a fait en te voyant paraître, </l>
-            <l id="174">Appeler de cette façon </l>
-            <l id="175">Comme il use de trahison, </l>
-            <l id="176">Qu'il a filouté le coeur nôtre </l>
-            <l id="177">Je vous avais pris l'un pour l'autre, </l>
-            <l id="178">Tu ressemble à ce friponneau </l>
-            <l id="179">Tout ainsi que deux gouttes d'eau, </l>
-            <l id="180">Mais loin de t'appeler traîtresse </l>
-            <l id="181">Je te veux nommer ma déesse, </l>
-            <l id="182">Belle déesse, mon souci, </l>
-            <l id="183">Fais venir ta Maîtresse ici. </l>
-          </sp>
-          <sp who="BÉATRIX">
-            <speaker>BÉATRIX.</speaker>
-            <l id="184">Mais pourquoi, que veux-tu lui dire ? </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="185">Pour lui déclarer le Martyre, </l>
-            <l id="186">De Monsieur_le_Comte Guillot </l>
-            <l id="187">Dont je suis le valet Ragot. </l>
-          </sp>
-          <sp who="BÉATRIX">
-            <speaker>BÉATRIX.</speaker>
-            <l id="188">Le Comte de la Guillotière. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="189" syll="1" part="i">Oui. </l>
-          </sp>
-          <sp who="BÉATRIX">
-            <speaker>BÉATRIX.</speaker>
-            <l id="189" syll="7" part="f">J'y vais, la Ragotinière, </l>
-            <l id="190">Madame, on vous demande en bas. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="4">
-          <head>SCÈNE IV. Angélique, Béatrix, Ragotin.</head>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <note type="L">Malepeste : Imprécation qu'on fait contre quelque chose, et quelquefois avec admiration. [M]</note>
-            <l id="191">Malepeste qu'elle a d'appas, </l>
-            <l id="192">Ma foi la Maîtresse me tente </l>
-            <l id="193">Tout autant comme la Suivante, </l>
-            <l id="194">Et quand je les vois toutes deux </l>
-            <l id="195">Je ne sais où porter mes yeux, </l>
-            <l id="196">Contentons-nous de la Soubrette </l>
-            <l id="197">La Maîtresse est sans doute faite, </l>
-            <l id="198">Pour mon Maître, il la doit avoir </l>
-            <l id="199">Çà faisons donc notre devoir, </l>
-            <l id="200">Madame, si mon éloquence, </l>
-            <l id="201">Se déploie en votre présence, </l>
-            <l id="202">C'est que mon Maître est de vos yeux </l>
-            <l id="203">Comme de vous fort amoureux, </l>
-            <l id="204">Mais c'est un amour sans semblable </l>
-            <l id="205">Il vous aime comme le diable, </l>
-            <l id="206">Il dit qu'il vous possèdera </l>
-            <note type="L">Belzébuth : Nom d'un démon. [L]</note>
-            <l id="207">Ou que Belzébuth vous aura, </l>
-            <l id="208">Et qu'enfin s'il ne vous possède </l>
-            <l id="209">Qu'il s'en va pour dernier remède, </l>
-            <l id="210">Se précipiter loin de vous </l>
-            <l id="211">Entre deux draps de lin bien doux. </l>
-          </sp>
-          <sp who="ANGÉLIQUE">
-            <speaker>ANGÉLIQUE.</speaker>
-            <l id="212">Pourquoi dire cette sottise. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="5">
-          <head>SCÈNE V. Angélique, Béatrix, Guillot, Ragotin.</head>
-          <sp stage="entrance/location" who="GUILLOT">
-            <speaker>GUILLOT, sort du coin du théâtre où il était caché.</speaker>
-            <l id="213">Ma belle, excusez la franchise, </l>
-            <l id="214">Ragotin venait en ce jour </l>
-            <l id="215">Pour vous découvrir mon amour, </l>
-            <l id="216">Mais sa maladroite personne </l>
-            <l id="217">Ne sait pas comme l'on raisonne, </l>
-            <l id="218">Car alors qu'il faut raisonner </l>
-            <note type="L">Rationiser : Terme usité seulement dans le style dogmatique. User de la raison. [L]</note>
-            <l id="219">Il faut bien ratiociner </l>
-            <l id="220">Et quand bien l'on ratiocine </l>
-            <l id="221">La raison en est bien plus fine, </l>
-            <l id="222">Ainsi raisonnant comme il faut </l>
-            <l id="223">On a le raisonnement haut ; </l>
-            <l id="224">Or donc la raison raisonnante </l>
-            <l id="225">D'elle-même est fort éloquente, </l>
-            <l id="226">Et comme enfin cette raison </l>
-            <l id="227">N'a rien en elle que de bon, </l>
-            <l id="228">Concluons qu'étant admirable </l>
-            <l id="229">La raison est bien raisonnable. </l>
-          </sp>
-          <sp stage="sing" who="RAGOTIN">
-            <speaker>RAGOTIN, chantant.</speaker>
-            <note type="C">La chanson ci-dessous rompt le rythme. Plus d'alternance de rimes : 2 féminines 2 masculines. Le chanteur ayant chanté 3 vers. Il manque pour le 2ème vers, un corresp. pour la rime.</note>
-            <l id="230">Et concluons par nos raisons </l>
-            <l id="231">Qu'il faut quitter l'eau de la Seine </l>
-            <l id="232">Pour les bateaux et les poissons. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="233">Ragotin voulez-vous vous taire ? </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="234">Que chacun fasse son affaire. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="235">Rare objet qui me perturbez. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <note type="L">Coquereau : Espèce de petit navire. [L]</note>
-            <note type="L">Embourber : Fig. Embourber quelqu'un dans une mauvaise affaire, l'y engager. [L]</note>
-            <l id="236">OEil coquereau qui m'embourbez. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="237">Je te défends de plus rien dire. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="238">Je veux déclarer mon martyre. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="239">Finirez-vous bientôt Ragot ? </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <note type="L">Écot : Fig. Parlez à votre écot, se dit à une personne se mêlant de parler à des gens qui ne lui adressent pas la parole. Parlez à votre écot, signifie parlez à votre compagnie, et non à nous. [L]</note>
-            <l id="240">Monsieur, parlez à votre écot, </l>
-            <l id="241">Je parle ici des amours nôtres </l>
-            <l id="242">Vous pouvez là parler des vôtres, </l>
-            <l id="243">Vous en avez permission </l>
-            <l id="244">Poussez donc votre passion, </l>
-            <l id="245">Moi je m'en vais pousser la mienne </l>
-            <l id="246">Ah, s'il faut qu'un jour je te tienne... </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="247">À la fin je me fâcherai </l>
-            <l id="248">Ragot je vous étrillerai. </l>
-          </sp>
-          <sp who="BÉATRIX">
-            <speaker>BÉATRIX.</speaker>
-            <l id="249">Tais-toi, laisse parler ton Maître. </l>
-          </sp>
-          <sp stage="toward" who="GUILLOT">
-            <speaker>GUILLOT, à Angélique.</speaker>
-            <l id="250">Pardonnez si j'ose paraître, </l>
-            <l id="251">À vos yeux les plus grands fripons </l>
-            <l id="252">Et d'amour les plus grands tisons, </l>
-            <l id="253">Qui soient dans le reste du monde </l>
-            <l id="254">Ils m'ont, ou je veux qu'on me tonde, </l>
-            <l id="255">Emmouraché d'une façon </l>
-            <note type="L">Court-bouillon : Liquide composé dans lequel on fait cuire le poisson. [L] ici sens figuré.</note>
-            <l id="256">Que j'en ai l'âme au court-bouillon, </l>
-            <note type="L">Compote : Fig. Avoir la tête, les yeux en compote ou à la compote, les avoir tout meurtris. [L]</note>
-            <l id="257">Le pauvre foie à la compote </l>
-            <note type="L">À la matelote, loc. adv. À la façon des matelots. </note>
-            <l id="258">La fressure à la matelote, </l>
-            <l id="259">Et le coeur en un tel ragoût </l>
-            <l id="260">Qu'il peut contenter votre goût, </l>
-            <l id="261">Vous êtes, je me donne au diable </l>
-            <l id="262">Une personne incomparable, </l>
-            <l id="263">Et la nature sur ma foi </l>
-            <l id="264">Vous a faite digne de moi. </l>
-            <l id="265">Ah, trop aimable pécheresse </l>
-            <l id="266">Si vous devenez ma Maîtresse, </l>
-            <l id="267">Qu'en satisfaisant mon désir, </l>
-            <l id="268">Vous m'allez donner de plaisir, </l>
-            <l id="269">Car vous avez une prestance </l>
-            <l id="270">Qui porte à la concupiscence, </l>
-            <l id="271">D'abord que je vois vos appas </l>
-            <l id="272">Vous me mettez dans des états, </l>
-            <l id="273">Mais des états si pitoyables </l>
-            <l id="274">Qu'en voyant vos yeux adorables, </l>
-            <l id="275">J'en serais quitte à bon marché </l>
-            <l id="276">Si j'en sortais pour un péché. </l>
-            <l id="277">Vos yeux m'ayant mis de la sorte </l>
-            <l id="278">Ont causé qu'ici je m'apporte, </l>
-            <l id="279">Pour voir si vous trouverez bon </l>
-            <l id="280">Que nous fassions conjonction, </l>
-            <l id="281">En mariant nos deux personnes </l>
-            <l id="282">Répondez la bonne des bonnes. </l>
-          </sp>
-          <sp stage="low" who="ANGÉLIQUE">
-            <speaker>ANGÉLIQUE, bas le premier vers.</speaker>
-            <l id="283">Ô le ridicule Amoureux </l>
-            <l id="284">Monsieur, j'approuve fort vos voeux, </l>
-            <l id="285">Mais comme je dépends d'un père </l>
-            <l id="286">Il le faut voir pour cette affaire, </l>
-            <l id="287">Je pense qu'il s'en vient ici </l>
-            <l id="288">Dieu me garde d'un tel mari. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="6">
-          <head>SCÈNE VI. Guillot, Ragotin Angélique, Béatrix, Le Docteur.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="289">Allons chez nous bonne hypocrite </l>
-            <note type="L">Chattemite : Personne affectant des manières humbles et flatteuses. [L]</note>
-            <l id="290">Vous aussi bonne chattemite, </l>
-            <note type="L">Muqueter : Faire le galant, le cajolleur, tascher de se rendre agreable à une Dame. [L]</note>
-            <l id="291">Qui ne faites, que mugueter </l>
-            <note type="L">Coqueter : Se plaire à cajoler, ou à être cajolée. [F]</note>
-            <l id="292">Que jaser et que coqueter, </l>
-            <note type="L">Caquet bon bec : personne bavarde et médisante. [L]</note>
-            <note type="L">La poulle à ma tante : une cajoleuse. [SP]</note>
-            <l id="293">Caquet bon bec poule à ma tante </l>
-            <l id="294">Et la maîtresse et la suivante. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="7">
-          <head>SCÈNE VII. Guillot, Ragotin, Le Docteur.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="295">Et bien que vous plaît-il Monsieur. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="296">Je suis venu brave Docteur... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="297">Je suis venu, c'est une phrase </l>
-            <l id="298">Qui met mon âme dans l'extase, </l>
-            <l id="299">Car vous ne pouviez être ici </l>
-            <l id="300">À moins que d'y venir aussi. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="301">Vous saurez que ce qui m'amène. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="302">Sachez avant que je l'apprenne, </l>
-            <l id="303">Que c'est fort bien dit vous saurez </l>
-            <l id="304">Vous oirez, vous écoutez, </l>
-            <l id="305">Parce que pour faire comprendre </l>
-            <l id="306">Il faut avant se faire entendre. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="307">Entendez-moi donc s'il vous plaît. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="308">Tout incontinent j'y suis prêt, </l>
-            <l id="309">Mais souffrez que je vous avoue </l>
-            <l id="310">Que vous méritez qu'on vous loue, </l>
-            <l id="311">Quand vous demandez humblement </l>
-            <l id="312">Audience pour un moment, </l>
-            <l id="313">S'il vous plaît est un si beau terme </l>
-            <l id="314">Que je vous entends de pied ferme, </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="315">Monsieur je vais donc commencer. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="316">Avant que plus outre passer, </l>
-            <l id="317">Vous permettrez que je vous die </l>
-            <l id="318">Que ce mot a grande énergie, </l>
-            <l id="319">Ne dit-on pas communément </l>
-            <l id="320">Telle fin tel commencement, </l>
-            <l id="321">Un commencement admirable </l>
-            <l id="322">Est suivi d'une fin semblable, </l>
-            <l id="323">Donc on ne doit commencer rien </l>
-            <l id="324">Qu'à dessein de le finir bien, </l>
-            <l id="325">Et de plus jamais éloquence... </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="326">Permettez-vous que je commence ? </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="327">Oui Monsieur je vous le permets. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="328">Ne commencerai-je jamais ? </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="329">Commencez donc votre harangue. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="330">Que le Diable emporte ta langue. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="331">Commencerez-vous votre point. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="332">Et toi ne finiras-tu point, </l>
-            <l id="333">Comment veux-tu que je commence, </l>
-            <l id="334">Si tu troubles mon éloquence. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="335">Je prête silence, parlez. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="336">Sachez que mes sens sont brûlés </l>
-            <l id="337" syll="3" part="i">Apprenez... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="337" syll="5" part="f">Comment que j'apprenne, </l>
-            <l id="338">Esprit grossier âme malsaine, </l>
-            <l id="339">Apprenez, ne sais-tu pas bien </l>
-            <l id="340">Qu'un Docteur n'ignore de rien, </l>
-            <l id="341">Que toutes les plus rares choses </l>
-            <l id="342">Dedans moi sont toutes encloses, </l>
-            <l id="343">Que je passe chez les savants </l>
-            <l id="344">Pour un miracle de mon temps, </l>
-            <l id="345">Qu'il n'est point d'esprit qui ne cède </l>
-            <l id="346">Aux sciences que je possède, </l>
-            <l id="347">Dont sachant tout de bout en bout </l>
-            <l id="348">Qui dit Docteur veut dire tout, </l>
-            <l id="349">Et tu me viens dire d'apprendre. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="350">Ah, que ne te puis-je voir pendre, </l>
-            <l id="351">Je veux vous dire que l'amour </l>
-            <l id="352" syll="3" part="i">Est cause... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="352" syll="5" part="f">Que tu vois le jour, </l>
-            <l id="353">Que par lui seul tu tiens ton être </l>
-            <l id="354">Que sans lui tu ne pouvais naître, </l>
-            <l id="355">Que c'est lui qui nous fait aimer </l>
-            <l id="356">Qu'il sait l'art de nous enflammer, </l>
-            <l id="357">Et qu'encor qu'il ne voie goutte </l>
-            <l id="358">Il nous sait conduire à la route, </l>
-            <l id="359">Qu'il faut suivre pour les plaisirs </l>
-            <l id="360">Animant nos plus chers désirs, </l>
-            <l id="361">Il fait palpiter notre foie </l>
-            <l id="362">Il mène au séjour de la joie, </l>
-            <l id="363">Enfin par ce divin enfant </l>
-            <l id="364">On se voit souvent triomphant, </l>
-            <l id="365">De l'aimable objet qui nous charme </l>
-            <l id="366">Et pourtant lui seul nous désarme, </l>
-            <l id="367">Et quand on se voit triomphant </l>
-            <l id="368">On ne le doit qu'à cet enfant, </l>
-            <l id="369">Oui cet aveugle qui nous guide </l>
-            <l id="370">Donne de l'esprit au stupide, </l>
-            <l id="371">Il fait que le plus ignorant </l>
-            <l id="372">Près d'une maîtresse est savant, </l>
-            <l id="373">Et qui rend toutes nos paroles </l>
-            <note type="L">Hyperbole : Figure de rhétorique qui consiste à augmenter ou à diminuer excessivement la vérité des choses pour qu'elle produise plus d'impression. [L]</note>
-            <l id="374">Pleines d'illustres hyperboles, </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <note type="L">Hyperboliser : Parler par hyperboles.</note>
-            <l id="375">Ah, c'est trop hyperboliser </l>
-            <l id="376">Je m'en vais à mon tour jaser </l>
-            <l id="377">Sachez que la belle Angélique </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="378">Si c'est la beauté qui vous pique. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="379">Comment donc je ne dirai rien </l>
-            <l id="380" syll="2" part="i">L'amour... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="380" syll="6" part="f">Ainsi qu'il fait du bien, </l>
-            <l id="381">Il fait du mal et de la peine </l>
-            <l id="382">Et met notre coeur à la gêne, </l>
-            <l id="383">Il porte nos intentions </l>
-            <l id="384">Souvent aux basses actions, </l>
-            <l id="385">Il nous présente des abîmes </l>
-            <l id="386">Qui nous font tomber dans les crimes, </l>
-            <l id="387">Et bien souvent nous y tombons </l>
-            <l id="388">Alors que moins nous y pensons. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="389">Parleras-tu toute ta vie ? </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="390">Non ma phrase est bientôt finie, </l>
-            <l id="391">Je ne vous dirai plus qu'un mot </l>
-            <l id="392">Sachez brave Comte Guillot... </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="393">Sachez docteur qui n'en sait guère </l>
-            <note type="L">Harangueur : Fig. et familièrement. Celui qui parle beaucoup, celui qui fait des réprimandes sur toutes choses. [L]</note>
-            <l id="394">Que ta langue est une haranguère, </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="395" syll="2" part="i">Sachez... </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="395" syll="6" part="f">Je ne veux rien savoir. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="396" syll="3" part="i">Voyez donc... </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="396" syll="5" part="f">Je ne veux rien voir. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="397" syll="3" part="i">Comprenez... </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="397" syll="6" part="f">Ni même comprendre. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="398" syll="3" part="i">Apprenez... </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="398" syll="5" part="f">Que peux-tu m'apprendre. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="399">En toutes choses d'exceller. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="400">Bourreau, je ne veux que parler. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="401">Parlez, je suis tout prêt d'entendre. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="402" syll="2" part="i">J'attends... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="402" syll="6" part="f">Vous pouvez tout attendre. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="403" syll="2" part="i">J'espère... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="403" syll="6" part="f">Espérez tout de moi. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="404" syll="2" part="i">Croyez... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="404" syll="6" part="f">Fort aisément je crois. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="405" syll="2" part="i">Pensez... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="405" syll="6" part="f">Je sais ce que je pense. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="406" syll="2" part="i">Donnez... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="406" syll="6" part="f">Je vous donne audience, </l>
-            <l id="407">Ainsi que vous l'avez voulu. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="408">Dis-moi traître as-tu résolu, </l>
-            <l id="409">De m'étourdir en cette place. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="410">Enfin mon silence se lasse, </l>
-            <l id="411">Vous parlez trop Monsieur Guillot. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="412" syll="2" part="i">Je veux... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="412" syll="6" part="f">Vous ne direz plus mot, </l>
-            <l id="413">Il faut qu'à mon tour je m'explique. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="414">J'aime votre fille Angélique. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="415">Quoi c'est l'objet de vos souhaits </l>
-            <l id="416">Touchez, vous ne l'aurez jamais. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="8">
-          <head>SCÈNE VIII. Guillot, Ragotin.</head>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="417">Nous voilà bien dans nos affaires. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="418">Nos maux sont extraordinaires </l>
-            <l id="419">Jamais je ne vis tel parleur. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="420">Ah ! Quel enragé de Docteur, </l>
-            <note type="L">Épigramme : Espèce de petite poësie, qui consiste ordinairement dans une seule pensée, dont la force est presque toute dans les derniers vers. [L]</note>
-            <l id="421">Et quel grand cracheur d'épigramme </l>
-            <l id="422">Il m'a pensé vomir son âme, </l>
-            <note type="L">Chien de : Chien de, avec les noms masculins, chienne de, avec les noms féminins, locution qui se dit, par une sorte de dépréciation, des personnes et des choses. [Acad. 1762]</note>
-            <l id="423">Au nez dans son chien d'entretien </l>
-            <l id="424">Pour un Docteur qui ne sait rien, </l>
-            <l id="425">Il fait valoir une sottise </l>
-            <l id="426">Comme un Docteur qui doctorise, </l>
-            <l id="427">Mais pourtant en doctorisant </l>
-            <l id="428">Il m'a rendu fort mal content, </l>
-            <l id="429">Le diable emporte sa doctrine </l>
-            <l id="430">Lui-même et sa maudite mine, </l>
-            <l id="431">De m'avoir ainsi refusé </l>
-            <l id="432">L'objet dont je suis embrasé, </l>
-            <l id="433">Et celle où tout mon soin s'applique. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="9">
-          <head>SCÈNE IX. Le Baron de la Topinière, Tarasquin, Guillot, Ragotin.</head>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="434">Oui j'aime l'illustre Angélique, </l>
-            <l id="435">Et quiconque s'en approchera </l>
-            <l id="436">Il est certain qu'il périra, </l>
-            <note type="L">Couper le trame : se dit figurément et poétiquement en Morale, du cours de la vie. Les Parques ont filé, ont coupé la trame de ses jours. [L]</note>
-            <l id="437">Je m'en vais lui couper la trame </l>
-            <l id="438">Et puis je lui mangerai l'âme. </l>
-          </sp>
-          <sp stage="hide" who="GUILLOT">
-            <speaker>GUILLOT, se cachant.</speaker>
-            <l id="439">Où me suis-je venu fourrer. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="440">Monsieur, on nous va dévorer, </l>
-            <l id="441">Nous sommes à la boucherie. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="442">Si quelqu'un dedans ma furie, </l>
-            <l id="443">Ose se présenter à moi </l>
-            <l id="444">Sans doute il en mourra d'effroi, </l>
-            <l id="445">Me voilà dedans une rage </l>
-            <l id="446">Qui va faire de tout carnage, </l>
-            <l id="447">Où sont-ils tous ces amoureux </l>
-            <l id="448">Qui cherchent l'objet de mes voeux, </l>
-            <l id="449">Afin que sur eux mon épée </l>
-            <note type="L">Lippée : Bouchée. Il se prend aussi quelquefois pour Repas ; et en ce sens il se met presque toujours avec l'épithète de Franche. [Acad. 1762]</note>
-            <l id="450">Attrape sa franche lippée, </l>
-          </sp>
-          <sp who="TARASQUIN">
-            <speaker>TARASQUIN.</speaker>
-            <l id="451">Mais qui s'oserait présenter </l>
-            <l id="452">À vous qui savez tout dompter. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="453">Le Comte de la Guillotière </l>
-            <l id="454">Éprouvera mon humeur fière. </l>
-          </sp>
-          <sp who="TARASQUIN">
-            <speaker>TARASQUIN.</speaker>
-            <l id="455">Pour Monsieur son valet Ragot </l>
-            <l id="456">Je lui veux couper le gigot, </l>
-            <l id="457">Et le mettre sur la litière. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="458">Adieu pauvre Ragotinière, </l>
-            <note type="L">Coupe-jarret : Brigand, assassin de profession. [L]</note>
-            <l id="459">Quel horrible coupe-jarret. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="460">Ragot, tel Maître tel valet. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="461" syll="3" part="i">Qui va là ? </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="461" syll="5" part="f">Monsieur, je trépasse. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="462">Allons vite faisons main basse, </l>
-            <l id="463">Tuons tout, massacrons, brisons, </l>
-            <l id="464">Rompons, cassons, exterminons, </l>
-            <l id="465">Égorgeons, mettons tout par terre, </l>
-            <l id="466">Livrons à tous amants la guerre, </l>
-            <l id="467">Je veux d'un regard plein d'horreur </l>
-            <l id="468">Les immoler à ma fureur, </l>
-            <l id="469">Que la moindre de mes conquêtes </l>
-            <l id="470">Soit d'abattre cent mille têtes, </l>
-            <l id="471">De couper et jambes, et bras </l>
-            <l id="472">Ce sont là mes petits combats, </l>
-            <l id="473">Mon courage étant sans mesure </l>
-            <l id="474">Je défais toute la nature, </l>
-            <l id="475">Quand ma valeur lance ses traits </l>
-            <l id="476">Et quand je veux je la refais, </l>
-            <l id="477">Mais quelque vaillant qu'on puisse être </l>
-            <l id="478">L'amour est toujours notre Maître, </l>
-            <l id="479">Puisqu'on se rend ou tôt ou tard </l>
-            <l id="480">À ce petit chien de bâtard, </l>
-            <l id="481">Vois donc celle qui tient mon âme </l>
-            <l id="482">Dis-lui que son aspect m'enflamme, </l>
-            <l id="483">Et que je ne puis vivre heureux </l>
-            <l id="484">Qu'alors que je vois ses beaux yeux, </l>
-            <l id="485">Son port, son air, sa bonne mine, </l>
-            <l id="486">Cette douceur qui m'assassine, </l>
-            <l id="487">Enfin tous ses charmes divers </l>
-            <l id="488">Qui font que je suis dans ses fers, </l>
-            <l id="489">Va voir si la belle est visible </l>
-            <l id="490">Mon coeur est percé comme un crible, </l>
-            <l id="491">De la pointe de ses attraits. </l>
-          </sp>
-          <sp stage="call" who="TARASQUIN">
-            <speaker>TARASQUIN, l'appelant.</speaker>
-            <l id="492">Holà, miracle, des objets. </l>
-          </sp>
-          <sp who="ANGÉLIQUE">
-            <speaker>ANGÉLIQUE.</speaker>
-            <l id="493" syll="3" part="i">Que veut-on ? </l>
-          </sp>
-          <sp who="TARASQUIN">
-            <speaker>TARASQUIN.</speaker>
-            <l id="493" syll="5" part="f">Beauté printanière </l>
-            <l id="494">Le Baron de la Topinière, </l>
-            <l id="495">Désire vous voir un moment. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="10">
-          <head>SCÈNE X. Angélique, La Topinière.</head>
-          <sp who="ANGÉLIQUE">
-            <speaker>ANGÉLIQUE.</speaker>
-            <l id="496">Je vais à lui présentement. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="497">Approchez doux charme des charmes </l>
-            <l id="498">Comme on vous doit rendre les armes, </l>
-            <l id="499">Le phénix de tous les guerriers </l>
-            <l id="500">Vient mettre à vos pieds ses lauriers, </l>
-            <l id="501">Mon bras plus craint que le tonnerre </l>
-            <l id="502">M'a su gagner toute la terre, </l>
-            <l id="503">J'ai tout soumis à mon courroux </l>
-            <l id="504">Il ne reste donc plus que vous. </l>
-            <l id="505">Mais votre beauté sans seconde </l>
-            <l id="506">Est plus forte que tout le monde, </l>
-            <l id="507">Pourtant telle que vous soyez </l>
-            <l id="508">Il faudra que vous succombiez </l>
-            <l id="509">Car me voyant, la plus cruelle </l>
-            <l id="510">Peut dire qu'elle en a dans l'aile, </l>
-            <l id="511">Jugez donc si vous en tiendrez </l>
-            <l id="512">Dès que vous me regarderez. </l>
-          </sp>
-          <sp who="ANGÉLIQUE">
-            <speaker>ANGÉLIQUE.</speaker>
-            <note type="L">Se donner garde : se défier, éviter. Donnez-vous garde de ce mauvais pas. {L]</note>
-            <l id="513">Je me donnerai bien de garde </l>
-            <l id="514">De vous, quoique je vous regarde, </l>
-            <l id="515">Eussiez-vous cent fois plus d'appas </l>
-            <l id="516">Baron vous ne me tenez pas. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="11">
-          <head>SCÈNE XI. Guillot, Ragotin, La Topinière, Tarasquin.</head>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="517">Je crains qu'il ne quitte pas prise. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="518">Je crains ici quelque surprise. </l>
-          </sp>
-          <sp who="TARASQUIN">
-            <speaker>TARASQUIN.</speaker>
-            <l id="519">Je crains quelques coups de bâton. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="520">Évitons la contusion. </l>
-            <l id="521">S'il se peut en faisant le brave. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="522">Songez que je suis votre esclave, </l>
-            <l id="523">Et que si vous faites le sot </l>
-            <l id="524">Adieu, vous et votre Ragot, </l>
-            <l id="525">Ce Baron de la Topinière </l>
-            <note type="L">Traîne rapière : Bretteur, ferrailleur, querelleur. [T]</note>
-            <l id="526">Est un rude traîne-rapière, </l>
-            <l id="527">Nous aurons ici du qu'as-tu. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="528">Tu ne seras jamais battu, </l>
-            <l id="529">En la présence de ton Maître. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="530">Vous fuirez des premiers peut-être. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="531">Tu m'as bien la mine je crois </l>
-            <l id="532">De fuir aussi tôt comme moi. </l>
-          </sp>
-          <sp who="TARASQUIN">
-            <speaker>TARASQUIN.</speaker>
-            <l id="533">Ah, Monsieur_le_Baron je tremble. </l>
-            <l id="534">Et crois que nous tremblons ensemble. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="535">Je ne tremble pas mais j'ai peur </l>
-            <l id="536">Ah, que n'ai-je un peu plus de coeur. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="537">Que n'ai-je un peu plus de courage </l>
-            <l id="538">L'on me verrait faire carnage. </l>
-          </sp>
-          <sp who="TARASQUIN">
-            <speaker>TARASQUIN.</speaker>
-            <l id="539">Pour éviter ces carnassiers ? </l>
-            <l id="540">Je m'en vais fuir tout des premiers.</l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="541">Ne crois pas qu'ici je demeure </l>
-            <l id="542">Je vais fuir aussi tout à l'heure. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="12">
-          <head>SCÈNE XII. Guillot, Ragotin.</head>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="543">De peur par moi d'être assailli, </l>
-            <note type="L">Happer : Se jeter sur quelque chose brusquement et avidement pour la prendre. [T]</note>
-            <note type="L">Gagner le taillis : Figuré. se mettre en lieu de sûreté. [L]</note>
-            <l id="544">Comme ils ont happé le taillis. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="545">Quand on voit ma mine cruelle... </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <note type="L">Enfiler la venelle : prendre la fuite. [L]</note>
-            <l id="546">Ils ont enfilé la venelle, </l>
-            <l id="547">Mais s'ils revenaient sur leurs pas. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="548">Je crois qu'ils ne reviendront pas, </l>
-            <l id="549" syll="4" part="i">Que ferons-nous ? </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="549" syll="4" part="f">Je viens d'apprendre </l>
-            <l id="550">Que Monsieur le Docteur est tendre, </l>
-            <l id="551">Sur l'article de bien chanter </l>
-            <l id="552">Il faut donc l'expérimenter, </l>
-            <l id="553">Chantant tous deux comme des anges </l>
-            <l id="554">Faisant d'admirables mélanges, </l>
-            <l id="555">De nos voix, pour toucher le coeur </l>
-            <l id="556">De ce vieux barbon de Docteur, </l>
-            <l id="557">Peut-être que notre musique </l>
-            <l id="558">Vous pourra gagner Angélique, </l>
-            <l id="559">Cherchons donc un air, promptement </l>
-            <l id="560">Et chantons méthodiquement. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="561">Mais quel air dirons-nous, regarde. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="562">Monsieur nous dirons la guimbarde.</l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="563">Que veux-tu dire esprit bourru. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <note type="L">À l'enturlu : en chantant.</note>
-            <l id="564">Nous dirons donc l'enturlu, </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="565">N'en sais-tu pas une délite. </l>
-          </sp>
-          <sp stage="sing" who="RAGOTIN">
-            <speaker>RAGOTIN dit l'air de toutes les chansons qu'il nomme.</speaker>
-            <l id="566">N'avez-vous point vu Marguerite. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="567">Tu ne sais point d'autre chanson ? </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="568">Disons, hélas Jean hélas don. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="569">Va ta forte fièvre quartaine. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="570">Ou bien turlututu rengaine. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="571">Ragot, vous me déplaisez fort. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="572">Léandre était dessus le bord. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="573">Sont cela des chansons nouvelles ? </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="574">Les plus vieilles sont les plus belles, </l>
-            <l id="575">Mais vous ne trouvez rien de bon </l>
-            <l id="576">Voulez-vous un quand dira-t-on. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="577">J'en veux une toute nouvelle. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="578">Qui est celui–là qui m'appelle. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="579">Il faut qu'il ait l'esprit perdu. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="580">Ah, j'en sais une d'un pendu, </l>
-            <l id="581">Qui va bien être votre affaire. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="582">Ragot, si tu ne te veux taire, </l>
-            <l id="583">Je te donnerai mille coups. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="584">Petite brunette aux yeux doux. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="585">Tu ne te tairas pas, j'enrage. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="586">Je n'en dirai pas davantage. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="587">Laisse-moi parler un moment. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="588">Autant en emporte le vent, </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="589">Chanter encor âme indiscrète. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="590">L'autre jour dame Guillemette. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="591">Le traître est aussi grand chanteur </l>
-            <l id="592">Que le Docteur est grand parleur, </l>
-            <l id="593">Va que la tempête t'entraîne </l>
-            <l id="594">Docteur de la Samaritaine, </l>
-            <l id="595">Sans toi j'aurai bien la vertu </l>
-            <note type="L">Impromptu : Tout ce qui se fait sur-le-champ et sans préparation. [L]</note>
-            <l id="596">D'en faire une belle impromptu. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="597">Nous la chanterons donc ensemble. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="598">Tu ne dis pas si bon me semble.</l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="599">Il vous semblera bon ou non </l>
-            <l id="600">Je veux être de la chanson. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="601">Attends, je crois que j'en tiens une. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="602">Elle ne sera pas commune. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="603">Tu n'as qu'à me suivre Ragot. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="604">Commencez donc le premier mot. </l>
-            <stage type="sing/together">Guillot commence la moitié du couplet seul, et Ragotin et lui le chantent ensemble.</stage>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <stage type="title">Chanson.</stage>
-            <l id="605">Chère friponne d'Angélique </l>
-            <l id="606">Mouche coquine qui me pique, </l>
-            <l id="607">Vous avez escroqué mon coeur </l>
-            <note type="L">Écornifleur : Celui qui prend subrepticement. Par extension, celui qui s'empare de quelque chose qui n'est pas à lui. [L]</note>
-            <l id="608">Écornifleuse de mon âme </l>
-            <l id="609">Objet aimable suborneur, </l>
-            <note type="L">Entamer quelqu'un : avoir de l'avantage sur lui. </note>
-            <l id="610">Il faut que Guillot vous entame. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="611">Nous venons de chanter la vôtre </l>
-            <l id="612">Chantons donc s'il vous plaît la nôtre. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="613">Allons, Ragotin, je le veux. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="614">Ah, je la tiens par les cheveux, </l>
-            <l id="615">Je commence si bon vous semble </l>
-            <l id="616">Et puis nous chanterons ensemble. </l>
-          </sp>
-          <sp stage="alone/together" who="RAGOTIN">
-            <speaker>RAGOTIN en dit la moitié seul, puis ils la disent ensemble.</speaker>
-            <note type="C">La chanson ci-dessous rompt le rythme. Plus d'alternance de rimes : 2 féminines 2 masculines. Le chanteur ayant chanté 5 vers. Il manque pour le 4ème vers, un corresp. pour la rime.</note>
-            <l id="617">Vous avez ma Béatrix </l>
-            <l id="618">Plus de puces qu'un chat gris, </l>
-            <l id="619">Et si vous ne m'aimiez bien </l>
-            <l id="620">Par ma foi je vous souhaite, </l>
-            <l id="621">Bientôt la gale du chien. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="13">
-          <head>SCÈNE XIII. Guillot, Ragotin, La Topinière, Tarasquin.</head>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="622">Il faut qu'ils meurent tout de bon.</l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="623">Voici bien une autre chanson, </l>
-            <l id="624">Monsieur souffrez que je recule </l>
-            <l id="625">Je vous laisse faire l'Hercule. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="626">Ragotin ne me quitte pas. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="627">Monsieur je crains trop le trépas, </l>
-            <l id="628">Permettez-moi que je m'en aille. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="629">Je crains aussi cette canaille. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="630">Commençons par le Sieur Guillot </l>
-            <l id="631">Et nous finirons par Ragot. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="632">Ragotin, mettons-nous en garde. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="633">Moi ? Monsieur, hélas je n'ai garde. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="634">Nous allons avancer nos jours. </l>
-          </sp>
-          <sp who="TARASQUIN">
-            <speaker>TARASQUIN.</speaker>
-            <l id="635">Je vais appeler au secours. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="636">Monsieur, je vais crier à l'aide </l>
-            <l id="637">Au meurtre, un Diable nous possède. </l>
-          </sp>
-          <sp who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE.</speaker>
-            <l id="638">Quelqu'un, à la force, au voleur. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="14">
-          <head>SCÈNE XIV. Le Docteur, Guillot, Ragotin, la Topinière, Tarasquin.</head>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="639">Qui peut causer cette rumeur ? </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT.</speaker>
-            <l id="640">Ce drôle qui veut votre fille </l>
-            <l id="641">Mais il faut qu'ici je l'étrille. </l>
-          </sp>
-          <sp stage="location" who="LA TOPINIÈRE">
-            <speaker>LA TOPINIÈRE, par-dessus le Docteur.</speaker>
-            <l id="642">Ce n'est rien qu'un coquin, Monsieur. </l>
-          </sp>
-          <sp stage="location" who="GUILLOT">
-            <speaker>GUILLOT par-dessus le Docteur.</speaker>
-            <note type="L">Faquin : Termes de mépris et d'injure.</note>
-            <l id="643">C'est un archi-faquin, Docteur. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="644">La démonstration m'outrage </l>
-            <l id="645">N'en faites donc pas davantage. </l>
-          </sp>
-          <sp stage="location" who="LA TOPINIERE">
-            <speaker>LA TOPINIERE, par-dessus le Docteur.</speaker>
-            <l id="646">Laissez-moi lui couper les bras. </l>
-          </sp>
-          <sp who="GUILLOT">
-            <speaker>GUILLOT, tout de même.</speaker>
-            <l id="647">Je vais mettre sa tête à bas. </l>
-          </sp>
-          <sp stage="call" who="LE DOCTEUR">
-            <speaker>LE DOCTEUR, appelant à lui.</speaker>
-            <note type="L">Outrecuider : Montrer à quelqu'un du mépris par l'idée de sa propre supériorité. [L]</note>
-            <l id="648">On me moleste on m'outrecuide </l>
-            <l id="649">Mes gens à moi, l'on m'homicide. </l>
-          </sp>
-          <sp who="RAGOTIN">
-            <speaker>RAGOTIN.</speaker>
-            <l id="650">Hélas où nous fourrerons-nous ? </l>
-          </sp>
-          <sp who="TARASQUIN">
-            <speaker>TARASQUIN.</speaker>
-            <l id="651">Nous allons avoir mille coups. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="15">
-          <head>SCÈNE XV. Léandre, Le Docteur, Guillot, Ragotin, La Topinière, Tarasquin.</head>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="652">Qui fait ce bruit quel tintamarre </l>
-            <note type="L">Barre : Pièce de bois, de fer, etc. étroite et longue. On disait autrefois donner des coups de barre à quelqu'un pour le bien battre. [L]</note>
-            <l id="653">Ah, vous aurez cent coups de barre, </l>
-            <l id="654">Je vous fracasserai les bras. </l>
-            <stage type="toward/hit">Il parle aux Amants Ridicules et les frappe.</stage>
-            <stage type="escape">Les Galants ridicules s'enfuyant disent :</stage>
-            <l id="655">Que nous ne vous attendons pas. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <note type="L">Guérite : Refuge ; sens primitif conservé seulement dans cette locution : gagner la guérite, s'enfuir. [L]</note>
-            <l id="656">Comme ils gagnent tous la guérite </l>
-            <note type="L">Dauber : Frapper à coups de poing. Fig. et familièrement, railler quelqu'un, mal parler de lui, l'injurier. [L]</note>
-            <l id="657">Celui qui les daube est d'élite. </l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="658">Comment, être perturbateurs </l>
-            <l id="659">De ce grand Docteur des Docteurs. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="660">Mais qui venge là mon offense ? </l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="661">Quoi s'adresser à la science, </l>
-            <l id="662">Ô dieux, quelle témérité. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="663">Vous que j'ai tantôt rebuté, </l>
-            <l id="664">M'avoir fait une telle grâce </l>
-            <l id="665">Que faut-il pour vous que je fasse ? </l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="666">M'accorder l'objet de mes voeux </l>
-            <l id="667">Si vous voulez me rendre heureux. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="668">Oui je vous l'accorde Léandre. </l>
-          </sp>
-          <sp who="LÉANDRE">
-            <speaker>LÉANDRE.</speaker>
-            <l id="669">Tout vient à point qui peut attendre, </l>
-            <l id="670" syll="2" part="i">Monsieur... </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="670" syll="6" part="f">Ma fille approchez-vous </l>
-            <l id="671">Léandre sera votre époux. </l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="16">
-          <head>SCÈNE XVI. Angélique, Léandre, Le Docteur, Guillot, Ragotin, la Topinière, Tarasquin.</head>
-          <sp who="ANGÉLIQUE">
-            <speaker>ANGÉLIQUE.</speaker>
-            <l id="672">Ô Ciel, que je suis fortunée. </l>
-          </sp>
-          <sp who="LE DOCTEUR">
-            <speaker>LE DOCTEUR.</speaker>
-            <l id="673">Allons conclure l'hyménée. </l>
-          </sp>
-        </div2>
-      </div1>
-    </body>
-  </text>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">LES GALANTS RIDICULES</title>
+                <author key="isni:0000000043203474">CHEVALIER, Jean Simonin dit</author>
+                <editor>Ernest FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000306</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY NC SA 3.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                    </licence>
+                </availability><!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/CHEVALIER_GALANTSRIDICULES.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/CHEVALIER_GALANTSRIDICULES.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY NC SA 3.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1672">1672</date>
+                        <date type="premiere"/>
+                        <date type="written"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="leandre" sex="MALE">
+                        <persName>Léandre</persName>
+                    </person>
+                    <person xml:id="beatrix" sex="FEMALE">
+                        <persName>Béatrix</persName>
+                    </person>
+                    <person xml:id="guillot" sex="MALE">
+                        <persName>Guillot</persName>
+                    </person>
+                    <person xml:id="ragotin" sex="MALE">
+                        <persName>Ragotin</persName>
+                    </person>
+                    <person xml:id="angelique" sex="FEMALE">
+                        <persName>Angélique</persName>
+                    </person>
+                    <person xml:id="le-docteur" sex="MALE">
+                        <persName>Le docteur</persName>
+                    </person>
+                    <person xml:id="la-topiniere" sex="UNKNOWN">
+                        <persName>La-topiniere</persName>
+                    </person>
+                    <person xml:id="tarasquin" sex="MALE">
+                        <persName>Tarasquin</persName>
+                    </person>
+                    <person xml:id="la-topiniere" sex="UNKNOWN">
+                        <persName>La-topiniere</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords>
+                    <term type="genreTitle">Comédie</term>
+                    <term type="genreTitle">vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+		<front>
+			<docTitle>
+				<titlePart type="main">LES GALANTS RIDICULES</titlePart>
+				<titlePart type="sub">OU LES AMOURS DE GUILLOT ET DE RAGOTIN. </titlePart>
+				<titlePart type="sub">Comédie représentée sur le Théâtre Royal du Marais.</titlePart>
+			</docTitle>
+			<docDate when="1672">M. DC. LXII. Avec Privilège du Roi.</docDate>
+			<docAuthor>Par le Sieur CHEVALIER.</docAuthor><!--@bio="chevalier"-->
+			<div type="docImprint">
+				<imprimeur id="MOETJENS">Chez PIERRE BIENFAIT,  devant la Sainte Chapelle à l'Image Saint Pierre.</imprimeur>
+			</div>
+	<div type="dedicace">
+                <opener>
+                    <salute>À MADMOISELLE M.M.</salute>
+                </opener> 
+		<head>Mademoiselle,</head>
+		<p n="">Il faut que je vous avoue que jamais homme ne se trouva plus embarrassé que je le fus, lorsque j'entrepris de vous adresser cette Comédie, parce que vous la donner c'est la donner à tout le monde, et que vous méritez sans doute quelque chose de plus particulier, n'ayant rien en vous que de fort extraordinaire, étant incomparable en tout comme vous êtes : cependant je me trouve contraint de faire comme les plus grands hommes ont fait, qui faisant imprimer leurs écrits, ce qui les rend communs à tous, se sont toujours servis des termes, je vous les offre, je vous les donne, je vous les dédie, je vous les consacre, comme si ne les eussent donnés qu'à une seule personne, et pourtant vous voyez que c'est en faire un présent à toute la nature, c'est pourquoi j'aurais bien voulu trouver quelque autre moyen, afin que cette Comédie pût être à vous seule : outre que j'aurais eu bien lieu de la joie qu'il n'y eut eu que vous à vous railler de moi et de mes ouvrages, sans être encor exposé à la censure de tout le monde, mais ce qui me console en ceci est, que je me suis raillé de moi-même le premier, ainsi cela ne me surprendra point ; peut-être me direz-vous que ce que je dis est ridicule, j'en demeurerai d'accord, et comme ma pièce se nomme les Galants Ridicules, je prétends que tout s'ensuive, et que l'Épître ne déroge point à l'ouvrage ; au reste si les Comédies sont bonnes quand elles font rire, je puis dire que celle-ci n'est pas mauvaise : mais comme quelquefois ces sortes de choses excitent à rire à force d'être méchantes, je ne sais ce que j'en dois croire, quoi qu'il en soit, je vous la donne comme si elle était meilleure, vous assurant que si j'eusse pu faire un chef-d'oeuvre il vous eût été présenté avec autant de zèle et d'affection que cette petite pièce vous est offerte par </p>
+		<p n="">Votre très humble,</p>
+		<p n="">et très obéissant serviteur,</p>
+		<p n="">CHEVALIER.</p>
+	</div>	
+	<castList>
+                <head>LES ACTEURS.</head>
+		<castItem>
+                    <role corresp="#angelique">ANGÉLIQUE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="Léandre"-->, Fille du Docteur, Amante de Léandre.</castItem>
+		<castItem>
+                    <role corresp="#beatrix">BÉATRIX</role><!--@sex="2" @type="H" @statut="suivante" @age="A" @stat_amour="néant"-->, Suivante d'Angélique.</castItem>
+		<castItem>
+                    <role corresp="#ragotin">RAGOTIN</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour="Béatrix"-->, Valet de Guillot, Amoureux de Béatrix.</castItem> 
+		<castItem>
+                    <role corresp="#guillot">GUILLOT</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="Angélique"-->, Amoureux d'Angélique.</castItem>
+		<castItem>
+                    <role corresp="#le-docteur">LE DOCTEUR</role><!--@sex="1" @type="H" @statut="docteur" @age="A" @stat_amour="néant"-->. Père d'Angélique.</castItem>
+		<castItem>
+                    <role corresp="#leandre">LÉANDRE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="Angélique"-->, Amant d'Angélique.</castItem>
+		<castItem>
+                    <role corresp="#le-baron-de-la-topiniere">LE BARON DE LA TOPINIÈRE</role><!--@sex="1" @type="H" @statut="baron" @age="A" @stat_amour="Angélique"-->, Amoureux d'Angélique.</castItem>
+		<castItem>
+                    <role corresp="#tarasquin">TARASQUIN</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour="néant"-->, Valet du Baron.</castItem>
+	</castList>
+	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222"/>-->
+</front>
+<body>
+<div type="act" n="1">
+                <head>LE CARTEL DE  GUILLOT.</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Béatrix, Léandre.</head>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+<note type="L">Ici, il manque tout le début de la 1ère Scène. </note>
+	<l n="1">D'emportement, de barbarie, </l>
+	<l n="2">Le père de ce digne objet </l>
+	<l n="3">M'a su quereller sans sujet, </l>
+	<l n="4">Quand j'espérais par mon hommage </l>
+	<l n="5">Cette merveille en mariage, </l>
+	<l n="6">Bien loin d'avoir cette beauté </l>
+	<l n="7">Tu vois comme il m'a rebuté. </l>
+</sp>
+<sp who="#beatrix">
+                        <speaker>BÉATRIX.</speaker>
+	<l n="8">Léandre j'ai vu cette chose </l>
+	<l n="9">Mais enfin qu'elle ne vous cause, </l>
+	<l n="10">Aucun sujet d'être alarmé </l>
+	<l n="11">Étant parfaitement aimé, </l>
+	<l n="12">Car vous savez que ma maîtresse </l>
+	<l n="13">A pour vous beaucoup de tendresse, </l>
+	<l n="14">Donc au lieu de vous affliger </l>
+	<l n="15">Songez à ne rien négliger, </l>
+	<l n="16">Pour trouver les moyens de plaire </l>
+	<l n="17">À cet esprit bourru de père, </l>
+	<l n="18">Et dedans ce moment fatal </l>
+	<l n="19">Faites le bien contre le mal, </l>
+	<l n="20">Lorsqu'il vous montre son caprice </l>
+	<l n="21">Tachez à lui rendre service, </l>
+	<l n="22">Épiez en l'occasion </l>
+	<l n="23">Parfois une belle action, </l>
+	<l n="24">Donne aux choses une autre face. </l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="25">Ah ! Béatrix je te rends grâce, </l>
+	<l n="26">Oui depuis que tu m'as parlé </l>
+	<l n="27">Je me trouve un peu consolé, </l>
+	<l n="28">Je vais donc faire mon possible </l>
+	<l n="29">Pour servir ce père insensible, </l>
+	<l n="30">Cherchant s'il se peut le moyen </l>
+	<l n="31">De faire de mon mal un bien, </l>
+	<l n="32">Toi Béatrix, près de ma belle </l>
+	<l n="33">Jusqu'à la fin sois-moi fidèle, </l>
+	<l n="34">Moi je ferai de mon côté. </l>
+</sp>
+<sp who="#beatrix">
+                        <speaker>BÉATRIX.</speaker>
+	<l n="35">Ne soyez plus inquiété, </l>
+	<l n="36">Et mettez en repos votre âme </l>
+	<l n="37">Vous l'aurez aujourd'hui pour femme, </l>
+	<l n="38">Mais quelqu'un s'en vient en ce lieu </l>
+	<l n="39" part="I">Faites ce que j'ai dit. </l><!-- @syll="6"-->
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="39" part="F">Adieu. </l><!-- @syll="2"-->
+</sp>
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Guillot, Ragotin.</head>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="40">Ragotin l'amour me tourmente </l>
+	<l n="41">Je brûle d'une flamme ardente, </l>
+	<l n="42">Depuis que certain oeil vainqueur </l>
+	<l n="43">A mis le feu dedans mon coeur, </l>
+	<l n="44">En un mot c'est l'oeil d'Angélique </l>
+	<l n="45">Qui me perturbe et qui me pique, </l>
+	<l n="46">Oui ce petit fripon d'objet </l>
+<note type="L">Trébuchet : Prendre quelqu'un au trébuchet, pour dire, L'engager par adresse, par de belles apparences, à faire une chose qui lui est désavantageuse, ou qui est contraire à ce qu'il avait résolu. [Acad 1762]</note>
+	<l n="47">A pris mon âme au trébuchet. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="48">Il est vrai qu'Angélique est belle </l>
+	<l n="49">Mais vous n'êtes pas moins beau qu'elle. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="50">Et bien Ragotin que dis-tu </l>
+	<l n="51">De l'habit dont je suis vêtu, </l>
+	<l n="52">La petite oie est-elle belle </l>
+<note type="L">Empaumer : Au fig. se rendre maître de l'esprit d'une personne. [FC]</note>
+	<l n="53">Pour empaumer la Damoiselle, </l>
+	<l n="54">Et crois-tu qu'avec tant d'appas </l>
+	<l n="55">La drôlesse n'en tienne pas, </l>
+	<l n="56">Le Comte de la Guillotière </l>
+	<l n="57">Lui va donner dans la visière, </l>
+	<l n="58">Et d'abord qu'elle me verra </l>
+	<l n="59">Dieu sait si l'amour la prendra, </l>
+	<l n="60">De même qu'il m'a bien su prendre.</l>
+	<l n="61">Mais peut-on résister au tendre, </l>
+	<l n="62">Ce diable de tendre est fâcheux </l>
+	<l n="63">Et qui s'en pare est bien heureux. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="64">Pour moi je crois que qui s'en pare </l>
+	<l n="65">Possède un secret grand et rare, </l>
+	<l n="66">Et si le pauvre Ragotin </l>
+	<l n="67">S'en parait, il serait bien fin. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="68">Quoi le même mal te tourmente ? </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="69">Monsieur j'en tiens pour la Suivante, </l>
+	<l n="70">Et cette traîtresse aux yeux doux </l>
+	<l n="71">A mis aussi le feu chez nous. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="72">Nous voilà donc bien à notre aise </l>
+	<l n="73">Moi tout de feu, toi tout de braise </l>
+	<l n="74">Nous ne chercherons point l'Enfer </l>
+	<l n="75">À dessein de nous y chauffer, </l>
+	<l n="76">Je crois que nos ardeurs extrêmes </l>
+<note type="L">Consommer : Achever, accomplir. [L]</note>
+	<l n="77">Consommeraient les diables mêmes, </l>
+	<l n="78">Et qu'en nous voyant ces démons </l>
+	<l n="79">Se transformeraient en charbons, </l>
+	<l n="80">Mais qu'ils brûlent, qu'ils se rôtissent, </l>
+	<l n="81">Qu'ils consomment, qu'ils s'engloutissent, </l>
+	<l n="82">Qu'ils gèlent, qu'ils soient tout glaçons </l>
+	<l n="83">Tout cela j'en dis, des chansons, </l>
+	<l n="84">Pourvu que ma chère Maîtresse </l>
+	<l n="85">Montre pour moi quelque tendresse, </l>
+	<l n="86">Et que la belle à mon abord </l>
+	<l n="87">Puisse être avecque moi d'accord, </l>
+	<l n="88">Car j'aurais l'âme mal contente </l>
+	<l n="89">Si ma femme était discordante, </l>
+	<l n="90">Ainsi pour nous bien accorder </l>
+	<l n="91">Il faut que tu l'aille aborder, </l>
+	<l n="92">Vois donc ce qu'il faut que tu fasses </l>
+	<l n="93">Pour me mettre en ses bonnes grâces </l>
+	<l n="94">Va-t'en lui dire de ma part </l>
+	<l n="95">Que c'est et sans feinte et sans fart, </l>
+	<l n="96">Que le brave et l'illustre Comte, </l>
+<note type="L">Compte : On dit aussi, qu'un homme en a pour son compte, quand il lui est arrivé quelque malheur, quelque disgrâce, quand il a reçu quelque mauvais traitement. [T]</note>
+	<l n="97">En tient pour elle pour son compte, </l>
+	<l n="98">Que quand nous nous assemblerons </l>
+	<l n="99">Qu'ensemble enfin nous compterons, </l>
+	<l n="100">Et que pour la faire Comtesse </l>
+	<l n="101">Je viens la voir avec vitesse, </l>
+	<l n="102">Qu'elle sait si fort éclater </l>
+	<l n="103">Que je ne puis au mieux compter, </l>
+	<l n="104">Si bien que je veux qu'elle compte </l>
+	<l n="105">Avec moi sans aucune honte, </l>
+	<l n="106">Car en ne voulant pas compter </l>
+	<l n="107">Je pourrais bien me mécompter, </l>
+	<l n="108">Parce qu'en comptant sans son hôte </l>
+	<l n="109">Bien souvent l'on se trouve en faute, </l>
+	<l n="110">C'est pourquoi l'on dit d'une voix </l>
+	<l n="111">Que sans hôte on compte deux fois, </l>
+	<l n="112">Je veux donc compter avec elle </l>
+	<l n="113">D'une façon toute nouvelle, </l>
+	<l n="114">Puisque c'est un compte amoureux </l>
+	<l n="115">Qu'il nous faudra vider tous deux. </l>
+	<l n="116">Va la voir pour me satisfaire. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="117">Moi Monsieur j'ai mon compte à faire, </l>
+	<l n="118">Depuis que je suis avec vous </l>
+	<l n="119">Je n'ai pu recevoir deux sous. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="120">Tu te plains la Ragotinière. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="121">Oui Monsieur de la Guillotière. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="122">Je compterai je te promets. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="123">Oui, mais vous ne payez jamais, </l>
+	<l n="124">Vous comptez avec grand délice </l>
+	<l n="125">Mais payer n'est pas votre vice. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="126">Ragotin tu me fais affront. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="127">On fait payer à qui répond </l>
+	<l n="128">Ne répondez pas davantage. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="129">Va-t'en donc faire le message </l>
+	<l n="130">Dont naguère je t'ai prié. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="131">J'irai quand vous m'aurez payé. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="132">Ragotin, vois que je m'enflamme </l>
+	<l n="133">Veux-tu laisser griller mon âme, </l>
+	<l n="134">Parmi mille brûlants transports </l>
+<note type="L">Fricasser : Fig. et très familièrement. Faire périr, perdre. [L]</note>
+	<l n="135">Qui me vont fricasser le corps. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="136">Votre amour n'est pas plus ardente </l>
+	<l n="137">Que la mienne est pour la Suivante, </l>
+	<l n="138">C'est pourquoi rôtissons, grillons, </l>
+	<l n="139">Consommons, brûlons, pétillons, </l>
+	<l n="140">Que tout le feu de la nature </l>
+<note type="L">Fressure : Fig. et très familièrement. Le coeur, le foie où s'excitent les désirs. [L]</note>
+	<l n="141">Tombe dessus notre fressure, </l>
+	<l n="142">Quand nous deviendrions plus secs </l>
+<note type="L">Saurets : Le même que saure, dont il est un diminutif. Maigre comme un hareng sauret, très maigre. [L]</note>
+	<l n="143">Que les harengs les plus saurets, </l>
+	<l n="144">Qu'amour nous réduirait en poudre </l>
+	<l n="145">Vous ne me pourriez pas résoudre, </l>
+<note type="L">Fait : La part qui revient à quelqu'un. [L]</note>
+	<l n="146">À ne rien faire qu'ayant mon fait. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="147">Ah, quel obstiné de valet, </l>
+	<l n="148">Il nous laisserait tous deux cuire </l>
+	<l n="149">Tous deux sécher et tous deux frire, </l>
+	<l n="150">Si je ne le rendais content </l>
+	<l n="151">Il faut lui donner de l'argent, </l>
+	<l n="152">Tiens, Ragotin, voilà tes gages. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="153">Maintenant pour tous vos messages, </l>
+	<l n="154">Vous n'avez qu'à me commander. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="155">Va donc promptement aborder, </l>
+<note type="L">Franchise : La liberté dont on jouit en un lieu. [L]</note> 
+	<l n="156">La voleuse de ma franchise </l>
+	<l n="157">Car la brigande me la prise, </l>
+	<l n="158">Enfin tu lui feras savoir </l>
+<note type="L">Gros : Qui a envie de, désireux. [L]</note>
+	<l n="159">Que je suis tout gros de la voir, </l>
+	<l n="160">Tiens donc toute prête ta langue </l>
+	<l n="161">À lui faire cette harangue, </l>
+	<l n="162">Heurte à sa porte la voilà. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="163">Holà, belle Angélique, holà, </l>
+</sp>
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Béatrix, Ragotin.</head>
+<sp who="#beatrix">
+                        <speaker>BÉATRIX.</speaker>
+	<l n="164">Que vous plaît-il de ma maîtresse. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="165">Je voudrais lui parler traîtresse. </l>
+</sp>
+<sp who="#beatrix">
+                        <speaker>BÉATRIX.</speaker>
+	<l n="166">Pourquoi m'appeler de ce nom, </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="167">Excuse-moi petit tendron, </l>
+	<l n="168">Malade de ma maladie </l>
+	<l n="169">On peut bien dire une folie, </l>
+	<l n="170">Et de la dire j'ai bien lieu </l>
+	<l n="171">Puisqu'un petit Diable de Dieu, </l>
+	<l n="172">Cet amour ou plutôt ce traître </l>
+	<l n="173">M'a fait en te voyant paraître, </l>
+	<l n="174">Appeler de cette façon </l>
+	<l n="175">Comme il use de trahison, </l>
+	<l n="176">Qu'il a filouté le coeur nôtre </l>
+	<l n="177">Je vous avais pris l'un pour l'autre, </l>
+	<l n="178">Tu ressemble à ce friponneau </l>
+	<l n="179">Tout ainsi que deux gouttes d'eau, </l>
+	<l n="180">Mais loin de t'appeler traîtresse </l>
+	<l n="181">Je te veux nommer ma déesse, </l>
+	<l n="182">Belle déesse, mon souci, </l>
+	<l n="183">Fais venir ta Maîtresse ici. </l>
+</sp>
+<sp who="#beatrix">
+                        <speaker>BÉATRIX.</speaker>
+	<l n="184">Mais pourquoi, que veux-tu lui dire ? </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="185">Pour lui déclarer le Martyre, </l>
+	<l n="186">De Monsieur_le_Comte Guillot </l>
+	<l n="187">Dont je suis le valet Ragot. </l>
+</sp>
+<sp who="#beatrix">
+                        <speaker>BÉATRIX.</speaker>
+	<l n="188">Le Comte de la Guillotière. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="189" part="I">Oui. </l><!-- @syll="1"-->
+</sp>
+<sp who="#beatrix">
+                        <speaker>BÉATRIX.</speaker>
+	<l n="189" part="F">J'y vais, la Ragotinière, </l><!-- @syll="7"-->
+	<l n="190">Madame, on vous demande en bas. </l>
+</sp>
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Angélique, Béatrix, Ragotin.</head>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+<note type="L">Malepeste : Imprécation qu'on fait contre quelque chose, et quelquefois avec admiration. [M]</note>
+	<l n="191">Malepeste qu'elle a d'appas, </l>
+	<l n="192">Ma foi la Maîtresse me tente </l>
+	<l n="193">Tout autant comme la Suivante, </l>
+	<l n="194">Et quand je les vois toutes deux </l>
+	<l n="195">Je ne sais où porter mes yeux, </l>
+	<l n="196">Contentons-nous de la Soubrette </l>
+	<l n="197">La Maîtresse est sans doute faite, </l>
+	<l n="198">Pour mon Maître, il la doit avoir </l>
+	<l n="199">Çà faisons donc notre devoir, </l>
+	<l n="200">Madame, si mon éloquence, </l>
+	<l n="201">Se déploie en votre présence, </l>
+	<l n="202">C'est que mon Maître est de vos yeux </l>
+	<l n="203">Comme de vous fort amoureux, </l>
+	<l n="204">Mais c'est un amour sans semblable </l>
+	<l n="205">Il vous aime comme le diable, </l>
+	<l n="206">Il dit qu'il vous possèdera </l>
+<note type="L">Belzébuth : Nom d'un démon. [L]</note>
+	<l n="207">Ou que Belzébuth vous aura, </l>
+	<l n="208">Et qu'enfin s'il ne vous possède </l>
+	<l n="209">Qu'il s'en va pour dernier remède, </l>
+	<l n="210">Se précipiter loin de vous </l>
+	<l n="211">Entre deux draps de lin bien doux. </l>
+</sp>
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+	<l n="212">Pourquoi dire cette sottise. </l>
+</sp>
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Angélique, Béatrix, Guillot, Ragotin.</head>
+<sp who="#guillot">
+                        <speaker>GUILLOT, sort du coin du théâtre où il était caché.</speaker>
+	<l n="213">Ma belle, excusez la franchise, </l>
+	<l n="214">Ragotin venait en ce jour </l>
+	<l n="215">Pour vous découvrir mon amour, </l>
+	<l n="216">Mais sa maladroite personne </l>
+	<l n="217">Ne sait pas comme l'on raisonne, </l>
+	<l n="218">Car alors qu'il faut raisonner </l>
+<note type="L">Rationiser : Terme usité seulement dans le style dogmatique. User de la raison. [L]</note>
+	<l n="219">Il faut bien ratiociner </l>
+	<l n="220">Et quand bien l'on ratiocine </l>
+	<l n="221">La raison en est bien plus fine, </l>
+	<l n="222">Ainsi raisonnant comme il faut </l>
+	<l n="223">On a le raisonnement haut ; </l>
+	<l n="224">Or donc la raison raisonnante </l>
+	<l n="225">D'elle-même est fort éloquente, </l>
+	<l n="226">Et comme enfin cette raison </l>
+	<l n="227">N'a rien en elle que de bon, </l>
+	<l n="228">Concluons qu'étant admirable </l>
+	<l n="229">La raison est bien raisonnable. </l>
+</sp><!--@stage="entrance/location"-->
+<sp who="#ragotin">
+                        <speaker>RAGOTIN, chantant.</speaker>
+<note type="C">La chanson ci-dessous rompt le rythme. Plus d'alternance de rimes : 2 féminines 2 masculines. Le chanteur ayant chanté 3 vers. Il manque pour le 2ème vers, un corresp. pour la rime.</note>
+	<l n="230">Et concluons par nos raisons </l>
+	<l n="231">Qu'il faut quitter l'eau de la Seine </l>
+	<l n="232">Pour les bateaux et les poissons. </l>
+</sp><!--@stage="sing"-->
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="233">Ragotin voulez-vous vous taire ? </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="234">Que chacun fasse son affaire. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="235">Rare objet qui me perturbez. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+<note type="L">Coquereau : Espèce de petit navire. [L]</note>
+<note type="L">Embourber : Fig. Embourber quelqu'un dans une mauvaise affaire, l'y engager. [L]</note>
+	<l n="236">OEil coquereau qui m'embourbez. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="237">Je te défends de plus rien dire. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="238">Je veux déclarer mon martyre. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="239">Finirez-vous bientôt Ragot ? </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+<note type="L">Écot : Fig. Parlez à votre écot, se dit à une personne se mêlant de parler à des gens qui ne lui adressent pas la parole. Parlez à votre écot, signifie parlez à votre compagnie, et non à nous. [L]</note>
+	<l n="240">Monsieur, parlez à votre écot, </l>
+	<l n="241">Je parle ici des amours nôtres </l>
+	<l n="242">Vous pouvez là parler des vôtres, </l>
+	<l n="243">Vous en avez permission </l>
+	<l n="244">Poussez donc votre passion, </l>
+	<l n="245">Moi je m'en vais pousser la mienne </l>
+	<l n="246">Ah, s'il faut qu'un jour je te tienne... </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="247">À la fin je me fâcherai </l>
+	<l n="248">Ragot je vous étrillerai. </l>
+</sp>
+<sp who="#beatrix">
+                        <speaker>BÉATRIX.</speaker>
+	<l n="249">Tais-toi, laisse parler ton Maître. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT, à Angélique.</speaker>
+	<l n="250">Pardonnez si j'ose paraître, </l>
+	<l n="251">À vos yeux les plus grands fripons </l>
+	<l n="252">Et d'amour les plus grands tisons, </l>
+	<l n="253">Qui soient dans le reste du monde </l>
+	<l n="254">Ils m'ont, ou je veux qu'on me tonde, </l>
+	<l n="255">Emmouraché d'une façon </l>
+<note type="L">Court-bouillon : Liquide composé dans lequel on fait cuire le poisson. [L] ici sens figuré.</note> 
+	<l n="256">Que j'en ai l'âme au court-bouillon, </l>
+<note type="L">Compote : Fig. Avoir la tête, les yeux en compote ou à la compote, les avoir tout meurtris. [L]</note>
+	<l n="257">Le pauvre foie à la compote </l>
+<note type="L">À la matelote, loc. adv. À la façon des matelots. </note>
+	<l n="258">La fressure à la matelote, </l>
+	<l n="259">Et le coeur en un tel ragoût </l>
+	<l n="260">Qu'il peut contenter votre goût, </l>
+	<l n="261">Vous êtes, je me donne au diable </l>
+	<l n="262">Une personne incomparable, </l>
+	<l n="263">Et la nature sur ma foi </l>
+	<l n="264">Vous a faite digne de moi. </l>
+	<l n="265">Ah, trop aimable pécheresse </l>
+	<l n="266">Si vous devenez ma Maîtresse, </l>
+	<l n="267">Qu'en satisfaisant mon désir, </l>
+	<l n="268">Vous m'allez donner de plaisir, </l>
+	<l n="269">Car vous avez une prestance </l>
+	<l n="270">Qui porte à la concupiscence, </l>
+	<l n="271">D'abord que je vois vos appas </l>
+	<l n="272">Vous me mettez dans des états, </l>
+	<l n="273">Mais des états si pitoyables </l>
+	<l n="274">Qu'en voyant vos yeux adorables, </l>
+	<l n="275">J'en serais quitte à bon marché </l>
+	<l n="276">Si j'en sortais pour un péché. </l>
+	<l n="277">Vos yeux m'ayant mis de la sorte </l>
+	<l n="278">Ont causé qu'ici je m'apporte, </l>
+	<l n="279">Pour voir si vous trouverez bon </l>
+	<l n="280">Que nous fassions conjonction, </l>
+	<l n="281">En mariant nos deux personnes </l>
+	<l n="282">Répondez la bonne des bonnes. </l>
+</sp><!--@stage="toward"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE, bas le premier vers.</speaker>
+	<l n="283">Ô le ridicule Amoureux </l>
+	<l n="284">Monsieur, j'approuve fort vos voeux, </l>
+	<l n="285">Mais comme je dépends d'un père </l>
+	<l n="286">Il le faut voir pour cette affaire, </l>
+	<l n="287">Je pense qu'il s'en vient ici </l>
+	<l n="288">Dieu me garde d'un tel mari. </l>
+</sp><!--@stage="low"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Guillot, Ragotin Angélique, Béatrix, Le Docteur.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="289">Allons chez nous bonne hypocrite </l>
+<note type="L">Chattemite : Personne affectant des manières humbles et flatteuses. [L]</note>
+	<l n="290">Vous aussi bonne chattemite, </l>
+<note type="L">Muqueter : Faire le galant, le cajolleur, tascher de se rendre agreable à une Dame. [L]</note> 
+	<l n="291">Qui ne faites, que mugueter </l>
+<note type="L">Coqueter : Se plaire à cajoler, ou à être cajolée. [F]</note>
+	<l n="292">Que jaser et que coqueter, </l>
+<note type="L">Caquet bon bec : personne bavarde et médisante. [L]</note>
+<note type="L">La poulle à ma tante : une cajoleuse. [SP]</note>
+	<l n="293">Caquet bon bec poule à ma tante </l>
+	<l n="294">Et la maîtresse et la suivante. </l>
+</sp>
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Guillot, Ragotin, Le Docteur.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="295">Et bien que vous plaît-il Monsieur. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="296">Je suis venu brave Docteur... </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="297">Je suis venu, c'est une phrase </l>
+	<l n="298">Qui met mon âme dans l'extase, </l>
+	<l n="299">Car vous ne pouviez être ici </l>
+	<l n="300">À moins que d'y venir aussi. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="301">Vous saurez que ce qui m'amène. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="302">Sachez avant que je l'apprenne, </l>
+	<l n="303">Que c'est fort bien dit vous saurez </l>
+	<l n="304">Vous oirez, vous écoutez, </l>
+	<l n="305">Parce que pour faire comprendre </l>
+	<l n="306">Il faut avant se faire entendre. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="307">Entendez-moi donc s'il vous plaît. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="308">Tout incontinent j'y suis prêt, </l>
+	<l n="309">Mais souffrez que je vous avoue </l>
+	<l n="310">Que vous méritez qu'on vous loue, </l>
+	<l n="311">Quand vous demandez humblement </l>
+	<l n="312">Audience pour un moment, </l>
+	<l n="313">S'il vous plaît est un si beau terme </l>
+	<l n="314">Que je vous entends de pied ferme, </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="315">Monsieur je vais donc commencer. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="316">Avant que plus outre passer, </l>
+	<l n="317">Vous permettrez que je vous die </l>
+	<l n="318">Que ce mot a grande énergie, </l>
+	<l n="319">Ne dit-on pas communément </l>
+	<l n="320">Telle fin tel commencement, </l>
+	<l n="321">Un commencement admirable </l>
+	<l n="322">Est suivi d'une fin semblable, </l>
+	<l n="323">Donc on ne doit commencer rien </l>
+	<l n="324">Qu'à dessein de le finir bien, </l>
+	<l n="325">Et de plus jamais éloquence... </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="326">Permettez-vous que je commence ? </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="327">Oui Monsieur je vous le permets. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="328">Ne commencerai-je jamais ? </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="329">Commencez donc votre harangue. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="330">Que le Diable emporte ta langue. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="331">Commencerez-vous votre point. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="332">Et toi ne finiras-tu point, </l>
+	<l n="333">Comment veux-tu que je commence, </l>
+	<l n="334">Si tu troubles mon éloquence. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="335">Je prête silence, parlez. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="336">Sachez que mes sens sont brûlés </l>
+	<l n="337" part="I">Apprenez... </l><!-- @syll="3"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="337" part="F">Comment que j'apprenne, </l><!-- @syll="5"-->
+	<l n="338">Esprit grossier âme malsaine, </l>
+	<l n="339">Apprenez, ne sais-tu pas bien </l>
+	<l n="340">Qu'un Docteur n'ignore de rien, </l>
+	<l n="341">Que toutes les plus rares choses </l>
+	<l n="342">Dedans moi sont toutes encloses, </l>
+	<l n="343">Que je passe chez les savants </l>
+	<l n="344">Pour un miracle de mon temps, </l>
+	<l n="345">Qu'il n'est point d'esprit qui ne cède </l>
+	<l n="346">Aux sciences que je possède, </l>
+	<l n="347">Dont sachant tout de bout en bout </l>
+	<l n="348">Qui dit Docteur veut dire tout, </l>
+	<l n="349">Et tu me viens dire d'apprendre. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="350">Ah, que ne te puis-je voir pendre, </l>
+	<l n="351">Je veux vous dire que l'amour </l>
+	<l n="352" part="I">Est cause... </l><!-- @syll="3"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="352" part="F">Que tu vois le jour, </l><!-- @syll="5"-->
+	<l n="353">Que par lui seul tu tiens ton être </l>
+	<l n="354">Que sans lui tu ne pouvais naître, </l>
+	<l n="355">Que c'est lui qui nous fait aimer </l>
+	<l n="356">Qu'il sait l'art de nous enflammer, </l>
+	<l n="357">Et qu'encor qu'il ne voie goutte </l>
+	<l n="358">Il nous sait conduire à la route, </l>
+	<l n="359">Qu'il faut suivre pour les plaisirs </l>
+	<l n="360">Animant nos plus chers désirs, </l>
+	<l n="361">Il fait palpiter notre foie </l>
+	<l n="362">Il mène au séjour de la joie, </l>
+	<l n="363">Enfin par ce divin enfant </l>
+	<l n="364">On se voit souvent triomphant, </l>
+	<l n="365">De l'aimable objet qui nous charme </l>
+	<l n="366">Et pourtant lui seul nous désarme, </l>
+	<l n="367">Et quand on se voit triomphant </l>
+	<l n="368">On ne le doit qu'à cet enfant, </l>
+	<l n="369">Oui cet aveugle qui nous guide </l>
+	<l n="370">Donne de l'esprit au stupide, </l>
+	<l n="371">Il fait que le plus ignorant </l>
+	<l n="372">Près d'une maîtresse est savant, </l>
+	<l n="373">Et qui rend toutes nos paroles </l>
+<note type="L">Hyperbole : Figure de rhétorique qui consiste à augmenter ou à diminuer excessivement la vérité des choses pour qu'elle produise plus d'impression. [L]</note>
+	<l n="374">Pleines d'illustres hyperboles, </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+<note type="L">Hyperboliser : Parler par hyperboles.</note>
+	<l n="375">Ah, c'est trop hyperboliser </l>
+	<l n="376">Je m'en vais à mon tour jaser </l>
+	<l n="377">Sachez que la belle Angélique </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="378">Si c'est la beauté qui vous pique. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="379">Comment donc je ne dirai rien </l>
+	<l n="380" part="I">L'amour... </l><!-- @syll="2"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="380" part="F">Ainsi qu'il fait du bien, </l><!-- @syll="6"-->
+	<l n="381">Il fait du mal et de la peine </l>
+	<l n="382">Et met notre coeur à la gêne, </l>
+	<l n="383">Il porte nos intentions </l>
+	<l n="384">Souvent aux basses actions, </l>
+	<l n="385">Il nous présente des abîmes </l>
+	<l n="386">Qui nous font tomber dans les crimes, </l>
+	<l n="387">Et bien souvent nous y tombons </l>
+	<l n="388">Alors que moins nous y pensons. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="389">Parleras-tu toute ta vie ? </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="390">Non ma phrase est bientôt finie, </l>
+	<l n="391">Je ne vous dirai plus qu'un mot </l>
+	<l n="392">Sachez brave Comte Guillot... </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="393">Sachez docteur qui n'en sait guère </l>
+<note type="L">Harangueur : Fig. et familièrement. Celui qui parle beaucoup, celui qui fait des réprimandes sur toutes choses. [L]</note>
+	<l n="394">Que ta langue est une haranguère, </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="395" part="I">Sachez... </l><!-- @syll="2"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="395" part="F">Je ne veux rien savoir. </l><!-- @syll="6"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="396" part="I">Voyez donc... </l><!-- @syll="3"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="396" part="F">Je ne veux rien voir. </l><!-- @syll="5"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="397" part="I">Comprenez... </l><!-- @syll="3"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="397" part="F">Ni même comprendre. </l><!-- @syll="6"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="398" part="I">Apprenez... </l><!-- @syll="3"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="398" part="F">Que peux-tu m'apprendre. </l><!-- @syll="5"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="399">En toutes choses d'exceller. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="400">Bourreau, je ne veux que parler. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="401">Parlez, je suis tout prêt d'entendre. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="402" part="I">J'attends... </l><!-- @syll="2"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="402" part="F">Vous pouvez tout attendre. </l><!-- @syll="6"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="403" part="I">J'espère... </l><!-- @syll="2"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="403" part="F">Espérez tout de moi. </l><!-- @syll="6"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="404" part="I">Croyez... </l><!-- @syll="2"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="404" part="F">Fort aisément je crois. </l><!-- @syll="6"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="405" part="I">Pensez... </l><!-- @syll="2"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="405" part="F">Je sais ce que je pense. </l><!-- @syll="6"-->
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="406" part="I">Donnez... </l><!-- @syll="2"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="406" part="F">Je vous donne audience, </l><!-- @syll="6"-->
+	<l n="407">Ainsi que vous l'avez voulu. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="408">Dis-moi traître as-tu résolu, </l>
+	<l n="409">De m'étourdir en cette place. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="410">Enfin mon silence se lasse, </l>
+	<l n="411">Vous parlez trop Monsieur Guillot. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="412" part="I">Je veux... </l><!-- @syll="2"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="412" part="F">Vous ne direz plus mot, </l><!-- @syll="6"-->
+	<l n="413">Il faut qu'à mon tour je m'explique. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="414">J'aime votre fille Angélique. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="415">Quoi c'est l'objet de vos souhaits </l>
+	<l n="416">Touchez, vous ne l'aurez jamais. </l>
+</sp>
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Guillot, Ragotin.</head>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="417">Nous voilà bien dans nos affaires. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="418">Nos maux sont extraordinaires </l>
+	<l n="419">Jamais je ne vis tel parleur. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="420">Ah ! Quel enragé de Docteur, </l>
+<note type="L">Épigramme : Espèce de petite poësie, qui consiste ordinairement dans une seule pensée, dont la force est presque toute dans les derniers vers. [L]</note>
+	<l n="421">Et quel grand cracheur d'épigramme </l>
+	<l n="422">Il m'a pensé vomir son âme, </l>
+<note type="L">Chien de : Chien de, avec les noms masculins, chienne de, avec les noms féminins, locution qui se dit, par une sorte de dépréciation, des personnes et des choses. [Acad. 1762]</note>
+	<l n="423">Au nez dans son chien d'entretien </l>
+	<l n="424">Pour un Docteur qui ne sait rien, </l>
+	<l n="425">Il fait valoir une sottise </l>
+	<l n="426">Comme un Docteur qui doctorise, </l>
+	<l n="427">Mais pourtant en doctorisant </l>
+	<l n="428">Il m'a rendu fort mal content, </l>
+	<l n="429">Le diable emporte sa doctrine </l>
+	<l n="430">Lui-même et sa maudite mine, </l>
+	<l n="431">De m'avoir ainsi refusé </l>
+	<l n="432">L'objet dont je suis embrasé, </l>
+	<l n="433">Et celle où tout mon soin s'applique. </l>
+</sp>
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Le Baron de la Topinière, Tarasquin, Guillot, Ragotin.</head>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="434">Oui j'aime l'illustre Angélique, </l>
+	<l n="435">Et quiconque s'en approchera </l>
+	<l n="436">Il est certain qu'il périra, </l>
+<note type="L">Couper le trame : se dit figurément et poétiquement en Morale, du cours de la vie. Les Parques ont filé, ont coupé la trame de ses jours. [L]</note>
+	<l n="437">Je m'en vais lui couper la trame </l>
+	<l n="438">Et puis je lui mangerai l'âme. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT, se cachant.</speaker>
+	<l n="439">Où me suis-je venu fourrer. </l>
+</sp><!--@stage="hide"-->
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="440">Monsieur, on nous va dévorer, </l>
+	<l n="441">Nous sommes à la boucherie. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="442">Si quelqu'un dedans ma furie, </l>
+	<l n="443">Ose se présenter à moi </l>
+	<l n="444">Sans doute il en mourra d'effroi, </l>
+	<l n="445">Me voilà dedans une rage </l>
+	<l n="446">Qui va faire de tout carnage, </l>
+	<l n="447">Où sont-ils tous ces amoureux </l>
+	<l n="448">Qui cherchent l'objet de mes voeux, </l>
+	<l n="449">Afin que sur eux mon épée </l>
+<note type="L">Lippée : Bouchée. Il se prend aussi quelquefois pour Repas ; et en ce sens il se met presque toujours avec l'épithète de Franche. [Acad. 1762]</note>
+	<l n="450">Attrape sa franche lippée, </l>
+</sp>
+<sp who="#tarasquin">
+                        <speaker>TARASQUIN.</speaker>
+	<l n="451">Mais qui s'oserait présenter </l>
+	<l n="452">À vous qui savez tout dompter. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="453">Le Comte de la Guillotière </l>
+	<l n="454">Éprouvera mon humeur fière. </l>
+</sp>
+<sp who="#tarasquin">
+                        <speaker>TARASQUIN.</speaker>
+	<l n="455">Pour Monsieur son valet Ragot </l>
+	<l n="456">Je lui veux couper le gigot, </l>
+	<l n="457">Et le mettre sur la litière. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="458">Adieu pauvre Ragotinière, </l>
+<note type="L">Coupe-jarret : Brigand, assassin de profession. [L]</note>
+	<l n="459">Quel horrible coupe-jarret. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="460">Ragot, tel Maître tel valet. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="461" part="I">Qui va là ? </l><!-- @syll="3"-->
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="461" part="F">Monsieur, je trépasse. </l><!-- @syll="5"-->
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="462">Allons vite faisons main basse, </l>
+	<l n="463">Tuons tout, massacrons, brisons, </l>
+	<l n="464">Rompons, cassons, exterminons, </l>
+	<l n="465">Égorgeons, mettons tout par terre, </l>
+	<l n="466">Livrons à tous amants la guerre, </l>
+	<l n="467">Je veux d'un regard plein d'horreur </l>
+	<l n="468">Les immoler à ma fureur, </l>
+	<l n="469">Que la moindre de mes conquêtes </l>
+	<l n="470">Soit d'abattre cent mille têtes, </l>
+	<l n="471">De couper et jambes, et bras </l>
+	<l n="472">Ce sont là mes petits combats, </l>
+	<l n="473">Mon courage étant sans mesure </l>
+	<l n="474">Je défais toute la nature, </l>
+	<l n="475">Quand ma valeur lance ses traits </l>
+	<l n="476">Et quand je veux je la refais, </l>
+	<l n="477">Mais quelque vaillant qu'on puisse être </l>
+	<l n="478">L'amour est toujours notre Maître, </l>
+	<l n="479">Puisqu'on se rend ou tôt ou tard </l>
+	<l n="480">À ce petit chien de bâtard, </l>
+	<l n="481">Vois donc celle qui tient mon âme </l>
+	<l n="482">Dis-lui que son aspect m'enflamme, </l>
+	<l n="483">Et que je ne puis vivre heureux </l>
+	<l n="484">Qu'alors que je vois ses beaux yeux, </l>
+	<l n="485">Son port, son air, sa bonne mine, </l>
+	<l n="486">Cette douceur qui m'assassine, </l>
+	<l n="487">Enfin tous ses charmes divers </l>
+	<l n="488">Qui font que je suis dans ses fers, </l>
+	<l n="489">Va voir si la belle est visible </l>
+	<l n="490">Mon coeur est percé comme un crible, </l>
+	<l n="491">De la pointe de ses attraits. </l>
+</sp>
+<sp who="#tarasquin">
+                        <speaker>TARASQUIN, l'appelant.</speaker>
+	<l n="492">Holà, miracle, des objets. </l>
+</sp><!--@stage="call"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+	<l n="493" part="I">Que veut-on ? </l><!-- @syll="3"-->
+</sp>
+<sp who="#tarasquin">
+                        <speaker>TARASQUIN.</speaker>
+	<l n="493" part="F">Beauté printanière </l><!-- @syll="5"-->
+	<l n="494">Le Baron de la Topinière, </l>
+	<l n="495">Désire vous voir un moment. </l>
+</sp>
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Angélique, La Topinière.</head>
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+	<l n="496">Je vais à lui présentement. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="497">Approchez doux charme des charmes </l>
+	<l n="498">Comme on vous doit rendre les armes, </l>
+	<l n="499">Le phénix de tous les guerriers </l>
+	<l n="500">Vient mettre à vos pieds ses lauriers, </l>
+	<l n="501">Mon bras plus craint que le tonnerre </l>
+	<l n="502">M'a su gagner toute la terre, </l>
+	<l n="503">J'ai tout soumis à mon courroux </l>
+	<l n="504">Il ne reste donc plus que vous. </l>
+	<l n="505">Mais votre beauté sans seconde </l>
+	<l n="506">Est plus forte que tout le monde, </l>
+	<l n="507">Pourtant telle que vous soyez </l>
+	<l n="508">Il faudra que vous succombiez </l>
+	<l n="509">Car me voyant, la plus cruelle </l>
+	<l n="510">Peut dire qu'elle en a dans l'aile, </l>
+	<l n="511">Jugez donc si vous en tiendrez </l>
+	<l n="512">Dès que vous me regarderez. </l>
+</sp>
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+<note type="L">Se donner garde : se défier, éviter. Donnez-vous garde de ce mauvais pas. {L]</note>
+	<l n="513">Je me donnerai bien de garde </l>
+	<l n="514">De vous, quoique je vous regarde, </l>
+	<l n="515">Eussiez-vous cent fois plus d'appas </l>
+	<l n="516">Baron vous ne me tenez pas. </l>
+</sp>
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. Guillot, Ragotin, La Topinière, Tarasquin.</head>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="517">Je crains qu'il ne quitte pas prise. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="518">Je crains ici quelque surprise. </l>
+</sp>
+<sp who="#tarasquin">
+                        <speaker>TARASQUIN.</speaker>
+	<l n="519">Je crains quelques coups de bâton. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="520">Évitons la contusion. </l>
+	<l n="521">S'il se peut en faisant le brave. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="522">Songez que je suis votre esclave, </l>
+	<l n="523">Et que si vous faites le sot </l>
+	<l n="524">Adieu, vous et votre Ragot, </l>
+	<l n="525">Ce Baron de la Topinière </l>
+<note type="L">Traîne rapière : Bretteur, ferrailleur, querelleur. [T]</note>
+	<l n="526">Est un rude traîne-rapière, </l>
+	<l n="527">Nous aurons ici du qu'as-tu. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="528">Tu ne seras jamais battu, </l>
+	<l n="529">En la présence de ton Maître. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="530">Vous fuirez des premiers peut-être. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="531">Tu m'as bien la mine je crois </l>
+	<l n="532">De fuir aussi tôt comme moi. </l>
+</sp>
+<sp who="#tarasquin">
+                        <speaker>TARASQUIN.</speaker>
+	<l n="533">Ah, Monsieur_le_Baron je tremble. </l>
+	<l n="534">Et crois que nous tremblons ensemble. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="535">Je ne tremble pas mais j'ai peur </l>
+	<l n="536">Ah, que n'ai-je un peu plus de coeur. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="537">Que n'ai-je un peu plus de courage </l>
+	<l n="538">L'on me verrait faire carnage. </l>
+</sp>
+<sp who="#tarasquin">
+                        <speaker>TARASQUIN.</speaker>
+	<l n="539">Pour éviter ces carnassiers ? </l>
+	<l n="540">Je m'en vais fuir tout des premiers.</l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="541">Ne crois pas qu'ici je demeure </l>
+	<l n="542">Je vais fuir aussi tout à l'heure. </l>
+</sp>
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Guillot, Ragotin.</head>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="543">De peur par moi d'être assailli, </l>
+<note type="L">Happer : Se jeter sur quelque chose brusquement et avidement pour la prendre. [T]</note>
+<note type="L">Gagner le taillis : Figuré. se mettre en lieu de sûreté. [L]</note>
+	<l n="544">Comme ils ont happé le taillis. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="545">Quand on voit ma mine cruelle... </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+<note type="L">Enfiler la venelle : prendre la fuite. [L]</note>
+	<l n="546">Ils ont enfilé la venelle, </l>
+	<l n="547">Mais s'ils revenaient sur leurs pas. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="548">Je crois qu'ils ne reviendront pas, </l>
+	<l n="549" part="I">Que ferons-nous ? </l><!-- @syll="4"-->
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="549" part="F">Je viens d'apprendre </l><!-- @syll="4"-->
+	<l n="550">Que Monsieur le Docteur est tendre, </l>
+	<l n="551">Sur l'article de bien chanter </l>
+	<l n="552">Il faut donc l'expérimenter, </l>
+	<l n="553">Chantant tous deux comme des anges </l>
+	<l n="554">Faisant d'admirables mélanges, </l>
+	<l n="555">De nos voix, pour toucher le coeur </l>
+	<l n="556">De ce vieux barbon de Docteur, </l>
+	<l n="557">Peut-être que notre musique </l>
+	<l n="558">Vous pourra gagner Angélique, </l>
+	<l n="559">Cherchons donc un air, promptement </l>
+	<l n="560">Et chantons méthodiquement. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="561">Mais quel air dirons-nous, regarde. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="562">Monsieur nous dirons la guimbarde.</l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="563">Que veux-tu dire esprit bourru. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+<note type="L">À l'enturlu : en chantant.</note>
+	<l n="564">Nous dirons donc l'enturlu, </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="565">N'en sais-tu pas une délite. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN dit l'air de toutes les chansons qu'il nomme.</speaker>
+	<l n="566">N'avez-vous point vu Marguerite. </l>
+</sp><!--@stage="sing"-->
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="567">Tu ne sais point d'autre chanson ? </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="568">Disons, hélas Jean hélas don. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="569">Va ta forte fièvre quartaine. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="570">Ou bien turlututu rengaine. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="571">Ragot, vous me déplaisez fort. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="572">Léandre était dessus le bord. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="573">Sont cela des chansons nouvelles ? </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="574">Les plus vieilles sont les plus belles, </l>
+	<l n="575">Mais vous ne trouvez rien de bon </l>
+	<l n="576">Voulez-vous un quand dira-t-on. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="577">J'en veux une toute nouvelle. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="578">Qui est celui–là qui m'appelle. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="579">Il faut qu'il ait l'esprit perdu. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="580">Ah, j'en sais une d'un pendu, </l>
+	<l n="581">Qui va bien être votre affaire. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="582">Ragot, si tu ne te veux taire, </l>
+	<l n="583">Je te donnerai mille coups. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="584">Petite brunette aux yeux doux. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="585">Tu ne te tairas pas, j'enrage. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="586">Je n'en dirai pas davantage. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="587">Laisse-moi parler un moment. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="588">Autant en emporte le vent, </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="589">Chanter encor âme indiscrète. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="590">L'autre jour dame Guillemette. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="591">Le traître est aussi grand chanteur </l>
+	<l n="592">Que le Docteur est grand parleur, </l>
+	<l n="593">Va que la tempête t'entraîne </l>
+	<l n="594">Docteur de la Samaritaine, </l>
+	<l n="595">Sans toi j'aurai bien la vertu </l>
+<note type="L">Impromptu : Tout ce qui se fait sur-le-champ et sans préparation. [L]</note>
+	<l n="596">D'en faire une belle impromptu. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="597">Nous la chanterons donc ensemble. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="598">Tu ne dis pas si bon me semble.</l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="599">Il vous semblera bon ou non </l>
+	<l n="600">Je veux être de la chanson. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="601">Attends, je crois que j'en tiens une. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="602">Elle ne sera pas commune. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="603">Tu n'as qu'à me suivre Ragot. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="604">Commencez donc le premier mot. </l>
+<stage type="sing/together">Guillot commence la moitié du couplet seul, et Ragotin et lui le chantent ensemble.</stage> 
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+<stage type="title">Chanson.</stage>
+	<l n="605">Chère friponne d'Angélique </l>
+	<l n="606">Mouche coquine qui me pique, </l>
+	<l n="607">Vous avez escroqué mon coeur </l>
+<note type="L">Écornifleur : Celui qui prend subrepticement. Par extension, celui qui s'empare de quelque chose qui n'est pas à lui. [L]</note>
+	<l n="608">Écornifleuse de mon âme </l>
+	<l n="609">Objet aimable suborneur, </l>
+<note type="L">Entamer quelqu'un : avoir de l'avantage sur lui. </note>
+	<l n="610">Il faut que Guillot vous entame. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="611">Nous venons de chanter la vôtre </l>
+	<l n="612">Chantons donc s'il vous plaît la nôtre. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="613">Allons, Ragotin, je le veux. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="614">Ah, je la tiens par les cheveux, </l>
+	<l n="615">Je commence si bon vous semble </l>
+	<l n="616">Et puis nous chanterons ensemble. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN en dit la moitié seul, puis ils la disent ensemble.</speaker>
+<note type="C">La chanson ci-dessous rompt le rythme. Plus d'alternance de rimes : 2 féminines 2 masculines. Le chanteur ayant chanté 5 vers. Il manque pour le 4ème vers, un corresp. pour la rime.</note>
+	<l n="617">Vous avez ma Béatrix </l>
+	<l n="618">Plus de puces qu'un chat gris, </l>
+	<l n="619">Et si vous ne m'aimiez bien </l>
+	<l n="620">Par ma foi je vous souhaite, </l>
+	<l n="621">Bientôt la gale du chien. </l>
+</sp><!--@stage="alone/together"-->
+</div>
+<div type="scene" n="13">
+                    <head>SCÈNE XIII. Guillot, Ragotin, La Topinière, Tarasquin.</head>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="622">Il faut qu'ils meurent tout de bon.</l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="623">Voici bien une autre chanson, </l>
+	<l n="624">Monsieur souffrez que je recule </l>
+	<l n="625">Je vous laisse faire l'Hercule. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="626">Ragotin ne me quitte pas. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="627">Monsieur je crains trop le trépas, </l>
+	<l n="628">Permettez-moi que je m'en aille. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="629">Je crains aussi cette canaille. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="630">Commençons par le Sieur Guillot </l>
+	<l n="631">Et nous finirons par Ragot. </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="632">Ragotin, mettons-nous en garde. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="633">Moi ? Monsieur, hélas je n'ai garde. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="634">Nous allons avancer nos jours. </l>
+</sp>
+<sp who="#tarasquin">
+                        <speaker>TARASQUIN.</speaker>
+	<l n="635">Je vais appeler au secours. </l>
+</sp>
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="636">Monsieur, je vais crier à l'aide </l>
+	<l n="637">Au meurtre, un Diable nous possède. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE.</speaker>
+	<l n="638">Quelqu'un, à la force, au voleur. </l>
+</sp>
+</div>
+<div type="scene" n="14">
+                    <head>SCÈNE XIV. Le Docteur, Guillot, Ragotin, la Topinière, Tarasquin.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="639">Qui peut causer cette rumeur ? </l>
+</sp>
+<sp who="#guillot">
+                        <speaker>GUILLOT.</speaker>
+	<l n="640">Ce drôle qui veut votre fille </l>
+	<l n="641">Mais il faut qu'ici je l'étrille. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIÈRE, par-dessus le Docteur.</speaker>
+	<l n="642">Ce n'est rien qu'un coquin, Monsieur. </l>
+</sp><!--@stage="location"-->
+<sp who="#guillot">
+                        <speaker>GUILLOT par-dessus le Docteur.</speaker>
+<note type="L">Faquin : Termes de mépris et d'injure.</note>
+	<l n="643">C'est un archi-faquin, Docteur. </l>
+</sp><!--@stage="location"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="644">La démonstration m'outrage </l>
+	<l n="645">N'en faites donc pas davantage. </l>
+</sp>
+<sp who="#la-topiniere">
+                        <speaker>LA TOPINIERE, par-dessus le Docteur.</speaker>
+	<l n="646">Laissez-moi lui couper les bras. </l>
+</sp><!--@stage="location"-->
+<sp who="#guillot">
+                        <speaker>GUILLOT, tout de même.</speaker>
+	<l n="647">Je vais mettre sa tête à bas. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, appelant à lui.</speaker>
+<note type="L">Outrecuider : Montrer à quelqu'un du mépris par l'idée de sa propre supériorité. [L]</note>
+	<l n="648">On me moleste on m'outrecuide </l>
+	<l n="649">Mes gens à moi, l'on m'homicide. </l>
+</sp><!--@stage="call"-->
+<sp who="#ragotin">
+                        <speaker>RAGOTIN.</speaker>
+	<l n="650">Hélas où nous fourrerons-nous ? </l>
+</sp>
+<sp who="#tarasquin">
+                        <speaker>TARASQUIN.</speaker>
+	<l n="651">Nous allons avoir mille coups. </l>
+</sp>
+</div>
+<div type="scene" n="15">
+                    <head>SCÈNE XV. Léandre, Le Docteur, Guillot, Ragotin, La Topinière, Tarasquin.</head>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="652">Qui fait ce bruit quel tintamarre </l>
+<note type="L">Barre : Pièce de bois, de fer, etc. étroite et longue. On disait autrefois donner des coups de barre à quelqu'un pour le bien battre. [L]</note>
+	<l n="653">Ah, vous aurez cent coups de barre, </l>
+	<l n="654">Je vous fracasserai les bras. </l>
+<stage type="toward/hit">Il parle aux Amants Ridicules et les frappe.</stage>
+<stage type="escape">Les Galants ridicules s'enfuyant disent :</stage>
+	<l n="655">Que nous ne vous attendons pas. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+<note type="L">Guérite : Refuge ; sens primitif conservé seulement dans cette locution : gagner la guérite, s'enfuir. [L]</note>
+	<l n="656">Comme ils gagnent tous la guérite </l>
+<note type="L">Dauber : Frapper à coups de poing. Fig. et familièrement, railler quelqu'un, mal parler de lui, l'injurier. [L]</note>
+	<l n="657">Celui qui les daube est d'élite. </l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="658">Comment, être perturbateurs </l>
+	<l n="659">De ce grand Docteur des Docteurs. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="660">Mais qui venge là mon offense ? </l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="661">Quoi s'adresser à la science, </l>
+	<l n="662">Ô dieux, quelle témérité. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="663">Vous que j'ai tantôt rebuté, </l>
+	<l n="664">M'avoir fait une telle grâce </l>
+	<l n="665">Que faut-il pour vous que je fasse ? </l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="666">M'accorder l'objet de mes voeux </l>
+	<l n="667">Si vous voulez me rendre heureux. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="668">Oui je vous l'accorde Léandre. </l>
+</sp>
+<sp who="#leandre">
+                        <speaker>LÉANDRE.</speaker>
+	<l n="669">Tout vient à point qui peut attendre, </l>
+	<l n="670" part="I">Monsieur... </l><!-- @syll="2"-->
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="670" part="F">Ma fille approchez-vous </l><!-- @syll="6"-->
+	<l n="671">Léandre sera votre époux. </l>
+</sp>
+</div>
+<div type="scene" n="16">
+                    <head>SCÈNE XVI. Angélique, Léandre, Le Docteur, Guillot, Ragotin, la Topinière, Tarasquin.</head>
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+	<l n="672">Ô Ciel, que je suis fortunée. </l>
+</sp>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+	<l n="673">Allons conclure l'hyménée. </l>
+</sp>
+</div>
+</div>
+</body>
+</text>
 </TEI>

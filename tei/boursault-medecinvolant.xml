@@ -1,1814 +1,1878 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="../css/tei.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>LE MÉDECIN VOLANT, COMÉDIE.</title>
-        <author ISNI="0000 0000 8342 9101">Edme BOURSAULT (1638-1701)</author>
-      </titleStmt>
-      <publicationStmt>
-        <editor>Publié par Paul FIEVRE, octobre 2014, revu janvier 2017.</editor>
-        <publisher>Publié par Paul FIEVRE, octobre 2014, revu janvier 2017.</publisher>
-        <idno>BOURSAULT_MEDECINVOLANT</idno>
-        <rights>Creative Commons BY-NC-SA</rights>
-        <idno type="orig">BOURSAULT_MEDECINVOLANT</idno>
-        <idno type="dracor" xml:base="https://dracor.org/id/">fre000154</idno>
-      </publicationStmt>
-      <SourceDesc>
-        <genre>Comédie</genre>
-        <inspiration>moeurs françaises</inspiration>
-        <structure>Un acte</structure>
-        <type>vers</type>
-        <periode>1661-1670</periode>
-        <taille>500-750</taille>
-        <permalien>http://gallica.bnf.fr/ark:/12148/bpt6k629721</permalien>
-      </SourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text>
-    <front>
-      <docTitle>
-        <titlePart type="main">LE MÉDECIN VOLANT</titlePart>
-        <titlePart type="sub">COMÉDIE BURLESQUE</titlePart>
-      </docTitle>
-      <docDate value="1666">M. DC. LXVI. AVEC PERMISSION.</docDate>
-      <docAuthor id="BOURSAULT, Edme" bio="boursault"/>
-      <docImprint>
-        <privilege id="1666-01-26">
-          <head>PERMISSION.</head>
-          <p>Je n'empêche, pour le Roi, l'impresse de MATHEVET Marchand libraire à Lyon, de la comédie intitulée Le Médecin Volant ; et ce pour trois ans, avec les défenses en tel cas requises et accoutumées.</p>
-          <p>Fait à Lyon, le 27 janvier, mille six cent soixante-six.</p>
-          <p>BOLLIOUD-MERMET.</p>
-        </privilege>
-        <printer id="RIBOU">À LYON, Chez Charles Mathevet, rue Mercière, à Saint-Thomas d'Aquin.</printer>
-        <acheveImprime id="1666-01-28">Permis l'impression dudit livre pour un an. Fait ce 28 janvier 1666. DESEVE</acheveImprime>
-      </docImprint>
-      <performance>
-        <premiere date="1694-10" location="Théâtre du Marais">Représentée, pour la première fois en octobre 1669 au Théâtre du Marais. </premiere>
-      </performance>
-      <div type="dedicace">
-        <adresse>À MONSIEUR C** MÉDECIN DE MON PAYS</adresse>
-        <p type="note">[Cette dédicace est absente de l'édition originale et se trouve dans l'édition de 1833 de la Nouvelle Collection Molièresque.]</p>
-        <head>MONSIEUR,</head>
-        <p>Soit par coutume ou soit par générosité, je n'ai jusqu'ici dédié aucune pièce que l'on ne m'ait fait quelque présent, et, à dire vrai, l'on m'attraperait bien si on venait à perdre une si bonne habitude. Cependant je vous dédie le MÉDECIN VOLANT, qui assurément n'est pas le moindre de mes ouvrages, à condition seulement que si jamais je vais au pays, et que je sois assez heureux pour y devenir malade, vous aurez assez de bonté pour moi pour ne pas me faire languir longtemps. Remarquer, s'il vous plaît, Monsieur, que je ne veux pas dire que vous aurez la bonté de m'expédier le plus tôt qu'il vous sera possible, et souffrez que je vous avertisse, de peur d'équivoque, que je n'estime la médecine qu'en ce qu'elle peut être utile à la conservation ou au recouvrement de ma santé, parce que je mourrai bien sans le secours de personne, et particulièrement de votre Faculté, pour qui j'ai trop de vénération pour ne pas lui en épargner la peine. Il meurt plus de monde en ces quartiers par la faute des médecins que vous n'en ressuscitez par votre capacité ; et Paris est si misérable pour les malades que l'on prend plus de soin pour les faire mourir que vous n'en prendriez pour les faire vivre. Je vous proteste que si l'on m'appelait à la Police, j'y donnerais si bon ordre qu'il ne serait plus permis d'assassiner impunément un homme ; et ces Messieurs, qui ne sont médecins que par la soutane, seraient obligés, durant quelques années que je limiterais, de faire l'épreuve de leur science sur les animaux qui ne sont plus propres au travail. Si cela était, les habiles comme vous n'en seraient pas plus mal, et les malades en seraient beaucoup mieux ; vous en aurez ici plus de pratiques, et ceux qui meurent avec tant de précipitation entre les mains de ces ignorants ne mourraient peut-être pas si vite entre les autres. Enfin, Monsieur, j'ai tant d'estime pour votre personne et tant d'inclination pour le pays que, si jamais il me prend envie de sortir du monde, j'aime mieux mourir de votre main que de pas une autre, quand ce ne serait qu'à cause qu'il y a de mes parents qui en sont déjà morts, et que, par conséquent, je suis obligé d'être,</p>
-        <p>Monsieur,</p>
-        <p>Votre très humble et très affectionné serviteur,</p>
-        <p>BOURSAULT.</p>
-      </div>
-      <castList>
-        <head>PERSONNAGES</head>
-        <castItem><role id="CLÉON" sex="1" type="H" statut="bourgeois" age="J" stat_amour="Lucresse">CLÉON</role>, amant de Lucresse.</castItem>
-        <castItem><role id="LISE" sex="2" type="H" statut="servante" age="A" stat_amour="">LISE</role>, servante de Lucresse.</castItem>
-        <castItem><role id="LUCRESSE" sex="2" type="H" statut="bourgeois" age="J" stat_amour="Cléon">LUCRESSE</role>, maîtresse de Cléon.</castItem>
-        <castItem><role id="CRISPIN" sex="1" type="H" statut="valet" age="A" stat_amour="">CRISPIN</role>, valet de Cléon, médecin volant.</castItem>
-        <castItem><role id="FERNAND" sex="1" type="H" statut="bourgeois" age="A" stat_amour="">FERNAND</role>, père de Lucresse.</castItem>
-        <castItem><role id="PHILIPIN" sex="1" type="H" statut="valet" age="A" stat_amour="">PHILIPIN</role>, valet de Fernand.</castItem>
-        <castItem><role id="CANTÉAS" sex="1" type="H" statut="médecin" age="A" stat_amour="">CANTÉAS</role>, habile médecin.</castItem>
-      </castList>
-      <set location="Paris" country="France" periode="XVIIème" link="">La scène est devant la maison de Fernand.</set>
-    </front>
-    <body>
-      <div1 type="act" n="1">
-        <head>LE MÉDECIN VOLANT</head>
-        <div2 type="scene" n="1">
-          <head>SCÈNE PREMIÈRE. Lise, Cléon.</head>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="1">N'insultez point, de grâce, au malheur de Lucresse</l>
-            <l id="2">Je sais qu'elle a pour vous une forte tendresse ;</l>
-            <l id="3">Mais enfin de son père elle craint le pouvoir, </l>
-            <l id="4">Et ne peut se résoudre au plaisir de vous voir.</l>
-            <l id="5">Une fille bien née a toujours de la crainte.</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="6">Que veux-tu ? La douleur dont mon âme est atteinte</l>
-            <l id="7">Rend ma plainte équitable, et me fait murmurer</l>
-            <l id="8">Contre un objet charmant, que je dois adorer.</l>
-            <l id="9">Mais, Lise, à sa fenêtre une prompte escalade</l>
-            <l id="10" part="i">Peut m'ouvrir une voie.</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="10" part="f">Elle fait la malade,</l>
-            <note type="L">Rètre : reître. Anciennement cavalier allemand. Fig. ou familièrement, en mauvaise part ou par plaisanterie, un homme que l'on compare à un soudard. [L]</note>
-            <l id="11">Monsieur, et le vieux rètre est parti du matin,</l>
-            <l id="12">Pour chercher par la ville un expert médecin.</l>
-            <l id="13">Sans rien escalader, pour voir une maîtresse,</l>
-            <l id="14">Un amant dans sa manche a toujours quelque adresse.</l>
-            <l id="15">Mettez tout en usage, et puissance, et savoir ;</l>
-            <l id="16">Sans choquer son honneur, essayez de la voir.</l>
-            <l id="17">Il n'est pas de moyens que l'amour n'autorise.</l>
-            <l id="18">Surtout. Mais du vieillard je crains une surprise :</l>
-            <l id="19">Adieu, pensez à vous, et vous ressouvenez</l>
-            <l id="20">Qu'il n'est rien d'impossible aux coeurs passionnés.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="2">
-          <head>SCÈNE II.</head>
-          <sp stage="alone" who="CLÉON">
-            <speaker>CLÉON, seul.</speaker>
-            <l id="21">Aux coeurs passionnés il n'est rien d'impossible.</l>
-            <l id="22">Je l'avoue ; et je trouve un moyen infaillible</l>
-            <l id="23">De donner à mon âme un moment de repos :</l>
-            <l id="24">Il faut. Mais, ô Crispin, que tu viens à propos !</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="3">
-          <head>SCÈNE III. Crispin, Cléon.</head>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="25">Je vous cherche partout pour vous rendre réponse,</l>
-            <l id="26" part="i">Monsieur.</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="26" part="f">Si tu savais ce que Lise m'annonce,</l>
-            <l id="27" part="i">Cher Crispin !</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="27" part="f">Il m'a dit que tantôt, sur le soir.</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="28">Quand on a de l'amour, et qu'on a de l'espoir.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="29">Je vous dis et redis qu'il m'a dit de vous dire.</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="30">Pour des charmes si doux lorsqu'une âme soupire.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <note type="L">Babillard : Qui par le continuellement, et qui dit des choses de néant. Se dit aussi d'un indiscret qui ne saurait tenir sa langue ; qui répète tout ce qu'il a ouï dire. [F]</note>
-            <l id="31">Vous plaît-il que je parle, ô babillard maudit,</l>
-            <l id="32" part="i">Ou ne dirai-je mot ?</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="32" part="f">Tu m'en as assez dit.</l>
-            <l id="33">Le temps m'est précieux, et ma flamme me presse.</l>
-            <l id="34">Raisonnons entre nous : je me meurs pour Lucresse.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="35" part="i">Mourez-vous ?</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="35" part="f">Son visage a des attraits puissants.</l>
-            <l id="36">Elle asservit mon âme, elle charme mes sens ;</l>
-            <l id="37">En un mot, je l'adore, et son père me l'ôte,</l>
-            <l id="38" part="i">Tu le vois.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="38" part="f">Il est vrai, mais ce n'est pas ma faute.</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="39">D'accord ; de mon malheur je ne puis t'accuser ;</l>
-            <l id="40">Mais tu connais son père... Il le faut abuser.</l>
-            <l id="41" part="i">Qu'en dis-tu ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="41" part="f">Moi, Monsieur ? Abusez, que m'importe !</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="42">Il la tient enfermée, et je veux qu'elle sorte :</l>
-            <l id="43">Mon coeur, pour cet effort, ne s'adresse qu'à toi,</l>
-            <l id="44" part="i">Car enfin...</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="44" part="f">À présent, il m'importe, ma foi !</l>
-            <l id="45" part="i">À moi, Monsieur ?</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="45" part="f">À toi. Rends mon âme charmée !</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="46">Ne me dites-vous pas qu'il la tient enfermée ?</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="47" part="i">Oui.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="47" part="f">Je n'y puis que faire. En quel lieu du logis ?</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="48" part="i">C'est dessus le derrière.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="48" part="m">Oui ?</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="48" part="m">Oui.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="48" part="m">Oui ?</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="48" part="m">Oui.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="48" part="f">Tant pis.</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="49">Je t'ai dit ma pensée ; instruis-moi de la tienne.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="50" part="i">Elle est enfermée ?</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="50" part="m">Oui.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="50" part="f">Que la belle s'y tienne,</l>
-            <l id="51" part="i">Voilà ce que je pense.</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="51" part="f">Ah ! C'est trop s'amuser.</l>
-            <l id="52">Écoute : sans scrupule, il te faut déguiser.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="53" part="i">Me déguiser, Monsieur ! Et pourquoi ?</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="53" part="f">C'est pour cause. </l>
-            <l id="54">Je veux bien, en ce lieu, t'informer de la chose :</l>
-            <l id="55">Pour faire pleinement réussir mon dessein, </l>
-            <l id="56" part="i">Il faut être aujourd'hui médecin.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="56" part="f">Médecin ?</l>
-            <l id="57" part="i">Bons dieux !</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="57" part="f">Sans perdre ici d'inutiles paroles,</l>
-            <l id="58">Ce service rendu te vaudra six pistoles.</l>
-            <l id="59">Si le gain t'encourage, avise, les voilà !</l>
-            <l id="60" part="i">Examine...</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="60" part="f">Mon Dieu ! ce n'est pas pour cela.</l>
-            <l id="61" part="i">Médecin !</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="61" part="f">Médecin ; je n'ai point d'autre ruse.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="62">Mais il faut de l'esprit, et je suis une buse ;</l>
-            <l id="63" part="i">Et, de plus...</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="63" part="f">C'est à tort que tu prends de l'effroi :</l>
-            <l id="64">Le père de Lucresse a moins d'esprit que toi.</l>
-            <note type="L">Chassieux : Qui a les yeux pleins de chassie. [F]</note>
-            <note type="L">Chassier : Certaine humidité visqueuse qui sort des yeux, et qui colle aux paupières. [F]</note>
-            <l id="65">Ce vieillard chassieux connaît peu ton visage.</l>
-            <l id="66">Et tu sais. Il avance, il me voit, j'en enrage ;</l>
-            <l id="67">Je le vais aborder... Va m'attendre chez moi,</l>
-            <l id="68">J'aurai soin de m'y rendre aussi vite que toi.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="69" part="i">Mais, à moins de m'instruire, apprenez.</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="69" part="f">Va,te dis-je,</l>
-            <l id="70" part="i">Je te suis.</l>
-            <stage type="exit">Il sort.</stage>
-          </sp>
-        </div2>
-        <div2 type="scene" n="4">
-          <head>SCÈNE IV. Cléon, Fernand, Philipin.</head>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="70" part="f">La douleur de Lucresse m'afflige.</l>
-            <l id="71">Monsieur, quoique mes soins lui soient indifférents,</l>
-            <l id="72">Je viens vous informer de la part que j'y prends :</l>
-            <l id="73">Heureux, quoique toujours sa beauté me captive,</l>
-            <l id="74">Si pour d'autres que moi j'aperçois qu'elle vive,</l>
-            <l id="75">Et toujours trop heureux, si les voeux que je fais</l>
-            <l id="76">D'un secours nécessaire avancent les effets.</l>
-            <l id="77" part="i">Adieu.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="5">
-          <head>SCÈNE V. Fernand, Philipin.</head>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="77" part="f">Ma pauvre fille ! Elle va rendre l'âme,</l>
-            <l id="78" part="i">Philipin !</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="78" part="f">C'est à vous que j'en donne le blâme.</l>
-            <l id="79">À la pourvoir d'un homme on a trop retardé.</l>
-            <l id="80">Un pucelage nuit, quand il est trop gardé.</l>
-            <l id="81">C'est cela qui l'étouffe, et ces sortes de choses.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="82">Point, point. Sa maladie a de plus justes causes.</l>
-            <l id="83">Mais retourne au plus vite, et va voir, Philipin,</l>
-            <l id="84">Si l'on attend bientôt ce savant médecin.</l>
-            <l id="85">J'appréhende si fort que Lucresse ne meure.</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="86">S'il était de retour, il viendrait tout à l'heure.</l>
-            <l id="87" part="i">On l'a dit.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="87" part="f">Il est vrai, mais apprends mon souci :</l>
-            <l id="88">D'autres peuvent l'attendre et l'emmener aussi,</l>
-            <l id="89">Et pour lors tout mon coeur, accablé de tristesse,</l>
-            <l id="90" part="i">Si Lucresse endurait.</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="90" part="f">Peste soit de Lucresse !</l>
-            <l id="91">Elle a le choix de vivre ou du moins de mourir.</l>
-            <l id="92">Quel plaisir elle prend à me faire courir !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="93">Surtout ne reviens point que tu ne me l'amenes,</l>
-            <l id="94" part="i">Je t'en prie.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="6">
-          <head>SCÈNE VI.</head>
-          <sp stage="alone" who="FERNAND">
-            <speaker>FERNAND, seul.</speaker>
-            <l id="94" part="f">En mon âge, ô bons dieux ! Que de peines !</l>
-            <l id="95" part="i">Et que dans mes vieux ans.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="7">
-          <head>SCÈNE VII. Crispin, Fernand.</head>
-          <sp stage="dress" who="CRISPIN">
-            <speaker>CRISPIN, en soutane.</speaker>
-            <l id="95" part="f">Pythagore, Platon,</l>
-            <l id="96">Mache-à-vide, Pancrace, Hésiode, Caton.</l>
-          </sp>
-          <sp stage="low" who="FERNAND">
-            <speaker>FERNAND, bas.</speaker>
-            <l id="97" part="i">Quel serait ce docteur ? Écoutons.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="97" part="f">Caligule,</l>
-            <l id="98">Polyeucte, Virgile, Anaxandre, Luculle.</l>
-          </sp>
-          <sp stage="low" who="FERNAND">
-            <speaker>FERNAND, bas.</speaker>
-            <l id="99" part="i">Ô dieux !</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="99" part="f">Robert Vinot, Scipion l'Africain,</l>
-            <l id="100">Jodelet, Mascarille, Aristote, Lucain,</l>
-            <l id="101">Médecins de César, assassins d'Alexandre,</l>
-            <l id="102">Vous voyez un phénix qu'a produit votre cendre !</l>
-          </sp>
-          <sp stage="low" who="FERNAND">
-            <speaker>FERNAND, bas.</speaker>
-            <l id="103" part="i">Serait-ce un médecin ? Il en parle.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="103" part="f">Approchez,</l>
-            <l id="104">Venez voir, grands docteurs, les mystères cachés</l>
-            <l id="105">De l'Encyclopédie et de la médecine.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="106" part="i">C'en est un.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="106" part="f">Venez voir ce que c'est que racine,</l>
-            <l id="107">De la mer Arabique et le flux et reflux.</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Crispin.</speaker>
-            <l id="108" part="i">Monsieur ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="108" part="f">Que voulez-vous ? Ego sum medicus.</l>
-            <l id="109">Médecin passé maître, apprenti d'Hippocrate,</l>
-            <note type="L">Mithridate : Antidote ou composition qui sert de remède ou de préservatif contre les poisons où il entre entre plusieurs drogues, comme opium, vipères, scilles, agaric, sctines, etc. [F]</note>
-            <l id="110">Je compose le baume et le grand mithridate ;</l>
-            <l id="111">Je sais, par le moyen du plus noble des arts,</l>
-            <l id="112">Que qui meurt en février n'est plus malade en mars ;</l>
-            <l id="113">Que de quatre saisons une année est pourvue,</l>
-            <l id="114">Et que le mal des yeux est contraire à la vue.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="115">Je ne saurais douter d'un si rare savoir.</l>
-            <l id="116" part="i">Si j'osais vous prier.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="116" part="m">De quoi ? Parlez.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="116" part="f">De voir</l>
-            <l id="117">Une fille que j'ai, que chacun désespère.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="118">Vous avez une fille ? Et vous êtes son père,</l>
-            <l id="119" part="i">À ce compte ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="119" part="f">Oui, Monsieur, et j'ai peur de sa mort.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="120" part="i">Elle est donc fort malade ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="120" part="m">Oui, Monsieur.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="120" part="f">Elle a tort ;</l>
-            <l id="121">Je lui veux conseiller qu'elle cesse de l'être.</l>
-            <l id="122">Qui domine sur nous s'en veut rendre le maître ;</l>
-            <l id="123">Or, le mal dominant par d'occultes ressorts,</l>
-            <l id="124">Il corrompt la matière, il ravage le corps ;</l>
-            <l id="125">L'individu qui souffre, au moment qu'il s'épure,</l>
-            <l id="126">D'un peu d'apothéose entretient sa nature ;</l>
-            <l id="127">La vapeur de la terre, opposée à ce mal,</l>
-            <l id="128">Dans l'humaine vessie établit un canal ;</l>
-            <note type="L">Froidureux : Frileux, qui craint le froid. [F]</note>
-            <l id="129">Le cancer froidureux rend l'humeur taciturne,</l>
-            <l id="130">Le vaillant zodiaque envisage Saturne</l>
-            <l id="131">Et s'il faut qu'avec eux j'en demeure d'accord,</l>
-            <l id="132">Rien n'abrège la vie à l'égal de la mort.</l>
-            <l id="133">Ce sont de ces auteurs les leçons que j'emprunte.</l>
-            <l id="134">Votre fille, à propos, serait-elle défunte ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="135" part="i">Non, Monsieur.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="135" part="m">Mange-t-elle ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="135" part="f">Un petit, grâce aux dieux !</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="136" part="i">Elle n'est donc pas morte ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="136" part="m">Elle ? Nenni.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="136" part="f">Tant mieux.</l>
-            <l id="137" part="i">Je m'en réjouis fort.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="137" part="f">Et de quoi ? Cette vie,</l>
-            <l id="138">Avant la fin du jour, lui peut être ravie.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="139">Tant pis ! L'a-t-on fait voir à quelque médecin ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="140" part="i">Nullement.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="140" part="f">Elle a donc quelque mauvais dessein,</l>
-            <l id="141">Puisqu'elle veut mourir sans aucune ordonnance.</l>
-            <l id="142">De ces sortes de maux notre École s'offense.</l>
-            <l id="143">Quand un homme se trouve en état de périr,</l>
-            <l id="144">Toujours un médecin doit l'aider à mourir ;</l>
-            <l id="145">Et c'est faire éclater des malices énormes,</l>
-            <l id="146">Que vouloir refuser de mourir dans les formes.</l>
-            <l id="147">Instruisez votre fille, et lui dites, du moins,</l>
-            <l id="148">Pour mourir comme il faut, qu'elle attende mes soins.</l>
-            <l id="149">Son âme à déloger est trop impatiente,</l>
-            <l id="150" part="i">Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="150" part="f">Permettez-moi d'appeler sa suivante.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="151">Appelez. Je le tiens ! Ô le franc animal !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="152" part="i">Holà, Lise !</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="8">
-          <head>SCÈNE VIII. Lise, Fernand, Crispin.</head>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="152" part="f">Ah ! Monsieur, votre fille est fort mal !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="153" part="i">Que fait-elle ? Je tremble.</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="153" part="f">Elle se plaint du ventre ;</l>
-            <l id="154">Elle sort de son lit, puis après elle y rentre,</l>
-            <l id="155">Se promène, se sied, veut dormir, veut veiller.</l>
-            <l id="156">Malgré moi, de ce pas, je la viens d'habiller.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="157" part="i">D'habiller !</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="157" part="f">D'habiller ; sa boutade m'étonne.</l>
-            <stage type="watch">Apercevant Crispin.</stage>
-            <l id="158">Je crois. Mais ce gredin vous demande l'aumône.</l>
-            <l id="159" part="i">Monsieur ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="159" part="f">Ah ! Juste Ciel, quel blasphème tu fais !</l>
-            <l id="160">C'est l'exemple parfait des médecins parfaits.</l>
-            <l id="161">Que j'ai bien du sujet de louer sa rencontre !</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="162" part="i">Médecin ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="162" part="f">Médecin. Ma soutane le montre.</l>
-            <l id="163">Mais, sans perdre ma peine à prouver qui je suis,</l>
-            <l id="164">Par ma seule doctrine aisément je le puis.</l>
-            <note type="L">Ergotant : De ergoteur ; celui qui dispute, qui pointille sans cesse, qui conteste sans raison. [F] Ici, qui change souvent, qui s'agite.</note>
-            <l id="165">De la fille ergotante apportez de l'urine.</l>
-            <l id="166" part="i">Apportez !</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Lise.</speaker>
-            <l id="166" part="m">Allez vite en quérir.</l>
-            <stage type="exit">Lise sort.</stage>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="166" part="f">J'examine</l>
-            <l id="167">Ce que cette malade à peu près peut avoir ;</l>
-            <l id="168">Mais je vois de l'urine, et je vais le savoir.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="9">
-          <head>SCÈNE IX. Crispin, Fernand, Lise.</head>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="169" part="i">Approchez.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="170">De frayeur j'ai mon âme alarmée.</l>
-          </sp>
-          <sp stage="carry" who="LISE">
-            <speaker>LISE, avec de l'urine.</speaker>
-            <l id="171" part="i">En voilà.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="171" part="f">Voyez-vous comme elle est enflammée ?</l>
-            <l id="172" part="i">Mauvais signe !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="172" part="m">Ô bons dieux ! Il en boit.</l>
-          </sp>
-          <sp stage="drink" who="CRISPIN">
-            <speaker>CRISPIN, après avoir tout bu.</speaker>
-            <l id="172" part="f">Je crois bien.</l>
-            <l id="173">Mais qui boit pour si peu ne comprend jamais rien.</l>
-            <l id="174" part="i">Allez-en quérir d'autre.</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Lise.</speaker>
-            <l id="174" part="m">Allez vite !</l>
-            <stage type="exit">Lise sort.</stage>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="174" part="f">Mon prince !</l>
-            <l id="175">Assez d'autres docteurs, d'une étoffe assez mince,</l>
-            <l id="176">Se seraient contentés du rapport de leurs yeux,</l>
-            <l id="177">Mais à croire sa langue on en juge bien mieux.</l>
-            <note type="L">La Belle plaideuse : est une comédie en vers et en cinq actes de François le Metel de Boisrobert, représentée pour le première fois en 1653 à l'Hôtel de Bourgogne.</note>
-            <l id="178">Boisrobert nous enseigne, en sa Belle Plaideuse,</l>
-            <l id="179">Que le goût est solide et la vue est trompeuse,</l>
-            <l id="180">Et qu'un grand médecin, quand il fait ce qu'il doit,</l>
-            <l id="181">Il sent mieux une chose à la langue qu'au doigt.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="182">À ces fortes raisons je n'ai point de réplique.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="10">
-          <head>SCÈNE X. Lise, Crispin, Fernand.</head>
-          <sp stage="give" who="LISE">
-            <speaker>LISE, avec encore un peu d'urine.</speaker>
-            <l id="183">À pisser comme il faut ma maîtresse s'applique,</l>
-            <l id="184">Monsieur, et cependant je n'en ai qu'un filet.</l>
-            <l id="185" part="i">Voyez !</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="185" part="f">Pauvre pisseuse !</l>
-            <stage type="drink">Après avoir encore bu, il dit :</stage>
-            <l id="185" part="f">Allons au robinet</l>
-            <l id="186" part="i">En tirer.</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="186" part="m">Mais, Monsieur.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="186" part="f">Mais que cette pisseuse</l>
-            <l id="187">Fasse une ample pissade et qui soit copieuse,</l>
-            <l id="188" part="i">Copieuse !</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="188" part="f">Ma foi ! Ma maîtresse ne peut.</l>
-            <l id="189">On n'a pas le pouvoir de pisser quand on veut.</l>
-            <l id="190">C'est donner à Lucresse une peine trop grande,</l>
-            <l id="191" part="i">Que vouloir.</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Lise.</speaker>
-            <l id="191" part="f">Dites-lui que Monsieur le commande.</l>
-            <l id="192" part="i">Courez vite !</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="192" part="f">Monsieur, votre fille n'a pu.</l>
-            <l id="193">Mais enfin, pour vous plaire, à l'instant elle a bu.</l>
-            <l id="194">Si Monsieur veut attendre à lui rendre service,</l>
-            <l id="195">Au plus tard, dans une heure, il faudra qu'elle pisse.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="196" part="i">Elle a raison.</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="196" part="f">De plus, pour chasser son souci,</l>
-            <l id="197">Elle s'est résolue à venir jusqu'ici.</l>
-            <l id="198" part="i">Elle vient.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="11">
-          <head>SCÈNE XI. Lucresse, Fernand, Crispin, Lise.</head>
-          <sp who="LUCRESSE">
-            <speaker>LUCRESSE.</speaker>
-            <l id="199" part="i">Ah ! Mon père !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="199" part="m">Ah ! Ma fille !</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="199" part="f">Courage !</l>
-          </sp>
-          <sp who="LUCRESSE">
-            <speaker>LUCRESSE.</speaker>
-            <l id="200" part="i">Je me meurs.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="200" part="f">Je lui trouve un passable visage.</l>
-            <l id="201">Serviteur ! Si pour vous nos remèdes sont vains,</l>
-            <l id="202">Vous aurez le plaisir de mourir par mes mains ;</l>
-            <l id="203" part="i">Consolez-vous.</l>
-          </sp>
-          <sp who="LUCRESSE">
-            <speaker>LUCRESSE.</speaker>
-            <l id="203" part="m">Hélas !</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="203" part="f">Votre bras, que je tâte</l>
-            <l id="204">Si pour vous il est vrai que la mort ait si hâte ;</l>
-            <l id="205" part="i">Donnez, dis-je !</l>
-            <stage type="touch">Au lieu de prendre le bras de Lucresse, il prend celui de son père et dit : </stage>
-            <l id="205" part="f">Tudieu ! Comme il bat votre pouls !</l>
-            <l id="206">J'aurai bien de la peine à répondre de vous,</l>
-            <l id="207">Et votre maladie est sans doute mortelle ;</l>
-            <l id="208" part="i">Prenez-y garde.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="208" part="f">Ô Dieu ! Quelle triste nouvelle !</l>
-            <l id="209" part="i">Je suis donc bien malade, ô Monsieur ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="209" part="f">Vous, pourquoi ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="210">Vous n'avez pris le bras à personne qu'à moi.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="211">Et cela vous étonne ? Une tendresse extrême</l>
-            <l id="212">Rend la fille, le père, et le père, elle-même :</l>
-            <l id="213">Entre eux deux la nature est propice à tel point,</l>
-            <l id="214">Que le sort les sépare, et le sang les rejoint ;</l>
-            <l id="215">Étant vrai que l'enfant est l'ouvrage du père,</l>
-            <l id="216">Sa douleur sur lui-même aisément réverbère ;</l>
-            <l id="217">Et le sang l'un de l'autre est si fort dépendant,</l>
-            <l id="218">Que l'enfant met le père en un trouble évident.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="219" part="i">Il est vrai.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="219" part="f">Cependant, quoIque mon savoir brille,</l>
-            <l id="220">Je veux bien me résoudre à tâter votre fille.</l>
-            <l id="221" part="i">Votre bras ?</l>
-          </sp>
-          <sp who="LUCRESSE">
-            <speaker>LUCRESSE.</speaker>
-            <l id="221" part="m">Le voilà.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="221" part="f">Je m'en étais douté :</l>
-            <l id="222">Il ne vous manque rien que beaucoup de santé ;</l>
-            <l id="223" part="i">Sans cela.</l>
-          </sp>
-          <sp who="LUCRESSE">
-            <speaker>LUCRESSE.</speaker>
-            <l id="223" part="f">J'ai la mort sur le bord de la lèvre,</l>
-            <l id="224" part="i">Monsieur.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="224" part="f">Que je retâte ! Avez-vous de la fièvre ?</l>
-          </sp>
-          <sp who="LUCRESSE">
-            <speaker>LUCRESSE.</speaker>
-            <l id="225" part="i">Je ne sais.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="225" part="m">Non</l>
-          </sp>
-          <sp who="LUCRESSE">
-            <speaker>LUCRESSE.</speaker>
-            <l id="225" part="m">Non.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="225" part="m">Fi !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="225" part="m">De quoi ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="225" part="f">Mauvais régal :</l>
-            <l id="226">Parfois, sans qu'on le sache, on se porte fort mal,</l>
-            <l id="227" part="i">Voyez-vous.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="227" part="f">De ses maux que je sache la cause.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="228">C'est la fièvre ; ce l'est, si ce n'est autre chose.</l>
-            <l id="229">Mais, soit fièvre, ou migraine, ou gangrène, ou mal chaud,</l>
-            <l id="230">Allez, pour la guérir je sais bien ce qu'il faut.</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Lise.</speaker>
-            <l id="231" part="i">Une plume, de l'encre.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="231" part="m">Et pourquoi ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="231" part="f">L'ordonnance,</l>
-            <l id="232" part="i">Monsieur...</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="232" part="f">Vous vous moquez. Je les fais par avance !</l>
-            <l id="233">Je me tiens toujours prêt contre tous accidents :</l>
-            <l id="234">En voilà pour les yeux, pour le flux, pour les dents.</l>
-            <l id="235">Mais, ignorant son mal, il lui faut, ce me semble,</l>
-            <l id="236">Une ordonnance propre à tous les maux ensemble ;</l>
-            <l id="237">Il faudra que le sien se rencontre parmi.</l>
-            <stage type="give">Il donne une ordonnance.</stage>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="238">Charitable Monsieur, c'est agir en ami,</l>
-            <l id="239" part="i">Cela ! Quel honnête homme !</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="239" part="f">En quel lieu couche-t-elle :</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="240">Elle a, sur le derrière, une chambre assez belle.</l>
-          </sp>
-          <sp who="LISE">
-            <speaker>LISE.</speaker>
-            <l id="241">Oui, vraiment, une chambre assez belle, en effet !</l>
-            <l id="242" part="i">Si sombre !</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="242" part="f">Croyez-moi, le devant est son fait :</l>
-            <l id="243">Qu'on l'y mène ! Aussi bien, la journée est malsaine.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="12">
-          <head>SCÈNE XII. Philipin, Fernand, Cantéas, Crispin.</head>
-          <sp stage="watch/entrance" who="FERNAND">
-            <speaker>FERNAND, voyant venir Philipin.</speaker>
-            <l id="244" part="i">Philipin, aide à Lise...</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="244" part="f">À la fin, je l'amène :</l>
-            <l id="245" part="i">Le voici.</l>
-            <stage type="help">Après que Philipin a dit cela, il aide à remener Lucresse.</stage>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="245" part="f">Qui donc ? Qu'est-ce ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="245" part="f">Un savant médecin.</l>
-          </sp>
-          <sp stage="low" who="CRISPIN">
-            <speaker>CRISPIN, bas.</speaker>
-            <l id="246" part="i">Médecin ? Malepeste !</l>
-          </sp>
-          <sp who="CANTÉAS">
-            <speaker>CANTÉAS.</speaker>
-            <l id="246" part="f">Excusez ce matin,</l>
-            <l id="247">L'intendant d'un seigneur m'a contraint de me rendre,</l>
-            <l id="248" part="i">Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="248" part="f">Mon bon Monsieur, je n'ai pu tant attendre :</l>
-            <l id="249">Au retour de chez vous, pour causer mon repos,</l>
-            <l id="250">Ce fameux médecin s'est offert à propos,</l>
-            <l id="251" part="i">Je l'ai pris.</l>
-          </sp>
-          <sp who="CANTÉAS">
-            <speaker>CANTÉAS.</speaker>
-            <l id="251" part="m">Monsieur ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="251" part="f">Oui, mais qu'il a de mérite !</l>
-            <l id="252" part="i">Si vous saviez.</l>
-          </sp>
-          <sp who="CANTÉAS">
-            <speaker>CANTÉAS.</speaker>
-            <l id="252" part="f">Je loue, et je plains ma visite :</l>
-            <l id="253">Je me tiens malheureux d'avoir pu me ravir</l>
-            <l id="254">Au plaisir que j'aurais de pouvoir vous servir,</l>
-            <l id="255">Et de voir la fortune, à mes voeux trop cruelle,</l>
-            <l id="256">M'arracher au bonheur de vous prouver mon zèle ;</l>
-            <l id="257">Mais, à voir qui pour vous a daigné s'occuper,</l>
-            <l id="258">Je me tiens trop heureux qu'il ait pu m'échapper.</l>
-            <l id="259">Le plaisir que je goûte est mêlé dans le vôtre ;</l>
-            <l id="260">Si je perds d'un côté, je recouvre de l'autre,</l>
-            <l id="261">Puisqu'enfin de Monsieur le sublime entretien,</l>
-            <l id="262">D'être, un jour, tout à vous, m'offrira le moyen.</l>
-            <stage type="location/toward">Apercevant qu'il est au milieu, il dit à Crispin : </stage>
-            <l id="263">Mais, Monsieur, pardonnez, ce n'est point par audace ;</l>
-            <l id="264">Je n'ai garde, avec vous, d'occuper cette place :</l>
-            <l id="265" part="i">C'est à vous qu'elle est due.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="265" part="m">Ah !</l>
-          </sp>
-          <sp who="CANTÉAS">
-            <speaker>CANTÉAS.</speaker>
-            <l id="265" part="m">Monsieur...</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="265" part="f">Palsambleu,</l>
-            <l id="266" part="i">Ah !</l>
-          </sp>
-          <sp who="CANTÉAS">
-            <speaker>CANTÉAS.</speaker>
-            <l id="266" part="f">Sans cérémonie on vous doit le milieu.</l>
-            <stage type="location/turn">Crispin par deux fois étant au milieu, comme Cantéas veut parler, il s'écoule par derrière lui, et reprend sa première place.</stage>
-            <l id="267">Eh ! de grâce !... Hippocrate... Hé, Monsieur, je vous jure</l>
-            <l id="268">Qu'au lieu de m'obliger, c'est me faire une injure ;</l>
-            <l id="269">Je vous prie. Hippocrate. À quoi bon tout cela ?</l>
-            <l id="270">Conservez, votre place, hé, Monsieur, la voilà !</l>
-            <l id="271">Empêchez, à vos yeux, que ma honte n'éclate.</l>
-            <l id="272">Je reprends ma parole, et je dis qu'Hippocrate,</l>
-            <l id="273">Qui de la médecine est l'illustre ornement,</l>
-            <l id="274">De cet art salutaire a parlé doctement :</l>
-            <l id="275">« Médecine est, dit-il, une longue science,</l>
-            <l id="276">Tout à fait dangereuse en son expérience :</l>
-            <l id="277">Car, touchant notre vie, elle passe si tôt,</l>
-            <l id="278">Qu'on n'a pas le loisir d'en juger comme il faut.</l>
-            <l id="279">Vita brevis, ars vero longa, occasio autem praeceps,</l>
-            <l id="280">Experimentum periculosum,judicium difficile. »</l>
-            <l id="281">Je me plais à l'étude, et j'ai l'âme assidue</l>
-            <l id="282">À vouloir de cet art pénétrer l'étendue.</l>
-            <l id="283">Mais dedans cet abîme un esprit se confond :</l>
-            <l id="284">Plus on l'approfondit, plus il semble profond.</l>
-            <l id="285">Cette utile science en enferme tant d'autres,</l>
-            <l id="286">Qu'il faudrait que mes yeux égalassent les vôtres,</l>
-            <l id="287">Ou que de leurs rayons vous pussiez m'éclairer,</l>
-            <l id="288">Pour m'offrir un moyen de ne pas m'égarer.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="289" part="i">Ho, ho, ho !</l>
-          </sp>
-          <sp who="CANTÉAS">
-            <speaker>CANTÉAS.</speaker>
-            <l id="289" part="f">De plaisir on a l'âme ravie,</l>
-            <l id="290">Alors que d'un malade on prolonge la vie ;</l>
-            <l id="291">Et d'un grand médecin rien n'égale le sort,</l>
-            <l id="292">Quand sa seule présence intimide la mort,</l>
-            <note type="L">Parques : divinités des Enfers chargées de filer la vie des hommes, étaient au nombre de trois, Clotho, Lachésis, Atropos : Chlotho préside à la naissance et tient le fuseau, Lachésis le tourne et file, Atropos coupe le fil. [B]</note>
-            <l id="293">Quand il est l'ennemi que la Parque redoute,</l>
-            <l id="294">Quand sa haute science en détourne la route,</l>
-            <l id="295">Et qu'enfin le trépas, qui nous fait tous trembler,</l>
-            <l id="296">Pour ne pas le combattre aime mieux reculer.</l>
-            <l id="297">Mortem medicamentis removet medicus expers.</l>
-            <l id="298">...................................</l>
-            <l id="299">Je ne puis approuver l'importune méthode.</l>
-            <l id="300">Mais peut-être, Monsieur, je vous suis incommode,</l>
-            <l id="301">Car enfin comme vous les esprits élevés,</l>
-            <l id="302">Aux emplois importants sont toujours réservés.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="303" part="i">Ho, ho, ho !</l>
-          </sp>
-          <sp who="CANTÉAS">
-            <speaker>CANTÉAS.</speaker>
-            <l id="303" part="f">Je sors donc ; mais j'ose me promettre</l>
-            <l id="304">Qu'étant moins occupé, vous pourrez me permettre</l>
-            <l id="305">De chercher un prétexte à me faire jouir</l>
-            <l id="306">Du plaisir qu'on reçoit, quand on peut vous ouïr.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="13">
-          <head>SCÈNE XIII. Fernand, Crispin.</head>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="307">Hé bien, ce médecin, vous voyez comme il cause !</l>
-            <l id="308" part="i">Qu'en dites-vous ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="308" part="f">Il sait quelque petite chose.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="309">Daignez-moi,je vous prie, informer de cela :</l>
-            <l id="310" part="i">Touchant la médecine est-il expert ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="310" part="f">Là, là,</l>
-            <l id="311" part="i">Passable.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="311" part="f">Il n'a donc pas la science parfaite ?</l>
-            <l id="312">Pour qui passerait-il près de vous ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <note type="L">Mazette : masette. Petit cheval, ou cheval ruiné qu'on ne saurait faire aller, ni avec le fouet, ni avec l'éperon. On le dit aussi par extension des personnes qui ne sauraient aller loin à pied, qui ne sauraient rien porter, ou qui ne ne savent pas bien faire une chose.[F]</note>
-            <l id="312" part="f">Pour mazette.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="313" part="i">Mais, durant qu'il parlait, vous ne disiez mot ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="313" part="f">Moi,</l>
-            <l id="314" part="i">Dites-vous ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="314" part="m">Oui, vraiment, je dis : vous.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="314" part="f">Je le crois.</l>
-            <l id="315">Pour pouvoir de cet homme éprouver la science,</l>
-            <l id="316">J'ai voulu me résoudre à garder le silence ;</l>
-            <l id="317">Mais enfin, si le drôle eut voulu s'arrêter,</l>
-            <l id="318">Allez, vous m'auriez vu diablement caqueter.</l>
-            <l id="319">À dessein d'empêcher qu'un malade ne meure,</l>
-            <note type="L">Débagouler : Vomir, dégueuler. Ce mot est usage que parmi le peuple où on le dit le plus souvent au figuré ; et il signifie alors Dire indiscrètement ce qu'on sait. [F]</note>
-            <l id="320">J'allais débagouler du latin tout à l'heure ;</l>
-            <l id="321">Voir quel temps il fera dans un vieil almanach ;</l>
-            <note type="L">Pibrac, Gui du Frau, seigneur de (1529-1584) : Il a laissé des discours et divers écrits politiques dont une Apologie de la Saint-Barthélémy (1573) mais on le connaît surtout comme auteurs de Quatrains moraux, remarquable par la beauté des maxime et la concision du style, malheureusement la langue est devenu surannée. [B]</note>
-            <l id="322">Réciter tout par coeur les Quatrains de Pibrac,</l>
-            <l id="323">Et, pour mieux vous montrer qu'il est vrai que j'excelle</l>
-            <l id="324">Je sais qu'un lavement fait aller à la selle ;</l>
-            <note type="L">Séné : Arbrisseau qui croît au Levant, et dont on nous apporte les feuilles, que l'on nomme aussi Séné. C'est un grand purgatif. [Ac. 1762]</note>
-            <l id="325">J'ai cent fois en ma vie acheté du séné,</l>
-            <l id="326">Et je dis que le diable est un diable damné ;</l>
-            <l id="327">Je soutiens que le corps est le frère de l'âme,</l>
-            <l id="328">Que Séneque et Pauline étaient l'homme et la femme.</l>
-            <l id="329">Que Narcisse en personne autrefois se noya,</l>
-            <l id="330">Et semper quoniam tuos, alléluia.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="331">Je ne puis rien comprendre à ces phrases d'élite.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="332">Je m'en aperçois bien ; mais adieu, je vous quitte.</l>
-            <l id="333">Je verrai votre fille ou ce soir ou demain.</l>
-          </sp>
-          <sp stage="give" who="FERNAND">
-            <speaker>FERNAND, lui veut bailler de l'argent.</speaker>
-            <l id="334" part="i">Monsieur.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="334" part="m">Ah !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="334" part="f">Recevez ces louis de ma main.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="335" part="i">Je n'ai garde.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="335" part="f">Prenez ; je vous dois récompense,</l>
-            <l id="336" part="i">Monsieur.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="336" part="f">Je ne suis pas un marchand de science.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="337" part="i">Hé, de grâce.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="337" part="f">Non, non ; je vous suis serviteur.</l>
-            <stage type="exit">Il s'en va.</stage>
-          </sp>
-        </div2>
-        <div2 type="scene" n="14">
-          <head>SCÈNE XIV.</head>
-          <sp stage="alone" who="FERNAND">
-            <speaker>FERNAND, seul.</speaker>
-            <l id="338">Que cet homme est habile, et qu'il est grand docteur !</l>
-            <l id="339">Ne point prendre d'argent pour des chose si bonnes !</l>
-            <l id="340">Il ne ressemble pas ces tueurs de personnes,</l>
-            <l id="341">Ces méchants médecins, qui, par un triste sort,</l>
-            <l id="342">En curant notre bourse, enrichissent la mort.</l>
-            <l id="343">Voyons ce qu'au logis sa science fait naître,</l>
-            <l id="344" part="i">Et sachons.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="15">
-          <head>SCÈNE XV. Fernand, Crispin.</head>
-          <sp stage="dress/imitate" who="CRISPIN">
-            <speaker>CRISPIN, en habit de valet.</speaker>
-            <l id="344" part="f">Au plus vite attrapons notre maître.</l>
-            <l id="345">Réjouissance. Ô dieux ! C'est Fernand, que je crois !</l>
-            <l id="346" part="i">C'est lui-même !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="346" part="f">Est-ce pas mon docteur que je vois ?</l>
-            <l id="347">C'est lui-même, c'est lui. Votre mine est pleureuse ?</l>
-            <l id="348" part="i">Qu'êtes-vous ?</l>
-          </sp>
-          <sp stage="cry" who="CRISPIN">
-            <speaker>CRISPIN, pleurant.</speaker>
-            <note type="L">Gueuser : Mendier; demander l'aumône. On le dit aussi d'un homme nécessiteux, quoiqu'il ne gueuse pas en effet. [F]</note>
-            <l id="348" part="f">Moi, Monsieur ? Un pauvre homme qui gueuse.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="349" part="i">Quoi ! tu gueuses ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="349" part="f">Monsieur, mes malheurs sont si grands.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="350">Mais dedans cette ville as-tu point de parents ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="351">Ah ! Monsieur, des parents on n'a guère de grâce ;</l>
-            <l id="352">Je suis frère à mon frère, et c'est lui qui me chasse.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="353">Il faut donc que sans doute il en ait du sujet.</l>
-            <l id="354" part="i">Qu'as-tu fait ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <note type="C">On lit julet au vers 354 dans l'édition originale.</note>
-            <note type="L">Julep : Terme de pharmacie. Potion adoucissante ou calmante dans laquelle il n'entre ni huile, ni substances purgatives, ni poudres ou substances extractives, mais qui est composée simplement d'eau distillée et de sirops. [L]</note>
-            <l id="354" part="f">Répandu la moitié d'un julep.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="355" part="i">Il est donc médecin ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="355" part="m">Oui, Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="355" part="f">Il me semble</l>
-            <l id="356">Que ce frère en colère à peu près te ressemble ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="357" part="i">Oui, Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="357" part="f">Penses-tu qu'on le puisse apaiser ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="358" part="i">Non, Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="358" part="f">Si tu veux, je lui vais proposer ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="359">Il ne souffrira pas que jamais je le voie,</l>
-            <l id="360" part="i">Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="360" part="f">Si je m'en mêle, il aura de la joie.</l>
-            <l id="361">Je le viens de quitter, il est fort mon ami.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="362">S'il est vrai, je ne sens ma douleur qu'à demi,</l>
-            <l id="363">Car, Monsieur, je vois bien que vous êtes brave homme.</l>
-            <l id="364">Vous aurez de la peine à souffrir qu'il m'assomme.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="365">Attends-moi ! De ce pas, je m'en vais le chercher.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="366">Moi, Monsieur ? Point du tout. Je m'en vais me cacher.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="367" part="i">Mais il faut te montrer ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="367" part="f">Ah ! Monsieur, je ne l'ose,</l>
-            <l id="368">Sans savoir si vos soins auront fait quelque chose.</l>
-            <l id="369">Je m'en vais, s'il vous plaît, vous attendre à l'écart.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="16">
-          <head>SCÈNE XVI.</head>
-          <sp stage="alone" who="FERNAND">
-            <speaker>FERNAND, seul.</speaker>
-            <l id="370">Ce garçon malheureux est venu sur le tard :</l>
-            <l id="371">Deux minutes plutôt, je l'accordais sur l'heure.</l>
-            <l id="372">Foin de moi ! Je ne sais où son frère demeure ;</l>
-            <l id="373">Mais toujours je l'attends, sur le soir.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="17">
-          <head>SCÈNE XVII. Fernand, Cripin.</head>
-          <sp stage="costume/imitate" who="CRISPIN">
-            <speaker>CRISPIN, en soutane.</speaker>
-            <note type="L">Maraud : Terme injurieux qui se dit des gueux, des coquins qui n'ont ni bien ni honneur, qui sont capables de faire toutes sortes de lâchetés. [F]</note>
-            <l id="373" part="f">Ah ! Maraud !</l>
-            <l id="374" part="i">Je vous jure.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="374" part="f">Ah ! Monsieur, vous venez comme il faut :</l>
-            <l id="375">Vous pouvez, en ce lieu, m'accorder une grâce.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="376">Moi, Monsieur ! Il n'est rien que pour vous je ne fasse.</l>
-            <l id="377" part="i">Commandez !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="377" part="f">Votre frère, il a tant de douleur,</l>
-            <l id="378" part="i">Que j'ai droit d'espérer.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="378" part="f">C'est un coquin, Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="379">Il a tort, il l'avoue ; il se nomme coupable ;</l>
-            <l id="380">Mais, Monsieur, une faute est assez pardonnable.</l>
-            <l id="381">Désormais, il en jure, il veut être meilleur,</l>
-            <l id="382" part="i">Vous aimer, vous servir.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="382" part="f">C'est un fripon, Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="383">Ne vous puis-je résoudre à la miséricorde ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="384">C'est un pendard. Monsieur, qui mérite la corde.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="385">C'est manquer de parole aux plus rares amis.</l>
-            <l id="386">S'il vous en ressouvient, vous m'avez tout promis,</l>
-            <l id="387">Monsieur. Ce n'était donc qu'une pure grimace ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="388">Il est vrai, ma parole, en effet, m'embarrasse.</l>
-            <l id="389">C'en est fait, je pardonne à ce traître : il vous plaît.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="390">Il ne tiendra qu'à vous de le voir comme il est.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="391">Moi, Monsieur, moi, le voir, en présence du monde !</l>
-            <note type="L">Débonder : Lâcher, ou ôter ma bonde d'un étang. Se dit figurément en choses morale. [F]</note>
-            <l id="392">Quand je vois ce coquin, mon courroux se débonde.</l>
-            <l id="393" part="i">Je ne puis.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="393" part="f">Hé ! Monsieur, il ne faut qu'un instant...</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="394">Je ne le puis, vous dis-je : un malade m'attend.</l>
-            <l id="395">Mais, touchant ce maraud, je consens qu'il revienne.</l>
-            <l id="396" part="i">Serviteur !</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="18">
-          <head>SCÈNE XVIII.</head>
-          <sp stage="alone" who="FERNAND">
-            <speaker>FERNAND, seul.</speaker>
-            <l id="396" part="f">Quelque effet qui jamais en advienne</l>
-            <l id="397">À ce pauvre garçon, qui frissonne d'effroi,</l>
-            <l id="398">Je veux faire accorder le pardon devant moi.</l>
-            <l id="399">Que son frère est honnête ! Il s'en vient de l'absoudre,</l>
-            <l id="400" part="i">Et j'ose.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="19">
-          <head>SCÈNE XIX. Crispin, Fernand.</head>
-          <sp stage="cry/costume/imitate" who="CRISPIN">
-            <speaker>CRISPIN, en pleurant, et en habit de valet.</speaker>
-            <l id="400" part="f">Hé bien, Monsieur, a-t-il pu s'y résoudre ?</l>
-            <l id="401">Dois-je devant ses yeux ne paroistre jamais ?</l>
-            <l id="402" part="i">Dois-je ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="402" part="f">Ne pleure point, j'ai su faire ta paix.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="403">Vous croirai-je, Monsieur ? N'est-ce point moquerie ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="404" part="i">Quoi ! Tu peux.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="404" part="f">Ah ! Monsieur, je connais sa furie :</l>
-            <l id="405">Il a bien de la peine à pouvoir pardonner.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="406">Aussi, ne veux-je pas te laisser retourner ;</l>
-            <l id="407">Je veux qu'il te pardonne en ma propre présence.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="408">Du pardon de ma faute avez-vous l'assurance,</l>
-            <l id="409" part="i">Monsieur ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="409" part="m">Oui.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="409" part="f">C'est assez que mon frère ait parlé :</l>
-            <l id="410">De vos soins obligeants je serais querellé,</l>
-            <l id="411">Monsieur ; votre bonté pourrait mal me remettre.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="412">Mais il peut oublier ce qu'il vient de promettre ;</l>
-            <l id="413" part="i">Puis, après...</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="413" part="f">Point, Monsieur, je le vois fort exact :</l>
-            <l id="414">Quand on a sa parole, elle vaut un contrat.</l>
-            <l id="415">Désormais, de sa part, je ne crains nul outrage,</l>
-            <l id="416" part="i">Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="416" part="m">J'ai résolu d'achever.</l>
-          </sp>
-          <sp stage="low" who="CRISPIN">
-            <speaker>CRISPIN, bas.</speaker>
-            <l id="416" part="f">J'en enrage.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="417" part="i">Entre sur ce derriere.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="417" part="f">Hé ! Monsieur, où le voir</l>
-            <l id="418" part="i">À cette heure ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="418" part="f">En tout cas, il viendra sur le soir.</l>
-            <l id="419" part="i">Entre, dis-je !</l>
-            <stage type="exit/close">Il entre, et Fernand ferme la porte à clef.</stage>
-          </sp>
-        </div2>
-        <div2 type="scene" n="20">
-          <head>SCÈNE XX.</head>
-          <sp stage="alone" who="FERNAND">
-            <speaker>FERNAND, seul.</speaker>
-            <l id="419" part="f">En ceci ma charité se montre.</l>
-            <l id="420">Mais de notre docteur recherchons la rencontre :</l>
-            <l id="421">Il faut battre le fer, ce pendant qu'il est chaud.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="21">
-          <head>SCÈNE XXI.</head>
-          <sp stage="location" who="CRISPIN">
-            <speaker>CRISPIN, à la fenêtre.</speaker>
-            <l id="422">Me voilà, grâce à Dieu, raisonnablement haut !</l>
-            <note type="L">Grison : On appelle un cheval grison, lorsqu'il est gris : et un âne s'appelle absolument un grison, parce qu'il est ordinairement gris. [F] </note>
-            <l id="423">Trop obligeant grison, ta douceur m'assassine.</l>
-            <l id="424">Maudit moi, maudit maître, et maudite doctrine,</l>
-            <l id="425">Et maudite Lucresse, et maudits six louis,</l>
-            <l id="426">Par qui mes yeux tentés se sont vus éblouis !</l>
-            <l id="427">Maudit... Quoi ?... Je commence à connaître ma faute.</l>
-            <l id="428">Têtebleu ! D'ici là le moyen que je saute ?</l>
-            <l id="429" part="i">Il le faut toutefois. Taupe à tout !</l>
-            <stage type="exit/jump">Il saute de la fenêtre en bas.</stage>
-          </sp>
-        </div2>
-        <div2 type="scene" n="22">
-          <head>SCÈNE XXII.</head>
-          <sp stage="exit" who="PHILIPIN">
-            <speaker>PHILIPIN, qui sort.</speaker>
-            <l id="429" part="f">À présent,</l>
-            <l id="430">Je viens dire. Ma foi ! Ce sauteur est plaisant.</l>
-            <l id="431">Mais il sort de chez nous ; il n'a rien que je sache ;</l>
-            <l id="432">Il faut, pour l'épier, qu'un moment je me cache.</l>
-            <l id="433">Mais j'entends que l'on parle. Attrapons quelque coin.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="23">
-          <head>SCÈNE XXIII. Crispin, Fernand et Philipin, au bout du théâtre.</head>
-          <sp stage="costume/imitate/toward" who="CRISPIN">
-            <speaker>CRISPIN, en soutane, dit à Fernand :</speaker>
-            <l id="434">Pour un gueux comme lui vous prenez trop de soin :</l>
-            <l id="435">Il mériterait bien qu'on punît son audace,</l>
-            <note type="L">Vaurien : Qui est un fripon, dangereux, fainéant, vicieux, libertin. Il est du style bas. [F]</note>
-            <l id="436" part="i">Le vaurien !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="436" part="f">C'est là-haut qu'il attend votre grâce :</l>
-            <l id="437">Moi,je vous la demande, à la charge d'autant,</l>
-            <l id="438" part="i">Si jamais.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="438" part="f">En quel lieu dites-vous qu'il m'attend,</l>
-            <l id="439" part="i">Le coquin ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="439" part="f">Voyez-vous cette grande fenestre ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="440">Il m'entend, le bourreau, mais il n'ose paraître ;</l>
-            <l id="441">De m'avoir offensé l'insolent est confus.</l>
-            <l id="442">Je n'ai pas le pouvoir de vous faire un refus :</l>
-            <l id="443" part="i">Ouvrez, j'entre.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="443" part="f">Avec vous faut-il pas que je monte ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="444">Pour le bien châtier, faisons-lui cette honte ;</l>
-            <l id="445">Montez, oui, montez. Non, épargnons ce maraud ;</l>
-            <l id="446">Écoutez seulement : je lui parlerai haut,</l>
-            <l id="447" part="i">C'est assez.</l>
-            <stage type="entrance">Crispin entre seul.</stage>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="447" part="f">Je le veux ; refermons cette porte,</l>
-            <l id="448" part="i">Et voyons.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="24">
-          <head>SCÈNE XXIV. Philipin, Fernand et Crispin, dans lamaison.</head>
-          <sp stage="toward" who="PHILIPIN">
-            <speaker>PHILIPIN, à Fernand.</speaker>
-            <l id="448" part="f">Quoi ! Monsieur, vous craignez qu'il ne sorte ?</l>
-            <note type="L">Drille : Méchant soldat. Il ne se dit que par mépris et par raillerie. Se dit aussi de tout autre malheureux qui porte l'épée, quoi qu'il ne soit point enrôlé. [F]</note>
-            <note type="L">Malepeste : Imprécation qu'on fait contre quelque chose, et quelquefois avec admiration. [F]</note>
-            <l id="449">Malepeste ! Le drille ! Il sait bien d'autres tours,</l>
-            <l id="450" part="i">Le manouvre !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="450" part="f">Pourquoi me tiens-tu ce discours ?</l>
-            <l id="451">Ou respecte cet homme, ou redoute ma canne.</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="452">Quand on est baladin, porte-t-on la soutane ?</l>
-            <l id="453" part="i">À propos. Dites donc, vous riez ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="453" part="f">Si je ris,</l>
-            <l id="454" part="i">Sot !</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="454" part="f">Votre ensoutané saute mieux qu'un cabri,</l>
-            <l id="455">Je le sais ; mais, chez vous, que peut-il aller faire ?</l>
-            <l id="456" part="i">Répondez, s'il vous plaît ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="456" part="f">Pardonner à son frère :</l>
-            <l id="457">Il était en courroux, pour certains accidents.</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="458">À ce compte, son frère est aussi là-dedans,</l>
-            <l id="459" part="i">Est-ce pas ?</l>
-          </sp>
-          <sp stage="location" who="CRISPIN">
-            <speaker>CRISPIN, à la fenêtre.</speaker>
-            <l id="459" part="f">Ah ! Fripon friponnant.</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Philipin.</speaker>
-            <l id="460" part="i">Tiens,écoute.</l>
-          </sp>
-          <sp stage="continue" who="CRISPIN">
-            <speaker>CRISPIN, continuant.</speaker>
-            <l id="461">Voyez ce qu'aujourd'hui votre faute me coûte !</l>
-            <l id="462">J'aurais eu le plaisir de jamais ne vous voir,</l>
-            <l id="463">Si Monsieur dessus moi n'avait pas tout pouvoir ;</l>
-            <l id="464">Mais je l'honore plus que personne du monde.</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Philipin.</speaker>
-            <l id="465" part="i">Tu vois bien.</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="465" part="f">Pour le moins, que son frère réponde !</l>
-            <l id="466" part="i">Il le doit.</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Crispin.</speaker>
-            <l id="466" part="f">Votre frère, à son tour, ne dit mot.</l>
-            <l id="467" part="i">Qu'il parle !</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="468">Entendez-vous, beau pleureux, maître sot ?</l>
-            <l id="469">Si ma juste colère est sitôt adoucie.</l>
-            <stage type="imitate/cry">Déguisant sa voix et pleurant.</stage>
-            <l id="470">Monsieur, je vous rends grâce, et je vous remercie.</l>
-            <l id="471">Je n'ai pas à dessein répandu. Taisez-vous !</l>
-            <l id="472">Si jamais. Paix ! Vous dis-je, et craignez mille coups.</l>
-            <l id="473">Je puis. Taisez-vous donc. Mais,mon cher frère. Encore.</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="474">Comment diable fait-il, le futé ? Je l'ignore.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="475" part="i">Ils sont deux.</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="475" part="f">Il le semble ; il n'en est pourtant rien.</l>
-            <l id="476">Mais de bien le savoir je découvre un moyen :</l>
-            <l id="477">Dites que devant vous il embrasse son frère.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="478">N'était monsieur Fernand que je veux satisfaire,</l>
-            <note type="L">Pécore : se dit figurément en burlesque pour signifier une personne sotte, stupide, et qui a de la peine à concevoir quelque chose. [F]</note>
-            <l id="479" part="i">Pécore.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="479" part="f">Il aurait tort de vous plus offenser ;</l>
-            <l id="480">Mais, Monsieur, pour me plaire, il le faut embrasser,</l>
-            <l id="481" part="i">Et toujours...</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="481" part="m">L'embrasser !</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="481" part="f">Que cela l'embarrasse !</l>
-            <l id="482" part="i">Voyez.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="482" part="f">De votre part je prétends cette grâce.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="483">Il serait trop honteux, si ce bien peu commun...</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="484">Je vous jure ma foi, qu'ils ne sont, ma foi, qu'un.</l>
-            <l id="485">Le madré ! Gardez-vous des finesses qu'il brasse !</l>
-          </sp>
-          <sp stage="loud" who="FERNAND">
-            <speaker>FERNAND, à haute voix.</speaker>
-            <l id="486">Seras-tu trop honteux si ton frère t'embrasse,</l>
-            <l id="487" part="i">L'enfermé ?</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="487" part="f">C'est à lui... Paix, monsieur le badaud !</l>
-            <note type="L">Bélitre : Gueux qui mendie par fainéantise, et qui pourrait bien gagner sa vie. Il se dit quelquefois par extension, des coquins qui n'ont ni bien, ni honneur. [F]</note>
-            <l id="488">Paix, fripon ! Paix, belître ! Et venez ici haut !</l>
-            <stage type="dress/kiss">Crispin met son chapeau sur son coude, et puis l'embrasse si adroitement qu'il semble que ce soit une autre personne.</stage>
-            <l id="489">C'est moins par amitié que ce n'est par contrainte ;</l>
-            <l id="490" part="i">Venez, dis-je !</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Philipin.</speaker>
-            <l id="490" part="f">Tu vois, ce n'est pas une feinte.</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="491">Je n'y vois, ma foi, goutte, et ne sais ce que c'est.</l>
-          </sp>
-          <sp stage="toward" who="CRISPIN">
-            <speaker>CRISPIN, à Fernand.</speaker>
-            <l id="492" part="i">À présent.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="492" part="f">À présent descendez, s'il vous plaît ?</l>
-            <l id="493" part="i">Je vous ouvre.</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="493" part="f">Épions : car, ou bien je suis ivre,</l>
-            <l id="494" part="i">Ou bien...</l>
-            <stage type="exit/dress/location">Il sort et met bas la soutane ; puis, comme Fernand est entré, croyant faire sortir un autre frère, Crispin prend l'occasion, et monte fort diligemment par la fenêtre, et ensuite sort avec Fernand, comme si, en effet, il était frère du Médecin.</stage>
-          </sp>
-          <sp stage="down" who="CRISPIN">
-            <speaker>CRISPIN, descendu.</speaker>
-            <l id="494" part="f">J'ai fait défense au coquin de me suivre ;</l>
-            <l id="495">J'en aurais de la honte... Il viendra par après.</l>
-            <l id="496" part="i">Adieu.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="496" part="f">Je suis ravi d'avoir fait cette paix ;</l>
-            <l id="497" part="i">Mais faisons sortir l'autre.</l>
-          </sp>
-          <sp stage="get" who="PHILIPIN">
-            <speaker>PHILIPIN, ramassant la soutane de Crispin.</speaker>
-            <note type="C">On lit guesne au vers 497 dans l'édition originale.</note>
-            <l id="497" part="f">Ah ! Je tiens votre gaine,</l>
-            <l id="498" part="i">Doctissime !</l>
-          </sp>
-          <sp stage="costume/imitate" who="CRISPIN">
-            <speaker>CRISPIN, En habit de valet.</speaker>
-            <l id="498" part="m">Est-il loin ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="498" part="m">Assez loin.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="498" part="f">Que de peine,</l>
-            <l id="499" part="i">Monsieur !</l>
-          </sp>
-          <sp stage="toward" who="FERNAND">
-            <speaker>FERNAND, à Philipin.</speaker>
-            <l id="499" part="m">Hé bien ?</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="499" part="f">Hé bien, sont-ils deux ?</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="499" part="f">Ah ! vraiment.</l>
-          </sp>
-          <sp stage="show" who="PHILIPIN">
-            <speaker>PHILIPIN, montrant Crispin et sa soutane.</speaker>
-            <l id="500" part="i">Voilà l'un, voilà l'autre.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="500" part="m">Ah ! Grands dieux !</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="500" part="f">Quoi ? Comment ?</l>
-            <l id="501" part="i">Que dis-tu ?</l>
-          </sp>
-          <sp who="PHILIPIN">
-            <speaker>PHILIPIN.</speaker>
-            <l id="501" part="f">Qu'à merveille il grimpe une fenêtre.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="502" part="i">Ah ! Perfide.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="502" part="f">Ah ! Monsieur, sachez tout de mon maître :</l>
-            <l id="503" part="i">Le voici.</l>
-          </sp>
-        </div2>
-        <div2 type="scene" n="25">
-          <head>SCÈNE XXV ET DERNIÈRE. Fernand, Cléon, Lucresse, Crispin, Philippin, Lise.</head>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="503" part="f">C'est Cléon ! C'est ma fille. Ah ! rusé !</l>
-            <l id="504">Ce Cléon l'a séduite, et tu m'as amusé,</l>
-            <l id="505" part="i">Médecin de malheur !</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="505" part="m">Quoi ! Monsieur.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="505" part="f">Je te jure</l>
-            <l id="506">Que tu l'épouseras, ou je te défigure.</l>
-          </sp>
-          <sp who="LUCRESSE">
-            <speaker>LUCRESSE.</speaker>
-            <l id="507" part="i">Daignez.</l>
-          </sp>
-          <sp who="FERNAND">
-            <speaker>FERNAND.</speaker>
-            <l id="507" part="f">Point de quartier : il sera ton époux,</l>
-            <l id="508" part="i">Ou du moins.</l>
-          </sp>
-          <sp who="CLÉON">
-            <speaker>CLÉON.</speaker>
-            <l id="508" part="f">Cet hymen a des charmes si doux,</l>
-            <l id="509" part="i">Monsieur.</l>
-          </sp>
-          <sp who="CRISPIN">
-            <speaker>CRISPIN.</speaker>
-            <l id="509" part="f">Sans affecter compliment ni surprise,</l>
-            <l id="510">Vous, le fait de Lucresse, et moi, le fait de Lise,</l>
-            <l id="511">Confondant tout ensemble et nos biens et les leurs,</l>
-            <l id="512">Faisons des médecins, ou volants, ou voleurs.</l>
-          </sp>
-        </div2>
-      </div1>
-    </body>
-  </text>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">LE MÉDECIN VOLANT</title>
+                <author key="isni:0000000083429101">Edme BOURSAULT (1638-1701)</author>
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000180</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY NC SA 3.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                    </licence>
+                </availability><!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/BOURSAULT_MEDECINVOLANT.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/BOURSAULT_MEDECINVOLANT.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY NC SA 3.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1666">1666</date>
+                        <date type="premiere" when="1694-10">Représentée, pour la première fois en octobre 1669 au Théâtre du Marais. </date>
+                        <date type="written"/>
+                        <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k629721</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="lise" sex="FEMALE">
+                        <persName>Lise</persName>
+                    </person>
+                    <person xml:id="cleon" sex="MALE">
+                        <persName>Cléon</persName>
+                    </person>
+                    <person xml:id="crispin" sex="MALE">
+                        <persName>Crispin</persName>
+                    </person>
+                    <person xml:id="fernand" sex="MALE">
+                        <persName>Fernand</persName>
+                    </person>
+                    <person xml:id="philipin" sex="MALE">
+                        <persName>Philipin</persName>
+                    </person>
+                    <person xml:id="lucresse" sex="FEMALE">
+                        <persName>Lucresse</persName>
+                    </person>
+                    <person xml:id="canteas" sex="MALE">
+                        <persName>Cantéas</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords>
+                    <term type="genreTitle">Comédie</term>
+                    <term type="genreTitle">vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+		<front>
+			<docTitle> 
+				<titlePart type="main">LE MÉDECIN VOLANT</titlePart>
+				<titlePart type="sub">COMÉDIE BURLESQUE</titlePart>
+			</docTitle> 
+			<docDate when="1666">M. DC. LXVI. AVEC PERMISSION.</docDate>
+			
+			<div type="docImprint">
+				<div type="privilege">
+                    <head>PERMISSION.</head>
+					<p n="">Je n'empêche, pour le Roi, l'impresse de MATHEVET Marchand libraire à Lyon, de la comédie intitulée Le Médecin Volant ; et ce pour trois ans, avec les défenses en tel cas requises et accoutumées.</p>
+					<p n="">Fait à Lyon, le 27 janvier, mille six cent soixante-six.</p>
+					<p n="">BOLLIOUD-MERMET.</p>
+				</div><!--@id="1666-01-26"-->
+				<div type="printer">
+                    <p>À LYON, Chez Charles Mathevet, rue Mercière, à Saint-Thomas d'Aquin.</p>
+                </div><!--@id="RIBOU"-->
+				<div type="acheveImprime">
+                    <p>Permis l'impression dudit livre pour un an. Fait ce 28 janvier 1666. DESEVE</p>
+                </div><!--@id="1666-01-28"-->
+			</div>
+	<performance>
+		<ab type="premiere">Représentée, pour la première fois en octobre 1669 au Théâtre du Marais. </ab><!--date="1694-10"--><!--location="Théâtre du Marais"-->
+	</performance>
+	<div type="dedicace">
+                <opener>
+                    <salute>À MONSIEUR C** MÉDECIN DE MON PAYS</salute>
+                </opener>
+	<p type="note" n="">[Cette dédicace est absente de l'édition originale et se trouve dans l'édition de 1833 de la Nouvelle Collection Molièresque.]</p>
+	<head>MONSIEUR,</head>
+	<p n="">Soit par coutume ou soit par générosité, je n'ai jusqu'ici dédié aucune pièce que l'on ne m'ait fait quelque présent, et, à dire vrai, l'on m'attraperait bien si on venait à perdre une si bonne habitude. Cependant je vous dédie le MÉDECIN VOLANT, qui assurément n'est pas le moindre de mes ouvrages, à condition seulement que si jamais je vais au pays, et que je sois assez heureux pour y devenir malade, vous aurez assez de bonté pour moi pour ne pas me faire languir longtemps. Remarquer, s'il vous plaît, Monsieur, que je ne veux pas dire que vous aurez la bonté de m'expédier le plus tôt qu'il vous sera possible, et souffrez que je vous avertisse, de peur d'équivoque, que je n'estime la médecine qu'en ce qu'elle peut être utile à la conservation ou au recouvrement de ma santé, parce que je mourrai bien sans le secours de personne, et particulièrement de votre Faculté, pour qui j'ai trop de vénération pour ne pas lui en épargner la peine. Il meurt plus de monde en ces quartiers par la faute des médecins que vous n'en ressuscitez par votre capacité ; et Paris est si misérable pour les malades que l'on prend plus de soin pour les faire mourir que vous n'en prendriez pour les faire vivre. Je vous proteste que si l'on m'appelait à la Police, j'y donnerais si bon ordre qu'il ne serait plus permis d'assassiner impunément un homme ; et ces Messieurs, qui ne sont médecins que par la soutane, seraient obligés, durant quelques années que je limiterais, de faire l'épreuve de leur science sur les animaux qui ne sont plus propres au travail. Si cela était, les habiles comme vous n'en seraient pas plus mal, et les malades en seraient beaucoup mieux ; vous en aurez ici plus de pratiques, et ceux qui meurent avec tant de précipitation entre les mains de ces ignorants ne mourraient peut-être pas si vite entre les autres. Enfin, Monsieur, j'ai tant d'estime pour votre personne et tant d'inclination pour le pays que, si jamais il me prend envie de sortir du monde, j'aime mieux mourir de votre main que de pas une autre, quand ce ne serait qu'à cause qu'il y a de mes parents qui en sont déjà morts, et que, par conséquent, je suis obligé d'être,</p>
+	<p n="">Monsieur,</p>
+	<p n="">Votre très humble et très affectionné serviteur,</p>
+	<p n="">BOURSAULT.</p>
+</div>
+
+		<castList>
+                <head>PERSONNAGES</head>
+			<castItem>
+                    <role corresp="#cleon">CLÉON</role><!--@sex="1" @type="H" @statut="bourgeois" @age="J" @stat_amour="Lucresse"-->, amant de Lucresse.</castItem>
+			<castItem>
+                    <role corresp="#lise">LISE</role><!--@sex="2" @type="H" @statut="servante" @age="A" @stat_amour=""-->, servante de Lucresse.</castItem>
+			<castItem>
+                    <role corresp="#lucresse">LUCRESSE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="J" @stat_amour="Cléon"-->, maîtresse de Cléon.</castItem>
+			<castItem>
+                    <role corresp="#crispin">CRISPIN</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour=""-->, valet de Cléon, médecin volant.</castItem>
+			<castItem>
+                    <role corresp="#fernand">FERNAND</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour=""-->, père de Lucresse.</castItem>
+			<castItem>
+                    <role corresp="#philipin">PHILIPIN</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour=""-->, valet de Fernand.</castItem>
+			<castItem>
+                    <role corresp="#canteas">CANTÉAS</role><!--@sex="1" @type="H" @statut="médecin" @age="A" @stat_amour=""-->, habile médecin.</castItem>
+		</castList>
+		<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène est devant la maison de Fernand.</set>-->
+</front>
+<body>
+<div type="act" n="1">
+                <head>LE MÉDECIN VOLANT</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Lise, Cléon.</head>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="1">N'insultez point, de grâce, au malheur de Lucresse</l>
+	<l n="2">Je sais qu'elle a pour vous une forte tendresse ;</l>
+	<l n="3">Mais enfin de son père elle craint le pouvoir, </l>
+	<l n="4">Et ne peut se résoudre au plaisir de vous voir.</l>
+	<l n="5">Une fille bien née a toujours de la crainte.</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="6">Que veux-tu ? La douleur dont mon âme est atteinte</l>
+	<l n="7">Rend ma plainte équitable, et me fait murmurer</l>
+	<l n="8">Contre un objet charmant, que je dois adorer.</l>
+	<l n="9">Mais, Lise, à sa fenêtre une prompte escalade</l>
+	<l n="10" part="I">Peut m'ouvrir une voie.</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="10" part="F">Elle fait la malade,</l>
+<note type="L">Rètre : reître. Anciennement cavalier allemand. Fig. ou familièrement, en mauvaise part ou par plaisanterie, un homme que l'on compare à un soudard. [L]</note>
+	<l n="11">Monsieur, et le vieux rètre est parti du matin,</l>
+	<l n="12">Pour chercher par la ville un expert médecin.</l>
+	<l n="13">Sans rien escalader, pour voir une maîtresse,</l>
+	<l n="14">Un amant dans sa manche a toujours quelque adresse.</l>
+	<l n="15">Mettez tout en usage, et puissance, et savoir ;</l>
+	<l n="16">Sans choquer son honneur, essayez de la voir.</l>
+	<l n="17">Il n'est pas de moyens que l'amour n'autorise.</l>
+	<l n="18">Surtout. Mais du vieillard je crains une surprise :</l>
+	<l n="19">Adieu, pensez à vous, et vous ressouvenez</l>
+	<l n="20">Qu'il n'est rien d'impossible aux coeurs passionnés.</l>
+</sp>
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II.</head>
+<sp who="#cleon">
+                        <speaker>CLÉON, seul.</speaker>
+	<l n="21">Aux coeurs passionnés il n'est rien d'impossible.</l>
+	<l n="22">Je l'avoue ; et je trouve un moyen infaillible</l>
+	<l n="23">De donner à mon âme un moment de repos :</l>
+	<l n="24">Il faut. Mais, ô Crispin, que tu viens à propos !</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Crispin, Cléon.</head>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="25">Je vous cherche partout pour vous rendre réponse,</l>
+	<l n="26" part="I">Monsieur.</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="26" part="F">Si tu savais ce que Lise m'annonce,</l>
+	<l n="27" part="I">Cher Crispin !</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="27" part="F">Il m'a dit que tantôt, sur le soir.</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="28">Quand on a de l'amour, et qu'on a de l'espoir.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="29">Je vous dis et redis qu'il m'a dit de vous dire.</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="30">Pour des charmes si doux lorsqu'une âme soupire.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+<note type="L">Babillard : Qui par le continuellement, et qui dit des choses de néant. Se dit aussi d'un indiscret qui ne saurait tenir sa langue ; qui répète tout ce qu'il a ouï dire. [F]</note>
+	<l n="31">Vous plaît-il que je parle, ô babillard maudit,</l>
+	<l n="32" part="I">Ou ne dirai-je mot ?</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="32" part="F">Tu m'en as assez dit.</l>
+	<l n="33">Le temps m'est précieux, et ma flamme me presse.</l>
+	<l n="34">Raisonnons entre nous : je me meurs pour Lucresse.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="35" part="I">Mourez-vous ?</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="35" part="F">Son visage a des attraits puissants.</l>
+	<l n="36">Elle asservit mon âme, elle charme mes sens ;</l>
+	<l n="37">En un mot, je l'adore, et son père me l'ôte,</l>
+	<l n="38" part="I">Tu le vois.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="38" part="F">Il est vrai, mais ce n'est pas ma faute.</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="39">D'accord ; de mon malheur je ne puis t'accuser ;</l>
+	<l n="40">Mais tu connais son père... Il le faut abuser.</l>
+	<l n="41" part="I">Qu'en dis-tu ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="41" part="F">Moi, Monsieur ? Abusez, que m'importe !</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="42">Il la tient enfermée, et je veux qu'elle sorte :</l>
+	<l n="43">Mon coeur, pour cet effort, ne s'adresse qu'à toi,</l>
+	<l n="44" part="I">Car enfin...</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="44" part="F">À présent, il m'importe, ma foi !</l>
+	<l n="45" part="I">À moi, Monsieur ?</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="45" part="F">À toi. Rends mon âme charmée !</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="46">Ne me dites-vous pas qu'il la tient enfermée ?</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="47" part="I">Oui.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="47" part="F">Je n'y puis que faire. En quel lieu du logis ?</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="48" part="I">C'est dessus le derrière.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="48" part="M">Oui ?</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="48" part="M">Oui.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="48" part="M">Oui ?</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="48" part="M">Oui.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="48" part="F">Tant pis.</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="49">Je t'ai dit ma pensée ; instruis-moi de la tienne.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="50" part="I">Elle est enfermée ?</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="50" part="M">Oui.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="50" part="F">Que la belle s'y tienne,</l>
+	<l n="51" part="I">Voilà ce que je pense.</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="51" part="F">Ah ! C'est trop s'amuser.</l>
+	<l n="52">Écoute : sans scrupule, il te faut déguiser.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="53" part="I">Me déguiser, Monsieur ! Et pourquoi ?</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="53" part="F">C'est pour cause. </l>
+	<l n="54">Je veux bien, en ce lieu, t'informer de la chose :</l>
+	<l n="55">Pour faire pleinement réussir mon dessein, </l>
+	<l n="56" part="I">Il faut être aujourd'hui médecin.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="56" part="F">Médecin ?</l>
+	<l n="57" part="I">Bons dieux !</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="57" part="F">Sans perdre ici d'inutiles paroles,</l>
+	<l n="58">Ce service rendu te vaudra six pistoles.</l>
+	<l n="59">Si le gain t'encourage, avise, les voilà !</l>
+	<l n="60" part="I">Examine...</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="60" part="F">Mon Dieu ! ce n'est pas pour cela.</l>
+	<l n="61" part="I">Médecin !</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="61" part="F">Médecin ; je n'ai point d'autre ruse.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="62">Mais il faut de l'esprit, et je suis une buse ;</l>
+	<l n="63" part="I">Et, de plus...</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="63" part="F">C'est à tort que tu prends de l'effroi :</l>
+	<l n="64">Le père de Lucresse a moins d'esprit que toi.</l>
+<note type="L">Chassieux : Qui a les yeux pleins de chassie. [F]</note>
+<note type="L">Chassier : Certaine humidité visqueuse qui sort des yeux, et qui colle aux paupières. [F]</note> 
+	<l n="65">Ce vieillard chassieux connaît peu ton visage.</l>
+	<l n="66">Et tu sais. Il avance, il me voit, j'en enrage ;</l>
+	<l n="67">Je le vais aborder... Va m'attendre chez moi,</l>
+	<l n="68">J'aurai soin de m'y rendre aussi vite que toi.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="69" part="I">Mais, à moins de m'instruire, apprenez.</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="69" part="F">Va,te dis-je,</l>
+	<l n="70" part="I">Je te suis.</l>
+<stage type="exit">Il sort.</stage>
+</sp>
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Cléon, Fernand, Philipin.</head>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="70" part="F">La douleur de Lucresse m'afflige.</l>
+	<l n="71">Monsieur, quoique mes soins lui soient indifférents,</l>
+	<l n="72">Je viens vous informer de la part que j'y prends :</l>
+	<l n="73">Heureux, quoique toujours sa beauté me captive,</l>
+	<l n="74">Si pour d'autres que moi j'aperçois qu'elle vive,</l>
+	<l n="75">Et toujours trop heureux, si les voeux que je fais</l>
+	<l n="76">D'un secours nécessaire avancent les effets.</l>
+	<l n="77" part="I">Adieu.</l>
+</sp>
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Fernand, Philipin.</head>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="77" part="F">Ma pauvre fille ! Elle va rendre l'âme,</l>
+	<l n="78" part="I">Philipin !</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="78" part="F">C'est à vous que j'en donne le blâme.</l>
+	<l n="79">À la pourvoir d'un homme on a trop retardé.</l>
+	<l n="80">Un pucelage nuit, quand il est trop gardé.</l>
+	<l n="81">C'est cela qui l'étouffe, et ces sortes de choses.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="82">Point, point. Sa maladie a de plus justes causes.</l>
+	<l n="83">Mais retourne au plus vite, et va voir, Philipin,</l>
+	<l n="84">Si l'on attend bientôt ce savant médecin.</l>
+	<l n="85">J'appréhende si fort que Lucresse ne meure.</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="86">S'il était de retour, il viendrait tout à l'heure.</l>
+	<l n="87" part="I">On l'a dit.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="87" part="F">Il est vrai, mais apprends mon souci :</l>
+	<l n="88">D'autres peuvent l'attendre et l'emmener aussi,</l>
+	<l n="89">Et pour lors tout mon coeur, accablé de tristesse,</l>
+	<l n="90" part="I">Si Lucresse endurait.</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="90" part="F">Peste soit de Lucresse !</l>
+	<l n="91">Elle a le choix de vivre ou du moins de mourir.</l>
+	<l n="92">Quel plaisir elle prend à me faire courir !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="93">Surtout ne reviens point que tu ne me l'amenes,</l>
+	<l n="94" part="I">Je t'en prie.</l>
+</sp>
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI.</head>
+<sp who="#fernand">
+                        <speaker>FERNAND, seul.</speaker>
+	<l n="94" part="F">En mon âge, ô bons dieux ! Que de peines !</l>
+	<l n="95" part="I">Et que dans mes vieux ans.</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Crispin, Fernand.</head>
+<sp who="#crispin">
+                        <speaker>CRISPIN, en soutane.</speaker>
+	<l n="95" part="F">Pythagore, Platon,</l>
+	<l n="96">Mache-à-vide, Pancrace, Hésiode, Caton.</l>
+</sp><!--@stage="dress"-->
+<sp who="#fernand">
+                        <speaker>FERNAND, bas.</speaker>
+	<l n="97" part="I">Quel serait ce docteur ? Écoutons.</l>
+</sp><!--@stage="low"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="97" part="F">Caligule,</l>
+	<l n="98">Polyeucte, Virgile, Anaxandre, Luculle.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, bas.</speaker>
+	<l n="99" part="I">Ô dieux !</l>
+</sp><!--@stage="low"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="99" part="F">Robert Vinot, Scipion l'Africain,</l>
+	<l n="100">Jodelet, Mascarille, Aristote, Lucain,</l>
+	<l n="101">Médecins de César, assassins d'Alexandre,</l>
+	<l n="102">Vous voyez un phénix qu'a produit votre cendre !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, bas.</speaker>
+	<l n="103" part="I">Serait-ce un médecin ? Il en parle.</l>
+</sp><!--@stage="low"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="103" part="F">Approchez,</l>
+	<l n="104">Venez voir, grands docteurs, les mystères cachés</l>
+	<l n="105">De l'Encyclopédie et de la médecine.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="106" part="I">C'en est un.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="106" part="F">Venez voir ce que c'est que racine,</l>
+	<l n="107">De la mer Arabique et le flux et reflux.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, à Crispin.</speaker>
+	<l n="108" part="I">Monsieur ?</l>
+</sp><!--@stage="toward"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="108" part="F">Que voulez-vous ? Ego sum medicus.</l>
+	<l n="109">Médecin passé maître, apprenti d'Hippocrate,</l>
+<note type="L">Mithridate : Antidote ou composition qui sert de remède ou de préservatif contre les poisons où il entre entre plusieurs drogues, comme opium, vipères, scilles, agaric, sctines, etc. [F]</note>
+	<l n="110">Je compose le baume et le grand mithridate ;</l>
+	<l n="111">Je sais, par le moyen du plus noble des arts,</l>
+	<l n="112">Que qui meurt en février n'est plus malade en mars ;</l>
+	<l n="113">Que de quatre saisons une année est pourvue,</l>
+	<l n="114">Et que le mal des yeux est contraire à la vue.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="115">Je ne saurais douter d'un si rare savoir.</l>
+	<l n="116" part="I">Si j'osais vous prier.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="116" part="M">De quoi ? Parlez.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="116" part="F">De voir</l>
+	<l n="117">Une fille que j'ai, que chacun désespère.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="118">Vous avez une fille ? Et vous êtes son père,</l>
+	<l n="119" part="I">À ce compte ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="119" part="F">Oui, Monsieur, et j'ai peur de sa mort.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="120" part="I">Elle est donc fort malade ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="120" part="M">Oui, Monsieur.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="120" part="F">Elle a tort ;</l>
+	<l n="121">Je lui veux conseiller qu'elle cesse de l'être.</l>
+	<l n="122">Qui domine sur nous s'en veut rendre le maître ;</l>
+	<l n="123">Or, le mal dominant par d'occultes ressorts,</l>
+	<l n="124">Il corrompt la matière, il ravage le corps ;</l>
+	<l n="125">L'individu qui souffre, au moment qu'il s'épure,</l>
+	<l n="126">D'un peu d'apothéose entretient sa nature ;</l>
+	<l n="127">La vapeur de la terre, opposée à ce mal,</l>
+	<l n="128">Dans l'humaine vessie établit un canal ;</l>
+<note type="L">Froidureux : Frileux, qui craint le froid. [F]</note>
+	<l n="129">Le cancer froidureux rend l'humeur taciturne,</l>
+	<l n="130">Le vaillant zodiaque envisage Saturne</l>
+	<l n="131">Et s'il faut qu'avec eux j'en demeure d'accord,</l>
+	<l n="132">Rien n'abrège la vie à l'égal de la mort.</l>
+	<l n="133">Ce sont de ces auteurs les leçons que j'emprunte.</l>
+	<l n="134">Votre fille, à propos, serait-elle défunte ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="135" part="I">Non, Monsieur.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="135" part="M">Mange-t-elle ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="135" part="F">Un petit, grâce aux dieux !</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="136" part="I">Elle n'est donc pas morte ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="136" part="M">Elle ? Nenni.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="136" part="F">Tant mieux.</l>
+	<l n="137" part="I">Je m'en réjouis fort.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="137" part="F">Et de quoi ? Cette vie,</l>
+	<l n="138">Avant la fin du jour, lui peut être ravie.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="139">Tant pis ! L'a-t-on fait voir à quelque médecin ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="140" part="I">Nullement.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="140" part="F">Elle a donc quelque mauvais dessein,</l>
+	<l n="141">Puisqu'elle veut mourir sans aucune ordonnance.</l>
+	<l n="142">De ces sortes de maux notre École s'offense.</l>
+	<l n="143">Quand un homme se trouve en état de périr,</l>
+	<l n="144">Toujours un médecin doit l'aider à mourir ;</l>
+	<l n="145">Et c'est faire éclater des malices énormes,</l>
+	<l n="146">Que vouloir refuser de mourir dans les formes.</l>
+	<l n="147">Instruisez votre fille, et lui dites, du moins,</l>
+	<l n="148">Pour mourir comme il faut, qu'elle attende mes soins.</l>
+	<l n="149">Son âme à déloger est trop impatiente,</l>
+	<l n="150" part="I">Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="150" part="F">Permettez-moi d'appeler sa suivante.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="151">Appelez. Je le tiens ! Ô le franc animal !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="152" part="I">Holà, Lise !</l>
+</sp>
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Lise, Fernand, Crispin.</head>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="152" part="F">Ah ! Monsieur, votre fille est fort mal !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="153" part="I">Que fait-elle ? Je tremble.</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="153" part="F">Elle se plaint du ventre ;</l>
+	<l n="154">Elle sort de son lit, puis après elle y rentre,</l>
+	<l n="155">Se promène, se sied, veut dormir, veut veiller.</l>
+	<l n="156">Malgré moi, de ce pas, je la viens d'habiller.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="157" part="I">D'habiller !</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="157" part="F">D'habiller ; sa boutade m'étonne.</l>
+<stage type="watch">Apercevant Crispin.</stage>
+	<l n="158">Je crois. Mais ce gredin vous demande l'aumône.</l>
+	<l n="159" part="I">Monsieur ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="159" part="F">Ah ! Juste Ciel, quel blasphème tu fais !</l>
+	<l n="160">C'est l'exemple parfait des médecins parfaits.</l>
+	<l n="161">Que j'ai bien du sujet de louer sa rencontre !</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="162" part="I">Médecin ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="162" part="F">Médecin. Ma soutane le montre.</l>
+	<l n="163">Mais, sans perdre ma peine à prouver qui je suis,</l>
+	<l n="164">Par ma seule doctrine aisément je le puis.</l>
+<note type="L">Ergotant : De ergoteur ; celui qui dispute, qui pointille sans cesse, qui conteste sans raison. [F] Ici, qui change souvent, qui s'agite.</note>
+	<l n="165">De la fille ergotante apportez de l'urine.</l>
+	<l n="166" part="I">Apportez !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, à Lise.</speaker>
+	<l n="166" part="M">Allez vite en quérir.</l>
+<stage type="exit">Lise sort.</stage>
+</sp><!--@stage="toward"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="166" part="F">J'examine</l>
+	<l n="167">Ce que cette malade à peu près peut avoir ;</l>
+	<l n="168">Mais je vois de l'urine, et je vais le savoir.</l>
+</sp>
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Crispin, Fernand, Lise.</head>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="169" part="I">Approchez.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="170">De frayeur j'ai mon âme alarmée.</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE, avec de l'urine.</speaker>
+	<l n="171" part="I">En voilà.</l>
+</sp><!--@stage="carry"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="171" part="F">Voyez-vous comme elle est enflammée ?</l>
+	<l n="172" part="I">Mauvais signe !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="172" part="M">Ô bons dieux ! Il en boit.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN, après avoir tout bu.</speaker>
+	<l n="172" part="F">Je crois bien.</l>
+	<l n="173">Mais qui boit pour si peu ne comprend jamais rien.</l>
+	<l n="174" part="I">Allez-en quérir d'autre.</l>
+</sp><!--@stage="drink"-->
+<sp who="#fernand">
+                        <speaker>FERNAND, à Lise.</speaker>
+	<l n="174" part="M">Allez vite !</l>
+<stage type="exit">Lise sort.</stage>
+</sp><!--@stage="toward"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="174" part="F">Mon prince !</l>
+	<l n="175">Assez d'autres docteurs, d'une étoffe assez mince,</l>
+	<l n="176">Se seraient contentés du rapport de leurs yeux,</l>
+	<l n="177">Mais à croire sa langue on en juge bien mieux.</l>
+<note type="L">La Belle plaideuse : est une comédie en vers et en cinq actes de François le Metel de Boisrobert, représentée pour le première fois en 1653 à l'Hôtel de Bourgogne.</note>
+	<l n="178">Boisrobert nous enseigne, en sa Belle Plaideuse,</l>
+	<l n="179">Que le goût est solide et la vue est trompeuse,</l>
+	<l n="180">Et qu'un grand médecin, quand il fait ce qu'il doit,</l>
+	<l n="181">Il sent mieux une chose à la langue qu'au doigt.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="182">À ces fortes raisons je n'ai point de réplique.</l>
+</sp>
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Lise, Crispin, Fernand.</head>
+<sp who="#lise">
+                        <speaker>LISE, avec encore un peu d'urine.</speaker>
+	<l n="183">À pisser comme il faut ma maîtresse s'applique,</l>
+	<l n="184">Monsieur, et cependant je n'en ai qu'un filet.</l>
+	<l n="185" part="I">Voyez !</l>
+</sp><!--@stage="give"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="185" part="F">Pauvre pisseuse !</l>
+<stage type="drink">Après avoir encore bu, il dit :</stage>
+	<l n="185" part="F">Allons au robinet</l>
+	<l n="186" part="I">En tirer.</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="186" part="M">Mais, Monsieur.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="186" part="F">Mais que cette pisseuse</l>
+	<l n="187">Fasse une ample pissade et qui soit copieuse,</l>
+	<l n="188" part="I">Copieuse !</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="188" part="F">Ma foi ! Ma maîtresse ne peut.</l>
+	<l n="189">On n'a pas le pouvoir de pisser quand on veut.</l>
+	<l n="190">C'est donner à Lucresse une peine trop grande,</l>
+	<l n="191" part="I">Que vouloir.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, à Lise.</speaker>
+	<l n="191" part="F">Dites-lui que Monsieur le commande.</l>
+	<l n="192" part="I">Courez vite !</l>
+</sp><!--@stage="toward"-->
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="192" part="F">Monsieur, votre fille n'a pu.</l>
+	<l n="193">Mais enfin, pour vous plaire, à l'instant elle a bu.</l>
+	<l n="194">Si Monsieur veut attendre à lui rendre service,</l>
+	<l n="195">Au plus tard, dans une heure, il faudra qu'elle pisse.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="196" part="I">Elle a raison.</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="196" part="F">De plus, pour chasser son souci,</l>
+	<l n="197">Elle s'est résolue à venir jusqu'ici.</l>
+	<l n="198" part="I">Elle vient.</l>
+</sp>
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. Lucresse, Fernand, Crispin, Lise.</head>
+<sp who="#lucresse">
+                        <speaker>LUCRESSE.</speaker>
+	<l n="199" part="I">Ah ! Mon père !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="199" part="M">Ah ! Ma fille !</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="199" part="F">Courage !</l>
+</sp>
+<sp who="#lucresse">
+                        <speaker>LUCRESSE.</speaker>
+	<l n="200" part="I">Je me meurs.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="200" part="F">Je lui trouve un passable visage.</l>
+	<l n="201">Serviteur ! Si pour vous nos remèdes sont vains,</l>
+	<l n="202">Vous aurez le plaisir de mourir par mes mains ;</l>
+	<l n="203" part="I">Consolez-vous.</l>
+</sp>
+<sp who="#lucresse">
+                        <speaker>LUCRESSE.</speaker>
+	<l n="203" part="M">Hélas !</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="203" part="F">Votre bras, que je tâte</l>
+	<l n="204">Si pour vous il est vrai que la mort ait si hâte ;</l>
+	<l n="205" part="I">Donnez, dis-je !</l>
+<stage type="touch">Au lieu de prendre le bras de Lucresse, il prend celui de son père et dit : </stage>
+	<l n="205" part="F">Tudieu ! Comme il bat votre pouls !</l>
+	<l n="206">J'aurai bien de la peine à répondre de vous,</l>
+	<l n="207">Et votre maladie est sans doute mortelle ;</l>
+	<l n="208" part="I">Prenez-y garde.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="208" part="F">Ô Dieu ! Quelle triste nouvelle !</l>
+	<l n="209" part="I">Je suis donc bien malade, ô Monsieur ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="209" part="F">Vous, pourquoi ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="210">Vous n'avez pris le bras à personne qu'à moi.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="211">Et cela vous étonne ? Une tendresse extrême</l>
+	<l n="212">Rend la fille, le père, et le père, elle-même :</l>
+	<l n="213">Entre eux deux la nature est propice à tel point,</l>
+	<l n="214">Que le sort les sépare, et le sang les rejoint ;</l>
+	<l n="215">Étant vrai que l'enfant est l'ouvrage du père,</l>
+	<l n="216">Sa douleur sur lui-même aisément réverbère ;</l>
+	<l n="217">Et le sang l'un de l'autre est si fort dépendant,</l>
+	<l n="218">Que l'enfant met le père en un trouble évident.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="219" part="I">Il est vrai.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="219" part="F">Cependant, quoIque mon savoir brille,</l>
+	<l n="220">Je veux bien me résoudre à tâter votre fille.</l>
+	<l n="221" part="I">Votre bras ?</l>
+</sp>
+<sp who="#lucresse">
+                        <speaker>LUCRESSE.</speaker>
+	<l n="221" part="M">Le voilà.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="221" part="F">Je m'en étais douté :</l>
+	<l n="222">Il ne vous manque rien que beaucoup de santé ;</l>
+	<l n="223" part="I">Sans cela.</l>
+</sp>
+<sp who="#lucresse">
+                        <speaker>LUCRESSE.</speaker>
+	<l n="223" part="F">J'ai la mort sur le bord de la lèvre,</l>
+	<l n="224" part="I">Monsieur.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="224" part="F">Que je retâte ! Avez-vous de la fièvre ?</l>
+</sp>
+<sp who="#lucresse">
+                        <speaker>LUCRESSE.</speaker>
+	<l n="225" part="I">Je ne sais.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="225" part="M">Non</l>
+</sp>
+<sp who="#lucresse">
+                        <speaker>LUCRESSE.</speaker>
+	<l n="225" part="M">Non.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="225" part="M">Fi !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="225" part="M">De quoi ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="225" part="F">Mauvais régal :</l>
+	<l n="226">Parfois, sans qu'on le sache, on se porte fort mal,</l>
+	<l n="227" part="I">Voyez-vous.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="227" part="F">De ses maux que je sache la cause.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="228">C'est la fièvre ; ce l'est, si ce n'est autre chose.</l>
+	<l n="229">Mais, soit fièvre, ou migraine, ou gangrène, ou mal chaud,</l>
+	<l n="230">Allez, pour la guérir je sais bien ce qu'il faut.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, à Lise.</speaker>
+	<l n="231" part="I">Une plume, de l'encre.</l>
+</sp><!--@stage="toward"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="231" part="M">Et pourquoi ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="231" part="F">L'ordonnance,</l>
+	<l n="232" part="I">Monsieur...</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="232" part="F">Vous vous moquez. Je les fais par avance !</l>
+	<l n="233">Je me tiens toujours prêt contre tous accidents :</l>
+	<l n="234">En voilà pour les yeux, pour le flux, pour les dents.</l>
+	<l n="235">Mais, ignorant son mal, il lui faut, ce me semble,</l>
+	<l n="236">Une ordonnance propre à tous les maux ensemble ;</l>
+	<l n="237">Il faudra que le sien se rencontre parmi.</l>
+<stage type="give">Il donne une ordonnance.</stage>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="238">Charitable Monsieur, c'est agir en ami,</l>
+	<l n="239" part="I">Cela ! Quel honnête homme !</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="239" part="F">En quel lieu couche-t-elle :</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="240">Elle a, sur le derrière, une chambre assez belle.</l>
+</sp>
+<sp who="#lise">
+                        <speaker>LISE.</speaker>
+	<l n="241">Oui, vraiment, une chambre assez belle, en effet !</l>
+	<l n="242" part="I">Si sombre !</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="242" part="F">Croyez-moi, le devant est son fait :</l>
+	<l n="243">Qu'on l'y mène ! Aussi bien, la journée est malsaine.</l>
+</sp>
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Philipin, Fernand, Cantéas, Crispin.</head>
+<sp who="#fernand">
+                        <speaker>FERNAND, voyant venir Philipin.</speaker>
+	<l n="244" part="I">Philipin, aide à Lise...</l>
+</sp><!--@stage="watch/entrance"-->
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="244" part="F">À la fin, je l'amène :</l>
+	<l n="245" part="I">Le voici.</l>
+<stage type="help">Après que Philipin a dit cela, il aide à remener Lucresse.</stage>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="245" part="F">Qui donc ? Qu'est-ce ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="245" part="F">Un savant médecin.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN, bas.</speaker>
+	<l n="246" part="I">Médecin ? Malepeste !</l>
+</sp><!--@stage="low"-->
+<sp who="#canteas">
+                        <speaker>CANTÉAS.</speaker>
+	<l n="246" part="F">Excusez ce matin,</l>
+	<l n="247">L'intendant d'un seigneur m'a contraint de me rendre,</l>
+	<l n="248" part="I">Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="248" part="F">Mon bon Monsieur, je n'ai pu tant attendre :</l>
+	<l n="249">Au retour de chez vous, pour causer mon repos,</l>
+	<l n="250">Ce fameux médecin s'est offert à propos,</l>
+	<l n="251" part="I">Je l'ai pris.</l>
+</sp>
+<sp who="#canteas">
+                        <speaker>CANTÉAS.</speaker>
+	<l n="251" part="M">Monsieur ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="251" part="F">Oui, mais qu'il a de mérite !</l>
+	<l n="252" part="I">Si vous saviez.</l>
+</sp>
+<sp who="#canteas">
+                        <speaker>CANTÉAS.</speaker>
+	<l n="252" part="F">Je loue, et je plains ma visite :</l>
+	<l n="253">Je me tiens malheureux d'avoir pu me ravir</l>
+	<l n="254">Au plaisir que j'aurais de pouvoir vous servir,</l>
+	<l n="255">Et de voir la fortune, à mes voeux trop cruelle,</l>
+	<l n="256">M'arracher au bonheur de vous prouver mon zèle ;</l>
+	<l n="257">Mais, à voir qui pour vous a daigné s'occuper,</l>
+	<l n="258">Je me tiens trop heureux qu'il ait pu m'échapper.</l>
+	<l n="259">Le plaisir que je goûte est mêlé dans le vôtre ;</l>
+	<l n="260">Si je perds d'un côté, je recouvre de l'autre,</l>
+	<l n="261">Puisqu'enfin de Monsieur le sublime entretien,</l>
+	<l n="262">D'être, un jour, tout à vous, m'offrira le moyen.</l>
+<stage type="location/toward">Apercevant qu'il est au milieu, il dit à Crispin : </stage>
+	<l n="263">Mais, Monsieur, pardonnez, ce n'est point par audace ;</l>
+	<l n="264">Je n'ai garde, avec vous, d'occuper cette place :</l>
+	<l n="265" part="I">C'est à vous qu'elle est due.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="265" part="M">Ah !</l>
+</sp>
+<sp who="#canteas">
+                        <speaker>CANTÉAS.</speaker>
+	<l n="265" part="M">Monsieur...</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="265" part="F">Palsambleu,</l>
+	<l n="266" part="I">Ah !</l>
+</sp>
+<sp who="#canteas">
+                        <speaker>CANTÉAS.</speaker>
+	<l n="266" part="F">Sans cérémonie on vous doit le milieu.</l>
+<stage type="location/turn">Crispin par deux fois étant au milieu, comme Cantéas veut parler, il s'écoule par derrière lui, et reprend sa première place.</stage>
+	<l n="267">Eh ! de grâce !... Hippocrate... Hé, Monsieur, je vous jure</l>
+	<l n="268">Qu'au lieu de m'obliger, c'est me faire une injure ;</l>
+	<l n="269">Je vous prie. Hippocrate. À quoi bon tout cela ?</l>
+	<l n="270">Conservez, votre place, hé, Monsieur, la voilà !</l>
+	<l n="271">Empêchez, à vos yeux, que ma honte n'éclate.</l>
+	<l n="272">Je reprends ma parole, et je dis qu'Hippocrate,</l>
+	<l n="273">Qui de la médecine est l'illustre ornement,</l>
+	<l n="274">De cet art salutaire a parlé doctement :</l>
+	<l n="275">« Médecine est, dit-il, une longue science,</l>
+	<l n="276">Tout à fait dangereuse en son expérience :</l>
+	<l n="277">Car, touchant notre vie, elle passe si tôt,</l>
+	<l n="278">Qu'on n'a pas le loisir d'en juger comme il faut.</l>
+	<l n="279">Vita brevis, ars vero longa, occasio autem praeceps,</l>
+	<l n="280">Experimentum periculosum,judicium difficile. »</l>
+	<l n="281">Je me plais à l'étude, et j'ai l'âme assidue</l>
+	<l n="282">À vouloir de cet art pénétrer l'étendue.</l>
+	<l n="283">Mais dedans cet abîme un esprit se confond :</l>
+	<l n="284">Plus on l'approfondit, plus il semble profond.</l>
+	<l n="285">Cette utile science en enferme tant d'autres,</l>
+	<l n="286">Qu'il faudrait que mes yeux égalassent les vôtres,</l>
+	<l n="287">Ou que de leurs rayons vous pussiez m'éclairer,</l>
+	<l n="288">Pour m'offrir un moyen de ne pas m'égarer.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="289" part="I">Ho, ho, ho !</l>
+</sp>
+<sp who="#canteas">
+                        <speaker>CANTÉAS.</speaker>
+	<l n="289" part="F">De plaisir on a l'âme ravie,</l>
+	<l n="290">Alors que d'un malade on prolonge la vie ;</l>
+	<l n="291">Et d'un grand médecin rien n'égale le sort,</l>
+	<l n="292">Quand sa seule présence intimide la mort,</l>
+<note type="L">Parques : divinités des Enfers chargées de filer la vie des hommes, étaient au nombre de trois, Clotho, Lachésis, Atropos : Chlotho préside à la naissance et tient le fuseau, Lachésis le tourne et file, Atropos coupe le fil. [B]</note>
+	<l n="293">Quand il est l'ennemi que la Parque redoute,</l>
+	<l n="294">Quand sa haute science en détourne la route,</l>
+	<l n="295">Et qu'enfin le trépas, qui nous fait tous trembler,</l>
+	<l n="296">Pour ne pas le combattre aime mieux reculer.</l>
+	<l n="297">Mortem medicamentis removet medicus expers.</l>
+	<l n="298">...................................</l>
+	<l n="299">Je ne puis approuver l'importune méthode.</l>
+	<l n="300">Mais peut-être, Monsieur, je vous suis incommode,</l>
+	<l n="301">Car enfin comme vous les esprits élevés,</l>
+	<l n="302">Aux emplois importants sont toujours réservés.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="303" part="I">Ho, ho, ho !</l>
+</sp>
+<sp who="#canteas">
+                        <speaker>CANTÉAS.</speaker>
+	<l n="303" part="F">Je sors donc ; mais j'ose me promettre</l>
+	<l n="304">Qu'étant moins occupé, vous pourrez me permettre</l>
+	<l n="305">De chercher un prétexte à me faire jouir</l>
+	<l n="306">Du plaisir qu'on reçoit, quand on peut vous ouïr.</l>
+</sp>
+</div>
+<div type="scene" n="13">
+                    <head>SCÈNE XIII. Fernand, Crispin.</head>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="307">Hé bien, ce médecin, vous voyez comme il cause !</l>
+	<l n="308" part="I">Qu'en dites-vous ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="308" part="F">Il sait quelque petite chose.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="309">Daignez-moi,je vous prie, informer de cela :</l>
+	<l n="310" part="I">Touchant la médecine est-il expert ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="310" part="F">Là, là,</l>
+	<l n="311" part="I">Passable.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="311" part="F">Il n'a donc pas la science parfaite ?</l>
+	<l n="312">Pour qui passerait-il près de vous ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+<note type="L">Mazette : masette. Petit cheval, ou cheval ruiné qu'on ne saurait faire aller, ni avec le fouet, ni avec l'éperon. On le dit aussi par extension des personnes qui ne sauraient aller loin à pied, qui ne sauraient rien porter, ou qui ne ne savent pas bien faire une chose.[F]</note>
+	<l n="312" part="F">Pour mazette.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="313" part="I">Mais, durant qu'il parlait, vous ne disiez mot ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="313" part="F">Moi,</l>
+	<l n="314" part="I">Dites-vous ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="314" part="M">Oui, vraiment, je dis : vous.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="314" part="F">Je le crois.</l>
+	<l n="315">Pour pouvoir de cet homme éprouver la science,</l>
+	<l n="316">J'ai voulu me résoudre à garder le silence ;</l>
+	<l n="317">Mais enfin, si le drôle eut voulu s'arrêter,</l>
+	<l n="318">Allez, vous m'auriez vu diablement caqueter.</l>
+	<l n="319">À dessein d'empêcher qu'un malade ne meure,</l>
+<note type="L">Débagouler : Vomir, dégueuler. Ce mot est usage que parmi le peuple où on le dit le plus souvent au figuré ; et il signifie alors Dire indiscrètement ce qu'on sait. [F]</note>
+	<l n="320">J'allais débagouler du latin tout à l'heure ;</l>
+	<l n="321">Voir quel temps il fera dans un vieil almanach ;</l>
+<note type="L">Pibrac, Gui du Frau, seigneur de (1529-1584) : Il a laissé des discours et divers écrits politiques dont une Apologie de la Saint-Barthélémy (1573) mais on le connaît surtout comme auteurs de Quatrains moraux, remarquable par la beauté des maxime et la concision du style, malheureusement la langue est devenu surannée. [B]</note>
+	<l n="322">Réciter tout par coeur les Quatrains de Pibrac,</l>
+	<l n="323">Et, pour mieux vous montrer qu'il est vrai que j'excelle</l>
+	<l n="324">Je sais qu'un lavement fait aller à la selle ;</l>
+<note type="L">Séné : Arbrisseau qui croît au Levant, et dont on nous apporte les feuilles, que l'on nomme aussi Séné. C'est un grand purgatif. [Ac. 1762]</note>
+	<l n="325">J'ai cent fois en ma vie acheté du séné,</l>
+	<l n="326">Et je dis que le diable est un diable damné ;</l>
+	<l n="327">Je soutiens que le corps est le frère de l'âme,</l>
+	<l n="328">Que Séneque et Pauline étaient l'homme et la femme.</l>
+	<l n="329">Que Narcisse en personne autrefois se noya,</l>
+	<l n="330">Et semper quoniam tuos, alléluia.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="331">Je ne puis rien comprendre à ces phrases d'élite.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="332">Je m'en aperçois bien ; mais adieu, je vous quitte.</l>
+	<l n="333">Je verrai votre fille ou ce soir ou demain.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, lui veut bailler de l'argent.</speaker>
+	<l n="334" part="I">Monsieur.</l>
+</sp><!--@stage="give"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="334" part="M">Ah !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="334" part="F">Recevez ces louis de ma main.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="335" part="I">Je n'ai garde.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="335" part="F">Prenez ; je vous dois récompense,</l>
+	<l n="336" part="I">Monsieur.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="336" part="F">Je ne suis pas un marchand de science.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="337" part="I">Hé, de grâce.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="337" part="F">Non, non ; je vous suis serviteur.</l>
+<stage type="exit">Il s'en va.</stage>
+</sp>
+</div>
+<div type="scene" n="14">
+                    <head>SCÈNE XIV.</head>
+<sp who="#fernand">
+                        <speaker>FERNAND, seul.</speaker>
+	<l n="338">Que cet homme est habile, et qu'il est grand docteur !</l>
+	<l n="339">Ne point prendre d'argent pour des chose si bonnes !</l>
+	<l n="340">Il ne ressemble pas ces tueurs de personnes,</l>
+	<l n="341">Ces méchants médecins, qui, par un triste sort,</l>
+	<l n="342">En curant notre bourse, enrichissent la mort.</l>
+	<l n="343">Voyons ce qu'au logis sa science fait naître,</l>
+	<l n="344" part="I">Et sachons.</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="15">
+                    <head>SCÈNE XV. Fernand, Crispin.</head>
+<sp who="#crispin">
+                        <speaker>CRISPIN, en habit de valet.</speaker>
+	<l n="344" part="F">Au plus vite attrapons notre maître.</l>
+	<l n="345">Réjouissance. Ô dieux ! C'est Fernand, que je crois !</l>
+	<l n="346" part="I">C'est lui-même !</l>
+</sp><!--@stage="dress/imitate"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="346" part="F">Est-ce pas mon docteur que je vois ?</l>
+	<l n="347">C'est lui-même, c'est lui. Votre mine est pleureuse ?</l>
+	<l n="348" part="I">Qu'êtes-vous ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN, pleurant.</speaker>
+<note type="L">Gueuser : Mendier; demander l'aumône. On le dit aussi d'un homme nécessiteux, quoiqu'il ne gueuse pas en effet. [F]</note>
+	<l n="348" part="F">Moi, Monsieur ? Un pauvre homme qui gueuse.</l>
+</sp><!--@stage="cry"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="349" part="I">Quoi ! tu gueuses ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="349" part="F">Monsieur, mes malheurs sont si grands.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="350">Mais dedans cette ville as-tu point de parents ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="351">Ah ! Monsieur, des parents on n'a guère de grâce ;</l>
+	<l n="352">Je suis frère à mon frère, et c'est lui qui me chasse.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="353">Il faut donc que sans doute il en ait du sujet.</l>
+	<l n="354" part="I">Qu'as-tu fait ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+<note type="C">On lit julet au vers 354 dans l'édition originale.</note>
+<note type="L">Julep : Terme de pharmacie. Potion adoucissante ou calmante dans laquelle il n'entre ni huile, ni substances purgatives, ni poudres ou substances extractives, mais qui est composée simplement d'eau distillée et de sirops. [L]</note>
+	<l n="354" part="F">Répandu la moitié d'un julep.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="355" part="I">Il est donc médecin ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="355" part="M">Oui, Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="355" part="F">Il me semble</l>
+	<l n="356">Que ce frère en colère à peu près te ressemble ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="357" part="I">Oui, Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="357" part="F">Penses-tu qu'on le puisse apaiser ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="358" part="I">Non, Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="358" part="F">Si tu veux, je lui vais proposer ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="359">Il ne souffrira pas que jamais je le voie,</l>
+	<l n="360" part="I">Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="360" part="F">Si je m'en mêle, il aura de la joie.</l>
+	<l n="361">Je le viens de quitter, il est fort mon ami.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="362">S'il est vrai, je ne sens ma douleur qu'à demi,</l>
+	<l n="363">Car, Monsieur, je vois bien que vous êtes brave homme.</l>
+	<l n="364">Vous aurez de la peine à souffrir qu'il m'assomme.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="365">Attends-moi ! De ce pas, je m'en vais le chercher.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="366">Moi, Monsieur ? Point du tout. Je m'en vais me cacher.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="367" part="I">Mais il faut te montrer ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="367" part="F">Ah ! Monsieur, je ne l'ose,</l>
+	<l n="368">Sans savoir si vos soins auront fait quelque chose.</l>
+	<l n="369">Je m'en vais, s'il vous plaît, vous attendre à l'écart.</l>
+</sp>
+</div>
+<div type="scene" n="16">
+                    <head>SCÈNE XVI.</head>
+<sp who="#fernand">
+                        <speaker>FERNAND, seul.</speaker>
+	<l n="370">Ce garçon malheureux est venu sur le tard :</l>
+	<l n="371">Deux minutes plutôt, je l'accordais sur l'heure.</l>
+	<l n="372">Foin de moi ! Je ne sais où son frère demeure ;</l>
+	<l n="373">Mais toujours je l'attends, sur le soir.</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="17">
+                    <head>SCÈNE XVII. Fernand, Cripin.</head>
+<sp who="#crispin">
+                        <speaker>CRISPIN, en soutane.</speaker>
+<note type="L">Maraud : Terme injurieux qui se dit des gueux, des coquins qui n'ont ni bien ni honneur, qui sont capables de faire toutes sortes de lâchetés. [F]</note>
+	<l n="373" part="F">Ah ! Maraud !</l>
+	<l n="374" part="I">Je vous jure.</l>
+</sp><!--@stage="costume/imitate"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="374" part="F">Ah ! Monsieur, vous venez comme il faut :</l>
+	<l n="375">Vous pouvez, en ce lieu, m'accorder une grâce.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="376">Moi, Monsieur ! Il n'est rien que pour vous je ne fasse.</l>
+	<l n="377" part="I">Commandez !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="377" part="F">Votre frère, il a tant de douleur,</l>
+	<l n="378" part="I">Que j'ai droit d'espérer.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="378" part="F">C'est un coquin, Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="379">Il a tort, il l'avoue ; il se nomme coupable ;</l>
+	<l n="380">Mais, Monsieur, une faute est assez pardonnable.</l>
+	<l n="381">Désormais, il en jure, il veut être meilleur,</l>
+	<l n="382" part="I">Vous aimer, vous servir.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="382" part="F">C'est un fripon, Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="383">Ne vous puis-je résoudre à la miséricorde ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="384">C'est un pendard. Monsieur, qui mérite la corde.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="385">C'est manquer de parole aux plus rares amis.</l>
+	<l n="386">S'il vous en ressouvient, vous m'avez tout promis,</l>
+	<l n="387">Monsieur. Ce n'était donc qu'une pure grimace ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="388">Il est vrai, ma parole, en effet, m'embarrasse.</l>
+	<l n="389">C'en est fait, je pardonne à ce traître : il vous plaît.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="390">Il ne tiendra qu'à vous de le voir comme il est.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="391">Moi, Monsieur, moi, le voir, en présence du monde !</l>
+<note type="L">Débonder : Lâcher, ou ôter ma bonde d'un étang. Se dit figurément en choses morale. [F]</note>
+	<l n="392">Quand je vois ce coquin, mon courroux se débonde.</l>
+	<l n="393" part="I">Je ne puis.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="393" part="F">Hé ! Monsieur, il ne faut qu'un instant...</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="394">Je ne le puis, vous dis-je : un malade m'attend.</l>
+	<l n="395">Mais, touchant ce maraud, je consens qu'il revienne.</l>
+	<l n="396" part="I">Serviteur !</l>
+</sp>
+</div>
+<div type="scene" n="18">
+                    <head>SCÈNE XVIII.</head>
+<sp who="#fernand">
+                        <speaker>FERNAND, seul.</speaker>
+	<l n="396" part="F">Quelque effet qui jamais en advienne</l>
+	<l n="397">À ce pauvre garçon, qui frissonne d'effroi,</l>
+	<l n="398">Je veux faire accorder le pardon devant moi.</l>
+	<l n="399">Que son frère est honnête ! Il s'en vient de l'absoudre,</l>
+	<l n="400" part="I">Et j'ose.</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="19">
+                    <head>SCÈNE XIX. Crispin, Fernand.</head>
+<sp who="#crispin">
+                        <speaker>CRISPIN, en pleurant, et en habit de valet.</speaker>
+	<l n="400" part="F">Hé bien, Monsieur, a-t-il pu s'y résoudre ?</l>
+	<l n="401">Dois-je devant ses yeux ne paroistre jamais ?</l>
+	<l n="402" part="I">Dois-je ?</l>
+</sp><!--@stage="cry/costume/imitate"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="402" part="F">Ne pleure point, j'ai su faire ta paix.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="403">Vous croirai-je, Monsieur ? N'est-ce point moquerie ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="404" part="I">Quoi ! Tu peux.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="404" part="F">Ah ! Monsieur, je connais sa furie :</l>
+	<l n="405">Il a bien de la peine à pouvoir pardonner.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="406">Aussi, ne veux-je pas te laisser retourner ;</l>
+	<l n="407">Je veux qu'il te pardonne en ma propre présence.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="408">Du pardon de ma faute avez-vous l'assurance,</l>
+	<l n="409" part="I">Monsieur ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="409" part="M">Oui.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="409" part="F">C'est assez que mon frère ait parlé :</l>
+	<l n="410">De vos soins obligeants je serais querellé,</l>
+	<l n="411">Monsieur ; votre bonté pourrait mal me remettre.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="412">Mais il peut oublier ce qu'il vient de promettre ;</l>
+	<l n="413" part="I">Puis, après...</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="413" part="F">Point, Monsieur, je le vois fort exact :</l>
+	<l n="414">Quand on a sa parole, elle vaut un contrat.</l>
+	<l n="415">Désormais, de sa part, je ne crains nul outrage,</l>
+	<l n="416" part="I">Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="416" part="M">J'ai résolu d'achever.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN, bas.</speaker>
+	<l n="416" part="F">J'en enrage.</l>
+</sp><!--@stage="low"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="417" part="I">Entre sur ce derriere.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="417" part="F">Hé ! Monsieur, où le voir</l>
+	<l n="418" part="I">À cette heure ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="418" part="F">En tout cas, il viendra sur le soir.</l>
+	<l n="419" part="I">Entre, dis-je !</l>
+<stage type="exit/close">Il entre, et Fernand ferme la porte à clef.</stage>
+</sp>
+</div>
+<div type="scene" n="20">
+                    <head>SCÈNE XX.</head>
+<sp who="#fernand">
+                        <speaker>FERNAND, seul.</speaker>
+	<l n="419" part="F">En ceci ma charité se montre.</l>
+	<l n="420">Mais de notre docteur recherchons la rencontre :</l>
+	<l n="421">Il faut battre le fer, ce pendant qu'il est chaud.</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="21">
+                    <head>SCÈNE XXI.</head>
+<sp who="#crispin">
+                        <speaker>CRISPIN, à la fenêtre.</speaker>
+	<l n="422">Me voilà, grâce à Dieu, raisonnablement haut !</l>
+<note type="L">Grison : On appelle un cheval grison, lorsqu'il est gris : et un âne s'appelle absolument un grison, parce qu'il est ordinairement gris. [F] </note>
+	<l n="423">Trop obligeant grison, ta douceur m'assassine.</l>
+	<l n="424">Maudit moi, maudit maître, et maudite doctrine,</l>
+	<l n="425">Et maudite Lucresse, et maudits six louis,</l>
+	<l n="426">Par qui mes yeux tentés se sont vus éblouis !</l>
+	<l n="427">Maudit... Quoi ?... Je commence à connaître ma faute.</l>
+	<l n="428">Têtebleu ! D'ici là le moyen que je saute ?</l>
+	<l n="429" part="I">Il le faut toutefois. Taupe à tout !</l>
+<stage type="exit/jump">Il saute de la fenêtre en bas.</stage>
+</sp><!--@stage="location"-->
+</div>
+<div type="scene" n="22">
+                    <head>SCÈNE XXII.</head>
+<sp who="#philipin">
+                        <speaker>PHILIPIN, qui sort.</speaker>
+	<l n="429" part="F">À présent,</l>
+	<l n="430">Je viens dire. Ma foi ! Ce sauteur est plaisant.</l>
+	<l n="431">Mais il sort de chez nous ; il n'a rien que je sache ;</l>
+	<l n="432">Il faut, pour l'épier, qu'un moment je me cache.</l>
+	<l n="433">Mais j'entends que l'on parle. Attrapons quelque coin.</l>
+</sp><!--@stage="exit"-->
+</div>
+<div type="scene" n="23">
+                    <head>SCÈNE XXIII. Crispin, Fernand et Philipin, au bout du théâtre.</head> 
+<sp who="#crispin">
+                        <speaker>CRISPIN, en soutane, dit à Fernand :</speaker>
+	<l n="434">Pour un gueux comme lui vous prenez trop de soin :</l>
+	<l n="435">Il mériterait bien qu'on punît son audace,</l>
+<note type="L">Vaurien : Qui est un fripon, dangereux, fainéant, vicieux, libertin. Il est du style bas. [F]</note>
+	<l n="436" part="I">Le vaurien !</l>
+</sp><!--@stage="costume/imitate/toward"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="436" part="F">C'est là-haut qu'il attend votre grâce :</l>
+	<l n="437">Moi,je vous la demande, à la charge d'autant,</l>
+	<l n="438" part="I">Si jamais.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="438" part="F">En quel lieu dites-vous qu'il m'attend,</l>
+	<l n="439" part="I">Le coquin ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="439" part="F">Voyez-vous cette grande fenestre ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="440">Il m'entend, le bourreau, mais il n'ose paraître ;</l>
+	<l n="441">De m'avoir offensé l'insolent est confus.</l>
+	<l n="442">Je n'ai pas le pouvoir de vous faire un refus :</l>
+	<l n="443" part="I">Ouvrez, j'entre.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="443" part="F">Avec vous faut-il pas que je monte ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="444">Pour le bien châtier, faisons-lui cette honte ;</l>
+	<l n="445">Montez, oui, montez. Non, épargnons ce maraud ;</l>
+	<l n="446">Écoutez seulement : je lui parlerai haut,</l>
+	<l n="447" part="I">C'est assez.</l>
+<stage type="entrance">Crispin entre seul.</stage>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="447" part="F">Je le veux ; refermons cette porte,</l>
+	<l n="448" part="I">Et voyons.</l>
+</sp>
+</div>
+<div type="scene" n="24">
+                    <head>SCÈNE XXIV. Philipin, Fernand et Crispin, dans lamaison.</head> 
+<sp who="#philipin">
+                        <speaker>PHILIPIN, à Fernand.</speaker>
+	<l n="448" part="F">Quoi ! Monsieur, vous craignez qu'il ne sorte ?</l>
+<note type="L">Drille : Méchant soldat. Il ne se dit que par mépris et par raillerie. Se dit aussi de tout autre malheureux qui porte l'épée, quoi qu'il ne soit point enrôlé. [F]</note>
+<note type="L">Malepeste : Imprécation qu'on fait contre quelque chose, et quelquefois avec admiration. [F]</note>
+	<l n="449">Malepeste ! Le drille ! Il sait bien d'autres tours,</l>
+	<l n="450" part="I">Le manouvre !</l>
+</sp><!--@stage="toward"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="450" part="F">Pourquoi me tiens-tu ce discours ?</l>
+	<l n="451">Ou respecte cet homme, ou redoute ma canne.</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="452">Quand on est baladin, porte-t-on la soutane ?</l>
+	<l n="453" part="I">À propos. Dites donc, vous riez ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="453" part="F">Si je ris,</l>
+	<l n="454" part="I">Sot !</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="454" part="F">Votre ensoutané saute mieux qu'un cabri,</l>
+	<l n="455">Je le sais ; mais, chez vous, que peut-il aller faire ?</l>
+	<l n="456" part="I">Répondez, s'il vous plaît ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="456" part="F">Pardonner à son frère :</l>
+	<l n="457">Il était en courroux, pour certains accidents.</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="458">À ce compte, son frère est aussi là-dedans,</l>
+	<l n="459" part="I">Est-ce pas ?</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN, à la fenêtre.</speaker>
+	<l n="459" part="F">Ah ! Fripon friponnant.</l>
+</sp><!--@stage="location"-->
+<sp who="#fernand">
+                        <speaker>FERNAND, à Philipin.</speaker>
+	<l n="460" part="I">Tiens,écoute.</l>
+</sp><!--@stage="toward"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN, continuant.</speaker>
+	<l n="461">Voyez ce qu'aujourd'hui votre faute me coûte !</l>
+	<l n="462">J'aurais eu le plaisir de jamais ne vous voir,</l>
+	<l n="463">Si Monsieur dessus moi n'avait pas tout pouvoir ;</l>
+	<l n="464">Mais je l'honore plus que personne du monde.</l>
+</sp><!--@stage="continue"-->
+<sp who="#fernand">
+                        <speaker>FERNAND, à Philipin.</speaker>
+	<l n="465" part="I">Tu vois bien.</l>
+</sp><!--@stage="toward"-->
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="465" part="F">Pour le moins, que son frère réponde !</l>
+	<l n="466" part="I">Il le doit.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, à Crispin.</speaker>
+	<l n="466" part="F">Votre frère, à son tour, ne dit mot.</l>
+	<l n="467" part="I">Qu'il parle !</l>
+</sp><!--@stage="toward"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="468">Entendez-vous, beau pleureux, maître sot ?</l>
+	<l n="469">Si ma juste colère est sitôt adoucie.</l>
+<stage type="imitate/cry">Déguisant sa voix et pleurant.</stage>
+	<l n="470">Monsieur, je vous rends grâce, et je vous remercie.</l>
+	<l n="471">Je n'ai pas à dessein répandu. Taisez-vous !</l>
+	<l n="472">Si jamais. Paix ! Vous dis-je, et craignez mille coups.</l>
+	<l n="473">Je puis. Taisez-vous donc. Mais,mon cher frère. Encore.</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="474">Comment diable fait-il, le futé ? Je l'ignore.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="475" part="I">Ils sont deux.</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="475" part="F">Il le semble ; il n'en est pourtant rien.</l>
+	<l n="476">Mais de bien le savoir je découvre un moyen :</l>
+	<l n="477">Dites que devant vous il embrasse son frère.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="478">N'était monsieur Fernand que je veux satisfaire,</l>
+<note type="L">Pécore : se dit figurément en burlesque pour signifier une personne sotte, stupide, et qui a de la peine à concevoir quelque chose. [F]</note>
+	<l n="479" part="I">Pécore.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="479" part="F">Il aurait tort de vous plus offenser ;</l>
+	<l n="480">Mais, Monsieur, pour me plaire, il le faut embrasser,</l>
+	<l n="481" part="I">Et toujours...</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="481" part="M">L'embrasser !</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="481" part="F">Que cela l'embarrasse !</l>
+	<l n="482" part="I">Voyez.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="482" part="F">De votre part je prétends cette grâce.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="483">Il serait trop honteux, si ce bien peu commun...</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="484">Je vous jure ma foi, qu'ils ne sont, ma foi, qu'un.</l>
+	<l n="485">Le madré ! Gardez-vous des finesses qu'il brasse !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, à haute voix.</speaker>
+	<l n="486">Seras-tu trop honteux si ton frère t'embrasse,</l>
+	<l n="487" part="I">L'enfermé ?</l>
+</sp><!--@stage="loud"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="487" part="F">C'est à lui... Paix, monsieur le badaud !</l>
+<note type="L">Bélitre : Gueux qui mendie par fainéantise, et qui pourrait bien gagner sa vie. Il se dit quelquefois par extension, des coquins qui n'ont ni bien, ni honneur. [F]</note>
+	<l n="488">Paix, fripon ! Paix, belître ! Et venez ici haut !</l>
+<stage type="dress/kiss">Crispin met son chapeau sur son coude, et puis l'embrasse si adroitement qu'il semble que ce soit une autre personne.</stage>
+	<l n="489">C'est moins par amitié que ce n'est par contrainte ;</l>
+	<l n="490" part="I">Venez, dis-je !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, à Philipin.</speaker>
+	<l n="490" part="F">Tu vois, ce n'est pas une feinte.</l>
+</sp><!--@stage="toward"-->
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="491">Je n'y vois, ma foi, goutte, et ne sais ce que c'est.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN, à Fernand.</speaker>
+	<l n="492" part="I">À présent.</l>
+</sp><!--@stage="toward"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="492" part="F">À présent descendez, s'il vous plaît ?</l>
+	<l n="493" part="I">Je vous ouvre.</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="493" part="F">Épions : car, ou bien je suis ivre,</l>
+	<l n="494" part="I">Ou bien...</l>
+<stage type="exit/dress/location">Il sort et met bas la soutane ; puis, comme Fernand est entré, croyant faire sortir un autre frère, Crispin prend l'occasion, et monte fort diligemment par la fenêtre, et ensuite sort avec Fernand, comme si, en effet, il était frère du Médecin.</stage>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN, descendu.</speaker>
+	<l n="494" part="F">J'ai fait défense au coquin de me suivre ;</l>
+	<l n="495">J'en aurais de la honte... Il viendra par après.</l>
+	<l n="496" part="I">Adieu.</l>
+</sp><!--@stage="down"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="496" part="F">Je suis ravi d'avoir fait cette paix ;</l>
+	<l n="497" part="I">Mais faisons sortir l'autre.</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN, ramassant la soutane de Crispin.</speaker>
+<note type="C">On lit guesne au vers 497 dans l'édition originale.</note>
+	<l n="497" part="F">Ah ! Je tiens votre gaine,</l>
+	<l n="498" part="I">Doctissime !</l>
+</sp><!--@stage="get"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN, En habit de valet.</speaker>
+	<l n="498" part="M">Est-il loin ?</l>
+</sp><!--@stage="costume/imitate"-->
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="498" part="M">Assez loin.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="498" part="F">Que de peine,</l>
+	<l n="499" part="I">Monsieur !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND, à Philipin.</speaker>
+	<l n="499" part="M">Hé bien ?</l>
+</sp><!--@stage="toward"-->
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="499" part="F">Hé bien, sont-ils deux ?</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="499" part="F">Ah ! vraiment.</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN, montrant Crispin et sa soutane.</speaker>
+	<l n="500" part="I">Voilà l'un, voilà l'autre.</l>
+</sp><!--@stage="show"-->
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="500" part="M">Ah ! Grands dieux !</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="500" part="F">Quoi ? Comment ?</l>
+	<l n="501" part="I">Que dis-tu ?</l>
+</sp>
+<sp who="#philipin">
+                        <speaker>PHILIPIN.</speaker>
+	<l n="501" part="F">Qu'à merveille il grimpe une fenêtre.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="502" part="I">Ah ! Perfide.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="502" part="F">Ah ! Monsieur, sachez tout de mon maître :</l>
+	<l n="503" part="I">Le voici.</l>
+</sp>
+</div>
+<div type="scene" n="25">
+                    <head>SCÈNE XXV ET DERNIÈRE. Fernand, Cléon, Lucresse, Crispin, Philippin, Lise.</head>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="503" part="F">C'est Cléon ! C'est ma fille. Ah ! rusé !</l>
+	<l n="504">Ce Cléon l'a séduite, et tu m'as amusé,</l>
+	<l n="505" part="I">Médecin de malheur !</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="505" part="M">Quoi ! Monsieur.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="505" part="F">Je te jure</l>
+	<l n="506">Que tu l'épouseras, ou je te défigure.</l>
+</sp>
+<sp who="#lucresse">
+                        <speaker>LUCRESSE.</speaker>
+	<l n="507" part="I">Daignez.</l>
+</sp>
+<sp who="#fernand">
+                        <speaker>FERNAND.</speaker>
+	<l n="507" part="F">Point de quartier : il sera ton époux,</l>
+	<l n="508" part="I">Ou du moins.</l>
+</sp>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+	<l n="508" part="F">Cet hymen a des charmes si doux,</l>
+	<l n="509" part="I">Monsieur.</l>
+</sp>
+<sp who="#crispin">
+                        <speaker>CRISPIN.</speaker>
+	<l n="509" part="F">Sans affecter compliment ni surprise,</l>
+	<l n="510">Vous, le fait de Lucresse, et moi, le fait de Lise,</l>
+	<l n="511">Confondant tout ensemble et nos biens et les leurs,</l>
+	<l n="512">Faisons des médecins, ou volants, ou voleurs.</l>
+</sp>
+</div>
+</div>
+</body>
+</text>
 </TEI>
