@@ -33,6 +33,12 @@ Here is a list of changes we made:
 - moved `addresse` to `tei:opener/tei:salute`
 - moved `sgnature` to `tei:signed`
 - removed a text `4+` between speech acts at ABEILLE_CORIOLAN.xml
+- `4+` documents are not available via the website (Not Found):
+   - marivaux%20-acteursdebonnefoi.xml
+   - pg-fausseinvite.xml
+   - bernardt-plaisirsdudimanche.xml
+   - bizet-simonot-gillestoutseul.xml
+
 
 TODOs:
 - ensure DraCor IDs stay the same. Currently they are generated from a position in an alphabetic list and will change when an item is inserted in the list before.
