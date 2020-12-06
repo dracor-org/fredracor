@@ -87,8 +87,10 @@ let $new := functx:change-element-ns-deep(doc($item), "", "")
 return
     xmldb:store($targetCollectionPath, $resource-name, $new)
 
+let $loadTeiAll := local:load-tei-all()
+
 return
-    string-join($preprocessing, "&#10;")
+    string-join($list, "&#10;")
     => serialize(
         map{
             "method":"text",
