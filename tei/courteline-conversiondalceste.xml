@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1905">1905</date>
+                        <date>1905</date>
                         <date type="premiere" when="1834-01-17">Représentée pour la première fois sur le théâtre du Vaudeville, le 17 Janvier 1834.</date>
                         <date type="written"/>
                         <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k371565</idno>
@@ -51,9 +51,6 @@
                     </person>
                     <person xml:id="oronte" sex="MALE">
                         <persName>Oronte</persName>
-                    </person>
-                    <person xml:id="philinte" sex="MALE">
-                        <persName>Philinte</persName>
                     </person>
                     <person xml:id="monsieur-loyal" sex="MALE">
                         <persName>Monsieur loyal</persName>
@@ -87,28 +84,28 @@
 		<docDate when="1905">1905.</docDate>
 		<docAuthor>PAR GEORGES COURTELINE.</docAuthor>
 		<div type="docImprint">
-			<div value="" type="printer">
+			<div type="printer">
                     <p>IMPRIMERIE DE PR. DONDEY-DUPRÉ, RUE ST.-LOUIS, R° 46, AU MARAIS.</p>
-                </div>
-			<editor id="CHARDON">MARCHAND, BOULEVART SAINT-MARTIN, N° 12 ; BARBA, LIBRAIRE AU PALAIS-ROYAL.</editor>
+                </div><!--@value=""-->
+			<!--TODO: handling of editor name at this place unclear <editor id="CHARDON">MARCHAND, BOULEVART SAINT-MARTIN, N° 12 ; BARBA, LIBRAIRE AU PALAIS-ROYAL.</editor>-->
 		</div>		
 		<performance>
-			<ab type="premiere">Représentée pour la première fois sur le théâtre du Vaudeville, le 17 Janvier 1834.</ab><!--date="1834-01-17"--><!--location="Théâtre du Vaudeville"-->
+			<ab type="premiere">Représentée pour la première fois sur le théâtre du Vaudeville, le 17 Janvier 1834.</ab><!--@date="1834-01-17"--><!--@location="Théâtre du Vaudeville"-->
 		</performance>
 		<castList>
                 <head>PERSONNAGES..</head>
 			<castItem>
-                    <role corresp="#alceste">ALCESTE</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->, H. MAYER.</castItem>
+                    <role corresp="#alceste">ALCESTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, H. MAYER.</castItem>
 			<castItem>
-                    <role corresp="#philinte">PHILINTE</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->, DESSONNES.</castItem>
+                    <role corresp="#philinte">PHILINTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, DESSONNES.</castItem>
 			<castItem>
-                    <role corresp="#oronte">ORONTE</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->, André BRUNOT.</castItem>
+                    <role corresp="#oronte">ORONTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, André BRUNOT.</castItem>
 			<castItem>
-                    <role corresp="#monsieur-loyal">MONSIEUR LOYAL</role><!--@sex="1" @type="H" @statut="huissier" @age="A" @stat_amour="néant"-->, CROUÉ.</castItem>
+                    <role corresp="#monsieur-loyal">MONSIEUR LOYAL</role><!--@sex="1"--><!--@type="H"--><!--@statut="huissier"--><!--@age="A"--><!--@stat_amour="néant"-->, CROUÉ.</castItem>
 			<castItem>
-                    <role corresp="#celimene">CÉLIMÈNE</role><!--@sex="2" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->, Madame LARA.</castItem>
+                    <role corresp="#celimene">CÉLIMÈNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, Madame LARA.</castItem>
 			</castList>
-		<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La pièce se passe chez Alceste, six mois environ après le Misanthrope de Molière. Les personnages, Alceste, Philinte, Oronte et Célimène portent les mêmes costumes que dans le Misanthrope. Seul, Alceste a changé la couleur de ses rubans.</set>-->
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La pièce se passe chez Alceste, six mois environ après le Misanthrope de Molière. Les personnages, Alceste, Philinte, Oronte et Célimène portent les mêmes costumes que dans le Misanthrope. Seul, Alceste a changé la couleur de ses rubans.</set>-->
 	</front>
 <body>
 <div type="acte" n="1">
@@ -160,11 +157,11 @@
 	<l n="37">Ou votre esprit chagrin veut-il plus simplement</l>
 	<l n="38">Se donner ma surprise en divertissement ?</l>
 	<l n="39">Qu'un langage aussi neuf me causerait de joie</l>
-	<l n="40" part="I">Si...</l><!-- @syll="1"-->
+	<l n="40" part="I">Si...</l><!--@syll="1"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="40" part="F">Ma sincérité paye en bonne monnoie,</l><!-- @syll="11"-->
+	<l n="40" part="F">Ma sincérité paye en bonne monnoie,</l><!--@syll="11"-->
 	<l n="41">Philinte, et c'est l'excès de mon seul repentir</l>
 	<l n="42">Que vous trahit ma bouche inhabile à mentir.</l>
 	<l n="43">Oui, mon esprit baigné de nouvelle lumière</l>
@@ -180,11 +177,11 @@
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
 	<l n="52">Alceste, un mot de plus me serait une offense,</l>
-	<l n="53" part="I">Brisons sur ce sujet.</l><!-- @syll="6"-->
+	<l n="53" part="I">Brisons sur ce sujet.</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="53" part="F">Qui fut dur pour autrui</l><!-- @syll="6"-->
+	<l n="53" part="F">Qui fut dur pour autrui</l><!--@syll="6"-->
 	<l n="54">Doit à sa probité de l'être aussi pour lui.</l>
 	<l n="55">Ma conscience et moi ferions meilleur ménage</l>
 	<l n="56">Si je n'avais joué d'un si sot personnage</l>
@@ -195,23 +192,23 @@
 	<l n="61">En un second procès je m'étais engagé ;</l>
 	<l n="62">Eh bien, depuis hier, le procès est jugé,</l>
 	<l n="63">Et je dois confesser que, contre mon attente,</l>
-	<l n="64" part="I">Ma cause a...</l><!-- @syll="3"-->
+	<l n="64" part="I">Ma cause a...</l><!--@syll="3"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="64" part="M">Triomphé ?</l><!-- @syll="3"-->
+	<l n="64" part="M">Triomphé ?</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="64" part="F">De manière éclatante !</l><!-- @syll="6"-->
+	<l n="64" part="F">De manière éclatante !</l><!--@syll="6"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="65" part="I">Fort bien !</l><!-- @syll="2"-->
+	<l n="65" part="I">Fort bien !</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="65" part="F">Ainsi riposte avec grandeur la Loi,</l><!-- @syll="10"-->
+	<l n="65" part="F">Ainsi riposte avec grandeur la Loi,</l><!--@syll="10"-->
 	<l n="66">Naguère, injustement prise au collet par moi.</l>
 	<l n="67">Et Célimène, encor !... Doux, et tendre, et jeune être !</l>
 	<l n="68">Que je restai longtemps malpropre à la connaître,</l>
@@ -234,11 +231,11 @@
 	<l n="85">De sa seule vertu triomphant noblement,</l>
 	<l n="86">Et laissant aux remords le soin du châtiment !</l>
 <stage type="sigh">Soupirant.</stage>
-	<l n="87" part="I">Qu'il m'est cruel !</l><!-- @syll="6"-->
+	<l n="87" part="I">Qu'il m'est cruel !</l><!--@syll="6"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="87" part="F">Allons ! la vie est ainsi faite</l><!-- @syll="6"-->
+	<l n="87" part="F">Allons ! la vie est ainsi faite</l><!--@syll="6"-->
 	<l n="88">Que chacun tranche un peu de son petit prophète,</l>
 	<l n="89">Bloqué comme en les murs d'une étroite prison</l>
 	<l n="90">Dans le besoin d'avoir seul et toujours raison.</l>
@@ -258,11 +255,11 @@
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="103" part="I">Vous ne répondez point ?</l><!-- @syll="6"-->
+	<l n="103" part="I">Vous ne répondez point ?</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="103" part="F">Que répondre ? J'écoute.</l><!-- @syll="6"-->
+	<l n="103" part="F">Que répondre ? J'écoute.</l><!--@syll="6"-->
 <stage type="give">Lui tendant les deux mains :</stage>
 	<l n="104">Et rends grâces au ciel qui vous mit sur ma route.</l>
 <stage type="open/entrance">La porte s'ouvre. Flipotte paraît.</stage>
@@ -272,55 +269,55 @@
                     <head>SCÈNE II. Les mêmes, Oronte.</head>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="105" part="I">Que veut Flipotte ?</l><!-- @syll="4"-->
+	<l n="105" part="I">Que veut Flipotte ?</l><!--@syll="4"-->
 </sp>
 <sp who="#flipotte">
                         <speaker>FLIPOTTE.</speaker>
-	<l n="105" part="M">Oronte est là.</l><!-- @syll="4"-->
+	<l n="105" part="M">Oronte est là.</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="105" part="M">Comment ?</l><!-- @syll="2"-->
+	<l n="105" part="M">Comment ?</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE, entrant.</speaker>
-	<l n="105" part="F">Il est</l><!-- @syll="2"-->
+	<l n="105" part="F">Il est</l><!--@syll="2"-->
 <stage type="toward">À Philinte.</stage>
-	<l n="106" part="I">Votre humble serviteur.</l><!-- @syll="6"-->
+	<l n="106" part="I">Votre humble serviteur.</l><!--@syll="6"-->
 <stage type="toward">À Alceste.</stage>
-	<l n="106" part="F">Et votre plat valet.</l><!-- @syll="6"-->
+	<l n="106" part="F">Et votre plat valet.</l><!--@syll="6"-->
 	<l n="107">Ne prenez pas à mal la façon dont j'en use,</l>
 	<l n="108">Ma bonne intention me doit servir d'excuse.</l>
 	<l n="109">Touchez là, s'il-vous-plaît. Je vous vois, Dieu merci,</l>
-	<l n="110" part="I">Bien portant.</l><!-- @syll="3"-->
+	<l n="110" part="I">Bien portant.</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="110" part="M">Il est vrai.</l><!-- @syll="3"-->
+	<l n="110" part="M">Il est vrai.</l><!--@syll="3"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="110" part="F">Je m'en loue !... Enforci ;</l><!-- @syll="6"-->
+	<l n="110" part="F">Je m'en loue !... Enforci ;</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="111" part="I">Peut-être.</l><!-- @syll="6"-->
+	<l n="111" part="I">Peut-être.</l><!--@syll="6"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="111" part="M">Engraissé ;</l><!-- @syll="3"-->
+	<l n="111" part="M">Engraissé ;</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="111" part="M">Mais...</l><!-- @syll="1"-->
+	<l n="111" part="M">Mais...</l><!--@syll="1"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="111" part="M">J'admire en vous...</l><!-- @syll="4"-->
+	<l n="111" part="M">J'admire en vous...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="111" part="F">De grâce !</l><!-- @syll="2"-->
+	<l n="111" part="F">De grâce !</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
@@ -328,149 +325,149 @@
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="113" part="I">Monsieur...</l><!-- @syll="2"-->
+	<l n="113" part="I">Monsieur...</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="113" part="F">Ce regard vif...</l><!-- @syll="4"-->
+	<l n="113" part="F">Ce regard vif...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="113" part="F">Laissons là...</l><!-- @syll="3"-->
+	<l n="113" part="F">Laissons là...</l><!--@syll="3"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="113" part="F">Ce teint frais...</l><!-- @syll="3"-->
+	<l n="113" part="F">Ce teint frais...</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="114" part="I">Oh !</l><!-- @syll="1"-->
+	<l n="114" part="I">Oh !</l><!--@syll="1"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="114" part="F">... Et l'air de jeunesse épandu sur vos traits !</l><!-- @syll="11"-->
+	<l n="114" part="F">... Et l'air de jeunesse épandu sur vos traits !</l><!--@syll="11"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="115" part="I">Vous me flattez.</l><!-- @syll="4"-->
+	<l n="115" part="I">Vous me flattez.</l><!--@syll="4"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="115" part="F">Touchez encor là, je vous prie.</l><!-- @syll="8"-->
+	<l n="115" part="F">Touchez encor là, je vous prie.</l><!--@syll="8"-->
 	<l n="116">Flatter ?... Moi ?... Serviteur à la flagornerie.</l>
 	<l n="117">Je dis ce que je pense et paye argent comptant.</l>
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="118" part="I">C'est fort bien.</l><!-- @syll="3"-->
+	<l n="118" part="I">C'est fort bien.</l><!--@syll="3"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="118" part="M">Devant Dieu...</l><!-- @syll="3"-->
+	<l n="118" part="M">Devant Dieu...</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="118" part="M">Permettez...</l><!-- @syll="3"-->
+	<l n="118" part="M">Permettez...</l><!--@syll="3"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="118" part="F">Qui m'entend</l><!-- @syll="3"-->
+	<l n="118" part="F">Qui m'entend</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="119" part="I">J'en conviens.</l><!-- @syll="3"-->
+	<l n="119" part="I">J'en conviens.</l><!--@syll="3"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="119" part="F">Me voit...</l><!-- @syll="2"-->
+	<l n="119" part="F">Me voit...</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="119" part="F">Oui.</l><!-- @syll="1"-->
+	<l n="119" part="F">Oui.</l><!--@syll="1"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="119" part="M">Lit dans mon coeur...</l><!-- @syll="4"-->
+	<l n="119" part="M">Lit dans mon coeur...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="119" part="F">Sans doute</l><!-- @syll="2"-->
+	<l n="119" part="F">Sans doute</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="120" part="I">Comme en un livre...</l><!-- @syll="4"-->
+	<l n="120" part="I">Comme en un livre...</l><!--@syll="4"-->
 <stage type="interrupt">Alceste essaie de placer un mot.</stage>
-	<l n="120" part="M">Ouvert...</l><!-- @syll="2"-->
+	<l n="120" part="M">Ouvert...</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="120" part="F">Bien entendu.</l><!-- @syll="4"-->
+	<l n="120" part="F">Bien entendu.</l><!--@syll="4"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="120" part="F">M'écoute</l><!-- @syll="2"-->
-	<l n="121" part="I">Donc, me juge...</l><!-- @syll="4"-->
+	<l n="120" part="F">M'écoute</l><!--@syll="2"-->
+	<l n="121" part="I">Donc, me juge...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="121" part="M">Il est vrai.</l><!-- @syll="3"-->
+	<l n="121" part="M">Il est vrai.</l><!--@syll="3"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="121" part="F">Je n'ai jamais menti !</l><!-- @syll="6"-->
-	<l n="122" part="I">Or, vous avez bon pied...</l><!-- @syll="6"-->
+	<l n="121" part="F">Je n'ai jamais menti !</l><!--@syll="6"-->
+	<l n="122" part="I">Or, vous avez bon pied...</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="122" part="F">Monsieur...</l><!-- @syll="2"-->
+	<l n="122" part="F">Monsieur...</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
 <note type="C">Rime douteuse en apparence. Catulle Mendès me l'a sévèrement reprochée, au nom de la rigueur classique. J'objecte que Molière lui-même fait dire à Oronte. ceci : Je viens, pour commencer entre nous ce beau noeud, Vous montrer un sonnet que j'ai fait depuis peu.</note>
-	<l n="122" part="F">Bon appétit...</l><!-- @syll="6"-->
+	<l n="122" part="F">Bon appétit...</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="123" part="I">Je reconnais...</l><!-- @syll="4"-->
+	<l n="123" part="I">Je reconnais...</l><!--@syll="4"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="123" part="M">Bon oeil...</l><!-- @syll="2"-->
+	<l n="123" part="M">Bon oeil...</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="123" part="M">Souffrez que...</l><!-- @syll="3"-->
+	<l n="123" part="M">Souffrez que...</l><!--@syll="3"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="123" part="F">Bon visage !</l><!-- @syll="3"-->
+	<l n="123" part="F">Bon visage !</l><!--@syll="3"-->
 	<l n="124">Mon coeur, de tout ceci, tire un heureux présage.</l>
 	<l n="125">Oui, j'exulte de joie à vous voir bien portant.</l>
-	<l n="126" part="I">J'y prends plaisir.</l><!-- @syll="4"-->
+	<l n="126" part="I">J'y prends plaisir.</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="126" part="M">Tant mieux.</l><!-- @syll="2"-->
+	<l n="126" part="M">Tant mieux.</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="126" part="F">Vous m'en voyez content !</l><!-- @syll="6"-->
+	<l n="126" part="F">Vous m'en voyez content !</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="127" part="I">Bien obligé.</l><!-- @syll="4"-->
+	<l n="127" part="I">Bien obligé.</l><!--@syll="4"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="127" part="F">Charmé !</l><!-- @syll="2"-->
+	<l n="127" part="F">Charmé !</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="127" part="M">Merci.</l><!-- @syll="2"-->
+	<l n="127" part="M">Merci.</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="127" part="F">Ravi !... Tout aise !</l><!-- @syll="4"-->
+	<l n="127" part="F">Ravi !... Tout aise !</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, bas à Philinte.</speaker>
@@ -478,55 +475,55 @@
 </sp><!--@stage="low/toward"-->
 <sp who="#oronte">
                         <speaker>ORONTE, qui suit son idée.</speaker>
-	<l n="129" part="I">Enchanté !</l><!-- @syll="3"-->
+	<l n="129" part="I">Enchanté !</l><!--@syll="3"-->
 </sp><!--@stage="continue"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="129" part="M">Voulons-nous nous asseoir ?</l><!-- @syll="6"-->
+	<l n="129" part="M">Voulons-nous nous asseoir ?</l><!--@syll="6"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="129" part="F">Grand merci.</l><!-- @syll="3"-->
+	<l n="129" part="F">Grand merci.</l><!--@syll="3"-->
 <stage type="sit">Les trois hommes s'assoient.</stage>
 <stage type="TOWARD">À Alceste.</stage>
-	<l n="130" part="I">Or çà...</l><!-- @syll="2"-->
+	<l n="130" part="I">Or çà...</l><!--@syll="2"-->
 <stage type="abrupt/toward">Brusquement, à Philinte :</stage>
-	<l n="130" part="F">Mais je vous trouve à souhait, vous aussi.</l><!-- @syll="10"-->
+	<l n="130" part="F">Mais je vous trouve à souhait, vous aussi.</l><!--@syll="10"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="131" part="I">Moi ?</l><!-- @syll="1"-->
+	<l n="131" part="I">Moi ?</l><!--@syll="1"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="131" part="F">Gros, gras, le teint frais, l'oeil vif !</l><!-- @syll="7"-->
+	<l n="131" part="F">Gros, gras, le teint frais, l'oeil vif !</l><!--@syll="7"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, bas.</speaker>
-	<l n="131" part="F">Il recommence !</l><!-- @syll="4"-->
+	<l n="131" part="F">Il recommence !</l><!--@syll="4"-->
 	<l n="132">Au poids de l'or, Philinte., achetez son silence !</l>
 </sp><!--@stage="low"-->
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
 	<l n="133">Vous ne me croyez pas ?... Je veux bien, si je mens,</l>
-	<l n="134" part="I">Que la foudre...</l><!-- @syll="3"-->
+	<l n="134" part="I">Que la foudre...</l><!--@syll="3"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="134" part="F">Il suffit. Laissez les compliments,</l><!-- @syll="9"-->
+	<l n="134" part="F">Il suffit. Laissez les compliments,</l><!--@syll="9"-->
 	<l n="135">Et veuillez, sur le but où tend votre visite...</l>
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="136" part="I">Je m'explique.</l><!-- @syll="3"-->
+	<l n="136" part="I">Je m'explique.</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste #philinte">
                         <speaker>ALCESTE ET PHILINTE, satisfaits.</speaker>
-	<l n="136" part="F">Ah !</l><!-- @syll="1"-->
+	<l n="136" part="F">Ah !</l><!--@syll="1"-->
 </sp><!--@stage="happy"-->
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="136" part="F">Messieurs, l'orgueil, ce parasite,</l><!-- @syll="8"-->
+	<l n="136" part="F">Messieurs, l'orgueil, ce parasite,</l><!--@syll="8"-->
 	<l n="137">Fils du sot amour-propre et de la vanité,</l>
 	<l n="138">Conseille mal les gens dont il est écouté ;</l>
 	<l n="139">Car le fiel, son cousin, la haine, sa cousine,</l>
@@ -536,19 +533,19 @@
 	<l n="142">Des exordes lassants qui n'en finissent plus,</l>
 	<l n="143">Et des péroraisons que leur pédanterie</l>
 	<l n="144">Allonge de Paris jusqu'à La Queue-en-Brie,</l>
-	<l n="145" part="I">Je viens à vous tout franc, et je vous dis :</l><!-- @syll="10"-->
+	<l n="145" part="I">Je viens à vous tout franc, et je vous dis :</l><!--@syll="10"-->
 <stage type="give">Lui tendant la main :</stage>
-	<l n="145" part="F">Voilà !</l><!-- @syll="2"-->
+	<l n="145" part="F">Voilà !</l><!--@syll="2"-->
 	<l n="146">Pour la troisième fois, s'il vous plaît, touchez là.</l>
-	<l n="147" part="I">Touchez !</l><!-- @syll="2"-->
+	<l n="147" part="I">Touchez !</l><!--@syll="2"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE, à part.</speaker>
-	<l n="147" part="M">Touchant !</l><!-- @syll="2"-->
+	<l n="147" part="M">Touchant !</l><!--@syll="2"-->
 </sp><!--@stage="aparte"-->
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="147" part="F">Touchons ! Je touche ! Sans rancune ?</l><!-- @syll="8"-->
+	<l n="147" part="F">Touchons ! Je touche ! Sans rancune ?</l><!--@syll="8"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE, très franc.</speaker>
@@ -590,17 +587,17 @@
 </sp><!--@stage="interrupt"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="175" part="I">Ah ! Très bien !</l><!-- @syll="3"-->
+	<l n="175" part="I">Ah ! Très bien !</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, à part.</speaker>
-	<l n="175" part="F">Serviteur au français de cuisine.</l><!-- @syll="9"-->
+	<l n="175" part="F">Serviteur au français de cuisine.</l><!--@syll="9"-->
 <stage type="loud">Haut.</stage>
-	<l n="176" part="I">L'agréable quatrain</l><!-- @syll="6"-->
+	<l n="176" part="I">L'agréable quatrain</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="176" part="F">J'en reste transporté !</l><!-- @syll="6"-->
+	<l n="176" part="F">J'en reste transporté !</l><!--@syll="6"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
@@ -613,15 +610,15 @@
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="182" part="I">Plaît-il ?</l><!-- @syll="2"-->
+	<l n="182" part="I">Plaît-il ?</l><!--@syll="2"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="182" part="F">Présagieux ?...</l><!-- @syll="4"-->
+	<l n="182" part="F">Présagieux ?...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="182" part="F">Ah ! Permettez de grâce,</l><!-- @syll="6"-->
+	<l n="182" part="F">Ah ! Permettez de grâce,</l><!--@syll="6"-->
 	<l n="183">Que pour « présagieux », monsieur on vous embrasse !</l>
 </sp>
 <sp who="#oronte">
@@ -636,42 +633,42 @@
 </sp><!--@stage="continue"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="190" part="I">C'est grand comme la mer.</l><!-- @syll="6"-->
+	<l n="190" part="I">C'est grand comme la mer.</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, à part.</speaker>
-	<l n="190" part="F">Et bête comme une oie.</l><!-- @syll="6"-->
+	<l n="190" part="F">Et bête comme une oie.</l><!--@syll="6"-->
 	<l n="191">Mais de ce malheureux pourquoi gâter la joie ?...</l>
 	<l n="192">Qu'il soit grotesque en paix !</l>
 </sp><!--@stage="aparte"-->
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="192" part="F">Eh bien, sur mon sonnet ?</l><!-- @syll="6"-->
+	<l n="192" part="F">Eh bien, sur mon sonnet ?</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
 	<l n="193">Franchement, il est bon à mettre au cabinet</l>
-	<l n="194" part="I">De lecture.</l><!-- @syll="3"-->
+	<l n="194" part="I">De lecture.</l><!--@syll="3"-->
 <note type="C">Le mot est en avance d'un siècle, mais la parodie excuse l'anachronisme.</note>
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE, ivre d'orgueil.</speaker>
-	<l n="194" part="M">Non ?</l><!-- @syll="1"-->
+	<l n="194" part="M">Non ?</l><!--@syll="1"-->
 </sp><!--@stage="proud"-->
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="194" part="M">Si !</l><!-- @syll="1"-->
+	<l n="194" part="M">Si !</l><!--@syll="1"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="194" part="F">Cela vous plaît à dire.</l><!-- @syll="6"-->
+	<l n="194" part="F">Cela vous plaît à dire.</l><!--@syll="6"-->
 <stage type="humble">Humblement.</stage>
 	<l n="195">Sans doute, il a charmé tous ceux qui l'ont pu lire,</l>
-	<l n="196" part="I">Mais...</l><!-- @syll="1"-->
+	<l n="196" part="I">Mais...</l><!--@syll="1"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="196" part="F">Je suis du parti de tous ceux qui l'ont lu,</l><!-- @syll="11"-->
+	<l n="196" part="F">Je suis du parti de tous ceux qui l'ont lu,</l><!--@syll="11"-->
 	<l n="197">Et le ciel m'est témoin que le sonnet m'a plu.</l>
 </sp>
 <sp who="#philinte">
@@ -722,11 +719,11 @@
 	<l n="211">Présente des douceurs qui ne me tentent guère ;</l>
 	<l n="212">Mais quoi ! L'auteur toujours aime à voir imprimés</l>
 	<l n="213">Et livrés au grand jour les vers qu'il a rimés.</l>
-	<l n="214" part="I">Vous estimez les miens ?</l><!-- @syll="6"-->
+	<l n="214" part="I">Vous estimez les miens ?</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="214" part="F">De façon singulière !</l><!-- @syll="6"-->
+	<l n="214" part="F">De façon singulière !</l><!--@syll="6"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
@@ -734,100 +731,100 @@
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="216" part="I">En lumière ?</l><!-- @syll="3"-->
+	<l n="216" part="I">En lumière ?</l><!--@syll="3"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="216" part="M">Oui.</l><!-- @syll="1"-->
+	<l n="216" part="M">Oui.</l><!--@syll="1"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="216" part="M">Comment ?</l><!-- @syll="2"-->
+	<l n="216" part="M">Comment ?</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="216" part="F">Si j'en crois les on-dit,</l><!-- @syll="6"-->
+	<l n="216" part="F">Si j'en crois les on-dit,</l><!--@syll="6"-->
 <note type="C">Le Mercure galant est une revue fondée en 1672. En 1724, cette revue devient le Mercure de France.</note>
 	<l n="217">Au Mercure Galant vous avez du crédit.</l>
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="218" part="I">Moi ?</l><!-- @syll="1"-->
+	<l n="218" part="I">Moi ?</l><!--@syll="1"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="218" part="M">Vous.</l><!-- @syll="1"-->
+	<l n="218" part="M">Vous.</l><!--@syll="1"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="218" part="M">Aucun !</l><!-- @syll="2"-->
+	<l n="218" part="M">Aucun !</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="218" part="M">Si !</l><!-- @syll="1"-->
+	<l n="218" part="M">Si !</l><!--@syll="1"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="218" part="M">Non !</l><!-- @syll="1"-->
+	<l n="218" part="M">Non !</l><!--@syll="1"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
 <note type="C">Il s'agit de Jean Donneau de Visé, responsable de la revue Mercure galant. </note>
-	<l n="218" part="F">Visé, qui le rédige,</l><!-- @syll="6"-->
-	<l n="219" part="I">Prétend pourtant...</l><!-- @syll="4"-->
+	<l n="218" part="F">Visé, qui le rédige,</l><!--@syll="6"-->
+	<l n="219" part="I">Prétend pourtant...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="219" part="M">Aucun !</l><!-- @syll="2"-->
+	<l n="219" part="M">Aucun !</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="219" part="M">Si vous...</l><!-- @syll="2"-->
+	<l n="219" part="M">Si vous...</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="219" part="F">Aucun, vous dis-je.</l><!-- @syll="4"-->
+	<l n="219" part="F">Aucun, vous dis-je.</l><!--@syll="4"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="220" part="I">Si vous vouliez...</l><!-- @syll="4"-->
+	<l n="220" part="I">Si vous vouliez...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="220" part="M">Aucun !</l><!-- @syll="2"-->
+	<l n="220" part="M">Aucun !</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="220" part="F">Monsieur, deux ou trois mots</l><!-- @syll="6"-->
+	<l n="220" part="F">Monsieur, deux ou trois mots</l><!--@syll="6"-->
 	<l n="221">Lancés avec chaleur et glissés à propos,</l>
 	<l n="222">Et voici qu'aussitôt ma jeune renommée</l>
 	<l n="223">Voit s'ouvrir devant elle une porte fermée ;</l>
 	<l n="224">Le Mercure Galant, dont je vous dois l'accès,</l>
 	<l n="225">S'offre comme un tremplin à mes premiers essais.</l>
-	<l n="226" part="I">Et la gloire...</l><!-- @syll="4"-->
+	<l n="226" part="I">Et la gloire...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="226" part="F">Monsieur, trêve à tant d'insistance.</l><!-- @syll="8"-->
+	<l n="226" part="F">Monsieur, trêve à tant d'insistance.</l><!--@syll="8"-->
 	<l n="227">Mon intervention n'est pas de circonstance,</l>
 	<l n="228">Au Mercure Galant je suis fort peu prisé,</l>
 	<l n="229">Et d'absurdes on-dit vous ont mal avisé.</l>
 	<l n="230">Veuillez donc m'épargner d'inutiles harangues</l>
-	<l n="231" part="I">Un temps.</l><!-- @syll="2"-->
+	<l n="231" part="I">Un temps.</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="231" part="F">Peste ! Je vous vois apte à parler plusieurs langues;</l><!-- @syll="10"-->
+	<l n="231" part="F">Peste ! Je vous vois apte à parler plusieurs langues;</l><!--@syll="10"-->
 	<l n="232">Vous êtes habile homme et pratiquez fort bien</l>
 	<l n="233">L'art de risquer des mots qui n'engagent à rien.</l>
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="234" part="I">Moi !</l><!-- @syll="1"-->
+	<l n="234" part="I">Moi !</l><!--@syll="1"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="234" part="F">Votre bonne grâce étonne par son zèle,</l><!-- @syll="11"-->
+	<l n="234" part="F">Votre bonne grâce étonne par son zèle,</l><!--@syll="11"-->
 	<l n="235">Mais c'est perdre le temps que d'attendre après elle,</l>
 	<l n="236">Et sur votre assistance on peut toujours compter...</l>
 	<l n="237">À la condition de n'en point profiter.</l>
@@ -848,53 +845,53 @@
 </sp><!--@stage="nervous"-->
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="248" part="I">Monsieur...</l><!-- @syll="2"-->
+	<l n="248" part="I">Monsieur...</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="248" part="F">Monsieur...</l><!-- @syll="2"-->
+	<l n="248" part="F">Monsieur...</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="248" part="F">Monsieur, il faut prendre parti :</l><!-- @syll="8"-->
-	<l n="249" part="I">Ou vous mentez...</l><!-- @syll="4"-->
+	<l n="248" part="F">Monsieur, il faut prendre parti :</l><!--@syll="8"-->
+	<l n="249" part="I">Ou vous mentez...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, bondissant.</speaker>
-	<l n="249" part="M">Je mens !</l><!-- @syll="2"-->
+	<l n="249" part="M">Je mens !</l><!--@syll="2"-->
 </sp><!--@stage="furious"-->
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="249" part="F">Ou vous avez menti.</l><!-- @syll="6"-->
+	<l n="249" part="F">Ou vous avez menti.</l><!--@syll="6"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE, s'interposant.</speaker>
-	<l n="250" part="I">Oronte !</l><!-- @syll="2"-->
+	<l n="250" part="I">Oronte !</l><!--@syll="2"-->
 </sp><!--@stage="closer"-->
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="250" part="F">Ah ! Mais, pardon !... Ceci n'est plus de mise...</l><!-- @syll="10"-->
+	<l n="250" part="F">Ah ! Mais, pardon !... Ceci n'est plus de mise...</l><!--@syll="10"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="251" part="I">Alceste !</l><!-- @syll="3"-->
+	<l n="251" part="I">Alceste !</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="251" part="F">Vous passez la limite permise !</l><!-- @syll="9"-->
-	<l n="252" part="I">J'ai menti !</l><!-- @syll="3"-->
+	<l n="251" part="F">Vous passez la limite permise !</l><!--@syll="9"-->
+	<l n="252" part="I">J'ai menti !</l><!--@syll="3"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE, à Alceste.</speaker>
-	<l n="252" part="M">Calmez-vous.</l><!-- @syll="3"-->
+	<l n="252" part="M">Calmez-vous.</l><!--@syll="3"-->
 </sp><!--@stage="toward"-->
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="252" part="F">Je...</l><!-- @syll="1"-->
+	<l n="252" part="F">Je...</l><!--@syll="1"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE, à Oronte.</speaker>
-	<l n="252" part="F">Calmez-vous aussi.</l><!-- @syll="5"-->
+	<l n="252" part="F">Calmez-vous aussi.</l><!--@syll="5"-->
 </sp><!--@stage="toward"-->
 <sp who="#alceste">
                         <speaker>ALCESTE, exaspéré.</speaker>
@@ -902,11 +899,11 @@
 </sp><!--@stage="anger"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="254" part="I">Oh !</l><!-- @syll="1"-->
+	<l n="254" part="I">Oh !</l><!--@syll="1"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="254" part="F">Quoi ! Le plat rimeur d'un stupide poème...</l><!-- @syll="11"-->
+	<l n="254" part="F">Quoi ! Le plat rimeur d'un stupide poème...</l><!--@syll="11"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
@@ -914,11 +911,11 @@
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="256" part="I">Eh ! là !</l><!-- @syll="2"-->
+	<l n="256" part="I">Eh ! là !</l><!--@syll="2"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
-	<l n="256" part="F">Dois-je souffrir que cet âne bâté...</l><!-- @syll="10"-->
+	<l n="256" part="F">Dois-je souffrir que cet âne bâté...</l><!--@syll="10"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
@@ -952,11 +949,11 @@
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
 	<l n="271">L'injure porte en soi des armes trop faciles.</l>
-	<l n="272" part="I">Je vous laisse le pas...</l><!-- @syll="6"-->
+	<l n="272" part="I">Je vous laisse le pas...</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="272" part="F">J'allais vous en presser.</l><!-- @syll="6"-->
+	<l n="272" part="F">J'allais vous en presser.</l><!--@syll="6"-->
 </sp>
 <sp who="#oronte">
                         <speaker>ORONTE.</speaker>
@@ -985,55 +982,55 @@
 	<l n="287">Ce maraud vaniteux qui chante au lieu de braire !</l>
 	<l n="288">Un pied-plat de ses vers me vient assassiner :</l>
 	<l n="289">Je ne condamne pas, donc je dois patronner ?</l>
-	<l n="290" part="I">Ah ! Mais non !</l><!-- @syll="3"-->
+	<l n="290" part="I">Ah ! Mais non !</l><!--@syll="3"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="290" part="M">Aristote...</l><!-- @syll="3"-->
+	<l n="290" part="M">Aristote...</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="290" part="M">Ah ! non !</l><!-- @syll="2"-->
+	<l n="290" part="M">Ah ! non !</l><!--@syll="2"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="290" part="F">En un chapitre...</l><!-- @syll="4"-->
+	<l n="290" part="F">En un chapitre...</l><!--@syll="4"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, arpentant la scène.</speaker>
-	<l n="291" part="I">Et je me repentais !</l><!-- @syll="6"-->
+	<l n="291" part="I">Et je me repentais !</l><!--@syll="6"-->
 </sp><!--@stage="walk"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="291" part="M">de ses...</l><!-- @syll="2"-->
+	<l n="291" part="M">de ses...</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="291" part="F">Cuistre ! Belître !</l><!-- @syll="4"-->
+	<l n="291" part="F">Cuistre ! Belître !</l><!--@syll="4"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="292" part="I">En un chapitre de...</l><!-- @syll="6"-->
+	<l n="292" part="I">En un chapitre de...</l><!--@syll="6"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, même jeu.</speaker>
-	<l n="292" part="M">Je mens !</l><!-- @syll="2"-->
+	<l n="292" part="M">Je mens !</l><!--@syll="2"-->
 </sp><!--@stage="walk"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="292" part="M">de...</l><!-- @syll="1"-->
+	<l n="292" part="M">de...</l><!--@syll="1"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="292" part="F">J'ai menti !</l><!-- @syll="3"-->
+	<l n="292" part="F">J'ai menti !</l><!--@syll="3"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="293" part="I">De ses...</l><!-- @syll="2"-->
+	<l n="293" part="I">De ses...</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, même jeu.</speaker>
-	<l n="293" part="F">Je me repens de m'être repenti !</l><!-- @syll="10"-->
+	<l n="293" part="F">Je me repens de m'être repenti !</l><!--@syll="10"-->
 </sp><!--@stage="walk"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
@@ -1059,15 +1056,15 @@
 	<l n="307">Qui semble s'attacher à compliquer la vie.</l>
 	<l n="308">Et qu'un fâcheux instinct pousse à vouloir tirer</l>
 	<l n="309">De tout sujet de rire un prétexte à pleurer !</l>
-	<l n="310" part="I">Un temps.</l><!-- @syll="2"-->
+	<l n="310" part="I">Un temps.</l><!--@syll="2"-->
 </sp><!--@stage="smile"-->
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="310" part="F">Bah ! vous avez raison ! Ma rudesse farouche</l><!-- @syll="10"-->
+	<l n="310" part="F">Bah ! vous avez raison ! Ma rudesse farouche</l><!--@syll="10"-->
 	<l n="311">Rend hommage au bon sens qui rit sur votre bouche,</l>
-	<l n="312" part="I">Et...</l><!-- @syll="1"-->
+	<l n="312" part="I">Et...</l><!--@syll="1"-->
 <stage type="noise">À ce moment, bruit de voix à la cantonade.</stage>
-	<l n="312" part="F">Mais quel importun nous trouble de ses cris ?</l><!-- @syll="6"-->
+	<l n="312" part="F">Mais quel importun nous trouble de ses cris ?</l><!--@syll="6"-->
 <stage type="location/open/push">Il va à la porte du fond, qu'il ouvre. On voit alors Monsieur Loyal en discussion avec Flipotte qui veut l'empêcher d'entrer.</stage>
 </sp>
 </div>
@@ -1075,23 +1072,23 @@
                     <head>SCÈNE IV. Les mêmes, Monsieur Loyal.</head>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="313" part="I">Monsieur Loyal !</l><!-- @syll="4"-->
+	<l n="313" part="I">Monsieur Loyal !</l><!--@syll="4"-->
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>, entrant et saluant jusqu'à terre.</speaker>
-	<l n="313" part="F">Huissier près la Cour de Paris ;</l><!-- @syll="8"-->
+	<l n="313" part="F">Huissier près la Cour de Paris ;</l><!--@syll="8"-->
 	<l n="314">Séant au susdit lieu, place Sainte-Opportune.</l>
 	<l n="315">Plaise au ciel vous tenir en sa faveur commune !</l>
 	<l n="316">Je vous baise les mains, monsieur, pour cent raisons;</l>
-	<l n="317" part="I">Et vous, monsieur, les pieds. De tout coeur.</l><!-- @syll="9"-->
+	<l n="317" part="I">Et vous, monsieur, les pieds. De tout coeur.</l><!--@syll="9"-->
 <stage type="get/open">Il tire de sa poche et déploie une immense feuille de papier.</stage>
-	<l n="317" part="F">Nous disons...</l><!-- @syll="3"-->
-	<l n="318" part="I">Euh...</l><!-- @syll="1"-->
+	<l n="317" part="F">Nous disons...</l><!--@syll="3"-->
+	<l n="318" part="I">Euh...</l><!--@syll="1"-->
 <stage type="read">Il lit.</stage>
-	<l n="318" part="F">"J'ai, Jean, Paul, Gaspard, Loyal, à la requête..."</l><!-- @syll="11"-->
-	<l n="319" part="I">Suivent les noms. Je passe et vais au but.</l><!-- @syll="10"-->
+	<l n="318" part="F">"J'ai, Jean, Paul, Gaspard, Loyal, à la requête..."</l><!--@syll="11"-->
+	<l n="319" part="I">Suivent les noms. Je passe et vais au but.</l><!--@syll="10"-->
 <stage type="read">Il lit.</stage>
-	<l n="319" part="F">"Enquête,</l><!-- @syll="2"-->
+	<l n="319" part="F">"Enquête,</l><!--@syll="2"-->
 	<l n="320">Ordonnance, constat, exploits, verbalisés;</l>
 	<l n="321">Indemnité payée aux clercs mobilisés;</l>
 	<l n="322">Fin de non recevoir du défendeur, dont acte</l>
@@ -1101,9 +1098,9 @@
 	<l n="326">Gens courtois, comme on sait, et pleins de savoir-vivre:</l>
 	<l n="327">En tout soixante écus." C'est peu. Plus une livre</l>
 	<l n="328">Et douze sous, pour frais de bureau. Nous disions ?</l>
-	<l n="329" part="I">Ah ! Pardon ! M'y voici.</l><!-- @syll="6"-->
+	<l n="329" part="I">Ah ! Pardon ! M'y voici.</l><!--@syll="6"-->
 <stage type="read">Il lit.</stage>
-	<l n="329" part="F">"Rapport, conclusions,</l><!-- @syll="6"-->
+	<l n="329" part="F">"Rapport, conclusions,</l><!--@syll="6"-->
 	<l n="330">Signification d'urgence à l'adversaire;</l>
 	<l n="331">Pot-de-vin au greffier, au juge, au commissaire,</l>
 	<l n="332">Au procureur du roi ; pourboire au portier ; coût :</l>
@@ -1118,64 +1115,65 @@
 	<l n="341">Qui, s'ils restèrent cois, n'en pensèrent pas moins.</l>
 	<l n="342">Au juge, après arrêt et sentence propices,</l>
 	<l n="343">Avecque grand respect quarante écus d'épices."</l>
-	<l n="344" part="I">Une obole autant dire.</l><!-- @syll="6"-->
+	<l n="344" part="I">Une obole autant dire.</l><!--@syll="6"-->
 <stage type="read">Il lit.</stage>
-	<l n="344" part="F">"Ouï le jugement,</l><!-- @syll="6"-->
-	<l n="345" part="I">"L'avoir levé..."</l><!-- @syll="4"-->
+	<l n="344" part="F">"Ouï le jugement,</l><!--@syll="6"-->
+	<l n="345" part="I">"L'avoir levé..."</l><!--@syll="4"-->
 </sp><!--@stage="entrance/wave"-->
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="345" part="M">Pardon !...</l><!-- @syll="2"-->
+	<l n="345" part="M">Pardon !...</l><!--@syll="2"-->
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL.</speaker>
-	<l n="345" part="M">"Six livres"...</l><!-- @syll="3"-->
+	<l n="345" part="M">"Six livres"...</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="345" part="F">Un moment.</l><!-- @syll="3"-->
+	<l n="345" part="F">Un moment.</l><!--@syll="3"-->
 	<l n="346">Le goût qu'aux jeux d'esprit on me vit toujours prendre</l>
 	<l n="347">Se double du plaisir que j'éprouve à comprendre.</l>
-	<l n="348" part="I">Qu'est ceci, s'il vous plaît ?</l><!-- @syll="6"-->
+	<l n="348" part="I">Qu'est ceci, s'il vous plaît ?</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL, surpris.</speaker>
-	<l n="348" part="F">Qu'entendez-vous par là ?</l><!-- @syll="6"-->
+	<l n="348" part="F">Qu'entendez-vous par là ?</l><!--@syll="6"-->
 </sp><!--@stage="suprise"-->
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="349" part="I">Qu'est ceci ?</l><!-- @syll="3"-->
+	<l n="349" part="I">Qu'est ceci ?</l><!--@syll="3"-->
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL, même jeu.</speaker>
-	<l n="349" part="M">Quoi ceci ?</l><!-- @syll="3"-->
+	<l n="349" part="M">Quoi ceci ?</l><!--@syll="3"-->
 </sp><!--@stage="surprise"-->
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="349" part="M">Ceci.</l><!-- @syll="2"-->
+	<l n="349" part="M">Ceci.</l><!--@syll="2"-->
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL, même jeu.</speaker>
-	<l n="349" part="M">Ceci ?</l><!-- @syll="2"-->
+	<l n="349" part="M">Ceci ?</l><!--@syll="2"-->
 </sp><!--@stage="surprise"-->
 <sp who="#alceste">
                         <speaker>ALCESTE, agacé.</speaker>
-	<l n="349" part="F">Cela !</l><!-- @syll="2"-->
+	<l n="349" part="F">Cela !</l><!--@syll="2"-->
 	<l n="350">Vous parlé-je une langue à ce point bredouillée ?</l>
 </sp><!--@stage="stress"-->
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL, très simplement.</speaker>
 	<l n="351">C'est la note, monsieur, exacte et détaillée...</l>
-<stage type="extonish">Étonnement d'Alceste, qui, à son tour, ne comprend plus.</stage>
-*	<l n="352">Le pour-acquit des frais... de moi-même signé.</l>
+<stage type="extonish">Étonnement d'Alceste, qui, à son tour, ne comprend plus.</stage><!--text():
+*	-->
+                        <l n="352">Le pour-acquit des frais... de moi-même signé.</l>
 </sp><!--@stage="quiet"-->
 <sp who="#alceste">
                         <speaker>ALCESTE, à Philinte.</speaker>
-	<l n="353" part="I">Quels frais ?</l><!-- @syll="2"-->
+	<l n="353" part="I">Quels frais ?</l><!--@syll="2"-->
 </sp><!--@stage="toward"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="353" part="F">Ceux du procès que vous avez gagné.</l><!-- @syll="10"-->
+	<l n="353" part="F">Ceux du procès que vous avez gagné.</l><!--@syll="10"-->
 <stage type="estonish/turn/wave/smile">Ahurissement d'Alceste. Il se retourne vers Monsieur Loyal, lequel approuve de la tête, et lui sourit aimablement.</stage>
 </sp>
 <sp who="#alceste">
@@ -1187,36 +1185,36 @@
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL.</speaker>
-	<l n="358" part="I">Qu'entends-je ?</l><!-- @syll="2"-->
+	<l n="358" part="I">Qu'entends-je ?</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, marchant lentement sur Monsieur Loyal.</speaker>
-	<l n="358" part="M">Ah ! C'est la note ?</l><!-- @syll="4"-->
+	<l n="358" part="M">Ah ! C'est la note ?</l><!--@syll="4"-->
 </sp><!--@stage="walk/slow"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="358" part="M">Eh ! Là !</l><!-- @syll="2"-->
+	<l n="358" part="M">Eh ! Là !</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="358" part="F">Sur les épaules</l><!-- @syll="4"-->
+	<l n="358" part="F">Sur les épaules</l><!--@syll="4"-->
 	<l n="359">Je lui vais galamment rompre deux ou trois gaules !</l>
-	<l n="360" part="I">Ah, c'est le pour-acquit ?</l><!-- @syll="6"-->
+	<l n="360" part="I">Ah, c'est le pour-acquit ?</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL, rompant.</speaker>
-	<l n="360" part="F">Les frais y sont comptés</l><!-- @syll="6"-->
+	<l n="360" part="F">Les frais y sont comptés</l><!--@syll="6"-->
 	<l n="361">À vingt pour cent en plus des tarifs adoptés.</l>
 <stage type="get">Se reprenant.</stage>
-	<l n="362" part="I">En moins !</l><!-- @syll="2"-->
+	<l n="362" part="I">En moins !</l><!--@syll="2"-->
 </sp><!--@stage="away"-->
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="362" part="M">Fripon ! Pendard !</l><!-- @syll="4"-->
+	<l n="362" part="M">Fripon ! Pendard !</l><!--@syll="4"-->
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL.</speaker>
-	<l n="362" part="F">L'existence est si dure !...</l><!-- @syll="6"-->
+	<l n="362" part="F">L'existence est si dure !...</l><!--@syll="6"-->
 	<l n="363">Il faut être indulgent aux gens de procédure !</l>
 	<l n="364">Ne m'ouvrez pas, hélas ! la porte du tombeau,</l>
 	<l n="365">Je suis encore jeune et je suis resté beau !...</l>
@@ -1228,7 +1226,7 @@
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE, qui rit.</speaker>
-	<l n="370" part="I">Alceste !</l><!-- @syll="2"-->
+	<l n="370" part="I">Alceste !</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, lancé dans une récapitulation.</speaker>
@@ -1243,39 +1241,39 @@
 </sp><!--@stage="explicit"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="379" part="I">Mon Dieu...</l><!-- @syll="2"-->
+	<l n="379" part="I">Mon Dieu...</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="379" part="F">Mon Dieu, je sais ce que vous m'allez dire</l><!-- @syll="10"-->
+	<l n="379" part="F">Mon Dieu, je sais ce que vous m'allez dire</l><!--@syll="10"-->
 	<l n="380">Plus le cas est comique et plus il faut en rire ?</l>
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="381" part="I">Sans doute.</l><!-- @syll="2"-->
+	<l n="381" part="I">Sans doute.</l><!--@syll="2"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="381" part="F">Eh bien, je ris. Quant à m'exécuter,</l><!-- @syll="10"-->
+	<l n="381" part="F">Eh bien, je ris. Quant à m'exécuter,</l><!--@syll="10"-->
 	<l n="382">C'est, ne vous en déplaise, un point à discuter,</l>
 	<l n="383">Et je vous supplierai d'avoir pour agréable</l>
 	<l n="384">Qu'avec monsieur, chez lui, j'en cause au préalable.</l>
 <stage type="get/toward">Il prend son chapeau, puis à Monsieur Loyal :</stage>
-	<l n="385" part="I">En route !</l><!-- @syll="2"-->
+	<l n="385" part="I">En route !</l><!--@syll="2"-->
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL.</speaker>
-	<l n="385" part="F">Mais, monsieur...</l><!-- @syll="3"-->
+	<l n="385" part="F">Mais, monsieur...</l><!--@syll="3"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE.</speaker>
-	<l n="385" part="F">Vos comptes ont besoin</l><!-- @syll="6"-->
+	<l n="385" part="F">Vos comptes ont besoin</l><!--@syll="6"-->
 	<l n="386">D'être vérifiés et revus avec soin.</l>
-	<l n="387" part="I">En route !</l><!-- @syll="3"-->
+	<l n="387" part="I">En route !</l><!--@syll="3"-->
 </sp>
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL, à part.</speaker>
-	<l n="387" part="F">Diantre soit de la cérémonie !</l><!-- @syll="9"-->
+	<l n="387" part="F">Diantre soit de la cérémonie !</l><!--@syll="9"-->
 <stage type="entrance">Entre Célimène.</stage>
 </sp><!--@stage="aparte"-->
 <sp who="#alceste">
@@ -1284,12 +1282,12 @@
 </sp><!--@stage="toward"-->
 <sp who="#alceste">
                         <speaker>ALCESTE, à Monsieur Loyal.</speaker>
-	<l n="389" part="I">Allons !</l><!-- @syll="2"-->
+	<l n="389" part="I">Allons !</l><!--@syll="2"-->
 <stage type="exit">Il sort.</stage>
 </sp><!--@stage="toward"-->
 <sp who="#monsieur-loyal">
                         <speaker>MONSIEUR LOYAL, l'oeil au ciel.</speaker>
-	<l n="389" part="F">Dieu qui veillez sur les pâles humains,</l><!-- @syll="10"-->
+	<l n="389" part="F">Dieu qui veillez sur les pâles humains,</l><!--@syll="10"-->
 	<l n="390">Je remets en tremblant mes os entre vos mains !</l>
 <stage type="exit/together">Il sort à la suite d'Alceste.</stage>
 </sp><!--@stage="watch"-->
@@ -1299,30 +1297,30 @@
 <stage type="location/listen/watch">Célimène et Philinte restent seuls. Soudain Philinte remonte, va coller son oreille à la porte du fond. Il écoute, redescend en scène ; va à la fenêtre qu'il ouvre, se penche ; regarde au dehors ; puis, revenu à Célimène qui l'a regardé faire sans rien dire.</stage>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="391" part="I">Et maintenant, Madame, à nous deux !</l><!-- @syll="9"-->
+	<l n="391" part="I">Et maintenant, Madame, à nous deux !</l><!--@syll="9"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="391" part="F">Oh, Philinte,</l><!-- @syll="3"-->
+	<l n="391" part="F">Oh, Philinte,</l><!--@syll="3"-->
 	<l n="392">Ne renouvelez point votre éternelle plainte.</l>
 	<l n="393">J'en ai l'oreille lasse, à ne vous rien farder,</l>
 	<l n="394">Et ne suis plus d'humeur à m'en accommoder.</l>
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="395" part="I">Vous souffrirez pourtant...</l><!-- @syll="6"-->
+	<l n="395" part="I">Vous souffrirez pourtant...</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="395" part="M">Silence !</l><!-- @syll="3"-->
+	<l n="395" part="M">Silence !</l><!--@syll="3"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="395" part="M">Mais...</l><!-- @syll="1"-->
+	<l n="395" part="M">Mais...</l><!--@syll="1"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE, même jeu.</speaker>
-	<l n="395" part="F">Silence !</l><!-- @syll="2"-->
+	<l n="395" part="F">Silence !</l><!--@syll="2"-->
 </sp><!--@stage="continue"-->
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
@@ -1339,23 +1337,23 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="400" part="I">La paix !</l><!-- @syll="2"-->
+	<l n="400" part="I">La paix !</l><!--@syll="2"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="400" part="F">Je vous l'impose !</l><!-- @syll="4"-->
+	<l n="400" part="F">Je vous l'impose !</l><!--@syll="4"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="400" part="F">Et moi, je vous l'ordonne !</l><!-- @syll="6"-->
+	<l n="400" part="F">Et moi, je vous l'ordonne !</l><!--@syll="6"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE, exaspéré.</speaker>
-	<l n="401" part="I">Oh !</l><!-- @syll="1"-->
+	<l n="401" part="I">Oh !</l><!--@syll="1"-->
 </sp><!--@stage="nervous"-->
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="401" part="F">Quel besoin, bon Dieu, de jeter les hauts cris ?</l><!-- @syll="11"-->
+	<l n="401" part="F">Quel besoin, bon Dieu, de jeter les hauts cris ?</l><!--@syll="11"-->
 	<l n="402">Un galant comme vous égale trois maris.</l>
 </sp>
 <sp who="#philinte">
@@ -1375,15 +1373,15 @@
 	<l n="412">Change de plus en plus Clitandre en Sganarelle,</l>
 	<l n="413">Philinte. Sur ce point, qu'il daigne ouvrir les yeux.</l>
 	<l n="414">Le mien n'y risque rien, que de s'en porter mieux.</l>
-	<l n="415" part="I">Tenez-vous-le pour dit.</l><!-- @syll="6"-->
+	<l n="415" part="I">Tenez-vous-le pour dit.</l><!--@syll="6"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="415" part="M">Alceste....</l><!-- @syll="2"-->
+	<l n="415" part="M">Alceste....</l><!--@syll="2"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="415" part="F">En cette affaire</l><!-- @syll="4"-->
+	<l n="415" part="F">En cette affaire</l><!--@syll="4"-->
 	<l n="416">Je conçois assez mal ce qu'Alceste vient faire.</l>
 	<l n="417">Je vous trouve plaisant, mon cher, quand vous venez</l>
 	<l n="418">Me bailler froidement de ce nom par le nez.</l>
@@ -1392,11 +1390,11 @@
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="421" part="I">Le pauvre homme !</l><!-- @syll="6"-->
+	<l n="421" part="I">Le pauvre homme !</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="421" part="F">Plaît-il ?... Vous avez dit ? Comment ?</l><!-- @syll="6"-->
+	<l n="421" part="F">Plaît-il ?... Vous avez dit ? Comment ?</l><!--@syll="6"-->
 	<l n="422">Le pauvre homme ?... Ouais ! Le mot part d'un bon sentiment !</l>
 	<l n="423">À "Pauvre homme", sans doute, il faut rendre les armes,</l>
 	<l n="424">Et ce pauvre "Pauvre homme" attendrit jusqu'aux larmes.</l>
@@ -1416,15 +1414,15 @@
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE, stupéfait.</speaker>
-	<l n="437" part="I">Pourtant vos torts...</l><!-- @syll="4"-->
+	<l n="437" part="I">Pourtant vos torts...</l><!--@syll="4"-->
 </sp><!--@stage="estonish"-->
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="437" part="M">Quels torts ?</l><!-- @syll="2"-->
+	<l n="437" part="M">Quels torts ?</l><!--@syll="2"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE, avec grandeur d'âme.</speaker>
-	<l n="437" part="F">S'aveugler à tel point ?...</l><!-- @syll="6"-->
+	<l n="437" part="F">S'aveugler à tel point ?...</l><!--@syll="6"-->
 	<l n="438">C'est les avoir deux fois, que ne les sentir point !</l>
 	<l n="439">Que le coeur de la femme est fait d'étrange sorte,</l>
 	<l n="440">Et que l'homme sur elle, en loyauté l'emporte !</l>
@@ -1432,11 +1430,11 @@
 	<l n="442">De prendre cause et fait pour l'époux outragé ?</l>
 	<l n="443">C'est à moi, - triste effet de l'humaine faiblesse, -</l>
 	<l n="444">(J'en conviens sans détour mais non pas sans noblesse),</l>
-	<l n="445" part="I">Qu'il faut, d'Alceste.... ?</l><!-- @syll="6"-->
+	<l n="445" part="I">Qu'il faut, d'Alceste.... ?</l><!--@syll="6"-->
 </sp><!--@stage="proud"-->
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="445" part="F">Au temps où me faisant sa cour</l><!-- @syll="6"-->
+	<l n="445" part="F">Au temps où me faisant sa cour</l><!--@syll="6"-->
 	<l n="446">Alceste. à mes genoux rugissait son amour,</l>
 	<l n="447">Ce troubadour transi, doublé de belluaire,</l>
 	<l n="448">Eut parfois l'art et l'heur de ne pas me déplaire.</l>
@@ -1482,18 +1480,18 @@
 	<l n="484">Gémit de vous avoir un moment disputée.</l>
 	<l n="485">L'amour est quelquefois prompt à l'emportement,</l>
 	<l n="486">Mais on sait ce que c'est qu'un courroux d'un amant,</l>
-	<l n="487" part="I">Et...</l><!-- @syll="1"-->
+	<l n="487" part="I">Et...</l><!--@syll="1"-->
 </sp><!--@stage="silence"-->
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="487" part="F">Philinte, il suffit. Ces paroles sensées</l><!-- @syll="11"-->
+	<l n="487" part="F">Philinte, il suffit. Ces paroles sensées</l><!--@syll="11"-->
 	<l n="488">Font l'honneur de celui qui les a prononcées.</l>
 <stage type="wave/touch/kiss">En gage de réconciliation, elle lui présente sa main, que Philinte couvre de baisers.</stage>
-	<l n="489" part="I">Vous comprenez enfin ?</l><!-- @syll="6"-->
+	<l n="489" part="I">Vous comprenez enfin ?</l><!--@syll="6"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="489" part="F">Je vous comprends si bien</l><!-- @syll="6"-->
+	<l n="489" part="F">Je vous comprends si bien</l><!--@syll="6"-->
 	<l n="490">Que votre sentiment concorde avec le mien.</l>
 	<l n="491">Je me serais gardé d'en rien mettre en lumière;</l>
 	<l n="492">Mais puisqu'il vous a plu de parler la première,</l>
@@ -1520,19 +1518,19 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="501" part="I">L'ennuyeux animal !</l><!-- @syll="6"-->
+	<l n="501" part="I">L'ennuyeux animal !</l><!--@syll="6"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="501" part="F">Le triste compagnon !</l><!-- @syll="6"-->
+	<l n="501" part="F">Le triste compagnon !</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="502" part="I">Je l'aimais mieux bourru !</l><!-- @syll="6"-->
+	<l n="502" part="I">Je l'aimais mieux bourru !</l><!--@syll="6"-->
 </sp>
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
-	<l n="502" part="F">Je l'aimais mieux grognon !</l><!-- @syll="6"-->
+	<l n="502" part="F">Je l'aimais mieux grognon !</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE, s'éventant.</speaker>
@@ -1552,11 +1550,11 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE, souriant à Philinte.</speaker>
-	<l n="507" part="I">Coeur généreux et pur !</l><!-- @syll="6"-->
+	<l n="507" part="I">Coeur généreux et pur !</l><!--@syll="6"-->
 </sp><!--@stage="smile/toward"-->
 <sp who="#philinte">
                         <speaker>PHILINTE, attendri.</speaker>
-	<l n="507" part="F">Âme sincère et tendre !</l><!-- @syll="6"-->
+	<l n="507" part="F">Âme sincère et tendre !</l><!--@syll="6"-->
 </sp><!--@stage="tender"-->
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
@@ -1565,16 +1563,16 @@
 <sp who="#philinte">
                         <speaker>PHILINTE.</speaker>
 	<l n="509">Pour être l'un à l'autre et, dans tout, de moitié !</l>
-	<l n="510" part="I">Et...</l><!-- @syll="1"-->
+	<l n="510" part="I">Et...</l><!--@syll="1"-->
 <stage type="cough/turn/watch">À ce moment Alceste tousse légèrement. Du même mouvement Philinte et Célimène se tournent vers le fond du théâtre et l'aperçoivent.</stage>
 </sp>
 <sp who="#celimene #philinte">
                         <speaker>CÉLIMÈNE ET PHILINTE, ensemble.</speaker>
-	<l n="510" part="M">Oh !</l><!-- @syll="1"-->
+	<l n="510" part="M">Oh !</l><!--@syll="1"-->
 </sp>
 <sp who="#alceste">
                         <speaker>ALCESTE, désignant successivement Célimène, puis Philinte.</speaker>
-	<l n="510" part="F">Mon seul amour, et ma seule amitié !</l><!-- @syll="10"-->
+	<l n="510" part="F">Mon seul amour, et ma seule amitié !</l><!--@syll="10"-->
 </sp><!--@stage="show"-->
 </div>
 <div type="scene" n="6">

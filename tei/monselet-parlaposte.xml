@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1881">1881</date>
+                        <date>1881</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k207936d</idno>
@@ -70,14 +70,14 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="TRESSE">À PARIS, TRESSE, Galerie du Théâtre Français, PALAIS-ROYAL.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="TRESSE">À PARIS, TRESSE, Galerie du Théâtre Français, PALAIS-ROYAL.</editor>-->
 		</div>
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#l-homme">L'HOMME.</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#l-homme">L'HOMME.</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-<!--usage of set in correct place but with unknown attributes <set location="(indéterminé)" country="France" periode="XIXème" link=""/>-->
+<!--TODO: usage of set in correct place but with unknown attributes <set location="(indéterminé)" country="France" periode="XIXème" link=""/>-->
 <note>Paru dans "Saynètes et monologues", Quatrième série, Paris, Tresse Editeur, 1881. pp. 91-95</note>
 </front>
 <body>
@@ -87,7 +87,8 @@
                     <head/>
 <sp who="#l-homme">
                         <speaker/>
-<poem type="quatrains">
+<!--<poem>-->
+                        <ab type="quatrains">
 <lg n="1">
 	<l n="1">Vous m'avez demandé des vers ; je le veux bien ;</l>
 	<l n="2">Ceux-là, je vous promets, ne me coûteront rien.</l>
@@ -178,7 +179,7 @@
 	<l n="59">Vous vous direz peut-être, et malgré vous émue :</l>
 	<l n="60">« Celui qui fit ces vers n'était pas un méchant. »</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

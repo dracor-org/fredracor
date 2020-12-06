@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1883">1883</date>
+                        <date>1883</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -69,7 +69,7 @@
 		<docDate when="1883"/>
 		<docAuthor>de Georges Feydeau</docAuthor>
 		<div type="docImprint">
-			<editor id="OLLENDORF">PARIS, ALBIN MICHEL</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, ALBIN MICHEL</editor>-->
 			<div type="printer">
                     <p>Imprimerie Générale de Chatillon-sur-Seine. - A. Pichat.</p>
                 </div>
@@ -78,9 +78,9 @@
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
 <body>
 <div type="acte" n="1">
@@ -89,7 +89,8 @@
                     <head/>
 <sp who="#un-homme">
                         <speaker/>
-<poem type="quatrains">
+<!--<poem>-->
+                        <ab type="quatrains">
 <lg n="1">
 	<l n="1">Je tirais, depuis quelque temps,</l>
 	<l n="2">Un peu le diable par la queue,</l>
@@ -282,7 +283,7 @@
 	<l n="127">Car elle a payé le dîner</l>
 	<l n="128">Avec mon beau billet de mille !</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

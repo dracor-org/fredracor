@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1778">1778</date>
+                        <date>1778</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -76,597 +76,599 @@
 				<titlePart type="main">LE GASCON JOUÉ</titlePart>
 				<titlePart type="sub">OPUSCULE DRAMATIQUE</titlePart>
 			</docTitle> 
-			<docDate value="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
-			<docAuthor id="SACY, Claude-Louis-Michel de" bio="">De SACY, Claude-Louis-Michel de</docAuthor>
-			<docImprint>
-				<printer id="DEMONVILLE">À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</printer>
-			</docImprint>
+			<docDate when="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
+			<docAuthor>De SACY, Claude-Louis-Michel de</docAuthor><!--@bio=""-->
+			<div type="docImprint">
+				<div type="printer">
+                    <p>À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</p>
+                </div><!--@id="DEMONVILLE"-->
+			</div>
 			<performance>
-				<premiere date="" location="(inconnue)"/>
+				<ab type="premiere"/><!--@date=""--><!--@location="(inconnue)"-->
 			</performance>
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role id="MONSIEUR SERINGUET" sex="1" type="H" statut="apothicaire" age="A" stat_amour="néant">MONSIEUR SERINGUET</role>, Apothicaire.</castItem>
+                    <role corresp="#monsieur-seringuet">MONSIEUR SERINGUET</role><!--@sex="1"--><!--@type="H"--><!--@statut="apothicaire"--><!--@age="A"--><!--@stat_amour="néant"-->, Apothicaire.</castItem>
 		<castItem>
-                    <role id="MADAME SERINGUET" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">MADAME SERINGUET</role>.</castItem>
+                    <role corresp="#madame-seringuet">MADAME SERINGUET</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role id="UN ABBÉ" sex="1" type="H" statut="abbé" age="A" stat_amour="néant">UN ABBÉ</role>.</castItem>
+                    <role corresp="#un-abbe">UN ABBÉ</role><!--@sex="1"--><!--@type="H"--><!--@statut="abbé"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role id="UNE DAME" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">UNE DAME</role>.</castItem>
+                    <role corresp="#une-dame">UNE DAME</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 	</castList>
-	<set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La Scène est à Paris.</set>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La Scène est à Paris.</set>-->
 	<note>Édition tirée de Claude-Louis-Michel de Sacy, Un Gascon à Paris, opuscule dramatique, dans Opuscules dramatiques, ou Nouveaux amusements de campagne, tome second, Paris, Chez Demonville, Imprimeur-Libraire de l'Académie française, 1778, p. 79-94. </note>
 </front>
 <body>
-<div1 type="act" n="1">
+<div type="act" n="1">
                 <head>LE GASCON JOUÉ</head>
-<div2 type="scene" n="1">
+<div type="scene" n="1">
                     <head>SCÈNE PREMIÈRE.</head>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="1">
-	<s id="1">Mon mari va revenir, et l'Abbé n'est point venu ! </s>
-	<s id="2">Le petit fripon ! </s>
-	<s id="3">Me laisser seule quand mon mari n'est pas à la maison : cela est abominable. </s>
-	<s id="4">En vérité il n'y a plus de moeurs : nous vivons dans un siècle affreux. Je parie que ce Gascon que je déteste, ce Gascon qui me vante sans cesse des bonnes fortunes qu'il n'a pas eues, des exploits qu'il n'a pas faits ; je parie qu'il viendra lui, parce que je ne l'attends pas. </s>
-	<s id="5">C'est un espion clairvoyant, importun. </s>
-	<s id="6">Il faut l'exclure ; oui : c'est un parti pris, il faut l'exclure. </s>
-	<s id="7">J'ai, pour y réussir, une Comédie toute préparée... </s>
-	<s id="8">Mais quoi ! </s>
-	<s id="9">Mon mari revient déjà !</s>
+<p n="1">
+	<s n="1 ">Mon mari va revenir, et l'Abbé n'est point venu ! </s>
+	<s n="2 ">Le petit fripon ! </s>
+	<s n="3 ">Me laisser seule quand mon mari n'est pas à la maison : cela est abominable. </s>
+	<s n="4 ">En vérité il n'y a plus de moeurs : nous vivons dans un siècle affreux. Je parie que ce Gascon que je déteste, ce Gascon qui me vante sans cesse des bonnes fortunes qu'il n'a pas eues, des exploits qu'il n'a pas faits ; je parie qu'il viendra lui, parce que je ne l'attends pas. </s>
+	<s n="5 ">C'est un espion clairvoyant, importun. </s>
+	<s n="6 ">Il faut l'exclure ; oui : c'est un parti pris, il faut l'exclure. </s>
+	<s n="7 ">J'ai, pour y réussir, une Comédie toute préparée... </s>
+	<s n="8 ">Mais quoi ! </s>
+	<s n="9 ">Mon mari revient déjà !</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="2">
+</div>
+<div type="scene" n="2">
                     <head>SCÈNE II. Monsieur Seringuet, Madame Seringuet.</head>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="1">
-	<s id="1">Eh bien ! </s>
-	<s id="2">Mon petit coeur, vous voilà revenu ? </s>
-	<s id="3">Comme vous êtes échauffé ! </s>
-	<s id="4">Vous vous êtes trop pressé ; vous vous rendrez malade, mon bon ami. </s>
-	<s id="5">Vous suez, mon chou, souffrez que je vous essuie. </s>
-	<s id="6">Quand vous revenez à la maison, ne courez donc pas si vite. </s>
-	<s id="7">Eh bien, mon petit homme, qu'est-ce que les commissaires ont dit de votre mémoire ? </s>
-	<s id="8">L'ont-ils réduit de beaucoup ?</s>
+<p n="1">
+	<s n="1 ">Eh bien ! </s>
+	<s n="2 ">Mon petit coeur, vous voilà revenu ? </s>
+	<s n="3 ">Comme vous êtes échauffé ! </s>
+	<s n="4 ">Vous vous êtes trop pressé ; vous vous rendrez malade, mon bon ami. </s>
+	<s n="5 ">Vous suez, mon chou, souffrez que je vous essuie. </s>
+	<s n="6 ">Quand vous revenez à la maison, ne courez donc pas si vite. </s>
+	<s n="7 ">Eh bien, mon petit homme, qu'est-ce que les commissaires ont dit de votre mémoire ? </s>
+	<s n="8 ">L'ont-ils réduit de beaucoup ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="2">
-	<s id="1">De trois cents livres. </s>
-	<s id="2">Ce n'est pas trop pour un mémoire d'Apothicaire.</s>
+<p n="2">
+	<s n="1 ">De trois cents livres. </s>
+	<s n="2 ">Ce n'est pas trop pour un mémoire d'Apothicaire.</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="3">
-	<s id="1">Et à combien l'aviez-vous porté ?</s>
+<p n="3">
+	<s n="1 ">Et à combien l'aviez-vous porté ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="4">
-	<s id="1">À quatre cents livres.</s>
+<p n="4">
+	<s n="1 ">À quatre cents livres.</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="5">
-	<s id="1">Comment ! </s>
-	<s id="2">Ils l'ont réduit des trois quarts ! </s>
-	<s id="3">Ah ! </s>
-	<s id="4">Les gens détestables !</s>
+<p n="5">
+	<s n="1 ">Comment ! </s>
+	<s n="2 ">Ils l'ont réduit des trois quarts ! </s>
+	<s n="3 ">Ah ! </s>
+	<s n="4 ">Les gens détestables !</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="6">
-	<s id="1">Ne t'affliges pas, ma chère moitié, ne t'affliges pas. </s>
-	<s id="2">Sur les cent francs que leur décision nous laisse, nous avons encore cinquante-une livres dix sols neuf deniers de gain clair et net.</s>
+<p n="6">
+	<s n="1 ">Ne t'affliges pas, ma chère moitié, ne t'affliges pas. </s>
+	<s n="2 ">Sur les cent francs que leur décision nous laisse, nous avons encore cinquante-une livres dix sols neuf deniers de gain clair et net.</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="7">
-	<s id="1">C'est du moins une consolation... </s>
-	<s id="2">J'oubliais de te dire que, pendant ton absence, on est venu chercher les drogues en question pour...</s>
+<p n="7">
+	<s n="1 ">C'est du moins une consolation... </s>
+	<s n="2 ">J'oubliais de te dire que, pendant ton absence, on est venu chercher les drogues en question pour...</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="8">
-	<s id="1">Paix, ne le nomme pas : ces gens-là paient ma discrétion.</s>
+<p n="8">
+	<s n="1 ">Paix, ne le nomme pas : ces gens-là paient ma discrétion.</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="9">
-	<s id="1">Il vaudrait mieux leur faire payer la mienne. </s>
-	<s id="2">La discrétion d'une femme doit être mise à plus haut prix que celle d'un homme.</s>
+<p n="9">
+	<s n="1 ">Il vaudrait mieux leur faire payer la mienne. </s>
+	<s n="2 ">La discrétion d'une femme doit être mise à plus haut prix que celle d'un homme.</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="10">
-	<s id="1">Et notre Chirurgien Gascon, Forfantas, n'est point encore arrivé ? </s>
-	<s id="2">Il tarde bien à venir.</s>
+<p n="10">
+	<s n="1 ">Et notre Chirurgien Gascon, Forfantas, n'est point encore arrivé ? </s>
+	<s n="2 ">Il tarde bien à venir.</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="11">
-	<s id="1">Plût à Dieu qu'il ne vînt jamais !</s>
+<p n="11">
+	<s n="1 ">Plût à Dieu qu'il ne vînt jamais !</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="12">
-	<s id="1">Pourquoi donc ? </s>
-	<s id="2">Ses saillies m'amusent beaucoup.</s>
+<p n="12">
+	<s n="1 ">Pourquoi donc ? </s>
+	<s n="2 ">Ses saillies m'amusent beaucoup.</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="13">
-	<s id="1">Si vous soupçonniez le but de ses visites, elles ne vous amuseraient pas tant. </s>
-	<s id="2">Jusqu'à ce jour j'ai gardé le silence ; mais enfin il faut parler. </s>
-	<s id="3">Sachez, mon coeur, que cet effronté Gascon en veut à mon honneur et au vôtre, et que, toutes les fois que vous n'y êtes pas, il me persécute ....</s>
+<p n="13">
+	<s n="1 ">Si vous soupçonniez le but de ses visites, elles ne vous amuseraient pas tant. </s>
+	<s n="2 ">Jusqu'à ce jour j'ai gardé le silence ; mais enfin il faut parler. </s>
+	<s n="3 ">Sachez, mon coeur, que cet effronté Gascon en veut à mon honneur et au vôtre, et que, toutes les fois que vous n'y êtes pas, il me persécute ....</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="14">
-	<s id="1">Ah ! </s>
-	<s id="2">Le petit scélérat ! </s>
-	<s id="3">Qui l'aurait cru ? </s>
-	<s id="4">Que je suis heureux d'avoir une femme si fidèle ! </s>
-	<s id="5">Combien d'autres, à sa place !...</s>
+<p n="14">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Le petit scélérat ! </s>
+	<s n="3 ">Qui l'aurait cru ? </s>
+	<s n="4 ">Que je suis heureux d'avoir une femme si fidèle ! </s>
+	<s n="5 ">Combien d'autres, à sa place !...</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="15">
-	<s id="1">Il faut dès aujourd'hui lui fermer la porte pour jamais. </s>
-	<s id="2">Ce n'est pas que je craigne le danger ; mais il est des moments...</s>
+<p n="15">
+	<s n="1 ">Il faut dès aujourd'hui lui fermer la porte pour jamais. </s>
+	<s n="2 ">Ce n'est pas que je craigne le danger ; mais il est des moments...</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="16">
-	<s id="1">Tu doutes de ta vertu, ma poule ; ce doute même est une nouvelle preuve de ta vertu.</s>
+<p n="16">
+	<s n="1 ">Tu doutes de ta vertu, ma poule ; ce doute même est une nouvelle preuve de ta vertu.</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="17">
-	<s id="1">Écoute, il va venir ; cache-toi ici près. </s>
-	<s id="2">Il me pressera, il se jettera à mes genoux : alors je frapperai un coup de pied, et tu entreras. </s>
-	<s id="3">Le garçon que j'ai prévenu te mettra au fait. </s>
-	<s id="4">Cache-toi vite, j'entends Forfantas.</s>
+<p n="17">
+	<s n="1 ">Écoute, il va venir ; cache-toi ici près. </s>
+	<s n="2 ">Il me pressera, il se jettera à mes genoux : alors je frapperai un coup de pied, et tu entreras. </s>
+	<s n="3 ">Le garçon que j'ai prévenu te mettra au fait. </s>
+	<s n="4 ">Cache-toi vite, j'entends Forfantas.</s>
 </p>
 </sp>
-<sp stage="away" who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET, s'en allant.</speaker>
-<p id="18">
-	<s id="1">Mais n'oublie pas de frapper le coup de pied bien à propos, et n'attends pas...</s>
+<p n="18">
+	<s n="1 ">Mais n'oublie pas de frapper le coup de pied bien à propos, et n'attends pas...</s>
 </p>	
-</sp>
-<sp who="MADAME SERINGUET">
+</sp><!--@stage="away"-->
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="19">
-	<s id="1">Ne crains rien, cache-toi au plutôt.</s>
+<p n="19">
+	<s n="1 ">Ne crains rien, cache-toi au plutôt.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="3">
+</div>
+<div type="scene" n="3">
                     <head>SCÈNE III. Forfantas, Madame Seringuet.</head>
-<sp stage="aparte" who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS, à part.</speaker>
-<p id="1">
-	<s id="1">Sandis, j'en veux bien à la nature de m'a voir fait si beau garçon. </s>
-	<s id="2">Se voir ainsi persécuté par toutes les Belles ; bourgeoises, marquises, prudes, coquettes, je ne sais à qui entendre. </s>
-	<s id="3">Eh ! </s>
-	<s id="4">Mesdames, un peu de compassion ; les plus grands conquérants font des suspensions d'armes quelquefois. </s>
-	<s id="5">Ce n'est pas une paix perpétuelle que je vous demande, c'est une trêve de quelque temps.</s>
+<p n="1">
+	<s n="1 ">Sandis, j'en veux bien à la nature de m'a voir fait si beau garçon. </s>
+	<s n="2 ">Se voir ainsi persécuté par toutes les Belles ; bourgeoises, marquises, prudes, coquettes, je ne sais à qui entendre. </s>
+	<s n="3 ">Eh ! </s>
+	<s n="4 ">Mesdames, un peu de compassion ; les plus grands conquérants font des suspensions d'armes quelquefois. </s>
+	<s n="5 ">Ce n'est pas une paix perpétuelle que je vous demande, c'est une trêve de quelque temps.</s>
 </p>
 <stage type="toward">À Madame Seringuet.</stage>
-<p id="2">
-	<s id="1">Ah ! </s>
-	<s id="2">Vous voilà, ma charmante : Eh bien ! </s>
-	<s id="3">Comment vont les plaisirs ? </s>
-	<s id="4">Vous me paraissez avoir un peu d'humeur ; j'en soupçonne la cause, c'est que je suis venu trop tard : mais que voulez-vous ? </s>
-	<s id="5">On se bat, on se tue pour m'avoir.</s>
+<p n="2">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Vous voilà, ma charmante : Eh bien ! </s>
+	<s n="3 ">Comment vont les plaisirs ? </s>
+	<s n="4 ">Vous me paraissez avoir un peu d'humeur ; j'en soupçonne la cause, c'est que je suis venu trop tard : mais que voulez-vous ? </s>
+	<s n="5 ">On se bat, on se tue pour m'avoir.</s>
 </p>	
-</sp>
-<sp who="MADAME SERINGUET">
+</sp><!--@stage="aparte"-->
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="3">
-	<s id="1">Hélas !</s>
+<p n="3">
+	<s n="1 ">Hélas !</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="4">
-	<s id="1">Vous soupirez ! </s>
-	<s id="2">D'amour, sans doute ? </s>
-	<s id="3">Mais consolez-vous, mignonne ; on n'a pas un coeur de roc, et je me surprends aussi à soupirer quelquefois.</s>
+<p n="4">
+	<s n="1 ">Vous soupirez ! </s>
+	<s n="2 ">D'amour, sans doute ? </s>
+	<s n="3 ">Mais consolez-vous, mignonne ; on n'a pas un coeur de roc, et je me surprends aussi à soupirer quelquefois.</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="5">
-	<s id="1">Si je soupire, ce n'est point d'amour, mais de douleur. </s>
-	<s id="2">Ah ! </s>
-	<s id="3">L'abominable homme que ce Monsieur Seringuet ; croiriez-vous qu'il a poussé la cruauté jusqu'à me battre ?</s>
+<p n="5">
+	<s n="1 ">Si je soupire, ce n'est point d'amour, mais de douleur. </s>
+	<s n="2 ">Ah ! </s>
+	<s n="3 ">L'abominable homme que ce Monsieur Seringuet ; croiriez-vous qu'il a poussé la cruauté jusqu'à me battre ?</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="6">
-	<s id="1">Ah ! </s>
-	<s id="2">Le barbare ! </s>
-	<s id="3">Où étais-tu, Forfantas ? </s>
+<p n="6">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Le barbare ! </s>
+	<s n="3 ">Où étais-tu, Forfantas ? </s>
 </p>
 <note type="C">Citation du vers 796 de "Inès de Castro" de La Motte (1723) : "J'irais venger Inès, n'ayant pu la défendre ;"</note>
-	<l id="1">Mais je saurai venger Inès, n'ayant pu la défendre.</l>
-<p id="7">
-	<s id="5">Si votre mari était un homme d'épée, il mordrait déjà la poussière : mais j'ai une méthode plus douce pour venger une jolie femme outragée par une tête à perruque. </s>
-	<s id="6">Informez-vous de moi à toutes les femmes battues, elles vous en rendront bon compte ; je suis le vengeur général du beau sexe outragé par les maris. </s>
-	<s id="7">Seriez-vous la seule que je ne vengerais pas ?</s>
+	<l n="1">Mais je saurai venger Inès, n'ayant pu la défendre.</l>
+<p n="7">
+	<s n="5 ">Si votre mari était un homme d'épée, il mordrait déjà la poussière : mais j'ai une méthode plus douce pour venger une jolie femme outragée par une tête à perruque. </s>
+	<s n="6 ">Informez-vous de moi à toutes les femmes battues, elles vous en rendront bon compte ; je suis le vengeur général du beau sexe outragé par les maris. </s>
+	<s n="7 ">Seriez-vous la seule que je ne vengerais pas ?</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="8">
-	<s id="1">Hélas !</s>
+<p n="8">
+	<s n="1 ">Hélas !</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="9">
-	<s id="1">Faut-il que je doive ce soupir plutôt à la haine que vous avez conçue contre Monsieur Seringuet, qu'à l'amour que vous avez pour moi ?</s>
+<p n="9">
+	<s n="1 ">Faut-il que je doive ce soupir plutôt à la haine que vous avez conçue contre Monsieur Seringuet, qu'à l'amour que vous avez pour moi ?</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="10">
-	<s id="1">Oui, je hais beaucoup ce Monsieur Seringuet. </s>
-	<s id="2">Mais...</s>
+<p n="10">
+	<s n="1 ">Oui, je hais beaucoup ce Monsieur Seringuet. </s>
+	<s n="2 ">Mais...</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="11">
-	<s id="1">Mais vous m'aimez plus encore, n'est ce pas ? </s>
-	<s id="2">J'entends à demi mot. </s>
-	<s id="3">Eh bien ! </s>
-	<s id="4">Ma chère, pourquoi différez-vous mon bonheur ? </s>
-	<s id="5">Quelle crainte peut vous retenir ? </s>
-	<s id="6">Ah ! </s>
-	<s id="7">Par cette belle main que je serre contre mon coeur qui palpite, par ces beaux yeux qui m'ont enflamme, par ces genoux que j'embrasse...</s>
+<p n="11">
+	<s n="1 ">Mais vous m'aimez plus encore, n'est ce pas ? </s>
+	<s n="2 ">J'entends à demi mot. </s>
+	<s n="3 ">Eh bien ! </s>
+	<s n="4 ">Ma chère, pourquoi différez-vous mon bonheur ? </s>
+	<s n="5 ">Quelle crainte peut vous retenir ? </s>
+	<s n="6 ">Ah ! </s>
+	<s n="7 ">Par cette belle main que je serre contre mon coeur qui palpite, par ces beaux yeux qui m'ont enflamme, par ces genoux que j'embrasse...</s>
 </p> 
 <stage type="kneel">Il se met à genoux.</stage>
 </sp>
-</div2>
-<div2 type="scene" n="3">
+</div>
+<div type="scene" n="3">
                     <head>SCÈNE III. Forfantas, Monsieur Seringuet, Madame Seringuet.</head>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="1">
-	<s id="1">Comment ! </s>
-	<s id="2">Forfantas aux genoux de ma femme ! </s>
-	<s id="3">Ah ! </s>
-	<s id="4">Scélérat ! </s>
-	<s id="5">Et toi, perfide...</s>
+<p n="1">
+	<s n="1 ">Comment ! </s>
+	<s n="2 ">Forfantas aux genoux de ma femme ! </s>
+	<s n="3 ">Ah ! </s>
+	<s n="4 ">Scélérat ! </s>
+	<s n="5 ">Et toi, perfide...</s>
 </p>	
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="2">
-	<s id="1">Mon bon ami, ne nous condamnez pas sans nous entendre. </s>
-	<s id="2">Monsieur s'est trouvé... surpris tout-à-coup... d'une colique des plus violentes : il est tombé ; et moi, je faisais effort pour le relever.</s>
+<p n="2">
+	<s n="1 ">Mon bon ami, ne nous condamnez pas sans nous entendre. </s>
+	<s n="2 ">Monsieur s'est trouvé... surpris tout-à-coup... d'une colique des plus violentes : il est tombé ; et moi, je faisais effort pour le relever.</s>
 </p> 
 <stage type="toward">À Forfantas.</stage>
-<p id="3">
-	<s id="1">Grimacez, tordez-vous, comme si vous aviez la colique.</s>
+<p n="3">
+	<s n="1 ">Grimacez, tordez-vous, comme si vous aviez la colique.</s>
 </p>
 </sp>
-<sp stage="fall/sit" who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS, se jetant dans un fauteuil.</speaker>
-<p id="4">
-	<s id="1">Ah ! </s>
-	<s id="2">Je me meurs, je n'en puis plus ! </s>
-	<s id="3">À mon secours, Monsieur Seringuet, à mon secours.</s>
+<p n="4">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Je me meurs, je n'en puis plus ! </s>
+	<s n="3 ">À mon secours, Monsieur Seringuet, à mon secours.</s>
 </p>
-</sp>
-<sp who="MONSIEUR SERINGUET">
+</sp><!--@stage="fall/sit"-->
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="5">
-	<s id="1">Pardon, ma femme, pardon, Monsieur, si je vous ai soupçonnés. </s>
-	<s id="2">Que je fuis malheureux ! </s>
-	<s id="3">Vite un lavement pour Monsieur, vite un lavement. Heureusement il y en a un tout préparé là-bas.</s>
+<p n="5">
+	<s n="1 ">Pardon, ma femme, pardon, Monsieur, si je vous ai soupçonnés. </s>
+	<s n="2 ">Que je fuis malheureux ! </s>
+	<s n="3 ">Vite un lavement pour Monsieur, vite un lavement. Heureusement il y en a un tout préparé là-bas.</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="6">
-	<s id="1">Le nom seul de lavement a fait effet. Je sens ma colique qui s'apaise.</s>
+<p n="6">
+	<s n="1 ">Le nom seul de lavement a fait effet. Je sens ma colique qui s'apaise.</s>
 </p>
 </sp>
-<sp stage="toward" who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET, bas à Forfantas.</speaker>
-<p id="7">
-	<s id="1">Si vous ne soutenez pas votre rôle, il va s'apercevoir que c'est une feinte.</s>
+<p n="7">
+	<s n="1 ">Si vous ne soutenez pas votre rôle, il va s'apercevoir que c'est une feinte.</s>
 </p>
-</sp>
-<sp stage="strong" who="MONSIEUR SERINGUET">
+</sp><!--@stage="toward"-->
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET, d'un ton ferme.</speaker>
-<p id="8">
-	<s id="1">Cette colique-là se calme bien vite !</s>
+<p n="8">
+	<s n="1 ">Cette colique-là se calme bien vite !</s>
 </p>	
-</sp>
-<sp who="FORFANTAS">
+</sp><!--@stage="strong"-->
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="9">
-	<s id="1">Ah ! </s>
-	<s id="2">Je la sens qui redouble.</s>
+<p n="9">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Je la sens qui redouble.</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="10">
-	<s id="1">Eh bien ! </s>
-	<s id="2">Monsieur, prenez donc ce lavement.</s>
+<p n="10">
+	<s n="1 ">Eh bien ! </s>
+	<s n="2 ">Monsieur, prenez donc ce lavement.</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="11">
-	<s id="1">Pour vous épargner cet embarras, si vous voulez, j'emporterai ce remède, et le prendrai chez moi.</s>
+<p n="11">
+	<s n="1 ">Pour vous épargner cet embarras, si vous voulez, j'emporterai ce remède, et le prendrai chez moi.</s>
 </p>
 </sp>
-<sp stage="low/toward" who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET, bas à Forfantas.</speaker>
-<p id="12">
-	<s id="1">Prenez-le ici pour l'amour de moi. </s>
-	<s id="2">Si vous ne le prenez pas, il va tout découvrir. </s>
-	<s id="3">Songez que c'est le plus soupçonneux et le plus vindicatif de tous les hommes.</s>
+<p n="12">
+	<s n="1 ">Prenez-le ici pour l'amour de moi. </s>
+	<s n="2 ">Si vous ne le prenez pas, il va tout découvrir. </s>
+	<s n="3 ">Songez que c'est le plus soupçonneux et le plus vindicatif de tous les hommes.</s>
 </p>	
 <note type="C">J'ai cru que la scène des Apothicaires dans Pourceaugnac, celle du Malade imaginaire, celle du Légataire, pouvaient autoriser celle-ci, qui d'ailleurs n'est faire que pour être jouée en société. [NdA]</note>
-</sp>
-<sp stage="low/toward" who="FORFANTAS">
+</sp><!--@stage="low/toward"-->
+<sp who="#forfantas">
                         <speaker>FORFANTAS, bas à Madame Seringuet.</speaker>
-<p id="13">
-	<s id="1">Eh bien ! </s>
-	<s id="2">Je vais le prendre. </s>
-	<s id="3">Mais consultez votre conscience, et jugez ce que vaut un pareil sacrifice.</s>
+<p n="13">
+	<s n="1 ">Eh bien ! </s>
+	<s n="2 ">Je vais le prendre. </s>
+	<s n="3 ">Mais consultez votre conscience, et jugez ce que vaut un pareil sacrifice.</s>
 </p>
 <stage type="toward">À Monsieur Seringuet. </stage>
-<p id="14">
-	<s id="1">Monsieur, je suis à vos ordres.</s>
+<p n="14">
+	<s n="1 ">Monsieur, je suis à vos ordres.</s>
 </p>
-</sp>
-</div2>
-<div2 type="scene" n="5">
+</sp><!--@stage="low/toward"-->
+</div>
+<div type="scene" n="5">
                     <head>SCÈNE V.</head>
-<sp stage="alone" who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET, seule.</speaker>
-<p id="1">
-	<s id="1">J'espère qu'après cette aventure je serai délivré de ce maudit Gascon ; il n'est pas encore au bout de l'aventure, et je veux jouir un moment de son embarras. </s>
-	<s id="2">Je parle qu'en sortant d'ici, il ira publier que j'ai été battue, et que je l'ai choisi pour mon vengeur.</s>
+<p n="1">
+	<s n="1 ">J'espère qu'après cette aventure je serai délivré de ce maudit Gascon ; il n'est pas encore au bout de l'aventure, et je veux jouir un moment de son embarras. </s>
+	<s n="2 ">Je parle qu'en sortant d'ici, il ira publier que j'ai été battue, et que je l'ai choisi pour mon vengeur.</s>
 </p>
-</sp>
-</div2>
-<div2 type="scene" n="6">
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="6">
                     <head>SCÈNE VI. Monsieur Seringuet, Madame Seringuet, Forfantas.</head>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="1">
-	<s id="1">Eh quoi ! </s>
-	<s id="2">C'est déjà fait ?</s>
+<p n="1">
+	<s n="1 ">Eh quoi ! </s>
+	<s n="2 ">C'est déjà fait ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR SERINGUET">
+<sp who="#monsieur-seringuet">
                         <speaker>MONSIEUR SERINGUET.</speaker>
-<p id="2">
-	<s id="1">Oui, ma femme, j'ai voulu le lui donner de main de maître ; je n'aurais pas confié à d'autres qu'à moi le soin de la santé du meilleur de mes amis.</s>
+<p n="2">
+	<s n="1 ">Oui, ma femme, j'ai voulu le lui donner de main de maître ; je n'aurais pas confié à d'autres qu'à moi le soin de la santé du meilleur de mes amis.</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="3">
-	<s id="1">Ah ! </s>
-	<s id="2">Déjà je sens... </s>
-	<s id="3">Monsieur... </s>
-	<s id="4">Madame... </s>
-	<s id="5">Excusez... </s>
-	<s id="6">Je sens déjà que ce remède... </s>
-	<s id="7">Je me sauve.</s>
+<p n="3">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Déjà je sens... </s>
+	<s n="3 ">Monsieur... </s>
+	<s n="4 ">Madame... </s>
+	<s n="5 ">Excusez... </s>
+	<s n="6 ">Je sens déjà que ce remède... </s>
+	<s n="7 ">Je me sauve.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="7">
+</div>
+<div type="scene" n="7">
                     <head>SCÈNE VII. Les Acteurs précédent, Une Dame.</head>
-<sp stage="stop/toward" who="LA DAME">
+<sp who="#la-dame">
                         <speaker>LA DAME, arrêtant Forfantas.</speaker>
-<p id="1">
-	<s id="1">Monsieur, où courez-vous donc si vite ? </s>
-	<s id="2">Est-ce moi qui vous fais fuir ?</s>
+<p n="1">
+	<s n="1 ">Monsieur, où courez-vous donc si vite ? </s>
+	<s n="2 ">Est-ce moi qui vous fais fuir ?</s>
 </p>
-</sp>
-<sp who="FORFANTAS">
+</sp><!--@stage="stop/toward"-->
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="2">
-	<s id="1">Non, Madame, j'ai des affaires très pressées.</s>
+<p n="2">
+	<s n="1 ">Non, Madame, j'ai des affaires très pressées.</s>
 </p>
 </sp>
-<sp stage="stop" who="LA DAME">
+<sp who="#la-dame">
                         <speaker>LA DAME, l'arrêtant toujours.</speaker>
-<p id="3">
-	<s id="1">Deux mots, je vous en conjure, deux mots seulement.</s>
+<p n="3">
+	<s n="1 ">Deux mots, je vous en conjure, deux mots seulement.</s>
 </p>
-</sp>
-<sp who="FORFANTAS">
+</sp><!--@stage="stop"-->
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="4">
-	<s id="1">Je n'ai pas le temps : je vous ai dit que j'ai des affaires très pressées.</s>
+<p n="4">
+	<s n="1 ">Je n'ai pas le temps : je vous ai dit que j'ai des affaires très pressées.</s>
 </p>
 </sp>
-<sp who="LA DAME">
+<sp who="#la-dame">
                         <speaker>LA DAME.</speaker>
-<p id="5">
-	<s id="1">Quelque rendez-vous, sans doute ? </s>
-	<s id="2">Mais de quelle espèce ? </s>
-	<s id="3">Est-ce affaire de coeur ? </s>
-	<s id="4">Est-ce affaire d'honneur ?</s>
+<p n="5">
+	<s n="1 ">Quelque rendez-vous, sans doute ? </s>
+	<s n="2 ">Mais de quelle espèce ? </s>
+	<s n="3 ">Est-ce affaire de coeur ? </s>
+	<s n="4 ">Est-ce affaire d'honneur ?</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="6">
-	<s id="1">C'est bien pis que tout cela : je vous quitte.</s>
+<p n="6">
+	<s n="1 ">C'est bien pis que tout cela : je vous quitte.</s>
 </p>
 </sp>
-<sp who="LA DAME">
+<sp who="#la-dame">
                         <speaker>LA DAME.</speaker>
-<p id="7">
-	<s id="1">Non : je ne vous laisserai point aller, avant de vous avoir fait une confidence essentielle.</s>
+<p n="7">
+	<s n="1 ">Non : je ne vous laisserai point aller, avant de vous avoir fait une confidence essentielle.</s>
 </p>
 <stage type="toward">À Madame Seringuet.</stage>
-<p id="8">
-	<s id="1">Vous le permettez, Madame ? </s>
+<p n="8">
+	<s n="1 ">Vous le permettez, Madame ? </s>
 </p>
 <stage type="low/toward">Bas à Forfantas.</stage>
-<p id="9">
-	<s id="1">Depuis que vous n'êtes venu au logis, il s'est passé d'étranges scènes. </s>
-	<s id="2">Mon brutal de mari... </s>
-	<s id="3">Vous connaissez sa fureur... </s>
-	<s id="4">Eh bien, il a eu l'audace...</s>
+<p n="9">
+	<s n="1 ">Depuis que vous n'êtes venu au logis, il s'est passé d'étranges scènes. </s>
+	<s n="2 ">Mon brutal de mari... </s>
+	<s n="3 ">Vous connaissez sa fureur... </s>
+	<s n="4 ">Eh bien, il a eu l'audace...</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="10">
-	<s id="1">De vous battre, n'est ce pas ? </s>
-	<s id="2">Et vous voudriez être vengée ? </s>
-	<s id="3">Mais je ne suis pas aujourd'hui dans mon jour de vengeance. </s>
-	<s id="4">A Diu fias.</s>
+<p n="10">
+	<s n="1 ">De vous battre, n'est ce pas ? </s>
+	<s n="2 ">Et vous voudriez être vengée ? </s>
+	<s n="3 ">Mais je ne suis pas aujourd'hui dans mon jour de vengeance. </s>
+	<s n="4 ">A Diu fias.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="8">
+</div>
+<div type="scene" n="8">
                     <head>SCÈNE VIII. Les Acteurs précédents, Un Abbé.</head>
-<sp stage="stop" who="L'ABBÉ">
+<sp who="#l-abbe">
                         <speaker>L'ABBÉ, arrêtant encore Forfantas.</speaker>
-<p id="1">
-	<s id="1">Ah ! </s>
-	<s id="2">Vous voilà, Monsieur Forfantas ! </s>
-	<s id="3">Que je suis enchanté d'une si heureuse rencontre !</s>
+<p n="1">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Vous voilà, Monsieur Forfantas ! </s>
+	<s n="3 ">Que je suis enchanté d'une si heureuse rencontre !</s>
 </p>	
-</sp>
-<sp who="FORFANTAS">
+</sp><!--@stage="stop"-->
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="2">
-	<s id="1">J'en suis charmé aussi : mais je cours où j'ai affaire. </s>
-	<s id="2">Adieu.</s>
+<p n="2">
+	<s n="1 ">J'en suis charmé aussi : mais je cours où j'ai affaire. </s>
+	<s n="2 ">Adieu.</s>
 </p>
 </sp>
-<sp stage="stop" who="L'ABBÉ">
+<sp who="#l-abbe">
                         <speaker>L'ABBÉ, l'arrêtant toujours.</speaker>
 <note type="L">Madrigal : petite poésie amoureuse composée d'un petit nombre de vers libres inégaux, qui n'a ni la gêne d'un sonnet, ni la subtilité d'une épigramme, mais qui se contente d'une pensée tendre et agréable. [F]</note>
-<p id="3">
-	<s id="1">Non pas, s'il vous plaît ; je vous tiens, et ne vous lâcherai pas, que je ne sache ce que vous penserez d'un petit Madrigal de ma composition. </s>
-	<s id="2">Madame en sera le sujet.</s>
+<p n="3">
+	<s n="1 ">Non pas, s'il vous plaît ; je vous tiens, et ne vous lâcherai pas, que je ne sache ce que vous penserez d'un petit Madrigal de ma composition. </s>
+	<s n="2 ">Madame en sera le sujet.</s>
 </p>	
-</sp>
-<sp who="FORFANTAS">
+</sp><!--@stage="stop"-->
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="4">
-	<s id="1">Je ne me connais point en Madrigaux.</s>
+<p n="4">
+	<s n="1 ">Je ne me connais point en Madrigaux.</s>
 </p>
 </sp>
-<sp who="L'ABBÉ">
+<sp who="#l-abbe">
                         <speaker>L'ABBÉ.</speaker>
-<p id="5">
-	<s id="1">La modestie est toujours la preuve du mérite. </s>
-	<s id="2">On connaît votre goût, vos lumières.</s>
+<p n="5">
+	<s n="1 ">La modestie est toujours la preuve du mérite. </s>
+	<s n="2 ">On connaît votre goût, vos lumières.</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="6">
-	<s id="1">Eh bien ! </s>
-	<s id="2">Votre Madrigal est charmant ; laissez-moi partir.</s>
+<p n="6">
+	<s n="1 ">Eh bien ! </s>
+	<s n="2 ">Votre Madrigal est charmant ; laissez-moi partir.</s>
 </p>
 </sp>
-<sp who="L'ABBÉ">
+<sp who="#l-abbe">
                         <speaker>L'ABBÉ.</speaker>
-<p id="7">
-	<s id="1">Comment pouvez-vous le juger, ne l'ayant pas entendu ?</s>
+<p n="7">
+	<s n="1 ">Comment pouvez-vous le juger, ne l'ayant pas entendu ?</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="8">
-	<s id="1">Un de vos amis me l'a lu ce matin ; je l'ai trouvé délicieux.</s>
+<p n="8">
+	<s n="1 ">Un de vos amis me l'a lu ce matin ; je l'ai trouvé délicieux.</s>
 </p>
 </sp>
-<sp who="L'ABBÉ">
+<sp who="#l-abbe">
                         <speaker>L'ABBÉ.</speaker>
-<p id="9">
-	<s id="1">Cela ne se peut pas, puisqu'il n'est point encore fait ; c'est un impromptu que je vais faire devant vous... </s>
-	<s id="2">Attendez.</s>
+<p n="9">
+	<s n="1 ">Cela ne se peut pas, puisqu'il n'est point encore fait ; c'est un impromptu que je vais faire devant vous... </s>
+	<s n="2 ">Attendez.</s>
 </p>	
 </sp>
-<sp who="FORFANTAS">
+<sp who="#forfantas">
                         <speaker>FORFANTAS.</speaker>
-<p id="10">
-	<s id="1">Je n'ai pas le temps d'attendre.</s>
+<p n="10">
+	<s n="1 ">Je n'ai pas le temps d'attendre.</s>
 </p>
 <stage type="aparte">À part.</stage>
-<p id="11">
-	<s id="1">Tout ceci était un jeu préparé. </s>
-	<s id="2">Madame Seringuet, vous me le paierez. </s>
-	<s id="3">Je ne veux plus vous revoir.</s>
+<p n="11">
+	<s n="1 ">Tout ceci était un jeu préparé. </s>
+	<s n="2 ">Madame Seringuet, vous me le paierez. </s>
+	<s n="3 ">Je ne veux plus vous revoir.</s>
 </p>
 </sp>
-<sp who="L'ABBÉ">
+<sp who="#l-abbe">
                         <speaker>L'ABBÉ.</speaker>
-<p id="12">
-	<s id="1">Je ne suis pas long dans mes impromptus. </s>
-	<s id="2">Demandez à Madame ; ce n'est pas le premier que j'aie fait pour elle. </s>
-	<s id="3">Voyons... </s>
-	<s id="4">L'Amour... l'Amour...</s>
+<p n="12">
+	<s n="1 ">Je ne suis pas long dans mes impromptus. </s>
+	<s n="2 ">Demandez à Madame ; ce n'est pas le premier que j'aie fait pour elle. </s>
+	<s n="3 ">Voyons... </s>
+	<s n="4 ">L'Amour... l'Amour...</s>
 </p>
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="13">
-	<s id="1">Tous les Madrigaux que vous faites pour moi commencent par l'amour. </s>
-	<s id="3">Ce début est bien fade.</s>
+<p n="13">
+	<s n="1 ">Tous les Madrigaux que vous faites pour moi commencent par l'amour. </s>
+	<s n="3 ">Ce début est bien fade.</s>
 </p>
 </sp>
-<sp who="L'ABBÉ">
+<sp who="#l-abbe">
                         <speaker>L'ABBÉ.</speaker>
-<p id="14">
-	<s id="1">Madame, on ne peut pas faire l'éloge de la mère sans dire deux mots du fils... </s>
-	<s id="2">Continuons : L'Amour, l' Amour... </s>
-	<s id="3">Ah ! </s>
-	<s id="4">Je n'ai pas la mémoire heureuse aujourd'hui.</s>
+<p n="14">
+	<s n="1 ">Madame, on ne peut pas faire l'éloge de la mère sans dire deux mots du fils... </s>
+	<s n="2 ">Continuons : L'Amour, l' Amour... </s>
+	<s n="3 ">Ah ! </s>
+	<s n="4 ">Je n'ai pas la mémoire heureuse aujourd'hui.</s>
 </p>
 <stage type="away/escape">Forfantas se débarrasse des bras de l'Abbé, et s'enfuit.</stage>
 </sp>
-<sp who="MADAME SERINGUET">
+<sp who="#madame-seringuet">
                         <speaker>MADAME SERINGUET.</speaker>
-<p id="15">
-	<s id="1">Adieu donc, vengeur général du beau sexe outragé par les maris.</s>
+<p n="15">
+	<s n="1 ">Adieu donc, vengeur général du beau sexe outragé par les maris.</s>
 </p>
 </sp>
-</div2>
-</div1>
+</div>
+</div>
 </body>
 </text>
 </TEI>

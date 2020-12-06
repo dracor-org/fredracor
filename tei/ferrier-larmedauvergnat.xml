@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1881">1881</date>
+                        <date>1881</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k2079440</idno>
@@ -69,7 +69,7 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="TRESSE">PARIS, TRESSE ÉDITEUR, GALERIE DU THÉÂTRE-FRANÇAIS, PALAIS-ROYAL.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="TRESSE">PARIS, TRESSE ÉDITEUR, GALERIE DU THÉÂTRE-FRANÇAIS, PALAIS-ROYAL.</editor>-->
 			<div type="printer">
                     <p>F. Aureau. - Imprimerie de Lagny.</p>
                 </div>
@@ -77,9 +77,9 @@
 	<castList>
                 <head>PERSONNAGE</head>
 		<castItem>
-                    <role corresp="#un-auvergnant">UN AUVERGNANT</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#un-auvergnant">UN AUVERGNANT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -88,7 +88,8 @@
                     <head/>
 <sp who="#l-auvergnat">
                         <speaker>L'AUVERGNAT.</speaker>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">Salut, bourgeois et bourgeoise,</l>
 	<l n="2">Et la compagnie aussi !</l>
@@ -236,7 +237,7 @@
 	<l n="95">... - Croyez-vous qu' c'est embêtant,</l>
 	<l n="96">Il faut que j' m'en cherche une autre!l</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

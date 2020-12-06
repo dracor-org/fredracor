@@ -38,7 +38,10 @@ Here is a list of changes we made:
    - pg-fausseinvite.xml
    - bernardt-plaisirsdudimanche.xml
    - bizet-simonot-gillestoutseul.xml
-
+- 35 documents are using the TEI namespace - removed to process them like all the others (of course the result is in the namespace)
+- removed text in `tei:sp` at audiffret-albertdurer.xml
+- move ending dot into `tei:castItem`, when it is right after (and so a child of `tei:castList`)
+- remove empty `@type`
 
 TODOs:
 - ensure DraCor IDs stay the same. Currently they are generated from a position in an alphabetic list and will change when an item is inserted in the list before.

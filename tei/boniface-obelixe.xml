@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1883">1883</date>
+                        <date>1883</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k64715820/f7.image</idno>
@@ -71,14 +71,14 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="KISTEMAECKERS">S'ÉDITE A BRUXELLES chez Henry Kistemaeckers, Editeur 65, rue des Palais, 65</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="KISTEMAECKERS">S'ÉDITE A BRUXELLES chez Henry Kistemaeckers, Editeur 65, rue des Palais, 65</editor>-->
 		</div>
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#le-passant">[LE PASSANT]</role><!--@sex="1" @type="H" @statut="comédien" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#le-passant">[LE PASSANT]</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-<!--usage of set in correct place but with unknown attributes <set location="(indéterminé)" country="France" periode="(indéterminé)" link=""/>-->
+<!--TODO: usage of set in correct place but with unknown attributes <set location="(indéterminé)" country="France" periode="(indéterminé)" link=""/>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -88,7 +88,8 @@
                     <head/>
 <sp who="#le-passant-saoul">
                         <speaker>[LE PASSANT SAOUL].</speaker>
-<poem type="quatrains">
+<!--<poem>-->
+                        <ab type="quatrains">
 <lg id="1">
 	<l n="1">Où que j'suis ? Oh ! mes pauv' guibolles !</l>
 	<l n="2">All's baloch'nt comm'des p'tits bateaux ;</l>
@@ -226,7 +227,7 @@
 	<l n="87">À un pauv' vieux pèr' de famille,</l>
 	<l n="88">Qu'a cinq mouch'rons dont quat' en train!</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

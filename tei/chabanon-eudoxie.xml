@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1769">1769</date>
+                        <date>1769</date>
                         <date type="premiere"> </date>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -95,31 +95,31 @@
                 </div><!--@id="DUSCHENE"-->
 		</div>
 		<performance>
-			<ab type="premiere"> </ab><!--date="(inconnue)"--><!--location="Paris"-->
+			<ab type="premiere"> </ab><!--@date="(inconnue)"--><!--@location="Paris"-->
 		</performance>
 		
 	<castList>
                 <head>ACTEURS</head>
 		<castItem>
-                    <role corresp="#eudoxie">EUDOXIE</role><!--@sex="2" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->, femme de Maxime, veuve de Valentinien.</castItem>
+                    <role corresp="#eudoxie">EUDOXIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, femme de Maxime, veuve de Valentinien.</castItem>
 		<castItem>
-                    <role corresp="#elise">ÉLISE</role><!--@sex="2" @type="H" @statut="suivante" @age="A" @stat_amour="néant"-->, suivante d'Eudoxie.</castItem>
+                    <role corresp="#elise">ÉLISE</role><!--@sex="2"--><!--@type="H"--><!--@statut="suivante"--><!--@age="A"--><!--@stat_amour="néant"-->, suivante d'Eudoxie.</castItem>
 		<castItem>
-                    <role corresp="#arbate">ARBATE</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#arbate">ARBATE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#aspar">ASPAR</role><!--@sex="1" @type="H" @statut="général" @age="A" @stat_amour="néant"-->, général romain.</castItem>
+                    <role corresp="#aspar">ASPAR</role><!--@sex="1"--><!--@type="H"--><!--@statut="général"--><!--@age="A"--><!--@stat_amour="néant"-->, général romain.</castItem>
 		<castItem>
-                    <role corresp="#maxime">MAXIME</role><!--@sex="1" @type="H" @statut="empereur" @age="A" @stat_amour="néant"-->, Empereur de Rome.</castItem>
+                    <role corresp="#maxime">MAXIME</role><!--@sex="1"--><!--@type="H"--><!--@statut="empereur"--><!--@age="A"--><!--@stat_amour="néant"-->, Empereur de Rome.</castItem>
 		<castItem>
-                    <role corresp="#flavius">FLAVIUS</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#flavius">FLAVIUS</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#adonal">ADONAL</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#adonal">ADONAL</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#gontharis">GONTHARIS</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#gontharis">GONTHARIS</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#leonce">LÉONCE</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#leonce">LÉONCE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Rome" country="Italie" periode="XVIIIème" gps="41.902783, 12.496365"/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Rome" country="Italie" periode="XVIIIème" gps="41.902783, 12.496365"/>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -2458,9 +2458,10 @@
 	<l n="1310">Leur assurait dans Rome une facile entrée.</l>
 </sp>
 <sp who="#eudoxie">
-                        <speaker>EUDOXIE, bas.</speaker>
+                        <speaker>EUDOXIE, bas.</speaker><!--text():
 *****************
-	<l n="1311">Qu'ai-je fait, malheureuse !</l>
+	-->
+                        <l n="1311">Qu'ai-je fait, malheureuse !</l>
 	<l n="1312">.............................</l>
 	<l n="1313">Madame, quelque temps suspendez vos alarmes,</l>
 	<l n="1314">Attendez tout encor du succès de nos armes.</l>

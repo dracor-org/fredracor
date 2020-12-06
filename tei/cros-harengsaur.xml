@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1881">1881</date>
+                        <date>1881</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k207939j</idno>
@@ -70,14 +70,14 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="TRESSE">À PARIS, TRESSE, Galerie du Théâtre Français, PALAIS-ROYAL.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="TRESSE">À PARIS, TRESSE, Galerie du Théâtre Français, PALAIS-ROYAL.</editor>-->
 		</div>
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#le-recitant">LE RÉCITANT..... M. COQUELIN CADET</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#le-recitant">LE RÉCITANT..... M. COQUELIN CADET</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-<!--usage of set in correct place but with unknown attributes <set location="(indéterminé)" country="France" periode="(indéterminé)" link=""/>-->
+<!--TODO: usage of set in correct place but with unknown attributes <set location="(indéterminé)" country="France" periode="(indéterminé)" link=""/>-->
 <note>Paru dans "Saynètes et monologues", Troisième série, Paris, Tresse Editeur, 1881. pp. 75-78</note>
 </front>
 <body>
@@ -87,7 +87,8 @@
                     <head/>
 <sp who="#le-recitant">
                         <speaker>LE RÉCITANT.</speaker>
-<poem type="tercets">
+<!--<poem>-->
+                        <ab type="tercets">
 <lg n="1">
 	<l n="1">Il était un grand mur blanc - nu, nu, nu,</l>
 	<l n="2">Contre le mur une échelle - haute, haute, haute,</l>
@@ -123,7 +124,7 @@
 	<l n="20">Pour mettre en fureur les gens - graves, graves, graves,</l>
 	<l n="21">Et amuser les enfants - petits, petits, petits.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1881">1881</date>
+                        <date>1881</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k207939j</idno>
@@ -70,14 +70,14 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="OLLENDORF">PARIS, PAUL OLLENDORFF, ÉDITEUR, 28 bis, RUE DE RICHELIEU.</editor>		
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORFF, ÉDITEUR, 28 bis, RUE DE RICHELIEU.</editor>-->		
 		</div>
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#antoine">ANTOINE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#antoine">ANTOINE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
 	<note>Tiré de "Théâtre de Campagne. Troisième série". 1881.  pp 151-157.</note>
 </front>
 <body>
@@ -88,7 +88,8 @@
 <sp who="#antoine">
                         <speaker>[ANTOINE].</speaker>
 <stage type="dedicace">À E. Delannoy.</stage>
-<poem type="quatrains">
+<!--<poem>-->
+                        <ab type="quatrains">
 <lg n="1">
 	<l n="1">Antoine est mon nom de baptême :</l>
 	<l n="2">C'est un nom comme un autre fait,</l>
@@ -264,7 +265,7 @@
 	<l n="115">Si jamais un fils vous arrive,</l>
 	<l n="116">Ne lui donnez pas ce nom-là !</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

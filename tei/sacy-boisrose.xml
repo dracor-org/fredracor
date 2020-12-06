@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1778">1778</date>
+                        <date>1778</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -82,13 +82,15 @@
 				<titlePart type="main">BOIS-ROSÉ</titlePart>
 				<titlePart type="sub">OPUSCULE DRAMATIQUE</titlePart>
 			</docTitle> 
-			<docDate value="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
-			<docAuthor id="SACY, Claude-Louis-Michel de" bio="">De SACY, Claude-Louis-Michel de</docAuthor>
-			<docImprint>
-				<printer id="DEMONVILLE">À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</printer>
-			</docImprint>
+			<docDate when="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
+			<docAuthor>De SACY, Claude-Louis-Michel de</docAuthor><!--@bio=""-->
+			<div type="docImprint">
+				<div type="printer">
+                    <p>À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</p>
+                </div><!--@id="DEMONVILLE"-->
+			</div>
 			<performance>
-				<premiere date="" location="(inconnue)"/>
+				<ab type="premiere"/><!--@date=""--><!--@location="(inconnue)"-->
 			</performance>
 	<div type="preface">
                 <head>Notes</head>
@@ -100,2011 +102,2011 @@
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role id="MAXIMILIEN DE BÉTHUNE" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">MAXIMILIEN DE BÉTHUNE</role>.</castItem>
+                    <role corresp="#maximilien-de-bethune">MAXIMILIEN DE BÉTHUNE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role id="MARQUIS DE ROSNY" sex="1" type="H" statut="marquis" age="A" stat_amour="néant">MARQUIS DE ROSNY</role>.</castItem>
+                    <role corresp="#marquis-de-rosny">MARQUIS DE ROSNY</role><!--@sex="1"--><!--@type="H"--><!--@statut="marquis"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role id="MONSIEUR DISCRET" sex="1" type="H" statut="commis" age="A" stat_amour="néant">MONSIEUR DISCRET</role>, Commis.</castItem>
+                    <role corresp="#monsieur-discret">MONSIEUR DISCRET</role><!--@sex="1"--><!--@type="H"--><!--@statut="commis"--><!--@age="A"--><!--@stat_amour="néant"-->, Commis.</castItem>
 		<castItem>
-                    <role id="UN MARQUIS" sex="1" type="H" statut="marquis" age="A" stat_amour="néant">UN MARQUIS</role>.</castItem>
+                    <role corresp="#un-marquis">UN MARQUIS</role><!--@sex="1"--><!--@type="H"--><!--@statut="marquis"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role id="BOIS-ROSÉ" sex="1" type="H" statut="gouverneur" age="A" stat_amour="néant">BOIS-ROSÉ</role>, ancien Gouverneur de Fécamp.</castItem>
+                    <role corresp="#bois-rose">BOIS-ROSÉ</role><!--@sex="1"--><!--@type="H"--><!--@statut="gouverneur"--><!--@age="A"--><!--@stat_amour="néant"-->, ancien Gouverneur de Fécamp.</castItem>
 		<castItem>
-                    <role id="UNE VEUVE" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">UNE VEUVE</role>.</castItem>
+                    <role corresp="#une-veuve">UNE VEUVE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role id="LAFOREST" sex="1" type="H" statut="valet" age="A" stat_amour="néant">LAFOREST</role>, valet du Marquis.</castItem>
+                    <role corresp="#laforest">LAFOREST</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, valet du Marquis.</castItem>
 	</castList>
-	<set location="Louviers" country="France" periode="XVIème" link="">La scène est à Louviers, dans une auberge.</set>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Louviers" country="France" periode="XVIème" link="">La scène est à Louviers, dans une auberge.</set>-->
 	<note>Édition tirée de Claude-Louis-Michel de Sacy, Un Gascon à Paris, opuscule dramatique, dans Opuscules dramatiques, ou Nouveaux amusements de campagne, tome second, Paris, Chez Demonville, Imprimeur-Libraire de l'Académie française, 1778, p. 234-290. </note>
 </front>
 <body>
-<div1 type="act" n="1">
+<div type="act" n="1">
                 <head>BOIS-ROSÉ</head>
-<div2 type="scene" n="2">
+<div type="scene" n="2">
                     <head>SCÈNE PREMIÈRE. Le Marquis, Laforest.</head>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="1">
-	<s id="1">Penses-tu que cet accident retienne longtemps Monsieur de Rosny dans cette auberge ?</s>
+<p n="1">
+	<s n="1 ">Penses-tu que cet accident retienne longtemps Monsieur de Rosny dans cette auberge ?</s>
 </p>
 </sp>
-<sp who="LAFOREST">
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="2">
-	<s id="1">Les ouvriers m'ont dit que sa voiture ne pouvait être raccommodée avant une heure.</s>
+<p n="2">
+	<s n="1 ">Les ouvriers m'ont dit que sa voiture ne pouvait être raccommodée avant une heure.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="3">
-	<s id="1">Porte-leur cet argent de ma part ; dis-leur qu'ils prolongent leur travail, et qu'ils tâchent d'arrêter ici ce Ministre pendant deux heures entières.</s>
+<p n="3">
+	<s n="1 ">Porte-leur cet argent de ma part ; dis-leur qu'ils prolongent leur travail, et qu'ils tâchent d'arrêter ici ce Ministre pendant deux heures entières.</s>
 </p>
 </sp>
-<sp who="LAFOREST">
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="4">
-	<s id="1">Monsieur_le_Marquis n'a rien de plus à m'ordonner ?</s>
+<p n="4">
+	<s n="1 ">Monsieur_le_Marquis n'a rien de plus à m'ordonner ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="5">
-	<s id="1">Tiens-toi sur la porte de cette auberge ; et si les perfsonnes qui passeront, apercevant la livrée de Monsieur de Rosny , demandent s'il est à Louviers, réponds intrépidement que non.</s>
+<p n="5">
+	<s n="1 ">Tiens-toi sur la porte de cette auberge ; et si les perfsonnes qui passeront, apercevant la livrée de Monsieur de Rosny , demandent s'il est à Louviers, réponds intrépidement que non.</s>
 </p>
 </sp>
-<sp who="LAFOREST">
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="6">
-	<s id="1">La commission dont vous me chargez est délicate. </s>
-	<s id="2">Ce mensonge n'est pas aisé à soutenir ; et si Monsieur de Rosny s'en fâche, un pauvre diable comme moi est bientôt sacrifié.</s>
+<p n="6">
+	<s n="1 ">La commission dont vous me chargez est délicate. </s>
+	<s n="2 ">Ce mensonge n'est pas aisé à soutenir ; et si Monsieur de Rosny s'en fâche, un pauvre diable comme moi est bientôt sacrifié.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="7">
-	<s id="1">Ne vois-tu pas que c'eft pour le repos de Monsieur de Roqny que je te mets-là en sentinelle ?</s>
+<p n="7">
+	<s n="1 ">Ne vois-tu pas que c'eft pour le repos de Monsieur de Roqny que je te mets-là en sentinelle ?</s>
 </p>
 </sp>
-<sp who="LAFOREST">
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="8">
-	<s id="1">Je le crois ; cependant...</s>
+<p n="8">
+	<s n="1 ">Je le crois ; cependant...</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="9">
-	<s id="1">Sans cette précaution, le Ministre va se voir assiégé par tous les passants, et fatigué de demandes importunes. </s>
-	<s id="2">Exécute bien cet ordre, et Monsieur de Rosny récompensera ton exactitude.</s>
+<p n="9">
+	<s n="1 ">Sans cette précaution, le Ministre va se voir assiégé par tous les passants, et fatigué de demandes importunes. </s>
+	<s n="2 ">Exécute bien cet ordre, et Monsieur de Rosny récompensera ton exactitude.</s>
 </p>
 </sp>
-<sp who="LAFOREST">
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="10">
-	<s id="1">Je ne prétends point à sa reconnaissance ; et j'aimerais beaucoup mieux ne pas lui rendre ce service.</s>
+<p n="10">
+	<s n="1 ">Je ne prétends point à sa reconnaissance ; et j'aimerais beaucoup mieux ne pas lui rendre ce service.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="11">
-	<s id="1">Fais ce que je te dis, et ne réplique pas.</s>
+<p n="11">
+	<s n="1 ">Fais ce que je te dis, et ne réplique pas.</s>
 </p>	
 </sp>
-</div2>
-<div2 type="scene" n="2">
+</div>
+<div type="scene" n="2">
                     <head>SCÈNE II.</head>
-<sp stage="alone" who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS, seul.</speaker>
 <note type="C">Fécamp est un port de la Manche en Normandie. Sacy est originaire de Fécamp.</note>
 <note type="C">L'Amiral de Villars se nomme André Baptiste de Brancas, il a appartenu à la Ligue catholique et tenta de faire de la Normandie une seigneurie indépendante.</note>
-<p id="1">
-	<s id="1">Allons, mes affaires sont en bon train ; le hasard me servira mieux ici que tous mes amis. </s>
-	<s id="2">J'en ferai plus en deux heures, dans cette auberge, qu'en deux ans à la Cour. </s>
-	<s id="3">Je n'ai ici ni concurrents , ni envieux ; le Ministre est à moi pour ce coup. </s>
-	<s id="4">Je le tiens bloqué dans ma chambre ; il ne m'échappera pas. </s>
-	<s id="5">Déjà, par des délations anonymes, j'ai su perdre Bois-Rosé dans l'esprit du Roi et du Marquis de Rosny, et lui faire ôter le Gouvernement de Fécamp. </s>
-	<s id="6">Il s'agit maintenant de me faire nommer à sa place. </s>
-	<s id="7">Car je suis bon ; je ne fais point le mal pour le mal : je ne nuis à autrui que pour me servir moi-même ; et je me sens la conscience si délicate, que je me reprocherais toute ma vie d'avoir dépouillé ce pauvre Bois-Rosé, si sa dépouille appartenait à quelqu'autre qu'à moi... </s>
-	<s id="8">Cependant ce traité que Monsieur de Rosny vient de conclure avec l'Amiral de Villars, m'inquiète. </s>
-	<s id="9">On laisse, dit-on, à la disposition de l'Amiral le Gouvernement de Fécamp... </s>
-	<s id="10">Mais ne peut-on pas exiger qu'il me le donne ?... </s>
-	<s id="11">Avant de parler au Marquis de Rosny, voyons son commis, et tâchons de le gagner. </s>
-	<s id="12">Le Commis gouverne le Ministre, le Ministre gouverne le Roi... </s>
-	<s id="13">Laforêt ?... </s>
-	<s id="14">Laforêt ?...</s>
+<p n="1">
+	<s n="1 ">Allons, mes affaires sont en bon train ; le hasard me servira mieux ici que tous mes amis. </s>
+	<s n="2 ">J'en ferai plus en deux heures, dans cette auberge, qu'en deux ans à la Cour. </s>
+	<s n="3 ">Je n'ai ici ni concurrents , ni envieux ; le Ministre est à moi pour ce coup. </s>
+	<s n="4 ">Je le tiens bloqué dans ma chambre ; il ne m'échappera pas. </s>
+	<s n="5 ">Déjà, par des délations anonymes, j'ai su perdre Bois-Rosé dans l'esprit du Roi et du Marquis de Rosny, et lui faire ôter le Gouvernement de Fécamp. </s>
+	<s n="6 ">Il s'agit maintenant de me faire nommer à sa place. </s>
+	<s n="7 ">Car je suis bon ; je ne fais point le mal pour le mal : je ne nuis à autrui que pour me servir moi-même ; et je me sens la conscience si délicate, que je me reprocherais toute ma vie d'avoir dépouillé ce pauvre Bois-Rosé, si sa dépouille appartenait à quelqu'autre qu'à moi... </s>
+	<s n="8 ">Cependant ce traité que Monsieur de Rosny vient de conclure avec l'Amiral de Villars, m'inquiète. </s>
+	<s n="9 ">On laisse, dit-on, à la disposition de l'Amiral le Gouvernement de Fécamp... </s>
+	<s n="10 ">Mais ne peut-on pas exiger qu'il me le donne ?... </s>
+	<s n="11 ">Avant de parler au Marquis de Rosny, voyons son commis, et tâchons de le gagner. </s>
+	<s n="12 ">Le Commis gouverne le Ministre, le Ministre gouverne le Roi... </s>
+	<s n="13 ">Laforêt ?... </s>
+	<s n="14 ">Laforêt ?...</s>
 </p>
-</sp>
-</div2>
-<div2 type="scene" n="3">
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="3">
                     <head>SCÈNE III. Le Marquis, Laforest.</head>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="1">
-	<s id="1">Monsieur Discret est-il occupé avec Monsieur de Rosny ?</s>
+<p n="1">
+	<s n="1 ">Monsieur Discret est-il occupé avec Monsieur de Rosny ?</s>
 </p>
 </sp>
-<sp who="LAFOREST">
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="2">
-	<s id="1">Non, Monsieur ; il se promène dans la galerie voisine, en attendant le départ du Ministre.</s>
+<p n="2">
+	<s n="1 ">Non, Monsieur ; il se promène dans la galerie voisine, en attendant le départ du Ministre.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="3">
-	<s id="1">Dis-lui que je le prie de se rendre ici ; que je veux l'entretenir sans témoins sur une affaire importante.</s>
+<p n="3">
+	<s n="1 ">Dis-lui que je le prie de se rendre ici ; que je veux l'entretenir sans témoins sur une affaire importante.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="4">
+</div>
+<div type="scene" n="4">
                     <head>SCÈNE IV.</head>
-<sp stage="alone" who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS, seul.</speaker>
-<p id="1">
-	<s id="1">Il est bien sur, pour un homme de qualité, de ramper devant ces nouveaux parvenus, de les caresser, de les flatter ! </s>
-	<s id="2">Que diraient mes aïeux, s'ils voyaient leur descendant faire honteusement sa cour à un homme obscur, à un plat roturier ?... </s>
-	<s id="3">Ce qu'ils diraient ?... </s>
-	<s id="4">Ma foi, ils diraient que je les imite... </s>
-	<s id="5">Ils ont fait jadis ce que je fais aujourd'hui ; et s'ils n'avaient pas flatté des commis et des secrétaires, nous serions peut-être encore des roturiers, comme celui à qui je demande audience.</s>
+<p n="1">
+	<s n="1 ">Il est bien sur, pour un homme de qualité, de ramper devant ces nouveaux parvenus, de les caresser, de les flatter ! </s>
+	<s n="2 ">Que diraient mes aïeux, s'ils voyaient leur descendant faire honteusement sa cour à un homme obscur, à un plat roturier ?... </s>
+	<s n="3 ">Ce qu'ils diraient ?... </s>
+	<s n="4 ">Ma foi, ils diraient que je les imite... </s>
+	<s n="5 ">Ils ont fait jadis ce que je fais aujourd'hui ; et s'ils n'avaient pas flatté des commis et des secrétaires, nous serions peut-être encore des roturiers, comme celui à qui je demande audience.</s>
 </p>
-</sp>
-</div2>
-<div2 type="scene" n="5">
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="5">
                     <head>SCÈNE V. Le Marquis, Monsieur Discret.</head>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="1">
-	<s id="1">Mon cher Monsieur Discret ,vous savez, je crois, que vous n'avez pas en France un meilleur ami que moi ?...</s>
+<p n="1">
+	<s n="1 ">Mon cher Monsieur Discret ,vous savez, je crois, que vous n'avez pas en France un meilleur ami que moi ?...</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="2">
-	<s id="1">Oui, Monsieur, je le sais.</s>
+<p n="2">
+	<s n="1 ">Oui, Monsieur, je le sais.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="3">
-	<s id="1">Et que, quand bien même, ce qu'à Dieu ne plaise, l'envie triompherait du mérite, mon amitié survivrait à votre disgrâce.</s>
+<p n="3">
+	<s n="1 ">Et que, quand bien même, ce qu'à Dieu ne plaise, l'envie triompherait du mérite, mon amitié survivrait à votre disgrâce.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="4">
-	<s id="1">On n'exige point tant de confiance à la Cour ; et c'est assez aimer un homme, que de ne pas lui nuire, tant qu'il est en place.</s>
+<p n="4">
+	<s n="1 ">On n'exige point tant de confiance à la Cour ; et c'est assez aimer un homme, que de ne pas lui nuire, tant qu'il est en place.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="5">
-	<s id="1">Non, ce n'est point assez pour deux coeurs comme le vôtre et le mien. </s>
-	<s id="2">Croyez-moi, je vous révère, je vous aime comme mon propre père.</s>
+<p n="5">
+	<s n="1 ">Non, ce n'est point assez pour deux coeurs comme le vôtre et le mien. </s>
+	<s n="2 ">Croyez-moi, je vous révère, je vous aime comme mon propre père.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="6">
-	<s id="1">Ah ! </s>
-	<s id="2">Monsieur, je n'ai jamais mérité...</s>
+<p n="6">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Monsieur, je n'ai jamais mérité...</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="7">
-	<s id="1">Je suis le plus malheureux des hommes.</s>
+<p n="7">
+	<s n="1 ">Je suis le plus malheureux des hommes.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="8">
-	<s id="1">Et en quoi, s'il vous plaît ?</s>
+<p n="8">
+	<s n="1 ">Et en quoi, s'il vous plaît ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="9">
-	<s id="1">En ce que les protestations d'attachement que dont les gens de qualité, sont toujours suspectes.</s>
+<p n="9">
+	<s n="1 ">En ce que les protestations d'attachement que dont les gens de qualité, sont toujours suspectes.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="10">
-	<s id="1">J'en excepte les vôtres, Monsieur...</s>
+<p n="10">
+	<s n="1 ">J'en excepte les vôtres, Monsieur...</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="11">
-	<s id="1">À l'instant où je vous jure que je suis votre ami... je dis ami de coeur... </s>
-	<s id="2">Je parie que vous doutez de ma sincérité.</s>
+<p n="11">
+	<s n="1 ">À l'instant où je vous jure que je suis votre ami... je dis ami de coeur... </s>
+	<s n="2 ">Je parie que vous doutez de ma sincérité.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="12">
-	<s id="1">Je suis loin d'en douter.</s>
+<p n="12">
+	<s n="1 ">Je suis loin d'en douter.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="13">
-	<s id="1">Je me rends justice ; je sens que je suis déplacé à la Cour.</s>
+<p n="13">
+	<s n="1 ">Je me rends justice ; je sens que je suis déplacé à la Cour.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="14">
-	<s id="1">Vous, Monsieur ?</s>
+<p n="14">
+	<s n="1 ">Vous, Monsieur ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="15">
-	<s id="1">Oui. </s>
-	<s id="2">J'ai le défaut de dire ce que je pense, ce que je sens, de montrer mon âme toute nue, de ne pouvoir résister au penchant de l'amitié, et de ne savoir pas dissimuler les sentiments que m'inspire un homme de mérite. </s>
-	<s id="3">Je ne puis, même en présence de ses ennemis, m'empêcher de dire que je l'estime. </s>
-	<s id="4">Je sens bien que cette franchise me perdra quelque jour : mais, que voulez-vous ? </s>
-	<s id="5">Je ne puis la contenir ; et j'ai été dix fois prêt à me couper la gorge avec les gens qui attaquaient votre réputation.</s> 
+<p n="15">
+	<s n="1 ">Oui. </s>
+	<s n="2 ">J'ai le défaut de dire ce que je pense, ce que je sens, de montrer mon âme toute nue, de ne pouvoir résister au penchant de l'amitié, et de ne savoir pas dissimuler les sentiments que m'inspire un homme de mérite. </s>
+	<s n="3 ">Je ne puis, même en présence de ses ennemis, m'empêcher de dire que je l'estime. </s>
+	<s n="4 ">Je sens bien que cette franchise me perdra quelque jour : mais, que voulez-vous ? </s>
+	<s n="5 ">Je ne puis la contenir ; et j'ai été dix fois prêt à me couper la gorge avec les gens qui attaquaient votre réputation.</s> 
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="16">
-	<s id="1">Monsieur, je suis confus...</s>
+<p n="16">
+	<s n="1 ">Monsieur, je suis confus...</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="17">
-	<s id="1">Confus ? </s>
-	<s id="2">Ce n'est point vous qui devez l'être ; c'est moi qui le suis, de ne vous avait point encore prouvé combien je vous aime. </s>
-	<s id="3">Mais voici une occasion où je vais vous témoigner mon amitié, de la manière la plus flatteuse pour une âme aussi délicate que la vôtre. </s>
-	<s id="4">N'est-ce pas vous obliger vous-même, que de vous procurer les moyens d'obliger un de vos bons amis ?</s>
+<p n="17">
+	<s n="1 ">Confus ? </s>
+	<s n="2 ">Ce n'est point vous qui devez l'être ; c'est moi qui le suis, de ne vous avait point encore prouvé combien je vous aime. </s>
+	<s n="3 ">Mais voici une occasion où je vais vous témoigner mon amitié, de la manière la plus flatteuse pour une âme aussi délicate que la vôtre. </s>
+	<s n="4 ">N'est-ce pas vous obliger vous-même, que de vous procurer les moyens d'obliger un de vos bons amis ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="18">
-	<s id="1">Sans doute.</s>
+<p n="18">
+	<s n="1 ">Sans doute.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="19">
-	<s id="1">Je savais bien que j'avais trouvé l'endroit le plus sensible de votre âme, et que j'avais choisi le genre de services qui vous serait là plus agréable.</s>
+<p n="19">
+	<s n="1 ">Je savais bien que j'avais trouvé l'endroit le plus sensible de votre âme, et que j'avais choisi le genre de services qui vous serait là plus agréable.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="20">
-	<s id="1">Et quel est celui de mes amis que je pourrai obliger par vos soins ?</s>
+<p n="20">
+	<s n="1 ">Et quel est celui de mes amis que je pourrai obliger par vos soins ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="21">
-	<s id="1">Le plus sincère, le plus zélé, le plus fidèle de tous ; en un mot, c'est moi-même.</s>
+<p n="21">
+	<s n="1 ">Le plus sincère, le plus zélé, le plus fidèle de tous ; en un mot, c'est moi-même.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="22">
-	<s id="1">Vous m'avez bien jugé, et vous êtes en effet de tous les courtisans celui que je servirai avec le plus d'ardeur.</s>
+<p n="22">
+	<s n="1 ">Vous m'avez bien jugé, et vous êtes en effet de tous les courtisans celui que je servirai avec le plus d'ardeur.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="23">
-	<s id="1">Ah ! Laissez-là ce nom de courtisan. </s>
-	<s id="2">Vous savez bien que je ne le suis pas. </s>
-	<s id="3">Je suis si loin de l'art de ces messieurs, que si vous étiez, un homme sans mérite, je vous le dirais en face, comme je vous dis que vous êtes, après le Roi, ce qu'il y a de plus estimable à la Cour.</s>
+<p n="23">
+	<s n="1 ">Ah ! Laissez-là ce nom de courtisan. </s>
+	<s n="2 ">Vous savez bien que je ne le suis pas. </s>
+	<s n="3 ">Je suis si loin de l'art de ces messieurs, que si vous étiez, un homme sans mérite, je vous le dirais en face, comme je vous dis que vous êtes, après le Roi, ce qu'il y a de plus estimable à la Cour.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="24">
-	<s id="1">Et Monsieur de Rosny n'est il rien ?</s>
+<p n="24">
+	<s n="1 ">Et Monsieur de Rosny n'est il rien ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="25">
-	<s id="1">Monsieur de Rosny est un Ministre qui a le tact très sûr dans le choix des hommes, et qui fait très bien suivre un conseil. </s>
-	<s id="2">Toutes ses opérations font excellentes ; mais on fait à qui la gloire en eft due , et que dans votre département . ...</s>
+<p n="25">
+	<s n="1 ">Monsieur de Rosny est un Ministre qui a le tact très sûr dans le choix des hommes, et qui fait très bien suivre un conseil. </s>
+	<s n="2 ">Toutes ses opérations font excellentes ; mais on fait à qui la gloire en eft due , et que dans votre département . ...</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="26">
-	<s id="1">Laissons-là l'ironie... </s>
-	<s id="2">De quoi s'agit-il t</s>
+<p n="26">
+	<s n="1 ">Laissons-là l'ironie... </s>
+	<s n="2 ">De quoi s'agit-il t</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
 <stage type="C">* On sent assez que dans la conduits de ce petit drame, l'auteur a été obligé d'altérer un peu l'Histoire. [NdA]</stage>
 <note type="C">Voir "Fécamp au temps de la Ligue : la légende de Boisrosé, d'après des documents nouveaux / par Amédée Hellot,..." de Hellot, Amédée (1826-1903), Yvetot, 1897. Document numérisé Gallica ark:/12148/bpt6k73855m (cote BnF : Lk7-30917)</note>
-<p id="27">
-	<s id="1">Si le traité conclu avec l'Amiral de Villars était un mystère, je me garderais de vous en parler. </s>
-	<s id="2">Mais ce secret d'État n'en est plus un. </s>
-	<s id="3">On fait que l'Amiral livre la ville de Rouen et la Province au Roi, à condition qu'il en conservera le Gouvernement, et nommera les Gouverneurs des Places. </s>
-	<s id="4">Voilà les articles généraux et préliminaires. </s>
-	<s id="5">Quant aux articles particuliers*, il est temps encore de les créer ou de les changer. </s>
-	<s id="6">Déjà on a ôté à Bois-Rosé le Gouvernement de Fécamp.</s>
+<p n="27">
+	<s n="1 ">Si le traité conclu avec l'Amiral de Villars était un mystère, je me garderais de vous en parler. </s>
+	<s n="2 ">Mais ce secret d'État n'en est plus un. </s>
+	<s n="3 ">On fait que l'Amiral livre la ville de Rouen et la Province au Roi, à condition qu'il en conservera le Gouvernement, et nommera les Gouverneurs des Places. </s>
+	<s n="4 ">Voilà les articles généraux et préliminaires. </s>
+	<s n="5 ">Quant aux articles particuliers*, il est temps encore de les créer ou de les changer. </s>
+	<s n="6 ">Déjà on a ôté à Bois-Rosé le Gouvernement de Fécamp.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="28">
-	<s id="1">Oui : cette sévérité nécessaire contiendra les autres Gouverneurs dans leur devoir.</s>
+<p n="28">
+	<s n="1 ">Oui : cette sévérité nécessaire contiendra les autres Gouverneurs dans leur devoir.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="29">
-	<s id="1">Avouez, Monsieur, que celui qui a averti Monsieur de Rosny que Bois- Rosé, malgré sa feinte soumission, était encore ligueur et Espagnol dans l'âme, a rendu à l'État un service important.</s>
+<p n="29">
+	<s n="1 ">Avouez, Monsieur, que celui qui a averti Monsieur de Rosny que Bois- Rosé, malgré sa feinte soumission, était encore ligueur et Espagnol dans l'âme, a rendu à l'État un service important.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="30">
-	<s id="1">Très important, sans doute.</s>
+<p n="30">
+	<s n="1 ">Très important, sans doute.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="31">
-	<s id="1">Convenez que son zèle mérite une récompense distinguée.</s>
+<p n="31">
+	<s n="1 ">Convenez que son zèle mérite une récompense distinguée.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="32">
-	<s id="1">Je le crois, comme vous.</s>
+<p n="32">
+	<s n="1 ">Je le crois, comme vous.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="33">
-	<s id="1">Et que s'il n'a pas signé le mémoire qu'il a fait parvenir au Ministre, sa modestie et son désintéressement donnent un nouveau prix à ce service.</s>
+<p n="33">
+	<s n="1 ">Et que s'il n'a pas signé le mémoire qu'il a fait parvenir au Ministre, sa modestie et son désintéressement donnent un nouveau prix à ce service.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="34">
-	<s id="1">Passons.</s>
+<p n="34">
+	<s n="1 ">Passons.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="35">
-	<s id="1">Eh bien, cet utile citoyen, ce bon serviteur du Roi, le connaissez-vous ?</s>
+<p n="35">
+	<s n="1 ">Eh bien, cet utile citoyen, ce bon serviteur du Roi, le connaissez-vous ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="36">
-	<s id="1">Non.</s>
+<p n="36">
+	<s n="1 ">Non.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="37">
-	<s id="1">Quoi ! </s>
-	<s id="1">À son zèle pur et désintéressé vous ne pouvez le reconnaître ?</s>
+<p n="37">
+	<s n="1 ">Quoi ! </s>
+	<s n="1 ">À son zèle pur et désintéressé vous ne pouvez le reconnaître ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="38">
-	<s id="1">Non, Monsieur.</s>
+<p n="38">
+	<s n="1 ">Non, Monsieur.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="39">
-	<s id="1">Les sujets si fidèles sont cependant bien rares.</s>
+<p n="39">
+	<s n="1 ">Les sujets si fidèles sont cependant bien rares.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="40">
-	<s id="1">Mais vous, le connaissez-vous ?</s>
+<p n="40">
+	<s n="1 ">Mais vous, le connaissez-vous ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="41">
-	<s id="1">Eh ! </s>
-	<s id="2">Parbleu, c'est moi-même.</s>
+<p n="41">
+	<s n="1 ">Eh ! </s>
+	<s n="2 ">Parbleu, c'est moi-même.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="42">
-	<s id="1">Vous, Monsieur ?</s>
+<p n="42">
+	<s n="1 ">Vous, Monsieur ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="43">
-	<s id="1">Vous êtes étonné qu'avec tant de candeur et de franchise, je signale mon zèle par un écrit clandestin ?</s>
+<p n="43">
+	<s n="1 ">Vous êtes étonné qu'avec tant de candeur et de franchise, je signale mon zèle par un écrit clandestin ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="44">
-	<s id="1">Oui : je vous l'avoue, je croyais qu'un homme de votre rang devait se nommer lorsqu'il accusait son ennemi.</s>
+<p n="44">
+	<s n="1 ">Oui : je vous l'avoue, je croyais qu'un homme de votre rang devait se nommer lorsqu'il accusait son ennemi.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="45">
-	<s id="1">J'avais signé le plus fidèle, le plus zélé des Sujets du Roi ; n'était-ce pas me nommer ?</s>
+<p n="45">
+	<s n="1 ">J'avais signé le plus fidèle, le plus zélé des Sujets du Roi ; n'était-ce pas me nommer ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="46">
-	<s id="1">Pas tout-à-fait.</s>
+<p n="46">
+	<s n="1 ">Pas tout-à-fait.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="47">
-	<s id="1">Au reste, qu'importe qu'un Mémoire soit anonyme ou non, lorsqu'il est fondé sur des preuves incontestables ? </s>
-	<s id="2">Ces deux vaisseaux Espagnols qui rodent depuis un mois le long de la côte de Fécamp, sont d'intelligence avec Bois-Rosé. </s>
-	<s id="3">Cela est clair.</s>
+<p n="47">
+	<s n="1 ">Au reste, qu'importe qu'un Mémoire soit anonyme ou non, lorsqu'il est fondé sur des preuves incontestables ? </s>
+	<s n="2 ">Ces deux vaisseaux Espagnols qui rodent depuis un mois le long de la côte de Fécamp, sont d'intelligence avec Bois-Rosé. </s>
+	<s n="3 ">Cela est clair.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="48">
-	<s id="1">Cela est du moins vraisemblable.</s>
+<p n="48">
+	<s n="1 ">Cela est du moins vraisemblable.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
 <note type="L">Corvette : Bâtiment de guerre entre le brick et la frégate. [L]</note>
-<p id="49">
-	<s id="1">Il a envoyé une corvette sous prétexte de les reconnaître ; mais c'était en effet pour parler à ces capitaines, et concerter avec eux les moyens de leur livrer la ville.</s>
+<p n="49">
+	<s n="1 ">Il a envoyé une corvette sous prétexte de les reconnaître ; mais c'était en effet pour parler à ces capitaines, et concerter avec eux les moyens de leur livrer la ville.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="50">
-	<s id="1">C'est ce que l'on a craint.</s>
+<p n="50">
+	<s n="1 ">C'est ce que l'on a craint.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="51">
-	<s id="1">Il est vrai que la corvette s'est approchée à la portée du mousquet, qu'elle a fait feu, que les Espagnols lui ont répondu par quelques volées. </s>
-	<s id="2">Mais tout ce combat était simulé pour tromper les habitants assemblés sur le rivage, et je fais que, de part et d'autre, on tirait à poudre.</s>
+<p n="51">
+	<s n="1 ">Il est vrai que la corvette s'est approchée à la portée du mousquet, qu'elle a fait feu, que les Espagnols lui ont répondu par quelques volées. </s>
+	<s n="2 ">Mais tout ce combat était simulé pour tromper les habitants assemblés sur le rivage, et je fais que, de part et d'autre, on tirait à poudre.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="52">
-	<s id="1">En effet, il n'y a eu sur la corvette ni morts ni blessés ; du moins vous l'assurez dans votre Mémoire.</s>
+<p n="52">
+	<s n="1 ">En effet, il n'y a eu sur la corvette ni morts ni blessés ; du moins vous l'assurez dans votre Mémoire.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
 <note type="L">Voir la préface pour la description de l'escalade.</note>
-<p id="53">
-	<s id="1">Bois-Rosé fait beaucoup de bruit de son escalade ; mais cette expédition entreprise pour la Ligue prouve ce que j'ai avancé, qu'il est l'ennemi du Roi.</s>
+<p n="53">
+	<s n="1 ">Bois-Rosé fait beaucoup de bruit de son escalade ; mais cette expédition entreprise pour la Ligue prouve ce que j'ai avancé, qu'il est l'ennemi du Roi.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="54">
-	<s id="1">Fort bien : mais où tend ce discours ?</s>
+<p n="54">
+	<s n="1 ">Fort bien : mais où tend ce discours ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="55">
-	<s id="1">Je pense que celui qui a découvert la perfidie de ce Gouverneur, mérite seul de lui succéder.</s>
+<p n="55">
+	<s n="1 ">Je pense que celui qui a découvert la perfidie de ce Gouverneur, mérite seul de lui succéder.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="56">
-	<s id="1">Mais le traité avec l'Amiral...</s>
+<p n="56">
+	<s n="1 ">Mais le traité avec l'Amiral...</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="57">
-	<s id="1">Le Roi peut exiger que l'Amiral me nomme. Par-là les droits de Villars sont conservés, et le Roi aura dans Fécamp un Gouverneur fidèle. </s>
-	<s id="2">Car, ne vous y trompez pas, quoique l'Amiral ait dit : La Ligue est maintenant de crier vive le Roi, il est encore ligueur au fond de l'âme ; et, si on ne se hâte de lui lier les mains, il ne placera dans Fécamp qu'un Ligueur comme lui.</s>
+<p n="57">
+	<s n="1 ">Le Roi peut exiger que l'Amiral me nomme. Par-là les droits de Villars sont conservés, et le Roi aura dans Fécamp un Gouverneur fidèle. </s>
+	<s n="2 ">Car, ne vous y trompez pas, quoique l'Amiral ait dit : La Ligue est maintenant de crier vive le Roi, il est encore ligueur au fond de l'âme ; et, si on ne se hâte de lui lier les mains, il ne placera dans Fécamp qu'un Ligueur comme lui.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="58">
-	<s id="1">Monsieur de Rosny a les mêmes alarmes. </s>
-	<s id="2">Il songe à nommer un Gouverneur. </s>
-	<s id="3">De vieux Officiers le sollicitent, et vous êtes jeune.</s>
+<p n="58">
+	<s n="1 ">Monsieur de Rosny a les mêmes alarmes. </s>
+	<s n="2 ">Il songe à nommer un Gouverneur. </s>
+	<s n="3 ">De vieux Officiers le sollicitent, et vous êtes jeune.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="59">
-	<s id="1">Est-ce donc par les années qu'on mesure le mérite et le courage ?</s>
+<p n="59">
+	<s n="1 ">Est-ce donc par les années qu'on mesure le mérite et le courage ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="60">
-	<s id="1">Plusieurs de vos concurrents présentent pour titres des blessures honorables, et vous n'ayez point été blessé.</s>
+<p n="60">
+	<s n="1 ">Plusieurs de vos concurrents présentent pour titres des blessures honorables, et vous n'ayez point été blessé.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="61">
-	<s id="1">Je me suis exposé cent fois à l'être.</s>
+<p n="61">
+	<s n="1 ">Je me suis exposé cent fois à l'être.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="62">
-	<s id="1">Chacun d'eux a commandé : jusqu'à ce jour vous n'avez fait qu'obéir. </s>
-	<s id="2">Tous se sont signalés par des exploits éclatants ; et vous, les occasions vous ont manqué. </s>
-	<s id="3">Jusqu'à présent, vous n'êtes point sorti de la foule des braves Officiers ; Monsieur de Rosny est juste, il pèse les services... </s>
-	<s id="4">Mais que lisez-vous-là ? </s>
-	<s id="5">Un billet doux ?</s>
+<p n="62">
+	<s n="1 ">Chacun d'eux a commandé : jusqu'à ce jour vous n'avez fait qu'obéir. </s>
+	<s n="2 ">Tous se sont signalés par des exploits éclatants ; et vous, les occasions vous ont manqué. </s>
+	<s n="3 ">Jusqu'à présent, vous n'êtes point sorti de la foule des braves Officiers ; Monsieur de Rosny est juste, il pèse les services... </s>
+	<s n="4 ">Mais que lisez-vous-là ? </s>
+	<s n="5 ">Un billet doux ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="63">
-	<s id="1">Non, parbleu.</s>
+<p n="63">
+	<s n="1 ">Non, parbleu.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="64">
-	<s id="1">Vous voulez en vain dissimuler. </s>
-	<s id="2">On sait que, si vous n'êtes pas heureux en guerre, vous l'êtes en amour ; et je parie que, dans cette lettre, quelque Belle vous donne un rendez-vous.</s>
+<p n="64">
+	<s n="1 ">Vous voulez en vain dissimuler. </s>
+	<s n="2 ">On sait que, si vous n'êtes pas heureux en guerre, vous l'êtes en amour ; et je parie que, dans cette lettre, quelque Belle vous donne un rendez-vous.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="65">
-	<s id="1">Vous vous trompez ; cette épître est d'un de mes gens d'affaires qui m'annonce la mort du Prieur de Pleinval, et qui me presse de nommer son successeur. </s>
-	<s id="2">Ce Prieuré est un des meilleurs de France. </s>
-	<s id="3">Vous avez un neveu catholique et prêtre, je songeais à lui... </s>
-	<s id="4">Mais revenons... </s>
-	<s id="5">Vous dites donc que mes services ?...</s>
+<p n="65">
+	<s n="1 ">Vous vous trompez ; cette épître est d'un de mes gens d'affaires qui m'annonce la mort du Prieur de Pleinval, et qui me presse de nommer son successeur. </s>
+	<s n="2 ">Ce Prieuré est un des meilleurs de France. </s>
+	<s n="3 ">Vous avez un neveu catholique et prêtre, je songeais à lui... </s>
+	<s n="4 ">Mais revenons... </s>
+	<s n="5 ">Vous dites donc que mes services ?...</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="66">
-	<s id="1">Sont dignes des plus belles récompenses.</s>
+<p n="66">
+	<s n="1 ">Sont dignes des plus belles récompenses.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="67">
-	<s id="1">Que je suis jeune ?</s>
+<p n="67">
+	<s n="1 ">Que je suis jeune ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="68">
-	<s id="1">Mais plus prudent que les vieillards.</s>
+<p n="68">
+	<s n="1 ">Mais plus prudent que les vieillards.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="69">
-	<s id="1">Que jusqu'à ce jour je n'ai fait qu'obéir ?</s>
+<p n="69">
+	<s n="1 ">Que jusqu'à ce jour je n'ai fait qu'obéir ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="70">
-	<s id="1">Mais qu'en obéissant vous vous êtes montré digne de commander.</s>
+<p n="70">
+	<s n="1 ">Mais qu'en obéissant vous vous êtes montré digne de commander.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="71">
-	<s id="1">Que Monsieur de Rosny est juste, qu'il pèse les services ?</s>
+<p n="71">
+	<s n="1 ">Que Monsieur de Rosny est juste, qu'il pèse les services ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="72">
-	<s id="1">Et que c'est pour cela même qu'il vous fera nommer au Gouvernement de Fécamp. </s>
-	<s id="2">Je vous en réponds...</s>
+<p n="72">
+	<s n="1 ">Et que c'est pour cela même qu'il vous fera nommer au Gouvernement de Fécamp. </s>
+	<s n="2 ">Je vous en réponds...</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="73">
-	<s id="1">Et moi qui suis juste aussi, je donnerai à votre neveu le Prieuré de Pleinval.</s>
+<p n="73">
+	<s n="1 ">Et moi qui suis juste aussi, je donnerai à votre neveu le Prieuré de Pleinval.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="74">
-	<s id="1">Fort bien... </s>
-	<s id="2">Mais qui entre ici ?</s>
+<p n="74">
+	<s n="1 ">Fort bien... </s>
+	<s n="2 ">Mais qui entre ici ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="75">
-	<s id="1">Ah ! </s>
-	<s id="2">Voilà les importuns qui accourent à c'est ce que je redoutais.</s>
+<p n="75">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Voilà les importuns qui accourent à c'est ce que je redoutais.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="6">
+</div>
+<div type="scene" n="6">
                     <head>SCÈNE VI. Le Marquis, Monsieur Discret, Une Veuve.</head>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="1">
-	<s id="1">Puis-je savoir, Madame, ce qui me procure une visite si agréable ?</s>
+<p n="1">
+	<s n="1 ">Puis-je savoir, Madame, ce qui me procure une visite si agréable ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="2">
-	<s id="1">En vérité, la Cour ne possède rien d'aussi parfait que Madame.</s>
+<p n="2">
+	<s n="1 ">En vérité, la Cour ne possède rien d'aussi parfait que Madame.</s>
 </p>
 </sp>
-<sp who="LA VEUVE">
+<sp who="#la-veuve">
                         <speaker>LA VEUVE.</speaker>
-<p id="3">
-	<s id="1">Je ne le cache point, ma beauté me fut chère ; il fut un temps où je prenais soin même de ma parure, pour plaire au plus vertueux, au plus aimable des époux.</s>
+<p n="3">
+	<s n="1 ">Je ne le cache point, ma beauté me fut chère ; il fut un temps où je prenais soin même de ma parure, pour plaire au plus vertueux, au plus aimable des époux.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="4">
-	<s id="1">L'état où je vous vois, ces sombres vêtements, tout m'annonce que vous l'avez perdu.</s>
+<p n="4">
+	<s n="1 ">L'état où je vous vois, ces sombres vêtements, tout m'annonce que vous l'avez perdu.</s>
 </p>
 </sp>
-<sp who="LA VEUVE">
+<sp who="#la-veuve">
                         <speaker>LA VEUVE.</speaker>
-<p id="5">
-	<s id="1">Il n'est que trop vrai : il a été tué au siège de Rouen.</s>
+<p n="5">
+	<s n="1 ">Il n'est que trop vrai : il a été tué au siège de Rouen.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="6">
-	<s id="1">Et vous le pleurez encore ! </s>
-	<s id="2">Cela est inconcevable.</s>
+<p n="6">
+	<s n="1 ">Et vous le pleurez encore ! </s>
+	<s n="2 ">Cela est inconcevable.</s>
 </p>
 </sp>
-<sp who="LA VEUVE">
+<sp who="#la-veuve">
                         <speaker>LA VEUVE.</speaker>
-<p id="7">
-	<s id="1">Le jour fatal où je l'ai perdu est encore présent à mon esprit. </s>
-	<s id="2">J'étais dans ma Terre à une lieue de Rouen ; là , dans des alarmes continuelles, tremblante au bruit des foudres d'airain, croyant toujours que le coup que je venais d'entendre avait frappé mon époux, je passais une vie plus cruelle que la mort. </s>
-	<s id="3">Tout-à-coup on m'annonce que les Assiégés ont fait une sortie ; que mon époux percé d'une lance... </s>
-	<s id="4">Pardonnez à mes larmes : si l'aviez connu, vous en verseriez vous-même... </s>
-	<s id="5">Je vole sur le champ de bataille, et parmi les morts, parmi les mourants, je le cherche : ... je le vois... ; la lance fatale était encore enfoncée dans don flanc ; des yeux étaient couverts des ombres de la mort. </s>
-	<s id="6">Je me précipite sur lui ; je veux le réchauffée dans mes bras : inutiles soins ! </s>
-	<s id="7">On m'arrache à cet affreux spectacle : j'étais sans voix, sans sentiment ; ... et à cet instant même, je sens que mes forces m'abandonnent ... </s>
-	<s id="8">Monsieur, soutenez-moi.</s>
+<p n="7">
+	<s n="1 ">Le jour fatal où je l'ai perdu est encore présent à mon esprit. </s>
+	<s n="2 ">J'étais dans ma Terre à une lieue de Rouen ; là , dans des alarmes continuelles, tremblante au bruit des foudres d'airain, croyant toujours que le coup que je venais d'entendre avait frappé mon époux, je passais une vie plus cruelle que la mort. </s>
+	<s n="3 ">Tout-à-coup on m'annonce que les Assiégés ont fait une sortie ; que mon époux percé d'une lance... </s>
+	<s n="4 ">Pardonnez à mes larmes : si l'aviez connu, vous en verseriez vous-même... </s>
+	<s n="5 ">Je vole sur le champ de bataille, et parmi les morts, parmi les mourants, je le cherche : ... je le vois... ; la lance fatale était encore enfoncée dans don flanc ; des yeux étaient couverts des ombres de la mort. </s>
+	<s n="6 ">Je me précipite sur lui ; je veux le réchauffée dans mes bras : inutiles soins ! </s>
+	<s n="7 ">On m'arrache à cet affreux spectacle : j'étais sans voix, sans sentiment ; ... et à cet instant même, je sens que mes forces m'abandonnent ... </s>
+	<s n="8 ">Monsieur, soutenez-moi.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="8">
-	<s id="1">Madame, calmez-vous, reprenez vos sens. </s>
-	<s id="2">Votre époux est mort, mais il est mort les armes à la main ; mais il est mort pour son Roi, et dans ce moment où les Rebelles reconnaissent leur erreur, combien de Ligueurs aimeraient mieux être morts comme lui, que d'avoir vécu coupables !</s>
+<p n="8">
+	<s n="1 ">Madame, calmez-vous, reprenez vos sens. </s>
+	<s n="2 ">Votre époux est mort, mais il est mort les armes à la main ; mais il est mort pour son Roi, et dans ce moment où les Rebelles reconnaissent leur erreur, combien de Ligueurs aimeraient mieux être morts comme lui, que d'avoir vécu coupables !</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="9">
-	<s id="1">La perte que vous avez faite est grande sans doute ; mais elle n'est point irréparable. </s>
-	<s id="2">Avec tant d'appas, on trouve aisément un consolateur ; et il n'est point de Seigneur à la Cour, qui ne s'estimât heureux d'essuyer vos larmes, et de succéder à l'époux que vous pleurez.</s>
+<p n="9">
+	<s n="1 ">La perte que vous avez faite est grande sans doute ; mais elle n'est point irréparable. </s>
+	<s n="2 ">Avec tant d'appas, on trouve aisément un consolateur ; et il n'est point de Seigneur à la Cour, qui ne s'estimât heureux d'essuyer vos larmes, et de succéder à l'époux que vous pleurez.</s>
 </p>
 </sp>
-<sp who="LA VEUVE">
+<sp who="#la-veuve">
                         <speaker>LA VEUVE.</speaker>
-<p id="10">
-	<s id="1">Qui ? </s>
-	<s id="2">Moi ! </s>
-	<s id="3">Je brûlerais d'une flamme nouvelle ! </s>
-	<s id="4">Cher époux, je ferais un tel outrage à ta mémoire ! </s>
-	<s id="5">Ah ! </s>
-	<s id="6">Tu le fais, je ne soupiré qu'après l'instant où je pourrai te rejoindre dans la tombe, et confondre ma cendre la tienne.</s>
+<p n="10">
+	<s n="1 ">Qui ? </s>
+	<s n="2 ">Moi ! </s>
+	<s n="3 ">Je brûlerais d'une flamme nouvelle ! </s>
+	<s n="4 ">Cher époux, je ferais un tel outrage à ta mémoire ! </s>
+	<s n="5 ">Ah ! </s>
+	<s n="6 ">Tu le fais, je ne soupiré qu'après l'instant où je pourrai te rejoindre dans la tombe, et confondre ma cendre la tienne.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="11">
-	<s id="1">Et cet époux vous a-t-il laissé des enfants ?</s>
+<p n="11">
+	<s n="1 ">Et cet époux vous a-t-il laissé des enfants ?</s>
 </p>
 </sp>
-<sp who="LA VEUVE">
+<sp who="#la-veuve">
                         <speaker>LA VEUVE.</speaker>
-<p id="12">
-	<s id="1">Ah ! </s>
-	<s id="2">Du moins s'il revivait dans un fils qui me retraçât son image ! </s>
-	<s id="3">Mais non, je reste seule, désolée, indigente.</s>
+<p n="12">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Du moins s'il revivait dans un fils qui me retraçât son image ! </s>
+	<s n="3 ">Mais non, je reste seule, désolée, indigente.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="13">
-	<s id="1">Indigente !</s>
+<p n="13">
+	<s n="1 ">Indigente !</s>
 </p>
 </sp>
-<sp who="LA VEUVE">
+<sp who="#la-veuve">
                         <speaker>LA VEUVE.</speaker>
-<p id="14">
-	<s id="1">Oui, Monsieur ; mon bien, celui de mort époux, tout a été sacrifié au service du Roi. </s>
-	<s id="2">Depuis un an, je n'ai d'autre nourriture que mes larmes.</s>
+<p n="14">
+	<s n="1 ">Oui, Monsieur ; mon bien, celui de mort époux, tout a été sacrifié au service du Roi. </s>
+	<s n="2 ">Depuis un an, je n'ai d'autre nourriture que mes larmes.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="15">
-	<s id="1">Eh ! </s>
-	<s id="2">Pourquoi, Madame, n'avez-vous pas plutôt informé le Ministre de votre situation ?</s>
+<p n="15">
+	<s n="1 ">Eh ! </s>
+	<s n="2 ">Pourquoi, Madame, n'avez-vous pas plutôt informé le Ministre de votre situation ?</s>
 </p>
 </sp>
-<sp who="LA VEUVE">
+<sp who="#la-veuve">
                         <speaker>LA VEUVE.</speaker>
-<p id="16">
-	<s id="1">L'état cruel où je suis réduite ne m'a pas permis de me présenter à la Cour : mais apprenant que Monsieur de Rosny était à Louviers, je suis accourue sans autre appareil que ma douleur, sans autres protecteurs que mon indigence et les services de mon époux.</s>
+<p n="16">
+	<s n="1 ">L'état cruel où je suis réduite ne m'a pas permis de me présenter à la Cour : mais apprenant que Monsieur de Rosny était à Louviers, je suis accourue sans autre appareil que ma douleur, sans autres protecteurs que mon indigence et les services de mon époux.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="17">
-	<s id="1">Madame, je vais m'empresser à vous servir, et je crois pouvoir vous promettre une pension proportionnée à vos besoins.</s>
+<p n="17">
+	<s n="1 ">Madame, je vais m'empresser à vous servir, et je crois pouvoir vous promettre une pension proportionnée à vos besoins.</s>
 </p>
 </sp>
-<sp who="LA VEUVE">
+<sp who="#la-veuve">
                         <speaker>LA VEUVE.</speaker>
-<p id="18">
-	<s id="1">Je ne ferai pas longtemps à charge à l'État. </s>
-	<s id="2">Mes larmes éteindront bientôt le flambeau de mes jours, et j'irai chez les morts me réunir au seul objet qui me fut cher.</s>
+<p n="18">
+	<s n="1 ">Je ne ferai pas longtemps à charge à l'État. </s>
+	<s n="2 ">Mes larmes éteindront bientôt le flambeau de mes jours, et j'irai chez les morts me réunir au seul objet qui me fut cher.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="19">
-	<s id="1">Écartez ces sombres idées, et jouissez longtemps de la reconnaissance de Henri IV.</s>
+<p n="19">
+	<s n="1 ">Écartez ces sombres idées, et jouissez longtemps de la reconnaissance de Henri IV.</s>
 </p>
 </sp>
-<sp who="LA VEUVE">
+<sp who="#la-veuve">
                         <speaker>LA VEUVE.</speaker>
-<p id="20">
-	<s id="1">Voici un Mémoire des services de mon époux. </s>
-	<s id="2">Je vous prie de le remettre à Monsieur de Rosny. </s>
-	<s id="3">Dispensez-moi de vous le lire. </s>
-	<s id="4">À chaque mot les sanglots étoufferaient ma voix. </s>
-	<s id="5">Je vais, en attendant les bienfaits du Roi, cacher ma douleur dans mon obscure retraite.</s>
+<p n="20">
+	<s n="1 ">Voici un Mémoire des services de mon époux. </s>
+	<s n="2 ">Je vous prie de le remettre à Monsieur de Rosny. </s>
+	<s n="3 ">Dispensez-moi de vous le lire. </s>
+	<s n="4 ">À chaque mot les sanglots étoufferaient ma voix. </s>
+	<s n="5 ">Je vais, en attendant les bienfaits du Roi, cacher ma douleur dans mon obscure retraite.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="7">
+</div>
+<div type="scene" n="7">
                     <head>SCENE VII. Le Marquis, Monsieur Discret.</head>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="1">
-	<s id="1">Ma foi, elle m'a ému.</s>
+<p n="1">
+	<s n="1 ">Ma foi, elle m'a ému.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="2">
-	<s id="1">Elle m'a pénétré.</s>
+<p n="2">
+	<s n="1 ">Elle m'a pénétré.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="3">
-	<s id="1">Moi qui suis accoutumé à voir couler des pleurs, je vous avoue que je me suis senti prêt à en répandre.</s>
+<p n="3">
+	<s n="1 ">Moi qui suis accoutumé à voir couler des pleurs, je vous avoue que je me suis senti prêt à en répandre.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="4">
-	<s id="1">Cette douleur-là n'était pas jouée.</s>
+<p n="4">
+	<s n="1 ">Cette douleur-là n'était pas jouée.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="5">
-	<s id="1">C'était l'accent de la nature.</s>
+<p n="5">
+	<s n="1 ">C'était l'accent de la nature.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="6">
-	<s id="1">Jusqu'à ce jour, j'avais refusé de croire à la confiance des veuves : mais me voilà converti.</s>
+<p n="6">
+	<s n="1 ">Jusqu'à ce jour, j'avais refusé de croire à la confiance des veuves : mais me voilà converti.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="7">
-	<s id="1">Pour moi, cette exception ne me fait point changer d'opinion sur le reste des femmes.</s>
+<p n="7">
+	<s n="1 ">Pour moi, cette exception ne me fait point changer d'opinion sur le reste des femmes.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="8">
-	<s id="1">Oh ! </s>
-	<s id="2">Parbleu, il faut appuyer cette Veuve de tout votre crédit. </s>
-	<s id="3">Elle a des grâces, de l'esprit, de la beauté ; et avec tout cela, elle est vertueuse et fidèle à la mémoire de son époux ! </s>
-	<s id="4">Cela tient du prodige. </s>
-	<s id="5">Ses yeux noyés de larmes ont cependant toute leur vivacité. </s>
-	<s id="6">Une armée entière de chagrins, de regrets, n'a point altéré la fraîcheur de son teint ; tout est étonnant dans cette femme.</s>
+<p n="8">
+	<s n="1 ">Oh ! </s>
+	<s n="2 ">Parbleu, il faut appuyer cette Veuve de tout votre crédit. </s>
+	<s n="3 ">Elle a des grâces, de l'esprit, de la beauté ; et avec tout cela, elle est vertueuse et fidèle à la mémoire de son époux ! </s>
+	<s n="4 ">Cela tient du prodige. </s>
+	<s n="5 ">Ses yeux noyés de larmes ont cependant toute leur vivacité. </s>
+	<s n="6 ">Une armée entière de chagrins, de regrets, n'a point altéré la fraîcheur de son teint ; tout est étonnant dans cette femme.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="9">
-	<s id="1">Une fidélité si rare mérite bien d'être récompensée.</s>
+<p n="9">
+	<s n="1 ">Une fidélité si rare mérite bien d'être récompensée.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="10">
-	<s id="1">Cela ne tire point à conséquence ; et si le Roi ne fait des pensions qu'aux veuves aussi fidèles que celle-ci, il ne se ruinera pas.</s>
+<p n="10">
+	<s n="1 ">Cela ne tire point à conséquence ; et si le Roi ne fait des pensions qu'aux veuves aussi fidèles que celle-ci, il ne se ruinera pas.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="11">
-	<s id="1">Non, certes ; et l'économe Monsieur de Rosny n'osera en murmurer.</s>
+<p n="11">
+	<s n="1 ">Non, certes ; et l'économe Monsieur de Rosny n'osera en murmurer.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="12">
-	<s id="1">Lisons son Mémoire : dicté par une douleur si noble et si profonde, il doit être attendrissant.</s>
+<p n="12">
+	<s n="1 ">Lisons son Mémoire : dicté par une douleur si noble et si profonde, il doit être attendrissant.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="13">
-	<s id="1">Mais quel est ce papier qui accompagne la requête ?... </s>
-	<s id="2">Oh ! </s>
-	<s id="3">Parbleu, l'aventure est comique.</s>
+<p n="13">
+	<s n="1 ">Mais quel est ce papier qui accompagne la requête ?... </s>
+	<s n="2 ">Oh ! </s>
+	<s n="3 ">Parbleu, l'aventure est comique.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="14">
-	<s id="1">Qu'y a-t-il donc dans ce Mémoire qui vous excite à rire ?</s>
+<p n="14">
+	<s n="1 ">Qu'y a-t-il donc dans ce Mémoire qui vous excite à rire ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="15">
-	<s id="1">Vous croyez maintenant à la douleur, la constance, à la vertu des veuves ?</s>
+<p n="15">
+	<s n="1 ">Vous croyez maintenant à la douleur, la constance, à la vertu des veuves ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="16">
-	<s id="1">Oui, j'y crois depuis un moment.</s>
+<p n="16">
+	<s n="1 ">Oui, j'y crois depuis un moment.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="17">
-	<s id="1">Cette veuve est encore si affligée de la mort de son époux, que dans le trouble de sa douleur, elle a laissé dans ce paquet un billet de son galant.</s>
+<p n="17">
+	<s n="1 ">Cette veuve est encore si affligée de la mort de son époux, que dans le trouble de sa douleur, elle a laissé dans ce paquet un billet de son galant.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="18">
-	<s id="1">Vous plaisantez ?</s>
+<p n="18">
+	<s n="1 ">Vous plaisantez ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="19">
-	<s id="1">Non, je vous jure : Pour vous convaincre, je vais vous lire ce poulet.</s>
+<p n="19">
+	<s n="1 ">Non, je vous jure : Pour vous convaincre, je vais vous lire ce poulet.</s>
 </p>
 <stage type="read">Il lit. </stage>
-<p id="20">
-	<s id="1">« Mon aimable veuve, je vous envoie le Mémoire que vous me demandez pour Monsieur de Rosny. </s>
-	<s id="2">Je suis content de mon ouvrage ; c'est tout dire : Malherbe n'écrirait pas avec plus d'éloquence. »</s>
+<p n="20">
+	<s n="1 ">« Mon aimable veuve, je vous envoie le Mémoire que vous me demandez pour Monsieur de Rosny. </s>
+	<s n="2 ">Je suis content de mon ouvrage ; c'est tout dire : Malherbe n'écrirait pas avec plus d'éloquence. »</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="21">
-	<s id="1">Ce galant est modeste.</s>
+<p n="21">
+	<s n="1 ">Ce galant est modeste.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="19">
-	<s id="1">« J'y fais, sous votre nom, un long éloge de votre époux. De toutes ses bonnes qualités, je n'ai oublié que cette crédulité, cette confiance qui nous a laissé passer ensemble de si doux moments. </s>
-	<s id="2">C'était un mari impayable ! </s>
-	<s id="3">J'ai de grandes obligations à sa bonhommie ; et il était bien juste que je me charge de son oraison funèbre. »</s>
+<p n="19">
+	<s n="1 ">« J'y fais, sous votre nom, un long éloge de votre époux. De toutes ses bonnes qualités, je n'ai oublié que cette crédulité, cette confiance qui nous a laissé passer ensemble de si doux moments. </s>
+	<s n="2 ">C'était un mari impayable ! </s>
+	<s n="3 ">J'ai de grandes obligations à sa bonhommie ; et il était bien juste que je me charge de son oraison funèbre. »</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="20">
-	<s id="1">C'est un tribut de reconnaissance.</s>
+<p n="20">
+	<s n="1 ">C'est un tribut de reconnaissance.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="21">
-	<s id="1">« Songez à bien jouer votre rôle quand vous paraîtrez devant Monsieur de Rosny... ; une démarche lente... , les genoux chancelants... une attitude touchante, une voix étouffée..., surtout des larmes... : elles vous embellissent, et vous en versez quand il vous plaît. »</s>
+<p n="21">
+	<s n="1 ">« Songez à bien jouer votre rôle quand vous paraîtrez devant Monsieur de Rosny... ; une démarche lente... , les genoux chancelants... une attitude touchante, une voix étouffée..., surtout des larmes... : elles vous embellissent, et vous en versez quand il vous plaît. »</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="22">
-	<s id="1">Elle a très bien profité de la leçon.</s>
+<p n="22">
+	<s n="1 ">Elle a très bien profité de la leçon.</s>
 </p>
 </sp>
-<sp stage="read" who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET, lit.</speaker>
-<p id="23">
-	<s id="1">« J'augure bien du succès de cette affaire. J'offre à l'économe Monsieur de Rosny les moyens de vous pensionner, sans tirer une obole des coffres du Roi. </s>
-	<s id="2">Vous demandez dans ce Mémoire une pension de trois mille livres sur les revenus du Gouvernement de Fécamp, vacant par la démission forcée de Bois-Rosé. »</s>
+<p n="23">
+	<s n="1 ">« J'augure bien du succès de cette affaire. J'offre à l'économe Monsieur de Rosny les moyens de vous pensionner, sans tirer une obole des coffres du Roi. </s>
+	<s n="2 ">Vous demandez dans ce Mémoire une pension de trois mille livres sur les revenus du Gouvernement de Fécamp, vacant par la démission forcée de Bois-Rosé. »</s>
 </p>
-</sp>
-<sp who="LE MARQUIS">
+</sp><!--@stage="read"-->
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="24">
-	<s id="1">Sur mon Gouvernement, à moi ! </s>
-	<s id="2">Trois mille livres sur mon Gouvernement !</s>
+<p n="24">
+	<s n="1 ">Sur mon Gouvernement, à moi ! </s>
+	<s n="2 ">Trois mille livres sur mon Gouvernement !</s>
 </p>
 </sp>
-<sp stage="read" who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET, lit.</speaker>
-<p id="25">
-	<s id="1">« Adieu, charmante Veuve ; j'irai dans peu de jours apprendre de vous le succès du Mémoire, et en recevoir le prix. »</s>
+<p n="25">
+	<s n="1 ">« Adieu, charmante Veuve ; j'irai dans peu de jours apprendre de vous le succès du Mémoire, et en recevoir le prix. »</s>
 </p>
-</sp>
-<sp who="LE MARQUIS">
+</sp><!--@stage="read"-->
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="26">
-	<s id="1">Et Dieu sait quel prix !</s>
+<p n="26">
+	<s n="1 ">Et Dieu sait quel prix !</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="27">
-	<s id="1">Lisons encore : le Post-scriptum est aussi long que la lettre. </s>
-	<s id="2">« J'oubliais de vous dire qu'un certain Marquis a des vues sur le Gouvernement de Fécamp. </s>
-	<s id="3">C'est un jeune fat, qui a peu de crédit, encore moins de mérite, et qui s'estimera trop heureux d'obtenir ce Gouvernement, à condition de vous faire une pension de trois mille livres ».</s>
+<p n="27">
+	<s n="1 ">Lisons encore : le Post-scriptum est aussi long que la lettre. </s>
+	<s n="2 ">« J'oubliais de vous dire qu'un certain Marquis a des vues sur le Gouvernement de Fécamp. </s>
+	<s n="3 ">C'est un jeune fat, qui a peu de crédit, encore moins de mérite, et qui s'estimera trop heureux d'obtenir ce Gouvernement, à condition de vous faire une pension de trois mille livres ».</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="28">
-	<s id="1">Si je savais quel est le fat qui a écrit ces impertinences !...  </s>
-	<s id="2">A-t-il signé son nom ?</s>
+<p n="28">
+	<s n="1 ">Si je savais quel est le fat qui a écrit ces impertinences !...  </s>
+	<s n="2 ">A-t-il signé son nom ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="29">
-	<s id="1">La lettre est anonyme.</s>
+<p n="29">
+	<s n="1 ">La lettre est anonyme.</s>
 </p>
 </sp>
-<sp stage="steal" who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS, arrachant la lettre des mains de Monsieur Discret.</speaker>
-<p id="30">
-	<s id="1">Voyons.</s>
+<p n="30">
+	<s n="1 ">Voyons.</s>
 </p>
-</sp>
-<sp who="MONSIEUR DISCRET">
+</sp><!--@stage="steal"-->
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="31">
-	<s id="1">Il paraît que ce panégyriste ne loue que les morts, et qu'il ne prodigue pas son encens aux vivants : mais épousez cette veuve, et quelque jour il fera votre oraison funèbre.</s>
+<p n="31">
+	<s n="1 ">Il paraît que ce panégyriste ne loue que les morts, et qu'il ne prodigue pas son encens aux vivants : mais épousez cette veuve, et quelque jour il fera votre oraison funèbre.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="32">
-	<s id="1">Il ne s'est pas nommé, il a bien fait... mais vous ne lisiez pas tout.</s>
+<p n="32">
+	<s n="1 ">Il ne s'est pas nommé, il a bien fait... mais vous ne lisiez pas tout.</s>
 </p>
 <stage type="read">Il lit.</stage>
-<p id="33">
-	<s id="1">« On dit que ce Marquis est ami de Monsieur Discret. </s>
-	<s id="2">Ce commis est un fripon, que la sévérité de Monsieur de Rosny empêche de vendre ouvertement les grâces. </s>
-	<s id="3">Mais il est une manière indirecte de composer avec lui, et je me charge de ce soin. » </s>
-	<s id="4">Cet éloge ne corrompra pas votre religion.</s>
+<p n="33">
+	<s n="1 ">« On dit que ce Marquis est ami de Monsieur Discret. </s>
+	<s n="2 ">Ce commis est un fripon, que la sévérité de Monsieur de Rosny empêche de vendre ouvertement les grâces. </s>
+	<s n="3 ">Mais il est une manière indirecte de composer avec lui, et je me charge de ce soin. » </s>
+	<s n="4 ">Cet éloge ne corrompra pas votre religion.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="34">
-	<s id="1">Eh bien ! </s>
-	<s id="2">Voulez-vous que j'appuie cette veuve de tout mon crédit ?</s>
+<p n="34">
+	<s n="1 ">Eh bien ! </s>
+	<s n="2 ">Voulez-vous que j'appuie cette veuve de tout mon crédit ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="35">
-	<s id="1">Gardez-vous-en bien ! </s>
-	<s id="2">Trois mille livres sur mon Gouvernement !</s>
+<p n="35">
+	<s n="1 ">Gardez-vous-en bien ! </s>
+	<s n="2 ">Trois mille livres sur mon Gouvernement !</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="36">
-	<s id="1">Cela ne tire point à conséquence ; et si le Roi ne fait des pensions qu'à des veuves aussi fidèles, aussi vertueuses, il ne se ruinera pas.</s>
+<p n="36">
+	<s n="1 ">Cela ne tire point à conséquence ; et si le Roi ne fait des pensions qu'à des veuves aussi fidèles, aussi vertueuses, il ne se ruinera pas.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="37">
-	<s id="1">S'il les tirait de ses coffres, je réponds qu'ils seraient bientôt vides.</s>
+<p n="37">
+	<s n="1 ">S'il les tirait de ses coffres, je réponds qu'ils seraient bientôt vides.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="38">
-	<s id="1">En vérité, vous êtes bien peu galant. </s>
-	<s id="2">Refuser trois mille livres à une veuve qui a des grâces, de l'esprit, des charmes, et qui, avec tout cela, est fidèle à la mémoire de son époux !</s>
+<p n="38">
+	<s n="1 ">En vérité, vous êtes bien peu galant. </s>
+	<s n="2 ">Refuser trois mille livres à une veuve qui a des grâces, de l'esprit, des charmes, et qui, avec tout cela, est fidèle à la mémoire de son époux !</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="8">
+</div>
+<div type="scene" n="8">
                     <head>SCÈNE VIII. Le Marquis, Monsieur Discret, Laforest.</head>
-<sp stage="hurry" who="LA FOREST">
+<sp who="#la-forest">
                         <speaker>LA FOREST, d'un air empressé.</speaker>
-<p id="1">
-	<s id="1">Monsieur !...</s>
+<p n="1">
+	<s n="1 ">Monsieur !...</s>
 </p>
-</sp>
-<sp who="LE MARQUIS">
+</sp><!--@stage="hurry"-->
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="2">
-	<s id="1">Qu'as-tu donc ? </s>
-	<s id="2">Que veux-tu ?</s>
+<p n="2">
+	<s n="1 ">Qu'as-tu donc ? </s>
+	<s n="2 ">Que veux-tu ?</s>
 </p>
 </sp>
-<sp who="LAFOREST">
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="3">
-	<s id="1">Je viens vous avertir que Monsieur de Bois-Rosé vient de descendre dans cette auberge.</s>
+<p n="3">
+	<s n="1 ">Je viens vous avertir que Monsieur de Bois-Rosé vient de descendre dans cette auberge.</s>
 </p>
 </sp>
-<sp stage="anxious" who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS, d'un air inquiet.</speaker>
-<p id="4">
-	<s id="1">Bois-Rosé !... </s>
-	<s id="2">Que fait-il...? </s>
-	<s id="3">Que veut-il ? </s>
-	<s id="4">Où va-t-il ?</s>
+<p n="4">
+	<s n="1 ">Bois-Rosé !... </s>
+	<s n="2 ">Que fait-il...? </s>
+	<s n="3 ">Que veut-il ? </s>
+	<s n="4 ">Où va-t-il ?</s>
 </p>
-</sp>
-<sp who="LAFOREST">
+</sp><!--@stage="anxious"-->
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="5">
-	<s id="1">J'ai questionné son valet, et j'ai su de lui que son Maître allait à la Cour pour se justifier aux yeux du Roi ; qu'avant de partir, il s'était mis en mer ; qu'il avait coulé à fond un des deux vaisseaux Espagnols, et qu'il avait amené l'autre dans le port de Fécamp,</s>
+<p n="5">
+	<s n="1 ">J'ai questionné son valet, et j'ai su de lui que son Maître allait à la Cour pour se justifier aux yeux du Roi ; qu'avant de partir, il s'était mis en mer ; qu'il avait coulé à fond un des deux vaisseaux Espagnols, et qu'il avait amené l'autre dans le port de Fécamp,</s>
 </p>
 </sp>
-<sp who="MONSIEUR DISCRET">
+<sp who="#monsieur-discret">
                         <speaker>MONSIEUR DISCRET.</speaker>
-<p id="6">
-	<s id="1">Ma foi, Monsieur le Gouverneur, vos affaires vont fort mal. </s>
-	<s id="2">Le Roi est juste ; Monsieur de Rosny n'est point opiniâtre ; Bois-Rosé est innocent...</s>
+<p n="6">
+	<s n="1 ">Ma foi, Monsieur le Gouverneur, vos affaires vont fort mal. </s>
+	<s n="2 ">Le Roi est juste ; Monsieur de Rosny n'est point opiniâtre ; Bois-Rosé est innocent...</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="7">
-	<s id="1">Je ne perds point la tête pour si peu de chose : laissez-moi le soin de parer ce coup.</s>
+<p n="7">
+	<s n="1 ">Je ne perds point la tête pour si peu de chose : laissez-moi le soin de parer ce coup.</s>
 </p>
 <stage type="toward">À Laforest.</stage>
-<p id="8">
-	<s id="1">Bois-Rosé fait-il que Monsieur de Rosny est dans cette auberge ?</s>
+<p n="8">
+	<s n="1 ">Bois-Rosé fait-il que Monsieur de Rosny est dans cette auberge ?</s>
 </p>
 </sp>
-<sp who="LAFOREST">
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="9">
-	<s id="1">Non : je lui ai dit qu'il y avait un Seigneur que je ne connais pas.</s>
+<p n="9">
+	<s n="1 ">Non : je lui ai dit qu'il y avait un Seigneur que je ne connais pas.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="10">
-	<s id="1">Fort bien, et sait-il que j'y suis ?</s>
+<p n="10">
+	<s n="1 ">Fort bien, et sait-il que j'y suis ?</s>
 </p>
 </sp>
-<sp who="LAFOREST">
+<sp who="#laforest">
                         <speaker>LAFOREST.</speaker>
-<p id="11">
-	<s id="1">Oui ; il veut, dit-il, vous consulter.</s>
+<p n="11">
+	<s n="1 ">Oui ; il veut, dit-il, vous consulter.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="12">
-	<s id="1">À merveille. </s>
-	<s id="2">Mon cher Monsieur Discret, laissez-moi seul avec lui. </s>
-	<s id="3">Je vous réponds que c'est un homme perdu... </s>
-	<s id="4">Tâchez seulement que Monsieur de Rosny adresse ses pas vers ce salon, et surtout prenez vos précautions pour que la veuve n'ait point de pension sur mon Gouvernement.</s>
+<p n="12">
+	<s n="1 ">À merveille. </s>
+	<s n="2 ">Mon cher Monsieur Discret, laissez-moi seul avec lui. </s>
+	<s n="3 ">Je vous réponds que c'est un homme perdu... </s>
+	<s n="4 ">Tâchez seulement que Monsieur de Rosny adresse ses pas vers ce salon, et surtout prenez vos précautions pour que la veuve n'ait point de pension sur mon Gouvernement.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="9">
+</div>
+<div type="scene" n="9">
                     <head>SCÈNE IX.</head>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS, seul.</speaker>
-<p id="1">
-	<s id="1">Ah ! </s>
-	<s id="2">Monsieur de Bois-Rosé, vous voulez des conseils ! </s>
-	<s id="3">Je vous en donnerai..., je vous en donnerai... ; je vous prépare un tour de courtisan, auquel vous ne vous attendez pas... </s>
-	<s id="4">Vous êtes impétueux, franc, vindicatif, indiscret ; je saurai tirer parti de votre caractère... </s>
-	<s id="5">Mais le voici.</s>
+<p n="1">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Monsieur de Bois-Rosé, vous voulez des conseils ! </s>
+	<s n="3 ">Je vous en donnerai..., je vous en donnerai... ; je vous prépare un tour de courtisan, auquel vous ne vous attendez pas... </s>
+	<s n="4 ">Vous êtes impétueux, franc, vindicatif, indiscret ; je saurai tirer parti de votre caractère... </s>
+	<s n="5 ">Mais le voici.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="10">
+</div>
+<div type="scene" n="10">
                     <head>SCÈNE X. Le Marquis, Bois-Rosé.</head>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="1">
-	<s id="1">Ah ! Mon cher Bois-Rosé, que je suis enchanté de vous revoir ! </s>
-	<s id="">Souffrez que je vous embrasse.</s>
+<p n="1">
+	<s n="1 ">Ah ! Mon cher Bois-Rosé, que je suis enchanté de vous revoir ! </s>
+	<s n=" ">Souffrez que je vous embrasse.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="2">
-	<s id="1">Vous m'embrassez, et vous êtes courtisan ? </s>
-	<s id="2">Vous ignorez donc ma disgrâce ?</s>
+<p n="2">
+	<s n="1 ">Vous m'embrassez, et vous êtes courtisan ? </s>
+	<s n="2 ">Vous ignorez donc ma disgrâce ?</s>
 </p>	
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="3">
-	<s id="1">Quoi ! </s>
-	<s id="2">Votre chute est réelle ?</s>
+<p n="3">
+	<s n="1 ">Quoi ! </s>
+	<s n="2 ">Votre chute est réelle ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="4">
-	<s id="1">Elle est même publique,</s>
+<p n="4">
+	<s n="1 ">Elle est même publique,</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="5">
-	<s id="1">On vous ôte votre gouvernement ?</s>
+<p n="5">
+	<s n="1 ">On vous ôte votre gouvernement ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="6">
-	<s id="1">On me l'ôte, et de la manière la plus humiliante. </s>
-	<s id="2">En me dépouillant, on a l'air de me faire grâce.</s>
+<p n="6">
+	<s n="1 ">On me l'ôte, et de la manière la plus humiliante. </s>
+	<s n="2 ">En me dépouillant, on a l'air de me faire grâce.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="7">
-	<s id="1">La renommée m'en avait averti ; mais je démentais la renommée. </s>
-	<s id="2">Je soutenais que c'était un faux bruit, accrédité par vos envieux. </s>
-	<s id="3">Non, disais-je, cela est impossible ; Monsieur de Rosny est juste.</s>
+<p n="7">
+	<s n="1 ">La renommée m'en avait averti ; mais je démentais la renommée. </s>
+	<s n="2 ">Je soutenais que c'était un faux bruit, accrédité par vos envieux. </s>
+	<s n="3 ">Non, disais-je, cela est impossible ; Monsieur de Rosny est juste.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="8">
-	<s id="1">Monsieur de Rosny est juste, lui ! </s>
-	<s id="2">C'est le plus inique, le plus méchant, le plus entêté, le plus... </s>
-	<s id="3">Ah ! </s>
-	<s id="4">Son nom seul me rend, toute ma fureur.</s>
+<p n="8">
+	<s n="1 ">Monsieur de Rosny est juste, lui ! </s>
+	<s n="2 ">C'est le plus inique, le plus méchant, le plus entêté, le plus... </s>
+	<s n="3 ">Ah ! </s>
+	<s n="4 ">Son nom seul me rend, toute ma fureur.</s>
 </p>
 </sp>
-<sp stage="aparte" who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS, à part.</speaker>
-<p id="9">
-	<s id="1">Bien, fort bien : mon ami, appuyez.</s>
+<p n="9">
+	<s n="1 ">Bien, fort bien : mon ami, appuyez.</s>
 </p>
-</sp>
-<sp who="BOIS-ROSÉ">
+</sp><!--@stage="aparte"-->
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="10">
-	<s id="1">Maintenant que vous êtes certain de ma disgrâce, vous regrettez l'accolade que vous m'avez donnée ?</s>
+<p n="10">
+	<s n="1 ">Maintenant que vous êtes certain de ma disgrâce, vous regrettez l'accolade que vous m'avez donnée ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="11">
-	<s id="1">Qui, moi ? </s>
-	<s id="2">Ah ! </s>
-	<s id="3">Que cet embrassement vous prouve combien ce reproche est peu mérité.</s>
+<p n="11">
+	<s n="1 ">Qui, moi ? </s>
+	<s n="2 ">Ah ! </s>
+	<s n="3 ">Que cet embrassement vous prouve combien ce reproche est peu mérité.</s>
 </p>
 <stage type="kiss">Il l'embrasse.</stage>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="12">
-	<s id="1">Vous vivez à la Cour, et vous caressez un malheureux !</s>
+<p n="12">
+	<s n="1 ">Vous vivez à la Cour, et vous caressez un malheureux !</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="13">
-	<s id="1">Mon cher Bois-Rosé, ne me faites pas l'injure de me croire semblable à ces courtisans qui encensent l'Idole, tant qu'il est sur l'Autel ; qui le foulent aux pieds, dès qu'il est renversé. </s>
-	<s id="2">Connaissez mieux ce coeur que vos soupçons outragent. </s>
-	<s id="3">La disgrâce de mes amis accroît mon zèle pour eux ; et, depuis que je sais la vôtre, je sens que je vous aime davantage.</s>
+<p n="13">
+	<s n="1 ">Mon cher Bois-Rosé, ne me faites pas l'injure de me croire semblable à ces courtisans qui encensent l'Idole, tant qu'il est sur l'Autel ; qui le foulent aux pieds, dès qu'il est renversé. </s>
+	<s n="2 ">Connaissez mieux ce coeur que vos soupçons outragent. </s>
+	<s n="3 ">La disgrâce de mes amis accroît mon zèle pour eux ; et, depuis que je sais la vôtre, je sens que je vous aime davantage.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="14">
-	<s id="1">Homme rare, homme étonnant, pardonnez si j'ai cru qu'en apprenant mon infortune, vous m'abandonneriez. </s>
-	<s id="2">J'ai soupçonné mon ami, je l'ai calomnié. </s>
-	<s id="3">Ce malheur me manquait... </s>
-	<s id="4">Mais, dites-moi, soyez sincère ; me croyez-vous coupable ?</s>
+<p n="14">
+	<s n="1 ">Homme rare, homme étonnant, pardonnez si j'ai cru qu'en apprenant mon infortune, vous m'abandonneriez. </s>
+	<s n="2 ">J'ai soupçonné mon ami, je l'ai calomnié. </s>
+	<s n="3 ">Ce malheur me manquait... </s>
+	<s n="4 ">Mais, dites-moi, soyez sincère ; me croyez-vous coupable ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="15">
-	<s id="1">Et de quoi, de quelque trait d'humeur ou de fierté envers le Ministre ?</s>
+<p n="15">
+	<s n="1 ">Et de quoi, de quelque trait d'humeur ou de fierté envers le Ministre ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="16">
-	<s id="1">Si l'on ne m'accusait que d'une pareille faute, je ne prendrais pas la peine de me justifier.</s>
+<p n="16">
+	<s n="1 ">Si l'on ne m'accusait que d'une pareille faute, je ne prendrais pas la peine de me justifier.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="17">
-	<s id="1">Quoi ! </s>
-	<s id="2">L'on a hasardé contre vous des imputations plus graves ?</s>
+<p n="17">
+	<s n="1 ">Quoi ! </s>
+	<s n="2 ">L'on a hasardé contre vous des imputations plus graves ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="18">
-	<s id="1">C'est l'accusation la plus noire ! </s>
-	<s id="2">Si elle était vraie, il faudrait qu'un bourreau versât les restes de ce sang qui coula tant de foi au champ d'honneur.</s>
+<p n="18">
+	<s n="1 ">C'est l'accusation la plus noire ! </s>
+	<s n="2 ">Si elle était vraie, il faudrait qu'un bourreau versât les restes de ce sang qui coula tant de foi au champ d'honneur.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="19">
-	<s id="1">Vous me faites frémir... </s>
-	<s id="2">On vous accuse ?</s>
+<p n="19">
+	<s n="1 ">Vous me faites frémir... </s>
+	<s n="2 ">On vous accuse ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="20">
-	<s id="1">D'avoir voulu livrer Fécamp aux Espagnols.</s>
+<p n="20">
+	<s n="1 ">D'avoir voulu livrer Fécamp aux Espagnols.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="21">
-	<s id="1">Et Monfieur de Rosny l'a cru ?</s>
+<p n="21">
+	<s n="1 ">Et Monfieur de Rosny l'a cru ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="22">
-	<s id="1">Toujours lent à récompenser, prompt à punir, il écoute le bien avec défiance, le mal avec avidité.</s>
+<p n="22">
+	<s n="1 ">Toujours lent à récompenser, prompt à punir, il écoute le bien avec défiance, le mal avec avidité.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="23">
-	<s id="1">Connaissez-vous les calomniateurs ?</s>
+<p n="23">
+	<s n="1 ">Connaissez-vous les calomniateurs ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="24">
-	<s id="1">Si je les connaissais, leur sang impur aurait déjà souillé cette épée que ma valeur réservait à de plus nobles exploits... </s>
-	<s id="2">Mais non, le Mémoire était anonyme. </s>
-	<s id="3">C'est sur un rapport clandestin que l'on me condamne.</s>
+<p n="24">
+	<s n="1 ">Si je les connaissais, leur sang impur aurait déjà souillé cette épée que ma valeur réservait à de plus nobles exploits... </s>
+	<s n="2 ">Mais non, le Mémoire était anonyme. </s>
+	<s n="3 ">C'est sur un rapport clandestin que l'on me condamne.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="25">
-	<s id="1">Le perfide auteur de cette fourbe a beau se cacher ; je saurai le découvrir. </s>
-	<s id="2">J'ai des amis, qui savent démêler toutes les intrigues de Cour.</s>
+<p n="25">
+	<s n="1 ">Le perfide auteur de cette fourbe a beau se cacher ; je saurai le découvrir. </s>
+	<s n="2 ">J'ai des amis, qui savent démêler toutes les intrigues de Cour.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="26">
-	<s id="1">Ah ! </s>
-	<s id="2">De grâce, rendez-moi ce service.</s>
+<p n="26">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">De grâce, rendez-moi ce service.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="27">
-	<s id="1">Comptez sur les soins de mes amis, non sur les miens ; car, pour moi, je n'entends rien à toutes ces intrigues,</s>
+<p n="27">
+	<s n="1 ">Comptez sur les soins de mes amis, non sur les miens ; car, pour moi, je n'entends rien à toutes ces intrigues,</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="28">
-	<s id="1">Ah ! </s>
-	<s id="2">Si vous pouviez me découvrir ce lâche ennemi qui se cache dans les ténèbres... ! </s>
-	<s id="3">Mon ami, on dit que la clémence est la vertu des grandes âmes, qu'il est beau de pardonner. </s>
-	<s id="4">Je crois avoir l'âme grande... </s>
-	<s id="5">Cependant j'aurais un plaisir inexprimable à reconnaître mon ennemi, à l'appeler en duel, lui plonger mon épée... là... dans le coeur, et à lui dire, avant qu'il ferme les yeux : « Meurs, misérable, meurs, avec les remords qui suivent la perfidie ; meurs avec la certitude d'être en horreur à la postérité, d'être regardé par elle comme un lâche, qui porta à son ennemi des coups obscurs, et n'osa se nommer ; meurs, et regrette la vie, car tous les méchants la regrettent. »</s>
+<p n="28">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Si vous pouviez me découvrir ce lâche ennemi qui se cache dans les ténèbres... ! </s>
+	<s n="3 ">Mon ami, on dit que la clémence est la vertu des grandes âmes, qu'il est beau de pardonner. </s>
+	<s n="4 ">Je crois avoir l'âme grande... </s>
+	<s n="5 ">Cependant j'aurais un plaisir inexprimable à reconnaître mon ennemi, à l'appeler en duel, lui plonger mon épée... là... dans le coeur, et à lui dire, avant qu'il ferme les yeux : « Meurs, misérable, meurs, avec les remords qui suivent la perfidie ; meurs avec la certitude d'être en horreur à la postérité, d'être regardé par elle comme un lâche, qui porta à son ennemi des coups obscurs, et n'osa se nommer ; meurs, et regrette la vie, car tous les méchants la regrettent. »</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="29">
-	<s id="1">Mais si ces calomniateurs étaient en grand  nombre ?...</s>
+<p n="29">
+	<s n="1 ">Mais si ces calomniateurs étaient en grand  nombre ?...</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="30">
-	<s id="1">Bois-Rosé n'a jamais compté ses ennemis.</s>
+<p n="30">
+	<s n="1 ">Bois-Rosé n'a jamais compté ses ennemis.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="29">
-	<s id="1">Mon ami, s'ils sont plusieurs, je veux être : votre second.</s>
+<p n="29">
+	<s n="1 ">Mon ami, s'ils sont plusieurs, je veux être : votre second.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="30">
-	<s id="1">Homme de bien, gardez votre sang au Roi, à la Patrie. </s>
-	<s id="2">Bois-Rosé n'en a pas besoin. </s>
-	<s id="3">Conservez-vous, Marquis, conservez-vous, pour donner longtemps à la Cour un exemple de candeur et de générosité qu'elle n'imitera guère.</s>
+<p n="30">
+	<s n="1 ">Homme de bien, gardez votre sang au Roi, à la Patrie. </s>
+	<s n="2 ">Bois-Rosé n'en a pas besoin. </s>
+	<s n="3 ">Conservez-vous, Marquis, conservez-vous, pour donner longtemps à la Cour un exemple de candeur et de générosité qu'elle n'imitera guère.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="31">
-	<s id="1">Non, je veux être votre vengeur.</s>
+<p n="31">
+	<s n="1 ">Non, je veux être votre vengeur.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="32">
-	<s id="1">Calmez ces transports. </s>
-	<s id="2">Ce n'est pas de votre courage que j'ai besoin, c'est de votre sagesse. </s>
-	<s id="3">Donnez-moi des conseils ; dans le trouble où je suis, je ne puis en prendre de moi même ...</s>
+<p n="32">
+	<s n="1 ">Calmez ces transports. </s>
+	<s n="2 ">Ce n'est pas de votre courage que j'ai besoin, c'est de votre sagesse. </s>
+	<s n="3 ">Donnez-moi des conseils ; dans le trouble où je suis, je ne puis en prendre de moi même ...</s>
 </p>	
 <stage type="serious">D'un ton pénétré.</stage>
-<p id="33">
-	<s id="1">Vous êtes mon ami !</s>
+<p n="33">
+	<s n="1 ">Vous êtes mon ami !</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="34">
-	<s id="1">Si je le suis, mon cher Bois-Rosé !... </s>
-	<s id="2">Tenez, il n'y a pas longtemps que la veuve d'un Officier tué au siège de Rouen vint demander une pension sur votre Gouvernement.</s>
+<p n="34">
+	<s n="1 ">Si je le suis, mon cher Bois-Rosé !... </s>
+	<s n="2 ">Tenez, il n'y a pas longtemps que la veuve d'un Officier tué au siège de Rouen vint demander une pension sur votre Gouvernement.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="35">
-	<s id="1">Eh bien !</s>
+<p n="35">
+	<s n="1 ">Eh bien !</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="36">
-	<s id="1">Eh bien, c'est moi qui, par mon crédit, ai empêché qu'on ne la lui donnât.</s>
+<p n="36">
+	<s n="1 ">Eh bien, c'est moi qui, par mon crédit, ai empêché qu'on ne la lui donnât.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="37">
-	<s id="1">Eh ! Pourquoi vous y être opposé ? </s>
-	<s id="2">Quand l'État est obéré, ce n'est point au Roi à pensionner les veuves et les enfants des Officiers morts dans les combats. </s>
-	<s id="3">Leurs pensions doivent être prises sur l'excédent des bénéfices ecclésiastiques ou militaires. </s>
-	<s id="4">Ah ! </s>
-	<s id="5">Qu'on prenne, si l'on veut, tous les revenus de ma place, mais qu'on m'en laisse le titre et l'honneur ; oui l'honneur, oui, je crois, le mériter. </s>
-	<s id="6">Je fus Ligueur, il est vrai ; mais la moitié de la France l'a été ; mais j'ai reconnu mon erreur ; mais j'ai depuis versé pour le Roi ce sang qui avait coulé pour la Ligue.</s>
+<p n="37">
+	<s n="1 ">Eh ! Pourquoi vous y être opposé ? </s>
+	<s n="2 ">Quand l'État est obéré, ce n'est point au Roi à pensionner les veuves et les enfants des Officiers morts dans les combats. </s>
+	<s n="3 ">Leurs pensions doivent être prises sur l'excédent des bénéfices ecclésiastiques ou militaires. </s>
+	<s n="4 ">Ah ! </s>
+	<s n="5 ">Qu'on prenne, si l'on veut, tous les revenus de ma place, mais qu'on m'en laisse le titre et l'honneur ; oui l'honneur, oui, je crois, le mériter. </s>
+	<s n="6 ">Je fus Ligueur, il est vrai ; mais la moitié de la France l'a été ; mais j'ai reconnu mon erreur ; mais j'ai depuis versé pour le Roi ce sang qui avait coulé pour la Ligue.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="38">
-	<s id="1">C'est ce qu'il faut persuader au Roi.</s>
+<p n="38">
+	<s n="1 ">C'est ce qu'il faut persuader au Roi.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
 <note type="C">Monsieur de Rosny : Maximilien de Béthune, duc de Sully (1559-1641), militaire protestant et ministre d'Henri IV.</note>
-<p id="39">
-	<s id="1">Mais comment parvenir jusqu'à lui ? </s>
-	<s id="2">Ce Monsieur de Rosny l'assiège toujours.</s>
+<p n="39">
+	<s n="1 ">Mais comment parvenir jusqu'à lui ? </s>
+	<s n="2 ">Ce Monsieur de Rosny l'assiège toujours.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="40">
-	<s id="1">Vous ne connaissez pas ce ministre ?</s>
+<p n="40">
+	<s n="1 ">Vous ne connaissez pas ce ministre ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="41">
-	<s id="1">Vous savez que je ne l'ai jamais vu. Je ne vais point caresser l'orgueil des Grands. </s>
-	<s id="2">C'est par des services que je fais ma Cour.</s>
+<p n="41">
+	<s n="1 ">Vous savez que je ne l'ai jamais vu. Je ne vais point caresser l'orgueil des Grands. </s>
+	<s n="2 ">C'est par des services que je fais ma Cour.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="42">
-	<s id="1">Aussi êtes-vous disgracié... </s>
-	<s id="2">Mais, si vous voulez me croire, vous rentrerez bientôt en faveur.</s>
+<p n="42">
+	<s n="1 ">Aussi êtes-vous disgracié... </s>
+	<s n="2 ">Mais, si vous voulez me croire, vous rentrerez bientôt en faveur.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="43">
-	<s id="1">Parlez, soyez mon guide. </s>
-	<s id="2">La Cour est pour un Soldat un pays inconnu ; éclairez-moi, conduisez-moi, vos conseils seront vos ordres.</s>
+<p n="43">
+	<s n="1 ">Parlez, soyez mon guide. </s>
+	<s n="2 ">La Cour est pour un Soldat un pays inconnu ; éclairez-moi, conduisez-moi, vos conseils seront vos ordres.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="44">
-	<s id="1">Ce que je vais vous dire est un secret : n'en abusez pas.</s>
+<p n="44">
+	<s n="1 ">Ce que je vais vous dire est un secret : n'en abusez pas.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="45">
-	<s id="1">Ne craignez rien ; j'ai trahi plus d'une fois mes propres secrets aux dépens de ma fortune : mais je ne trahirai jamais le secret de mon ami.</s>
+<p n="45">
+	<s n="1 ">Ne craignez rien ; j'ai trahi plus d'une fois mes propres secrets aux dépens de ma fortune : mais je ne trahirai jamais le secret de mon ami.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="46">
-	<s id="1">Écoutez, il y a ici un Seigneur qui voyages incognito, et que le Roi envoie secrètement pour épier la conduite de ses Ministres, s'informer de leurs injustices, écouter les plaintes du Peuple, et lui en rendre compte.</s>
+<p n="46">
+	<s n="1 ">Écoutez, il y a ici un Seigneur qui voyages incognito, et que le Roi envoie secrètement pour épier la conduite de ses Ministres, s'informer de leurs injustices, écouter les plaintes du Peuple, et lui en rendre compte.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ, vivement.</speaker>
-<p id="47">
-	<s id="1">Où est-il ? </s>
-	<s id="2">Il faut que je le voie ! </s>
-	<s id="3">De grâce, mon ami, il faut que je lui parle. </s>
-	<s id="4">Est-ce un homme équitable ?</s>
+<p n="47">
+	<s n="1 ">Où est-il ? </s>
+	<s n="2 ">Il faut que je le voie ! </s>
+	<s n="3 ">De grâce, mon ami, il faut que je lui parle. </s>
+	<s n="4 ">Est-ce un homme équitable ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="48">
-	<s id="1">C'est l'équité même. </s>
-	<s id="2">Je vous le dis entre nous ; cet homme est l'ennemi le plus redoutable que Monsieur de Rosny ait à la Cour. </s>
-	<s id="3">Il garde contre lui un ressentiment profond, ineffaçable, et qui éclatera quelque jour. </s>
-	<s id="4">Vous ne pouvez mieux flatter ce Seigneur qu'en lui peignant Monsieur de Rosny... , là... , comme vous le voyez. </s>
-	<s id="5">Soyez persuadé qu'il vous appuiera auprès du Roi... </s>
-	<s id="6">Un heureux hasard l'amène vers ce salon, je vous laisse avec lui... ; surtout ne ménagez pas Monsieur de Rosny.</s>
+<p n="48">
+	<s n="1 ">C'est l'équité même. </s>
+	<s n="2 ">Je vous le dis entre nous ; cet homme est l'ennemi le plus redoutable que Monsieur de Rosny ait à la Cour. </s>
+	<s n="3 ">Il garde contre lui un ressentiment profond, ineffaçable, et qui éclatera quelque jour. </s>
+	<s n="4 ">Vous ne pouvez mieux flatter ce Seigneur qu'en lui peignant Monsieur de Rosny... , là... , comme vous le voyez. </s>
+	<s n="5 ">Soyez persuadé qu'il vous appuiera auprès du Roi... </s>
+	<s n="6 ">Un heureux hasard l'amène vers ce salon, je vous laisse avec lui... ; surtout ne ménagez pas Monsieur de Rosny.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="11">
+</div>
+<div type="scene" n="11">
                     <head>SCÈNE XI.</head>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ, seul.</speaker>
-<p id="1">
-	<s id="1">Enfin je vais être vengé... </s>
-	<s id="2">Je les verrat pâlir à mon retour ces subalternes qui triomphaient à mon départ, et qui s'applaudissaient de ma chute... </s>
-	<s id="3">Le voici , ce Seigneur ; qu'il a l'air doux, modeste, affable ! </s>
-	<s id="4">Oh ! </s>
-	<s id="5">Je réponds bien que Monsieur de Rosny ne ressemble point à cet homme-là.</s>
+<p n="1">
+	<s n="1 ">Enfin je vais être vengé... </s>
+	<s n="2 ">Je les verrat pâlir à mon retour ces subalternes qui triomphaient à mon départ, et qui s'applaudissaient de ma chute... </s>
+	<s n="3 ">Le voici , ce Seigneur ; qu'il a l'air doux, modeste, affable ! </s>
+	<s n="4 ">Oh ! </s>
+	<s n="5 ">Je réponds bien que Monsieur de Rosny ne ressemble point à cet homme-là.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="12">
+</div>
+<div type="scene" n="12">
                     <head>SCÈNE XII. Monsieur de Rosny, Bois-Rosé.</head>
-<sp stage="aparte" who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ, à part.</speaker>
-<p id="1">
-	<s id="1">Il semble plongé dans des réflexions profondes ! </s>
-	<s id="2">Comment l'aborder ! </s>
-	<s id="3">Qu'un Soldat est malheureux ! </s>
-	<s id="4">La présence de l'ennemi m'enhardit, celle d'un courtisan que je ne connais pas me déconcerte... </s>
-	<s id="5">Voyons cependant... </s>
-	<s id="6">Allons droit à lui ...</s>
+<p n="1">
+	<s n="1 ">Il semble plongé dans des réflexions profondes ! </s>
+	<s n="2 ">Comment l'aborder ! </s>
+	<s n="3 ">Qu'un Soldat est malheureux ! </s>
+	<s n="4 ">La présence de l'ennemi m'enhardit, celle d'un courtisan que je ne connais pas me déconcerte... </s>
+	<s n="5 ">Voyons cependant... </s>
+	<s n="6 ">Allons droit à lui ...</s>
 </p>
 <stage type="toward">À Monsieur de Rosny.</stage>
-<p id="2">
-	<s id="1">Monsieur !</s>
+<p n="2">
+	<s n="1 ">Monsieur !</s>
 </p>
-</sp>
-<sp who="MONSIEUR DE ROSNY">
+</sp><!--@stage="aparte"-->
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="3">
-	<s id="1">Que souhaitez-vous ?</s>
+<p n="3">
+	<s n="1 ">Que souhaitez-vous ?</s>
 </p>
 </sp>
-<sp stage="embarrassed" who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ, avec embarras.</speaker>
-<p id="4">
-	<s id="1">Vous entretenir de mes malheurs.</s>
+<p n="4">
+	<s n="1 ">Vous entretenir de mes malheurs.</s>
 </p>
-</sp>
-<sp who="MONSIEUR DE ROSNY">
+</sp><!--@stage="embarrassed"-->
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="5">
-	<s id="1">Parlez.</s>
+<p n="5">
+	<s n="1 ">Parlez.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="6">
-	<s id="1">Je vous importune peut-être : vous me paraissez occupé d'affaires très sérieuses.</s>
+<p n="6">
+	<s n="1 ">Je vous importune peut-être : vous me paraissez occupé d'affaires très sérieuses.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="7">
-	<s id="1">Quand des infortunés s'adressent à moi, je n'ai point d'autres affaires que les leurs. </s>
-	<s id="2">Parlez avec confiance.</s>
+<p n="7">
+	<s n="1 ">Quand des infortunés s'adressent à moi, je n'ai point d'autres affaires que les leurs. </s>
+	<s n="2 ">Parlez avec confiance.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="8">
-	<s id="1">Par où commencer ? </s>
-	<s id="2">J'aimerais mieux être chargé d'examiner le fort et le faible de vingt places de guerre, que de sonder le coeur d'un courtisan...</s>
+<p n="8">
+	<s n="1 ">Par où commencer ? </s>
+	<s n="2 ">J'aimerais mieux être chargé d'examiner le fort et le faible de vingt places de guerre, que de sonder le coeur d'un courtisan...</s>
 </p>
 <stage type="toward">À Monsieur de Rosny. </stage>
-<p id="9">
-	<s id="1">On m'a dit que le Roi vous envoyait pour examiner la conduite de ses ministres. </s>
-	<s id="2">Convenez qu'il n'en est point de plus injuste que Monsieur de Rosny.</s>
+<p n="9">
+	<s n="1 ">On m'a dit que le Roi vous envoyait pour examiner la conduite de ses ministres. </s>
+	<s n="2 ">Convenez qu'il n'en est point de plus injuste que Monsieur de Rosny.</s>
 </p>
 </sp>
-<sp stage="aparte" who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="10">
-	<s id="1">Que veut dire ceci ? </s>
-	<s id="2">M'insulter en face !...</s>
+<p n="10">
+	<s n="1 ">Que veut dire ceci ? </s>
+	<s n="2 ">M'insulter en face !...</s>
 </p>
 <stage type="toward">À Bois-Rosé.</stage>
-<p id="11">
-	<s id="1">Vous ignorez sans doute à qui vous parlez ?</s>
+<p n="11">
+	<s n="1 ">Vous ignorez sans doute à qui vous parlez ?</s>
 </p>
-</sp>
-<sp stage="aparte" who="BOIS-ROSÉ">
+</sp><!--@stage="aparte"-->
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ, à part.</speaker>
-<p id="12">
-	<s id="1">Comme ces courtisans savent dissimuler !</s>
+<p n="12">
+	<s n="1 ">Comme ces courtisans savent dissimuler !</s>
 </p>
 <stage type="toward">À Monsieur de Rosny. </stage>
-<p id="13">
-	<s id="1">Non, Mondieur ; je sais que je parle à un homme qui a été, ainsi que moi, la victime de l'humeur vindicative de Monsieur de Rosny.</s>
+<p n="13">
+	<s n="1 ">Non, Mondieur ; je sais que je parle à un homme qui a été, ainsi que moi, la victime de l'humeur vindicative de Monsieur de Rosny.</s>
 </p>
-</sp>
-<sp stage="aparte" who="MONSIEUR DE ROSNY">
+</sp><!--@stage="aparte"-->
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="14">
-	<s id="1">Il ne me connaît pas, laissons-le dans son erreur. </s>
-	<s id="2">Ces sortes de méprises m'ont été plus d'une fois utiles, ainsi qu'à mon cher Maître ; et l'on nous a donné quelquefois à l'un et à l'autre, dans de pareilles aventures, des leçons très utiles.</s>
+<p n="14">
+	<s n="1 ">Il ne me connaît pas, laissons-le dans son erreur. </s>
+	<s n="2 ">Ces sortes de méprises m'ont été plus d'une fois utiles, ainsi qu'à mon cher Maître ; et l'on nous a donné quelquefois à l'un et à l'autre, dans de pareilles aventures, des leçons très utiles.</s>
 </p>	
 <stage type="toward">À Bois-Rosé.</stage>
-<p id="15">
-	<s id="1">Je n'ai jamais entendu dire que Monsieur de Rosny, dans ses démarches, consultât ses caprices ou ses ressentiments particuliers.</s>
+<p n="15">
+	<s n="1 ">Je n'ai jamais entendu dire que Monsieur de Rosny, dans ses démarches, consultât ses caprices ou ses ressentiments particuliers.</s>
 </p>
-</sp>
-<sp who="BOIS-ROSÉ">
+</sp><!--@stage="aparte"-->
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="16">
-	<s id="1">Ma franchise vous est suspecte, je le vois ; et vous me regardez peut-être comme un homme envoyé par ce Ministre pour surprendre vos sentiments.</s>
+<p n="16">
+	<s n="1 ">Ma franchise vous est suspecte, je le vois ; et vous me regardez peut-être comme un homme envoyé par ce Ministre pour surprendre vos sentiments.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="16">
-	<s id="1">Je n'ai garde de vous soupçonner d'être son émissaire.</s>
+<p n="16">
+	<s n="1 ">Je n'ai garde de vous soupçonner d'être son émissaire.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="17">
-	<s id="1">Quand je vous aurai dit mon nom, vous ne balancerez plus à m'ouvrir votre coeur.</s>
+<p n="17">
+	<s n="1 ">Quand je vous aurai dit mon nom, vous ne balancerez plus à m'ouvrir votre coeur.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="18">
-	<s id="1">Qui êtes-vous donc ?</s>
+<p n="18">
+	<s n="1 ">Qui êtes-vous donc ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="17">
-	<s id="1">Je suis Bois-Rosé.</s>
+<p n="17">
+	<s n="1 ">Je suis Bois-Rosé.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="18">
-	<s id="1">Vous, à qui l'on vient d'ôter le Gouvernement de Fécamp ?</s>
+<p n="18">
+	<s n="1 ">Vous, à qui l'on vient d'ôter le Gouvernement de Fécamp ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="19">
-	<s id="1">Moi-même : jugez, après cela, si je suis l'ami de ce Ministre, et si, lorsque je vous confie mon ressentiment, vous devez déguiser le vôtre. </s>
-	<s id="2">Eh ! </s>
-	<s id="3">N'est-il pas de votre intérêt, du mien, de celui de l'État, de nous réunir tous deux contre un homme dont le pouvoir s'accroît chaque jour ; qui, chaque jour, abuse de la confiance du Roi, pour servir ses passions ; qui repousse loin du trône tout ce qui n'est pas sa créature ; qui excite à la vengeance un Prince clément et généreux ?...</s>
+<p n="19">
+	<s n="1 ">Moi-même : jugez, après cela, si je suis l'ami de ce Ministre, et si, lorsque je vous confie mon ressentiment, vous devez déguiser le vôtre. </s>
+	<s n="2 ">Eh ! </s>
+	<s n="3 ">N'est-il pas de votre intérêt, du mien, de celui de l'État, de nous réunir tous deux contre un homme dont le pouvoir s'accroît chaque jour ; qui, chaque jour, abuse de la confiance du Roi, pour servir ses passions ; qui repousse loin du trône tout ce qui n'est pas sa créature ; qui excite à la vengeance un Prince clément et généreux ?...</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="20">
-	<s id="1">Vraiment, si ce portrait est vrai, je suis un homme abominable.</s>
+<p n="20">
+	<s n="1 ">Vraiment, si ce portrait est vrai, je suis un homme abominable.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="21">
-	<s id="1">Contre un favori qui donne au Roi ses préjugés, lui peint ses plus fidèles serviteurs avec des couleurs odieuses, dispose des places au gré de ses caprices, enrichit ses flatteurs de la dépouille des gens de bien, et qui, du meilleur des Rois, fera peut-être un Roi injuste comme son ministre ?</s>
+<p n="21">
+	<s n="1 ">Contre un favori qui donne au Roi ses préjugés, lui peint ses plus fidèles serviteurs avec des couleurs odieuses, dispose des places au gré de ses caprices, enrichit ses flatteurs de la dépouille des gens de bien, et qui, du meilleur des Rois, fera peut-être un Roi injuste comme son ministre ?</s>
 </p>
 </sp>
-<sp stage="aparte" who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="22">
-	<s id="1">Ma foi, je ne crois pas qu'on en ait dit davantage du Cardinal Batue.</s>
+<p n="22">
+	<s n="1 ">Ma foi, je ne crois pas qu'on en ait dit davantage du Cardinal Batue.</s>
 </p>
-</sp>
-<sp who="BOIS-ROSÉ">
+</sp><!--@stage="aparte"-->
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="23">
-	<s id="1">Préserve-nous de ce malheur, grand Dieu ; conserve à Henri son équité, sa vertu, sa gloire, l'amour de ses sujets, et hâte la chute du favori dont les perfides conseils corrompraient un Prince qui, sans lui, serait ton image sur la terre !</s>
+<p n="23">
+	<s n="1 ">Préserve-nous de ce malheur, grand Dieu ; conserve à Henri son équité, sa vertu, sa gloire, l'amour de ses sujets, et hâte la chute du favori dont les perfides conseils corrompraient un Prince qui, sans lui, serait ton image sur la terre !</s>
 </p>
 </sp>
-<sp stage="aparte" who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="24">
-	<s id="1">Ce Catholique n'est pas fort charitable dans ses prières.</s>
+<p n="24">
+	<s n="1 ">Ce Catholique n'est pas fort charitable dans ses prières.</s>
 </p>
-</sp>
-<sp who="BOIS-ROSÉ">
+</sp><!--@stage="aparte"-->
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="25">
-	<s id="1">Vous voyez que je vous mets à votre aise, et que je vous parle à coeur ouvert ?</s>
+<p n="25">
+	<s n="1 ">Vous voyez que je vous mets à votre aise, et que je vous parle à coeur ouvert ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="26">
-	<s id="1">Je ne doute plus de votre franchise.</s>
+<p n="26">
+	<s n="1 ">Je ne doute plus de votre franchise.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="27">
-	<s id="1">Vous ne me soupçonnez plus d'être un espion de Monsieur de Rosny ?</s>
+<p n="27">
+	<s n="1 ">Vous ne me soupçonnez plus d'être un espion de Monsieur de Rosny ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="28">
-	<s id="1">Non, certes. </s>
-	<s id="2">Mais, vous qui l'accusez de prévention, n'en avez-vous pas vous-même contre lui ?</s>
+<p n="28">
+	<s n="1 ">Non, certes. </s>
+	<s n="2 ">Mais, vous qui l'accusez de prévention, n'en avez-vous pas vous-même contre lui ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="29">
-	<s id="1">De la prévention ? </s>
-	<s id="2">Moi ! </s>
-	<s id="3">Eh mais ! </s>
-	<s id="4">L'opinion que j'ai de ce ministre est fondée sur des faits..., je dis des faits incontestables. </s>
-	<s id="5">Ah ! </s>
-	<s id="6">Si quelqu'un pouvait éclairer le Roi sur la conduite de son ministre... </s>
-	<s id="7">Dites-moi, ... n'auriez vous pas autant de plaisir que moi à le voir disgracié ? </s>
-	<s id="8">Le jour de son exil ne serait-il pas un jour de fête pour vous ?</s>
+<p n="29">
+	<s n="1 ">De la prévention ? </s>
+	<s n="2 ">Moi ! </s>
+	<s n="3 ">Eh mais ! </s>
+	<s n="4 ">L'opinion que j'ai de ce ministre est fondée sur des faits..., je dis des faits incontestables. </s>
+	<s n="5 ">Ah ! </s>
+	<s n="6 ">Si quelqu'un pouvait éclairer le Roi sur la conduite de son ministre... </s>
+	<s n="7 ">Dites-moi, ... n'auriez vous pas autant de plaisir que moi à le voir disgracié ? </s>
+	<s n="8 ">Le jour de son exil ne serait-il pas un jour de fête pour vous ?</s>
 </p>
 </sp>
-<sp stage="aparte" who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="30">
-	<s id="1">Cet homme est vindicatif : voyons s'il est lâche dans sa vengeance.</s>
+<p n="30">
+	<s n="1 ">Cet homme est vindicatif : voyons s'il est lâche dans sa vengeance.</s>
 </p>
 <stage type="toward">À Bois-Rosé. </stage>
-<p id="31">
-	<s id="1">J'applaudirais sans doute à la chute de Monsieur de Rosny , et je veux avec vous travailler à sa perte.</s>
+<p n="31">
+	<s n="1 ">J'applaudirais sans doute à la chute de Monsieur de Rosny , et je veux avec vous travailler à sa perte.</s>
 </p>
-</sp>
-<sp who="BOIS-ROSÉ">
+</sp><!--@stage="aparte"-->
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="32">
-	<s id="1">Enfin vous vous rendez.</s>
+<p n="32">
+	<s n="1 ">Enfin vous vous rendez.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="33">
-	<s id="1">Il serait dangereux de faire la chose avec éclat ; pour peu que ce ministre soupçonne le but de nos démarches, nous sommes perdus. </s>
-	<s id="2">Il faudrait, par des voies indirectes, mais sûres, faire parvenir au Roi quelques Mémoires anonymes... </s>
-	<s id="3">Vous m'entendez ?</s>
+<p n="33">
+	<s n="1 ">Il serait dangereux de faire la chose avec éclat ; pour peu que ce ministre soupçonne le but de nos démarches, nous sommes perdus. </s>
+	<s n="2 ">Il faudrait, par des voies indirectes, mais sûres, faire parvenir au Roi quelques Mémoires anonymes... </s>
+	<s n="3 ">Vous m'entendez ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="34">
-	<s id="1">Des Mémoires anonymes ! </s>
-	<s id="2">Des Mémoires anonymes ! </s>
-	<s id="3">Ah ! </s>
-	<s id="4">Je ne sais que trop le succès de ces écrits clandestins, puiqque j'en suis la victime. </s>
-	<s id="5">Mais je ne me servirai point de cette arme des lâches. </s>
-	<s id="6">Vous parlez en Courtisan, moi j'agis en soldat. </s>
-	<s id="7">Toute délation obscure est indigne de Bois-Rosé. </s>
-	<s id="8">Je veux citer Monsieur de Rosny devant le Roi, et l'accuser en face. </s>
-	<s id="9">Je n'implore votre crédit, que pour obtenir du Roi une audience à laquelle Monsieur de Rosny sera présent. </s>
-	<s id="10">Le reste est mon affaire.</s>
+<p n="34">
+	<s n="1 ">Des Mémoires anonymes ! </s>
+	<s n="2 ">Des Mémoires anonymes ! </s>
+	<s n="3 ">Ah ! </s>
+	<s n="4 ">Je ne sais que trop le succès de ces écrits clandestins, puiqque j'en suis la victime. </s>
+	<s n="5 ">Mais je ne me servirai point de cette arme des lâches. </s>
+	<s n="6 ">Vous parlez en Courtisan, moi j'agis en soldat. </s>
+	<s n="7 ">Toute délation obscure est indigne de Bois-Rosé. </s>
+	<s n="8 ">Je veux citer Monsieur de Rosny devant le Roi, et l'accuser en face. </s>
+	<s n="9 ">Je n'implore votre crédit, que pour obtenir du Roi une audience à laquelle Monsieur de Rosny sera présent. </s>
+	<s n="10 ">Le reste est mon affaire.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="35">
-	<s id="1">Mais si vous succombez dans votre justification ?...</s>
+<p n="35">
+	<s n="1 ">Mais si vous succombez dans votre justification ?...</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="36">
-	<s id="1">J'ai de quoi confondre les plus habiles calomniateurs. </s>
-	<s id="2">On m'accuse d'être d'intelligence avec les Espagnols ; et, pour le prouver, on présente des copies de lettres que j'ai écrites dans le temps où je servais la Ligue. </s>
-	<s id="3">On a soin de supprimer les dates, afin de persuader au Roi que je les ai écrites depuis que je suis revenu à lui. </s>
-	<s id="4">Mais je lui présenterai les minutes.</s>
+<p n="36">
+	<s n="1 ">J'ai de quoi confondre les plus habiles calomniateurs. </s>
+	<s n="2 ">On m'accuse d'être d'intelligence avec les Espagnols ; et, pour le prouver, on présente des copies de lettres que j'ai écrites dans le temps où je servais la Ligue. </s>
+	<s n="3 ">On a soin de supprimer les dates, afin de persuader au Roi que je les ai écrites depuis que je suis revenu à lui. </s>
+	<s n="4 ">Mais je lui présenterai les minutes.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="37">
-	<s id="1">Vous les avez ?</s>
+<p n="37">
+	<s n="1 ">Vous les avez ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="38">
-	<s id="1">Oui, Monsieur, je les ai.</s>
+<p n="38">
+	<s n="1 ">Oui, Monsieur, je les ai.</s>
 </p>
 </sp>
-<sp stage="aparte" who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="39">
-	<s id="1">Aurais-je été trompé ?</s>
+<p n="39">
+	<s n="1 ">Aurais-je été trompé ?</s>
 </p>
-</sp>
-<sp who="BOIS-ROSÉ">
+</sp><!--@stage="aparte"-->
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="40">
-	<s id="1">On m'accuse encore d'avoir concerté avec deux vaisseaux Espagnols les moyens de leur livrer le fort de Fécamp. </s>
-	<s id="2">Je les ai bien confondus, ces infâmes calomniateurs : j'ai coulé à fond un de ces vaisseaux, j'ai pris l'autre ; c'est ainsi que j'ai quitté mon Gouvernement.</s>
+<p n="40">
+	<s n="1 ">On m'accuse encore d'avoir concerté avec deux vaisseaux Espagnols les moyens de leur livrer le fort de Fécamp. </s>
+	<s n="2 ">Je les ai bien confondus, ces infâmes calomniateurs : j'ai coulé à fond un de ces vaisseaux, j'ai pris l'autre ; c'est ainsi que j'ai quitté mon Gouvernement.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="41">
-	<s id="1">Ce fait est-il bien vrai ?</s>
+<p n="41">
+	<s n="1 ">Ce fait est-il bien vrai ?</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="42">
-	<s id="1">Si vous en doutez, allez à Fécamp ; vous verrez le vaisseau dans le port, et mes prisonniers enchaînés dans la Citadelle.</s>
+<p n="42">
+	<s n="1 ">Si vous en doutez, allez à Fécamp ; vous verrez le vaisseau dans le port, et mes prisonniers enchaînés dans la Citadelle.</s>
 </p>
 </sp>
-<sp stage="aparte" who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="43">
-	<s id="1">Allons, Rosny, tu croyais punir Bois-Rosé de sa perfidie, et c'est lui qui te punit de ton erreur.</s>
+<p n="43">
+	<s n="1 ">Allons, Rosny, tu croyais punir Bois-Rosé de sa perfidie, et c'est lui qui te punit de ton erreur.</s>
 </p>
 <stage type="toward">À Bois-Rosé.</stage>
-<p id="44">
-	<s id="1">Vous ne sentez donc plus dans le coeur rien du levain de la Ligue : vous aimez le Roi ?</s>
+<p n="44">
+	<s n="1 ">Vous ne sentez donc plus dans le coeur rien du levain de la Ligue : vous aimez le Roi ?</s>
 </p>
-</sp>
-<sp who="BOIS-ROSÉ">
+</sp><!--@stage="aparte"-->
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="45">
-	<s id="1">Si je l'aime ! </s>
-	<s id="2">Je l'estimais lorsque j'étais Ligueur ; je l'adore , depuis que je suis son sujet. </s>
-	<s id="3">J'ai été blessé légèrement dans mon dernier combat. </s>
-	<s id="4">Si vous saviez avec quel plaisir je regardais couler mon sang pour Henri IV, combien j'étais fâché que ma blessure ne fût pas mortelle ! </s>
-	<s id="5">Car ce bon Henri, il aurait reconnu mon innocence, en apprenant ma mort ! </s>
-	<s id="6">Il m'aurait pleuré ! </s>
-	<s id="7">Ah ! </s>
-	<s id="8">Qui ne donnerait pas mille vies pour une larme de Henri IV ? </s>
-	<s id="9">Oui, Monsieur, si Monsieur de Rosny savait ce qui se passe dans mon coeur, s'il savait combien j'aime mon Roi, il en mourrait de dépit.</s>
+<p n="45">
+	<s n="1 ">Si je l'aime ! </s>
+	<s n="2 ">Je l'estimais lorsque j'étais Ligueur ; je l'adore , depuis que je suis son sujet. </s>
+	<s n="3 ">J'ai été blessé légèrement dans mon dernier combat. </s>
+	<s n="4 ">Si vous saviez avec quel plaisir je regardais couler mon sang pour Henri IV, combien j'étais fâché que ma blessure ne fût pas mortelle ! </s>
+	<s n="5 ">Car ce bon Henri, il aurait reconnu mon innocence, en apprenant ma mort ! </s>
+	<s n="6 ">Il m'aurait pleuré ! </s>
+	<s n="7 ">Ah ! </s>
+	<s n="8 ">Qui ne donnerait pas mille vies pour une larme de Henri IV ? </s>
+	<s n="9 ">Oui, Monsieur, si Monsieur de Rosny savait ce qui se passe dans mon coeur, s'il savait combien j'aime mon Roi, il en mourrait de dépit.</s>
 </p>
 </sp>
-<sp stage="aparte" who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY, à part.</speaker>
-<p id="46">
-	<s id="1">Il aime Henri IV, je lui pardonne de me haïr.</s>
+<p n="46">
+	<s n="1 ">Il aime Henri IV, je lui pardonne de me haïr.</s>
 </p>
 <stage type="toward">À Bois-Rosé.</stage>
-<p id="47">
-	<s id="1">Pensez-vous qu'en effet Monsieur de Rosny soit l'ennemi de tous ceux qui aiment le Roi ? </s>
-	<s id="2">Ce soupçon n'est-il pas exagéré ?</s>
+<p n="47">
+	<s n="1 ">Pensez-vous qu'en effet Monsieur de Rosny soit l'ennemi de tous ceux qui aiment le Roi ? </s>
+	<s n="2 ">Ce soupçon n'est-il pas exagéré ?</s>
 </p>
-</sp>
-<sp who="BOIS-ROSÉ">
+</sp><!--@stage="aparte"-->
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="48">
-	<s id="1">Ah ! </s>
-	<s id="2">Vous ne connaissez pas cet homme injuste. </s>
-	<s id="3">Il voudrait qeul aimer le Roi, afin d'être seul aimé de lui ; et pour s'emparer de sa confiance toute entière, il voudrait que Henri ne vît tous ses serviteurs qu'avec des yeux inquiets. </s>
-	<s id="4">Non, encore une fois, vous ne le connaissez pas.</s>
+<p n="48">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Vous ne connaissez pas cet homme injuste. </s>
+	<s n="3 ">Il voudrait qeul aimer le Roi, afin d'être seul aimé de lui ; et pour s'emparer de sa confiance toute entière, il voudrait que Henri ne vît tous ses serviteurs qu'avec des yeux inquiets. </s>
+	<s n="4 ">Non, encore une fois, vous ne le connaissez pas.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="49">
-	<s id="1">Je crois le connSître mieux que vous.</s>
+<p n="49">
+	<s n="1 ">Je crois le connSître mieux que vous.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="50">
-	<s id="1">Vous devez donc bien le haïr... </s>
-	<s id="2">Enfin, Vous me promettez de m'appuyer ?</s>
+<p n="50">
+	<s n="1 ">Vous devez donc bien le haïr... </s>
+	<s n="2 ">Enfin, Vous me promettez de m'appuyer ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="51">
-	<s id="1">De tout mon crédit.</s>
+<p n="51">
+	<s n="1 ">De tout mon crédit.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="52">
-	<s id="1">Je ne vous demande qu'une audience du Roi, entendez-vous ? </s>
-	<s id="2">Point d'intrigue, point de cabale ; je parlerai en soldat : Henri IV entend ce langage. </s>
-	<s id="3">Ah ! </s>
-	<s id="4">Comme je jouirai de la confusion de ce ministre ! </s>
-	<s id="5">Vous serez présent à cette scène ?</s>
+<p n="52">
+	<s n="1 ">Je ne vous demande qu'une audience du Roi, entendez-vous ? </s>
+	<s n="2 ">Point d'intrigue, point de cabale ; je parlerai en soldat : Henri IV entend ce langage. </s>
+	<s n="3 ">Ah ! </s>
+	<s n="4 ">Comme je jouirai de la confusion de ce ministre ! </s>
+	<s n="5 ">Vous serez présent à cette scène ?</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="53">
-	<s id="1">Oui, certes, j'y serai.</s>
+<p n="53">
+	<s n="1 ">Oui, certes, j'y serai.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="54">
-	<s id="1">Ce sera un triomphe pour vous.</s>
+<p n="54">
+	<s n="1 ">Ce sera un triomphe pour vous.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="55">
-	<s id="1">Oui, mon ami, oui, ce sera un triomphe pour moi de voir le Roi reconnaître son erreur ! </s>
-	<s id="2">Oui ... je vous le dis , ... mon cher ; Bois-Rosé, ce sera un triomphe pour moi.</s>
+<p n="55">
+	<s n="1 ">Oui, mon ami, oui, ce sera un triomphe pour moi de voir le Roi reconnaître son erreur ! </s>
+	<s n="2 ">Oui ... je vous le dis , ... mon cher ; Bois-Rosé, ce sera un triomphe pour moi.</s>
 </p>
 </sp>
-<sp stage="aparte" who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ, à part.</speaker>
-<p id="56">
-	<s id="1">Mon ami ! </s>
-	<s id="2">Mon cher Bois-Rosé ! </s>
-	<s id="2">Comme ces courtisans caressent ceux qui leur servent à accabler leurs ennemis !</s>
+<p n="56">
+	<s n="1 ">Mon ami ! </s>
+	<s n="2 ">Mon cher Bois-Rosé ! </s>
+	<s n="2 ">Comme ces courtisans caressent ceux qui leur servent à accabler leurs ennemis !</s>
 </p>
-</sp>
-</div2>
-<div2 type="scene" n="13">
+</sp><!--@stage="aparte"-->
+</div>
+<div type="scene" n="13">
                     <head>SCÈNE XIII. Monsieur de Rosny, Bois-Rosé, Le Marquis.</head>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="1">
-	<s id="1">Je me suis chargé de vous dire que votre voiture est prête ; j'ai moi-même aiguillonné la lenteur des ouvriers. </s>
-	<s id="2">Accélerer votre départ, c'est servir le Roi. </s>
-	<s id="3">Il doit être bien impatient de revoir son cher Rosny.</s>
+<p n="1">
+	<s n="1 ">Je me suis chargé de vous dire que votre voiture est prête ; j'ai moi-même aiguillonné la lenteur des ouvriers. </s>
+	<s n="2 ">Accélerer votre départ, c'est servir le Roi. </s>
+	<s n="3 ">Il doit être bien impatient de revoir son cher Rosny.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="2">
-	<s id="1">Juste Ciel ! </s>
-	<s id="2">C'est Monsieur de Rosny !</s>
+<p n="2">
+	<s n="1 ">Juste Ciel ! </s>
+	<s n="2 ">C'est Monsieur de Rosny !</s>
 </p>
 <stage type="toward">Au Marquis.</stage>
-<p id="3">
-	<s id="1">Ah ! </s>
-	<s id="2">Perfide, c'est ainsi que vous m'avez joué !</s>
+<p n="3">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Perfide, c'est ainsi que vous m'avez joué !</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="4">
-	<s id="1">Oui, j'ai voulu que le plus grand des ministres connût le plus emporté de ses calomniateurs.</s>
+<p n="4">
+	<s n="1 ">Oui, j'ai voulu que le plus grand des ministres connût le plus emporté de ses calomniateurs.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="5">
-	<s id="1">Je vois que je suis perdu. </s>
-	<s id="2">Je ne songe plus à mon Gouvernement: ... mais je songe à me venger d'un traître, et je vous ferai voir que, si le courtisan l'emporte en adresse, le soldat l'emporte en courage.</s>
+<p n="5">
+	<s n="1 ">Je vois que je suis perdu. </s>
+	<s n="2 ">Je ne songe plus à mon Gouvernement: ... mais je songe à me venger d'un traître, et je vous ferai voir que, si le courtisan l'emporte en adresse, le soldat l'emporte en courage.</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="6">
-	<s id="1">Je ne vous permets de vous, venger de lui, qu'après que je me ferai venge de vous. </s>
-	<s id="2">Marquis, le Roi saura que vous êtes auteur de ces Mémoires qui ne renfermaient que des calomnies, que vous les avez forgés dans l'espérance de vous emparer vous-même du Gouvernement de Bois-Rosé, que vous l'avez trompé. </s>
-	<s id="3">J'ai été informé de tout par mon commis, le Roi le sera par moi. </s>
-	<s id="4">Vous vous présenterez après devant lui, si vous l'osez.</s>
+<p n="6">
+	<s n="1 ">Je ne vous permets de vous, venger de lui, qu'après que je me ferai venge de vous. </s>
+	<s n="2 ">Marquis, le Roi saura que vous êtes auteur de ces Mémoires qui ne renfermaient que des calomnies, que vous les avez forgés dans l'espérance de vous emparer vous-même du Gouvernement de Bois-Rosé, que vous l'avez trompé. </s>
+	<s n="3 ">J'ai été informé de tout par mon commis, le Roi le sera par moi. </s>
+	<s n="4 ">Vous vous présenterez après devant lui, si vous l'osez.</s>
 </p>
 <stage type="exit">Le Marquis s'en va.</stage>
 </sp>
-</div2>
-<div2 type="scene" n="14">
+</div>
+<div type="scene" n="14">
                     <head>SCENE XIV. Monsieur de Rosny, Bois-Rosé.</head>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="1">
-	<s id="1">Non, il ne s'en ira pas ainsi ; il faut que ce fer...</s>
+<p n="1">
+	<s n="1 ">Non, il ne s'en ira pas ainsi ; il faut que ce fer...</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="2">
-	<s id="1">Pardonnez-lui comme je vous pardonne. </s>
-	<s id="2">Il n'y aurait pas de gloire à vaincre un tel ennemi. </s>
-	<s id="3">Gardez votre vie pour la défense de l'État ; vous aurez des occasions de l'exposer. </s>
-	<s id="4">Si je ne puis engager Villars à vous rendre votre Gouvernement, je vous destine une compagnie et douze mille livres de pension ; et si le Roi m'élève, comme il me l'a promis, au rang de Grand Maître de l'Artillerie, la Lieutenance générale dans la Normandie vous est assurée.</s>
+<p n="2">
+	<s n="1 ">Pardonnez-lui comme je vous pardonne. </s>
+	<s n="2 ">Il n'y aurait pas de gloire à vaincre un tel ennemi. </s>
+	<s n="3 ">Gardez votre vie pour la défense de l'État ; vous aurez des occasions de l'exposer. </s>
+	<s n="4 ">Si je ne puis engager Villars à vous rendre votre Gouvernement, je vous destine une compagnie et douze mille livres de pension ; et si le Roi m'élève, comme il me l'a promis, au rang de Grand Maître de l'Artillerie, la Lieutenance générale dans la Normandie vous est assurée.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="3">
-	<s id="1">Je suis atterré, confondu. </s>
+<p n="3">
+	<s n="1 ">Je suis atterré, confondu. </s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="4">
-	<s id="1">J'ai été crédule, il est vrai ; mais vous voyez si je suis vindicatif.</s>
+<p n="4">
+	<s n="1 ">J'ai été crédule, il est vrai ; mais vous voyez si je suis vindicatif.</s>
 </p>
 </sp>
-<sp who="BOIS-ROSÉ">
+<sp who="#bois-rose">
                         <speaker>BOIS-ROSÉ.</speaker>
-<p id="5">
-	<s id="1">Ah ! </s>
-	<s id="2">Monsieur... </s>
-	<s id="3">Ma reconnaissance...</s>
+<p n="5">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Monsieur... </s>
+	<s n="3 ">Ma reconnaissance...</s>
 </p>
 </sp>
-<sp who="MONSIEUR DE ROSNY">
+<sp who="#monsieur-de-rosny">
                         <speaker>MONSIEUR DE ROSNY.</speaker>
-<p id="6">
-	<s id="1">Touchez-la, mon ami, montez dans ma voiture avec moi. </s>
-	<s id="2">Je vous présenterai à Henri IV ; vous deviez m'accuser devant lui, je vous en épargnerai la peine ; j'avouerai moi-même mon injustice, et je le supplierai de la réparer.</s>
+<p n="6">
+	<s n="1 ">Touchez-la, mon ami, montez dans ma voiture avec moi. </s>
+	<s n="2 ">Je vous présenterai à Henri IV ; vous deviez m'accuser devant lui, je vous en épargnerai la peine ; j'avouerai moi-même mon injustice, et je le supplierai de la réparer.</s>
 </p>
 </sp>
-</div2>
-</div1>
+</div>
+</div>
 </body>
 </text>
 </TEI>

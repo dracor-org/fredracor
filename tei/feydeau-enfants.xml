@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1887">1887</date>
+                        <date>1887</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k761631</idno>
@@ -73,14 +73,14 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, Rue de Richelieu 28 bis.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, Rue de Richelieu 28 bis.</editor>-->
 		</div>
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1" @type="H" @statut="bourgeois" @age="J" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -89,7 +89,8 @@
                     <head/>
 <sp who="#un-homme">
                         <speaker>[UN HOMME].</speaker>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">J'entends souvent parler de l'homme</l>
 	<l n="2">Pour sa supériorité :</l>
@@ -180,7 +181,7 @@
 	<l n="71">L'Enfant régénère le monde...</l>
 	<l n="72">C'est à quoi servent les enfants !</l>
 </lg>	
-</poem>	
+</ab><!--</poem>-->	
 </sp>
 </div>
 </div>

@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1755">1755</date>
+                        <date>1755</date>
                         <date type="premiere" when="1755-05-02">Représentée pour la première fois par les Comédiens Italiens, le 7 Mars 1755.</date>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -79,10 +79,10 @@
 	<docDate when="1755">M. DCC. LV. AVEC PRIVILÈGE DU ROI.</docDate>
 	<docAuthor>par Mr. ROMAGNESI.</docAuthor><!--@bio="Romagnesi"-->
 	<div type="docImprint">
-		<div value="1755-05-02" type="approbation">
+		<div type="approbation">
                     <head>APPROBATION.</head>
-		<p n="">J'ai lu par Ordre de Monseigneur le Chancelier, la Rancune, Parodie de Philoctète, et je crois que l'on peut en permettre l'impression, ce 2 Mai 1755. CRÉBILLON.</p>
-		</div>
+		<p>J'ai lu par Ordre de Monseigneur le Chancelier, la Rancune, Parodie de Philoctète, et je crois que l'on peut en permettre l'impression, ce 2 Mai 1755. CRÉBILLON.</p>
+		</div><!--@value="1755-05-02"-->
 		<div value="" type="privilege">
                     <head/>
                 </div>
@@ -91,22 +91,22 @@
                 </div><!--@id="DELORMEL"-->
 	</div>
 	<performance>
-		<ab type="premiere">Représentée pour la première fois par les Comédiens Italiens, le 7 Mars 1755.</ab><!--date="1755-05-02"--><!--location="Hôtel de Bourgogne"-->
+		<ab type="premiere">Représentée pour la première fois par les Comédiens Italiens, le 7 Mars 1755.</ab><!--@date="1755-05-02"--><!--@location="Hôtel de Bourgogne"-->
 	</performance>
 	<castList>
                 <head>ACTEURS</head>
 		<castItem>
-                    <role corresp="#la-rancune">LA RANCUNE</role><!--@sex="1" @type="P" @statut="bourgeois" @age="A" @stat_amour="néant"-->. Mr. Dehesse.</castItem>
+                    <role corresp="#la-rancune">LA RANCUNE</role><!--@sex="1"--><!--@type="P"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->. Mr. Dehesse.</castItem>
 		<castItem>
-                    <role corresp="#rodomont">RODOMONT</role><!--@sex="1" @type="P" @statut="bourgeois" @age="A" @stat_amour="néant"-->. Mlle. Catinon.</castItem>
+                    <role corresp="#rodomont">RODOMONT</role><!--@sex="1"--><!--@type="P"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->. Mlle. Catinon.</castItem>
 		<castItem>
-                    <role corresp="#coulisse">COULISSE</role><!--@sex="1" @type="P" @statut="bourgeois" @age="A" @stat_amour="néant"-->. Mr. Balletti.</castItem>
+                    <role corresp="#coulisse">COULISSE</role><!--@sex="1"--><!--@type="P"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->. Mr. Balletti.</castItem>
 		<castItem>
-                    <role corresp="#julie">JULIE</role><!--@sex="2" @type="P" @statut="bourgeois" @age="A" @stat_amour="néant"-->. Mme. Favart.</castItem>
+                    <role corresp="#julie">JULIE</role><!--@sex="2"--><!--@type="P"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->. Mme. Favart.</castItem>
 		<castItem>
-                    <role corresp="#thomas">THOMAS</role><!--@sex="1" @type="P" @statut="bourgeois" @age="A" @stat_amour="néant"-->. Mr. Carlin.</castItem>
+                    <role corresp="#thomas">THOMAS</role><!--@sex="1"--><!--@type="P"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->. Mr. Carlin.</castItem>
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Lyon" country="France" periode="XVIIIème" gps="45.764043, 4.835659">La scène est à Lyon. </set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Lyon" country="France" periode="XVIIIème" gps="45.764043, 4.835659">La scène est à Lyon. </set>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -734,9 +734,10 @@
 <note type="L">Dubourg Destouches, Justin (1..., 1757) : Chanteur de l'académie Royale de Musique, seconds rôles de basse-taille, il se produisit à l'Opéra de Lyon en 1729-1730.</note>
  
 	<l n="245">Dubourg, ce grand braillard, bouffis par Melpomène,</l>
-	<l n="246">À force de crier se rompit une veine.</l>
+	<l n="246">À force de crier se rompit une veine.</l><!--text():
 	**********
-	<l n="247">Dans Oreste, Mondor ne se connaissant pas,</l>
+	-->
+                        <l n="247">Dans Oreste, Mondor ne se connaissant pas,</l>
 	<l n="248">En gesticulant trop, se cassa les deux bras.</l>
 	<l n="249">Une actrice expira par la chute d'un peintre,</l>
 	<l n="250">Qui, sans l'en avertir, tomba du haut du cintre.</l>

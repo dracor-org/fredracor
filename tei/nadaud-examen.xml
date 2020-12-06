@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1881">1881</date>
+                        <date>1881</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k2079440</idno>
@@ -67,7 +67,7 @@
 		<docDate when="1881">1881. Tous droits réservés.</docDate>
 		<docAuthor>Par M. Gustave NADAUD.</docAuthor>
 		<div type="docImprint">
-			<editor id="TRESSE">PARIS, TRESSE Éditeur, GALERIE DU THÉÂTRE-FRANÇAIS, PALAIS ROYAL.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="TRESSE">PARIS, TRESSE Éditeur, GALERIE DU THÉÂTRE-FRANÇAIS, PALAIS ROYAL.</editor>-->
 			<div type="printer">
                     <p>F. Aureau, Imprimerie de Lagny.</p>
                 </div>
@@ -75,9 +75,9 @@
 	<castList>
                 <head>LES PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#une-jeune-fille">UNE JEUNE FILLE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="J" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#une-jeune-fille">UNE JEUNE FILLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
+<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
 <note>Paru dans SAYNÈTES ET MONOLOGUES, PREMIÈRE PARTIE, pp. 152-158</note>
 </front>
 <body>
@@ -87,7 +87,8 @@
                     <head/>
 <sp who="#la-jeune-fille">
                         <speaker>[LA JEUNE FILLE].</speaker>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">Je le sais par expérience</l>
 	<l n="2">(Je suis grande, j'ai dix-sept ans),</l>
@@ -192,7 +193,7 @@
 	<l n="87">Endormez-vous tout doucement :</l>
 	<l n="88">On ne pèche pas en dormant.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

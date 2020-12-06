@@ -7,8 +7,13 @@ declare variable $continue :=
        set to false to remove all previouse transformations at first.
     :)
     true();
+(:    false();:)
 
 declare variable $who-tokenize-pattern := '/|,';
+
+declare function local:attribute-to-comment($node as attribute()+) {
+    $node ! comment { ('@' || local-name(.) || '="' || string(.) || '"') }
+};
 
 declare function local:translate($string as xs:string)
 as xs:string{
@@ -28,43 +33,68 @@ declare function local:transform($nodes) {
     for $node in $nodes
     return
         typeswitch ( $node )
-            case text() return $node
+            case text() return
+                (: at ABEILLE_CORIOLAN.xml there is '4+' in the middle of nowhere, other case is a tei:sp with '****' :)
+                if(($node/parent::*:sp or $node/parent::*:div1 or $node/parent::*:div2 or $node/parent::*:castList) and matches($node, '\S')) then comment { 'text():' || replace($node, '-$', '- ') } else
+                $node
             case comment() return $node
             case processing-instruction() return $node
             case element(div1) return
-                element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-                $node/@*,
+                (: @id (numbering) removed :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except ($node/@stage, $node/@id),
                 local:transform($node/node())
-            }
+            }, $node/@stage ! local:attribute-to-comment(.))
+
             case element(div2) return
-                element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-                $node/@*,
+                (: @id (numbering) removed :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except ($node/@stage, $node/@id),
                 local:transform($node/node())
-            }
+            }, $node/@stage ! local:attribute-to-comment(.))
+
             case element(sp) return
-                element {QName('http://www.tei-c.org/ns/1.0', 'sp')} {
-                $node/@* except $node/@who,
+                (element {QName('http://www.tei-c.org/ns/1.0', 'sp')} {
+                $node/@* except ($node/@who, $node/@stage, $node/@stgae), (: typo in ancelot-arago-papillotes.xml :)
                 attribute who {
                     tokenize($node/@who, $who-tokenize-pattern) ! ('#' || local:translate(.))},
-                local:transform($node/node())
-            }
+                local:transform($node/node() except $node/text()) (: there is text within sp audiffret-albertdurer.xml :)
+            }, ($node/@stage, $node/@stgae) ! local:attribute-to-comment(.) )
             case element(s) return
                 (: minor correction to prevent multiple usage of an ID :)
                 element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
                 $node/@* except ($node/@id, $node/@n),
-                attribute n {string($node/@id)},
+                attribute n {string($node/@id), string($node/@di)}, (: typo barreradet-candide.xml :)
                 local:transform($node/node())
             }
             case element(l) return
                 (: minor correction to prevent multiple usage of an ID :)
                 (: removing unknown attributes @syll, @part :)
                 (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except ($node/@id, $node/@n, $node/@syll, $node/@part),
+                $node/@* except ($node/@id, $node/@n, $node/@syll, $node/@part, $node/@par, $node/@syl),
                 attribute n {string($node/@id)},
-                $node/@part ! attribute part {upper-case(.)},
+                ($node/@part, $node/@par) ! attribute part {upper-case(.)}, (: typo in andrieux-anaximandre.xml :)
                 if(not($node/@n)) then () else comment {'WARNING: source contains @n as well. it is removed here.'},
                 local:transform($node/node())
-            }, if($node/@syll) then comment { '@syll=' || string($node/@syll)  } else ())
+            }, ($node/@syll, $node/@syl) ! local:attribute-to-comment(.) )
+            
+            case element(p) return
+                (: move tei:p[@type='v'] to tei:l as it represents vers. distinction unclear. :)
+                if($node/@type eq 'v')
+                then
+                    element {QName('http://www.tei-c.org/ns/1.0', 'l')} {
+                    $node/@* except ($node/@id, $node/@is, $node/@n, $node/@type),
+                    $node/@id ! attribute n {string($node/@id)},
+                    local:transform($node/node())
+                }
+                else
+                    element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
+                    $node/@* except ($node/@id, $node/@is, $node/@n),
+                    $node/@id ! attribute n {string($node/@id)},
+                    $node/@is ! attribute n {string($node/@is)}, (: typo in anonyme-clubdesdames.xml :)
+                    local:transform($node/node())
+                }
+            
             case element(role) return
                 (: correct invalid IDs here as well :)
                 (: removing unknown attributes @sex, @type, @statut, @age, @stat_amour :)
@@ -72,37 +102,176 @@ declare function local:transform($nodes) {
                 $node/@* except ($node/@id, $node/@sex, $node/@type, $node/@statut, $node/@age, $node/@stat_amour),
                 attribute corresp {'#' || local:translate(string($node/@id))},
                 local:transform($node/node())
-            }, comment {
+            },
                 ($node/@sex, $node/@type, $node/@statut, $node/@age, $node/@stat_amour)
-                ! ('@' || local-name(.) || '=' || string(.))
-            })
+                ! local:attribute-to-comment(.) )
             case element(docDate) return
                 (: correct unknown @value to @when :)
                 element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
                 $node/@* except $node/@value,
-                attribute when { $node/@value },
+                attribute when { replace($node/@value, '^v\.', '') },
                 local:transform($node/node())
             }
             case element(docAuthor) return
+                (: remove this element, when it will result empty :)
+                if(not($node/text() or $node/*)) then () else
                 (: remove unused and invalid @id, may replaced by @sameAs, @ref or @corresp :)
-                element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except $node/@id,
+                (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
+                $node/@* except ($node/@id, $node/@bio),
+                local:transform($node/node())
+            }, $node/@bio ! local:attribute-to-comment(.) )
+
+        (: BEGIN 
+            rename unknown or wrong used elements to div
+            and preserve usage as @type
+        :)
+            case element(docImprint) return
+                (: remove unknown element :)
+                element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except $node/@type,
+                attribute type {'docImprint'},
                 local:transform($node/node())
             }
             case element(privilege) return
                 (: remove unknown element :)
-                element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-                $node/@* except $node/@id,
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except ($node/@id, $node/@date),
+                attribute type {'privilege'},
                 local:transform($node/node())
-            }
+            }, ($node/@id, $node/@date) ! local:attribute-to-comment(.))
+            case element(acheveImprime) return
+                (: remove unknown element :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except ($node/@id, $node/@value),
+                attribute type {'acheveImprime'},
+                element {QName('http://www.tei-c.org/ns/1.0', 'p')} {
+                    local:transform($node/node())
+                }
+            }, $node/@id ! local:attribute-to-comment(.) )
+            case element(printer) return
+                (: remove unknown element :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except ($node/@id, $node/@type, $node/@value),
+                attribute type {'printer'},
+                $node/@type ! local:attribute-to-comment(.),
+                element {QName('http://www.tei-c.org/ns/1.0', 'p')} {
+                    local:transform($node/node())
+                }
+            }, ($node/@id, $node/@type, $node/@value) ! local:attribute-to-comment(.) )
+            case element(approbation) return
+                (: remove unknown element :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except ($node/@id, $node/@value),
+                attribute type {'approbation'},
+                local:transform($node/node())
+            }, ($node/@id, $node/@value) ! local:attribute-to-comment(.) )
+            
+            case element(enregistrement) return
+                (: remove unknown element :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except $node/@id,
+                attribute type {'enregistrement'},
+                local:transform($node/node())
+            }, $node/@id ! local:attribute-to-comment(.) )
+            
+            case element(postface) return
+                (: remove unknown element :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except $node/@id,
+                attribute type {'postface'},
+                local:transform($node/node())
+            }, $node/@id ! local:attribute-to-comment(.) )
+
+        (: END :)
+            
+            case element(poem) return
+                (: move poem to ab, preserve via comments :)
+                (comment { '<poem>' },
+                element {QName('http://www.tei-c.org/ns/1.0', 'ab')} {
+                    $node/@*,
+                    local:transform($node/node())
+                },
+                comment { '</poem>' })
+            
+            case element(note) return
+                (: rename attribute typ to type :)
+                element {QName('http://www.tei-c.org/ns/1.0', 'note')} {
+                    $node/@*[. != ''] except ($node/@typ, $node/@typr, $node/@typr, $node/@typpe), (: empty @type in anonyme-chapelaindecoiffe.xml :)
+                    $node/@typ ! attribute type {string( $node/@typ )},
+                    $node/@typr ! attribute type {string( $node/@typr )},
+                    $node/@typpe ! attribute type {string( $node/@typpe )},
+                    local:transform($node/node())
+                }
+        
+            case element(titlePart) return
+                (: rename attribute part to type :)
+                element {QName('http://www.tei-c.org/ns/1.0', 'titlePart')} {
+                    $node/@* except $node/@part,
+                    $node/@part ! attribute type {string( $node/@part )},
+                    local:transform($node/node())
+                }
+
+            case element(premiere) return
+                (: remove unknown element :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'ab')} {
+                attribute type {'premiere'},
+                local:transform($node/node())
+            }, $node/@* ! local:attribute-to-comment(.) )
+            
+            case element(adresse) return
+                (: move this to opener/salute :)
+                element {QName('http://www.tei-c.org/ns/1.0', 'opener')} {
+                    element {QName('http://www.tei-c.org/ns/1.0', 'salute')} {
+                        $node/@*,
+                        local:transform($node/node())
+                    }
+                }
+
+            case element(signature) return
+                element {QName('http://www.tei-c.org/ns/1.0', 'signed')} {
+                    $node/@*,
+                    local:transform($node/node())
+                }
+
+        (: completely remove the folowing, as it is unclear what it means :)
             case element(set) return
                 comment {
-                    'usage of set in correct place but with unknown attributes',
+                    'TODO: usage of set in correct place but with unknown attributes',
                     serialize($node)
                 }
+            case element(editor) return 
+                comment {
+                    'TODO: handling of editor name at this place unclear',
+                    serialize($node)
+                }
+
+            case element(stage) return
+                (: element stage with attribute stage is invalid :)
+                if($node/parent::*:body)
+                then
+                    (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                        (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
+                            $node/@* except $node/@stage,
+                            local:transform($node/node())
+                        }, $node/@stage ! local:attribute-to-comment(.))
+                    })
+                else
+                (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
+                $node/@* except $node/@stage,
+                local:transform($node/node())
+            }, $node/@stage ! local:attribute-to-comment(.))
+
+            case element(source) return
+                (: unclear what "source" means here. should be part of the teiHeader :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'p')} {
+                $node/@* except $node/@id, (: empty id attribute :)
+                local:transform($node/node())
+            }, comment { 'source' })
+
         default return
             element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@*,
+                $node/@* except $node/@type,
+                if($node/@type[. = '']) then () else $node/@type, (: empty @type is not allowed :)
                 local:transform($node/node())
             }
 };
@@ -114,11 +283,14 @@ let $target-collection := '/db/transformed',
     $create := if($continue) then () else xmldb:create-collection('/db', 'transformed')
 
 let $collection-uri := '/db/data/'
+let $do := 
 for $resource at $pos in xmldb:get-child-resources($collection-uri)
 (: set position to continue previouse transformation :)
-(: where $pos gt 1330:)
+(:where $pos gt 28:)
+(:where $pos lt 101:)
+(:where $pos eq 100:)
 
-let $log := util:log-system-out('preapring ' || $pos || '.')
+let $log := util:log-system-out( substring-before(util:eval( 'current-time()' ), '.') || ' preparing ' || ($pos => format-number('0000') => replace('^0', ' ') => replace('^ 0', '  ') => replace('^  0', '   ')) || ': ' || $resource)
 let $doc := doc('/db/data/' || $resource)
 let $title := 
     if($doc//*:titlePart/@type="main")
@@ -174,6 +346,16 @@ let $editor :=
             element {QName('http://www.tei-c.org/ns/1.0', 'editor')} {$name2}
     else ()
 
+let $datePrint :=
+    let $value := string(($doc//*:docDate)[1]/@value)
+    let $when := ()
+    return
+        (element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+            $when ! attribute when {.},
+            $value
+        }, 
+        ($doc//*:docDate)[2] ! comment {'WARNING: multiple docDate elements found in source. ' || serialize(.)})
+
 let $tei :=
 <TEI xmlns='http://www.tei-c.org/ns/1.0' xml:lang="fre">
     <teiHeader>
@@ -197,7 +379,7 @@ let $tei :=
             </publicationStmt>
             <sourceDesc>
                 <bibl type="digitalSource">
-                    <name>Théâtre Classique </name>
+                    <name>Théâtre Classique</name>
                     <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/{$resource}</idno>
                     <idno type="URL">http://theatre-classique.fr/pages/documents/{$resource}</idno>
                     <availability>
@@ -207,8 +389,15 @@ let $tei :=
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="{string(($doc//*:docDate)[1]/@value)}">{string(($doc//*:docDate)[1]/@value)}</date>{ if(($doc//*:docDate)[2]) then comment {'WARNING: multiple docDate elements found in source.'} else () }
-                        <date type="premiere">{attribute when {string(($doc//*:premiere)[1]/@date)}}{string(($doc//*:premiere)[1])}</date>{ if(($doc//*:premiere)[2]) then comment {'WARNING: multiple premiere elements found in source.'} else () }
+                        {$datePrint}
+{
+    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+        attribute type {'premiere'},
+        (($doc//*:premiere)[1])[matches(@date, '\d{4}')]/@date ! attribute when {.},
+        string(($doc//*:premiere)[1])
+    }
+}
+                            { if(($doc//*:premiere)[2]) then comment {'WARNING: multiple premiere elements found in source.'} else () }
                         <date type="written"/>
                         <idno type="URL">{string($doc//*:permalien)}</idno>
                     </bibl>
@@ -219,7 +408,7 @@ let $tei :=
             <particDesc>
                 <listPerson>
 {
-    for $who in (($doc//*:text//*:sp/tokenize(@who, $who-tokenize-pattern) => distinct-values()) ! local:translate(.))
+    for $who in (($doc//*:text//*:sp/tokenize(@who, $who-tokenize-pattern) => distinct-values()) ! local:translate(.) => distinct-values())
     (: inconsistent usage of @id with @who. we have to translate/normalize to match. :)
     let $castItem := $doc//*:role[local:translate(@id) eq $who]/parent::*
     let $sex := switch (string($castItem[1]/*:role[1]/@sex))
@@ -257,9 +446,21 @@ let $tei :=
         </revisionDesc>
     </teiHeader>
     {
-        local:transform($doc/*:TEI/*:text)
+        local:transform($doc/*:TEI/*:text),
+        local:transform($doc/*:TEI.2/*:text)
     }
 </TEI>
 
+let $store := xmldb:store('/db/transformed', $resource => lower-case() => replace('_', '-'), $tei)
+let $validation := validation:jing-report(xs:anyURI($store), xs:anyURI('/db/tei_all.rng'))
+let $log := 
+    if($validation//status eq 'valid')
+    then util:log-system-out('✔ tei_all')
+    else (util:log-system-out('✘ tei_all'), util:log-system-out(serialize($validation, map{'method':'xml','indent': true()})))
+
 return
-    xmldb:store('/db/transformed', $resource => lower-case() => replace('_', '-'), $tei)
+    $validation
+    
+return
+    (count($do//status[. eq 'valid']),
+    count($do//status[. eq 'invalid']))

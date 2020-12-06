@@ -1,6 +1,41 @@
 xquery version "3.1";
 
+declare namespace functx = "http://www.functx.com";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare namespace xhtml="http://www.w3.org/1999/xhtml";
+
+declare function functx:change-element-ns-deep
+  ( $nodes as node()* ,
+    $newns as xs:string ,
+    $prefix as xs:string )  as node()* {
+
+  for $node in $nodes
+  return if ($node instance of element())
+         then (element
+               {QName ($newns,
+                          concat($prefix,
+                                    if ($prefix = '')
+                                    then ''
+                                    else ':',
+                                    local-name($node)))}
+               {$node/@*,
+                functx:change-element-ns-deep($node/node(),
+                                           $newns, $prefix)})
+         else if ($node instance of document-node())
+         then functx:change-element-ns-deep($node/node(),
+                                           $newns, $prefix)
+         else $node
+ } ;
+
+declare function local:load-tei-all() as xs:string {
+    let $filename := 'tei_all.rng'
+    let $url := 'https://tei-c.org/release/xml/tei/custom/schema/relaxng/' || $filename
+    let $request := <hc:request method="get" href="{$url}"/>
+    let $data := hc:send-request($request)[2]
+    
+    return
+        xmldb:store("/db", $filename, $data, 'application/xml')
+};
 
 let $baseUrl := "http://theatre-classique.fr/pages"
 let $request :=
@@ -44,10 +79,16 @@ let $list :=
     return
         xmldb:store($targetCollectionPath, $filename, $doc)
 
-let $transform := 
-    
+let $preprocessing :=
+(: remove namespace to make all documents same :)
+for $item in collection($targetCollectionPath)//tei:TEI/base-uri()
+let $resource-name := tokenize($item, "/")[last()]
+let $new := functx:change-element-ns-deep(doc($item), "", "")
 return
-    string-join($list, "&#10;")
+    xmldb:store($targetCollectionPath, $resource-name, $new)
+
+return
+    string-join($preprocessing, "&#10;")
     => serialize(
         map{
             "method":"text",

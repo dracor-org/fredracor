@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1916">1916</date>
+                        <date>1916</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k761709</idno>
@@ -72,7 +72,7 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="OLLENDORF">PARIS, LIBRAIRE THÉÂTRALE ET ARTISTIQUE, 11, BOULEVARD DES ITALIENS, 11.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, LIBRAIRE THÉÂTRALE ET ARTISTIQUE, 11, BOULEVARD DES ITALIENS, 11.</editor>-->
 			<div type="printer">
                     <p>Évreux, Imprimerie de CH. HÉRISSEY</p>
                 </div>
@@ -80,9 +80,9 @@
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1" @type="H" @statut="bourgeois" @age="J" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -91,7 +91,8 @@
                     <head/>
 <sp who="#un-homme">
                         <speaker>[UN HOMME].</speaker>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">Quoi ! Ce n'est pas assez de tout ce que l'on souffre,</l>
 	<l n="2">Que la guerre nous ruine et pour tous soit un gouffre,</l>
@@ -171,7 +172,7 @@
 	<l n="68">Mais, hélas ! On en vient d'exonérer vos pères...</l>
 	<l n="69">Horreur ! Plaignez, plaignez, les pauv'propriétaires !</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

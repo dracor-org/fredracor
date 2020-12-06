@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1880">1880</date>
+                        <date>1880</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k761693.image</idno>
@@ -71,14 +71,14 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, Rue de Richelieu 28 bis.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, Rue de Richelieu 28 bis.</editor>-->
 		</div>
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#une-jeune-femme">UNE JUENE FEMME</role><!--@sex="2" @type="H" @statut="bourgeois" @age="J" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#une-jeune-femme">UNE JUENE FEMME</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
 <body>
 <div type="acte" n="1">
@@ -87,7 +87,8 @@
                     <head/>
 <sp who="#jeune-femme">
                         <speaker>UNE JEUNE FEMME.</speaker>
-<poem type="quatrain">
+<!--<poem>-->
+                        <ab type="quatrain">
 <lg n="1">
 	<l n="1">Ah ! C'est trop fort ! Je suis en rage !</l>
 	<l n="2">Me traiter de cette façon !</l>
@@ -402,7 +403,7 @@
 	<l n="207">Car, à se tromper l'on s'expose,</l>
 	<l n="208">Si l'on n'a pas entendu tout !</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

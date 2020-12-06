@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1881">1881</date>
+                        <date>1881</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k207939j</idno>
@@ -69,7 +69,7 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="TRESSE">PARIS, TRESSE ÉDITEUR, GALERIE DU THÉÂTRE-FRANÇAIS, PALAIS-ROYAL.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="TRESSE">PARIS, TRESSE ÉDITEUR, GALERIE DU THÉÂTRE-FRANÇAIS, PALAIS-ROYAL.</editor>-->
 			<div type="printer">
                     <p>F. Aureau. - Imprimerie de Lagny.</p>
                 </div>
@@ -77,9 +77,9 @@
 	<castList>
                 <head>PERSONNAGE</head>
 		<castItem>
-                    <role corresp="#monsieur-bourgeois">MONSIEUR BOURGEOIS</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#monsieur-bourgeois">MONSIEUR BOURGEOIS</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -89,7 +89,8 @@
 <stage type="ddedicace">À C. Coquelin.</stage>
 <sp who="#l-orateur">
                         <speaker>L'ORATEUR.</speaker>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">Un jour, monsieur Bourgeois, bonhomme, forte tête,</l>
 	<l n="2">Heureux pour un mari, pour un marchand, honnête,</l>
@@ -232,10 +233,10 @@
 	<l n="129">Mais vous m'en donneriezdeux, trois, quatre. Impossible !</l>
 	<l n="130">L'argent n'est rien pour moi je suis incorruptible.</l>
 	<l n="131">- Si l'on vous en offrait dix mille ? Non, vraiment.</l>
-	<l n="132" part="I">- Quinze mille ? - Nenni. - Vingt mille ?... </l><!-- @syll="8"-->
+	<l n="132" part="I">- Quinze mille ? - Nenni. - Vingt mille ?... </l><!--@syll="8"-->
 </lg>
 <lg n="7">
-	<l n="132" part="F">À ce moment,</l><!-- @syll="4"-->
+	<l n="132" part="F">À ce moment,</l><!--@syll="4"-->
 	<l n="133">Un coup bien appliqué retentit à la porte.</l>
 	<l n="134">« Ciel ! Ma femme ! Toi ? - Moi. Que le diable l'emporte ! »</l>
 	<l n="135">Ces quatre derniers mots furent commis si bas,</l>
@@ -247,7 +248,7 @@
 	<l n="141">Ainsi Monsieur Bourgeois, pour racheter sa femme,</l>
 	<l n="142">Compta vingt mille francs. Dieu veuille avoir son âme.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

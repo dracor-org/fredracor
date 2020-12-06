@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1666">1666</date>
+                        <date>1666</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k5438762s</idno>
@@ -70,528 +70,533 @@
 			<titlePart type="main">FRAGMENT D'UNE COMÉDIE INTITULÉE CHAPELAIN DÉCOIFFÉ.</titlePart>
 			<titlePart type="sub">D'une autre façon.</titlePart>
 		</docTitle> 
-		<docDate value="1666">1666</docDate>
-		<docAuthor id="[Anonyme]"/>
-		<docImprint>
-				<privilege date="1637-01-21">
+		<docDate when="1666">1666</docDate>
+		
+		<div type="docImprint">
+				<div type="privilege">
                     <head/>
 				<p/>
-				</privilege>
-				<acheveImprime id="1637-03-23">Achevé d'imprimé ce 23 mars 1637. Les exemplaires ont été fournis ainsi qu'il est porté par le privilège.</acheveImprime>
-				<printer id="COURBÉ">À LA HAYE, chez PIERRE DU BOIS, au Palais.</printer>
-		</docImprint>
+				</div><!--@date="1637-01-21"-->
+				<div type="acheveImprime">
+                    <p>Achevé d'imprimé ce 23 mars 1637. Les exemplaires ont été fournis ainsi qu'il est porté par le privilège.</p>
+                </div><!--@id="1637-03-23"-->
+				<div type="printer">
+                    <p>À LA HAYE, chez PIERRE DU BOIS, au Palais.</p>
+                </div><!--@id="COURBÉ"-->
+		</div>
 		<performance>
-			<premiere date="(non représentée)" location="(non représentée)"/>
+			<ab type="premiere"/><!--@date="(non représentée)"--><!--@location="(non représentée)"-->
 		</performance>
 		<castList>
                 <head>PERSONNAGES</head>
 			<castItem>
-                    <role id="LA SERRE" sex="1" type="H" statut="écrivain" age="A" stat_amour="néant">LA SERRE</role> </castItem>
+                    <role corresp="#la-serre">LA SERRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"--> </castItem>
 			<castItem>
-                    <role id="CHAPELAIN" sex="1" type="H" statut="écrivain" age="A" stat_amour="néant">CHAPELAIN</role>, Père de la Pucelle. </castItem>
+                    <role corresp="#chapelain">CHAPELAIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"-->, Père de la Pucelle. </castItem>
 			<castItem>
-                    <role id="CASSAIGNE" sex="1" type="H" statut="écrivain" age="A" stat_amour="néant">CASSAIGNE</role>, Père de la Pucelle. </castItem>
+                    <role corresp="#cassaigne">CASSAIGNE</role><!--@sex="1"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"-->, Père de la Pucelle. </castItem>
 		</castList>
-	<set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La Scène est est au Carrefour de la rue Plâtriere au retour de l'Académie.</set>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La Scène est est au Carrefour de la rue Plâtriere au retour de l'Académie.</set>-->
 	<note>Cette parodie est extraite de "La Ménagerie par Monsieur L'ABBÉ COTIN, et quelques autres pièces curieuses. pp. 38-48. Toutefois, il n'en est probablement pas l'auteur : selon les sources, ce sont soit Nicolas Boileau, ou un groupe dont Molière, Jean Racine et Jean Chapelle.</note>
 </front>
 <body>
-<div1 type="act" n="1">
+<div type="act" n="1">
                 <head>PARODIE</head>
-<div2 type="scene" n="1">
+<div type="scene" n="1">
                     <head>SCÈNE I. La Serre, Chapelain.</head>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
 <note type="C">Toute la pièce est une parodie du premier acte du Cid de Pierre Corneille.</note>
 <note type="C">Puget de La Serre, Jean (1594-1665) : écrivain prolixe et auteur dramatique dont Thomas Morus ou le triomphe de la Foi, et de la constance, Le Martyre de Sainte Catherine, le Sac de Carthage ou encore Pandoste ou la Princesse malheureuse.</note>
-	<l id="1">Enfin vous l'emportez, et la faveur du Roi</l>
-	<l id="2">Vous accable de dons, qui n'étaient dus qu'à moi.</l>
-	<l id="3">On voit rouler chez vous tout l'or de la Castille. </l>
+	<l n="1">Enfin vous l'emportez, et la faveur du Roi</l>
+	<l n="2">Vous accable de dons, qui n'étaient dus qu'à moi.</l>
+	<l n="3">On voit rouler chez vous tout l'or de la Castille. </l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="4">Les trois fois mille francs, qu'il met dans ma famille</l>
-	<l id="5">Témoignent qu'il est juste, et font connaître assez</l>
-	<l id="6">Qu'il sait récompenser les poèmes forcés.</l>
+	<l n="4">Les trois fois mille francs, qu'il met dans ma famille</l>
+	<l n="5">Témoignent qu'il est juste, et font connaître assez</l>
+	<l n="6">Qu'il sait récompenser les poèmes forcés.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="7">Pour grands que soient les Rois, ils sont ce que nous sommes,</l>
-	<l id="8">Ils se trompent en vers comme les autres hommes,</l>
-	<l id="9">Et ce choix sert de preuve à tous les Courtisans,</l>
-	<l id="10">Qu'à de méchants auteurs ils font de beaux présents.</l>
+	<l n="7">Pour grands que soient les Rois, ils sont ce que nous sommes,</l>
+	<l n="8">Ils se trompent en vers comme les autres hommes,</l>
+	<l n="9">Et ce choix sert de preuve à tous les Courtisans,</l>
+	<l n="10">Qu'à de méchants auteurs ils font de beaux présents.</l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="11">Ne parlons point d'un choix, dont notre esprit s'irrite :</l>
-	<l id="12">La Cabale l'a fait plutôt que le mérite,</l>
-	<l id="13">Vous choisissant peut-être on eut peu mieux choisir :</l>
-	<l id="14">Mais le Roi m'a trouvé plus propre à son désir.</l>
-	<l id="15">À l'honneur qu'il m'a fait ajoutez en un autre,</l>
-	<l id="16">Unissons désormais ma Cabale à la vôtre.</l>
-	<l id="17">Les sots aiment mes vers, et ce digne sujet</l>
-	<l id="18">De leurs affections est le plus cher objet :</l>
-	<l id="19">Ma nièce même en vous peut rencontrer un gendre.</l>
+	<l n="11">Ne parlons point d'un choix, dont notre esprit s'irrite :</l>
+	<l n="12">La Cabale l'a fait plutôt que le mérite,</l>
+	<l n="13">Vous choisissant peut-être on eut peu mieux choisir :</l>
+	<l n="14">Mais le Roi m'a trouvé plus propre à son désir.</l>
+	<l n="15">À l'honneur qu'il m'a fait ajoutez en un autre,</l>
+	<l n="16">Unissons désormais ma Cabale à la vôtre.</l>
+	<l n="17">Les sots aiment mes vers, et ce digne sujet</l>
+	<l n="18">De leurs affections est le plus cher objet :</l>
+	<l n="19">Ma nièce même en vous peut rencontrer un gendre.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="20">À de plus hauts partis Phlipotte doit prétendre,</l>
-	<l id="21">Et le nouvel éclat de cette pension</l>
-	<l id="22">Lui doit bien mettre au coeur, une autre ambition ;</l>
-	<l id="23">Exerce nos rimeurs, et vante notre Prince,</l>
-	<l id="24">Va te faire admirer chez les gens de Province,</l>
-	<l id="25">Fais marcher en tous lieux les rimeurs sous ta loi,</l>
-	<l id="26">Sois des flatteurs l'amour et des railleurs l'effroi :</l>
-	<l id="27">Joins à ces qualités celle d'une âme vaine,</l>
-	<l id="28">Montre leur comme il faut endurcir une veine,</l>
-	<l id="29">Au métier de Phoebus bander tous les ressorts</l>
-	<l id="30">Endosser nuit et jour un rouge juste-au-corps,</l>
-	<l id="31">Pour avoir de l'encens donner une bataille,</l>
+	<l n="20">À de plus hauts partis Phlipotte doit prétendre,</l>
+	<l n="21">Et le nouvel éclat de cette pension</l>
+	<l n="22">Lui doit bien mettre au coeur, une autre ambition ;</l>
+	<l n="23">Exerce nos rimeurs, et vante notre Prince,</l>
+	<l n="24">Va te faire admirer chez les gens de Province,</l>
+	<l n="25">Fais marcher en tous lieux les rimeurs sous ta loi,</l>
+	<l n="26">Sois des flatteurs l'amour et des railleurs l'effroi :</l>
+	<l n="27">Joins à ces qualités celle d'une âme vaine,</l>
+	<l n="28">Montre leur comme il faut endurcir une veine,</l>
+	<l n="29">Au métier de Phoebus bander tous les ressorts</l>
+	<l n="30">Endosser nuit et jour un rouge juste-au-corps,</l>
+	<l n="31">Pour avoir de l'encens donner une bataille,</l>
 <note type="L">Maille : Petite monnaie de cuivre qui n'est plus en usage, mais qui valait la moitié d'un denier, et était de la sorte synonyme d'obole. Il n'a ni denier ni maille. [L]</note>
-	<l id="32">Ne laisser de sa bourse échapper une maille :</l>
-	<l id="33">Sur tout sers leur d'exemple et ressouviens toi bien</l>
-	<l id="34">De leur former un style aussi dur que le tien.</l>
+	<l n="32">Ne laisser de sa bourse échapper une maille :</l>
+	<l n="33">Sur tout sers leur d'exemple et ressouviens toi bien</l>
+	<l n="34">De leur former un style aussi dur que le tien.</l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="35">Tour s'instruire d'exemple en dépit de Lignière</l>
-	<l id="36">Ils liront seulement ma Jeanne toute entière :</l>
-	<l id="37">Là dans un long tissu d'amples narrations</l>
-	<l id="38">Ils verront comme il faut berner les nations </l>
-	<l id="39">Duper d'un grave ton gens de robe et d'armée,</l>
-	<l id="40">Et sur l'erreur des sots bâtir la renommée.</l>
+	<l n="35">Tour s'instruire d'exemple en dépit de Lignière</l>
+	<l n="36">Ils liront seulement ma Jeanne toute entière :</l>
+	<l n="37">Là dans un long tissu d'amples narrations</l>
+	<l n="38">Ils verront comme il faut berner les nations </l>
+	<l n="39">Duper d'un grave ton gens de robe et d'armée,</l>
+	<l n="40">Et sur l'erreur des sots bâtir la renommée.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="41">L'exemple de La Serre a bien plus de pouvoir.</l>
-	<l id="42">Un auteur dans ton livre apprend mal son devoir,</l>
-	<l id="43">Et qu'a fait après tout ce grand nombre de pages,</l>
-	<l id="44">Que ne puisse égaler un de mes cent ouvrages.</l>
-	<l id="45">Si tu fus grand flatteur, je le suis aujourd'hui,</l>
-	<l id="46">Et ce bras de la presse est le plus ferme appui.</l>
+	<l n="41">L'exemple de La Serre a bien plus de pouvoir.</l>
+	<l n="42">Un auteur dans ton livre apprend mal son devoir,</l>
+	<l n="43">Et qu'a fait après tout ce grand nombre de pages,</l>
+	<l n="44">Que ne puisse égaler un de mes cent ouvrages.</l>
+	<l n="45">Si tu fus grand flatteur, je le suis aujourd'hui,</l>
+	<l n="46">Et ce bras de la presse est le plus ferme appui.</l>
 <note type="L">Billaine et Sercy sont deux imprimeurs libraires de Paris.</note>
-	<l id="47">Billaine et de Sercy sans moi seraient des drilles,</l>
-	<l id="48">Mon nom seul au palais nourrit trente familles ;</l>
-	<l id="49">Les marchands fermeraient leurs boutiques sans moi,</l>
-	<l id="50">Et s'ils ne m'avaient plus ils n'auraient plus d'emploi.</l>
-	<l id="51">Chaque heure, chaque instant fait sortir de ma plume</l>
-	<l id="52">Cahiers dessus Cahiers, volume sur volume,</l>
-	<l id="53">Un auteur écrivant ce que j'aurais dicté</l>
-	<l id="54">Ferait un livre entier marchant à mon côté,</l>
-	<l id="55">Et loin de ces durs vers qu'à mon style on préfère</l>
-	<l id="56">Il deviendrait hâbleur en me regardant faire.</l>
+	<l n="47">Billaine et de Sercy sans moi seraient des drilles,</l>
+	<l n="48">Mon nom seul au palais nourrit trente familles ;</l>
+	<l n="49">Les marchands fermeraient leurs boutiques sans moi,</l>
+	<l n="50">Et s'ils ne m'avaient plus ils n'auraient plus d'emploi.</l>
+	<l n="51">Chaque heure, chaque instant fait sortir de ma plume</l>
+	<l n="52">Cahiers dessus Cahiers, volume sur volume,</l>
+	<l n="53">Un auteur écrivant ce que j'aurais dicté</l>
+	<l n="54">Ferait un livre entier marchant à mon côté,</l>
+	<l n="55">Et loin de ces durs vers qu'à mon style on préfère</l>
+	<l n="56">Il deviendrait hâbleur en me regardant faire.</l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="57">Tu me parles en vain de ce que je connais :</l>
-	<l id="58">Je t'ai vu rimailler, et traduire sous moi.</l>
-	<l id="59">Si j'ai traduit Gusman, si j'ai fait sa préface,</l>
-	<l id="60">Ton galimatias a bien rempli ma place.</l>
-	<l id="61">Enfin pour épargner ces discours superflus</l>
-	<l id="62">Si je suis grand flatteur, tu l'es et tu le fus.</l>
-	<l id="63">Tu vois bien cependant qu'en cette concurrence</l>
-	<l id="64">Un Monarque entre nous met de la différence.</l>
+	<l n="57">Tu me parles en vain de ce que je connais :</l>
+	<l n="58">Je t'ai vu rimailler, et traduire sous moi.</l>
+	<l n="59">Si j'ai traduit Gusman, si j'ai fait sa préface,</l>
+	<l n="60">Ton galimatias a bien rempli ma place.</l>
+	<l n="61">Enfin pour épargner ces discours superflus</l>
+	<l n="62">Si je suis grand flatteur, tu l'es et tu le fus.</l>
+	<l n="63">Tu vois bien cependant qu'en cette concurrence</l>
+	<l n="64">Un Monarque entre nous met de la différence.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="65">Ce que je méritais, tu me l'as emporté.</l>
+	<l n="65">Ce que je méritais, tu me l'as emporté.</l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="66">Qui l'a gagné sur toi l'avait mieux mérité.</l>
+	<l n="66">Qui l'a gagné sur toi l'avait mieux mérité.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="67">Qui sait mieux composer en est bien le plus digne.</l>
+	<l n="67">Qui sait mieux composer en est bien le plus digne.</l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="68">En être refusé n'en est pas un bon signe.</l>
+	<l n="68">En être refusé n'en est pas un bon signe.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="69">Tu l'as gagné pas brigue étant vieux courtisan.</l>
+	<l n="69">Tu l'as gagné pas brigue étant vieux courtisan.</l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="70">L'éclat de mes grands vers fut mon seul partisan.</l>
+	<l n="70">L'éclat de mes grands vers fut mon seul partisan.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="71">Parlons en mieux, le Roi fait honneur à ton âge. </l>
+	<l n="71">Parlons en mieux, le Roi fait honneur à ton âge. </l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="72">Le Roi, quand il en fait, le mesure à l'ouvrage.</l>
+	<l n="72">Le Roi, quand il en fait, le mesure à l'ouvrage.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="73">Et par là je devais emporter ces ducats. </l>
+	<l n="73">Et par là je devais emporter ces ducats. </l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="74">Qui ne les obtient point ne les mérite pas.</l>
+	<l n="74">Qui ne les obtient point ne les mérite pas.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="75" syll="7" part="i">Ne les mérite pas, moi ! </l>
+	<l n="75" part="I">Ne les mérite pas, moi ! </l><!--@syll="7"-->
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="75" syll="1" part="m">Toi.</l>
+	<l n="75" part="M">Toi.</l><!--@syll="1"-->
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="75" syll="4" part="f">Ton insolence</l>
-	<l id="76">Téméraire vieillard aura sa récompense.</l>
+	<l n="75" part="F">Ton insolence</l><!--@syll="4"-->
+	<l n="76">Téméraire vieillard aura sa récompense.</l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="77">Achève et prends ma tête après un tel affront,</l>
-	<l id="78">Le premier dont ma Muse a vu rougir son front.</l>
+	<l n="77">Achève et prends ma tête après un tel affront,</l>
+	<l n="78">Le premier dont ma Muse a vu rougir son front.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="79">Et que penses-tu faite avec tant de faiblesse ? </l>
+	<l n="79">Et que penses-tu faite avec tant de faiblesse ? </l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="80">Ô Dieux ! Mon Apollon à ce besoin me laisse.</l>
+	<l n="80">Ô Dieux ! Mon Apollon à ce besoin me laisse.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="81">Ta perruque est à moi ; mais tu serais trop vain,</l>
-	<l id="82">Si ce sale trophée avait souillé ma main.</l>
-	<l id="83">Adieu fais lire au peuple en dépit de Lignière</l>
-	<l id="84">De tes fameux travaux l'histoire toute entière :</l>
-	<l id="85">D'un insolent discours ce juste châtiment</l>
-	<l id="86">Ne lui servira pas d'un petit ornement. </l>
+	<l n="81">Ta perruque est à moi ; mais tu serais trop vain,</l>
+	<l n="82">Si ce sale trophée avait souillé ma main.</l>
+	<l n="83">Adieu fais lire au peuple en dépit de Lignière</l>
+	<l n="84">De tes fameux travaux l'histoire toute entière :</l>
+	<l n="85">D'un insolent discours ce juste châtiment</l>
+	<l n="86">Ne lui servira pas d'un petit ornement. </l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="87" syll="6" part="i">Rends moi donc ma perruque.</l>
+	<l n="87" part="I">Rends moi donc ma perruque.</l><!--@syll="6"-->
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="87" syll="6" part="f">Elle est trop malhonnête.</l>
-	<l id="88">De tes lauriers sacrés va te couvrir la tête.</l>
+	<l n="87" part="F">Elle est trop malhonnête.</l><!--@syll="6"-->
+	<l n="88">De tes lauriers sacrés va te couvrir la tête.</l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="89" syll="6" part="i">Rends la calotte au moins.</l>
+	<l n="89" part="I">Rends la calotte au moins.</l><!--@syll="6"-->
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="89" syll="6" part="f">Va, va, tes cheveux d'ours</l>
-	<l id="90">Ne pourraient sur ta tête encor durer trois jours.</l>
+	<l n="89" part="F">Va, va, tes cheveux d'ours</l><!--@syll="6"-->
+	<l n="90">Ne pourraient sur ta tête encor durer trois jours.</l>
 </sp>
-</div2>
-<div2 type="scene" n="2">
+</div>
+<div type="scene" n="2">
                     <head>SCÈNE II.</head>
-<sp stage="alone" who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN, seul.</speaker>
-	<l id="91">Ô rage ! Ô desespoir ! Ô perruque m'amie !</l>
-	<l id="92">N'as tu donc tant vécu, que pour cette infamie,</l>
-	<l id="93">N'as tu trompé l'espoir de tant de perruquiers,</l>
-	<l id="94">Que pour voir en un jour flétrir tant de lauriers.</l>
-	<l id="95">Nouvelle pension fatale à ma calotte,</l>
-	<l id="96">Précipice élevé qui te jette en la crotte,</l>
-	<l id="97">Cruel ressouvenir de tes honneurs passés,</l>
-	<l id="98">Services de vingt ans en un jour effacés !</l>
-	<l id="99">Faut il de ton vieil poil voir triompher La Serre,</l>
-	<l id="100">Et te mettre crottée, ou te laisser à terre.</l>
-	<l id="101">La Serre sois d'un Roy maintenant régalé</l>
-	<l id="102">Ce haut rang n'admet pas un poète pelé, </l>
-	<l id="103">Et ton jaloux orgueil par cet affront insigne</l>
-	<l id="104">Malgré le choix du Roi m'en a su rendre indigne.</l>
-	<l id="105">Et toi de mes travaux glorieux instrument ;</l>
-	<l id="106">Mais d'un esprit de glace inutile ornement,</l>
-	<l id="107">Plume, jadis vantée, et qui dans cette offense</l>
-	<l id="108">M'as servi de parade, et non pas de défense, </l>
-	<l id="109">Va, quitte désormais le dernier des humains.</l>
-	<l id="110">Passe pour me venger en de meilleures mains.</l>
-	<l id="111">Si Cassaigne a du coeur, et s'il est mon ouvrage, </l>
-	<l id="112">Voici l'occasion de montrer son courage,</l>
-	<l id="113">Son esprit est le mien, et le mortel affront,</l>
-	<l id="114">Qui tombe sur mon chef, rejaillit sur son front.</l>
-</sp>
-</div2>
-<div2 type="scene" n="3">
+	<l n="91">Ô rage ! Ô desespoir ! Ô perruque m'amie !</l>
+	<l n="92">N'as tu donc tant vécu, que pour cette infamie,</l>
+	<l n="93">N'as tu trompé l'espoir de tant de perruquiers,</l>
+	<l n="94">Que pour voir en un jour flétrir tant de lauriers.</l>
+	<l n="95">Nouvelle pension fatale à ma calotte,</l>
+	<l n="96">Précipice élevé qui te jette en la crotte,</l>
+	<l n="97">Cruel ressouvenir de tes honneurs passés,</l>
+	<l n="98">Services de vingt ans en un jour effacés !</l>
+	<l n="99">Faut il de ton vieil poil voir triompher La Serre,</l>
+	<l n="100">Et te mettre crottée, ou te laisser à terre.</l>
+	<l n="101">La Serre sois d'un Roy maintenant régalé</l>
+	<l n="102">Ce haut rang n'admet pas un poète pelé, </l>
+	<l n="103">Et ton jaloux orgueil par cet affront insigne</l>
+	<l n="104">Malgré le choix du Roi m'en a su rendre indigne.</l>
+	<l n="105">Et toi de mes travaux glorieux instrument ;</l>
+	<l n="106">Mais d'un esprit de glace inutile ornement,</l>
+	<l n="107">Plume, jadis vantée, et qui dans cette offense</l>
+	<l n="108">M'as servi de parade, et non pas de défense, </l>
+	<l n="109">Va, quitte désormais le dernier des humains.</l>
+	<l n="110">Passe pour me venger en de meilleures mains.</l>
+	<l n="111">Si Cassaigne a du coeur, et s'il est mon ouvrage, </l>
+	<l n="112">Voici l'occasion de montrer son courage,</l>
+	<l n="113">Son esprit est le mien, et le mortel affront,</l>
+	<l n="114">Qui tombe sur mon chef, rejaillit sur son front.</l>
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="3">
                     <head>SCENE III. Chapelain, Cassaigne.</head>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="115" syll="6" part="i">Cassaigne as tu du coeur ? </l>
+	<l n="115" part="I">Cassaigne as tu du coeur ? </l><!--@syll="6"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-<note type="">Parodie du vers 363, Acte I scène VI du Cid de Pierre Corneille.</note>
-	<l id="115" syll="6" part="f">Tout autre que mon maître</l>
-	<l id="116" syll="6" part="i">L'éprouverait sur l'heure. </l>
+<note>Parodie du vers 363, Acte I scène VI du Cid de Pierre Corneille.</note>
+	<l n="115" part="F">Tout autre que mon maître</l><!--@syll="6"-->
+	<l n="116" part="I">L'éprouverait sur l'heure. </l><!--@syll="6"-->
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="116" syll="6" part="f">Ah ! C'est comme il faut être.</l>
-	<l id="117">Digne ressentiment à ma douleur bien doux,</l>
-	<l id="118">Je reconnais ma nerve à ce noble courroux.</l>
-	<l id="119">Ma jeunesse revit en cette ardeur si prompte.</l>
-	<l id="120">Mon disciple, mon fils, viens réparer ma honte,</l>
-	<l id="121" syll="4" part="i">Viens me venger. </l>
+	<l n="116" part="F">Ah ! C'est comme il faut être.</l><!--@syll="6"-->
+	<l n="117">Digne ressentiment à ma douleur bien doux,</l>
+	<l n="118">Je reconnais ma nerve à ce noble courroux.</l>
+	<l n="119">Ma jeunesse revit en cette ardeur si prompte.</l>
+	<l n="120">Mon disciple, mon fils, viens réparer ma honte,</l>
+	<l n="121" part="I">Viens me venger. </l><!--@syll="4"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="121" syll="2" part="m">De quoi ? </l>
+	<l n="121" part="M">De quoi ? </l><!--@syll="2"-->
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="121" syll="6" part="f">D'un affront si cruel,</l>
-	<l id="122">Qu'à l'honneur de tous deux il porte un coup mortel.</l>
-	<l id="123">D'un insulte le traître eut payé la perruque</l>
-	<l id="124">Un quart d'écu du moins sans mon âge caduque.</l>
-	<l id="125">Ma plume, que mes doigts ne peuvent soutenir</l>
-	<l id="126">Je la remets aux tiens pour écrire et punir.</l>
-	<l id="127">Va contre un Insolent faire un bon gros ouvrage,</l>
-	<l id="128">C'est dedans l'encre seul qu'on lave un tel outrage.</l>
-	<l id="129">Rime ou crève, au surplus pour ne te point flatter,</l>
-	<l id="130">Je te donne à combattre un homme à redouter : </l>
-	<l id="131">Je l'ai vu fort poudreux au milieu des libraires</l>
-	<l id="132">Se faire un beau rempart de deux mille exemplaires.</l>
+	<l n="121" part="F">D'un affront si cruel,</l><!--@syll="6"-->
+	<l n="122">Qu'à l'honneur de tous deux il porte un coup mortel.</l>
+	<l n="123">D'un insulte le traître eut payé la perruque</l>
+	<l n="124">Un quart d'écu du moins sans mon âge caduque.</l>
+	<l n="125">Ma plume, que mes doigts ne peuvent soutenir</l>
+	<l n="126">Je la remets aux tiens pour écrire et punir.</l>
+	<l n="127">Va contre un Insolent faire un bon gros ouvrage,</l>
+	<l n="128">C'est dedans l'encre seul qu'on lave un tel outrage.</l>
+	<l n="129">Rime ou crève, au surplus pour ne te point flatter,</l>
+	<l n="130">Je te donne à combattre un homme à redouter : </l>
+	<l n="131">Je l'ai vu fort poudreux au milieu des libraires</l>
+	<l n="132">Se faire un beau rempart de deux mille exemplaires.</l>
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="133">Son nom, c'est perdre temps en discours superflus.</l>
+	<l n="133">Son nom, c'est perdre temps en discours superflus.</l>
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="134">Donc pour te dire encor quelque chose de plus.</l>
+	<l n="134">Donc pour te dire encor quelque chose de plus.</l>
 <note type="L">Boyer, Claude (1618-1698) : poète dramatique de 27 pièces de théâtre, tragédies, comédies, tragi-comédies, pastorales entre 1646 et 1697.</note>
-	<l id="135">Plus enflé que Boyer, plus bruyant qu'un tonnerre, </l>
-	<l id="136" syll="1" part="i">C'est...</l>
+	<l n="135">Plus enflé que Boyer, plus bruyant qu'un tonnerre, </l>
+	<l n="136" part="I">C'est...</l><!--@syll="1"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="136" syll="5" part="m">De grâce achevez.</l>
+	<l n="136" part="M">De grâce achevez.</l><!--@syll="5"-->
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="136" syll="6" part="f">Le terrible La Serre. </l>
+	<l n="136" part="F">Le terrible La Serre. </l><!--@syll="6"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="137" syll="1" part="i">Le... </l>
+	<l n="137" part="I">Le... </l><!--@syll="1"-->
 </sp>
-<sp who="CHAPELAIN">
+<sp who="#chapelain">
                         <speaker>CHAPELAIN.</speaker>
-	<l id="137" syll="11" part="f">Ne réplique point, je connais ton fatras,</l>
-	<l id="138">Combats sur ma parole, et tu l'emporteras.</l>
-	<l id="139">Donnant pour des cheveux ma pucelle en échange,</l>
-	<l id="140">J'en vais chercher ; barbouille, écris, rime, et nous venge.</l>
+	<l n="137" part="F">Ne réplique point, je connais ton fatras,</l><!--@syll="11"-->
+	<l n="138">Combats sur ma parole, et tu l'emporteras.</l>
+	<l n="139">Donnant pour des cheveux ma pucelle en échange,</l>
+	<l n="140">J'en vais chercher ; barbouille, écris, rime, et nous venge.</l>
 </sp>
-</div2>
-<div2 type="scene" n="4">
+</div>
+<div type="scene" n="4">
                     <head>SCÈNE IV.</head>
-<sp stage="alone" who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE, seul.</speaker>
-<poem type="stances">
+<!--<poem>-->
+                        <ab type="stances">
 <lg n="1">
-	<l id="141">Percé jusques au fond du coeur</l>
-	<l id="142">D'une insulte imprévue, aussi bien que mortelle,</l>
-	<l id="143">Misérable vengeur d'une sotte querelle,</l>
-	<l id="144">D'un avare écrivain chétif imitateur,</l>
-	<l id="145">Je demeure stérile et ma veine abattue</l>
-	<l id="146">Inutilement sue.</l>
-	<l id="147">Si près de voir couronner mon ardeur,</l>
-	<l id="148">Ô ! La peine cruelle !</l>
-	<l id="149">En cet affront La Serre est le tondeur,</l>
-	<l id="150">Et le tondu père de la pucelle.</l>
+	<l n="141">Percé jusques au fond du coeur</l>
+	<l n="142">D'une insulte imprévue, aussi bien que mortelle,</l>
+	<l n="143">Misérable vengeur d'une sotte querelle,</l>
+	<l n="144">D'un avare écrivain chétif imitateur,</l>
+	<l n="145">Je demeure stérile et ma veine abattue</l>
+	<l n="146">Inutilement sue.</l>
+	<l n="147">Si près de voir couronner mon ardeur,</l>
+	<l n="148">Ô ! La peine cruelle !</l>
+	<l n="149">En cet affront La Serre est le tondeur,</l>
+	<l n="150">Et le tondu père de la pucelle.</l>
 </lg>
 <lg n="2">
-	<l id="151">Que je sens de rudes combats !</l>
-	<l id="152">Comme ma pension mon bonheur me tourmente,</l>
-	<l id="153">Il faut faire un poème, ou bien perdre une rente,</l>
-	<l id="154">L'un échauffe mon coeur, l'autre retient mon bras.</l>
-	<l id="155">Réduit au triste choix, ou de trahie mon maître,</l>
-	<l id="156">Ou d'aller à Bicêtre,</l>
-	<l id="157">Des deux côtes mon mal est infini.</l>
-	<l id="158">Ô ! La peine cruelle !</l>
-	<l id="159">Faut il laisser un La Serre impuni ?</l>
-	<l id="160">Faut il venger l'auteur de la pucelle ?</l>
+	<l n="151">Que je sens de rudes combats !</l>
+	<l n="152">Comme ma pension mon bonheur me tourmente,</l>
+	<l n="153">Il faut faire un poème, ou bien perdre une rente,</l>
+	<l n="154">L'un échauffe mon coeur, l'autre retient mon bras.</l>
+	<l n="155">Réduit au triste choix, ou de trahie mon maître,</l>
+	<l n="156">Ou d'aller à Bicêtre,</l>
+	<l n="157">Des deux côtes mon mal est infini.</l>
+	<l n="158">Ô ! La peine cruelle !</l>
+	<l n="159">Faut il laisser un La Serre impuni ?</l>
+	<l n="160">Faut il venger l'auteur de la pucelle ?</l>
 </lg>
 <lg n="3">
-	<l id="161">Auteur, perruque, honneur, argent,</l>
-	<l id="162">Impitoyable loi, cruelle Tyrannie</l>
-	<l id="163">Je vois gloire perdue, ou pension finie.</l>
-	<l id="164">D'un côté je suis lâche, et de l'autre indigent.</l>
-	<l id="165">Cher et chétif espoir d'une veine flatteuse,</l>
-	<l id="166">Et tout ensemble gueuse,</l>
-	<l id="167">Noir instrument, unique gagne-pain,</l>
-	<l id="168">Et ma seule ressource,</l>
-	<l id="169">M'es tu donné pour venger Chapelain ?</l>
-	<l id="170">M'es tu donné pour me couper la bourse ?</l>
+	<l n="161">Auteur, perruque, honneur, argent,</l>
+	<l n="162">Impitoyable loi, cruelle Tyrannie</l>
+	<l n="163">Je vois gloire perdue, ou pension finie.</l>
+	<l n="164">D'un côté je suis lâche, et de l'autre indigent.</l>
+	<l n="165">Cher et chétif espoir d'une veine flatteuse,</l>
+	<l n="166">Et tout ensemble gueuse,</l>
+	<l n="167">Noir instrument, unique gagne-pain,</l>
+	<l n="168">Et ma seule ressource,</l>
+	<l n="169">M'es tu donné pour venger Chapelain ?</l>
+	<l n="170">M'es tu donné pour me couper la bourse ?</l>
 </lg>
 <lg n="4">
-	<l id="171">Il vaut mieux courir chez Conrard,</l>
-	<l id="172">Il peut me conserver ma gloire et ma finance,</l>
-	<l id="173">On sait comme en traitiez excelle ce vieillard.</l>
-	<l id="174">S'il n'en vient pas à bout, que Sapho la pucelle</l>
-	<l id="175">Vide notre querelle ;</l>
-	<l id="176">Si pas un d'eux ne me veut secourir,</l>
-	<l id="177">Et si l'on me balotte, </l>
-	<l id="178">Cherchons La Serre, et sans tant discourir</l>
-	<l id="179">Traitions du moins, et payons la Calotte.</l>
+	<l n="171">Il vaut mieux courir chez Conrard,</l>
+	<l n="172">Il peut me conserver ma gloire et ma finance,</l>
+	<l n="173">On sait comme en traitiez excelle ce vieillard.</l>
+	<l n="174">S'il n'en vient pas à bout, que Sapho la pucelle</l>
+	<l n="175">Vide notre querelle ;</l>
+	<l n="176">Si pas un d'eux ne me veut secourir,</l>
+	<l n="177">Et si l'on me balotte, </l>
+	<l n="178">Cherchons La Serre, et sans tant discourir</l>
+	<l n="179">Traitions du moins, et payons la Calotte.</l>
 </lg>
 <lg n="5">
-	<l id="180">Traiter sans tirer ma raison ?</l>
-	<l id="181">Rechercher un marché si funeste à ma gloire ?</l>
-	<l id="182">Souffrir, que Chapelain impute à ma mémoire</l>
-	<l id="183">D'avoir mal soutenu l'honneur de la foison ?</l>
-	<l id="184">Respecter un vieux poil, dont mon âme égarée</l>
-	<l id="185">Voit la perte assurée ?</l>
-	<l id="186">N'écoutons plus ce dessein négligent,</l>
-	<l id="187">Qui passerait pour crime,</l>
-	<l id="188">Allons, ma main, du moins sauvons l'argent,</l>
-	<l id="189">Puisque aussi bien il faut perdre l'estime.</l>
+	<l n="180">Traiter sans tirer ma raison ?</l>
+	<l n="181">Rechercher un marché si funeste à ma gloire ?</l>
+	<l n="182">Souffrir, que Chapelain impute à ma mémoire</l>
+	<l n="183">D'avoir mal soutenu l'honneur de la foison ?</l>
+	<l n="184">Respecter un vieux poil, dont mon âme égarée</l>
+	<l n="185">Voit la perte assurée ?</l>
+	<l n="186">N'écoutons plus ce dessein négligent,</l>
+	<l n="187">Qui passerait pour crime,</l>
+	<l n="188">Allons, ma main, du moins sauvons l'argent,</l>
+	<l n="189">Puisque aussi bien il faut perdre l'estime.</l>
 </lg>
 <lg n="6">
-	<l id="190">Oui, mon esprit s'était déçu.</l>
-	<l id="191">Autant que mon honneur mon intérêt me prête,</l>
-	<l id="192">Que je meure en rimant, ou meure de détresse,</l>
-	<l id="193">J'aurai mon style dur comme je l'ai reçu.</l>
-	<l id="194">e m'accuse déjà de trop de négligence,</l>
-	<l id="195">Courons à la vengeance,</l>
-	<l id="196">Et tout honteux d'avoir tant de froideur</l>
-	<l id="197">Rimons à tire d'aile,</l>
-	<l id="198">Puisque aujourd'hui La Serre est le tondeur,</l>
-	<l id="199">Et le tondu père de la pucelle.</l>
+	<l n="190">Oui, mon esprit s'était déçu.</l>
+	<l n="191">Autant que mon honneur mon intérêt me prête,</l>
+	<l n="192">Que je meure en rimant, ou meure de détresse,</l>
+	<l n="193">J'aurai mon style dur comme je l'ai reçu.</l>
+	<l n="194">e m'accuse déjà de trop de négligence,</l>
+	<l n="195">Courons à la vengeance,</l>
+	<l n="196">Et tout honteux d'avoir tant de froideur</l>
+	<l n="197">Rimons à tire d'aile,</l>
+	<l n="198">Puisque aujourd'hui La Serre est le tondeur,</l>
+	<l n="199">Et le tondu père de la pucelle.</l>
 </lg>
-</poem>
-</sp>
-</div2>
-<div2 type="scene" n="5">
+</ab><!--</poem>-->
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="5">
                     <head>SCÈNE V. Cassaigne, La Serre.</head>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="200" syll="6" part="i">Moi, La Serre, un mot.</l>
+	<l n="200" part="I">Moi, La Serre, un mot.</l><!--@syll="6"-->
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="200" syll="1" part="m">Parle.</l>
+	<l n="200" part="M">Parle.</l><!--@syll="1"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="200" syll="5" part="f">Ôte moi d'un doute,</l>
-	<l id="201" syll="6" part="i">Connais tu Chapelain ?</l>
+	<l n="200" part="F">Ôte moi d'un doute,</l><!--@syll="5"-->
+	<l n="201" part="I">Connais tu Chapelain ?</l><!--@syll="6"-->
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="201" syll="1" part="m">Oui. </l>
+	<l n="201" part="M">Oui. </l><!--@syll="1"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="201" syll="3" part="f">Parlons bas, écoute,</l>
-	<l id="202">Sais tu que ce vieillard fut la même vertu,</l>
-	<l id="203">Et l'effroi des lecteurs de son temps ! Le sais tu ?</l>
+	<l n="201" part="F">Parlons bas, écoute,</l><!--@syll="3"-->
+	<l n="202">Sais tu que ce vieillard fut la même vertu,</l>
+	<l n="203">Et l'effroi des lecteurs de son temps ! Le sais tu ?</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="204" syll="2" part="i">Peut être.</l>
+	<l n="204" part="I">Peut être.</l><!--@syll="2"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="204" syll="10" part="f">La froideur, qu'en mon style je porte,</l>
-	<l id="205" syll="9" part="i">Sais tu que je la tiens de lui seul ?</l>
+	<l n="204" part="F">La froideur, qu'en mon style je porte,</l><!--@syll="10"-->
+	<l n="205" part="I">Sais tu que je la tiens de lui seul ?</l><!--@syll="9"-->
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="205" syll="3" part="f">Que m'importe !</l>
+	<l n="205" part="F">Que m'importe !</l><!--@syll="3"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="206">À quatre vers d'ici je te le fais savoir.</l>
+	<l n="206">À quatre vers d'ici je te le fais savoir.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="207" syll="6" part="i">Jeune présomptueux.</l>
+	<l n="207" part="I">Jeune présomptueux.</l><!--@syll="6"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="207" syll="6" part="f">Parle sans t'émouvoir : </l>
-	<l id="208">Je suis jeune, il est vrai ; mais aux âmes bien nées</l>
-	<l id="209">La Rime n'attend pas le nombre des années.</l>
+	<l n="207" part="F">Parle sans t'émouvoir : </l><!--@syll="6"-->
+	<l n="208">Je suis jeune, il est vrai ; mais aux âmes bien nées</l>
+	<l n="209">La Rime n'attend pas le nombre des années.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="210">Mais t'attaquer à moi ! Qui t'a rendu si vain </l>
-	<l id="211">Toi, qu'on ne vit jamais une plume a la main. </l>
+	<l n="210">Mais t'attaquer à moi ! Qui t'a rendu si vain </l>
+	<l n="211">Toi, qu'on ne vit jamais une plume a la main. </l>
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="212">Mes pareils avec toi sont dignes de combattre,</l>
-	<l id="213">Et pour des coups d'essai veulent des Henrys quatre.</l>
+	<l n="212">Mes pareils avec toi sont dignes de combattre,</l>
+	<l n="213">Et pour des coups d'essai veulent des Henrys quatre.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="214" syll="6" part="i">Sais tu bien qui je suis.</l>
+	<l n="214" part="I">Sais tu bien qui je suis.</l><!--@syll="6"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="214" syll="6" part="f">Oui, tout autre que moi</l>
-	<l id="215">En comptant tes écrits pourrait trembler d'effroi.</l>
-	<l id="216">Mille et mille papiers, dont la table est couverte,</l>
-	<l id="217">Semblent porter écrit le destin de ma perte.</l>
-	<l id="218">J'attaque en téméraire un gigantesque auteur ;</l>
-	<l id="219">Mais j'aurai trop de force ayant assez de coeur :</l>
-	<l id="220">Je veux venger mon maître, et ta plume indomptable</l>
-	<l id="221">Pour ne se point lasser n'est pas infatigable.</l>
+	<l n="214" part="F">Oui, tout autre que moi</l><!--@syll="6"-->
+	<l n="215">En comptant tes écrits pourrait trembler d'effroi.</l>
+	<l n="216">Mille et mille papiers, dont la table est couverte,</l>
+	<l n="217">Semblent porter écrit le destin de ma perte.</l>
+	<l n="218">J'attaque en téméraire un gigantesque auteur ;</l>
+	<l n="219">Mais j'aurai trop de force ayant assez de coeur :</l>
+	<l n="220">Je veux venger mon maître, et ta plume indomptable</l>
+	<l n="221">Pour ne se point lasser n'est pas infatigable.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="222">Ce Phébus, qui paraît aux discours, que tu tiens,</l>
-	<l id="223">Souvent par tes écrits se découvrir aux miens,</l>
-	<l id="224">Et te voyant encor tout frais sorti de Classe</l>
-	<l id="225">Je disais Chapelain lui laissera fa place.</l>
-	<l id="226">Je sais ta pension, et suis ravi de voir</l>
-	<l id="227">Que ces bons mouvements excitent ton devoir,</l>
-	<l id="228">Qu'ils te font sans raison mettre rime sur rime</l>
-	<l id="229">Étayer d'un pédant l'agonisante estime,</l>
-	<l id="230">Et que voulant pour singe, un écolier parfait</l>
-	<l id="231">Il ne se trompait point au choix qu'il avait fait.</l>
-	<l id="232">Mais je sens que pour toi ma pitié s'intéresse,</l>
-	<l id="233">J'admire ton audace, et je plains ta jeunesse :</l>
-	<l id="234">Ne cherche point à faire un coup d'essai fatal,</l>
-	<l id="235">Dispense un vieux routier d'un combat inégal,</l>
-	<l id="236">Trop peu de gain pour moi suivrait cette victoire ;</l>
-	<l id="237">À moins d'un gros volume on compose sans gloire,</l>
-	<l id="238">Et j'aurais le regret de voir que tout Paris</l>
-	<l id="239">Te croirait accablé du poids de mes écrits. </l>
+	<l n="222">Ce Phébus, qui paraît aux discours, que tu tiens,</l>
+	<l n="223">Souvent par tes écrits se découvrir aux miens,</l>
+	<l n="224">Et te voyant encor tout frais sorti de Classe</l>
+	<l n="225">Je disais Chapelain lui laissera fa place.</l>
+	<l n="226">Je sais ta pension, et suis ravi de voir</l>
+	<l n="227">Que ces bons mouvements excitent ton devoir,</l>
+	<l n="228">Qu'ils te font sans raison mettre rime sur rime</l>
+	<l n="229">Étayer d'un pédant l'agonisante estime,</l>
+	<l n="230">Et que voulant pour singe, un écolier parfait</l>
+	<l n="231">Il ne se trompait point au choix qu'il avait fait.</l>
+	<l n="232">Mais je sens que pour toi ma pitié s'intéresse,</l>
+	<l n="233">J'admire ton audace, et je plains ta jeunesse :</l>
+	<l n="234">Ne cherche point à faire un coup d'essai fatal,</l>
+	<l n="235">Dispense un vieux routier d'un combat inégal,</l>
+	<l n="236">Trop peu de gain pour moi suivrait cette victoire ;</l>
+	<l n="237">À moins d'un gros volume on compose sans gloire,</l>
+	<l n="238">Et j'aurais le regret de voir que tout Paris</l>
+	<l n="239">Te croirait accablé du poids de mes écrits. </l>
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="240">D'une indigne pitié ton orgueil s'accompagne,</l>
-	<l id="241">Qui pelé Chapelain craint de tondre Cassaigne.</l>
+	<l n="240">D'une indigne pitié ton orgueil s'accompagne,</l>
+	<l n="241">Qui pelé Chapelain craint de tondre Cassaigne.</l>
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="242" syll="6" part="i">Retire toi d'ici.</l>
+	<l n="242" part="I">Retire toi d'ici.</l><!--@syll="6"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="242" syll="6" part="f">Hâtons nous de rimer.</l>
+	<l n="242" part="F">Hâtons nous de rimer.</l><!--@syll="6"-->
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="243" syll="6" part="i">Es tu si près d'écrire ! </l>
+	<l n="243" part="I">Es tu si près d'écrire ! </l><!--@syll="6"-->
 </sp>
-<sp who="CASSAIGNE">
+<sp who="#cassaigne">
                         <speaker>CASSAIGNE.</speaker>
-	<l id="243" syll="6" part="f">Es tu las d'imprimer.</l>
+	<l n="243" part="F">Es tu las d'imprimer.</l><!--@syll="6"-->
 </sp>
-<sp who="LA SERRE">
+<sp who="#la-serre">
                         <speaker>LA SERRE.</speaker>
-	<l id="244">Viens tu fais ton devoir : L'écolier est un traître,</l>
-	<l id="245">Qui souffre sans cheveux la tête de son maître.</l>
+	<l n="244">Viens tu fais ton devoir : L'écolier est un traître,</l>
+	<l n="245">Qui souffre sans cheveux la tête de son maître.</l>
 </sp>
-</div2>
-</div1>
+</div>
+</div>
 </body>
 </text>
 </TEI>

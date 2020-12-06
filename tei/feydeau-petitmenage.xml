@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1883">1883</date>
+                        <date>1883</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k76162p</idno>
@@ -69,7 +69,7 @@
 		<docDate when="1883">1883. Tous droits réservés.</docDate>
 		
 		<div type="docImprint">
-			<editor id="OLLENDORF">PARIS, PAUL OLLENDORFF, ÉDITEUR, 28 bis, RUE DE RICHELIEU, 28 bis. Tous droits réservés.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORFF, ÉDITEUR, 28 bis, RUE DE RICHELIEU, 28 bis. Tous droits réservés.</editor>-->
 			<div type="printer">
                     <p>Imprimerie Générale de Chatillon-sur-Seine. - A. Pichat.</p>
                 </div>
@@ -78,9 +78,9 @@
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
 <body>
 <div type="acte" n="1">
@@ -89,7 +89,8 @@
                     <head/>
 <sp who="#un-homme">
                         <speaker>UN HOMME</speaker>
-<poem type="strophe">
+<!--<poem>-->
+                        <ab type="strophe">
 <lg n="1">
 	<l n="1">Minet, le roi des angoras,</l>
 	<l n="2">Doux et blanc, soyeux, gros et gras,</l>
@@ -211,7 +212,7 @@
 	<l n="112">Prenez-la comme on vous la donne :</l>
 	<l n="113">Je n'y veux désigner personne.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

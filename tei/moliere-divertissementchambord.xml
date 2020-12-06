@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1670">1670</date>
+                        <date>1670</date>
                         <date type="premiere" when="1670"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k72556w</idno>
@@ -68,12 +68,6 @@
                     </person>
                     <person xml:id="l-egyptien" sex="UNKNOWN">
                         <persName>L-egyptien</persName>
-                    </person>
-                    <person xml:id="l-egyptien" sex="UNKNOWN">
-                        <persName>L-egyptien</persName>
-                    </person>
-                    <person xml:id="l-egyptienne" sex="UNKNOWN">
-                        <persName>L-egyptienne</persName>
                     </person>
                     <person xml:id="le-petit-choeur" sex="UNKNOWN">
                         <persName>Le-petit-choeur</persName>
@@ -117,9 +111,9 @@
                 </div><!--@id="BALLAR"-->
 		</div>
 		<performance>
-			<ab type="premiere"/><!--date="1670"--><!--location="Château de Chambord"-->
+			<ab type="premiere"/><!--@date="1670"--><!--@location="Château de Chambord"-->
 		</performance>
-	<!--usage of set in correct place but with unknown attributes <set location="Chambord" country="France" periode="(non indiqué)" link=""/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Chambord" country="France" periode="(non indiqué)" link=""/>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -175,7 +169,8 @@
 <stage type="entrance/music">Est un mélange composé d'Instruments de deux Musiciens Italiens, et de six Matassins ordonné pour remède par un Médecin à la guérison de la mélancolie, Hypocondriaque. </stage>
 <sp who="#les-deux-musiciens">
                         <speaker>LES DEUX MUSICIENS ITALIENS. Il Signor Chiacchiarone, et M. Gaye. </speaker>
-<poem type="chanson italienne">
+<!--<poem>-->
+                        <ab type="chanson italienne">
 <lg n="1">
 	<l n="27">Bon di, bon di, bon di, </l>
 	<l n="28">Non vi lasciate uccidere </l>
@@ -214,7 +209,7 @@
 	<l n="54">Signor monzu, </l>
 	<l n="55">Piglia-lo, piglia-lo, piglia-lo sù. </l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 <stage type="castItem">Les six Matassins. Messieurs Beauchamp, Chicanneau, La Pierre, Favier, Noblet, et Lestang. </stage>
 </sp><!--@stage="castItem"-->
 </div>
@@ -231,7 +226,8 @@
 </sp><!--@stage="carry/castItem"-->
 <sp who="#l-avocat-bredouilleur">
                         <speaker>L'AVOCAT BREDOUILLEUR. M. Gaye.</speaker>
-<poem type="stances">
+<!--<poem>-->
+                        <ab type="stances">
 <lg n="1">
 	<l n="58">Votre fait </l>
 	<l n="59">Est clair et net, </l>
@@ -261,7 +257,7 @@
 	<l n="81">La Polygamie est un cas, </l>
 	<l n="82">Est un cas bien pendable. </l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 <stage type="castItem">Les deux Avocats, chantants. Messieurs d'Estival, et Gaye. Les deux Procureurs : Messieurs Beauchamp, et Chicaneau. Les deux Sergents : Messieurs la Pierre, et Favier. </stage>
 </sp><!--@stage="castItem"-->
 </div>

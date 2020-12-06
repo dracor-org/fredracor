@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1885">1885</date>
+                        <date>1885</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k76158f</idno>
@@ -68,7 +68,7 @@
 		<docDate when="1885">1885. Tous droits réservés.</docDate>
 		<docAuthor>GEORGES FEYDEAU</docAuthor>
 		<div type="docImprint">
-			<editor id="OLLENDORF">PARIS, PAUL OLLENDORFF, ÉDITEUR, 28 bis, RUE DE RICHELIEU, 28 bis. Tous droits réservés.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORFF, ÉDITEUR, 28 bis, RUE DE RICHELIEU, 28 bis. Tous droits réservés.</editor>-->
 			<div type="printer">
                     <p>Imprimerie Générale de Chatillon-sur-Seine. - A. Pichat.</p>
                 </div>
@@ -77,9 +77,9 @@
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
 <body>
 <div type="acte" n="1">
@@ -89,7 +89,8 @@
 <sp who="#un-homme">
                         <speaker>UN HOMME.</speaker>
 <stage type="dedicace">À Alfred Feydeau.</stage>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">Eh ! Oui je me plaindrai ! Je me plaindrai bien haut !</l>
 	<l n="2">Et pour avoir raison, j'aurai recours, s'il faut,</l>
@@ -263,7 +264,7 @@
 <lg n="10">
 	<l n="146">Et je vois enterrer ma pauvre garde-robe.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

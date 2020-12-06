@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1883">1883</date>
+                        <date>1883</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -69,7 +69,7 @@
 		<docDate when="1883">1883. Tous droits réservés</docDate>
 		<docAuthor>A. MELANDRI</docAuthor>
 		<div type="docImprint">
-			<editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, rue de Richelieu, 28 bis.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, rue de Richelieu, 28 bis.</editor>-->
 			<div type="printer">
                     <p>Imprimerie RAOUL BONNET et Cie, 38 rue de Chateaudun.</p>
                 </div>
@@ -78,9 +78,9 @@
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#une-femme">UNE FEMME</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#une-femme">UNE FEMME</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
 <body>
 <div type="acte" n="1">
@@ -89,7 +89,8 @@
                     <head/>
 <sp who="#un-homme">
                         <speaker>[UN HOMME].</speaker>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">L'Enfant-Dieu qui préside aux tendres rendez-vous,</l>
 	<l n="2">Prenant ma main, me dit : « Madame, voulez-vous</l>
@@ -195,7 +196,7 @@
 	<l n="77">C'est celui que bébé garde pour sa maman,</l>
 	<l n="78">Et puis... celui de sa poupée.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

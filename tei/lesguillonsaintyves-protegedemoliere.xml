@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1848">1848</date>
+                        <date>1848</date>
                         <date type="premiere" when="1848-01-15">Représentée pour la première fois sur le second Théâtre Français, le 15e janvier 1848.</date>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -86,36 +86,36 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id=""/>
+			<!--TODO: handling of editor name at this place unclear <editor id=""/>-->
 			<div type="printer">
                     <p>PARIS. TRESSE, PALAIS-NATIONAL, DERRIÈRE LE THÉÂTRE DE LA RÉPUBLIQUE.</p>
                 </div>
 		</div>
 		<performance>
-			<ab type="premiere">Représentée pour la première fois sur le second Théâtre Français, le 15e janvier 1848.</ab><!--date="1848-01-15"--><!--location="Théâtre Français"-->
+			<ab type="premiere">Représentée pour la première fois sur le second Théâtre Français, le 15e janvier 1848.</ab><!--@date="1848-01-15"--><!--@location="Théâtre Français"-->
 		</performance>
 
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#moliere">MOLIÈRE</role><!--@sex="1" @type="H" @statut="écrivain" @age="A" @stat_amour="néant"-->, M. LUGUET.</castItem> 
+                    <role corresp="#moliere">MOLIÈRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"-->, M. LUGUET.</castItem> 
 	<castItem>
-                    <role corresp="#racine">RACINE</role><!--@sex="1" @type="H" @statut="écrivain" @age="A" @stat_amour="néant"-->, M. DELAUNEY.</castItem> 
+                    <role corresp="#racine">RACINE</role><!--@sex="1"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"-->, M. DELAUNEY.</castItem> 
 	<castItem>
-                    <role corresp="#coras">CORAS</role><!--@sex="1" @type="H" @statut="écrivain" @age="A" @stat_amour="néant"-->, M. ANSELME.</castItem> 
+                    <role corresp="#coras">CORAS</role><!--@sex="1"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"-->, M. ANSELME.</castItem> 
 	<castItem>
-                    <role corresp="#leclerc">LECLERC</role><!--@sex="1" @type="H" @statut="écrivain" @age="A" @stat_amour="néant"-->, M. LAROCHELLE.</castItem> 
+                    <role corresp="#leclerc">LECLERC</role><!--@sex="1"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"-->, M. LAROCHELLE.</castItem> 
 	<castItem>
-                    <role corresp="#mademoiselle-bejart">MADEMOISELLE BÉJART</role><!--@sex="2" @type="H" @statut="servante" @age="A" @stat_amour="néant"-->, Melle MARTELEUR.</castItem> 
+                    <role corresp="#mademoiselle-bejart">MADEMOISELLE BÉJART</role><!--@sex="2"--><!--@type="H"--><!--@statut="servante"--><!--@age="A"--><!--@stat_amour="néant"-->, Melle MARTELEUR.</castItem> 
 	<castItem>
-                    <role corresp="#laforet">LAFORÊT</role><!--@sex="2" @type="H" @statut="servante" @age="A" @stat_amour="néant"-->, Melle St-HILAIRE.</castItem> 
+                    <role corresp="#laforet">LAFORÊT</role><!--@sex="2"--><!--@type="H"--><!--@statut="servante"--><!--@age="A"--><!--@stat_amour="néant"-->, Melle St-HILAIRE.</castItem> 
 </castList>
-<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène est à Paris dans le salon de Molière.</set>-->
+<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène est à Paris dans le salon de Molière.</set>-->
 </front>
 <body>
 <div type="act" n="1">
                 <head>LE PROTÉGÉ DE MOLIÈRE.</head>
-<div type="scene" n="1" stage="entrance">
+<div type="scene" n="1">
                     <head>SCÈNE PREMIÈRE. Béjart, Laforêt. Elles entrent par le fond.</head>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
@@ -147,15 +147,15 @@
 	<l n="14">Mais c'est de la franchise aussi que je demande :</l>
 	<l n="15">Ton avis, quel qu'il soit, voilà tout mon désir,</l>
 	<l n="16">Et savoir te charmer, c'est déjà réussir.</l>
-	<l n="17" part="I">Eh bien ?</l><!-- @syll="2"-->
+	<l n="17" part="I">Eh bien ?</l><!--@syll="2"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="17" part="M">Hum !</l><!-- @syll="1"-->
+	<l n="17" part="M">Hum !</l><!--@syll="1"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="17" part="F">Que t'en semble ? Ai-je assez l'air novice ?</l><!-- @syll="9"-->
+	<l n="17" part="F">Que t'en semble ? Ai-je assez l'air novice ?</l><!--@syll="9"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
@@ -195,9 +195,9 @@
 </sp><!--@stage="serious"-->
 <sp who="#bejart">
                         <speaker>BÉJART, à part.</speaker>
-	<l n="27" part="I">Elle a raison.</l><!-- @syll="4"-->
+	<l n="27" part="I">Elle a raison.</l><!--@syll="4"-->
 <stage type="loud">Haut.</stage>
-	<l n="27" part="F">Allons ! J'adopte tes avis.</l><!-- @syll="8"-->
+	<l n="27" part="F">Allons ! J'adopte tes avis.</l><!--@syll="8"-->
 </sp><!--@stage="aparte"-->
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
@@ -208,24 +208,24 @@
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
 	<l n="31">C'est décidé, toujours tu me régenteras.</l>
-	<l n="32" part="I">Qu'est ceci ?</l><!-- @syll="3"-->
+	<l n="32" part="I">Qu'est ceci ?</l><!--@syll="3"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="32" part="F">Des billets de visite.</l><!-- @syll="6"-->
+	<l n="32" part="F">Des billets de visite.</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="32" part="F">Ah ! Coras !</l><!-- @syll="3"-->
+	<l n="32" part="F">Ah ! Coras !</l><!--@syll="3"-->
 	<l n="33">Leclerc ! Couple rimeur dont l'orgueil m'assassine !</l>
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="34" part="I">Ils reviendront...</l><!-- @syll="4"-->
+	<l n="34" part="I">Ils reviendront...</l><!--@syll="4"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="34" part="F">Tant pis... Ah! ah ! Monsieur Racine !</l><!-- @syll="8"-->
+	<l n="34" part="F">Tant pis... Ah! ah ! Monsieur Racine !</l><!--@syll="8"-->
 	<l n="35">Le jeune auteur des vers à la reine adressés,</l>
 	<l n="36">Du suffrage royal si bien récompensés !</l>
 	<l n="37">Aussitôt qu'il viendra, tu pourras l'introduire.</l>
@@ -249,11 +249,11 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="45" part="I">Comment donc ?</l><!-- @syll="3"-->
+	<l n="45" part="I">Comment donc ?</l><!--@syll="3"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="45" part="F">Je voudrais qu'en épouse exemplaire,</l><!-- @syll="6"-->
+	<l n="45" part="F">Je voudrais qu'en épouse exemplaire,</l><!--@syll="6"-->
 	<l n="46">À mon maître tout seul vous cherchassiez à plaire.</l>
 </sp>
 <sp who="#bejart">
@@ -270,22 +270,23 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="53" part="I">Qu'est-ce à dire ? Parlez !</l><!-- @syll="6"-->
+	<l n="53" part="I">Qu'est-ce à dire ? Parlez !</l><!--@syll="6"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="53" part="M">Si je voulais....</l><!-- @syll="4"-->
+	<l n="53" part="M">Si je voulais....</l><!--@syll="4"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="53" part="F">Encore !</l><!-- @syll="2"-->
-	<l n="54" part="I">Voyons !...</l><!-- @syll="2"-->
+	<l n="53" part="F">Encore !</l><!--@syll="2"-->
+	<l n="54" part="I">Voyons !...</l><!--@syll="2"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="54" part="F">Vous m'y forcez... À Monsieur qui l'ignore</l><!-- @syll="10"-->
-	<l n="55">Si j'allais raconter que vous ne boudez pas</l>q
-<note type="C">Antonin Nompar de Caumont, Marquis puis Duc de Lauzun, militaire et un des favori de Louis XIV qui perdit le confiance du roi en 1671 et fut emprisonné à Pignerol. Courtisan réputé pour être un grand séducteur.</note>
+	<l n="54" part="F">Vous m'y forcez... À Monsieur qui l'ignore</l><!--@syll="10"-->
+	<l n="55">Si j'allais raconter que vous ne boudez pas</l><!--text():q
+-->
+                        <note type="C">Antonin Nompar de Caumont, Marquis puis Duc de Lauzun, militaire et un des favori de Louis XIV qui perdit le confiance du roi en 1671 et fut emprisonné à Pignerol. Courtisan réputé pour être un grand séducteur.</note>
 	<l n="56">Le Marquis de Lauzun, épris de vos appas ?</l>
 </sp>
 <sp who="#bejart">
@@ -311,26 +312,26 @@
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT, s'animant.</speaker>
-	<l n="63" part="I">Ah !...</l><!-- @syll="1"-->
+	<l n="63" part="I">Ah !...</l><!--@syll="1"-->
 </sp><!--@stage="agitated"-->
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="63" part="M">Que faut-il encore, et que veux-tu ?</l><!-- @syll="9"-->
+	<l n="63" part="M">Que faut-il encore, et que veux-tu ?</l><!--@syll="9"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="63" part="F">Je veux</l><!-- @syll="2"-->
+	<l n="63" part="F">Je veux</l><!--@syll="2"-->
 	<l n="64">Que mon maître avec vous ne soit pas malheureux !</l>
 	<l n="65">C'est peu que d'être honnête : il faut être encor fière</l>
 	<l n="66">Quand on porte le nom de Madame Molière !</l>
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="67" part="I">Tais-toi... j'entends quelqu'un.</l><!-- @syll="6"-->
+	<l n="67" part="I">Tais-toi... j'entends quelqu'un.</l><!--@syll="6"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="67" part="F">Voulez-vous recevoir ?</l><!-- @syll="6"-->
+	<l n="67" part="F">Voulez-vous recevoir ?</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
@@ -338,36 +339,37 @@
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="69" part="I">La vaniteuse !,..</l><!-- @syll="4"-->
+	<l n="69" part="I">La vaniteuse !,..</l><!--@syll="4"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="69" part="F">Allons, voyons ! pas de colère....</l><!-- @syll="8"-->
+	<l n="69" part="F">Allons, voyons ! pas de colère....</l><!--@syll="8"-->
 	<l n="70">Sans prétendre charmer, faut-il vouloir déplaire ?</l>
 <stage type="exit">Elle sort.</stage>
 </sp>
-</div>
+</div><!--@stage="entrance"-->
 <div type="scene" n="2">
                     <head>SCÈNE II. Laforêt seule un moment, puis Racine.</head>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
 	<l n="71">Oui, malgré tant de soins, d'hommages empressés,</l>
 	<l n="72">Une actrice jamais ne dira : C'est assez....</l>
-	<l n="73">Elle a du bon pourtant, et, quoique un peu mutine,</l>
-À<stage type="toward">À Racine, qu'elle introduit.</stage>
-	<l n="74" part="I">Elle est... À qui, Monsieur, ai-je l'honneur....</l><!-- @syll="10"-->
+	<l n="73">Elle a du bon pourtant, et, quoique un peu mutine,</l><!--text():
+À-->
+                        <stage type="toward">À Racine, qu'elle introduit.</stage>
+	<l n="74" part="I">Elle est... À qui, Monsieur, ai-je l'honneur....</l><!--@syll="10"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="74" part="F">Racine.</l><!-- @syll="2"-->
+	<l n="74" part="F">Racine.</l><!--@syll="2"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="75" part="I">Monsieur....</l><!-- @syll="2"-->
+	<l n="75" part="I">Monsieur....</l><!--@syll="2"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="75" part="F">À peine ici j'ose faire un seul pas.</l><!-- @syll="10"-->
+	<l n="75" part="F">À peine ici j'ose faire un seul pas.</l><!--@syll="10"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
@@ -382,11 +384,11 @@
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
 	<l n="79">Je vais la prévenir... Si Monsieur un instant</l>
-	<l n="80" part="I">Veut s'asseoir...</l><!-- @syll="3"-->
+	<l n="80" part="I">Veut s'asseoir...</l><!--@syll="3"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="80" part="F">Il suffit... Allez ; je vous attend.</l><!-- @syll="9"-->
+	<l n="80" part="F">Il suffit... Allez ; je vous attend.</l><!--@syll="9"-->
 <stage type="exit">Laforêt sort.</stage>
 </sp>
 </div>
@@ -419,11 +421,11 @@
 <sp who="#racine">
                         <speaker>RACINE, avec embarras.</speaker>
 	<l n="99">Madame... pardonnez... à la témérité...</l>
-	<l n="100" part="I">À l'audace....</l><!-- @syll="3"-->
+	<l n="100" part="I">À l'audace....</l><!--@syll="3"-->
 </sp><!--@stage="embarrassed"-->
 <sp who="#bejart">
                         <speaker>BÉJART, souriant.</speaker>
-	<l n="100" part="F">Monsieur... Cette timidité</l><!-- @syll="9"-->
+	<l n="100" part="F">Monsieur... Cette timidité</l><!--@syll="9"-->
 	<l n="101">Dans l'homme de talent n'a rien qui me surprenne,</l>
 	<l n="102">Et pourtant le succès de votre ode à la reine</l>
 	<l n="103">Vers un noble avenir semble vous appeler,</l>
@@ -432,11 +434,11 @@
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
 	<l n="105">Comment mes vers seraient, j'ose à peine le croire,</l>
-	<l n="106" part="I">Présents à votre esprit !...</l><!-- @syll="6"-->
+	<l n="106" part="I">Présents à votre esprit !...</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="106" part="F">Bien plus, à ma mémoire.</l><!-- @syll="6"-->
+	<l n="106" part="F">Bien plus, à ma mémoire.</l><!--@syll="6"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
@@ -449,25 +451,25 @@
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
 	<l n="109">Ah ! Vous mettez à tout cette grâce divine,</l>
-	<l n="110" part="I">Qui nous charme au théâtre et qui...</l><!-- @syll="8"-->
+	<l n="110" part="I">Qui nous charme au théâtre et qui...</l><!--@syll="8"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="110" part="F">Monsieur Racine,</l><!-- @syll="4"-->
-	<l n="111" part="I">Vous êtes un flatteur...</l><!-- @syll="6"-->
+	<l n="110" part="F">Monsieur Racine,</l><!--@syll="4"-->
+	<l n="111" part="I">Vous êtes un flatteur...</l><!--@syll="6"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="111" part="F">Ah ! Madame, pourtant</l><!-- @syll="6"-->
+	<l n="111" part="F">Ah ! Madame, pourtant</l><!--@syll="6"-->
 	<l n="112">Le public, chaque soir, vous en dit tout autant.</l>
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="113" part="I">C'est que son indulgence...</l><!-- @syll="6"-->
+	<l n="113" part="I">C'est que son indulgence...</l><!--@syll="6"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="113" part="F">Indulgent ! Lui ! Madame !</l><!-- @syll="6"-->
+	<l n="113" part="F">Indulgent ! Lui ! Madame !</l><!--@syll="6"-->
 	<l n="114">Ah ! Lorsque, comme vous, on agit, on déclame,</l>
 	<l n="115">Quand on a ce jeu fin, piquant, ingénieux,</l>
 	<l n="116">Qui charme tout ensemble et l'oreille et les yeux,</l>
@@ -476,29 +478,29 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART, à part.</speaker>
-	<l n="119" part="I">Quels termes ! Quels accents !</l><!-- @syll="6"-->
+	<l n="119" part="I">Quels termes ! Quels accents !</l><!--@syll="6"-->
 <stage type="loud">Haut.</stage>
-	<l n="119" part="F">Monsieur, puis-je savoir</l><!-- @syll="6"-->
+	<l n="119" part="F">Monsieur, puis-je savoir</l><!--@syll="6"-->
 	<l n="120">À quel motif je dois le plaisir de vous voir ?</l>
 </sp><!--@stage="aparte"-->
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="121" part="I">Madame...</l><!-- @syll="3"-->
+	<l n="121" part="I">Madame...</l><!--@syll="3"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="121" part="F">Mon mari peut-il vous être utile ?</l><!-- @syll="9"-->
+	<l n="121" part="F">Mon mari peut-il vous être utile ?</l><!--@syll="9"-->
 	<l n="122">Il a quelque crédit à la Cour, à la ville,</l>
-	<l n="123" part="I">Au théâtre...</l><!-- @syll="3"-->
+	<l n="123" part="I">Au théâtre...</l><!--@syll="3"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="123" part="F">Au théâtre... Ah ! Madame, comment</l><!-- @syll="9"-->
-	<l n="124" part="I">Vous dire...</l><!-- @syll="2"-->
+	<l n="123" part="F">Au théâtre... Ah ! Madame, comment</l><!--@syll="9"-->
+	<l n="124" part="I">Vous dire...</l><!--@syll="2"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="124" part="F">Allons! voyons ! parlez-moi franchement.</l><!-- @syll="10"-->
+	<l n="124" part="F">Allons! voyons ! parlez-moi franchement.</l><!--@syll="10"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
@@ -576,19 +578,19 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="183" part="I">Monsieur... que faites-vous ?</l><!-- @syll="6"-->
+	<l n="183" part="I">Monsieur... que faites-vous ?</l><!--@syll="6"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="183" part="M">Pardon.</l><!-- @syll="2"-->
+	<l n="183" part="M">Pardon.</l><!--@syll="2"-->
 <stage type="aparte">À part.</stage>
-	<l n="183" part="F">Ah ! Qu'ai-je dit ?</l><!-- @syll="4"-->
+	<l n="183" part="F">Ah ! Qu'ai-je dit ?</l><!--@syll="4"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="184" part="I">Monsieur... </l><!-- @syll="2"-->
+	<l n="184" part="I">Monsieur... </l><!--@syll="2"-->
 <stage type="aparte">À part.</stage>
-	<l n="184" part="F">Pauvre jeune homme ! il est tout interdit...</l><!-- @syll="10"-->
+	<l n="184" part="F">Pauvre jeune homme ! il est tout interdit...</l><!--@syll="10"-->
 	<l n="185">C'est la première fois qu'il m'arrive d'entendre</l>
 	<l n="186">Un aveu si touchant, fait d'une voix si tendre !</l>
 </sp>
@@ -602,33 +604,33 @@
 </sp><!--@stage="sweet"-->
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="189" part="I">Quoi ! Vous daignez encor... !</l><!-- @syll="6"-->
+	<l n="189" part="I">Quoi ! Vous daignez encor... !</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="189" part="F">Mais pour qu'on l'encourage,</l><!-- @syll="6"-->
+	<l n="189" part="F">Mais pour qu'on l'encourage,</l><!--@syll="6"-->
 	<l n="190">Il faut bien qu'un auteur présente son ouvrage.</l>
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="191" part="I">Ah ! Madame... Ô bonheur !</l><!-- @syll="6"-->
+	<l n="191" part="I">Ah ! Madame... Ô bonheur !</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="191" part="F">Molière est à la Cour...</l><!-- @syll="6"-->
+	<l n="191" part="F">Molière est à la Cour...</l><!--@syll="6"-->
 	<l n="192">Mais il va revenir... Prévenez son retour...</l>
 	<l n="193">En écolier soumis qui s'en réfère au maître,</l>
 	<l n="194">Vous même entre ses mains vous pourrez le remettre,</l>
 	<l n="195">Et Molière, ce juge infaillible et discret,</l>
 	<l n="196">Comme en dernier ressort prononcera l'arrêt.</l>
-	<l n="197" part="I">Allez donc...</l><!-- @syll="3"-->
+	<l n="197" part="I">Allez donc...</l><!--@syll="3"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="197" part="F">Quel espoir !... Ah mon âme ravie...</l><!-- @syll="9"-->
-	<l n="198" part="I">Vous tenez en vos mains et ma gloire...</l><!-- @syll="9"-->
+	<l n="197" part="F">Quel espoir !... Ah mon âme ravie...</l><!--@syll="9"-->
+	<l n="198" part="I">Vous tenez en vos mains et ma gloire...</l><!--@syll="9"-->
 <stage type="touch/kiss">Béjart lui offre sa main : Racine y dépose un baiser et sort en lui disant avec expression.</stage>
-	<l n="198" part="F">Et ma vie !</l><!-- @syll="3"-->
+	<l n="198" part="F">Et ma vie !</l><!--@syll="3"-->
 </sp>
 </div>
 <div type="scene" n="5">
@@ -646,27 +648,27 @@
 	<l n="207">J'éprouve maintenant je ne sais quel effroi...</l>
 	<l n="208">Jouer devant la cour, parler devant le roi !</l>
 	<l n="209">Et puis, qui sait ? Racine ! Il y sera peut-être !....</l>
-	<l n="210" part="I">Étudions, grand Dieu !...</l><!-- @syll="6"-->
+	<l n="210" part="I">Étudions, grand Dieu !...</l><!--@syll="6"-->
 <stage type="declamate">Elle se met à réciter devant sa glace.</stage>
-	<l n="210" part="F">J'étais à ma fenêtre...</l><!-- @syll="6"-->
-	<l n="211" part="I">Non, Non...</l><!-- @syll="2"-->
+	<l n="210" part="F">J'étais à ma fenêtre...</l><!--@syll="6"-->
+	<l n="211" part="I">Non, Non...</l><!--@syll="2"-->
 <stage type="">Elle se reprend.</stage>
-	<l n="211" part="F">À mon balcon, à travailler au frais,</l><!-- @syll="10"-->
+	<l n="211" part="F">À mon balcon, à travailler au frais,</l><!--@syll="10"-->
 	<l n="212">Lorsque je vis passer sous les arbres d'auprès</l>
-	<l n="213" part="I">Un jeune homme...</l><!-- @syll="3"-->
+	<l n="213" part="I">Un jeune homme...</l><!--@syll="3"-->
 <stage type="stop/dream">Elle s'arrête en rêvant.</stage>
-	<l n="213" part="F">Un jeune homme !... Oh oui ! Dont la venue...</l><!-- @syll="9"-->
+	<l n="213" part="F">Un jeune homme !... Oh oui ! Dont la venue...</l><!--@syll="9"-->
 </sp><!--@stage="alone"-->
 </div>
 <div type="scene" n="6">
                     <head>SCÈNE VI. Béjart, Molière, qui l'a écoutée.</head>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="214" part="I">Bien, très bien !</l><!-- @syll="3"-->
+	<l n="214" part="I">Bien, très bien !</l><!--@syll="3"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="214" part="F">Ah ! C'est vous... je jouais l'ingénue.</l><!-- @syll="9"-->
+	<l n="214" part="F">Ah ! C'est vous... je jouais l'ingénue.</l><!--@syll="9"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
@@ -703,12 +705,12 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="233" part="I">D'où vient donc votre humeur ?</l><!-- @syll="6"-->
+	<l n="233" part="I">D'où vient donc votre humeur ?</l><!--@syll="6"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 <note type="C">L'Hôtel de Bourgogne est le principal théâtre concurrent de celui de Molière situé au théâtre du Palais-Royal.</note>
-	<l n="233" part="F">À l'hôtel de Bourgogne,</l><!-- @syll="6"-->
+	<l n="233" part="F">À l'hôtel de Bourgogne,</l><!--@syll="6"-->
 	<l n="234">Auteurs et comédiens se sont mis en besogne,</l>
 	<l n="235">Pour donner au public, après-demain, je crois,</l>
 	<l n="236">Une pièce nouvelle où l'on se rit de moi.</l>
@@ -739,11 +741,11 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="249" part="I">Que ne le faites-vous ?</l><!-- @syll="6"-->
+	<l n="249" part="I">Que ne le faites-vous ?</l><!--@syll="6"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="249" part="F">L'occasion est belle.</l><!-- @syll="6"-->
+	<l n="249" part="F">L'occasion est belle.</l><!--@syll="6"-->
 	<l n="250">Le roi, dont la bonté grandit encor mon zèle,</l>
 	<l n="251">Veut que dans la huitaine, à partir de ce jour,</l>
 	<l n="252">Je leur donne en réponse une pièce à la Cour.</l>
@@ -766,19 +768,19 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="257" part="I">Comment ?</l><!-- @syll="2"-->
+	<l n="257" part="I">Comment ?</l><!--@syll="2"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="257" part="F">Leur lâcheté n'en est que plus infâme.</l><!-- @syll="10"-->
+	<l n="257" part="F">Leur lâcheté n'en est que plus infâme.</l><!--@syll="10"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="258" part="I">Et qu'attaquent-ils donc ?</l><!-- @syll="6"-->
+	<l n="258" part="I">Et qu'attaquent-ils donc ?</l><!--@syll="6"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="258" part="F">Mais, votre honneur, Madame !</l><!-- @syll="6"-->
+	<l n="258" part="F">Mais, votre honneur, Madame !</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
@@ -888,41 +890,41 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="316" part="I">Monsieur Racine.</l><!-- @syll="4"-->
+	<l n="316" part="I">Monsieur Racine.</l><!--@syll="4"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="316" part="M">Eh bien ?</l><!-- @syll="2"-->
+	<l n="316" part="M">Eh bien ?</l><!--@syll="2"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="316" part="F">Il venait dans l'espoir</l><!-- @syll="6"-->
-	<l n="317" part="I">De vous communiquer un ouvrage...</l><!-- @syll="9"-->
+	<l n="316" part="F">Il venait dans l'espoir</l><!--@syll="6"-->
+	<l n="317" part="I">De vous communiquer un ouvrage...</l><!--@syll="9"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="317" part="F">Tragique ?</l><!-- @syll="3"-->
+	<l n="317" part="F">Tragique ?</l><!--@syll="3"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="318" part="I">Eh oui !</l><!-- @syll="2"-->
+	<l n="318" part="I">Eh oui !</l><!--@syll="2"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="318" part="F">Je m'en doutais. Son style est énergique ;</l><!-- @syll="10"-->
-	<l n="319" part="I">Il promet.</l><!-- @syll="3"-->
+	<l n="318" part="F">Je m'en doutais. Son style est énergique ;</l><!--@syll="10"-->
+	<l n="319" part="I">Il promet.</l><!--@syll="3"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="319" part="F">Il fait mieux... car il tient... Son talent.....</l><!-- @syll="9"-->
+	<l n="319" part="F">Il fait mieux... car il tient... Son talent.....</l><!--@syll="9"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="320" part="I">Oh! oh !</l><!-- @syll="2"-->
+	<l n="320" part="I">Oh! oh !</l><!--@syll="2"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="320" part="F">Je parierais son ouvrage excellent...</l><!-- @syll="10"-->
+	<l n="320" part="F">Je parierais son ouvrage excellent...</l><!--@syll="10"-->
 	<l n="321">Sa voix est éloquente et ses yeux pleins de flamme.</l>
 </sp>
 <sp who="#moliere">
@@ -931,23 +933,23 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="323" part="I">Je vous y prends encor !</l><!-- @syll="6"-->
+	<l n="323" part="I">Je vous y prends encor !</l><!--@syll="6"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="323" part="F">C'est la dernière fois.</l><!-- @syll="6"-->
+	<l n="323" part="F">C'est la dernière fois.</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="324" part="I">Il va venir...</l><!-- @syll="4"-->
+	<l n="324" part="I">Il va venir...</l><!--@syll="4"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="324" part="M">Quand donc ?</l><!-- @syll="2"-->
+	<l n="324" part="M">Quand donc ?</l><!--@syll="2"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="324" part="F">Mais je l'entends, je crois...</l><!-- @syll="6"-->
+	<l n="324" part="F">Mais je l'entends, je crois...</l><!--@syll="6"-->
 	<l n="325">Oui, c'est lui ; le front pâle et le coeur en alarmes...</l>
 </sp>
 <sp who="#moliere">
@@ -956,19 +958,19 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="327" part="I">Je vous laisse.</l><!-- @syll="4"-->
+	<l n="327" part="I">Je vous laisse.</l><!--@syll="4"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="327" part="M">Pourquoi partir ?...</l><!-- @syll="4"-->
+	<l n="327" part="M">Pourquoi partir ?...</l><!--@syll="4"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="327" part="M">Pourquoi ?...</l><!-- @syll="2"-->
+	<l n="327" part="M">Pourquoi ?...</l><!--@syll="2"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="327" part="F">Mais oui...</l><!-- @syll="2"-->
+	<l n="327" part="F">Mais oui...</l><!--@syll="2"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART, avec malice.</speaker>
@@ -979,11 +981,11 @@
                     <head>SCÈNE VII. Les mêmes, Racine.</head>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="329" part="I">Monsieur...</l><!-- @syll="2"-->
+	<l n="329" part="I">Monsieur...</l><!--@syll="2"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="329" part="F">Monsieur Racine, à votre confiance</l><!-- @syll="10"-->
+	<l n="329" part="F">Monsieur Racine, à votre confiance</l><!--@syll="10"-->
 	<l n="330">J'avais de mon mari promis l'expérience.</l>
 	<l n="331">Puisse votre début, c'est mon voeu le plus doux,</l>
 	<l n="332">Être pour vous la gloire, et la vogue pour nous !</l>
@@ -994,15 +996,15 @@
                     <head>SCÈNE VIII. Molière, Racine.</head>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="333" part="I">Eh bien, mon jeune ami ?</l><!-- @syll="6"-->
+	<l n="333" part="I">Eh bien, mon jeune ami ?</l><!--@syll="6"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="333" part="M">Monsieur, ce nom...</l><!-- @syll="4"-->
+	<l n="333" part="M">Monsieur, ce nom...</l><!--@syll="4"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="333" part="F">Vous l'êtes...</l><!-- @syll="2"-->
+	<l n="333" part="F">Vous l'êtes...</l><!--@syll="2"-->
 	<l n="334">Pour nous apprécier, sommes-nous pas poëtes?</l>
 	<l n="335">Ayons donc ces vertus qu'en vain l'on cherche ailleurs ;</l>
 	<l n="336">Car Dieu nous a faits grands pour nous rendre meilleurs.</l>
@@ -1027,11 +1029,11 @@
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="349" part="I">Mais...</l><!-- @syll="1"-->
+	<l n="349" part="I">Mais...</l><!--@syll="1"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="349" part="F">C'est assez !... Causons... Eh bien ! votre courage</l><!-- @syll="11"-->
+	<l n="349" part="F">C'est assez !... Causons... Eh bien ! votre courage</l><!--@syll="11"-->
 	<l n="350">Prétend donc sur la scène aller chercher l'orage !</l>
 	<l n="351">Pour braver du public le sourire moqueur,</l>
 	<l n="352">Vous sentez donc aussi battre dans votre coeur</l>
@@ -1161,15 +1163,15 @@
 	<l n="456">Oui, vous réussirez en écoutant des yeux</l>
 	<l n="457">Un glorieux exemple à suivre, un grand modèle !</l>
 <note type="C">Corneille, Pierre (1606/1692) : auteur dramatique.</note>
-	<l n="458" part="I">Corneille.</l><!-- @syll="2"-->
+	<l n="458" part="I">Corneille.</l><!--@syll="2"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="458" part="M">Et vous !...</l><!-- @syll="2"-->
+	<l n="458" part="M">Et vous !...</l><!--@syll="2"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="458" part="F">Songez à sa gloire immortelle !</l><!-- @syll="8"-->
+	<l n="458" part="F">Songez à sa gloire immortelle !</l><!--@syll="8"-->
 	<l n="459">Marchez à sa lumière, et, si vous l'imitez,</l>
 	<l n="460">Il vous garde une place à prendre à ses côtés !</l>
 </sp>
@@ -1201,20 +1203,20 @@
 	<l n="475">Femme sur tout le reste, excepté sur ce point,</l>
 	<l n="476">Elle fait des heureux, et ne s'en cache point !</l>
 	<l n="477">Voyons ce manuscrit qui vient là si timide...</l>
-	<l n="478" part="I">Le titre...</l><!-- @syll="2"-->
+	<l n="478" part="I">Le titre...</l><!--@syll="2"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE, lui donnant le manuscrit.</speaker>
-	<l n="478" part="M">Le titre est...</l><!-- @syll="4"-->
+	<l n="478" part="M">Le titre est...</l><!--@syll="4"-->
 </sp><!--@stage="give"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, lisant.</speaker>
 <note type="C">La Thébaïde est la première tragédie jouée de Jean Racine, jouée pour la première fois le 20 juin 1664 par la Troupe de Molière.</note>
-	<l n="478" part="F">Comment ? la Thébaïde !...</l><!-- @syll="6"-->
+	<l n="478" part="F">Comment ? la Thébaïde !...</l><!--@syll="6"-->
 	<l n="479">Épisode fameux ; longtemps j'en ai rêvé...</l>
-	<l n="480" part="I">Sans y toucher</l><!-- @syll="4"-->
+	<l n="480" part="I">Sans y toucher</l><!--@syll="4"-->
 <stage type="wave">Mouvement de Racine. </stage>
-	<l n="480" part="F">Pour vous il était réservé.</l><!-- @syll="8"-->
+	<l n="480" part="F">Pour vous il était réservé.</l><!--@syll="8"-->
 	<l n="481">Des frères ennemis prêtent au vers tragique ;</l>
 	<l n="482">Mais ils convenaient mal à ma plume comique.</l>
 	<l n="483">Ne sortons point du genre où Dieu nous a mis tous :</l>
@@ -1296,25 +1298,25 @@
                     <head>SCÈNE IX. Molière, Racine, Béjart.</head>
 <sp who="#bejart">
                         <speaker>BÉJART, à part en arrivant.</speaker>
-	<l n="543" part="I">Quel est le résultat de l'entrevue ?... </l><!-- @syll="10"-->
+	<l n="543" part="I">Quel est le résultat de l'entrevue ?... </l><!--@syll="10"-->
 <stage type="loud/toward">Haut à Molière.</stage>
-	<l n="543" part="F">Eh bien !</l><!-- @syll="2"-->
+	<l n="543" part="F">Eh bien !</l><!--@syll="2"-->
 </sp><!--@stage="entrance/aparte"-->
 <sp who="#racine">
                         <speaker>RACINE, regardant Béjart avec étonnement comme s'il sortait d'un rêve.</speaker>
-	<l n="544" part="I">Ah !</l><!-- @syll="1"-->
+	<l n="544" part="I">Ah !</l><!--@syll="1"-->
 </sp><!--@stage="watch/estonish"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, à Bejart.</speaker>
-	<l n="544" part="F">Votre protégé va devenir le mien.</l><!-- @syll="11"-->
+	<l n="544" part="F">Votre protégé va devenir le mien.</l><!--@syll="11"-->
 </sp><!--@stage="toward"-->
 <sp who="#bejart">
                         <speaker>BÉJART, à Racine.</speaker>
-	<l n="545" part="I">Molière a donc tenu ma promesse...</l><!-- @syll="9"-->
+	<l n="545" part="I">Molière a donc tenu ma promesse...</l><!--@syll="9"-->
 </sp><!--@stage="toward"-->
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="545" part="F">Ah madame !..</l><!-- @syll="3"-->
+	<l n="545" part="F">Ah madame !..</l><!--@syll="3"-->
 <stage type="aparte">À part.</stage>
 	<l n="546">Quel prodige soudain s'est passé dans mon âme?..</l>
 	<l n="547">Cet espoir.... cet amour.... je ne sais où j'en sui[s] !...</l>
@@ -1326,15 +1328,15 @@
                         <speaker>BÉJART.</speaker>
 	<l n="550">Si j'avais à choisir, je n'en voudrais pas d'autre.</l>
 <stage type="toward">À Molière.</stage>
-	<l n="551" part="I">Eh bien... et le sujet !</l><!-- @syll="6"-->
+	<l n="551" part="I">Eh bien... et le sujet !</l><!--@syll="6"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="551" part="M">Sujet grec...</l><!-- @syll="3"-->
+	<l n="551" part="M">Sujet grec...</l><!--@syll="3"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="551" part="F">Et touchant...</l><!-- @syll="3"-->
+	<l n="551" part="F">Et touchant...</l><!--@syll="3"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
@@ -1362,15 +1364,15 @@
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
 	<l n="559">Ah ! Ce jour est pour moi le plus beau de mes jours.</l>
-	<l n="560" part="I">Lisez, monsieur Molière, et moi...</l><!-- @syll="8"-->
+	<l n="560" part="I">Lisez, monsieur Molière, et moi...</l><!--@syll="8"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="560" part="M">Courez...</l><!-- @syll="2"-->
+	<l n="560" part="M">Courez...</l><!--@syll="2"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="560" part="F">J'y cours.</l><!-- @syll="2"-->
+	<l n="560" part="F">J'y cours.</l><!--@syll="2"-->
 <stage type="exit">Il sort d'un côté, tandis que Molière entre de l'autre dans son cabinet.</stage>
 </sp>
 </div>
@@ -1392,30 +1394,30 @@
                     <head>SCÈNE XI. Béjart, Laforêt.</head>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
-	<l n="569" part="I">Madame, deux auteurs désireraient...</l><!-- @syll="10"-->
+	<l n="569" part="I">Madame, deux auteurs désireraient...</l><!--@syll="10"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="569" part="F">Ma bonne,</l><!-- @syll="2"-->
+	<l n="569" part="F">Ma bonne,</l><!--@syll="2"-->
 	<l n="570">Mon mari n'a le temps de recevoir personne.</l>
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT.</speaker>
 	<l n="571">Mais... c'est Monsieur Leclerc et son ami Coras.</l>
-	<l n="572" part="I">Je leur ai dit d'entrer...</l><!-- @syll="6"-->
+	<l n="572" part="I">Je leur ai dit d'entrer...</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
 <note type="L">Leclerc, Michel (1622-1691) : Académicien qui produisit une première tragédie qui échoua. et fit avec Coras une Iphigénie.</note>
-	<l n="572" part="F">Tu les congédieras !</l><!-- @syll="6"-->
+	<l n="572" part="F">Tu les congédieras !</l><!--@syll="6"-->
 	<l n="573">Ils m'ont déjà donné, dans leur dernier ouvrage,</l>
 	<l n="574">Un rôle qui m'a fait siffler ; c'est un outrage !</l>
 	<l n="575">S'ils pensent que pour eux je vais encore ainsi</l>
-	<l n="576" part="I">M'exposer. Oh ! non pas...</l><!-- @syll="6"-->
+	<l n="576" part="I">M'exposer. Oh ! non pas...</l><!--@syll="6"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT, apercevant Leclerc et Coras.</speaker>
-	<l n="576" part="F">Madame, les voici.</l><!-- @syll="6"-->
+	<l n="576" part="F">Madame, les voici.</l><!--@syll="6"-->
 <stage type="exit">Elle sort.</stage>
 </sp><!--@stage="WATCH"-->
 </div>
@@ -1423,17 +1425,17 @@
                     <head>SCÈNE XII. Béjart, Leclerc, Coras.</head>
 <sp who="#bejart">
                         <speaker>BÉJART, à part.</speaker>
-	<l n="577" part="I">Je les attends !</l><!-- @syll="4"-->
+	<l n="577" part="I">Je les attends !</l><!--@syll="4"-->
 </sp><!--@stage="aparte"-->
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
 <note type="L">Coras, Jacques de (1625-1677) : poète et auteur dramatique qui ne connut pas le succès et qui produisit en 1674 avec Leclerc une Iphigénie qui tenta de concurrencer celle de Racine, en vain.</note>
-	<l n="577" part="F">Salut à l'actrice charmante,</l><!-- @syll="8"-->
-	<l n="578" part="I">Dont le regard séduit...</l><!-- @syll="6"-->
+	<l n="577" part="F">Salut à l'actrice charmante,</l><!--@syll="8"-->
+	<l n="578" part="I">Dont le regard séduit...</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="578" part="F">Aussi bien qu'il tourmente !</l><!-- @syll="6"-->
+	<l n="578" part="F">Aussi bien qu'il tourmente !</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART, à part.</speaker>
@@ -1453,26 +1455,26 @@
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="583" part="I">L'ornement le plus beau !</l><!-- @syll="6"-->
+	<l n="583" part="I">L'ornement le plus beau !</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="583" part="F">Messieurs, en vérité,</l><!-- @syll="6"-->
+	<l n="583" part="F">Messieurs, en vérité,</l><!--@syll="6"-->
 	<l n="584">C'est beaucoup trop d'honneur... pour mon indignité.</l>
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="585" part="I">Mais.... </l><!-- @syll="1"-->
+	<l n="585" part="I">Mais.... </l><!--@syll="1"-->
 <stage type="low/toward">Bas à Coras.</stage>
-	<l n="585" part="F">En notre faveur l'éloge la dispose.</l><!-- @syll="11"-->
+	<l n="585" part="F">En notre faveur l'éloge la dispose.</l><!--@syll="11"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="586" part="I">Le talent est modeste.</l><!-- @syll="6"-->
+	<l n="586" part="I">Le talent est modeste.</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART, l'interrompant.</speaker>
-	<l n="586" part="F">Oh ! Parlons d'autre chose.</l><!-- @syll="6"-->
+	<l n="586" part="F">Oh ! Parlons d'autre chose.</l><!--@syll="6"-->
 </sp><!--@stage="interrupt"-->
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
@@ -1481,11 +1483,11 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="589" part="I">Il ne m'a rien appris.</l><!-- @syll="6"-->
+	<l n="589" part="I">Il ne m'a rien appris.</l><!--@syll="6"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="589" part="F">Comment ! Est-ce possible ?</l><!-- @syll="6"-->
+	<l n="589" part="F">Comment ! Est-ce possible ?</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
@@ -1493,19 +1495,19 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="591" part="I">Eh bien ! Messieurs, quel est ?...</l><!-- @syll="1"-->
+	<l n="591" part="I">Eh bien ! Messieurs, quel est ?...</l><!--@syll="1"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="591" part="F">Un sujet merveilleux !</l><!-- @syll="6"-->
+	<l n="591" part="F">Un sujet merveilleux !</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="592" part="I">Des détails ravissants !</l><!-- @syll="6"-->
+	<l n="592" part="I">Des détails ravissants !</l><!--@syll="6"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="592" part="F">Des traits prodigieux !</l><!-- @syll="6"-->
+	<l n="592" part="F">Des traits prodigieux !</l><!--@syll="6"-->
 	<l n="593">Notre littérature à nulle autre est pareille !</l>
 </sp>
 <sp who="#leclerc">
@@ -1514,11 +1516,11 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="595" part="I">Je le crois bien.</l><!-- @syll="4"-->
+	<l n="595" part="I">Je le crois bien.</l><!--@syll="4"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="595" part="F">Sa vogue est chose de hasard.</l><!-- @syll="8"-->
+	<l n="595" part="F">Sa vogue est chose de hasard.</l><!--@syll="8"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
@@ -1526,24 +1528,24 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="597" part="I">Et le nom, s'il vous plaît, de cet...</l><!-- @syll="8"-->
+	<l n="597" part="I">Et le nom, s'il vous plaît, de cet...</l><!--@syll="8"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
 <note type="C">Iphigénie de ces deux auteurs ne sera jouée qu'en 1674 soit 10 ou 11 ans plus tard après la date supposée de l'action de cette pièce.</note>
-	<l n="597" part="F">Iphigénie.</l><!-- @syll="4"-->
+	<l n="597" part="F">Iphigénie.</l><!--@syll="4"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="598" part="I">Ah ! ah !</l><!-- @syll="2"-->
+	<l n="598" part="I">Ah ! ah !</l><!--@syll="2"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="598" part="M">Donnée antique.</l><!-- @syll="4"-->
+	<l n="598" part="M">Donnée antique.</l><!--@syll="4"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="598" part="F">Ouvrage de génie !</l><!-- @syll="6"-->
+	<l n="598" part="F">Ouvrage de génie !</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
@@ -1551,11 +1553,11 @@
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="600" part="I">Que Molière doit lire...</l><!-- @syll="6"-->
+	<l n="600" part="I">Que Molière doit lire...</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="600" part="F">Et quand il l'aura lu !</l><!-- @syll="6"-->
+	<l n="600" part="F">Et quand il l'aura lu !</l><!--@syll="6"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
@@ -1567,19 +1569,19 @@
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="603" part="I">Vrai !</l><!-- @syll="1"-->
+	<l n="603" part="I">Vrai !</l><!--@syll="1"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS, à Béjart.</speaker>
-	<l n="603" part="F">Votre personnage est un bijou parfait,</l><!-- @syll="11"-->
+	<l n="603" part="F">Votre personnage est un bijou parfait,</l><!--@syll="11"-->
 </sp><!--@stage="toward"-->
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="604" part="I">Rêveur... échevelé... !</l><!-- @syll="6"-->
+	<l n="604" part="I">Rêveur... échevelé... !</l><!--@syll="6"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="604" part="F">Vous ferez un effet !..</l><!-- @syll="6"-->
+	<l n="604" part="F">Vous ferez un effet !..</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
@@ -1599,30 +1601,30 @@
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="609" part="I">Les sifflets ?...</l><!-- @syll="3"-->
+	<l n="609" part="I">Les sifflets ?...</l><!--@syll="3"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="609" part="M">Avec vous ?... </l><!-- @syll="2"-->
+	<l n="609" part="M">Avec vous ?... </l><!--@syll="2"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="609" part="F">Mais n'êtes-vous pas sûre</l><!-- @syll="10"-->
-	<l n="610" part="I">Des bravos ?...</l><!-- @syll="3"-->
+	<l n="609" part="F">Mais n'êtes-vous pas sûre</l><!--@syll="10"-->
+	<l n="610" part="I">Des bravos ?...</l><!--@syll="3"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART, à part.</speaker>
-	<l n="610" part="M">Avec eux ? </l><!-- @syll="2"-->
+	<l n="610" part="M">Avec eux ? </l><!--@syll="2"-->
 <stage type="loud">Haut.</stage>
-	<l n="610" part="F">Oh! non, je vous assure !</l><!-- @syll="6"-->
+	<l n="610" part="F">Oh! non, je vous assure !</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="611" part="I">Un beau triomphe est là...</l><!-- @syll="6"-->
+	<l n="611" part="I">Un beau triomphe est là...</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="611" part="F">Bien fait pour vous tenter.</l><!-- @syll="6"-->
+	<l n="611" part="F">Bien fait pour vous tenter.</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
@@ -1632,35 +1634,35 @@
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="615" part="I">Serait-il quelque obstacle ?</l><!-- @syll="6"-->
+	<l n="615" part="I">Serait-il quelque obstacle ?</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="615" part="F">Oh! le plus grand de tous !</l><!-- @syll="6"-->
+	<l n="615" part="F">Oh! le plus grand de tous !</l><!--@syll="6"-->
 	<l n="616">Je pourrais bien jouer, messieurs, même avant vous,</l>
 	<l n="617">Dans un nouvel ouvrage, un rôle qu'un jeune homme</l>
-	<l n="618" part="I">Me destine aujourd'hui.</l><!-- @syll="6"-->
+	<l n="618" part="I">Me destine aujourd'hui.</l><!--@syll="6"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="618" part="F">Ce jeune homme se nomme ?</l><!-- @syll="6"-->
+	<l n="618" part="F">Ce jeune homme se nomme ?</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="619" part="I">Racine.</l><!-- @syll="2"-->
+	<l n="619" part="I">Racine.</l><!--@syll="2"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="619" part="F">Ah ! Oui, je sais ! Un de ces élégants,</l><!-- @syll="6"-->
+	<l n="619" part="F">Ah ! Oui, je sais ! Un de ces élégants,</l><!--@syll="6"-->
 	<l n="620">Aux cheveux parfumés, aux canons élégants,</l>
 <note type="C">Clélie est un roman de Madeleine de Scudery, le plus long de la littérature française.</note>
 	<l n="621">Qui parce qu'ils ont fait des stances à Clélie,</l>
 	<l n="622">Osent jusqu'au théâtre élever leur folie.</l>
-	<l n="623" part="I">Racine !</l><!-- @syll="2"-->
+	<l n="623" part="I">Racine !</l><!--@syll="2"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="623" part="F">Qu'à rimer une ode encouragea.</l><!-- @syll="6"-->
+	<l n="623" part="F">Qu'à rimer une ode encouragea.</l><!--@syll="6"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
@@ -1681,23 +1683,23 @@
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
 	<l n="631">Messieurs, dans vos arrêts prouvez un meilleur goût.</l>
-	<l n="632" part="I">Racine a ce talent...</l><!-- @syll="6"-->
+	<l n="632" part="I">Racine a ce talent...</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="632" part="F">Je n'y crois pas du tout.</l><!-- @syll="6"-->
+	<l n="632" part="F">Je n'y crois pas du tout.</l><!--@syll="6"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="633" part="I">Ni moi.</l><!-- @syll="2"-->
+	<l n="633" part="I">Ni moi.</l><!--@syll="2"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC, à Bejart.</speaker>
-	<l n="633" part="F">Ni vous non plus.</l><!-- @syll="4"-->
+	<l n="633" part="F">Ni vous non plus.</l><!--@syll="4"-->
 </sp><!--@stage="toward"-->
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="633" part="F">J'y crois, et suis prophète.</l><!-- @syll="6"-->
+	<l n="633" part="F">J'y crois, et suis prophète.</l><!--@syll="6"-->
 	<l n="634">Sous ce petit auteur se cache un grand poète.</l>
 </sp>
 <sp who="#coras">
@@ -1731,11 +1733,11 @@
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="645" part="I">Mais je me crois très bien....</l><!-- @syll="6"-->
+	<l n="645" part="I">Mais je me crois très bien....</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="645" part="F">Si nous avions son âge,</l><!-- @syll="6"-->
+	<l n="645" part="F">Si nous avions son âge,</l><!--@syll="6"-->
 	<l n="646">Elle aurait avec nous pris un autre visage.</l>
 </sp>
 <sp who="#coras">
@@ -1760,19 +1762,19 @@
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
 <stage type="entrance/stress">Il entre d'un air préoccupé.</stage>
-	<l n="657" part="I">Messieurs....</l><!-- @syll="2"-->
+	<l n="657" part="I">Messieurs....</l><!--@syll="2"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC, avec colère.</speaker>
-	<l n="657" part="M">Monsieur....</l><!-- @syll="2"-->
+	<l n="657" part="M">Monsieur....</l><!--@syll="2"-->
 </sp><!--@stage="anger"-->
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="657" part="M">Monsieur....</l><!-- @syll="2"-->
+	<l n="657" part="M">Monsieur....</l><!--@syll="2"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="657" part="F">Quel hasard vous amène ?</l><!-- @syll="6"-->
+	<l n="657" part="F">Quel hasard vous amène ?</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
@@ -1780,24 +1782,24 @@
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="659" part="I">De votre goût naissant...</l><!-- @syll="6"-->
+	<l n="659" part="I">De votre goût naissant...</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC, avec finesse.</speaker>
-	<l n="659" part="F">De votre passion.</l><!-- @syll="6"-->
+	<l n="659" part="F">De votre passion.</l><!--@syll="6"-->
 </sp><!--@stage="subtil"-->
 <sp who="#racine">
                         <speaker>RACINE, ému.</speaker>
-	<l n="660" part="I">Ma passion....</l><!-- @syll="4"-->
+	<l n="660" part="I">Ma passion....</l><!--@syll="4"-->
 </sp><!--@stage="touch"-->
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="660" part="F">Eh ! Oui, votre vocation,</l><!-- @syll="8"-->
-	<l n="661" part="I">Veux je dire....</l><!-- @syll="3"-->
+	<l n="660" part="F">Eh ! Oui, votre vocation,</l><!--@syll="8"-->
+	<l n="661" part="I">Veux je dire....</l><!--@syll="3"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="661" part="F">La scène est chose dangereuse...</l><!-- @syll="9"-->
+	<l n="661" part="F">La scène est chose dangereuse...</l><!--@syll="9"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
@@ -1811,11 +1813,11 @@
                         <speaker>LECLERC.</speaker>
 	<l n="664">L'orgueil nous met parfois sur les yeux un bandeau.</l>
 <stage type="aparte">À part.</stage>
-	<l n="665" part="I">Orgueilleux !</l><!-- @syll="3"-->
+	<l n="665" part="I">Orgueilleux !</l><!--@syll="3"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="665" part="F">Ainsi donc votre jeunesse folle</l><!-- @syll="9"-->
+	<l n="665" part="F">Ainsi donc votre jeunesse folle</l><!--@syll="9"-->
 	<l n="666">Sous les lois de Phébus étourdiment s'enrôle.</l>
 </sp>
 <sp who="#leclerc">
@@ -1860,31 +1862,31 @@
                     <head>SCÈNE XV. Les mêmes, Béjart.</head>
 <sp who="#bejart">
                         <speaker>BÉJART, à Racine.</speaker>
-	<l n="685" part="I">Eh bien ! Je vous attends !</l><!-- @syll="6"-->
+	<l n="685" part="I">Eh bien ! Je vous attends !</l><!--@syll="6"-->
 </sp><!--@stage="toward"-->
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="685" part="M">Ah ! Madame...</l><!-- @syll="3"-->
+	<l n="685" part="M">Ah ! Madame...</l><!--@syll="3"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="685" part="F">Et mon rôle ?</l><!-- @syll="3"-->
+	<l n="685" part="F">Et mon rôle ?</l><!--@syll="3"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="686" part="I">Le voici...</l><!-- @syll="3"-->
+	<l n="686" part="I">Le voici...</l><!--@syll="3"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="686" part="M">Venez donc.</l><!-- @syll="3"-->
+	<l n="686" part="M">Venez donc.</l><!--@syll="3"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE, à Coras et à Leclerc.</speaker>
-	<l n="686" part="M">Au revoir !</l><!-- @syll="3"-->
+	<l n="686" part="M">Au revoir !</l><!--@syll="3"-->
 </sp><!--@stage="toward"-->
 <sp who="#leclerc">
                         <speaker>LECLERC, furieux.</speaker>
-	<l n="686" part="F">Petit drôle !</l><!-- @syll="3"-->
+	<l n="686" part="F">Petit drôle !</l><!--@syll="3"-->
 </sp><!--@stage="furious"-->
 </div>
 <div type="scene" n="14">
@@ -1899,58 +1901,58 @@
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="689" part="I">Dame !</l><!-- @syll="1"-->
+	<l n="689" part="I">Dame !</l><!--@syll="1"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC, l'embrassant.</speaker>
-	<l n="689" part="F">Ah ! mon cher, quel mot et quel trait de lumière !</l><!-- @syll="11"-->
+	<l n="689" part="F">Ah ! mon cher, quel mot et quel trait de lumière !</l><!--@syll="11"-->
 </sp><!--@stage="kiss"-->
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="690" part="I">Je ne la vois pas bien.</l><!-- @syll="6"-->
+	<l n="690" part="I">Je ne la vois pas bien.</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="690" part="F">Quoi ! Le nom de Molière</l><!-- @syll="6"-->
-	<l n="691" part="I">Ne vous rappelle pas...</l><!-- @syll="6"-->
+	<l n="690" part="F">Quoi ! Le nom de Molière</l><!--@syll="6"-->
+	<l n="691" part="I">Ne vous rappelle pas...</l><!--@syll="6"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="691" part="F">Il ne rappelle rien.</l><!-- @syll="6"-->
+	<l n="691" part="F">Il ne rappelle rien.</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="692" part="I">Que vous comprenez peu !</l><!-- @syll="6"-->
+	<l n="692" part="I">Que vous comprenez peu !</l><!--@syll="6"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="692" part="F">Vous expliquez si bien !</l><!-- @syll="6"-->
+	<l n="692" part="F">Vous expliquez si bien !</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC, à part.</speaker>
 	<l n="693">Quel cerveau lent et lourd ! Quel esprit léthargique !</l>
 	<l n="694">Il était vraiment né pour être auteur tragique.</l>
 <stage type="loud">Haut.</stage>
-	<l n="695" part="I">J'ai trouvé....</l><!-- @syll="3"-->
+	<l n="695" part="I">J'ai trouvé....</l><!--@syll="3"-->
 </sp><!--@stage="aparte"-->
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="695" part="M">Quoi ?</l><!-- @syll="1"-->
+	<l n="695" part="M">Quoi ?</l><!--@syll="1"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="695" part="F">Qu'il faut, d'une ou d'autre façon,</l><!-- @syll="8"-->
+	<l n="695" part="F">Qu'il faut, d'une ou d'autre façon,</l><!--@syll="8"-->
 	<l n="696">Dans l'esprit de Molière éveiller le soupçon ;</l>
 	<l n="697">Notre jaloux se fâche, il tempête, il s'emporte,</l>
 	<l n="698">Met la pièce au néant, et Racine à la porte.</l>
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="699" part="I">Tiens ! tiens ! Ce n'est pas sot... Ah ! j'entends !....</l><!-- @syll="9"-->
+	<l n="699" part="I">Tiens ! tiens ! Ce n'est pas sot... Ah ! j'entends !....</l><!--@syll="9"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="699" part="F">Par nos soins</l><!-- @syll="3"-->
+	<l n="699" part="F">Par nos soins</l><!--@syll="3"-->
 	<l n="700">Le théâtre aujourd'hui compte un auteur de moins.</l>
 	<l n="701">Nous pouvons, exploitant les terreurs de Molière,</l>
 	<l n="702">De la scène à jamais lui fermer la carrière.</l>
@@ -1981,21 +1983,21 @@
                         <speaker>CORAS, avec ironie.</speaker>
 	<l n="712">Voici donc, à la fin, un chef-d'oeuvre nouveau !</l>
 	<l n="713">Quoi ! Vous auriez, avec un courage suprême,</l>
-	<l n="714" part="I">Lu ses cinq actes ?</l><!-- @syll="6"-->
+	<l n="714" part="I">Lu ses cinq actes ?</l><!--@syll="6"-->
 </sp><!--@stage="ironic"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="714" part="F">Non, il reste le cinquième ;</l><!-- @syll="6"-->
+	<l n="714" part="F">Non, il reste le cinquième ;</l><!--@syll="6"-->
 	<l n="715">Mais ce que j'en ai lu prouve un vaste avenir.</l>
 	<l n="716">Qui commence si bien ne peut pas mal finir.</l>
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="717" part="I">Ah ! vous ne craignez rien ?</l><!-- @syll="6"-->
+	<l n="717" part="I">Ah ! vous ne craignez rien ?</l><!--@syll="6"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="717" part="F">Rien. Sans inquiétude,</l><!-- @syll="6"-->
+	<l n="717" part="F">Rien. Sans inquiétude,</l><!--@syll="6"-->
 	<l n="718">Je mettrai dès demain son ouvrage à l'étude.</l>
 </sp>
 <sp who="#leclerc">
@@ -2004,21 +2006,21 @@
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="720" part="I">Plus d'un soutien...</l><!-- @syll="4"-->
+	<l n="720" part="I">Plus d'un soutien...</l><!--@syll="4"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="720" part="F">Sans doute on peut compter sur lui :</l><!-- @syll="8"-->
+	<l n="720" part="F">Sans doute on peut compter sur lui :</l><!--@syll="8"-->
 	<l n="721">On doit trouver sans peine et la chaleur et l'âme</l>
 	<l n="722">Lorsqu'on sait comme lui captiver une femme !</l>
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="723" part="I">Dans quel but....</l><!-- @syll="3"-->
+	<l n="723" part="I">Dans quel but....</l><!--@syll="3"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="723" part="F">Du beau sexe aimable serviteur,</l><!-- @syll="9"-->
+	<l n="723" part="F">Du beau sexe aimable serviteur,</l><!--@syll="9"-->
 	<l n="724">Il ne devra jamais manquer de protecteur.</l>
 </sp>
 <sp who="#leclerc">
@@ -2031,28 +2033,28 @@
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE, à part.</speaker>
-	<l n="727" part="I">Que dit-il ?</l><!-- @syll="3"-->
+	<l n="727" part="I">Que dit-il ?</l><!--@syll="3"-->
 </sp><!--@stage="aparte"-->
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="727" part="F">Il est jeune... et quand le coeur épris...</l><!-- @syll="6"-->
+	<l n="727" part="F">Il est jeune... et quand le coeur épris...</l><!--@syll="6"-->
 <stage type="toward">À Molière.</stage>
 	<l n="728">Vous avez fait, je crois, l'École des maris...</l>
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE, à part.</speaker>
-	<l n="729" part="I">Quoi ! Quel soupçon, grand Dieu !</l><!-- @syll="6"-->
+	<l n="729" part="I">Quoi ! Quel soupçon, grand Dieu !</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="729" part="F">Comédie éternelle !</l><!-- @syll="6"-->
+	<l n="729" part="F">Comédie éternelle !</l><!--@syll="6"-->
 	<l n="730">Ce que j'aime de vous, surtout, c'est Sganarelle.</l>
 <stage type="low/toward">Bas, à Coras.</stage>
-	<l n="731" part="I">Nous le tenons !</l><!-- @syll="4"-->
+	<l n="731" part="I">Nous le tenons !</l><!--@syll="4"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="731" part="F">Messieurs, c'est trop vous occuper...</l><!-- @syll="8"-->
+	<l n="731" part="F">Messieurs, c'est trop vous occuper...</l><!--@syll="8"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
@@ -2062,26 +2064,26 @@
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="735" part="I">Le siècle est bien pervers.</l><!-- @syll="6"-->
+	<l n="735" part="I">Le siècle est bien pervers.</l><!--@syll="6"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="735" part="F">Je ne vous comprends pas ;</l><!-- @syll="6"-->
-	<l n="736" part="I">Expliquez-vous, messieurs !</l><!-- @syll="6"-->
+	<l n="735" part="F">Je ne vous comprends pas ;</l><!--@syll="6"-->
+	<l n="736" part="I">Expliquez-vous, messieurs !</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC, avec affectation.</speaker>
-	<l n="736" part="F">Parlons un peu plus bas !</l><!-- @syll="6"-->
+	<l n="736" part="F">Parlons un peu plus bas !</l><!--@syll="6"-->
 </sp><!--@stage="sweet"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="737">Et pourquoi donc cela ? Ce mystère m'étonne :</l>
 	<l n="738">Qui dit la vérité ne redoute personne.</l>
-	<l n="739" part="I">Parlerez-vous enfin ?</l><!-- @syll="6"-->
+	<l n="739" part="I">Parlerez-vous enfin ?</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="739" part="F">Mon Dieu ! De tout ceci</l><!-- @syll="6"-->
+	<l n="739" part="F">Mon Dieu ! De tout ceci</l><!--@syll="6"-->
 	<l n="740">Je ne souffle plus mot, si je vous fâche ainsi.</l>
 <stage type="toward/sweet">À Coras, avec une négligence feinte.</stage>
 	<l n="741">Trouvez-vous pas, Coras, que Madame Molière</l>
@@ -2089,33 +2091,33 @@
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="743" part="I">Tout à l'heure ! Comment ?</l><!-- @syll="6"-->
+	<l n="743" part="I">Tout à l'heure ! Comment ?</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="743" part="F">Sans vouloir la blâmer,</l><!-- @syll="6"-->
+	<l n="743" part="F">Sans vouloir la blâmer,</l><!--@syll="6"-->
 	<l n="744">Avait-elle avec lui besoin de s'enfermer ?</l>
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="745" part="I">S'enfermer ! Avec qui ?</l><!-- @syll="6"-->
+	<l n="745" part="I">S'enfermer ! Avec qui ?</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="745" part="F">Mais ce jeune poète !...</l><!-- @syll="6"-->
+	<l n="745" part="F">Mais ce jeune poète !...</l><!--@syll="6"-->
 	<l n="746">Pourquoi ? Je ne sais ; mais l'audience est secrète.</l>
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="747" part="I">Dites-vous vrai ?</l><!-- @syll="4"-->
+	<l n="747" part="I">Dites-vous vrai ?</l><!--@syll="4"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="747" part="M">Parbleu !</l><!-- @syll="2"-->
+	<l n="747" part="M">Parbleu !</l><!--@syll="2"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="747" part="F">Mon cher monsieur, je suis</l><!-- @syll="6"-->
+	<l n="747" part="F">Mon cher monsieur, je suis</l><!--@syll="6"-->
 	<l n="748">Homme d'honneur... Enfin, elle est seule avec lui !</l>
 </sp>
 <sp who="#moliere">
@@ -2127,15 +2129,15 @@
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="753" part="I">Nous sortons !</l><!-- @syll="3"-->
+	<l n="753" part="I">Nous sortons !</l><!--@syll="3"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="753" part="M">Nous partons !</l><!-- @syll="3"-->
+	<l n="753" part="M">Nous partons !</l><!--@syll="3"-->
 </sp>
 <sp stageward="low/t" who="#leclerc">
                         <speaker>LECLERC, bas à Coras.</speaker>
-	<l n="753" part="F">L'idée était divine.</l><!-- @syll="6"-->
+	<l n="753" part="F">L'idée était divine.</l><!--@syll="6"-->
 <stage type="loud">Haut.</stage>
 	<l n="754">Mon pauvre Poquelin, prenez garde à Racine !</l>
 <stage type="exit">Ils sortent.</stage>
@@ -2209,7 +2211,7 @@
 	<l n="808">Faut-il donc le haïr ? Je l'aimais tant déjà !...</l>
 </sp>
 </div>
-<div type="scene" n="19" stage="hide">
+<div type="scene" n="19">
                     <head>SCÈNE XIX. Molière, caché, Racine, Béjart.</head>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
@@ -2235,16 +2237,16 @@
 	<l n="822">Je renonce à la pièce, et voici votre rôle,</l>
 <stage type="exit">Elle sort.</stage>
 </sp>
-</div>
+</div><!--@stage="hide"-->
 <div type="scene" n="20">
                     <head>SCÉNE XX. Racine, Molière, toujours caché.</head>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="823" part="I">Je m'y perds !</l><!-- @syll="3"-->
+	<l n="823" part="I">Je m'y perds !</l><!--@syll="3"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="823" part="F">Vous avez daigné me protéger !</l><!-- @syll="9"-->
+	<l n="823" part="F">Vous avez daigné me protéger !</l><!--@syll="9"-->
 	<l n="824">Merci, mon Dieu! merci! car j'échappe au danger !</l>
 	<l n="825">J'ai besoin, je le sens, de force et de courage !</l>
 	<l n="826">Une mauvaise idée inspira cet ouvrage.</l>
@@ -2285,22 +2287,22 @@
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="859" part="I">Arrêtez !</l><!-- @syll="3"-->
+	<l n="859" part="I">Arrêtez !</l><!--@syll="3"-->
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="859" part="M">Ah !... C'est vous !</l><!-- @syll="3"-->
+	<l n="859" part="M">Ah !... C'est vous !</l><!--@syll="3"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="859" part="F">Oui, moi ! J'ai tout compris !</l><!-- @syll="6"-->
+	<l n="859" part="F">Oui, moi ! J'ai tout compris !</l><!--@syll="6"-->
 	<l n="860">Vous avez le coeur pur autant que vos écrits !</l>
 	<l n="861">Quoi ! Lorsqu'en leur faveur je pardonnais moi-même,</l>
 	<l n="862">Vous iriez sur vos vers prononcer l'anathème !</l>
 	<l n="863">Condamner à l'oubli d'un néant absolu</l>
-	<l n="864" part="I">Ce travail...</l><!-- @syll="3"-->
+	<l n="864" part="I">Ce travail...</l><!--@syll="3"-->
 <stage type="open">En prononçant ces mots, il ouvre le manuscrit et ses yeux tombent sur une page.</stage>
-	<l n="864" part="F">Juste ciel! que vois-je ? Qu'ai-je lu?</l><!-- @syll="9"-->
+	<l n="864" part="F">Juste ciel! que vois-je ? Qu'ai-je lu?</l><!--@syll="9"-->
 <stage type="read">Il lit.</stage>
 	<l n="865">Qu'avant de vous quitter je vous contemple encore !</l>
 	<l n="866">Vous ne haïssez pas celui qui vous adore,</l>
@@ -2316,54 +2318,54 @@
 	<l n="875">Tout est resté couvert d'un mystère discret,</l>
 	<l n="876">Et ma femme elle-même ignore son secret !</l>
 <stage type="loud/touch">Haut et serrant vivement la main de Racine.</stage>
-	<l n="877" part="I">Mon ami !</l><!-- @syll="3"-->
+	<l n="877" part="I">Mon ami !</l><!--@syll="3"-->
 <stage type="call">Il appelle.</stage>
-	<l n="877" part="M">Quelqu'un...</l><!-- @syll="2"-->
+	<l n="877" part="M">Quelqu'un...</l><!--@syll="2"-->
 </sp>
 <sp who="#laforet">
                         <speaker>LAFORÊT, accourant.</speaker>
-	<l n="877" part="M">Quoi ?</l><!-- @syll="1"-->
+	<l n="877" part="M">Quoi ?</l><!--@syll="1"-->
 </sp><!--@stage="run"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="877" part="F">Venez tous, qu'on s'empresse !</l><!-- @syll="6"-->
+	<l n="877" part="F">Venez tous, qu'on s'empresse !</l><!--@syll="6"-->
 </sp>
 </div>
 <div type="scene" n="21">
                     <head>SCÈNE XXI. Molière, Racine, Laforêt, Béjart ; puis Leclerc et Coras.</head>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="878" part="I">Que voulez-vous, Monsieur ?</l><!-- @syll="6"-->
+	<l n="878" part="I">Que voulez-vous, Monsieur ?</l><!--@syll="6"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="878" part="M">Approchez !...</l><!-- @syll="3"-->
+	<l n="878" part="M">Approchez !...</l><!--@syll="3"-->
 </sp>
 <sp who="#bejart">
                         <speaker>BÉJART.</speaker>
-	<l n="878" part="F">Eh bien ! Qu'est-ce ?</l><!-- @syll="3"-->
+	<l n="878" part="F">Eh bien ! Qu'est-ce ?</l><!--@syll="3"-->
 <stage type="open/show">Ici on voit Leclerc et Coras entr'ouvrir la porte et montrer leur visage.</stage>
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="879" part="I">On querelle !</l><!-- @syll="4"-->
+	<l n="879" part="I">On querelle !</l><!--@syll="4"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="879" part="F">Je vais jouir de l'embarras...</l><!-- @syll="8"-->
+	<l n="879" part="F">Je vais jouir de l'embarras...</l><!--@syll="8"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="880">Ah ! Leclerc, c'est rentrer à propos... Ah! Coras...</l>
-	<l n="881" part="I">Venez donc...</l><!-- @syll="3"-->
+	<l n="881" part="I">Venez donc...</l><!--@syll="3"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC, bas à Coras.</speaker>
-	<l n="881" part="M">Cela marche !</l><!-- @syll="3"-->
+	<l n="881" part="M">Cela marche !</l><!--@syll="3"-->
 </sp><!--@stage="low/toward"-->
 <sp who="#coras">
                         <speaker>CORAS, à part.</speaker>
-	<l n="881" part="F">Ah ! Le pauvre poète !</l><!-- @syll="6"-->
+	<l n="881" part="F">Ah ! Le pauvre poète !</l><!--@syll="6"-->
 	<l n="882">Je vois cela d'ici... Sa ruine est complète.</l>
 </sp><!--@stage="aparte"-->
 <sp who="#moliere">
@@ -2375,46 +2377,46 @@
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="887" part="I">Ah !</l><!-- @syll="1"-->
+	<l n="887" part="I">Ah !</l><!--@syll="1"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="887" part="M">Ah !</l><!-- @syll="1"-->
+	<l n="887" part="M">Ah !</l><!--@syll="1"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="887" part="F">Ce manuscrit qu'il m'est venu porter</l><!-- @syll="6"-->
+	<l n="887" part="F">Ce manuscrit qu'il m'est venu porter</l><!--@syll="6"-->
 	<l n="888">Et que demain matin je voulais répéter,...</l>
 </sp>
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="889" part="I">Quoi ! Vous alliez....</l><!-- @syll="4"-->
+	<l n="889" part="I">Quoi ! Vous alliez....</l><!--@syll="4"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="889" part="M">Vraiment !</l><!-- @syll="2"-->
+	<l n="889" part="M">Vraiment !</l><!--@syll="2"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS, à part, en regardant Racine.</speaker>
-	<l n="889" part="F">Sa pâleur est extrême !</l><!-- @syll="6"-->
+	<l n="889" part="F">Sa pâleur est extrême !</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="890">Il veut le retirer, et cela de lui-même !</l>
-	<l n="891" part="I">En feriez-vous autant ?</l><!-- @syll="6"-->
+	<l n="891" part="I">En feriez-vous autant ?</l><!--@syll="6"-->
 </sp>
 <sp who="#leclerc">
                         <speaker>LECLERC.</speaker>
-	<l n="891" part="M">Qui, moi ?</l><!-- @syll="2"-->
+	<l n="891" part="M">Qui, moi ?</l><!--@syll="2"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS.</speaker>
-	<l n="891" part="F">Jamais, grand Dieu !</l><!-- @syll="6"-->
-	<l n="892" part="I">Il renonce au théâtre....</l><!-- @syll="6"-->
+	<l n="891" part="F">Jamais, grand Dieu !</l><!--@syll="6"-->
+	<l n="892" part="I">Il renonce au théâtre....</l><!--@syll="6"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="892" part="F">Y renoncer, morbleu !</l><!-- @syll="6"-->
+	<l n="892" part="F">Y renoncer, morbleu !</l><!--@syll="6"-->
 	<l n="893">Avec tant d'avenir, lui ! Quitter la partie !</l>
 	<l n="894">Oh ! que non pas, messieurs ! Par peur, par modestie,</l>
 	<l n="895">Sur la scène à vingt ans n'osant se hasarder,</l>
@@ -2424,9 +2426,9 @@
 <stage type="towrad">À Racine.</stage>
 	<l n="899">Si Corneille vieillit, vous lui succéderez...</l>
 <stage type="toward">À tous.</stage>
-	<l n="900" part="I">Il fera des chefs-d'oeuvre....</l><!-- @syll="6"-->
+	<l n="900" part="I">Il fera des chefs-d'oeuvre....</l><!--@syll="6"-->
 <stage type="toward">À Racine.</stage>
-	<l n="900" part="F">Eh, oui! vous en ferez.</l><!-- @syll="6"-->
+	<l n="900" part="F">Eh, oui! vous en ferez.</l><!--@syll="6"-->
 </sp>
 <sp who="#coras">
                         <speaker>CORAS, bas à Leclerc.</speaker>
@@ -2460,11 +2462,11 @@
 </sp><!--@stage="toward"-->
 <sp who="#racine">
                         <speaker>RACINE.</speaker>
-	<l n="913" part="I">Ah ! mon ami, comment m'acquitter ?</l><!-- @syll="9"-->
+	<l n="913" part="I">Ah ! mon ami, comment m'acquitter ?</l><!--@syll="9"-->
 </sp>
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
-	<l n="913" part="F">En poète !</l><!-- @syll="3"-->
+	<l n="913" part="F">En poète !</l><!--@syll="3"-->
 	<l n="914">Votre immortalité, Racine, est votre dette...</l>
 	<l n="915">Lorsque dans l'avenir votre nom grandira,</l>
 	<l n="916">Un souvenir m'attend peut-être, et l'on dira :</l>

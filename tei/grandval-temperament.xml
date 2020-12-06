@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1756">1756</date>
+                        <date>1756</date>
                         <date type="premiere" when="10-1755"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k97367619</idno>
@@ -91,24 +91,24 @@
                 </div><!--@id=""-->
 		</div>
 		<performance>
-			<ab type="premiere"/><!--date="10-1755"--><!--location="Charlotte de Montmartre"-->
+			<ab type="premiere"/><!--@date="10-1755"--><!--@location="Charlotte de Montmartre"-->
 		</performance>
 	<castList>
                 <head>ACTEURS</head>
 		<castItem>
-                    <role corresp="#impias">IMPIAS</role><!--@sex="1" @type="H" @statut="prêtre" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#impias">IMPIAS</role><!--@sex="1"--><!--@type="H"--><!--@statut="prêtre"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#fessaride">FESSARIDE</role><!--@sex="2" @type="H" @statut="roi" @age="A" @stat_amour="néant"-->, Reine Douairière d'Egypte.</castItem>
+                    <role corresp="#fessaride">FESSARIDE</role><!--@sex="2"--><!--@type="H"--><!--@statut="roi"--><!--@age="A"--><!--@stat_amour="néant"-->, Reine Douairière d'Egypte.</castItem>
 		<castItem>
-                    <role corresp="#belendraps">BÉLENDRAPS</role><!--@sex="2" @type="H" @statut="roi" @age="J" @stat_amour="néant"-->, fille de Fessaride, couronnée reine d'Egypte depuis la mort du feu roi.</castItem>
+                    <role corresp="#belendraps">BÉLENDRAPS</role><!--@sex="2"--><!--@type="H"--><!--@statut="roi"--><!--@age="J"--><!--@stat_amour="néant"-->, fille de Fessaride, couronnée reine d'Egypte depuis la mort du feu roi.</castItem>
 		<castItem>
-                    <role corresp="#ratanphor">RATANPHOR</role><!--@sex="1" @type="H" @statut="roi" @age="A" @stat_amour="néant"-->, prince syrien, couronné Roi d'Egypte, et marié nouvellement à Bélendraps.</castItem>
+                    <role corresp="#ratanphor">RATANPHOR</role><!--@sex="1"--><!--@type="H"--><!--@statut="roi"--><!--@age="A"--><!--@stat_amour="néant"-->, prince syrien, couronné Roi d'Egypte, et marié nouvellement à Bélendraps.</castItem>
 		<castItem>
-                    <role corresp="#le-capitaine-des-gardes">LE CAPITAINE DES GARDES</role><!--@sex="1" @type="H" @statut="capitaine" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#le-capitaine-des-gardes">LE CAPITAINE DES GARDES</role><!--@sex="1"--><!--@type="H"--><!--@statut="capitaine"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#gardes">GARDES</role><!--@sex="1" @type="H" @statut="garde" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#gardes">GARDES</role><!--@sex="1"--><!--@type="H"--><!--@statut="garde"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 	</castList>
-<!--usage of set in correct place but with unknown attributes <set location="Lieu fantaisiste" country="Pays fantaisiste" periode="Temps fantaisistes" link="">La scène est dans le palais des rois de Toutybande.</set>-->
+<!--TODO: usage of set in correct place but with unknown attributes <set location="Lieu fantaisiste" country="Pays fantaisiste" periode="Temps fantaisistes" link="">La scène est dans le palais des rois de Toutybande.</set>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -117,11 +117,11 @@
                     <head>SCÈNE PREMIÈBE. Ratanphor, Bellendraps; surm.</head>
 <sp who="#ratanphor">
                         <speaker>RATANPHOR.</speaker>
-	<l n="1" part="I">Arrêtez, Bellendraps !</l><!-- @syll="6"-->
+	<l n="1" part="I">Arrêtez, Bellendraps !</l><!--@syll="6"-->
 </sp>
 <sp who="#belendraps">
                         <speaker>BELENDRAPS.</speaker>
-	<l n="1" part="F">Ratanphor, laissez-moi.</l><!-- @syll="6"-->
+	<l n="1" part="F">Ratanphor, laissez-moi.</l><!--@syll="6"-->
 	<l n="2">À vos propos d'amour je n'ajoute plus foi,</l>
 	<l n="3">Je suis trop courroucée, et j'ai sujet de l'être.</l>
 	<l n="4">Mariée avec vous par les mains du Grand-Prêtre,</l>
@@ -232,14 +232,15 @@
 	<l n="100">De Priape, à la fin, j'ai consulté l'oracle</l>
 	<l n="101">J'ai retenu ces mots, et j'en suis confondu ;</l>
 	<l n="102">Écoutez, car voici ce qu'il m'a répondu :</l>
-<poem type="oracle">
+<!--<poem>-->
+                        <ab type="oracle">
 <lg n="1">
 	<l n="103">« La jeune épée ira dans le jeune fourreau,</l>
 	<l n="104">Quand cette même épée</l>
 	<l n="105">Sur un cadavre bien groupée</l>
 	<l n="106">Sortira brillamment d'un antique tombeaux. »</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 	<l n="107">Quel sens puis-je donner à pareille réplique ?</l>
 	<l n="108">L'oracle nettement en commençant s'explique,</l>
 	<l n="109">Et je comprends très bien qu'en cet obscur tableau,</l>
@@ -413,11 +414,11 @@
 </sp>
 <sp who="#fessaride">
                         <speaker>FESSARIDE.</speaker>
-	<l n="233" part="I">J'ai plus d'acquis.</l><!-- @syll="4"-->
+	<l n="233" part="I">J'ai plus d'acquis.</l><!--@syll="4"-->
 </sp>
 <sp who="#impias">
                         <speaker>IMPIAS.</speaker>
-	<l n="233" part="F">Sans doute. Il est temps qu'à mon tour</l><!-- @syll="8"-->
+	<l n="233" part="F">Sans doute. Il est temps qu'à mon tour</l><!--@syll="8"-->
 	<l n="234">Je vous dise pour qui je ressens de l'amour.</l>
 	<l n="235">Bien plus jeune que vous, mon amoureux courage</l>
 	<l n="236">Ne s'emploie à présent qu'avec un pucelage.</l>
@@ -457,9 +458,9 @@
 	<l n="264">Sur le même chevet ma mitre et sa couronne.</l>
 	<l n="265">Je viens de me prêter à votre amour lascif ;</l>
 	<l n="266">Je suis prêtre, Madame, et très vindicatif ; ...</l>
-	<l n="267" part="I">Je n'en dirai pas plus.</l><!-- @syll="6"-->
+	<l n="267" part="I">Je n'en dirai pas plus.</l><!--@syll="6"-->
 <stage type="sweet">Se radoucissant. </stage>
-	<l n="267" part="F">Combattrez-vous encore</l><!-- @syll="6"-->
+	<l n="267" part="F">Combattrez-vous encore</l><!--@syll="6"-->
 	<l n="268">L'innocente fureur du feu qui me dévore ?</l>
 </sp><!--@stage="anger"-->
 <sp who="#fessaride">
@@ -491,11 +492,11 @@
 </sp>
 <sp who="#ratanphor">
                         <speaker>RATANPHOR.</speaker>
-	<l n="280" part="I">La maudite sorcière !</l><!-- @syll="6"-->
+	<l n="280" part="I">La maudite sorcière !</l><!--@syll="6"-->
 </sp>
 <sp who="#fessaride">
                         <speaker>FESSARIDE.</speaker>
-	<l n="280" part="F">Écoutez ; somme toute,</l><!-- @syll="6"-->
+	<l n="280" part="F">Écoutez ; somme toute,</l><!--@syll="6"-->
 	<l n="281">L'hymen ne nous rend pas également heureux ;</l>
 	<l n="282">Les uns s'en trouvent bien, d'autres mal, d'autres mieux.</l>
 	<l n="283">Il se pourrait très fort que la Reine ma fille</l>
@@ -523,11 +524,11 @@
 </sp>
 <sp who="#fessaride">
                         <speaker>FESSARIDE.</speaker>
-	<l n="295" part="I">Hem ? Plaît-il ?</l><!-- @syll="3"-->
+	<l n="295" part="I">Hem ? Plaît-il ?</l><!--@syll="3"-->
 </sp>
 <sp who="#ratanphor">
                         <speaker>RATANPHOR.</speaker>
-	<l n="295" part="F">Fessaride, il est vrai que la Reine</l><!-- @syll="6"-->
+	<l n="295" part="F">Fessaride, il est vrai que la Reine</l><!--@syll="6"-->
 	<l n="296">Me donne de l'humeur, et me fait de la peine,</l>
 	<l n="297">Et je souffre auprès d'elle et la nuit et le jour.</l>
 </sp>
@@ -670,11 +671,11 @@
 	<l n="375">Des liens de l'hymen dont vous êtes bridée,</l>
 	<l n="376">Votre esprit s'était fait une plus douce idée.</l>
 	<l n="377">Vous avez un mari qui tâte à tout moment,</l>
-	<l n="378" part="I">Qui tâte, qui retâte ; et c'est tout.</l><!-- @syll="9"-->
+	<l n="378" part="I">Qui tâte, qui retâte ; et c'est tout.</l><!--@syll="9"-->
 </sp>
 <sp who="#belendraps">
                         <speaker>BELENDRAPS.</speaker>
-	<l n="378" part="F">Justement.</l><!-- @syll="3"-->
+	<l n="378" part="F">Justement.</l><!--@syll="3"-->
 </sp>
 <sp who="#impias">
                         <speaker>IMPIAS.</speaker>
@@ -713,11 +714,11 @@
 </sp>
 <sp who="#belendraps">
                         <speaker>BELENDRAPS.</speaker>
-	<l n="399" part="I">Quel est-il ?</l><!-- @syll="6"-->
+	<l n="399" part="I">Quel est-il ?</l><!--@syll="6"-->
 </sp>
 <sp who="#impias">
                         <speaker>IMPIAS.</speaker>
-	<l n="399" part="F">C'est celui que le Roi laisse en friche.</l><!-- @syll="6"-->
+	<l n="399" part="F">C'est celui que le Roi laisse en friche.</l><!--@syll="6"-->
 </sp>
 <sp who="#belendraps">
                         <speaker>BELENDRAPS.</speaker>
@@ -768,9 +769,9 @@
 </sp>
 <sp who="#belendraps">
                         <speaker>BELENDRAPS.</speaker>
-	<l n="427" part="I">Violez-moi, pour voir.</l><!-- @syll="6"-->
+	<l n="427" part="I">Violez-moi, pour voir.</l><!--@syll="6"-->
 <stage type="aparte">À part. </stage>
-	<l n="427" part="F">Ah ! Mon âme troublée,</l><!-- @syll="6"-->
+	<l n="427" part="F">Ah ! Mon âme troublée,</l><!--@syll="6"-->
 	<l n="428">N'aspires-tu pas trop à te voir violée ?</l>
 <stage type="toward">À Impias.</stage>
 	<l n="429">Mais enfin, je ne dois aimer que mon époux ;</l>
@@ -819,31 +820,31 @@
 </sp><!--@stage="watch/kneel/kiss"-->
 <sp who="#belendraps">
                         <speaker>BELENDRAPS.</speaker>
-	<l n="453" part="I">Lui ?</l><!-- @syll="1"-->
+	<l n="453" part="I">Lui ?</l><!--@syll="1"-->
 </sp>
 <sp who="#impias">
                         <speaker>IMPIAS.</speaker>
-	<l n="453" part="M">Moi ?</l><!-- @syll="1"-->
+	<l n="453" part="M">Moi ?</l><!--@syll="1"-->
 </sp>
 <sp who="#ratanphor">
                         <speaker>RATANPHOR.</speaker>
-	<l n="453" part="M">Toi.</l><!-- @syll="1"-->
+	<l n="453" part="M">Toi.</l><!--@syll="1"-->
 </sp>
 <sp who="#impias">
                         <speaker>IMPIAS.</speaker>
-	<l n="453" part="M">Moi ?</l><!-- @syll="1"-->
+	<l n="453" part="M">Moi ?</l><!--@syll="1"-->
 </sp>
 <sp who="#ratanphor">
                         <speaker>RATANPHOR.</speaker>
-	<l n="453" part="M">Toi.</l><!-- @syll="1"-->
+	<l n="453" part="M">Toi.</l><!--@syll="1"-->
 </sp>
 <sp who="#belendraps">
                         <speaker>BELENDRAPS.</speaker>
-	<l n="453" part="M">Lui ?</l><!-- @syll="1"-->
+	<l n="453" part="M">Lui ?</l><!--@syll="1"-->
 </sp>
 <sp who="#ratanphor">
                         <speaker>RATANPHOR.</speaker>
-	<l n="453" part="F">Par Fessaride et toi</l><!-- @syll="6"-->
+	<l n="453" part="F">Par Fessaride et toi</l><!--@syll="6"-->
 	<l n="454">J'ai su tous les complots machinés contre moi.</l>
 	<l n="455">Dans l'avenir, dis-tu, tu sais lire à merveilles ;</l>
 	<l n="456">Devine-tu le sort qui te pend aux oreilles ?</l>
@@ -880,9 +881,9 @@
 </sp>
 <sp who="#ratanphor">
                         <speaker>RATANPHOR, se tournant vers au garde qui emmène Impias.</speaker>
-	<l n="471" part="I">J'y consens.</l><!-- @syll="3"-->
+	<l n="471" part="I">J'y consens.</l><!--@syll="3"-->
 <stage type="toward">À la Reine. </stage>
-	<l n="471" part="F">À ses voeux vous n'étiez point contraire.</l><!-- @syll="9"-->
+	<l n="471" part="F">À ses voeux vous n'étiez point contraire.</l><!--@syll="9"-->
 </sp><!--@stage="turn/toward"-->
 <sp who="#belendraps">
                         <speaker>BELENDRAPS.</speaker>
@@ -940,11 +941,11 @@
                     <head>SCÈNE VIII et DERNIÈRE. Le Capitaine des Gardes, Fessaride, Gardes.</head>
 <sp who="#le-capitaine-des-gardes">
                         <speaker>LE CAPITAINE DES GARDES, donnant une lettre à Fessaride.</speaker>
-	<l n="503" part="I">C'est de la part du Roi.</l><!-- @syll="6"-->
+	<l n="503" part="I">C'est de la part du Roi.</l><!--@syll="6"-->
 </sp><!--@stage="give/toward"-->
 <sp who="#fessaride">
                         <speaker>FESSARIDE.</speaker>
-	<l n="503" part="F">Quel que soit ce message,</l><!-- @syll="6"-->
+	<l n="503" part="F">Quel que soit ce message,</l><!--@syll="6"-->
 	<l n="504">Il ne peut renchérir sur son dernier outrage.</l>
 <stage type="read">Elle lit.</stage>
 	<l n="505">« Je prétends à jamais que votre appartement</l>

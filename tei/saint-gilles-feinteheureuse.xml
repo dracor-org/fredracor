@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1709">1709</date>
+                        <date>1709</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k1514417j</idno>
@@ -49,9 +49,6 @@
                     <person xml:id="daphnis" sex="FEMALE">
                         <persName>Daphnis</persName>
                     </person>
-                    <person xml:id="daphnis" sex="FEMALE">
-                        <persName>Daphnis</persName>
-                    </person>
                     <person xml:id="tous-deux" sex="UNKNOWN">
                         <persName>Tous-deux</persName>
                     </person>
@@ -60,9 +57,6 @@
                     </person>
                     <person xml:id="ensemble" sex="UNKNOWN">
                         <persName>Ensemble</persName>
-                    </person>
-                    <person xml:id="climene" sex="FEMALE">
-                        <persName>Climène</persName>
                     </person>
                     <person xml:id="tous-quatre" sex="UNKNOWN">
                         <persName>Tous-quatre</persName>
@@ -94,15 +88,15 @@
 		<castList>
                 <head>ACTEURS.</head>
 			<castItem>
-                    <role corresp="#philene">PHILÈNE</role><!--@sex="1" @type="H" @statut="berger" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#philene">PHILÈNE</role><!--@sex="1"--><!--@type="H"--><!--@statut="berger"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 			<castItem>
-                    <role corresp="#philemon">PHILÉMON</role><!--@sex="1" @type="H" @statut="berger" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#philemon">PHILÉMON</role><!--@sex="1"--><!--@type="H"--><!--@statut="berger"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 			<castItem>
-                    <role corresp="#daphnis">DAPHNIS</role><!--@sex="2" @type="H" @statut="berger" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#daphnis">DAPHNIS</role><!--@sex="2"--><!--@type="H"--><!--@statut="berger"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 			<castItem>
-                    <role corresp="#climene">CLIMÈNE</role><!--@sex="2" @type="H" @statut="berger" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#climene">CLIMÈNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="berger"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		</castList>
-		<!--usage of set in correct place but with unknown attributes <set location="Lieu imaginaire" country="Pays imaginaire" periode="Temps imaginaires" link=""/>-->
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Lieu imaginaire" country="Pays imaginaire" periode="Temps imaginaires" link=""/>-->
 	</front>
 <body>
 <div type="acte" n="1">
@@ -111,7 +105,8 @@
                     <head>SCÈNE PREMIÈRE.</head>
 <sp who="#philene">
                         <speaker>PHILÈNE.</speaker>
-<poem type="quatrains">
+<!--<poem>-->
+                        <ab type="quatrains">
 <lg n="1">
 	<l n="1">Arbres épais, Rochers confidents de ma peine,</l>
 	<l n="2">Cachez à tous les yeux ma secrète langueur ;</l>
@@ -130,7 +125,7 @@
 	<l n="11">Ils ne ressentent point les tourments amoureux.</l>
 	<l n="12">Dans le trouble où je suis, évitons leur présence.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp><!--@stage="alone"-->
 </div>
 <div type="scene" n="2">
@@ -168,7 +163,7 @@
 	<l n="26">Gardons nous d'aimer constamment.</l>
 </sp><!--@stage="together"-->
 </div>
-<div type="scene" n="3" stage="music">
+<div type="scene" n="3">
                     <head>SCÈNE TROISIÈME. Philémon, Daphnis, Argant qui joue du violon.</head>
 <sp who="#philemon #daphnis">
                         <speaker>PHILÉMON, DAPHNIS.</speaker>
@@ -184,8 +179,8 @@
 	<l n="36">Cherche la solitude au fond de ces forêts.</l>
 	<l n="37">Cachons-nous, et soyons témoin de ses regrets.</l>
 </sp><!--@stage="together"-->
-</div>
-<div type="scene" n="4" stage="hide">
+</div><!--@stage="music"-->
+<div type="scene" n="4">
                     <head>SCÈNE QUATRIÈME. Climène, Philène, Philémon, Daphnis, cachés.</head>
 <sp who="#climene">
                         <speaker>CLIMÈNE.</speaker>
@@ -200,21 +195,21 @@
 </sp>
 <sp who="#philene">
                         <speaker>PHILÈNE, sortant du lieu où il était caché.</speaker>
-	<l n="46" part="I">Qu'ai-je entendu ! Ciel !</l><!-- @syll="6"-->
+	<l n="46" part="I">Qu'ai-je entendu ! Ciel !</l><!--@syll="6"-->
 </sp><!--@stage="entrance/location"-->
 <sp who="#climene">
                         <speaker>CLIMÈNE.</speaker>
-	<l n="46" part="F">Cher Philène,</l><!-- @syll="4"-->
-	<l n="47" part="I">Quel destin vous conduit...</l><!-- @syll="6"-->
+	<l n="46" part="F">Cher Philène,</l><!--@syll="4"-->
+	<l n="47" part="I">Quel destin vous conduit...</l><!--@syll="6"-->
 </sp>
 <sp who="#philene">
                         <speaker>PHILÈNE.</speaker>
-	<l n="47" part="F">Adorable Climène,</l><!-- @syll="6"-->
-	<l n="48" part="I">Vous m'aimez !</l><!-- @syll="3"-->
+	<l n="47" part="F">Adorable Climène,</l><!--@syll="6"-->
+	<l n="48" part="I">Vous m'aimez !</l><!--@syll="3"-->
 </sp>
 <sp who="#climene">
                         <speaker>CLIMÈNE.</speaker>
-	<l n="48" part="F">Vous ne m'aimez plus !</l><!-- @syll="5"-->
+	<l n="48" part="F">Vous ne m'aimez plus !</l><!--@syll="5"-->
 </sp>
 <sp who="#philene">
                         <speaker>PHILÈNE.</speaker>
@@ -260,7 +255,7 @@
 	<l n="67">Quand on reprend une première chaîne,</l>
 	<l n="68">Il faut la garder à jamais.</l>
 </sp><!--@stage="together"-->
-</div>
+</div><!--@stage="hide"-->
 </div>
 </body>
 </text>

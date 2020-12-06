@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1778">1778</date>
+                        <date>1778</date>
                         <date type="premiere" when="1773-03-22">Représenté en société à Marseille le 22 mars 1776.</date>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k5740797h</idno>
@@ -92,29 +92,29 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="RUAULT">À PARIS Chez RUAULT, Libraire, rue de la Harpe..</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="RUAULT">À PARIS Chez RUAULT, Libraire, rue de la Harpe..</editor>-->
 		</div>
 		<performance>
-			<ab type="premiere">Représenté en société à Marseille le 22 mars 1776.</ab><!--date="1773-03-22"--><!--location="En société"-->
+			<ab type="premiere">Représenté en société à Marseille le 22 mars 1776.</ab><!--@date="1773-03-22"--><!--@location="En société"-->
 		</performance>
 	<castList>
                 <head>ACTEURS</head>
 		<castItem>
-                    <role corresp="#monsieur-argante">MONSIEUR ARGANTE</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#monsieur-argante">MONSIEUR ARGANTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#madame-argante">MADAME ARGANTE</role><!--@sex="2" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#madame-argante">MADAME ARGANTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#angelique">ANGÉLIQUE</role><!--@sex="2" @type="H" @statut="aristocrate" @age="J" @stat_amour="néant"-->, leur fille.</castItem>
+                    <role corresp="#angelique">ANGÉLIQUE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour="néant"-->, leur fille.</castItem>
 		<castItem>
-                    <role corresp="#valere">VALÈRE</role><!--@sex="1" @type="H" @statut="aristocrate" @age="J" @stat_amour="néant"-->, amant d'Angélique.</castItem>
+                    <role corresp="#valere">VALÈRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour="néant"-->, amant d'Angélique.</castItem>
 		<castItem>
-                    <role corresp="#ariste">ARISTE</role><!--@sex="1" @type="H" @statut="aristocrate" @age="V" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#ariste">ARISTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="V"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#jean">JEAN</role><!--@sex="1" @type="H" @statut="valet de chambre" @age="A" @stat_amour="néant"-->, Valet de chambre d'Ariste.</castItem>
+                    <role corresp="#jean">JEAN</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet de chambre"--><!--@age="A"--><!--@stat_amour="néant"-->, Valet de chambre d'Ariste.</castItem>
 		<castItem>
-                    <role corresp="#marton">MARTON</role><!--@sex="2" @type="H" @statut="femme de chambre" @age="A" @stat_amour="néant"-->, Femme de chambre d'Angélique.</castItem>
+                    <role corresp="#marton">MARTON</role><!--@sex="2"--><!--@type="H"--><!--@statut="femme de chambre"--><!--@age="A"--><!--@stat_amour="néant"-->, Femme de chambre d'Angélique.</castItem>
 	</castList>
-<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La scène est aux environs de Paris, dans un appartement du Château de Madame Argante.</set>-->
+<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La scène est aux environs de Paris, dans un appartement du Château de Madame Argante.</set>-->
 </front>
 <body>
 <div type="acte" n="1">
@@ -132,15 +132,15 @@
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
 	<l n="3">Je sors de chez Madame, et viens de lui remettre.</l>
-	<l n="4" part="I">Fidèle messager...</l><!-- @syll="6"-->
+	<l n="4" part="I">Fidèle messager...</l><!--@syll="6"-->
 </sp>
 <sp who="#marton">
                         <speaker>MARTON.</speaker>
-	<l n="4" part="M">Quoi donc Jean ?</l><!-- @syll="3"-->
+	<l n="4" part="M">Quoi donc Jean ?</l><!--@syll="3"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="4" part="F">Une lettre.</l><!-- @syll="3"-->
+	<l n="4" part="F">Une lettre.</l><!--@syll="3"-->
 </sp>
 <sp who="#marton">
                         <speaker>MARTON.</speaker>
@@ -164,11 +164,11 @@
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
 	<l n="15">Cela nous est égal : n'avons-nous pas sa mère ?</l>
-	<l n="16" part="I">Angélique obéit ?...</l><!-- @syll="6"-->
+	<l n="16" part="I">Angélique obéit ?...</l><!--@syll="6"-->
 </sp>
 <sp who="#marton">
                         <speaker>MARTON.</speaker>
-	<l n="16" part="F">Oui, mais elle est sincère ;</l><!-- @syll="6"-->
+	<l n="16" part="F">Oui, mais elle est sincère ;</l><!--@syll="6"-->
 	<l n="17">Et lui fera l'aveu qu'elle, ne l'aime point.</l>
 </sp>
 <sp who="#jean">
@@ -200,21 +200,21 @@
 	<l n="39">Je voudrais qui fut doux, généreux, et docile ;</l>
 	<l n="40">Et s'il venait un jour à m'échauffer la bile,</l>
 	<l n="41">J'exigerais, surtout, qu'il vint de bonne foi</l>
-	<l n="42" part="I">S'excuser.</l><!-- @syll="3"-->
+	<l n="42" part="I">S'excuser.</l><!--@syll="3"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN, d'un ton goguenard.</speaker>
-	<l n="42" part="F">Tu voudrais... quelqu'un fait comme moi.</l><!-- @syll="10"-->
+	<l n="42" part="F">Tu voudrais... quelqu'un fait comme moi.</l><!--@syll="10"-->
 	<l n="43">Qui t'aImât à la rage, et qui fût assez bête,</l>
 	<l n="44">Pour se laisser toujours gouverner à ta tête ?</l>
 </sp>
 <sp who="#marton">
                         <speaker>MARTON, avec une feinte modestie.</speaker>
-	<l n="45" part="I">Quoi, vous m'épouseriez !... Vous Monsieur ?</l><!-- @syll="9"--> 
+	<l n="45" part="I">Quoi, vous m'épouseriez !... Vous Monsieur ?</l><!--@syll="9"--> 
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="45" part="F">Oui, Marton.</l><!-- @syll="3"-->
+	<l n="45" part="F">Oui, Marton.</l><!--@syll="3"-->
 <stage type="aparte">À part.</stage>
 	<l n="46">J'étais sûr de la voir bientôt changer de ton.</l>
 <stage type="loud">Haut.</stage>
@@ -240,11 +240,11 @@
 <sp who="#jean">
                         <speaker>JEAN, s'avançant pour l'embrasser.</speaker>
 	<l n="55">Viens ça, ma belle enfant, que je te récompense</l>
-	<l n="56" part="I">Par cinq à six baisers ?...</l><!-- @syll="6"-->
+	<l n="56" part="I">Par cinq à six baisers ?...</l><!--@syll="6"-->
 </sp><!--@stage="closer/kiss"-->
 <sp who="#marton">
                         <speaker>MARTON, sérieusement.</speaker>
-	<l n="56" part="F">Va, va, je t'en dispense ;</l><!-- @syll="6"-->
+	<l n="56" part="F">Va, va, je t'en dispense ;</l><!--@syll="6"-->
 	<l n="57">J'exige seulement que tu sois circonspect.</l>
 </sp>
 <sp who="#jean">
@@ -265,19 +265,19 @@
 	<l n="70">Mais quand de m'évader je forme le projet,</l>
 	<l n="71">Il m'arrête à la porte en dépit de moi-même ;</l>
 	<l n="72">« Et veut enfin savoir si ta maîtresse l'aime ? »</l>
-	<l n="73" part="I">Motus encor...</l><!-- @syll="4"-->
+	<l n="73" part="I">Motus encor...</l><!--@syll="4"-->
 </sp>
 <sp who="#marton">
                         <speaker>MARTON.</speaker>
-	<l n="73" part="F">Tant pis. Réponds lui hardiment,</l><!-- @syll="8"-->
+	<l n="73" part="F">Tant pis. Réponds lui hardiment,</l><!--@syll="8"-->
 	<l n="74">Qu'Angélique a choisi Valère pour amant,</l>
 	<l n="75">Que son heureux Rival adore ma maîtresse ;</l>
 	<l n="76">Et qu'ils ont l'un pour l'autre une égale tendresse ;</l>
-	<l n="77" part="I">Que leurs coeurs pour jamais...</l><!-- @syll="6"-->
+	<l n="77" part="I">Que leurs coeurs pour jamais...</l><!--@syll="6"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="77" part="F">Je m'en garderais bien :</l><!-- @syll="6"-->
+	<l n="77" part="F">Je m'en garderais bien :</l><!--@syll="6"-->
 	<l n="78">Ne vois-tu pas qu'alors il ne me dirait rien ?</l>
 	<l n="79">Et reprenant bientôt toute son humeur sombre,</l>
 	<l n="80">Je serais obligé de parler à mon ombre.</l>
@@ -291,11 +291,11 @@
 </sp>
 <sp who="#marton">
                         <speaker>MARTON.</speaker>
-	<l n="87" part="I">Cet homme est singulier.</l><!-- @syll="6"-->
+	<l n="87" part="I">Cet homme est singulier.</l><!--@syll="6"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="87" part="F">À son air, à sa mine,</l><!-- @syll="6"-->
+	<l n="87" part="F">À son air, à sa mine,</l><!--@syll="6"-->
 	<l n="88">À son geste surtout il veut qu'on le devine ;</l>
 	<l n="89">Et la moitié du temps je suis content de lui,</l>
 	<l n="90">Quand j'en puis arracher soit un non, soit un oui</l>
@@ -318,11 +318,11 @@
 </sp>
 <sp who="#marton">
                         <speaker>MARTON.</speaker>
-	<l n="100" part="I">Je t'entends. Adieu Jean.</l><!-- @syll="6"-->
+	<l n="100" part="I">Je t'entends. Adieu Jean.</l><!--@syll="6"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="100" part="M">Adieu donc.</l><!-- @syll="3"-->
+	<l n="100" part="M">Adieu donc.</l><!--@syll="3"-->
 </sp>
 </div>
 <div type="scene" n="2">
@@ -330,99 +330,99 @@
 <stage type="decor/slow">Le commencement de cette scène doit être récité fort lentement, laissant toujours un intervalle entre les deux interlocuteurs.</stage>
 <sp who="#ariste">
                         <speaker>ARISTE, s'avance en rêvants et après unmommt de: silena ,il dit</speaker>
-	<l n="100" part="F">Et ma lettre ?</l><!-- @syll="3"-->
+	<l n="100" part="F">Et ma lettre ?</l><!--@syll="3"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="101" part="I">Je l'ai remise.</l><!-- @syll="4"-->
+	<l n="101" part="I">Je l'ai remise.</l><!--@syll="4"-->
 </sp>
 <sp who="#ariste">
                         <speaker>ARISTE.</speaker>
-	<l n="101" part="M">À qui ?</l><!-- @syll="2"-->
+	<l n="101" part="M">À qui ?</l><!--@syll="2"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="101" part="M">Mais à Madame.</l><!-- @syll="4"-->
+	<l n="101" part="M">Mais à Madame.</l><!--@syll="4"-->
 </sp>
 <sp who="#ariste">
                         <speaker>ARISTE.</speaker>
-	<l n="101" part="F">Hé bien ?</l><!-- @syll="2"-->
-	<l n="102" part="I">L'a-t-elle ouverte ?</l><!-- @syll="5"-->
+	<l n="101" part="F">Hé bien ?</l><!--@syll="2"-->
+	<l n="102" part="I">L'a-t-elle ouverte ?</l><!--@syll="5"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="102" part="M">Oui.</l><!-- @syll="1"-->
+	<l n="102" part="M">Oui.</l><!--@syll="1"-->
 </sp>
 <sp who="#ariste">
                         <speaker>ARISTE.</speaker>
-	<l n="102" part="M">Que répond elle ?</l><!-- @syll="5"-->
+	<l n="102" part="M">Que répond elle ?</l><!--@syll="5"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="102" part="F">Rien.</l><!-- @syll="1"-->
+	<l n="102" part="F">Rien.</l><!--@syll="1"-->
 </sp>
 <sp who="#ariste">
                         <speaker>ARISTE.</speaker>
-	<l n="103" part="I">Argante était il là ?</l><!-- @syll="6"-->
+	<l n="103" part="I">Argante était il là ?</l><!--@syll="6"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="103" part="F">Non Monsieur.</l><!-- @syll="3"-->
+	<l n="103" part="F">Non Monsieur.</l><!--@syll="3"-->
 </sp>
 <sp who="#ariste">
                         <speaker>ARISTE.</speaker>
-	<l n="103" part="F">Et Valère ?</l><!-- @syll="3"-->
+	<l n="103" part="F">Et Valère ?</l><!--@syll="3"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="104" part="I">Non plus.</l><!-- @syll="2"-->
+	<l n="104" part="I">Non plus.</l><!--@syll="2"-->
 </sp>
 <sp who="#ariste">
                         <speaker>ARISTE.</speaker>
-	<l n="104" part="M">Mais Angélique !...</l><!-- @syll="4"-->
+	<l n="104" part="M">Mais Angélique !...</l><!--@syll="4"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN, l'interrompant.</speaker>
-	<l n="104" part="F">Était avec sa mère.</l><!-- @syll="6"-->
+	<l n="104" part="F">Était avec sa mère.</l><!--@syll="6"-->
 </sp><!--@stage="interrupt"-->
 <sp who="#ariste">
                         <speaker>ARISTE.</speaker>
-	<l n="105" part="I">Angélique ?...</l><!-- @syll="3"-->
+	<l n="105" part="I">Angélique ?...</l><!--@syll="3"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN, l'interrompant encore.</speaker>
-	<l n="105" part="M">Vous aime.</l><!-- @syll="3"-->
+	<l n="105" part="M">Vous aime.</l><!--@syll="3"-->
 </sp><!--@stage="interrupt"-->
 <sp who="#ariste">
                         <speaker>ARISTE.</speaker>
-	<l n="105" part="M">Ah, qu'entends-je ?</l><!-- @syll="3"-->
+	<l n="105" part="M">Ah, qu'entends-je ?</l><!--@syll="3"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="105" part="F">Marton.</l><!-- @syll="2"-->
+	<l n="105" part="F">Marton.</l><!--@syll="2"-->
 </sp>
 <sp who="#ariste">
                         <speaker>ARISTE, vite.</speaker>
-	<l n="106" part="I">Comment ?</l><!-- @syll="2"-->
+	<l n="106" part="I">Comment ?</l><!--@syll="2"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="106" part="M">Le dit ainsi.</l><!-- @syll="4"-->
+	<l n="106" part="M">Le dit ainsi.</l><!--@syll="4"-->
 </sp>
 <sp who="#ariste">
                         <speaker>ARISTE , souriant, et caressant le menton de Jean.</speaker>
-	<l n="106" part="M">Le crois-tu ?</l><!-- @syll="3"-->
+	<l n="106" part="M">Le crois-tu ?</l><!--@syll="3"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="106" part="F">Pourquoi non.</l><!-- @syll="3"-->
+	<l n="106" part="F">Pourquoi non.</l><!--@syll="3"-->
 <stage type="wave">Ariste fait signe à Jean de lui apporter tout ce qu'il faut pour écrire. Jean le lui apporte, et Ariste écrit.</stage>
 <stage type="aparte">À part.</stage>
 	<l n="107">Voilà, sur ma parole, un bien hardi mensonge !</l>
-	<l n="108" part="I">Si l'on vient à savoir...</l><!-- @syll="6"-->
+	<l n="108" part="I">Si l'on vient à savoir...</l><!--@syll="6"-->
 <stage type="watch/silence">Ariste le regarde pour le faite taire.</stage>
 <stage type="aparte">À part.</stage>
-	<l n="108" part="F">Parbleu ! Puisque j'y songe,</l><!-- @syll="6"-->
+	<l n="108" part="F">Parbleu ! Puisque j'y songe,</l><!--@syll="6"-->
 	<l n="109">Soutenons à Marton qu'elle-même l'a dit...</l>
 	<l n="110">Fort bien Jean... Ce que c'est que d'avoir de l'esprit !...</l>
 <stage type="watch">Ariste le regarde encore.</stage>
@@ -432,11 +432,11 @@
 	<l n="113">Et du beau compliment, surtout, qu'elle m'a fait.</l>
 <stage type="imitate">La contrefaisant.</stage>
 	<l n="114">« Un homme tel que toi n'est point du tout mon fait,</l>
-	<l n="115" part="I">Un ivrogne, un coureur... »</l><!-- @syll="6"-->
+	<l n="115" part="I">Un ivrogne, un coureur... »</l><!--@syll="6"-->
 </sp>
 <sp who="#ariste">
                         <speaker>ARISTE, s'impatientant.</speaker>
-	<l n="115" part="F">Te plaît-il de te taire ?</l><!-- @syll="6"-->
+	<l n="115" part="F">Te plaît-il de te taire ?</l><!--@syll="6"-->
 </sp><!--@stage="impatient"-->
 <sp who="#jean">
                         <speaker>JEAN, poursuivant toujours.</speaker>
@@ -456,9 +456,9 @@
 </sp><!--@stage="continue"-->
 <sp who="#ariste">
                         <speaker>ARISTE.</speaker>
-	<l n="127" part="I">Tu feras sagement.</l><!-- @syll="6"-->
+	<l n="127" part="I">Tu feras sagement.</l><!--@syll="6"-->
 <stage type="write/silence/close">Il se remet à écrire et après un moment de silence, il fait signe à Jean de s'avancer ; et il lui dit en pliant sa lettre, et y mettant l'adresse.</stage>
-	<l n="127" part="F">Parle moi d'Angélique !...</l><!-- @syll="6"-->
+	<l n="127" part="F">Parle moi d'Angélique !...</l><!--@syll="6"-->
 <stage type="stand/sit">Se relevant, et ne s'asseyant qu'au moment que Jean lui répond.</stage>
 	<l n="128">Tu prétends qu'elle m'aime !... Hé bien !.... Point de réplique !...</l>
 </sp>
@@ -480,11 +480,11 @@
 </sp><!--@stage="sweet"-->
 <sp who="#ariste">
                         <speaker>ARISTE, vivement.</speaker>
-	<l n="136" part="I">Que dis-tu ?...</l><!-- @syll="3"-->
+	<l n="136" part="I">Que dis-tu ?...</l><!--@syll="3"-->
 </sp><!--@stage="quick"-->
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="136" part="F">Je vous dis qu'Angélique vous aime :</l><!-- @syll="9"-->
+	<l n="136" part="F">Je vous dis qu'Angélique vous aime :</l><!--@syll="9"-->
 	<l n="137">La voici justement qui s'approche de nous.</l>
 </sp>
 </div>
@@ -507,25 +507,25 @@
 <sp who="#angelique">
                         <speaker>ANGÉLIQUE, lit.</speaker>
 <p n="1">
-	<s n="1">« Charmante Angélique ; c'est aujourd'hui le plus beau jour de ma vie ; Marton m'a fait la confidence que vous m'aimiez... »</s>
+	<s n="1 ">« Charmante Angélique ; c'est aujourd'hui le plus beau jour de ma vie ; Marton m'a fait la confidence que vous m'aimiez... »</s>
 </p>
 <stage type="anger">Elle regarde Marton d'un air courroucé.</stage>
 </sp>
 <sp who="#marton">
                         <speaker>MARTON, à Ariste.</speaker>
-	<l n="147" part="I">J'ai tenu ce propos !...</l><!-- @syll="6"-->
+	<l n="147" part="I">J'ai tenu ce propos !...</l><!--@syll="6"-->
 <stage type="impatient">Avec impatience.</stage>
-	<l n="147" part="F">Parlez donc, je vous prie ?</l><!-- @syll="6"-->
+	<l n="147" part="F">Parlez donc, je vous prie ?</l><!--@syll="6"-->
 </sp><!--@stage="toward"-->
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
 	<l n="148">Quoi ! Ne m'as-tu pas dit à moi-même, ma mie,</l>
 	<l n="149">« Que ta maîtresse aimait Ariste à la fureur,</l>
-	<l n="150" part="I">Et qu'elle détestait Valère. »</l><!-- @syll="6"-->
+	<l n="150" part="I">Et qu'elle détestait Valère. »</l><!--@syll="6"-->
 </sp>
 <sp who="#marton">
                         <speaker>MARTON.</speaker>
-	<l n="150" part="F">L'imposteur !</l><!-- @syll="6"-->
+	<l n="150" part="F">L'imposteur !</l><!--@syll="6"-->
 	<l n="151">Le traître !... Voyez donc ?... J'ai dit tout le contraire.</l>
 </sp>
 <sp who="#jean">
@@ -535,11 +535,11 @@
 	<l n="154">Mais puisque, par tes soins, ils me font bien connus,</l>
 	<l n="155">Je vais en régaler ta maîtresse, et mon maître</l>
 	<l n="156">Qui tous deux ignorant ce que tu vaux peut-être,</l>
-	<l n="157" part="I">Pourraient...</l><!-- @syll="2"-->
+	<l n="157" part="I">Pourraient...</l><!--@syll="2"-->
 </sp>
 <sp who="#marton">
                         <speaker>MARTON, d'un air indifférent.</speaker>
-	<l n="157" part="F">De tes discours je fais très peu de cas,</l><!-- @syll="6"-->
+	<l n="157" part="F">De tes discours je fais très peu de cas,</l><!--@syll="6"-->
 	<l n="158">On te connaît menteur, on ne te croira pas.</l>
 </sp><!--@stage=""-->
 <sp who="#jean">
@@ -576,10 +576,10 @@
 <sp who="#angelique">
                         <speaker>ANGÉLIQUE, lit.</speaker>
 <p n="1">
-	<s n="1">« Charmante Angélique : c'est aujourd'hui le plus beau jour de ma vie ; Marton m'a fait la confidence que vous m'aimiez : daignez me le confirmer de votre belle bouche, si vous voulez mettre le comble à mon bonheur. Je n'attends que cet heureux moment, pour vous offrir ma fortune et mon coeur : croyez que tant que je vivrai, je serai le plus reconnaissant, et le plus tendre des époux. </s>
+	<s n="1 ">« Charmante Angélique : c'est aujourd'hui le plus beau jour de ma vie ; Marton m'a fait la confidence que vous m'aimiez : daignez me le confirmer de votre belle bouche, si vous voulez mettre le comble à mon bonheur. Je n'attends que cet heureux moment, pour vous offrir ma fortune et mon coeur : croyez que tant que je vivrai, je serai le plus reconnaissant, et le plus tendre des époux. </s>
 </p>
 <p n="2">
-	<s n="1">ARISTE.</s>
+	<s n="1 ">ARISTE.</s>
 </p>
 <stage type="cry">Elle pleure.</stage>
 </sp><!--@stage="read"-->
@@ -625,11 +625,11 @@
 </sp><!--@stage="serious"-->
 <sp who="#angelique">
                         <speaker>ANGÉLIQUE, l'interrompant.</speaker>
-	<l n="199" part="I">Écoutez-moi, Valère...</l><!-- @syll="6"-->
+	<l n="199" part="I">Écoutez-moi, Valère...</l><!--@syll="6"-->
 </sp><!--@stage="interrupt"-->
 <sp who="#valere">
                         <speaker>VALÈRE, poursuivant toujours.</speaker>
-	<l n="199" part="F">En vain par votre adresse,</l><!-- @syll="6"-->
+	<l n="199" part="F">En vain par votre adresse,</l><!--@syll="6"-->
 	<l n="200">Chercheriez vous encore à tromper ma tendresse !</l>
 	<l n="201">Que ne disiez-vous, sans user de détour,</l>
 	<l n="202">Qu'Ariste fut toujours l'objet de votre amour ?</l>
@@ -761,33 +761,33 @@
 </sp><!--@stage="toward"-->
 <sp who="#jean">
                         <speaker>JEAN, d'un ton décidé, mettant son chapeau sur l'oreille et passant fièrement devant Valère.</speaker>
-	<l n="276" part="I">Oui, Monsieur.</l><!-- @syll="3"-->
+	<l n="276" part="I">Oui, Monsieur.</l><!--@syll="3"-->
 </sp><!--@stage="serious/dress/proud"-->
 <sp who="#valere">
                         <speaker>VALÈRE, à Jean. </speaker>
-	<l n="276" part="M">Taisez vous.</l><!-- @syll="3"-->
+	<l n="276" part="M">Taisez vous.</l><!--@syll="3"-->
 <stage type="aparte">À part.</stage>
-	<l n="276" part="F">Son silence me pique,</l><!-- @syll="6"-->
+	<l n="276" part="F">Son silence me pique,</l><!--@syll="6"-->
 <stage type="loud">Haut.</stage>
 	<l n="277">On assure qu'enfin l'on remplit votre espoir ;</l>
 	<l n="278">Et que tout se dispose aux noces pour ce soir ?</l>
 </sp><!--@stage="toward"-->
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="279" part="I">Oui, Monsieur.</l><!-- @syll="3"-->
+	<l n="279" part="I">Oui, Monsieur.</l><!--@syll="3"-->
 </sp>
 <sp who="#valere">
                         <speaker>VALÈRE.</speaker>
-	<l n="279" part="F">Je ne [sais], si vous savez encore,</l><!-- @syll="9"-->
+	<l n="279" part="F">Je ne [sais], si vous savez encore,</l><!--@syll="9"-->
 	<l n="280">Que vous voyez en mot le rival qui l'adore ?</l>
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="281" part="I">Oui, Monsieur.</l><!-- @syll="3"-->
+	<l n="281" part="I">Oui, Monsieur.</l><!--@syll="3"-->
 </sp>
 <sp who="#valere">
                         <speaker>VALÈRE.</speaker>
-	<l n="281" part="F">Que de plus, je ne souffrirai pas</l><!-- @syll="9"-->
+	<l n="281" part="F">Que de plus, je ne souffrirai pas</l><!--@syll="9"-->
 	<l n="282">Que tout autre que moi, possède tant d'appas ?</l>
 	<l n="283">Mais si le destin veut qu'elle me soit ravie,</l>
 <stage type="costume/threat">Il met son chapeau, et tire son épée : Ariste en fait autant de son côté.</stage>
@@ -874,12 +874,12 @@
 	<l n="328">Tout notre temps se passe à béer aux corneilles,</l>
 	<l n="329">Mais commençons. D'abord nous avons deux châteaux.</l>
 	<l n="330">Dont l'un est dans la Guyenne, à deux pas de Bordeaux,</l>
-	<l n="331" part="I">L'autre...</l><!-- @syll="2"-->
+	<l n="331" part="I">L'autre...</l><!--@syll="2"-->
 <stage type="interrupt/estonish">Jean paraît étonné de ce qu'on l'interrompe.</stage>
 </sp>
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE.</speaker>
-	<l n="331" part="F">Puisqu'il vous plaît d'entrer dans ma famille ;</l><!-- @syll="10"-->
+	<l n="331" part="F">Puisqu'il vous plaît d'entrer dans ma famille ;</l><!--@syll="10"-->
 	<l n="332">Quel avantage ici faites-vous à ma fille ?</l>
 </sp>
 <sp who="#jean">
@@ -915,12 +915,12 @@
                         <speaker>MADAME ARGANTE, avec vivacité.</speaker>
 	<l n="352">Dois-je croire, Monsieur, ce que je viens d'entendre ;</l>
 	<l n="353">Et faut-il me fier à ce qu'il me dit là ?...</l>
-	<l n="354" part="I">Vous ne répondez rien !... </l><!-- @syll="6"-->
+	<l n="354" part="I">Vous ne répondez rien !... </l><!--@syll="6"-->
 <stage type="closer/write">Ariste, pour toute réponse, s'avance d'une table qui doit être au fond du théâtre, et se met à écrire.</stage>
 </sp>
 <sp who="#jean">
                         <speaker>JEAN, rentrant tout essoufflé, avec le porte-feuille.</speaker>
-	<l n="354" part="F">Madame, le voilà.</l><!-- @syll="6"-->
+	<l n="354" part="F">Madame, le voilà.</l><!--@syll="6"-->
 <stage type="aparte/toward">À part, à Madame Argante.</stage>
 	<l n="355">J'ai, ma foi, très bien fait de revenir bien vite,</l>
 	<l n="356">Car vous auriez parlé plus d'une heure de suite,</l>
@@ -942,15 +942,15 @@
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE, lit haut.</speaker>
 <p n="1">
-	<s n="1">« Madame, mon valet est un faquin qui se mêle toujours de ce gui ne le regarde point, et qui a la rage de parler à tout propos... »</s>
+	<s n="1 ">« Madame, mon valet est un faquin qui se mêle toujours de ce gui ne le regarde point, et qui a la rage de parler à tout propos... »</s>
 </p>
 <stage type="WAVE">Jean fait un signe de remerciement à son maître.</stage>
 <p n="2">
-	<s n="1">« Je lui aurais déjà donné son congé, s'il n'avait le rare talent de deviner mes pensées... »</s>
+	<s n="1 ">« Je lui aurais déjà donné son congé, s'il n'avait le rare talent de deviner mes pensées... »</s>
 </p>
 <stage type="applause">Jean s'applaudit lui-même.</stage>
 <p n="3">
-	<s n="1">« Je vous confirme donc tout ce qu'il vous a dit ici, et j'ajoute seulement, que je vous prie de garder le porte-feuille, c'est le présent de noce que je destine à Mademoiselle Angélique. »</s>
+	<s n="1 ">« Je vous confirme donc tout ce qu'il vous a dit ici, et j'ajoute seulement, que je vous prie de garder le porte-feuille, c'est le présent de noce que je destine à Mademoiselle Angélique. »</s>
 </p>	
 </sp><!--@stage="read/loud"-->
 <sp who="#ariste">
@@ -966,9 +966,9 @@
 <stage type="quiet">Posément.</stage>
 	<l n="375">Mais si malgré l'appât d'une pareille somme, </l>
 	<l n="376">Elle s'obstine enfin à refuser cet homme,</l>
-	<l n="377" part="I">Alors...</l><!-- @syll="2"-->
+	<l n="377" part="I">Alors...</l><!--@syll="2"-->
 <stage type="watch">Apercevant Jean.</stage>
-	<l n="377" part="F">Que fais-tu là planté comme un piquet ?</l><!-- @syll="10"-->
+	<l n="377" part="F">Que fais-tu là planté comme un piquet ?</l><!--@syll="10"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
@@ -977,11 +977,11 @@
 </sp>
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE.</speaker>
-	<l n="380" part="I">Non, tu peux t'en aller.</l><!-- @syll="6"-->
+	<l n="380" part="I">Non, tu peux t'en aller.</l><!--@syll="6"-->
 </sp>
 <sp who="#jean">
                         <speaker>JEAN.</speaker>
-	<l n="380" part="F">Suffit, je me retire.</l><!-- @syll="6"-->
+	<l n="380" part="F">Suffit, je me retire.</l><!--@syll="6"-->
 </sp>
 </div>
 <div type="scene" n="11">
@@ -1037,11 +1037,11 @@
 </sp>
 <sp who="#monsieur-argante">
                         <speaker>MONSIEUR ARGANTE.</speaker>
-	<l n="415" part="I">Mais ma femme, écoutez ?...</l><!-- @syll="6"-->
+	<l n="415" part="I">Mais ma femme, écoutez ?...</l><!--@syll="6"-->
 </sp>
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE.</speaker>
-	<l n="415" part="F">Je ne veux rien entendre.</l><!-- @syll="6"-->
+	<l n="415" part="F">Je ne veux rien entendre.</l><!--@syll="6"-->
 	<l n="416">Marier Angélique, et me donner un gendre,</l>
 	<l n="417">Sans me dire un seul mot, sans que j'en sache rien !</l>
 </sp>
@@ -1067,35 +1067,35 @@
                         <speaker>MADAME ARGANTE.</speaker>
 	<l n="424">Peut-on circonvenir, sans être ridicule,</l>
 	<l n="425">Que Valère ne compte un grand nombre d'aïeux</l>
-	<l n="426" part="I">De noble extraction.</l><!-- @syll="6"-->
+	<l n="426" part="I">De noble extraction.</l><!--@syll="6"-->
 </sp>
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE.</speaker>
-	<l n="426" part="F">Soit, il est noble... et gueux.</l><!-- @syll="6"-->
+	<l n="426" part="F">Soit, il est noble... et gueux.</l><!--@syll="6"-->
 </sp>
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE.</speaker>
 	<l n="427">Sans doute vous savez qu'il adore Angélique,</l>
-	<l n="428" part="I">Et qu'ils s'aiment tous deux ?</l><!-- @syll="6"-->
+	<l n="428" part="I">Et qu'ils s'aiment tous deux ?</l><!--@syll="6"-->
 </sp>
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE.</speaker>
-	<l n="428" part="F">C'est là ce qui me pique.</l><!-- @syll="6"-->
+	<l n="428" part="F">C'est là ce qui me pique.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur-argante">
                         <speaker>MONSIEUR ARGANTE.</speaker>
 	<l n="429">Tout le monde convient qu'il est homme de bien.</l>
-	<l n="430" part="I">Qu'il a beaucoup d'esprit ?</l><!-- @syll="6"-->
+	<l n="430" part="I">Qu'il a beaucoup d'esprit ?</l><!--@syll="6"-->
 </sp>
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE.</speaker>
-	<l n="430" part="F">D'accord, mais il n'a rien ;</l><!-- @syll="6"-->
+	<l n="430" part="F">D'accord, mais il n'a rien ;</l><!--@syll="6"-->
 	<l n="431">Et vous n'ignorez pas qu'on ne peut dans la vie</l>
-	<l n="432" part="I">Rien faire sans argent ?...</l><!-- @syll="6"-->
+	<l n="432" part="I">Rien faire sans argent ?...</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur-argante">
                         <speaker>MONSIEUR ARGANTE.</speaker>
-	<l n="432" part="F">Écoutez, je vous prie.</l><!-- @syll="6"-->
+	<l n="432" part="F">Écoutez, je vous prie.</l><!--@syll="6"-->
 	<l n="433">N'est-il pas vrai qu'Ariste est de méchante humeur,</l>
 	<l n="434">Qu'il ne dit pas un mot, qu'il est sombre et rêveur ?</l>
 </sp>
@@ -1128,9 +1128,9 @@
                         <speaker>MADAME ARGANTE, d'un ton railleur.</speaker>
 	<l n="454">L'on vous fabriquera des maris tout exprès.</l>
 <stage type="aparte">À part.</stage>
-	<l n="455" part="I">J'enrage. </l><!-- @syll="2"-->
+	<l n="455" part="I">J'enrage. </l><!--@syll="2"-->
 <stage type="loud">Haut.</stage>
-	<l n="455" part="F">Savez-vous, Monsieur le Philosophe,</l><!-- @syll="10"-->
+	<l n="455" part="F">Savez-vous, Monsieur le Philosophe,</l><!--@syll="10"-->
 	<l n="456">Que votre sot discours depuis longtemps m'échauffe ;</l>
 	<l n="457">Et que je saurai bien vous faire filer doux ?</l>
 </sp><!--@stage="ironic"-->
@@ -1151,11 +1151,11 @@
 </sp>
 <sp who="#monsieur-argante">
                         <speaker>MONSIEUR ARGANTE, d'un ton piqué.</speaker>
-	<l n="467" part="I">Cela ne sera pas.</l><!-- @syll="6"-->
+	<l n="467" part="I">Cela ne sera pas.</l><!--@syll="6"-->
 </sp><!--@stage="offended"-->
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE, le contrefaisant.</speaker>
-	<l n="467" part="F">Cela sera, vous dis-je ?</l><!-- @syll="6"-->
+	<l n="467" part="F">Cela sera, vous dis-je ?</l><!--@syll="6"-->
 </sp><!--@stage="imitate"-->
 <sp who="#monsieur-argante">
                         <speaker>MONSIEUR ARGANTE.</speaker>
@@ -1169,9 +1169,9 @@
 <sp who="#monsieur-argante">
                         <speaker>MONSIEUR ARGANTE.</speaker>
 <stage type="aparte">À part.</stage>
-	<l n="471" part="I">Point de faiblesse ; allons. </l><!-- @syll="6"-->
+	<l n="471" part="I">Point de faiblesse ; allons. </l><!--@syll="6"-->
 <stage type="loud">Haut.</stage>
-	<l n="471" part="F">Pour vous, Madame Argante ;</l><!-- @syll="6"-->
+	<l n="471" part="F">Pour vous, Madame Argante ;</l><!--@syll="6"-->
 	<l n="472">Vous n'êtes qu'une folle, et qu'une extravagante, </l>
 	<l n="473">Qui ne méritez plus qu'on daigne vous aimer.</l>
 </sp>
@@ -1229,11 +1229,11 @@
 <sp who="#marton">
                         <speaker>MARTON, à part.</speaker>
 	<l n="505">On ne peut pas agir, je crois, plus finement,</l>
-	<l n="506" part="I">Pour venir à son but.</l><!-- @syll="6"-->
+	<l n="506" part="I">Pour venir à son but.</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 <sp who="#madame-argante">
                         <speaker>MADAME ARGANTE, à Valère.</speaker>
-	<l n="506" part="F">Voyons ce testament.</l><!-- @syll="6"-->
+	<l n="506" part="F">Voyons ce testament.</l><!--@syll="6"-->
 <stage type="read">Après avoir lu.</stage>
 	<l n="507">Puisque vous êtes riche, allons, sans plus attendre ;</l>
 	<l n="508">Je vous donne ma fille, et vous nomme mon gendre.</l>

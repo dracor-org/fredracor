@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1906">1906</date>
+                        <date>1906</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -48,9 +48,6 @@
                     </person>
                     <person xml:id="cendrillon" sex="FEMALE">
                         <persName>Cendrillon</persName>
-                    </person>
-                    <person xml:id="frisette" sex="FEMALE">
-                        <persName>Frisette</persName>
                     </person>
                     <person xml:id="le-portier" sex="MALE">
                         <persName>Le portier</persName>
@@ -103,7 +100,7 @@
 		<docDate when="1906">1906. Tous droits réservés.</docDate>
 		<docAuthor>Par M. CLOVIS HUGUES</docAuthor>
 		<div type="docImprint">
-			<editor>PARIS LIBRAIRIE CH. DELAGRAVE.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor>PARIS LIBRAIRIE CH. DELAGRAVE.</editor>-->
 			<div type="printer">
                     <p>SOCIÉTÉ ANONYME D'IMPRIMERIE DE VILLEFRANCHE DE ROUERGUE, Jules Bardoux, Directeur.</p>
                 </div><!--@id="SAIVDR"-->
@@ -111,27 +108,27 @@
 	<castList>
 		<head>PERSONNAGES.</head>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#cendrillon">CENDRILLON</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#cendrillon">CENDRILLON</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#frisette">FRISETTE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#frisette">FRISETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#magali">MAGALI</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#magali">MAGALI</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#la-fee-urgele">LA FÉE URGÈLE</role><!--@sex="2" @type="H" @statut="fée" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#la-fee-urgele">LA FÉE URGÈLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="fée"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#le-prince-charmant">LE PRINCE CHARMANT</role><!--@sex="1" @type="H" @statut="prince" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#le-prince-charmant">LE PRINCE CHARMANT</role><!--@sex="1"--><!--@type="H"--><!--@statut="prince"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#le-portier">LE PORTIER</role><!--@sex="1" @type="H" @statut="portier" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#le-portier">LE PORTIER</role><!--@sex="1"--><!--@type="H"--><!--@statut="portier"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#le-crieur">LE CRIEUR</role><!--@sex="1" @type="H" @statut="domestique" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#le-crieur">LE CRIEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="domestique"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#dames-d-honneur">DAMES D'HONNEUR</role><!--@sex="2" @type="H" @statut="aristocrate" @age="A"-->.</castItem> 
+                    <role statut_amoureux="néant" corresp="#dames-d-honneur">DAMES D'HONNEUR</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"-->.</castItem> 
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#gardes">GARDES</role><!--@sex="1" @type="H" @statut="garde" @age="A"-->.</castItem> 
+                    <role statut_amoureux="néant" corresp="#gardes">GARDES</role><!--@sex="1"--><!--@type="H"--><!--@statut="garde"--><!--@age="A"-->.</castItem> 
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#pages">PAGES</role><!--@sex="1" @type="H" @statut="page" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#pages">PAGES</role><!--@sex="1"--><!--@type="H"--><!--@statut="page"--><!--@age="A"-->.</castItem>
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Lieu féérique" country="Pays féérique" periode="Temps féériques" link="">La scène se passe dans le pays des fées.</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Lieu féérique" country="Pays féérique" periode="Temps féériques" link="">La scène se passe dans le pays des fées.</set>-->
 	<note>Extrait de "Les Joujoux du Théâtre, comédie enfantine, illustration de Louis Bailly", 1906. pp 13-67</note>
 </front>
 <body>
@@ -168,11 +165,11 @@
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="8" part="I">Dis-moi, remarque-t-on mes dentelles ?</l><!-- @syll="10"-->
+	<l n="8" part="I">Dis-moi, remarque-t-on mes dentelles ?</l><!--@syll="10"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="8" part="F">Coquette !</l><!-- @syll="2"-->
+	<l n="8" part="F">Coquette !</l><!--@syll="2"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
@@ -185,15 +182,15 @@
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="12" part="I">Comment donc ?</l><!-- @syll="3"-->
+	<l n="12" part="I">Comment donc ?</l><!--@syll="3"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="12" part="F">Quel bonheur !</l><!-- @syll="3"-->
+	<l n="12" part="F">Quel bonheur !</l><!--@syll="3"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="12" part="F">C'est ainsi que je t'aime.</l><!-- @syll="6"-->
+	<l n="12" part="F">C'est ainsi que je t'aime.</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
@@ -209,11 +206,11 @@
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="16" part="I">Quel bonheur !</l><!-- @syll="3"-->
+	<l n="16" part="I">Quel bonheur !</l><!--@syll="3"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="16" part="F">Ton sourire est charmant de la sorte.</l><!-- @syll="9"-->
+	<l n="16" part="F">Ton sourire est charmant de la sorte.</l><!--@syll="9"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
@@ -233,11 +230,11 @@
 </sp><!--@stage="aparte"-->
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="21" part="I">Sa robe est ridicule.</l><!-- @syll="6"-->
+	<l n="21" part="I">Sa robe est ridicule.</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="21" part="F">On la coiffe très mal.</l><!-- @syll="6"-->
+	<l n="21" part="F">On la coiffe très mal.</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
@@ -253,33 +250,33 @@
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="25" part="I">Que mâchonnes-tu là ?</l><!-- @syll="6"-->
+	<l n="25" part="I">Que mâchonnes-tu là ?</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="25" part="F">Je ne mâchonne rien.</l><!-- @syll="6"-->
-	<l n="26" part="I">Je disais simplement : « Qu'elle est belle ! »</l><!-- @syll="10"-->
+	<l n="25" part="F">Je ne mâchonne rien.</l><!--@syll="6"-->
+	<l n="26" part="I">Je disais simplement : « Qu'elle est belle ! »</l><!--@syll="10"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="26" part="F">Fort bien</l><!-- @syll="2"-->
+	<l n="26" part="F">Fort bien</l><!--@syll="2"-->
 	<l n="27">Je le disais aussi, ma chère, pour ton compte.</l>
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="28" part="I">C'est d'un bon coeur.</l><!-- @syll="4"-->
+	<l n="28" part="I">C'est d'un bon coeur.</l><!--@syll="4"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="28" part="M">Tu crois ?</l><!-- @syll="2"-->
+	<l n="28" part="M">Tu crois ?</l><!--@syll="2"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="28" part="M">Si je crois ?</l><!-- @syll="3"-->
+	<l n="28" part="M">Si je crois ?</l><!--@syll="3"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="28" part="F">Quelqu'un monte.</l><!-- @syll="3"-->
+	<l n="28" part="F">Quelqu'un monte.</l><!--@syll="3"-->
 </sp>
 </div>
 <div type="scene" n="2">
@@ -290,11 +287,11 @@
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="30" part="I">Le comble de l'audace !</l><!-- @syll="6"-->
+	<l n="30" part="I">Le comble de l'audace !</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="30" part="F">Un toupet réussi !</l><!-- @syll="6"-->
+	<l n="30" part="F">Un toupet réussi !</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
@@ -314,19 +311,19 @@
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="35" part="I">Tu n'es qu'un ver de terre, et sans nous...</l><!-- @syll="9"-->
+	<l n="35" part="I">Tu n'es qu'un ver de terre, et sans nous...</l><!--@syll="9"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="35" part="F">Qui t'appelle ?</l><!-- @syll="3"-->
+	<l n="35" part="F">Qui t'appelle ?</l><!--@syll="3"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON, hésitant.</speaker>
-	<l n="36" part="I">Mes bonnes soeurs...</l><!-- @syll="4"-->
+	<l n="36" part="I">Mes bonnes soeurs...</l><!--@syll="4"-->
 </sp><!--@stage="hesitate"-->
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="36" part="F">Où sont vos soeurs, mademoiselle ?</l><!-- @syll="8"-->
+	<l n="36" part="F">Où sont vos soeurs, mademoiselle ?</l><!--@syll="8"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
@@ -349,11 +346,11 @@
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
 	<l n="43">Vous me haïssiez moins quand j'étais plus petite.</l>
-	<l n="44" part="I">Je suis pourtant toujours la même.</l><!-- @syll="9"-->
+	<l n="44" part="I">Je suis pourtant toujours la même.</l><!--@syll="9"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="44" part="F">Une hypocrite !</l><!-- @syll="3"-->
+	<l n="44" part="F">Une hypocrite !</l><!--@syll="3"-->
 	</sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
@@ -367,11 +364,11 @@
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="52" part="I">Agneau sacrifié !</l><!-- @syll="6"-->
+	<l n="52" part="I">Agneau sacrifié !</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="52" part="F">Malheureuse colombe !</l><!-- @syll="6"-->
+	<l n="52" part="F">Malheureuse colombe !</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
@@ -393,11 +390,11 @@
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="65" part="I">Tu parles comme un livre.</l><!-- @syll="6"-->
+	<l n="65" part="I">Tu parles comme un livre.</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="65" part="F">On t'a fait la leçon.</l><!-- @syll="6"-->
+	<l n="65" part="F">On t'a fait la leçon.</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
@@ -405,42 +402,42 @@
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="67" part="I">Un rossignol, ma foi !</l><!-- @syll="6"-->
+	<l n="67" part="I">Un rossignol, ma foi !</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="67" part="F">Nous la mettrons en cage.</l><!-- @syll="6"-->
+	<l n="67" part="F">Nous la mettrons en cage.</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="68" part="I">En attendant, retourne en bas.</l><!-- @syll="8"-->
+	<l n="68" part="I">En attendant, retourne en bas.</l><!--@syll="8"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="68" part="F">À ton ménage !</l><!-- @syll="4"-->
+	<l n="68" part="F">À ton ménage !</l><!--@syll="4"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
 	<l n="69">J'y retourne, et pourtant quel aimable réveil !</l>
 	<l n="70">Comme mon triste coeur s'emplirait de soleil,</l>
-	<l n="71" part="I">Si vous vouliez...</l><!-- @syll="4"-->
+	<l n="71" part="I">Si vous vouliez...</l><!--@syll="4"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="71" part="M">Quoi donc ?</l><!-- @syll="2"-->
+	<l n="71" part="M">Quoi donc ?</l><!--@syll="2"-->
 	</sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="71" part="F">À quoi bon vous le dire ?</l><!-- @syll="6"-->
+	<l n="71" part="F">À quoi bon vous le dire ?</l><!--@syll="6"-->
 	<l n="72">Je crains de vous fâcher ou de vous faire rire.</l>
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="73" part="I">Parle.</l><!-- @syll="1"-->
+	<l n="73" part="I">Parle.</l><!--@syll="1"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="73" part="F">Je voudrais bien m'en aller avec vous</l><!-- @syll="11"-->
+	<l n="73" part="F">Je voudrais bien m'en aller avec vous</l><!--@syll="11"-->
 	<l n="74">À la fête du prince. Il doit être si doux</l>
 	<l n="75">De regarder, parmi les splendides toilettes,</l>
 	<l n="76">Les hauts lambris dorés flamboyer sur les têtes !</l>
@@ -460,11 +457,11 @@
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="81" part="I">Mais elle divague !</l><!-- @syll="6"-->
+	<l n="81" part="I">Mais elle divague !</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="81" part="F">Elle est folle, en vérité !</l><!-- @syll="6"-->
+	<l n="81" part="F">Elle est folle, en vérité !</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
@@ -476,11 +473,11 @@
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="84" part="I">Aux cendres, Cendrillon !</l><!-- @syll="6"-->
+	<l n="84" part="I">Aux cendres, Cendrillon !</l><!--@syll="6"-->
 </sp>
 <sp who="#magali #frisette">
                         <speaker>TOUTES DEUX, en sortant.</speaker>
-	<l n="84" part="F">Adieu, belle princesse !</l><!-- @syll="6"-->
+	<l n="84" part="F">Adieu, belle princesse !</l><!--@syll="6"-->
 </sp><!--@stage="exit"-->
 </div>
 <div type="scene" n="3">
@@ -491,7 +488,8 @@
 	<l n="86">Sans se douter, hélas ! Du mal qu'elles me font.</l>
 <note type="C">Cet air est de Charles Gounod.</note>
 <stage type="title">AIR : Quand tu chantes, bercée.</stage>
-<poem type="serenade">
+<!--<poem>-->
+                        <ab type="serenade">
 <lg n="1">
 	<l n="87">Loin du soleil qui brille</l>
 	<l n="88">Je sens mon front ployer.</l>
@@ -531,7 +529,7 @@
 	<l n="116">Au retour des vents sourds : - Pleurez, pauvrette,</l>
 	<l n="117">Pleurez toujours !</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 <div type="scene" n="4">
@@ -546,15 +544,15 @@
 </sp><!--@stage="low"-->
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="120" part="I">C'est trop fort.</l><!-- @syll="3"-->
+	<l n="120" part="I">C'est trop fort.</l><!--@syll="3"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="120" part="M">J'entrerai.</l><!-- @syll="3"-->
+	<l n="120" part="M">J'entrerai.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="120" part="F">Je vais te châtier.</l><!-- @syll="6"-->
+	<l n="120" part="F">Je vais te châtier.</l><!--@syll="6"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
@@ -562,49 +560,49 @@
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="122" part="I">Je ne suis pas portier, je suis concierge.</l><!-- @syll="10"-->
+	<l n="122" part="I">Je ne suis pas portier, je suis concierge.</l><!--@syll="10"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="122" part="F">Diantre !</l><!-- @syll="2"-->
+	<l n="122" part="F">Diantre !</l><!--@syll="2"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
 	<l n="123">Et, dusses-tu céans me marcher sur le ventre,</l>
-	<l n="124" part="I">Je ne permettrai pas...</l><!-- @syll="6"-->
+	<l n="124" part="I">Je ne permettrai pas...</l><!--@syll="6"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="124" part="F">Hé ! Que se passe-t-il ?</l><!-- @syll="6"-->
+	<l n="124" part="F">Hé ! Que se passe-t-il ?</l><!--@syll="6"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER, entrant et refermant la porte.</speaker>
 	<l n="125">C'est une vieille, louche, et maigre comme un fil,</l>
-	<l n="126" part="I">Qui s'obstine à monter jusqu'ici.</l><!-- @syll="9"-->
+	<l n="126" part="I">Qui s'obstine à monter jusqu'ici.</l><!--@syll="9"-->
 </sp><!--@stage="entrance/close"-->
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="126" part="F">Je l'approuve.</l><!-- @syll="3"-->
+	<l n="126" part="F">Je l'approuve.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="127" part="I">Mais, c'est une diablesse !</l><!-- @syll="6"-->
+	<l n="127" part="I">Mais, c'est une diablesse !</l><!--@syll="6"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="127" part="M">À merveille !</l><!-- @syll="3"-->
+	<l n="127" part="M">À merveille !</l><!--@syll="3"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="127" part="F">Une louve !</l><!-- @syll="3"-->
+	<l n="127" part="F">Une louve !</l><!--@syll="3"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="128" part="I">Encore mieux !</l><!-- @syll="4"-->
+	<l n="128" part="I">Encore mieux !</l><!--@syll="4"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="128" part="F">Je suis sans asile et sans pain.</l><!-- @syll="8"-->
+	<l n="128" part="F">Je suis sans asile et sans pain.</l><!--@syll="8"-->
 	<l n="129">J'ai quatre-vingt-dix ans : il fait froid, et j'ai faim</l>
 </sp>
 <sp who="#le-portier">
@@ -613,11 +611,11 @@
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="131" part="I">Ouvrez-lui.</l><!-- @syll="3"-->
+	<l n="131" part="I">Ouvrez-lui.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="131" part="F">Sotte fille à damner un concierge !</l><!-- @syll="9"-->
+	<l n="131" part="F">Sotte fille à damner un concierge !</l><!--@syll="9"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
@@ -625,21 +623,22 @@
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="133" part="I">Nous n'avons pas de feu.</l><!-- @syll="6"-->
+	<l n="133" part="I">Nous n'avons pas de feu.</l><!--@syll="6"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="133" part="M">Je grelotte.</l><!-- @syll="3"-->
+	<l n="133" part="M">Je grelotte.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="133" part="F">Elle ment.</l><!-- @syll="3"-->
+	<l n="133" part="F">Elle ment.</l><!--@syll="3"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE, toujours derrière la porte.</speaker>
 <note type="C">Gustave Nadaud (1820-1893)</note>
 <stage type="title">AIR : C'est Bonhomme, de Nadaud.</stage>
-<poem type="chanson">
+<!--<poem>-->
+                        <ab type="chanson">
 <lg n="1">
 	<l n="134">Je suis la reine des fées,</l>
 	<l n="135">Celle qui sourit toujours.</l>
@@ -705,26 +704,26 @@
 	<l n="180">Ma baguette est mon trésor :</l>
 	<l n="181">Fée Urgèle vit encor !</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 	<l n="182">Et maintenant dis-moi, portier, si je me venge,</l>
 	<l n="183">En quelle bête il va falloir que je te change.</l>
 </sp><!--@stage="location"-->
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="184" part="I">Ah ! Madame la fée, ayez pitié.</l><!-- @syll="10"-->
+	<l n="184" part="I">Ah ! Madame la fée, ayez pitié.</l><!--@syll="10"-->
 	</sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="184" part="F">Crois-tu</l><!-- @syll="2"-->
+	<l n="184" part="F">Crois-tu</l><!--@syll="2"-->
 	<l n="185">Que si je te disais : « Sois un pigeon pattu !... »</l>
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="186" part="I">Épargnez-moi.</l><!-- @syll="4"-->
+	<l n="186" part="I">Épargnez-moi.</l><!--@syll="4"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="186" part="F">Je puis, en baissant ma baguette,</l><!-- @syll="8"-->
+	<l n="186" part="F">Je puis, en baissant ma baguette,</l><!--@syll="8"-->
 	<l n="187">D'une laine touffue habiller ton squelette,</l>
 	<l n="188">T'allonger le visage en museau, te planter</l>
 	<l n="189">Deux cornes sur le front ou te précipiter,</l>
@@ -732,35 +731,35 @@
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER, tombant à genoux.</speaker>
-	<l n="191" part="I">Bonne dame !</l><!-- @syll="4"-->
+	<l n="191" part="I">Bonne dame !</l><!--@syll="4"-->
 </sp><!--@stage="kneel"-->
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="191" part="F">Je puis te faire, en deux secondes,</l><!-- @syll="8"-->
-	<l n="192" part="I">Des griffes de vautour.</l><!-- @syll="6"-->
+	<l n="191" part="F">Je puis te faire, en deux secondes,</l><!--@syll="8"-->
+	<l n="192" part="I">Des griffes de vautour.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="192" part="M">Bonne dame !</l><!-- @syll="4"-->
+	<l n="192" part="M">Bonne dame !</l><!--@syll="4"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="192" part="F">Je puis</l><!-- @syll="6"-->
+	<l n="192" part="F">Je puis</l><!--@syll="6"-->
 	<l n="193">T'abreuver, vieux baudet, aux margelles des puits,</l>
 	<l n="194">Rendre ton nez crochu comme un bec de perruche.</l>
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="195" part="I">Bonne dame !</l><!-- @syll="4"-->
+	<l n="195" part="I">Bonne dame !</l><!--@syll="4"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="195" part="F">Je puis coudre une aile d'autruche</l><!-- @syll="8"-->
-	<l n="196" part="I">À ton épaule gauche.</l><!-- @syll="6"-->
+	<l n="195" part="F">Je puis coudre une aile d'autruche</l><!--@syll="8"-->
+	<l n="196" part="I">À ton épaule gauche.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="196" part="F">Ah ! C'en est fait de moi !</l><!-- @syll="6"-->
+	<l n="196" part="F">Ah ! C'en est fait de moi !</l><!--@syll="6"-->
 	<l n="197">Je rends l'âme. Pitié ! Mes dents claquent d'effroi.</l>
 </sp>
 <sp who="#la-fee-urgele">
@@ -769,41 +768,41 @@
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="199" part="I">Je suis mort.</l><!-- @syll="3"-->
+	<l n="199" part="I">Je suis mort.</l><!--@syll="3"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="199" part="F">Bonne fée, accordez-lui sa grâce.</l><!-- @syll="9"-->
+	<l n="199" part="F">Bonne fée, accordez-lui sa grâce.</l><!--@syll="9"-->
 	<l n="200">Il n'est pas si méchant qu'il s'en est donné l'air.</l>
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="201" part="I">C'est juste.</l><!-- @syll="2"-->
+	<l n="201" part="I">C'est juste.</l><!--@syll="2"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="201" part="M">Un peu brutal, mais pas méchant.</l><!-- @syll="8"-->
+	<l n="201" part="M">Un peu brutal, mais pas méchant.</l><!--@syll="8"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="201" part="F">C'est clair.</l><!-- @syll="2"-->
+	<l n="201" part="F">C'est clair.</l><!--@syll="2"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
 	<l n="202">Il tire si souvent le cordon qu'il enrage.</l>
-	<l n="203" part="I">Mettons-nous à sa place.</l><!-- @syll="6"-->
+	<l n="203" part="I">Mettons-nous à sa place.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="203" part="F">Admirable langage !</l><!-- @syll="6"-->
+	<l n="203" part="F">Admirable langage !</l><!--@syll="6"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="204" part="I">Pardonnez.</l><!-- @syll="3"-->
+	<l n="204" part="I">Pardonnez.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="204" part="F">C'est la faute à ce chien de métier.</l><!-- @syll="6"-->
+	<l n="204" part="F">C'est la faute à ce chien de métier.</l><!--@syll="6"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
@@ -817,16 +816,16 @@
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="212" part="I">Oh ! Je m'en souviendrai.</l><!-- @syll="6"-->
+	<l n="212" part="I">Oh ! Je m'en souviendrai.</l><!--@syll="6"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="212" part="F">Laisse-moi seule ici</l><!-- @syll="6"-->
-	<l n="213" part="I">Avec ma Cendrillon.</l><!-- @syll="6"-->
+	<l n="212" part="F">Laisse-moi seule ici</l><!--@syll="6"-->
+	<l n="213" part="I">Avec ma Cendrillon.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER, se refilant.</speaker>
-	<l n="213" part="F">Madame, grand merci !</l><!-- @syll="6"-->
+	<l n="213" part="F">Madame, grand merci !</l><!--@syll="6"-->
 </sp><!--@stage="away"-->
 </div>
 <div type="scene" n="5">
@@ -892,11 +891,11 @@
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE, l'entraÎnant devant une glace.</speaker>
-	<l n="254" part="I">Comment vous trouvez-vous, ma princesse ?</l><!-- @syll="10"-->
+	<l n="254" part="I">Comment vous trouvez-vous, ma princesse ?</l><!--@syll="10"-->
 </sp><!--@stage="pull"-->
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="254" part="F">Quel songe !</l><!-- @syll="2"-->
+	<l n="254" part="F">Quel songe !</l><!--@syll="2"-->
 	<l n="255">Tout ceci n'est, hélas ! qu'un ravissant mensonge.</l>
 	<l n="256">Comme je tomberai de toute ma hauteur,</l>
 	<l n="257">Quand je m'éveillerai de ce rêve enchanteur !</l>
@@ -906,36 +905,36 @@
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
 	<l n="260">Ne crains rien, mon enfant, car ce n'est point un rêve.</l>
-	<l n="261" part="I">Que me demandes-tu de plus ?</l><!-- @syll="8"-->
+	<l n="261" part="I">Que me demandes-tu de plus ?</l><!--@syll="8"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="261" part="F">Un peu d'argent.</l><!-- @syll="4"-->
+	<l n="261" part="F">Un peu d'argent.</l><!--@syll="4"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="262" part="I">Qu'en feras-tu ?</l><!-- @syll="4"-->
+	<l n="262" part="I">Qu'en feras-tu ?</l><!--@syll="4"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="262" part="2">Du pain.</l><!-- @syll="2"-->
+	<l n="262" part="2">Du pain.</l><!--@syll="2"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="262" part="F">Pour qui ?</l><!-- @syll="2"-->
+	<l n="262" part="F">Pour qui ?</l><!--@syll="2"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="262" part="F">Pour l'indigent.</l><!-- @syll="4"-->
+	<l n="262" part="F">Pour l'indigent.</l><!--@syll="4"-->
 	<l n="263">C'est l'hiver, et je sais bien des gens sans ressource.</l>
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="264" part="I">Ton souhait s'accomplit dans ta poche.</l><!-- @syll="9"-->
+	<l n="264" part="I">Ton souhait s'accomplit dans ta poche.</l><!--@syll="9"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON, retirant une bourse de sa poche.</speaker>
-	<l n="264" part="F">Une bourse !</l><!-- @syll="3"-->
+	<l n="264" part="F">Une bourse !</l><!--@syll="3"-->
 </sp><!--@stage="get"-->
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
@@ -954,11 +953,11 @@
 </sp><!--@stage="fall/sit"-->
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="268" part="I">Que vous arrive-t-il ?</l><!-- @syll="6"-->
+	<l n="268" part="I">Que vous arrive-t-il ?</l><!--@syll="6"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="268" part="F">Tout a changé de face :</l><!-- @syll="6"-->
+	<l n="268" part="F">Tout a changé de face :</l><!--@syll="6"-->
 	<l n="269">Les rats sont des chevaux, le monde est renversé.</l>
 </sp>
 <sp who="#cendrillon">
@@ -973,16 +972,16 @@
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="274" part="I">Ne connaissez-vous plus Cendrillon ?</l><!-- @syll="9"-->
+	<l n="274" part="I">Ne connaissez-vous plus Cendrillon ?</l><!--@syll="9"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER, regardant fixement Cendrillon.</speaker>
-	<l n="274" part="F">C'est trop fort !</l><!-- @syll="3"-->
-	<l n="275" part="I">Du vinaigre !</l><!-- @syll="3"-->
+	<l n="274" part="F">C'est trop fort !</l><!--@syll="3"-->
+	<l n="275" part="I">Du vinaigre !</l><!--@syll="3"-->
 </sp><!--@stage="watch"-->
 <sp who="#cendrillon">
                         <speaker>CENDRILLON, présentant un flacon.</speaker>
-	<l n="275" part="F">Voici. Je crois que quelques gouttes...</l><!-- @syll="9"-->
+	<l n="275" part="F">Voici. Je crois que quelques gouttes...</l><!--@syll="9"-->
 </sp><!--@stage="show"-->
 <sp who="#le-portier">
                         <speaker>LE PORTIER, tout en buvant.</speaker>
@@ -1001,11 +1000,11 @@
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="281" part="I">Parle toujours.</l><!-- @syll="4"-->
+	<l n="281" part="I">Parle toujours.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="281" part="F">J'étais dans ma loge à songer,</l><!-- @syll="8"-->
+	<l n="281" part="F">J'étais dans ma loge à songer,</l><!--@syll="8"-->
 	<l n="282">Lorsque j'ai vu le bas des murailles bouger,</l>
 	<l n="283">Comme si l'on tentait d'y faire une ouverture.</l>
 	<l n="284">Je m'approche, voulant m'expliquer l'aventure.</l>
@@ -1042,11 +1041,11 @@
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="309" part="I">Moi, je devine un peu.</l><!-- @syll="6"-->
+	<l n="309" part="I">Moi, je devine un peu.</l><!--@syll="6"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="309" part="F">N'as-tu pas, un moment,</l><!-- @syll="6"-->
+	<l n="309" part="F">N'as-tu pas, un moment,</l><!--@syll="6"-->
 	<l n="310">Fait le souhait d'aller chez le Prince charmant</l>
 	<l n="311">T'asseoir comme tes soeurs à son banquet de fête ?</l>
 	<l n="312">Eh bien ! Vole au palais, sans que l'on t'inquiète.</l>
@@ -1054,28 +1053,28 @@
 	<l n="314">Plus prompte que le vent, revenir sous ces toits ;</l>
 	<l n="315">Car le charme que j'ai jeté sur ta personne</l>
 	<l n="316">Est de ceux qui s'en vont sitôt que minuit sonne.</l>
-	<l n="317" part="I">Embrassons-nous et pars.</l><!-- @syll="6"-->
+	<l n="317" part="I">Embrassons-nous et pars.</l><!--@syll="6"-->
 <stage type="kiss">Elles s'embrassent.</stage>
-	<l n="317" part="F">Cette enfant me séduit.</l><!-- @syll="6"-->
+	<l n="317" part="F">Cette enfant me séduit.</l><!--@syll="6"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="318" part="I">Adieu. Vous me comblez.</l><!-- @syll="6"-->
+	<l n="318" part="I">Adieu. Vous me comblez.</l><!--@syll="6"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="318" part="F">Rappelle-toi minuit.</l><!-- @syll="6"-->
+	<l n="318" part="F">Rappelle-toi minuit.</l><!--@syll="6"-->
 </sp>
 </div>
 <div type="scene" n="7">
                     <head>SCÈNE VII. La Fée Urgèle, Le Portier.</head>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="319" part="I">Maintenant, à nous deux !</l><!-- @syll="6"-->
+	<l n="319" part="I">Maintenant, à nous deux !</l><!--@syll="6"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER, à part.</speaker>
-	<l n="319" part="F">Quelque nouvelle tuile ?</l><!-- @syll="6"-->
+	<l n="319" part="F">Quelque nouvelle tuile ?</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
@@ -1083,16 +1082,16 @@
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="321" part="I">J'ai dégusté d'un vin...</l><!-- @syll="6"-->
+	<l n="321" part="I">J'ai dégusté d'un vin...</l><!--@syll="6"-->
 <stage type="aparte">À part.</stage>
-	<l n="321" part="F">- Soyons franc, c'est plus sûr -</l><!-- @syll="6"-->
+	<l n="321" part="F">- Soyons franc, c'est plus sûr -</l><!--@syll="6"-->
 <stage type="loud">Haut.</stage>
 	<l n="322">Qui m'a produit l'effet d'un flot d'or et d'azur</l>
-	<l n="323" part="I">Me passant à travers le gosier.</l><!-- @syll="9"-->
+	<l n="323" part="I">Me passant à travers le gosier.</l><!--@syll="9"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="323" part="F">À merveille !</l><!-- @syll="3"-->
+	<l n="323" part="F">À merveille !</l><!--@syll="3"-->
 	<l n="324">N'en viderais-tu pas encore une bouteille ?</l>
 </sp>
 <sp who="#le-portier">
@@ -1138,11 +1137,11 @@
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="354" part="I">Comme un poisson.</l><!-- @syll="4"-->
+	<l n="354" part="I">Comme un poisson.</l><!--@syll="4"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="354" part="F">C'est bien. Je m'en vais. Au revoir.</l><!-- @syll="8"-->
+	<l n="354" part="F">C'est bien. Je m'en vais. Au revoir.</l><!--@syll="8"-->
 	<l n="355">Souviens-toi que j'aurais pu te changer en bête,</l>
 	<l n="356">Rien qu'en touchant ton front du bout de ma baguette,</l>
 	<l n="357">Et que si maintenant ta langue remuait,</l>
@@ -1194,11 +1193,11 @@
 </sp><!--@stage="location"-->
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="389" part="I">Qu'a-t-il à faire là ?</l><!-- @syll="6"-->
+	<l n="389" part="I">Qu'a-t-il à faire là ?</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="389" part="F">Que boit-il de la sorte ?</l><!-- @syll="6"-->
+	<l n="389" part="F">Que boit-il de la sorte ?</l><!--@syll="6"-->
 <stage type="closer">Elles se rapprochent.</stage>
 </sp>
 <sp who="#magali">
@@ -1211,19 +1210,19 @@
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI, le secouant.</speaker>
-	<l n="392" part="I">Hé, portier ! Hé, bonhomme !</l><!-- @syll="6"-->
+	<l n="392" part="I">Hé, portier ! Hé, bonhomme !</l><!--@syll="6"-->
 </sp><!--@stage="shake"-->
 <sp who="#frisette">
                         <speaker>FRISETTE, le secouant aussi.</speaker>
-	<l n="392" part="F">Hé, portier ! Hé, bonhomme !</l><!-- @syll="6"-->
+	<l n="392" part="F">Hé, portier ! Hé, bonhomme !</l><!--@syll="6"-->
 </sp><!--@stage="shake"-->
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="393" part="I">Répondez-nous !</l><!-- @syll="3"-->
+	<l n="393" part="I">Répondez-nous !</l><!--@syll="3"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="393" part="F">S'il dort, c'est d'un étrange somme.</l><!-- @syll="9"-->
+	<l n="393" part="F">S'il dort, c'est d'un étrange somme.</l><!--@syll="9"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER, toujours immobile et parlant par saccades.</speaker>
@@ -1236,32 +1235,32 @@
 	<l n="399">Il s'est passé des faits si merveilleux chez nous !</l>
 	<l n="400">Et puis, ce vin avait une couleur si nette !</l>
 	<l n="401">Je n'avais pas l'esprit en plein dans son assiette,</l>
-	<l n="402" part="I">Et si je vous contais...</l><!-- @syll="6"-->
+	<l n="402" part="I">Et si je vous contais...</l><!--@syll="6"-->
 </sp>
 <sp who="#magali #frisette">
                         <speaker>TOUTES DEUX.</speaker>
-	<l n="402" part="M">Quoi donc ?</l><!-- @syll="2"-->
+	<l n="402" part="M">Quoi donc ?</l><!--@syll="2"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="402" part="F">Qui le croirait ?</l><!-- @syll="4"-->
+	<l n="402" part="F">Qui le croirait ?</l><!--@syll="4"-->
 	<l n="403">On m'a recommandé de garder le secret.</l>
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="404" part="I">Et vous le garderez, votre secret ?</l><!-- @syll="10"-->
+	<l n="404" part="I">Et vous le garderez, votre secret ?</l><!--@syll="10"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="404" part="F">Sans doute.</l><!-- @syll="2"-->
+	<l n="404" part="F">Sans doute.</l><!--@syll="2"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="405" part="I">On verra bien. Parlez, et vite.</l><!-- @syll="8"-->
+	<l n="405" part="I">On verra bien. Parlez, et vite.</l><!--@syll="8"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="405" part="F">On vous écoute.</l><!-- @syll="4"-->
+	<l n="405" part="F">On vous écoute.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
@@ -1274,11 +1273,11 @@
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="409" part="I">On écoute toujours, concierge.</l><!-- @syll="9"-->
+	<l n="409" part="I">On écoute toujours, concierge.</l><!--@syll="9"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="409" part="F">Que je meure,</l><!-- @syll="3"-->
+	<l n="409" part="F">Que je meure,</l><!--@syll="3"-->
 	<l n="410">Si sur ces choses-là je desserre les dents !</l>
 </sp>
 <sp who="#magali">
@@ -1292,15 +1291,15 @@
 </sp><!--@stage="away"-->
 <sp who="#le-portier">
                         <speaker>LE PORTIER, la retenant.</speaker>
-	<l n="414" part="I">De grâce !</l><!-- @syll="3"-->
+	<l n="414" part="I">De grâce !</l><!--@syll="3"-->
 </sp><!--@stage="pull"-->
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="414" part="M">Parlez donc.</l><!-- @syll="3"-->
+	<l n="414" part="M">Parlez donc.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="414" part="F">Je parle. Cette nuit,</l><!-- @syll="6"-->
+	<l n="414" part="F">Je parle. Cette nuit,</l><!--@syll="6"-->
 	<l n="415">Un chat qu'un ba-ba-ba-ta-ta-illon de rats suit</l>
 	<l n="416">M'a-m'a fort effrayé. La fée Urgèle lègue</l>
 	<l n="417">Son pouvoir à Cen-Cen... Voilà que je suis bègue !</l>
@@ -1313,11 +1312,11 @@
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
 	<l n="420">Ma pauvre langue ! Elle est dé-déjà moitié morte ;</l>
-	<l n="421" part="I">Et j'ai-j'aime-me tant à m'en servir !</l><!-- @syll="10"-->
+	<l n="421" part="I">Et j'ai-j'aime-me tant à m'en servir !</l><!--@syll="10"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="421" part="F">Qu'importe ?</l><!-- @syll="2"-->
+	<l n="421" part="F">Qu'importe ?</l><!--@syll="2"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
@@ -1326,11 +1325,11 @@
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="423" part="I">Est-il déjà muet ?</l><!-- @syll="6"-->
+	<l n="423" part="I">Est-il déjà muet ?</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="423" part="F">Il faut voir Cendrillon !</l><!-- @syll="6"-->
+	<l n="423" part="F">Il faut voir Cendrillon !</l><!--@syll="6"-->
 <stage type="exit">Elles sortent.</stage>
 </sp>
 </div>
@@ -1342,9 +1341,9 @@
 <stage type="lazzi">Le portier exprime qu'elles sont dans la chambre voisine.</stage>
 	<l n="425">Au gala de ce soir m'ont-elles reconnue ?</l>
 <stage type="lazzi">Le portier fait un signe négatif.</stage>
-	<l n="426" part="I">Vous ne répondez que par signes.</l><!-- @syll="10"-->
+	<l n="426" part="I">Vous ne répondez que par signes.</l><!--@syll="10"-->
 <stage type="lazzi">Le portier exprime qu'il est devenu muet, puis il sort.</stage>
-	<l n="426" part="F">Qui l'a</l><!-- @syll="2"-->
+	<l n="426" part="F">Qui l'a</l><!--@syll="2"-->
 	<l n="427">Fait en si peu de temps muet comme cela ?</l>
 </sp>
 </div>
@@ -1376,11 +1375,11 @@
                     <head>SCÈNE XII. Cendrillon, Frisette, Magali.</head>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="446" part="I">Dans quel coin nichais-tu ?</l><!-- @syll="6"-->
+	<l n="446" part="I">Dans quel coin nichais-tu ?</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="446" part="F">Quel joli sans-façon !</l><!-- @syll="6"-->
+	<l n="446" part="F">Quel joli sans-façon !</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
@@ -1393,11 +1392,11 @@
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="450" part="I">On m'a parlé d'un grand événement.</l><!-- @syll="10"-->
+	<l n="450" part="I">On m'a parlé d'un grand événement.</l><!--@syll="10"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="450" part="F">Vraiment ?</l><!-- @syll="2"-->
+	<l n="450" part="F">Vraiment ?</l><!--@syll="2"-->
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
@@ -1417,11 +1416,11 @@
 </sp><!--@stage="laugh"-->
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="458" part="I">Petite laideron !</l><!-- @syll="6"-->
+	<l n="458" part="I">Petite laideron !</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="458" part="F">Cendrillon à la cour !</l><!-- @syll="6"-->
+	<l n="458" part="F">Cendrillon à la cour !</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
@@ -1439,7 +1438,8 @@
 <sp who="#le-crieur">
                         <speaker>LE CRIEUR.</speaker>
 <stage type="title">AIR : Hommes nous, d'où sortez-vous ?</stage>
-<poem type="chanson">
+<!--<poem>-->
+                        <ab type="chanson">
 <lg n="1">
 	<l n="462">Pauvre batteur du pavé,</l>
 	<l n="463">Je perds la voix et le souffle</l>
@@ -1479,7 +1479,7 @@
 	<l n="493">Ra ta ra ta plan !</l>
 	<l n="494">Où donc est la soeur du Prince charmant ?</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 <sp who="#le-prince-charmant">
                         <speaker>LE PRINCE CHARMANT.</speaker>
@@ -1517,46 +1517,46 @@
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="517" part="I">Le bon prince !</l><!-- @syll="4"-->
+	<l n="517" part="I">Le bon prince !</l><!--@syll="4"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="517" part="F">Mes yeux sont doucement noyés</l><!-- @syll="8"-->
-	<l n="518" part="I">De larmes. Je voudrais...</l><!-- @syll="6"-->
+	<l n="517" part="F">Mes yeux sont doucement noyés</l><!--@syll="8"-->
+	<l n="518" part="I">De larmes. Je voudrais...</l><!--@syll="6"-->
 </sp>
 <sp who="#le-prince-charmant">
                         <speaker>LE PRINCE CHARMANT.</speaker>
-	<l n="518" part="F">Allons, page, essayez !</l><!-- @syll="6"-->
+	<l n="518" part="F">Allons, page, essayez !</l><!--@syll="6"-->
 </sp>
 <sp who="#le-page">
                         <speaker>UN PAGE, essayant la pantoufle à Frisette.</speaker>
-	<l n="519" part="I">Voici.</l><!-- @syll="2"-->
+	<l n="519" part="I">Voici.</l><!--@syll="2"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE, à part.</speaker>
-	<l n="519" part="F">Forçons un peu. Si je pouvais la mettre ?</l><!-- @syll="10"-->
+	<l n="519" part="F">Forçons un peu. Si je pouvais la mettre ?</l><!--@syll="10"-->
 </sp><!--@stage="aparte"-->
 <sp who="#le-page">
                         <speaker>LE PAGE.</speaker>
-	<l n="520" part="I">Bah ! Le pied n'entre point.</l><!-- @syll="6"-->
+	<l n="520" part="I">Bah ! Le pied n'entre point.</l><!--@syll="6"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="520" part="M">Il n'entre point ?</l><!-- @syll="4"-->
+	<l n="520" part="M">Il n'entre point ?</l><!--@syll="4"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="520" part="F">Peut-être ?</l><!-- @syll="2"-->
+	<l n="520" part="F">Peut-être ?</l><!--@syll="2"-->
 </sp>
 <sp who="#le-page">
                         <speaker>LE PAGE.</speaker>
-	<l n="521" part="I">Impossible !</l><!-- @syll="3"-->
+	<l n="521" part="I">Impossible !</l><!--@syll="3"-->
 <stage type="work">Même jeu, devant Magali.</stage>
-	<l n="521" part="M">Voici.</l><!-- @syll="2"-->
+	<l n="521" part="M">Voici.</l><!--@syll="2"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="521" part="F">Mon pied est fait à point.</l><!-- @syll="7"-->
+	<l n="521" part="F">Mon pied est fait à point.</l><!--@syll="7"-->
 </sp>
 <sp who="#le-page">
                         <speaker>LE PAGE.</speaker>
@@ -1564,54 +1564,54 @@
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON, au page.</speaker>
-	<l n="523" part="I">Et moi, vous m'oubliez !</l><!-- @syll="6"-->
+	<l n="523" part="I">Et moi, vous m'oubliez !</l><!--@syll="6"-->
 </sp><!--@stage="toward"-->
 <sp who="#magali">
                         <speaker>MAGALI, bas.</speaker>
-	<l n="523" part="F">Crois-tu que l'on s'occupe</l><!-- @syll="6"-->
-	<l n="524" part="I">De toi ?</l><!-- @syll="2"-->
+	<l n="523" part="F">Crois-tu que l'on s'occupe</l><!--@syll="6"-->
+	<l n="524" part="I">De toi ?</l><!--@syll="2"-->
 </sp><!--@stage="low"-->
 <sp who="#frisette">
                         <speaker>FRISETTE, bas.</speaker>
-	<l n="524" part="F">Ne vas-tu pas avec ta vieille jupe</l><!-- @syll="10"-->
-	<l n="525" part="I">Te mettre sur les rangs ?</l><!-- @syll="6"-->
+	<l n="524" part="F">Ne vas-tu pas avec ta vieille jupe</l><!--@syll="10"-->
+	<l n="525" part="I">Te mettre sur les rangs ?</l><!--@syll="6"-->
 </sp><!--@stage="low"-->
 <sp who="#le-prince-charmant">
                         <speaker>LE PRINCE CHARMANT.</speaker>
-	<l n="525" part="F">Hé ! que fais-tu là-bas,</l><!-- @syll="6"-->
+	<l n="525" part="F">Hé ! que fais-tu là-bas,</l><!--@syll="6"-->
 	<l n="526">Petite, et pourquoi donc ne t'approches-tu pas ?</l>
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="527" part="I">Page, voici mon pied.</l><!-- @syll="6"-->
+	<l n="527" part="I">Page, voici mon pied.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-page">
                         <speaker>LE PAGE.</speaker>
-	<l n="527" part="F">Comme il est mignon !</l><!-- @syll="5"-->
+	<l n="527" part="F">Comme il est mignon !</l><!--@syll="5"-->
 </sp>
 <sp who="#un-autre-page">
                         <speaker>UN AUTRE PAGE.</speaker>
-	<l n="527" part="F">Diantre !</l><!-- @syll="1"-->
+	<l n="527" part="F">Diantre !</l><!--@syll="1"-->
 </sp>
 <sp who="#une-dame-d-honneur">
                         <speaker>UNE DAME D'HONNEUR.</speaker>
-	<l n="528" part="I">Il n'entrera point.</l><!-- @syll="5"-->
+	<l n="528" part="I">Il n'entrera point.</l><!--@syll="5"-->
 </sp>
 <sp who="#deuxieme-dame-d-honneur">
                         <speaker>DEUXIÈME DAME D'HONNEUR.</speaker>
-	<l n="528" part="M">Si !</l><!-- @syll="1"-->
+	<l n="528" part="M">Si !</l><!--@syll="1"-->
 </sp>
 <sp who="#troisieme-dame-d-honneur">
                         <speaker>TROISIÈME DAME D'HONNEUR.</speaker>
-	<l n="528" part="F">Ma foi, je crois qu'il entre.</l><!-- @syll="6"-->
+	<l n="528" part="F">Ma foi, je crois qu'il entre.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-page">
                         <speaker>LE PAGE.</speaker>
-	<l n="529" part="I">Il entre !</l><!-- @syll="2"-->
+	<l n="529" part="I">Il entre !</l><!--@syll="2"-->
 </sp>
 <sp who="#le-prince-charmant">
                         <speaker>LE PRINCE CHARMANT.</speaker>
-	<l n="529" part="F">Pourquoi suis-je à ce point oppressé ?</l><!-- @syll="10"-->
+	<l n="529" part="F">Pourquoi suis-je à ce point oppressé ?</l><!--@syll="10"-->
 <stage type="magic">L'essai réussit.</stage>
 	<l n="530">La pantoufle est la sienne et le pied est chaussé !</l>
 <stage type="hugh/magic/entrance">Il se jette dans les bras de Cendrillon, qui redevient aussitôt la princesse de la scène V. La fee Urgèle apparaît de nouveau.</stage>
@@ -1637,19 +1637,19 @@
 </sp>
 <sp who="#magali #frisette">
                         <speaker>MAGALI ET FRISETTE, tombant à genoux.</speaker>
-	<l n="541" part="I">Princesse !</l><!-- @syll="3"-->
+	<l n="541" part="I">Princesse !</l><!--@syll="3"-->
 </sp><!--@stage="together"-->
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="541" part="F">Levez-vous. Je vous ouvre mes bras.</l><!-- @syll="9"-->
+	<l n="541" part="F">Levez-vous. Je vous ouvre mes bras.</l><!--@syll="9"-->
 </sp>
 <sp who="#magali">
                         <speaker>MAGALI.</speaker>
-	<l n="542" part="I">Oh ! Nous t'aimerons bien.</l><!-- @syll="6"-->
+	<l n="542" part="I">Oh ! Nous t'aimerons bien.</l><!--@syll="6"-->
 </sp>
 <sp who="#frisette">
                         <speaker>FRISETTE.</speaker>
-	<l n="542" part="F">Et tu nous aimeras.</l><!-- @syll="6"-->
+	<l n="542" part="F">Et tu nous aimeras.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-prince-charmant">
                         <speaker>LE PRINCE CHARMANT.</speaker>
@@ -1657,11 +1657,11 @@
 </sp>
 <sp who="#cendrillon">
                         <speaker>CENDRILLON.</speaker>
-	<l n="544" part="I">Mon frère !</l><!-- @syll="2"-->
+	<l n="544" part="I">Mon frère !</l><!--@syll="2"-->
 </sp>
 <sp who="#le-prince-charmant">
                         <speaker>LE PRINCE CHARMANT.</speaker>
-	<l n="544" part="F">Et c'est ainsi que je l'ai retrouvée !</l><!-- @syll="10"-->
+	<l n="544" part="F">Et c'est ainsi que je l'ai retrouvée !</l><!--@syll="10"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE, à part.</speaker>
@@ -1683,20 +1683,20 @@
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
-	<l n="550" part="I">Nous avons oublié...</l><!-- @syll="6"-->
+	<l n="550" part="I">Nous avons oublié...</l><!--@syll="6"-->
 </sp>
 <sp who="#le-portier">
                         <speaker>LE PORTIER.</speaker>
-	<l n="550" part="F">Magnifique ! Étonnant !</l><!-- @syll="6"-->
+	<l n="550" part="F">Magnifique ! Étonnant !</l><!--@syll="6"-->
 </sp>
 <sp who="#la-fee-urgele">
                         <speaker>LA FÉE URGÈLE.</speaker>
 	<l n="551">Garde-toi cependant de jaser et de boire</l>
-	<l n="552" part="I">Aux dépens du prochain.</l><!-- @syll="6"-->
+	<l n="552" part="I">Aux dépens du prochain.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-prince-charmant">
                         <speaker>LE PRINCE CHARMANT, à Cendrillon.</speaker>
-	<l n="552" part="F">Prends ta part de ma gloire :</l><!-- @syll="6"-->
+	<l n="552" part="F">Prends ta part de ma gloire :</l><!--@syll="6"-->
 	<l n="553">Mes palais, mes trésors, tous mes biens sont à toi !</l>
 </sp><!--@stage="toward"-->
 <sp who="#cendrillon">

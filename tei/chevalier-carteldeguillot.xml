@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1682">1682</date>
+                        <date>1682</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k726503?rk=21459;2</idno>
@@ -81,16 +81,16 @@
 	<castList>
                 <head>ACTEURS.</head>
 		<castItem>
-                    <role corresp="#polycarpe">POLYCARPE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->, Père d'Angélique.</castItem>
+                    <role corresp="#polycarpe">POLYCARPE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, Père d'Angélique.</castItem>
 		<castItem>
-                    <role corresp="#angelique">ANGÉLIQUE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="J" @stat_amour="néant"-->, Fille de Polycarpe.</castItem>
+                    <role corresp="#angelique">ANGÉLIQUE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, Fille de Polycarpe.</castItem>
 		<castItem>
-                    <role corresp="#la-roque">LA ROQUE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="J" @stat_amour="Angélique"-->, Amant d'Angélique.</castItem>
+                    <role corresp="#la-roque">LA ROQUE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="Angélique"-->, Amant d'Angélique.</castItem>
 		<castItem>
-                    <role corresp="#guillot">GUILLOT</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour="néant"-->, Valet de Polycarpe.</castItem>
+                    <role corresp="#guillot">GUILLOT</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, Valet de Polycarpe.</castItem>
 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène est à Paris.</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène est à Paris.</set>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -118,11 +118,11 @@
 </sp>
 <sp who="#polycarpe">
                         <speaker>POLYCARPE.</speaker>
-	<l n="11" part="I">Dis-la donc.</l><!-- @syll="3"-->
+	<l n="11" part="I">Dis-la donc.</l><!--@syll="3"-->
 </sp>
 <sp who="#angelique">
                         <speaker>ANGÉLIQUE.</speaker>
-	<l n="11" part="F">Oyez s'il vous plaît </l><!-- @syll="5"-->
+	<l n="11" part="F">Oyez s'il vous plaît </l><!--@syll="5"-->
 	<l n="12">Ah quand vous saurez quelle elle est </l>
 	<l n="13">Vous me croirez fort misérable. </l>
 </sp>
@@ -158,12 +158,12 @@
 	<l n="30">Hé mon Père je vais tout dire </l>
 	<l n="31">Mais donnez-vous un peu de temps, </l>
 	<l n="32">Car mes déplaisirs sont si grands, </l>
-	<l n="33" part="I">Que je n'ose. </l><!-- @syll="3"-->
+	<l n="33" part="I">Que je n'ose. </l><!--@syll="3"-->
 </sp>
 <sp who="#polycarpe">
                         <speaker>POLYCARPE.</speaker>
 <note type="L">Pendard : Scélérat, fripon ; qui a commis des actions qui méritent la corde, la potence. [T]</note>
-	<l n="33" part="F">Ah ! Quelle est pendarde, </l><!-- @syll="5"-->
+	<l n="33" part="F">Ah ! Quelle est pendarde, </l><!--@syll="5"-->
 <note type="L">Babillard : Qui parle continuellement, et qui ne dit que des choses de neant. [F]</note>
 	<l n="34">Être née enfin babillarde, </l>
 	<l n="35">Et garder si fort le secret, </l>
@@ -253,13 +253,14 @@
 	<l n="97">Pour ragaillardir ma vieillesse. </l>
 	<l n="98">J'avais prié quelque jeunesse </l>
 	<l n="99">De venir dîner avec moi. </l>
-	<l n="100" part="I">Sais-tu ce qu'il m'a fait ? </l><!-- @syll="6"-->
+	<l n="100" part="I">Sais-tu ce qu'il m'a fait ? </l><!--@syll="6"-->
 </sp>
 <sp who="#angelique">
                         <speaker>ANGÉLIQUE.</speaker>
-	<l n="100" part="F">Et quoi ? </l><!-- @syll="2"-->
-</sp>0
-<sp who="#polycarpe">
+	<l n="100" part="F">Et quoi ? </l><!--@syll="2"-->
+</sp><!--text():0
+-->
+                    <sp who="#polycarpe">
                         <speaker>POLYCARPE.</speaker>
 	<l n="101">Au lieu de songer à nous faire </l>
 	<l n="102">Un morceau de bonne chère </l>
@@ -316,8 +317,9 @@
 	<l n="145">Guillot vomira quelque injure </l>
 	<l n="146">L'autre assez fougueux je m'assure </l>
 	<l n="147">Lui donnera de la façon </l>
-<note type="L">Estramaçon : Estramaçon, était autrefois une sorte d'épée. [L]</note>
-	 : <l n="148">Quelque grand coup d'estramaçon </l>
+<note type="L">Estramaçon : Estramaçon, était autrefois une sorte d'épée. [L]</note><!--text():
+	 : -->
+                        <l n="148">Quelque grand coup d'estramaçon </l>
 	<l n="149">De ce coup proviendra la fièvre </l>
 	<l n="150">Guillot étourdi comme un lièvre </l>
 	<l n="151">Malgré l'avis du Médecin </l>
@@ -458,7 +460,7 @@
 </sp>
 <sp who="#guillot">
                         <speaker>GUILLOT.</speaker>
-	<l n="230" part="I">J'y vais. </l><!-- @syll="2"-->
+	<l n="230" part="I">J'y vais. </l><!--@syll="2"-->
 <stage id="">Guillot va du côté que la Rocque entre, et ne le voyant pas lui donne de la tête dans le ventre. </stage>
 </sp>
 </div>
@@ -466,7 +468,7 @@
                     <head>SCÈNE III. Guillot, la Rocque.</head>
 <sp who="#guillot">
                         <speaker>GUILLOT.</speaker>
-	<l n="230" part="F">Le Destin m'est propice </l><!-- @syll="6"-->
+	<l n="230" part="F">Le Destin m'est propice </l><!--@syll="6"-->
 	<l n="231">Monsieur de vous trouver ici </l>
 	<l n="232">Lisez la Lettre que voici </l>
 	<l n="233">D'Angélique votre Maîtresse </l>
@@ -512,17 +514,17 @@
 </sp><!--@stage="interrupt"-->
 <sp who="#la-rocque">
                         <speaker>LA ROCQUE, voulant lire.</speaker>
-	<l n="255" part="I">Il est vrai. </l><!-- @syll="3"-->
+	<l n="255" part="I">Il est vrai. </l><!--@syll="3"-->
 </sp><!--@stage="read"-->
 <sp who="#guillot">
                         <speaker>GUILLOT.</speaker>
-	<l n="255" part="F">Ses mots sont charmants </l><!-- @syll="5"-->
+	<l n="255" part="F">Ses mots sont charmants </l><!--@syll="5"-->
 	<l n="256">Plus que le style des romans </l>
-	<l n="257" part="I">Elle a lu. </l><!-- @syll="3"-->
+	<l n="257" part="I">Elle a lu. </l><!--@syll="3"-->
 </sp>
 <sp who="#la-rocque">
                         <speaker>LA ROCQUE.</speaker>
-	<l n="257" part="F">Te voudrais-tu taire. </l><!-- @syll="5"-->
+	<l n="257" part="F">Te voudrais-tu taire. </l><!--@syll="5"-->
 </sp>
 <sp who="#guillot">
                         <speaker>GUILLOT.</speaker>
@@ -568,9 +570,9 @@
 </sp>
 <sp who="#la-rocque">
                         <speaker>LA ROCQUE.</speaker>
-	<l n="282" part="I">Lisons. </l><!-- @syll="2"-->
+	<l n="282" part="I">Lisons. </l><!--@syll="2"-->
 <stage type="read">Il lit.</stage>
-	<l n="282" part="F">Monsieur touchant l'injure </l><!-- @syll="6"-->
+	<l n="282" part="F">Monsieur touchant l'injure </l><!--@syll="6"-->
 	<l n="283">Que vous me fîtes hier au soir </l>
 	<l n="284">Ce billet vous fera savoir </l>
 	<l n="285">M'ayant tout à fait outragée </l>
@@ -602,9 +604,9 @@
 	<l n="307">Qui moi, vous couper le Gosier </l>
 	<l n="308">Je ne suis point un meurtrier, </l>
 	<l n="309">Je suis trop ami de nature. </l>
-	<l n="310" part="I">Voyons. </l><!-- @syll="2"-->
+	<l n="310" part="I">Voyons. </l><!--@syll="2"-->
 <stage type="read">Il lit.</stage>
-	<l n="310" part="F">Monsieur touchant l'injure </l><!-- @syll="6"-->
+	<l n="310" part="F">Monsieur touchant l'injure </l><!--@syll="6"-->
 	<l n="311">Que vous me faites hier au soir, </l>
 	<l n="312">Ce Billet vous fera savoir. </l>
 	<l n="313">M'ayant tout à fait outragée </l>
@@ -763,11 +765,11 @@
                         <speaker>ANGÉLIQUE.</speaker>
 	<l n="414">C'est une chose indubitable </l>
 	<l n="415">Te voyant il mourra d'effroi, </l>
-	<l n="416" part="I">Adieu. </l><!-- @syll="2"-->
+	<l n="416" part="I">Adieu. </l><!--@syll="2"-->
 </sp>
 <sp who="#guillot">
                         <speaker>GUILLOT.</speaker>
-	<l n="416" part="F">Reposez-vous sur moi, </l><!-- @syll="6"-->
+	<l n="416" part="F">Reposez-vous sur moi, </l><!--@syll="6"-->
 	<l n="417">Je vous dis pourvu qu'il s'en aille. </l>
 </sp>
 <sp who="#angelique">
@@ -780,14 +782,14 @@
 	<l n="420">Vous m'assurez qu'il s'enfuira, </l>
 	<l n="421">Car si tantôt il faisait rage. </l>
 	<l n="422">Angélique s'en allant. </l>
-	<l n="423" part="I">Il mourra de peur. </l><!-- @syll="5"-->
+	<l n="423" part="I">Il mourra de peur. </l><!--@syll="5"-->
 </sp>
 </div>
 <div type="scene" n="6">
                     <head>SCÈNE VI.</head>
 <sp who="#guillot">
                         <speaker>GUILLOT, seul.</speaker>
-	<l n="423" part="F">C'est dommage </l><!-- @syll="3"-->
+	<l n="423" part="F">C'est dommage </l><!--@syll="3"-->
 	<l n="424">Le pauvre garçon, je le plains </l>
 	<l n="425">S'il faut qu'il tombe entre mes mains. </l>
 	<l n="426">Le voici : tenons mine fière </l>
@@ -904,11 +906,11 @@
 	<l n="485">Et moi je m'en vais donner </l>
 	<l n="486">De l'épée au travers le ventre, </l>
 	<l n="487">C'est à ce coup qu'il faut qu'elle entre </l>
-	<l n="488" part="I">Prends garde à toi. </l><!-- @syll="4"-->
+	<l n="488" part="I">Prends garde à toi. </l><!--@syll="4"-->
 </sp>
 <sp who="#guillot">
                         <speaker>GUILLOT.</speaker>
-	<l n="488" part="F">Double faquin, </l><!-- @syll="4"-->
+	<l n="488" part="F">Double faquin, </l><!--@syll="4"-->
 	<l n="489">Attends je ne suis pas en main, </l>
 	<l n="490">Prends ce côté je prendrai l'autre </l>
 	<l n="491">C'est là que la Victoire est nôtre. </l>
@@ -997,11 +999,11 @@
 	<l n="539">Ah ! C'est par trop d'impertinence </l>
 	<l n="540">Qu'abuser de ma patience </l>
 	<l n="541">Si je laisse aller ma fureur </l>
-	<l n="542" part="I">Je pourrai bien. </l><!-- @syll="4"-->
+	<l n="542" part="I">Je pourrai bien. </l><!--@syll="4"-->
 </sp>
 <sp who="#guillot">
                         <speaker>GUILLOT.</speaker>
-	<l n="542" part="F">Garde l'honneur </l><!-- @syll="4"-->
+	<l n="542" part="F">Garde l'honneur </l><!--@syll="4"-->
 	<l n="543">Et souviens-toi qu'il t'intéresse </l>
 	<l n="544">À ne point faire de bassesse. </l>
 </sp>
@@ -1043,11 +1045,11 @@
 </sp>
 <sp who="#la-rocque">
                         <speaker>LA ROCQUE.</speaker>
-	<l n="562" part="I">Ah ! C'en est trop. </l><!-- @syll="4"-->
+	<l n="562" part="I">Ah ! C'en est trop. </l><!--@syll="4"-->
 </sp>
 <sp who="#guillot">
                         <speaker>GUILLOT.</speaker>
-	<l n="562" part="F">Garde l'honneur </l><!-- @syll="4"-->
+	<l n="562" part="F">Garde l'honneur </l><!--@syll="4"-->
 	<l n="563">Me tuant dessus cette place </l>
 	<l n="564">Tu ternirais toute la race. </l>
 </sp>
@@ -1124,11 +1126,11 @@
                     <head>SCÈNE VIII. Angélique, Guillot, Polycarpe.</head>
 <sp who="#polycarpe">
                         <speaker>POLYCARPE.</speaker>
-	<l n="598" part="I">Hé bien ! Qu'as-tu fait ? </l><!-- @syll="5"-->
+	<l n="598" part="I">Hé bien ! Qu'as-tu fait ? </l><!--@syll="5"-->
 </sp>
 <sp who="#guillot">
                         <speaker>GUILLOT.</speaker>
-	<l n="598" part="F">Il est mort. </l><!-- @syll="3"-->
+	<l n="598" part="F">Il est mort. </l><!--@syll="3"-->
 </sp>
 <sp who="#polycarpe">
                         <speaker>POLYCARPE.</speaker>
@@ -1229,11 +1231,11 @@
 	<l n="654">Je me vois l'esprit en repos </l>
 	<l n="655">J'ai su qu'une flamme secrète </l>
 	<l n="656">Vous brûlait pour une coquette </l>
-	<l n="657" part="I">Et que... </l><!-- @syll="2"-->
+	<l n="657" part="I">Et que... </l><!--@syll="2"-->
 </sp>
 <sp who="#polycarpe">
                         <speaker>POLYCARPE.</speaker>
-	<l n="657" part="F">Laissons notre courroux </l><!-- @syll="6"-->
+	<l n="657" part="F">Laissons notre courroux </l><!--@syll="6"-->
 	<l n="658">Oui Monsieur ma Fille est à vous </l>
 	<l n="659">Et je vous en fais ma promesse </l>
 	<l n="660">Mais Guillot m'a fait une pièce </l>

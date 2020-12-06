@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1758">1758</date>
+                        <date>1758</date>
                         <date type="premiere" when="1765-08-07">Représentée pour la première fois par les Comédiens Italiens Ordinaires du Roi, le 21 Octobre 1758.</date>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -79,37 +79,37 @@
 		<docAuthor>Par M. H****. La Musique est de M. GIBERT.</docAuthor><!--@bio="harny"-->
 		<div type="docImprint">
 			<div type="privilege">
-				<p n="">Le Privilège, et l'Enregistrement se trouvent à la fin du Tome 3ème du Nouveau Recueil des Pièces représentées sur le théâtre de l'Opera-Comique depuis son rétablissement, etc.</p>
+				<p>Le Privilège, et l'Enregistrement se trouvent à la fin du Tome 3ème du Nouveau Recueil des Pièces représentées sur le théâtre de l'Opera-Comique depuis son rétablissement, etc.</p>
 			</div><!--@id=""-->
 			<div type="approbation">
                     <head>APPROBATION.</head>
-				<p n="">J'ai lu par ordre de Monseigneur le Chancelier, la Sybille, Parodie ; et je crois que l'on peut en permettre l'impression, ce 11 Novembre 1758.</p>
-				<p n="">Signé, CREBILLON.</p>
+				<p>J'ai lu par ordre de Monseigneur le Chancelier, la Sybille, Parodie ; et je crois que l'on peut en permettre l'impression, ce 11 Novembre 1758.</p>
+				<p>Signé, CREBILLON.</p>
 			</div>
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="DELORME">À PARIS. Chez DELORME, rue du Foin, à l'Image Sainte Geneviève.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="DELORME">À PARIS. Chez DELORME, rue du Foin, à l'Image Sainte Geneviève.</editor>-->
 		</div>
 		<performance>
-			<ab type="premiere">Représentée pour la première fois par les Comédiens Italiens Ordinaires du Roi, le 21 Octobre 1758.</ab><!--date="1765-08-07"--><!--location="Hôtel de Bourgogne"-->
+			<ab type="premiere">Représentée pour la première fois par les Comédiens Italiens Ordinaires du Roi, le 21 Octobre 1758.</ab><!--@date="1765-08-07"--><!--@location="Hôtel de Bourgogne"-->
 		</performance>
 	<castList>
                 <head>ACTEURS</head>
 		<castItem>
-                    <role corresp="#la-sybille">LA SYBILLE</role><!--@sex="2" @type="P" @statut="bourgeois" @age="A" @stat_amour="néant"-->,	Mme. Favart.</castItem> 
+                    <role corresp="#la-sybille">LA SYBILLE</role><!--@sex="2"--><!--@type="P"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->,	Mme. Favart.</castItem> 
 		<castItem>
-                    <role corresp="#azor">AZOR</role><!--@sex="2" @type="P" @statut="bourgeois" @age="A" @stat_amour="néant"-->,	M. Rochard.</castItem> 
+                    <role corresp="#azor">AZOR</role><!--@sex="2"--><!--@type="P"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->,	M. Rochard.</castItem> 
 		<castItem>
-                    <role corresp="#euphrosine">EUPHROSINE</role><!--@sex="2" @type="P" @statut="bourgeois" @age="A" @stat_amour="néant"-->,	Mlle. Desglans.</castItem> 
+                    <role corresp="#euphrosine">EUPHROSINE</role><!--@sex="2"--><!--@type="P"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->,	Mlle. Desglans.</castItem> 
 		<castItem>
-                    <role corresp="#francoeur">FRANCOEUR</role><!--@sex="1" @type="P" @statut="bourgeois" @age="A" @stat_amour="néant"-->,	M. Chanville.</castItem> 
+                    <role corresp="#francoeur">FRANCOEUR</role><!--@sex="1"--><!--@type="P"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->,	M. Chanville.</castItem> 
 		<castItem>
-                    <role corresp="#une-vendangeuse">UNE VENDANGEUSE</role><!--@sex="2" @type="P" @statut="paysan" @age="A" @stat_amour="néant"-->,	Personnage muet.</castItem> 
+                    <role corresp="#une-vendangeuse">UNE VENDANGEUSE</role><!--@sex="2"--><!--@type="P"--><!--@statut="paysan"--><!--@age="A"--><!--@stat_amour="néant"-->,	Personnage muet.</castItem> 
 		<castItem>
-                    <role corresp="#l-amour">L'AMOUR</role><!--@sex="1" @type="D" @statut="dieu" @age="A" @stat_amour="néant"-->.	Personnage muet.</castItem> 
+                    <role corresp="#l-amour">L'AMOUR</role><!--@sex="1"--><!--@type="D"--><!--@statut="dieu"--><!--@age="A"--><!--@stat_amour="néant"-->.	Personnage muet.</castItem> 
 	</castList>
-<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XVIIIème" link="">La Scène est dans un verger.</set>-->
+<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XVIIIème" link="">La Scène est dans un verger.</set>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -382,7 +382,8 @@
 <sp who="#euphrosine">
                         <speaker>EUPHROSINE.</speaker>
 <stage type="title">Air Noté n°3.</stage>
-<poem type="chanson">
+<!--<poem>-->
+                        <ab type="chanson">
 <lg n="1">
 	<l n="166">Je trouve un jour sur l'herbette fleurie</l>
 	<l n="167">Un petit arc, des flèches, un carquois ;</l>
@@ -413,7 +414,7 @@
 	<l n="184">Un autre jour vous serez plus heureuse,</l>
 	<l n="185">Pour cette fois vous vous en souviendrez.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 <sp who="#azor">
                         <speaker>AZOR.</speaker>
@@ -591,7 +592,8 @@
 <sp who="#la-sybille">
                         <speaker>LA SYBILLE.</speaker>
 <stage type="title">ARIETTE.</stage>
-<poem type="chanson">
+<!--<poem>-->
+                        <ab type="chanson">
 <lg id="1">
 	<l n="278">Fraîche jeunesse</l>
 	<l n="279">D'amour pillez le jardin,</l>
@@ -620,7 +622,7 @@
 	<l n="298">À Paphos quand on n'est plus Roi,</l>
 	<l n="299">Faut près de son feu rester coi.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 <stage type="title">Air : Nous jouissons dans nos hameaux.</stage>
 	<l n="300">De tant bonne volonté</l>
 	<l n="301">Profitez je vous prie ;</l>

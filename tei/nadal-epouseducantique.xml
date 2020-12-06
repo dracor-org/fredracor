@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1738">1738</date>
+                        <date>1738</date>
                         <date type="premiere" when="1734-03-04">Exécuté pour la première fois par l'Académie de Musique de Poitiers, le 4 mars 1735.</date>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -93,11 +93,11 @@
 		<docDate when="1738">M. DCC. XXXVIII. Avec Approbation et privilège du Roi.</docDate>
 		<docAuthor>de MONSIEUR L'ABBÉ NADAL, de l'Académie des Inscriptions et Belles-Lettres.</docAuthor><!--@bio="nadal"-->
 		<div type="docImprint">
-		<div value="" type="approbation">
+		<div type="approbation">
                     <head/>
-			<p n=""/>
+			<p/>
 			<signed/>
-			</div>
+			</div><!--@value=""-->
 				<div type="acheveImprime">
                     <p/>
                 </div>
@@ -106,24 +106,24 @@
                 </div><!--@id="ribou"-->
 		</div>
 		<performance>
-			<ab type="premiere">Exécuté pour la première fois par l'Académie de Musique de Poitiers, le 4 mars 1735.</ab><!--date="1734-03-04"--><!--location="Académie de Musqiue de Poitiers"-->
+			<ab type="premiere">Exécuté pour la première fois par l'Académie de Musique de Poitiers, le 4 mars 1735.</ab><!--@date="1734-03-04"--><!--@location="Académie de Musqiue de Poitiers"-->
 		</performance>
 
 	<castList>
                 <head>NOMS DES ACTEURS.</head>
 		<castItem>
-                    <role corresp="#une-israelite">UNE ISRAÉLITE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#une-israelite">UNE ISRAÉLITE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#l-epouse">L'ÉPOUSE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#l-epouse">L'ÉPOUSE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#l-epoux">L'ÉPOUX</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#l-epoux">L'ÉPOUX</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#filles-de-sion">FILLES DE SION</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#filles-de-sion">FILLES DE SION</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#le-choeur">LE CHOEUR</role><!--@sex="9" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#le-choeur">LE CHOEUR</role><!--@sex="9"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 
 	</castList>
-<!--usage of set in correct place but with unknown attributes <set location="Suze" country="Iran" periode="Temps bibliques" gps="32.191092, 48.248066">La Scène est à Solime, autrement Jérusalem, dans le Palais d'Hérode.</set>-->
+<!--TODO: usage of set in correct place but with unknown attributes <set location="Suze" country="Iran" periode="Temps bibliques" gps="32.191092, 48.248066">La Scène est à Solime, autrement Jérusalem, dans le Palais d'Hérode.</set>-->
 <note>Texte tiré de "Oeuvres mêlées de Monsieur l'Abbé Nadal, de l'Acédémie des Inscriptions et Belles-Lettres. Tome Second (...)" 1738, pp. 18-24</note>
 </front>
 <body>
@@ -141,7 +141,8 @@
 </sp>
 <sp who="#l-epouse">
                         <speaker>L'ÉPOUSE.</speaker>
-<poem type="cantique">
+<!--<poem>-->
+                        <ab type="cantique">
 <note type="C">Curremus in orderem unguentorum tuorum.. filia Jerusalem.</note> 
 <lg n="1">
 	<l n="6">Parez-vous de toutes vos grâces ;</l>
@@ -168,7 +169,7 @@
 	<l n="22">C'est trop garder, volez sans cesse, </l>
 	<l n="23">Après l'odeur de ses vertus.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 <sp who="#une-fille-de-sion">
                         <speaker>UNE FILLE DE SION.</speaker>

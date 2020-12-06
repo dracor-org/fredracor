@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1882">1882</date>
+                        <date>1882</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k761600</idno>
@@ -69,14 +69,14 @@
 		<docDate when="1882">MD CCCLXXXIII. Tous droits réservés.</docDate>
 		<docAuthor>de Georges Feydeau</docAuthor>
 		<div type="docImprint">
-			<editor id="LIBRAIRIE THÉÂTRALE">PARIS, LIBRAIRIE THÉÂTRALE, L MICHAUD, éditeur, 14 rue de Grammont, 14.</editor>			
+			<!--TODO: handling of editor name at this place unclear <editor id="LIBRAIRIE THÉÂTRALE">PARIS, LIBRAIRIE THÉÂTRALE, L MICHAUD, éditeur, 14 rue de Grammont, 14.</editor>-->			
 		</div>
 	<castList>
                 <head>PERSONNAGE</head>
 	<castItem>
-                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#un-homme">UN HOMME</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
 <body>
 <div type="acte" n="1">
@@ -85,7 +85,8 @@
                     <head/>
 <sp who="#un-homme">
                         <speaker>UN HOMME.</speaker>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">Non, ce que c'est que la déveine !</l>
 	<l n="2">J’avais mis mon beau pantalon ;</l>
@@ -309,7 +310,7 @@
 	<l n="147">C'est un peu gênant dans le monde,</l>
 	<l n="148">Mais les chiens ne m'approchent pas.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1887">1887</date>
+                        <date>1887</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k93811036</idno>
@@ -75,7 +75,7 @@
                 </div><!--@id="FRINZINE"-->
 		</div>
 		<performance>	
-			<ab type="premiere"/><!--date=""--><!--location=""-->
+			<ab type="premiere"/><!--@date=""--><!--@location=""-->
 		</performance>
 		<div type="acheveImprime">
                 <p>ÉVREUX, IMPRIMERIE DE CHARLES HÉRISSEY.</p>
@@ -83,9 +83,9 @@
 		<castList>
 			<head>PERSONNAGES.</head>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#jeune-femme">JEUNE FEMME</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A"--> .......... Mademoiselle Bergé.</castItem>
+                    <role statut_amoureux="néant" corresp="#jeune-femme">JEUNE FEMME</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--> .......... Mademoiselle Bergé.</castItem>
 		</castList>
-		<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">1637.</set>-->
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">1637.</set>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -94,7 +94,8 @@
                     <head/>
 <sp who="#la-jeune-femme">
                         <speaker>LA JEUNE FEMME.</speaker>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">C'est navrant ! C'est affreux ! Mais aussi c'est bine fait.</l>
 	<l n="2">J'avais maint partis à ma guise :</l>
@@ -224,7 +225,7 @@
 	<l n="100">Prouvera qu'un mauvais artiste</l>
 	<l n="101">Peut faire un excellent mari.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1754">1754</date>
+                        <date>1754</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k56762213/f6.image</idno>
@@ -48,9 +48,6 @@
                     </person>
                     <person xml:id="schnapan" sex="MALE">
                         <persName>Schnapan</persName>
-                    </person>
-                    <person xml:id="daphnis" sex="FEMALE">
-                        <persName>Daphnis</persName>
                     </person>
                     <person xml:id="un-berger" sex="UNKNOWN">
                         <persName>Un-berger</persName>
@@ -91,23 +88,23 @@
 		</div>
 		<div type="approbation">
                 <head>APPROBATION.</head>
-			<p n="">J'ai lu par ordre de Monseigneur Le Chancelier, l'Amant déguisé, Parodie faisant partie du nouveau Recueil de Pièces de Théâtre, et je crois que l'on en peut en permettre l'impression. À Paris, ce 17 Juin 1754.</p>
-			<p n="">CRÉBILLON.</p>
+			<p>J'ai lu par ordre de Monseigneur Le Chancelier, l'Amant déguisé, Parodie faisant partie du nouveau Recueil de Pièces de Théâtre, et je crois que l'on en peut en permettre l'impression. À Paris, ce 17 Juin 1754.</p>
+			<p>CRÉBILLON.</p>
 		</div>
 		<castList>
                 <head>ACTEURS.</head>
 			<castItem>
-                    <role corresp="#daphnis">DAPHNIS</role><!--@sex="2" @type="H" @statut="berger" @age="A" @stat_amour="néant"-->, berger déguisé sous l'habit de Justine sa soeur autrefois Confidente de Thémire. Monsieur ROCHARD.</castItem>
+                    <role corresp="#daphnis">DAPHNIS</role><!--@sex="2"--><!--@type="H"--><!--@statut="berger"--><!--@age="A"--><!--@stat_amour="néant"-->, berger déguisé sous l'habit de Justine sa soeur autrefois Confidente de Thémire. Monsieur ROCHARD.</castItem>
 			<castItem>
-                    <role corresp="#themire">THÉMIRE</role><!--@sex="1" @type="H" @statut="berger" @age="A" @stat_amour="néant"-->, Bergère. Madame FAVART.</castItem>
+                    <role corresp="#themire">THÉMIRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="berger"--><!--@age="A"--><!--@stat_amour="néant"-->, Bergère. Madame FAVART.</castItem>
 			<castItem>
-                    <role corresp="#schnapan">SCHNAPAN</role><!--@sex="1" @type="H" @statut="garde-chasse" @age="A" @stat_amour="néant"-->, Garde-chasse. M. CHANVILLE.</castItem>
+                    <role corresp="#schnapan">SCHNAPAN</role><!--@sex="1"--><!--@type="H"--><!--@statut="garde-chasse"--><!--@age="A"--><!--@stat_amour="néant"-->, Garde-chasse. M. CHANVILLE.</castItem>
 			<castItem>
-                    <role corresp="#troupe-de-bergers-et-bergeres">TROUPE DE BERGERS ET BERGÈRES</role><!--@sex="9" @type="H" @statut="berger" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#troupe-de-bergers-et-bergeres">TROUPE DE BERGERS ET BERGÈRES</role><!--@sex="9"--><!--@type="H"--><!--@statut="berger"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 			<castItem>
-                    <role corresp="#troupe-de-chasseurs">TROUPE DE CHASSEURS</role><!--@sex="1" @type="H" @statut="chasseur" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#troupe-de-chasseurs">TROUPE DE CHASSEURS</role><!--@sex="1"--><!--@type="H"--><!--@statut="chasseur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		</castList>
-		<!--usage of set in correct place but with unknown attributes <set location="Lieu inconnu" country="Pays imaginaire" periode="XVIIème" gps=""/>-->
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Lieu inconnu" country="Pays imaginaire" periode="XVIIème" gps=""/>-->
 	</front>
 <body>
 <div type="acte" n="1">
@@ -260,11 +257,11 @@
 </sp>
 <sp who="#daphnis">
                         <speaker>DAPHNIS.</speaker>
-	<l n="92" part="I">Quel qu'amant...</l><!-- @syll="3"-->
+	<l n="92" part="I">Quel qu'amant...</l><!--@syll="3"-->
 </sp>
 <sp who="#themire">
                         <speaker>THÉMIRE.</speaker>
-	<l n="92" part="F">J'en fuis les discours.</l><!-- @syll="5"-->
+	<l n="92" part="F">J'en fuis les discours.</l><!--@syll="5"-->
 </sp>
 <sp who="#daphnis">
                         <speaker>DAPHNIS.</speaker>
@@ -444,7 +441,8 @@
 	<l n="193">Du gaillard, qui veut vous surprendre,</l>
 	<l n="194">Vous tombez bientôt dans les lacs.</l>
 	<l n="195">Quand au bois, etc.</l>
-<poem type="chanson">
+<!--<poem>-->
+                        <ab type="chanson">
 <lg n="1">
 	<l n="196">L'autre jour la jeune Colette,</l>
 	<l n="197">En gardant ici son Troupeau,</l>
@@ -466,7 +464,7 @@
 	<l n="209">Du remède, l'amour fit choix.</l>
 	<l n="210">Quand au bois, etc.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 <sp who="#themire">
                         <speaker>THÉMIRE.</speaker>
@@ -498,11 +496,11 @@
 </sp>
 <sp who="#themire">
                         <speaker>THÉMIRE.</speaker>
-	<l n="221" part="I">Partons....</l><!-- @syll="2"-->
+	<l n="221" part="I">Partons....</l><!--@syll="2"-->
 </sp>
 <sp who="#daphnis">
                         <speaker>DAPHNIS.</speaker>
-	<l n="221" part="F">Pour quel asile...</l><!-- @syll="4"-->
+	<l n="221" part="F">Pour quel asile...</l><!--@syll="4"-->
 </sp>
 <sp who="#themire">
                         <speaker>THÉMIRE.</speaker>
@@ -529,11 +527,11 @@
                         <speaker>THÉMIRE.</speaker>
 	<l n="230">Vas ! Je connais, </l>
 	<l n="231">Pour moi ton zèle extrême ; </l>
-	<l n="232" part="I">Je sais...</l><!-- @syll="2"-->
+	<l n="232" part="I">Je sais...</l><!--@syll="2"-->
 </sp>
 <sp who="#daphnis">
                         <speaker>DAPHNIS.</speaker>
-	<l n="232" part="F">Non, non, tu ne saurais,</l><!-- @syll="6"-->
+	<l n="232" part="F">Non, non, tu ne saurais,</l><!--@syll="6"-->
 	<l n="233">Savoir, combien je t'aime.</l>
 </sp>
 <sp who="#themire">
@@ -587,11 +585,11 @@
 </sp>
 <sp who="#themire">
                         <speaker>THÉMIRE.</speaker>
-	<l n="267" part="I">Laisse-moi....</l><!-- @syll="3"-->
+	<l n="267" part="I">Laisse-moi....</l><!--@syll="3"-->
 </sp>
 <sp who="#daphnis">
                         <speaker>DAPHNIS.</speaker>
-	<l n="267" part="F">Moi, te laisser !</l><!-- @syll="4"-->
+	<l n="267" part="F">Moi, te laisser !</l><!--@syll="4"-->
 	<l n="268">De ton âme,</l>
 	<l n="269">La flamme,  </l>
 	<l n="270">Ne saurait plus se cacher.</l>
@@ -608,11 +606,11 @@
 <sp who="#daphnis">
                         <speaker>DAPHNIS.</speaker>
 <stage type="title">AIR. Un mouvement de curiosité, etc.</stage>
-	<l n="277" part="I">Tu peux parler....</l><!-- @syll="4"-->
+	<l n="277" part="I">Tu peux parler....</l><!--@syll="4"-->
 </sp>
 <sp who="#themire">
                         <speaker>THÉMIRE.</speaker>
-	<l n="278" part="F">Ne peut-on nous entendre.</l><!-- @syll="6"-->
+	<l n="278" part="F">Ne peut-on nous entendre.</l><!--@syll="6"-->
 </sp>
 <sp who="#daphnis">
                         <speaker>DAPHNIS.</speaker>

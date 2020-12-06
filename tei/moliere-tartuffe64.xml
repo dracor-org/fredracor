@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="2011">2011</date>
+                        <date>2011</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -93,23 +93,23 @@
 		<castList>
                 <head>ACTEURS</head>
 			<castItem>
-                    <role corresp="#madame-pernelle">MADAME PERNELLE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="V" @stat_amour="néant"-->, mère d'Orgon.</castItem>
+                    <role corresp="#madame-pernelle">MADAME PERNELLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="V"--><!--@stat_amour="néant"-->, mère d'Orgon.</castItem>
 			<castItem>
-                    <role corresp="#elmire">ELMIRE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->, femme d'Orgon.</castItem>
+                    <role corresp="#elmire">ELMIRE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, femme d'Orgon.</castItem>
 			<castItem>
-                    <role corresp="#orgon">ORGON </role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->, mari d'Elmire.</castItem>
+                    <role corresp="#orgon">ORGON </role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, mari d'Elmire.</castItem>
 			<castItem>
-                    <role corresp="#damis">DAMIS</role><!--@sex="2" @type="H" @statut="bourgeois" @age="J" @stat_amour="néant"-->, fils d'Orgon.</castItem>
+                    <role corresp="#damis">DAMIS</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, fils d'Orgon.</castItem>
 			<castItem>
-                    <role corresp="#cleante">CLÉANTE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->, beau-frère d'Orgon.</castItem>
+                    <role corresp="#cleante">CLÉANTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, beau-frère d'Orgon.</castItem>
 			<castItem>
-                    <role corresp="#tartuffe">TARTUFFE</role><!--@sex="1" @type="H" @statut="dévot" @age="A" @stat_amour="néant"-->, faux dévot.</castItem>
+                    <role corresp="#tartuffe">TARTUFFE</role><!--@sex="1"--><!--@type="H"--><!--@statut="dévot"--><!--@age="A"--><!--@stat_amour="néant"-->, faux dévot.</castItem>
 			<castItem>
-                    <role corresp="#dorine">DORINE</role><!--@sex="2" @type="H" @statut="suivante" @age="A" @stat_amour="néant"-->, suivante.</castItem>
+                    <role corresp="#dorine">DORINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="suivante"--><!--@age="A"--><!--@stat_amour="néant"-->, suivante.</castItem>
 			<castItem>
-                    <role corresp="#flipote">FLIPOTE</role><!--@sex="2" @type="H" @statut="servante" @age="A" @stat_amour="néant"-->, servante de Mme Pernelle.</castItem>
+                    <role corresp="#flipote">FLIPOTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="servante"--><!--@age="A"--><!--@stat_amour="néant"-->, servante de Mme Pernelle.</castItem>
 		</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">Le Scène est à Paris</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">Le Scène est à Paris</set>-->
 	</front>
 <body>
 <div type="act" n="1">
@@ -773,8 +773,9 @@
 <sp who="#cleante">
                         <speaker>CLÉANTE.</speaker>
 	<l n="403" part="I">Oui.</l>
-</sp>S
-<sp who="#orgon">
+</sp><!--text():S
+-->
+                    <sp who="#orgon">
                         <speaker>ORGON.</speaker>
 	<l n="403" part="M">Je suis votre valet.</l>
 <stage type="exit">Il veut s'en aller.</stage>

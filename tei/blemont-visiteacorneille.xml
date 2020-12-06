@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1897">1897</date>
+                        <date>1897</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k9736782g?rk=1072966;4</idno>
@@ -77,28 +77,30 @@
                 </div><!--@id="stahl"-->
 		</div>
 		<performance>
-			<ab type="premiere"/><!--date=""--><!--location=""-->
+			<ab type="premiere"/><!--@date=""--><!--@location=""-->
 		</performance>
 		<castList>
                 <head>PERSONNAGES ACTEURS qui ont créé les rôles.</head>
 			<castItem>
-                    <role corresp="#une-jeune-femme">UNE JEUNE FEMME</role><!--@sex="2" @type="H" @statut="écrivain" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#une-jeune-femme">UNE JEUNE FEMME</role><!--@sex="2"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 			<castItem>
-                    <role corresp="#troupe-de-comediens">TROUPE DE COMÉDIENS</role><!--@sex="9" @type="H" @statut="écrivain" @age="A" @stat_amour="néant"-->, qui viennent de jouer Le Cid de Corneille.</castItem>
+                    <role corresp="#troupe-de-comediens">TROUPE DE COMÉDIENS</role><!--@sex="9"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"-->, qui viennent de jouer Le Cid de Corneille.</castItem>
 
 		</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
 <body>
 <div type="acte" n="1">
-                <head>VISITE À CORNEILLE</head>
+                <head>VISITE À CORNEILLE</head><!--text():
 madame Jules Claretie.
-<div type="scene" n="1">
+-->
+                <div type="scene" n="1">
                     <head/>
 <stage type="location">Autour du buste de Pierre Corneille, sont groupés les acteurs qui viennent de jouer le Cid ; une jeune femme, vêtue à la mode du dernier printemps, entre en scène et s'avance vers les comédiens.</stage>
 <sp who="#le-jeune-femme">
                         <speaker>[LA JEUNE FEMME].</speaker>
-<poem type="poème">
+<!--<poem>-->
+                        <ab type="poème">
 <lg n="1">
 	<l n="1">Seigneurs, soyez cléments ; excusez-moi, Chimène !</l>
 	<l n="2">Dans ce monde idéal, votre illustre domaine,</l>
@@ -334,7 +336,7 @@ madame Jules Claretie.
 	<l n="215">Que Corneille a pétri de ses robustes mains</l>
 	<l n="216">Les plus purs et les plus vaillants des coeurs humains.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

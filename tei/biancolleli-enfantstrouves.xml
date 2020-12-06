@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1733">1733</date>
+                        <date>1733</date>
                         <date type="premiere" when="1732-12-09">Représentée pour la première fois par les Comédiens italiens ordinaires du Roi, le 9 décembre 1732.</date>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k58012940</idno>
@@ -87,35 +87,35 @@
 		<div type="docImprint">
 			<div type="approbation">
                     <head>APPROBATION.</head>
-				<p n="">Lu et examiné pour suite du Nouveau Théâtre Italien. À Paris ce 21 Janvier 1733. DANCHET.</p>
+				<p>Lu et examiné pour suite du Nouveau Théâtre Italien. À Paris ce 21 Janvier 1733. DANCHET.</p>
 			</div><!--@id="1713-08-23"-->
 			<div type="printer">
                     <p>À PARIS, Chez BRIASSON, rue Saint-Jacques, à la Science.</p>
                 </div><!--@id=""-->
 		</div>
 		<performance>
-			<ab type="premiere">Représentée pour la première fois par les Comédiens italiens ordinaires du Roi, le 9 décembre 1732.</ab><!--date="1732-12-09"--><!--location="Loge de Pellegrin"-->
+			<ab type="premiere">Représentée pour la première fois par les Comédiens italiens ordinaires du Roi, le 9 décembre 1732.</ab><!--@date="1732-12-09"--><!--@location="Loge de Pellegrin"-->
 		</performance>
 	<castList>
                 <head>ACTEURS</head>
 		<castItem>
-                    <role corresp="#temire">TEMIRE</role><!--@sex="2" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#temire">TEMIRE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#fatime">FATIME</role><!--@sex="2" @type="H" @statut="confident" @age="A" @stat_amour="néant"-->, Confidente de Témire.</castItem>
+                    <role corresp="#fatime">FATIME</role><!--@sex="2"--><!--@type="H"--><!--@statut="confident"--><!--@age="A"--><!--@stat_amour="néant"-->, Confidente de Témire.</castItem>
 		<castItem>
-                    <role corresp="#diaphane">DIAPHANE</role><!--@sex="1" @type="H" @statut="sultan" @age="A" @stat_amour="néant"-->, Sultan de Tripoli.</castItem>
+                    <role corresp="#diaphane">DIAPHANE</role><!--@sex="1"--><!--@type="H"--><!--@statut="sultan"--><!--@age="A"--><!--@stat_amour="néant"-->, Sultan de Tripoli.</castItem>
 		<castItem>
-                    <role corresp="#alcidor">ALCIDOR</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#alcidor">ALCIDOR</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#jasmin">JASMIN</role><!--@sex="1" @type="H" @statut="vizir" @age="A" @stat_amour="néant"-->, Vizir, Confident du Sultan.</castItem>
+                    <role corresp="#jasmin">JASMIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="vizir"--><!--@age="A"--><!--@stat_amour="néant"-->, Vizir, Confident du Sultan.</castItem>
 		<castItem>
-                    <role corresp="#carabin">CARABIN</role><!--@sex="1" @type="H" @statut="gascon" @age="A" @stat_amour="néant"-->, Gascon.</castItem>
+                    <role corresp="#carabin">CARABIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="gascon"--><!--@age="A"--><!--@stat_amour="néant"-->, Gascon.</castItem>
 		<castItem>
-                    <role corresp="#matador">MATADOR</role><!--@sex="1" @type="H" @statut="spadassin" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#matador">MATADOR</role><!--@sex="1"--><!--@type="H"--><!--@statut="spadassin"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#esclaves">ESCLAVES</role><!--@sex="9" @type="H" @statut="esclave" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#esclaves">ESCLAVES</role><!--@sex="9"--><!--@type="H"--><!--@statut="esclave"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Tripoli" country="Liban" periode="XVIIème" gps="32.887209, 13.191338">La Scène est à Tripoli dans le Sérail.</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Tripoli" country="Liban" periode="XVIIème" gps="32.887209, 13.191338">La Scène est à Tripoli dans le Sérail.</set>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -406,8 +406,9 @@
                         <speaker>ALCIDOR.</speaker>
 	<l n="156" part="F">J'entends parler Français :</l>
 	<l n="157">Où suis-je, mes amis ? Ma vue est si troublée ,</l>
-	<l n="158">Et de tant de malheurs mon âme est accablée,</l>****
-	<l n="159">Que je ne puis, hélas ! Parler, marcher, ni voir.</l>
+	<l n="158">Et de tant de malheurs mon âme est accablée,</l><!--text():****
+	-->
+                        <l n="159">Que je ne puis, hélas ! Parler, marcher, ni voir.</l>
 </sp>
 <sp who="#carabin">
                         <speaker>CARABIN.</speaker>
@@ -1135,7 +1136,8 @@
                         <speaker>DIAPHANE.</speaker>
 	<l n="461">Lisons... la main me tremble et j'aurai peine à lire.</l>
 <stage type="title">LETTRE.</stage>
-<poem type="lettre">
+<!--<poem>-->
+                        <ab type="lettre">
 <lg n="1">
 	<l n="462">Je vous attends, chère Temire ; </l>
 	<l n="463">Il est vers la Mosquée un sentier très obscur</l>
@@ -1143,7 +1145,7 @@
 	<l n="465">Si vous vous y rendez note départ est sûr.</l>
 	<l n="466">Qu'en dis-tu, cher Jasmin.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 <sp who="#jasmin">
                         <speaker>JASMIN.</speaker>

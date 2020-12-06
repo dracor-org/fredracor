@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1679">1679</date>
+                        <date>1679</date>
                         <date type="premiere" when="1661-02">Représentée pour la première fois en février 1661 à L'Hôtel de Bourgogne. </date>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -75,8 +75,8 @@
     <text>
 <front>
 	<docTitle>
-	    <titlePart part="main">LE SOT VENGÉ</titlePart>
-   	 <titlePart part="sub">COMÉDIE en UN ACTE</titlePart> 
+	    <titlePart type="main">LE SOT VENGÉ</titlePart>
+   	 <titlePart type="sub">COMÉDIE en UN ACTE</titlePart> 
 	</docTitle>
    <docDate when="1679">M. DC. LXXIX. Avec Privilège du Roi.</docDate>
    <docAuthor>DE MONSIEUR POISSON</docAuthor><!--@bio="poisson"-->
@@ -90,23 +90,23 @@
                 </div><!--@id="RIBOU"-->
 	</div>
 	<performance>
-		<ab type="premiere">Représentée pour la première fois en février 1661 à L'Hôtel de Bourgogne. </ab><!--date="1661-02"--><!--location="Hôtel de Bourgogne"-->
+		<ab type="premiere">Représentée pour la première fois en février 1661 à L'Hôtel de Bourgogne. </ab><!--@date="1661-02"--><!--@location="Hôtel de Bourgogne"-->
 	</performance>
 
 	<castList>
                 <head>PERSONNAGES</head>
    	<castItem>
-                    <role corresp="#lubin">LUBIN</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->, ou le sot vengé.</castItem>
+                    <role corresp="#lubin">LUBIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, ou le sot vengé.</castItem>
    	<castItem>
-                    <role corresp="#lubine">LUBINE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->, femme de Lubin.</castItem>
+                    <role corresp="#lubine">LUBINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, femme de Lubin.</castItem>
    	<castItem>
-                    <role corresp="#le-compere">LE COMPÈRE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="Lubine"-->, amoureux de Lubine.</castItem>
+                    <role corresp="#le-compere">LE COMPÈRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="Lubine"-->, amoureux de Lubine.</castItem>
    	<castItem>
-                    <role corresp="#monsieur-ragot">MONSIEUR RAGOT</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="Lubine"-->, amoureux de Lubine.</castItem>
+                    <role corresp="#monsieur-ragot">MONSIEUR RAGOT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="Lubine"-->, amoureux de Lubine.</castItem>
    	<castItem>
-                    <role corresp="#croquillon">CROQUILLON</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour="néant"-->, valet du Compère.</castItem>
+                    <role corresp="#croquillon">CROQUILLON</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, valet du Compère.</castItem>
   </castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène est a Paris.</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène est a Paris.</set>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -1279,7 +1279,7 @@
 	<l n="529">Commande, je suis ton esclave.</l>
 </sp>
 </div>
-<div type="scene" n="13" stage="entrance">
+<div type="scene" n="13">
                     <head>SCÈNE DERNIÈRE. Monsieur Ragot, Le Compère sortants chacun d'un côté, Lubin, Lubine.</head> 
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
@@ -1350,7 +1350,7 @@
                         <speaker>MONSIEUR RAGOT.</speaker>
 	<l n="559">Voilà, Messieurs, le sot vengé.</l>
 </sp>
-</div>
+</div><!--@stage="entrance"-->
 </div>
 </body>
 </text>

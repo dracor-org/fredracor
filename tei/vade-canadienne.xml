@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1758">1758</date>
+                        <date>1758</date>
                         <date type="premiere" when="1758">Représenté pour la première fois à Paris en 1758.</date>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -87,9 +87,9 @@
 		<docDate when="1758">1758.</docDate>
 		<docAuthor>PAR M. VADÉ.</docAuthor><!--@bio="vade"-->
 		<div type="docImprint">
-			<div date="" type="privilege">
+			<div type="privilege">
                     <head/>
-		</div>
+		</div><!--@date=""-->
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
@@ -98,28 +98,28 @@
                 </div>
 		</div>
 		<performance>
-			<ab type="premiere">Représenté pour la première fois à Paris en 1758.</ab><!--date="1758"--><!--location="Paris"-->
+			<ab type="premiere">Représenté pour la première fois à Paris en 1758.</ab><!--@date="1758"--><!--@location="Paris"-->
 		</performance>
 	<castList>
                 <head>ACTEURS</head>
 		<castItem>
-                    <role corresp="#la-marquise">LA MARQUISE</role><!--@sex="2" @type="H" @statut="marquis" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#la-marquise">LA MARQUISE</role><!--@sex="2"--><!--@type="H"--><!--@statut="marquis"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#la-comtesse">LA COMTESSE</role><!--@sex="2" @type="H" @statut="comte" @age="A" @stat_amour="néant"-->, sa soeur.</castItem>
+                    <role corresp="#la-comtesse">LA COMTESSE</role><!--@sex="2"--><!--@type="H"--><!--@statut="comte"--><!--@age="A"--><!--@stat_amour="néant"-->, sa soeur.</castItem>
 		<castItem>
-                    <role corresp="#dorimont">DORIMONT</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->, père de Julie.</castItem>
+                    <role corresp="#dorimont">DORIMONT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, père de Julie.</castItem>
 		<castItem>
-                    <role corresp="#julie">JULIE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->, sous le nom de Zinca.</castItem>
+                    <role corresp="#julie">JULIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, sous le nom de Zinca.</castItem>
 		<castItem>
-                    <role corresp="#le-chevalier">LE CHEVALIER</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->, fils de la Marquise.</castItem>
+                    <role corresp="#le-chevalier">LE CHEVALIER</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, fils de la Marquise.</castItem>
 		<castItem>
-                    <role corresp="#lisette">LISETTE</role><!--@sex="2" @type="H" @statut="suivante" @age="A" @stat_amour="néant"-->, suivante de la Marquise.</castItem>
+                    <role corresp="#lisette">LISETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="suivante"--><!--@age="A"--><!--@stat_amour="néant"-->, suivante de la Marquise.</castItem>
 		<castItem>
-                    <role corresp="#frontin">FRONTIN</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour="néant"-->, valet du Chevalier.</castItem>
+                    <role corresp="#frontin">FRONTIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, valet du Chevalier.</castItem>
 		<castItem>
-                    <role corresp="#brigantin">BRIGANTIN</role><!--@sex="1" @type="H" @statut="maître d'hôtel" @age="A" @stat_amour="néant"-->, Maître-d'Hôtel de la Marquise.</castItem>
+                    <role corresp="#brigantin">BRIGANTIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="maître d'hôtel"--><!--@age="A"--><!--@stat_amour="néant"-->, Maître-d'Hôtel de la Marquise.</castItem>
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XVIIIème" link="">La Scène est dans le château de la Marquise.</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XVIIIème" link="">La Scène est dans le château de la Marquise.</set>-->
 	</front>
 <body>
 <div type="act" n="1">
@@ -136,8 +136,9 @@
 	<l n="6">Ils sauraient se prédire une meilleure fin.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="7">De ces gens quelquefois la science est bornée :</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="7">De ces gens quelquefois la science est bornée :</l>
 	<l n="8">Mais celui qui fans fard m'apprit ma destinée,</l>
 	<l n="9">Sur le passé si bien a su me définir,</l>
 	<l n="10">Que mon esprit frappé le croit sur l'avenir.</l>
@@ -159,8 +160,9 @@
 	<l n="22">Mais du moins sur la Carte on marche en sûreté.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="23">Qui te parle, dis-mot, de faire ce voyage ?</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="23">Qui te parle, dis-mot, de faire ce voyage ?</l>
 	<l n="24" part="I">La Marquise à mon goût s'oppose.</l>
 </sp>
 <sp who="#frontin">
@@ -170,8 +172,9 @@
 	<l n="26" part="I">C'est une mère unique.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="26" part="F">Elle a su m'accabler</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="26" part="F">Elle a su m'accabler</l>
 	<l n="27" part="I">De bontés, de bienfaits.</l>
 </sp>
 <sp who="#frontin">
@@ -184,8 +187,9 @@
 	<l n="32" part="I">Je risquerais le mot.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="32" part="F">En parler de la sorte !</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="32" part="F">En parler de la sorte !</l>
 	<l n="33" part="I">Faquin...</l>
 </sp>
 <sp who="#frontin">
@@ -226,8 +230,9 @@
 	<l n="51">On prenait aisément son parti sur le reste.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="52">Ma curiosité ne peut m'être funeste,</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="52">Ma curiosité ne peut m'être funeste,</l>
 	<l n="53">Puisqu'on m'a présagé les plus heureux liens.</l>
 </sp>
 <sp who="#la-comtesse">
@@ -253,8 +258,9 @@
 	<l n="62" part="I">C'est que...</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="62" part="M">C'est que.... Va-t-en.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="62" part="M">C'est que.... Va-t-en.</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
@@ -276,8 +282,9 @@
 	<l n="70">Je veux votre bonheur, vous détruisez le mien.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="71">Je vous dois tout, Madame ; et ma reconnaissance...</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="71">Je vous dois tout, Madame ; et ma reconnaissance...</l>
 </sp>
 <sp who="#la-marquise">
                         <speaker>LA MARQUISE.</speaker>
@@ -288,8 +295,9 @@
 	<l n="73" part="I">Ma soeur, ménagez-le...</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="73" part="F">Oui, si c'en est une enfin,</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="73" part="F">Oui, si c'en est une enfin,</l>
 	<l n="74">Que de suivre son goût, ou plutôt son destin.</l>
 	<l n="75">Je le sais, comme vous, Julie est jeune, aimable,</l>
 	<l n="76">Riche.... Mais je me forge une idée agréable</l>
@@ -421,8 +429,9 @@
 	<l n="143" part="I">Mon fils, vous persistez, c'en est donc fait ?</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="143" part="F">Ma mère,</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="143" part="F">Ma mère,</l>
 	<l n="144">Malgré tout mon respect, je crains de vous déplaire.</l>
 	<l n="145">Je fuis bien malheureux ! Au nom de vos bienfaits,</l>
 	<l n="146">Ne gênez point mon goût. Les efforts que j'ai faits</l>
@@ -681,8 +690,9 @@
 	<l n="247">L'a (soit dit entre nous) fort mal appréciée.</l>
 </sp>
 <sp who="#la-comtesse">
-                        <speaker>LA COMTESSE.</speaker>.
-	<l n="248" part="I">Eh bien ?</l>
+                        <speaker>LA COMTESSE.</speaker><!--text():.
+	-->
+                        <l n="248" part="I">Eh bien ?</l>
 </sp>
 <sp who="#dorimont">
                         <speaker>DORIMONT.</speaker>
@@ -1193,8 +1203,9 @@
 	<l n="386" part="I">Ses progrès son bien courts.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="386" part="F">Une Divinité,</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="386" part="F">Une Divinité,</l>
 	<l n="387">Comparée à ses traits, perdrait au parallèle.</l>
 	<l n="388" part="I">Quelle taille ! Quels yeux !</l>
 </sp>
@@ -1220,8 +1231,9 @@
 	<l n="393" part="I">Je ne dis rien de trop.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="393" part="F">Comment la nomme-t-on,</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="393" part="F">Comment la nomme-t-on,</l>
 	<l n="394" part="I">Lisette ?</l>
 </sp>
 <sp who="#lisette">
@@ -1229,16 +1241,18 @@
 	<l n="394" part="M">Zing..... Zinca.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="394" part="F">Zinca ! Le joli nom !</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="394" part="F">Zinca ! Le joli nom !</l>
 </sp>
 <sp who="#lisette">
                         <speaker>LISETTE.</speaker>
 	<l n="395" part="I">Le nom y fait beaucoup !</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="395" part="F">Zinca, je vous adore.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="395" part="F">Zinca, je vous adore.</l>
 <stage type="surprise">Zinca paraît surprise.</stage>
 	<l n="396">Sur mon étoile, hélas ! Mon goût l'emporte encore.</l>
 	<l n="397" part="I">Elle ne répond pas !</l>
@@ -1249,8 +1263,9 @@
 	<l n="398">On en est dispensé, lorsque l'on n'entend rien.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="399" part="I">Zinca ? </l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="399" part="I">Zinca ? </l>
 <stage type="serious">Elle paraît sérieuse.</stage>
 	<l n="399" part="F">Quel sérieux ! Je lui déplais, peut-être ?</l>
 </sp>
@@ -1279,8 +1294,9 @@
 	<l n="403" part="I">Pour les bons procédés, c'est être trop cruelle.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="404">Ne la chagrine pas. Mon bonheur dépend d'elle.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="404">Ne la chagrine pas. Mon bonheur dépend d'elle.</l>
 	<l n="405">Comment peindre à ses yeux toute ma passion ?</l>
 <stage type="wave/tender/estonish">Il lui fait des signes tendres et passionnés. Elle a l'air étonné.</stage>
 	<l n="406">Que je fuis maladroit ! Lisette, aide-moi donc.</l>
@@ -1290,16 +1306,18 @@
 	<l n="407" part="I">Moi ! Quêter de l'amour !</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="407" part="F">Tu vois les circonstances.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="407" part="F">Tu vois les circonstances.</l>
 </sp>
 <sp who="#lisette">
                         <speaker>LISETTE.</speaker>
 	<l n="408">Je veux agir pour moi, quand je fais des avances.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="409" part="I">Et toi, Frontin ?</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="409" part="I">Et toi, Frontin ?</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN, se carrant.</speaker>
@@ -1308,8 +1326,9 @@
 	<l n="411" part="I">Chacun sait ce qu'il vaut.</l>
 </sp><!--@stage="location"-->
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="411" part="F">Eh bien ! Je veux lui dire,</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="411" part="F">Eh bien ! Je veux lui dire,</l>
 	<l n="412">Qu'elle m'entende, ou non, tout ce qu'elle m'inspire.</l>
 	<l n="413">Oui, charmante Zinca, je ne vis que pour vous.</l>
 	<l n="414">Le Destin l'a prédit. Que ce Destin m'est doux !</l>
@@ -1356,8 +1375,9 @@
 	<l n="432" part="F">Après vous, que ferais-je ?</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="433">Mais fais la convenir qu'elle a conçu pour moi</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="433">Mais fais la convenir qu'elle a conçu pour moi</l>
 	<l n="434" part="I">La haine ou le mépris le plus affreux.</l>
 </sp>
 <sp who="#lisette">
@@ -1371,8 +1391,9 @@
 	<l n="439">Qui n'a pour tout talent que la bégueulerie.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="440">Ton insolent discours passe la raillerie.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="440">Ton insolent discours passe la raillerie.</l>
 	<l n="441">Apprends que la sagesse unie à la beauté...</l>
 </sp>
 <sp who="#frontin">
@@ -1383,8 +1404,9 @@
 	<l n="445" part="I">Faute d'être aperçu.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="445" part="F">Sa pudeur est témoin</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="445" part="F">Sa pudeur est témoin</l>
 	<l n="446" part="I">Qu'en son climat...</l>
 </sp>
 <sp who="#frontin">
@@ -1589,8 +1611,9 @@
 	<l n="534">Il est vrai que cela me paraît singulier.</l>
 </sp><!--@stage="aparte"-->
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="535">Singulier ! Point du tout. Rien de plus ordinaire ;</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="535">Singulier ! Point du tout. Rien de plus ordinaire ;</l>
 	<l n="536">Que de voir parmi nous une jeune étrangère,</l>
 	<l n="537" part="I">Ignorant le Français.</l>
 </sp>
@@ -1600,8 +1623,9 @@
 	<l n="538" part="I">Quelle tête !</l>
 </sp><!--@stage="aparte"-->
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER, rêvant.</speaker>.
-	<l n="538" part="F">Le sort, de moi, se fait un jeu.</l>
+                        <speaker>LE CHEVALIER, rêvant.</speaker><!--text():.
+	-->
+                        <l n="538" part="F">Le sort, de moi, se fait un jeu.</l>
 	<l n="539">Toi-même, conçois-tu mon étoile bizarre ?</l>
 	<l n="540" part="I">Qu'en dis-tu ?</l>
 </sp><!--@stage="dream"-->
@@ -1613,8 +1637,9 @@
 	<l n="542" part="I">Dont vous prenez la route.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="542" part="F">Écoute mes raisons.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="542" part="F">Écoute mes raisons.</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN, l'écoutant attentivement.</speaker>
@@ -1633,8 +1658,9 @@
 	<l n="547">Pour trop vous imiter, Monsieur, je déraisonne.</l>
 </sp><!--@stage="frighten"-->
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="548">Ce qui m'arrive ici n'a donc rien qui t'étonne !</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="548">Ce qui m'arrive ici n'a donc rien qui t'étonne !</l>
 	<l n="549">Mets-toi pour un moment à ma place. Comment</l>
 	<l n="550">Pourrais-tu supporter un silence assommant ?</l>
 	<l n="551">Ce souvenir cruel ne sert qu'à me confondre.</l>
@@ -1651,8 +1677,9 @@
 	<l n="557" part="M">Il est vrai.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="557" part="F">Mais Zinca.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="557" part="F">Mais Zinca.</l>
 	<l n="558">Ne parle point du tout. Que dis-tu de cela ?</l>
 </sp>
 <sp who="#frontin">
@@ -1661,8 +1688,9 @@
 	<l n="560" part="I">Avoir entendu dire...</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="560" part="M">Eh bien ! Quoi?</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="560" part="M">Eh bien ! Quoi?</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
@@ -1671,8 +1699,9 @@
 	<l n="562">On leur brisait les pieds, sans pouvoir les guérir,</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="563" part="I">Mais quel rapport, dis-moi ?...</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="563" part="I">Mais quel rapport, dis-moi ?...</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
@@ -1695,8 +1724,9 @@
 	<l n="569" part="M">Vous vous lâchez !</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>;
-	<l n="569" part="M">Sors.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():;
+	-->
+                        <l n="569" part="M">Sors.</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
@@ -1705,8 +1735,9 @@
 	<l n="571" part="I">Je m'en fuis.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="571" part="F">Non, Frontin. La raison est fort sage ,</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="571" part="F">Non, Frontin. La raison est fort sage ,</l>
 	<l n="572" part="I">Et ne me choque plus.</l>
 </sp>
 <sp who="#frontin">
@@ -1715,24 +1746,27 @@
 	<l n="573">Que vous n'écoutiez pas celle que vous avez !</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.(r/v**.)
-	<l n="574" part="I">Je trouve... que... Zinca...</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.(r/v**.)
+	-->
+                        <l n="574" part="I">Je trouve... que... Zinca...</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
 	<l n="574" part="F">Eh bien ! Vous lui trouvez ?...</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="575">Avec notre Julie un air de ressemblance.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="575">Avec notre Julie un air de ressemblance.</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
 	<l n="576" part="I">Bon ! Vous n'y pensez pas.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="576" part="F">Quelque faible nuance...</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="576" part="F">Quelque faible nuance...</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
@@ -1740,8 +1774,9 @@
 	<l n="578">Je crois que votre idée a tout l'air d'un regret,</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="579">Oui ; mais j'aime Zinca. Voilà ce qui me tue.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="579">Oui ; mais j'aime Zinca. Voilà ce qui me tue.</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
@@ -1749,16 +1784,18 @@
 	<l n="581" part="I">C'est de l'amour perdu.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="581" part="F">Je voudrais l'étouffer.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="581" part="F">Je voudrais l'étouffer.</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
 	<l n="582" part="I">La Marquise s'avance.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="582" part="F">Elle va triompher.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="582" part="F">Elle va triompher.</l>
 </sp>
 </div>
 <div type="scene" n="14">
@@ -1804,8 +1841,9 @@
 	<l n="602">Ne savent point servir de cadre aux sentiments.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="603" part="I">Eh ! Voilà ma raison.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="603" part="I">Eh ! Voilà ma raison.</l>
 </sp>
 <sp who="#la-marquise">
                         <speaker>LA MARQUISE.</speaker>
@@ -1814,8 +1852,9 @@
 	<l n="605">Et ne possède pas un mérite réel ?</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="606">Oh ! Si je l'entendais il serait naturel</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="606">Oh ! Si je l'entendais il serait naturel</l>
 	<l n="607" part="I">De croire à son mérite.....</l>
 </sp>
 <sp who="#la-marquise">
@@ -1824,8 +1863,9 @@
 	<l n="608" part="I">Qu'elle apprenne à parler français.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="608" part="F">Elle ! L'apprendre !</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="608" part="F">Elle ! L'apprendre !</l>
 	<l n="609">Apprendre le français ! Non, Madame, jamais.</l>
 </sp>
 <sp who="#la-marquise">
@@ -1833,8 +1873,9 @@
 	<l n="610" part="I">Vous le lui montrerez.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="610" part="F">Pour faire des progrès,</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="610" part="F">Pour faire des progrès,</l>
 	<l n="611">De ce genre surtout, il faut que l'écolière</l>
 	<l n="612">Commence par sentir que l'on cherche à lui plaire,</l>
 	<l n="613">Qu'un souris marque au moins sa bonne volonté:</l>
@@ -1845,8 +1886,9 @@
 	<l n="615">Quel garant, quelle preuve avez-vous de sa haine ?</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="616">Le plaisir qu'elle a pris à jouir de ma peine.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="616">Le plaisir qu'elle a pris à jouir de ma peine.</l>
 	<l n="617">Je tombe à ses genoux ; mes feux passionnés</l>
 	<l n="618">N'exigent qu'un regard. Non ; on me rit au nez.</l>
 </sp>
@@ -1871,8 +1913,9 @@
 	<l n="623">S'en venge, en vous fuyant ? Et j'eusse agi comme elle.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="624">Qui ? Moi ! La mépriser ! Julie est sage, belle.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="624">Qui ? Moi ! La mépriser ! Julie est sage, belle.</l>
 	<l n="625">Sa vertu, ses talents ont toujours eu sur moi</l>
 	<l n="626" part="I">Tous les droits de l'estime, et même...</l>
 </sp>
@@ -1884,8 +1927,9 @@
 	<l n="629" part="I">Je n'en veux plus avoir.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="629" part="M">Mais si Julie...</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="629" part="M">Mais si Julie...</l>
 </sp>
 <sp who="#la-marquise">
                         <speaker>LA MARQUISE.</speaker>
@@ -1905,8 +1949,9 @@
 	<l n="634" part="I">C'est le diable !</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER, revenu de sa confusion.</speaker>.
-	<l n="634" part="F">Zinca, tenez-moi lieu de tout.</l>
+                        <speaker>LE CHEVALIER, revenu de sa confusion.</speaker><!--text():.
+	-->
+                        <l n="634" part="F">Zinca, tenez-moi lieu de tout.</l>
 	<l n="635">Oui, faites que j'oublie, en vous voyant si belle,</l>
 	<l n="636">Un Objet qui, depuis son absence cruelle,</l>
 	<l n="637">A laissé dans mon coeur de quoi vous balancer.</l>
@@ -1915,8 +1960,9 @@
 <stage type="tender/recognize">Zinca le regarde tendrement, et semble être prête à se faire connaître.</stage>
 </sp><!--@stage="confuse"-->
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER, transporté.</speaker>.
-	<l n="640">Quel regard ! Non , Zinca, je vous serai fidèle ;</l>
+                        <speaker>LE CHEVALIER, transporté.</speaker><!--text():.
+	-->
+                        <l n="640">Quel regard ! Non , Zinca, je vous serai fidèle ;</l>
 	<l n="641">Je n'aimerai que vous : je vous en fait serment.</l>
 	<l n="642">Ah ! J'ai nommé Julie involontairement.</l>
 <stage type="indignation/anger">Zinca le regarde avec indignation, et se retourne avec colère.</stage>
@@ -1940,8 +1986,9 @@
 </sp><!--@stage="enthousiasm"-->
 <stage type="quick/closer">Zinca passe avec précipitation du côté de Lisette.</stage>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="649" part="F">Ingrate, c'en est fait.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="649" part="F">Ingrate, c'en est fait.</l>
 	<l n="650" part="I">Oui, je renonce à vous.</l>
 </sp>
 <sp who="#frontin">
@@ -1949,8 +1996,9 @@
 	<l n="650" part="F">Bon ! voilà parler net.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="651">Voilà ce qu'il fallait, pour guérir ma folie...</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="651">Voilà ce qu'il fallait, pour guérir ma folie...</l>
 	<l n="652">Sotte prédiction, tu m'as ravi Julie !</l>
 	<l n="653">Jusqu'au fond de mon coeur que ne peut-elle voir ?</l>
 	<l n="654">Hélas ! Il n'est plus temps.</l>
@@ -1966,32 +2014,36 @@
 	<l n="657">En termes positifs, répondre à ses parents.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="658" part="I">Qui ? Moi ! Me marier !</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="658" part="I">Qui ? Moi ! Me marier !</l>
 </sp>
 <sp who="#la-marquise">
                         <speaker>LA MARQUISE.</speaker>
 	<l n="658" part="F">Ce soir je les attends.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="659" part="I">Madame.... On les verra.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="659" part="I">Madame.... On les verra.</l>
 </sp>
 <sp who="#la-marquise">
                         <speaker>LA MARQUISE.</speaker>
 	<l n="659" part="F">Quel accueil leur ferai je ?</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="660" part="I">Celui que vous voudrez.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="660" part="I">Celui que vous voudrez.</l>
 </sp>
 <sp who="#la-marquise">
                         <speaker>LA MARQUISE.</speaker>
 	<l n="660" part="F">Enfin que leur dirai-je ?</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="661" part="I">Que je suis.... hors de moi.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="661" part="I">Que je suis.... hors de moi.</l>
 </sp>
 <sp who="#frontin">
                         <speaker>FRONTIN.</speaker>
@@ -2047,8 +2099,9 @@
 	<l n="676" part="M">Oh ! C'est ta faute.</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="676" part="F">À peine</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="676" part="F">À peine</l>
 	<l n="677" part="I">J'ose lever les yeux sur Dorimont.</l>
 </sp>
 <sp who="#dorimont">
@@ -2056,16 +2109,18 @@
 	<l n="677" part="F">Pourquoi ?</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="678" part="I">Cependant mon bonheur dépend de lui.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="678" part="I">Cependant mon bonheur dépend de lui.</l>
 </sp>
 <sp who="#dorimont">
                         <speaker>DORIMONT.</speaker>
 	<l n="678" part="F">De moi ?</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="679">Hélas ! Si j'ai besoin d'un secours c'est du vôtre ;</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="679">Hélas ! Si j'ai besoin d'un secours c'est du vôtre ;</l>
 	<l n="680" part="I">Je suis perdu sans vous.</l>
 </sp>
 <sp who="#dorimont">
@@ -2077,8 +2132,9 @@
 	<l n="684" part="I">Ne me va pas ?...</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="684" part="F">Monsieur, il s'agit de Julie.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="684" part="F">Monsieur, il s'agit de Julie.</l>
 	<l n="685">Ma mère, appuyez-moi. Je me jette à vos pieds.</l>
 	<l n="686">Engagez Dorimont, parlez, pressez , priez...</l>
 </sp>
@@ -2087,8 +2143,9 @@
 	<l n="687" part="I">Que puis-je faire ?</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="687" part="F">Hélas ! Faites donc que j'obtienne</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="687" part="F">Hélas ! Faites donc que j'obtienne</l>
 	<l n="688" part="I">Ma grâce.</l>
 </sp>
 <sp who="#dorimont">
@@ -2097,8 +2154,9 @@
 	<l n="689" part="I">Comme cela ? Mais, mais...</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="689" part="F">Monsieur, écrivez-lui.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="689" part="F">Monsieur, écrivez-lui.</l>
 	<l n="690">C'est dans votre bonté que je cherche un appui.</l>
 	<l n="691">Votre coeur est trop bon et pour être inexorable.</l>
 	<l n="692">Je vous en prie, au nom d'une fille adorable,</l>
@@ -2146,8 +2204,9 @@
 	<l n="706" part="I">Je ne me transformais...</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="706" part="F">Hélas ! je vous dois tout.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="706" part="F">Hélas ! je vous dois tout.</l>
 </sp>
 <sp who="#julie">
                         <speaker>JULIE.</speaker>
@@ -2157,8 +2216,9 @@
 	<l n="709" part="I">Il faudraît pourtant l'être...</l>
 </sp>
 <sp who="#le-chevalier">
-                        <speaker>LE CHEVALIER.</speaker>.
-	<l n="709" part="F">Ah ! Ne m'accablez pas.</l>
+                        <speaker>LE CHEVALIER.</speaker><!--text():.
+	-->
+                        <l n="709" part="F">Ah ! Ne m'accablez pas.</l>
 	<l n="710">Mon coeur désabusé ne croit qu'à vos appas.</l>
 	<l n="711">Je sens tous vos bienfaits, adorable Julie.</l>
 	<l n="712">Mon bonheur et la fin de ma bizarre de</l>

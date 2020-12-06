@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1881">1881</date>
+                        <date>1881</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bptk2079440</idno>
@@ -72,7 +72,7 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="TRESSE">PARIS, TRESSE ÉDITEUR, GALERIE DU THÉÂTRE-FRANÇAIS, PALAIS-ROYAL.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="TRESSE">PARIS, TRESSE ÉDITEUR, GALERIE DU THÉÂTRE-FRANÇAIS, PALAIS-ROYAL.</editor>-->
 			<div type="printer">
                     <p>F. Aureau. - Imprimerie de Lagny.</p>
                 </div>
@@ -80,11 +80,11 @@
 	<castList>
                 <head>PERSONNAGE</head>
 		<castItem>
-                    <role corresp="#monsieur">MONSIEUR</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#monsieur">MONSIEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 		<castItem>
-                    <role corresp="#madame">MADAME</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#madame">MADAME</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" link=""/>-->
 </front>
 <body>
 <div type="act" n="1">
@@ -103,20 +103,20 @@
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="5" part="I">Non.</l><!-- @syll="1"-->
+	<l n="5" part="I">Non.</l><!--@syll="1"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="5" part="F">Nous sommes ici pour jouer un proverbe.</l><!-- @syll="11"-->
+	<l n="5" part="F">Nous sommes ici pour jouer un proverbe.</l><!--@syll="11"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
 	<l n="6">Alors, dépêchons-nous. Ce salon est superbe ;</l>
-	<l n="7" part="I">Mais le théâtre, où donc est-il ?</l><!-- @syll="8"-->
+	<l n="7" part="I">Mais le théâtre, où donc est-il ?</l><!--@syll="8"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="7" part="F">Je n'en sais rien.</l><!-- @syll="4"-->
+	<l n="7" part="F">Je n'en sais rien.</l><!--@syll="4"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR, au public.</speaker>
@@ -131,21 +131,21 @@
                         <speaker>MONSIEUR.</speaker>
 	<l n="11">Que de monde, grands dieux ! On en a mis partout,</l>
 	<l n="12">Et ces messieurs qui sont là-bas au bout, debout,</l>
-	<l n="13" part="I">Ils ne pourront rien voir.</l><!-- @syll="6"-->
+	<l n="13" part="I">Ils ne pourront rien voir.</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="13" part="F">Mais ils pourront entendre.</l><!-- @syll="6"-->
+	<l n="13" part="F">Mais ils pourront entendre.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
 	<l n="14">Ils m'inspirent dès lors l'intérêt le plus tendre.</l>
 <stage type="shout">Criant au fond.</stage>
-	<l n="15" part="I">Monsieur, m'entendez-vous ? Oui ?</l><!-- @syll="7"-->
+	<l n="15" part="I">Monsieur, m'entendez-vous ? Oui ?</l><!--@syll="7"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="15" part="F">C'est donc pour le mieux.</l><!-- @syll="5"-->
+	<l n="15" part="F">C'est donc pour le mieux.</l><!--@syll="5"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
@@ -153,11 +153,11 @@
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="17" part="I">Ainsi, point de théâtre ?</l><!-- @syll="6"-->
+	<l n="17" part="I">Ainsi, point de théâtre ?</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="17" part="F">Un fauteuil, une chaise.</l><!-- @syll="6"-->
+	<l n="17" part="F">Un fauteuil, une chaise.</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
@@ -169,12 +169,12 @@
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="20" part="I">Trois ou quatre des miens.</l><!-- @syll="6"-->
+	<l n="20" part="I">Trois ou quatre des miens.</l><!--@syll="6"-->
 <stage type="walk">Ils arpentent la scène.</stage>
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR, aux dames voisines.</speaker>
-	<l n="20" part="F">Ne vous dérangez pas.</l><!-- @syll="6"-->
+	<l n="20" part="F">Ne vous dérangez pas.</l><!--@syll="6"-->
 	<l n="21">Supposons qu'un beau jour les plantes d'un parterre,</l>
 	<l n="22">Sans façon franchissant leur bordure de lierre,</l>
 	<l n="23">Envahissent l'allée et coupent le chemin,</l>
@@ -187,42 +187,42 @@
 </sp><!--@stage="toward"-->
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="30" part="I">Commençons.</l><!-- @syll="3"-->
+	<l n="30" part="I">Commençons.</l><!--@syll="3"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="30" part="F">Commençons, mais accordons nos flûtes.</l><!-- @syll="9"-->
-	<l n="31" part="I">Où sera la coulisse ?</l><!-- @syll="6"-->
+	<l n="30" part="F">Commençons, mais accordons nos flûtes.</l><!--@syll="9"-->
+	<l n="31" part="I">Où sera la coulisse ?</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="31" part="F">Et puis nous oublions.</l><!-- @syll="6"-->
+	<l n="31" part="F">Et puis nous oublions.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="32" part="I">Quoi donc encore ?</l><!-- @syll="4"-->
+	<l n="32" part="I">Quoi donc encore ?</l><!--@syll="4"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="32" part="F">Il faut que nous nous habillions.</l><!-- @syll="8"-->
+	<l n="32" part="F">Il faut que nous nous habillions.</l><!--@syll="8"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
 	<l n="33">C'est juste; des acteurs jouant sans leurs costumes,</l>
 	<l n="34">C'est le renversementde toutes les coutumes.</l>
-	<l n="35" part="I">C'est encore un quart d'heure.</l><!-- @syll="6"-->
+	<l n="35" part="I">C'est encore un quart d'heure.</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="35" part="F">Un quart d'heure, tu crois ?</l><!-- @syll="6"-->
+	<l n="35" part="F">Un quart d'heure, tu crois ?</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="37" part="I">Oui..</l><!-- @syll="1"-->
+	<l n="37" part="I">Oui..</l><!--@syll="1"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="37" part="F">Mais s'il t'en faut un, il m'en faut deux ou trois.</l><!-- @syll="11"-->
+	<l n="37" part="F">Mais s'il t'en faut un, il m'en faut deux ou trois.</l><!--@syll="11"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
@@ -230,15 +230,15 @@
 	<l n="39">Nous pourrions commencer au lever de l'aurore,</l>
 	<l n="40">Et quand nous reviendrons en .habits Pompadour,</l>
 	<l n="41">L'aiguille de ma montre aura fait demi-tour.</l>
-	<l n="42" part="I">Si nous nous en passions?,</l><!-- @syll="6"-->
+	<l n="42" part="I">Si nous nous en passions?,</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="42" part="M">De quoi?</l><!-- @syll="2"-->
+	<l n="42" part="M">De quoi?</l><!--@syll="2"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="42" part="F">De nos costumes.</l><!-- @syll="4"-->
+	<l n="42" part="F">De nos costumes.</l><!--@syll="4"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
@@ -268,76 +268,76 @@
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
 	<l n="49">Un habit apaiiions, un jabot de dentelle.</l>
-	<l n="50" part="I">Vous le voyez d'ici.</l><!-- @syll="6"-->
+	<l n="50" part="I">Vous le voyez d'ici.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="50" part="F">Vous la connaissez telle.</l><!-- @syll="6"-->
+	<l n="50" part="F">Vous la connaissez telle.</l><!--@syll="6"-->
 	<l n="51">Ah ! J'oubliais. La scène, on ne sait pas pourquoi,</l>
-	<l n="52" part="I">Se passe à Trianon...</l><!-- @syll="6"-->
+	<l n="52" part="I">Se passe à Trianon...</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="52" part="F">Et Louis seize est roi.</l><!-- @syll="6"-->
+	<l n="52" part="F">Et Louis seize est roi.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="53" part="I">Nous avons quatre acteurs nous d'abord.</l><!-- @syll="9"-->
+	<l n="53" part="I">Nous avons quatre acteurs nous d'abord.</l><!--@syll="9"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="53" part="F">Puis Lisette.</l><!-- @syll="6"-->
+	<l n="53" part="F">Puis Lisette.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="54" part="I">Et puis maître Frontin, mon valet.</l><!-- @syll="9"-->
+	<l n="54" part="I">Et puis maître Frontin, mon valet.</l><!--@syll="9"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="54" part="F">Ma soubrette.</l><!-- @syll="6"-->
+	<l n="54" part="F">Ma soubrette.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="55" part="I">Mais ils ne sont pas là.</l><!-- @syll="6"-->
+	<l n="55" part="I">Mais ils ne sont pas là.</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="55" part="F">Si nous nous passions d'eux ?</l><!-- @syll="6"-->
+	<l n="55" part="F">Si nous nous passions d'eux ?</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="56" part="I">Soit ; ils ne font qu'entrer et sortir.</l><!-- @syll="10"-->
+	<l n="56" part="I">Soit ; ils ne font qu'entrer et sortir.</l><!--@syll="10"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="56" part="F">Reste deux.</l><!-- @syll="2"-->
+	<l n="56" part="F">Reste deux.</l><!--@syll="2"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR, tendant la main à madame.</speaker>
-	<l n="57" part="I">Reste un, si tu veux bien.</l><!-- @syll="6"-->
+	<l n="57" part="I">Reste un, si tu veux bien.</l><!--@syll="6"-->
 </sp><!--@stage="MONSIEUR"-->
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="57" part="F">Je n'ai pas de rancune.</l><!-- @syll="6"-->
+	<l n="57" part="F">Je n'ai pas de rancune.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="58" part="I">Puisque ma femme et moi...</l><!-- @syll="6"-->
+	<l n="58" part="I">Puisque ma femme et moi...</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="58" part="M">C'est tout un...</l><!-- @syll="3"-->
+	<l n="58" part="M">C'est tout un...</l><!--@syll="3"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="58" part="F">C'est toute une.</l><!-- @syll="3"-->
+	<l n="58" part="F">C'est toute une.</l><!--@syll="3"-->
 	<l n="59">Théâtre, habits, valets supprimés, commençons,</l>
 	<l n="60">Au lever du rideau. Mais nous nous en passons,</l>
-	<l n="61" part="I">Pour cause.</l><!-- @syll="3"-->
+	<l n="61" part="I">Pour cause.</l><!--@syll="3"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="61" part="F">Je suis seule et je sonne Lisette.</l><!-- @syll="9"-->
+	<l n="61" part="F">Je suis seule et je sonne Lisette.</l><!--@syll="9"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
@@ -345,19 +345,19 @@
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="63" part="I">C'est juste. Alors j'explique...</l><!-- @syll="6"-->
+	<l n="63" part="I">C'est juste. Alors j'explique...</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="63" part="F">Un peu trop longuement...</l><!-- @syll="6"-->
+	<l n="63" part="F">Un peu trop longuement...</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="64" part="I">Que mon mari défunt était...</l><!-- @syll="8"-->
+	<l n="64" part="I">Que mon mari défunt était...</l><!--@syll="8"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="64" part="F">Un garnement.</l><!-- @syll="4"-->
+	<l n="64" part="F">Un garnement.</l><!--@syll="4"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
@@ -369,23 +369,23 @@
 	<l n="67">Eh bien, voilà la scène expliquée en deux mots,</l>
 	<l n="68">Nette, claire, précise. Alors à quel propos</l>
 	<l n="69">La jouer ? Tout le monde ici la sait de reste.</l>
-	<l n="70" part="I">Puis elle dure au moins...</l><!-- @syll="6"-->
+	<l n="70" part="I">Puis elle dure au moins...</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="70" part="F">Si nous la supprimions ?</l><!-- @syll="6"-->
+	<l n="70" part="F">Si nous la supprimions ?</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="71" part="I">Douze minutes.</l><!-- @syll="4"-->
+	<l n="71" part="I">Douze minutes.</l><!--@syll="4"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="71" part="M">Peste !</l><!-- @syll="2"-->
+	<l n="71" part="M">Peste !</l><!--@syll="2"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="71" part="F">Oh ! oui ! Supprimons-la.</l><!-- @syll="6"-->
+	<l n="71" part="F">Oh ! oui ! Supprimons-la.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
@@ -393,11 +393,11 @@
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="73" part="I">Passons-la.</l><!-- @syll="3"-->
+	<l n="73" part="I">Passons-la.</l><!--@syll="3"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="73" part="F">J'entre alors, j'interromps la romance.</l><!-- @syll="9"-->
+	<l n="73" part="F">J'entre alors, j'interromps la romance.</l><!--@syll="9"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
@@ -419,11 +419,11 @@
                         <speaker>MONSIEUR.</speaker>
 	<l n="81">Supprimer ces débats, ces brouilles, ces disputes,</l>
 	<l n="82">Ce serait donc gagner au moins quinze minutes.</l>
-	<l n="83" part="I">Si nous les supprimions ?</l><!-- @syll="6"-->
+	<l n="83" part="I">Si nous les supprimions ?</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="83" part="F">Ce serait mon avis.</l><!-- @syll="6"-->
+	<l n="83" part="F">Ce serait mon avis.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
@@ -436,20 +436,20 @@
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="87" part="I">Si nous ne jouions pas ?</l><!-- @syll="6"-->
+	<l n="87" part="I">Si nous ne jouions pas ?</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="87" part="M">Pas du tout.</l><!-- @syll="3"-->
+	<l n="87" part="M">Pas du tout.</l><!--@syll="3"-->
 	<l n="88">À quoi bon les laisser s'ennuyer jusqu'au bout ?</l>
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="89" part="I">S'ennuyer est bien dur.</l><!-- @syll="6"-->
+	<l n="89" part="I">S'ennuyer est bien dur.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="89" part="F">Ce proverbe, à vrai dire,</l><!-- @syll="6"-->
+	<l n="89" part="F">Ce proverbe, à vrai dire,</l><!--@syll="6"-->
 	<l n="90">N'est ni bon ni mauvais. Or, du meilleur au pire,</l>
 	<l n="91">La différence est mince, et, sans être bien fin,</l>
 	<l n="92">Dès le commencement on devine la fin.</l>
@@ -472,7 +472,7 @@
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="103" part="I">Oui, Madame, c'est long.</l><!-- @syll="6"-->
+	<l n="103" part="I">Oui, Madame, c'est long.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
@@ -511,19 +511,19 @@
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="123" part="I">Ils ont peut-être soif ?</l><!-- @syll="6"-->
+	<l n="123" part="I">Ils ont peut-être soif ?</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="123" part="F">Ils ont peut-être faim ?</l><!-- @syll="6"-->
+	<l n="123" part="F">Ils ont peut-être faim ?</l><!--@syll="6"-->
 </sp>
 <sp who="#madame">
                         <speaker>MADAME.</speaker>
-	<l n="124" part="I">Portons-leur un baiser.</l><!-- @syll="6"-->
+	<l n="124" part="I">Portons-leur un baiser.</l><!--@syll="6"-->
 </sp>
 <sp who="#monsieur">
                         <speaker>MONSIEUR.</speaker>
-	<l n="124" part="F">C'est le mot de la fin.</l><!-- @syll="6"-->
+	<l n="124" part="F">C'est le mot de la fin.</l><!--@syll="6"-->
 <stage type="exit">Fausse sortie.</stage>
 </sp>
 <sp who="#monsieur">

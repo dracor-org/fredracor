@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1778">1778</date>
+                        <date>1778</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -67,253 +67,255 @@
 				<titlePart type="main">LA NOBLESSE</titlePart>
 				<titlePart type="sub">DIALOGUE</titlePart>
 			</docTitle> 
-			<docDate value="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
-			<docAuthor id="SACY, Claude-Louis-Michel de" bio="">De SACY, Claude-Louis-Michel de</docAuthor>
-			<docImprint>
-				<printer id="DEMONVILLE">À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</printer>
-			</docImprint>
+			<docDate when="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
+			<docAuthor>De SACY, Claude-Louis-Michel de</docAuthor><!--@bio=""-->
+			<div type="docImprint">
+				<div type="printer">
+                    <p>À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</p>
+                </div><!--@id="DEMONVILLE"-->
+			</div>
 			<performance>
-				<premiere date="" location="(inconnue)"/>
+				<ab type="premiere"/><!--@date=""--><!--@location="(inconnue)"-->
 			</performance>
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role id="MONSIEUR DE CHEVERT" sex="1" type="H" statut="aristocrate" age="A" stat_amour="néant">MONSIEUR DE CHEVERT</role>.</castItem>
+                    <role corresp="#monsieur-de-chevert">MONSIEUR DE CHEVERT</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role id="UN MARQUIS" sex="1" type="H" statut="marquis" age="A" stat_amour="néant">UN MARQUIS</role>.</castItem>
+                    <role corresp="#un-marquis">UN MARQUIS</role><!--@sex="1"--><!--@type="H"--><!--@statut="marquis"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 	</castList>
-	<set location="Versailles" country="France" periode="XVIIIème" gps="48.801408, 2.130122">La Scène se passe à Versailles.</set>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Versailles" country="France" periode="XVIIIème" gps="48.801408, 2.130122">La Scène se passe à Versailles.</set>-->
 	<note>Édition tirée de Claude-Louis-Michel de Sacy, La Noblesse, opuscule dramatique, dans Opuscules dramatiques, ou Nouveaux amusements de campagne, tome premier, Paris, Chez Demonville, Imprimeur-Libraire de l'Académie française, 1778, p. 297-304. </note>
 </front>
 <body>
-<div1 type="act" n="1">
+<div type="act" n="1">
                 <head>LA NOBLESSE,</head>
-<div2 type="scene" n="1">
+<div type="scene" n="1">
                     <head>DIALOGUE.</head>
-<sp stage="" who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS, d'un ton impérieux.</speaker>
-<p id="1">
-	<s id="1">Rangez-vous, Monsieur, et faites-moi place.</s>
+<p n="1">
+	<s n="1 ">Rangez-vous, Monsieur, et faites-moi place.</s>
 </p>
-</sp>
-<sp who="CHEVERT">
+</sp><!--@stage=""-->
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="2">
-	<s id="1">Monsieur, vous allez sans doute où le plaisir vous invite ? </s>
-	<s id="2">Moi, je vais où le devoir m'appelle, et je crois devoir passer avant vous.</s>
+<p n="2">
+	<s n="1 ">Monsieur, vous allez sans doute où le plaisir vous invite ? </s>
+	<s n="2 ">Moi, je vais où le devoir m'appelle, et je crois devoir passer avant vous.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="3">
-	<s id="1">Votre premier devoir est de céder le pas à un homme de qualité, et de ne pas oublier qu'il y a quarante ans vous n'étiez qu'un mince roturier.</s>
+<p n="3">
+	<s n="1 ">Votre premier devoir est de céder le pas à un homme de qualité, et de ne pas oublier qu'il y a quarante ans vous n'étiez qu'un mince roturier.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="4">
-	<s id="1">C'est ce qui fait ma gloire ; je ne dois ma noblesse qu'à moi même.</s>
+<p n="4">
+	<s n="1 ">C'est ce qui fait ma gloire ; je ne dois ma noblesse qu'à moi même.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="5">
-	<s id="1">Cela est plaisant ! Bientôt on rougira d'être noble de naissance, et un Secrétaire du Roi sera plus fier qu'un homme de qualité.</s>
+<p n="5">
+	<s n="1 ">Cela est plaisant ! Bientôt on rougira d'être noble de naissance, et un Secrétaire du Roi sera plus fier qu'un homme de qualité.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="6">
-	<s id="">Ma noblesse ne ressemble point à celle des Secrétaires du Roi ; ils achètent la leur au poids de l'or, j'ai payé la mienne du plus pur de mon sang.</s>
+<p n="6">
+	<s n=" ">Ma noblesse ne ressemble point à celle des Secrétaires du Roi ; ils achètent la leur au poids de l'or, j'ai payé la mienne du plus pur de mon sang.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="7">
-	<s id="1">Ainsi, vous osez comparer votre noblesse à la mienne ! </s>
-	<s id="2">Savez-vous bien que mes ancêtres ont marché à la première Croisade ?</s>
+<p n="7">
+	<s n="1 ">Ainsi, vous osez comparer votre noblesse à la mienne ! </s>
+	<s n="2 ">Savez-vous bien que mes ancêtres ont marché à la première Croisade ?</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="8">
-	<s id="1">J'ai marché, moi, aux expéditions de Bohême, de Flandres, d'Italie : mais vous, Monsieur, qu'avez-vous fait ?</s>
+<p n="8">
+	<s n="1 ">J'ai marché, moi, aux expéditions de Bohême, de Flandres, d'Italie : mais vous, Monsieur, qu'avez-vous fait ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="9">
-	<s id="1">Lisez l'Histoire, mon ami, lisez l'Histoîre,</s>
+<p n="9">
+	<s n="1 ">Lisez l'Histoire, mon ami, lisez l'Histoîre,</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="10">
-	<s id="1">Et qu'y verrai- je ?</s>
+<p n="10">
+	<s n="1 ">Et qu'y verrai- je ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="11">
-	<s id="1">Qu'un de mes aïeux eut tout l'honneur du Siège de je ne wais quelle ville, et ma foi, peu m'importe de le savoir.</s>
+<p n="11">
+	<s n="1 ">Qu'un de mes aïeux eut tout l'honneur du Siège de je ne wais quelle ville, et ma foi, peu m'importe de le savoir.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="12">
-	<s id="1">J'ai escaladé Prague ; j'ai partagé l'honneur de cette conquête : mais vous, Monsieur, qu'avez-vous fait ?</s>
+<p n="12">
+	<s n="1 ">J'ai escaladé Prague ; j'ai partagé l'honneur de cette conquête : mais vous, Monsieur, qu'avez-vous fait ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="13">
-	<s id="1">Je ne me souviens pas sous quel règne un de mes aïeux sauva l'armée Française, et fit une belle retraite.</s>
+<p n="13">
+	<s n="1 ">Je ne me souviens pas sous quel règne un de mes aïeux sauva l'armée Française, et fit une belle retraite.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="14">
-	<s id="1">J'ai de même sauvé à Prague les débris de l'armée Française ; j'ai, contre toute espérance, obtenu une capitulation honorable : mais vous, Monsieur, vous, qu'avez-vous fait ?</s>
+<p n="14">
+	<s n="1 ">J'ai de même sauvé à Prague les débris de l'armée Française ; j'ai, contre toute espérance, obtenu une capitulation honorable : mais vous, Monsieur, vous, qu'avez-vous fait ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="15">
-	<s id="1">Un de mes aïeux facilita le passage des Alpes sous François Ier.</s>
+<p n="15">
+	<s n="1 ">Un de mes aïeux facilita le passage des Alpes sous François Ier.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="16">
-	<s id="">Je me suis signalé sur ces mêmes montagnes ; j'eus part aux victoires du Prince de Conti ; il daigna m'estimer : mais vous, Monsieur, vous, qu'avez-vous fait ?</s>
+<p n="16">
+	<s n=" ">Je me suis signalé sur ces mêmes montagnes ; j'eus part aux victoires du Prince de Conti ; il daigna m'estimer : mais vous, Monsieur, vous, qu'avez-vous fait ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="17">
-	<s id="1">Si vous étiez un peu lettré, vous sauriez que l'histoire de ma famille est imprimée.</s>
+<p n="17">
+	<s n="1 ">Si vous étiez un peu lettré, vous sauriez que l'histoire de ma famille est imprimée.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="18">
-	<s id="1">Heureusement la vôtre ne l'est pas.</s>
+<p n="18">
+	<s n="1 ">Heureusement la vôtre ne l'est pas.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="19">
-	<s id="1">Elle le sera dans peu : j'ai chargé un petit Abbé de l'écrire, et les actrices de l'Opéra lui fourniront des Mémoires.</s>
+<p n="19">
+	<s n="1 ">Elle le sera dans peu : j'ai chargé un petit Abbé de l'écrire, et les actrices de l'Opéra lui fourniront des Mémoires.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="20">
-	<s id="1">Cette histoire donnera, je crois, un nouveau lustre à celle de vos aïeux.</s>
+<p n="20">
+	<s n="1 ">Cette histoire donnera, je crois, un nouveau lustre à celle de vos aïeux.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="21">
-	<s id="1">Laissons-là l'ironie. </s>
-	<s id="2">Que me reprochez-vous ?</s>
+<p n="21">
+	<s n="1 ">Laissons-là l'ironie. </s>
+	<s n="2 ">Que me reprochez-vous ?</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="22">
-	<s id="1">D'être inutile à l'État.</s>
+<p n="22">
+	<s n="1 ">D'être inutile à l'État.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="23">
-	<s id="1">Ne suis-je pas Colonel ? </s>
-	<s id="2">N'en ai-je pas le rang, la pension ?</s>
+<p n="23">
+	<s n="1 ">Ne suis-je pas Colonel ? </s>
+	<s n="2 ">N'en ai-je pas le rang, la pension ?</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="24">
-	<s id="1">Et quel est votre Régiment ?</s>
+<p n="24">
+	<s n="1 ">Et quel est votre Régiment ?</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="25">
-	<s id="1">Je n'en ai point : si j'étais Colonel en pied, il faudrait que je passasse une partie de l'année en Province ; et vous sentez vous-même qu'un homme tel que moi est fait pour la Cour et pour la Capitale. </s>
-	<s id="2">Ainsi, je me contente du titre et de la pension ; je laisse le Régiment à d'autres. </s>
-	<s id="3">Si je ne brigue point l'honneur d'aller ; à la guerre, ce n'est pas que je craigne la mort : mais si j'étais tué, vingt beautés qui font l'ornement de la Cour, en mourraient de chagrin ; c'est pour elles que je me conserve. </s>
-	<s id="4">Pour vous, mon Gentilhomme, si vous mourriez, je crois que vous ne seriez guère regretté des Belles.</s>
+<p n="25">
+	<s n="1 ">Je n'en ai point : si j'étais Colonel en pied, il faudrait que je passasse une partie de l'année en Province ; et vous sentez vous-même qu'un homme tel que moi est fait pour la Cour et pour la Capitale. </s>
+	<s n="2 ">Ainsi, je me contente du titre et de la pension ; je laisse le Régiment à d'autres. </s>
+	<s n="3 ">Si je ne brigue point l'honneur d'aller ; à la guerre, ce n'est pas que je craigne la mort : mais si j'étais tué, vingt beautés qui font l'ornement de la Cour, en mourraient de chagrin ; c'est pour elles que je me conserve. </s>
+	<s n="4 ">Pour vous, mon Gentilhomme, si vous mourriez, je crois que vous ne seriez guère regretté des Belles.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="26">
-	<s id="1">Non : mais quelques vieux soldats me pleureraient peut-être.</s>
+<p n="26">
+	<s n="1 ">Non : mais quelques vieux soldats me pleureraient peut-être.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS, d'un ton amer.</speaker>
-<p id="26">
-	<s id="1">Je le crois bien, vous avez été leur camarade.</s>
+<p n="26">
+	<s n="1 ">Je le crois bien, vous avez été leur camarade.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="27">
-	<s id="1">Je vous le répète, c'est ce qui fait ma noblesse.</s>
+<p n="27">
+	<s n="1 ">Je vous le répète, c'est ce qui fait ma noblesse.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="28">
-	<s id="">J'aime bien qu'un homme qui n'a point de dettes, qui n'a que des rosses à sa voiture, et dont le Cocher est laid et bossu, ose se croire noble !</s>
+<p n="28">
+	<s n=" ">J'aime bien qu'un homme qui n'a point de dettes, qui n'a que des rosses à sa voiture, et dont le Cocher est laid et bossu, ose se croire noble !</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="29">
-	<s id="1">Vous avez d'étranges idées de la noblesse, Monsieur_le_Marquis ; si j'étais législateur dans mon Gouvernement, la noblesse serait personnelle et jamais héréditaire. </s>
-	<s id="2">L'État aiderait aux fils des nobles à la faire revivre, parce qu'elle serait morte avec leurs pères. </s>
-	<s id="3">À la guerre, par exemple, ils auraient le choix, du poste le plus périlleux. Voilà quel serait leur privilège.</s>
+<p n="29">
+	<s n="1 ">Vous avez d'étranges idées de la noblesse, Monsieur_le_Marquis ; si j'étais législateur dans mon Gouvernement, la noblesse serait personnelle et jamais héréditaire. </s>
+	<s n="2 ">L'État aiderait aux fils des nobles à la faire revivre, parce qu'elle serait morte avec leurs pères. </s>
+	<s n="3 ">À la guerre, par exemple, ils auraient le choix, du poste le plus périlleux. Voilà quel serait leur privilège.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="30">
-	<s id="1">Ainsi, moi, dans votre État, je serais un roturier ! </s>
-	<s id="2">Cela serait plaisant. </s>
-	<s id="3">Je voudrais bien savoir comment je serais fait si j'étais roturier.</s>
+<p n="30">
+	<s n="1 ">Ainsi, moi, dans votre État, je serais un roturier ! </s>
+	<s n="2 ">Cela serait plaisant. </s>
+	<s n="3 ">Je voudrais bien savoir comment je serais fait si j'étais roturier.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="31">
-	<s id="1">Comme vous êtes ; peut-être un peu plus, modeste... </s>
-	<s id="2">Mais je cours au Conseil.</s>
+<p n="31">
+	<s n="1 ">Comme vous êtes ; peut-être un peu plus, modeste... </s>
+	<s n="2 ">Mais je cours au Conseil.</s>
 </p>
 </sp>
-<sp who="LE MARQUIS">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS.</speaker>
-<p id="32">
-	<s id="1">Et moi au rendez-vous... </s>
-	<s id="2">Deux mots encore avant de nous séparer. </s>
-	<s id="3">Dites-moi donc pourquoi vous ne vous mariez pas.</s>
+<p n="32">
+	<s n="1 ">Et moi au rendez-vous... </s>
+	<s n="2 ">Deux mots encore avant de nous séparer. </s>
+	<s n="3 ">Dites-moi donc pourquoi vous ne vous mariez pas.</s>
 </p>
 <stage type="ironic">D'un ton ironique.</stage>
-<p id="33">
-	<s id="1">Vous pourriez faire souche.</s>
+<p n="33">
+	<s n="1 ">Vous pourriez faire souche.</s>
 </p>
 </sp>
-<sp who="CHEVERT">
+<sp who="#chevert">
                         <speaker>CHEVERT.</speaker>
-<p id="34">
-	<s id="1">Si je ne me marie pas, c'est de peur d'avoir un jour des descendants qui vous ressemblent, et qui soient nobles, comme vous l'êtes.</s>
+<p n="34">
+	<s n="1 ">Si je ne me marie pas, c'est de peur d'avoir un jour des descendants qui vous ressemblent, et qui soient nobles, comme vous l'êtes.</s>
 </p>
 </sp>
-</div2>
-</div1>
+</div>
+</div>
 </body>
 </text>
 </TEI>

@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1881">1881</date>
+                        <date>1881</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k42203337/f1.image</idno>
@@ -72,14 +72,14 @@
 			<div type="acheveImprime">
                     <p/>
                 </div><!--@id=""-->
-			<editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, Rue de Richelieu 28 bis.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, Rue de Richelieu 28 bis.</editor>-->
 		</div>
 	<castList>
                 <head>PERSONNAGES</head>
 	<castItem>
-                    <role corresp="#monsieur-de-couacanlaire">MONSIEUR DE COUACANLAIRE</role><!--@sex="1" @type="H" @statut="chanteur" @age="A" @stat_amour="néant"-->.</castItem> 
+                    <role corresp="#monsieur-de-couacanlaire">MONSIEUR DE COUACANLAIRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="chanteur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
 <body>
 <div type="acte" n="1">
@@ -88,7 +88,8 @@
                     <head>Monologue.</head>
 <sp who="#monsieur-de-couacanlaire">
                         <speaker>MONSIEUR DE COUACANLAIRE</speaker>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="1">Je suis Monsieur_de_Couacanlaire !</l>
 	<l n="2">Dulcissime, Auguste, Absalon !</l>
@@ -262,7 +263,7 @@
 	<l n="111">Si vous donnez une soirée,</l>
 	<l n="112">De vouloir bien penser à moi !</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 </div>
 </div>

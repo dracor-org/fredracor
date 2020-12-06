@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1778">1778</date>
+                        <date>1778</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -72,1348 +72,1350 @@
 				<titlePart type="main">LA QUINE</titlePart>
 				<titlePart type="sub">OPUSCULE DRAMATIQUE</titlePart>
 			</docTitle> 
-			<docDate value="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
-			<docAuthor id="SACY, Claude-Louis-Michel de" bio="">De SACY, Claude-Louis-Michel de</docAuthor>
-			<docImprint>
-				<printer id="DEMONVILLE">À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</printer>
-			</docImprint>
+			<docDate when="1778">M. DCC LXXVIII. Avec Approbation et Privilège du Roi.</docDate>
+			<docAuthor>De SACY, Claude-Louis-Michel de</docAuthor><!--@bio=""-->
+			<div type="docImprint">
+				<div type="printer">
+                    <p>À PARIS, Chez DEMONVILLE. Imprimeur-Librairie de l'Académie Française, rue Saint-Severin, aux Armes de Dombes.</p>
+                </div><!--@id="DEMONVILLE"-->
+			</div>
 			<performance>
-				<premiere date="" location="(inconnue)"/>
+				<ab type="premiere"/><!--@date=""--><!--@location="(inconnue)"-->
 			</performance>
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role id="MADAME JOURDAIN" sex="2" type="H" statut="bourgeois" age="A" stat_amour="néant">MADAME JOURDAIN</role>, Veuve.</castItem>
+                    <role corresp="#madame-jourdain">MADAME JOURDAIN</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, Veuve.</castItem>
 		<castItem>
-                    <role id="COLETTE" sex="2" type="H" statut="bourgeois" age="J" stat_amour="Mignonnet">COLETTE</role>, nièce de Madame Jourdain.</castItem>
+                    <role corresp="#colette">COLETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="Mignonnet"-->, nièce de Madame Jourdain.</castItem>
 		<castItem>
-                    <role id="MIGNONNET" sex="1" type="H" statut="bourgeois" age="J" stat_amour="Colette">MIGNONNET</role>, amant de Colette.</castItem>
+                    <role corresp="#mignonnet">MIGNONNET</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="Colette"-->, amant de Colette.</castItem>
 	</castList>
-	<set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La scène est à Paris.</set>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La scène est à Paris.</set>-->
 	<note>Édition tirée de Claude-Louis-Michel de Sacy, La Quine, opuscule dramatique, dans Opuscules dramatiques, ou Nouveaux amusements de campagne, tome premier, Paris, Chez Demonville, Imprimeur-Libraire de l'Académie française, 1778, p. 111-164. </note>
 </front>
 <body>
-<div1 type="act" n="1">
+<div type="act" n="1">
                 <head>LA QUINE</head>
-<div2 type="scene" n="1">
+<div type="scene" n="1">
                     <head>SCÈNE PREMIÈRE. Colette, Mignonnet.</head>
-<sp who="MIGNONNET">
+<sp who="#mignonnet">
                         <speaker>MIGNONNET.</speaker>
-<p id="1">
-	<s id="1">Ah ! </s>
-	<s id="2">Ma chère Colette, que je suis heureux de pouvoir t'entretenir un moment !</s>
+<p n="1">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Ma chère Colette, que je suis heureux de pouvoir t'entretenir un moment !</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="2">
-	<s id="1">II fera bien court ì</s>
+<p n="2">
+	<s n="1 ">II fera bien court ì</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="3">
-	<s id="1">Bien court, sans doute, au gré de nos désirs. </s>
-	<s id="2">Cependant Madame Jourdain est occupée à consulter son livre de cabale, à calculer, et à prédire d'une manière infaillible les numéros qui sortiront au tirage prochain. </s>
-	<s id="3">Je ne crois pas qu'elle vienne sitôt troubler notre entretien.</s>
+<p n="3">
+	<s n="1 ">Bien court, sans doute, au gré de nos désirs. </s>
+	<s n="2 ">Cependant Madame Jourdain est occupée à consulter son livre de cabale, à calculer, et à prédire d'une manière infaillible les numéros qui sortiront au tirage prochain. </s>
+	<s n="3 ">Je ne crois pas qu'elle vienne sitôt troubler notre entretien.</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="4">
-	<s id="1">Oh ! </s>
-	<s id="2">Si elle soupçonnait que nous sommes ensemble, tu la verrais accourir. </s>
-	<s id="3">À son âge être amoureuse et jalouse, cela est-il concevable ? </s>
-	<s id="4">Qu'elle t'aime, au fonds je le lui pardonne. </s>
-	<s id="5">On a un coeur à soixante ans comme à seize ; le coeur meurt le dernier chez nous, et je sens que, quand j'aurais cent ans, je t'aimerais encore : mais qu'elle veuille être aimée, qu'elle croie l'être , cette prétention là est d'un ridicule !</s>
+<p n="4">
+	<s n="1 ">Oh ! </s>
+	<s n="2 ">Si elle soupçonnait que nous sommes ensemble, tu la verrais accourir. </s>
+	<s n="3 ">À son âge être amoureuse et jalouse, cela est-il concevable ? </s>
+	<s n="4 ">Qu'elle t'aime, au fonds je le lui pardonne. </s>
+	<s n="5 ">On a un coeur à soixante ans comme à seize ; le coeur meurt le dernier chez nous, et je sens que, quand j'aurais cent ans, je t'aimerais encore : mais qu'elle veuille être aimée, qu'elle croie l'être , cette prétention là est d'un ridicule !</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="5">
-	<s id="1">Il faut bien que je nourrisse son illusion. </s>
-	<s id="2">C'est à regret que je la trompe. </s>
-	<s id="3">Mais sans cet artifice, il nous serait impossible de nous voir. </s>
-	<s id="4">Je la flatte, j'applaudis à ce qu'elle dit, avant même qu'elle ait parlé. </s>
-	<s id="5">Je lui persuade qu'elle est encore jeune et belle, et il ne faut pas beaucoup d'éloquence pour cela. </s>
-	<s id="6">Mais quand elle me dit : à quand le mariage ? </s>
-	<s id="7">Je me dépite contre mes parents qui différent de m'envoyer leur consentement, et elle croit fermement que je le leur ai demandé.</s>
+<p n="5">
+	<s n="1 ">Il faut bien que je nourrisse son illusion. </s>
+	<s n="2 ">C'est à regret que je la trompe. </s>
+	<s n="3 ">Mais sans cet artifice, il nous serait impossible de nous voir. </s>
+	<s n="4 ">Je la flatte, j'applaudis à ce qu'elle dit, avant même qu'elle ait parlé. </s>
+	<s n="5 ">Je lui persuade qu'elle est encore jeune et belle, et il ne faut pas beaucoup d'éloquence pour cela. </s>
+	<s n="6 ">Mais quand elle me dit : à quand le mariage ? </s>
+	<s n="7 ">Je me dépite contre mes parents qui différent de m'envoyer leur consentement, et elle croit fermement que je le leur ai demandé.</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="6">
-	<s id="1">Mais quel est ton dessein ? </s>
-	<s id="2">Plus tu l'enflammeras, plus elle s'opposera à notre union.</s>
+<p n="6">
+	<s n="1 ">Mais quel est ton dessein ? </s>
+	<s n="2 ">Plus tu l'enflammeras, plus elle s'opposera à notre union.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="7">
-	<s id="1">Ma chère Colette, j'espère que ce jour même nous allons être unis.</s>
+<p n="7">
+	<s n="1 ">Ma chère Colette, j'espère que ce jour même nous allons être unis.</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="8">
-	<s id="1">Et sur quoi fondes-tu cette espérance ?</s>
+<p n="8">
+	<s n="1 ">Et sur quoi fondes-tu cette espérance ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
 <note type="C">Quine : Terme du jeu de trictrac. Coup de dés qui amène deux cinq. Cinq numéros pris et sortis ensemble à la loterie. Gagner un quine. Jouer le quine. Au loto, cinq numéros marqués sur la même ligne horizontale. [L]</note>
-<p id="9">
-	<s id="1">Sur un stratagème, dont le succès me paraît infaillible. </s>
-	<s id="2">Ta tante est avare, et c'est la soif de l'or qui lui fait hasarder tant d'argent à la loterie. </s>
-	<s id="3">Elle m'aime beaucoup, mais elle aime encore plus l'argent ; et certainement elle ne balancerait pas entre un quine et moi.: Elle est crédule ; et elle ne se désabuse des calculs de la cabale , que pour prendre d'autres préjugés... </s>
-	<s id="4">Mais déjà je l'entends qui descend. </s>
-	<s id="5">Je n'ai pas le temps de te mettre au fait de cette Comédie. </s>
-	<s id="6">Songe seulement à venir dans un moment annoncer à ta tante un vieillard qui veut lui parler sans témoins. </s>
-	<s id="7">Ce vieillard, c'est moi-même. </s>
-	<s id="8">Tu trouveras dans la chambre voisine mon costume prophétique... </s>
-	<s id="9">Adieu, sauve-toi au plus vite.</s>
+<p n="9">
+	<s n="1 ">Sur un stratagème, dont le succès me paraît infaillible. </s>
+	<s n="2 ">Ta tante est avare, et c'est la soif de l'or qui lui fait hasarder tant d'argent à la loterie. </s>
+	<s n="3 ">Elle m'aime beaucoup, mais elle aime encore plus l'argent ; et certainement elle ne balancerait pas entre un quine et moi.: Elle est crédule ; et elle ne se désabuse des calculs de la cabale , que pour prendre d'autres préjugés... </s>
+	<s n="4 ">Mais déjà je l'entends qui descend. </s>
+	<s n="5 ">Je n'ai pas le temps de te mettre au fait de cette Comédie. </s>
+	<s n="6 ">Songe seulement à venir dans un moment annoncer à ta tante un vieillard qui veut lui parler sans témoins. </s>
+	<s n="7 ">Ce vieillard, c'est moi-même. </s>
+	<s n="8 ">Tu trouveras dans la chambre voisine mon costume prophétique... </s>
+	<s n="9 ">Adieu, sauve-toi au plus vite.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="2">
+</div>
+<div type="scene" n="2">
                     <head>SCÈNE II. Madame Jourdain, Mignonnet.</head>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="1">
-	<s id="1">Eh bien, Madame, êtes-vous contente du résultat de vos calculs ? </s>
-	<s id="2">Vous promet-il une ample fortune ?</s>
+<p n="1">
+	<s n="1 ">Eh bien, Madame, êtes-vous contente du résultat de vos calculs ? </s>
+	<s n="2 ">Vous promet-il une ample fortune ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="2">
-	<s id="1">Tu fais bien pour qui je la désire cette fortune, mon cher Mignonnet. </s>
-	<s id="2">Mais elle est bien incertaine encore. </s>
-	<s id="3">Cette maudite cabale me trompe toujours ; je suis bien malheureuse à la loterie,</s>
+<p n="2">
+	<s n="1 ">Tu fais bien pour qui je la désire cette fortune, mon cher Mignonnet. </s>
+	<s n="2 ">Mais elle est bien incertaine encore. </s>
+	<s n="3 ">Cette maudite cabale me trompe toujours ; je suis bien malheureuse à la loterie,</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="3">
-	<s id="1">Cela prouve que vous serez heureuse en amour.</s>
+<p n="3">
+	<s n="1 ">Cela prouve que vous serez heureuse en amour.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="4">
-	<s id="1">Tu fais bien de qui cela dépend, mon cher enfant. </s>
-	<s id="2">Mais tes parents, n'en as tu point de nouvelles ? </s>
-	<s id="3">Je languis, en attendant leur consentement dont tu as besoin.</s>
+<p n="4">
+	<s n="1 ">Tu fais bien de qui cela dépend, mon cher enfant. </s>
+	<s n="2 ">Mais tes parents, n'en as tu point de nouvelles ? </s>
+	<s n="3 ">Je languis, en attendant leur consentement dont tu as besoin.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="5">
-	<s id="1">Je ne sais ce qui les retient. </s>
-	<s id="2">Ils m'ont toujours dit qu'ils ne m'uniraient qu'à une femme qui aurait trente ans accomplis. </s>
-	<s id="3">Peut-être quelque jaloux leur aura-t-il écrit que vous n'avez point cet âge ; car l'autre jour au Colisée on vous prit pour ma soeur cadette, et je n'ai que vingt ans.</s>
+<p n="5">
+	<s n="1 ">Je ne sais ce qui les retient. </s>
+	<s n="2 ">Ils m'ont toujours dit qu'ils ne m'uniraient qu'à une femme qui aurait trente ans accomplis. </s>
+	<s n="3 ">Peut-être quelque jaloux leur aura-t-il écrit que vous n'avez point cet âge ; car l'autre jour au Colisée on vous prit pour ma soeur cadette, et je n'ai que vingt ans.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="6">
-	<s id="1">Pour ta soeur cadette, mon cher Mignonnet, pour ta soeur cadette ! </s>
-	<s id="2">Vois comme les traits sont trompeurs : j'ai cependant quelques années plus que toi, et on me prend pour ta soeur cadette ! </s>
-	<s id="3">C'était sans doute l'effet des lumières.</s>
+<p n="6">
+	<s n="1 ">Pour ta soeur cadette, mon cher Mignonnet, pour ta soeur cadette ! </s>
+	<s n="2 ">Vois comme les traits sont trompeurs : j'ai cependant quelques années plus que toi, et on me prend pour ta soeur cadette ! </s>
+	<s n="3 ">C'était sans doute l'effet des lumières.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="7">
-	<s id="1">C'était plutôt celui de vos charmes.</s>
+<p n="7">
+	<s n="1 ">C'était plutôt celui de vos charmes.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="8">
-	<s id="1">Et cette petite impertinente de Colette s'avisa de dire l'autre jour en compagnie que j'ai cinquante-cinq ans ! </s>
-	<s id="2">Si le respect pour les gens chez qui j'étais ne m'avait pas retenue, je l'aurais étranglée.</s>
+<p n="8">
+	<s n="1 ">Et cette petite impertinente de Colette s'avisa de dire l'autre jour en compagnie que j'ai cinquante-cinq ans ! </s>
+	<s n="2 ">Si le respect pour les gens chez qui j'étais ne m'avait pas retenue, je l'aurais étranglée.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="9">
-	<s id="1">C'est l'amour-propre dépité qui lui a dicté ce mensonge... </s>
-	<s id="2">Mais je me charge de la gronder, et de lui apprendre à ne pas faire de pareilles fautes de chronologie.</s>
+<p n="9">
+	<s n="1 ">C'est l'amour-propre dépité qui lui a dicté ce mensonge... </s>
+	<s n="2 ">Mais je me charge de la gronder, et de lui apprendre à ne pas faire de pareilles fautes de chronologie.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="10">
-	<s id="1">Je ne sais pourquoi tous les hommes la regardent, et lui font la cour.</s>
+<p n="10">
+	<s n="1 ">Je ne sais pourquoi tous les hommes la regardent, et lui font la cour.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="11">
-	<s id="1">C'est qu'il n'y a plus de goût, Madame. </s>
-	<s id="2">On veut une taille fine, une jambe déliée , un petit pied ; qu'est-ce que tout cela ? </s>
-	<s id="3">Voulez-vous voir les véritables modèles de la beauté ? </s>
-	<s id="4">Voyez les statues antiques ! </s>
-	<s id="5">Ont-elles la jambe déliée, la taille fine, le pied petit ? </s>
-	<s id="6">Ou plutôt ne cherchez pas si loin le modèle de la beauté ; Madame Jourdain, regardez dans le miroir, et vous le verrez.</s>
+<p n="11">
+	<s n="1 ">C'est qu'il n'y a plus de goût, Madame. </s>
+	<s n="2 ">On veut une taille fine, une jambe déliée , un petit pied ; qu'est-ce que tout cela ? </s>
+	<s n="3 ">Voulez-vous voir les véritables modèles de la beauté ? </s>
+	<s n="4 ">Voyez les statues antiques ! </s>
+	<s n="5 ">Ont-elles la jambe déliée, la taille fine, le pied petit ? </s>
+	<s n="6 ">Ou plutôt ne cherchez pas si loin le modèle de la beauté ; Madame Jourdain, regardez dans le miroir, et vous le verrez.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="12">
-	<s id="1">Mais ... </s>
-	<s id="2">Tu fais-là une réflexion qui m'enchante. </s>
-	<s id="3">En effet, je trouve que les beautés Grecques et Romaines ne ressemblent en rien à nos beautés à la mode.</s>
+<p n="12">
+	<s n="1 ">Mais ... </s>
+	<s n="2 ">Tu fais-là une réflexion qui m'enchante. </s>
+	<s n="3 ">En effet, je trouve que les beautés Grecques et Romaines ne ressemblent en rien à nos beautés à la mode.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="13">
-	<s id="1">Oui, Madame, je parie que si votre statue était au milieu des plus belles antiques, tous les Antiquaires vous donneraient la préférence. </s>
-	<s id="2">Ah ! </s>
-	<s id="3">je voudrais être le Pigmalion qui travaillerait d'après un si beau modèle !</s>
+<p n="13">
+	<s n="1 ">Oui, Madame, je parie que si votre statue était au milieu des plus belles antiques, tous les Antiquaires vous donneraient la préférence. </s>
+	<s n="2 ">Ah ! </s>
+	<s n="3 ">je voudrais être le Pigmalion qui travaillerait d'après un si beau modèle !</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="14">
-	<s id="1">Il ne faudrait pas un prodige pour l'animer.</s>
+<p n="14">
+	<s n="1 ">Il ne faudrait pas un prodige pour l'animer.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="3">
+</div>
+<div type="scene" n="3">
                     <head>SCÈNE III. Madame Jourdain, Mignonnet, Colette.</head>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="1">
-	<s id="1">Ah ! </s>
-	<s id="2">Ma tante !... </s>
-	<s id="3">Ma tante !...</s>
+<p n="1">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Ma tante !... </s>
+	<s n="3 ">Ma tante !...</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="2">
-	<s id="1">Eh bien, qu'y a-t-il ? </s>
-	<s id="2">Pourquoi cette frayeur ?</s>
+<p n="2">
+	<s n="1 ">Eh bien, qu'y a-t-il ? </s>
+	<s n="2 ">Pourquoi cette frayeur ?</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="3">
-	<s id="1">Un vieillard... </s>
-	<s id="2">Avec une longue barbe...</s>
+<p n="3">
+	<s n="1 ">Un vieillard... </s>
+	<s n="2 ">Avec une longue barbe...</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="4">
-	<s id="1">Si c'eût été un jeune homme, il ne t'aurait pas tant effrayée ... </s>
-	<s id="2">Eh bien, ce vieillard ?...</s>
+<p n="4">
+	<s n="1 ">Si c'eût été un jeune homme, il ne t'aurait pas tant effrayée ... </s>
+	<s n="2 ">Eh bien, ce vieillard ?...</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="5">
-	<s id="1">Un long nez... </s>
-	<s id="2">Une grande robe brune... </s>
-	<s id="3">Une baguette noire... </s>
-	<s id="4">Ah ! </s>
-	<s id="5">Je crois le voir encore.</s>
+<p n="5">
+	<s n="1 ">Un long nez... </s>
+	<s n="2 ">Une grande robe brune... </s>
+	<s n="3 ">Une baguette noire... </s>
+	<s n="4 ">Ah ! </s>
+	<s n="5 ">Je crois le voir encore.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="6">
-	<s id="1">Eh bien, que veut-il ?</s>
+<p n="6">
+	<s n="1 ">Eh bien, que veut-il ?</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="7">
-	<s id="1">Ma tante, il veut vous parler.</s>
+<p n="7">
+	<s n="1 ">Ma tante, il veut vous parler.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="8">
-	<s id="1">Eh bien, fais-le entrer.</s>
+<p n="8">
+	<s n="1 ">Eh bien, fais-le entrer.</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="9">
-	<s id="1">Il a dit qu'il fallait que tout le monde se retire, avant qu'il vous voie.</s>
+<p n="9">
+	<s n="1 ">Il a dit qu'il fallait que tout le monde se retire, avant qu'il vous voie.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="10">
-	<s id="1">Laissez-moi seule avec lui.</s>
+<p n="10">
+	<s n="1 ">Laissez-moi seule avec lui.</s>
 </p>
 <stage type="toward">À Mignonnet</stage>
-<p id="11">
-	<s id="1">Mais, mon bon ami, ce tête à tête avec un homme ne te donnera- t-il point d'inquiétude ?</s>
+<p n="11">
+	<s n="1 ">Mais, mon bon ami, ce tête à tête avec un homme ne te donnera- t-il point d'inquiétude ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="12">
-	<s id="1">Vous êtes aussi vertueuse que belle, et votre sagesse m'est un gage de votre fidélité.</s>
+<p n="12">
+	<s n="1 ">Vous êtes aussi vertueuse que belle, et votre sagesse m'est un gage de votre fidélité.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="13">
-	<s id="1">Parle sincèrement, mon cher ami ; j'aimerais mieux ne pas voir cet homme-là, que de te donner de la jalousie : c'est un cruel supplice , mon cher enfant, et je ne l'ai que trop éprouvé.</s>
+<p n="13">
+	<s n="1 ">Parle sincèrement, mon cher ami ; j'aimerais mieux ne pas voir cet homme-là, que de te donner de la jalousie : c'est un cruel supplice , mon cher enfant, et je ne l'ai que trop éprouvé.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="14">
-	<s id="1">Pourquoi ne croyez -vous pas à ma fidélité comme je crois à la vôtre ? </s>
-	<s id="2">Je me retire ; et tandis que vous ferez avec ce vieillard , je m'en vais gronder votre nièce, et lui apprendre à mieux juger de votre âge.</s>
+<p n="14">
+	<s n="1 ">Pourquoi ne croyez -vous pas à ma fidélité comme je crois à la vôtre ? </s>
+	<s n="2 ">Je me retire ; et tandis que vous ferez avec ce vieillard , je m'en vais gronder votre nièce, et lui apprendre à mieux juger de votre âge.</s>
 </p>
 </sp>
-<sp stage="low" who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN , bas à Mignonnet.</speaker>
-<p id="15">
-	<s id="1">Prends bien avec elle le ton d'un oncle irrité : tu en as le droit ; j'espère que tu le seras bientôt.</s>
+<p n="15">
+	<s n="1 ">Prends bien avec elle le ton d'un oncle irrité : tu en as le droit ; j'espère que tu le seras bientôt.</s>
 </p>
-</sp>
-</div2>
-<div2 type="scene" n="4">
+</sp><!--@stage="low"-->
+</div>
+<div type="scene" n="4">
                     <head>SCÈNE IV.</head>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="1">
-	<s id="1">Que me veut ce vieillard inconnu ? </s>
-	<s id="2">Si c'était le père de Mignonnet qui vînt lui-même apporter son consentement ! </s>
-	<s id="3">Ah ! </s>
-	<s id="4">Le bon papa, comme je l'embrasserais !</s>
+<p n="1">
+	<s n="1 ">Que me veut ce vieillard inconnu ? </s>
+	<s n="2 ">Si c'était le père de Mignonnet qui vînt lui-même apporter son consentement ! </s>
+	<s n="3 ">Ah ! </s>
+	<s n="4 ">Le bon papa, comme je l'embrasserais !</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="5">
+</div>
+<div type="scene" n="5">
                     <head>SCENE V. Madame Jourdain, Mignonnet, déguisé en Rabbin, ayant un nez postiche, une longue barbe, des moustaches, et contrefaisant sa voix.</head>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="1">
-	<s id="1">Ma nièce avait bien raison de dire que sa figure était effrayante. </s>
-	<s id="2">Mignonnet aurait bien tort d'être jaloux de cet homme-là.</s>
+<p n="1">
+	<s n="1 ">Ma nièce avait bien raison de dire que sa figure était effrayante. </s>
+	<s n="2 ">Mignonnet aurait bien tort d'être jaloux de cet homme-là.</s>
 </p>
 <stage type="toward">À Mignonnet.</stage>
-<p id="2">
-	<s id="1">Que souhaitez-vous, Monsieur ?</s>
+<p n="2">
+	<s n="1 ">Que souhaitez-vous, Monsieur ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="3">
-	<s id="1">Vous rendre heureuse.</s>
+<p n="3">
+	<s n="1 ">Vous rendre heureuse.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="4">
-	<s id="1">Vraiment cela ne serait pas difficile. </s>
-	<s id="2">Mais ce n'est pas de vous que cela dépend.</s>
+<p n="4">
+	<s n="1 ">Vraiment cela ne serait pas difficile. </s>
+	<s n="2 ">Mais ce n'est pas de vous que cela dépend.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="5">
-	<s id="1">Quand vous me connaîtrez, vous verrez que cela dépend de moi.</s>
+<p n="5">
+	<s n="1 ">Quand vous me connaîtrez, vous verrez que cela dépend de moi.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="6">
-	<s id="1">Et qui êtes-vous donc, Monsieur ?</s>
+<p n="6">
+	<s n="1 ">Et qui êtes-vous donc, Monsieur ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="7">
-	<s id="1">Je lis dans l'avenir, je commande à la fortune, et je connais l'influence des astres.</s>
+<p n="7">
+	<s n="1 ">Je lis dans l'avenir, je commande à la fortune, et je connais l'influence des astres.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="8">
-	<s id="1">Il y a déjà bien des charlatans qui m'ont trompée, et je ne veux plus l'être.</s>
+<p n="8">
+	<s n="1 ">Il y a déjà bien des charlatans qui m'ont trompée, et je ne veux plus l'être.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="9">
-	<s id="1">Parlaient-ils hébreu ?</s>
+<p n="9">
+	<s n="1 ">Parlaient-ils hébreu ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="10">
-	<s id="1">Non, Monsieur.</s>
+<p n="10">
+	<s n="1 ">Non, Monsieur.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="11">
-	<s id="1">Parlaient-ils syriaque ?</s>
+<p n="11">
+	<s n="1 ">Parlaient-ils syriaque ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="12">
-	<s id="1">Non, Monsieur.</s>
+<p n="12">
+	<s n="1 ">Non, Monsieur.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="13">
-	<s id="1">Parlaient-ils arabe ?</s>
+<p n="13">
+	<s n="1 ">Parlaient-ils arabe ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="14">
-	<s id="1">Non, Monsieur.</s>
+<p n="14">
+	<s n="1 ">Non, Monsieur.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="15">
-	<s id="1">En ce cas, vous avez raison de dire que c'étaient des Charlatans. </s>
-	<s id="2">Sans le secours de ces langues-là, il est impossible de commander au sort, et de prévoir l'avenir.</s>
+<p n="15">
+	<s n="1 ">En ce cas, vous avez raison de dire que c'étaient des Charlatans. </s>
+	<s n="2 ">Sans le secours de ces langues-là, il est impossible de commander au sort, et de prévoir l'avenir.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="16">
-	<s id="1">Et vous les savez donc, Monsieur ?</s>
+<p n="16">
+	<s n="1 ">Et vous les savez donc, Monsieur ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="17">
-	<s id="1">Sans doute : je converse avec les planètes dans toutes ces langues-là.</s>
+<p n="17">
+	<s n="1 ">Sans doute : je converse avec les planètes dans toutes ces langues-là.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="18">
-	<s id="1">En ce cas, Monsieur, je vous fais mes excuses. </s>
-	<s id="2">Je suis désespérée de vous avoir confondu avec ces charlatans qui prétendent savoir l'avenir, et qui connaissent à peine le passé..</s>
+<p n="18">
+	<s n="1 ">En ce cas, Monsieur, je vous fais mes excuses. </s>
+	<s n="2 ">Je suis désespérée de vous avoir confondu avec ces charlatans qui prétendent savoir l'avenir, et qui connaissent à peine le passé..</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="19">
-	<s id="1">J'excuse votre erreur. </s>
-	<s id="2">Voulez-vous que je vous parle hébreu ?</s>
+<p n="19">
+	<s n="1 ">J'excuse votre erreur. </s>
+	<s n="2 ">Voulez-vous que je vous parle hébreu ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="20">
-	<s id="1">Non, Monsieur, je ne suis point une planète, et cela me ferait peur.</s>
+<p n="20">
+	<s n="1 ">Non, Monsieur, je ne suis point une planète, et cela me ferait peur.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="21">
-	<s id="1">Aimez-vous mieux que je parle syriaque ?</s>
+<p n="21">
+	<s n="1 ">Aimez-vous mieux que je parle syriaque ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="22">
-	<s id="1">Encore moins : tous ces mots diaboliques me font trembler.</s>
+<p n="22">
+	<s n="1 ">Encore moins : tous ces mots diaboliques me font trembler.</s>
 </p>
 </sp>
-<sp stage="emphasis" who="MIGNONNET">
+<sp who="#mignonnet">
                         <speaker>MIGNONNET, avec emphase.</speaker>
-<p id="23">
-	<s id="1">Alla Meth che huth Kan.</s>
+<p n="23">
+	<s n="1 ">Alla Meth che huth Kan.</s>
 </p>
-</sp>
-<sp who="MADAME JOURDAIN">
+</sp><!--@stage="emphasis"-->
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="24">
-	<s id="1">Finissez, Monsieur, ou je vais crier. </s>
-	<s id="2">Vous allez faire paraître le Diable.</s>
+<p n="24">
+	<s n="1 ">Finissez, Monsieur, ou je vais crier. </s>
+	<s n="2 ">Vous allez faire paraître le Diable.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="25">
-	<s id="1">Non, Madame, je ferais tout au plus paraître votre bon Génie. </s>
-	<s id="">Mais puisque la présence d'un esprit vous intimide, je laisserai le Génie errer invisible dans ce salon, et je vous parlerai français. </s>
-	<s id="">Trois millions vous semblent-ils dignes de vos désirs ?</s>
+<p n="25">
+	<s n="1 ">Non, Madame, je ferais tout au plus paraître votre bon Génie. </s>
+	<s n=" ">Mais puisque la présence d'un esprit vous intimide, je laisserai le Génie errer invisible dans ce salon, et je vous parlerai français. </s>
+	<s n=" ">Trois millions vous semblent-ils dignes de vos désirs ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="26">
-	<s id="1">Ah ! </s>
-	<s id="2">J'entends cette langue-là.</s>
+<p n="26">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">J'entends cette langue-là.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="27">
-	<s id="1">Eh bien, Madame, il m'est aussi aisé de vous procurer cette somme que de remuer ma baguette. </s>
-	<s id="2">Voyez-vous cette boîte et ce papier !</s>
+<p n="27">
+	<s n="1 ">Eh bien, Madame, il m'est aussi aisé de vous procurer cette somme que de remuer ma baguette. </s>
+	<s n="2 ">Voyez-vous cette boîte et ce papier !</s>
 </p>
 <stage type="open/show">Il tire de dessous sa robe une boîte dans laquelle est renfermé du sable chaud, et un morceau de papier sur lequel a été tracé un numéro avec de l'encre de sympathie, de manière que le numéro paraît à mesure qu'on l'approche de la boite, et s'efface lorsqu'on l'en éloigne.</stage> 
-<p id="28">
-	<s id="1">Cette boîte est la boîte de vérité, qui renferme autant de biens , que celle de Pandore contenait de maux. </s>
-	<s id="2">Ce papier a été fait de la main des Génies. </s>
-	<s id="3">Quand vous l'approcherez de la boîte de vérité , vous verrez se tracer sur sa surface tous les numéros qui sortiront au tirage prochain.</s>
+<p n="28">
+	<s n="1 ">Cette boîte est la boîte de vérité, qui renferme autant de biens , que celle de Pandore contenait de maux. </s>
+	<s n="2 ">Ce papier a été fait de la main des Génies. </s>
+	<s n="3 ">Quand vous l'approcherez de la boîte de vérité , vous verrez se tracer sur sa surface tous les numéros qui sortiront au tirage prochain.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="29">
-	<s id="1">Ainsi, j'aurai le quine ? </s>
-	<s id="2">Ah ! </s>
-	<s id="3">Monsieur, donnez vite le papier, donnez vite... </s>
-	<s id="4">Que je l'approche de la boîte... </s>
-	<s id="5">Donnez donc, ne retenez pas ma curieuse impatience.</s>
+<p n="29">
+	<s n="1 ">Ainsi, j'aurai le quine ? </s>
+	<s n="2 ">Ah ! </s>
+	<s n="3 ">Monsieur, donnez vite le papier, donnez vite... </s>
+	<s n="4 ">Que je l'approche de la boîte... </s>
+	<s n="5 ">Donnez donc, ne retenez pas ma curieuse impatience.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="30">
-	<s id="1">Madame, il n'est pas temps encore de céder à vos désirs. </s>
-	<s id="2">Avant que vous puissiez voir le Quine, il faut répondre aux questions que je vais vous faire. </s>
-	<s id="3">Tout ce que le Génie peut vous accorder à présent, pour affermir votre confiance, c'est de vous montrer se premier numéro qui sortira au tirage prochain.</s>
+<p n="30">
+	<s n="1 ">Madame, il n'est pas temps encore de céder à vos désirs. </s>
+	<s n="2 ">Avant que vous puissiez voir le Quine, il faut répondre aux questions que je vais vous faire. </s>
+	<s n="3 ">Tout ce que le Génie peut vous accorder à présent, pour affermir votre confiance, c'est de vous montrer se premier numéro qui sortira au tirage prochain.</s>
 </p>
 <stage type="show">Il approche le papier blanc de la boite, et un numéro se trace en gros caractère.</stage>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="31">
-	<s id="1">Oh ! </s>
-	<s id="2">Cela est admirable. </s>
-	<s id="3">Dites au Génie qu'il écrive au plutôt le second numéro, et puis le troisième, et puis...</s>
+<p n="31">
+	<s n="1 ">Oh ! </s>
+	<s n="2 ">Cela est admirable. </s>
+	<s n="3 ">Dites au Génie qu'il écrive au plutôt le second numéro, et puis le troisième, et puis...</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="32">
-	<s id="1">Je vous ai déjà dit qu'il n'était pas temps. </s>
-	<s id="2">Pour parvenir à voir le Quine écrit sur ce papier magique, il faut avoir le coeur dégagé de tout attachement à la matière, s'élever au-dessus des faiblesses humaines, devenir soi-même. </s>
-	<s id="3">un Génie pur , exempt d'imperfections. </s>
-	<s id="4">Répondez-moi donc sincèrement ; dites-moi la vérité, et ne forcez pas le Génie à venir lui-même me la dire à l'oreille. </s>
-	<s id="5">Commençons par la plus honteuse des faiblesses ; l'amour ne règne- t-il pas dans votre coeur ?</s>
+<p n="32">
+	<s n="1 ">Je vous ai déjà dit qu'il n'était pas temps. </s>
+	<s n="2 ">Pour parvenir à voir le Quine écrit sur ce papier magique, il faut avoir le coeur dégagé de tout attachement à la matière, s'élever au-dessus des faiblesses humaines, devenir soi-même. </s>
+	<s n="3 ">un Génie pur , exempt d'imperfections. </s>
+	<s n="4 ">Répondez-moi donc sincèrement ; dites-moi la vérité, et ne forcez pas le Génie à venir lui-même me la dire à l'oreille. </s>
+	<s n="5 ">Commençons par la plus honteuse des faiblesses ; l'amour ne règne- t-il pas dans votre coeur ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="33">
-	<s id="1">Vous me faites-là, Monsieur, une question embarrassante. </s>
-	<s id="2">Que j'aime ou que je n'aime pas, qu'est-ce que cela fait au Génie ? </s>
-	<s id="3">Les Génies sont-ils jaloux ?</s>
+<p n="33">
+	<s n="1 ">Vous me faites-là, Monsieur, une question embarrassante. </s>
+	<s n="2 ">Que j'aime ou que je n'aime pas, qu'est-ce que cela fait au Génie ? </s>
+	<s n="3 ">Les Génies sont-ils jaloux ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="34">
-	<s id="1">Répondez, ou le Génie va répondre pour vous.</s>
+<p n="34">
+	<s n="1 ">Répondez, ou le Génie va répondre pour vous.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="35">
-	<s id="1">Eh bien, Monsieur, je vous avouerai.... </s>
-	<s id="2">Mais cet aveu est-il bien nécessaire ?</s>
+<p n="35">
+	<s n="1 ">Eh bien, Monsieur, je vous avouerai.... </s>
+	<s n="2 ">Mais cet aveu est-il bien nécessaire ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="36">
-	<s id="1">Indispensable. </s>
+<p n="36">
+	<s n="1 ">Indispensable. </s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="37">
-	<s id="1">Mais il est pourtant bien dur...</s>
+<p n="37">
+	<s n="1 ">Mais il est pourtant bien dur...</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="38">
-	<s id="1">Je vois le Génie qui s'approche et qui va parler.</s>
+<p n="38">
+	<s n="1 ">Je vois le Génie qui s'approche et qui va parler.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="39">
-	<s id="1">Eh bien, je vais vous avouer tout. </s>
-	<s id="2">Mais le Génie ne m'entendra-t-il point ?</s>
+<p n="39">
+	<s n="1 ">Eh bien, je vais vous avouer tout. </s>
+	<s n="2 ">Mais le Génie ne m'entendra-t-il point ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="40">
-	<s id="1">Qu'importe qu'il vous entende ? </s>
-	<s id="2">Il fait tout ce que vous allez me dire ; rien n'est caché pour lui.</s>
+<p n="40">
+	<s n="1 ">Qu'importe qu'il vous entende ? </s>
+	<s n="2 ">Il fait tout ce que vous allez me dire ; rien n'est caché pour lui.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="41">
-	<s id="1">Cependant un témoin de plus me gène, me fait rougir. </s>
-	<s id="2">Je ne puis souffrir un tiers quand je suis dans le tête à tête. </s>
-	<s id="">Ne serait-il pas possible que le Génie s'éloignât un peu ?</s>
+<p n="41">
+	<s n="1 ">Cependant un témoin de plus me gène, me fait rougir. </s>
+	<s n="2 ">Je ne puis souffrir un tiers quand je suis dans le tête à tête. </s>
+	<s n=" ">Ne serait-il pas possible que le Génie s'éloignât un peu ?</s>
 </p>
 </sp>
-<sp stage="magic" who="MIGNONNET">
+<sp who="#mignonnet">
                         <speaker>MIGNONNET, fait un signe avec sa baguette.</speaker>
-<p id="42">
-	<s id="1">Il est déjà à plus de cent lieues d'ici ; je le rappellerai quand il me plaira. </s>
-	<s id="2">Parlez maintenant.</s>
+<p n="42">
+	<s n="1 ">Il est déjà à plus de cent lieues d'ici ; je le rappellerai quand il me plaira. </s>
+	<s n="2 ">Parlez maintenant.</s>
 </p>
-</sp>
-<sp who="MADAME JOURDAIN">
+</sp><!--@stage="magic"-->
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="43">
-	<s id="1">Eh bien donc, je vous avouerai en confidence ... </s>
-	<s id="2">Mais soyez discret, au moins.</s>
+<p n="43">
+	<s n="1 ">Eh bien donc, je vous avouerai en confidence ... </s>
+	<s n="2 ">Mais soyez discret, au moins.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="44">
-	<s id="1">Je fais profession de l'être.</s>
+<p n="44">
+	<s n="1 ">Je fais profession de l'être.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="45">
-	<s id="1">Je vous avouerai donc qu'un jeune homme, nommé Mignonnet, est devenu amoureux de moi ; je dis, amoureux fou.</s>
+<p n="45">
+	<s n="1 ">Je vous avouerai donc qu'un jeune homme, nommé Mignonnet, est devenu amoureux de moi ; je dis, amoureux fou.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="46">
-	<s id="1">Je vous interroge sur vos faiblesses, et non sur celles des autres. </s>
-	<s id="2">Répondez sans détour : aimez-vous ce jeune homme ?</s>
+<p n="46">
+	<s n="1 ">Je vous interroge sur vos faiblesses, et non sur celles des autres. </s>
+	<s n="2 ">Répondez sans détour : aimez-vous ce jeune homme ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="47">
-	<s id="1">Il a bien fallu prendre pitié de son tendre martyre. </s>
-	<s id="2">Je ne saurais voir souffrir les malheureux. </s>
-	<s id="3">Si je ne lui avais pas rendu tendresse pour tendresse, il se serait tué de désespoir.</s>
+<p n="47">
+	<s n="1 ">Il a bien fallu prendre pitié de son tendre martyre. </s>
+	<s n="2 ">Je ne saurais voir souffrir les malheureux. </s>
+	<s n="3 ">Si je ne lui avais pas rendu tendresse pour tendresse, il se serait tué de désespoir.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="48">
-	<s id="1">Je me suis aperçu de votre passion, à la promptitude avec laquelle le Génie s'est enfui d'un séjour profane et indigne de lui. </s>
-	<s id="2">Il a fait plus ; de sa main toute-puissante il a effacé le chiffre qu'elle avait tracé sur ce papier. </s>
-	<s id="3">Les Génies ne s'intéressent point aux âmes esclaves de l'amour. </s>
-	<s id="4">Il faut renoncer au Quine ou à Mignonnet, il n'y a point de milieu.</s>
+<p n="48">
+	<s n="1 ">Je me suis aperçu de votre passion, à la promptitude avec laquelle le Génie s'est enfui d'un séjour profane et indigne de lui. </s>
+	<s n="2 ">Il a fait plus ; de sa main toute-puissante il a effacé le chiffre qu'elle avait tracé sur ce papier. </s>
+	<s n="3 ">Les Génies ne s'intéressent point aux âmes esclaves de l'amour. </s>
+	<s n="4 ">Il faut renoncer au Quine ou à Mignonnet, il n'y a point de milieu.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="49">
-	<s id="1">Cesser d'aimer Mignonnet ! </s>
-	<s id="2">Cet arrêt est bien cruel. </s>
-	<s id="3">Ne serait-il pas possible de composer ?. </s>
-	<s id="4">Par exemple, que je conserve mon amant, et que je n'aie qu'un Quaterne au lieu d'un Quine ?</s>
+<p n="49">
+	<s n="1 ">Cesser d'aimer Mignonnet ! </s>
+	<s n="2 ">Cet arrêt est bien cruel. </s>
+	<s n="3 ">Ne serait-il pas possible de composer ?. </s>
+	<s n="4 ">Par exemple, que je conserve mon amant, et que je n'aie qu'un Quaterne au lieu d'un Quine ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="50">
-	<s id="1">Non, Madame, il n'est point d'accommodement avec les Génies. </s>
-	<s id="2">Ou cessez d'aimer Mignonnet, ou vous ne verrez pas un seul numéro sur le papier magique.</s>
+<p n="50">
+	<s n="1 ">Non, Madame, il n'est point d'accommodement avec les Génies. </s>
+	<s n="2 ">Ou cessez d'aimer Mignonnet, ou vous ne verrez pas un seul numéro sur le papier magique.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="51">
-	<s id="1">Eh bien donc, je m'y résous. </s>
-	<s id="2">Mais si ce pauvre Mignonnet, dans son désespoir, vient s'égorger à mes yeux...</s>
+<p n="51">
+	<s n="1 ">Eh bien donc, je m'y résous. </s>
+	<s n="2 ">Mais si ce pauvre Mignonnet, dans son désespoir, vient s'égorger à mes yeux...</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="52">
-	<s id="1">Ne craignez rien. </s>
-	<s id="2">II se consolera, Madame, il se consolera ; les temps romanesques sont passés.</s>
+<p n="52">
+	<s n="1 ">Ne craignez rien. </s>
+	<s n="2 ">II se consolera, Madame, il se consolera ; les temps romanesques sont passés.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="53">
-	<s id="1">Au fonds, vous m'ouvrez les yeux. </s>
-	<s id="2">Ce Mignonnet n'a d'autre mérite que ses vingt ans, ses beaux cheveux blonds, sa jolie figure ; mais du reste, c'est un petit vaurien, plein d'amour-propre, négligent, entêté, menteur.</s>
+<p n="53">
+	<s n="1 ">Au fonds, vous m'ouvrez les yeux. </s>
+	<s n="2 ">Ce Mignonnet n'a d'autre mérite que ses vingt ans, ses beaux cheveux blonds, sa jolie figure ; mais du reste, c'est un petit vaurien, plein d'amour-propre, négligent, entêté, menteur.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="54">
-	<s id="1">Je vous ai déjà dit de parler de vos faiblesses, et non pas de celles des autres. </s>
-	<s id="">Vous me promettez donc de renoncer à Mignonnet, de ne plus l'aimer ?</s>
+<p n="54">
+	<s n="1 ">Je vous ai déjà dit de parler de vos faiblesses, et non pas de celles des autres. </s>
+	<s n=" ">Vous me promettez donc de renoncer à Mignonnet, de ne plus l'aimer ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="55">
-	<s id="1">Oui, Monsieur.</s>
+<p n="55">
+	<s n="1 ">Oui, Monsieur.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="56">
-	<s id="1">Êtes-vous bien sûre de votre coeur ?</s>
+<p n="56">
+	<s n="1 ">Êtes-vous bien sûre de votre coeur ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="57">
-	<s id="1">Oui, Monsieur. </s>
-	<s id="2">Trois millions ! </s>
-	<s id="3">Que d'or ! </s>
-	<s id="4">Quelle fortune !</s>
+<p n="57">
+	<s n="1 ">Oui, Monsieur. </s>
+	<s n="2 ">Trois millions ! </s>
+	<s n="3 ">Que d'or ! </s>
+	<s n="4 ">Quelle fortune !</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="48">
-	<s id="1">Mignonnet ne vaut pas trois millions, n'est-ce pas ?</s>
+<p n="48">
+	<s n="1 ">Mignonnet ne vaut pas trois millions, n'est-ce pas ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="49">
-	<s id="1">Oh ! </s>
-	<s id="2">Non certainement : car c'est un petit être pétri de défauts ; et quand j'y songe, je ne conçois pas comment cette ridicule passion a pu naître dans mon coeur. </s>
-	<s id="">Car enfin si vous connaissiez à fonds le caractère de ce petit drôle, vous verriez que c'est le plus...</s>
+<p n="49">
+	<s n="1 ">Oh ! </s>
+	<s n="2 ">Non certainement : car c'est un petit être pétri de défauts ; et quand j'y songe, je ne conçois pas comment cette ridicule passion a pu naître dans mon coeur. </s>
+	<s n=" ">Car enfin si vous connaissiez à fonds le caractère de ce petit drôle, vous verriez que c'est le plus...</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="50">
-	<s id="1">Encore une fois, Madame, ce penchant à médire est encore une faiblesse dont il faut vous corriger , si vous voulez atteindre au Quine, et prévoir l'avenir. </s>
-	<s id="2">Songez à vous rendre parfaite, et ne vous occupez point des imperfections des autres... </s>
-	<s id="2">Vous me promettez de ne plus aimer Mignonnet ?</s>
+<p n="50">
+	<s n="1 ">Encore une fois, Madame, ce penchant à médire est encore une faiblesse dont il faut vous corriger , si vous voulez atteindre au Quine, et prévoir l'avenir. </s>
+	<s n="2 ">Songez à vous rendre parfaite, et ne vous occupez point des imperfections des autres... </s>
+	<s n="2 ">Vous me promettez de ne plus aimer Mignonnet ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="51">
-	<s id="1">Oui, Monsieur.</s>
+<p n="51">
+	<s n="1 ">Oui, Monsieur.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="52">
-	<s id="1">Je compte sur votre parole. </s>
-	<s id="">Je vous laisse la boîte de vérité et le papier magique.</s>
+<p n="52">
+	<s n="1 ">Je compte sur votre parole. </s>
+	<s n=" ">Je vous laisse la boîte de vérité et le papier magique.</s>
 </p>
 <stage type="take/give">II substitue et lui donne un autre papier sur lequel on n'a rien écrit.</stage>
-<p id="53">
-	<s id="1">Adieu, je reviendrai vous voir.</s>
+<p n="53">
+	<s n="1 ">Adieu, je reviendrai vous voir.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="54">
-	<s id="1">Monsieur, comptez sur ma reconnaissance.</s>
+<p n="54">
+	<s n="1 ">Monsieur, comptez sur ma reconnaissance.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="55">
-	<s id="1">Vous m'offensez en m'en parlant. </s>
-	<s id="2">Sachez que je puis faire de l'or. </s>
-	<s id="3">Et que je le dédaigne. </s>
-	<s id="4">Rendez-vous digne de la faveur des Génies ; étouffez une passion qui vous avilit ; c'est la seule reconnaissance que le Génie et moi nous attendons de vous.</s>
+<p n="55">
+	<s n="1 ">Vous m'offensez en m'en parlant. </s>
+	<s n="2 ">Sachez que je puis faire de l'or. </s>
+	<s n="3 ">Et que je le dédaigne. </s>
+	<s n="4 ">Rendez-vous digne de la faveur des Génies ; étouffez une passion qui vous avilit ; c'est la seule reconnaissance que le Génie et moi nous attendons de vous.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="6">
+</div>
+<div type="scene" n="6">
                     <head>SCÈNE VI.</head>
-<sp stage="alone" who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN, seule.</speaker>
-<p id="1">
-	<s id="1">En vérité, cet homme-là est étonnant ! </s>
-	<s id="2">Et qu'on me dise encore qu'il n'y a point de Génies ! </s>
-	<s id="3">Je l'ai pourtant vu ce numéro se tracer sur ce papier ; j ai même un peu entrevu l'ombre de la main du Génie , une certaine vapeur... la... </s>
-	<s id="4">Ah ! </s>
-	<s id="5">Comme je vais rabattre le caquet de nos Esprits forts, et surtout celui de Mignonnet, qui fait le Philosophe, et ne croit point aux Esprits !... </s>
-	<s id="6">Mais quoi ! </s>
-	<s id="7">Abandonner ce pauvre enfant !... </s>
-	<s id="8">Son désespoir, ses reproches, ses larmes !... </s>
-	<s id="9">Je ne puis soutenir cette idée... </s>
-	<s id="10">Cependant trois millions ! </s>
-	<s id="11">Trois millions, pour un écu !... </s>
-	<s id="12">Ne serait-il pas possible d'attraper le Génie ? </s>
-	<s id="13">Il me semble... </s>
-	<s id="14">Oui, fort bien... </s>
-	<s id="15">La ruse est excellente. </s>
-	<s id="16">Oh ! </s>
-	<s id="17">Parbleu, Monsieur le Génie, vous ne serez pas plus fin que moi.</s>
+<p n="1">
+	<s n="1 ">En vérité, cet homme-là est étonnant ! </s>
+	<s n="2 ">Et qu'on me dise encore qu'il n'y a point de Génies ! </s>
+	<s n="3 ">Je l'ai pourtant vu ce numéro se tracer sur ce papier ; j ai même un peu entrevu l'ombre de la main du Génie , une certaine vapeur... la... </s>
+	<s n="4 ">Ah ! </s>
+	<s n="5 ">Comme je vais rabattre le caquet de nos Esprits forts, et surtout celui de Mignonnet, qui fait le Philosophe, et ne croit point aux Esprits !... </s>
+	<s n="6 ">Mais quoi ! </s>
+	<s n="7 ">Abandonner ce pauvre enfant !... </s>
+	<s n="8 ">Son désespoir, ses reproches, ses larmes !... </s>
+	<s n="9 ">Je ne puis soutenir cette idée... </s>
+	<s n="10 ">Cependant trois millions ! </s>
+	<s n="11 ">Trois millions, pour un écu !... </s>
+	<s n="12 ">Ne serait-il pas possible d'attraper le Génie ? </s>
+	<s n="13 ">Il me semble... </s>
+	<s n="14 ">Oui, fort bien... </s>
+	<s n="15 ">La ruse est excellente. </s>
+	<s n="16 ">Oh ! </s>
+	<s n="17 ">Parbleu, Monsieur le Génie, vous ne serez pas plus fin que moi.</s>
 </p>
-</sp>
-</div2>
-<div2 type="scene" n="8">
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="8">
                     <head>SCÈNE VIII. Madame Jourdain, Mignonnet.</head>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="1">
-	<s id="1">Eh bien, mon cher Mignonnet, ma longue entrevue avec cet homme-là ne t'a-t-elle point inquiété ?</s>
+<p n="1">
+	<s n="1 ">Eh bien, mon cher Mignonnet, ma longue entrevue avec cet homme-là ne t'a-t-elle point inquiété ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="2">
-	<s id="1">Bon ! </s>
-	<s id="2">À son âge s'aviserait-il d'être amoureux ?</s>
+<p n="2">
+	<s n="1 ">Bon ! </s>
+	<s n="2 ">À son âge s'aviserait-il d'être amoureux ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="3">
-	<s id="1">Oui, sans doute.</s>
+<p n="3">
+	<s n="1 ">Oui, sans doute.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="4">
-	<s id="1">Et il a osé vous déclarer sa passion ?</s>
+<p n="4">
+	<s n="1 ">Et il a osé vous déclarer sa passion ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="5">
-	<s id="1">Certainement... </s>
-	<s id="2">Il m'a dit qu'il se mettait au rang de mes esclaves, qu'il brûlait de la flamme la plus vive ; mais, qu'à son âge, tout son espoir était de mourir d'amour à mes pieds.</s>
+<p n="5">
+	<s n="1 ">Certainement... </s>
+	<s n="2 ">Il m'a dit qu'il se mettait au rang de mes esclaves, qu'il brûlait de la flamme la plus vive ; mais, qu'à son âge, tout son espoir était de mourir d'amour à mes pieds.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="6">
-	<s id="1">Il vous a dit cela, Madame... </s>
+<p n="6">
+	<s n="1 ">Il vous a dit cela, Madame... </s>
 </p>
 <stage type="aparte">À part.</stage>
-<p id="7">
-	<s id="1">Ajouter le mensonge à la coquetterie, ce charme lui manquait.</s>
+<p n="7">
+	<s n="1 ">Ajouter le mensonge à la coquetterie, ce charme lui manquait.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="8">
-	<s id="1">Que dis-tu là entre tes dents ?</s>
+<p n="8">
+	<s n="1 ">Que dis-tu là entre tes dents ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="9">
-	<s id="1">Je dis que je vais me couper la gorge avec le fat suranné qui ose tenter de m'enlever votre coeur.</s>
+<p n="9">
+	<s n="1 ">Je dis que je vais me couper la gorge avec le fat suranné qui ose tenter de m'enlever votre coeur.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="10">
-	<s id="1">Quoi ! </s>
-	<s id="2">Te battre avec un vieillard, dont la main tremblante pourrait à peine soutenu une épée ?</s>
+<p n="10">
+	<s n="1 ">Quoi ! </s>
+	<s n="2 ">Te battre avec un vieillard, dont la main tremblante pourrait à peine soutenu une épée ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="11">
-	<s id="1">Eh bien, nous nous battrons au pistolet ; à son âge, comme au mien, on peut se servir de cette arme.</s>
+<p n="11">
+	<s n="1 ">Eh bien, nous nous battrons au pistolet ; à son âge, comme au mien, on peut se servir de cette arme.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="12">
-	<s id="1">Ah ! </s>
-	<s id="2">Mignonnet, que vas-tu faire ?</s>
+<p n="12">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">Mignonnet, que vas-tu faire ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="13">
-	<s id="1">Ce que je dois. </s>
-	<s id="2">Vous me retenez en vain. </s>
-	<s id="3">Il ose vous aimer ! </s>
-	<s id="4">Nous verrons s'il osera vous conquérir.</s>
+<p n="13">
+	<s n="1 ">Ce que je dois. </s>
+	<s n="2 ">Vous me retenez en vain. </s>
+	<s n="3 ">Il ose vous aimer ! </s>
+	<s n="4 ">Nous verrons s'il osera vous conquérir.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="14">
-	<s id="1">Au nom de notre amour...</s>
+<p n="14">
+	<s n="1 ">Au nom de notre amour...</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="15">
-	<s id="1">Non, laissez-moi.</s>
+<p n="15">
+	<s n="1 ">Non, laissez-moi.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="16">
-	<s id="1">Malheureux ! </s>
-	<s id="2">Sais-tu que c'est le sang de ton bienfaiteur que tu vas répandre ?</s>
+<p n="16">
+	<s n="1 ">Malheureux ! </s>
+	<s n="2 ">Sais-tu que c'est le sang de ton bienfaiteur que tu vas répandre ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="17">
-	<s id="1">Mon bienfaiteur ! </s>
-	<s id="2">Lui ? </s>
-	<s id="3">Quand il veut me ravir votre coeur !</s>
+<p n="17">
+	<s n="1 ">Mon bienfaiteur ! </s>
+	<s n="2 ">Lui ? </s>
+	<s n="3 ">Quand il veut me ravir votre coeur !</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="18">
-	<s id="1">Oui, c'est ton bienfaiteur. </s>
-	<s id="2">Écoute, et calme-toi.</s>
+<p n="18">
+	<s n="1 ">Oui, c'est ton bienfaiteur. </s>
+	<s n="2 ">Écoute, et calme-toi.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="19">
-	<s id="1">Parlez, je vous écoute ; mais je saurai le retrouver, cet indigne rival.</s>
+<p n="19">
+	<s n="1 ">Parlez, je vous écoute ; mais je saurai le retrouver, cet indigne rival.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="20">
-	<s id="1">Quelle serait ta surprise, mon cher Mignonnet, si tu te voyais bientôt possesseur de plusieurs terres, logé dans un hôtel superbe, entouré d'un domestique nombreux, porté dans une voiture élégante â côté de ta tendre épouse ?</s>
+<p n="20">
+	<s n="1 ">Quelle serait ta surprise, mon cher Mignonnet, si tu te voyais bientôt possesseur de plusieurs terres, logé dans un hôtel superbe, entouré d'un domestique nombreux, porté dans une voiture élégante â côté de ta tendre épouse ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="21">
-	<s id="1">De tous ces biens-là, votre coeur est le seul qui me flatterait.</s>
+<p n="21">
+	<s n="1 ">De tous ces biens-là, votre coeur est le seul qui me flatterait.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="22">
-	<s id="1">Plaire est beaucoup sans doute : mais la fortune est quelque chose. </s>
-	<s id="2">Eh bien ; mon ami, tous ces trésors, tous ces biens, c'est ce vieillard qui nous les apporte ; et tu veux l'immoler à ta vengeance !</s>
+<p n="22">
+	<s n="1 ">Plaire est beaucoup sans doute : mais la fortune est quelque chose. </s>
+	<s n="2 ">Eh bien ; mon ami, tous ces trésors, tous ces biens, c'est ce vieillard qui nous les apporte ; et tu veux l'immoler à ta vengeance !</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="23">
-	<s id="1">Que me dites-vous ?</s>
+<p n="23">
+	<s n="1 ">Que me dites-vous ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="24">
-	<s id="1">Ce qui me reste à te dire est bien plus étonnant. </s>
-	<s id="2">Tu refuseras de le croire.</s>
+<p n="24">
+	<s n="1 ">Ce qui me reste à te dire est bien plus étonnant. </s>
+	<s n="2 ">Tu refuseras de le croire.</s>
 </p>
 <stage type="show">Montrant le papier que le faux vieillard lui a laissé.</stage>
-<p id="25">
-	<s id="1">Mais j'ai dans mes mains de quoi te convaincre. </s>
-	<s id="2">Tu vas nier sans doute qu'il y ait des Génies, que ce vieillard converse avec eux ?</s>
+<p n="25">
+	<s n="1 ">Mais j'ai dans mes mains de quoi te convaincre. </s>
+	<s n="2 ">Tu vas nier sans doute qu'il y ait des Génies, que ce vieillard converse avec eux ?</s>
 </p>
 </sp>
-<sp stage="laugh" who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET, riant.</speaker>
-<p id="26">
-	<s id="1">Ah ! </s>
-	<s id="2">C'est encore un charlatan.</s>
+<p n="26">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">C'est encore un charlatan.</s>
 </p>
-</sp>
-<sp who="MADAME JOURDAIN">
+</sp><!--@stage="laugh"-->
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="27">
-	<s id="1">Mais enfin, si je te disais qu'il m'a fait voit mon Génie, comme je te vois ?...</s>
+<p n="27">
+	<s n="1 ">Mais enfin, si je te disais qu'il m'a fait voit mon Génie, comme je te vois ?...</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="28">
-	<s id="1">Comme vous me voyez, Madame ?</s>
+<p n="28">
+	<s n="1 ">Comme vous me voyez, Madame ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="29">
-	<s id="1">Pas tout-à-fait aussi distinctement ; car un Génie on ne le voit pas, on l'aperçoit. </s>
-	<s id="2">Mais enfin je l'ai très bien aperçu.</s>
+<p n="29">
+	<s n="1 ">Pas tout-à-fait aussi distinctement ; car un Génie on ne le voit pas, on l'aperçoit. </s>
+	<s n="2 ">Mais enfin je l'ai très bien aperçu.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="30">
-	<s id="1">Effet de la prévention.</s>
+<p n="30">
+	<s n="1 ">Effet de la prévention.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="31">
-	<s id="1">Si j'ajoutais que j'ai parlé au Génie, qu'il m'a répondu ?</s>
+<p n="31">
+	<s n="1 ">Si j'ajoutais que j'ai parlé au Génie, qu'il m'a répondu ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="32">
-	<s id="1">Il vous a répondu ? </s>
-	<s id="2">Et que vous a-t-il dit ?</s>
+<p n="32">
+	<s n="1 ">Il vous a répondu ? </s>
+	<s n="2 ">Et que vous a-t-il dit ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="33">
-	<s id="1">Je ne l'ai pas trop compris. </s>
-	<s id="2">Je ne sais pas encore bien sa langue. </s>
-	<s id="3">Mais je fuis très-íure qu'il m'a parlé. </s>
-	<s id="4">Que peux-tu répondre à cela ?</s>
+<p n="33">
+	<s n="1 ">Je ne l'ai pas trop compris. </s>
+	<s n="2 ">Je ne sais pas encore bien sa langue. </s>
+	<s n="3 ">Mais je fuis très-íure qu'il m'a parlé. </s>
+	<s n="4 ">Que peux-tu répondre à cela ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="34">
-	<s id="1">Que ce sont des visions.</s>
+<p n="34">
+	<s n="1 ">Que ce sont des visions.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="35">
-	<s id="1">Et si je te faisais voir le Génie de tes deux yeux, tu serais bien étonné ?</s>
+<p n="35">
+	<s n="1 ">Et si je te faisais voir le Génie de tes deux yeux, tu serais bien étonné ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="36">
-	<s id="1">Oui, sans doute.</s>
+<p n="36">
+	<s n="1 ">Oui, sans doute.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="37">
-	<s id="1">Eh bien, dans un moment je te ferai voir la main du Génie qui tracera sur ce papier le premier numéro qui sortira au tirage prochain.</s>
+<p n="37">
+	<s n="1 ">Eh bien, dans un moment je te ferai voir la main du Génie qui tracera sur ce papier le premier numéro qui sortira au tirage prochain.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="38">
-	<s id="1">Ah ! </s>
-	<s id="2">J'entends, votre vieillard est un cabaliste ; c'est à-dire, une dupe ou un fripon.</s>
+<p n="38">
+	<s n="1 ">Ah ! </s>
+	<s n="2 ">J'entends, votre vieillard est un cabaliste ; c'est à-dire, une dupe ou un fripon.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="39">
-	<s id="1">Pèse donc mieux tes paroles ; si le Génie t'entendait , il pourrait bien te tordre le cou.</s>
+<p n="39">
+	<s n="1 ">Pèse donc mieux tes paroles ; si le Génie t'entendait , il pourrait bien te tordre le cou.</s>
 </p>
 </sp>
-<sp stage="laugh" who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET, riant.</speaker>
-<p id="40">
-	<s id="1">Cela serait plaisant.</s>
+<p n="40">
+	<s n="1 ">Cela serait plaisant.</s>
 </p>
-</sp>
-<sp who="MADAME JOURDAIN">
+</sp><!--@stage="laugh"-->
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="41">
-	<s id="1">Pas si plaisant. </s>
-	<s id="2">Écoute ; mais retirons-nous dans ce coin, et parlons bas, de peur que le Génie ne nous entende. </s>
-	<s id="3">Ce vieillard, pour premier coup-d'essai, m'a fait voir le premier numéro qui sortira au tirage prochain ; je verrai bientôt les quatre autres. </s>
-	<s id="4">Je ferai ma mise d'un écu, et j'aurai un Quine de trois millions. </s>
-	<s id="5">Mais le cruel a exigé une condition bien dure ; il veut que je cesse de t'aimer, il me menace de m'ôter la faculté de prévoir les numéros qui sortiront, si je t'aime encore. </s>
-	<s id="6">J'ai promis de ne plus t'aimer ; mais j'ai fait une restriction mentale. </s>
-	<s id="7">Tu t'éloigneras de chez moi jusqu'au tirage prochain. </s>
-	<s id="8">Pendant ces trois jours , je ne songerai plus à toi : puis, quand mon Quine fera sorti, quand mes trois millions me seront payés, je t'aimerai de nouveau, et je t'épouserai.</s>
+<p n="41">
+	<s n="1 ">Pas si plaisant. </s>
+	<s n="2 ">Écoute ; mais retirons-nous dans ce coin, et parlons bas, de peur que le Génie ne nous entende. </s>
+	<s n="3 ">Ce vieillard, pour premier coup-d'essai, m'a fait voir le premier numéro qui sortira au tirage prochain ; je verrai bientôt les quatre autres. </s>
+	<s n="4 ">Je ferai ma mise d'un écu, et j'aurai un Quine de trois millions. </s>
+	<s n="5 ">Mais le cruel a exigé une condition bien dure ; il veut que je cesse de t'aimer, il me menace de m'ôter la faculté de prévoir les numéros qui sortiront, si je t'aime encore. </s>
+	<s n="6 ">J'ai promis de ne plus t'aimer ; mais j'ai fait une restriction mentale. </s>
+	<s n="7 ">Tu t'éloigneras de chez moi jusqu'au tirage prochain. </s>
+	<s n="8 ">Pendant ces trois jours , je ne songerai plus à toi : puis, quand mon Quine fera sorti, quand mes trois millions me seront payés, je t'aimerai de nouveau, et je t'épouserai.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="42">
-	<s id="1">Et une femme raisonnable croit à toutes ces chimères !</s>
+<p n="42">
+	<s n="1 ">Et une femme raisonnable croit à toutes ces chimères !</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="43">
-	<s id="1">Je vois bien pourquoi tu feins de n'y pas croire. </s>
-	<s id="2">C'est que tu crains de passer trois jours sans me voir : trois jours d'absence seront trois siècles pour toi. </s>
-	<s id="3">Mais, mon ami, trois millions, songes-y bien, trois millions !</s>
+<p n="43">
+	<s n="1 ">Je vois bien pourquoi tu feins de n'y pas croire. </s>
+	<s n="2 ">C'est que tu crains de passer trois jours sans me voir : trois jours d'absence seront trois siècles pour toi. </s>
+	<s n="3 ">Mais, mon ami, trois millions, songes-y bien, trois millions !</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="44">
-	<s id="1">Mensonges, fables, absurdités que tout cela.</s>
+<p n="44">
+	<s n="1 ">Mensonges, fables, absurdités que tout cela.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="45">
-	<s id="1">Allons , je vois bien qu'il faut te convaincre. </s>
-	<s id="2">Si tu ne m'en crois pas, tu en croiras tes yeux. </s>
-	<s id="3">Vois-tu cette boîte ? </s>
-	<s id="4">C'est la boîte de vérité. </s>
-	<s id="5">Je vais en approcher ce papier. </s>
-	<s id="6">Il est blanc comme tu vois , et ne porte la trace d'aucun caractère.</s>
+<p n="45">
+	<s n="1 ">Allons , je vois bien qu'il faut te convaincre. </s>
+	<s n="2 ">Si tu ne m'en crois pas, tu en croiras tes yeux. </s>
+	<s n="3 ">Vois-tu cette boîte ? </s>
+	<s n="4 ">C'est la boîte de vérité. </s>
+	<s n="5 ">Je vais en approcher ce papier. </s>
+	<s n="6 ">Il est blanc comme tu vois , et ne porte la trace d'aucun caractère.</s>
 </p>
 <stage type="loud">À haute voix.</stage>
-<p id="46">
-	<s id="1">Au nom du Génie qui daigne me protéger, et auquel je jure de ne plus aimer Mignonnet.</s>
+<p n="46">
+	<s n="1 ">Au nom du Génie qui daigne me protéger, et auquel je jure de ne plus aimer Mignonnet.</s>
 </p>
 <stage type="low/toward">Bas, à Mignonnet.</stage>
-<p id="47">
-	<s id="1">Jusqu'à ce que mes trois millions me soient payés. </s>
-	<s id="2">j'ordonne au premier numéro qui sortira au tirage prochain, de se tracer sur ce papier... </s>
-	<s id="3">Eh bien !... </s>
-	<s id="4">J'ordonne au premier numéro... </s>
-	<s id="5">Je ne vois rien... </s>
-	<s id="6">Il me semble pourtant apercevoir : mais non, il n'y a rien ; le papier est toujours blanc... </s>
-	<s id="7">Voyons... </s>
-	<s id="8">Approchons-le plus près de la boîte... </s>
-	<s id="9">Tentative inutile... </s>
-	<s id="10">Rien ne paraît.</s>
+<p n="47">
+	<s n="1 ">Jusqu'à ce que mes trois millions me soient payés. </s>
+	<s n="2 ">j'ordonne au premier numéro qui sortira au tirage prochain, de se tracer sur ce papier... </s>
+	<s n="3 ">Eh bien !... </s>
+	<s n="4 ">J'ordonne au premier numéro... </s>
+	<s n="5 ">Je ne vois rien... </s>
+	<s n="6 ">Il me semble pourtant apercevoir : mais non, il n'y a rien ; le papier est toujours blanc... </s>
+	<s n="7 ">Voyons... </s>
+	<s n="8 ">Approchons-le plus près de la boîte... </s>
+	<s n="9 ">Tentative inutile... </s>
+	<s n="10 ">Rien ne paraît.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="48">
-	<s id="1">Eh bien, Madame, je vous disais bien que ce vieillard était un fourbe.</s>
+<p n="48">
+	<s n="1 ">Eh bien, Madame, je vous disais bien que ce vieillard était un fourbe.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="49">
-	<s id="1">Mais je l'ai vu ce-numéro ; je te dis, je t'assure que je l'ai vu. </s>
-	<s id="2">Qui peut donc empêcher l'effet de ce charme... </s>
-	<s id="3">Mon cher Mignonnet, cours après ce vieillard, ramène le, qu'il revienne. </s>
-	<s id="4">Mais ne vas pas le que relIer. </s>
-	<s id="5">M'aimer n'est pas un crime ; et quand je lui ai fait l'éloge de tes belles qualités...</s>
+<p n="49">
+	<s n="1 ">Mais je l'ai vu ce-numéro ; je te dis, je t'assure que je l'ai vu. </s>
+	<s n="2 ">Qui peut donc empêcher l'effet de ce charme... </s>
+	<s n="3 ">Mon cher Mignonnet, cours après ce vieillard, ramène le, qu'il revienne. </s>
+	<s n="4 ">Mais ne vas pas le que relIer. </s>
+	<s n="5 ">M'aimer n'est pas un crime ; et quand je lui ai fait l'éloge de tes belles qualités...</s>
 </p>
 </sp>
-<sp stage="aparte" who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET, à part.</speaker>
-<p id="50">
-	<s id="1">Fort bien.</s>
+<p n="50">
+	<s n="1 ">Fort bien.</s>
 </p>
-</sp>
-<sp who="MADAME JOURDAIN">
+</sp><!--@stage="aparte"-->
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="51">
-	<s id="1">Il est convenu qu'en te quittant, je ne devais pas songer à lui.</s>
+<p n="51">
+	<s n="1 ">Il est convenu qu'en te quittant, je ne devais pas songer à lui.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="52">
-	<s id="1">Il me semble que je l'entends qui crie, qui gronde, qui tempête dans l'antichambre.</s>
+<p n="52">
+	<s n="1 ">Il me semble que je l'entends qui crie, qui gronde, qui tempête dans l'antichambre.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="53">
-	<s id="1">Je n'entends rien.</s>
+<p n="53">
+	<s n="1 ">Je n'entends rien.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="54">
-	<s id="1">Oh, je l'entends bien, moi, et j'y cours.</s>
+<p n="54">
+	<s n="1 ">Oh, je l'entends bien, moi, et j'y cours.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="8">
+</div>
+<div type="scene" n="8">
                     <head>SCÈNE VIII.</head>
-<sp stage="alone" who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN, seule.</speaker>
-<p id="1">
-	<s id="1">Le Génie ne nous aurait-il pas entendus ? </s>
-	<s id="2">Ne serait-ce pas mon artifice qui aurAit empêché l'effet du charme ? </s>
-	<s id="3">Que faire ? </s>
-	<s id="4">Que devenir ? </s>
-	<s id="5">Abandonner Mignonnet ! </s>
-	<s id="6">Renoncer à trois millions ! </s>
-	<s id="7">Amour, fortune, que vous êtes cruels tous les deux !</s>
+<p n="1">
+	<s n="1 ">Le Génie ne nous aurait-il pas entendus ? </s>
+	<s n="2 ">Ne serait-ce pas mon artifice qui aurAit empêché l'effet du charme ? </s>
+	<s n="3 ">Que faire ? </s>
+	<s n="4 ">Que devenir ? </s>
+	<s n="5 ">Abandonner Mignonnet ! </s>
+	<s n="6 ">Renoncer à trois millions ! </s>
+	<s n="7 ">Amour, fortune, que vous êtes cruels tous les deux !</s>
 </p>
-</sp>
-</div2>
-<div2 type="scene" n="9">
+</sp><!--@stage="alone"-->
+</div>
+<div type="scene" n="9">
                     <head>SCÈNE IX. Madame Jourdain, Mignonnet déguisé en  vieillard.</head>
-<sp stage="anger" who="MIGNONNET">
+<sp who="#mignonnet">
                         <speaker>MIGNONNET, furieux.</speaker>
-<p id="1">
-	<s id="1">Ô complot horrible ! </s>
-	<s id="2">Ô fourbe abominable ! </s>
-	<s id="3">Ô parjure digne de l'exécration de tous les siècles !</s>
+<p n="1">
+	<s n="1 ">Ô complot horrible ! </s>
+	<s n="2 ">Ô fourbe abominable ! </s>
+	<s n="3 ">Ô parjure digne de l'exécration de tous les siècles !</s>
 </p>
-</sp>
-<sp who="MADAME JOURDAIN">
+</sp><!--@stage="anger"-->
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="2">
-	<s id="1">Hélas ! </s>
-	<s id="2">Monsieur, qu'avez-vous donc ? </s>
-	<s id="3">Qui peut vous avoir inspiré une telle fureur ?</s>
+<p n="2">
+	<s n="1 ">Hélas ! </s>
+	<s n="2 ">Monsieur, qu'avez-vous donc ? </s>
+	<s n="3 ">Qui peut vous avoir inspiré une telle fureur ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="3">
-	<s id="1">Qui peut me l'avoir inspirée ? </s>
-	<s id="2">Vous osez le demander ! </s>
-	<s id="3">À l'instant où vous prétendez tromper le Génie bienfaisant qui allait vous combler de biens ? </s>
-	<s id="4">Au moment où vous complotiez avec Mignonnet lui-même de ne plus vous aimer jusqu'au tirage, et de vous épouser ensuite ?</s>
+<p n="3">
+	<s n="1 ">Qui peut me l'avoir inspirée ? </s>
+	<s n="2 ">Vous osez le demander ! </s>
+	<s n="3 ">À l'instant où vous prétendez tromper le Génie bienfaisant qui allait vous combler de biens ? </s>
+	<s n="4 ">Au moment où vous complotiez avec Mignonnet lui-même de ne plus vous aimer jusqu'au tirage, et de vous épouser ensuite ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="4">
-	<s id="1">Que voulez- vous, Monsieur ? </s>
-	<s id="2">Quand je lui ai dit qu'il fallait renoncer à moi pour la vie, animé d'un sombre désespoir, il a tiré son épée, a mis la pointe contre son sein.</s>
+<p n="4">
+	<s n="1 ">Que voulez- vous, Monsieur ? </s>
+	<s n="2 ">Quand je lui ai dit qu'il fallait renoncer à moi pour la vie, animé d'un sombre désespoir, il a tiré son épée, a mis la pointe contre son sein.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="5">
-	<s id="1">Vous osez soutenir qu'il a tiré son épée pour se tuer ?</s>
+<p n="5">
+	<s n="1 ">Vous osez soutenir qu'il a tiré son épée pour se tuer ?</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="6">
-	<s id="1">J'ai vu du moins le moment où il allait le faire.</s>
+<p n="6">
+	<s n="1 ">J'ai vu du moins le moment où il allait le faire.</s>
 </p>
 <stage type="aparte">À part.</stage>
-<p id="7">
-	<s id="1">Le maudit vieillard ! </s>
-	<s id="2">Il sait tout ; et Mignonnet sera encore incrédule !</s>
+<p n="7">
+	<s n="1 ">Le maudit vieillard ! </s>
+	<s n="2 ">Il sait tout ; et Mignonnet sera encore incrédule !</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="8">
-	<s id="1">Pensez-vous qu'on trompe le Génie? </s>
-	<s id="2">Je l'ai rencontré à deux pas d'ici ; il m'a dit tout ce qui s'était passé dans votre entrevue avec Mignonnet, et voici ce qu'il a ajouté. </s>
-	<s id="3">« Si elle consent à ne plus aimer Mignonnet, à le marier avec sa nièce, je lui pardonne. </s>
-	<s id="4">Si ces deux conditions ne sont pas remplies aujourd'hui, je jure une persécution éternelle, à la tante, à la nièce, à Mignonnet ».</s>
+<p n="8">
+	<s n="1 ">Pensez-vous qu'on trompe le Génie? </s>
+	<s n="2 ">Je l'ai rencontré à deux pas d'ici ; il m'a dit tout ce qui s'était passé dans votre entrevue avec Mignonnet, et voici ce qu'il a ajouté. </s>
+	<s n="3 ">« Si elle consent à ne plus aimer Mignonnet, à le marier avec sa nièce, je lui pardonne. </s>
+	<s n="4 ">Si ces deux conditions ne sont pas remplies aujourd'hui, je jure une persécution éternelle, à la tante, à la nièce, à Mignonnet ».</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="9">
-	<s id="1">Quoi ! </s>
-	<s id="2">Monsieur, le Génie exige que je marie Mignonnet à ma nièce qui ne l'aime pas ?</s>
+<p n="9">
+	<s n="1 ">Quoi ! </s>
+	<s n="2 ">Monsieur, le Génie exige que je marie Mignonnet à ma nièce qui ne l'aime pas ?</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="10">
-	<s id="1">C'est pour le punir d'avoir insulté les Génies, et de n'y pas croire. </s>
-	<s id="2">Au reste, vous avez entendu l'Oracle. </s>
-	<s id="3">C'est à vous de choisir ; ou trois millions, ou une persécution qui n'aura d'autre terme que celui de votre vie et de celle de Mignonnet. </s>
-	<s id="4">Adieu.</s>
+<p n="10">
+	<s n="1 ">C'est pour le punir d'avoir insulté les Génies, et de n'y pas croire. </s>
+	<s n="2 ">Au reste, vous avez entendu l'Oracle. </s>
+	<s n="3 ">C'est à vous de choisir ; ou trois millions, ou une persécution qui n'aura d'autre terme que celui de votre vie et de celle de Mignonnet. </s>
+	<s n="4 ">Adieu.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="10">
+</div>
+<div type="scene" n="10">
                     <head>SCÈNE X.</head>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="1">
-	<s id="1">Allons, je vois bien qu'il faut m'y résoudre. </s>
-	<s id="2">Au fond, ce vieillard me rend peut-être un service essentiel. </s>
-	<s id="3">Ce Mignonnet est un petit volage que l'Amour m'a apporté sur ses ailes, et que l'Hymen emportera de même. </s>
-	<s id="4">Allons, il faut y renoncer. </s>
-	<s id="5">J'aurai de plus le plaisir de chagriner ma nièce, en lui donnant un mari qu'elle n'aime pas.</s>
+<p n="1">
+	<s n="1 ">Allons, je vois bien qu'il faut m'y résoudre. </s>
+	<s n="2 ">Au fond, ce vieillard me rend peut-être un service essentiel. </s>
+	<s n="3 ">Ce Mignonnet est un petit volage que l'Amour m'a apporté sur ses ailes, et que l'Hymen emportera de même. </s>
+	<s n="4 ">Allons, il faut y renoncer. </s>
+	<s n="5 ">J'aurai de plus le plaisir de chagriner ma nièce, en lui donnant un mari qu'elle n'aime pas.</s>
 </p>
 </sp>
-</div2>
-<div2 type="scene" n="11">
+</div>
+<div type="scene" n="11">
                     <head>SCÈNE XI. Madame Jourdain, Mignonnet, Colette.</head>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="1">
-	<s id="1">Mon cher Mignonnet, quel coup affreux ! </s>
-	<s id="2">Il faut nous quitter.</s>
+<p n="1">
+	<s n="1 ">Mon cher Mignonnet, quel coup affreux ! </s>
+	<s n="2 ">Il faut nous quitter.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="2">
-	<s id="1">Nous quitter ! </s>
-	<s id="2">Ah ! </s>
-	<s id="3">Dieux ! </s>
-	<s id="4">Est-il possible ì</s>
+<p n="2">
+	<s n="1 ">Nous quitter ! </s>
+	<s n="2 ">Ah ! </s>
+	<s n="3 ">Dieux ! </s>
+	<s n="4 ">Est-il possible ì</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="3">
-	<s id="1">Si tu ne renonces pas à moi , les Génies me persécuteront toute ma vie.</s>
+<p n="3">
+	<s n="1 ">Si tu ne renonces pas à moi , les Génies me persécuteront toute ma vie.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="4">
-	<s id="1">Ciel ! </s>
-	<s id="2">Ou cesser de vous aimer, ou être cause de votre malheur ! </s>
-	<s id="3">Cruelle alternative !</s>
+<p n="4">
+	<s n="1 ">Ciel ! </s>
+	<s n="2 ">Ou cesser de vous aimer, ou être cause de votre malheur ! </s>
+	<s n="3 ">Cruelle alternative !</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="5">
-	<s id="1">Ils sont bien cruels, ces Génies ! </s>
-	<s id="2">Ils exigent que tu épouses ma nièce pour rompre toute liaison entre nous !</s>
+<p n="5">
+	<s n="1 ">Ils sont bien cruels, ces Génies ! </s>
+	<s n="2 ">Ils exigent que tu épouses ma nièce pour rompre toute liaison entre nous !</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="6">
-	<s id="1">Quoi ! </s>
-	<s id="2">Ma tante, vous voulez que j'épouse Monsieur, qui tantôt m'a grondée, qui m'a dit des choses si dures !</s>
+<p n="6">
+	<s n="1 ">Quoi ! </s>
+	<s n="2 ">Ma tante, vous voulez que j'épouse Monsieur, qui tantôt m'a grondée, qui m'a dit des choses si dures !</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="7">
-	<s id="1">Il le faut, ma nièce, ou je suis perdue.</s>
+<p n="7">
+	<s n="1 ">Il le faut, ma nièce, ou je suis perdue.</s>
 </p>
 </sp>
-<sp who="COLETTE">
+<sp who="#colette">
                         <speaker>COLETTE.</speaker>
-<p id="8">
-	<s id="1">Ma tante, je me sacrifie pour vous.</s>
+<p n="8">
+	<s n="1 ">Ma tante, je me sacrifie pour vous.</s>
 </p>
 </sp>
-<sp who="MIGNONET">
+<sp who="#mignonet">
                         <speaker>MIGNONNET.</speaker>
-<p id="9">
-	<s id="1">Et moi de même, mais ce n'est pas sans effort.</s>
+<p n="9">
+	<s n="1 ">Et moi de même, mais ce n'est pas sans effort.</s>
 </p>
 </sp>
-<sp who="MADAME JOURDAIN">
+<sp who="#madame-jourdain">
                         <speaker>MADAME JOURDAIN.</speaker>
-<p id="10">
-	<s id="1">J'espère que, si tu n'as plus pour moi toute la passion d'un amant, tu auras au moins la tendresse d'un neveu.</s>
+<p n="10">
+	<s n="1 ">J'espère que, si tu n'as plus pour moi toute la passion d'un amant, tu auras au moins la tendresse d'un neveu.</s>
 </p>
 <stage type="">À part.</stage>
-<p id="11">
-	<s id="1">Au fond, trois millions valent bien un amant comme celui-là.</s>
+<p n="11">
+	<s n="1 ">Au fond, trois millions valent bien un amant comme celui-là.</s>
 </p>
 </sp>
-</div2>
-</div1>
+</div>
+</div>
 </body>
 </text>
 </TEI>

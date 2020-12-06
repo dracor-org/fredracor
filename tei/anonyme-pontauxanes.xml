@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="v.1500">v.1500</date>
+                        <date>v.1500</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k276670</idno>
@@ -73,23 +73,23 @@
 			<titlePart type="main">FARCE NOUVELLE FORT JOYEUSE DU PONT AUX ÂNES</titlePart>
 			<titlePart type="sub">À quatre personnages,c'est à savoir</titlePart>
 		</docTitle> 
-		<docDate when="v.1500"/>
+		<docDate when="1500"/>
 		<performance>
-			<ab type="premiere"/><!--date="(inconnue)"--><!--location="(inconnue)"-->
+			<ab type="premiere"/><!--@date="(inconnue)"--><!--@location="(inconnue)"-->
 		</performance>
 		
 		<castList>
                 <head>ACTEURS</head>
 		<castItem>
-                    <role corresp="#le-mari">LE MARI</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#le-mari">LE MARI</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#sa-femme">SA FEMME</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#sa-femme">SA FEMME</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#messire-domine-de">MESSIRE DOMINE DE</role><!--@sex="1" @type="H" @statut="curé" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#messire-domine-de">MESSIRE DOMINE DE</role><!--@sex="1"--><!--@type="H"--><!--@statut="curé"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#le-bucheron">LE BÛCHERON</role><!--@sex="1" @type="H" @statut="clerc" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#le-bucheron">LE BÛCHERON</role><!--@sex="1"--><!--@type="H"--><!--@statut="clerc"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
   </castList>
-	<!--usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XVIème" link=""/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XVIème" link=""/>-->
 	<note>Tiré de "Ancien théâtre français ou Collection des ouvrages dramatiques les plus remarquables depuis les mystères jusqu'à Corneille" par M. VIOLLET LE DUC, Paris, 1854, Tome II. pp 35-49.</note>
 </front>
 <body>
@@ -117,11 +117,11 @@
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="10" part="I">Mais des fèves.</l><!-- @syll="4"-->
+	<l n="10" part="I">Mais des fèves.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="10" part="F">Tant d'incidents</l><!-- @syll="4"-->
+	<l n="10" part="F">Tant d'incidents</l><!--@syll="4"-->
 	<l n="11">Ma femme, vous m'êtes trop fine.</l>
 </sp>
 <sp who="#la-femme">
@@ -148,19 +148,20 @@
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="18" part="I">Si servirez-vous.</l><!-- @syll="5"-->
+	<l n="18" part="I">Si servirez-vous.</l><!--@syll="5"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="18" part="F">Si me plaît.</l><!-- @syll="3"-->
+	<l n="18" part="F">Si me plaît.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
 	<l n="19">Veuillez ou non, vous servirez.</l>
 </sp>
 <sp who="#la-femme">
-                        <speaker>LA FEMME.</speaker>
-****	<l n="20">Ce sera donc un vif esplaict,</l>
+                        <speaker>LA FEMME.</speaker><!--text():
+****	-->
+                        <l n="20">Ce sera donc un vif esplaict,</l>
 	<l n="21">Que je serve et vous vous servez.</l>
 </sp>
 <sp who="#le-mari">
@@ -210,11 +211,11 @@
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="44" part="I">Et quoi ?</l><!-- @syll="2"-->
+	<l n="44" part="I">Et quoi ?</l><!--@syll="2"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="44" part="F">Qu'il faut que nous vainquons</l><!-- @syll="6"-->
+	<l n="44" part="F">Qu'il faut que nous vainquons</l><!--@syll="6"-->
 	<l n="45">Et que les hommes soient les maîtres.</l>
 </sp>
 <sp who="#la-femme">
@@ -227,9 +228,10 @@
 	<l n="49">Qu'on reforma derrainement.</l>
 	<l n="50">Somme, dessus l'appointement,</l>
 	<l n="51">Je mets une opposition.</l>
-</sp>
+</sp><!--text():
 **** ici ***
-<sp who="#le-mari">
+-->
+                    <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
 	<l n="52">C'est un arrêt de parlement ;</l>
 	<l n="53">Il va sans appellation.</l>
@@ -247,85 +249,85 @@
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="62" part="I">Si obéiras-tu.</l><!-- @syll="5"-->
+	<l n="62" part="I">Si obéiras-tu.</l><!--@syll="5"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="62" part="F">Non ferai.</l><!-- @syll="3"-->
+	<l n="62" part="F">Non ferai.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="63" part="I">Si feras.</l><!-- @syll="3"-->
+	<l n="63" part="I">Si feras.</l><!--@syll="3"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="63" part="F">Je fais voeu à Dieu ;</l><!-- @syll="5"-->
+	<l n="63" part="F">Je fais voeu à Dieu ;</l><!--@syll="5"-->
 	<l n="64">J'aurais plus cher te voir du feu</l>
 	<l n="65">Brûler au marché de la ville.</l>
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="66" part="I">Si obéiras-tu.</l><!-- @syll="5"-->
+	<l n="66" part="I">Si obéiras-tu.</l><!--@syll="5"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="66" part="F">Se je file.</l><!-- @syll="3"-->
+	<l n="66" part="F">Se je file.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="67" part="I">Tu obéiras.</l><!-- @syll="4"-->
+	<l n="67" part="I">Tu obéiras.</l><!--@syll="4"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="67" part="F">Demain, demain,</l><!-- @syll="4"-->
+	<l n="67" part="F">Demain, demain,</l><!--@syll="4"-->
 	<l n="68">On obéira à ce vilain,</l>
 	<l n="69">Qui est plus ivre que un *****braquet.</l>
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="70" part="I">Tire du vin.</l><!-- @syll="4"-->
+	<l n="70" part="I">Tire du vin.</l><!--@syll="4"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
 <note type="L">Acquêt : Terme de jurisprudence. Chose acquise par donation ou testament. </note>
-	<l n="70" part="F">C'est tout acquêt.</l><!-- @syll="4"-->
+	<l n="70" part="F">C'est tout acquêt.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
 <note type="L">Saquer : Tirer.</note>
-	<l n="71" part="I">Saque le pot.</l><!-- @syll="4"-->
+	<l n="71" part="I">Saque le pot.</l><!--@syll="4"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="71" part="F">Ils sont tout cuits.</l><!-- @syll="4"-->
+	<l n="71" part="F">Ils sont tout cuits.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="72" part="I">Dînerai-je point ?</l><!-- @syll="5"-->
+	<l n="72" part="I">Dînerai-je point ?</l><!--@syll="5"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
 <note type="L">Huis : Terme vieilli qui signifie porte. [L]</note>
-	<l n="72" part="F">À l'autre huis</l><!-- @syll="3"-->
+	<l n="72" part="F">À l'autre huis</l><!--@syll="3"-->
 	<l n="73">Frappe tes varlets par les fesses.</l>
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
 	<l n="74">Sang bieu, se sont droites diablesses</l>
 	<l n="75">Que femmes qu'ils ont aheurtées.</l>
-	<l n="76" part="I">Cha, des fèves.</l><!-- @syll="4"-->
+	<l n="76" part="I">Cha, des fèves.</l><!--@syll="4"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="76" part="F">Ils sont mangées.</l><!-- @syll="4"-->
+	<l n="76" part="F">Ils sont mangées.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="77" part="I">Cha donc, des pois.</l><!-- @syll="4"-->
+	<l n="77" part="I">Cha donc, des pois.</l><!--@syll="4"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="77" part="F">Ils sont en cosse.</l><!-- @syll="4"-->
+	<l n="77" part="F">Ils sont en cosse.</l><!--@syll="4"-->
 	<l n="78">C'était pour une femme grosse,</l>
 	<l n="79">De pour qu'elle ne perdit son fruit.</l>
 </sp>
@@ -337,12 +339,12 @@
 	<l n="83">Que besoin fait la vieille trotter.</l>
 	<l n="84">Je n'y vois plus du cul frotter</l>
 	<l n="85">Car je suis au bout de mon sens.</l>
-	<l n="86" part="I">Aurai-je des pois ?</l><!-- @syll="4"-->
+	<l n="86" part="I">Aurai-je des pois ?</l><!--@syll="4"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
 <note type="C">vers 86 on lit "baynes" en fin de vers. On préfère le verbe biner.</note>
-	<l n="86" part="F">Ha sont binés.</l><!-- @syll="4"-->
+	<l n="86" part="F">Ha sont binés.</l><!--@syll="4"-->
 	<l n="87">Il ne les faut qu'empotager.</l>
 </sp>
 <sp who="#le-mari">
@@ -354,31 +356,31 @@
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="92" part="I">Je ne te crains.</l><!-- @syll="4"-->
+	<l n="92" part="I">Je ne te crains.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="92" part="F">Ni moi aussi</l><!-- @syll="4"-->
+	<l n="92" part="F">Ni moi aussi</l><!--@syll="4"-->
 	<l n="93">Non plus qu'un enfant de dix ans.</l>
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
 	<l n="94">Si tu me veux rien, me voici ;</l>
-	<l n="95" part="I">Je ne te crains.</l><!-- @syll="4"-->
+	<l n="95" part="I">Je ne te crains.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="95" part="F">Ni moi aussi.</l><!-- @syll="4"-->
+	<l n="95" part="F">Ni moi aussi.</l><!--@syll="4"-->
 	<l n="96">Si ne dut-on pas faire ainsi.</l>
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
 	<l n="97">Somme, pour tous les médisants</l>
-	<l n="98" part="I">Je ne te crains.</l><!-- @syll="4"-->
+	<l n="98" part="I">Je ne te crains.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="98" part="F">Ni moi aussi,</l><!-- @syll="4"-->
+	<l n="98" part="F">Ni moi aussi,</l><!--@syll="4"-->
 	<l n="99">Non plus qu'un enfant de dix Saintes ans.</l>
 	<l n="100">Sang bieu, quels mots cuisants,</l>
 	<l n="101">Quel double mors, quel tronche-file ;</l>
@@ -459,11 +461,11 @@
 </sp>
 <sp who="#messire-domine-de">
                         <speaker>MESSIRE DOMINE DE.</speaker>
-	<l n="142" part="I">Emin, te clames-tu ?</l><!-- @syll="6"-->
+	<l n="142" part="I">Emin, te clames-tu ?</l><!--@syll="6"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
-	<l n="142" part="F">Besoin.</l><!-- @syll="2"-->
+	<l n="142" part="F">Besoin.</l><!--@syll="2"-->
 </sp>
 <sp who="#messire-domine-de">
                         <speaker>MESSIRE DOMINE DE.</speaker>
@@ -674,21 +676,21 @@
 	<l n="242">Où j'ai appris un tour de maître.</l>
 	<l n="243">Sus, tôt, qu'on vous voie entremettre</l>
 	<l n="244">De me servir à l'oeil et au doigt.</l>
-	<l n="245" part="I">Dépêchez-vous.</l><!-- @syll="4"-->
+	<l n="245" part="I">Dépêchez-vous.</l><!--@syll="4"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="245" part="F">Pour qui ? Pour toi,</l><!-- @syll="4"-->
+	<l n="245" part="F">Pour qui ? Pour toi,</l><!--@syll="4"-->
 	<l n="246">Méchant vilain ? Le dos, le dos.</l>
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
 	<l n="247">Qu'on ne m'use plus de tels mots</l>
-	<l n="248" part="I">Si hardi.</l><!-- @syll="3"-->
+	<l n="248" part="I">Si hardi.</l><!--@syll="3"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="248" part="F">Pour qui, notre maître ?</l><!-- @syll="5"-->
+	<l n="248" part="F">Pour qui, notre maître ?</l><!--@syll="5"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
@@ -703,11 +705,11 @@
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>
 	<l n="253">Qu'on ne me use plus de tels mots</l>
-	<l n="254" part="I">Si hardi.</l><!-- @syll="3"-->
+	<l n="254" part="I">Si hardi.</l><!--@syll="3"-->
 </sp>
 <sp who="#la-femme">
                         <speaker>LA FEMME.</speaker>
-	<l n="254" part="F">Pour qui, notre maître ?</l><!-- @syll="5"-->
+	<l n="254" part="F">Pour qui, notre maître ?</l><!--@syll="5"-->
 </sp>
 <sp who="#le-mari">
                         <speaker>LE MARI.</speaker>

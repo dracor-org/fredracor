@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1906">1906</date>
+                        <date>1906</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -88,9 +88,6 @@
                     <person xml:id="quatrieme-paysanne" sex="UNKNOWN">
                         <persName>Quatrieme-paysanne</persName>
                     </person>
-                    <person xml:id="la-comtesse" sex="UNKNOWN">
-                        <persName>La-comtesse</persName>
-                    </person>
                     <person xml:id="paysans" sex="UNKNOWN">
                         <persName>Paysans</persName>
                     </person>
@@ -121,7 +118,7 @@
 		<docDate when="1906">1906. Tous droits réservés.</docDate>
 		<docAuthor>Par M. CLOVIS HUGUES</docAuthor>
 		<div type="docImprint">
-			<editor>PARIS LIBRAIRIE CH. DELAGRAVE.</editor>
+			<!--TODO: handling of editor name at this place unclear <editor>PARIS LIBRAIRIE CH. DELAGRAVE.</editor>-->
 			<div type="printer">
                     <p>SOCIÉTÉ ANONYME D'IMPRIMERIE DE VILLEFRANCHE DE ROUERGUE, Jules Bardoux, Directeur.</p>
                 </div><!--@id="SAIVDR"-->
@@ -129,25 +126,25 @@
 	<castList>
 		<head>PERSONNAGES.</head>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#noellie">NOELLIE</role><!--@sex="2" @type="H" @statut="musicien" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#noellie">NOELLIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="musicien"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#le-comte-d-arteme">LE COMTE D'ARTÈME</role><!--@sex="1" @type="H" @statut="comte" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#le-comte-d-arteme">LE COMTE D'ARTÈME</role><!--@sex="1"--><!--@type="H"--><!--@statut="comte"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#la-comtesse-d-arteme">LA COMTESSE D'ARTÈME</role><!--@sex="2" @type="H" @statut="comte" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#la-comtesse-d-arteme">LA COMTESSE D'ARTÈME</role><!--@sex="2"--><!--@type="H"--><!--@statut="comte"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#bridanon">BRIDANON</role><!--@sex="1" @type="H" @statut="maire" @age="A"-->, maire.</castItem>
+                    <role statut_amoureux="néant" corresp="#bridanon">BRIDANON</role><!--@sex="1"--><!--@type="H"--><!--@statut="maire"--><!--@age="A"-->, maire.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#madame-bridanon">MADAME BRIDANON</role><!--@sex="2" @type="H" @statut="bourgeois" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#madame-bridanon">MADAME BRIDANON</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"-->.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#georges">GEORGES</role><!--@sex="1" @type="H" @statut="collégien" @age="A"-->, leur fils, collégien eu vacances.</castItem>
+                    <role statut_amoureux="néant" corresp="#georges">GEORGES</role><!--@sex="1"--><!--@type="H"--><!--@statut="collégien"--><!--@age="A"-->, leur fils, collégien eu vacances.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#noemie">NOÉMIE</role><!--@sex="2" @type="H" @statut="servante" @age="A"-->, servante.</castItem>
+                    <role statut_amoureux="néant" corresp="#noemie">NOÉMIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="servante"--><!--@age="A"-->, servante.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#durenfle">DURENFLÉ</role><!--@sex="1" @type="H" @statut="garde champêtre" @age="A"-->, garde champêtre.</castItem>
+                    <role statut_amoureux="néant" corresp="#durenfle">DURENFLÉ</role><!--@sex="1"--><!--@type="H"--><!--@statut="garde champêtre"--><!--@age="A"-->, garde champêtre.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#paysans-et-paysannes">PAYSANS ET PAYSANNES</role><!--@sex="9" @type="H" @statut="paysan" @age="A"-->.</castItem>
+                    <role statut_amoureux="néant" corresp="#paysans-et-paysannes">PAYSANS ET PAYSANNES</role><!--@sex="9"--><!--@type="H"--><!--@statut="paysan"--><!--@age="A"-->.</castItem>
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Campagne" country="France" periode="XXème" link="">La scène se passe à la campagne.</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Campagne" country="France" periode="XXème" link="">La scène se passe à la campagne.</set>-->
 	<note>Extrait de "Les Joujoux du Théâtre, comédie enfantine, illustration de Louis Bailly", 1906. pp 69-113</note>
 </front>
 <body>
@@ -187,11 +184,11 @@
 	<l n="21">Ah ! mon pauvre cerveau, l'on te farcit de thèmes !</l>
 	<l n="22">Que c'est petit pour moi ! Je vais dans les poèmes</l>
 	<l n="23">Comme en un bain de lait m'enfoncer jusqu'au cou</l>
-	<l n="24" part="I">Je suis poète !</l><!-- @syll="5"-->
+	<l n="24" part="I">Je suis poète !</l><!--@syll="5"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="24" part="F">Quoi ! Ce garçon serait fou ?</l><!-- @syll="7"-->
+	<l n="24" part="F">Quoi ! Ce garçon serait fou ?</l><!--@syll="7"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES, gesticulant.</speaker>
@@ -215,34 +212,34 @@
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="37" part="I">Croyez-en Noellie.</l><!-- @syll="6"-->
+	<l n="37" part="I">Croyez-en Noellie.</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="37" part="M">Ô déesse !</l><!-- @syll="4"-->
+	<l n="37" part="M">Ô déesse !</l><!--@syll="4"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="37" part="F">Pourquoi</l><!-- @syll="2"-->
-	<l n="38" part="I">M'appelez-vous déesse ?</l><!-- @syll="6"-->
+	<l n="37" part="F">Pourquoi</l><!--@syll="2"-->
+	<l n="38" part="I">M'appelez-vous déesse ?</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="38" part="F">À tes pieds, devant toi,</l><!-- @syll="6"-->
-	<l n="39" part="I">Je...</l><!-- @syll="1"-->
+	<l n="38" part="F">À tes pieds, devant toi,</l><!--@syll="6"-->
+	<l n="39" part="I">Je...</l><!--@syll="1"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="39" part="M">Vous me tutoyez.</l><!-- @syll="5"-->
+	<l n="39" part="M">Vous me tutoyez.</l><!--@syll="5"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="39" part="F">Pardon si je m'oublie.</l><!-- @syll="6"-->
-	<l n="40" part="I">Virgile tutoyait...</l><!-- @syll="6"-->
+	<l n="39" part="F">Pardon si je m'oublie.</l><!--@syll="6"-->
+	<l n="40" part="I">Virgile tutoyait...</l><!--@syll="6"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="40" part="F">Parlez-moi sans folie.</l><!-- @syll="6"-->
+	<l n="40" part="F">Parlez-moi sans folie.</l><!--@syll="6"-->
 	<l n="41">Depuis quand êtes-vous malade, mon ami ?</l>
 </sp>
 <sp who="#georges">
@@ -251,21 +248,21 @@
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="43" part="I">Vraiment ? Vous me trompez.</l><!-- @syll="6"-->
+	<l n="43" part="I">Vraiment ? Vous me trompez.</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="43" part="F">Non, je vous le répète.</l><!-- @syll="6"-->
+	<l n="43" part="F">Non, je vous le répète.</l><!--@syll="6"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
 	<l n="44">Pourquoi disiez-vous donc que vous êtes poète ?</l>
 	<l n="45">Je pensais que c'était un mal crue vous aviez :</l>
-	<l n="46" part="I">N'avais-je pas raison ?</l><!-- @syll="6"-->
+	<l n="46" part="I">N'avais-je pas raison ?</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="46" part="F">Un mal ? oh ! vous riez !</l><!-- @syll="6"-->
+	<l n="46" part="F">Un mal ? oh ! vous riez !</l><!--@syll="6"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
@@ -282,59 +279,59 @@
 </sp><!--@stage="wave"-->
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="54" part="I">Je vous le disais bien.</l><!-- @syll="6"-->
+	<l n="54" part="I">Je vous le disais bien.</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="54" part="M">Un brasier !</l><!-- @syll="3"-->
+	<l n="54" part="M">Un brasier !</l><!--@syll="3"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="54" part="F">C'est cela.</l><!-- @syll="3"-->
+	<l n="54" part="F">C'est cela.</l><!--@syll="3"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="55" part="I">Une forge !</l><!-- @syll="3"-->
+	<l n="55" part="I">Une forge !</l><!--@syll="3"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="55" part="M">C'est juste.</l><!-- @syll="3"-->
+	<l n="55" part="M">C'est juste.</l><!--@syll="3"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="55" part="F">Un volcan !</l><!-- @syll="3"-->
+	<l n="55" part="F">Un volcan !</l><!--@syll="3"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="55" part="F">C'est logique</l><!-- @syll="3"-->
+	<l n="55" part="F">C'est logique</l><!--@syll="3"-->
 	<l n="56">N'avez-vous pas aussi quelque peu de colique ?</l>
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="57" part="I">Non.</l><!-- @syll="1"-->
+	<l n="57" part="I">Non.</l><!--@syll="1"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="57" part="M">De la fièvre ?</l><!-- @syll="6"-->
+	<l n="57" part="M">De la fièvre ?</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="57" part="M">Non.</l><!-- @syll="1"-->
+	<l n="57" part="M">Non.</l><!--@syll="1"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="57" part="F">Vous avez au cerveau</l><!-- @syll="6"-->
+	<l n="57" part="F">Vous avez au cerveau</l><!--@syll="6"-->
 	<l n="58">Quelque dérangement, le cas n'est pas nouveau</l>
-	<l n="59" part="I">Si jeune et déjà fou !</l><!-- @syll="6"-->
+	<l n="59" part="I">Si jeune et déjà fou !</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="59" part="F">Que la muse me damne !</l><!-- @syll="6"-->
-	<l n="60" part="I">Je suis poète !</l><!-- @syll="4"-->
+	<l n="59" part="F">Que la muse me damne !</l><!--@syll="6"-->
+	<l n="60" part="I">Je suis poète !</l><!--@syll="4"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="60" part="F">Alors prenez de la tisane.</l><!-- @syll="8"-->
+	<l n="60" part="F">Alors prenez de la tisane.</l><!--@syll="8"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
@@ -342,42 +339,42 @@
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="62" part="I">Bon monsieur, je vous plains de tout mon coeur.</l><!-- @syll="10"-->
+	<l n="62" part="I">Bon monsieur, je vous plains de tout mon coeur.</l><!--@syll="10"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="62" part="F">Merci !</l><!-- @syll="2"-->
+	<l n="62" part="F">Merci !</l><!--@syll="2"-->
 	<l n="63">Mais, dites-moi, pourquoi vous cacher de la sorte ?</l>
-	<l n="64" part="I">Certains auteurs latins racontent...</l><!-- @syll="9"-->
+	<l n="64" part="I">Certains auteurs latins racontent...</l><!--@syll="9"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="64" part="F">Peu m'importe.</l><!-- @syll="3"-->
+	<l n="64" part="F">Peu m'importe.</l><!--@syll="3"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
 	<l n="65">Racontent qu'on a vu quelquefois sans façon</l>
-	<l n="66" part="I">Des nymphes conseiller des poètes.</l><!-- @syll="10"-->
+	<l n="66" part="I">Des nymphes conseiller des poètes.</l><!--@syll="10"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="66" part="F">Chanson !</l><!-- @syll="2"-->
+	<l n="66" part="F">Chanson !</l><!--@syll="2"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="67" part="I">Minerve et Calypso...</l><!-- @syll="6"-->
+	<l n="67" part="I">Minerve et Calypso...</l><!--@syll="6"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="67" part="F">Ce sont des noms de femmes ?</l><!-- @syll="6"-->
+	<l n="67" part="F">Ce sont des noms de femmes ?</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="68" part="I">Ont...</l><!-- @syll="1"-->
+	<l n="68" part="I">Ont...</l><!--@syll="1"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="68" part="F">Je n'ai pas l'honneur de connaître ces dames.</l><!-- @syll="11"-->
+	<l n="68" part="F">Je n'ai pas l'honneur de connaître ces dames.</l><!--@syll="11"-->
 	<l n="69">Je suis une chanteuse errante. C'est la faim</l>
 	<l n="70">Qui réveille ma voix : ma guitare est mon pain.</l>
 	<l n="71">Je m'en vais chaque jour de chaumière en chaumière</l>
@@ -407,16 +404,16 @@
 	<l n="95">Je vais, je vais toujours ; mais la route m'égare,</l>
 	<l n="96">Et je demeure, hélas ! seule avec ma guitare.</l>
 	<l n="97">Je vous ai tout conté pour vous distraire un peu</l>
-	<l n="98" part="I">Dites-moi maintenant qui vous êtes.</l><!-- @syll="9"-->
+	<l n="98" part="I">Dites-moi maintenant qui vous êtes.</l><!--@syll="9"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="98" part="F">Parbleu !</l><!-- @syll="3"-->
-	<l n="99" part="I">Vous le savez fort bien.</l><!-- @syll="6"-->
+	<l n="98" part="F">Parbleu !</l><!--@syll="3"-->
+	<l n="99" part="I">Vous le savez fort bien.</l><!--@syll="6"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="99" part="F">Fort mal, je vous le jure.</l><!-- @syll="6"-->
+	<l n="99" part="F">Fort mal, je vous le jure.</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES, emphatiquement.</speaker>
@@ -450,19 +447,19 @@
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="114" part="I">C'était du temps perdu.</l><!-- @syll="6"-->
+	<l n="114" part="I">C'était du temps perdu.</l><!--@syll="6"-->
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="114" part="F">C'était divertissant.</l><!-- @syll="6"-->
+	<l n="114" part="F">C'était divertissant.</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES, rêvant.</speaker>
-	<l n="115" part="I">Je serai couronné.</l><!-- @syll="6"-->
+	<l n="115" part="I">Je serai couronné.</l><!--@syll="6"-->
 </sp><!--@stage="dream"-->
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="115" part="F">Notre jeune homme songe.</l><!-- @syll="6"-->
+	<l n="115" part="F">Notre jeune homme songe.</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
@@ -474,20 +471,20 @@
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="118" part="I">Monsieur, ne plongez pas.</l><!-- @syll="6"-->
+	<l n="118" part="I">Monsieur, ne plongez pas.</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="118" part="F">Que ce monde est petit !</l><!-- @syll="6"-->
-	<l n="119" part="I">Je m'en vais.</l><!-- @syll="3"-->
+	<l n="118" part="F">Que ce monde est petit !</l><!--@syll="6"-->
+	<l n="119" part="I">Je m'en vais.</l><!--@syll="3"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="119" part="M">Restez donc.</l><!-- @syll="3"-->
+	<l n="119" part="M">Restez donc.</l><!--@syll="3"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="119" part="F">Ma victoire s'apprête.</l><!-- @syll="6"-->
+	<l n="119" part="F">Ma victoire s'apprête.</l><!--@syll="6"-->
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
@@ -506,11 +503,11 @@
                     <head>SCÈNE III. Noellie, Noémie.</head>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="123" part="I">Quel étrange étourneau que ce rossignol !</l><!-- @syll="11"-->
+	<l n="123" part="I">Quel étrange étourneau que ce rossignol !</l><!--@syll="11"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="123" part="F">J'aime</l><!-- @syll="1"-->
+	<l n="123" part="F">J'aime</l><!--@syll="1"-->
 	<l n="124">À le voir prendre au vol les phrases que je sème.</l>
 </sp>
 <sp who="#noemie">
@@ -525,11 +522,11 @@
                         <speaker>NOELLIE, l'embrassant.</speaker>
 	<l n="130">Pour le pauvre qui souffre un baiser est de l'or.</l>
 	<l n="131">Mais quel est ce vieillard sévère qui s'avance ?</l>
-	<l n="132" part="I">Il a l'air de souffrir. Consolons-le.</l><!-- @syll="10"-->
+	<l n="132" part="I">Il a l'air de souffrir. Consolons-le.</l><!--@syll="10"-->
 </sp><!--@stage="kiss"-->
 <sp who="#noemie">
                         <speaker>NOÉMIE, mystérieusement.</speaker>
-	<l n="132" part="F">Silence !</l><!-- @syll="2"-->
+	<l n="132" part="F">Silence !</l><!--@syll="2"-->
 </sp><!--@stage="mysterioux"-->
 </div>
 <div type="scene" n="4">
@@ -544,17 +541,17 @@
 </sp><!--@stage="low/toxard"-->
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="135" part="I">Hélas !</l><!-- @syll="2"-->
+	<l n="135" part="I">Hélas !</l><!--@syll="2"-->
 </sp>
 <sp who="#le-comte">
                         <speaker>LE COMTE.</speaker>
-	<l n="135" part="F">Qui donc a fait de moi, Comte_d'Artème,</l><!-- @syll="10"-->
+	<l n="135" part="F">Qui donc a fait de moi, Comte_d'Artème,</l><!--@syll="10"-->
 	<l n="136">Une ombre renfermant le néant de moi-même ?</l>
 	<l n="137">Je vivais, on m'a pris mon être, je suis mort,</l>
 	<l n="138">Et sur moi maintenant il souffle un vent si fort</l>
-	<l n="139" part="I">Que je frissonne comme un vain feuillage.</l><!-- @syll="10"-->
+	<l n="139" part="I">Que je frissonne comme un vain feuillage.</l><!--@syll="10"-->
 <stage type="toward">À Noellie.</stage>
-	<l n="139" part="F">Écoute,</l><!-- @syll="2"-->
+	<l n="139" part="F">Écoute,</l><!--@syll="2"-->
 	<l n="140">Petite. D'où viens-tu ? N'as-tu pas sur ta route</l>
 	<l n="141">Rencontré mon bonheur ? Mon bonheur a seize ans,</l>
 	<l n="142">Gazouille, chante, rit, jase avec les passants.</l>
@@ -644,11 +641,11 @@
 	<l n="199">Dormez, et, comprenant que ma prière est juste,</l>
 	<l n="200">Ne faites plus ce bruit dans votre boîte auguste !</l>
 <stage type="silence">La musique cesse.</stage>
-	<l n="201" part="I">Merci, monsieur le diable !</l><!-- @syll="6"-->
+	<l n="201" part="I">Merci, monsieur le diable !</l><!--@syll="6"-->
 </sp>
 <sp who="#le-comte">
                         <speaker>LE COMTE, s'éveillant.</speaker>
-	<l n="201" part="F">Oh ! Quelqu'un est ici !</l><!-- @syll="6"-->
+	<l n="201" part="F">Oh ! Quelqu'un est ici !</l><!--@syll="6"-->
 	<l n="202">Que vous ai-je donc fait pour me dire merci ?</l>
 </sp><!--@stage="awake"-->
 </div>
@@ -666,19 +663,19 @@
 </sp>
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE.</speaker>
-	<l n="207" part="I">Je ne fais rien du tout.</l><!-- @syll="6"-->
+	<l n="207" part="I">Je ne fais rien du tout.</l><!--@syll="6"-->
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="207" part="F">Le cas n'est point pendable.</l><!-- @syll="6"-->
+	<l n="207" part="F">Le cas n'est point pendable.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE.</speaker>
-	<l n="208" part="I">Je consolais monsieur...</l><!-- @syll="6"-->
+	<l n="208" part="I">Je consolais monsieur...</l><!--@syll="6"-->
 </sp>
 <sp who="#le-comte">
                         <speaker>LE COMTE.</speaker>
-	<l n="208" part="F">D'être monsieur le diable.</l><!-- @syll="6"-->
+	<l n="208" part="F">D'être monsieur le diable.</l><!--@syll="6"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
@@ -688,16 +685,16 @@
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE.</speaker>
 	<l n="211">Vous aurez en marchant pincé votre guitare,</l>
-	<l n="212" part="I">Sans le vouloir.</l><!-- @syll="4"-->
+	<l n="212" part="I">Sans le vouloir.</l><!--@syll="4"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="212" part="F">Non pas ! j'ai, je vous le déclare,</l><!-- @syll="8"-->
-	<l n="213" part="I">Entendu...</l><!-- @syll="3"-->
+	<l n="212" part="F">Non pas ! j'ai, je vous le déclare,</l><!--@syll="8"-->
+	<l n="213" part="I">Entendu...</l><!--@syll="3"-->
 </sp>
 <sp who="#le-comte">
                         <speaker>LE COMTE.</speaker>
-	<l n="213" part="F">Qu'avez-vous entendu, mon enfant ?</l><!-- @syll="9"-->
+	<l n="213" part="F">Qu'avez-vous entendu, mon enfant ?</l><!--@syll="9"-->
 	<l n="214">Le sein toujours gonflé d'un sanglot étouffant,</l>
 	<l n="215">Les fous seuls ont le droit de comprendre ces choses</l>
 	<l n="216">Ce ne sera pas vous avec vos lèvres roses,</l>
@@ -707,11 +704,11 @@
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="219" part="I">Tu pleures, ma pauvrette ?</l><!-- @syll="6"-->
+	<l n="219" part="I">Tu pleures, ma pauvrette ?</l><!--@syll="6"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="219" part="F">Oh ! Si j'étais la fille</l><!-- @syll="6"-->
+	<l n="219" part="F">Oh ! Si j'étais la fille</l><!--@syll="6"-->
 	<l n="220">De ce vieillard volé dans sa part de famille,</l>
 	<l n="221">Sa raison reviendrait, son ciel serait moins noir.</l>
 </sp>
@@ -729,17 +726,17 @@
                         <speaker>NOÉMIE.</speaker>
 	<l n="225">Nous sommes seules : bon ! J'allons tirer au clair</l>
 	<l n="226">Pourquoi monsieur le garde a dit tant de Pater</l>
-	<l n="227" part="I">Devant ce bijou-là.</l><!-- @syll="6"-->
+	<l n="227" part="I">Devant ce bijou-là.</l><!--@syll="6"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="227" part="F">Si c'est une amusette</l><!-- @syll="6"-->
+	<l n="227" part="F">Si c'est une amusette</l><!--@syll="6"-->
 	<l n="228">Pour les vieux qu'a battus une longue tempête,</l>
-	<l n="229" part="I">Que pouvait-il lui dire ?</l><!-- @syll="6"-->
+	<l n="229" part="I">Que pouvait-il lui dire ?</l><!--@syll="6"-->
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="229" part="F">Ah ! Quel ennui d'avoir</l><!-- @syll="6"-->
+	<l n="229" part="F">Ah ! Quel ennui d'avoir</l><!--@syll="6"-->
 	<l n="230">Été si loin du comte ! On aurait pu savoir...</l>
 	<l n="231">Vois, ne dirait-on pas qu'autour de ces figures</l>
 	<l n="232">Quelqu'un a dans le bois tracé des écritures ?</l>
@@ -761,11 +758,11 @@
                         <speaker>NOELLIE.</speaker>
 	<l n="240">Je le sens, c'est à moi que le hasard la donne ;</l>
 	<l n="241">Et pourtant je ne sais quoi d'obscur me défend</l>
-	<l n="242" part="I">De la garder. J'ai peur...</l><!-- @syll="6"-->
+	<l n="242" part="I">De la garder. J'ai peur...</l><!--@syll="6"-->
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="242" part="F">Quoi ! N'es-tu pas l'enfant</l><!-- @syll="6"-->
+	<l n="242" part="F">Quoi ! N'es-tu pas l'enfant</l><!--@syll="6"-->
 	<l n="243">Qui s'en va sans appui, sans feu, sans pain, sans gîte ?</l>
 	<l n="244">N'as-tu pas, dis-le-moi, la main toute petite ?</l>
 	<l n="245">Et cette boîte-là, ramassée en chemin,</l>
@@ -775,14 +772,14 @@
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="249" part="I">J'hésite.</l><!-- @syll="2"-->
+	<l n="249" part="I">J'hésite.</l><!--@syll="2"-->
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="249" part="F">Libre à vous ! moi, je n'hésitons point.</l><!-- @syll="10"-->
+	<l n="249" part="F">Libre à vous ! moi, je n'hésitons point.</l><!--@syll="10"-->
 	<l n="250">Je la prenons. Demain j'éclaircirons le point</l>
 	<l n="251">De savoir si tu dois, étant moins indécise,</l>
-	<l n="252" part="I">La rendre ou la garder.</l><!-- @syll="6"-->
+	<l n="252" part="I">La rendre ou la garder.</l><!--@syll="6"-->
 <stage type="hide/location">Elle met la boîte sous son tablier.</stage>
 </sp>
 </div>
@@ -790,15 +787,15 @@
                     <head>SCÈNE IX. Le Comte, Noellie, Noémie, Le Garde Champêtre.</head>
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE, un carnet à la main.</speaker>
-	<l n="252" part="F">Halte ! je verbalise !</l><!-- @syll="6"-->
+	<l n="252" part="F">Halte ! je verbalise !</l><!--@syll="6"-->
 </sp><!--@stage="get"-->
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="253" part="I">Que nous chantez-vous donc ?</l><!-- @syll="6"-->
+	<l n="253" part="I">Que nous chantez-vous donc ?</l><!--@syll="6"-->
 </sp>
 <sp who="#le-comte">
                         <speaker>LE COMTE, s'éveillant.</speaker>
-	<l n="253" part="F">Qu'ai-je encore entendu ?</l><!-- @syll="6"-->
+	<l n="253" part="F">Qu'ai-je encore entendu ?</l><!--@syll="6"-->
 </sp><!--@stage="awake"-->
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
@@ -865,26 +862,26 @@
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="287" part="I">Peste !</l><!-- @syll="2"-->
+	<l n="287" part="I">Peste !</l><!--@syll="2"-->
 </sp>
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE.</speaker>
-	<l n="287" part="F">Décidez-vous à me rendre la boîte</l><!-- @syll="10"-->
+	<l n="287" part="F">Décidez-vous à me rendre la boîte</l><!--@syll="10"-->
 	<l n="288">Que sous ce tablier cache votre main droite.</l>
 </sp>
 <sp who="#le-comte">
                         <speaker>LE COMTE, à part.</speaker>
-	<l n="289" part="I">Laissons faire l'enfant.</l><!-- @syll="6"-->
+	<l n="289" part="I">Laissons faire l'enfant.</l><!--@syll="6"-->
 <stage type="loud">Haut.</stage>
-	<l n="289" part="F">Vous êtes inhumain !</l><!-- @syll="6"-->
+	<l n="289" part="F">Vous êtes inhumain !</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE.</speaker>
-	<l n="290" part="I">Je suis garde champêtre.</l><!-- @syll="6"-->
+	<l n="290" part="I">Je suis garde champêtre.</l><!--@syll="6"-->
 </sp>
 <sp who="#noemie-et-noellie">
                         <speaker>NOÉMIE et NOELLIE, entraînant le comte.</speaker>
-	<l n="290" part="F">Eh bien ! Passez demain !</l><!-- @syll="6"-->
+	<l n="290" part="F">Eh bien ! Passez demain !</l><!--@syll="6"-->
 </sp><!--@stage="pull/exit"-->
 </div>
 <div type="scene" n="10">
@@ -986,22 +983,22 @@
 <sp who="#georges">
                         <speaker>GEORGES, la lui donnant.</speaker>
 	<l n="360">Tu viens, ô Durenflé, de faire une hyperbole !</l>
-	<l n="361" part="I">Laisse-moi t'embrasser.</l><!-- @syll="6"-->
+	<l n="361" part="I">Laisse-moi t'embrasser.</l><!--@syll="6"-->
 </sp><!--@stage="give"-->
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE.</speaker>
-	<l n="361" part="F">Un tout petit moment !</l><!-- @syll="6"-->
+	<l n="361" part="F">Un tout petit moment !</l><!--@syll="6"-->
 	<l n="362">J'ai tout à l'heure ici rédigé proprement</l>
 	<l n="363">Certain procès-verbal que vous pourrez, j'espère,</l>
 	<l n="364">Déposer clans les mains de monsieur votre père.</l>
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES, prenant le procès verbal.</speaker>
-	<l n="365" part="I">Comptez-y.</l><!-- @syll="3"-->
+	<l n="365" part="I">Comptez-y.</l><!--@syll="3"-->
 </sp><!--@stage="get"-->
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE.</speaker>
-	<l n="365" part="F">Maintenant je pars comme un éclair.</l><!-- @syll="9"-->
+	<l n="365" part="F">Maintenant je pars comme un éclair.</l><!--@syll="9"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
@@ -1067,25 +1064,25 @@
 </sp><!--@stage="kiss"-->
 <sp who="#georges">
                         <speaker>GEORGES, à part.</speaker>
-	<l n="397" part="I">Prenons vite une pose.</l><!-- @syll="6"-->
+	<l n="397" part="I">Prenons vite une pose.</l><!--@syll="6"-->
 <stage type="read/declamate">Il lit le procès-verbal avec un air inspiré.</stage>
-	<l n="397" part="F">Oh ! se faire un grand nom !</l><!-- @syll="6"-->
-	<l n="398" part="I">Oh ! La gloire !</l><!-- @syll="4"-->
+	<l n="397" part="F">Oh ! se faire un grand nom !</l><!--@syll="6"-->
+	<l n="398" part="I">Oh ! La gloire !</l><!--@syll="4"-->
 </sp>
 <sp who="#la-comtesse">
                         <speaker>LA COMTESSE.</speaker>
-	<l n="398" part="F">Tiens, tiens ! Le petit Bridanon !</l><!-- @syll="8"-->
+	<l n="398" part="F">Tiens, tiens ! Le petit Bridanon !</l><!--@syll="8"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES, à part.</speaker>
 	<l n="399">Le petit ! Le petit ! Quel outrage à ma muse !</l>
 <stage type="loud">Haut.</stage>
 	<l n="400">Madame_la_Comtesse et vous, maman, excuse !</l>
-	<l n="401" part="I">Je gazouillais.</l><!-- @syll="4"-->
+	<l n="401" part="I">Je gazouillais.</l><!--@syll="4"-->
 </sp>
 <sp who="#madame-bridanon">
                         <speaker>MADAME BRIDANON.</speaker>
-	<l n="401" part="F">Mon fils, la passion des vers</l><!-- @syll="8"-->
+	<l n="401" part="F">Mon fils, la passion des vers</l><!--@syll="8"-->
 	<l n="402">Te mettra quelque jour la cervelle à l'envers.</l>
 	<l n="403">Ton père, tu le sais, est un esprit pratique</l>
 	<l n="404">Qui voudrait te pousser dans la mathématique ;</l>
@@ -1106,16 +1103,16 @@
 </sp>
 <sp who="#la-comtesse">
                         <speaker>LA COMTESSE, désignant le procès-verbal.</speaker>
-	<l n="413" part="I">Mon petit, sont-ce là de tes rimes ?</l><!-- @syll="10"-->
+	<l n="413" part="I">Mon petit, sont-ce là de tes rimes ?</l><!--@syll="10"-->
 </sp><!--@stage="show"-->
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="413" part="F">Ce n'est</l><!-- @syll="2"-->
-	<l n="414" part="I">Qu'un sonnet.</l><!-- @syll="2"-->
+	<l n="413" part="F">Ce n'est</l><!--@syll="2"-->
+	<l n="414" part="I">Qu'un sonnet.</l><!--@syll="2"-->
 </sp>
 <sp who="#la-comtesse">
                         <speaker>LA COMTESSE.</speaker>
-	<l n="414" part="F">Un sonnet ! c'est charmant, le sonnet !</l><!-- @syll="10"-->
+	<l n="414" part="F">Un sonnet ! c'est charmant, le sonnet !</l><!--@syll="10"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
@@ -1135,17 +1132,17 @@
                     <head>SCÈNE XIII. Les Précédents, Le Comte, Noémie, Bridanon, Paysans et Paysannes.</head>
 <sp who="#les-paysans">
                         <speaker>LES PAYSANS.</speaker>
-	<l n="421" part="I">Vive monsieur le maire !</l><!-- @syll="6"-->
+	<l n="421" part="I">Vive monsieur le maire !</l><!--@syll="6"-->
 </sp>
 <sp who="#bridanon">
                         <speaker>BRIDANON.</speaker>
-	<l n="421" part="F">Il serait très normal</l><!-- @syll="6"-->
+	<l n="421" part="F">Il serait très normal</l><!--@syll="6"-->
 	<l n="422">Que le fait fût transcrit dans un procès-verbal,</l>
-	<l n="423" part="I">Avant de procéder...</l><!-- @syll="6"-->
+	<l n="423" part="I">Avant de procéder...</l><!--@syll="6"-->
 </sp>
 <sp who="#les-paysans">
                         <speaker>LES PAYSANS.</speaker>
-	<l n="423" part="F">Vive monsieur le maire !</l><!-- @syll="6"-->
+	<l n="423" part="F">Vive monsieur le maire !</l><!--@syll="6"-->
 </sp>
 <sp who="#bridanon">
                         <speaker>BRIDANON.</speaker>
@@ -1154,91 +1151,91 @@
 </sp>
 <sp who="#les-paysans">
                         <speaker>LES PAYSANS.</speaker>
-	<l n="426" part="I">Vive monsieur le maire !</l><!-- @syll="6"-->
+	<l n="426" part="I">Vive monsieur le maire !</l><!--@syll="6"-->
 </sp>
 <sp who="#bridanon">
                         <speaker>BRIDANON.</speaker>
-	<l n="426" part="F">Est la légalité</l><!-- @syll="6"-->
+	<l n="426" part="F">Est la légalité</l><!--@syll="6"-->
 </sp>
 <sp who="#premier-paysan">
                         <speaker>PREMIER PAYSAN.</speaker>
-	<l n="427" part="I">C'est ben ça.</l><!-- @syll="3"-->
+	<l n="427" part="I">C'est ben ça.</l><!--@syll="3"-->
 </sp>
 <sp who="#deuxieme-paysan">
                         <speaker>DEUXIEME PAYSAN.</speaker>
-	<l n="427" part="F">Tout à l'heure, à Brive-la-Garenne,</l><!-- @syll="9"-->
+	<l n="427" part="F">Tout à l'heure, à Brive-la-Garenne,</l><!--@syll="9"-->
 	<l n="428">Durenflé m'a juré que la chose est certaine...</l>
 </sp>
 <sp who="#premiere-paysanne">
                         <speaker>PREMIÈRE PAYSANNE.</speaker>
 	<l n="429">Et que la Noémie a pris dans le gilet</l>
-	<l n="430" part="I">Du comte cette boîte.</l><!-- @syll="6"-->
+	<l n="430" part="I">Du comte cette boîte.</l><!--@syll="6"-->
 </sp>
 <sp who="#deuxieme-paysanne">
                         <speaker>DEUXIÈME PAYSANNE.</speaker>
-	<l n="430" part="F">Où le diable parlait.</l><!-- @syll="6"-->
+	<l n="430" part="F">Où le diable parlait.</l><!--@syll="6"-->
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="431" part="I">Quand vous aurez fini, je causerai.</l><!-- @syll="10"-->
+	<l n="431" part="I">Quand vous aurez fini, je causerai.</l><!--@syll="10"-->
 </sp>
 <sp who="#bridanon">
                         <speaker>BRIDANON.</speaker>
-	<l n="431" part="F">Silence !</l><!-- @syll="2"-->
+	<l n="431" part="F">Silence !</l><!--@syll="2"-->
 </sp>
 <sp who="#paysans-et-paysannes">
                         <speaker>PAYSANS ET PAYSANNES.</speaker>
-	<l n="432" part="I">Vive monsieur le maire !</l><!-- @syll="6"-->
+	<l n="432" part="I">Vive monsieur le maire !</l><!--@syll="6"-->
 </sp>
 <sp who="#bridanon">
                         <speaker>BRIDANON, gesticulant.</speaker>
-	<l n="432" part="F">Il est une balance...</l><!-- @syll="6"-->
+	<l n="432" part="F">Il est une balance...</l><!--@syll="6"-->
 </sp><!--@stage="agitated"-->
 <sp who="#paysans-et-paysannes">
                         <speaker>PAYSANS ET PAYSANNES.</speaker>
-	<l n="433" part="I">Vive monsieur le maire !</l><!-- @syll="6"-->
+	<l n="433" part="I">Vive monsieur le maire !</l><!--@syll="6"-->
 </sp>
 <sp who="#deuxieme-paysanne">
                         <speaker>DEUXIÈME PAYSANNE.</speaker>
-	<l n="433" part="F">Écoutons-le parler.</l><!-- @syll="6"-->
+	<l n="433" part="F">Écoutons-le parler.</l><!--@syll="6"-->
 </sp>
 <sp who="#bridanon">
                         <speaker>BRIDANON.</speaker>
-	<l n="434" part="I">Il est une balance.</l><!-- @syll="6"-->
+	<l n="434" part="I">Il est une balance.</l><!--@syll="6"-->
 </sp>
 <sp who="#quatrieme-paysanne">
                         <speaker>QUATRIÈME PAYSANNE.</speaker>
-	<l n="434" part="F">À quoi bon le troubler ?</l><!-- @syll="6"-->
+	<l n="434" part="F">À quoi bon le troubler ?</l><!--@syll="6"-->
 </sp>
 <sp who="#bridanon">
                         <speaker>BRIDANON.</speaker>
 	<l n="435">Il est une balance où la justice humaine...</l>
 	<l n="436">J'allais faire un discours : ma cravate me gêne ;</l>
-	<l n="437" part="I">J'ai fini.</l><!-- @syll="3"-->
+	<l n="437" part="I">J'ai fini.</l><!--@syll="3"-->
 </sp>
 </div>
 <div type="scene" n="14">
                     <head>SCÈNE XIV. Les Précédents, Le Garde Champêtre.</head>
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE.</speaker>
-	<l n="437" part="F">Moi, je n'ai pas encore fini.</l><!-- @syll="9"-->
+	<l n="437" part="F">Moi, je n'ai pas encore fini.</l><!--@syll="9"-->
 </sp>
 <sp who="#paysans-et-paysannes">
                         <speaker>PAYSANS ET PAYSANNES.</speaker>
-	<l n="438" part="I">Salut à Durenflé !</l><!-- @syll="6"-->
+	<l n="438" part="I">Salut à Durenflé !</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES.</speaker>
-	<l n="438" part="F">Durenflé, sois béni !</l><!-- @syll="6"-->
+	<l n="438" part="F">Durenflé, sois béni !</l><!--@syll="6"-->
 </sp>
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE.</speaker>
 	<l n="439">Permettez-moi d'abord de donner cette lettre</l>
-	<l n="440" part="I">À monsieur Georges.</l><!-- @syll="6"-->
+	<l n="440" part="I">À monsieur Georges.</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES, emphatiquement.</speaker>
-	<l n="440" part="F">Non, lisez, garde champêtre,</l><!-- @syll="6"-->
+	<l n="440" part="F">Non, lisez, garde champêtre,</l><!--@syll="6"-->
 	<l n="441">Lisez tout haut, afin qu'on aj)prenne aujourd'hui</l>
 	<l n="442">Que dans notre village un nouvel astre a lui</l>
 	<l n="443">Et que par l'Institut de Brive-la-Garenne</l>
@@ -1251,36 +1248,36 @@
 </sp><!--@stage="loud/read"-->
 <sp who="#bridanon">
                         <speaker>BRIDANON.</speaker>
-	<l n="447" part="I">Vive l'astre nouveau !</l><!-- @syll="6"-->
+	<l n="447" part="I">Vive l'astre nouveau !</l><!--@syll="6"-->
 </sp>
 <sp who="#paysans-et-paysannes">
                         <speaker>PAYSANS ET PAYSANNES.</speaker>
-	<l n="447" part="F">Vive le nouvel astre !</l><!-- @syll="6"-->
+	<l n="447" part="F">Vive le nouvel astre !</l><!--@syll="6"-->
 </sp>
 <sp who="#georges">
                         <speaker>GEORGES, les yeux sur la lettre.</speaker>
-	<l n="448" part="I">Suis-je assez incompris !</l><!-- @syll="6"-->
+	<l n="448" part="I">Suis-je assez incompris !</l><!--@syll="6"-->
 </sp><!--@stage="watch"-->
 <sp who="#madame-bridanon">
                         <speaker>MADAME BRIDANON, à Durenflé.</speaker>
-	<l n="448" part="F">Réparons ce désastre :</l><!-- @syll="6"-->
+	<l n="448" part="F">Réparons ce désastre :</l><!--@syll="6"-->
 	<l n="449">Tenez, lisez ceci qui peut-être est moins mal.</l>
 </sp><!--@stage="toward"-->
 <sp who="#le-garde-champetre">
                         <speaker>LE GARDE CHAMPÊTRE, ouvrant la feuille.</speaker>
-	<l n="450" part="I">C'est mon procès-verbal !</l><!-- @syll="6"-->
+	<l n="450" part="I">C'est mon procès-verbal !</l><!--@syll="6"-->
 </sp><!--@stage="open"-->
 <sp who="#paysans-et-paysannes">
                         <speaker>PAYSANS ET PAYSANNES.</speaker>
-	<l n="450" part="F">C'est son procès-verbal !</l><!-- @syll="6"-->
+	<l n="450" part="F">C'est son procès-verbal !</l><!--@syll="6"-->
 </sp>
 <sp who="#le-comte">
                         <speaker>LE COMTE.</speaker>
-	<l n="451" part="I">Voyons, sommes-nous fous tous ensemble ?</l><!-- @syll="10"-->
+	<l n="451" part="I">Voyons, sommes-nous fous tous ensemble ?</l><!--@syll="10"-->
 </sp>
 <sp who="#bridanon">
                         <speaker>BRIDANON.</speaker>
-	<l n="451" part="F">J'admire</l><!-- @syll="2"-->
+	<l n="451" part="F">J'admire</l><!--@syll="2"-->
 	<l n="452">Que nous nous regardions face à face sans rire.</l>
 </sp>
 <sp who="#le-comte">
@@ -1293,9 +1290,9 @@
 	<l n="457">Allons, ma pauvre enfant, montrons-leur ce joujou</l>
 	<l n="458">Qu'ils t'accusaient, les fous ! d'avoir pris au bon fou.</l>
 <stage type="drop/location">Il place la boîte au milieu de la scène.</stage>
-	<l n="459" part="I">Approchez ! approchez !</l><!-- @syll="6"-->
+	<l n="459" part="I">Approchez ! approchez !</l><!--@syll="6"-->
 <stage type="closer">Tous s'approchent.</stage>
-	<l n="459" part="F">Et toi, bijou sonore,</l><!-- @syll="6"-->
+	<l n="459" part="F">Et toi, bijou sonore,</l><!--@syll="6"-->
 	<l n="460">Redis-nous la chanson de mon Éléonore !</l>
 <stage type="music">La boîte exécute a nouveau sa berceuse provençale.</stage>
 </sp>
@@ -1314,35 +1311,35 @@
 </sp><!--@stage="together"-->
 <sp who="#le-comte #la-comtesse">
                         <speaker>LE COMTE et LA COMTESSE.</speaker>
-	<l n="470" part="I">Ô ma Nono, ma fille !</l><!-- @syll="6"-->
+	<l n="470" part="I">Ô ma Nono, ma fille !</l><!--@syll="6"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="470" part="F">Ô ma mère ! Ô mon père !</l><!-- @syll="6"-->
-	<l n="471" part="I">Nono ! Je me souviens...</l><!-- @syll="6"-->
+	<l n="470" part="F">Ô ma mère ! Ô mon père !</l><!--@syll="6"-->
+	<l n="471" part="I">Nono ! Je me souviens...</l><!--@syll="6"-->
 </sp>
 <sp who="#madame-bridanon">
                         <speaker>MADAME BRIDANON, à la comtesse.</speaker>
-	<l n="471" part="F">Je suis un peu sa mère,</l><!-- @syll="6"-->
+	<l n="471" part="F">Je suis un peu sa mère,</l><!--@syll="6"-->
 	<l n="472">Puisque je l'allaitai, lorsque j'eus le bonheur</l>
-	<l n="473" part="I">De vous voir en Provence !</l><!-- @syll="6"-->
+	<l n="473" part="I">De vous voir en Provence !</l><!--@syll="6"-->
 </sp><!--@stage="toward"-->
 <sp who="#georges">
                         <speaker>GEORGES, troublé.</speaker>
-	<l n="473" part="F">Et moi, je suis sa soeur !</l><!-- @syll="6"-->
+	<l n="473" part="F">Et moi, je suis sa soeur !</l><!--@syll="6"-->
 </sp><!--@stage="embarrassed"-->
 <sp who="#bridanon">
                         <speaker>BRIDANON.</speaker>
-	<l n="474" part="I">Je suis son maire !</l><!-- @syll="4"-->
+	<l n="474" part="I">Je suis son maire !</l><!--@syll="4"-->
 </sp>
 <sp who="#noemie">
                         <speaker>NOÉMIE.</speaker>
-	<l n="474" part="F">Et moi, moi, ma petite amie ?</l><!-- @syll="6"-->
-	<l n="475" part="I">Qu'est-ce donc que j'allons t'être ?</l><!-- @syll="9"-->
+	<l n="474" part="F">Et moi, moi, ma petite amie ?</l><!--@syll="6"-->
+	<l n="475" part="I">Qu'est-ce donc que j'allons t'être ?</l><!--@syll="9"-->
 </sp>
 <sp who="#noellie">
                         <speaker>NOELLIE.</speaker>
-	<l n="475" part="F">Ma Noémie.</l><!-- @syll="3"-->
+	<l n="475" part="F">Ma Noémie.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-comte">
                         <speaker>LE COMTE.</speaker>

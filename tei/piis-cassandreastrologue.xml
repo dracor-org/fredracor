@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1780">1780</date>
+                        <date>1780</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5551113v</idno>
@@ -46,23 +46,14 @@
                     <person xml:id="colombine" sex="FEMALE">
                         <persName>Colombine</persName>
                     </person>
-                    <person xml:id="pierrot" sex="MALE">
-                        <persName>Pierrot</persName>
-                    </person>
                     <person xml:id="leandre" sex="MALE">
                         <persName>Léandre</persName>
                     </person>
                     <person xml:id="isabelle" sex="FEMALE">
                         <persName>Isabelle</persName>
                     </person>
-                    <person xml:id="colombine" sex="FEMALE">
-                        <persName>Colombine</persName>
-                    </person>
                     <person xml:id="cassandre" sex="MALE">
                         <persName>Cassandre</persName>
-                    </person>
-                    <person xml:id="isabelle" sex="FEMALE">
-                        <persName>Isabelle</persName>
                     </person>
                     <person xml:id="cassandre-et-isabelle" sex="UNKNOWN">
                         <persName>Cassandre-et-isabelle</persName>
@@ -99,28 +90,28 @@
 		<div type="approbation">
 			Lu et approuvé pour la Représentation et l'Impression. À Paris, ce 24 Novembre 1780. Signé, SUARD. Vu l'Approbation ; permis de représenter et d'imprimer. À Paris, ce 28 Novembre 1780. Signé, LE NOIR.
 		</div><!--@id="1780-11-24"-->
-		<editor id="">À PARIS, Chez VENTE, Libraire des Menus Plaisirs du Roi, rue des Anglais, près celle des Noyers.</editor>
+		<!--TODO: handling of editor name at this place unclear <editor id="">À PARIS, Chez VENTE, Libraire des Menus Plaisirs du Roi, rue des Anglais, près celle des Noyers.</editor>-->
 		<div type="printer">
                     <p>De l'Imprimerie de CHARDON, rue Galande.</p>
                 </div>
 	</div>
 		<performance>
-			<ab type="premiere"/><!--date=""--><!--location="Château de Brunoy"-->
+			<ab type="premiere"/><!--@date=""--><!--@location="Château de Brunoy"-->
 		</performance>
 	<castList>
                 <head>PERSONNAGES, ACTEURS.</head>
 		<castItem>
-                    <role corresp="#cassandre">CASSANDRE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="A" @stat_amour="néant"-->, Tuteur d'Isabelle, et Astrologue, M. Rosiere.</castItem>
+                    <role corresp="#cassandre">CASSANDRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, Tuteur d'Isabelle, et Astrologue, M. Rosiere.</castItem>
 		<castItem>
-                    <role corresp="#isabelle">ISABELLE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="J" @stat_amour="néant"-->, Pupille de Cassandre, Mlle Lescots.</castItem>
+                    <role corresp="#isabelle">ISABELLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, Pupille de Cassandre, Mlle Lescots.</castItem>
 		<castItem>
-                    <role corresp="#leandre">LÉANDRE</role><!--@sex="1" @type="H" @statut="bourgeois" @age="J" @stat_amour="néant"-->, amant d'Isabelle, M. Michu.</castItem>
+                    <role corresp="#leandre">LÉANDRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, amant d'Isabelle, M. Michu.</castItem>
 		<castItem>
-                    <role corresp="#pierrot">PIERROT</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour="néant"-->, valet de Cassandre, M. Menier.</castItem>
+                    <role corresp="#pierrot">PIERROT</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, valet de Cassandre, M. Menier.</castItem>
 		<castItem>
-                    <role corresp="#colombine">COLOMBINE</role><!--@sex="2" @type="H" @statut="bourgeois" @age="J" @stat_amour="néant"-->, voisine et amie d'Isabelle, Madame Billioni,</castItem>
+                    <role corresp="#colombine">COLOMBINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, voisine et amie d'Isabelle, Madame Billioni,</castItem>
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La Scène est dans la maison de Cassandre.</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La Scène est dans la maison de Cassandre.</set>-->
 </front>
 <body>
 <div type="acte" n="1">
@@ -418,11 +409,11 @@
 </sp>
 <sp who="#leandre">
                         <speaker>LÉANDRE.</speaker>
-	<l n="152" part="I">Trouves-tu ces papiers ?</l><!-- @syll="6"-->
+	<l n="152" part="I">Trouves-tu ces papiers ?</l><!--@syll="6"-->
 </sp>
 <sp who="#pierrot">
                         <speaker>PIERROT.</speaker>
-	<l n="152" part="F">Oui.</l><!-- @syll="1"-->
+	<l n="152" part="F">Oui.</l><!--@syll="1"-->
 </sp>
 <sp who="#leandre">
                         <speaker>LÉANDRE.</speaker>
@@ -513,10 +504,11 @@
 <sp who="#pierrot">
                         <speaker>PIERROT, lit.</speaker>
 <p n="1">
-	<s n="1">HOROSCOPE DE MONSIEUR CASSANDRE, Tiré par lui-même.</s>
+	<s n="1 ">HOROSCOPE DE MONSIEUR CASSANDRE, Tiré par lui-même.</s>
 </p>
 <stage type="title">AIR : Des Bossus.</stage>
-<poem type="strophes">
+<!--<poem>-->
+                        <ab type="strophes">
 <lg n="1">
 	<l n="202">Depuis longtemps je me suis aperçu</l>
 	<l n="203">Que mon destin tient au sort d'un bossu ;</l>
@@ -531,7 +523,7 @@
 	<l n="210">Et quoiqu'ainsi je le suive en tout point,</l>
 	<l n="211">Pour mon malheur je ne le connais point.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp><!--@stage="read"-->
 <sp who="#leandre">
                         <speaker>LÉANDRE.</speaker>
@@ -1073,11 +1065,11 @@
 </sp>
 <sp who="#cassandre">
                         <speaker>CASSANDRE.</speaker>
-	<l n="453" part="I">Passez.</l><!-- @syll="2"-->
+	<l n="453" part="I">Passez.</l><!--@syll="2"-->
 </sp>
 <sp who="#leandre">
                         <speaker>LÉANDRE.</speaker>
-	<l n="453" part="F">Non, vraiment.</l><!-- @syll="3"-->
+	<l n="453" part="F">Non, vraiment.</l><!--@syll="3"-->
 </sp>
 <sp who="#cassandre">
                         <speaker>CASSANDRE.</speaker>
@@ -1460,7 +1452,8 @@
 <sp who="#leandre #isabelle">
                         <speaker>LÉANDRE et ISABELLE.</speaker>
 <stage type="title">DUO : Sur un air de danse.</stage>
-<poem type="chanson">
+<!--<poem>-->
+                        <ab type="chanson">
 <lg n="1">
 	<l n="625">Vive l'Amour, pour nous mieux secourir</l>
 	<l n="626">Qu'un Médecin de science profonde ;</l>
@@ -1494,7 +1487,7 @@
 <lg n="7">
 	<l n="643">Vive l'amour , etc.</l>
 </lg>
-</poem>
+</ab><!--</poem>-->
 </sp>
 <sp who="#cassandre">
                         <speaker>CASSANDRE, à Isabelle.</speaker>

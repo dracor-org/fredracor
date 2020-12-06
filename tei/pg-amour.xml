@@ -29,7 +29,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1889">1889</date>
+                        <date>1889</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5540414q</idno>
@@ -79,7 +79,7 @@
 		<docDate when="1889">Janvier 1889.</docDate>
 		<docAuthor>P.G.</docAuthor>
 		<div type="docImprint">
-				<editor id="TRESSE">PARIS TRESSE, ÉDITEUR 10 ET 11, GALERIE DE CHARTRES (PALAIS-ROYAL)</editor>
+				<!--TODO: handling of editor name at this place unclear <editor id="TRESSE">PARIS TRESSE, ÉDITEUR 10 ET 11, GALERIE DE CHARTRES (PALAIS-ROYAL)</editor>-->
 				<div type="printer">
                     <p>À PARIS, DES PRESSES DE D. JOUAUST, Imprimeur breveté RUE SAINT-HONORÉ, 338</p>
                 </div><!--@id="JOUAUST"-->
@@ -87,17 +87,17 @@
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#celimene">CÉLIMÈNE</role><!--@sex="2" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->, jeune veuve.</castItem>
+                    <role corresp="#celimene">CÉLIMÈNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, jeune veuve.</castItem>
 		<castItem>
-                    <role corresp="#dorante">DORANTE</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="Célimène"-->, amoureux de Célimène.</castItem>
+                    <role corresp="#dorante">DORANTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="Célimène"-->, amoureux de Célimène.</castItem>
 		<castItem>
-                    <role corresp="#le-chevalier">LE CHEVALIER</role><!--@sex="1" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->, ami de Dorante.</castItem>
+                    <role corresp="#le-chevalier">LE CHEVALIER</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, ami de Dorante.</castItem>
 		<castItem>
-                    <role corresp="#dorine">DORINE</role><!--@sex="2" @type="H" @statut="domestique" @age="A" @stat_amour="néant"-->, servante de Célimène.</castItem>
+                    <role corresp="#dorine">DORINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="domestique"--><!--@age="A"--><!--@stat_amour="néant"-->, servante de Célimène.</castItem>
 		<castItem>
-                    <role corresp="#pasquin">PASQUIN</role><!--@sex="1" @type="H" @statut="valet" @age="A" @stat_amour="néant"-->, valet de Dorante.</castItem>
+                    <role corresp="#pasquin">PASQUIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, valet de Dorante.</castItem>
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222">La scène est à Paris, chez Célimène.</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222">La scène est à Paris, chez Célimène.</set>-->
 	<note>Extrait de "Entre les paravents, Petites récréations scéniques de salle et de famille", P.G., Janvier 1889, pp. 238-275. Cote BnF [8-YF-410]</note>
 </front>
 <body>
@@ -129,11 +129,11 @@
 	<l n="20">Aujourd'hui, que défait d'une fâcheuse affaire,</l>
 	<l n="21">Dorante enfin revient, que vous allez le voir</l>
 	<l n="22">Bientôt combler vos voeux et remplir votre espoir,</l>
-	<l n="23" part="I">Vous soupirez Madame ?</l><!-- @syll="6"-->
+	<l n="23" part="I">Vous soupirez Madame ?</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="23" part="F">Hélas ! Oui, je soupire</l><!-- @syll="6"-->
+	<l n="23" part="F">Hélas ! Oui, je soupire</l><!--@syll="6"-->
 	<l n="24">Et j'en ai trop sujet, puisqu'il faut te le dire.</l>
 	<l n="25">Non pas que d'un retour qui vient combler mes voeux</l>
 	<l n="26">Aujourd'hui, cependant, mon coeur ne soit heureux ;</l>
@@ -163,11 +163,11 @@
 	<l n="44">À l'entendre, c'était un délire, une ivresse,</l>
 	<l n="45">Un feu brûlant, que sais-je ? Ah ! Ce n'est, maintenant</l>
 	<l n="46">Rien moins, je le vois bien, non, c'est tout simplement</l>
-	<l n="47" part="I">De l'amour.</l><!-- @syll="3"-->
+	<l n="47" part="I">De l'amour.</l><!--@syll="3"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="47" part="F">Par ma foi, je sais plus d'une femme</l><!-- @syll="9"-->
+	<l n="47" part="F">Par ma foi, je sais plus d'une femme</l><!--@syll="9"-->
 	<l n="48">Que ce simplement là contenterait, Madame.</l>
 </sp>
 <sp who="#celimene">
@@ -184,11 +184,11 @@
 	<l n="58">Ce trouble, cette peur de se voir oublié,</l>
 	<l n="59">Ni cet effroi jaloux des voeux et des hommages</l>
 	<l n="60">Qui doivent m'entourer, inséparables gages</l>
-	<l n="61" part="I">D'un coeur vraiment épris.</l><!-- @syll="6"-->
+	<l n="61" part="I">D'un coeur vraiment épris.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="61" part="F">Cela prouve qu'il croit,</l><!-- @syll="6"-->
+	<l n="61" part="F">Cela prouve qu'il croit,</l><!--@syll="6"-->
 	<l n="62">Madame, à la constance au moins de votre foi.</l>
 </sp>
 <sp who="#celimene">
@@ -232,11 +232,11 @@
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="93" part="I">Les hommes sont si fats.</l><!-- @syll="6"-->
+	<l n="93" part="I">Les hommes sont si fats.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="93" part="F">Oui, c'est en vérité</l><!-- @syll="6"-->
+	<l n="93" part="F">Oui, c'est en vérité</l><!--@syll="6"-->
 	<l n="94">Ce calme injurieux, cette sécurité,</l>
 	<l n="95">Qu'on voit d'une façon claire et désespérante</l>
 	<l n="96">Verser dans cette lettre écrite par Dorante,</l>
@@ -269,18 +269,18 @@
 	<l n="117">Les avances, Dorine, ainsi de mon côté,</l>
 	<l n="118">Vois un peu quelle honte, eussent toutes été.</l>
 	<l n="119">Et peut-être eût-il pris un peu le plaisir même</l>
-	<l n="120" part="I">De faire le cruel.</l><!-- @syll="6"-->
+	<l n="120" part="I">De faire le cruel.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="120" part="F">Ah ! Quel péril extrême !</l><!-- @syll="6"-->
+	<l n="120" part="F">Ah ! Quel péril extrême !</l><!--@syll="6"-->
 	<l n="121">Madame, en vérité, je n'y songeais pas, moi,</l>
 	<l n="122">Mais c'eût été terrible, à présent je le vois.</l>
-	<l n="123" part="I">Oh ! Vous l'échappez belle.</l><!-- @syll="6"-->
+	<l n="123" part="I">Oh ! Vous l'échappez belle.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="123" part="F">Aussi je viens de prendre</l><!-- @syll="6"-->
+	<l n="123" part="F">Aussi je viens de prendre</l><!--@syll="6"-->
 	<l n="124">Un parti courageux pour garder et défendre</l>
 	<l n="125">L'honneur de notre sexe. Oui, qu'il tremble qu'enfin</l>
 	<l n="126">Son triomphe, après tout, ne soit pas si certain ;</l>
@@ -314,11 +314,11 @@
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
 	<l n="147">Fort bien. Mais en ces lieux voilà qu'il va paraître,</l>
-	<l n="148" part="I">Pour commencer, je crois...</l><!-- @syll="6"-->
+	<l n="148" part="I">Pour commencer, je crois...</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="148" part="F">N'y devrait-il pas être</l><!-- @syll="6"-->
+	<l n="148" part="F">N'y devrait-il pas être</l><!--@syll="6"-->
 	<l n="149">Déjà depuis longtemps, s'il sentait en effet</l>
 	<l n="150">L'ardente passion dont il m'entretenait ?</l>
 	<l n="151">À peine de retour, cet amant si fidèle</l>
@@ -340,11 +340,11 @@
 	<l n="161">Je suis impatiente et l'avoue aujourd'hui</l>
 	<l n="162">De me trouver, Dorine, au plus tôt avec lui,</l>
 	<l n="163">Attendu mes projets, et n'ai de promenade</l>
-	<l n="164" part="I">Nul désir.</l><!-- @syll="3"-->
+	<l n="164" part="I">Nul désir.</l><!--@syll="3"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="164" part="F">Voulez-vous donc qu'il se persuade</l><!-- @syll="9"-->
+	<l n="164" part="F">Voulez-vous donc qu'il se persuade</l><!--@syll="9"-->
 	<l n="165">Que celle impatience est toute en sa faveur</l>
 	<l n="166">Et s'aille prévaloir d'un désir si flatteur ?</l>
 </sp>
@@ -367,11 +367,11 @@
 	<l n="174">De Madame sachons seconder le projet,</l>
 	<l n="175">À la fatuité blessante et ridicule</l>
 	<l n="176">De ces messieurs donnons sur les doigts sans scrupule.</l>
-	<l n="177" part="I">Laissons-le m'aborder.</l><!-- @syll="6"-->
+	<l n="177" part="I">Laissons-le m'aborder.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN, entrant.</speaker>
-	<l n="177" part="F">Eh ! Dorine, bonjour.</l><!-- @syll="6"-->
+	<l n="177" part="F">Eh ! Dorine, bonjour.</l><!--@syll="6"-->
 	<l n="178">Grâce au ciel, à la fin nous voici de retour.</l>
 	<l n="179">Ce n'est pas malheureux, pas vrai ? - Maudite affaire</l>
 	<l n="180">Qui rendit un voyage importun nécessaire</l>
@@ -402,15 +402,15 @@
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="199" part="I">Dieu, comme le temps passe.</l><!-- @syll="6"-->
+	<l n="199" part="I">Dieu, comme le temps passe.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="199" part="M">Eh ! quoi ?</l><!-- @syll="2"-->
+	<l n="199" part="M">Eh ! quoi ?</l><!--@syll="2"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="199" part="F">Vraiment, à peine</l><!-- @syll="4"-->
+	<l n="199" part="F">Vraiment, à peine</l><!--@syll="4"-->
 	<l n="200">Vous croyais-je partis depuis une semaine.</l>
 </sp>
 <sp who="#pasquin">
@@ -419,11 +419,11 @@
 	<l n="202">Mais bah ! J'en suis bien sûr, tu maudis nos lenteurs.</l>
 	<l n="203">Plus d'une fois aussi tu regrettas, sois franche,</l>
 	<l n="204">Le bouquet que Pasquin t'apportait le dimanche.</l>
-	<l n="205" part="I">Hein, friponne ?</l><!-- @syll="3"-->
+	<l n="205" part="I">Hein, friponne ?</l><!--@syll="3"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="205" part="F">Oh ! Ma foi, du côté du bouquet,</l><!-- @syll="9"-->
+	<l n="205" part="F">Oh ! Ma foi, du côté du bouquet,</l><!--@syll="9"-->
 	<l n="206">Rassure-toi, mon cher, non rien ne me manquait ;</l>
 	<l n="207">Car le galant Frontin, réparant ton absence,</l>
 	<l n="208">A depuis quelque temps la même complaisance.</l>
@@ -450,19 +450,19 @@
 	<l n="220">Par d'aimables propos, et d'une longue veille</l>
 	<l n="221">Pour te faire trouver le temps un peu plus court,</l>
 	<l n="222">Tu regrettais Pasquin qui te faisait la cour.</l>
-	<l n="223" part="I">Hein, sournoise ?</l><!-- @syll="3"-->
+	<l n="223" part="I">Hein, sournoise ?</l><!--@syll="3"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="223" part="F">Oh ! Ma foi, je veux être sincère,</l><!-- @syll="9"-->
+	<l n="223" part="F">Oh ! Ma foi, je veux être sincère,</l><!--@syll="9"-->
 	<l n="224">Scapin s'en acquittait d'admirable manière.</l>
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
 <stage type="aparte">À part. </stage>
-	<l n="225" part="I">Quoi ! Scapin ! - Ah ! Traîtresse.</l><!-- @syll="6"-->
+	<l n="225" part="I">Quoi ! Scapin ! - Ah ! Traîtresse.</l><!--@syll="6"-->
 <stage type="loud">Haut.</stage>
-	<l n="225" part="F">- Eh ! Je comprends, parbleu</l><!-- @syll="6"-->
+	<l n="225" part="F">- Eh ! Je comprends, parbleu</l><!--@syll="6"-->
 	<l n="226">Que le temps t'ait paru durer ainsi fort peu.</l>
 	<l n="227">Peste, on a su pour vous l'abréger, ma commère.</l>
 	<l n="228">Mais nous recauserons de tout cela j'espère.</l>
@@ -478,38 +478,38 @@
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="235" part="I">Elle est en promenade.</l><!-- @syll="6"-->
+	<l n="235" part="I">Elle est en promenade.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="235" part="M">Oui.</l><!-- @syll="1"-->
+	<l n="235" part="M">Oui.</l><!--@syll="1"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="235" part="F">Mais de la venue</l><!-- @syll="5"-->
+	<l n="235" part="F">Mais de la venue</l><!--@syll="5"-->
 	<l n="236">De mon maître une lettre hier l'a prévenue.</l>
 	<l n="237">Sans doute quelque amie a su la décider.</l>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="238" part="I">Du tout, elle était seule.</l><!-- @syll="6"-->
+	<l n="238" part="I">Du tout, elle était seule.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="238" part="F">Elle ne peut tarder</l><!-- @syll="6"-->
+	<l n="238" part="F">Elle ne peut tarder</l><!--@syll="6"-->
 	<l n="239">À rentrer en ce cas, sachant combien mon maître</l>
-	<l n="240" part="I">Brûle de la revoir.</l><!-- @syll="6"-->
+	<l n="240" part="I">Brûle de la revoir.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="240" part="F">Sans doute ; mais peut-être</l><!-- @syll="6"-->
+	<l n="240" part="F">Sans doute ; mais peut-être</l><!--@syll="6"-->
 	<l n="241">Elle aura rencontré là quelque cavalier,</l>
 	<l n="242">Le Comte, le Marquis ou bien le Chevalier,</l>
-	<l n="243" part="I">Qui voudra l'arrêter.</l><!-- @syll="6"-->
+	<l n="243" part="I">Qui voudra l'arrêter.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="243" part="F">Ce Chevalier, ma mie,</l><!-- @syll="6"-->
+	<l n="243" part="F">Ce Chevalier, ma mie,</l><!--@syll="6"-->
 	<l n="244">Ce Comte, ce Marquis, qui sont-ils, je vous prie ?</l>
 </sp>
 <sp who="#dorine">
@@ -519,11 +519,11 @@
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="247" part="I">C'est charmant.</l><!-- @syll="3"-->
+	<l n="247" part="I">C'est charmant.</l><!--@syll="3"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="247" part="F">Je crois bien. Grâce à leur prévenance,</l><!-- @syll="9"-->
+	<l n="247" part="F">Je crois bien. Grâce à leur prévenance,</l><!--@syll="9"-->
 	<l n="248">On supporte céans assez bien l'existence.</l>
 	<l n="249">Ils mettent tour à tour pour sa distraction</l>
 	<l n="250">La nature et les arts à contribution ;</l>
@@ -543,11 +543,11 @@
                         <speaker>PASQUIN.</speaker>
 	<l n="261">Peste quelle gaillarde ! - Ah ! je vois aujourd'hui</l>
 	<l n="262">Que ta maîtresse a pu supporter son ennui</l>
-	<l n="263" part="I">De notre éloignement assez bien.</l><!-- @syll="9"-->
+	<l n="263" part="I">De notre éloignement assez bien.</l><!--@syll="9"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="263" part="F">Mais sans doute.</l><!-- @syll="3"-->
+	<l n="263" part="F">Mais sans doute.</l><!--@syll="3"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
@@ -570,15 +570,15 @@
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
 	<l n="270">Bien. Mais quel est celui de ces amants constants</l>
-	<l n="271" part="I">Qu'on favorise ?</l><!-- @syll="4"-->
+	<l n="271" part="I">Qu'on favorise ?</l><!--@syll="4"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="271" part="M">Peuh ! J'ignore.</l><!-- @syll="4"-->
+	<l n="271" part="M">Peuh ! J'ignore.</l><!--@syll="4"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="271" part="F">Oh ! la discrète,</l><!-- @syll="4"-->
+	<l n="271" part="F">Oh ! la discrète,</l><!--@syll="4"-->
 	<l n="272">Qui saura les secrets si ce n'est la soubrette ?</l>
 </sp>
 <sp who="#dorine">
@@ -605,31 +605,31 @@
 	<l n="283">Fort bien, chacun son tour ainsi l'un après l'autre,</l>
 	<l n="284">Ce matin c'est le mien, ce soir, Marquis, le vôtre.</l>
 	<l n="285">Pourtant je gagerais qu'il en est un des trois</l>
-	<l n="286" part="I">Qu'on favorise et que c'est le Marquis.</l><!-- @syll="10"-->
+	<l n="286" part="I">Qu'on favorise et que c'est le Marquis.</l><!--@syll="10"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="286" part="F">Tu crois ?</l><!-- @syll="2"-->
-	<l n="287" part="I">Pourquoi cela ?</l><!-- @syll="4"-->
+	<l n="286" part="F">Tu crois ?</l><!--@syll="2"-->
+	<l n="287" part="I">Pourquoi cela ?</l><!--@syll="4"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="287" part="F">Parbleu, c'est le plus sot, ma chère,</l><!-- @syll="8"-->
+	<l n="287" part="F">Parbleu, c'est le plus sot, ma chère,</l><!--@syll="8"-->
 	<l n="288">Cette qualité-là vaut bien qu'on le préfère.</l>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="289" part="I">Tu perdrais ta gageure.</l><!-- @syll="6"-->
+	<l n="289" part="I">Tu perdrais ta gageure.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="289" part="F">Oh ! Veux-tu parier,</l><!-- @syll="6"-->
+	<l n="289" part="F">Oh ! Veux-tu parier,</l><!--@syll="6"-->
 	<l n="290">Si ce n'est le marquis, que c'est le Chevalier,</l>
-	<l n="291" part="I">Voyons ?</l><!-- @syll="2"-->
+	<l n="291" part="I">Voyons ?</l><!--@syll="2"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="291" part="F">Eh ! Mais, mon cher, cela pourrait bien être.</l><!-- @syll="10"-->
+	<l n="291" part="F">Eh ! Mais, mon cher, cela pourrait bien être.</l><!--@syll="10"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
@@ -647,29 +647,29 @@
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="297" part="I">Des reproches, de la jalousie.</l><!-- @syll="9"-->
+	<l n="297" part="I">Des reproches, de la jalousie.</l><!--@syll="9"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="297" part="F">Oh ! Non pas.</l><!-- @syll="3"-->
+	<l n="297" part="F">Oh ! Non pas.</l><!--@syll="3"-->
 	<l n="298">À mon maître je cours annoncer de ce pas</l>
-	<l n="299" part="I">Qu'il peut se dispenser de venir.</l><!-- @syll="9"-->
+	<l n="299" part="I">Qu'il peut se dispenser de venir.</l><!--@syll="9"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="299" part="F">Au contraire,</l><!-- @syll="3"-->
-	<l n="300" part="I">Il fera grand plaisir.</l><!-- @syll="6"-->
+	<l n="299" part="F">Au contraire,</l><!--@syll="3"-->
+	<l n="300" part="I">Il fera grand plaisir.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="300" part="F">En vérité ; pour faire</l><!-- @syll="6"-->
+	<l n="300" part="F">En vérité ; pour faire</l><!--@syll="6"-->
 	<l n="301">Le numéro quatre, oh ! je pense cependant</l>
 	<l n="302">Qu'il ne s'en souciera, ma mie, aucunement.</l>
-	<l n="303" part="I">Mais le voici déjà, je crois.</l><!-- @syll="6"-->
+	<l n="303" part="I">Mais le voici déjà, je crois.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="303" part="F">Prie-le d'attendre</l><!-- @syll="6"-->
+	<l n="303" part="F">Prie-le d'attendre</l><!--@syll="6"-->
 	<l n="304">Et dès que ma maîtresse en ces lieux va se rendre</l>
 	<l n="305">Je m'en vais ordonner que l'on ait à l'instant</l>
 	<l n="306">À l'avertir qu'ici Dorante enfin l'attend.</l>
@@ -681,19 +681,19 @@
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
 <stage type="toward">À la cantonnade. </stage>
-	<l n="307" part="I">C'est bien, je l'attendrai.</l><!-- @syll="6"-->
+	<l n="307" part="I">C'est bien, je l'attendrai.</l><!--@syll="6"-->
 <stage type="entrance">Il entre.</stage>
-	<l n="307" part="F">- J'aurais pu, j'imagine,</l><!-- @syll="6"-->
-	<l n="308" part="I">Me presser un peu moins.</l><!-- @syll="6"-->
+	<l n="307" part="F">- J'aurais pu, j'imagine,</l><!--@syll="6"-->
+	<l n="308" part="I">Me presser un peu moins.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN, à part.</speaker>
-	<l n="308" part="F">Ça m'en a bien la mine,</l><!-- @syll="6"-->
-	<l n="309" part="I">Il avait tout le temps.</l><!-- @syll="6"-->
+	<l n="308" part="F">Ça m'en a bien la mine,</l><!--@syll="6"-->
+	<l n="309" part="I">Il avait tout le temps.</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="309" part="F">Enfin je vous revois,</l><!-- @syll="6"-->
+	<l n="309" part="F">Enfin je vous revois,</l><!--@syll="6"-->
 	<l n="310">Chers témoins des serments, du bonheur d'autrefois,</l>
 	<l n="311">Lieux charmants habités par celle que j'adore,</l>
 	<l n="312">De si doux souvenirs tout parfumés encore.</l>
@@ -705,25 +705,25 @@
 </sp><!--@stage="aparte"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="315" part="I">Te voilà, Pasquin.</l><!-- @syll="5"-->
+	<l n="315" part="I">Te voilà, Pasquin.</l><!--@syll="5"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN, soupirant.</speaker>
-	<l n="315" part="M">Oui, Monsieur.</l><!-- @syll="3"-->
+	<l n="315" part="M">Oui, Monsieur.</l><!--@syll="3"-->
 </sp><!--@stage="sigh"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="315" part="F">L'impatience</l><!-- @syll="4"-->
+	<l n="315" part="F">L'impatience</l><!--@syll="4"-->
 	<l n="316">De revoir Célimène après trois mois d'absence</l>
 	<l n="317">Ne m'ayant pas permis de t'attendre, j'accours</l>
 	<l n="318">Pressé de retrouver au plus tôt mes amours.</l>
 	<l n="319">Qu'il est doux l'instant qui près d'elle me ramène</l>
-	<l n="320" part="I">Pour toujours !</l><!-- @syll="3"-->
+	<l n="320" part="I">Pour toujours !</l><!--@syll="3"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN, soupirant.</speaker>
 <stage type="aparte">À part.</stage>
-	<l n="320" part="F">Oui Monsieur. - Il me fait de la peine.</l><!-- @syll="9"-->
+	<l n="320" part="F">Oui Monsieur. - Il me fait de la peine.</l><!--@syll="9"-->
 </sp><!--@stage="sigh"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
@@ -732,11 +732,11 @@
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN, soupirant.</speaker>
-	<l n="323" part="I">Oui, Monsieur,</l><!-- @syll="3"-->
+	<l n="323" part="I">Oui, Monsieur,</l><!--@syll="3"-->
 </sp><!--@stage="sigh"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="323" part="F">Ah ! Ça, mais quelle diable de mine</l><!-- @syll="9"-->
+	<l n="323" part="F">Ah ! Ça, mais quelle diable de mine</l><!--@syll="9"-->
 	<l n="324">Fais-tu donc ? Quels soupirs à fendre ta poitrine ?</l>
 	<l n="325">Je ne remarquais pas ton air d'enterrement,</l>
 	<l n="326">On voit chacun heureux alors qu'on est content.</l>
@@ -756,11 +756,11 @@
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
 	<l n="333">Hélas ! on m'a trahi, Monsieur, indignement.</l>
-	<l n="334" part="I">Qui l'aurait cru ? Dorine...</l><!-- @syll="6"-->
+	<l n="334" part="I">Qui l'aurait cru ? Dorine...</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="334" part="F">Ah ! Je te plains, vraiment.</l><!-- @syll="6"-->
+	<l n="334" part="F">Ah ! Je te plains, vraiment.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
@@ -770,11 +770,11 @@
 	<l n="338">Cette fidélité n'a pas duré beaucoup</l>
 	<l n="339">Plus de temps, si j'en juge à ses façons légères,</l>
 	<l n="340">Qu'il ne nous en fallait pour franchir les barrières.</l>
-	<l n="341" part="I">La perfide !</l><!-- @syll="3"-->
+	<l n="341" part="I">La perfide !</l><!--@syll="3"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="341" part="F">En effet, de sa part c'est fort mal ;</l><!-- @syll="9"-->
+	<l n="341" part="F">En effet, de sa part c'est fort mal ;</l><!--@syll="9"-->
 	<l n="342">Mais si je puis du moins écarter ton rival...</l>
 </sp>
 <sp who="#pasquin">
@@ -812,29 +812,29 @@
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="361" part="I">Certainement,</l><!-- @syll="4"-->
+	<l n="361" part="I">Certainement,</l><!--@syll="4"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="361" part="F">Ce sont des choses après tout</l><!-- @syll="6"-->
+	<l n="361" part="F">Ce sont des choses après tout</l><!--@syll="6"-->
 	<l n="362">À quoi l'on doit s'attendre et c'est être bien fou</l>
-	<l n="363" part="I">Que d'en perdre la tête.</l><!-- @syll="6"-->
+	<l n="363" part="I">Que d'en perdre la tête.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="363" part="M">Eh ! Sans doute.</l><!-- @syll="3"-->
+	<l n="363" part="M">Eh ! Sans doute.</l><!--@syll="3"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="363" part="F">Il faut faire</l><!-- @syll="3"-->
+	<l n="363" part="F">Il faut faire</l><!--@syll="3"-->
 	<l n="364">Comme l'ingrate qui nous oublie, au contraire,</l>
 	<l n="365">Et sans se consumer en vains regrets, aller</l>
 	<l n="366">Auprès d'un autre objet vite se consoler.</l>
-	<l n="367" part="I">N'est-il pas vrai, Monsieur ?</l><!-- @syll="6"-->
+	<l n="367" part="I">N'est-il pas vrai, Monsieur ?</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="367" part="F">Assurément, que diable.</l><!-- @syll="6"-->
+	<l n="367" part="F">Assurément, que diable.</l><!--@syll="6"-->
 	<l n="368">Je suis ravi, Pasquin, de te voir raisonnable.</l>
 </sp>
 <sp who="#pasquin">
@@ -848,11 +848,11 @@
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="375" part="I">Maraud, qu'oses-tu dire ?</l><!-- @syll="6"-->
+	<l n="375" part="I">Maraud, qu'oses-tu dire ?</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="375" part="F">Oh ! de votre colère</l><!-- @syll="6"-->
+	<l n="375" part="F">Oh ! de votre colère</l><!--@syll="6"-->
 	<l n="376">Accablez-moi, Monsieur, si cela peut vous plaire,</l>
 	<l n="377">Mais mon zèle l'emporte et m'oblige aujourd'hui</l>
 	<l n="378">À vous en avertir, ici l'on vous trahit.</l>
@@ -860,18 +860,18 @@
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
 	<l n="379">Cela ne se peut pas, elle dont la tendresse....</l>
-	<l n="380" part="I">Morbleu, tu mens, coquin.</l><!-- @syll="6"-->
+	<l n="380" part="I">Morbleu, tu mens, coquin.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="380" part="F">Souvent, je le confesse,</l><!-- @syll="6"-->
+	<l n="380" part="F">Souvent, je le confesse,</l><!--@syll="6"-->
 	<l n="381">Vous voyez que je suis sincère, et si jamais</l>
 	<l n="382">J'ai dit la vérité, c'est, je vous le promets,</l>
-	<l n="383" part="I">En ce moment.</l><!-- @syll="4"-->
+	<l n="383" part="I">En ce moment.</l><!--@syll="4"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="383" part="F">Alors on t'a trompé sans doute.</l><!-- @syll="8"-->
+	<l n="383" part="F">Alors on t'a trompé sans doute.</l><!--@syll="8"-->
 	<l n="384">C'est une calomnie indigne qu'on l'écoute ;</l>
 	<l n="385">Tu devais, je ne puis t'en soupçonner l'auteur,</l>
 	<l n="386">Fermer du moins l'oreille à ce propos menteur.</l>
@@ -955,11 +955,11 @@
 	<l n="443">Morbleu ! Voilà parler, Monsieur, à la bonne heure.</l>
 	<l n="444">Pour rendre la leçon plus complète et meilleure,</l>
 	<l n="445">Serait-il pas bien vu qu'à d'autres désormais</l>
-	<l n="446" part="I">On adressât ses voeux ?</l><!-- @syll="6"-->
+	<l n="446" part="I">On adressât ses voeux ?</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="446" part="F">Quant à cela, jamais,</l><!-- @syll="6"-->
+	<l n="446" part="F">Quant à cela, jamais,</l><!--@syll="6"-->
 	<l n="447">Si Célimène a pu trahir ainsi ma flamme,</l>
 	<l n="448">Plus d'espoir de bonheur désormais pour mon âme,</l>
 	<l n="449">Ce coup brise et détruit mon rêve le plus cher</l>
@@ -982,27 +982,27 @@
                     <head>SCÈNE IV. Célimène, Dorante.</head>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="457" part="I">Agréez mes respects...</l><!-- @syll="6"-->
+	<l n="457" part="I">Agréez mes respects...</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="457" part="F">Eh ! Dorante, bonjour,</l><!-- @syll="6"-->
+	<l n="457" part="F">Eh ! Dorante, bonjour,</l><!--@syll="6"-->
 	<l n="458">Je suis charmée ici de vous voir de retour.</l>
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="459" part="I">On n'est pas plus polie.</l><!-- @syll="6"-->
+	<l n="459" part="I">On n'est pas plus polie.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="459" part="F">Heureusement, j'espère,</l><!-- @syll="6"-->
+	<l n="459" part="F">Heureusement, j'espère,</l><!--@syll="6"-->
 	<l n="460">Votre petit voyage en somme a pu se faire,</l>
 	<l n="461">À cela près pourtant de quelques jours d'ennui</l>
-	<l n="462" part="I">Au fond d'une province insipide.</l><!-- @syll="10"-->
+	<l n="462" part="I">Au fond d'une province insipide.</l><!--@syll="10"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="462" part="F">Mais oui,</l><!-- @syll="2"-->
+	<l n="462" part="F">Mais oui,</l><!--@syll="2"-->
 	<l n="463">Assez bien, Dieu merci, mille grâces, Madame,</l>
 	<l n="464">Mais je me félicite et du fond de mon âme</l>
 	<l n="465">De ne pas concevoir en cela, pour ma part,</l>
@@ -1021,15 +1021,15 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="472" part="I">Plaît-il ?</l><!-- @syll="2"-->
+	<l n="472" part="I">Plaît-il ?</l><!--@syll="2"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="472" part="M">Que le temps vole et fuit.</l><!-- @syll="6"-->
+	<l n="472" part="M">Que le temps vole et fuit.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="472" part="F">Ville polie</l><!-- @syll="4"-->
+	<l n="472" part="F">Ville polie</l><!--@syll="4"-->
 	<l n="473">Oh les distractions de fait ne manquent pas.</l>
 </sp>
 <sp who="#dorante">
@@ -1050,11 +1050,11 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="487" part="I">Ainsi vous vous plaisiez là-bas ?</l><!-- @syll="8"-->
+	<l n="487" part="I">Ainsi vous vous plaisiez là-bas ?</l><!--@syll="8"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="487" part="F">Beaucoup, sans doute.</l><!-- @syll="4"-->
+	<l n="487" part="F">Beaucoup, sans doute.</l><!--@syll="4"-->
 	<l n="488">Comment ne pas aimer ce repos qu'on y goûte,</l>
 	<l n="489">Repos charmant du corps ainsi que de l'esprit,</l>
 	<l n="490">Loin d'un monde exigeant, des tracas et du bruit,</l>
@@ -1073,15 +1073,15 @@
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="500" part="I">C'est aussi mon projet.</l><!-- @syll="6"-->
+	<l n="500" part="I">C'est aussi mon projet.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="500" part="F">Prochainement ?</l><!-- @syll="4"-->
+	<l n="500" part="F">Prochainement ?</l><!--@syll="4"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="500" part="F">Peut-être.</l><!-- @syll="2"-->
+	<l n="500" part="F">Peut-être.</l><!--@syll="2"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
@@ -1098,27 +1098,27 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="508" part="I">Quoi donc ?</l><!-- @syll="2"-->
+	<l n="508" part="I">Quoi donc ?</l><!--@syll="2"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="508" part="M">Vous ignorez ?...</l><!-- @syll="4"-->
+	<l n="508" part="M">Vous ignorez ?...</l><!--@syll="4"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="508" part="F">Oh ! Non pas, au contraire,</l><!-- @syll="6"-->
+	<l n="508" part="F">Oh ! Non pas, au contraire,</l><!--@syll="6"-->
 	<l n="509">Projets de mariage, oui, j'y suis maintenant.</l>
 	<l n="510">Vous y pensez encore, hein ? Sérieusement,</l>
-	<l n="511" part="I">Regardez-moi, voyons.</l><!-- @syll="6"-->
+	<l n="511" part="I">Regardez-moi, voyons.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="511" part="F">Pour que je les oublie,</l><!-- @syll="6"-->
-	<l n="512" part="I">Ce n'est pas le moyen.</l><!-- @syll="6"-->
+	<l n="511" part="F">Pour que je les oublie,</l><!--@syll="6"-->
+	<l n="512" part="I">Ce n'est pas le moyen.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="512" part="F">De la galanterie.</l><!-- @syll="6"-->
+	<l n="512" part="F">De la galanterie.</l><!--@syll="6"-->
 	<l n="513">Et bien, moi, voyez-vous, je suis franche et je veux</l>
 	<l n="514">Vous mettre à votre aise, eh ! Cela vaut-il pas mieux ?</l>
 	<l n="515">Une autre vous dirait que, triste et délaissée,</l>
@@ -1137,9 +1137,9 @@
 	<l n="525">Sans nul doute, Madame, oui, vous avez raison,</l>
 	<l n="526">La poésie ici serait hors de saison,</l>
 	<l n="527">Ces grandes phrases-là, selon moi, je vous jure,</l>
-	<l n="528" part="I">N'ont pas en vérité le sens commun. </l><!-- @syll="10"-->
+	<l n="528" part="I">N'ont pas en vérité le sens commun. </l><!--@syll="10"-->
 <stage type="aparte">À part.</stage>
-	<l n="528" part="F">- Parjure !</l><!-- @syll="2"-->
+	<l n="528" part="F">- Parjure !</l><!--@syll="2"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
@@ -1149,11 +1149,11 @@
 	<l n="532">Devoir lui protester d'une ardeur éternelle,</l>
 	<l n="533">Parler de ses beaux feux et des cruels tourments</l>
 	<l n="534">Que l'absence a toujours procurés aux amants ;</l>
-	<l n="535" part="I">Il se fût mis en frais...</l><!-- @syll="6"-->
+	<l n="535" part="I">Il se fût mis en frais...</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="535" part="F">Fadaises surannées,</l><!-- @syll="3"-->
+	<l n="535" part="F">Fadaises surannées,</l><!--@syll="3"-->
 <note type="C">L'Astrée est un très long roman pastoral d'Honoré d'Urfé (1567-1625) publié entre 1607 et 1627.</note>
 	<l n="536">Aux bergers de l'Astrée enfin abandonnées.</l>
 </sp>
@@ -1161,19 +1161,19 @@
                         <speaker>CÉLIMÈNE.</speaker>
 	<l n="537">Il eût pensé bien faire en se jetant alors</l>
 	<l n="538">À mes pieds, se livrant à mille et un transports</l>
-	<l n="539" part="I">D'extravagante ivresse et d'amour...</l><!-- @syll="9"-->
+	<l n="539" part="I">D'extravagante ivresse et d'amour...</l><!--@syll="9"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="539" part="F">Niaiserie</l><!-- @syll="3"-->
+	<l n="539" part="F">Niaiserie</l><!--@syll="3"-->
 	<l n="540">Qu'on laisse aux vieux romans de la chevalerie.</l>
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
 <stage type="aparte">À part. </stage>
-	<l n="541" part="I">Perfide.</l><!-- @syll="3"-->
+	<l n="541" part="I">Perfide.</l><!--@syll="3"-->
 <stage type="loud">Haut.</stage>
-	<l n="541" part="F">Vous voyez, Dorante, qu'il est clair</l><!-- @syll="9"-->
+	<l n="541" part="F">Vous voyez, Dorante, qu'il est clair</l><!--@syll="9"-->
 	<l n="542">Qu'il vaut mieux, comme nous, parler à coeur ouvert.</l>
 	<l n="543">Dans le cours de trois mois de mainte circonstance</l>
 	<l n="544">Les situations subissent l'influence ;</l>
@@ -1185,95 +1185,95 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="547" part="I">Vous dites ?</l><!-- @syll="3"-->
+	<l n="547" part="I">Vous dites ?</l><!--@syll="3"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="547" part="M">Rien, j'approuve.</l><!-- @syll="4"-->
+	<l n="547" part="M">Rien, j'approuve.</l><!--@syll="4"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="547" part="F">Aurions-nous la faiblesse</l><!-- @syll="6"-->
+	<l n="547" part="F">Aurions-nous la faiblesse</l><!--@syll="6"-->
 	<l n="548">De nous croire à jamais liés par la promesse</l>
-	<l n="549" part="I">Qui fût faite...</l><!-- @syll="4"-->
+	<l n="549" part="I">Qui fût faite...</l><!--@syll="4"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="549" part="M">Je crois, légèrement.</l><!-- @syll="6"-->
+	<l n="549" part="M">Je crois, légèrement.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE, à part.</speaker>
-	<l n="549" part="F">Trompeur !</l><!-- @syll="2"-->
+	<l n="549" part="F">Trompeur !</l><!--@syll="2"-->
 <stage type="loud">Haut.</stage>
-	<l n="550" part="I">Dont l'époque...</l><!-- @syll="4"-->
+	<l n="550" part="I">Dont l'époque...</l><!--@syll="4"-->
 </sp><!--@stage="aparte"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="550" part="F">Se perd dans l'obscure vapeur</l><!-- @syll="8"-->
-	<l n="551" part="I">Des temps les plus anciens. </l><!-- @syll="6"-->
+	<l n="550" part="F">Se perd dans l'obscure vapeur</l><!--@syll="8"-->
+	<l n="551" part="I">Des temps les plus anciens. </l><!--@syll="6"-->
 <stage type="aparte">À part.</stage>
-	<l n="551" part="F">- Trois mois au plus, coquette !</l><!-- @syll="6"-->
+	<l n="551" part="F">- Trois mois au plus, coquette !</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
 	<l n="552">Et réclamer de vous rigoureuse et complète</l>
 	<l n="553">Son exécution, serait-ce pas vraiment</l>
-	<l n="554" part="I">De ma part ridicule ?</l><!-- @syll="6"-->
+	<l n="554" part="I">De ma part ridicule ?</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="554" part="F">Et réciproquement.</l><!-- @syll="6"-->
+	<l n="554" part="F">Et réciproquement.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
 	<l n="555">Sans doute. - Ce n'est pas qu'il nous soit nécessaire</l>
-	<l n="556" part="I">D'oublier à jamais...</l><!-- @syll="6"-->
+	<l n="556" part="I">D'oublier à jamais...</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="556" part="F">En aucune manière,</l><!-- @syll="6"-->
+	<l n="556" part="F">En aucune manière,</l><!--@syll="6"-->
 	<l n="557">À ces projets anciens nous pourrons revenir ;</l>
 	<l n="558">Nous biffons le passé sans lier l'avenir.</l>
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="559" part="I">Oui, vous me comprenez.</l><!-- @syll="6"-->
+	<l n="559" part="I">Oui, vous me comprenez.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="559" part="F">Parfaitement, Madame,</l><!-- @syll="6"-->
+	<l n="559" part="F">Parfaitement, Madame,</l><!--@syll="6"-->
 	<l n="560">Vous allez voir : je puis avec la même flamme</l>
 	<l n="561">Recommencer chez vous ma cour sur frais nouveaux,</l>
 	<l n="562">C'est à moi de savoir effacer mes rivaux.</l>
 	<l n="563">Parmi ces soupirants dont vous êtes suivie</l>
 	<l n="564">Je puis reprendre place, et s'il vous prend envie</l>
 	<l n="565">De distinguer encor votre valet, voilà,</l>
-	<l n="566" part="I">Alors tant mieux pour moi, n'est-ce pas ?</l><!-- @syll="9"-->
+	<l n="566" part="I">Alors tant mieux pour moi, n'est-ce pas ?</l><!--@syll="9"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="566" part="F">C'est cela.</l><!-- @syll="3"-->
+	<l n="566" part="F">C'est cela.</l><!--@syll="3"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
 	<l n="567">Sinon, je me renterre aux champs et recommence</l>
 <note type="L">Maron : personnage de la mythologie, fils d'Ariane, attaché au vin.</note>
 <note type="L">Théocrite : Poète antique.</note>
-	<l n="568" part="I">Théocrite et Maron.</l><!-- @syll="6"-->
+	<l n="568" part="I">Théocrite et Maron.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="568" part="F">Fort bien. D'intelligence</l><!-- @syll="6"-->
-	<l n="569" part="I">Vous vous montrez rempli.</l><!-- @syll="6"-->
+	<l n="568" part="F">Fort bien. D'intelligence</l><!--@syll="6"-->
+	<l n="569" part="I">Vous vous montrez rempli.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="569" part="F">Me croyiez-vous un sot,</l><!-- @syll="6"-->
-	<l n="570" part="I">S'il vous plaît ?</l><!-- @syll="3"-->
+	<l n="569" part="F">Me croyiez-vous un sot,</l><!--@syll="6"-->
+	<l n="570" part="I">S'il vous plaît ?</l><!--@syll="3"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="570" part="F">Oh ! Non pas, Dorante, tant s'en faut.</l><!-- @syll="9"-->
+	<l n="570" part="F">Oh ! Non pas, Dorante, tant s'en faut.</l><!--@syll="9"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
@@ -1285,21 +1285,21 @@
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="573" part="I">Quelle erreur c'eût été.</l><!-- @syll="6"-->
+	<l n="573" part="I">Quelle erreur c'eût été.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="573" part="F">Voyez, présentement,</l><!-- @syll="6"-->
+	<l n="573" part="F">Voyez, présentement,</l><!--@syll="6"-->
 	<l n="574">Quel calme l'on éprouve et quel contentement</l>
 	<l n="575">Aux situations franchement dessinées,</l>
 	<l n="576">Quand les positions sont bien déterminées</l>
 <stage type="aparte">À part.</stage>
 	<l n="577">On se sent plus tranquille. - Il est de glace, ô ciel !</l>
-	<l n="578" part="I">Je n'y puis plus tenir</l><!-- @syll="6"-->
+	<l n="578" part="I">Je n'y puis plus tenir</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="578" part="F">Il est vrai, rien n'est tel</l><!-- @syll="6"-->
+	<l n="578" part="F">Il est vrai, rien n'est tel</l><!--@syll="6"-->
 	<l n="579">Et c'est précisément ce qu'aujourd'hui j'observe.</l>
 	<l n="580">Au lieu de l'embarras que toujours on conserve</l>
 	<l n="581">Tant que l'on ne s'est pas parlé sincèrement,</l>
@@ -1307,11 +1307,11 @@
 	<l n="583">On respire, aisément chacun se détermine,</l>
 	<l n="584">Je me sens un quintal de moins sur la poitrine.</l>
 <stage type="aparte">À part.</stage>
-	<l n="585" part="I">Je suis à bout, j'étouffe.</l><!-- @syll="6"-->
+	<l n="585" part="I">Je suis à bout, j'étouffe.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="585" part="F">Ainsi donc, maintenant...</l><!-- @syll="6"-->
+	<l n="585" part="F">Ainsi donc, maintenant...</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
@@ -1319,43 +1319,43 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="587" part="I">Comment ?</l><!-- @syll="2"-->
+	<l n="587" part="I">Comment ?</l><!--@syll="2"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="587" part="M">En poste.</l><!-- @syll="2"-->
+	<l n="587" part="M">En poste.</l><!--@syll="2"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="587" part="F">Eh ! bien, voyez la différence ;</l><!-- @syll="8"-->
+	<l n="587" part="F">Eh ! bien, voyez la différence ;</l><!--@syll="8"-->
 	<l n="588">Quelques instants plus tôt, vous eussiez, je le pense,</l>
 	<l n="589">Pour faire vos adieux été gêné, contraint,</l>
 	<l n="590">Embarrassé longtemps ; peut-être auriez-vous craint</l>
 	<l n="591">De plonger dans mon coeur un poignard qui le brise,</l>
 	<l n="592">Et maintenant, après quatre mots de franchise</l>
-	<l n="593" part="I">Réciproque...</l><!-- @syll="3"-->
+	<l n="593" part="I">Réciproque...</l><!--@syll="3"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="593" part="F">Il ne peut me rester, pour ma part</l><!-- @syll="9"-->
+	<l n="593" part="F">Il ne peut me rester, pour ma part</l><!--@syll="9"-->
 	<l n="594">Du moins, le plus léger scrupule à cet égard.</l>
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
 <stage type="aparte">À part.</stage>
-	<l n="595" part="I">C'est charmant. - Ce sang-froid m'indigne.</l><!-- @syll="8"-->
+	<l n="595" part="I">C'est charmant. - Ce sang-froid m'indigne.</l><!--@syll="8"-->
 <stage type="loud">Haut.</stage>
-	<l n="595" part="F">- Il peut se faire</l><!-- @syll="4"-->
+	<l n="595" part="F">- Il peut se faire</l><!--@syll="4"-->
 	<l n="596">Que nous allions bientôt vous voir à votre terre,</l>
 	<l n="597">Si je donne en effet ma main au Chevalier.</l>
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="598" part="I">Au Chevalier, comment ?...</l><!-- @syll="6"-->
+	<l n="598" part="I">Au Chevalier, comment ?...</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="598" part="F">Oui, j'allais oublier</l><!-- @syll="6"-->
+	<l n="598" part="F">Oui, j'allais oublier</l><!--@syll="6"-->
 	<l n="599">De vous conter cela, mais vraiment il me presse</l>
 	<l n="600">Vivement là-dessus et je crains ma faiblesse.</l>
 </sp>
@@ -1373,17 +1373,17 @@
                         <speaker>CÉLIMÈNE.</speaker>
 	<l n="608">Je n'ai plus nul effroi de ce genre, ou je meure.</l>
 <stage type="aparte">À part.</stage>
-	<l n="609" part="I">Le traître, le trompeur.</l><!-- @syll="6"-->
+	<l n="609" part="I">Le traître, le trompeur.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="609" part="F">Adieu, Madame, adieu,</l><!-- @syll="6"-->
+	<l n="609" part="F">Adieu, Madame, adieu,</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="610" part="I">Adieu, Monsieur. </l><!-- @syll="4"-->
+	<l n="610" part="I">Adieu, Monsieur. </l><!--@syll="4"-->
 <stage type="aparte">À part.</stage>
-	<l n="610" part="F">- Il part, voilà donc ce beau feu,</l><!-- @syll="8"-->
+	<l n="610" part="F">- Il part, voilà donc ce beau feu,</l><!--@syll="8"-->
 	<l n="611">Cette constante ardeur que jurait le volage.</l>
 </sp>
 <sp who="#dorante">
@@ -1394,30 +1394,30 @@
                         <speaker>CÉLIMÈNE.</speaker>
 	<l n="613">Vous me quittez, Monsieur, bien vite, mais pourtant</l>
 	<l n="614">Je crains avec raison d'être en vous arrêtant</l>
-	<l n="615" part="I">Indiscrète et serais désolée...</l><!-- @syll="9"-->
+	<l n="615" part="I">Indiscrète et serais désolée...</l><!--@syll="9"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="615" part="F">Ah ! Madame,</l><!-- @syll="3"-->
+	<l n="615" part="F">Ah ! Madame,</l><!--@syll="3"-->
 	<l n="616">Vous ne le croyez pas. Un devoir me réclame</l>
-	<l n="617" part="I">Et je vais...</l><!-- @syll="3"-->
+	<l n="617" part="I">Et je vais...</l><!--@syll="3"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="617" part="M">Adieu donc,</l><!-- @syll="3"-->
+	<l n="617" part="M">Adieu donc,</l><!--@syll="3"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="617" part="F">Je reviendrai plus tard</l><!-- @syll="6"-->
-	<l n="618" part="I">Vous offrir mes respects.</l><!-- @syll="6"-->
+	<l n="617" part="F">Je reviendrai plus tard</l><!--@syll="6"-->
+	<l n="618" part="I">Vous offrir mes respects.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="618" part="M">Et quand ?</l><!-- @syll="2"-->
+	<l n="618" part="M">Et quand ?</l><!--@syll="2"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="618" part="F">À mon départ.</l><!-- @syll="4"--> 
+	<l n="618" part="F">À mon départ.</l><!--@syll="4"--> 
 <stage type="exit">Il sort.</stage>
 </sp>
 </div>
@@ -1428,22 +1428,22 @@
 	<l n="619">De la présomption masculine, j'espère,</l>
 	<l n="620">Vous triomphez, Madame, et vous avez su faire,</l>
 	<l n="621">Au prix d'une leçon dont il se souviendra,</l>
-	<l n="622" part="I">Que Dorante... mais quoi ? Vous pleurez ?</l><!-- @syll="9"-->
+	<l n="622" part="I">Que Dorante... mais quoi ? Vous pleurez ?</l><!--@syll="9"-->
 </sp><!--@stage="entrance"-->
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="622" part="F">Oh ! L'ingrat !</l><!-- @syll="3"-->
+	<l n="622" part="F">Oh ! L'ingrat !</l><!--@syll="3"-->
 	<l n="623">C'en est fait ; ah je suis indignement trahie,</l>
-	<l n="624" part="I">Car il ne m'aime plus,</l><!-- @syll="6"-->
+	<l n="624" part="I">Car il ne m'aime plus,</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="624" part="F">Se peut-il qu'il oublie ?..</l><!-- @syll="6"-->
-	<l n="625" part="I">Voilà qui n'est pas bien, non.</l><!-- @syll="7"-->
+	<l n="624" part="F">Se peut-il qu'il oublie ?..</l><!--@syll="6"-->
+	<l n="625" part="I">Voilà qui n'est pas bien, non.</l><!--@syll="7"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="625" part="F">C'est affreux, ô ciel !</l><!-- @syll="5"-->
+	<l n="625" part="F">C'est affreux, ô ciel !</l><!--@syll="5"-->
 	<l n="626">Après mille serments d'un amour éternel.</l>
 	<l n="627">Combien à la froideur de sa correspondance</l>
 	<l n="628">J'eus raison ce matin, suspectant sa constance,</l>
@@ -1460,11 +1460,11 @@
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="639" part="I">Ce serait bien petit.</l><!-- @syll="6"-->
+	<l n="639" part="I">Ce serait bien petit.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="639" part="F">Oh ! Ce serait infâme</l><!-- @syll="6"-->
+	<l n="639" part="F">Oh ! Ce serait infâme</l><!--@syll="6"-->
 	<l n="640">De s'être ainsi joué de l'amour d'une femme</l>
 	<l n="641">Crédule et confiante. Et s'il en est ainsi,</l>
 	<l n="642">Je l'avoue à ma honte, il a trop réussi,</l>
@@ -1491,11 +1491,11 @@
 	<l n="657">Ah ! Peut-être ai-je eu tort de l'éprouver ainsi ;</l>
 	<l n="658">N'a-t-il pu le premier se croire aussi trahi ?</l>
 	<l n="659">Eh ! Bien, Dorine, au moins je veux, coûte que coûte,</l>
-	<l n="660" part="I">Réparer ma folie, avouer...</l><!-- @syll="9"-->
+	<l n="660" part="I">Réparer ma folie, avouer...</l><!--@syll="9"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="660" part="F">Et sans doute</l><!-- @syll="3"-->
+	<l n="660" part="F">Et sans doute</l><!--@syll="3"-->
 	<l n="661">Lui demander pardon de n'avoir pas montré</l>
 	<l n="662">Autant d'empressement qu'il en eût désiré ;</l>
 	<l n="663">En le priant bien fort, il se peut qu'il l'accorde.</l>
@@ -1515,11 +1515,11 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="677" part="I">Ah ! Tu n'aimes pas, toi.</l><!-- @syll="6"-->
+	<l n="677" part="I">Ah ! Tu n'aimes pas, toi.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="677" part="F">Ce n'est pas bien certain.</l><!-- @syll="6"-->
+	<l n="677" part="F">Ce n'est pas bien certain.</l><!--@syll="6"-->
 	<l n="678">Mais enfin je vous vis, Madame, ce matin,</l>
 	<l n="679">Vous armant de froideur ainsi que de courage,</l>
 	<l n="680">Sur un simple soupçon, prête à punir l'outrage</l>
@@ -1533,17 +1533,17 @@
 	<l n="685">J'espérais des regrets ; hélas ! je croyais bien</l>
 	<l n="686">à de l'amour encore en un mot ; mais non, rien,</l>
 	<l n="687">Calme désespérant, complète indifférence.</l>
-	<l n="688" part="I">C'est affreux.</l><!-- @syll="3"-->
+	<l n="688" part="I">C'est affreux.</l><!--@syll="3"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="688" part="F">Bon, je vois en cette circonstance</l><!-- @syll="9"-->
+	<l n="688" part="F">Bon, je vois en cette circonstance</l><!--@syll="9"-->
 	<l n="689">Que vous ne vouliez pas la perle du pécheur,</l>
-	<l n="690" part="I">Mais sa conversion.</l><!-- @syll="6"-->
+	<l n="690" part="I">Mais sa conversion.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="690" part="F">Malgré tant de froideur,</l><!-- @syll="6"-->
+	<l n="690" part="F">Malgré tant de froideur,</l><!--@syll="6"-->
 	<l n="691">Je ne puis faire encor que mon coeur se décide</l>
 	<l n="692">À croire de sa part un oubli si perfide,</l>
 	<l n="693">Non, non, je ne puis croire à tant d'indignité.</l>
@@ -1558,23 +1558,23 @@
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
 	<l n="701">A la bonne heure donc. - Et justement voici</l>
-	<l n="702" part="I">Le Chevalier qui vient, Madame.</l><!-- @syll="9"-->
+	<l n="702" part="I">Le Chevalier qui vient, Madame.</l><!--@syll="9"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="702" part="F">Quel ennui.</l><!-- @syll="3"-->
+	<l n="702" part="F">Quel ennui.</l><!--@syll="3"-->
 	<l n="703">Crois-tu, pour peu qu'encor Dorante ait de tendresse,</l>
-	<l n="704" part="I">Qu'il me laisse épouser...</l><!-- @syll="6"-->
+	<l n="704" part="I">Qu'il me laisse épouser...</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="704" part="F">Allons, pas de faiblesse,</l><!-- @syll="6"-->
+	<l n="704" part="F">Allons, pas de faiblesse,</l><!--@syll="6"-->
 	<l n="705">Il s'agit de venger notre sexe aujourd'hui.</l>
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
 	<l n="706">Prends bien soin que Dorante au moins soit introduit</l>
-	<l n="707" part="I">Sitôt qu'il reviendra.</l><!-- @syll="6"-->
+	<l n="707" part="I">Sitôt qu'il reviendra.</l><!--@syll="6"-->
 <stage type="exit">Dorine sort.</stage>
 </sp>
 </div>
@@ -1582,12 +1582,12 @@
                     <head>SCÈNE VI. Célimène, Le Chevalier.</head>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="707" part="F">Chevalier, sur mon âme,</l><!-- @syll="6"-->
-	<l n="708" part="I">Vous venez aujourd'hui bien tard me voir.</l><!-- @syll="10"-->
+	<l n="707" part="F">Chevalier, sur mon âme,</l><!--@syll="6"-->
+	<l n="708" part="I">Vous venez aujourd'hui bien tard me voir.</l><!--@syll="10"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="708" part="F">Madame,</l><!-- @syll="2"-->
+	<l n="708" part="F">Madame,</l><!--@syll="2"-->
 	<l n="709">Trop bonne de l'avoir remarqué ; peu s'en faut</l>
 	<l n="710">Que je ne sois pourtant, je crois, venu trop tôt.</l>
 </sp>
@@ -1608,15 +1608,15 @@
                         <speaker>LE CHEVALIER.</speaker>
 	<l n="715">C'est trop de grâce. Mais je viens tantôt d'apprendre</l>
 	<l n="716">Le retour de Dorante, il va venir vous rendre</l>
-	<l n="717" part="I">Visite sans nul doute.</l><!-- @syll="6"-->
+	<l n="717" part="I">Visite sans nul doute.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="717" part="M">Il sort d'ici.</l><!-- @syll="4"-->
+	<l n="717" part="M">Il sort d'ici.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="717" part="F">Hé ! bien</l><!-- @syll="2"-->
+	<l n="717" part="F">Hé ! bien</l><!--@syll="2"-->
 	<l n="718">C'est pour vous dire adieu, Madame, que je viens,</l>
 	<l n="719">Car je pars me fixer demain à la campagne.</l>
 </sp>
@@ -1634,11 +1634,11 @@
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
 	<l n="725">En ce cas, vous feriez beaucoup mieux, entre nous,</l>
-	<l n="726" part="I">De rester avec lui, croyez-moi.</l><!-- @syll="9"-->
+	<l n="726" part="I">De rester avec lui, croyez-moi.</l><!--@syll="9"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="726" part="F">Quoi c'est vous</l><!-- @syll="3"-->
+	<l n="726" part="F">Quoi c'est vous</l><!--@syll="3"-->
 	<l n="727">Qui me le conseillez ? Non, non, je vous l'atteste,</l>
 	<l n="728">Je trahirai l'honneur, l'amitié si je reste.</l>
 </sp>
@@ -1653,15 +1653,15 @@
 	<l n="732">Oh ! Ne me faites pas expliquer, je vous prie,</l>
 	<l n="733">Plus clairement, Madame ; eh ! Qu'en est-il besoin ?</l>
 	<l n="734">Vous m'avez trop compris sans que j'aille plus loin.</l>
-	<l n="735" part="I">Dorante vient, je pars.</l><!-- @syll="6"-->
+	<l n="735" part="I">Dorante vient, je pars.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="735" part="M">Mais pourquoi ?</l><!-- @syll="3"-->
+	<l n="735" part="M">Mais pourquoi ?</l><!--@syll="3"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="735" part="F">J'imagine</l><!-- @syll="3"-->
+	<l n="735" part="F">J'imagine</l><!--@syll="3"-->
 	<l n="736">Que votre esprit, Madame, aisément le devine.</l>
 </sp>
 <sp who="#celimene">
@@ -1669,11 +1669,11 @@
 	<l n="737">Je ne devine rien ; mon esprit, Chevalier,</l>
 	<l n="738">En voulant être fin craint de se fourvoyer.</l>
 	<l n="739">Vous partez et venez faire un adieu suprême,</l>
-	<l n="740" part="I">Parce que, dites-vous...</l><!-- @syll="6"-->
+	<l n="740" part="I">Parce que, dites-vous...</l><!--@syll="6"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="740" part="F">Parce que je vous aime.</l><!-- @syll="6"-->
+	<l n="740" part="F">Parce que je vous aime.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
@@ -1704,11 +1704,11 @@
 	<l n="756">Pour être le témoin de cet hymen funeste,</l>
 	<l n="757">De ce bonheur fatal qui causera ma mort,</l>
 	<l n="758">Ou bien pour le troubler par mon lâche transport ?</l>
-	<l n="759" part="I">Vous voulez...</l><!-- @syll="3"-->
+	<l n="759" part="I">Vous voulez...</l><!--@syll="3"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="759" part="F">Doucement, Monsieur, votre éloquence</l><!-- @syll="9"-->
+	<l n="759" part="F">Doucement, Monsieur, votre éloquence</l><!--@syll="9"-->
 	<l n="760">Vous emporte dans mainte et mainte extravagance.</l>
 	<l n="761">Et d'abord votre ami n'apporte pas du tout</l>
 	<l n="762">Ni son coeur, qu'il aura laissé je ne sais où,</l>
@@ -1716,20 +1716,20 @@
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="764" part="I">Est-il possible ?</l><!-- @syll="4"-->
+	<l n="764" part="I">Est-il possible ?</l><!--@syll="4"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="764" part="M">Oh ! Rien n'est plus vrai.</l><!-- @syll="5"-->
+	<l n="764" part="M">Oh ! Rien n'est plus vrai.</l><!--@syll="5"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="764" part="F">Je vous prie,</l><!-- @syll="3"-->
-	<l n="765" part="I">Expliquez-moi...</l><!-- @syll="4"-->
+	<l n="764" part="F">Je vous prie,</l><!--@syll="3"-->
+	<l n="765" part="I">Expliquez-moi...</l><!--@syll="4"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="765" part="F">J'aurais voulu que ce matin</l><!-- @syll="8"-->
+	<l n="765" part="F">J'aurais voulu que ce matin</l><!--@syll="8"-->
 	<l n="766">Vous eussiez assisté, vous, à notre entretien,</l>
 	<l n="767">Il ne vous resterait nul doute ce me semble,</l>
 	<l n="768">Car nous avons rompu complètement ensemble,</l>
@@ -1747,34 +1747,34 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="777" part="I">C'est à vous d'en juger.</l><!-- @syll="6"-->
+	<l n="777" part="I">C'est à vous d'en juger.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="777" part="F">Oh ! Mais non, pour mon coeur</l><!-- @syll="6"-->
+	<l n="777" part="F">Oh ! Mais non, pour mon coeur</l><!--@syll="6"-->
 	<l n="778">Ce serait en ce jour vraiment trop de bonheur.</l>
 	<l n="779">Retirez-moi bien vite une faible espérance</l>
 	<l n="780">Oui plus tard laisserait plus vive ma souffrance.</l>
 	<l n="781">Non, Dorante vous aime et vous garde sa foi,</l>
-	<l n="782" part="I">Il vous chérit, bien plus, vous l'aimez toujours.</l><!-- @syll="11"-->
+	<l n="782" part="I">Il vous chérit, bien plus, vous l'aimez toujours.</l><!--@syll="11"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="782" part="F">Moi !</l><!-- @syll="1"-->
-	<l n="783" part="I">Ah ! Je vous jure...</l><!-- @syll="4"-->
+	<l n="782" part="F">Moi !</l><!--@syll="1"-->
+	<l n="783" part="I">Ah ! Je vous jure...</l><!--@syll="4"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="783" part="F">Oh ! Non, ce serait un blasphème,</l><!-- @syll="8"-->
+	<l n="783" part="F">Oh ! Non, ce serait un blasphème,</l><!--@syll="8"-->
 	<l n="784">Car vous l'aimez encore et toujours il vous aime,</l>
 	<l n="785">Quelque brouille, une pique, et pour de légers torts,</l>
 	<l n="786">Va rendre plus ardents avant peu vos transports,</l>
 	<l n="787">À déchirer ainsi mon coeur qui vous oblige ?</l>
-	<l n="788" part="I">Laissez-moi fuir, hélas ! Madame.</l><!-- @syll="8"-->
+	<l n="788" part="I">Laissez-moi fuir, hélas ! Madame.</l><!--@syll="8"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="788" part="F">Eh ! Non, vous dis-je,</l><!-- @syll="4"-->
+	<l n="788" part="F">Eh ! Non, vous dis-je,</l><!--@syll="4"-->
 	<l n="789">Non, c'est une rupture en forme et tout de bon.</l>
 </sp>
 <sp who="#le-chevalier">
@@ -1783,11 +1783,11 @@
 	<l n="791">Sans remords maintenant, vous parler de ma flamme.</l>
 	<l n="792">Parviendrai-je jamais las ! À toucher votre âme</l>
 	<l n="793">Toute remplie encor, je le crains fortement,</l>
-	<l n="794" part="I">D'une autre pensée ?</l><!-- @syll="5"-->
+	<l n="794" part="I">D'une autre pensée ?</l><!--@syll="5"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="794" part="F">Ah ! C'est de l'entêtement.</l><!-- @syll="7"-->
+	<l n="794" part="F">Ah ! C'est de l'entêtement.</l><!--@syll="7"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
@@ -1796,11 +1796,11 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="797" part="I">C'est bien le moins.</l><!-- @syll="4"-->
+	<l n="797" part="I">C'est bien le moins.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="797" part="F">Ô ciel ! Que ces mots généreux,</l><!-- @syll="8"-->
+	<l n="797" part="F">Ô ciel ! Que ces mots généreux,</l><!--@syll="8"-->
 	<l n="798">Célimène adorable, ont fait mon sort heureux.</l>
 </sp>
 <sp who="#celimene">
@@ -1826,12 +1826,12 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="807" part="I">Comme vous voudrez. Ah !</l><!-- @syll="6"-->
+	<l n="807" part="I">Comme vous voudrez. Ah !</l><!--@syll="6"-->
 <stage type="shout/watch/drop">Elle pousse un cri en voyant paraître Dorante, et laisse tomber son mouchoir. Le Chevalier le lui rend en lui baisant la main.</stage>
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="807" part="F">Il faut qu'on vous adore.</l><!-- @syll="6"-->
+	<l n="807" part="F">Il faut qu'on vous adore.</l><!--@syll="6"-->
 </sp>
 </div>
 <div type="scene" n="7">
@@ -1847,27 +1847,27 @@
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
 	<l n="810">Je trouble un tête-à-tête, il me semble, assez doux,</l>
-	<l n="811" part="I">Pardon d'être importun.</l><!-- @syll="6"-->
+	<l n="811" part="I">Pardon d'être importun.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="811" part="F">Eh ! Non, votre présence</l><!-- @syll="6"-->
+	<l n="811" part="F">Eh ! Non, votre présence</l><!--@syll="6"-->
 	<l n="812">Ne trouble rien, jamais auprès de nous, je pense,</l>
 	<l n="813">Un véritable ami ne peut être de trop.</l>
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE, à part.</speaker>
-	<l n="814" part="I">Fort bien.</l><!-- @syll="2"-->
+	<l n="814" part="I">Fort bien.</l><!--@syll="2"-->
 </sp><!--@stage="aparte"-->
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="814" part="F">J'ai de Madame appris ici tantôt</l><!-- @syll="10"-->
+	<l n="814" part="F">J'ai de Madame appris ici tantôt</l><!--@syll="10"-->
 	<l n="815">Qu'entre vous tout était rompu, sans que Dorante,</l>
-	<l n="816" part="I">Croyez bien...</l><!-- @syll="3"-->
+	<l n="816" part="I">Croyez bien...</l><!--@syll="3"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="816" part="F">Eh ! Mon cher, la chose est évidente,</l><!-- @syll="9"-->
+	<l n="816" part="F">Eh ! Mon cher, la chose est évidente,</l><!--@syll="9"-->
 	<l n="817">Venez donc, Chevalier, venez donc dans mes bras.</l>
 	<l n="818">Depuis un siècle au moins, nous ne nous voyons pas.</l>
 </sp>
@@ -1889,17 +1889,17 @@
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
 	<l n="825">Vos affaires, là-bas, vont au mieux en ce jour,</l>
-	<l n="826" part="I">Je vous en félicite aussi.</l><!-- @syll="8"-->
+	<l n="826" part="I">Je vous en félicite aussi.</l><!--@syll="8"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="826" part="F">De son séjour</l><!-- @syll="4"-->
+	<l n="826" part="F">De son séjour</l><!--@syll="4"-->
 	<l n="827">Dorante est tellement ravi que tout de suite</l>
-	<l n="828" part="I">Il retourne en Berry s'installer.</l><!-- @syll="9"-->
+	<l n="828" part="I">Il retourne en Berry s'installer.</l><!--@syll="9"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="828" part="F">Quoi, si vite,</l><!-- @syll="3"-->
+	<l n="828" part="F">Quoi, si vite,</l><!--@syll="3"-->
 	<l n="829">Et sans nous accorder quelques jours seulement ?</l>
 </sp>
 <sp who="#celimene">
@@ -1908,21 +1908,21 @@
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="831" part="I">Vraiment, Dorante ?</l><!-- @syll="4"-->
+	<l n="831" part="I">Vraiment, Dorante ?</l><!--@syll="4"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="831" part="F">Hélas ! Tout ce que je regret ?</l><!-- @syll="8"-->
+	<l n="831" part="F">Hélas ! Tout ce que je regret ?</l><!--@syll="8"-->
 	<l n="832">Dans ce départ si brusque est qu'il ne me permette.</l>
 	<l n="833">De voir se compléter votre félicité.</l>
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="834" part="I">Êtes-vous bien sincère ?</l><!-- @syll="6"-->
+	<l n="834" part="I">Êtes-vous bien sincère ?</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="834" part="F">Oh ! La sincérité,</l><!-- @syll="6"-->
+	<l n="834" part="F">Oh ! La sincérité,</l><!--@syll="6"-->
 	<l n="835">Chevalier, c'est son fort, c'est justice à lui rendre.</l>
 </sp>
 <sp who="#le-chevalier">
@@ -1938,16 +1938,16 @@
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
 <stage type="aparte">À part. </stage>
-	<l n="840" part="I">Ciel ! Oh ! Dissimulons.</l><!-- @syll="6"-->
+	<l n="840" part="I">Ciel ! Oh ! Dissimulons.</l><!--@syll="6"-->
 <stage type="loud">Haut.</stage>
-	<l n="840" part="F">- L'idée est excellente.</l><!-- @syll="6"-->
+	<l n="840" part="F">- L'idée est excellente.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
 <stage type="aparte">À part. </stage>
-	<l n="841" part="I">Infâme.</l><!-- @syll="3"-->
+	<l n="841" part="I">Infâme.</l><!--@syll="3"-->
 <stage type="loud">Haut.</stage>
-	<l n="841" part="F">- Du moment que notre ami commun</l><!-- @syll="9"-->
+	<l n="841" part="F">- Du moment que notre ami commun</l><!--@syll="9"-->
 	<l n="842">L'approuve, je n'y vois pour moi d'obstacle aucun.</l>
 </sp>
 <sp who="#le-chevalier">
@@ -1963,28 +1963,28 @@
 </sp><!--@stage="aparte"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="847" part="I">Comment donc, des deux mains.</l><!-- @syll="6"-->
+	<l n="847" part="I">Comment donc, des deux mains.</l><!--@syll="6"-->
 <stage type="loud">Haut.</stage>
-	<l n="847" part="F">- Ô Dieu l'épreuve est forte.</l><!-- @syll="6"-->
+	<l n="847" part="F">- Ô Dieu l'épreuve est forte.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
 	<l n="848">Oh ! Vous me ravissez de parler de la sorte,</l>
 	<l n="849">Dorante, j'avais craint qu'un reste de penchant,</l>
-	<l n="850" part="I">Je dois vous l'avouer...</l><!-- @syll="6"-->
+	<l n="850" part="I">Je dois vous l'avouer...</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="850" part="F">Eh ! Mon cher, nullement,</l><!-- @syll="6"-->
+	<l n="850" part="F">Eh ! Mon cher, nullement,</l><!--@syll="6"-->
 	<l n="851">Il n'en peut rester trace en moi, je vous l'atteste.</l>
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="852" part="I">Vous me charmez.</l><!-- @syll="4"-->
+	<l n="852" part="I">Vous me charmez.</l><!--@syll="4"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE, à part.</speaker>
-	<l n="852" part="F">Oh ! C'est fini, je le déteste.</l><!-- @syll="8"-->
+	<l n="852" part="F">Oh ! C'est fini, je le déteste.</l><!--@syll="8"-->
 </sp><!--@stage="aparte"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
@@ -1998,11 +1998,11 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="857" part="I">En effet.</l><!-- @syll="3"-->
+	<l n="857" part="I">En effet.</l><!--@syll="3"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE, à part.</speaker>
-	<l n="857" part="F">Je la dois haïr présentement.</l><!-- @syll="9"-->
+	<l n="857" part="F">Je la dois haïr présentement.</l><!--@syll="9"-->
 <stage type="loud">Haut.</stage>
 	<l n="858">Sans doute,on ne saurait trop hâter le moment</l>
 	<l n="859">D'être heureux ; Chevalier, croyez-moi, pour bien faire,</l>
@@ -2010,44 +2010,44 @@
 </sp><!--@stage="aparte"-->
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="861" part="I">Quoi vous consentiriez ?...</l><!-- @syll="6"-->
+	<l n="861" part="I">Quoi vous consentiriez ?...</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE, à part.</speaker>
-	<l n="861" part="F">Indigne ! Eh ! Bien tant mieux,</l><!-- @syll="6"-->
+	<l n="861" part="F">Indigne ! Eh ! Bien tant mieux,</l><!--@syll="6"-->
 	<l n="862">Il verra bien qu'il m'est à présent odieux.</l>
 </sp><!--@stage="aparte"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="863" part="I">Eh ! Sans doute parbleu, venez donc.</l><!-- @syll="9"-->
+	<l n="863" part="I">Eh ! Sans doute parbleu, venez donc.</l><!--@syll="9"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="863" part="F">Sur mon âme,</l><!-- @syll="3"-->
-	<l n="864" part="I">Je ne sais si je rêve.</l><!-- @syll="6"-->
+	<l n="863" part="F">Sur mon âme,</l><!--@syll="3"-->
+	<l n="864" part="I">Je ne sais si je rêve.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="864" part="F">Avant ce soir, Madame,</l><!-- @syll="6"-->
+	<l n="864" part="F">Avant ce soir, Madame,</l><!--@syll="6"-->
 	<l n="865">Nous aurons établi les bases d'un hymen</l>
 <stage type="aparte">À part.</stage>
 	<l n="866">Tant souhaité. - Dussé-je en expirer demain.</l>
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="867" part="I">Merci, Monsieur.</l><!-- @syll="4"-->
+	<l n="867" part="I">Merci, Monsieur.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="867" part="F">Allons, voilà, mon cher Dorante,</l><!-- @syll="8"-->
+	<l n="867" part="F">Allons, voilà, mon cher Dorante,</l><!--@syll="8"-->
 	<l n="868">Un dénouement qui passe à coup sûr mon attente.</l>
 	<l n="869">Ah ! Madame,je n'ose exprimer mon transport.</l>
 <stage type="toward">À Dorante.</stage>
-	<l n="870" part="I">Vous me rendez la vie.</l><!-- @syll="6"-->
+	<l n="870" part="I">Vous me rendez la vie.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE, à part.</speaker>
-	<l n="870" part="F">Et me donne la mort.</l><!-- @syll="6"-->
+	<l n="870" part="F">Et me donne la mort.</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 </div>
 <div type="scene" n="8">
@@ -2059,62 +2059,62 @@
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
 	<l n="872">Mais Madame voit bien que j'accours auprès d'elle.</l>
-	<l n="873" part="I">- Comme vous paraissez agitée.</l><!-- @syll="9"-->
+	<l n="873" part="I">- Comme vous paraissez agitée.</l><!--@syll="9"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="873" part="F">Il se peut,</l><!-- @syll="3"-->
+	<l n="873" part="F">Il se peut,</l><!--@syll="3"-->
 	<l n="874">Dorine, et j'ai sujet aussi de l'être un peu.</l>
-	<l n="875" part="I">C'est le plaisir, je suis ravie.</l><!-- @syll="8"-->
+	<l n="875" part="I">C'est le plaisir, je suis ravie.</l><!--@syll="8"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="875" part="F">Ah ! Ma parole,</l><!-- @syll="4"-->
-	<l n="876" part="I">Vous avez plutôt l'air d'avoir la fièvre.</l><!-- @syll="11"-->
+	<l n="875" part="F">Ah ! Ma parole,</l><!--@syll="4"-->
+	<l n="876" part="I">Vous avez plutôt l'air d'avoir la fièvre.</l><!--@syll="11"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="876" part="F">Folle,</l><!-- @syll="1"-->
+	<l n="876" part="F">Folle,</l><!--@syll="1"-->
 	<l n="877">Bien loin d'être malade, ah ! Félicite m'en,</l>
 	<l n="878">Je suis enfin guérie et radicalement.</l>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="879" part="I">Guérie ? Et de quoi donc ?</l><!-- @syll="6"-->
+	<l n="879" part="I">Guérie ? Et de quoi donc ?</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="879" part="F">De quoi ? De ma sottise,</l><!-- @syll="6"-->
+	<l n="879" part="F">De quoi ? De ma sottise,</l><!--@syll="6"-->
 	<l n="880">De ma faiblesse, enfin, s'il faut que je le dise,</l>
 	<l n="881">De l'amour qu'à Dorante avait gardé mon coeur.</l>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
 	<l n="882">La guérison hélas ! Est prompte et j'ai bien peur</l>
-	<l n="883" part="I">Des rechutes, Madame.</l><!-- @syll="6"-->
+	<l n="883" part="I">Des rechutes, Madame.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="883" part="F">Oh ! Non, sois bien tranquille,</l><!-- @syll="6"-->
+	<l n="883" part="F">Oh ! Non, sois bien tranquille,</l><!--@syll="6"-->
 	<l n="884">Car pour rendre la cure et certaine et facile,</l>
 	<l n="885">Dorine, au Chevalier je vais donner ma main.</l>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="886" part="I">Ce n'est pas fait encore.</l><!-- @syll="6"-->
+	<l n="886" part="I">Ce n'est pas fait encore.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="886" part="F">On doit signer demain</l><!-- @syll="6"-->
-	<l n="887" part="I">Le contrat.</l><!-- @syll="3"-->
+	<l n="886" part="F">On doit signer demain</l><!--@syll="6"-->
+	<l n="887" part="I">Le contrat.</l><!--@syll="3"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="887" part="M">Vraiment.</l><!-- @syll="2"-->
+	<l n="887" part="M">Vraiment.</l><!--@syll="2"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="887" part="F">Oui ; peut-être aujourd'hui même.</l><!-- @syll="7"-->
+	<l n="887" part="F">Oui ; peut-être aujourd'hui même.</l><!--@syll="7"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
@@ -2134,20 +2134,20 @@
 	<l n="898">Parce qu'il me fallait ma revanche soudain.</l>
 	<l n="899">Et maintenant, Dorine, oh ! Je suis bien contente,</l>
 	<l n="900">Je gage dans huit jours que je pense à Dorante</l>
-	<l n="901" part="I">Moins qu'au grand chah de Perse.</l><!-- @syll="6"-->
+	<l n="901" part="I">Moins qu'au grand chah de Perse.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="901" part="F">Allons, tant mieux, bravo,</l><!-- @syll="6"-->
+	<l n="901" part="F">Allons, tant mieux, bravo,</l><!--@syll="6"-->
 	<l n="902">Madame, vous avez pris le parti qu'il faut.</l>
 	<l n="903">Que sitôt qu'on se montre à ses voeux favorable,</l>
 	<l n="904">Un homme n'aille pas se croire indispensable</l>
 	<l n="905">À notre bonheur. Mais êtes-vous s'il vous plaît,</l>
-	<l n="906" part="I">Bien sûre au moins de vous ?</l><!-- @syll="6"-->
+	<l n="906" part="I">Bien sûre au moins de vous ?</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="906" part="M">J'en réponds, il faudrait</l><!-- @syll="6"-->
+	<l n="906" part="M">J'en réponds, il faudrait</l><!--@syll="6"-->
 	<l n="907">Que je fusse à présent bien lâche, je te jure,</l>
 	<l n="908">À lui pour revenir après semblable injure.</l>
 	<l n="909">Ah ! Si tu l'avais vu, quel air indifférent ;</l>
@@ -2167,11 +2167,11 @@
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="923" part="I">Madame, calmez-vous.</l><!-- @syll="6"-->
+	<l n="923" part="I">Madame, calmez-vous.</l><!--@syll="6"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="923" part="F">Je suis calme, Dorine.</l><!-- @syll="6"-->
+	<l n="923" part="F">Je suis calme, Dorine.</l><!--@syll="6"-->
 	<l n="924">C'est le plaisir de voir que ceci se termine.</l>
 	<l n="925">Il n'a même pas mis dans son indignité</l>
 	<l n="926">La moindre forme au moins de simple urbanité.</l>
@@ -2183,12 +2183,12 @@
 	<l n="932">À son ami, dans son impatience extrême :</l>
 	<l n="933">Ah ! Prenez-la bien vite et débarrassez-moi,</l>
 	<l n="934">Depuis assez longtemps sa tendresse, ma foi,</l>
-	<l n="935" part="I">M'importune et m'assomme. </l><!-- @syll="6"-->
+	<l n="935" part="I">M'importune et m'assomme. </l><!--@syll="6"-->
 <stage type="cry">Elle fond en larmes.</stage>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="935" part="F">Ah ! Madame, Madame,</l><!-- @syll="6"-->
+	<l n="935" part="F">Ah ! Madame, Madame,</l><!--@syll="6"-->
 	<l n="936">C'est donc ainsi que vous avez guéri votre âme ?</l>
 </sp>
 <sp who="#celimene">
@@ -2200,12 +2200,12 @@
 	<l n="941">Le Chevalier m'adore et fera mon bonheur,</l>
 	<l n="942">Je déteste Dorante, oh ! du fond de mon coeur,</l>
 	<l n="943">Et des femmes je suis, dans ma joyeuse ivresse,</l>
-	<l n="944" part="I">La plus heureuse enfin.</l><!-- @syll="6"-->
+	<l n="944" part="I">La plus heureuse enfin.</l><!--@syll="6"-->
 <stage type="cry">Elle éclate en sanglots.</stage>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="944" part="F">Dieu ! Ma pauvre maîtresse !</l><!-- @syll="6"-->
+	<l n="944" part="F">Dieu ! Ma pauvre maîtresse !</l><!--@syll="6"-->
 	<l n="945">De grâce, cachez-vous, j'aperçois son valet,</l>
 	<l n="946">En un pareil état, bon Dieu, s'il vous voyait.</l>
 <stage type="escape/entrance/watcg">Célimène s'enfuit. - Pasquin entre et l'aperçoit.</stage>
@@ -2225,11 +2225,11 @@
                         <speaker>PASQUIN.</speaker>
 	<l n="949">Je viens chercher mon maître afin de l'avertir</l>
 	<l n="950">Que les chevaux sont prêts et que l'on peut partir.</l>
-	<l n="951" part="I">J'étais loin de m'attendre...</l><!-- @syll="6"-->
+	<l n="951" part="I">J'étais loin de m'attendre...</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="951" part="F">Eh bien ! Tu vois sans doute</l><!-- @syll="6"-->
+	<l n="951" part="F">Eh bien ! Tu vois sans doute</l><!--@syll="6"-->
 	<l n="952">Qu'il n'est pas là. Morbleu, mettez-vous donc en route</l>
 	<l n="953">Puisque votre berline est prête, Dieu merci,</l>
 	<l n="954">Et ne rentrez jamais ni l'un ni l'autre ici,</l>
@@ -2239,29 +2239,29 @@
                         <speaker>PASQUIN.</speaker>
 	<l n="956">Bien, le congé, ma chère, est tout à fait aimable.</l>
 	<l n="957">Mais que se passe-t-il donc ici ? Te voilà</l>
-	<l n="958" part="I">Toute émue et Madame en pleurs.</l><!-- @syll="8"-->
+	<l n="958" part="I">Toute émue et Madame en pleurs.</l><!--@syll="8"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="958" part="F">C'est faux cela.</l><!-- @syll="4"-->
+	<l n="958" part="F">C'est faux cela.</l><!--@syll="4"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
 	<l n="959">Comment ? Je ne l'ai pas tout à l'heure aperçue</l>
 	<l n="960">Cherchant à dérober ses larmes à ma vue ?</l>
 	<l n="961">Mais on n'est point aveugle et moins encore auprès</l>
-	<l n="962" part="I">De la beauté.</l><!-- @syll="4"-->
+	<l n="962" part="I">De la beauté.</l><!--@syll="4"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="962" part="F">Vraiment, tu m'impatienterais</l><!-- @syll="8"-->
+	<l n="962" part="F">Vraiment, tu m'impatienterais</l><!--@syll="8"-->
 	<l n="963">Par ton aplomb. Tu bats la campagne, imbécile,</l>
 	<l n="964">Tu vois trouble ; va-t-en et nous laisse tranquille,</l>
-	<l n="965" part="I">Ton maître ainsi que toi.</l><!-- @syll="6"-->
+	<l n="965" part="I">Ton maître ainsi que toi.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="965" part="F">Quant à nous en aller,</l><!-- @syll="6"-->
+	<l n="965" part="F">Quant à nous en aller,</l><!--@syll="6"-->
 	<l n="966">C'est ce dont il n'est pas besoin de nous prier,</l>
 	<l n="967">Car C'est bien sur-le-champ ce que nous comptons faire.</l>
 	<l n="968">Pour vous donner la paix, ah ! C'est une autre affaire ; </l>
@@ -2271,43 +2271,43 @@
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
 	<l n="971">De rire ici, mon cher, tu me donnes envie </l>
-	<l n="972" part="I">Par ta prétention grotesque. Ah ! ah !</l><!-- @syll="10"-->
+	<l n="972" part="I">Par ta prétention grotesque. Ah ! ah !</l><!--@syll="10"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="972" part="F">Ma mie,</l><!-- @syll="2"-->
+	<l n="972" part="F">Ma mie,</l><!--@syll="2"-->
 	<l n="973">Cette gaîté n'est pas d'un aussi bon aloi</l>
 	<l n="974">Que les pleurs qu'à l'instant j'ai remarqués ma foi. </l>
 </sp> 
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
 	<l n="975">Encor ! Si tu redis cette sottise amère</l>
-	<l n="976" part="I">Je t'arrache les yeux.</l><!-- @syll="6"-->
+	<l n="976" part="I">Je t'arrache les yeux.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="976" part="F">Quoi tu prétends, ma chère,</l><!-- @syll="6"-->
+	<l n="976" part="F">Quoi tu prétends, ma chère,</l><!--@syll="6"-->
 	<l n="977">Que ta maîtresse, ici quand j'entrai par hasard,</l>
-	<l n="978" part="I">Ne pleurait pas ?</l><!-- @syll="4"-->
+	<l n="978" part="I">Ne pleurait pas ?</l><!--@syll="4"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="978" part="F">Eh ! Non, non, cent fois non, pendard,</l><!-- @syll="8"-->
+	<l n="978" part="F">Eh ! Non, non, cent fois non, pendard,</l><!--@syll="8"-->
 	<l n="979">Pour en avoir envie elle était trop contente</l>
 	<l n="980">D'être débarrassée enfin de ton Dorante.</l>
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
 	<l n="981">Tu feindrais avec moi très inutilement,</l>
-	<l n="982" part="I">Madame pleurait bien.</l><!-- @syll="6"-->
+	<l n="982" part="I">Madame pleurait bien.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="982" part="M">Non.</l><!-- @syll="1"-->
+	<l n="982" part="M">Non.</l><!--@syll="1"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="982" part="F">Et ne fais pas tant</l><!-- @syll="5"-->
+	<l n="982" part="F">Et ne fais pas tant</l><!--@syll="5"-->
 	<l n="983">La vaillante, qui sait ? Peut-être que toi-même...</l>
 </sp>
 <sp who="#dorine">
@@ -2316,42 +2316,42 @@
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="985" part="I">Oh ! Mais n'espérez pas nous attendrir.</l><!-- @syll="10"-->
+	<l n="985" part="I">Oh ! Mais n'espérez pas nous attendrir.</l><!--@syll="10"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="985" part="F">Pasquin,</l><!-- @syll="2"-->
-	<l n="986" part="I">Ne m'exaspère pas.</l><!-- @syll="6"-->
+	<l n="985" part="F">Pasquin,</l><!--@syll="2"-->
+	<l n="986" part="I">Ne m'exaspère pas.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="986" part="F">Non, vois-tu, de dessein</l><!-- @syll="6"-->
+	<l n="986" part="F">Non, vois-tu, de dessein</l><!--@syll="6"-->
 	<l n="987">Vous ne nous ferez pas changer, je te le jure.</l>
-	<l n="988" part="I">C'est bien fini.</l><!-- @syll="4"-->
+	<l n="988" part="I">C'est bien fini.</l><!--@syll="4"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="988" part="F">Je vais t'arracher la figure.</l><!-- @syll="8"-->
+	<l n="988" part="F">Je vais t'arracher la figure.</l><!--@syll="8"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="989" part="I">Nous n'écoutons plus rien, nous partons.</l><!-- @syll="9"-->
+	<l n="989" part="I">Nous n'écoutons plus rien, nous partons.</l><!--@syll="9"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="989" part="F">Tiens, il faut</l><!-- @syll="3"-->
+	<l n="989" part="F">Tiens, il faut</l><!--@syll="3"-->
 	<l n="990">Que je t'étrangle enfin, faquin, triple maraud.</l>
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="991" part="I">Au meurtre ! À l'assassin !</l><!-- @syll="6"-->
+	<l n="991" part="I">Au meurtre ! À l'assassin !</l><!--@syll="6"-->
 </sp>
 </div>
 <div type="scene" n="10">
                     <head>SCÈNE X. Dorine, Pasquin, Le Chevalier, Dorante.</head>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="991" part="F">Quel est tout ce tapage ?</l><!-- @syll="6"-->
+	<l n="991" part="F">Quel est tout ce tapage ?</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
@@ -2363,29 +2363,29 @@
                         <speaker>LE CHEVALIER.</speaker>
 	<l n="995">Se peut-il ? Quel motif a pu porter Dorine</l>
 	<l n="996">À ces velléités de fureur assassine ?</l>
-	<l n="997" part="I">Tu voulais l'étrangler ?</l><!-- @syll="6"-->
+	<l n="997" part="I">Tu voulais l'étrangler ?</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="997" part="F">Il l'aurait mérité</l><!-- @syll="6"-->
+	<l n="997" part="F">Il l'aurait mérité</l><!--@syll="6"-->
 	<l n="998">Et plutôt mille fois qu'une, cet effronté.</l>
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="999" part="I">Expliquez-vous enfin.</l><!-- @syll="6"-->
+	<l n="999" part="I">Expliquez-vous enfin.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="999" part="F">Hélas ! Vos seigneuries</l><!-- @syll="6"-->
+	<l n="999" part="F">Hélas ! Vos seigneuries</l><!--@syll="6"-->
 	<l n="1000">D'une femme jalouse ici voient les furies.</l>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="1001" part="I">Tu mens, pendard.</l><!-- @syll="4"-->
+	<l n="1001" part="I">Tu mens, pendard.</l><!--@syll="4"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1001" part="F">Voyons, laisse-le s'expliquer,</l><!-- @syll="8"-->
+	<l n="1001" part="F">Voyons, laisse-le s'expliquer,</l><!--@syll="8"-->
 	<l n="1002">Quand il aura fini tu pourras répliquer.</l>
 </sp>
 <sp who="#pasquin">
@@ -2401,21 +2401,21 @@
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="1008" part="I">Cela n'est pas facile à croire.</l><!-- @syll="8"-->
+	<l n="1008" part="I">Cela n'est pas facile à croire.</l><!--@syll="8"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1008" part="F">Il est modeste.</l><!-- @syll="4"-->
-	<l n="1009" part="I">Mais pourquoi l'étrangler alors ?</l><!-- @syll="9"-->
+	<l n="1008" part="F">Il est modeste.</l><!--@syll="4"-->
+	<l n="1009" part="I">Mais pourquoi l'étrangler alors ?</l><!--@syll="9"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="1009" part="F">Quoi ? Ce faquin</l><!-- @syll="3"-->
-	<l n="1010" part="I">Calomniait Madame indignement.</l><!-- @syll="10"-->
+	<l n="1009" part="F">Quoi ? Ce faquin</l><!--@syll="3"-->
+	<l n="1010" part="I">Calomniait Madame indignement.</l><!--@syll="10"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1010" part="F">Coquin,</l><!-- @syll="2"-->
+	<l n="1010" part="F">Coquin,</l><!--@syll="2"-->
 	<l n="1011">S'il était vrai, morbleu, qu'un discours téméraire...</l>
 </sp>
 <sp who="#pasquin">
@@ -2424,60 +2424,60 @@
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1012" part="F">Calmez votre colère,</l><!-- @syll="6"-->
+	<l n="1012" part="F">Calmez votre colère,</l><!--@syll="6"-->
 	<l n="1013">Dorante, et me laissez à clair tirer ceci.</l>
 	<l n="1014">D'où vînt votre querelle en un mot ?</l>
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="1015" part="I">Le voici.</l><!-- @syll="3"-->
+	<l n="1015" part="I">Le voici.</l><!--@syll="3"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="1015" part="F">Il va vous répéter encor quelque imposture.</l><!-- @syll="9"-->
+	<l n="1015" part="F">Il va vous répéter encor quelque imposture.</l><!--@syll="9"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1016" part="I">Nous verrons, laisse-le parler.</l><!-- @syll="8"-->
+	<l n="1016" part="I">Nous verrons, laisse-le parler.</l><!--@syll="8"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="1016" part="F">C'est, je vous jure,</l><!-- @syll="4"-->
+	<l n="1016" part="F">C'est, je vous jure,</l><!--@syll="4"-->
 	<l n="1017">La pure vérité : Quand je vins en ces lieux,</l>
 	<l n="1018">Célimène en sanglots, un mouchoir sur les yeux...</l>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="1019" part="I">Il ment.</l><!-- @syll="2"-->
+	<l n="1019" part="I">Il ment.</l><!--@syll="2"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1019" part="F">Tu répondras, Dorine, tout à l'heure.</l><!-- @syll="10"-->
+	<l n="1019" part="F">Tu répondras, Dorine, tout à l'heure.</l><!--@syll="10"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE, à part.</speaker>
-	<l n="1020" part="I">J'enrage.</l><!-- @syll="2"-->
+	<l n="1020" part="I">J'enrage.</l><!--@syll="2"-->
 </sp><!--@stage="aparte"-->
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="1020" part="F">Si je mens d'un seul mot, que je meure.</l><!-- @syll="10"-->
+	<l n="1020" part="F">Si je mens d'un seul mot, que je meure.</l><!--@syll="10"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1021" part="I">Célimène, dis-tu ?...</l><!-- @syll="6"-->
+	<l n="1021" part="I">Célimène, dis-tu ?...</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="1021" part="F">Je la vis tout en pleurs</l><!-- @syll="6"-->
+	<l n="1021" part="F">Je la vis tout en pleurs</l><!--@syll="6"-->
 	<l n="1022">S'enfuir en me voyant pour cacher ses douleurs.</l>
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1023" part="I">Célimène, grand Dieu !</l><!-- @syll="6"-->
+	<l n="1023" part="I">Célimène, grand Dieu !</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="1023" part="F">Quoi ? vous allez le croire ?</l><!-- @syll="6"-->
+	<l n="1023" part="F">Quoi ? vous allez le croire ?</l><!--@syll="6"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
@@ -2491,43 +2491,43 @@
                         <speaker>LE CHEVALIER.</speaker>
 	<l n="1026">Et pourquoi t'emporter avec tant de chaleur ?</l>
 	<l n="1027">Quel tort, dis-moi, cela fait-il à ta maîtresse</l>
-	<l n="1028" part="I">D'avoir quelque chagrin ?</l><!-- @syll="6"-->
+	<l n="1028" part="I">D'avoir quelque chagrin ?</l><!--@syll="6"-->
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="1028" part="F">Aucun, je le confesse ;</l><!-- @syll="6"-->
-	<l n="1029" part="I">Mais c'est ce que ce fat-là s'imaginait...</l><!-- @syll="10"-->
+	<l n="1028" part="F">Aucun, je le confesse ;</l><!--@syll="6"-->
+	<l n="1029" part="I">Mais c'est ce que ce fat-là s'imaginait...</l><!--@syll="10"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1029" part="F">Quoi donc ?</l><!-- @syll="2"-->
+	<l n="1029" part="F">Quoi donc ?</l><!--@syll="2"-->
 	<l n="1030">Qu'elle déplorait là le cruel abandon</l>
 	<l n="1031">De Dorante. Eh ! Ma chère, évidente est la chose,</l>
 	<l n="1032">De ses larmes voilà quelle est la seule cause.</l>
 </sp>
 <sp who="#dorine">
                         <speaker>DORINE.</speaker>
-	<l n="1033" part="I">Ah ! Monsieur.</l><!-- @syll="3"-->
+	<l n="1033" part="I">Ah ! Monsieur.</l><!--@syll="3"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1033" part="M">Vous croyez.</l><!-- @syll="3"-->
+	<l n="1033" part="M">Vous croyez.</l><!--@syll="3"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN.</speaker>
-	<l n="1033" part="F">Et j'en suis très sûr, moi.</l><!-- @syll="6"-->
+	<l n="1033" part="F">Et j'en suis très sûr, moi.</l><!--@syll="6"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1034" part="I">Oui, Pasquin a raison.</l><!-- @syll="6"-->
+	<l n="1034" part="I">Oui, Pasquin a raison.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1034" part="M">Se pourrait-il ?</l><!-- @syll="4"-->
+	<l n="1034" part="M">Se pourrait-il ?</l><!--@syll="4"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER, à Dorine.</speaker>
-	<l n="1034" part="F">Pour toi,</l><!-- @syll="2"-->
+	<l n="1034" part="F">Pour toi,</l><!--@syll="2"-->
 	<l n="1035">Avertis à l'instant la belle Célimène</l>
 	<l n="1036">Qu'ici l'attend un coeur que l'amour lui ramène.</l>
 </sp><!--@stage="toward"-->
@@ -2554,11 +2554,11 @@
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
 	<l n="1045">Quoi vous croyez vraiment, Chevalier, que son coeur</l>
-	<l n="1046" part="I">Conserve encor pour moi... ?</l><!-- @syll="6"-->
+	<l n="1046" part="I">Conserve encor pour moi... ?</l><!--@syll="6"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1046" part="M">Parbleu, de sa douleur</l><!-- @syll="6"-->
+	<l n="1046" part="M">Parbleu, de sa douleur</l><!--@syll="6"-->
 	<l n="1047">J'étais bien sûr, mon cher, malgré l'indifférence</l>
 	<l n="1048">Que son orgueil sans cesse affecte et par avance</l>
 	<l n="1049">Je savais qu'elle n'a, pas même un seul instant,</l>
@@ -2582,11 +2582,11 @@
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1061" part="I">Vous croyez qu'elle m'aime ?</l><!-- @syll="6"-->
+	<l n="1061" part="I">Vous croyez qu'elle m'aime ?</l><!--@syll="6"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1061" part="F">Oui certes, en Berry</l><!-- @syll="6"-->
+	<l n="1061" part="F">Oui certes, en Berry</l><!--@syll="6"-->
 	<l n="1062">C'est avec grand plaisir que vous voit son mari.</l>
 </sp>
 <sp who="#dorante">
@@ -2617,11 +2617,11 @@
 	<l n="1077">C'est un garant pour moi que sa fidélité</l>
 	<l n="1078">Des vertus d'un coeur plein de sensibilité</l>
 <stage type="entrance">Célimene paraît.</stage>
-	<l n="1079" part="I">Voyez, qu'elle est charmante</l><!-- @syll="6"-->
+	<l n="1079" part="I">Voyez, qu'elle est charmante</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE, à part.</speaker>
-	<l n="1079" part="F">Oh ! Oui, je vois des larmes</l><!-- @syll="6"-->
+	<l n="1079" part="F">Oh ! Oui, je vois des larmes</l><!--@syll="6"-->
 	<l n="1080">La trace qui rehausse encor mieux tant de charmes.</l>
 </sp><!--@stage="aparte"-->
 <sp who="#le-chevalier">
@@ -2635,31 +2635,31 @@
                     <head>SCÈNE XII. Dorante, Célimène, puis Le Chevalier.</head>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE, à part.</speaker>
-	<l n="1083" part="I">Il me laisse avec lui.</l><!-- @syll="6"-->
+	<l n="1083" part="I">Il me laisse avec lui.</l><!--@syll="6"-->
 </sp><!--@stage="aparte"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1083" part="F">Célimène adorable,</l><!-- @syll="6"-->
+	<l n="1083" part="F">Célimène adorable,</l><!--@syll="6"-->
 	<l n="1084">Pardon, cent fois pardon, je sois un misérable.</l>
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="1085" part="I">Que faites-vous, Monsieur ?</l><!-- @syll="6"-->
+	<l n="1085" part="I">Que faites-vous, Monsieur ?</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1085" part="F">Grâce, ô grâce, pitié,</l><!-- @syll="6"-->
+	<l n="1085" part="F">Grâce, ô grâce, pitié,</l><!--@syll="6"-->
 	<l n="1086">Quittez, quittez ce ton de froide inimitié,</l>
 	<l n="1087">Je reconnais mes forts, ici je les expie</l>
 	<l n="1088">De mon bonheur, bientôt ce sera de ma vie ?</l>
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="1089" part="I">Dorante !</l><!-- @syll="2"-->
+	<l n="1089" part="I">Dorante !</l><!--@syll="2"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1089" part="F">Plaignez-moi, pardonnez-moi ; mais non,</l><!-- @syll="10"-->
+	<l n="1089" part="F">Plaignez-moi, pardonnez-moi ; mais non,</l><!--@syll="10"-->
 	<l n="1090">Je suis un malheureux indigne de pardon,</l>
 	<l n="1091">Un instant j'ai douté d'un coeur comme le vôtre,</l>
 	<l n="1092">Étrange aveuglement qui ne cède à nul autre ;</l>
@@ -2674,44 +2674,44 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="1101" part="I">Ah !</l><!-- @syll="1"-->
+	<l n="1101" part="I">Ah !</l><!--@syll="1"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1101" part="F">Qu'un mot de pardon de vos accents si doux...</l><!-- @syll="11"-->
+	<l n="1101" part="F">Qu'un mot de pardon de vos accents si doux...</l><!--@syll="11"-->
 	<l n="1102">Un seul mot, je l'implore, hélas ! à vos genoux.</l>
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="1103" part="I">Ah ! Dorante.</l><!-- @syll="3"-->
+	<l n="1103" part="I">Ah ! Dorante.</l><!--@syll="3"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER, entrant.</speaker>
-	<l n="1103" part="F">Voyons, pardonnez-lui, Madame,</l><!-- @syll="9"-->
+	<l n="1103" part="F">Voyons, pardonnez-lui, Madame,</l><!--@syll="9"-->
 	<l n="1104">Un pareil repentir doit attendrir votre âme</l>
 	<l n="1105">Et puis songez, s'il fut coupable dans ce jour,</l>
 	<l n="1106">Que ce n'est après tout que par excès d'amour.</l>
 </sp><!--@stage="entrance"-->
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="1107" part="I">Monsieur.</l><!-- @syll="2"-->
+	<l n="1107" part="I">Monsieur.</l><!--@syll="2"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1107" part="M">Vous abusez...</l><!-- @syll="4"-->
+	<l n="1107" part="M">Vous abusez...</l><!--@syll="4"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1107" part="F">Pourriez-vous bien me faire</l><!-- @syll="6"-->
+	<l n="1107" part="F">Pourriez-vous bien me faire</l><!--@syll="6"-->
 	<l n="1108">La grâce d'écouter quatre mots sans colère ?</l>
 	<l n="1109">Dorante, vous m'aviez trompé, quand ce matin</l>
 	<l n="1110">Vous disiez votre feu complètement éteint.</l>
 	<l n="1111">Je n'ai pas un instant été dupe moi-même</l>
-	<l n="1112" part="I">De Madame et de vous.</l><!-- @syll="6"-->
+	<l n="1112" part="I">De Madame et de vous.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1112" part="F">Votre audace est extrême,</l><!-- @syll="6"-->
+	<l n="1112" part="F">Votre audace est extrême,</l><!--@syll="6"-->
 	<l n="1113">Une pareille insulte est très hors de saison,</l>
 	<l n="1114">Sur le champ, Chevalier, vous m'en rendrez raison.</l>
 </sp>
@@ -2733,47 +2733,47 @@
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="1128" part="I">Se peut-il ?</l><!-- @syll="3"-->
+	<l n="1128" part="I">Se peut-il ?</l><!--@syll="3"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1128" part="F">Cher ami, je vous dois donc la vie.</l><!-- @syll="9"-->
+	<l n="1128" part="F">Cher ami, je vous dois donc la vie.</l><!--@syll="9"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="1129" part="I">Mais ce contrat, Monsieur ?</l><!-- @syll="6"-->
+	<l n="1129" part="I">Mais ce contrat, Monsieur ?</l><!--@syll="6"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1129" part="F">C'est un nom à changer,</l><!-- @syll="6"-->
+	<l n="1129" part="F">C'est un nom à changer,</l><!--@syll="6"-->
 	<l n="1130">Et Dorante pourra de bon coeur le signer,</l>
-	<l n="1131" part="I">Si vous y consentez.</l><!-- @syll="6"-->
+	<l n="1131" part="I">Si vous y consentez.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1131" part="M">Célimène.</l><!-- @syll="3"-->
+	<l n="1131" part="M">Célimène.</l><!--@syll="3"-->
 </sp>
 <sp who="#celimene">
                         <speaker>CÉLIMÈNE.</speaker>
-	<l n="1131" part="F">Ah ! Dorante,</l><!-- @syll="3"-->
-	<l n="1132" part="I">Ne soyez plus jaloux.</l><!-- @syll="6"-->
+	<l n="1131" part="F">Ah ! Dorante,</l><!--@syll="3"-->
+	<l n="1132" part="I">Ne soyez plus jaloux.</l><!--@syll="6"-->
 </sp>
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1132" part="F">Ne soyez plus méchante.</l><!-- @syll="6"-->
+	<l n="1132" part="F">Ne soyez plus méchante.</l><!--@syll="6"-->
 </sp>
 <sp who="#pasquin">
                         <speaker>PASQUIN, entrant.</speaker>
-	<l n="1133" part="I">Le postillon, Monsieur, est en selle.</l><!-- @syll="9"-->
+	<l n="1133" part="I">Le postillon, Monsieur, est en selle.</l><!--@syll="9"-->
 </sp><!--@stage="entrance"-->
 <sp who="#dorante">
                         <speaker>DORANTE.</speaker>
-	<l n="1133" part="F">Ah ! Ma foi,</l><!-- @syll="3"-->
-	<l n="1134" part="I">De départ il n'est plus question.</l><!-- @syll="8"-->
+	<l n="1133" part="F">Ah ! Ma foi,</l><!--@syll="3"-->
+	<l n="1134" part="I">De départ il n'est plus question.</l><!--@syll="8"-->
 </sp>
 <sp who="#le-chevalier">
                         <speaker>LE CHEVALIER.</speaker>
-	<l n="1134" part="F">Pardonnez-moi.</l><!-- @syll="4"-->
+	<l n="1134" part="F">Pardonnez-moi.</l><!--@syll="4"-->
 	<l n="1135">Le rôle est délicat que je viens d'entreprendre ;</l>
 	<l n="1136">J'ai feint ici l'ardeur de l'amour le plus tendre.</l>
 	<l n="1137">Tant d'attraits chez Madame et de beaux yeux si doux</l>

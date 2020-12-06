@@ -28,7 +28,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date type="print" when="1715">1715</date>
+                        <date>1715</date>
                         <date type="premiere" when="1671-01-01">Représenté pour la première fois le 01 janvier 1671 à l'Hôtel de Bourgogne.</date>
                         <date type="written"/>
                         <idno type="URL"/>
@@ -93,30 +93,30 @@
                 </div><!--@id=""-->
 		</div>
 		<performance>
-			<ab type="premiere">Représenté pour la première fois le 01 janvier 1671 à l'Hôtel de Bourgogne.</ab><!--date="1671-01-01"--><!--location="Hôtel de Bourgogne"-->
+			<ab type="premiere">Représenté pour la première fois le 01 janvier 1671 à l'Hôtel de Bourgogne.</ab><!--@date="1671-01-01"--><!--@location="Hôtel de Bourgogne"-->
 		</performance>
 	<castList>
                 <head>ACTEURS</head>
 		<castItem>
-                    <role corresp="#proetus">PROETUS</role><!--@sex="1" @type="H" @statut="roi" @age="A" @stat_amour="néant"-->, roi d'Argos.</castItem>
+                    <role corresp="#proetus">PROETUS</role><!--@sex="1"--><!--@type="H"--><!--@statut="roi"--><!--@age="A"--><!--@stat_amour="néant"-->, roi d'Argos.</castItem>
 		<castItem>
-                    <role corresp="#licas">LICAS</role><!--@sex="1" @type="H" @statut="confident" @age="A" @stat_amour="néant"-->, Confident de Proetus.</castItem>
+                    <role corresp="#licas">LICAS</role><!--@sex="1"--><!--@type="H"--><!--@statut="confident"--><!--@age="A"--><!--@stat_amour="néant"-->, Confident de Proetus.</castItem>
 		<castItem>
-                    <role corresp="#bellerophon">BÉLLÉROPHON</role><!--@sex="1" @type="H" @statut="prince" @age="A" @stat_amour="néant"-->, prince d'Ephyre réfugié auprès de Proetus.</castItem>
+                    <role corresp="#bellerophon">BÉLLÉROPHON</role><!--@sex="1"--><!--@type="H"--><!--@statut="prince"--><!--@age="A"--><!--@stat_amour="néant"-->, prince d'Ephyre réfugié auprès de Proetus.</castItem>
 		<castItem>
-                    <role corresp="#stenobee">STENOBÉE</role><!--@sex="2" @type="H" @statut="prince" @age="A" @stat_amour="néant"-->, fille aînée d'Iobas roi de Lycie.</castItem>
+                    <role corresp="#stenobee">STENOBÉE</role><!--@sex="2"--><!--@type="H"--><!--@statut="prince"--><!--@age="A"--><!--@stat_amour="néant"-->, fille aînée d'Iobas roi de Lycie.</castItem>
 		<castItem>
-                    <role corresp="#megare">MÉGARE</role><!--@sex="2" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#megare">MÉGARE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#philonoe">PHILONOE</role><!--@sex="2" @type="H" @statut="aristocrate" @age="A" @stat_amour="néant"-->, soeur de Stenobée.</castItem>
+                    <role corresp="#philonoe">PHILONOE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, soeur de Stenobée.</castItem>
 		<castItem>
-                    <role corresp="#ladice">LADICE</role><!--@sex="2" @type="H" @statut="confident" @age="A" @stat_amour="néant"-->, confidente de Philonoé.</castItem>
+                    <role corresp="#ladice">LADICE</role><!--@sex="2"--><!--@type="H"--><!--@statut="confident"--><!--@age="A"--><!--@stat_amour="néant"-->, confidente de Philonoé.</castItem>
 		<castItem>
-                    <role corresp="#timante">TIMANTE</role><!--@sex="1" @type="H" @statut="capitaine" @age="A" @stat_amour="néant"-->, capitaine des gardes du roi de Lycie.</castItem>
+                    <role corresp="#timante">TIMANTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="capitaine"--><!--@age="A"--><!--@stat_amour="néant"-->, capitaine des gardes du roi de Lycie.</castItem>
 		<castItem>
-                    <role corresp="#gardes">GARDES</role><!--@sex="9" @type="H" @statut="garde" @age="A" @stat_amour="néant"-->.</castItem>
+                    <role corresp="#gardes">GARDES</role><!--@sex="9"--><!--@type="H"--><!--@statut="garde"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 	</castList>
-	<!--usage of set in correct place but with unknown attributes <set location="Patare" country="Turquie" periode="Temps mythologiques" gps="36.275357, 29.284360">La scène est à Patare, capitale de Lycie.</set>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Patare" country="Turquie" periode="Temps mythologiques" gps="36.275357, 29.284360">La scène est à Patare, capitale de Lycie.</set>-->
 	<note>Tiré de "Le Théâtre de Mr Quinault contenant ses tragédies, comédies et opéra. Dernière édition. [...] Tome III."  pp 246-316.</note>
 </front>
 <body>
@@ -216,8 +216,9 @@
 <sp who="#proetus">
                         <speaker>PROETUS.</speaker>
 	<l n="66" part="F">Béllérophon, expliquez-vous, parlez.</l>
-	<l n="67">Apprenez-moi quel trouble ainsi vous peut surprendre.</l>
-B</sp>
+	<l n="67">Apprenez-moi quel trouble ainsi vous peut surprendre.</l><!--text():
+B-->
+                    </sp>
 <sp who="#bellerophon">
                         <speaker>BÉLLÉROPHON.</speaker>
 	<l n="68">Héla ! Seigneur, comment pourrai-je vous l'apprendre,</l>
