@@ -6,8 +6,8 @@ declare variable $continue :=
     (: set to true to preserve older transformations.
        set to false to remove all previouse transformations at first.
     :)
-    true();
-(:    false();:)
+(:    true();:)
+    false();
 
 declare variable $who-tokenize-pattern := '/|,';
 
@@ -73,7 +73,10 @@ declare function local:transform($nodes) {
                 (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
                 $node/@* except ($node/@id, $node/@n, $node/@syll, $node/@part, $node/@par, $node/@syl),
                 attribute n {string($node/@id)},
-                ($node/@part, $node/@par) ! attribute part {upper-case(.)}, (: typo in andrieux-anaximandre.xml :)
+                ($node/@part, $node/@par) ! 
+                    (if( upper-case(.) = ("F", "I", "M", "N", "Y") )
+                    then (attribute part {upper-case(.)})  (: typo in andrieux-anaximandre.xml :)
+                    else (comment {'WARNING: invalid @part in source.'}, local:attribute-to-comment(.))),
                 if(not($node/@n)) then () else comment {'WARNING: source contains @n as well. it is removed here.'},
                 local:transform($node/node())
             }, ($node/@syll, $node/@syl) ! local:attribute-to-comment(.) )
@@ -139,6 +142,15 @@ declare function local:transform($nodes) {
                 attribute type {'privilege'},
                 local:transform($node/node())
             }, ($node/@id, $node/@date) ! local:attribute-to-comment(.))
+            case element(imprimeur) return
+                (: remove unknown element :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except $node/@id,
+                attribute type {'imprimeur'},
+                element {QName('http://www.tei-c.org/ns/1.0', 'p')}{
+                    local:transform($node/node())}
+            }, ($node/@id) ! local:attribute-to-comment(.))
+            
             case element(acheveImprime) return
                 (: remove unknown element :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
