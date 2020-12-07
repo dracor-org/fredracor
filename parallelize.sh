@@ -90,7 +90,8 @@ wait
 
 # get the transformed data
 for instance in $(eval echo {1..$THREADS}); do
-    curl http://admin:@localhost:8081/exist/rest/db/parallelize-download-target.xq &
+    port="808$i"
+    curl http://admin:@localhost:$port/exist/rest/db/parallelize-download-target.xq &
 done
 wait
 
