@@ -4,7 +4,7 @@
 # works with docker as well
 
 THREADS=3
-CONTAINER=() # TODO: put container ids here, to stop them afterwards
+CONTAINER=() # put container ids here, to stop them afterwards
 
 THIS_DIR="$PWD"
 WORK_DIR="/tmp/fredracor"
@@ -50,9 +50,9 @@ for i in $(eval echo {1..$THREADS}); do
     port="808$i"
     for file in *.xq; do
         curl -X PUT -H 'Content-Type: application/xquery' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/$file;
-   done
+    done
     echo "scripts placed at instance $i"
- done
+done
 
 # load data at first instance, shared to all others afterwards
 # about 15 minutes
