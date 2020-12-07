@@ -1,4 +1,7 @@
 #!/bin/bash
+# this script is used to load and convert the source corpus
+# with parallel processors. it uses podman, but MAY BE it
+# works with docker as well
 
 THREADS=6
 CONTAINERS=[] # TODO: put container ids here, to stop them afterwards
@@ -39,12 +42,15 @@ for i in $(eval echo {1..$THREADS}); do
     echo "scripts placed at instance $i"
 done
 
-# load data at first instance (shared afterwards to all others)
+# load data at first instance (shared to all others afterwards)
+echo "load data on instance 1"
 for file in load*.xq; do
-   curl http://admin:@localhost:8081/exist/rest/db/$file
+   curl --silent --output report-load.log http://admin:@localhost:8081/exist/rest/db/$file
 done
 
-curl http://admin:@localhost:8081/exist/rest/db/parallelize-download-source.xq
+echo "load source data to volume, remove from instance 1 afterwards"
+curl "http://admin:@localhost:8081/exist/rest/db/parallelize-download-source.xq"
+
 
 # distribute source data to the databases
 
@@ -54,7 +60,7 @@ distribute () {
     echo "uploading files to instance $instance"
 	for i in $(eval echo {$instance..$num..$THREADS}); do
         file=$(ls $SOURCE_DIR | head -$i | tail -1)
-        if [ (($i % 50)) -eq "0" ]; then echo "$instance :: $i :: $file"; fi
+        if [ $(($i % 50)) -eq "0" ]; then echo "$instance :: $i :: $file"; fi
         curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/data/$file;
 	done
 }
