@@ -3,7 +3,9 @@
 # with parallel processors. it uses podman, but MAY BE it
 # works with docker as well
 
-THREADS=6
+THREADS=16 # max 9 threads
+PORTPREFIX="644"
+
 CONTAINER=() # put container ids here, to stop them afterwards
 
 THIS_DIR="$PWD"
@@ -13,6 +15,26 @@ TARGET_DIR="$WORK_DIR/transformed"
 
 START=$(date +"%T")
 echo $START
+
+# interrupt
+# get log from container
+log () {
+    date=$(date +"%F")
+    for c in ${CONTAINER[@]}; do
+        podman logs $c | grep "transform.xq" >> report-$date-$START.log
+        cp report-$date-$START.log report-latest.log
+    done
+}
+
+stopContainer () {
+    # remove container
+    for c in ${CONTAINER[@]}; do
+        echo "stopping container $c"
+        podman stop $c
+    done
+}
+
+trap 'echo "SIGINT received! Terminating…"; log; stopContainer;' SIGINT SIGTERM
 
 # create dirs
 if [ ! -d $WORK_DIR ];   then mkdir $WORK_DIR; fi
@@ -26,7 +48,7 @@ if [ ! -d $TARGET_DIR ]; then mkdir $TARGET_DIR; fi
 
 for instance in $(eval echo {1..$THREADS}); do
     echo "thread $instance";
-    port="808$instance"
+    port="$PORTPREFIX$instance"
     # start the engine
     CONTAINER_ID=$(podman run --volume /tmp/fredracor:/fredracor:z -p $port:8080 --detach existdb/existdb:latest)
     CONTAINER+=($CONTAINER_ID)
@@ -37,7 +59,7 @@ done
 # about 3 minutes for 6 instances
 echo "waiting for all instances to be ready…"
 for i in $(eval echo {1..$THREADS}); do
-    port="808$i"
+    port="$PORTPREFIX$i"
     while [[ $(curl -I -s http://localhost:$port | grep -c "200 OK") -eq "0" ]] ; do
         sleep 1s
     done
@@ -48,7 +70,7 @@ echo "$(date +"%T") :: ready"
 
 # put scripts to the databases
 for i in $(eval echo {1..$THREADS}); do
-    port="808$i"
+    port="$PORTPREFIX$i"
     for file in *.xq; do
         curl -X PUT -H 'Content-Type: application/xquery' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/$file;
     done
@@ -60,30 +82,42 @@ done
 if [[ $reload != "n" ]]; then
     echo "load data on instance 1"
     for file in load*.xq; do
-        curl --silent --output report-load.log http://admin:@localhost:8081/exist/rest/db/$file
+        curl --silent --output report-load.log http://admin:@localhost:$PORTPREFIX1/exist/rest/db/$file
     done
 fi
 
 echo "load source data to volume, remove from instance 1 afterwards"
-curl "http://admin:@localhost:8081/exist/rest/db/parallelize-download-source.xq"
+if [[ $reload != "n" ]]; then
+    curl --silent "http://admin:@localhost:$PORTPREFIX1/exist/rest/db/parallelize-download-source.xq"
+fi
+curl --silent --output "$WORK_DIR/tei_all.rng" "http://admin:@localhost:$PORTPREFIX1/exist/rest/db/tei_all.rng"
+curl --silent --output "$WORK_DIR/ids.xml" "http://admin:@localhost:$PORTPREFIX1/exist/rest/db/ids.xml"
 echo "$(date +"%T") :: load data"
+
+numSourceFiles=$(ls $SOURCE_DIR | wc -l)
+echo "$(date +"%T") :: received $numSourceFiles files"
 
 # distribute source data to the databases
 # about 3 minutes
 distribute () {
     instance=$1
-    port="808$instance"
+    port="$PORTPREFIX$instance"
     echo "uploading files to instance $instance"
 	for i in $(eval echo {$instance..$num..$THREADS}); do
         file=$(ls $SOURCE_DIR | head -$i | tail -1)
         curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/data/$file;
 	done
     # add tei_all.rng to the db
-    file=$WORK_DIR/tei_all.rng
-    curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/$file;
+    filename=tei_all.rng
+    file=$WORK_DIR/$filename
+    curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db;
+    filename=ids.xml
+    file=$WORK_DIR/$filename
+    curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db;
 }
 
 num=$(find $SOURCE_DIR -type f | wc -l)
+# debug num=5
 cd $SOURCE_DIR
 for instance in $(eval echo {1..$THREADS}); do
     distribute $instance &
@@ -91,8 +125,6 @@ done
 
 wait
 
-numSourceFiles=$(ls $SOURCE_DIR | wc -l)
-echo "$(date +"%T") :: received $numSourceFiles files"
 echo "$(date +"%T") :: distribute"
 
 # return to git repo dir
@@ -104,10 +136,10 @@ echo "transforming the data"
 
 transform () {
     i=$1
-    port="808$i"
+    port="$PORTPREFIX$i"
     for file in transfo*.xq; do
         echo "start transformation on instance $i"
-        curl http://admin:@localhost:$port/exist/rest/db/$file
+        curl --silent http://admin:@localhost:$port/exist/rest/db/$file
     done
 }
 
@@ -115,24 +147,12 @@ for i in $(eval echo {1..$THREADS}); do
     transform $i &
 done
 
-counter=0
-while [ $counter -lt $numSourceFiles ]; do
-    array=()
-    for instance in $(eval echo {1..$THREADS}); do
-        port="808$instance"
-        array+=$(curl --silent http://admin:@localhost:$port/exist/rest/db/transformed | grep -c "exist:resource")
-    done
-    read <<< "${array[@]/%/+}0"
-    counter="$((REPLY))"
-    echo "$(date +"%T") :: $counter passed objects."
-    sleep 120s;
-done &
 wait
 echo "$(date +"%T") :: transformation done."
 
 # get the transformed data
 for instance in $(eval echo {1..$THREADS}); do
-    port="808$instance"
+    port="$PORTPREFIX$instance"
     curl http://admin:@localhost:$port/exist/rest/db/parallelize-download-target.xq &
 done
 wait
@@ -140,17 +160,21 @@ wait
 # import new files to THIS repo
 cp $TARGET_DIR/*.xml $THIS_DIR/tei/
 
-# get log from container
-date=$(date +"%F")
-for c in $CONTAINER; do
-    podman logs $c >> $date-report.log
-done
-
-# remove container
-for c in $CONTAINER; do
-    echo "stopping container $c"
-    podman stop $c
-done
+# terminate
+log
+stopContainer
 
 echo "$(date +"%T") :: all done"
+
+if [ "$(ls -A $TARGET_DIR)" ]; then
+    countTargets=$(ls $TARGET_DIR/*.xml | wc -l)
+    echo "$(date +"%T") :: successfully created fredracor with $countTargets items."
+    valid=$(grep -c "✔ tei_all" report-latest.log)
+    echo "$(date +"%T") :: ✔ $valid tei_all documents prepared"
+    invalid=$(grep -c "✘ tei_all" report-latest.log)
+    echo "$(date +"%T") :: ✘ $invalid tei_all documents found"
+    jingmessages=$(grep -c "/message" report-latest.log)
+    echo "$(date +"%T") :: $jingmessages messages reported by jing."
+fi
+
 exit 0
