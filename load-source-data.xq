@@ -37,6 +37,20 @@ declare function local:load-tei-all() as xs:string {
         xmldb:store("/db", $filename, $data, 'application/xml')
 };
 
+declare function local:prepare-ids($documentUrls as xs:string+) {
+    element ids {
+        attribute dateTime { current-dateTime() },
+        for $url at $pos in $documentUrls
+        return
+            element play {
+                attribute dracor {'fre' || format-number($pos, '000000')},
+                attribute orig { tokenize($url, '/')[last()] },
+                attribute url {$url}
+            }
+    }
+    ! xmldb:store('/db', 'ids.xml', ., 'application/xml')
+};
+
 let $baseUrl := "http://theatre-classique.fr/pages"
 let $request :=
     <hc:request method="get" href="{$baseUrl}/programmes/PageEdition.php"/>
@@ -88,6 +102,8 @@ return
     xmldb:store($targetCollectionPath, $resource-name, $new)
 
 let $loadTeiAll := local:load-tei-all()
+
+let $prepareIdList := local:prepare-ids($documentUrls)
 
 return
     string-join($list, "&#10;")
