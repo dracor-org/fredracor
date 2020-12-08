@@ -78,6 +78,9 @@ distribute () {
         file=$(ls $SOURCE_DIR | head -$i | tail -1)
         curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/data/$file;
 	done
+    # add tei_all.rng to the db
+    file=$WORK_DIR/tei_all.rng
+    curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/$file;
 }
 
 num=$(find $SOURCE_DIR -type f | wc -l)
@@ -142,7 +145,6 @@ date=$(date +"%F")
 for c in $CONTAINER; do
     podman logs $c >> $date-report.log
 done
-
 
 # remove container
 for c in $CONTAINER; do
