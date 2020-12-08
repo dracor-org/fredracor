@@ -303,6 +303,8 @@ for $resource at $pos in xmldb:get-child-resources($collection-uri)
 (:where $pos eq 100:)
 
 let $log := util:log-system-out( substring-before(util:eval( 'current-time()' ), '.') || ' preparing ' || ($pos => format-number('0000') => replace('^0', ' ') => replace('^ 0', '  ') => replace('^  0', '   ')) || ': ' || $resource)
+let $id-from-list := string( doc('/db/ids.xml')//play[@orig eq $resource]/@dracor )
+let $id := if($id-from-list) then $id-from-list else format-number($pos, 'x00000') 
 let $doc := doc('/db/data/' || $resource)
 let $title := 
     if($doc//*:titlePart/@type="main")
@@ -380,7 +382,7 @@ let $tei :=
             <publicationStmt>
                 <publisher xml:id="dracor">DraCor</publisher>
                 <idno type="URL">https://dracor.org</idno>
-                <idno type="dracor" xml:base="https://dracor.org/id/">fre{format-number($pos, '000000')}</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre{$id-from-list}</idno>
                 <availability>
                     <licence>
                         <ab>CC BY NC SA 3.0</ab>
