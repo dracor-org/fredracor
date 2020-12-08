@@ -3,7 +3,7 @@
 # with parallel processors. it uses podman, but MAY BE it
 # works with docker as well
 
-THREADS=3
+THREADS=6
 CONTAINER=() # put container ids here, to stop them afterwards
 
 THIS_DIR="$PWD"
@@ -24,12 +24,13 @@ if [ ! -d $SOURCE_DIR ];
 fi
 if [ ! -d $TARGET_DIR ]; then mkdir $TARGET_DIR; fi
 
-for i in $(eval echo {1..$THREADS}); do
-    echo "thread $i";
-    port="808$i"
+for instance in $(eval echo {1..$THREADS}); do
+    echo "thread $instance";
+    port="808$instance"
     # start the engine
     CONTAINER_ID=$(podman run --volume /tmp/fredracor:/fredracor:z -p $port:8080 --detach existdb/existdb:latest)
-    CONTAINER+=(CONTAINER_ID)
+    CONTAINER+=($CONTAINER_ID)
+    echo "container id: $CONTAINER_ID"
 done
 
 # wait for the first engine to be ready
@@ -86,6 +87,9 @@ for instance in $(eval echo {1..$THREADS}); do
 done
 
 wait
+
+numSourceFiles=$(ls $SOURCE_DIR | wc -l)
+echo "$(date +"%T") :: received $numSourceFiles files"
 echo "$(date +"%T") :: distribute"
 
 # return to git repo dir
@@ -108,8 +112,20 @@ for i in $(eval echo {1..$THREADS}); do
     transform $i &
 done
 
+counter=0
+while [ $counter -lt $numSourceFiles ]; do
+    array=()
+    for instance in $(eval echo {1..$THREADS}); do
+        port="808$instance"
+        array+=$(curl --silent http://admin:@localhost:$port/exist/rest/db/transformed | grep -c "exist:resource")
+    done
+    read <<< "${array[@]/%/+}0"
+    counter="$((REPLY))"
+    echo "$(date +"%T") :: $counter passed objects."
+    sleep 120s;
+done &
 wait
-echo "$(date +"%T") :: transform"
+echo "$(date +"%T") :: transformation done."
 
 # get the transformed data
 for instance in $(eval echo {1..$THREADS}); do
