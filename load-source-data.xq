@@ -38,8 +38,9 @@ declare function local:load-tei-all() as xs:string {
 };
 
 declare function local:prepare-ids($documentUrls as xs:string+) {
+    let $ids :=
     element ids {
-        attribute dateTime { current-dateTime() },
+        attribute dateTime { current-dateTime() => string() },
         for $url at $pos in $documentUrls
         return
             element play {
@@ -48,7 +49,25 @@ declare function local:prepare-ids($documentUrls as xs:string+) {
                 attribute url {$url}
             }
     }
-    ! xmldb:store('/db', 'ids.xml', ., 'application/xml')
+    return
+        xmldb:store('/db', 'ids.xml', $ids, 'application/xml')
+};
+
+declare function local:write-on-filesystem($resource-name as xs:string, $node as node()) {
+    let $path := '/fredracor/data'
+    let $fsAvailable := file:is-directory($path)
+    return
+        if($fsAvailable)
+        then
+            let $options :=
+                map{
+                    'method': 'xml',
+                    'omit-xml-declaration': false(),
+                    'indent': true()
+                }
+            let $do := file:serialize($node, $path || '/' || $resource-name, $options)
+            return () (: silence :)
+        else () (: silence :)
 };
 
 let $baseUrl := "http://theatre-classique.fr/pages"
@@ -70,6 +89,7 @@ let $prepareCollection :=
 let $createCollection := xmldb:create-collection("/db", $targetCollectionName)
 let $list := 
     for $url at $pos in $documentUrls
+    (: [position() lt 61]    DEBUG :)
     let $filename := tokenize($url, "/")[last()] 
         => replace("\s", "%20") (: MARIVAUX _ACTEURSDEBONNEFOI.xml :)
     let $log := util:log-system-out( $pos || "/" || $count || ": " ||$filename)
@@ -82,16 +102,17 @@ let $list :=
                 hc:send-request($request)
             return if(hc:send-request($request)/@status = "200")
             then $response[2]
-            else <error href="{$url}">{ $response }</error>
+            else util:log-system-out('got status ' || hc:send-request($request)/@status || 'for url ' || $url)
         } catch * {
             try {
                 doc( $url )
             } catch * {
-                <error href="{$url}">Can not get document.</error>
+                util:log-system-out('got status ' || hc:send-request($request)/@status || 'for url ' || $url)
             }
         }
     return
-        xmldb:store($targetCollectionPath, $filename, $doc)
+        if(not($doc)) then () else 
+        xmldb:store($targetCollectionPath, replace($filename, '%20', ''), $doc)
 
 let $preprocessing :=
 (: remove namespace to make all documents same :)
@@ -99,7 +120,8 @@ for $item in collection($targetCollectionPath)//tei:TEI/base-uri()
 let $resource-name := tokenize($item, "/")[last()]
 let $new := functx:change-element-ns-deep(doc($item), "", "")
 return
-    xmldb:store($targetCollectionPath, $resource-name, $new)
+    (xmldb:store($targetCollectionPath, $resource-name, $new),
+    local:write-on-filesystem($resource-name, $new))
 
 let $loadTeiAll := local:load-tei-all()
 
