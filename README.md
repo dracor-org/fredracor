@@ -43,7 +43,45 @@ Here is a list of changes we made:
 - move ending dot into `tei:castItem`, when it is right after (and so a child of `tei:castList`)
 - remove empty `@type`
 
-TODOs:
+## TODOs:
 - ensure DraCor IDs stay the same. Currently they are generated from a position in an alphabetic list and will change when an item is inserted in the list before.
 - as of 2020-12-04 we do not have valid TEI-all
 - following error is reported during transformation on 112, 137 and 1112: `04 Dec 2020 13:13:54,509 [qtp281487983-628] INFO  (Predicate.java [selectByPosition]:454) - contextSet and outerNodeSet don't share any document`
+
+## How to rebuild from source
+
+To rebuild from the source a script is present that uses podman (docker) container to execute XQuery scripts.
+It is organized in the following way:
+0. prepare a work directrory at `/tmp/fredracor`
+1. start a bunch of pods (container) in parallel running eXist-db
+2. Load the source corpus on pod #1
+3. distribute the files to the pods (container) in parallel
+4. run the main script [`transform.xq`](transform.xq) that will also prepare a validation for every file
+5. wait for the results and copy them to THIS repo dir
+6. collect the log files (with validation output)
+7. stop all pods
+
+### Dependencies
+- bash
+- curl
+- podman
+  - MAY BE this will work with `docker` as well. simply search'n'replace the term `podman` with `docker` in the script.
+
+You should not have any problems with a recent Fedora Linux! :-)
+
+### Usage
+Run `./parallelize.sh` with or without the following options.
+
+#### debug mode
+`./parallelize.sh --debug`
+
+For developing purposes the debug mode will create only 2 instances (pods or container) and will work on just a few (and only small) files. But if not present, it
+will load the complete source to a temporary directory. You can use the loaded files in later runs as long as your local `/tmp` folder is not removed.
+If you want more or less threads and number of files, alter the variable `THREADS=` and `num=` in the script.
+
+For further debugging the combined log from every pod can be viewed with `podman logs -f $(cat /tmp/fredracor/container)` during runtime.
+
+#### Progress Bar
+`./parallelize.sh --progress`
+
+[The internet does not forget.](https://twitter.com/umblaetterer/status/608349018113101824) That's why the script can be run with an optional progress bar shown in the terminal.
