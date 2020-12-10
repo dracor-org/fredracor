@@ -3,7 +3,19 @@
 # with parallel processors. it uses podman, but MAY BE it
 # works with docker as well
 
+# read parameters
+debug="" # enables debug mode with option --debug
+
+while [ -n "$1" ]; do
+    case "$1" in
+    --help) echo "FreDraCor conversion. loads, transforms and validates results in parallel processes. \
+                OPTIONS: \
+                --debug     run only on a few files and less parallel threads\
+                --progress  enable a progress bar"; exit 0; ;;
+    --debug) debug="true"; echo "DEBUG MODE ENABLED" ;;
 THREADS=6 # usually more than 7 threads create a slight overhead
+fi
+
 PORTPREFIX="644"
 
 CONTAINER=() # put container ids here, to stop them afterwards
@@ -116,7 +128,13 @@ distribute () {
     port="$PORTPREFIX$instance"
     echo "uploading files to instance $instance"
 	for i in $(eval echo {$instance..$num..$THREADS}); do
+        if [ ! -z $debug ]; then
+            # take the smallest files in debug mode
+            file=$(ls -Sr $SOURCE_DIR | head -$i | tail -1)
+        else
+            # alphanumeric order
         file=$(ls $SOURCE_DIR | head -$i | tail -1)
+        fi
         curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/data/$file;
 	done
     # add tei_all.rng to the db
@@ -128,8 +146,13 @@ distribute () {
     curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/$filename;
 }
 
-num=$(find $SOURCE_DIR -type f | wc -l)
-# debug num=60
+if [ ! -z $debug ]; then
+    # take only a few files in debug mode
+    num=33
+else
+    num=$numSourceFiles
+fi
+
 cd $SOURCE_DIR
 for instance in $(eval echo {1..$THREADS}); do
     distribute $instance &
