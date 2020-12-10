@@ -45,10 +45,10 @@
                     <person xml:id="adrien" sex="MALE">
                         <persName>Adrien</persName>
                     </person>
-                    <person xml:id="le-complice" sex="UNKNOWN">
+                    <person xml:id="le-complice" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Le-complice</persName>
                     </person>
-                    <person xml:id="le-chef" sex="UNKNOWN">
+                    <person xml:id="le-chef" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Le-chef</persName>
                     </person>
                 </listPerson>
@@ -97,7 +97,7 @@
 		<castItem>
                     <role corresp="#le-chef-des-agents">LE CHEF DES AGENTS</role><!--@sex="1"--><!--@type="H"--><!--@statut="policier"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
 		<castItem>
-                    <role statu="policier" corresp="#agents">AGENTS</role><!--@sex="1"--><!--@type="H"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+                    <role corresp="#agents">AGENTS</role><!--@sex="1"--><!--@type="H"--><!--@age="A"--><!--@stat_amour=""--><!--@statu="policier"-->.</castItem>
 	</castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XXème" gps="48.856614, 2.352222"/>-->
 	<note>Extrait de l'ouvrage "Théâtre sans directeur" Paris, Albin Michel, 1930, pp. 105-112</note>

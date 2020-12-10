@@ -3,10 +3,7 @@ xquery version "3.1";
 declare namespace tei='http://www.tei-c.org/ns/1.0';
 
 declare variable $continue :=
-    (: set to true to preserve older transformations.
-       set to false to remove all previouse transformations at first.
-    :)
-(:    true();:)
+
     false();
 
 declare variable $who-tokenize-pattern := '/|,';
@@ -75,6 +72,7 @@ declare function local:transform($nodes) {
             case element(sp) return
                 let $exceptionsStage := (
                                 $node/@stage,
+                                $node/@stag,
                                 $node/@styage,
                                 $node/@stgae,
                                 $node/@qtage,
@@ -82,12 +80,21 @@ declare function local:transform($nodes) {
                                 $node/@dtage,
                                 $node/@stgage,
                                 $node/@swardtage,
+                                $node/@wardstage,
+                                $node/@corstage,
                                 $node/@satge,
                                 $node/@s6tage,
                                 $node/@stahe,
                                 $node/@stagae,
                                 $node/@stge,
-                                $node/@wtage
+                                $node/@sage,
+                                $node/@wtage,
+                                $node/@syage,
+                                $node/@stagee,
+                                $node/@wstage,
+                                $node/@tstage,
+                                $node/@stahge,
+                                $node/@astage
                                 )
                 let $exceptionsWho := (
                                 $node/@who,
@@ -95,7 +102,8 @@ declare function local:transform($nodes) {
                                 $node/@givewho,
                                 $node/@towardwho,
                                 $node/@embarrassedwho,
-                                $node/@breakwho
+                                $node/@breakwho,
+                                $node/@ho
                                 )
                 return
                 (element {QName('http://www.tei-c.org/ns/1.0', 'sp')} {
@@ -108,17 +116,17 @@ declare function local:transform($nodes) {
             case element(s) return
                 (: minor correction to prevent multiple usage of an ID :)
                 element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except ($node/@id, $node/@n),
-                attribute n {string($node/@id), string($node/@di)}, (: typo barreradet-candide.xml :)
+                $node/@* except ($node/@id, $node/@i2d, $node/@di, $node/@d, $node/@n),
+                ($node/@id, $node/@di, $node/@i2d, $node/@d) ! attribute n {string(.)}, (: typo barreradet-candide.xml :)
                 local:transform($node/node())
             }
             case element(l) return
                 (: minor correction to prevent multiple usage of an ID :)
                 (: removing unknown attributes @syll, @part :)
                 (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except ($node/@id, $node/@n, $node/@syll, $node/@part, $node/@par, $node/@pat, $node/@patr, $node/@prt, $node/@syl),
+                $node/@* except ($node/@id, $node/@n, $node/@syll, $node/@part, $node/@par, $node/@pat, $node/@patr, $node/@prt, $node/@parrt, $node/@syl),
                 attribute n {string($node/@id)},
-                ($node/@part, $node/@par, $node/@pat, $node/@patr, $node/@prt) ! 
+                ($node/@part, $node/@par, $node/@pat, $node/@patr, $node/@prt, $node/@parrt) ! 
                     (if( upper-case(.) = ("F", "I", "M", "N", "Y") )
                     then (attribute part {upper-case(.)})  (: typo in andrieux-anaximandre.xml :)
                     else (comment {'WARNING: invalid @part in source.'}, local:attribute-to-comment(.))),
@@ -134,33 +142,57 @@ declare function local:transform($nodes) {
                 }
 
             case element(p) return
+                let $exceptionsType := (
+                                $node/@type,
+                                $node/@tyep,
+                                $node/@typee)
+
+                let $exceptionsId := (
+                                $node/@id,
+                                $node/@i,
+                                $node/@is,
+                                $node/@di,
+                                $node/@d,
+                                $node/@n) (: put @n here, to integrate in new created @n by a single instruction :)
+
                 (: move tei:p[@type='v'] to tei:l as it represents vers. distinction unclear. :)
-                if($node/@type = ('v', 'vers') or $node/@tyep = ('v', 'vers') or $node/@typee = ('v', 'vers'))
+                let $vers := ('v', 'vers')
+                let $isVers := ($node/@type = $vers) or ($node/@tyep = $vers) or ($node/@typee = $vers) or ($node/@class = $vers)
+                
+                return
+                    if($isVers)
                 then
                     element {QName('http://www.tei-c.org/ns/1.0', 'l')} {
-                    $node/@* except ($node/@id, $node/@is, $node/@n, $node/@type, $node/@tyep, $node/@typee),
-                    $node/@id ! attribute n {string($node/@id)},
+                    $node/@* except ($exceptionsId, $exceptionsType),
+                    $exceptionsId ! attribute n {string(.)},
                     local:transform($node/node())
                 }
                 else
-                    element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                    $node/@* except ($node/@id, $node/@is, $node/@di, $node/@n),
-                    $node/@id ! attribute n {string($node/@id)},
-                    $node/@is ! attribute n {string($node/@is)}, (: typo in anonyme-clubdesdames.xml :)
-                    $node/@di ! attribute n {string($node/@di)}, (: typo in anonyme-ecoletragique.xml :)
+                    (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
+                    $node/@* except ($exceptionsId),
+                    $exceptionsId ! attribute n {string(.)},
                     local:transform($node/node())
-                }
-            
+                }, ($node/@class) ! local:attribute-to-comment(.) )
+                
             case element(role) return
                 (: correct invalid IDs here as well :)
                 (: removing unknown attributes @sex, @type, @statut, @age, @stat_amour :)
+                let $exceptionsRole := (
+                                    $node/@sex,
+                                    $node/@type,
+                                    $node/@statut,
+                                    $node/@age,
+                                    $node/@stat_amour,
+                                    $node/@statut_amoureux,
+                                    $node/@statu
+                                    )
+                return
                 (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except ($node/@id, $node/@sex, $node/@type, $node/@statut, $node/@age, $node/@stat_amour, $node/@statut_amoureux),
+                $node/@* except ($node/@id, $exceptionsRole),
                 attribute corresp {'#' || local:translate(string($node/@id))},
                 local:transform($node/node())
             },
-                ($node/@sex, $node/@type, $node/@statut, $node/@age, $node/@stat_amour, $node/@statut_amoureux)
-                ! local:attribute-to-comment(.) )
+                ($exceptionsRole) ! local:attribute-to-comment(.) )
             case element(docDate) return
                 (: correct unknown @value to @when :)
                 element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
@@ -259,6 +291,13 @@ declare function local:transform($nodes) {
                 attribute type {'approbation'},
                 local:transform($node/node())
             }, ($node/@id, $node/@value) ! local:attribute-to-comment(.) )
+            case element(appobation) return (: typo :)
+                (: remove unknown element :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except ($node/@id, $node/@value),
+                attribute type {'approbation'},
+                local:transform($node/node())
+            }, ($node/@id, $node/@value) ! local:attribute-to-comment(.) )
             
             case element(enregistrement) return
                 (: remove unknown element :)
@@ -314,7 +353,11 @@ declare function local:transform($nodes) {
                                     $node/@typr,
                                     $node/@typpe,
                                     $node/@tyep,
-                                    $node/@tyê
+                                    $node/@tyê,
+                                    $node/tyype,
+                                    $node/@tpe,
+                                    $node/@tye,
+                                    $node/@tyepe
                                     )
                 return
                 (: rename attribute typ to type :)
@@ -378,7 +421,8 @@ declare function local:transform($nodes) {
                     })
                 else
                 (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
-                $node/@* except $node/@stage,
+                $node/@* except ($node/@stage, $node/@tye, $node/@tyepe, $node/@ype),
+                ($node/@tye, $node/@tyepe, $node/@ype) ! attribute type { string(.) },
                 local:transform($node/node())
             }, $node/@stage ! local:attribute-to-comment(.))
 
@@ -388,6 +432,12 @@ declare function local:transform($nodes) {
                 $node/@* except $node/@id, (: empty id attribute :)
                 local:transform($node/node())
             }, comment { 'source' })
+
+            case element(a) return
+                element {QName('http://www.tei-c.org/ns/1.0', 'ref')} {
+                    $node/@href ! attribute target {string(.)},
+                    local:transform($node/node())
+                }
 
         default return
             element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
@@ -531,7 +581,8 @@ let $tei :=
             <particDesc>
                 <listPerson>
 {
-    for $who in (($doc//*:text//*:sp/tokenize(@who, $who-tokenize-pattern) => distinct-values()) ! local:translate(.) => distinct-values())
+    for $who in (($doc//*:text//*:sp/tokenize(./@who || ./@ho, $who-tokenize-pattern) => distinct-values()) ! local:translate(.) => distinct-values())
+    where $who (: do not parse empty @who :)
     (: inconsistent usage of @id with @who. we have to translate/normalize to match. :)
     let $castItem := $doc//*:role[local:translate(@id) eq $who]/parent::*
     let $sex := switch (string($castItem[1]/*:role[1]/@sex))
@@ -549,7 +600,7 @@ let $tei :=
         then upper-case(substring($who, 1, 1)) || substring($who, 2, 900)
         else $persName
     return
-        <person xml:id="{$who}" sex="{$sex}">
+        <person xml:id="{$who}" sex="{$sex}">{if(not($castItem)) then comment { 'WARNING: no castItem found for reference in @who' } else ()}
             <persName>{$persName}</persName>
         </person>
 }

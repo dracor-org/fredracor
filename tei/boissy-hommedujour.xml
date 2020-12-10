@@ -63,7 +63,7 @@
                     <person xml:id="monsieur-de-forlis" sex="MALE">
                         <persName>Monsieur de forlis</persName>
                     </person>
-                    <person xml:id="le-laquais" sex="UNKNOWN">
+                    <person xml:id="le-laquais" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Le-laquais</persName>
                     </person>
                 </listPerson>
@@ -1811,12 +1811,12 @@
                         <speaker>LE BARON.</speaker>
 	<l n="703" part="M">Bon ! </l>
 </sp><!--@who="LE BARON"-->
-<sp astage="toward" who="#le-marquis">
+<sp who="#le-marquis">
                         <speaker>LE MARQUIS, à Lucile.</speaker>
 	<l n="703" part="F">Non, c'est moi qui vais sortir. </l>
 <stage type="aparte">À part.</stage>
 	<l n="704">Mon transport à la fin pourrait me découvrir. </l>
-</sp><!--@who="LE MARQUIS"-->
+</sp><!--@astage="toward"--><!--@who="LE MARQUIS"-->
 <sp who="#le-baron">
                         <speaker>LE BARON, au Marquis.</speaker>
 	<l n="705">Je vais la faire agir auprès de son amie. </l>
@@ -3572,11 +3572,11 @@
 	<l n="1428">Sa lecture peut seule adoucir ma douleur. </l>
 <stage type="read">Elle lit. </stage>
 <p n="1">
-	<s n="1 ">« Non, belle Lucile, il n'est point de situation plus singulière que la nôtre, ni d'amant plus malheureux que moi.</s>
-	<s n="2 ">Je vous vois à toute heure sans pouvoir m'expliquer. </s>
-	<s n="3 ">Je m'aperçois qu'on vous méprise, et qu'on vous croit sans esprit et sans sentiment, vous qui pensez si juste, et dont le coeur tendre et délicat égale la sensibilité du mien, et c'est tout dire. </s>
-	<s n="4 ">Vous êtes à la veille d'en épouser un autre, et je n'ose me plaindre. </s>
-	<s n="5 ">Je pourrais me consoler, si votre mariage ne faisait que mon malheur ; mais il va combler le vôtre ; je le sais, je le vois, et je ne puis l'empêcher ; c'est là ce qui rend mon désespoir affreux : sans une prompte réponse j'y vais succomber. » </s>
+	<s n="1">« Non, belle Lucile, il n'est point de situation plus singulière que la nôtre, ni d'amant plus malheureux que moi.</s>
+	<s n="2">Je vous vois à toute heure sans pouvoir m'expliquer. </s>
+	<s n="3">Je m'aperçois qu'on vous méprise, et qu'on vous croit sans esprit et sans sentiment, vous qui pensez si juste, et dont le coeur tendre et délicat égale la sensibilité du mien, et c'est tout dire. </s>
+	<s n="4">Vous êtes à la veille d'en épouser un autre, et je n'ose me plaindre. </s>
+	<s n="5">Je pourrais me consoler, si votre mariage ne faisait que mon malheur ; mais il va combler le vôtre ; je le sais, je le vois, et je ne puis l'empêcher ; c'est là ce qui rend mon désespoir affreux : sans une prompte réponse j'y vais succomber. » </s>
 </p>
 <stage type="read">Après avoir lu.</stage>
 	<l n="1429">Mon coeur est déchiré par un billet si tendre. </l>
@@ -3688,7 +3688,7 @@
 	<l n="1468">Vous me trompez ainsi ! Qui l'aurait jamais cru ? </l>
 <stage type="read/loud">Il relit tout haut.</stage>
 <p n="2">
-	<s n="1 ">« Je sais qu'on me croit sans esprit ; mais ce n'est que pour vous seul que je voudrais en avoir. » </s>
+	<s n="1">« Je sais qu'on me croit sans esprit ; mais ce n'est que pour vous seul que je voudrais en avoir. » </s>
 </p>
 <stage type="interrupt">Il s'interrompt.</stage>
 	<l n="1469">Je ne demande plus à qui ceci s'adresse. </l>
@@ -3751,10 +3751,10 @@
 	<l n="1500">Il va vous étonner autant qu'il me ravit. </l>
 <stage type="read">Il lit.</stage>
 <p n="3">
-	<s n="1 ">« Je sais qu'on me croit sans esprit, mais ce n'est que pour vous seul que je voudrais en avoir ; et si je pouvais réussir à vous persuader que je suis aussi spirituelle que tendre, peu m'importerait que le reste du monde me donnât le nom de sotte et de stupide. </s>
-	<s d="2" n=" ">L'abattement où m'a plongée la crainte d'être oubliée de vous a dû donner de moi cette idée ; et depuis que je vous vois ici, votre présence me jette dans un trouble qui sert à la confirmer. </s>
-	<s n="3 ">Je sens que mon coeur fait tort à mon esprit. </s>
-	<s n="4 ">Il m'ôte jusqu'à la liberté de m'exprimer, et je suis trop occupée à sentir, pour avoir le loisir de parler. » </s>
+	<s n="1">« Je sais qu'on me croit sans esprit, mais ce n'est que pour vous seul que je voudrais en avoir ; et si je pouvais réussir à vous persuader que je suis aussi spirituelle que tendre, peu m'importerait que le reste du monde me donnât le nom de sotte et de stupide. </s>
+	<s n="2">L'abattement où m'a plongée la crainte d'être oubliée de vous a dû donner de moi cette idée ; et depuis que je vous vois ici, votre présence me jette dans un trouble qui sert à la confirmer. </s>
+	<s n="3">Je sens que mon coeur fait tort à mon esprit. </s>
+	<s n="4">Il m'ôte jusqu'à la liberté de m'exprimer, et je suis trop occupée à sentir, pour avoir le loisir de parler. » </s>
 </p>
 <stage type="read">Après l'avoir lu.</stage>
 	<l n="1501">Mais est-il rien, Marquis, qui soit plus adorable ?</l>
@@ -4710,7 +4710,7 @@
 	<l n="1884" part="F">Mais, monsieur, écoutez un moment : </l>
 <stage type="read/loud">Elle lit haut.</stage>
 <p n="1">
-	<s n="1 ">« L'abattement où m'a plongée la crainte d'être oubliée de vous, a dû donner de moi cette idée. »</s>
+	<s n="1">« L'abattement où m'a plongée la crainte d'être oubliée de vous, a dû donner de moi cette idée. »</s>
 </p>
 <stage type="toward/interrupt">Au baron en s'interrompent.</stage>
 	<l n="1885">« Oubliée ! » est-ce vous, qui l'obsédez sans cesse ? </l>
@@ -4724,7 +4724,7 @@
 	<l n="1887">« J'ai donné lieu ! » tenez, répondez à ceci. </l>
 <stage type="read">Elle lit.</stage>
 <p n="3">
-	<s n="1 ">« Depuis que je vous vois ici, votre présence me jette dans un trouble qui sert à la confirmer. » </s>
+	<s n="1">« Depuis que je vous vois ici, votre présence me jette dans un trouble qui sert à la confirmer. » </s>
 </p>
 <stage type="interrupt">En s'interrompent.</stage>
 	<l n="1888">Est-ce pour vous ? « Depuis que je vous vois ici. » </l>

@@ -51,7 +51,7 @@
                     <person xml:id="madame-guillemot" sex="FEMALE">
                         <persName>Madame guillemot</persName>
                     </person>
-                    <person xml:id="jasmin" sex="UNKNOWN">
+                    <person xml:id="jasmin" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Jasmin</persName>
                     </person>
                     <person xml:id="lisette" sex="FEMALE">
@@ -75,10 +75,10 @@
                     <person xml:id="monsieur-de-la-motte" sex="MALE">
                         <persName>Monsieur de la motte</persName>
                     </person>
-                    <person xml:id="du-mesnil" sex="UNKNOWN">
+                    <person xml:id="du-mesnil" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Du-mesnil</persName>
                     </person>
-                    <person xml:id="madame-de-calville" sex="UNKNOWN">
+                    <person xml:id="madame-de-calville" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Madame-de-calville</persName>
                     </person>
                     <person xml:id="oriane" sex="FEMALE">
@@ -362,9 +362,9 @@
 	<l n="48">Justement. J'aperçois son billet ; le voilà.</l>
 <stage type="read">Il lit.</stage>
 <p n="1">
-	<s n="1 ">J'arrivai hier au soir à Paris avec mon père, qui est plus entêté que jamais de l'auteur du Mercure Galant. </s>
-	<s n="2 ">Il ne trouve point de mérite égal au sien. </s>
-	<s n="3 ">Si vous avez fait ce que je vous ai mandé par ma dernière Lettre, nos affaires font dans le meilleur état du monde.</s>
+	<s n="1">J'arrivai hier au soir à Paris avec mon père, qui est plus entêté que jamais de l'auteur du Mercure Galant. </s>
+	<s n="2">Il ne trouve point de mérite égal au sien. </s>
+	<s n="3">Si vous avez fait ce que je vous ai mandé par ma dernière Lettre, nos affaires font dans le meilleur état du monde.</s>
 </p>
 	<l n="49">Jusqu'ici pour mes feux tout est de bon augure :</l>
 <note type="L">Mercure galant : revue littéraire fondée en 1672 fondée par Jean Donneau de Visé. À partir de 1680, Thomas Corneille est associé.</note>
@@ -2959,10 +2959,10 @@
 	<l n="1275">En vain de vous juger vous m'imposez la loi.</l>
 	<l n="1276" part="I">Que sais-je qui des deux parle le moins ?</l>
 </sp><!--@who="ORONTE"-->
-<sp wstage="togesther" ho="ORIANE, ÉLISE" who="">
+<sp who="#oriane #elise">
                         <speaker>TOUTES DEUX, ensemble.</speaker>
 	<l n="1276" part="F">C'est moi.</l>
-</sp>
+</sp><!--@wstage="togesther"--><!--@ho="ORIANE, ÉLISE"-->
 <sp who="#oriane">
                         <speaker>ORIANE.</speaker>
 	<l n="1277">Et par bonnes raisons je m'en vais vous l'apprendre.</l>

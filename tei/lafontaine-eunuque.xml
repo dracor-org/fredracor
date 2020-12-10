@@ -45,7 +45,7 @@
                     <person xml:id="phedrie" sex="MALE">
                         <persName>Phédrie</persName>
                     </person>
-                    <person xml:id="thais" sex="UNKNOWN">
+                    <person xml:id="thais" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Thais</persName>
                     </person>
                     <person xml:id="gnaton" sex="MALE">
@@ -4190,7 +4190,7 @@
                         <speaker>PHÉDRIE.</speaker>
 	<l n="1761" part="I">Hé bien ? </l>
 </sp><!--@who="PHÉDRIE"-->
-<sp wstage="low/toward" ho="GNATON" who="">
+<sp who="#gnaton">
                         <speaker>GNATON, bas à l'écart.</speaker>
 	<l n="1761" part="F">Notre soldat a la bourse garnie, </l>
 	<l n="1762">Vous le pouvez admettre en votre compagnie. </l>
@@ -4200,7 +4200,7 @@
 	<l n="1766">Sa présence d'ailleurs est bonne à quelque chose : </l>
 	<l n="1767">Il peut, sans vous causer de crainte et de souci, </l>
 	<l n="1768">Vous défrayer de rire, et de festins aussi. </l>
-</sp>
+</sp><!--@wstage="low/toward"--><!--@ho="GNATON"-->
 <sp who="#phedrie">
                         <speaker>PHÉDRIE.</speaker>
 	<l n="1769">J'accepte, au nom des trois, le parti qu'on nous offre ; </l>
