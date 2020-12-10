@@ -87,7 +87,9 @@
 		<docDate when="1887">1887</docDate>
 		<docAuthor>ERNEST D'HERVILLY</docAuthor><!--@bio="hervilly"-->
 		<div type="docImprint">
-			<copyright>Tous droits réservés. </copyright>
+			<div type="copyright">
+                    <p>Tous droits réservés. </p>
+                </div>
 			<div type="printer">
                     <p>PARIS L. FRINZINE, ÉDITEUR  112, Boulevard Saint-Germain, 112</p>
                 </div><!--@id="FRINZINE"-->
@@ -120,19 +122,19 @@
 		<castList>
 			<head>PERSONNAGES.</head>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#jean-poquelin">JEAN POQUELIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="tapissier"--><!--@age="A"-->, marchand tapissier, M. CORNAGLIA.</castItem>
+                    <role corresp="#jean-poquelin">JEAN POQUELIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="tapissier"--><!--@age="A"--><!--@statut_amoureux="néant"-->, marchand tapissier, M. CORNAGLIA.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#moliere">MOLIÈRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"-->, M. POREL.</castItem>
+                    <role corresp="#moliere">MOLIÈRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@statut_amoureux="néant"-->, M. POREL.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#clabaud">CLABAUD</role><!--@sex="1"--><!--@type="H"--><!--@statut="tapissier"--><!--@age="A"-->, garçon tapissier, M. KERAVAL.</castItem>
+                    <role corresp="#clabaud">CLABAUD</role><!--@sex="1"--><!--@type="H"--><!--@statut="tapissier"--><!--@age="A"--><!--@statut_amoureux="néant"-->, garçon tapissier, M. KERAVAL.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#jacques-rohaut">JACQUES ROHAUT</role><!--@sex="1"--><!--@type="H"--><!--@statut="professeur"--><!--@age="A"-->, professeur ès mathématiques. M. REBEL.</castItem>
+                    <role corresp="#jacques-rohaut">JACQUES ROHAUT</role><!--@sex="1"--><!--@type="H"--><!--@statut="professeur"--><!--@age="A"--><!--@statut_amoureux="néant"-->, professeur ès mathématiques. M. REBEL.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#lubin">LUBIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="moucheur de chandelles"--><!--@age="A"-->, moucheur de chandelles, M. BOUDIER.</castItem>
+                    <role corresp="#lubin">LUBIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="moucheur de chandelles"--><!--@age="A"--><!--@statut_amoureux="néant"-->, moucheur de chandelles, M. BOUDIER.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#jeannot">JEANNOT</role><!--@sex="1"--><!--@type="H"--><!--@statut="commerçant"--><!--@age="A"-->, verdurier, M. PREVILLE.</castItem>
+                    <role corresp="#jeannot">JEANNOT</role><!--@sex="1"--><!--@type="H"--><!--@statut="commerçant"--><!--@age="A"--><!--@statut_amoureux="néant"-->, verdurier, M. PREVILLE.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#chiffonne">CHIFFONNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"-->, filleule de J. Poquelin, MLLE. MADELEINE PLOUVIER.</castItem>
+                    <role corresp="#chiffonne">CHIFFONNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@statut_amoureux="néant"-->, filleule de J. Poquelin, MLLE. MADELEINE PLOUVIER.</castItem>
 		</castList>
 		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène se passe à Paris, rue Comtesse d'Artois, dans la boutique de maître Jean Poquelin. 1668.</set>-->
 		<note>Extrait de CINQ ANNIVERSAIRES DE MOLIÈRE 1874 - 1875 - 1877 - 1881 - 1886  COMÉDIES EN VERS. (pages 103-150)</note>
@@ -151,7 +153,7 @@
 	<l n="1" part="I">Clabaud ! </l><!--@syll="2"-->
 <stage type="knock">Nouveaux coups.</stage>
 	<l n="1" part="M">Debout ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 <stage type="entrance">Il entre par la porte de droite.</stage>
@@ -174,56 +176,56 @@
 	<l n="6" part="F">Et vienne la pratique ! </l><!--@syll="6"-->
 <stage type="sit/sleep">Il s'installe dans un fauteuil et se dispose à dormir.</stage>
 <stage type="knock">Nouveaux coups à l'étage supérieur.</stage>
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="7" part="I">Clabaud ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, bondissant.</speaker>
 	<l n="7" part="M">Présent, patron ! </l><!--@syll="4"-->
-</sp><!--@stage="jump"-->
+</sp><!--@stage="jump"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="7" part="F">À vos pointes, Clabaud ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, s'arme d'un marteau et en frappe quelques coups indolents sur un meuble quelconque.</speaker> 
 	<l n="8" part="I">Oui, patron ! </l><!--@syll="3"-->
 <stage type="toward">À part.</stage>
 	<l n="8" part="F">On n'a pas le réveil gai, là-haut. </l><!--@syll="6"-->
 <stage type="knock">Autres coups de canne à l'étage supérieur.</stage>
-</sp><!--@stage="hit/break"-->
+</sp><!--@stage="hit/break"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="9" part="I">Chiffonne ! </l><!--@syll="3"-->
 <stage type="entrance/location">Une jolie fillette montre sa figure fraîche à l'une des portes à gauche.</stage>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="9" part="M">Mon parrain ? </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="9" part="F">À vos surjets, Chiffonne ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, s'installe à une table devant Clabaud.</speaker>
 	<l n="10">Oui, mon parrain, voilà !... D'ailleurs, l'angélus sonne </l>
 	<l n="11" part="I">À peine, mon parrain... </l><!--@syll="6"-->
-</sp><!--@stage="sit/location"-->
+</sp><!--@stage="sit/location"--><!--@who="CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="11" part="F">Taisez-vous. Au travail ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, à mi-voix avec emphase.</speaker>
 	<l n="12">Bonjour, Chiffonne, idole aux lèvres de corail ! </l>
-</sp><!--@stage="low/emphasiis"-->
+</sp><!--@stage="low/emphasiis"--><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, froidement.</speaker>
 	<l n="13" part="I">Bonjour, bonjour, Clabaud... </l><!--@syll="6"-->
-</sp><!--@stage="cold"-->
+</sp><!--@stage="cold"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, gaiement.</speaker>
 	<l n="13" part="F">Quel ton ? Pourquoi, madame, </l><!--@syll="6"-->
@@ -233,12 +235,12 @@
 	<l n="17">Et ne devons-nous plus voler à l'hyménée </l>
 	<l n="18">Aussitôt que - selon la parole donnée </l>
 	<l n="19">Par maître Poquelin - le commerce ira mieux ?... </l>
-</sp><!--@stage="happy"-->
+</sp><!--@stage="happy"--><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="20">Il faudra pour cela qu'on ait repeint le vieux </l>
 	<l n="21" part="I">Saint Christophe, là-bas... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="21" part="F">Oui, je le sais !... l'enseigne </l><!--@syll="6"-->
@@ -249,44 +251,44 @@
 	<l n="24">À présent si malade arrive à guérison </l>
 	<l n="25">Et qu'on la traite enfin des combles à la cave ! </l>
 	<l n="26">Or le remède manque ici : l'argent !... fait grave ! </l>
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, avec ironie.</speaker>
 	<l n="27">Donc voilà reculés, loin, les instants bénis </l>
 	<l n="28">Où nous devons, Chabaud, être à jamais unis !... </l>
-</sp><!--@stage="ironic"-->
+</sp><!--@stage="ironic"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="29">Cruelle ! Vous riez ! - L'amour, c'est son usage, </l>
 	<l n="30" part="I">Blesse et puis rit... </l><!--@syll="4"-->
 <stage type="entrance">Apparition, à la porte d'entrée, de Jeannot en costume de marchand d'herbes.</stage>
 <stage type="shout">Il crie à tue-tête.</stage>
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#jeannot">
                         <speaker>JEANNOT.</speaker>
 	<l n="30" part="M">Holà ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="JEANNOT"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="30" part="F">Pourquoi ces cris, visage </l><!--@syll="6"-->
 	<l n="31" part="I">Bourgeonné ? </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#jeannot">
                         <speaker>JEANNOT.</speaker>
 	<l n="31" part="M">Hé ! - Les gens ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="JEANNOT"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="31" part="F">Butor ! Criez plus bas. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#jeannot">
                         <speaker>JEANNOT.</speaker>
 	<l n="32" part="I">Maître Jean Poquelin! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="JEANNOT"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="32" part="M">Il dort !... </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, toujours hors de scène, avec colère.</speaker>
 	<l n="32" part="F">Je ne dors pas ! </l><!--@syll="4"-->
@@ -294,20 +296,20 @@
 	<l n="34">Quel tapage ! - Clabaud, offrez à la personne </l>
 	<l n="35">Qui me demande un siège. - Attendez, je descends. </l>
 <stage type="give/decor">Clabaud offre, naturellement, un siège sans fond à Jeannot qui manque de passer à travers.</stage>
-</sp><!--@stage="location/anger"-->
+</sp><!--@stage="location/anger"--><!--@who="POQUELIN"-->
 <sp who="#jeannot">
                         <speaker>JEANNOT.</speaker>
 	<l n="36" part="I">Aïe ! </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="JEANNOT"-->
 <sp who="#clabaud #chiffonne">
                         <speaker>CLABAUD ET CHIFFONNE, riant.</speaker>
 	<l n="36" part="M">Ah ! Ah ! </l><!--@syll="2"-->
-</sp><!--@stage="laugh"-->
+</sp><!--@stage="laugh"--><!--@who="CLABAUD, CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="36" part="F">Pourquoi ces rires indécents ? </l><!--@syll="9"-->
 <stage type="entrance/location">Maître Jean Poquelin se montre au haut de l'escalier.</stage>
-</sp>
+</sp><!--@who="POQUELIN"-->
 </div>
 <div type="scene" n="2">
                     <head>SCÈNE II. Les Mêmes, Jean Poquelin.</head>
@@ -317,16 +319,16 @@
 <stage type="toward">À Jeannot.</stage>
 	<l n="37" part="F">Que voulez-vous, brave homme ? </l><!--@syll="6"-->
 	<l n="38" part="I">Hein ? </l><!--@syll="1"-->
-</sp><!--@stage="toward"-->
+</sp><!--@stage="toward"--><!--@who="POQUELIN"-->
 <sp who="#jeannot">
                         <speaker>JEANNOT, criant, tout en se frottant les côtes.</speaker>
 	<l n="38" part="F">Je suis verdurier ; c'est Jeannot qu'on me nomme </l><!--@syll="11"-->
 	<l n="39">À la Halle, où mes traits à tous sont familiers...</l>
-</sp><!--@stage="shout"-->
+</sp><!--@stage="shout"--><!--@who="JEANNOT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, lui faisant signe de parler plus bas.</speaker>
 	<l n="40" part="I">Après ? </l><!--@syll="2"-->
-</sp><!--@stage="wave/low"-->
+</sp><!--@stage="wave/low"--><!--@who="POQUELIN"-->
 <sp who="#jeannot">
                         <speaker>JEANNOT.</speaker>
 	<l n="40" part="F">Votre maison sise aux Petits-Piliers, </l><!--@syll="10"-->
@@ -335,11 +337,11 @@
 	<l n="43">Dont l'une par malheur - Ô hasard infernal ! </l>
 	<l n="44">A fêlé l'occiput d'un juge matinal </l>
 	<l n="45">Qui flairait mes melons d'un nez que rien ne trompe... </l>
-</sp>
+</sp><!--@who="JEANNOT"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, d'un air bon.</speaker>
 	<l n="46" part="I">Pauvres melons ! </l><!--@syll="6"-->
-</sp><!--@stage="sweet"-->
+</sp><!--@stage="sweet"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, furieux.</speaker>
 	<l n="46" part="F">Clabaud ! Faut-il que je vous rompe </l><!--@syll="6"-->
@@ -349,7 +351,7 @@
 	<l n="47" part="F">Chiffonne, à vos surjets ! </l><!--@syll="6"-->
 <stage type="toward">À Jeannot.</stage>
 	<l n="48" part="I">Achevez. </l><!--@syll="3"-->
-</sp><!--@stage="furious"-->
+</sp><!--@stage="furious"--><!--@who="POQUELIN"-->
 <sp who="#jeannot">
                         <speaker>JEANNOT.</speaker>
 	<l n="48" part="F">Ma venue enfin a pour objets </l><!--@syll="9"-->
@@ -360,7 +362,7 @@
 	<l n="53">Afin de prévenir d'autres affreux grabuges </l>
 	<l n="54">Et pour qu'en sûreté puissent errer les juges !... </l>
 	<l n="55" part="I">J'ai dit. </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="JEANNOT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, avec désespoir.</speaker>
 	<l n="55" part="F">Encor ce toit ! - Me voilà bien loti ! </l><!--@syll="10"-->
@@ -381,57 +383,57 @@
 <stage type="tovard/give">À Clabaud qui lui tend sa canne.</stage>
 	<l n="64" part="F">À vos pointes, Clabaud ! </l><!--@syll="6"-->
 <stage type="exit/togother">Il sort suivi de Jeannot.</stage>
-</sp><!--@stage="desperate"-->
+</sp><!--@stage="desperate"--><!--@who="POQUELIN"-->
 </div>
 <div type="scene" n="3">
                     <head>SCÈNE III. Clabaud, Chiffonne.</head>
 <sp who="#clabaud">
                         <speaker>CLABAUD, sautant en l'air.</speaker>
 	<l n="65" part="I">Vacances ! </l><!--@syll="2"-->
-</sp><!--@stage="jump"-->
+</sp><!--@stage="jump"--><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, d'un petit air indifférent.</speaker>
 	<l n="65" part="F">Prenons l'air sur le pas de la porte. </l><!--@syll="10"-->
-</sp><!--@stage=""-->
+</sp><!--@stage=""--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 <stage type="stop">Il s'arrête au milieu de ses gambades.</stage>
 	<l n="66" part="I">Ah ! Chiffonne... C'est mal ! </l><!--@syll="6"-->
 <stage type="noise">Un bruit cadencé se fait entendre dans la rue.</stage>
 	<l n="66" part="F">Que le diable l'emporte ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, se retournant avec surprise.</speaker>
 	<l n="67">Êtes-vous fou ? Comment ! Parce que je prends l'air, </l>
 	<l n="68">Vous envoyez quelqu'un aussitôt en enfer ? </l>
-</sp><!--@stage="turn/surprise"-->
+</sp><!--@stage="turn/surprise"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, solennel.</speaker>
 	<l n="69" part="I">Écoutez... </l><!--@syll="3"-->
 <stage type="noise">Le bruit cadencé se fait entendre plus distinctement.</stage>
-</sp><!--@stage="proud"-->
+</sp><!--@stage="proud"--><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, riant.</speaker>
 	<l n="69" part="F">Bon, j'entends la bruyante cadence </l><!--@syll="9"-->
 	<l n="70">D'un pilon, qu'on manoeuvre avec art et prudence </l>
 	<l n="71">Dans un mortier de bronze... et c'est notre voisin </l>
 	<l n="72" part="I">Le droguiste qui bat... </l><!--@syll="6"-->
-</sp><!--@stage="laugh"-->
+</sp><!--@stage="laugh"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, amer.</speaker>
 	<l n="72" part="F">Oui, c'est votre cousin ! </l><!--@syll="6"-->
 	<l n="73">Le droguiste ! Ah ! Chiffonne ! - Et voilà le système </l>
 	<l n="74">Qu'il a trouvé tout seul ! - Pour vous dire : Je t'aime ! </l>
-</sp><!--@stage="sad"-->
+</sp><!--@stage="sad"--><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, un peu piquée.</speaker>
 	<l n="75">Tout le monde n'a pas la lyre d'Apollon </l>
 	<l n="76" part="I">Pour exprimer ses feux... </l><!--@syll="6"-->
-</sp><!--@stage="offended"-->
+</sp><!--@stage="offended"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="76" part="F">Oui, mais prendre un pilon ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, froidement.</speaker>
 	<l n="77">Il est vrai, c'est fort drôle... - Un instrument plus tendre, </l>
@@ -443,7 +445,7 @@
 	<l n="81">De Rose la lingère.., à côté du droguiste...</l>
 	<l n="82" part="I">Écoutez !... </l><!--@syll="3"-->
 <stage type="noise">On entend les battements d'un fer à repasser.</stage>
-</sp><!--@stage="cold"-->
+</sp><!--@stage="cold"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="82" part="F">Imposture ! Allez, ce bruit n'existe </l><!--@syll="6"-->
@@ -452,24 +454,24 @@
 	<l n="84">Et voilà donc pourquoi, madame, on m'a jeté, </l>
 	<l n="85">Tout à l'heure, un bonjour que même en Laponie, </l>
 	<l n="86" part="I">On eût trouvé très froid ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, gracieusement.</speaker>
 	<l n="86" part="F">Nulle ici ne le nie...</l><!--@syll="6"-->
-</sp><!--@stage="sweet"-->
+</sp><!--@stage="sweet"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="87" part="I">Et moi qui l'aime tant ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, avec ironie.</speaker>
 	<l n="87" part="F">Oui, les jours de congé, </l><!--@syll="6"-->
 	<l n="88">Cet amour, par exemple, est fort peu négligé ?... </l>
-</sp><!--@stage="ironic"-->
+</sp><!--@stage="ironic"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="89" part="I">Que dites-vous, Chiffonne ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="89" part="F">Oui, ces jours-là, je reste </l><!--@syll="6"-->
@@ -478,16 +480,16 @@
 	<l n="92">Ayant sans doute au bras - tout en m'aimant toujours, </l>
 <stage type="desdain/show">Avec dédain et montrant la rue.</stage>
 	<l n="93">Ce... fer à repasser... à la mine hardie ! </l>
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, avec mystère.</speaker>
 	<l n="94">Moi ! Chiffonne !... Ah ! Je vais... Chut !... À la Comédie... </l>
 	<l n="95" part="I">Voir Molière !... </l><!--@syll="6"-->
-</sp><!--@stage="mysterious"-->
+</sp><!--@stage="mysterious"--><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="95" part="F">Le fils de maître Poquelin ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="96">Plus bas ! - Si le patron m'entendait ! - Quel vilain </l>
@@ -507,23 +509,23 @@
 	<l n="107">Est basque - ou Grec - parfait. Tiens, s'il venait ici, </l>
 	<l n="108">Le patron ne pourrait le reconnaître... ainsi ! </l>
 	<l n="109">Et moi-même, parfois, bien que n'étant pas bête... </l>
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, railleuse.</speaker>
 	<l n="110" part="I">Allez toujours, Clabaud. </l><!--@syll="6"-->
-</sp><!--@stage="ironic"-->
+</sp><!--@stage="ironic"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="110" part="F">Eh bien ! J'en perds la tête... </l><!--@syll="6"-->
 <stage type="entrance">Lubin vient en cet instant, se planter devant la boutique, et cherche à en examiner l'intérieur d'un air impudent. </stage>
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, l'apercevant.</speaker>
 	<l n="111">Clabaud !... Mais quel est donc cet être curieux, </l>
 	<l n="112">Avec ses gros sourcils perchés sur ses gros yeux, </l>
 	<l n="113">Qui louche et s'aplatit le nez contre les vitres </l>
 	<l n="114" part="I">Pour regarder ici ?... </l><!--@syll="6"-->
-</sp><!--@stage="watch"-->
+</sp><!--@stage="watch"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, allant à la porte.</speaker>
 <note type="L">Bélître : Coquin, gueux, homme de néant. [FC]</note>
@@ -532,79 +534,79 @@
 <stage type="shout">Appelant.</stage>
 	<l n="115" part="F">Hé ! Là ! Que voulez-vous. </l><!--@syll="6"-->
 	<l n="116">Monsieur le drôle, avec vos airs pris chez les fous ? </l>
-</sp><!--@stage="away/location"-->
+</sp><!--@stage="away/location"--><!--@who="CLABAUD"-->
 </div>
 <div type="scene" n="">
                     <head>SCÈNE IV.  LES MEMES, Lubin.</head>
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="117" part="I">Monsieur Jean Poquelin ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, d'un ton bref.</speaker>
 	<l n="117" part="F">Pour l'heure il est aux Halles ; </l><!--@syll="6"-->
 	<l n="118">Il constate l'effet des dernières rafales </l>
 	<l n="119" part="I">Sur sa vieille maison. </l><!--@syll="6"-->
-</sp><!--@stage="quick"-->
+</sp><!--@stage="quick"--><!--@who="CLABAUD"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="119" part="F">Son gendre est-il céans ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="120">Non. Il est hier soir parti pour Orléans. </l>
 	<l n="121">Mais vous pouvez me dire, et je saurai transmettre </l>
 	<l n="122" part="I">À mon patron... </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="122" part="F">Non pas ! C'est affaire à mon maître. </l><!--@syll="8"-->
 	<l n="123" part="I">Je vais l'avertir... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, avec un léger dédain.</speaker>
 	<l n="123" part="F">Ah ! Vous êtes le valet ?... </l><!--@syll="6"-->
-</sp><!--@stage="desdain"-->
+</sp><!--@stage="desdain"--><!--@who="CLABAUD"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="124">Oui, le valet d'un homme illustre, s'il vous plaît, </l>
 	<l n="125">Fort riche, et qui se veut passer la fantaisie </l>
 	<l n="126">De meubler avec luxe et de façon choisie </l>
 	<l n="127" part="I">Une chambre à coucher. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, avec empressement.</speaker>
 	<l n="127" part="F">Oh ! C'est bien différent ! </l><!--@syll="6"-->
 	<l n="128" part="I">Asseyez-vous, monsieur. </l><!--@syll="6"-->
-</sp><!--@stage="quick"-->
+</sp><!--@stage="quick"--><!--@who="CLABAUD"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, à part, de sa table de travail.</speaker>
 	<l n="128" part="F">Un client de haut rang ! </l><!--@syll="6"-->
 	<l n="129" part="I">Quel bonheur ! </l><!--@syll="3"-->
-</sp><!--@stage="aparte/location"-->
+</sp><!--@stage="aparte/location"--><!--@who="CHIFFONNE"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="129" part="F">Monsieur va venir ici lui-même. </l><!--@syll="9"-->
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="130">Alors, je vais chercher en diligence extrême </l>
 	<l n="131">Mon patron... - À propos, et ce maître de goût, </l>
 	<l n="132" part="I">Vous l'appelez ? </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="132" part="M">Rohaut.</l><!--@syll="2"-->
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="132" part="F">Rohaut ? - Et voilà tout ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="133">Oui, Jacques Rohaut. - Mais sa valeur n'est pas mince. </l>
 	<l n="134">C'est un génie, un rare !... En un mot c'est un prince... </l>
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, lui coupant la parole.</speaker>
 	<l n="135">Un prince ! - Plus un mot. - Je cours jusqu'aux Piliers. </l>
@@ -612,7 +614,7 @@
 	<l n="137">Et je reviens avec mon patron en personne ! </l>
 <stage type="run/shout">Il s'élance dans la rue en criant : </stage>
 	<l n="138">Faites patienter ce bon garçon, Chiffonne ! </l>
-</sp><!--@stage="interrupt"-->
+</sp><!--@stage="interrupt"--><!--@who="CLABAUD"-->
 </div>
 <div type="scene" n="5">
                     <head>SCÈNE V. Chiffonne, Lubin.</head>
@@ -637,81 +639,81 @@
 	<l n="153">C'est un de nos plus grands princes... de la science ! </l>
 	<l n="154">Un esprit très profond, trésor d'expérience, </l>
 	<l n="155" part="I">Le premier professeur de Paris. </l><!--@syll="9"-->
-</sp><!--@stage="aparte/location"-->
+</sp><!--@stage="aparte/location"--><!--@who="LUBIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="155" part="F">Et pourtant </l><!--@syll="3"-->
 	<l n="156" part="I">Il est riche ? </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#lubin">
                         <speaker>LUBIN, souriant.</speaker>
 	<l n="156" part="F">Un caprice, un oubli d'un instant </l><!--@syll="6"-->
 	<l n="157" part="I">De l'aveugle Fortune... </l><!--@syll="6"-->
-</sp><!--@stage="smile"-->
+</sp><!--@stage="smile"--><!--@who="LUBIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="157" part="F">Et dont elle est honteuse, </l><!--@syll="6"-->
 	<l n="158" part="I">Peut-être ? </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="158" part="M">Oui, mais trop tard ! </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="158" part="F">Pour moi, j'en suis heureuse ! </l><!--@syll="6"-->
 	<l n="159">Car si le sieur Rohaut laisse en cette maison </l>
 	<l n="160">Quelque peu de cet or qu'il remue à foison, </l>
 	<l n="161" part="I">Il se pourrait... </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="161" part="F">Pourquoi vous taisez-vous, ma belle ? </l><!--@syll="8"-->
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="162">Rien. - Un rêve d'enfant riait dans ma cervelle... </l>
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="163">Dites-le-moi. Causons comme de vieux amis. </l>
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, avec un aimable embarras.</speaker>
 	<l n="164" part="I">Eh bien, Monsieur... </l><!--@syll="4"-->
-</sp><!--@stage="embarrassed"-->
+</sp><!--@stage="embarrassed"--><!--@who="CHIFFONNE"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="164" part="M">Lubin.</l><!--@syll="2"-->
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="164" part="F">... Mon parrain m'a promis... </l><!--@syll="6"-->
 	<l n="165"> - Et maître Poquelin est pour moi comme un père, </l>
 	<l n="166">Si son commerce un jour redevenait prospère, </l>
 	<l n="167">D'unir votre servante à ce jeune ouvrier... </l>
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="168">Ce jeune homme qui vient de partir en courrier ? </l>
-</sp>
+</sp><!--@who="LUBIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, modestement.</speaker>
 	<l n="169">Il se nomme Clabaud... Oui, c'est lui, ce jeune homme </l>
 	<l n="170">Qui pourrait m'épouser, si quelque bonne somme </l>
 	<l n="171">Nous tombait tout à coup du ciel - Ou de moins loin. </l>
-</sp><!--@stage="shy"-->
+</sp><!--@stage="shy"--><!--@who="CHIFFONNE"-->
 <sp who="#lubin">
                         <speaker>LUBIN, avec regret.</speaker>
 <note type="L">Foin : On dit, Il a bien mis du foin dans ses bottes, de la paille dans ses souliers, pour dire, Il s'est fort enrichi : ce qui ne se dit que de ceux qui font venus de bas lieu, qui ont fait de grandes fortunes. [F]</note>
 	<l n="172">Hélas ! Que n'ai-je mis dans mes bottes du foin ! </l>
-</sp><!--@stage="regret"-->
+</sp><!--@stage="regret"--><!--@who="LUBIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="173">Donc je viens vous prier, monsieur, de faire en sorte </l>
 	<l n="174">Que votre excellent maître - Il est si riche ! - Apporte </l>
 	<l n="175">Un grand nombre d'écus, tout de suite, chez nous... </l>
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#lubin">
                         <speaker>LUBIN.</speaker>
 	<l n="176">Oui-da ! J'y songerai ! - Car il me serait doux, </l>
@@ -722,7 +724,7 @@
 	<l n="180">De meubles, et dépense ici beaucoup d'argent ! </l>
 	<l n="181">Mais c'est trop discourir. Je vais à sa rencontre. </l>
 	<l n="182">Oh ! Ces savants ! De quoi leur sert donc une montre ? </l>
-</sp>
+</sp><!--@who="LUBIN"-->
 </div>
 <div type="scene" n="6">
                     <head>SCÈNE VI. Chiffonne, puis Jean Poquelin et Clabaud.</head>
@@ -732,105 +734,105 @@
 	<l n="184">Ah ! Ce maître Rohaut, que je voudrais le voir ! </l>
 	<l n="185">Bon Lubin ! Brave coeur ! Perle des domestiques ! </l>
 <stage type="entrance">Maître Poquelin et Clabaud entrent en se disputant.</stage>
-</sp><!--@stage="alone"-->
+</sp><!--@stage="alone"--><!--@who="CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="186">Ce n'est qu'un professeur en... en mathématiques, </l>
 	<l n="187" part="I">S'il s'appelle Rohaut... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="187" part="F">C'est un prince... Il l'a dit ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="188">En ce cas, c'est Rohan son nom, mulet maudit ! </l>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, avec entêtement.</speaker>
 	<l n="189" part="I">Non, c'est Rohaut, mon prince... </l><!--@syll="6"-->
-</sp><!--@stage="stress"-->
+</sp><!--@stage="stress"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, avec colère.</speaker>
 	<l n="189" part="F">Ah ! La main me démange !... </l><!--@syll="6"-->
 <stage type="toward">À Chiffonne.</stage>
 	<l n="190">Eh bien ! Et ce Rohan..., pour qui l'on me dérange, </l>
 	<l n="191">Daignera-t-il enfin se montrer aujourd'hui ? </l>
-</sp><!--@stage="anger"-->
+</sp><!--@stage="anger"--><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="192">Son valet dans l'instant vous l'amène avec lui. </l>
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="193">Comment ! J'arrive en nage, et pour vous trouver seule ! </l>
 	<l n="194" part="I">Maudit soit le Rohan... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, entre ses dents.</speaker>
 	<l n="194" part="M">Rohaut.</l><!--@syll="2"-->
-</sp><!--@stage="low"-->
+</sp><!--@stage="low"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="194" part="F">Ah çà... filleule, </l><!--@syll="4"-->
 	<l n="195" part="I">Il est temps de penser au dîner. </l><!--@syll="9"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="195" part="F">Oui, parrain. </l><!--@syll="3"-->
 	<l n="196">Mais, avant... si j'osais aborder un terrain...</l>
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="197" part="I">Lequel... </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, avec hésitation.</speaker>
 	<l n="197" part="F">On a l'espoir d'une forte commande... </l><!--@syll="10"-->
-</sp><!--@stage="hesitate"-->
+</sp><!--@stage="hesitate"--><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="198" part="I">C'est vrai, patron. </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="198" part="M">Eh bien ? </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="198" part="F">Parrain, je vous demande... </l><!--@syll="6"-->
 	<l n="199" part="I">Si vous étiez content... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="199" part="M">Quoi ? </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="199" part="F">De vous souvenir. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="200">La phrase est commencée, à moi de la finir. </l>
 <stage type="enthiousiasm">Avec résolution.</stage>
 	<l n="201">Patron, j'aime Chiffonne, et Chiffonne m'adore... </l>
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, le repoussant.</speaker>
 	<l n="202">Allez tous deux au diable et plus loin même encore. </l>
-</sp><!--@stage="push"-->
+</sp><!--@stage="push"--><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, voulant embrasser son parrain.</speaker>
 	<l n="203" part="I">Oh ! Mon petit parrain ! </l><!--@syll="6"-->
-</sp><!--@stage="kiss"-->
+</sp><!--@stage="kiss"--><!--@who="CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, se dégageant.</speaker>
 	<l n="203" part="F">Quand il fera moins chaud. </l><!--@syll="6"-->
-</sp><!--@stage="push"-->
+</sp><!--@stage="push"--><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, même geste que Chiffonne.</speaker>
 	<l n="204" part="I">Oh ! Mon petit patron ! </l><!--@syll="6"-->
-</sp><!--@stage="kiss"-->
+</sp><!--@stage="kiss"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, avec fureur.</speaker>
 	<l n="204" part="F">À vos pointes, Clabaud ! </l><!--@syll="6"-->
@@ -861,7 +863,7 @@
 	<l n="224">Huit mille livres... Oui, huit mille !... Dans quels coins </l>
 	<l n="225" part="I">Déterrer ce trésor ?... </l><!--@syll="6"-->
 <stage type="entrance/imitate">Molière, avec les apparences, habits et manières de son ami Jacques Rohaut, se présente sur le seuil de la boutique de J. Poquelin.</stage>
-</sp><!--@stage="furious"-->
+</sp><!--@stage="furious"--><!--@who="POQUELIN"-->
 </div>
 <div type="scene" n="7">
                     <head>SCÈNE VII. Les même, Molière.</head>
@@ -869,13 +871,13 @@
                         <speaker>MOLIÈRE, s'adressant à Clabaud, qui est pensif.</speaker>
 	<l n="225" part="F">Hé ! Jeune homme à l'oeil triste : </l><!--@syll="6"-->
 	<l n="226" part="I">Maître Jean Poquelin ? </l><!--@syll="6"-->
-</sp><!--@stage="toward/think"-->
+</sp><!--@stage="toward/think"--><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, montrant son patron.</speaker>
 	<l n="226" part="F">Vous êtes sur sa piste : </l><!--@syll="6"-->
 	<l n="227">Le voilà. Parlez-lui. - Patron ! Voici quelqu'un </l>
 	<l n="228" part="I">Qui vous réclame... </l><!--@syll="4"-->
-</sp><!--@stage="show"-->
+</sp><!--@stage="show"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, sortant de sa rêverie.</speaker>
 	<l n="228" part="M">Ah ! - bien... </l><!--@syll="2"-->
@@ -883,70 +885,70 @@
 	<l n="228" part="F">Il n'est pas du commun.</l><!--@syll="6"-->
 <stage type="wave/sit">Avec politesse, lui indiquant un siège.</stage>
 	<l n="229">Veuillez, monsieur... - Je suis tout à votre service... </l>
-</sp><!--@stage="dream"-->
+</sp><!--@stage="dream"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, saluant.</speaker>
 	<l n="230" part="I">Je suis Jacques Rohaut... </l><!--@syll="6"-->
-</sp><!--@stage="wave"-->
+</sp><!--@stage="wave"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, brusquement, à Clabaud.</speaker>
 	<l n="230" part="F">Eh bien, bijou de vice ! </l><!--@syll="6"-->
 	<l n="231" part="I">Monsieur n'est pas un prince ! </l><!--@syll="6"-->
-</sp><!--@stage="stress/toward"-->
+</sp><!--@stage="stress/toward"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="231" part="F">Oh ! Non... physicien </l><!--@syll="6"-->
 	<l n="232">Tout simplement, monsieur, et je n'ai nul lien </l>
 	<l n="233" part="I">Avec la noblesse... </l><!--@syll="5"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, triomphant à Clabaud.</speaker>
 	<l n="233" part="M">Ah !! </l><!--@syll="1"-->
-</sp><!--@stage="happy/toward"-->
+</sp><!--@stage="happy/toward"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, poursuivant.</speaker>
 	<l n="233" part="F">Mais j'ai quelque fortune ; </l><!--@syll="6"-->
 	<l n="234">Et je viens vous voir... si je ne vous importune... </l>
-</sp><!--@stage="continue"-->
+</sp><!--@stage="continue"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, l'interrompant et cherchant dans sa mémoire.</speaker>
 	<l n="235">Rohaut ?... Alors, c'est vous, voici quinze ou vingt jours, </l>
 	<l n="236">Qui m'avez envoyé, pour les mettre en velours, </l>
 <note type="L">Ployant : Siége qui plie. [L]</note>
 	<l n="237">Quatre sièges ployants recouverts de moquette ?... </l>
-</sp><!--@stage="interrupt/think"-->
+</sp><!--@stage="interrupt/think"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, un instant surpris.</speaker>
 	<l n="238" part="I">Quatre sièges ?... </l><!--@syll="4"-->
-</sp><!--@stage="surprise"-->
+</sp><!--@stage="surprise"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="238" part="F">Ployants... qu'une fille coquette, </l><!--@syll="6"-->
 	<l n="239">Votre servante enfin, si j'en crois ses discours, </l>
 	<l n="240">M'apporta l'autre mois, pour les mettre en velours. </l>
 	<l n="241" part="I">L'avez-vous oublié ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="241" part="F">Non, non ! - Je me rappelle </l><!--@syll="6"-->
 	<l n="242">La chose maintenant ! - Ah ! La pauvre cervelle !... </l>
 	<l n="243">Du velours, n'est-ce pas ? - Ah ! Cela m'avait fui </l>
 	<l n="244">De la mémoire... Bon ! Quatre sièges... Oui, oui ! </l>
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, gravement.</speaker>
 	<l n="245">Monsieur, j'ai le regret d'avoir à vous l'apprendre, </l>
 	<l n="246">Vos sièges ne sont pas finis... Faut-il les rendre ?... </l>
-</sp><!--@stage="serious"-->
+</sp><!--@stage="serious"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, riant.</speaker>
 	<l n="247">Ah ! Je m'en doutais bien maître ! - Les tapissiers </l>
 	<l n="248">Ne vont jamais du train foudroyant des huissiers... </l>
-</sp><!--@stage="laugh"-->
+</sp><!--@stage="laugh"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, avec raideur.</speaker>
 	<l n="249">Monsieur, vous les aurez au bout de la semaine !... </l>
-</sp><!--@stage="stress"-->
+</sp><!--@stage="stress"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="250">Non ! - Ce n'est pas cela qui m'amène </l>
@@ -956,56 +958,56 @@
 <note type="L">Robin : Homme de robe. [FC]</note>
 	<l n="254">Et que duc et robin ou bourgeoise et princesse </l>
 	<l n="255">Vantent du même coeur, et par-dessus les toits !... </l>
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, flatté.</speaker>
 	<l n="256">Je suis confus, monsieur ; vous êtes trop courtois. </l>
-</sp><!--@stage="proud"-->
+</sp><!--@stage="proud"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="257">Point, c'est justice ! - Donc - préparez l'écritoire, - </l>
 	<l n="258">Je viens chez le faiseur reconnu, c'est notoire </l>
 	<l n="259">Le meilleur de Paris, chercher ce qu'il me faut </l>
 	<l n="260" part="I">En fait de meubles... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="260" part="F">Bon. Mon calepin, Clabaud ? </l><!--@syll="6"-->
 <stage type="get">Maître Poquelin rassemble ses plumes et son écritoire.</stage>
 <stage type="search">Clabaud cherche le calepin.</stage>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, à part.</speaker>
 	<l n="261">Allons, Molière, allons ! - Courage, Jean-Baptiste ! </l>
 	<l n="262">De l'aplomb, c'est l'instant ! - Il serait sot et triste </l>
 	<l n="263">Que ton oeuvre si bien commencée avortât </l>
 	<l n="264">Commande ! Et souviens-toi de ton premier état. </l>
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, assis à table, et se frottant les mains.</speaker>
 	<l n="265">Monsieur, nous voici prêts, moi, mon encre et ma plume ; </l>
 	<l n="266">Et s'il nous faut noircir vingt pages de volume, </l>
 	<l n="267" part="I">Je ne me plaindrai pas. </l><!--@syll="6"-->
-</sp><!--@stage="sit/location"-->
+</sp><!--@stage="sit/location"--><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, les mains jointes.</speaker>
 	<l n="267" part="F">Et moi je fais des voeux !... </l><!--@syll="6"-->
-</sp><!--@stage="wave"-->
+</sp><!--@stage="wave"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="268" part="I">À vos pointes, Clabaud ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="268" part="F">Voici ce que je veux : </l><!--@syll="6"-->
 <stage type="spell/write">Il dicte. Jean Poquelin écrit.</stage>
 	<l n="269">Un lit bas, en noyer, avec rideaux en serge </l>
 	<l n="270" part="I">D'Aumale... verte. </l><!--@syll="5"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="270" part="M">Bon. </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="270" part="F">Un joli vert d'asperge... </l><!--@syll="6"-->
@@ -1026,54 +1028,54 @@
 	<l n="282">Où quelque ruisseau clair déroule ses méandres </l>
 	<l n="283">Bordés d'iris avec un héron endormi </l>
 	<l n="284" part="I">Sur sa patte... </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="284" part="M">Longueur ? </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="284" part="F">Douze pieds et demi. </l><!--@syll="6"-->
 	<l n="285">Plus : un paravent haut, de cinq feuilles, en toile </l>
 	<l n="286" part="I">De l'Inde à bouquets verts... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="286" part="F">Sous quelle verte étoile </l><!--@syll="6"-->
 	<l n="287" part="I">Est-il né ? </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="287" part="F">Plus ! Un beau miroir, cadre doré ; </l><!--@syll="9"-->
 	<l n="288">Plus : un coffre couvert en peau verte et ferré. </l>
 	<l n="289" part="I">Plus : une chaise... </l><!--@syll="4"-->
 <stage type="laugh">Il rit.</stage>
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, riant aussi.</speaker>
 	<l n="289" part="F">Bien je vous comprends de reste... </l><!--@syll="8"-->
-</sp><!--@stage="laugh"-->
+</sp><!--@stage="laugh"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, continuant.</speaker>
 <stage type="explicit">Tous ces meubles figurent dans l'inventaire dressé au logis de Molière après sa mort.</stage>
 	<l n="290" part="I">Bien garnie en damas cafard, d'un vert gai. </l><!--@syll="11"-->
-</sp><!--@stage="continue"-->
+</sp><!--@stage="continue"--><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="290" part="F">Peste ! </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="291" part="I">Voilà tout. </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="291" part="M">C'est fort bien. - Clabaud ? </l><!--@syll="5"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="291" part="M">Patron ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="291" part="F">Allez </l><!--@syll="2"-->
@@ -1082,13 +1084,13 @@
 <note type="L">Cafard : Hypocrite, cagot. On appelle damas cafard, une sorte de damas mêlé de soie et de fleuret. [FC]</note>
 	<l n="293" part="I">De damas cafard vert. </l><!--@syll="6"-->
 <note type="L">Damas : étoffe faite de soie, qui a des parties élevées qui représentent des fleurs, ou autres figures. [F]</note>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, avec joie.</speaker>
 <note type="L">Pinde : Montagne consacrée à Apollon et aux Muses. [L]</note>
 	<l n="293" part="F">Tel un poète au Pinde, </l><!--@syll="6"-->
 	<l n="294" part="I">J'y cours ! </l><!--@syll="2"-->
-</sp><!--@stage="happy"-->
+</sp><!--@stage="happy"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="294" part="F">Prenez aussi de la toile de l'Inde. </l><!--@syll="10"-->
@@ -1098,7 +1100,7 @@
 	<l n="297">De Chartres, de Beauvais, de Blicourt et d'Aumale, </l>
 	<l n="298">Depuis le vert de pré jusqu'au vert tendre opale...</l>
 <stage type="exit">Il sort par la première porte de gauche.</stage>
-</sp>
+</sp><!--@who="POQUELIN"-->
 </div>
 <div type="scene" n="8">
                     <head>SCÈNE VIII. Molière, seul, puis Rohaut.</head>
@@ -1124,7 +1126,7 @@
 	<l n="313">C'est Rohaut en personne !... Oh ! Contretemps terrible ; </l>
 	<l n="314">Voici mon père !... Où fuir ?... Rendons-nous invisible. </l>
 <stage type="hide">Il se cache derrière un paravent.</stage>
-</sp><!--@stage="alone"-->
+</sp><!--@stage="alone"--><!--@who="MOLIÈRE"-->
 </div>
 <div type="scene" n="9">
                     <head>SCÈNE IX. Rohaut, J. Poquelin, Molière, caché.</head>
@@ -1132,118 +1134,118 @@
                         <speaker>ROHAUT, achevant de lire l'enseigne.</speaker>
 	<l n="315" part="I">Tapissier ?... C'est ici... </l><!--@syll="6"-->
 <stage type="down/meet/entrance">Il descend la scène et rencontre J. Poquelin qui sort de son magasin d'étoffes. </stage>
-</sp><!--@stage="read"-->
+</sp><!--@stage="read"--><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, lui offrant des étoffes avec satisfaction.</speaker>
 	<l n="315" part="F">Palpez l'échantillon.</l><!--@syll="6"-->
-</sp><!--@stage="give/happy"-->
+</sp><!--@stage="give/happy"--><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, machinalement, bien que surpris.</speaker>
 	<l n="316" part="I">De la serge... </l><!--@syll="3"-->
-</sp><!--@stage="surprise"-->
+</sp><!--@stage="surprise"--><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="316" part="F">Eh bien, oui ! - C'est pour le pavillon </l><!--@syll="9"-->
 	<l n="317" part="I">À queue, et les rideaux... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, étonné.</speaker>
 	<l n="317" part="F">Je viens pour quatre sièges... </l><!--@syll="6"-->
-</sp><!--@stage="estonish"-->
+</sp><!--@stage="estonish"--><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="318">Mon Dieu ! Vous les aurez !... Croyez-vous à des pièges </l>
 	<l n="319" part="I">Chez moi, maître Rohaut ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, tâtant les étoffes.</speaker>
 	<l n="319" part="F">Mais c'était en velours... </l><!--@syll="6"-->
-</sp><!--@stage="touch"-->
+</sp><!--@stage="touch"--><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="320">Pour le lit ! Mais, monsieur, les plis seraient trop lourds ; </l>
 	<l n="321">De la serge vaut mieux ?... C'est votre choix du reste... </l>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, ahuri déjà.</speaker>
 	<l n="322">Moi ! J'ai choisi ?... D'abord, le vert, je le déteste. </l>
-</sp><!--@stage=""-->
+</sp><!--@stage=""--><!--@who="ROHAUT"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, caché, riant.</speaker>
 	<l n="323" part="I">Bon ! Je suis bien tombé ! </l><!--@syll="6"-->
-</sp><!--@stage="hide/laugh"-->
+</sp><!--@stage="hide/laugh"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, avec une colère contenue.</speaker>
 	<l n="323" part="F">Monsieur, réfléchissez. </l><!--@syll="6"-->
 	<l n="324">Je perds l'esprit, ou bien de moi vous vous gaussez. </l>
-</sp><!--@stage="anger"-->
+</sp><!--@stage="anger"--><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT.</speaker>
 	<l n="325">Je ne ris pas... L'air grave est l'air que je préfère. </l>
-</sp>
+</sp><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, furieux.</speaker>
 	<l n="326">Le pavillon à queue et la chaise... d'affaire, </l>
 	<l n="327" part="I">En damas cafard vert, ne vous plaisent plus ! </l><!--@syll="11"-->
-</sp><!--@stage="furious"-->
+</sp><!--@stage="furious"--><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, éperdu.</speaker>
 	<l n="327" part="F">Non !</l><!--@syll="1"-->
 	<l n="328">Ah çà ! Je suis entré dans quelque cabanon ! </l>
 <stage type="quiet">Essayant de reprendre quelque calme.</stage>
 	<l n="329">Voyons... J'ai commandé les choses que vous dites ? </l>
-</sp><!--@stage="lost"-->
+</sp><!--@stage="lost"--><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="330" part="I">Oui. </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT.</speaker>
 	<l n="330" part="M">Moi ? </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="330" part="M">Sans doute. </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT.</speaker>
 	<l n="330" part="F">Quoi ! Ces nuances maudites </l><!--@syll="8"-->
 	<l n="331" part="I">Sont de mon choix ? </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="331" part="M">Encore un coup, oui ! </l><!--@syll="5"-->
 <stage type="aparte">À part.</stage>
 	<l n="331" part="F">L'animal ! </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, à part.</speaker>
 	<l n="332" part="I">Il a bu. </l><!--@syll="3"-->
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, à part.</speaker>
 	<l n="332" part="M">C'est un fou. </l><!--@syll="3"-->
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, à part.</speaker>
 	<l n="332" part="F">Cela va tourner mal. </l><!--@syll="6"-->
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="MOLIÈRE"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT.</speaker>
 	<l n="333">Mes sièges sont à moi. Le reste, je le nie ! </l>
-</sp>
+</sp><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="334">Alors vous reniez votre chaise... garnie </l>
 	<l n="335">En bon damas cafard ; d'un vert gai, disiez-vous ? </l>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, à part.</speaker>
 	<l n="336">J'enrage !... Cet ivrogne est le plus fou des fous ! </l>
 <stage type="loud">Haut.</stage>
 	<l n="337">Eh ! Gardez-la pour vous à la fin, votre chaise ! </l>
 	<l n="338" part="I">Vous tombez en enfance ! </l><!--@syll="6"-->
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, le poussant vers la porte.</speaker>
 	<l n="338" part="F">Ah ! C'est là votre thèse ! </l><!--@syll="6"-->
@@ -1251,12 +1253,12 @@
 	<l n="340">Et, chez l'apothicaire, à deux pas, mon voisin, </l>
 <note type="L">Ellébore : Herbe qu'on croit propre à guérir la folie. [FC]</note>
 	<l n="341">Prenez de l'ellébore, au moins... pour trente livres ! </l>
-</sp><!--@stage="push/location"-->
+</sp><!--@stage="push/location"--><!--@who="POQUELIN"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, exaspéré.</speaker>
 	<l n="342">Bon ! Je m'en vais, monsieur ! Je hais les marchands ivres ! </l>
 	<l n="343">Il sort en faisant des gestes de menaces. </l>
-</sp><!--@stage="stress"-->
+</sp><!--@stage="stress"--><!--@who="ROHAUT"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, s'élançant après lui.</speaker>
 	<l n="344" part="I">Ivre ! Moi ! </l><!--@syll="3"-->
@@ -1269,7 +1271,7 @@
 	<l n="346" part="F">Pourtant j'eus tort peut-être </l><!--@syll="6"-->
 	<l n="347">De me montrer si vif !... Je viens, par la fenêtre, </l>
 	<l n="348">De jeter mon argent !... Nous fûmes deux grands fous... </l>
-</sp><!--@stage="follow"-->
+</sp><!--@stage="follow"--><!--@who="POQUELIN"-->
 </div>
 <div type="scene" n="10">
                     <head>SCÈNE X. Jean Poquelin, Molière.</head>
@@ -1278,13 +1280,13 @@
 	<l n="349">Bon !... Du lien brisé renouons les deux bouts. </l>
 	<l n="350">Il descend la scène et se place derrière son père. Haut. </l>
 	<l n="351">Excusez-moi, monsieur... Parfois... Faible est ma tête... </l>
-</sp><!--@stage=""-->
+</sp><!--@stage=""--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, se retournant avec une colère apaisée.</speaker>
 	<l n="352">Eh ! Monsieur..., ce sont là des façons de poète ! </l>
 	<l n="353">Mais quand un professeur vient chez un tapissier, </l>
 	<l n="354">Il doit le faire avec une tête... en acier ! </l>
-</sp><!--@stage="turn/quiet"-->
+</sp><!--@stage="turn/quiet"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, d'un ton humble.</speaker>
 	<l n="355">À la longue, il n'est pas de cervelle qui n'use </l>
@@ -1311,11 +1313,11 @@
 <note type="L">Hysope : On dit proverbialement, Depuis le cèdre jusqu'à l'hysope, par imitation de ce qui est dit de la sagesse de Salomon, qui avait la connaissance de toutes choses depuis le cèdre jusqu'à l'hysope, c'est à dire, des plus grandes choses et des plus petites. [F]</note>
 	<l n="372">Quand il tient dans sa main tremblante un polyèdre ! </l>
 	<l n="373">Tout s'efface à ses yeux, tout devient chiffre ! Et puis... </l>
-</sp><!--@stage="humble"-->
+</sp><!--@stage="humble"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="374">Puis, comme l'astrologue, il tombe dans un puits. </l>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, avec extase.</speaker>
 	<l n="375">Ah ! Vous ne savez pas les charmes que recèle </l>
@@ -1342,71 +1344,71 @@
 	<l n="395">Il est toute innocence ; il spécule, il suppute... </l>
 	<l n="396">Et c'est ainsi qu'est née enfin notre dispute... </l>
 	<l n="397">Çà, voyons, touchez là, maître Jean Poquelin ! </l>
-</sp><!--@stage="happy"-->
+</sp><!--@stage="happy"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="398">Soit ! Mais je vous dis, moi, qui ne suis pas malin, </l>
 	<l n="399">Que le savoir chez vous parfois brouille les cartes ! </l>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, gaiement.</speaker>
 	<l n="400">Parodiant un mot de mon maître Descartes, </l>
 	<l n="401">J'explique mes oublis singuliers par son trait : </l>
 	<l n="402">« Je pense, donc je suis, » - ... donc je suis distrait... très distrait ! </l>
-</sp><!--@stage="happy"-->
+</sp><!--@stage="happy"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, lui offrant des étoffes.</speaker>
 	<l n="403" part="I">Allons, venez tâter cette serge ! </l><!--@syll="9"-->
-</sp><!--@stage="give"-->
+</sp><!--@stage="give"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, palpant l'étoffe.</speaker>
 	<l n="403" part="F">Elle est fine ; </l><!--@syll="3"-->
 	<l n="404">Elle est pleine et solide, et j'aime assez sa mine : </l>
 	<l n="405" part="I">Le vert en est fort beau... </l><!--@syll="6"-->
-</sp><!--@stage="touch"-->
+</sp><!--@stage="touch"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, avec contentement.</speaker>
 	<l n="405" part="F">Maintenant, celle-ci ? </l><!--@syll="6"-->
-</sp><!--@stage="happy"-->
+</sp><!--@stage="happy"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="406" part="I">La couleur m'en plaît moins... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="406" part="F">Elle est moins belle aussi ; </l><!--@syll="6"-->
 	<l n="407" part="I">Mais elle drape bien. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="407" part="F">J'aime mieux la première ; </l><!--@syll="6"-->
 	<l n="408">Son vert ne sera point rongé par la lumière... </l>
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="409">C'est entendu. Prenons pour les rideaux du lit </l>
 	<l n="410">Et pour son pavillon ce vert qui ne pâlit </l>
 	<l n="411">Jamais, m'assurez-vous. - À présent, pour la housse </l>
 	<l n="412" part="I">Des six fauteuils ?... </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, désignant un morceau d'étoffe.</speaker>
 	<l n="412" part="F">Je veux une teinte plus douce ; </l><!--@syll="8"-->
 	<l n="413" part="I">Celle-ci ? </l><!--@syll="3"-->
-</sp><!--@stage="show"-->
+</sp><!--@stage="show"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="413" part="M">Soit, monsieur. </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="413" part="F">Voilà tout bien réglé ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, riant.</speaker>
 	<l n="414">Sans que l'un de nous deux soit par l'autre étranglé ! </l>
 <stage type="stand/pull">Il se lève, Molière le retient.</stage>
-</sp><!--@stage="laugh"-->
+</sp><!--@stage="laugh"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="415">Maintenant, donnez-moi quelques instants encore. </l>
@@ -1419,11 +1421,11 @@
 <note type="L">Fossette : Petit creux que les enfants font en terre, pour jouer à qui y fera tenir plus de noix, de noisettes, ou de pièces de monnaie, etc. Jouer à la fossette. [FC]</note>
 	<l n="420">Naïf comme un enfant qui joue à la fossette.</l>
 	<l n="421">Je veux, mais en lieu sûr, le placer cet argent ! </l>
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="422">On ne peut vraiment pas vous trouver exigeant. </l>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 <note type="L">Roche : Fig. Un homme de la vieille roche, un homme d'une probité antique, d'une vertu éprouvée. [L]</note>
@@ -1437,86 +1439,86 @@
 	<l n="430">Me l'ont, tout d'une voix, désigné. - Bref, ce preux, </l>
 	<l n="431">Ce Bayard des marchands de Paris la grand'ville, </l>
 	<l n="432" part="I">Jean Poquelin, c'est vous ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, se défendant avec émotion.</speaker>
 	<l n="432" part="F">La phrase est trop civile ! </l><!--@syll="6"-->
 	<l n="433">Mais je suis en effet sûr de ma probité...</l>
 <stage type="hesitate">Avec hésitation.</stage>
 	<l n="434" part="I">Le commerce va mal... </l><!--@syll="6"-->
-</sp><!--@stage="stress"-->
+</sp><!--@stage="stress"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, riant.</speaker>
 	<l n="434" part="F">Il n'a jamais été... </l><!--@syll="6"-->
 	<l n="435" part="I">Bien, depuis le déluge... </l><!--@syll="6"-->
-</sp><!--@stage="laugh"-->
+</sp><!--@stage="laugh"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="435" part="M">Ah ! </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, gaiement.</speaker>
 	<l n="435" part="F">Voyons, je vous offre </l><!--@syll="6"-->
 	<l n="436">Là sérieusement, de mettre en votre coffre, </l>
 	<l n="437">Comme le réglera le notaire Gigault, </l>
 	<l n="438" part="I">Huit mille livres. </l><!--@syll="5"-->
-</sp><!--@stage="happay"-->
+</sp><!--@stage="happay"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, étourdi.</speaker>
 	<l n="438" part="M">Huit ? </l><!--@syll="1"-->
-</sp><!--@stage="dream"-->
+</sp><!--@stage="dream"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="438" part="F">Ou dix mille plutôt ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, très ému.</speaker>
 	<l n="439" part="I">Monsieur ! </l><!--@syll="2"-->
-</sp><!--@stage="stress"-->
+</sp><!--@stage="stress"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="439" part="M">Eh bien ? </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="439" part="M">J'accepte... </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, rondement.</speaker>
 	<l n="439" part="F">Alors c'est chose dite, </l><!--@syll="6"-->
 	<l n="440">Et demain, ce sera chose faite... et très vite ! </l>
 	<l n="441">Maître Gigault, notaire, et des plus honorés, </l>
 	<l n="442" part="I">Dressera l'acte. </l><!--@syll="6"-->
-</sp><!--@stage="stress"-->
+</sp><!--@stage="stress"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, se levant.</speaker>
 	<l n="442" part="F">Soit. - Mais vous jetterez </l><!--@syll="6"-->
 	<l n="443">Avant, Maître Rohaut, un coup d'oeil sur mes livres ? </l>
 	<l n="444" part="I">On ne dépose pas ainsi huit... </l><!--@syll="9"-->
-</sp><!--@stage="stand"-->
+</sp><!--@stage="stand"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="444" part="M">Dix ! </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="444" part="F">... Mille livres, </l><!--@syll="2"-->
 	<l n="445">Chez un marchand, sans voir, et de très près, le fond </l>
 	<l n="446" part="I">De ses affaires ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="446" part="F">Bah ! Maître, ce qu'elles sont </l><!--@syll="6"-->
 	<l n="447">M'importe peu ! - Je sais que vous êtes honnête, </l>
 	<l n="448" part="I">Et cela me suffit. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, entêté.</speaker>
 	<l n="448" part="F">Je n'en fais qu'à ma tête ! </l><!--@syll="6"-->
 	<l n="449">Attendez un instant. Je vais chercher là-haut </l>
 	<l n="450">Mes livres et papiers, maître Jacques Rohaut ! </l>
 <stage type="up">Il monte à l'étage supérieur.</stage>
-</sp><!--@stage="stress"-->
+</sp><!--@stage="stress"--><!--@who="POQUELIN"-->
 </div>
 <div type="scene" n="11">
                     <head>SCÈNE XI.</head>
@@ -1562,7 +1564,7 @@
 	<l n="488">Oui, ce coeur tout blessé me fait encore entendre </l>
 	<l n="489">Les battements divins de ma jeunesse, ici : </l>
 	<l n="490">Coeur qui saigne, et par qui je reste bon, merci ! </l>
-</sp><!--@stage="alone"-->
+</sp><!--@stage="alone"--><!--@who="MOLIÈRE"-->
 </div>
 <div type="scene" n="12">
                     <head>SCÈNE XII. Molière, Clabaud, Rohaut.</head>
@@ -1570,111 +1572,111 @@
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="491">Croyez-moi... revenez... C'était une lubie ! </l>
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, se défendant.</speaker>
 	<l n="492" part="I">Il criait fort !... </l><!--@syll="4"-->
-</sp><!--@stage="stress"-->
+</sp><!--@stage="stress"--><!--@who="ROHAUT"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="492" part="M">Allons ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, entraîné à reculons.</speaker>
 	<l n="492" part="F">C'est de l'hydrophobie ! </l><!--@syll="6"-->
 	<l n="493" part="I">Avec son pavillon à queue ! </l><!--@syll="8"-->
-</sp><!--@stage=""-->
+</sp><!--@stage=""--><!--@who="ROHAUT"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, les apercevant.</speaker>
 	<l n="493" part="F">Ah ! Je suis pris </l><!--@syll="4"-->
 	<l n="494" part="I">Cette fois ! </l><!--@syll="3"-->
-</sp><!--@stage="watch"-->
+</sp><!--@stage="watch"--><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, voyant Molière.</speaker>
 	<l n="494" part="M">Ciel ! </l><!--@syll="1"-->
-</sp><!--@stage="watch"-->
+</sp><!--@stage="watch"--><!--@who="CLABAUD"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT.</speaker>
 	<l n="494" part="M">Eh bien ? </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="ROHAUT"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="494" part="F">Serge et satin ! </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, se retournant.</speaker>
 	<l n="494" part="F">Quels cris ! </l><!--@syll="2"-->
 	<l n="495" part="I">Qu'avez-vous donc ? </l><!--@syll="4"-->
 <stage type="watch">Il voit Molière.</stage>
 	<l n="495" part="F">Grand Dieu ! C'est mon spectre ! </l><!--@syll="6"-->
-</sp><!--@stage="tuen"-->
+</sp><!--@stage="tuen"--><!--@who="ROHAUT"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, lui mettant la main sur la bouche.</speaker>
 	<l n="495" part="F">Silence ! </l><!--@syll="2"-->
-</sp><!--@stage="touch"-->
+</sp><!--@stage="touch"--><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="496" part="I">Deux Rohaut ! </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT.</speaker>
 	<l n="496" part="M">Monsieur !... </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="ROHAUT"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, même geste que plus haut.</speaker>
 	<l n="496" part="M">Chut ! </l><!--@syll="1"-->
-</sp><!--@stage="touch/loud"-->
+</sp><!--@stage="touch/loud"--><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="496" part="F">Terrible ressemblance ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT.</speaker>
 	<l n="497" part="I">Monsieur ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="ROHAUT"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, idem.</speaker>
 	<l n="497" part="F">Taisez-vous donc ! - Partez ! - Un mot me perd... </l><!--@syll="10"-->
-</sp><!--@stage="touch/loud"-->
+</sp><!--@stage="touch/loud"--><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, agitant les étoffes qu'il rapportait.</speaker>
 	<l n="498">Auquel des deux offrir mon damas cafard vert ? </l>
-</sp><!--@stage="move"-->
+</sp><!--@stage="move"--><!--@who="CLABAUD"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, poussant Rohaut.</speaker>
 	<l n="499" part="I">Rohaut, allez-vous-en... </l><!--@syll="6"-->
-</sp><!--@stage="push"-->
+</sp><!--@stage="push"--><!--@who="MOLIÈRE"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, ahuri, et se prenant la tête à deux mains.</speaker>
 	<l n="499" part="F">Ah ! - Mais quels sortilèges </l><!--@syll="6"-->
 	<l n="500">Me firent envoyer ici mes quatre sièges ! </l>
-</sp><!--@stage="estonish/hide"-->
+</sp><!--@stage="estonish/hide"--><!--@who="ROHAUT"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="501">Encore un coup, partez ! - Vous saurez tout ce soir... </l>
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT.</speaker>
 	<l n="502" part="I">Monsieur ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="ROHAUT"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, lui criant dans l'oreille.</speaker>
 	<l n="502" part="M">Je suis Molière... </l><!--@syll="4"-->
 <stage type="kneel">Clabaud se met à genoux.</stage>
-</sp><!--@stage="shout"-->
+</sp><!--@stage="shout"--><!--@who="MOLIÈRE"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT, stupéfait.</speaker>
 	<l n="502" part="M">Oh ! Bon ! </l><!--@syll="2"-->
-</sp><!--@stage="estonish"-->
+</sp><!--@stage="estonish"--><!--@who="ROHAUT"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="502" part="F">J'irai vous voir </l><!--@syll="4"-->
 	<l n="503" part="I">En sortant du Théâtre... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#rohaut">
                         <speaker>ROHAUT.</speaker>
 	<l n="503" part="M">Un mot ? </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="ROHAUT"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="503" part="F">Non partez vite ! </l><!--@syll="4"-->
@@ -1684,64 +1686,64 @@
 	<l n="506">Allons, mon cher ami, décampez. - À tantôt. </l>
 <stage type="walk/kneel">Il redescend la scène et trouve Clabaud agenouillé.</stage>
 	<l n="507" part="I">Et toi, Clabaud... Eh bien ?... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="507" part="F">Vous êtes mon idole ; </l><!--@syll="6"-->
 	<l n="508" part="I">Laissez-moi baiser vos... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, le relevant, en riant.</speaker>
 	<l n="508" part="F">Je t'ôte la parole, </l><!--@syll="6"-->
 	<l n="509" part="I">Imbécile ! - Tais-toi. </l><!--@syll="6"-->
-</sp><!--@stage="stand/laugh"-->
+</sp><!--@stage="stand/laugh"--><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, avec enthousiasme.</speaker>
 	<l n="509" part="M">Quel acteur ! </l><!--@syll="3"-->
-</sp><!--@stage="enthousiasm"-->
+</sp><!--@stage="enthousiasm"--><!--@who="CLABAUD"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="509" part="F">Quel bavard ! </l><!--@syll="3"-->
 	<l n="510" part="I">Pas un mot à mon père. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="510" part="F">Ô triomphe de l'art ! </l><!--@syll="6"-->
 	<l n="511">Je n'ai pas reconnu votre illustre personne ! </l>
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="512">Tais-toi donc ! - Pas un mot non plus à ta Chiffonne, </l>
 	<l n="513">Ou sinon... chut ! Voici mon père qui descend... </l>
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 </div>
 <div type="scene" n="13">
                     <head>SCÈNE XIII. Molière, Clabaud, Jean Poquelin.</head>
 <sp who="#poquelin">
                         <speaker>POQUELIN, sur les dernières marches de l'escalier, une pile de registres sous le bras.</speaker>
 	<l n="514" part="I">Enfin ! Je les ai tous. </l><!--@syll="6"-->
-</sp><!--@stage="location"-->
+</sp><!--@stage="location"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, tirant sa montre.</speaker>
 	<l n="514" part="F">Il est intéressant, </l><!--@syll="6"-->
 	<l n="515">Maître Jean Poquelin, cet examen, sans doute, </l>
 	<l n="516">Mais je suis obligé de me remettre en route... </l>
-</sp><!--@stage="get"-->
+</sp><!--@stage="get"--><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="517" part="I">Un instant ? </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="517" part="F">Oh ! Non pas ! - On m'attend à mon... cours ; </l><!--@syll="9"-->
 	<l n="518">Je suis fort en retard, excusez-moi, j'y cours : </l>
 	<l n="519">Demain, chez le notaire, après les signatures, </l>
 	<l n="520">Je lirai, d'un oeil frais, toutes ces écritures. </l>
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="521" part="I">Vous me le jurez ? </l><!--@syll="5"-->
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="521" part="F">Oui. - Mes... élèves, là-bas, </l><!--@syll="7"-->
@@ -1749,24 +1751,24 @@
 	<l n="523">À l'heure, le parterre... ou plutôt l'auditoire </l>
 	<l n="524" part="I">M'attend avec des fruits... </l><!--@syll="6"-->
 <stage type="away">Il se dispose à s'en aller.</stage>
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="524" part="F">Les monstres, c'est notoire. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CLABAUD"-->
 </div>
 <div type="scene" n="14">
                     <head>SCÈNE XIV.  Les mêmes, Chiffonne.</head>
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, entrant par la porte de gauche.</speaker>
 	<l n="525" part="I">Venez dîner, parrain. </l><!--@syll="6"-->
-</sp><!--@stage="entrance"-->
+</sp><!--@stage="entrance"--><!--@who="CHIFFONNE"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="525" part="F">Ah ! La jolie enfant ! </l><!--@syll="6"-->
 <stage type="toward">À Jean Poquelin.</stage>
 	<l n="526" part="I">C'est votre fille ? </l><!--@syll="5"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="526" part="F">Non. Non, ce n'est pas mon sang... </l><!--@syll="7"-->
@@ -1776,23 +1778,23 @@
 	<l n="528" part="F">Et bientôt elle sera la femme </l><!--@syll="9"-->
 	<l n="529" part="I">De ce grand dadais-là. </l><!--@syll="6"-->
 <stage type="threat">Il menace Clabaud du doigt.</stage>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="529" part="F">Quoi ! C'est bientôt, parrain ?... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, montrant Molière.</speaker>
 	<l n="530">Oui, car grâce à monsieur tout prend un nouveau train... </l>
-</sp><!--@stage="show"-->
+</sp><!--@stage="show"--><!--@who="POQUELIN"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE, courant à Molière, puis s'arrêtant confuse.</speaker>
 	<l n="531">Ah ! Monsieur, voulez-vous que... que je vous embrasse ? </l>
-</sp><!--@stage="closer/stop"-->
+</sp><!--@stage="closer/stop"--><!--@who="CHIFFONNE"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="532" part="I">Eh mais ! Très volontiers. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, à J. Poquelin. </speaker>
 <stage type="cry">Il sanglote. </stage>
@@ -1801,16 +1803,16 @@
 <stage type="show">Il montre le coin de son oeil.</stage>
 	<l n="533" part="F">Cher patron, laissez-moi </l><!--@syll="6"-->
 	<l n="534" part="I">Vous embrasser en fils ? </l><!--@syll="6"-->
-</sp><!--@stage="toward"-->
+</sp><!--@stage="toward"--><!--@who="CLABAUD"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
 	<l n="534" part="F">Subissez son émoi ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="MOLIÈRE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD, à Jean Poquelin qui le fuit.</speaker>
 	<l n="535">Un tapissier en pleurs vous en prie à mains jointes ! </l>
 <stage type="hugh">Clabaud et Chiffonne au cou de Jean Poquelin.</stage>
-</sp><!--@stage="toward/away"-->
+</sp><!--@stage="toward/away"--><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN, se débattant et criant.</speaker>
 	<l n="536">Chiffonne, à vos surjets ! Vous Clabaud, à vos pointes ! </l>
@@ -1818,28 +1820,28 @@
 <stage type="wave">Tendant la main à Molière.</stage>
 	<l n="538">Maître Jacques Rohaut, je vous dis : À demain ! </l>
 	<l n="539">Et merci ! - Vous semez ici le bonheur même ! </l>
-</sp><!--@stage="push/shout"-->
+</sp><!--@stage="push/shout"--><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, à part.</speaker>
 	<l n="540">Oui ? - Puisses-tu résoudre ainsi chaque problème, </l>
 	<l n="541" part="I">Jacques Rohaut ! </l><!--@syll="4"-->
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="MOLIÈRE"-->
 <sp who="#chiffonne">
                         <speaker>CHIFFONNE.</speaker>
 	<l n="541" part="F">Monsieur, mon coeur vous dit : Merci ! </l><!--@syll="8"-->
-</sp>
+</sp><!--@who="CHIFFONNE"-->
 <sp who="#clabaud">
                         <speaker>CLABAUD.</speaker>
 	<l n="542">Bien, madame Clabaud, bien ! C'est parler ceci. </l>
-</sp>
+</sp><!--@who="CLABAUD"-->
 <sp who="#poquelin">
                         <speaker>POQUELIN.</speaker>
 	<l n="543">Mes enfants ! - Que ce jour joyeusement finisse... </l>
-</sp>
+</sp><!--@who="POQUELIN"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, sur le seuil de la porte.</speaker>
 	<l n="544">Au revoir, mes amis, et que Dieu vous bénisse ! </l>
-</sp><!--@stage="location"-->
+</sp><!--@stage="location"--><!--@who="MOLIÈRE"-->
 </div>
 </div>
 </body>

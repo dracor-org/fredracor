@@ -97,7 +97,9 @@
 		<docDate when="1887">1887</docDate>
 		<docAuthor>ERNEST D'HERVILLY</docAuthor><!--@bio="hervilly"-->
 		<div type="docImprint">
-			<copyright>Tous droits réservés. </copyright>
+			<div type="copyright">
+                    <p>Tous droits réservés. </p>
+                </div>
 			<div type="printer">
                     <p>PARIS L. FRINZINE, ÉDITEUR  112, Boulevard Saint-Germain, 112</p>
                 </div><!--@id="FRINZINE"-->
@@ -127,21 +129,21 @@
 		<castList>
 			<head>PERSONNAGES.</head>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#sganarelle">SGANARELLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"-->, l'habit traditionnel, jaune et vert, avec fraise, du Médecin malgré lui. Longs cheveux blancs .................... M.CLERH</castItem>
+                    <role corresp="#sganarelle">SGANARELLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@statut_amoureux="néant"-->, l'habit traditionnel, jaune et vert, avec fraise, du Médecin malgré lui. Longs cheveux blancs .................... M.CLERH</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#toinette">TOINETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="servante"--><!--@age="A"-->. Costume moderne ..... MLE CLOTILDE COLAS.</castItem>
+                    <role corresp="#toinette">TOINETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="servante"--><!--@age="A"--><!--@statut_amoureux="néant"-->. Costume moderne ..... MLE CLOTILDE COLAS.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#un-medecin-du-temps-de-moliere">UN MÉDECIN DU TEMPS DE MOLIÈRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="médecin"--><!--@age="A"--> ...... M. FREVILLE. </castItem>
+                    <role corresp="#un-medecin-du-temps-de-moliere">UN MÉDECIN DU TEMPS DE MOLIÈRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="médecin"--><!--@age="A"--><!--@statut_amoureux="néant"--> ...... M. FREVILLE. </castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#un-medecin-du-temps-de-louis-xv">UN MÉDECIN DU TEMPS DE LOUIS XV</role><!--@sex="1"--><!--@type="H"--><!--@statut="médecin"--><!--@age="A"--> ..... M. AMAURY. </castItem>
+                    <role corresp="#un-medecin-du-temps-de-louis-xv">UN MÉDECIN DU TEMPS DE LOUIS XV</role><!--@sex="1"--><!--@type="H"--><!--@statut="médecin"--><!--@age="A"--><!--@statut_amoureux="néant"--> ..... M. AMAURY. </castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#un-chirurgien-de-l-armee-d-egypte">UN CHIRURGIEN DE L'ARMÉE D'ÉGYPTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="médecin"--><!--@age="A"--> ......... M. GEORGES RICHARD.</castItem> 
+                    <role corresp="#un-chirurgien-de-l-armee-d-egypte">UN CHIRURGIEN DE L'ARMÉE D'ÉGYPTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="médecin"--><!--@age="A"--><!--@statut_amoureux="néant"--> ......... M. GEORGES RICHARD.</castItem> 
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#un-aide-major-de-marine">UN AIDE-MAJOR DE MARINE</role><!--@sex="1"--><!--@type="H"--><!--@statut="militaire"--><!--@age="A"--> (sous Louis-Philippe) ... M. FRANÇOIS.</castItem>
+                    <role corresp="#un-aide-major-de-marine">UN AIDE-MAJOR DE MARINE</role><!--@sex="1"--><!--@type="H"--><!--@statut="militaire"--><!--@age="A"--><!--@statut_amoureux="néant"--> (sous Louis-Philippe) ... M. FRANÇOIS.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#un-medecin-de-nos-jours">UN MÉDECIN DE NOS JOURS</role><!--@sex="1"--><!--@type="H"--><!--@statut="médecin"--><!--@age="A"--> ........... M. TOUSE.</castItem>
+                    <role corresp="#un-medecin-de-nos-jours">UN MÉDECIN DE NOS JOURS</role><!--@sex="1"--><!--@type="H"--><!--@statut="médecin"--><!--@age="A"--><!--@statut_amoureux="néant"--> ........... M. TOUSE.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#apothicaires,-matassins">APOTHICAIRES, MATASSINS</role><!--@sex="1"--><!--@type="H"--><!--@statut="apothicaire"--><!--@age="A"-->, en habit du temps de Molière,  la seringue sur l'épaule.</castItem>
+                    <role corresp="#apothicaires,-matassins">APOTHICAIRES, MATASSINS</role><!--@sex="1"--><!--@type="H"--><!--@statut="apothicaire"--><!--@age="A"--><!--@statut_amoureux="néant"-->, en habit du temps de Molière,  la seringue sur l'épaule.</castItem>
 		</castList>
 		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 		<note>Extrait de CINQ ANNIVERSAIRES DE MOLIÈRE 1874 - 1875 - 1877 - 1881 - 1886  COMÉDIES EN VERS.</note>
@@ -190,20 +192,20 @@
 	<l n="32">Du ton d'un homme grave armé d'un habit noir ! </l>
 <stage type="cough">Sganarelle tousse.</stage>
 	<l n="33" part="I">Mais je l'entends... </l><!--@syll="4"-->
-</sp><!--@stage="toward"-->
+</sp><!--@stage="toward"--><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, de l'intérieur de la maison.</speaker>
 	<l n="33" part="M">Toinette. </l><!--@syll="2"-->
-</sp><!--@stage="location"-->
+</sp><!--@stage="location"--><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="33" part="M">Eh bien, monsieur ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="33" part="F">Toinette. </l><!--@syll="2"-->
 <stage type="exit">Il sort de sa maison.</stage>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 </div>
 <div type="scene" n="2">
                     <head>SCÈNE II. Toinette, Sganarelle.</head>
@@ -213,50 +215,50 @@
 	<l n="35">Dans mon cabinet ! Prends les volumes brochés </l>
 	<l n="36">Que tu verras, là-bas, pêle-mêle couchés, </l>
 	<l n="37" part="I">Et porte-les-moi tous... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="37" part="M">Où ça ? </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, avec fureur.</speaker>
 	<l n="37" part="F">Par la fenêtre ! </l><!--@syll="4"-->
-</sp><!--@stage="furious"-->
+</sp><!--@stage="furious"--><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="38">Avec joie ! Et j'y cours ! Monsieur va donc renaître ! </l>
 <stage type="pull">Sganarelle retient Toinette par sa robe, au moment où elle se dispose à exécuter ses ordres avec un empressement facile à concevoir. </stage>
 	<l n="39" part="I">Quoi ! Serait-ce un remords ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="39" part="F">Tu les rejetteras tous </l><!--@syll="6"-->
 	<l n="40" part="I">Sans les lire ! </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="40" part="F">Jarni ! Pour qui me prenez-vous ? </l><!--@syll="9"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, même jeu que plus haut.</speaker>
 	<l n="41" part="I">Attends. </l><!--@syll="2"-->
 <stage type="sit">Il s'assied.</stage>
 	<l n="41" part="F">Ouf ! Prends d'abord les pièces de théâtre </l><!--@syll="9"-->
 	<l n="42" part="I">Parmi tous ces bouquins... </l><!--@syll="6"-->
-</sp><!--@stage="pull"-->
+</sp><!--@stage="pull"--><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="42" part="M">Oui, monsieur.</l><!--@syll="3"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="42" part="F">Et sur l'âtre </l><!--@syll="3"-->
 	<l n="43">De ta cuisine, empile, empile-les, corbleu ! </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="44">Ah ! Jamais la Saint-Jean n'aura vu pareil feu ! </l>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, même jeu que tout à l'heure.</speaker>
 	<l n="45">Toinon ! Je suis bien bas, ce matin. On me tue ! </l>
@@ -264,19 +266,19 @@
 	<l n="46">Ils veulent, ces auteurs, qu'un mari s'habitue </l>
 	<l n="47">À prendre un révolver, et même un chassepot, </l>
 	<l n="48">Pour punir sa moitié, quand il est fait... capot ! </l>
-</sp><!--@stage="pull"-->
+</sp><!--@stage="pull"--><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE, scandalisée.</speaker>
 	<l n="49">Voilà d'étranges gens ! L'abominable mode ! </l>
-</sp><!--@stage="offended"-->
+</sp><!--@stage="offended"--><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="50" part="I">Tu l'as dit ! </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="50" part="F">Peut-on être à ce point incommode ! </l><!--@syll="9"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="51">Ah ! Je suis bien malade, et mes noires humeurs </l>
@@ -284,11 +286,11 @@
 	<l n="53">Oui, je m'en vais d'avoir trop vu de comédies </l>
 	<l n="54">Modernes. J'éteindrais plus de vingt incendies </l>
 	<l n="55">Avec les pleurs qu'on verse en ces actes joyeux... </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="56">Ah ! Les gaietés du siècle ont tari bien des yeux !... </l>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="57">Voilà plus de cent ans que je n'ai ri, Toinette, </l>
@@ -318,39 +320,39 @@
 	<l n="80">L'esprit gaulois se meurt ! Du gros sel ! De l'entrain ! </l>
 	<l n="81">Un peu de la folie en ma jeunesse éparse ! </l>
 	<l n="82">Voyons, du diable-au-corps ! Du bouffon ! Une farce ! </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE, sentencieuse.</speaker>
 	<l n="83">Le diable s'est fait vieux, changement de décors, </l>
 	<l n="84">Monsieur ; et nous n'avons, nous, que l'ermite-au-corps. </l>
-</sp><!--@stage="serious"-->
+</sp><!--@stage="serious"--><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="85" part="I">Toinette ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="85" part="F">Bien, monsieur. Je prends un ton plus grave. </l><!--@syll="10"-->
 	<l n="86">Donc, vous êtes malade, et vous faites le brave...</l>
 	<l n="87">Voyons... pourquoi ne pas tâter... du médecin ?... </l>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
  <stage type="estonish">Il n'en peut croire ses oreilles.</stage>
 	<l n="88" part="I">Tu dis ?... </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="88" part="M">Du médecin... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="88" part="M">Tu dis ?... </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="88" part="M">Un... </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, bondissant.</speaker>
 	<l n="88" part="F">Assassin ! </l><!--@syll="3"-->
@@ -383,7 +385,7 @@
 	<l n="113" part="F">Foin de cette engeance ! </l><!--@syll="6"-->
 	<l n="114">Non ! Vous ne m'aurez pas, scalpels de la vengeance ! </l>
 <stage type="sit/tired">Il tombe épuisé dans son fauteuil. </stage>
-</sp><!--@stage="jump"-->
+</sp><!--@stage="jump"--><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="115">Là là, tous doux, monsieur ! Menteurs et charlatans </l>
@@ -394,42 +396,42 @@
 	<l n="120">Les ânes bâtés seuls trouvent nos bâts blessants. </l>
 	<l n="121">Rassurez-vous, monsieur. Vous n'avez rien à craindre </l>
 	<l n="122" part="I">Des médecins. </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, toujours incrédule.</speaker>
 	<l n="122" part="F">Par qui tu veux me faire étreindre ? </l><!--@syll="8"-->
-</sp><!--@stage="supicious"-->
+</sp><!--@stage="supicious"--><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="123">Oui, monsieur. Vous verrez, avant que d'être mort, </l>
 	<l n="124">Qu'ils sont tous sans rancune, et que vous avez tort... </l>
 <stage type="call">Elle appelle.</stage>
 	<l n="125">Holà ! Des médecins ! De toutes les époques ! </l>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, épouvanté.</speaker>
 	<l n="126">Miséricorde ! À l'aide ! Eh quoi ! Tu les évoques </l>
 	<l n="127" part="I">Tous, depuis le déluge ! Au meurtre ! </l><!--@syll="8"-->
-</sp><!--@stage="frighten"-->
+</sp><!--@stage="frighten"--><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="127" part="F">Eh ! Monsieur, non ; </l><!--@syll="4"-->
 	<l n="128" part="I">Depuis le Roi-Soleil seulement. </l><!--@syll="9"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="128" part="F">Ah ! Toinon ! </l><!--@syll="3"-->
 	<l n="129" part="I">Je meurs... </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="129" part="M">Les voici... </l><!--@syll="3"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, éperdu.</speaker>
 	<l n="129" part="M">Ciel ! </l><!--@syll="1"-->
 <stage type="entrance/music">Entrée des médecins. Musique.</stage>
-</sp><!--@stage="estonished"-->
+</sp><!--@stage="estonished"--><!--@who="SGANARELLE"-->
 </div>
 <div type="scene" n="3">
                     <head>SCÈNE III. Sganarelle, Toinette, Les Médecins.</head>
@@ -438,57 +440,57 @@
                         <speaker>SGANARELLE, apercevant les seringues.</speaker>
 	<l n="129" part="F">Avec arme et bagage ! </l><!--@syll="6"-->
 	<l n="130">Oh ! Quel affreux parfum de ces gens se dégage... </l>
-</sp><!--@stage="watch"-->
+</sp><!--@stage="watch"--><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="131">Ne les irritez pas, monsieur. Ils sont cléments : </l>
 	<l n="132">J'affirme qu'ils n'ont pas changé leurs instruments ! </l>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, tragiquement.</speaker>
 	<l n="133">Vade ! Vade retro, fantômes que vous êtes ! </l>
 <stage type="show">Il montre les seringues.</stage>
 	<l n="134">Pour qui sont ces serpents qui sifflent sur nos têtes ! </l>
-</sp><!--@stage="frighten"-->
+</sp><!--@stage="frighten"--><!--@who="SGANARELLE"-->
 <sp who="#le-medecin-de-moliere">
                         <speaker>LE MÉDÉCIN DE MOLIÈRE, à ses hommes.</speaker>
 	<l n="135" part="I">Halte ! Front ! </l><!--@syll="3"-->
-</sp><!--@stage="toward"-->
+</sp><!--@stage="toward"--><!--@who="LE MÉDÉCIN DE MOLIÈRE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, avec joie.</speaker>
 	<l n="135" part="F">Front, dit-il... Je respire en ce cas. </l><!--@syll="9"-->
-</sp><!--@stage="happy"-->
+</sp><!--@stage="happy"--><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="136" part="I">Monsieur, ils ont l'air doux... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="136" part="F">Doux ? Comme le trépas ! </l><!--@syll="6"-->
 	<l n="137">Mon Dieu ! Cet homme en noir, s'il allait dire : En joue ! </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#le-medecin-de-moliere">
                         <speaker>LE MÉDÉCIN DE MOLIÈRE.</speaker>
 <stage type="closer/wave">Il s'avance et salue profondément Sganarelle.</stage>
 	<l n="138" part="I">Monsieur, je suis heureux. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="LE MÉDÉCIN DE MOLIÈRE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, il essaye de sourire.</speaker>
 	<l n="138" part="M">Monsieur... </l><!--@syll="2"-->
 <stage type="aparte">À part.</stage>
 	<l n="138" part="F">Je l'amadoue ; </l><!--@syll="6"-->
 	<l n="139" part="I">Il faut ruser ici.</l><!--@syll="6"-->
-</sp><!--@stage="smile"-->
+</sp><!--@stage="smile"--><!--@who="SGANARELLE"-->
 <sp who="#le-medecin-de-moliere">
                         <speaker>LE MÉDÉCIN.</speaker>
 	<l n="139" part="F">Monsieur, je suis charmé... </l><!--@syll="6"-->
 <stage type="touch">Il veut prendre la main de Sganarelle.</stage>
 	<l n="140" part="I">Permettez-moi... </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="LE MÉDÉCIN DE MOLIÈRE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, retirant sa main.</speaker>
 	<l n="140" part="F">Pardon. Êtes-vous désarmé ? </l><!--@syll="6"-->
-</sp><!--@stage="wave"-->
+</sp><!--@stage="wave"--><!--@who="SGANARELLE"-->
 <sp who="#le-medecin-de-moliere">
                         <speaker>LE MÉDÉCIN.</speaker>
 	<l n="141">Eh ! Qui ne l'est pas devant Molière et son génie ! </l>
@@ -502,12 +504,12 @@
 	<l n="148">Le bézoard coûteux, qu'à chacun je promets, </l>
 	<l n="149">Ne guérira jamais un esprit chagrin comme </l>
 	<l n="150">Le fait le créateur du Bourgeois gentilhomme... </l>
-</sp>
+</sp><!--@who="LE MÉDÉCIN DE MOLIÈRE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, à Toinette.</speaker>
 	<l n="151">Tu l'entends ! Il avoue ! Il avoue, entends-tu : </l>
 	<l n="152">Le bézoard, dit-il, n'eut jamais de vertu ! </l>
-</sp><!--@stage="toward"-->
+</sp><!--@stage="toward"--><!--@who="SGANARELLE"-->
 <sp who="#le-medecin-de-moliere">
                         <speaker>LE MEDECIN [DE MOLIERE], montrant les apothicaires.</speaker>
 	<l n="153">Nous nous dessécherions la glande salivaire </l>
@@ -515,21 +517,21 @@
 	<l n="155">Ce Molière dont l'oeuvre aussi puissant que fin, </l>
 	<l n="156">AEre perennius ! N'aura jamais de fin. </l>
 <stage type="wave/away">Il salue et se retire en arrière. </stage>
-</sp><!--@stage="show"-->
+</sp><!--@stage="show"--><!--@who="LE MÉDÉCIN DE MOLIÈRE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="157">Ces messieurs sont bien bons, Toinette, mais qu'ils sortent ! </l>
 	<l n="158">Timeo medicos et les présents qu'ils portent. </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="159">Quoi ! Ne voyez-vous pas combien vous vous trompiez ! </l>
 <stage type="entrance">Le médecin Louis XV s'avance.</stage>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="160" part="I">Ouais ! Quel est celui-ci ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#le-medecin-louis-xv">
                         <speaker>LE MÉDÉCIN LOUIS XV, air dégagé.</speaker>
 	<l n="160" part="F">Je viens mettre à vos pieds </l><!--@syll="6"-->
@@ -542,11 +544,11 @@
 	<l n="167">Mon tricorne galant, mon jonc à pomme d'or, </l>
 	<l n="168">Auprès d'une Marton, la fleur du corridor !... </l>
 <stage type="lazzi">Il pirouette.</stage>
-</sp><!--@stage="proud"-->
+</sp><!--@stage="proud"--><!--@who="LE MÉDÉCIN LOUIS XV"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="169" part="I">Voyez, le beau docteur ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#le-medecin-louis-xv">
                         <speaker>LE MÉDÉCIN LOUIS XV.</speaker>
 	<l n="169" part="F">Mais tous mes quatrains, peste ! </l><!--@syll="6"-->
@@ -554,31 +556,31 @@
 	<l n="171">Ton indignation, foi du docteur-trumeau, </l>
 	<l n="172">Nous manqua fort au temps du neveu de Rameau ! </l>
 	<l n="173">Pandore avait vidé sa boîte sur la terre... </l>
-</sp>
+</sp><!--@who="LE MÉDÉCIN LOUIS XV"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="174">Mais il restait au fond Arouet de Voltaire ! </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#le-medecin-louis-xv">
                         <speaker>LE MÉDÉCIN LOUIS XV.</speaker>
 	<l n="175">Oui. Mais comme aurait dit la marquise, aisément : </l>
 	<l n="176">Voltaire est un époux, Molière est un amant ! </l>
 <stage type="shake/wave">Il secoue son jabot, et salue.</stage>
 <stage type="closer">Un chirurgien militaire du temps de la République s'avance à son tour.</stage>
-</sp>
+</sp><!--@who="LE MÉDÉCIN LOUIS XV"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="177" part="I">Et toi, double tueur ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#le-chirurgien">
                         <speaker>LE CHIRURGIEN.</speaker>
 	<l n="177" part="F">Au pied des Pyramides, </l><!--@syll="6"-->
 	<l n="178">En butte à la valeur des cavaliers numides... </l>
-</sp>
+</sp><!--@who="LE CHIRURGIEN"-->
 <sp who="#toinette">
                         <speaker>TOINETTE, à Sganarelle.</speaker>
 	<l n="179" part="I">C'est le style du temps. </l><!--@syll="6"-->
-</sp><!--@stage="toward"-->
+</sp><!--@stage="toward"--><!--@who="TOINETTE"-->
 <sp who="#le-chirurgien">
                         <speaker>LE CHIRURGIEN.</speaker>
 	<l n="179" part="F">Ou bien quand, dans Jaffa, </l><!--@syll="6"-->
@@ -593,34 +595,34 @@
 	<l n="188">On me vit attendri, comme aux accords de Gluck, </l>
 	<l n="189">En lisant Mélicerte. Oh ! Les choses charmantes </l>
 	<l n="190">Qu'autrefois les amants disaient à leurs amantes ! </l>
-</sp>
+</sp><!--@who="LE CHIRURGIEN"-->
 <sp who="#toinette">
                         <speaker>TOINETTE, ravie.</speaker>
 	<l n="191" part="I">Bien roucoulé, lion ! </l><!--@syll="6"-->
-</sp><!--@stage="happy"-->
+</sp><!--@stage="happy"--><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="191" part="F">Prends garde ! Les serpents </l><!--@syll="6"-->
 	<l n="192">Sont sous l'herbe, et tu peux l'apprendre à tes dépens ; </l>
 	<l n="193">Et peut-être ces fleurs cachent l'apothicaire ! </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#le-chirurgien">
                         <speaker>LE CHIRURGIEN.</speaker>
 	<l n="194">Sganarelle ! J'ai lu dix fois Don Juan, au Caire ! </l>
 	<l n="195">Oui, Molière ! Et j'ai fait répéter ton beau nom </l>
 	<l n="196">À cet autre géant qu'on appelle Memnon ! </l>
-</sp>
+</sp><!--@who="LE CHIRURGIEN"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="197" part="I">Eh bien, monsieur ? </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE, ébranlé.</speaker>
 	<l n="197" part="F">Eh bien, ce citoyen me touche. </l><!--@syll="8"-->
 	<l n="198">Il salue le chirurgien à plusieurs reprises. </l>
 	<l n="199">Un aide-major du temps de Louis-Philippe s'avance et salue. </l>
 	<l n="200" part="I">Monsieur... </l><!--@syll="2"-->
-</sp><!--@stage="stress"-->
+</sp><!--@stage="stress"--><!--@who="SGANARELLE"-->
 <sp who="#l-aide-major">
                         <speaker>L'AIDE-MAJOR.</speaker>
 	<l n="200" part="F">Vive Molière ! Est-ce que dit ma bouche. </l><!--@syll="10"-->
@@ -637,7 +639,7 @@
 	<l n="211">Voilà, quand de la poudre éclatait la colère, </l>
 	<l n="212">Ce que diable on faisait, monsieur, dans ma galère ! </l>
 <stage type="wave/away/closer">Sganarelle salue. L'aide-major fait place au médecin de nos jours.</stage>
-</sp>
+</sp><!--@who="L'AIDE-MAJOR"-->
 <sp who="#le-medecin-de-nos-jours">
                         <speaker>LE MÉDÉCIN DE NOS JOURS.</speaker>
 	<l n="213">Et moi, vieux professeur, qui fus étudiant, </l>
@@ -657,7 +659,7 @@
 	<l n="226">On se disait : Je t'aime ! Au milieu des bravos ; </l>
 	<l n="227">Nous unissions, ravis, nos mains et nos sourires, </l>
 	<l n="228">Et l'amour voltigeait à travers tes satires ! </l>
-</sp>
+</sp><!--@who="LE MÉDÉCIN DE NOS JOURS"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="229">Mais ces hommes de l'art ont le coeur à l'envers ! </l>
@@ -669,38 +671,38 @@
 	<l n="235">Et par qui ? Par les mains effrayantes de cette </l>
 	<l n="236">Déesse aux yeux amers, qui brandit la lancette ! </l>
 	<l n="237">Ô mon père ! L'encens vient de la Faculté ! </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="238">Il n'en est que plus cher, monsieur, en vérité. </l>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#le-medecin-de-moliere">
                         <speaker>LE MÉDÉCIN DE MOLIÈRE.</speaker>
 	<l n="239">Du Molière, voilà la grande panacée ! </l>
-</sp>
+</sp><!--@who="LE MÉDÉCIN DE MOLIÈRE"-->
 <sp who="#l-aide-major">
                         <speaker>L'AIDE-MAJOR.</speaker>
 	<l n="240">Pour l'âme qui s'attriste ou la verve émoussée, </l>
 	<l n="241" part="I">Molière c'est Jouvence et sa fontaine !... </l><!--@syll="10"-->
-</sp>
+</sp><!--@who="L'AIDE-MAJOR"-->
 <sp who="#le-medecin-louis-xv">
                         <speaker>LE MÉDÉCIN LOUIS XV.</speaker>
 	<l n="241" part="F">On doit </l><!--@syll="2"-->
 	<l n="242">Y plonger tout son être, et non le bout du doigt : </l>
 	<l n="243">On en sort rajeuni, retrempé, plus honnête. </l>
-</sp>
+</sp><!--@who="LE MÉDÉCIN LOUIS XV"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="244" part="I">Entendez-vous, monsieur ? </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="244" part="F">Les entends-tu, Toinette ! </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="245" part="I">Ces savants ont raison. </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="245" part="F">Corbleu ! S'ils ont raison ! </l><!--@syll="6"-->
@@ -708,11 +710,11 @@
 <stage type="shout">Il crie.</stage>
 	<l n="247">Un remède ! Un remède ! et puis je vous adore, </l>
 	<l n="248" part="I">Ô vous que l'on appelle... </l><!--@syll="6"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#le-chirurgien">
                         <speaker>LE CHIRURGIEN, d'une voix profonde.</speaker>
 	<l n="248" part="F">Oracles d'Épidaure. </l><!--@syll="6"-->
-</sp><!--@stage="low"-->
+</sp><!--@stage="low"--><!--@who="LE CHIRURGIEN"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="249">Un remède ! Un remède ! Et vive la santé ! </l>
@@ -723,69 +725,69 @@
 	<l n="252">Messieurs les médecins ! Que voulez-vous que dise </l>
 	<l n="253">De plus un Sganarelle incliné devant vous, </l>
 	<l n="254">En faisant honorable amende aux yeux de tous ? </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="255">Secourez-le, Messieurs. Il est vieux, laid, stupide... </l>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="256" part="I">Carogne ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE, enchantée.</speaker>
 	<l n="256" part="F">À la bonne heure ! Un remède rapide ! </l><!--@syll="10"-->
 	<l n="257" part="I">Sauvez-le ! </l><!--@syll="3"-->
-</sp><!--@stage="happy"-->
+</sp><!--@stage="happy"--><!--@who="TOINETTE"-->
 <sp who="#les-medecins-et-les-apothicaires">
                         <speaker>LES MÉDÉCINS ET LES APOTHICAIRES.</speaker>
 <note type="C">Juro : Je le jure (latin)</note>
 	<l n="257" part="M">Juro ! </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="LES MÉDÉCINS ET LES APOTHICAIRES"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="257" part="M">Bon ! </l><!--@syll="1"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#tous-les-medecins">
                         <speaker>TOUS LES MÉDÉCINS.</speaker>
 	<l n="257" part="F">Sganarelle ! Voici </l><!--@syll="6"-->
 	<l n="258" part="I">Notre ordonnance. </l><!--@syll="4"-->
 <stage type="give">Ils lui tendent chacun un papier.</stage>
-</sp>
+</sp><!--@who="TOUS LES MÉDÉCINS"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="258" part="F">Au moins, j'aurai le choix. Merci ! </l><!--@syll="8"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="259">Messieurs, pas de latin !... La langue familière... </l>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#tous-les-medecins">
                         <speaker>TOUS LES MÉDÉCINS.</speaker>
 	<l n="260">Allez prendre, ce soir, un bon bain de Molière. </l>
-</sp>
+</sp><!--@who="TOUS LES MÉDÉCINS"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="261" part="I">Où donc ? </l><!--@syll="2"-->
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#tous-les-medecins">
                         <speaker>TOUS LES MÉDÉCINS.</speaker>
 	<l n="261" part="M">À l'Odéon ! </l><!--@syll="4"-->
-</sp>
+</sp><!--@who="TOUS LES MÉDÉCINS"-->
 <sp who="#toinette">
                         <speaker>TOINETTE.</speaker>
 	<l n="261" part="F">On y fête aujourd'hui </l><!--@syll="6"-->
 	<l n="262">Le jour où votre aïeul sur ce bas monde a lui. </l>
-</sp>
+</sp><!--@who="TOINETTE"-->
 <sp who="#sganarelle">
                         <speaker>SGANARELLE.</speaker>
 	<l n="263">Je vais donc rire encor ! Toinette, sois bénie. </l>
-</sp>
+</sp><!--@who="SGANARELLE"-->
 <sp who="#choeur-general">
                         <speaker>CHOEUR GENERAL.</speaker>
 	<l n="264">Allons voir le Malade et la cérémonie. </l>
 <stage type="decor">Le rideau tombe.</stage>
-</sp>
+</sp><!--@who="CHOEUR GENERAL"-->
 </div>
 </div>
 </body>

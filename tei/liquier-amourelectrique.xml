@@ -82,9 +82,9 @@
 		<castList>
 			<head>PERSONNAGES.</head>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#arsene-ginginet">ARSÈNE GINGINET</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--> .......... M. F. GALIPAUX, du Palais-Royal.</castItem>
+                    <role corresp="#arsene-ginginet">ARSÈNE GINGINET</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@statut_amoureux="néant"--> .......... M. F. GALIPAUX, du Palais-Royal.</castItem>
 			<castItem>
-                    <role statut_amoureux="néant" corresp="#celeste-jolival">CÉLESTE JOLIVAL</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--> .......... Mlle ROSAMOND, de la Comédie-Française.</castItem>
+                    <role corresp="#celeste-jolival">CÉLESTE JOLIVAL</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@statut_amoureux="néant"--> .......... Mlle ROSAMOND, de la Comédie-Française.</castItem>
 		</castList>
 		<!--TODO: usage of set in correct place but with unknown attributes <set location="Province" country="France" periode="XVIIème" link="">1637.En province. - Un petit salon. - Porte au fond et porte à droite. - Fenêtre à gauche. - Une table avec tiroir, sur laquelle est une sonnette.</set>-->
 		<note>Texte issu du Théâtre de Campagne, huitième série. pp. 13-36</note>
@@ -145,7 +145,7 @@
 	<s n="5 ">Dites que je n'y suis pas !</s>
 </p>
 <stage type="escape">Il se sauve par la droite.</stage>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 </div>
 <div type="scene" n="2">
                     <head>SCÈNE II.</head>
@@ -183,7 +183,7 @@
 	<s n="2 ">Le tocsin !...</s>
 </p>
 <stage type="walk.ring">Elle sonne en arpentant la scène.</stage>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 </div>
 <div type="scene" n="3">
                     <head>SCÈNE III. Arsène, Céleste.</head>
@@ -194,61 +194,61 @@
 	<s n="2 ">Il faut en finir !... </s>
 	<s n="3 ">Madame...</s>
 </p>
-</sp><!--@stage="costume"-->
+</sp><!--@stage="costume"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="2">
 	<s n="1 ">Monsieur Arsène Ginginet ?</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="3">
 	<s n="1 ">Ce n'est pas moi. </s>
 	<s n="2 ">Je suis son nègre.</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="4">
 	<s n="1 ">Son nègre ?... </s>
 	<s n="2 ">Avec ce teint-là !...</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, vivement.</speaker>
 <p n="5">
 	<s n="1 ">C'est la poudre de riz ! </s>
 	<s n="2 ">Puisque je vous dis que je suis mon groom...</s>
 </p>	
-</sp><!--@stage="quick"-->
+</sp><!--@stage="quick"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, soulignant.</speaker>
 <p n="6">
 	<s n="1 ">Mon groom... Vous vous êtes coupé.</s>
 </p>
-</sp><!--@stage="insist"-->
+</sp><!--@stage="insist"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="7">
 	<s n="1 ">C'est vrai, Madame,... avec un rasoir anglais. </s>
 	<s n="2 ">Ne vous servez jamais de rasoirs anglais !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="8">
 	<s n="1 ">Allons au fait. </s>
 	<s n="2 ">Monsieur,je suis une vraie Américaine...</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="9">
 	<s n="1 ">Grand peuple, Madame, grand peuple ! </s>
 	<s n="2 ">Rasoirs supérieurs !...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, continuant.</speaker>
 <note type="L">Il existe uine commune de Vouzy dans le département de la Marne.</note>
@@ -258,33 +258,33 @@
 	<s n="3 ">J'ai fait tout exprès le voyage de Vouzy-le-Sec... </s>
 	<s n="4 ">Trois heures en express.</s>
 </p>
-</sp><!--@stage="continue"-->
+</sp><!--@stage="continue"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="11">
 	<s n="1 ">Trois heures de chemin-de fer pour venir d'Amérique ! </s>
 	<s n="2 ">De ce train-là, il ne vous faudra que vingt secondes pour m'expliquer votre visite : ça se trouve bien.</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="12">
 	<s n="1 ">Mais c'est vous qui vous expliquerez, Monsieur ! </s>
 	<s n="2 ">C'est à vous de vous justifier tout d'abord.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="13">
 	<s n="1 ">Mon Dieu, Madame...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, rectifiant.</speaker>
 <p n="14">
 	<s n="1 ">Mademoiselle.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="15">
@@ -294,62 +294,62 @@
 <p n="16">
 	<s n="1 ">C'est que c'est vrai !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, à part.</speaker>
 <p n="17">
 	<s n="1 ">Moi qui le croyais vieux et vilain !</s>
 </p>
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="18">
 	<s n="1 ">Mais je ne vous cacherai pas que j'ai à sortir.</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="19">
 	<s n="1 ">Et voilà comme vous me recevez, vous, mon adorateur !...</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, stupéfait.</speaker>
 <p n="20">
 	<s n="1 ">Moi, votre adorateur ?</s>
 </p>
-</sp><!--@stage="estonish"-->
+</sp><!--@stage="estonish"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="21">
 	<s n="1 ">Vous qui, depuis un mois, me mitraillez de déclarations... électriques !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="22">
 	<s n="1 ">Moi, je vous mitraille ?...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="23">
 	<s n="1 ">Vous enfin, qui venez de mettre mon mariage en tout petits morceaux !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="24">
 	<s n="1 ">Moi ? </s>
 	<s n="2 ">J'ai mis votre mariage...?</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="25">
 	<s n="1 ">Et je viens vous sommer de le raccommoder.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="26">
@@ -357,13 +357,13 @@
 	<s n="2 ">Mademoiselle, c'est vous qui allez faire manquer le mien ! </s>
 	<s n="3 ">On m'attend à quatre heures pour la demande... et il est quatre heures dix !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="27">
 	<s n="1 ">Vous avancez.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="28">
@@ -376,20 +376,20 @@
 <p n="29">
 	<s n="1 ">Et j'ai bien l'honneur...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, se plaçant devant lui.</speaker>
 <p n="30">
 	<s n="1 ">Un instant ! </s>
 	<s n="2 ">Je suis Américaine, Monsieur.</s>
 </p>
-</sp><!--@stage="location"-->
+</sp><!--@stage="location"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="31">
 	<s n="1 ">Oui !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <note type="L">Melun : Ville et préfecture du département de la Seine-et-Marne, située à 41 km au sud-est de Paris.</note>
@@ -397,7 +397,7 @@
 	<s n="1 ">De Melun... </s>
 	<s n="2 ">Et je vous enjoins de m'y suivre à bref délai pour y déclarer publiquement...</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="33">
@@ -406,14 +406,14 @@
 	<s n="3 ">Vous me fricotez un poisson d'avril ! </s>
 	<s n="4 ">Nous sommes le premier avril!</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="34">
 	<s n="1 ">Le trente et un mars, monsieur... </s>
 	<s n="2 ">Quand je vous dis que vous avancez !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="35">
@@ -422,7 +422,7 @@
 	<s n="3 ">Mais votre nom, Mademoiselle ?... </s>
 	<s n="4 ">Votre nom ?...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="36">
@@ -432,20 +432,20 @@
 	<s n="4 ">Que dis-je ! </s>
 	<s n="5 ">Qui m'offrait chaque matin son coeur et son âme... sur des tas de petits papiers bleus !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, à part.</speaker>
 <p n="37">
 	<s n="1 ">Du bleu ! </s>
 	<s n="2 ">Tout s'explique : elle a des papillons bleus !</s>
 </p>
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, continuant.</speaker>
 <p n="38">
 	<s n="1 ">Un homme qui m'appelait son ange adoré... qui me baptisait : petit lapin rose !...</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="39">
@@ -453,13 +453,13 @@
 	<s n="2 ">Halte-là, Mademoiselle ! </s>
 	<s n="3 ">Ce nom suave, je ne l'ai donné qu'à une femme au monde... et cette femme, ce n'est pas vous !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="40">
 	<s n="1 ">Impertinent !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="41">
@@ -469,14 +469,14 @@
 	<s n="4 ">Je cours demander sa main ! </s>
 </p>
 <stage type="away">Fausse sortie.</stage>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="42">
 	<s n="1 ">On ne passe pas ! </s>
 </p>
 <stage type="close">Elle ferme la porte du fond et prend la clef.</stage>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, à part.</speaker>
 <p n="43">
@@ -488,25 +488,25 @@
 <p n="44">
 	<s n="1 ">Ma clef, s'il vous plaît ?</s>
 </p>
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="45">
 	<s n="1 ">Pas avant que vous ne m'ayez dit comment il se fait que vous courtisiez à la fois des Célestine à Vouzy-le-Sec et des Céleste à Melun.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="46">
 	<s n="1 ">Puisque c'est la même personne !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="47">
 	<s n="1 ">Je ne comprends pas.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="48">
@@ -517,7 +517,7 @@
 	<s n="1 ">Quatre heures vingt ! </s>
 	<s n="2 ">Je vais passer pour un indigne lâcheur !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="50">
@@ -526,7 +526,7 @@
 	<s n="3 ">Vos explications?... </s>
 	<s n="4 ">La clef est à ce prix !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="51">
@@ -537,27 +537,27 @@
 <p n="52">
 	<s n="1 ">Depuis l'antiquité la plus reculée, la ville de Vouzy-le-Sec, ma patrie, était privée de télégraphe... Vous permettez que je passe aux temps modernes ?</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, s'asseyant.</speaker>
 <p n="53">
 	<s n="1 ">Je vous en prie.</s>
 </p>
-</sp><!--@stage="sit"-->
+</sp><!--@stage="sit"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, de même.</speaker>
 <p n="54">
 	<s n="1 ">Enfin, il y a deux mois, un télégraphe nous fut octroyé. </s>
 	<s n="2 ">Et comme les télégraphes de province, ça ne marche pas tout seul... généralement... le gouvernement, toujours paternel, nous expédia une employée... du sexe aimable.</s>
 </p>
-</sp><!--@stage="sit"-->
+</sp><!--@stage="sit"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="55">
 	<s n="1 ">Une vieille dame... </s>
 	<s n="2 ">Je l'ai vue.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="56">
@@ -567,13 +567,13 @@
 	<s n="4 ">Celle que j'aime, c'est la jeune, c'est Célestine, sa fille unique !... </s>
 	<s n="5 ">Une rose que personne encore n'a respirée qu'à travers son guichet !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, à part.</speaker>
 <p n="57">
 	<s n="1 ">A-t-il l'air de l'aimer, mon Dieu !</s>
 </p>
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="58">
@@ -585,7 +585,7 @@
 	<s n="6 ">Voilà Célestine !... </s>
 	<s n="7 ">Ma clef, s'il vous plaît ?</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, à part.</speaker>
 <p n="57">
@@ -594,20 +594,20 @@
 	<s n="3 ">Être aimée ainsi!... </s>
 </p>
 <stage type="stand/ring">Elle se lève, prend machinalement la sonnette et la secoue.</stage>
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, se levant.</speaker>
 <p n="58">
 	<s n="1 ">Vous sonnez quelqu'un ?</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, posant la sonnette.</speaker>
 <p n="59">
 	<s n="1 ">La suite de l'histoire, monsieur. </s>
 </p>
 <stage type="sit">Elle se rassied.</stage>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, se rassied aussi.</speaker>
 <p n="60">
@@ -620,14 +620,14 @@
 <p n="61">
 	<s n="1 ">Quatre heures vingt-cinq !</s>
 </p>
-</sp><!--@stage="sit"-->
+</sp><!--@stage="sit"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="62">
 	<s n="1 ">Si vous regardez encore votre montre, je jette la clef par la fenêtre ! </s>
 	<s n="2 ">Vous en étiez à : ingénieux et hardi.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, s'épongeant le front.</speaker>
 <p n="63">
@@ -645,7 +645,7 @@
 	<s n="1 ">Puis, je m'approche du guichet, et, m'adressant à Célestine, je lui dis furtivement : « Amour et mystère ! </s>
 	<s n="2 ">Dépêche pour vous ! »</s>
 </p>
-</sp><!--@stage="wipe"-->
+</sp><!--@stage="wipe"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, se levant.</speaker>
 <p n="64">
@@ -654,20 +654,20 @@
 	<s n="3 ">Dérision!... </s>
 </p>
 <stage type="ring">Elle reprend et agite la sonnette.</stage>
-</sp><!--@stage="stand"-->
+</sp><!--@stage="stand"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, se levant.</speaker>
 <p n="65">
 	<s n="1 ">Vous sonnez quelqu'un ?</s>
 </p>
-</sp><!--@stage="stand"-->
+</sp><!--@stage="stand"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, se rassied.</speaker>
 <p n="66">
 	<s n="1 ">La suite, monsieur !... </s>
 	<s n="2 ">La suite!</s>
 </p>
-</sp><!--@stage="sit"-->
+</sp><!--@stage="sit"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, de même.</speaker>
 <p n="67">
@@ -687,13 +687,13 @@
 	<s n="14 ">Enfin, j'ajoutai un nom de ville au hasard, le premier venu : Melun... </s>
 	<s n="15 ">Alors, elle sourit plus que jamais, et me dit d'une voix séraphique : Monsieur, c'est vingt sous !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="68">
 	<s n="1 ">Les regretteriez-vous ?</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="69">
@@ -707,13 +707,13 @@
 	<s n="8 ">Elle en abaissa deux. </s>
 	<s n="9 ">J'eus deux regards pour un franc !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="70">
 	<s n="1 ">Cinquante centimes pièce !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="71">
@@ -721,14 +721,14 @@
 	<s n="2 ">Une fois même, je lui ai fait un quatrain... </s>
 	<s n="3 ">- Un quatrain de trois vers !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="72">
 	<s n="1 ">Eh bien ! </s>
 	<s n="2 ">Et le quatrième ?</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="73">
@@ -738,13 +738,13 @@
 	<s n="4 ">Je parlais avec mon papier, Célestine avec ses regards... </s>
 	<s n="5 ">Mais ses regards ont fini par devenir si encourageants... si encourageants, que ce matin j'ai brûlé mes vaisseaux en ces termes : « Aujourd'hui à quatre heures, quand télégraphe aura fermé... viendrai demander menotte à mémère. » </s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="74">
 	<s n="1 ">Mémère ?</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="75">
@@ -755,26 +755,26 @@
 <p n="76">
 	<s n="1 ">Et maintenant, il est quatre heures bien passées, le télégraphe est fermé, les chemins sont ouverts... ou demandent à l'être! Clef, s'il vous plaît?</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, se levant brusquement.</speaker>
 <p n="77">
 	<s n="1 ">La voilà !</s>
 </p>
-</sp><!--@stage="stand/quick"-->
+</sp><!--@stage="stand/quick"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="78">
 	<s n="1 ">Enfin!</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="79">
 	<s n="1 ">Allez lui demander sa main, à votre Célestine !... </s>
 	<s n="2 ">Nous verrons après.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="80">
@@ -783,7 +783,7 @@
 	<s n="3 ">Triomphe !</s>
 </p>
 <stage type="open">Il va ouvrir la porte.</stage>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="81">
@@ -794,7 +794,7 @@
 	<s n="5 ">Mais ça sera dramatique. </s>
 	<s n="6 ">Je vais aviser.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="82">
@@ -805,7 +805,7 @@
 	<s n="5 ">Je vole demander menotte à mémère!...</s>
 </p>
 <stage type="escape">Il s'enfuit par le fond.</stage>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 </div>
 <div type="scene" n="4">
                     <head>SCÈNE IV.</head>
@@ -864,7 +864,7 @@
 	<s n="4 ">Vous serez contente de moi ! </s>
 </p>
 <stage type="entrance/location">Elle entre à droite.</stage>
-</sp><!--@stage="alone"-->
+</sp><!--@stage="alone"--><!--@who="CÉLESTE"-->
 </div>
 <div type="scene" n="5">
                     <head>SCÈNE V.</head>
@@ -921,7 +921,7 @@
 	<s n="2 ">On la relâchera si elle guérit.</s>
 </p> 
 <stage type="write">Il se remet à écrire.</stage>
-</sp><!--@stage="entrance/furious"-->
+</sp><!--@stage="entrance/furious"--><!--@who="ARSÈNE"-->
 </div>
 <div type="scene" n="6">
                     <head>SCÈNE VI. Arsène, Céleste, sortant de la chambre de droite, un papier à la main.</head>
@@ -939,46 +939,46 @@
 <p n="3">
 	<s n="1 ">Demain, il sera à Charenton.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, l'apercevant.</speaker>
 <p n="4">
 	<s n="1 ">Elle !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, de même.</speaker>
 <p n="5">
 	<s n="1 ">Lui !</s>
 </p>
-</sp><!--@stage="estonish"-->
+</sp><!--@stage="estonish"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="6">
 	<s n="1 ">Vengeance !</s>
 </p>
 <stage type="open/location">Il va pousser la porte du fond.</stage>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="7">
 	<s n="1 ">Que faites-vous, Monsieur ?</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="8">
 	<s n="1 ">Je nous emprisonne ! </s>
 	<s n="2 ">Chacun son tour !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, effrayée.</speaker>
 <p n="9">
 	<s n="1 ">Ah ! </s>
 	<s n="1 ">Mon Dieu !...</s>
 </p>
-</sp><!--@stage="frigthen"-->
+</sp><!--@stage="frigthen"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="10">
@@ -986,14 +986,14 @@
 	<s n="2 ">Il va se passer des choses... de l'Ambigu ! </s>
 </p>
 <stage type="get/ring">Il prend fiévreusement la sonnette et l'agite avec menace.</stage>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="11">
 	<s n="1 ">C'est indigne, Monsieur ! </s>
 	<s n="2 ">Menacer une faible femme !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="12">
@@ -1005,40 +1005,40 @@
 	<s n="6 ">Je ferais grâce à une vraie jeune fille n'ayant pour toute arme que sa faiblesse et ses petits rubans de papier bleu... comme Célestine ! </s>
 	<s n="7 ">Mais une lionne... qui vient compromettre des archivistes... sans dire seulement son nom !</s> 
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="13">
 	<s n="1 ">Mon nom ? </s>
 	<s n="2 ">Céleste Jolival.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="14">
 	<s n="1 ">À d'autres ! </s>
 	<s n="2 ">Céleste Jolival n'existe pas.</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="15">
 	<s n="1 ">C'est ce qui vous trompe.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="16">
 	<s n="1 ">Je sais bien à quoi m'en tenir peut-être ? </s>
 	<s n="2 ">C'est un produit de mon imagination.</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="17">
 	<s n="1 ">Vous l'avez devant vous.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="18">
@@ -1046,13 +1046,13 @@
 	<s n="2 ">Mon imagination ferait bien les choses !... </s>
 	<s n="3 ">Mais comment puis-je croire ?...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, sortant de son petit sac une liasse de télégrammes.</speaker>
 <p n="19">
 	<s n="1 ">Connaissez-vous ceci ?</s>
 </p>
-</sp><!--@stage="get/show"-->
+</sp><!--@stage="get/show"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="20">
@@ -1070,13 +1070,13 @@
 	<s n="1 ">Mon style ! </s>
 	<s n="2 ">C'est mon style !...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, en lisant un autre.</speaker>
 <p n="23">
 	<s n="1 ">Et ceci : « Dessèche sur ma tige. Abaissez regard de pitié sur adorateur... »</s>
 </p>
-</sp><!--@stage="read"-->
+</sp><!--@stage="read"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, à part.</speaker>
 <p n="24">
@@ -1090,13 +1090,13 @@
 <p n="25">
 	<s n="1 ">Çà, c'est le quatrain... de trois vers.</s>
 </p>
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, éparpillant les télégrammes.</speaker>
 <p n="25">
 	<s n="1 ">Et voici toute la collection.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="26">
@@ -1104,26 +1104,26 @@
 	<s n="2 ">Fatalité ! </s>
 	<s n="3 ">Mais alors ?...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="27">
 	<s n="1 ">Alors, la destinée a voulu qu'il existât bien réellement à Melun une Céleste Jolival. </s>
 	<s n="2 ">L'être que vous supposiez imaginaire recevait ponctuellement vos petits papiers... qui ont détraqué son mariage.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="28">
 	<s n="1 ">Mais, s'il en est ainsi... vous n'êtes pas folle !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="29">
 	<s n="1 ">Folle ?... Par exemple !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="30">
@@ -1131,7 +1131,7 @@
 	<s n="2 ">Vous êtes adorable !...</s>
 </p>	
 <stage type="tear">Il déchire son papier.</stage>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, à part.</speaker>
 <p n="31">
@@ -1139,7 +1139,7 @@
 	<s n="2 ">Il revient à la raison.</s>
 </p>
 <stage type="tear">Elle déchire le sien.</stage>
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="32">
@@ -1147,27 +1147,27 @@
 	<s n="2 ">Comment se fait-il que Célestine vous envoyât les dépêches ?... </s>
 	<s n="3 ">Puisque je lui disais qu'elles étaient pour elle !...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="33">
 	<s n="1 ">Célestine ? </s>
 	<s n="2 ">Elle est sourde.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="34">
 	<s n="1 ">Sourde ?</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="35">
 	<s n="1 ">Comme une potiche ! </s>
 	<s n="2 ">C'est sa mère qui me l'a avoué.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="36">
@@ -1181,7 +1181,7 @@
 <p n="37">
 	<s n="1 ">Heu !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="38">
@@ -1194,20 +1194,20 @@
 	<s n="7 ">Monsieur Arsène !...</s>
 </p> 
 <stage type="touch">Elle lui tape dans une main.</stage>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, se relevant d'un bond.</speaker>
 <p n="39">
 	<s n="1 ">Bing ! </s>
 	<s n="2 ">La secousse électrique !</s>
 </p>
-</sp><!--@stage="stand"-->
+</sp><!--@stage="stand"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="40">
 	<s n="1 ">Il respire encore.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="41">
@@ -1221,14 +1221,14 @@
 	<s n="8 ">Tiens ! </s>
 	<s n="9 ">Je parle télégraphe.</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="42">
 	<s n="1 ">Mais, monsieur... </s>
 	<s n="1 ">Un tel aveu...</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="43">
@@ -1240,13 +1240,13 @@
 	<s n="1 ">Mademoiselle... </s>
 	<s n="2 ">Je suis jeune encore... orphelin... mais rentier !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="45">
 	<s n="1 ">Je vous croyais archiviste.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="46">
@@ -1255,34 +1255,34 @@
 	<s n="3 ">Il n'y a pas d'archives à Vouzy-le-Sec ; mais le gouvernement, toujours paternel, a créé le poste en attendant.... </s>
 	<s n="4 ">Il n'y a rien à faire.... mais ça occupe.</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="47">
 	<s n="1 ">Et vous êtes un homme d'action ?</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="48">
 	<s n="1 ">Un tempérament... dévorant ! </s>
 	<s n="2 ">Vous comprenez que des archives... qui n'existent pas, ça ne suffit pas à remplir un coeur !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, à part.</speaker>
 <p n="49">
 	<s n="1 ">Pauvre garçon ! </s>
 	<s n="2 ">Est-il passionné !...</s>
 </p>
-</sp><!--@stage="aparte"-->
+</sp><!--@stage="aparte"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="50">
 	<s n="1 ">Mademoiselle... </s>
 	<s n="2 ">J'ai l'honneur de vous demander votre main.</s>
 </p>	
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp sage="embarrassed" who="#celeste">
                         <speaker>CÉLESTE, troublée.</speaker>
 <p n="51">
@@ -1292,7 +1292,7 @@
 	<s n="4 ">Tiens ! </s>
 	<s n="5 ">Je parle nègre aussi !</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="52">
@@ -1300,13 +1300,13 @@
 	<s n="2 ">Vous voyez bien que la destinée a des vues sur nous, puisqu'elle fait pour nous rapprocher des choses invraisemblables !... </s>
 	<s n="3 ">Je vais télégraphier à monsieur votre père.</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="53">
 	<s n="1 ">Il est à Terre-Neuve.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="54">
@@ -1314,7 +1314,7 @@
 	<s n="2 ">Mon amour est capable de traverser l'Océan ! </s>
 	<s n="3 ">En attendant, vous me permettrez de vous accompagner à Melun ?...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="55">
@@ -1324,26 +1324,26 @@
 <p n="56">
 	<s n="1 ">Du moins, pas encore !...</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="57">
 	<s n="1 ">Mais pour faire ma cour ?</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="58">
 	<s n="1 ">Il y a le télégraphe.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="59">
 	<s n="1 ">Mais pour nous marier ?... </s>
 	<s n="2 ">Sera-ce aussi par le télégraphe ?...</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
 <p n="60">
@@ -1354,7 +1354,7 @@
 <p n="61">
 	<s n="1 ">Au revoir, monsieur Arsène.</s>
 </p>
-</sp>
+</sp><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
 <p n="62">
@@ -1376,7 +1376,7 @@
 <p n="64">
 	<s n="1 ">Et voilà ce que c'est qu'un amour électrique !</s>
 </p>
-</sp>
+</sp><!--@who="ARSÈNE"-->
 </div>
 </div>
 </body>

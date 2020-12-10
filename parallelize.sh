@@ -3,7 +3,7 @@
 # with parallel processors. it uses podman, but MAY BE it
 # works with docker as well
 
-THREADS=3 # usually more than 7 threads create a slight overhead
+THREADS=6 # usually more than 7 threads create a slight overhead
 PORTPREFIX="644"
 
 CONTAINER=() # put container ids here, to stop them afterwards
@@ -53,6 +53,7 @@ if [ ! -d $SOURCE_DIR ];
     else
         echo "SOURCE_DIR found with $(ls $SOURCE_DIR | wc -l) items."
         read -p "Do you want to reload source? [y/n]" reload
+
 fi
 if [ ! -d $TARGET_DIR ]; then mkdir $TARGET_DIR; fi
 
@@ -99,10 +100,10 @@ fi
 echo "load source data to volume, remove from instance 1 afterwards"
 if [[ $reload != "n" ]]; then
     curl --silent "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/parallelize-download-source.xq"
+    curl --silent --output "$WORK_DIR/tei_all.rng" "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/tei_all.rng"
+    curl --silent --output "$WORK_DIR/ids.xml" "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/ids.xml" &&
+    cp $WORK_DIR/ids.xml $THIS_DIR/ids.xml # save the new list of ids in the repo
 fi
-curl --silent --output "$WORK_DIR/tei_all.rng" "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/tei_all.rng"
-curl --silent --output "$WORK_DIR/ids.xml" "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/ids.xml" &&
-cp $WORK_DIR/ids.xml $THIS_DIR/ids.xml # save the new list of ids in the repo
 echo "$(date +"%T") :: load data"
 
 numSourceFiles=$(ls $SOURCE_DIR | wc -l)
