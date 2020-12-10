@@ -23,7 +23,7 @@ if [ ! -z $debug ]; then
     # take only a few files in debug mode
     THREADS=2 # usually more than 7 threads create a slight overhead
 else
-THREADS=6 # usually more than 7 threads create a slight overhead
+    THREADS=6 # usually more than 7 threads create a slight overhead
 fi
 
 PORTPREFIX="644"
@@ -35,13 +35,13 @@ WORK_DIR="/tmp/fredracor"
 SOURCE_DIR="$WORK_DIR/data"
 TARGET_DIR="$WORK_DIR/transformed"
 
-START=$(date +"%T")
+START=$(date +'%T')
 echo $START
 
 # interrupt
 # get log from container
 log () {
-    date=$(date +"%F")
+    date=$(date +'%F')
     for c in ${CONTAINER[@]}; do
         podman logs $c >> report-$date-$START.log
         cp report-$date-$START.log report-latest.log
@@ -102,6 +102,8 @@ for instance in $(eval echo {1..$THREADS}); do
     echo "container id: $CONTAINER_ID"
 done
 
+echo ${CONTAINER[*]} > $WORK_DIR/container
+
 # wait for the first engine to be ready
 # about 3 minutes for 6 instances
 echo "waiting for all instances to be ready…"
@@ -113,7 +115,7 @@ for i in $(eval echo {1..$THREADS}); do
     echo "$i ready."
 done
 
-echo "$(date +"%T") :: ready"
+echo "$(date +'%T') :: ready"
 
 # put scripts to the databases
 for i in $(eval echo {1..$THREADS}); do
@@ -140,10 +142,10 @@ if [[ $reload != "n" ]]; then
     curl --silent --output "$WORK_DIR/ids.xml" "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/ids.xml" &&
     cp $WORK_DIR/ids.xml $THIS_DIR/ids.xml # save the new list of ids in the repo
 fi
-echo "$(date +"%T") :: load data"
+echo "$(date +'%T') :: load data"
 
 numSourceFiles=$(ls $SOURCE_DIR | wc -l)
-echo "$(date +"%T") :: received $numSourceFiles files"
+echo "$(date +'%T') :: received $numSourceFiles files"
 
 # distribute source data to the databases
 # about 3 minutes
@@ -157,7 +159,7 @@ distribute () {
             file=$(ls -Sr $SOURCE_DIR | head -$i | tail -1)
         else
             # alphanumeric order
-        file=$(ls $SOURCE_DIR | head -$i | tail -1)
+            file=$(ls $SOURCE_DIR | head -$i | tail -1)
         fi
         curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/data/$file;
 	done
@@ -184,7 +186,7 @@ done
 
 wait
 
-echo "$(date +"%T") :: distribute"
+echo "$(date +'%T') :: distribute"
 
 # return to git repo dir
 cd $THIS_DIR
@@ -210,12 +212,7 @@ progress &
 
 wait && echo
 
-# get the transformed data
-#for instance in $(eval echo {1..$THREADS}); do
-#    port="$PORTPREFIX$instance"
-#    curl http://admin:@localhost:$port/exist/rest/db/parallelize-download-target.xq &
-#done
-#wait
+echo "$(date +'%T') :: transformation done."
 
 # import new files to THIS repo
 cp $TARGET_DIR/*.xml $THIS_DIR/tei/
@@ -224,17 +221,17 @@ cp $TARGET_DIR/*.xml $THIS_DIR/tei/
 log
 stopContainer
 
-echo "$(date +"%T") :: all done"
+echo "$(date +'%T') :: all done"
 
 if [ "$(ls -A $TARGET_DIR)" ]; then
     countTargets=$(ls $TARGET_DIR/*.xml | wc -l)
-    echo "$(date +"%T") :: successfully created fredracor with $countTargets items."
+    echo "$(date +'%T') :: successfully created fredracor with $countTargets items."
     valid="$(grep -c "✔ tei_all" report-latest.log)"
-    echo "$(date +"%T") :: ✔ $valid valid tei_all documents prepared"
+    echo "$(date +'%T') :: ✔ $valid valid tei_all documents prepared"
     invalid="$(grep -c "✘ tei_all" report-latest.log)"
-    echo "$(date +"%T") :: ✘ $invalid invalid tei_all documents found"
+    echo "$(date +'%T') :: ✘ $invalid invalid tei_all documents found"
     jingmessages="$(grep -c "/message" report-latest.log)"
-    echo "$(date +"%T") :: $jingmessages messages reported by jing."
+    echo "$(date +'%T') :: $jingmessages messages reported by jing."
 fi
 
 exit 0
