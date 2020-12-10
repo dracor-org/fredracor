@@ -13,6 +13,16 @@ while [ -n "$1" ]; do
                 --debug     run only on a few files and less parallel threads\
                 --progress  enable a progress bar"; exit 0; ;;
     --debug) debug="true"; echo "DEBUG MODE ENABLED" ;;
+    --progress) progress="true"; echo "creating a progress bar" ;;
+    *) echo "Unknown option passed." exit 1;
+    esac
+    shift
+done;
+
+if [ ! -z $debug ]; then
+    # take only a few files in debug mode
+    THREADS=2 # usually more than 7 threads create a slight overhead
+else
 THREADS=6 # usually more than 7 threads create a slight overhead
 fi
 
@@ -47,13 +57,27 @@ stopContainer () {
 }
 
 # watch progress
+# TODO: move to inotify
 progress () {
-    for i in $(eval echo {1..$THREADS}); do
-        port="$PORTPREFIX$i"
-        curl --silent http://admin:@localhost:$port/exist/rest/db/transformed | grep -c "resource"
-    done |  awk 'BEGIN { sum=0 } { sum+=$1 } END {print sum }' > $WORK_DIR/progress.txt
-    cat $WORK_DIR/progress.txt
-    sleep 60s
+    current=0
+    echo
+    if [ ! -z $progress ]
+    then
+        curl --silent --output $WORK_DIR/progressbar.sh https://raw.githubusercontent.com/roddhjav/progressbar/v1.1/progressbar.sh
+        source $WORK_DIR/progressbar.sh || exit 2
+        until [ $current -eq $num ]; do
+            current=$(ls $TARGET_DIR | wc -l)
+            progressbar "Transformation" $current $num
+            sleep 1s
+        done
+    else
+        until [ $current -eq $num ]; do
+            current=$(ls $TARGET_DIR | wc -l)
+            echo -n "\r$current / $num"
+            sleep 1s
+        done
+        echo
+    fi
 }
 
 trap 'echo "SIGINT received! Terminating…"; log; stopContainer;' SIGINT SIGTERM
@@ -182,15 +206,9 @@ for i in $(eval echo {1..$THREADS}); do
     transform $i &
 done
 
-# experimental: progress
-#count=0
-#while [ $count -ne $numSourceFiles ]; do
-#    progress
-#done &
+progress &
 
-wait
-
-echo "$(date +"%T") :: transformation done."
+wait && echo
 
 # get the transformed data
 #for instance in $(eval echo {1..$THREADS}); do
