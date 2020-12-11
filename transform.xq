@@ -49,7 +49,7 @@ declare function local:transform($nodes) {
         typeswitch ( $node )
             case text() return
                 (: at ABEILLE_CORIOLAN.xml there is '4+' in the middle of nowhere, other case is a tei:sp with '****' :)
-                if(($node/parent::*:sp or $node/parent::*:div1 or $node/parent::*:div2 or $node/parent::*:castList) and matches($node, '\S')) then comment { 'text():' || replace($node, '-$', '- ') } else
+                if(($node/parent::*:sp or $node/parent::*:div1 or $node/parent::*:div2 or $node/parent::*:castList or $node/parent::*:body) and matches($node, '\S')) then comment { 'text():' || replace($node, '-$', '- ') } else
                 $node
             case comment() return $node
             case processing-instruction() return $node
@@ -109,7 +109,14 @@ declare function local:transform($nodes) {
                 (element {QName('http://www.tei-c.org/ns/1.0', 'sp')} {
                 $node/@* except ($exceptionsStage, $exceptionsWho), (: typo in ancelot-arago-papillotes.xml, bernardt-mystere.xml  :)
                 attribute who {
-                    tokenize(string-join($exceptionsWho, ' '), $who-tokenize-pattern) ! ('#' || local:translate(.))},
+                    let $easy := tokenize(string-join($exceptionsWho, ' '), $who-tokenize-pattern)
+                                     ! ('#' || local:translate(.))
+                    return
+                        if(string($easy[1]) != '')
+                        then $easy
+                        else
+                            $node/speaker/text() => local:translate()
+                },
                 local:transform($node/node() except $node/text()) (: there is text within sp audiffret-albertdurer.xml :)
             }, ($exceptionsStage, $exceptionsWho) ! local:attribute-to-comment(.) )
             
@@ -524,6 +531,7 @@ let $datePrint :=
     let $when := ()
     return
         (element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+            attribute type {'print'},
             $when ! attribute when {.},
             $value
         }, 
@@ -544,10 +552,11 @@ let $tei :=
                 <idno type="dracor" xml:base="https://dracor.org/id/">{$id-from-list}</idno>
                 <availability>
                     <licence>
-                        <ab>CC BY NC SA 3.0</ab>
-                        <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
                     </licence>
-                </availability>
+                </availability>{'
+                '}
                 <!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
             </publicationStmt>
             <sourceDesc>
@@ -557,8 +566,8 @@ let $tei :=
                     <idno type="URL">http://theatre-classique.fr/pages/documents/{$resource}</idno>
                     <availability>
                         <licence>
-                            <ab>CC BY NC SA 3.0</ab>
-                            <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
                         </licence>
                     </availability>
                     <bibl type="originalSource">
@@ -581,7 +590,9 @@ let $tei :=
             <particDesc>
                 <listPerson>
 {
-    for $who in (($doc//*:text//*:sp/tokenize(./@who || ./@ho, $who-tokenize-pattern) => distinct-values()) ! local:translate(.) => distinct-values())
+    let $whos := ($doc//*:text//*:sp/tokenize(./@who || ./@ho, $who-tokenize-pattern) => distinct-values())
+    let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
+    for $who in (($whos) ! local:translate(.) => distinct-values())
     where $who (: do not parse empty @who :)
     (: inconsistent usage of @id with @who. we have to translate/normalize to match. :)
     let $castItem := $doc//*:role[local:translate(@id) eq $who]/parent::*

@@ -11,10 +11,11 @@
                 <idno type="dracor" xml:base="https://dracor.org/id/">fre001360</idno>
                 <availability>
                     <licence>
-                        <ab>CC BY NC SA 3.0</ab>
-                        <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
                     </licence>
-                </availability><!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
+                </availability>
+                <!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
             </publicationStmt>
             <sourceDesc>
                 <bibl type="digitalSource">
@@ -23,12 +24,12 @@
                     <idno type="URL">http://theatre-classique.fr/pages/documents/SIVRY_INDECISION.xml</idno>
                     <availability>
                         <licence>
-                            <ab>CC BY NC SA 3.0</ab>
-                            <ref target="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">Licence</ref>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <date>1881</date>
+                        <date type="print">1881</date>
                         <date type="premiere"/>
                         <date type="written"/>
                         <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k207939j</idno>
@@ -38,7 +39,11 @@
         </fileDesc>
         <profileDesc>
             <particDesc>
-                <listPerson/>
+                <listPerson>
+                    <person xml:id="l-indecis." sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L-indecis.</persName>
+                    </person>
+                </listPerson>
             </particDesc>
             <textClass>
                 <keywords>
@@ -81,7 +86,7 @@
                 <head>L'INDÉCISION.</head>
 <div type="scene" n="1">
                     <head/>
-<sp who="">
+<sp who="l-indecis.">
                         <speaker>L'INDÉCIS.</speaker>
 <p n="1">
 	<s n="1">Dois-je épouser ma cousine blonde avec qui j'ai valsé, mercredi, chez Madame de Trois-Étoiles ? </s>
