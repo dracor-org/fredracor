@@ -63,7 +63,8 @@ declare function local:transform($nodes) {
                     or $node/parent::*:div2
                     or $node/parent::*:castList
                     or $node/parent::*:body
-                    or $node/parent::*:div) 
+                    or $node/parent::*:div
+                    or $node/parent::*:docImprint) 
                     
                     and matches($node, '\S'))
                 then
@@ -125,7 +126,8 @@ declare function local:transform($nodes) {
                                 $node/@astage,
                                 $node/@stange,
                                 $node/@stand,
-                                $node/@stagle
+                                $node/@stagle,
+                                $node/@stagek
                                 )
                 let $exceptionsWho := (
                                 $node/@who,
@@ -138,7 +140,7 @@ declare function local:transform($nodes) {
                                 )
                 return
                 (element {QName('http://www.tei-c.org/ns/1.0', 'sp')} {
-                $node/@* except ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward), (: typo in ancelot-arago-papillotes.xml, bernardt-mystere.xml  :)
+                $node/@* except ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward, $node/@ge, $node/@class), (: typo in ancelot-arago-papillotes.xml, bernardt-mystere.xml  :)
                 attribute who {
                     let $easy := tokenize(string-join($exceptionsWho, ' '), $who-tokenize-pattern)
                                      ! ('#' || local:translate(.))
@@ -149,7 +151,7 @@ declare function local:transform($nodes) {
                             $node/speaker/text() => local:translate()
                 },
                 local:transform($node/node() except $node/text()) (: there is text within sp audiffret-albertdurer.xml :)
-            }, ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward) ! local:attribute-to-comment(.) )
+            }, ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward, $node/@ge) ! local:attribute-to-comment(.) ) (: @class was used a single time, so we do not take the effort to write it to a comment :)
             
             case element(s) return
                 (: minor correction to prevent multiple usage of an ID :)
@@ -424,6 +426,7 @@ declare function local:transform($nodes) {
                                     $node/@typr,
                                     $node/@typr,
                                     $node/@typpe,
+                                    $node/@typee,
                                     $node/@typep,
                                     $node/@tyep,
                                     $node/@tyê,
@@ -433,7 +436,9 @@ declare function local:transform($nodes) {
                                     $node/@tyepe,
                                     $node/@tyope,
                                     $node/@typz,
-                                    $node/@ytpe
+                                    $node/@ytpe,
+                                    $node/@tppe,
+                                    $node/@id (: used as @type in campistron-tachmas.xml :)
                                     )
                 return
                 (: rename attribute typ to type :)
@@ -498,6 +503,15 @@ declare function local:transform($nodes) {
                     'TODO: handling of editor name at this place unclear',
                     serialize($node)
                 }
+            case element(performance) return
+                if(not( $node/* )) (: remove placeholder :)
+                then ()
+                else
+                    element {QName('http://www.tei-c.org/ns/1.0', 'performance')} {
+                        $node/@*,
+                        local:transform($node/node())
+                    }
+
 
             case element(stage) return
                 (: element stage with attribute stage is invalid :)
@@ -511,8 +525,12 @@ declare function local:transform($nodes) {
                     })
                 else
                 (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
-                $node/@* except ($node/@stage, $node/@tye, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe),
-                ($node/@tye, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe) ! attribute type { string(.) },
+                $node/@* except ($node/@id, $node/@stage, $node/@tye, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe),
+                ($node/@tye, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe) !
+                    (if(. != '') (: prevent creation of empty @type :)
+                    then attribute type { string(.) }
+                    else ()),
+                $node/@id ! attribute n {string(.)},
                 local:transform($node/node())
             }, $node/@stage ! local:attribute-to-comment(.))
 
