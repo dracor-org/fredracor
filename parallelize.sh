@@ -60,15 +60,16 @@ stopContainer () {
 # TODO: move to inotify
 progress () {
     current=0
-    echo
     if [ ! -z $progress ]
     then
+        echo
         curl --silent --output $WORK_DIR/progressbar.sh https://raw.githubusercontent.com/roddhjav/progressbar/v1.1/progressbar.sh
         source $WORK_DIR/progressbar.sh || exit 2
         until [ $current -eq $num ]; do
             current=$(ls $TARGET_DIR | wc -l)
-            progressbar "Transformation" $current $num
-            sleep 1s
+            lastFile=$(ls -t $TARGET_DIR | head -1)
+            progressbar "Transformation :: $current / $num :: $lastFile" $current $num
+            sleep 0.5s
         done
     else
         until [ $current -eq $num ]; do
