@@ -187,7 +187,7 @@ declare function local:transform($nodes) {
                 }
                 else
                     (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                    $node/@* except ($exceptionsId),
+                    $node/@* except ($exceptionsId, $exceptionsType),
                     $exceptionsId ! attribute n {string(.)},
                     local:transform($node/node())
                 }, ($node/@class) ! local:attribute-to-comment(.) )
@@ -389,6 +389,7 @@ declare function local:transform($nodes) {
                                     $node/@typr,
                                     $node/@typr,
                                     $node/@typpe,
+                                    $node/@typep,
                                     $node/@tyep,
                                     $node/@tyê,
                                     $node/@tyype,
