@@ -100,7 +100,7 @@ if [ ! -d $TARGET_DIR ]
 fi
 
 for instance in $(eval echo {1..$THREADS}); do
-    echo "thread $instance";
+    echo "thread $instance"
     port="$PORTPREFIX$instance" 
     # start the engine
     CONTAINER_ID=$(podman run --volume /tmp/fredracor:/fredracor:z -p $port:8080 --detach existdb/existdb:latest)
@@ -148,7 +148,7 @@ if [[ $reload != "n" ]]; then
     curl --silent --output "$WORK_DIR/ids.xml" "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/ids.xml" &&
     cp $WORK_DIR/ids.xml $THIS_DIR/ids.xml # save the new list of ids in the repo
 fi
-echo "$(date +'%T') :: load data"
+echo "$(date +'%T') :: load data done"
 
 numSourceFiles=$(ls $SOURCE_DIR | wc -l)
 echo "$(date +'%T') :: received $numSourceFiles files"
@@ -192,7 +192,7 @@ done
 
 wait
 
-echo "$(date +'%T') :: distribute"
+echo "$(date +'%T') :: distribution done"
 
 # return to git repo dir
 cd $THIS_DIR
@@ -216,7 +216,7 @@ done
 
 progress &
 
-wait > /dev/null && echo
+wait > /dev/null
 
 echo "$(date +'%T') :: transformation done."
 
