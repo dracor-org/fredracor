@@ -21,9 +21,9 @@ done;
 
 if [ ! -z $debug ]; then
     # take only a few files in debug mode
-    THREADS=2 # usually more than 7 threads create a slight overhead
+    THREADS=3 # usually more than 7 threads create a slight overhead
 else
-    THREADS=6 # usually more than 7 threads create a slight overhead
+    THREADS=7 # usually more than 7 threads create a slight overhead
 fi
 
 PORTPREFIX="644"
@@ -43,8 +43,8 @@ echo $START
 log () {
     date=$(date +'%F')
     for c in ${CONTAINER[@]}; do
-        podman logs $c >> report-$date-$START.log
-        cp report-$date-$START.log report-latest.log
+        podman logs $c >> $THIS_DIR/report-$date-$START.log
+        cp $THIS_DIR/report-$date-$START.log $THIS_DIR/report-latest.log
     done
 }
 
@@ -67,7 +67,7 @@ progress () {
         source $WORK_DIR/progressbar.sh || exit 2
         until [ $current -eq $num ]; do
             current=$(ls $TARGET_DIR | wc -l)
-            lastFile=$(ls -t $TARGET_DIR | head -1)
+            lastFile=$(ls -t $TARGET_DIR | head -1 | cut -c 1-16)
             progressbar "Transformation :: $current / $num :: $lastFile" $current $num
             sleep 0.5s
         done
@@ -88,7 +88,7 @@ if [ ! -d $WORK_DIR ]; then mkdir $WORK_DIR; fi
 if [ ! -d $SOURCE_DIR ];
     then mkdir $SOURCE_DIR; 
     else
-        echo "SOURCE_DIR found with $(ls $SOURCE_DIR | wc -l) items."
+        echo "SOURCE_DIR found with $(ls $SOURCE_DIR/*.xml | wc -l) items."
         read -p "Do you want to reload source? [Y/n] " reload
 
 fi
@@ -151,23 +151,18 @@ if [[ $reload != "n" ]]; then
 fi
 echo "$(date +'%T') :: load data done"
 
-numSourceFiles=$(ls $SOURCE_DIR | wc -l)
+numSourceFiles=$(ls $SOURCE_DIR/*.xml | wc -l)
 echo "$(date +'%T') :: received $numSourceFiles files"
 
 # distribute source data to the databases
 # about 3 minutes
 distribute () {
     instance=$1
+    list=$2
     port="$PORTPREFIX$instance"
     echo "uploading files to instance $instance"
 	for i in $(eval echo {$instance..$num..$THREADS}); do
-        if [ ! -z $debug ]; then
-            # take the smallest files in debug mode
-            file=$(ls -Sr $SOURCE_DIR | head -$i | tail -1)
-        else
-            # alphanumeric order
-            file=$(ls $SOURCE_DIR | head -$i | tail -1)
-        fi
+        file=$(head -$i <<< $list | tail -1)
         curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/data/$file;
 	done
     # add tei_all.rng to the db
@@ -181,14 +176,23 @@ distribute () {
 
 if [ ! -z $debug ]; then
     # take only a few files in debug mode
-    num=33
+    num=333
 else
     num=$numSourceFiles
 fi
 
 cd $SOURCE_DIR
+
+if [ ! -z $debug ]; then
+    # take the smallest files in debug mode
+    files=$(ls -Sr $SOURCE_DIR | head -$num | shuf)
+else
+    # random order
+    files=$(ls $SOURCE_DIR | shuf)
+fi
+
 for instance in $(eval echo {1..$THREADS}); do
-    distribute $instance &
+    distribute $instance $files &
 done
 
 wait
