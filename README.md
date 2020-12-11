@@ -47,7 +47,7 @@ Here is a list of changes we made:
 - ensure DraCor IDs stay the same. Currently they are generated from a position in an alphabetic list and will change when an item is inserted in the list before.
 - as of 2020-12-04 we do not have valid TEI-all
 - following error is reported during transformation on 112, 137 and 1112: `04 Dec 2020 13:13:54,509 [qtp281487983-628] INFO  (Predicate.java [selectByPosition]:454) - contextSet and outerNodeSet don't share any document`
-- rewrite element tei:ab[type="stances"] (and possible typos) to tei:lg
+- rewrite element tei:ab[@type="stances"] (and possible typos) to tei:lg
 
 ## How to rebuild from source
 
