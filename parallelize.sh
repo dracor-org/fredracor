@@ -13,7 +13,7 @@ while [ -n "$1" ]; do
                 --debug     run only on a few files and less parallel threads\
                 --progress  enable a progress bar"; exit 0; ;;
     --debug) debug="true"; echo "DEBUG MODE ENABLED" ;;
-    --progress) progress="true"; echo "creating a progress bar" ;;
+    --progress) progress="true" ;;
     *) echo "Unknown option passed." exit 1;
     esac
     shift
@@ -83,15 +83,21 @@ progress () {
 trap 'echo "SIGINT received! Terminating…"; log; stopContainer;' SIGINT SIGTERM
 
 # create dirs
-if [ ! -d $WORK_DIR ];   then mkdir $WORK_DIR; fi
+if [ ! -d $WORK_DIR ]; then mkdir $WORK_DIR; fi
 if [ ! -d $SOURCE_DIR ];
     then mkdir $SOURCE_DIR; 
     else
         echo "SOURCE_DIR found with $(ls $SOURCE_DIR | wc -l) items."
-        read -p "Do you want to reload source? [y/n]" reload
+        read -p "Do you want to reload source? [Y/n] " reload
 
 fi
-if [ ! -d $TARGET_DIR ]; then mkdir $TARGET_DIR; fi
+if [ ! -d $TARGET_DIR ]
+    then mkdir $TARGET_DIR;
+    else
+        echo "TARGET_DIR found with $(ls $TARGET_DIR | wc -l) items."
+        read -p "Do you want to remove the previouse transformation results? [Y/n] " retransform
+        if [[ $retransform != "n" ]]; then echo "removing previouse results…"; rm -f $TARGET_DIR/*.xml; fi 
+fi
 
 for instance in $(eval echo {1..$THREADS}); do
     echo "thread $instance";
@@ -200,7 +206,7 @@ transform () {
     port="$PORTPREFIX$i"
     for file in transfo*.xq; do
         echo "start transformation on instance $i"
-        curl --silent http://admin:@localhost:$port/exist/rest/db/$file
+        curl --silent http://admin:@localhost:$port/exist/rest/db/$file > /dev/null
     done
 }
 
@@ -210,7 +216,7 @@ done
 
 progress &
 
-wait && echo
+wait > /dev/null && echo
 
 echo "$(date +'%T') :: transformation done."
 
