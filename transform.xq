@@ -95,7 +95,9 @@ declare function local:transform($nodes) {
                                 $node/@wstage,
                                 $node/@tstage,
                                 $node/@stahge,
-                                $node/@astage
+                                $node/@astage,
+                                $node/@stange,
+                                $node/@stand
                                 )
                 let $exceptionsWho := (
                                 $node/@who,
@@ -124,8 +126,8 @@ declare function local:transform($nodes) {
             case element(s) return
                 (: minor correction to prevent multiple usage of an ID :)
                 element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except ($node/@id, $node/@i2d, $node/@di, $node/@d, $node/@n),
-                ($node/@id, $node/@di, $node/@i2d, $node/@d) ! attribute n {string(.)}, (: typo barreradet-candide.xml :)
+                $node/@* except ($node/@id, $node/@i2d, $node/@di, $node/@d, $node/@id1, $node/@n),
+                ($node/@id, $node/@di, $node/@i2d, $node/@d, $node/@id1) ! attribute n {string(.)}, (: typo barreradet-candide.xml :)
                 local:transform($node/node())
             }
             case element(l) return
@@ -155,6 +157,7 @@ declare function local:transform($nodes) {
                                 $node/@tyep,
                                 $node/@typee,
                                 $node/@tyope,
+                                $node/@tpe,
                                 $node/@class)
 
                 let $exceptionsId := (
@@ -472,8 +475,8 @@ declare function local:transform($nodes) {
                     })
                 else
                 (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
-                $node/@* except ($node/@stage, $node/@tye, $node/@tyepe, $node/@ype),
-                ($node/@tye, $node/@tyepe, $node/@ype) ! attribute type { string(.) },
+                $node/@* except ($node/@stage, $node/@tye, $node/@tyepe, $node/@ype, $node/@tyep),
+                ($node/@tye, $node/@tyepe, $node/@ype, $node/@tyep) ! attribute type { string(.) },
                 local:transform($node/node())
             }, $node/@stage ! local:attribute-to-comment(.))
 
@@ -495,6 +498,20 @@ declare function local:transform($nodes) {
                     $node/@*,
                     local:transform($node/node())
             }
+
+            case element(ab) return
+                if($node/@tpe = 'stances')
+                then (: TODO: should become tei:lg :)
+                    element {QName('http://www.tei-c.org/ns/1.0', 'ab')} {
+                        $node/@* except $node/@tpe,
+                        attribute type {'stances'},
+                        local:transform($node/node())
+                }
+                else
+                    element {QName('http://www.tei-c.org/ns/1.0', 'ab')} {
+                    $node/@*,
+                    local:transform($node/node())
+                }
 
         default return
             element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
