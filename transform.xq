@@ -98,6 +98,13 @@ declare function local:transform($nodes) {
                 local:transform($node/node())
             }, $node/@stage ! local:attribute-to-comment(.))
 
+            case element(div) return
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                    $node/@* except ($node/@typê, $node/@typ),
+                    ($node/@typê, $node/@typ) ! attribute type { string(.)},
+                    local:transform($node/node())
+            }, $node/@stage ! local:attribute-to-comment(.))
+
             case element(sp) return
                 let $exceptionsStage := (
                                 $node/@stage,
@@ -127,7 +134,10 @@ declare function local:transform($nodes) {
                                 $node/@stange,
                                 $node/@stand,
                                 $node/@stagle,
-                                $node/@stagek
+                                $node/@stagek,
+                                $node/@sgtage,
+                                $node/@staage,
+                                $node/@sytage
                                 )
                 let $exceptionsWho := (
                                 $node/@who,
@@ -139,6 +149,7 @@ declare function local:transform($nodes) {
                                 $node/@ho
                                 )
                 return
+                if( not(exists($node/* except $node/*:speaker)) ) then comment { 'ERROR: ', serialize($node)} else (: nearly empty sp in corneillet-geolierdesoismeme.xml :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'sp')} {
                 $node/@* except ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward, $node/@ge, $node/@class), (: typo in ancelot-arago-papillotes.xml, bernardt-mystere.xml  :)
                 attribute who {
@@ -156,8 +167,8 @@ declare function local:transform($nodes) {
             case element(s) return
                 (: minor correction to prevent multiple usage of an ID :)
                 element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except ($node/@id, $node/@i2d, $node/@di, $node/@d, $node/@id1, $node/@kd, $node/@n),
-                ($node/@id, $node/@di, $node/@i2d, $node/@d, $node/@id1, $node/@kd) ! attribute n {string(.)}, (: typo barreradet-candide.xml :)
+                $node/@* except ($node/@id, $node/@i2d, $node/@i3, $node/@di, $node/@d, $node/@id1, $node/@kd, $node/@n),
+                ($node/@id, $node/@di, $node/@i2d, $node/@i3, $node/@d, $node/@id1, $node/@kd) ! attribute n {string(.)}, (: typo barreradet-candide.xml :)
                 local:transform($node/node())
             }
             case element(l) return
@@ -392,7 +403,7 @@ declare function local:transform($nodes) {
                 (: move poem to ab, preserve via comments :)
                 (comment { '<poem>' },
                 element {QName('http://www.tei-c.org/ns/1.0', 'ab')} {
-                    $node/@*,
+                    $node/@* except $node/@tpe,
                     local:transform($node/node())
                 },
                 comment { '</poem>' })
@@ -438,6 +449,10 @@ declare function local:transform($nodes) {
                                     $node/@typz,
                                     $node/@ytpe,
                                     $node/@tppe,
+                                    $node/@typp,
+                                    $node/@typoe,
+                                    $node/@tyhpe,
+                                    $node/@stage, (: used as @type in schelandre-tyrsidon-i.xml :)
                                     $node/@id (: used as @type in campistron-tachmas.xml :)
                                     )
                 return
@@ -525,8 +540,8 @@ declare function local:transform($nodes) {
                     })
                 else
                 (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
-                $node/@* except ($node/@id, $node/@stage, $node/@tye, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe),
-                ($node/@tye, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe) !
+                $node/@* except ($node/@id, $node/@stage, $node/@tye, $node/@typ, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe, $node/@typr),
+                ($node/@tye, $node/@typ, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe, $node/@typr) !
                     (if(. != '') (: prevent creation of empty @type :)
                     then attribute type { string(.) }
                     else ()),
@@ -552,6 +567,18 @@ declare function local:transform($nodes) {
                     $node/@*,
                     local:transform($node/node())
             }
+
+            case element(pd) return
+                element {QName('http://www.tei-c.org/ns/1.0', 'pb')} {
+                    $node/@*,
+                    local:transform($node/node())
+            }
+
+            case element(titre) return (: single occurence in benserade-cleopatre.xml :)
+                element {QName('http://www.tei-c.org/ns/1.0', 'head')} {
+                    $node/@*,
+                    local:transform($node/node())
+            }   
 
             case element(ab) return
                 if($node/@tpe = 'stances')

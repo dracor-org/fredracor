@@ -21,7 +21,7 @@ done;
 
 if [ ! -z $debug ]; then
     # take only a few files in debug mode
-    THREADS=3 # usually more than 7 threads create a slight overhead
+    THREADS=2 # usually more than 7 threads create a slight overhead
 else
     THREADS=7 # usually more than 7 threads create a slight overhead
 fi
@@ -158,12 +158,13 @@ echo "$(date +'%T') :: received $numSourceFiles files"
 # about 3 minutes
 distribute () {
     instance=$1
-    list=$2
     port="$PORTPREFIX$instance"
     echo "uploading files to instance $instance"
 	for i in $(eval echo {$instance..$num..$THREADS}); do
-        file=$(head -$i <<< $list | tail -1)
-        curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/data/$file;
+        file=${files[$i]}
+        filepath="$SOURCE_DIR/$file"
+        # TODO: investigate origin of the single empty item in the $file array 
+        curl -X PUT -H 'Content-Type: application/xml' --data-binary @$filepath http://admin:@localhost:$port/exist/rest/db/data/$file;
 	done
     # add tei_all.rng to the db
     filename="tei_all.rng"
@@ -181,26 +182,22 @@ else
     num=$numSourceFiles
 fi
 
-cd $SOURCE_DIR
-
 if [ ! -z $debug ]; then
     # take the smallest files in debug mode
-    files=$(ls -Sr $SOURCE_DIR | head -$num | shuf)
+    files=($(ls -1Sr $SOURCE_DIR | head -$num | shuf))
+    echo "$(date +'%T') :: DEBUG: collected smallest files only."
 else
     # random order
-    files=$(ls $SOURCE_DIR | shuf)
+    files=($(ls -1 $SOURCE_DIR | shuf))
 fi
 
 for instance in $(eval echo {1..$THREADS}); do
-    distribute $instance $files &
+    distribute $instance &
 done
 
 wait
 
 echo "$(date +'%T') :: distribution done"
-
-# return to git repo dir
-cd $THIS_DIR
 
 # transform source data
 # about 50 minutes
