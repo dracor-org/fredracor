@@ -63,6 +63,7 @@ declare function local:transform($nodes) {
                     or $node/parent::*:div2
                     or $node/parent::*:castList
                     or $node/parent::*:body
+                    or $node/parent::*:front
                     or $node/parent::*:div
                     or $node/parent::*:docImprint) 
                     
@@ -175,7 +176,7 @@ declare function local:transform($nodes) {
                 (: minor correction to prevent multiple usage of an ID :)
                 (: removing unknown attributes @syll, @part :)
                 (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except ($node/@id, $node/@n, $node/@class, $node/@syll, $node/@part, $node/@par, $node/@pat, $node/@patr, $node/@prt, $node/@parrt, $node/@syl),
+                $node/@* except ($node/@id, $node/@n, $node/@class, $node/@stage, $node/@syll, $node/@part, $node/@par, $node/@pat, $node/@patr, $node/@prt, $node/@parrt, $node/@syl),
                 attribute n {string($node/@id)},
                 ($node/@part, $node/@par, $node/@pat, $node/@patr, $node/@prt, $node/@parrt) ! 
                     (if( upper-case(.) = ("F", "I", "M", "N", "Y") )
@@ -183,7 +184,7 @@ declare function local:transform($nodes) {
                     else (comment {'WARNING: invalid @part in source.'}, local:attribute-to-comment(.))),
                 if(not($node/@n)) then () else comment {'WARNING: source contains @n as well. it is removed here.'},
                 local:transform($node/node())
-            }, ($node/@syll, $node/@syl, $node/@class) ! local:attribute-to-comment(.) )
+            }, ($node/@syll, $node/@syl, $node/@class, $node/@stage) ! local:attribute-to-comment(.) )
             
             case element(lg) return
                 element {QName('http://www.tei-c.org/ns/1.0', 'lg')} {
@@ -287,7 +288,9 @@ declare function local:transform($nodes) {
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
                 $node/@* except ($node/@id, $node/@date, $node/@value),
                 attribute type {'privilege'},
-                local:transform($node/node())
+                $node/text()[matches(., '\S')]
+                    ! element {QName('http://www.tei-c.org/ns/1.0', 'head')} { . },
+                local:transform($node/node() except $node/text()[matches(., '\S')])
             }, ($node/@id, $node/@date, $node/@value) ! local:attribute-to-comment(.))
 
             case element(imprimeur) return
@@ -593,6 +596,12 @@ declare function local:transform($nodes) {
                     $node/@*,
                     local:transform($node/node())
                 }
+
+            case element(bottom) return
+            element {QName('http://www.tei-c.org/ns/1.0', 'back')} {
+                $node/@*,
+                local:transform($node/node())
+            }
 
         default return
             element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
