@@ -66,7 +66,7 @@ progress () {
         curl --silent --output $WORK_DIR/progressbar.sh https://raw.githubusercontent.com/roddhjav/progressbar/v1.1/progressbar.sh
         source $WORK_DIR/progressbar.sh || exit 2
         until [ $current -eq $num ]; do
-            current=$(ls $TARGET_DIR | wc -l)
+            current=$(ls $TARGET_DIR | wc -l | cut -c 1-12)
             lastFile=$(ls -t $TARGET_DIR | head -1 | cut -f 1-12)
             progressbar "Transformation :: $current / $num :: $lastFile" $current $num
             sleep 0.5s
