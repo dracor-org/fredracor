@@ -603,6 +603,19 @@ declare function local:transform($nodes) {
                 local:transform($node/node())
             }
 
+            case element(speaker) return (: usually nothing we have to touch, but correcting a single usage as child of div2 (not allowede here) :)
+            if($node/parent::*:div2)
+            then
+                element {QName('http://www.tei-c.org/ns/1.0', 'head')} {
+                    $node/@*,
+                    local:transform($node/node())
+                }
+            else
+                element {QName('http://www.tei-c.org/ns/1.0', 'speaker')} {
+                    $node/@*,
+                    local:transform($node/node())
+                }
+
         default return
             element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
                 $node/@* except $node/@type,
