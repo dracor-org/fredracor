@@ -67,7 +67,7 @@ progress () {
         source $WORK_DIR/progressbar.sh || exit 2
         until [ $current -eq $num ]; do
             current=$(ls $TARGET_DIR | wc -l)
-            lastFile=$(ls -t $TARGET_DIR | head -1)
+            lastFile=$(ls -t $TARGET_DIR | head -1 | cut -f 1-12)
             progressbar "Transformation :: $current / $num :: $lastFile" $current $num
             sleep 0.5s
         done
