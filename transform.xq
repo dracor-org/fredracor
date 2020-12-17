@@ -114,8 +114,8 @@ declare function local:transform($nodes) {
 
             case element(div) return
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-                    $node/@* except ($node/@typê, $node/@typ),
-                    ($node/@typê, $node/@typ) ! attribute type { string(.)},
+                    $node/@* except ($node/@typê, $node/@typ, $node/@type),
+                    ($node/@typê, $node/@typ, $node/@type)[. != ''] ! attribute type { string(.)},
                     local:transform($node/node())
             }, $node/@stage ! local:attribute-to-comment(.))
 
@@ -163,7 +163,8 @@ declare function local:transform($nodes) {
                                 $node/@stageward,
                                 $node/@rtestage,
                                 $node/@stagepull,
-                                $node/@age
+                                $node/@age,
+                                $node/@get
                                 )
                 let $exceptionsWho := (
                                 $node/@who,
@@ -201,7 +202,7 @@ declare function local:transform($nodes) {
             case element(l) return
                 (: minor correction to prevent multiple usage of an ID :)
                 (: removing unknown attributes @syll, @part :)
-                let $exceptionsId := ($node/@id, $node/@is, $node/@Id)
+                let $exceptionsId := ($node/@id, $node/@is, $node/@Id, $node/@l)
                 let $exceptionsPart := (
                                     $node/@part, 
                                     $node/@par,
@@ -227,6 +228,7 @@ declare function local:transform($nodes) {
                 return
                 (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
                 $node/@* except ($exceptionsId, $exceptionsPart, $exceptionsEtc),
+                    if(not($exceptionsId)) then () else
                 attribute n { $exceptionsId ! string(.) },
                 $exceptionsPart ! 
                     (if( upper-case(.) = ("F", "I", "M", "N", "Y") )
@@ -309,7 +311,9 @@ declare function local:transform($nodes) {
                 (: correct unknown @value to @when :)
                 element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
                 $node/@* except $node/@value,
-                attribute when { replace($node/@value, '^v\.', '') },
+                    let $value := replace($node/@value, '^v\.', '')
+                    return if($value = '') then () else
+                attribute when { $value },
                 local:transform($node/node())
             }
 
@@ -565,22 +569,34 @@ declare function local:transform($nodes) {
 
 
             case element(stage) return
+                let $exceptionsType := (
+                                    $node/@tye,
+                                    $node/@typ,
+                                    $node/@tyepe,
+                                    $node/@ype,
+                                    $node/@tyep,
+                                    $node/@typpe,
+                                    $node/@typr,
+                                    $node/@type
+                                    )
+                let $newType := 
+                    ($exceptionsType)[. != ''] ! attribute type { string(.) }
+                
+                return
+
                 (: element stage with attribute stage is invalid :)
                 if($node/parent::*:body)
                 then
                     (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
                         (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
-                            $node/@* except $node/@stage,
+                            $node/@* except ($node/@stage, $exceptionsType),
                             local:transform($node/node())
                         }, $node/@stage ! local:attribute-to-comment(.))
                     })
                 else
                 (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
-                $node/@* except ($node/@id, $node/@stage, $node/@tye, $node/@typ, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe, $node/@typr),
-                ($node/@tye, $node/@typ, $node/@tyepe, $node/@ype, $node/@tyep, $node/@typpe, $node/@typr) !
-                    (if(. != '') (: prevent creation of empty @type :)
-                    then attribute type { string(.) }
-                    else ()),
+                $node/@* except ($node/@id, $node/@stage, $exceptionsType),
+                $newType,
                 $node/@id ! attribute n {string(.)},
                 local:transform($node/node())
             }, $node/@stage ! local:attribute-to-comment(.))
