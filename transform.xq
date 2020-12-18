@@ -66,7 +66,10 @@ declare function local:transform($nodes) {
             case element(appobation) return
                 element {QName('', 'approbation')} {
                 $node/node()} => local:transform()
-
+            case element(pinter) return
+                element {QName('', 'printer')} {
+                $node/node()} => local:transform()
+            
 
             case text() return
                 (: at ABEILLE_CORIOLAN.xml there is '4+' in the middle of nowhere, other case is a tei:sp with '****' :)
@@ -114,10 +117,10 @@ declare function local:transform($nodes) {
 
             case element(div) return
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-                    $node/@* except ($node/@typê, $node/@typ, $node/@type),
+                    $node/@* except ($node/@id, $node/@typê, $node/@typ, $node/@type),
                     ($node/@typê, $node/@typ, $node/@type)[. != ''] ! attribute type { string(.)},
                     local:transform($node/node())
-            }, $node/@stage ! local:attribute-to-comment(.))
+            }, ($node/@stage, $node/@id) ! local:attribute-to-comment(.))
 
             case element(sp) return
                 let $exceptionsStage := (
@@ -164,7 +167,8 @@ declare function local:transform($nodes) {
                                 $node/@rtestage,
                                 $node/@stagepull,
                                 $node/@age,
-                                $node/@get
+                                $node/@get,
+                                $node/@chstage
                                 )
                 let $exceptionsWho := (
                                 $node/@who,
@@ -195,8 +199,8 @@ declare function local:transform($nodes) {
             case element(s) return
                 (: minor correction to prevent multiple usage of an ID :)
                 element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except ($node/@id, $node/@i2d, $node/@i3, $node/@if, $node/@di, $node/@od, $node/@iid, $node/@d, $node/@id1, $node/@i, $node/@is, $node/@kd, $node/@n),
-                ($node/@id, $node/@di, $node/@od, $node/@iid, $node/@i2d, $node/@i3, $node/@if, $node/@d, $node/@id1, $node/@i, $node/@is, $node/@kd) ! attribute n {string(.)}, (: typo barreradet-candide.xml :)
+                $node/@* except ($node/@id, $node/@i2d, $node/@i3, $node/@ic, $node/@if, $node/@di, $node/@od, $node/@iid, $node/@d, $node/@id1, $node/@i, $node/@is, $node/@kd, $node/@n),
+                ($node/@id, $node/@di, $node/@od, $node/@iid, $node/@i2d, $node/@i3, $node/@ic, $node/@if, $node/@d, $node/@id1, $node/@i, $node/@is, $node/@kd) ! attribute n {string(.)}, (: typo barreradet-candide.xml :)
                 local:transform($node/node())
             }
             case element(l) return
@@ -459,6 +463,13 @@ declare function local:transform($nodes) {
                     local:transform($node/node())
                 }
 
+            case element(q) return
+                (element {QName('http://www.tei-c.org/ns/1.0', 'q')} {
+                    $node/@* except $node/@direct,
+                    attribute type { if($node/@type) then $node/@type else 'stanza'},
+                    local:transform($node/node())
+            }, $node/@direct ! local:attribute-to-comment(.) )
+
             case element(nombre) return
                 if(matches(string($node), '\w'))
                 then
@@ -491,6 +502,7 @@ declare function local:transform($nodes) {
                                     $node/@typp,
                                     $node/@typoe,
                                     $node/@tyhpe,
+                                    $node/@Type,
                                     $node/@stage, (: used as @type in schelandre-tyrsidon-i.xml :)
                                     $node/@id, (: used as @type in campistron-tachmas.xml :)
                                     $node/@note
