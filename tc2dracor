@@ -276,7 +276,7 @@ for port in ${PORTS[@]}; do
       --data-binary @$file \
       http://admin:@localhost:$port/exist/rest/db/tc2dracor/$name
   done
-  for file in $BASE_DIR/ids.xml; do
+  for file in $BASE_DIR/{authors,ids}.xml; do
     [ -z $VERBOSE ] || echo "$file"
     name=$(basename $file)
     curl -X PUT -H 'Content-Type: application/xml' \

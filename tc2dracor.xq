@@ -7,6 +7,9 @@ declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 (: XML document mapping original file names to DraCor IDs :)
 declare variable $id-map := doc('ids.xml');
 
+(: XML document mapping original author info to normalized author names :)
+declare variable $author-map := doc('authors.xml');
+
 declare variable $who-tokenize-pattern := '/|,';
 
 declare function functx:change-element-ns-deep (
@@ -763,16 +766,23 @@ declare function local:construct-tei (
 
   let $author :=
       for $author in $doc//*:author
-      let $isni :=
-          if($author/@ISNI)
-          then attribute key {"isni:" || replace($author/@ISNI, "\s", "")}
-          else ()
-      let $name := string($author)
-      return
+      let $content := normalize-space($author)
+      let $isni := normalize-space($author/@ISNI)
+      let $normalized :=
+        $author-map//author[isni eq $isni or name eq $content]/tei:author
+
+      return if ($normalized) then (
+        $normalized,
+        comment {$content}
+      ) else (
+        let $key := if ($isni) then
+          attribute key {"isni:" || replace($isni, "\s", "")} else ()
+        return
           element {QName('http://www.tei-c.org/ns/1.0', 'author')} {
-              $isni,
-              $name
+              $key,
+              $content
           }
+      )
 
   let $editor :=
       if($doc//*:editor)
