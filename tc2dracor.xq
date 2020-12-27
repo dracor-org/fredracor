@@ -1,34 +1,61 @@
 xquery version "3.1";
 
-declare namespace tei='http://www.tei-c.org/ns/1.0';
+declare namespace functx = "http://www.functx.com";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
+
+declare option output:method "json";
+declare option output:media-type "application/json";
+
+(: Collection where to read original sources from :)
+(: This can be overridden with a query parameter 'source' when invoking the
+   query via REST (see below) :)
+declare variable $source-default := '/db/tc2dracor/sources';
+
+(: Directory in the local file system to write tranformed documents to :)
+(: This can be overridden with a query parameter 'out' when invoking the query
+   via REST (see below) :)
+declare variable $out-dir-default := '/tmp/tc2dracor/tei';
+
+(: XML document mapping original file names to DraCor IDs :)
+declare variable $id-map := doc('ids.xml');
 
 declare variable $continue := false();
-
 declare variable $who-tokenize-pattern := '/|,';
 
-declare function local:write-on-filesystem($resource-name as xs:string, $node as node()) {
-    let $path := '/fredracor/transformed'
-    let $fsAvailable := file:is-directory($path)
-    return
-        if($fsAvailable)
-        then
-            let $options :=
-                map{
-                    'method': 'xml',
-                    'omit-xml-declaration': false(),
-                    'indent': true()
-                }
-            let $do := file:serialize($node, $path || '/' || $resource-name, $options)
-            return () (: silence :)
-        else () (: silence :)
+declare function functx:change-element-ns-deep (
+  $nodes as node()*,
+  $newns as xs:string,
+  $prefix as xs:string
+) as node()* {
+  for $node in $nodes
+  return if ($node instance of element()) then (
+    element {QName (
+      $newns,
+      concat($prefix, if ($prefix = '') then '' else ':', local-name($node))
+    )} {$node/@*, functx:change-element-ns-deep(
+      $node/node(), $newns, $prefix
+    )})
+  else if ($node instance of document-node()) then
+    functx:change-element-ns-deep($node/node(), $newns, $prefix)
+  else $node
+};
+
+(: Prepare document before actual transformation :)
+declare function local:prepare ($doc as node()) as item()* {
+  (: Only a few original documents have the TEI namespace. We remove it to have
+  a consistent base to work with. :)
+  if ($doc/tei:TEI) then (
+    util:log-system-out("stripping ns from " || base-uri($doc)),
+    functx:change-element-ns-deep($doc/tei:TEI, "", "")
+    ) else $doc/*
 };
 
 declare function local:attribute-to-comment($node as attribute()+) {
     $node ! comment { ('@' || local-name(.) || '="' || string(.) || '"') }
 };
 
-declare function local:translate($string as xs:string)
-as xs:string{
+declare function local:translate($string as xs:string) as xs:string {
     let $work :=
         translate(lower-case($string), "*[]’' áàâéèêíìîóòôúùû", '------aaaeeeiiiooouuu')
         => replace('^\-', '')
@@ -715,201 +742,231 @@ declare function local:transform($nodes) {
             }, ($node/@type, $node/@id) ! local:attribute-to-comment(.))
 };
 
-let $target-collection := '/db/transformed',
-    $cleanup := if( xmldb:collection-available($target-collection) and not($continue))
-                then xmldb:remove($target-collection)
-                else true(),
-    $create := if($continue) then () else xmldb:create-collection('/db', 'transformed')
+(: Construct DraCor TEI from original document :)
+declare function local:construct-tei (
+  $doc as element(),
+  $orig-name as xs:string
+) as node() {
+  let $id := string($id-map//play[@orig eq $orig-name]/@dracor)
 
-let $collection-uri := '/db/data/'
-let $do :=
-for $resource at $pos in xmldb:get-child-resources($collection-uri)
-(: set position to continue previouse transformation :)
-(:where $pos gt 28:)
-(:where $pos lt 101:)
-(:where $pos eq 100:)
+  let $title :=
+      if($doc//*:titlePart/@type="main")
+      then
+          for $titlePart in $doc//*:titlePart[@type="main"]
+          return
+              element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
+                  attribute type {'main'},
+                  string($titlePart)
+              }
+      else
+          element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
+              attribute type {'main'},
+              $doc//*:fileDesc[1]/*:titleStmt[1]/*:title[1]/text()
+          }
 
-let $log := util:log-system-out( substring-before(util:eval( 'current-time()' ), '.') || ' preparing ' || ($pos => format-number('0000') => replace('^0', ' ') => replace('^ 0', '  ') => replace('^  0', '   ')) || ': ' || $resource)
-let $id-from-list := string( doc('/db/ids.xml')//play[@orig eq $resource]/@dracor )
-let $id := if($id-from-list) then $id-from-list else format-number($pos, 'x00000')
-let $doc := doc('/db/data/' || $resource)
-let $title :=
-    if($doc//*:titlePart/@type="main")
-    then
-        for $titlePart in $doc//*:titlePart[@type="main"]
-        return
-            element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
-                attribute type {'main'},
-                string($titlePart)
-            }
-    else
-        element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
-            attribute type {'main'},
-            $doc//*:fileDesc[1]/*:titleStmt[1]/*:title[1]/text()
-        }
-let $subtitle :=
-    if($doc//*:titlePart/@type="sub")
-    then
-        for $titlePart in $doc//*:titlePart[@type="sub"]
-        return
-            element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
-                attribute type {'sub'},
-                string($titlePart)
-            }
-    else
-        ()
-let $author :=
-    for $author in $doc//*:author
-    let $isni :=
-        if($author/@ISNI)
-        then attribute key {"isni:" || replace($author/@ISNI, "\s", "")}
-        else ()
-    let $name := string($author)
-    return
-        element {QName('http://www.tei-c.org/ns/1.0', 'author')} {
-            $isni,
-            $name
-        }
-let $editor :=
-    if($doc//*:editor)
-    then
-        for $node in $doc//*:teiHeader//*:editor
-        let $string := string($node)
-        let $name1 :=
-            if($string => contains('par '))
-            then $string => substring-after('par ')
-            else $string
-        let $name2 :=
-            if($name1 => contains(', '))
-            then $name1 => substring-before(", ")
-            else $name1
-        return
-            element {QName('http://www.tei-c.org/ns/1.0', 'editor')} {$name2}
-    else ()
+  let $subtitle :=
+      if($doc//*:titlePart/@type="sub")
+      then
+          for $titlePart in $doc//*:titlePart[@type="sub"]
+          return
+              element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
+                  attribute type {'sub'},
+                  string($titlePart)
+              }
+      else ()
 
-let $datePrint :=
-    let $value := string(($doc//*:docDate)[1]/@value)
-    let $when := ()
-    return
-        (element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
-            attribute type {'print'},
-            $when ! attribute when {.},
-            $value
-        },
-        ($doc//*:docDate)[2] ! comment {'WARNING: multiple docDate elements found in source. ' || serialize(.)})
+  let $author :=
+      for $author in $doc//*:author
+      let $isni :=
+          if($author/@ISNI)
+          then attribute key {"isni:" || replace($author/@ISNI, "\s", "")}
+          else ()
+      let $name := string($author)
+      return
+          element {QName('http://www.tei-c.org/ns/1.0', 'author')} {
+              $isni,
+              $name
+          }
 
-let $tei :=
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                {$title}
-                {$author}
-                {$editor}
-            </titleStmt>
-            <publicationStmt>
-                <publisher xml:id="dracor">DraCor</publisher>
-                <idno type="URL">https://dracor.org</idno>
-                <idno type="dracor" xml:base="https://dracor.org/id/">{$id-from-list}</idno>
-                <availability>
-                    <licence>
-                        <ab>CC BY-NC-SA 4.0</ab>
-                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
-                    </licence>
-                </availability>{'
+  let $editor :=
+      if($doc//*:editor)
+      then
+          for $node in $doc//*:teiHeader//*:editor
+          let $string := string($node)
+          let $name1 :=
+              if($string => contains('par '))
+              then $string => substring-after('par ')
+              else $string
+          let $name2 :=
+              if($name1 => contains(', '))
+              then $name1 => substring-before(", ")
+              else $name1
+          return
+              element {QName('http://www.tei-c.org/ns/1.0', 'editor')} {$name2}
+      else ()
+
+  let $datePrint :=
+      let $value := string(($doc//*:docDate)[1]/@value)
+      let $when := ()
+      return
+          (element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+              attribute type {'print'},
+              $when ! attribute when {.},
+              $value
+          },
+          ($doc//*:docDate)[2] ! comment {'WARNING: multiple docDate elements found in source. ' || serialize(.)})
+
+  let $tei :=
+  <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+      <teiHeader>
+          <fileDesc>
+              <titleStmt>
+                  {$title}
+                  {$author}
+                  {$editor}
+              </titleStmt>
+              <publicationStmt>
+                  <publisher xml:id="dracor">DraCor</publisher>
+                  <idno type="URL">https://dracor.org</idno>
+                  <idno type="dracor" xml:base="https://dracor.org/id/">{$id}</idno>
+                  <availability>
+                      <licence>
+                          <ab>CC BY-NC-SA 4.0</ab>
+                          <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                      </licence>
+                  </availability>{'
                 '}
                 <!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
-            </publicationStmt>
-            <sourceDesc>
-                <bibl type="digitalSource">
-                    <name>Théâtre Classique</name>
-                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/{$resource}</idno>
-                    <idno type="URL">http://theatre-classique.fr/pages/documents/{$resource}</idno>
-                    <availability>
-                        <licence>
-                            <ab>CC BY-NC-SA 4.0</ab>
-                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
-                        </licence>
-                    </availability>
-                    <bibl type="originalSource">
-                        {$datePrint}
-{
-    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
-        attribute type {'premiere'},
-        (($doc//*:premiere)[1])[matches(@date, '\d{4}')]/@date ! attribute when {.},
-        string(($doc//*:premiere)[1])
-    }
-}
-                            { if(($doc//*:premiere)[2]) then comment {'WARNING: multiple premiere elements found in source.'} else () }
-                        <date type="written"/>
-                        <idno type="URL">{string($doc//*:permalien)}</idno>
-                    </bibl>
-                </bibl>
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <particDesc>
-                <listPerson>
-{
-    let $whos := ($doc//*:text//*:sp/tokenize(./@who || ./@ho || ./@w4ho, $who-tokenize-pattern) => distinct-values())
-    let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
-    for $who in (($whos) ! local:translate(.) => distinct-values())
-    where $who (: do not parse empty @who :)
-    (: inconsistent usage of @id with @who. we have to translate/normalize to match. :)
-    let $castItem := $doc//*:role[local:translate(@id) eq $who]/parent::*
-    let $sex := switch (string($castItem[1]/*:role[1]/@sex))
-        case "1" return "MALE"
-        case "2" return "FEMALE"
-        default return "UNKNOWN"
-    let $comment :=
-        if($castItem[2])
-        then comment {'WARNING: multiple roles/castItems found in source, may result of local:translate#1'}
-        else ()
-    let $persName := string($castItem[1]/*:role)
-    let $persName := substring($persName, 1, 1) || lower-case(substring($persName, 2, 900))
-    let $persName :=
-        if($persName eq '')
-        then upper-case(substring($who, 1, 1)) || substring($who, 2, 900)
-        else $persName
+              </publicationStmt>
+              <sourceDesc>
+                  <bibl type="digitalSource">
+                      <name>Théâtre Classique</name>
+                      <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/{$orig-name}</idno>
+                      <idno type="URL">http://theatre-classique.fr/pages/documents/{$orig-name}</idno>
+                      <availability>
+                          <licence>
+                              <ab>CC BY-NC-SA 4.0</ab>
+                              <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                          </licence>
+                      </availability>
+                      <bibl type="originalSource">
+                          {$datePrint}
+  {
+      element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+          attribute type {'premiere'},
+          (($doc//*:premiere)[1])[matches(@date, '\d{4}')]/@date ! attribute when {.},
+          string(($doc//*:premiere)[1])
+      }
+  }
+                              { if(($doc//*:premiere)[2]) then comment {'WARNING: multiple premiere elements found in source.'} else () }
+                          <date type="written"/>
+                          <idno type="URL">{string($doc//*:permalien)}</idno>
+                      </bibl>
+                  </bibl>
+              </sourceDesc>
+          </fileDesc>
+          <profileDesc>
+              <particDesc>
+                  <listPerson>
+  {
+      let $whos := ($doc//*:text//*:sp/tokenize(./@who || ./@ho || ./@w4ho, $who-tokenize-pattern) => distinct-values())
+      let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
+      for $who in (($whos) ! local:translate(.) => distinct-values())
+      where $who (: do not parse empty @who :)
+      (: inconsistent usage of @id with @who. we have to translate/normalize to match. :)
+      let $castItem := $doc//*:role[local:translate(@id) eq $who]/parent::*
+      let $sex := switch (string($castItem[1]/*:role[1]/@sex))
+          case "1" return "MALE"
+          case "2" return "FEMALE"
+          default return "UNKNOWN"
+      let $comment :=
+          if($castItem[2])
+          then comment {'WARNING: multiple roles/castItems found in source, may result of local:translate#1'}
+          else ()
+      let $persName := string($castItem[1]/*:role)
+      let $persName := substring($persName, 1, 1) || lower-case(substring($persName, 2, 900))
+      let $persName :=
+          if($persName eq '')
+          then upper-case(substring($who, 1, 1)) || substring($who, 2, 900)
+          else $persName
+      return
+          <person xml:id="{$who}" sex="{$sex}">{if(not($castItem)) then comment { 'WARNING: no castItem found for reference in @who' } else ()}
+              <persName>{$persName}</persName>
+          </person>
+  }
+                  </listPerson>
+              </particDesc>
+              <textClass>
+                  <keywords>
+                      <term type="genreTitle">{string($doc//*:SourceDesc/*:genre)}</term>
+                      <term type="genreTitle">{string($doc//*:SourceDesc/*:type)}</term>
+                  </keywords>
+              </textClass>
+          </profileDesc>
+          <revisionDesc>
+              <listChange>
+                  <change when="2020-12-04">(mg) file conversion from source</change>
+              </listChange>
+          </revisionDesc>
+      </teiHeader>
+      {
+          local:transform($doc/*:text)
+      }
+  </TEI>
+
+  return $tei
+};
+
+(: Iterate over original documents and convert them :)
+declare function local:convert (
+  $source-collection as xs:string,
+  $out-dir as xs:string
+) as item()* {
+  for $res at $pos in xmldb:get-child-resources($source-collection)
+  let $filename := $res => lower-case() => replace('_', '-')
+  let $filepath := $out-dir || "/" || $filename
+  let $skip := if($continue and file:exists($filepath)) then true() else false()
+  let $log := util:log-system-out(
+    substring-before(util:eval('current-time()'), '.') ||
+    (if ($skip) then ' skipping   ' else ' preparing ') ||
+    ($pos => format-number('0000') => replace('^0', ' ') => replace('^ 0', '  ') => replace('^  0', '   ')) ||
+    ': ' ||
+    $res
+  )
+
+  return if ($skip) then () else (
+    let $doc := doc($source-collection || "/" || $res)
+    let $tei := $doc => local:prepare() => local:construct-tei($res)
+    (: let $data := xmldb:store($tei-collection, $filename, $tei) => doc() :)
     return
-        <person xml:id="{$who}" sex="{$sex}">{if(not($castItem)) then comment { 'WARNING: no castItem found for reference in @who' } else ()}
-            <persName>{$persName}</persName>
-        </person>
-}
-                </listPerson>
-            </particDesc>
-            <textClass>
-                <keywords>
-                    <term type="genreTitle">{string($doc//*:SourceDesc/*:genre)}</term>
-                    <term type="genreTitle">{string($doc//*:SourceDesc/*:type)}</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-        <revisionDesc>
-            <listChange>
-                <change when="2020-12-04">(mg) file conversion from source</change>
-            </listChange>
-        </revisionDesc>
-    </teiHeader>
-    {
-        local:transform($doc/*:TEI/*:text),
-        local:transform($doc/*:TEI.2/*:text)
-    }
-</TEI>
+      if (file:serialize($tei, $filepath, map{
+        'method': 'xml',
+        'omit-xml-declaration': false(),
+        'indent': true()
+      })) then $filepath else ()
+  )
+};
 
-let $resource-name := $resource => lower-case() => replace('_', '-')
-let $store := xmldb:store('/db/transformed', $resource-name, $tei)
-let $validation := validation:jing-report(xs:anyURI($store), xs:anyURI('/db/tei_all.rng'))
-let $log :=
-    if($validation//status eq 'valid')
-    then util:log-system-out('✔ tei_all')
-    else (util:log-system-out('✘ tei_all'), util:log-system-out(serialize($validation, map{'method':'xml','indent': true()})))
 
-let $serialize := local:write-on-filesystem($resource-name, $tei)
+(: file system path to export the transformed files to :)
+let $source-collection := if (request:exists()) then
+  request:get-parameter('source', $source-default) else $source-default
 
-return
-    $validation
-    
-return
-    (count($do//status[. eq 'valid']),
-    count($do//status[. eq 'invalid']))
+(: file system path to export the transformed files to :)
+let $out-dir := if (request:exists()) then
+  request:get-parameter('out', $out-dir-default) else $out-dir-default
+
+return if (not(file:is-directory($out-dir))) then (
+  util:log-system-out("output directory " || $out-dir || " not available"),
+  map { "error": "output directory " || $out-dir || " not available" }
+) else if (not(file:is-writeable($out-dir))) then (
+  util:log-system-out("cannot write to output directory " || $out-dir),
+  map { "error": "cannot write to output directory " || $out-dir }
+) else (
+  let $converted := local:convert($source-collection, $out-dir)
+  return map {
+    "sources": $source-collection,
+    "out-dir": $out-dir,
+    "converted": $converted
+  }
+)
