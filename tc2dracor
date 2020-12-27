@@ -200,7 +200,8 @@ progress () {
   fi
 }
 
-trap 'echo "SIGINT received! Terminating…"; log; stopContainer;' SIGINT SIGTERM
+TRAP='echo; echo "SIGINT received! Terminating..."; log; stopContainer; exit 2'
+trap "$TRAP" SIGINT SIGTERM
 
 WORK_DIR=$(mktemp -d /tmp/tc2dracor-XXXXXX)
 mkdir -p $WORK_DIR/tei
