@@ -22,6 +22,81 @@ OPTIONS:
 EOF
 }
 
+# pick only XML files from the source directory
+list_sources () {
+  opts=$1
+  ls $opts $SOURCE_DIR | grep -i '\.xml$'
+}
+
+# store logs from containers
+log () {
+  date=$(date +'%F')
+  logfile=$WORK_DIR/report-$date-$START.log
+  for c in ${CONTAINERS[@]}; do
+    $DOCKER logs $c >> $WORK_DIR/report-$date-$START.log
+  done
+  [ ${#CONTAINERS[@]} -gt 0 ] && [ -n "$VERBOSE" ] \
+    && echo "Detailed log in $logfile"
+}
+
+stopContainer () {
+  # remove containers
+  for c in ${CONTAINERS[@]}; do
+    echo "stopping container $c"
+    $DOCKER stop $c > /dev/null && $DOCKER rm $c > /dev/null
+  done
+}
+
+# watch progress
+# TODO: move to inotify
+progress () {
+  current=0
+  if [ ! -z $progress ]
+  then
+    source $BASE_DIR/.progressbar.sh || exit 2
+    until [ $current -eq $num ]; do
+      current=$(ls $WORK_DIR/tei | wc -l | sed -E 's/^ +//')
+      lastFile=$(ls -t $WORK_DIR/tei | head -1 | cut -c 1-12)
+      progressbar "$(date +'%T') :: $current / $num :: $lastFile" $current $num
+      sleep 0.5s
+    done
+  else
+    until [ $current -eq $num ]; do
+      current=$(ls $WORK_DIR/tei | wc -l | sed -E 's/^ +//')
+      echo -n -e "\r$current / $num"
+      sleep 1s
+    done
+    echo
+  fi
+}
+
+# process a slice of the files with one database instance
+process_slice () {
+  instance=$1
+  let n=instance-1
+  port=${PORTS[$n]}
+  [ -z $VERBOSE ] || echo "processing files on localhost:$port ($instance)"
+  for i in $(seq $instance ${#PORTS[@]} $num); do
+    if [ ! -z $TEST_MODE ]; then
+      # take the smallest files in test mode
+      file=$(list_sources -Sr | head -$i | tail -1)
+    else
+      # alphanumeric order
+      file=$(list_sources | head -$i | tail -1)
+    fi
+
+    name=$(echo $file | tr '[:upper:]' '[:lower:]' | sed 's/_/-/g')
+
+    [ -z $VERBOSE ] || echo "$instance $i $file -> $name"
+    curl -s -X POST \
+      -H 'Content-Type: application/xml' \
+      -H "X-Filename: $file" \
+      -o $WORK_DIR/tei/$name \
+      --data-binary @$SOURCE_DIR/$file \
+      http://admin:@localhost:$port/exist/rest/db/tc2dracor/tc2dracor.xq
+  done
+}
+
 # options parsing inspired by
 # https://medium.com/@Drew_Stokes/bash-argument-parsing-54f3b81a6a8f
 
@@ -47,7 +122,7 @@ while (( "$#" )); do
       shift
       ;;
     -v|--verbose)
-      VERBOSE=1
+      VERBOSE=yes
       shift
       ;;
     -n|--num|--threads)
@@ -111,8 +186,9 @@ if [[ ! -d $SOURCE_DIR ]]; then
   echo
   exit 1
 else
+  NUM_SOURCES=$(list_sources | wc -l | sed -E 's/^ +//')
   echo "Using original files from: $SOURCE_DIR"
-  echo "Original files found: $(ls $SOURCE_DIR/*.[xX][mM][lL] | wc -l)"
+  echo "Original files found: $NUM_SOURCES"
 fi
 
 if [[ ! -d $TEI_DIR ]]; then
@@ -151,61 +227,17 @@ else
   PORTS+=($PORT)
 fi
 
-echo ${PORTS[*]}
-
-START=$(date +'%T')
-echo $START
-
-# interrupt
-# get log from containers
-log () {
-  date=$(date +'%F')
-  logfile=$WORK_DIR/report-$date-$START.log
-  for c in ${CONTAINERS[@]}; do
-    $DOCKER logs $c >> $WORK_DIR/report-$date-$START.log
-  done
-  [ ${#CONTAINERS[@]} -gt 0 ] && [ -n "$VERBOSE" ] \
-    && echo "Detailed log in $logfile"
-}
-
-stopContainer () {
-  # remove containers
-  for c in ${CONTAINERS[@]}; do
-    echo "stopping container $c"
-    $DOCKER stop $c && $DOCKER rm $c
-  done
-}
-
-# watch progress
-# TODO: move to inotify
-progress () {
-  current=0
-  if [ ! -z $progress ]
-  then
-    echo
-    source $BASE_DIR/.progressbar.sh || exit 2
-    until [ $current -eq $num ]; do
-      current=$(ls $WORK_DIR/tei | wc -l | sed -E 's/^ +//')
-      lastFile=$(ls -t $WORK_DIR/tei | head -1 | cut -c 1-12)
-      progressbar "$(date +'%T') :: $current / $num :: $lastFile" $current $num
-      sleep 0.5s
-    done
-  else
-    until [ $current -eq $num ]; do
-      current=$(ls $WORK_DIR/tei | wc -l | sed -E 's/^ +//')
-      echo -n -e "\r$current / $num"
-      sleep 1s
-    done
-    echo
-  fi
-}
-
-TRAP='echo; echo "SIGINT received! Terminating..."; log; stopContainer; exit 2'
-trap "$TRAP" SIGINT SIGTERM
+[ -z $VERBOSE ] || echo ${PORTS[*]}
 
 WORK_DIR=$(mktemp -d /tmp/tc2dracor-XXXXXX)
 mkdir -p $WORK_DIR/tei
 echo "Temporary directory: $WORK_DIR"
+
+START=$(date +'%T')
+echo $START
+
+TRAP='echo; echo "SIGINT received! Terminating..."; log; stopContainer; exit 2'
+trap "$TRAP" SIGINT SIGTERM
 
 # spin up database containers unless PORT was specified
 if [[ -z $PORT ]]; then
@@ -221,7 +253,7 @@ echo ${CONTAINERS[*]} > $WORK_DIR/containers
 
 # wait for the first engine to be ready
 # about 3 minutes for 6 instances
-echo "waiting for instances to be ready..."
+echo "waiting for instances to get ready..."
 for port in ${PORTS[@]}; do
   echo -n "localhost:$port "
   while [[ $(curl -I -s http://localhost:$port | grep -c "200 OK") -eq "0" ]]; do
@@ -232,11 +264,6 @@ for port in ${PORTS[@]}; do
 done
 
 echo "$(date +'%T') :: ready"
-
-# FIXME: cleanup before using existing database
-# if ! [[ -z $PORT ]]; then
-#   echo "Cleanup???"
-# fi
 
 # put scripts to the databases
 for port in ${PORTS[@]}; do
@@ -256,77 +283,29 @@ for port in ${PORTS[@]}; do
       --data-binary @$file \
       http://admin:@localhost:$port/exist/rest/db/tc2dracor/$name
   done
-  echo "done"
 done
 
-numSourceFiles=$(ls $SOURCE_DIR | wc -l | sed -E 's/^ +//')
-echo "$(date +'%T') :: processing $numSourceFiles files"
-
-# distribute source data to the databases
-# about 3 minutes
-distribute () {
-  instance=$1
-  let n=instance-1
-  port=${PORTS[$n]}
-  echo "uploading files to localhost:$port ($instance)"
-  for i in $(seq $instance ${#PORTS[@]} $num); do
-    if [ ! -z $TEST_MODE ]; then
-      # take the smallest files in test mode
-      file=$(ls -Sr $SOURCE_DIR | head -$i | tail -1)
-    else
-      # alphanumeric order
-      file=$(ls $SOURCE_DIR | head -$i | tail -1)
-    fi
-    echo "$instance $i $file"
-    curl -X PUT \
-      -H 'Content-Type: application/xml' \
-      --data-binary @$SOURCE_DIR/$file \
-      http://admin:@localhost:$port/exist/rest/db/tc2dracor/sources/$file;
-  done
-}
+echo "$(date +'%T') :: processing $NUM_SOURCES files"
 
 if [ ! -z $TEST_MODE ]; then
   num=23 # take only a few files
 else
-  num=$numSourceFiles
+  num=$NUM_SOURCES
 fi
 
 numports=${#PORTS[@]}
 
 for i in $(seq 1 $numports); do
-  distribute $i &
+  process_slice $i &
 done
 
-wait
-
-echo "$(date +'%T') :: distribution done"
-
-# transform source data
-# about 50 minutes
-echo "transforming data..."
-
-transform () {
-  port=$1
-  if [[ -z $PORT ]]; then
-    out=/tc2dracor/tei
-  else
-    out=$WORK_DIR/tei
-  fi
-  echo "start transformation on localhost:$port"
-  curl --silent \
-    http://admin:@localhost:$port/exist/rest/db/tc2dracor/tc2dracor.xq?out=$out \
-    > /dev/null
-}
-
-for port in ${PORTS[@]}; do
-  transform $port &
-done
-
-progress &
+if [[ -z $VERBOSE ]]; then
+  progress &
+fi
 
 wait > /dev/null
 
-echo "$(date +'%T') :: transformation done."
+echo "$(date +'%T') :: transformation done"
 
 # import new files to THIS repo
 cp $WORK_DIR/tei/*.xml $TEI_DIR/

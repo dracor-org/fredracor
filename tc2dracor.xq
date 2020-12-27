@@ -4,23 +4,9 @@ declare namespace functx = "http://www.functx.com";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 
-declare option output:method "json";
-declare option output:media-type "application/json";
-
-(: Collection where to read original sources from :)
-(: This can be overridden with a query parameter 'source' when invoking the
-   query via REST (see below) :)
-declare variable $source-default := '/db/tc2dracor/sources';
-
-(: Directory in the local file system to write tranformed documents to :)
-(: This can be overridden with a query parameter 'out' when invoking the query
-   via REST (see below) :)
-declare variable $out-dir-default := '/tmp/tc2dracor/tei';
-
 (: XML document mapping original file names to DraCor IDs :)
 declare variable $id-map := doc('ids.xml');
 
-declare variable $continue := false();
 declare variable $who-tokenize-pattern := '/|,';
 
 declare function functx:change-element-ns-deep (
@@ -918,56 +904,29 @@ declare function local:construct-tei (
   return $tei
 };
 
-(: Iterate over original documents and convert them :)
-declare function local:convert (
-  $source-collection as xs:string,
-  $out-dir as xs:string
-) as item()* {
-  for $res at $pos in xmldb:get-child-resources($source-collection)
-  let $filename := $res => lower-case() => replace('_', '-')
-  let $filepath := $out-dir || "/" || $filename
-  let $skip := if($continue and file:exists($filepath)) then true() else false()
-  let $log := util:log-system-out(
-    substring-before(util:eval('current-time()'), '.') ||
-    (if ($skip) then ' skipping   ' else ' preparing ') ||
-    ($pos => format-number('0000') => replace('^0', ' ') => replace('^ 0', '  ') => replace('^  0', '   ')) ||
-    ': ' ||
-    $res
-  )
 
-  return if ($skip) then () else (
-    let $doc := doc($source-collection || "/" || $res)
-    let $tei := $doc => local:prepare() => local:construct-tei($res)
-    (: let $data := xmldb:store($tei-collection, $filename, $tei) => doc() :)
-    return
-      if (file:serialize($tei, $filepath, map{
-        'method': 'xml',
-        'omit-xml-declaration': false(),
-        'indent': true()
-      })) then $filepath else ()
-  )
-};
+(: Get payload from request :)
+let $data := if (request:exists()) then request:get-data() else ()
+let $name := if (request:exists()) then (
+  request:get-header("x-filename")
+) else ()
 
-
-(: file system path to export the transformed files to :)
-let $source-collection := if (request:exists()) then
-  request:get-parameter('source', $source-default) else $source-default
-
-(: file system path to export the transformed files to :)
-let $out-dir := if (request:exists()) then
-  request:get-parameter('out', $out-dir-default) else $out-dir-default
-
-return if (not(file:is-directory($out-dir))) then (
-  util:log-system-out("output directory " || $out-dir || " not available"),
-  map { "error": "output directory " || $out-dir || " not available" }
-) else if (not(file:is-writeable($out-dir))) then (
-  util:log-system-out("cannot write to output directory " || $out-dir),
-  map { "error": "cannot write to output directory " || $out-dir }
+return if (not(request:exists())) then (
+  <error>no request</error>
+) else if (not(request:get-method() = "POST")) then (
+  response:set-status-code(405),
+  <message>POST request required</message>
+) else if ($data = ()) then (
+  response:set-status-code(400),
+  <message>no data</message>
+) else if (
+  not(request:get-header("content-type") = ("application/xml", "text/xml"))
+) then (
+  response:set-status-code(400),
+  <error>unsupported content type: {request:get-header("content-type")}</error>
+) else if (not($name)) then (
+  response:set-status-code(400),
+  <message>missing header 'X-Filename'</message>
 ) else (
-  let $converted := local:convert($source-collection, $out-dir)
-  return map {
-    "sources": $source-collection,
-    "out-dir": $out-dir,
-    "converted": $converted
-  }
+  $data => local:prepare() => local:construct-tei($name)
 )
