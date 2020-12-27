@@ -1,0 +1,43 @@
+#!/bin/bash
+
+TMP=/tmp/dracor
+RNG=$TMP/tei_all.rng
+RNG_SOURCE=https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng
+VALIDATION_LOG=$TMP/validation.log
+ERROR_LOG=$TMP/validation-errors.log
+
+if [[ -z $(which jing) ]]; then
+  echo "Cannot find jing executable!"
+  echo "You need too install jing to be able to run the validation."
+  exit 1
+fi
+
+# create temporary directory
+if [[ ! -d $TMP ]]; then
+  mkdir -p $TMP
+fi
+
+# download tei_all schema
+if [[ ! -f $RNG ]]; then
+  echo "fetching tei_all.rng"
+  curl -s -o $RNG $RNG_SOURCE
+fi
+
+
+TEI_DIR=${1:-./tei}
+echo "Validating files in $TEI_DIR..."
+
+NUM_TOTAL=$(ls $TEI_DIR/*.xml | wc -l | sed -E 's/^ +//')
+
+jing $RNG $TEI_DIR/*.xml > $VALIDATION_LOG
+cat $VALIDATION_LOG | sed  -E 's/^.+[0-9]+:[0-9]+: //' | sort | uniq > $ERROR_LOG
+
+NUM_INVALID=$(cat $VALIDATION_LOG | wc -l | sed -E 's/^ +//')
+NUM_ERRORS=$(cat $ERROR_LOG | wc -l | sed -E 's/^ +//')
+
+echo "Total number of documents: $NUM_TOTAL"
+echo "Number of invalid documents: $NUM_INVALID"
+echo "Number of unigue errors: $NUM_ERRORS"
+echo
+echo "See $VALIDATION_LOG for details."
+echo "Unique errors can be found in $ERROR_LOG."
