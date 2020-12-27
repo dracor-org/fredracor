@@ -86,7 +86,7 @@ trap 'echo "SIGINT received! Terminating…"; log; stopContainer;' SIGINT SIGTER
 # create dirs
 if [ ! -d $WORK_DIR ]; then mkdir $WORK_DIR; fi
 if [ ! -d $SOURCE_DIR ];
-    then mkdir $SOURCE_DIR; 
+    then mkdir $SOURCE_DIR;
     else
         echo "SOURCE_DIR found with $(ls $SOURCE_DIR | wc -l) items."
         read -p "Do you want to reload source? [Y/n] " reload
@@ -97,12 +97,12 @@ if [ ! -d $TARGET_DIR ]
     else
         echo "TARGET_DIR found with $(ls $TARGET_DIR | wc -l) items."
         read -p "Do you want to remove the previouse transformation results? [Y/n] " retransform
-        if [[ $retransform != "n" ]]; then echo "removing previouse results…"; rm -f $TARGET_DIR/*.xml; fi 
+        if [[ $retransform != "n" ]]; then echo "removing previouse results…"; rm -f $TARGET_DIR/*.xml; fi
 fi
 
 for instance in $(eval echo {1..$THREADS}); do
     echo "thread $instance"
-    port="$PORTPREFIX$instance" 
+    port="$PORTPREFIX$instance"
     # start the engine
     CONTAINER_ID=$(podman run --volume /tmp/fredracor:/fredracor:z -p $port:8080 --detach existdb/existdb:latest)
     CONTAINER+=($CONTAINER_ID)
