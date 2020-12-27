@@ -157,7 +157,7 @@ START=$(date +'%T')
 echo $START
 
 # interrupt
-# get log from container
+# get log from containers
 log () {
   date=$(date +'%F')
   logfile=$WORK_DIR/report-$date-$START.log
@@ -169,7 +169,7 @@ log () {
 }
 
 stopContainer () {
-  # remove container
+  # remove containers
   for c in ${CONTAINERS[@]}; do
     echo "stopping container $c"
     $DOCKER stop $c && $DOCKER rm $c
@@ -216,7 +216,7 @@ if [[ -z $PORT ]]; then
   done
 fi
 
-echo ${CONTAINERS[*]} > $WORK_DIR/container
+echo ${CONTAINERS[*]} > $WORK_DIR/containers
 
 # wait for the first engine to be ready
 # about 3 minutes for 6 instances
