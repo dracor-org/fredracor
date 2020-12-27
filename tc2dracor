@@ -1,39 +1,157 @@
 #!/bin/bash
-# this script is used to load and convert the source corpus
-# with parallel processors. it uses podman, but MAY BE it
-# works with docker as well
+# This script is used to convert the original corpus to FreDraCor using multiple
+# eXistDB instances in parallel. To spin up the databases podman is used when
+# available, otherwise it falls back to docker.
 
-# read parameters
-debug="" # enables debug mode with option --debug
+usage () {
+  cat <<EOF
+FreDraCor conversion.
+Transforms original source files in parallel processes.
 
-while [ -n "$1" ]; do
-    case "$1" in
-    --help) echo "FreDraCor conversion. loads, transforms and validates results in parallel processes. \
-                OPTIONS: \
-                --debug     run only on a few files and less parallel threads\
-                --progress  enable a progress bar"; exit 0; ;;
-    --debug) debug="true"; echo "DEBUG MODE ENABLED" ;;
-    --progress) progress="true" ;;
-    *) echo "Unknown option passed." exit 1;
-    esac
-    shift
-done;
+Usage: $0 [options] SOURCE_DIR [TEI_DIR]
 
-if [ ! -z $debug ]; then
-    # take only a few files in debug mode
-    THREADS=2 # usually more than 7 threads create a slight overhead
-else
-    THREADS=6 # usually more than 7 threads create a slight overhead
+OPTIONS:
+  -n, --num N     number of exist containers to spin up (default: 2)
+  -p, --port N    port number of eXist database to use
+  -D, --docker    use docker even when podman is available
+  -P, --progress  enable a progress bar
+  -t, --test      run only on a few files
+  -v, --verbose   show more detailed output
+  -h, --help      show this message
+
+EOF
+}
+
+# options parsing inspired by
+# https://medium.com/@Drew_Stokes/bash-argument-parsing-54f3b81a6a8f
+
+PARAMS=""
+
+while (( "$#" )); do
+  case "$1" in
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    -D|--docker)
+      USE_DOCKER=yes
+      shift
+      ;;
+    -P|--progress)
+      progress=yes
+      shift
+      ;;
+    -T|--test)
+      TEST_MODE=yes
+      echo "TEST MODE ENABLED"
+      shift
+      ;;
+    -v|--verbose)
+      VERBOSE=1
+      shift
+      ;;
+    -n|--num|--threads)
+      if [ -n "$2" ] && [ ${2:0:1} != "-" ]; then
+        re='^[2-6]$'
+        if ! [[ $2 =~ $re ]]; then
+          echo "Number of threads must be between 2 and 6!"
+          exit 1
+        fi
+        THREADS=$2
+        shift 2
+      else
+        echo "Error: Argument for $1 is missing" >&2
+        exit 1
+      fi
+      ;;
+    -p|--port)
+      if [ -n "$2" ] && [ ${2:0:1} != "-" ]; then
+        re='^[0-9]+$'
+        if ! [[ $2 =~ $re ]]; then
+          echo "Port argument must be a number!"
+          exit 1
+        fi
+        PORT=$2
+        shift 2
+      else
+        echo "Error: Argument for $1 is missing" >&2
+        exit 1
+      fi
+      ;;
+    -*|--*=) # unsupported flags
+      echo "Error: Unsupported flag $1" >&2
+      exit 1
+      ;;
+    *) # preserve positional arguments
+      PARAMS="$PARAMS $1"
+      shift
+      ;;
+  esac
+done
+
+# set positional arguments in their proper place
+eval set -- "$PARAMS"
+
+DOCKER=docker
+if [ ! -z $(which podman) ] && [ -z $USE_DOCKER ]; then
+  DOCKER=podman
+elif [[ -z $(which docker) ]]; then
+  echo "Cannot find docker executable. Aborting!"
+  exit 1
 fi
+
+BASE_DIR=$(dirname $0)
+
+SOURCE_DIR=${1:-$BASE_DIR/../theatre-classique/xml}
+TEI_DIR=${2:-$BASE_DIR/tei}
+
+if [[ ! -d $SOURCE_DIR ]]; then
+  echo "Source directory '$SOURCE_DIR' not available!"
+  echo "Make sure to checkout https://github.com/dracor-org/theatre-classique next to fredracor."
+  echo
+  exit 1
+else
+  echo "Using original files from: $SOURCE_DIR"
+  echo "Original files found: $(ls $SOURCE_DIR/*.[xX][mM][lL] | wc -l)"
+fi
+
+if [[ ! -d $TEI_DIR ]]; then
+  echo "Missing TEI directory!"
+  echo "Usage: $0 [options] source_dir tei_dir"
+  exit 1
+else
+  echo "Target directory: $TEI_DIR"
+fi
+
+# check git status of TEI_DIR
+cd $TEI_DIR
+if [[ $(git status --porcelain --untracked-files=no .) != '' ]]; then
+  echo
+  echo "Uncommitted changes in TEI directory ($TEI_DIR)!"
+  echo 'Please make sure to commit or revert any changes before running a new conversion.'
+  echo
+  exit 1
+fi
+cd - > /dev/null
+
+THREADS=${THREADS:-2}
+echo "Threads: $THREADS"
 
 PORTPREFIX="644"
 
-CONTAINER=() # put container ids here, to stop them afterwards
+CONTAINERS=() # put container ids here, to stop them afterwards
+PORTS=()
 
-THIS_DIR="$PWD"
-WORK_DIR="/tmp/fredracor"
-SOURCE_DIR="$WORK_DIR/data"
-TARGET_DIR="$WORK_DIR/transformed"
+if [[ -z $PORT ]]; then
+  for i in $(seq 1 $THREADS); do
+    port=$PORTPREFIX$i
+    PORTS+=($port)
+  done
+else
+  PORTS+=($PORT)
+fi
+
+echo ${PORTS[*]}
 
 START=$(date +'%T')
 echo $START
@@ -41,204 +159,181 @@ echo $START
 # interrupt
 # get log from container
 log () {
-    date=$(date +'%F')
-    for c in ${CONTAINER[@]}; do
-        podman logs $c >> report-$date-$START.log
-        cp report-$date-$START.log report-latest.log
-    done
+  date=$(date +'%F')
+  logfile=$WORK_DIR/report-$date-$START.log
+  for c in ${CONTAINERS[@]}; do
+    $DOCKER logs $c >> $WORK_DIR/report-$date-$START.log
+  done
+  [ ${#CONTAINERS[@]} -gt 0 ] && [ -n "$VERBOSE" ] \
+    && echo "Detailed log in $logfile"
 }
 
 stopContainer () {
-    # remove container
-    for c in ${CONTAINER[@]}; do
-        echo "stopping container $c"
-        podman stop $c
-    done
+  # remove container
+  for c in ${CONTAINERS[@]}; do
+    echo "stopping container $c"
+    $DOCKER stop $c && $DOCKER rm $c
+  done
 }
 
 # watch progress
 # TODO: move to inotify
 progress () {
-    current=0
-    if [ ! -z $progress ]
-    then
-        echo
-        curl --silent --output $WORK_DIR/progressbar.sh https://raw.githubusercontent.com/roddhjav/progressbar/v1.1/progressbar.sh
-        source $WORK_DIR/progressbar.sh || exit 2
-        until [ $current -eq $num ]; do
-            current=$(ls $TARGET_DIR | wc -l)
-            lastFile=$(ls -t $TARGET_DIR | head -1 | cut -c 1-12)
-            progressbar "$(date +'%T') :: $current / $num :: $lastFile" $current $num
-            sleep 0.5s
-        done
-    else
-        until [ $current -eq $num ]; do
-            current=$(ls $TARGET_DIR | wc -l)
-            echo -n "\r$current / $num"
-            sleep 1s
-        done
-        echo
-    fi
+  current=0
+  if [ ! -z $progress ]
+  then
+    echo
+    source $BASE_DIR/.progressbar.sh || exit 2
+    until [ $current -eq $num ]; do
+      current=$(ls $WORK_DIR/tei | wc -l)
+      lastFile=$(ls -t $WORK_DIR/tei | head -1 | cut -c 1-12)
+      progressbar "$(date +'%T') :: $current / $num :: $lastFile" $current $num
+      sleep 0.5s
+    done
+  else
+    until [ $current -eq $num ]; do
+      current=$(ls $WORK_DIR/tei | wc -l)
+      echo -n "\r$current / $num"
+      sleep 1s
+    done
+    echo
+  fi
 }
 
 trap 'echo "SIGINT received! Terminating…"; log; stopContainer;' SIGINT SIGTERM
 
-# create dirs
-if [ ! -d $WORK_DIR ]; then mkdir $WORK_DIR; fi
-if [ ! -d $SOURCE_DIR ];
-    then mkdir $SOURCE_DIR;
-    else
-        echo "SOURCE_DIR found with $(ls $SOURCE_DIR | wc -l) items."
-        read -p "Do you want to reload source? [Y/n] " reload
+WORK_DIR=$(mktemp -d /tmp/tc2dracor-XXXXXX)
+mkdir -p $WORK_DIR/tei
+echo "Temporary directory: $WORK_DIR"
 
-fi
-if [ ! -d $TARGET_DIR ]
-    then mkdir $TARGET_DIR;
-    else
-        echo "TARGET_DIR found with $(ls $TARGET_DIR | wc -l) items."
-        read -p "Do you want to remove the previouse transformation results? [Y/n] " retransform
-        if [[ $retransform != "n" ]]; then echo "removing previouse results…"; rm -f $TARGET_DIR/*.xml; fi
+# spin up database containers unless PORT was specified
+if [[ -z $PORT ]]; then
+  for port in ${PORTS[@]}; do
+    echo -n "starting db at port $port "
+    id=$($DOCKER run --volume $WORK_DIR:/tc2dracor:z -p $port:8080 --detach existdb/existdb:5.2.0)
+    CONTAINERS+=($id)
+    echo "($id)"
+  done
 fi
 
-for instance in $(eval echo {1..$THREADS}); do
-    echo "thread $instance"
-    port="$PORTPREFIX$instance"
-    # start the engine
-    CONTAINER_ID=$(podman run --volume /tmp/fredracor:/fredracor:z -p $port:8080 --detach existdb/existdb:latest)
-    CONTAINER+=($CONTAINER_ID)
-    echo "container id: $CONTAINER_ID"
-done
-
-echo ${CONTAINER[*]} > $WORK_DIR/container
+echo ${CONTAINERS[*]} > $WORK_DIR/container
 
 # wait for the first engine to be ready
 # about 3 minutes for 6 instances
-echo "waiting for all instances to be ready…"
-for i in $(eval echo {1..$THREADS}); do
-    port="$PORTPREFIX$i"
-    while [[ $(curl -I -s http://localhost:$port | grep -c "200 OK") -eq "0" ]] ; do
-        sleep 1s
-    done
-    echo "$i ready."
+echo "waiting for instances to be ready..."
+for port in ${PORTS[@]}; do
+  echo -n "localhost:$port "
+  while [[ $(curl -I -s http://localhost:$port | grep -c "200 OK") -eq "0" ]]; do
+    echo -n "."
+    sleep 1s
+  done
+  echo " ready"
 done
 
 echo "$(date +'%T') :: ready"
 
+# FIXME: cleanup before using existing database
+# if ! [[ -z $PORT ]]; then
+#   echo "Cleanup???"
+# fi
+
 # put scripts to the databases
-for i in $(eval echo {1..$THREADS}); do
-    port="$PORTPREFIX$i"
-    for file in *.xq; do
-        curl -X PUT -H 'Content-Type: application/xquery' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/$file;
-    done
-    echo "scripts placed at instance $i"
+for port in ${PORTS[@]}; do
+  echo "Putting scripts on localhost:$port"
+  for file in $BASE_DIR/tc2dracor.xq; do
+    [ -z $VERBOSE ] || echo "$file"
+    name=$(basename $file)
+    curl -X PUT \
+      -H 'Content-Type: application/xquery' \
+      --data-binary @$file \
+      http://admin:@localhost:$port/exist/rest/db/tc2dracor/$name
+  done
+  for file in $BASE_DIR/ids.xml; do
+    [ -z $VERBOSE ] || echo "$file"
+    name=$(basename $file)
+    curl -X PUT -H 'Content-Type: application/xml' \
+      --data-binary @$file \
+      http://admin:@localhost:$port/exist/rest/db/tc2dracor/$name
+  done
+  echo "done"
 done
 
-# load data at first instance, shared to all others afterwards
-# about 15 minutes
-if [[ $reload != "n" ]]; then
-    echo "load data on instance 1"
-    for file in load*.xq; do
-        curl --silent --output report-load.log http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/$file
-    done
-fi
-
-echo "load source data to volume, remove from instance 1 afterwards"
-if [[ $reload != "n" ]]; then
-    curl --silent "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/parallelize-download-source.xq"
-    curl --silent --output "$WORK_DIR/tei_all.rng" "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/tei_all.rng"
-    curl --silent --output "$WORK_DIR/ids.xml" "http://admin:@localhost:${PORTPREFIX}1/exist/rest/db/ids.xml" &&
-    cp $WORK_DIR/ids.xml $THIS_DIR/ids.xml # save the new list of ids in the repo
-fi
-echo "$(date +'%T') :: load data done"
-
 numSourceFiles=$(ls $SOURCE_DIR | wc -l)
-echo "$(date +'%T') :: received $numSourceFiles files"
+echo "$(date +'%T') :: processing $numSourceFiles files"
 
 # distribute source data to the databases
 # about 3 minutes
 distribute () {
-    instance=$1
-    port="$PORTPREFIX$instance"
-    echo "uploading files to instance $instance"
-	for i in $(eval echo {$instance..$num..$THREADS}); do
-        if [ ! -z $debug ]; then
-            # take the smallest files in debug mode
-            file=$(ls -Sr $SOURCE_DIR | head -$i | tail -1)
-        else
-            # alphanumeric order
-            file=$(ls $SOURCE_DIR | head -$i | tail -1)
-        fi
-        curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/data/$file;
-	done
-    # add tei_all.rng to the db
-    filename="tei_all.rng"
-    file="$WORK_DIR/$filename"
-    curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/$filename;
-    filename="ids.xml"
-    file="$WORK_DIR/$filename"
-    curl -X PUT -H 'Content-Type: application/xml' --data-binary @$file http://admin:@localhost:$port/exist/rest/db/$filename;
+  instance=$1
+  let n=instance-1
+  port=${PORTS[$n]}
+  echo "uploading files to localhost:$port ($instance)"
+  for i in $(seq $instance ${#PORTS[@]} $num); do
+    if [ ! -z $TEST_MODE ]; then
+      # take the smallest files in test mode
+      file=$(ls -Sr $SOURCE_DIR | head -$i | tail -1)
+    else
+      # alphanumeric order
+      file=$(ls $SOURCE_DIR | head -$i | tail -1)
+    fi
+    echo "$instance $i $file"
+    curl -X PUT \
+      -H 'Content-Type: application/xml' \
+      --data-binary @$SOURCE_DIR/$file \
+      http://admin:@localhost:$port/exist/rest/db/tc2dracor/sources/$file;
+  done
 }
 
-if [ ! -z $debug ]; then
-    # take only a few files in debug mode
-    num=33
+if [ ! -z $TEST_MODE ]; then
+  num=23 # take only a few files
 else
-    num=$numSourceFiles
+  num=$numSourceFiles
 fi
 
-cd $SOURCE_DIR
-for instance in $(eval echo {1..$THREADS}); do
-    distribute $instance &
+numports=${#PORTS[@]}
+
+for i in $(seq 1 $numports); do
+  distribute $i &
 done
 
 wait
 
 echo "$(date +'%T') :: distribution done"
 
-# return to git repo dir
-cd $THIS_DIR
-
 # transform source data
 # about 50 minutes
-echo "transforming the data"
+echo "transforming data..."
 
 transform () {
-    i=$1
-    port="$PORTPREFIX$i"
-    for file in transfo*.xq; do
-        echo "start transformation on instance $i"
-        curl --silent http://admin:@localhost:$port/exist/rest/db/$file > /dev/null
-    done
+  port=$1
+  if [[ -z $PORT ]]; then
+    out=/tc2dracor/tei
+  else
+    out=$WORK_DIR/tei
+  fi
+  echo "start transformation on localhost:$port"
+  curl --silent \
+    http://admin:@localhost:$port/exist/rest/db/tc2dracor/tc2dracor.xq?out=$out \
+    > /dev/null
 }
 
-for i in $(eval echo {1..$THREADS}); do
-    transform $i &
+for port in ${PORTS[@]}; do
+  transform $port &
 done
 
-progress &
+#progress &
 
 wait > /dev/null
 
 echo "$(date +'%T') :: transformation done."
 
 # import new files to THIS repo
-cp $TARGET_DIR/*.xml $THIS_DIR/tei/
+cp $WORK_DIR/tei/*.xml $TEI_DIR/
 
 # terminate
 log
 stopContainer
 
 echo "$(date +'%T') :: all done"
-
-if [ "$(ls -A $TARGET_DIR)" ]; then
-    countTargets=$(ls $TARGET_DIR/*.xml | wc -l)
-    echo "$(date +'%T') :: successfully created fredracor with $countTargets items."
-    valid="$(grep -c "✔ tei_all" report-latest.log)"
-    echo "$(date +'%T') :: ✔ $valid valid tei_all documents prepared"
-    invalid="$(grep -c "✘ tei_all" report-latest.log)"
-    echo "$(date +'%T') :: ✘ $invalid invalid tei_all documents found"
-    jingmessages="$(grep -c "/message" report-latest.log)"
-    echo "$(date +'%T') :: $jingmessages messages reported by jing."
-fi
 
 exit 0
