@@ -185,15 +185,15 @@ progress () {
     echo
     source $BASE_DIR/.progressbar.sh || exit 2
     until [ $current -eq $num ]; do
-      current=$(ls $WORK_DIR/tei | wc -l)
+      current=$(ls $WORK_DIR/tei | wc -l | sed -E 's/^ +//')
       lastFile=$(ls -t $WORK_DIR/tei | head -1 | cut -c 1-12)
       progressbar "$(date +'%T') :: $current / $num :: $lastFile" $current $num
       sleep 0.5s
     done
   else
     until [ $current -eq $num ]; do
-      current=$(ls $WORK_DIR/tei | wc -l)
-      echo -n "\r$current / $num"
+      current=$(ls $WORK_DIR/tei | wc -l | sed -E 's/^ +//')
+      echo -n -e "\r$current / $num"
       sleep 1s
     done
     echo
@@ -259,7 +259,7 @@ for port in ${PORTS[@]}; do
   echo "done"
 done
 
-numSourceFiles=$(ls $SOURCE_DIR | wc -l)
+numSourceFiles=$(ls $SOURCE_DIR | wc -l | sed -E 's/^ +//')
 echo "$(date +'%T') :: processing $numSourceFiles files"
 
 # distribute source data to the databases
@@ -322,7 +322,7 @@ for port in ${PORTS[@]}; do
   transform $port &
 done
 
-#progress &
+progress &
 
 wait > /dev/null
 
