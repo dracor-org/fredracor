@@ -81,7 +81,7 @@ declare function local:transform($nodes) {
                     or $node/parent::*:body
                     or $node/parent::*:front
                     or $node/parent::*:div
-                    or $node/parent::*:docImprint) 
+                    or $node/parent::*:docImprint)
                     
                     and matches($node, '\S'))
                 then
@@ -208,16 +208,16 @@ declare function local:transform($nodes) {
                 (: removing unknown attributes @syll, @part :)
                 let $exceptionsId := ($node/@id, $node/@is, $node/@Id, $node/@l)
                 let $exceptionsPart := (
-                                    $node/@part, 
+                                    $node/@part,
                                     $node/@par,
                                     $node/@pat,
                                     $node/@patr,
                                     $node/@prt,
                                     $node/@parrt,
-                                    $node/@parT, 
-                                    $node/@partt, 
-                                    $node/@aprt, 
-                                    $node/@pArt, 
+                                    $node/@parT,
+                                    $node/@partt,
+                                    $node/@aprt,
+                                    $node/@pArt,
                                     $node/@paRt,
                                     $node/@art
                                     )
@@ -234,7 +234,7 @@ declare function local:transform($nodes) {
                 $node/@* except ($exceptionsId, $exceptionsPart, $exceptionsEtc),
                     if(not($exceptionsId)) then () else
                 attribute n { $exceptionsId ! string(.) },
-                $exceptionsPart ! 
+                $exceptionsPart !
                     (if( upper-case(.) = ("F", "I", "M", "N", "Y") )
                     then (attribute part {upper-case(.)})  (: typo in andrieux-anaximandre.xml :)
                     else (comment {'WARNING: invalid @part in source.'}, local:attribute-to-comment(.))),
@@ -269,7 +269,7 @@ declare function local:transform($nodes) {
 
                 (: move tei:p[@type='v'] to tei:l as it represents vers. distinction unclear. :)
                 let $vers := ('v', 'vers')
-                let $isVers := 
+                let $isVers :=
                             ($node/@type = $vers)
                             or ($node/@tyep = $vers)
                             or ($node/@typee = $vers)
@@ -330,7 +330,7 @@ declare function local:transform($nodes) {
                 local:transform($node/node())
             }, $node/@bio ! local:attribute-to-comment(.) )
 
-        (: BEGIN 
+        (: BEGIN
             rename unknown or wrong used elements to div
             and preserve usage as @type
         :)
@@ -478,7 +478,7 @@ declare function local:transform($nodes) {
                         attribute type {'nombre'},
                         local:transform($node/node())
                     }, $node/@value ! local:attribute-to-comment(.) )
-                else 
+                else
                     () (: remove this element, when it has no or whitespace only text inside :)
 
             case element(note) return
@@ -565,7 +565,7 @@ declare function local:transform($nodes) {
                     'TODO: usage of set in correct place but with unknown attributes',
                     serialize($node)
                 }
-            case element(editor) return 
+            case element(editor) return
                 comment {
                     'TODO: handling of editor name at this place unclear',
                     serialize($node)
@@ -591,7 +591,7 @@ declare function local:transform($nodes) {
                                     $node/@typr,
                                     $node/@type
                                     )
-                let $newType := 
+                let $newType :=
                     ($exceptionsType)[. != ''] ! attribute type { string(.) }
                 
                 return
@@ -642,7 +642,7 @@ declare function local:transform($nodes) {
                 element {QName('http://www.tei-c.org/ns/1.0', 'head')} {
                     $node/@*,
                     local:transform($node/node())
-            }   
+            }
 
             case element(ab) return
                 if($node/@tpe = 'stances')
@@ -722,7 +722,7 @@ let $target-collection := '/db/transformed',
     $create := if($continue) then () else xmldb:create-collection('/db', 'transformed')
 
 let $collection-uri := '/db/data/'
-let $do := 
+let $do :=
 for $resource at $pos in xmldb:get-child-resources($collection-uri)
 (: set position to continue previouse transformation :)
 (:where $pos gt 28:)
@@ -731,9 +731,9 @@ for $resource at $pos in xmldb:get-child-resources($collection-uri)
 
 let $log := util:log-system-out( substring-before(util:eval( 'current-time()' ), '.') || ' preparing ' || ($pos => format-number('0000') => replace('^0', ' ') => replace('^ 0', '  ') => replace('^  0', '   ')) || ': ' || $resource)
 let $id-from-list := string( doc('/db/ids.xml')//play[@orig eq $resource]/@dracor )
-let $id := if($id-from-list) then $id-from-list else format-number($pos, 'x00000') 
+let $id := if($id-from-list) then $id-from-list else format-number($pos, 'x00000')
 let $doc := doc('/db/data/' || $resource)
-let $title := 
+let $title :=
     if($doc//*:titlePart/@type="main")
     then
         for $titlePart in $doc//*:titlePart[@type="main"]
@@ -747,7 +747,7 @@ let $title :=
             attribute type {'main'},
             $doc//*:fileDesc[1]/*:titleStmt[1]/*:title[1]/text()
         }
-let $subtitle := 
+let $subtitle :=
     if($doc//*:titlePart/@type="sub")
     then
         for $titlePart in $doc//*:titlePart[@type="sub"]
@@ -760,7 +760,7 @@ let $subtitle :=
         ()
 let $author :=
     for $author in $doc//*:author
-    let $isni := 
+    let $isni :=
         if($author/@ISNI)
         then attribute key {"isni:" || replace($author/@ISNI, "\s", "")}
         else ()
@@ -770,7 +770,7 @@ let $author :=
             $isni,
             $name
         }
-let $editor := 
+let $editor :=
     if($doc//*:editor)
     then
         for $node in $doc//*:teiHeader//*:editor
@@ -795,7 +795,7 @@ let $datePrint :=
             attribute type {'print'},
             $when ! attribute when {.},
             $value
-        }, 
+        },
         ($doc//*:docDate)[2] ! comment {'WARNING: multiple docDate elements found in source. ' || serialize(.)})
 
 let $tei :=
@@ -900,7 +900,7 @@ let $tei :=
 let $resource-name := $resource => lower-case() => replace('_', '-')
 let $store := xmldb:store('/db/transformed', $resource-name, $tei)
 let $validation := validation:jing-report(xs:anyURI($store), xs:anyURI('/db/tei_all.rng'))
-let $log := 
+let $log :=
     if($validation//status eq 'valid')
     then util:log-system-out('✔ tei_all')
     else (util:log-system-out('✘ tei_all'), util:log-system-out(serialize($validation, map{'method':'xml','indent': true()})))
