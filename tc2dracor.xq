@@ -818,39 +818,37 @@ declare function local:construct-tei (
 
   let $tei :=
   <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
-      <teiHeader>
-          <fileDesc>
-              <titleStmt>
-                  {$title}
-                  {$author}
-                  {$editor}
-              </titleStmt>
-              <publicationStmt>
-                  <publisher xml:id="dracor">DraCor</publisher>
-                  <idno type="URL">https://dracor.org</idno>
-                  <idno type="dracor" xml:base="https://dracor.org/id/">{$id}</idno>
-                  <availability>
-                      <licence>
-                          <ab>CC BY-NC-SA 4.0</ab>
-                          <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
-                      </licence>
-                  </availability>{'
-                '}
-                <!-- idno type="wikidata" xml:base="https://www.wikidata.org/entity/"></idno -->
-              </publicationStmt>
-              <sourceDesc>
-                  <bibl type="digitalSource">
-                      <name>Théâtre Classique</name>
-                      <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/{$orig-name}</idno>
-                      <idno type="URL">http://theatre-classique.fr/pages/documents/{$orig-name}</idno>
-                      <availability>
-                          <licence>
-                              <ab>CC BY-NC-SA 4.0</ab>
-                              <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
-                          </licence>
-                      </availability>
-                      <bibl type="originalSource">
-                          {$datePrint}
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          {$title}
+          {$author}
+          {$editor}
+        </titleStmt>
+        <publicationStmt>
+          <publisher xml:id="dracor">DraCor</publisher>
+          <idno type="URL">https://dracor.org</idno>
+          <idno type="dracor" xml:base="https://dracor.org/id/">{$id}</idno>
+          <availability>
+            <licence>
+              <ab>CC BY-NC-SA 4.0</ab>
+              <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+            </licence>
+          </availability>
+        </publicationStmt>
+        <sourceDesc>
+          <bibl type="digitalSource">
+            <name>Théâtre Classique</name>
+            <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/{$orig-name}</idno>
+            <idno type="URL">http://theatre-classique.fr/pages/documents/{$orig-name}</idno>
+            <availability>
+              <licence>
+                <ab>CC BY-NC-SA 4.0</ab>
+                <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+              </licence>
+            </availability>
+            <bibl type="originalSource">
+              {$datePrint}
   {
       element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
           attribute type {'premiere'},
@@ -858,60 +856,63 @@ declare function local:construct-tei (
           string(($doc//*:premiere)[1])
       }
   }
-                              { if(($doc//*:premiere)[2]) then comment {'WARNING: multiple premiere elements found in source.'} else () }
-                          <date type="written"/>
-                          <idno type="URL">{string($doc//*:permalien)}</idno>
-                      </bibl>
-                  </bibl>
-              </sourceDesc>
-          </fileDesc>
-          <profileDesc>
-              <particDesc>
-                  <listPerson>
   {
-      let $whos := ($doc//*:text//*:sp/tokenize(./@who || ./@ho || ./@w4ho, $who-tokenize-pattern) => distinct-values())
-      let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
-      for $who in (($whos) ! local:translate(.) => distinct-values())
-      where $who (: do not parse empty @who :)
-      (: inconsistent usage of @id with @who. we have to translate/normalize to match. :)
-      let $castItem := $doc//*:role[local:translate(@id) eq $who]/parent::*
-      let $sex := switch (string($castItem[1]/*:role[1]/@sex))
-          case "1" return "MALE"
-          case "2" return "FEMALE"
-          default return "UNKNOWN"
-      let $comment :=
-          if($castItem[2])
-          then comment {'WARNING: multiple roles/castItems found in source, may result of local:translate#1'}
-          else ()
-      let $persName := string($castItem[1]/*:role)
-      let $persName := substring($persName, 1, 1) || lower-case(substring($persName, 2, 900))
-      let $persName :=
-          if($persName eq '')
-          then upper-case(substring($who, 1, 1)) || substring($who, 2, 900)
-          else $persName
-      return
-          <person xml:id="{$who}" sex="{$sex}">{if(not($castItem)) then comment { 'WARNING: no castItem found for reference in @who' } else ()}
-              <persName>{$persName}</persName>
-          </person>
+    if(($doc//*:premiere)[2]) then
+      comment {'WARNING: multiple premiere elements found in source.'} else ()
   }
-                  </listPerson>
-              </particDesc>
-              <textClass>
-                  <keywords>
-                      <term type="genreTitle">{string($doc//*:SourceDesc/*:genre)}</term>
-                      <term type="genreTitle">{string($doc//*:SourceDesc/*:type)}</term>
-                  </keywords>
-              </textClass>
-          </profileDesc>
-          <revisionDesc>
-              <listChange>
-                  <change when="2020-12-04">(mg) file conversion from source</change>
-              </listChange>
-          </revisionDesc>
-      </teiHeader>
-      {
-          local:transform($doc/*:text)
-      }
+              <date type="written"/>
+              <idno type="URL">{string($doc//*:permalien)}</idno>
+            </bibl>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <particDesc>
+          <listPerson>
+  {
+    let $whos := ($doc//*:text//*:sp/tokenize(./@who || ./@ho || ./@w4ho, $who-tokenize-pattern) => distinct-values())
+    let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
+    for $who in (($whos) ! local:translate(.) => distinct-values())
+    where $who (: do not parse empty @who :)
+    (: inconsistent usage of @id with @who. we have to translate/normalize to match. :)
+    let $castItem := $doc//*:role[local:translate(@id) eq $who]/parent::*
+    let $sex := switch (string($castItem[1]/*:role[1]/@sex))
+      case "1" return "MALE"
+      case "2" return "FEMALE"
+      default return "UNKNOWN"
+    let $comment :=
+      if($castItem[2])
+      then comment {'WARNING: multiple roles/castItems found in source, may result of local:translate#1'}
+      else ()
+    let $persName := string($castItem[1]/*:role)
+    let $persName := substring($persName, 1, 1) || lower-case(substring($persName, 2, 900))
+    let $persName :=
+      if($persName eq '')
+      then upper-case(substring($who, 1, 1)) || substring($who, 2, 900)
+      else $persName
+    return
+      <person xml:id="{$who}" sex="{$sex}">{if(not($castItem)) then comment { 'WARNING: no castItem found for reference in @who' } else ()}
+        <persName>{$persName}</persName>
+      </person>
+  }
+          </listPerson>
+        </particDesc>
+        <textClass>
+          <keywords>
+            <term type="genreTitle">{string($doc//*:SourceDesc/*:genre)}</term>
+            <term type="genreTitle">{string($doc//*:SourceDesc/*:type)}</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <revisionDesc>
+        <listChange>
+          <change when="2020-12-04">(mg) file conversion from source</change>
+        </listChange>
+      </revisionDesc>
+    </teiHeader>
+  {
+    local:transform($doc/*:text)
+  }
   </TEI>
 
   return $tei
