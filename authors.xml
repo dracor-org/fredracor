@@ -665,6 +665,10 @@ tei:author tags.
       <persName>Corneille, Pierre</persName>
     </author>
     <name>CORNEILLE, Pierre (1606-1684)</name>
+    <!--
+      The next one is only found in CORNEILLEP_OTHON.xml which has two author
+      elements for Corneille.
+    -->
     <name>CORNEILLE, Pierre</name>
     <isni>0000 0001 2129 6128</isni>
   </author>
@@ -1564,7 +1568,8 @@ tei:author tags.
       <persName>Labiche, Eugène</persName>
     </author>
     <name>Eugène LABICHE (1815-1888)</name>
-    <isni>0000 0001 2277 5040</isni>
+    <name>LABICHE, Eugène (1815-1888)</name>
+    <!-- <isni>0000 0001 2277 5040</isni> -->
   </author>
   <author name="Laboullaye, Thomas et cORMON">
     <author xmlns="http://www.tei-c.org/ns/1.0">
@@ -1930,7 +1935,11 @@ tei:author tags.
       <persName>Moissy, Alexandre-Guillaume de</persName>
     </author>
     <name>MOISSY, Alexandre-Guillaume de (1712-1777)</name>
-    <isni>0000 0000 8352 1936</isni>
+    <!--
+      ISNI cannot be used for lookup as it is mistakenly assigned to Arnould
+      in ARNOULD_HEROINEAMERICAINE.xml
+    -->
+    <!-- <isni>0000 0000 8352 1936</isni> -->
   </author>
   <author name="Molière">
     <author xmlns="http://www.tei-c.org/ns/1.0" key="isni:0000000123197131">
@@ -2290,7 +2299,12 @@ tei:author tags.
       <persName>Quinault, Philippe</persName>
     </author>
     <name>Philippe QUINAULT (1635-1688)</name>
-    <isni>0000 0001 2096 2483</isni>
+    <name>QUINAULT, Philippe (1635-1688)</name>
+    <!--
+     ISNI cannot be uses as it is mistakenly assigned to Matolles in
+     MAROLLES_AVARICIEUX.xml and Lully in MOLIERE_PSYCHE.xml
+    -->
+    <!-- <isni>0000 0001 2096 2483</isni> -->
   </author>
   <author name="Racine, Jean">
     <author xmlns="http://www.tei-c.org/ns/1.0" key="isni:0000000123212338">
@@ -2896,9 +2910,15 @@ tei:author tags.
     <name>DORNEVAL, LESAGE</name>
   </author>
   <author>
+    <!--
+      omit this since FUZELIERLESAGE_TABLEAUDUMARIAGE.xml has an additionl
+      author element for "FUZELIER, Louis"
+    -->
+    <!--
     <author xmlns="http://www.tei-c.org/ns/1.0" key="isni:0000000083620416">
       <persName>Fuzelier, Louis</persName>
     </author>
+    -->
     <author xmlns="http://www.tei-c.org/ns/1.0" key="isni:0000000121258113">
       <persName>Lesage, Alain-René</persName>
     </author>
