@@ -145,7 +145,7 @@ log from every pod can be viewed while the conversion is running:
 podman logs -f $(cat $(ls -rtd /tmp/tc2dracor-* | tail -1)/containers)
 ```
 
-#### -p, --progress
+#### -P, --progress
 
 [The internet does not forget.](https://twitter.com/umblaetterer/status/608349018113101824)
 That's why the script can be run with an optional progress bar shown in the
