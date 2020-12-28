@@ -51,7 +51,7 @@ stopContainer () {
 # TODO: move to inotify
 progress () {
   current=0
-  if [ ! -z $progress ]
+  if [ ! -z $PROGRESS ]
   then
     source $BASE_DIR/.progressbar.sh || exit 2
     until [ $current -eq $num ]; do
@@ -75,7 +75,7 @@ process_slice () {
   instance=$1
   let n=instance-1
   port=${PORTS[$n]}
-  [ -z $VERBOSE ] || echo "processing files on localhost:$port ($instance)"
+  [ -z $PROGRESS ] && echo "processing files on localhost:$port ($instance)"
   for i in $(seq $instance ${#PORTS[@]} $num); do
     if [ ! -z $TEST_MODE ]; then
       # take the smallest files in test mode
@@ -87,7 +87,7 @@ process_slice () {
 
     name=$(echo $file | tr '[:upper:]' '[:lower:]' | sed 's/_/-/g')
 
-    [ -z $VERBOSE ] || echo "$instance $i $file -> $name"
+    [ -z $PROGRESS ] && echo "$instance $i $file -> $name"
     curl -s -X POST \
       -H 'Content-Type: application/xml' \
       -H "X-Filename: $file" \
@@ -113,7 +113,7 @@ while (( "$#" )); do
       shift
       ;;
     -P|--progress)
-      progress=yes
+      PROGRESS=yes
       shift
       ;;
     -T|--test)
@@ -211,7 +211,7 @@ fi
 cd - > /dev/null
 
 THREADS=${THREADS:-2}
-echo "Threads: $THREADS"
+[ -z $PORT ] && echo "Threads: $THREADS"
 
 PORTPREFIX="644"
 
@@ -227,14 +227,14 @@ else
   PORTS+=($PORT)
 fi
 
-[ -z $VERBOSE ] || echo ${PORTS[*]}
+[ -z $VERBOSE ] || echo "Ports: ${PORTS[*]}"
 
 WORK_DIR=$(mktemp -d /tmp/tc2dracor-XXXXXX)
 mkdir -p $WORK_DIR/tei
 echo "Temporary directory: $WORK_DIR"
 
 START=$(date +'%T')
-echo $START
+[ -z $VERBOSE ] || echo $START
 
 TRAP='echo; echo "SIGINT received! Terminating..."; log; stopContainer; exit 2'
 trap "$TRAP" SIGINT SIGTERM
@@ -263,7 +263,7 @@ for port in ${PORTS[@]}; do
   echo " ready"
 done
 
-echo "$(date +'%T') :: ready"
+[ -z $VERBOSE ] || echo "$(date +'%T') :: ready"
 
 # put scripts to the databases
 for port in ${PORTS[@]}; do
@@ -285,7 +285,7 @@ for port in ${PORTS[@]}; do
   done
 done
 
-echo "$(date +'%T') :: processing $NUM_SOURCES files"
+[ -z $VERBOSE ] || echo "$(date +'%T') :: processing $NUM_SOURCES files"
 
 if [ ! -z $TEST_MODE ]; then
   num=23 # take only a few files
@@ -299,13 +299,13 @@ for i in $(seq 1 $numports); do
   process_slice $i &
 done
 
-if [[ -z $VERBOSE ]]; then
+if [[ -n $PROGRESS ]]; then
   progress &
 fi
 
 wait > /dev/null
 
-echo "$(date +'%T') :: transformation done"
+[ -z $VERBOSE ] || echo "$(date +'%T') :: transformation done"
 
 # import new files to THIS repo
 cp $WORK_DIR/tei/*.xml $TEI_DIR/
@@ -314,6 +314,6 @@ cp $WORK_DIR/tei/*.xml $TEI_DIR/
 log
 stopContainer
 
-echo "$(date +'%T') :: all done"
+[ -z $VERBOSE ] || echo "$(date +'%T') :: all done"
 
 exit 0
