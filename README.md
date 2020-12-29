@@ -100,14 +100,18 @@ instances can be started in parallel using either [Podman](https://podman.io) or
 ### Usage
 
 ```bash
-./tc2dracor [options] SOURCES_DIR [TEI_DIR]
+./tc2dracor [options] SOURCE_FILE [SOURCE_FILE...]
 ```
 
-#### `SOURCES_DIR`
+#### `SOURCE_FILE`
 
-The conversion script expects a directory containing the source files as its
-main argument. This could be the `xml` directory of the checked out repository
-at http://github.com/dracor-org/theatre-classique.
+The conversion script expects one or more source files as its arguments. This
+would usually be files from the `xml` directory of the checked out repository at
+http://github.com/dracor-org/theatre-classique:
+
+```bash
+./tc2dracor ../theatre-classique/xml/*.xml
+```
 
 ### Options
 
@@ -126,17 +130,21 @@ As an alternative to using containers an eXist database already running on
 will be copied to the `/db/tc2dracor/sources` collection of this database. No
 parallel processing will take place.
 
+#### -o, --output DIRECTORY
+
+Directory to write the created TEI files to. Default: `./tei`
+
 #### -D, --docker
 
 By default the conversion script uses `podman` but falls back to `docker` if
 `podman` is not available. This flag allows you to force the use of `docker`
 when `podman` would be available.
 
-#### -T, --test
+#### -P, --progress
 
-Activates test mode where only a few and small sized files are selected from the
-sources directory. This mode is mostly for debugging convenience, freeing you
-from picking a set of test files yourself.
+[The internet does not forget.](https://twitter.com/umblaetterer/status/608349018113101824)
+That's why the script can be run with an optional progress bar shown in the
+terminal.
 
 Hint: For debugging across multiple containers you may also watch the combined
 log from every pod can be viewed while the conversion is running:
@@ -144,9 +152,3 @@ log from every pod can be viewed while the conversion is running:
 ```bash
 podman logs -f $(cat $(ls -rtd /tmp/tc2dracor-* | tail -1)/containers)
 ```
-
-#### -P, --progress
-
-[The internet does not forget.](https://twitter.com/umblaetterer/status/608349018113101824)
-That's why the script can be run with an optional progress bar shown in the
-terminal.
