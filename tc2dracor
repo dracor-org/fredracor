@@ -1,7 +1,7 @@
 #!/bin/bash
-# This script is used to convert the original corpus to FreDraCor using multiple
-# eXistDB instances in parallel. To spin up the databases podman is used when
-# available, otherwise it falls back to docker.
+# This script is used to convert the original corpus to FreDraCor using one or
+# more eXistDB instances in parallel. To spin up the databases podman is used
+# when available, otherwise it falls back to docker.
 
 usage () {
   cat <<EOF
@@ -53,14 +53,14 @@ progress () {
   then
     source $BASE_DIR/.progressbar.sh || exit 2
     until [ $current -eq $num ]; do
-      current=$(ls $WORK_DIR/tei | wc -l | sed -E 's/^ +//')
-      lastFile=$(ls -t $WORK_DIR/tei | head -1 | cut -c 1-12)
+      current=$(ls $WORK_DIR/progress | wc -l | sed -E 's/^ +//')
+      lastFile=$(ls -t $WORK_DIR/progress | head -1 | cut -c 1-12)
       progressbar "$(date +'%T') :: $current / $num :: $lastFile" $current $num
       sleep 0.5s
     done
   else
     until [ $current -eq $num ]; do
-      current=$(ls $WORK_DIR/tei | wc -l | sed -E 's/^ +//')
+      current=$(ls $WORK_DIR/progress | wc -l | sed -E 's/^ +//')
       echo -n -e "\r$current / $num"
       sleep 1s
     done
@@ -79,12 +79,17 @@ process_slice () {
     file_name=$(basename $file)
     dracor_name=$(echo $file_name | tr '[:upper:]' '[:lower:]' | sed 's/_/-/g')
   
-    [ -z $PROGRESS ] && echo "$instance $i $file_name -> $dracor_name"
+    if [[ -n "$PROGRESS" ]]; then
+      # create dummy files for determining progress
+      touch $WORK_DIR/progress/$file_name
+    else
+      echo "$instance $i $file_name -> $OUT_DIR/$dracor_name"
+    fi
   
     curl -s -X POST \
       -H 'Content-Type: application/xml' \
       -H "X-Filename: $file_name" \
-      -o $WORK_DIR/tei/$dracor_name \
+      -o $OUT_DIR/$dracor_name \
       --data-binary @$file \
       http://admin:@localhost:$port/exist/rest/db/tc2dracor/tc2dracor.xq
   done
@@ -223,8 +228,8 @@ fi
 [ -z $VERBOSE ] || echo "Ports: ${PORTS[*]}"
 
 WORK_DIR=$(mktemp -d /tmp/tc2dracor-XXXXXX)
-mkdir -p $WORK_DIR/tei
-echo "Temporary directory: $WORK_DIR"
+mkdir -p $WORK_DIR/progress
+[ -z $VERBOSE ] || echo "Temporary directory: $WORK_DIR"
 
 START=$(date +'%T')
 [ -z $VERBOSE ] || echo $START
@@ -236,7 +241,7 @@ trap "$TRAP" SIGINT SIGTERM
 if [[ -z $PORT ]]; then
   for port in ${PORTS[@]}; do
     echo -n "starting eXist at port $port "
-    id=$($DOCKER run --volume $WORK_DIR:/tc2dracor:z -p $port:8080 --detach existdb/existdb:5.2.0)
+    id=$($DOCKER run -p $port:8080 --detach existdb/existdb:5.2.0)
     CONTAINERS+=($id)
     echo "($id)"
   done
@@ -244,8 +249,6 @@ fi
 
 echo ${CONTAINERS[*]} > $WORK_DIR/containers
 
-# wait for the first engine to be ready
-# about 3 minutes for 6 instances
 echo "waiting for eXist to get ready..."
 for port in ${PORTS[@]}; do
   echo -n "localhost:$port "
@@ -258,7 +261,6 @@ done
 
 [ -z $VERBOSE ] || echo "$(date +'%T') :: ready"
 
-# put scripts to the databases
 for port in ${PORTS[@]}; do
   echo "Putting scripts on localhost:$port"
   for file in $BASE_DIR/tc2dracor.xq; do
@@ -294,9 +296,6 @@ fi
 wait > /dev/null
 
 [ -z $VERBOSE ] || echo "$(date +'%T') :: transformation done"
-
-# import new files to THIS repo
-cp $WORK_DIR/tei/*.xml $OUT_DIR/
 
 # terminate
 log

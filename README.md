@@ -86,15 +86,14 @@ scripted workflow has been set up that processes the original files with an
 instances can be started in parallel using either [Podman](https://podman.io) or
 [Docker](https://www.docker.com). These are the main steps of this workflow:
 
-0. create a temporary directory (e.g. `/tmp/tc2dracor-XXXXXX`)
 1. start one or more pods (or containers) running eXist-db
-3. process the source files
-   - each source file is posted to the conversion XQuery
-     [`tc2dracor.xq`](tc2dracor.xq) and the result is stored in the temporary
-     directory
-5. copy all resulting documents to the [tei](tei) directory
-6. persist the eXist log files for debugging
-7. stop and remove all pods (or containers)
+2. loading the transformation XQuery [`tc2dracor.xq`](tc2dracor.xq) and
+   auxiliary files ([authors.xml](authors.xml), [ids.xml](ids.xml)) to the
+   database(s)
+3. process each source file by posting it to the transformation XQuery and
+   storing the output to the [tei](tei) directory
+4. persist the eXist log files for debugging
+5. stop and remove all pods (or containers)
 
 ### Usage
 
@@ -111,6 +110,10 @@ http://github.com/dracor-org/theatre-classique:
 ```bash
 ./tc2dracor ../theatre-classique/xml/*.xml
 ```
+
+NOTE: For the attribution of DraCor IDs to work, the file names of the source
+files need to match the ones of the original documents used in
+[ids.xml](ids.xml).
 
 ### Options
 
