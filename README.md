@@ -87,14 +87,13 @@ instances can be started in parallel using either [Podman](https://podman.io) or
 [Docker](https://www.docker.com). These are the main steps of this workflow:
 
 0. create a temporary directory (e.g. `/tmp/tc2dracor-XXXXXX`)
-1. start 2 or more pods (or containers) running eXist-db
-3. process the source files in parallel using a dedicated pod for a subset of
-   the files
+1. start one or more pods (or containers) running eXist-db
+3. process the source files
    - each source file is posted to the conversion XQuery
      [`tc2dracor.xq`](tc2dracor.xq) and the result is stored in the temporary
      directory
 5. copy all resulting documents to the [tei](tei) directory
-6. persist the container log files
+6. persist the eXist log files for debugging
 7. stop and remove all pods (or containers)
 
 ### Usage
@@ -121,7 +120,7 @@ Display usage information and exit.
 
 #### -n, --num N
 
-Number of pods or containers to start. Default: 2
+Number of pods or containers to start. Default: 1
 
 #### -p, --port PORTNUMBER
 

@@ -203,7 +203,7 @@ then
 fi
 cd - > /dev/null
 
-THREADS=${THREADS:-2}
+THREADS=${THREADS:-1}
 [ -z $PORT ] && echo "Threads: $THREADS"
 
 PORTPREFIX="644"
@@ -235,7 +235,7 @@ trap "$TRAP" SIGINT SIGTERM
 # spin up database containers unless PORT was specified
 if [[ -z $PORT ]]; then
   for port in ${PORTS[@]}; do
-    echo -n "starting db at port $port "
+    echo -n "starting eXist at port $port "
     id=$($DOCKER run --volume $WORK_DIR:/tc2dracor:z -p $port:8080 --detach existdb/existdb:5.2.0)
     CONTAINERS+=($id)
     echo "($id)"
@@ -246,7 +246,7 @@ echo ${CONTAINERS[*]} > $WORK_DIR/containers
 
 # wait for the first engine to be ready
 # about 3 minutes for 6 instances
-echo "waiting for instances to get ready..."
+echo "waiting for eXist to get ready..."
 for port in ${PORTS[@]}; do
   echo -n "localhost:$port "
   while [[ $(curl -I -s http://localhost:$port | grep -c "200 OK") -eq "0" ]]; do
