@@ -207,7 +207,7 @@ declare function local:transform($nodes) {
                         if(string($easy[1]) != '')
                         then $easy
                         else
-                            $node/speaker/text() => local:translate()
+                            '#' || (normalize-space($node/speaker) => local:translate())
                 },
                 local:transform($node/node() except $node/text()) (: there is text within sp audiffret-albertdurer.xml :)
             }, ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward, $node/@ge, $node/@syll, $node/@aparte) ! local:attribute-to-comment(.) ) (: @class was used a single time, so we do not take the effort to write it to a comment :)
