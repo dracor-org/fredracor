@@ -47,8 +47,9 @@ declare function local:attribute-to-comment($node as attribute()+) {
 declare function local:translate($string as xs:string) as xs:string {
     let $work :=
         translate(lower-case($string), "*[]’' áàâéèêíìîóòôúùû", '------aaaeeeiiiooouuu')
+        => replace('\.', '')
         => replace('^\-', '')
-        => replace('^\d', 'num')
+        => replace('^(\d)', 'num') (: FIXME: this can effectively createe the same ID for different characters :)
         => replace('^[|]$', '')
         => replace('&#xfffd;', '')
     return
