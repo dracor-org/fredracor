@@ -756,12 +756,11 @@ declare function local:construct-tei (
     )
   }
 
-  let $subtitle := if ($doc//*:titlePart/@type="sub") then
+  let $subtitle := for $title-part in $doc//*:titlePart[@type="sub"] return
     element {QName('http://www.tei-c.org/ns/1.0', "title")} {
       attribute type {"sub"},
-      local:titlecase($doc//*:titlePart[@type="sub"])
+      local:titlecase($title-part)
     }
-  else ()
 
   let $author :=
       for $author in $doc//*:author
