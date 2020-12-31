@@ -77,7 +77,10 @@ process_slice () {
   for i in $(seq $instance ${#PORTS[@]} $num); do
     file=$(list_sources | head -$i | tail -1)
     file_name=$(basename $file)
-    dracor_name=$(echo $file_name | tr '[:upper:]' '[:lower:]' | sed 's/_/-/g')
+    dracor_name=$(
+      echo $file_name | tr '[:upper:]' '[:lower:]'  | \
+      sed 's/%20//g' | sed 's/_/-/g'
+    )
   
     if [[ -n "$PROGRESS" ]]; then
       # create dummy files for determining progress
