@@ -44,7 +44,7 @@ declare function local:prepare ($doc as node()) as item()* {
 };
 
 declare function local:titlecase ($input as node()*) as xs:string? {
-   string-join($input, " ") => normalize-space() => tcf:convert()
+   string-join($input, " ") => normalize-space() => tcf:convert-ou()
 };
 
 declare function local:attribute-to-comment($node as attribute()+) {

@@ -133,5 +133,8 @@ declare function tcf:convert ($text as xs:string?) as xs:string? {
 };
 
 declare function tcf:convert-ou ($text as xs:string?) as xs:string? {
-  $text => local:capitalizeEachWord() => local:replaceCapitalizedSpecials()
+  string-join(
+    for $part in tokenize(lower-case($text), " ou ") return tcf:convert($part),
+    " ou "
+  )
 };
