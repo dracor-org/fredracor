@@ -823,6 +823,7 @@ declare function local:construct-tei (
       <fileDesc>
         <titleStmt>
           {$title}
+          {$subtitle}
           {$author}
           {$editor}
         </titleStmt>
