@@ -1,5 +1,8 @@
 xquery version "3.1";
 
+import module namespace tcf = "http://dracor.org/ns/exist/titlecase-french"
+  at "titlecase.xq";
+
 declare namespace functx = "http://www.functx.com";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
@@ -38,6 +41,10 @@ declare function local:prepare ($doc as node()) as item()* {
     util:log-system-out("stripping ns from " || base-uri($doc)),
     functx:change-element-ns-deep($doc/tei:TEI, "", "")
     ) else $doc/*
+};
+
+declare function local:titlecase ($input as node()*) as xs:string? {
+   string-join($input, " ") => normalize-space() => tcf:convert()
 };
 
 declare function local:attribute-to-comment($node as attribute()+) {
@@ -739,31 +746,22 @@ declare function local:construct-tei (
 ) as node() {
   let $id := string($id-map//play[@orig eq $orig-name]/@dracor)
 
-  let $title :=
-      if($doc//*:titlePart/@type="main")
-      then
-          for $titlePart in $doc//*:titlePart[@type="main"]
-          return
-              element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
-                  attribute type {'main'},
-                  string($titlePart)
-              }
+  let $title := element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
+    attribute type {'main'},
+    local:titlecase(
+      if ($doc//*:titlePart/@type="main") then
+        $doc//*:titlePart[@type="main"]
       else
-          element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
-              attribute type {'main'},
-              $doc//*:fileDesc[1]/*:titleStmt[1]/*:title[1]/text()
-          }
+        $doc//*:fileDesc[1]/*:titleStmt[1]/*:title[1]
+    )
+  }
 
-  let $subtitle :=
-      if($doc//*:titlePart/@type="sub")
-      then
-          for $titlePart in $doc//*:titlePart[@type="sub"]
-          return
-              element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
-                  attribute type {'sub'},
-                  string($titlePart)
-              }
-      else ()
+  let $subtitle := if ($doc//*:titlePart/@type="sub") then
+    element {QName('http://www.tei-c.org/ns/1.0', "title")} {
+      attribute type {"sub"},
+      local:titlecase($doc//*:titlePart[@type="sub"])
+    }
+  else ()
 
   let $author :=
       for $author in $doc//*:author
