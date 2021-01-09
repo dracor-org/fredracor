@@ -12,6 +12,38 @@ declare variable $author-map := doc('authors.xml');
 
 declare variable $who-tokenize-pattern := '/|,';
 
+declare variable $comedy-genres := (
+  "comédie ballet",
+  "comédie héroïque",
+  "comédie parade",
+  "comédie-ballet",
+  "comédie",
+  "farce",
+  "saynète"
+);
+
+declare variable $tragedy-genres := (
+  "tragédie",
+  "tragédie en musique",
+  "tragédie lyrique"
+);
+
+declare variable $tragicomedy-genres := (
+  "tragi-comédie"
+);
+
+declare variable $libretto-genres := (
+  "ballet",
+  "comédie ballet",
+  "comédie-ballet",
+  "opéra bouffe",
+  "opéra comique",
+  "opéra",
+  "opérette",
+  "tragédie en musique",
+  "tragédie lyrique"
+);
+
 declare function functx:change-element-ns-deep (
   $nodes as node()*,
   $newns as xs:string,
@@ -791,6 +823,34 @@ declare function local:construct-tei (
           }
       )
 
+  let $genre := lower-case($doc//*:SourceDesc/*:genre)
+  let $class-codes := (
+    if ($genre = $comedy-genres) then (
+      element {QName('http://www.tei-c.org/ns/1.0', 'classCode')} {
+          attribute scheme {"http://www.wikidata.org/entity/"},
+          "Q40831"
+      }
+    ) else (),
+    if ($genre = $tragedy-genres) then (
+      element {QName('http://www.tei-c.org/ns/1.0', 'classCode')} {
+          attribute scheme {"http://www.wikidata.org/entity/"},
+          "Q80930"
+      }
+    ) else (),
+    if ($genre = $tragicomedy-genres) then (
+      element {QName('http://www.tei-c.org/ns/1.0', 'classCode')} {
+          attribute scheme {"http://www.wikidata.org/entity/"},
+          "Q192881"
+      }
+    ) else (),
+    if ($genre = $libretto-genres) then (
+      element {QName('http://www.tei-c.org/ns/1.0', 'classCode')} {
+          attribute scheme {"http://www.wikidata.org/entity/"},
+          "Q131084"
+      }
+    ) else ()
+  )
+
   let $editor :=
       if($doc//*:editor)
       then
@@ -901,10 +961,12 @@ declare function local:construct-tei (
           </listPerson>
         </particDesc>
         <textClass>
-          <keywords>
-            <term type="genreTitle">{string($doc//*:SourceDesc/*:genre)}</term>
-            <term type="genreTitle">{string($doc//*:SourceDesc/*:type)}</term>
+          <keywords scheme="http://theatre-classique.fr">{' '}
+            {comment {'extracted from "genre" and "type" elements'}}
+            <term>{string($doc//*:SourceDesc/*:genre)}</term>
+            <term>{string($doc//*:SourceDesc/*:type)}</term>
           </keywords>
+          {$class-codes}
         </textClass>
       </profileDesc>
       <revisionDesc>
