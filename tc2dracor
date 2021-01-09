@@ -1,0 +1,306 @@
+#!/bin/bash
+# This script is used to convert the original corpus to FreDraCor using one or
+# more eXistDB instances in parallel. To spin up the databases podman is used
+# when available, otherwise it falls back to docker.
+
+usage () {
+  cat <<EOF
+FreDraCor conversion.
+Transforms original source files in parallel processes.
+
+Usage: $0 [options] SOURCE_FILE [SOURCE_FILE...]
+
+OPTIONS:
+  -n, --num N       number of exist containers to spin up (default: 2)
+  -p, --port N      port number of eXist database to use
+  -o, --output DIR  directory to write files to (default: ./tei)
+  -D, --docker      use docker even when podman is available
+  -P, --progress    enable a progress bar
+  -v, --verbose     show more detailed output
+  -h, --help        show this message
+
+EOF
+}
+
+list_sources () {
+  for f in $SOURCES; do echo $f; done
+}
+
+# store logs from containers
+log () {
+  date=$(date +'%F')
+  logfile=$WORK_DIR/report-$date-$START.log
+  for c in ${CONTAINERS[@]}; do
+    $DOCKER logs $c >> $WORK_DIR/report-$date-$START.log
+  done
+  [ ${#CONTAINERS[@]} -gt 0 ] && [ -n "$VERBOSE" ] \
+    && echo "Detailed log in $logfile"
+}
+
+stopContainer () {
+  # remove containers
+  for c in ${CONTAINERS[@]}; do
+    echo "stopping container $c"
+    $DOCKER stop $c > /dev/null && $DOCKER rm $c > /dev/null
+  done
+}
+
+# watch progress
+# TODO: move to inotify
+progress () {
+  current=0
+  if [ ! -z $PROGRESS ]
+  then
+    source $BASE_DIR/.progressbar.sh || exit 2
+    until [ $current -eq $num ]; do
+      current=$(ls $WORK_DIR/progress | wc -l | sed -E 's/^ +//')
+      lastFile=$(ls -t $WORK_DIR/progress | head -1 | cut -c 1-12)
+      progressbar "$(date +'%T') :: $current / $num :: $lastFile" $current $num
+      sleep 0.5s
+    done
+  else
+    until [ $current -eq $num ]; do
+      current=$(ls $WORK_DIR/progress | wc -l | sed -E 's/^ +//')
+      echo -n -e "\r$current / $num"
+      sleep 1s
+    done
+    echo
+  fi
+}
+
+# process a slice of the files with one database instance
+process_slice () {
+  instance=$1
+  let n=instance-1
+  port=${PORTS[$n]}
+  [ -z $PROGRESS ] && echo "processing files on localhost:$port ($instance)"
+  for i in $(seq $instance ${#PORTS[@]} $num); do
+    file=$(list_sources | head -$i | tail -1)
+    file_name=$(basename $file)
+    dracor_name=$(echo $file_name | tr '[:upper:]' '[:lower:]' | sed 's/_/-/g')
+  
+    if [[ -n "$PROGRESS" ]]; then
+      # create dummy files for determining progress
+      touch $WORK_DIR/progress/$file_name
+    else
+      echo "$instance $i $file_name -> $OUT_DIR/$dracor_name"
+    fi
+  
+    curl -s -X POST \
+      -H 'Content-Type: application/xml' \
+      -H "X-Filename: $file_name" \
+      -o $OUT_DIR/$dracor_name \
+      --data-binary @$file \
+      http://admin:@localhost:$port/exist/rest/db/tc2dracor/tc2dracor.xq
+  done
+}
+
+# options parsing inspired by
+# https://medium.com/@Drew_Stokes/bash-argument-parsing-54f3b81a6a8f
+
+PARAMS=""
+
+while (( "$#" )); do
+  case "$1" in
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    -D|--docker)
+      USE_DOCKER=yes
+      shift
+      ;;
+    -P|--progress)
+      PROGRESS=yes
+      shift
+      ;;
+    -v|--verbose)
+      VERBOSE=yes
+      shift
+      ;;
+    -n|--num|--threads)
+      if [ -n "$2" ] && [ ${2:0:1} != "-" ]; then
+        re='^[2-6]$'
+        if ! [[ $2 =~ $re ]]; then
+          echo "Number of threads must be between 2 and 6!"
+          exit 1
+        fi
+        THREADS=$2
+        shift 2
+      else
+        echo "Error: Argument for $1 is missing" >&2
+        exit 1
+      fi
+      ;;
+    -o|--out|--output)
+      OUT_DIR=$2
+      shift 2
+      ;;
+    -p|--port)
+      if [ -n "$2" ] && [ ${2:0:1} != "-" ]; then
+        re='^[0-9]+$'
+        if ! [[ $2 =~ $re ]]; then
+          echo "Port argument must be a number!"
+          exit 1
+        fi
+        PORT=$2
+        shift 2
+      else
+        echo "Error: Argument for $1 is missing" >&2
+        exit 1
+      fi
+      ;;
+    -*|--*=) # unsupported flags
+      echo "Error: Unsupported flag $1" >&2
+      exit 1
+      ;;
+    *) # preserve positional arguments
+      PARAMS="$PARAMS $1"
+      shift
+      ;;
+  esac
+done
+
+# set positional arguments in their proper place
+eval set -- "$PARAMS"
+
+DOCKER=docker
+if [ ! -z $(which podman) ] && [ -z $USE_DOCKER ]; then
+  DOCKER=podman
+elif [[ -z $(which docker) ]]; then
+  echo "Cannot find docker executable. Aborting!"
+  exit 1
+fi
+
+BASE_DIR=$(dirname $0)
+OUT_DIR=${OUT_DIR:-$BASE_DIR/tei}
+
+SOURCES=$@
+
+if [[ -z $SOURCES ]]; then
+  usage
+  exit 1
+else
+  NUM_SOURCES=$(list_sources | wc -l | sed -E 's/^ +//')
+  [ -z $VERBOSE ] || echo "Number of source files: $NUM_SOURCES"
+fi
+
+if [[ ! -d $OUT_DIR ]]; then
+  echo "Missing output directory!"
+  echo
+  usage
+  exit 1
+else
+  [ -z $VERBOSE ] || echo "Output directory: $OUT_DIR"
+fi
+
+# check git status of OUT_DIR
+cd $OUT_DIR
+dotgit=$(git rev-parse --git-dir 2> /dev/null)
+if [[ -n "$dotgit" ]] && \
+   [[ $(git status --porcelain --untracked-files=no .) != '' ]]
+then
+  echo
+  echo "Uncommitted changes in output directory $OUT_DIR!"
+  echo "Please commit, stash or revert any changes first."
+  echo
+  exit 1
+fi
+cd - > /dev/null
+
+THREADS=${THREADS:-1}
+[ -z $PORT ] && echo "Threads: $THREADS"
+
+PORTPREFIX="644"
+
+CONTAINERS=() # put container ids here, to stop them afterwards
+PORTS=()
+
+if [[ -z $PORT ]]; then
+  for i in $(seq 1 $THREADS); do
+    port=$PORTPREFIX$i
+    PORTS+=($port)
+  done
+else
+  PORTS+=($PORT)
+fi
+
+[ -z $VERBOSE ] || echo "Ports: ${PORTS[*]}"
+
+WORK_DIR=$(mktemp -d /tmp/tc2dracor-XXXXXX)
+mkdir -p $WORK_DIR/progress
+[ -z $VERBOSE ] || echo "Temporary directory: $WORK_DIR"
+
+START=$(date +'%T')
+[ -z $VERBOSE ] || echo $START
+
+TRAP='echo; echo "SIGINT received! Terminating..."; log; stopContainer; exit 2'
+trap "$TRAP" SIGINT SIGTERM
+
+# spin up database containers unless PORT was specified
+if [[ -z $PORT ]]; then
+  for port in ${PORTS[@]}; do
+    echo -n "starting eXist at port $port "
+    id=$($DOCKER run -p $port:8080 --detach existdb/existdb:5.2.0)
+    CONTAINERS+=($id)
+    echo "($id)"
+  done
+fi
+
+echo ${CONTAINERS[*]} > $WORK_DIR/containers
+
+echo "waiting for eXist to get ready..."
+for port in ${PORTS[@]}; do
+  echo -n "localhost:$port "
+  while [[ $(curl -I -s http://localhost:$port | grep -c "200 OK") -eq "0" ]]; do
+    echo -n "."
+    sleep 1s
+  done
+  echo " ready"
+done
+
+[ -z $VERBOSE ] || echo "$(date +'%T') :: ready"
+
+for port in ${PORTS[@]}; do
+  echo "Putting scripts on localhost:$port"
+  for file in $BASE_DIR/tc2dracor.xq; do
+    [ -z $VERBOSE ] || echo "$file"
+    name=$(basename $file)
+    curl -X PUT \
+      -H 'Content-Type: application/xquery' \
+      --data-binary @$file \
+      http://admin:@localhost:$port/exist/rest/db/tc2dracor/$name
+  done
+  for file in $BASE_DIR/{authors,ids}.xml; do
+    [ -z $VERBOSE ] || echo "$file"
+    name=$(basename $file)
+    curl -X PUT -H 'Content-Type: application/xml' \
+      --data-binary @$file \
+      http://admin:@localhost:$port/exist/rest/db/tc2dracor/$name
+  done
+done
+
+[ -z $VERBOSE ] || echo "$(date +'%T') :: processing $NUM_SOURCES files"
+
+num=$NUM_SOURCES
+numports=${#PORTS[@]}
+
+for i in $(seq 1 $numports); do
+  process_slice $i &
+done
+
+if [[ -n $PROGRESS ]]; then
+  progress &
+fi
+
+wait > /dev/null
+
+[ -z $VERBOSE ] || echo "$(date +'%T') :: transformation done"
+
+# terminate
+log
+stopContainer
+
+[ -z $VERBOSE ] || echo "$(date +'%T') :: all done"
+
+exit 0
