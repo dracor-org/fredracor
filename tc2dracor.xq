@@ -759,7 +759,10 @@ declare function local:construct-tei (
   let $subtitle := for $title-part in $doc//*:titlePart[@type="sub"] return
     element {QName('http://www.tei-c.org/ns/1.0', "title")} {
       attribute type {"sub"},
-      local:titlecase($title-part)
+      (: title case only when there is significant uppercase :)
+      if ($title-part => matches('[A-Z]{3}'))
+      then local:titlecase($title-part)
+      else $title-part/text()
     }
 
   let $author :=
