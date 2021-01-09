@@ -40,17 +40,14 @@ Here is a list of changes we made:
 - moved `addresse` to `tei:opener/tei:salute`
 - moved `sgnature` to `tei:signed`
 - removed a text `4+` between speech acts at ABEILLE_CORIOLAN.xml
-- `4+` documents are not available via the website (Not Found):
-  - marivaux%20-acteursdebonnefoi.xml
-  - pg-fausseinvite.xml
-  - bernardt-plaisirsdudimanche.xml
-  - bizet-simonot-gillestoutseul.xml
 - 35 documents are using the TEI namespace - removed to process them like all
   the others (of course the result is in the namespace)
 - removed text in `tei:sp` at audiffret-albertdurer.xml
 - move ending dot into `tei:castItem`, when it is right after (and so a child of
   `tei:castList`)
 - remove empty `@type`
+- 1 document is currently listed but not available via the website (Not Found):
+  - [RAISIN_MERLINGASCON.xml](http://theatre-classique.fr/pages/documents/RAISIN_MERLINGASCON.xml)
 
 ## TODO
 
