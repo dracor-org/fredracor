@@ -5,6 +5,7 @@ RNG=$TMP/tei_all.rng
 RNG_SOURCE=https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng
 VALIDATION_LOG=$TMP/validation.log
 ERROR_LOG=$TMP/validation-errors.log
+FILES_LOG=$TMP/validation-files.log
 
 if [[ -z $(which jing) ]]; then
   echo "Cannot find jing executable!"
@@ -31,8 +32,10 @@ NUM_TOTAL=$(ls $TEI_DIR/*.xml | wc -l | sed -E 's/^ +//')
 
 jing $RNG $TEI_DIR/*.xml > $VALIDATION_LOG
 cat $VALIDATION_LOG | sed  -E 's/^.+[0-9]+:[0-9]+: //' | sort | uniq > $ERROR_LOG
+cat $VALIDATION_LOG | sed  -E 's/(\.xml):[0-9]+:[0-9]+: .+$/\1/i' | sort \
+  | uniq > $FILES_LOG
 
-NUM_INVALID=$(cat $VALIDATION_LOG | wc -l | sed -E 's/^ +//')
+NUM_INVALID=$(cat $FILES_LOG | wc -l | sed -E 's/^ +//')
 NUM_ERRORS=$(cat $ERROR_LOG | wc -l | sed -E 's/^ +//')
 
 echo "Total number of documents: $NUM_TOTAL"
