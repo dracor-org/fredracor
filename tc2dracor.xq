@@ -776,7 +776,7 @@ declare function local:construct-tei (
   $doc as element(),
   $orig-name as xs:string
 ) as node() {
-  let $id := string($id-map//play[@orig eq $orig-name]/@dracor)
+  let $id := string($id-map//play[@file eq $orig-name]/@id)
 
   let $title := element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
     attribute type {'main'},
