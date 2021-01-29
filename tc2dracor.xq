@@ -886,6 +886,43 @@ declare function local:construct-tei (
     }
   else ()
 
+  (:
+    We extract the premiere date from the premiere/@date attributes. These
+    contain mostly valid ISO dates. Abberations are:
+    - flipped month and year, e.g. "10-1755"
+    - trailing dash, e.g. "1656-11-"
+    - random typo, e.g. "1745-03618"
+    - multiple premiere elements, but only RACINE_IPHIGENIE.xml has two valid
+      date attibutes
+  :)
+  let $premiere := $doc//*:premiere[matches(@date, '\d{4}')][1]
+  let $iso-date := if (matches($premiere/@date, '^\d{4}(-\d{2}(-\d{2})?)?$'))
+  then string($premiere/@date) (: valid ISO date :)
+  else if (matches($premiere/@date, '^\d{4}-\d{2}-$')) then
+    (: trim trailing dash :)
+    substring($premiere/@date, 1, 7)
+  else if (matches($premiere/@date, '^\d{2}-\d{4}$')) then
+    (: flip month and year :)
+    substring-after($premiere/@date, '-') || '-' ||
+    substring-before($premiere/@date, '-')
+  else if (matches($premiere/@date, '^\d{4}-')) then
+    (: extract year from otherwise misspelled date :)
+    substring($premiere/@date, 1, 4)
+  else if (contains($premiere, '11 février 1894')) then
+    (: missing @date in FEYDEAU_NOTREFUTUR.xml :)
+    '1894-02-11'
+  else if (contains($premiere, '8 Mai 1916')) then
+    (: missing @date in SENNE-REVEILCORNEILLE.xml :)
+    '1916-05-08'
+  else ()
+  let $premiere-date := if ($premiere) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+      attribute type {'premiere'},
+      attribute when {$iso-date},
+      normalize-space($premiere)
+    }
+  else ()
+
   let $tei :=
   <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
     <teiHeader>
@@ -920,17 +957,7 @@ declare function local:construct-tei (
             </availability>
             <bibl type="originalSource">
               {$print-date}
-  {
-      element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
-          attribute type {'premiere'},
-          (($doc//*:premiere)[1])[matches(@date, '\d{4}')]/@date ! attribute when {.},
-          string(($doc//*:premiere)[1])
-      }
-  }
-  {
-    if(($doc//*:premiere)[2]) then
-      comment {'WARNING: multiple premiere elements found in source.'} else ()
-  }
+              {$premiere-date}
               <date type="written"/>
               <idno type="URL">{string($doc//*:permalien)}</idno>
             </bibl>
