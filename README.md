@@ -46,8 +46,6 @@ Here is a list of changes we made:
 - move ending dot into `tei:castItem`, when it is right after (and so a child of
   `tei:castList`)
 - remove empty `@type`
-- 1 document is currently listed but not available via the website (Not Found):
-  - [RAISIN_MERLINGASCON.xml](http://theatre-classique.fr/pages/documents/RAISIN_MERLINGASCON.xml)
 
 ## TODO
 
