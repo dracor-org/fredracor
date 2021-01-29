@@ -868,16 +868,23 @@ declare function local:construct-tei (
               element {QName('http://www.tei-c.org/ns/1.0', 'editor')} {$name2}
       else ()
 
-  let $datePrint :=
-      let $value := string(($doc//*:docDate)[1]/@value)
-      let $when := ()
-      return
-          (element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
-              attribute type {'print'},
-              $when ! attribute when {.},
-              $value
-          },
-          ($doc//*:docDate)[2] ! comment {'WARNING: multiple docDate elements found in source. ' || serialize(.)})
+  (:
+    We extract the print date from the docDate/@value attributes. These in
+    almost all cases provide a full 4-digit year. Exceptions are:
+    - docDate/@value in ANONYME_PONTAUXANES.xml,
+      ANONYME_RESURRECTIONJENINLANDORE.xml, ANONYME_PARDONNEUR.xml and
+      ANONYME_SERMONJOYEUX.xml has "v.1500"
+    - CORNEILLEP_MENTEUR.xml has two docDates, one without @value
+    - MOLIERE_MEDICINVOLANT.xml has a second docDate with an empty @value
+  :)
+  let $doc-date := $doc//*:docDate[matches(@value, '^\d{4}$')][1]
+  let $print-date := if ($doc-date) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+      attribute type {'print'},
+      attribute when {string($doc-date/@value)},
+      ""
+    }
+  else ()
 
   let $tei :=
   <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
@@ -912,7 +919,7 @@ declare function local:construct-tei (
               </licence>
             </availability>
             <bibl type="originalSource">
-              {$datePrint}
+              {$print-date}
   {
       element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
           attribute type {'premiere'},
