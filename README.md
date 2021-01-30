@@ -104,13 +104,19 @@ instances can be started in parallel using either [Podman](https://podman.io) or
 
 #### `SOURCE_FILE`
 
-The conversion script expects one or more source files as its arguments. This
-would usually be files from the `xml` directory of the checked out repository at
-http://github.com/dracor-org/theatre-classique:
+The conversion script expects one or more source files as its arguments. These
+would typically be files from the `xml` directory of the checked out
+[`dracor`](https://github.com/dracor-org/theatre-classique/tree/dracor) branch
+of the [theatre-classique](http://github.com/dracor-org/theatre-classique)
+repository:
 
 ```bash
-./tc2dracor ../theatre-classique/xml/*.xml
+./tc2dracor ../theatre-classique/xml/*.{xml,XML}
 ```
+
+__NOTE:__ The `dracor` branch of the `theatre-classique` repo contains
+corrections and amendments to the original source files which the conversion
+script relies on but have not (yet) been adopted upstream.
 
 NOTE: For the attribution of DraCor IDs to work, the file names of the source
 files need to match the ones of the original documents used in
