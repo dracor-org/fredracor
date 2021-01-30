@@ -58,7 +58,7 @@ Here is a list of changes we made:
 ## DraCor IDs
 
 Each FreDraCor play is given a DraCor ID (e.g.
-[`fre000784`](tei/jarry-uburoi.xml)). These IDs are mapped to the Théâtre
+[`fre000784`](tei/jarry-uburoi.xml#L20)). These IDs are mapped to the Théâtre
 Classique documents in [ids.xml](ids.xml). When a new play from Théâtre
 Classique is added to the corpus a new ID needs to be assigned and added to
 `ids.xml`.
