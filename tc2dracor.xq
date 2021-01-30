@@ -868,16 +868,38 @@ declare function local:construct-tei (
               element {QName('http://www.tei-c.org/ns/1.0', 'editor')} {$name2}
       else ()
 
-  let $datePrint :=
-      let $value := string(($doc//*:docDate)[1]/@value)
-      let $when := ()
-      return
-          (element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
-              attribute type {'print'},
-              $when ! attribute when {.},
-              $value
-          },
-          ($doc//*:docDate)[2] ! comment {'WARNING: multiple docDate elements found in source. ' || serialize(.)})
+  (:
+    We extract the print date from the docDate/@value attributes. These in
+    almost all cases provide a full 4-digit year. Exceptions are:
+    - docDate/@value in ANONYME_PONTAUXANES.xml,
+      ANONYME_RESURRECTIONJENINLANDORE.xml, ANONYME_PARDONNEUR.xml and
+      ANONYME_SERMONJOYEUX.xml has "v.1500"
+    - CORNEILLEP_MENTEUR.xml has two docDates, one without @value
+    - MOLIERE_MEDICINVOLANT.xml has a second docDate with an empty @value
+  :)
+  let $doc-date := $doc//*:docDate[matches(@value, '^\d{4}$')][1]
+  let $print-date := if ($doc-date) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+      attribute type {'print'},
+      attribute when {string($doc-date/@value)},
+      ""
+    }
+  else ()
+
+  (:
+    We extract the premiere date from the premiere/@date attributes.
+    See https://github.com/dracor-org/theatre-classique/pull/1 for DraCor fixes
+    to the original sources.
+  :)
+  let $premiere :=
+    $doc//*:premiere[matches(@date, '^\d{4}(-\d{2}(-\d{2})?)?$')][1]
+  let $premiere-date := if ($premiere) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+      attribute type {'premiere'},
+      attribute when {string($premiere/@date)},
+      normalize-space($premiere)
+    }
+  else ()
 
   let $tei :=
   <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
@@ -912,19 +934,8 @@ declare function local:construct-tei (
               </licence>
             </availability>
             <bibl type="originalSource">
-              {$datePrint}
-  {
-      element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
-          attribute type {'premiere'},
-          (($doc//*:premiere)[1])[matches(@date, '\d{4}')]/@date ! attribute when {.},
-          string(($doc//*:premiere)[1])
-      }
-  }
-  {
-    if(($doc//*:premiere)[2]) then
-      comment {'WARNING: multiple premiere elements found in source.'} else ()
-  }
-              <date type="written"/>
+              {$print-date}
+              {$premiere-date}
               <idno type="URL">{string($doc//*:permalien)}</idno>
             </bibl>
           </bibl>
