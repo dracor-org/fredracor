@@ -49,13 +49,19 @@ Here is a list of changes we made:
 
 ## TODO
 
-- ensure DraCor IDs stay the same. Currently they are generated from a position
-  in an alphabetic list and will change when an item is inserted in the list before.
 - as of 2020-12-04 we do not have valid TEI-all
 - the following error is reported during transformation on 112, 137 and 1112:
   `04 Dec 2020 13:13:54,509 [qtp281487983-628] INFO  (Predicate.java
   [selectByPosition]:454) - contextSet and outerNodeSet don't share any document`
 - rewrite element `tei:ab[@type="stances"]` (and possible typos) to tei:lg
+
+## DraCor IDs
+
+Each FreDraCor play is given a DraCor ID (e.g.
+[`fre000784`](tei/jarry-uburoi.xml)). These IDs are mapped to the Théâtre
+Classique documents in [ids.xml](ids.xml). When a new play from Théâtre
+Classique is added to the corpus a new ID needs to be assigned and added to
+`ids.xml`.
 
 ## Validation
 
@@ -108,7 +114,7 @@ http://github.com/dracor-org/theatre-classique:
 
 NOTE: For the attribution of DraCor IDs to work, the file names of the source
 files need to match the ones of the original documents used in
-[ids.xml](ids.xml).
+[ids.xml](ids.xml) (see [DraCor IDs](#dracor-ids)).
 
 ### Options
 
