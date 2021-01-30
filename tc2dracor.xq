@@ -936,7 +936,6 @@ declare function local:construct-tei (
             <bibl type="originalSource">
               {$print-date}
               {$premiere-date}
-              <date type="written"/>
               <idno type="URL">{string($doc//*:permalien)}</idno>
             </bibl>
           </bibl>
