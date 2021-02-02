@@ -1,0 +1,3078 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Risette ou Les Millions de la Mansarde</title>
+                <title type="sub">Comédie en un Acte Mêlée de Couplets</title>
+                <title type="sub">Représentée pour la Première Fois, A Paris, sur le sur le Théâtre du Gymnase le 8 Août 1850.</title>
+                <author>
+      <persName>
+        <forename>Edmond</forename>
+        <surname>About</surname>
+      </persName>
+      <idno type="isni">0000000121005116</idno>
+    </author><!--Edmond ABOUT (1828-1885)-->
+                <editor>Paul Fièvre février 2021</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fer001461</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/ABOUT_RISETTE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/ABOUT_RISETTE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1873"/>
+                        <date type="premiere" when="1849-08-08">Représentée pour la première fois, à Paris, sur le Théâtre du Gymnase le 8 août 1859.</date>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k8630352n</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="risette" sex="FEMALE">
+                        <persName>Risette</persName>
+                    </person>
+                    <person xml:id="evelina" sex="MALE">
+                        <persName>Évelina</persName>
+                    </person>
+                    <person xml:id="antonin" sex="MALE">
+                        <persName>Antonin</persName>
+                    </person>
+                    <person xml:id="le-portier" sex="FEMALE">
+                        <persName>Le portier</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">RISETTE</titlePart>
+			<titlePart type="main">OU LES MILLIONS DE LA MANSARDE</titlePart>
+			<titlePart type="sub">COMÉDIE EN UN ACTE MÊLÉE DE COUPLETS</titlePart>
+			<titlePart type="sub">REPRÉSENTÉE POUR LA PREMIÈRE FOIS, A PARIS, SUR LE SUR LE THÉÂTRE DU GYMNASE LE 8 août 1850.</titlePart>
+		</docTitle> 
+		<docDate when="1873">1873 TOUS DROITS RÉSERVÉS.</docDate>
+		<docAuthor>EDMOND ABOUT</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="MICHEL LEVY">PARIS, MICHEL LEVY, LIBRAIRES ÉDITEURS rue Vivienne, 2 bis, et BOULEVARD DES ITALIENS, 15 À LA LIBRAIRIE NOUVELLE.</editor>-->
+			<div type="printer">
+                    <p>POISSY. - Typ. ET STÉR. S. LEJAY et Cie.</p>
+                </div><!--@id="LEJAY"-->
+		</div>
+		<performance>
+			<ab type="premiere">Représentée pour la première fois, à Paris, sur le Théâtre du Gymnase le 8 août 1859.</ab><!--@date="1849-08-08"--><!--@location="Théâtre du Gymanse"-->
+		</performance>
+
+	<castList>
+                <head>DISTRIBUTION DE LA PIÈCE.</head>
+		<castItem>
+                    <role corresp="#antonin">ANTONIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, M. LANDROL.</castItem>
+		<castItem>
+                    <role corresp="#risette">RISETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->. Mademoiselle ROSA DIDIER.</castItem>
+		<castItem>
+                    <role corresp="#evelina">ÉVELINA</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, Madame CHÉRI-LESUEUR.</castItem>
+		<castItem>
+                    <role corresp="#le-portier">LE PORTIER</role><!--@sex="2"--><!--@type="H"--><!--@statut="portier"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#le-garçon">LE GARÇON</role><!--@sex="1"--><!--@type="H"--><!--@statut="garçon"--><!--@age="A"--><!--@stat_amour="néant"-->, personnage muet.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222">Au moulin du Cormier.</set>-->
+	<note>Texte extrait de "Chefs d'oeuvres du théâtre moderne, Tome premier", Paris, Michel Levy Frères Editeurs, 1873. pp 326-332.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>RISETTE</head>
+<stage type="decor">Chambre très modeste. Au fond, alcôve et lit ; à droite, nu fond, placard ; à gauche, poêle; 1er plan à droite, table et miroir; le plan à gauche, fenêtre et table de travail.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#risette">
+                        <speaker>RISETTE, seule.</speaker>
+                        <stage type="sit/work">Elle est assise et travaille à un chapeau ; elle chante.</stage>
+                        <l n="1">Tradéri, déri; tradéri, déra,</l>
+                        <l n="2">Encore ce ruban rose,</l>
+                        <l n="3">El le chapeau, et le chapeau,</l>
+                        <l n="4">Encore ce ruban rose</l>
+                        <l n="5">Et le chapeau sera fini.</l>
+                        <l n="6">Tradéri, déra, tradéri, déri, déri, déri.</l>
+                        <stage type="stand/watch">Elle se lève; l'examinant.</stage>
+                        <p n="1">
+	<s n="1">Très coquet, très coquet. </s>
+	<s n="2">Voyons comme il va. </s>
+</p>
+                        <stage type="dress/watch">Elle le met sur sa tête, se place devant un petit miroir avec révérence.</stage>
+                        <p n="2">
+	<s n="1">« Bonjour, ma toute belle. </s>
+	<s n="2">Bonjour, chère ! » </s>
+	<s n="3">Si l'on voulait, pourtant !... </s>
+	<s n="4">Mais, bah ! </s>
+	<s n="5">J'aime mieux mon petit bonnet de linge !</s>
+</p>
+                        <stage type="sing">Chantant.</stage>
+                        <l n="6">Oui, je suis grisette,</l>
+                        <l n="7">On voit ici-bas...</l>
+                        <stage type="interrupt">S'interrompent.</stage>
+                        <p n="3">
+	<s n="1">Ici-bas, au cinquième étage ! </s>
+	<s n="2">Une seule chambre pour nous deux et pas un sou pour payer le terme ! </s>
+	<s n="3">Si Évelina ne rapporte pas d'argent, je ne sais pas de quoi nous déjeunerons. </s>
+	<s n="4">Quelle heure est-il à ma pendule ?</s>
+</p>
+                        <stage type="open">Elle ouvre la fenêtre.</stage>
+                        <p n="4">
+	<s n="1">Neuf heures et demie ! </s>
+	<s n="2">Elle devrait être rentrée.</s>
+</p>
+                        <stage type="close">Elle ferme la fenêtre.</stage>
+                        <p n="5">
+	<s n="1">Il fait froid aujourd'hui ; il faut que le poêle se soit éteint.</s>
+</p>
+                        <stage type="watch">Elle va voir.</stage>
+                        <p n="6">
+	<s n="1">Rallumons-le : vite un peu de bois.</s>
+</p>
+                        <stage type="open">Elle ouvre le placard.</stage>
+                        <p n="7">
+	<s n="1">Absent pour cause de congé définitif ! </s>
+	<s n="2">Qu'est-ce qu'on pourrait bien brûler ici ? </s>
+	<s n="3">Tiens, il y a encore de la chaise !</s>
+</p>
+                        <stage type="break">Elle met une chaise en morceaux et s'accroupit devant le poêle ; elle reprend l'air du commencement en allumant le feu.</stage>
+                        <l n="8">Tradéri, déra, tradéri, déra.</l>
+                        <l n="9">Cette chaise est bien vieille,</l>
+                        <l n="10">Mais les morceaux, mais les morceaux</l>
+                        <l n="11">Cette chaise est bien vieille...</l>
+                        <l n="12">Mais les morceaux en sont bien bons.</l>
+                        <l n="13">Tradéri, déra, tradéri, déri, di!ri.</l>
+                    </sp><!--@stage="alone"--><!--@who="RISETTE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Risette, Évelina. </head>
+<stage type="entrance/quick">Elle entre vivement.</stage>
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="1">
+	<s n="1">Je te conseille de chanter, la patronne du magasin n'a pas voulu m'avancer un sou ! </s>
+	<s n="2">Je rapporte quatre francs.</s>
+</p>
+                        <stage type="throw">Elle les jette.</stage>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, les ramassant. </speaker>
+                        <p n="2">
+	<s n="1">C'est toujours Ça.</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="3">
+	<s n="1">Et nous devons deux termes ! </s>
+	<s n="2">C'est aujourd'hui le huit ; il faut qu'à midi le déménagement soit fait.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="4">
+	<s n="1">Tu vois, je commence ; voilà une chaise à moitié déménagée.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="5">
+	<s n="1">Tu ris de tout !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="6">
+	<s n="1">Ce n'est pas pour rien qu'on m'appelle Risette. </s>
+	<s n="2">Les pleurs ne servent qu'à rendre les yeux rouges, et j'ai la faiblesse de tenir aux miens.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, s'asseyant entre la table et la fenêtre, travaillant. </speaker>
+                        <p n="7">
+	<s n="1">Pour ce que tu en fais !</s>
+</p>
+                    </sp><!--@stage="sit/location/work"--><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, sérieuse. </speaker>
+                        <p n="8">
+	<s n="1">Qu'entendez-vous par là, ma chère Évelina ?</s>
+</p>
+                    </sp><!--@stage="serious"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="9">
+	<s n="1">Rien.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="10">
+	<s n="1">Soit, mettons que c'était une bêtise.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="11">
+	<s n="1">Je veux dire que si tu étais moins sauvage...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="12">
+	<s n="1">Moi ! </s>
+	<s n="2">Je ris avec les gens tant qu'ils veulent.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="13">
+	<s n="1">C'est-à-dire que nous n'en serions pas où nous en sommes si tu avais écouté Monsieur_Gustave !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, sérieusement. </speaker>
+                        <p n="14">
+	<s n="1">Il était trop beau.</s>
+</p>
+                    </sp><!--@stage="serious"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="15">
+	<s n="1">Il t'aurait épousée.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="16">
+	<s n="1">Il était trop riche... </s>
+	<s n="2">Au choix j'aimerais encore mieux ton Jean_Gigonet, bien qu'il soit un peu laid, un peu bête, et sergent au 135ème_de_Ligne.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="17">
+	<s n="1">Oui, voilà des amoureux qui rapportent gros !... </s>
+	<s n="2">Ça n'a pas le sou, et il faut des dots pour les épouser.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="18">
+	<s n="1">Voilà quatre francs à compte sur la dot de Monsieur_Jean_Gigonet.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="19">
+	<s n="1">Quatre francs ! </s>
+	<s n="2">Cela nous fait la jambe belle !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, regardant sa jambe. </speaker>
+                        <p n="20">
+	<s n="1">Dis donc ! </s>
+	<s n="2">Parle pour toi.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="21">
+	<s n="1">Nous en devons trente au propriétaire. </s>
+	<s n="2">Il va falloir faire notre paquet.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="22">
+	<s n="1">Heureusement ce ne sera pas long.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="23">
+	<s n="1">Et où irons-nous ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, elle chante. </speaker>
+                        <p n="24">
+	<s n="1">À la grâce de Dieu, à la grâce de Dieu !</s>
+	<s n="2">Tu vois toujours tout en noir.</s>
+</p>
+                    </sp><!--@stage="sing"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, elle s'assied et travaille. </speaker>
+                        <p n="25">
+	<s n="1">C'est que la situation n'est pas rose. </s>
+	<s n="2">À midi nous serons à la porte.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="26">
+	<s n="1">Il n'est encore que dix heures ; nous avons deux heures devant nous.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="27">
+	<s n="1">Crois-tu qu'il va pleuvoir des pièces de cent sous ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="28">
+	<s n="1">Pourquoi pas ? </s>
+	<s n="2">On ne peut pas savoir. </s>
+	<s n="3">Tiens, un jour, je me rappelle ça comme si j'y étais encore ; nous étions huit autour d'une grande table, et c'est tout au plus s'il y avait des pommes de terre pour tout le monde ; mon père ne gagnait pas gros, le pauvre cher homme! </s>
+	<s n="4">Il regardait le plat d'un air triste, et disait qu'il n'avait pas faim ; ma belle-mère venait de nous distribuer notre ration de claques, et j'avais eu deux parts à moi seule. Mais j'avais bon appétit tout de même et je mangeais ma pomme de terre mouillée de larmes : c'était salé. </s>
+	<s n="5">Voilà que nous entendons le facteur qui appelait dans la rue ; c'était une lettre d'Amérique.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="29">
+	<s n="1">J'aurais mieux aimé un oncle.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="30">
+	<s n="1">La lettre était d'un de mes oncles, Isidore_Taboureau, qui était allé en Californie chercher de l'or ; mon père prend la lettre et l'ouvre.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="31">
+	<s n="1">Il y avait des billets de mille dedans ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="32">
+	<s n="1">Nous comptions bien en trouver deux ou trois ; mais nous comptions sans notre oncle il nous demandait cinq cents francs.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="33">
+	<s n="1">Envoyer de l'argent en Californie, cette bêtise !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="34">
+	<s n="1">C'est pourtant ce que fit mon père ; il était si bon ! </s>
+	<s n="2">Il arriva sur ces entrefaites que mon frère se vendit et nous laissa le prix de son engagement. </s>
+	<s n="3">On envoya les cinq cents francs à mon oncle, et il jura que si jamais il gagnait une fortune elle serait pour la petite Louison ; c'est ainsi qu'on m'appelait.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="35">
+	<s n="1">Louison ? </s>
+	<s n="2">Risette est bien plus comme il faut : on dit Rigolette, Polkette; voilà comme on dit dans le monde. </s>
+	<s n="3">Eh bien ! </s>
+	<s n="4">Cette fortune ne ferait pas mal de se dépêcher, elle arriverait à propos.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="36">
+	<s n="1">Voilà mon chapeau fini ; va le porter, on le payera peut-être.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="37">
+	<s n="1">Vas-y toi-même ; c'est toujours moi qui fais les courses.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="38">
+	<s n="1">Tu sais bien que je n'aime pas courir les rues.</s>
+</p>
+                        <stage type="stand.drop">Elle se lève et met son chapeau dans un carton.</stage>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="39">
+	<s n="1">Si l'on veut te manger, tu te mettras en travers.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="40">
+	<s n="1">C'est, si ennuyeux d'être suivie !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="41">
+	<s n="1">Au contraire ! </s>
+	<s n="2">Tiens, depuis quatre jours il y a un jeune homme comme il faut, bottes vernies, gants frais, qui passe ses journées à me guetter et à me suivre.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="42">
+	<s n="1">Toi ?</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="43">
+	<s n="1">Et pourquoi pas ? </s>
+	<s n="2">Je lui fais faire de fameuses trottes ! </s>
+	<s n="3">Il est beau garçon, et dame ! </s>
+	<s n="4">Si Gigonet ne marche pas droit, on pourra voir !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="44">
+	<s n="1">Bien ! </s>
+	<s n="2">On verra du propre!</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="45">
+	<s n="1">Fais donc ta mijaurée, les amoureux te viendront comme aux autres !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="46">
+	<s n="1">Ils ne me viendront toujours pas sous la forme de régiment. </s>
+	<s n="2">Si j'aime une fois, ça sera tout de bon et pour la vie.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="47">
+	<s n="1">Pour la vie ; ohé ! </s>
+	<s n="2">Les petits agneaux ! </s>
+	<s n="3">Tu me donnes envie de chanter à mon tour. </s>
+	<s n="4">Va porter ton chapeau, va, on te donnera peut-être de l'argent ; moi, je serais sûre de ne rien avoir.</s>
+</p>
+                        <stage type="stand">Elle se lève.</stage>
+                    </sp><!--@who="ÉVELINA"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III.</head>
+<sp who="#evelina">
+                        <speaker>ÉVELINA, seule.</speaker>
+                        <p n="1">
+	<s n="1">J'ai l'estomac dans les talons.</s>
+</p>
+                        <stage type="open">Elle ouvre l'armoire.</stage>
+                        <p n="2">
+	<s n="1">Voilà tout ce qui reste du dîner, un croûton et de l'eau fraîche ! </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Très fraîche ! </s>
+	<s n="4">Ce jeune homme est fort bien !... </s>
+	<s n="5">Parfaitement frisé ! </s>
+	<s n="6">Si c'était un coiffeur ! </s>
+	<s n="7">Non ; c'est plutôt un agent de change.</s>
+</p>
+                        <stage type="knock">On frappe.</stage>
+                        <p n="3">
+	<s n="1">Tiens ! </s>
+</p>
+                        <stage type="knock">On frappe encore.</stage>
+                        <p n="4">
+	<s n="1">Qui que tu sois... entrez.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Évelina, Antonin.</head>
+<sp who="#evelina">
+                        <speaker>ÉVELINA, à part. </speaker>
+                        <p n="1">
+	<s n="1">C'est lui ! </s>
+	<s n="2">De la tenue ! </s>
+	<s n="3">Ça me posera.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="2">
+	<s n="1">C'est bien elle.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="3">
+	<s n="1">Que demandez-vous, monsieur ?</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="4">
+	<s n="1">Il a cent fois plus de chic que Gigonet !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="5">
+	<s n="1">Mille pardons, Madame, je croyais cette chambre libre ; c'est moi qui l'ai louée, et je venais...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="6">
+	<s n="1">Il n'est pas encore midi, Monsieur.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="7">
+	<s n="1">Et maintenant, Madame, je voudrais que midi ne vînt jamais !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="8">
+	<s n="1">Et moi donc !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, avec transport. </speaker>
+                        <p n="9">
+	<s n="1">Et vous donc ! </s>
+	<s n="2">Et vous donc ! </s>
+	<s n="3">Serais-je assez heureux pour que vous comptassiez les moments que j'ai à passer auprès de vous ?</s>
+</p>
+                    </sp><!--@stage="enthousiasm"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, à part. </speaker>
+                        <p n="10">
+	<s n="1">Il s'exprime cent fois mieux que Gigonet !</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="11">
+	<s n="1">Mais, monsieur, c'est à peine si j'ai l'honneur de vous connaître...</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="12">
+	<s n="1">De me connaître ? </s>
+	<s n="2">Mais voilà huit jours que je vous suis comme une ombre, huit jours que je vis de votre vie, huit jours que mon coeur est plein de votre image adorée, huit jours que j'éprouve le besoin de tomber à vos pieds et de vous dire... </s>
+	<s n="4">Pardon, mademoiselle, avez-vous déjeuné?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="13">
+	<s n="1">Pas encore, Monsieur.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="14">
+	<s n="1">Comme ça se rencontre ! </s>
+	<s n="2">Ni moi non plus ! </s>
+	<s n="3">Voulez-vous me permettre de faire monter à déjeuner dans cette chambre ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="15">
+	<s n="1">Mais, Monsieur!...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, tirant sa montre.</speaker>
+                        <p n="16">
+	<s n="1">Il est midi cinq, je suis chez moi, Mademoiselle.</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="17">
+	<s n="1">Je ne sais si je dois...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="18">
+	<s n="1">Acceptez, Mademoiselle, acceptez.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="19">
+	<s n="1">J'offrirai mon coeur au dessert.</s>
+</p>
+                        <stage type="sit/location/write">Il se met à une table, prêt à écrire.</stage>
+                        <p n="20">
+	<s n="1">Voulez-vous dicter le menu ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="21">
+	<s n="1">Oh ! Monsieur...</s>
+</p>
+                        <stage type="aparte">À part. </stage>
+                        <p n="22">
+	<s n="1">Il est autrement calé que Gigonet !...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="23">
+	<s n="1">J'écoute, les armes à la main.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="24">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Des côtelettes aux cornichons.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, écrivant. </speaker>
+                        <p n="25">
+	<s n="1">Côtelettes aux cornichons... pour un.</s>
+</p>
+                    </sp><!--@stage="write"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="26">
+	<s n="1">Pour trois.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="27">
+	<s n="1">Pour trois ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="28">
+	<s n="1">Risette déjeunera avec nous.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="29">
+	<s n="1">Qui ça, Risette ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="30">
+	<s n="1">C'est une petite orpheline de seize ou dix-sept ans que j'ai recueillie et qui loge avec moi ; elle va rentrer.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="31">
+	<s n="1">Diable ! </s>
+	<s n="2">Ce n'est pas mon compte. </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="32">
+	<s n="1">Va pour Risette. </s>
+	<s n="2">Nous disons donc côtelettes aux cornichons pour trois ; et puis ?</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="33">
+	<s n="1">Du saucisson.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, écrivant. </speaker>
+                        <p n="34">
+	<s n="1">Pour deux ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="35">
+	<s n="1">Pour trois, Risette n'en mange jamais.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="36">
+	<s n="1">Pour trois ; et puis ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="37">
+	<s n="1">Et puis, du fromage.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, écrivant.</speaker>
+                        <p n="38">
+	<s n="1">Fromage : quel fromage ?</s>
+</p>
+                    </sp><!--@stage="write"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, réfléchissant. </speaker>
+                        <p n="39">
+	<s n="1">D'Italie, qu'en dites-vous ?</s>
+</p>
+                    </sp><!--@stage="think"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="40">
+	<s n="1">Parfait ! </s>
+	<s n="2">Et le vin ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="41">
+	<s n="1">N'importe lequel ; du Champagne_Cliquot, par exemple.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, écrivant.</speaker>
+                        <p n="42">
+	<s n="1">Cliquot... </s>
+	<s n="2">C'est tout ?</s>
+</p>
+                    </sp><!--@stage="write"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="43">
+	<s n="1">C'est tout... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Mettez encore des prunes à l'eau de vie.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="44">
+	<s n="1">Quel festin !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="45">
+	<s n="1">Elle a des goûts... roturiers.</s>
+</p>
+                        <stage type="stand">Il se lève.</stage>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="46">
+	<s n="1">Donnez-moi cette note ; je connais dans le quartier un restaurant.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="47">
+	<s n="1">Mais, Madame, je ne souffrirai pas...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="48">
+	<s n="1">Le cuisinier nous donne des côtelettes... </s>
+	<s n="2">Vous verrez, vous verrez.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp who="#antonin">
+                        <speaker>ANTONIN, seul.</speaker>
+                        <stage type="open">Il ouvre la porte et lit attentivement une carte de visite clouée à l'extérieur.</stage>
+                        <p n="1">
+	<s n="1">« Louise_Taboureau. Modes. » </s>
+	<s n="2">C'est bien ça !</s>
+</p>
+                        <stage type="get/read">Il tire de sa poche un numéro de la Patrie et lit ;</stage>
+                        <p n="2">
+	<s n="1">« Les journaux américains annoncent la mort d'un de nos compatriotes, Monsieur_Taboureau, chef de la maison_Taboureau et compagnie. </s>
+	<s n="2">Autant qu'on peut évaluer sa fortune, dans un pays où les maisons les plus solides font faillite tous les deux ans, Monsieur_Taboureau laisse un actif de quatre à cinq millions. </s>
+	<s n="3">Son unique héritière est, dit-on, une simple ouvrière de Paris, Mademoiselle_Louise_Taboureau. » </s>
+	<s n="4">C'est elle ! </s>
+	<s n="5">Je suis dans la place ! </s>
+	<s n="6">Enfin !</s>
+</p>
+                        <stage type="watch">Il regarde autour de lui.</stage>
+                        <p n="3">
+	<s n="1">Tous les bonheurs à la fois ; elle a le mobilier de l'innocence ! </s>
+	<s n="2">Merci, mon Dieu ! </s>
+	<s n="3">Si je l'avais trouvée dans le palissandre ou dans le bois_de_rose, ça m'aurait gêné pour l'épouser. </s>
+	<s n="4">Cinq millions d'une seule bouchée! </s>
+	<s n="5">Houp ! </s>
+	<s n="6">Après tout, les femmes me devaient bien ça, moi qui n'ai jamais pu en voir une sans me monter comme une soupe au lait.</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="ANTONIN"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Antonin, Risette.</head>
+<sp who="#risette">
+                        <speaker>RISETTE, entre vivement. </speaker>
+                        <p n="1">
+	<s n="1">Rien dans les mains, rien dans les poches ! </s>
+</p>
+                        <stage type="watch">Apercevant Antonin.</stage>
+                        <p n="2">
+	<s n="1">Tiens ! </s>
+	<s n="2">Un monsieur. </s>
+</p>
+                        <stage type="toward">À Antonin.</stage>
+                        <p n="3">
+	<s n="1">Qu'est-ce que vous venez faire chez nous ?</s>
+</p>
+                    </sp><!--@stage="entrance/quick"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="4">
+	<s n="1">Dieu ! </s>
+	<s n="2">Qu'elle est jolie !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, fièrement. </speaker>
+                        <p n="5">
+	<s n="1">C'est pour mon plaisir, Monsieur, mais qu'est-ce que...</s>
+</p>
+                    </sp><!--@stage="proud"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="6">
+	<s n="1">Mademoiselle Risette, sans doute ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="7">
+	<s n="1">Oui, monsieur, pour vous servir, ou plutôt non ; qu'est-ce que...</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="8">
+	<s n="1">Mademoiselle Risette, que vous avez une jolie voix !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="9">
+	<s n="1">C'est pour appeler la portière, Monsieur. </s>
+	<s n="2">A-t-on jamais vu ?...</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, s'approchant. </speaker>
+                        <p n="10">
+	<s n="1">Mademoiselle Risette, que vous avez de jolis pieds !</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, passant devant lui. </speaker>
+                        <p n="11">
+	<s n="1">C'est pour me sauver des hommes, Monsieur.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="12">
+	<s n="1">Mademoiselle Risette, que vous avez de jolies mains !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, prenant le soufflet. </speaker>
+                        <p n="13">
+	<s n="1">C'est pour taper sur les impertinents, Monsieur.</s>
+</p>
+                    </sp><!--@stage="slap"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="14">
+	<s n="1">Mademoiselle Risette, que vous avez une jolie bouche !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="15">
+	<s n="1">Ce n'est pas pour vous embrasser, monsieur.</s>
+</p>
+                        <stage type="throw/laugh">Jetant le soufflet et riant.</stage>
+                        <p n="16">
+	<s n="1">Tiens, c'est comme dans Le_petit_Chaperon_Rouge ! </s>
+</p>
+                        <stage type="serious">Sérieusement.</stage>
+                        <p n="17">
+	<s n="1">Une fois, deux fois, trois fois, me direz vous ce que vous êtes venu faire chez nous ?</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="18">
+	<s n="1">Oui, Mademoiselle. </s>
+	<s n="2">C'est un secret...</s>
+</p>
+                        <stage type="closer">S'approchant.</stage>
+                        <p n="19">
+	<s n="1">Un secret de la plus haute importance.</s>
+</p>
+                        <stage type="closer">Il s'approche encore. </stage>
+                        <p n="20">
+	<s n="1">Personne ne peut nous entendre ? </s>
+	<s n="2">Hé bien !...</s>
+</p>
+                        <stage type="kiss">Il l'embrasse.</stage>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, bondissant à trois pas. </speaker>
+                        <p n="21">
+	<s n="1">Mais ça n'a pas de nom, Monsieur ! </s>
+	<s n="2">Je déteste qu'on m'embrasse ! </s>
+	<s n="3">Dans l'oreille surtout ! </s>
+	<s n="4">Ça me répond dans toute la tête. </s>
+	<s n="5">Je ne sais pas pour qui vous me prenez. </s>
+	<s n="6">Il paraît que je n'ai pas l'air de grand'chose.</s>
+</p>
+                    </sp><!--@stage="jump"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="22">
+	<s n="1">Oh ! </s>
+	<s n="2">Mademoiselle ! </s>
+	<s n="3">Vous avez l'air de la plus jolie et de la meilleure enfant de tout Paris !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, avec dignité. </speaker>
+                        <p n="23">
+	<s n="1">Non, monsieur, pas si bonne enfant que vous pensez ! </s>
+	<s n="2">Et je vous prie de vous en aller plus vite que ça !</s>
+</p>
+                    </sp><!--@stage="proud"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="24">
+	<s n="1">Pardonnez-moi ! </s>
+	<s n="2">Ça m'a échappé.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE. </speaker>
+                        <p n="25">
+	<s n="1">Je vous pardonnerai quand vous serez sorti.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="26">
+	<s n="1">J'obéis, Mademoiselle !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, lui poussent la porte au nez.</speaker>
+                        <p n="27">
+	<s n="1">Votre servante, Monsieur !</s>
+</p>
+                        <stage type="alone">Seule.</stage>
+                        <p n="28">
+	<s n="1">Oh ! </s>
+	<s n="2">Ces hommes ! </s>
+	<s n="3">Je ne sais pas ce qu'ils ont depuis quelque temps à embrasser tout le monde... </s>
+	<s n="4">Si ça continue, il faudra les museler. </s>
+	<s n="5">En voilà un qui était gentil, pas mal de figure, et puis...</s>
+</p>
+                    </sp><!--@stage="close"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, qui est rentré à pas de loup. </speaker>
+                        <p n="29">
+	<s n="1">Merci, Mademoiselle!</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="30">
+	<s n="1">Comment ! </s>
+	<s n="2">C'est encore vous !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN. </speaker>
+                        <p n="31">
+	<s n="1">Vous m'avez dit : Je vous pardonnerai quand vous serez sorti. </s>
+	<s n="2">Je suis sorti, je dois être pardonné.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="32">
+	<s n="1">Mais je ne vous connais pas, moi ! </s>
+	<s n="2">On n'entre pas chez les personnes sans dire qui l'on est !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="33">
+	<s n="1">Je suis un brave garçon, parole d'honneur ! </s>
+	<s n="2">Faisons la paix et donnez-moi la main.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="34">
+	<s n="1">C'est qu'elle est charmante, cette petite sauvage !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="35">
+	<s n="1">Je ne donne la main qu'à mes camarades.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, tendant la main. </speaker>
+                        <p n="36">
+	<s n="1">Raison de plus, nous serons camarades.</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, riant aux éclats. </speaker>
+                        <p n="37">
+	<s n="1">Vous avez l'air de demander un sou ! </s>
+	<s n="2">Monsieur est peut-être l'aveugle du Pont_des_Arts ?</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="38">
+	<s n="1">Non, Mademoiselle, j'ai le bonheur de ne pas être aveugle, en ce moment surtout... et j'ai l'honneur de vous présenter Monsieur_Antonin_Duriveau, chef de rayon aux Villes de France, et votre ami passionné... depuis dix minutes.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="39">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Monsieur_Antonin_Duriveau, je trouve que vous allez vite en amitié. </s>
+	<s n="3">Ça veut plus de temps chez nous.</s>
+</p>
+                        <stage type="away">Elle passe devant lui.</stage>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="40">
+	<s n="1">Du temps ! </s>
+	<s n="2">Est-ce qu'il en faut, du temps, pour voir combien vous êtes gentille ? </s>
+	<s n="3">Je pourrais vous dire que je vous ai rencontrée clans la rue, que je vous connais depuis six mois, que je vous suis partout comme une ombre, ça n'est pas vrai, mais ça se dit toujours. </s>
+	<s n="4">Eh bien, non ! </s>
+	<s n="5">C'est la première fois que je vous rencontre, et il me semble que nous sommes de vieilles connaissances ! </s>
+	<s n="6">Vous ne m'avez dit que des méchancetés, et je suis sûr que vous êtes bonne ! </s>
+	<s n="7">Vous m'avez jeté à la porte, vous avez bien fait, et pourtant, si vous ne m'aviez pas laissé rentrer, je ne m'en serais consolé de ma vie. </s>
+	<s n="8">Vous êtes...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="41">
+	<s n="1">Pardon. </s>
+	<s n="3">Ce n'est pas pour me conter tout ça que vous avez grimpé mes cinq étages ?</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="42">
+	<s n="1">Elle a raison ! </s>
+	<s n="2">Diable de petite fille.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="43">
+	<s n="1">En effet, Mademoiselle, j'avais un but, oui, certainement... </s>
+	<s n="2">Je ne sais plus au juste... </s>
+	<s n="3">Eh ! </s>
+	<s n="4">Que n'oublierait-on pas auprès de vous ?...</s>
+</p>
+                        <stage type="closer">Il s'approche.</stage>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, passant. </speaker>
+                        <p n="44">
+	<s n="1">Tâchez un peu d'oublier vos manières.</s>
+</p>
+                    </sp><!--@stage="away"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, en dehors. </speaker>
+                        <p n="45">
+	<s n="1">Par ici, jeune homme ! </s>
+	<s n="2">Voici l'appartement.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="46">
+	<s n="1">Aïe ! </s>
+	<s n="2">Les millions ! </s>
+	<s n="3">J'allais faire de bel ouvrage !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Risette, Antonin, Évelina, Un Garçon.</head>
+<sp who="#risette">
+                        <speaker>RISETTE, à part. </speaker>
+                        <p n="1">
+	<s n="1">Il est très bien, ce monsieur ; mais qu'est-ce qu'il venait faire ici ?... </s>
+	<s n="2">À quoi ai-je pensé ?... </s>
+	<s n="3">Qu'est-ce que va dire Évelina ?... </s>
+	<s n="4">Évelina et Antonin ont placé la table de droite ou milieu du théâtre et ont mis la nappe.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, au garçon. </speaker>
+                        <p n="2">
+	<s n="1">Déposez, jeune homme, et surtout ne répandez pas la sauce.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="3">
+	<s n="1">Aux côtelettes !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="4">
+	<s n="1">Oui ! </s>
+	<s n="2">Tout le monde sur le pont ! </s>
+	<s n="3">Comme on dit dans le grand monde. </s>
+	<s n="4">Vous, mon gentilhomme...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, une assiette à la main. </speaker>
+                        <p n="5">
+	<s n="1">Elle le connaît !... </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="6">
+	<s n="1">Dis donc, toi.</s>
+</p>
+                    </sp><!--@stage="carry"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="7">
+	<s n="1">Tout de suite.</s>
+</p>
+                        <stage type="toward">À Antonin.</stage>
+                        <p n="8">
+	<s n="1">Le garçon a deux mots à vous dire.</s>
+</p>
+                        <stage type="toward">À Risette.</stage>
+                        <p n="9">
+	<s n="1">Qu'as-tu ? </s>
+</p>
+                        <stage type="toward">À Antonin. </stage>
+                        <p n="10">
+	<s n="1">À propos, je me suis acheté une paire de bottines en chemin, et je les ai fait mettre sur la carte.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="11">
+	<s n="1">Qui est ce monsieur ?</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="12">
+	<s n="1">Il ne te l'a pas dit ?... </s>
+	<s n="2">C'est mon amoureux.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, laissant tomber son assiette. </speaker>
+                        <p n="13">
+	<s n="1">Ah !... </s>
+	<s n="2">En es-tu bien sûre ?...</s>
+</p>
+                    </sp><!--@stage="drop"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="14">
+	<s n="1">Ce n'est pas une raison, pour casser ma vaisselle. </s>
+	<s n="2">Oui, ma chère, c'est lui qui me suivait depuis des siècles, et il nous offre un déjeuner de prince.</s>
+</p>
+                        <stage type="get">Elles ramassent les tessons.</stage>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="15">
+	<s n="1">Et tu as accepté ?</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="16">
+	<s n="1">Tu n'as peut-être pas faim, toi ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="17">
+	<s n="1">Si Gigonet savait ça ?...</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="18">
+	<s n="1">Gigonet ! </s>
+	<s n="2">Ça lui est bien égal que j'aie l'estomac dans les talons.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, descendant entre elles.</speaker>
+                        <p n="19">
+	<s n="1">On parle bas ! </s>
+	<s n="2">Je parie qu'on dit du mal de moi !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="20">
+	<s n="1">Ah ! </s>
+	<s n="2">Monsieur, nous avons trop de galanterie...</s>
+</p>
+                        <stage type="carry/location">Elle porte les tessons dans le placard.</stage>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, sèchement.</speaker>
+                        <p n="21">
+	<s n="1">Les verres sont dans l'armoire, Monsieur ; il y en a un petit et un grand à pied, sans pied.</s>
+</p>
+                        <stage type="search">Il va les chercher.</stage>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, revenant. </speaker>
+                        <p n="22">
+	<s n="1">Tu n'es guère gentille avec lui...</s>
+</p>
+                    </sp><!--@stage="back"--><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="23">
+	<s n="1">Et toi tu l'es trop, sans seulement savoir qui il est.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="24">
+	<s n="1">Ma chère, quand un homme paye à déjeuner, il est de bon goût de ne pas lui demander ses papiers.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE. </speaker>
+                        <p n="25">
+	<s n="1">Tu es ta maîtresse, ma chère ; mais moi, je n'en suis pas, du déjeuner.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="26">
+	<s n="1">Ne t'en va pas ! </s>
+	<s n="2">C'est du dernier mauvais ton !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="27">
+	<s n="1">Tant pis !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="28">
+	<s n="1">Mesdemoiselles, le couvert est mis. </s>
+	<s n="2">Ne faisons pas attendre les côtelettes aux cornichons.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, se mettant à table. </speaker>
+                        <p n="29">
+	<s n="1">Vivent les côtelettes aux cornichons ! </s>
+</p>
+                        <stage type="toward">À Risette. </stage>
+                        <p n="30">
+	<s n="1">Fais pas la bégueule !</s>
+</p>
+                    </sp><!--@stage="sit"--><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, à Antonin. </speaker>
+                        <p n="31">
+	<s n="1">Monsieur, vous êtes bien honnête, mais je n'ai pas faim ! </s>
+	<s n="2">J'ai une course très pressée, et je n'en mangerai pas, de vos côtelettes aux cornichons.</s>
+</p>
+                        <stage type="throw">Elle passe derrière la table.</stage>
+                    </sp><!--@stage="toward"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, passant devant la table. </speaker>
+                        <p n="32">
+	<s n="1">Comment, mademoiselle ?... </s>
+	<s n="2">Mais vous... </s>
+	<s n="3">Mais c'est...</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="33">
+	<s n="1">Laissez-la... </s>
+	<s n="2">C'est son idée...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="34">
+	<s n="1">Certainement ! </s>
+	<s n="2">Si, en effet... </s>
+	<s n="3">Mademoiselle, je suis bien désespéré...</s>
+</p>
+                        <stage type="location">Il passe devant Évelina.</stage>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, saluant. </speaker>
+                        <p n="35">
+	<s n="1">Bon appétit, Monsieur ! </s>
+	<s n="2">Bon appétit, ma chère amie !</s>
+</p>
+                        <stage type="stress">Avec une émotion contenue.</stage>
+                        <p n="36">
+	<s n="1">Je me serais fait un vrai plaisir... mais vous comprenez, quand on n'a pas faim...</s>
+</p>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@stage="wave"--><!--@who="RISETTE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Évelina, Antonin.</head>
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Mais ! </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Mais !... </s>
+	<s n="5">La petite me manque !... </s>
+	<s n="6">Toi, si tu n'avais pas tes millions...</s>
+</p>
+                        <stage type="toward">À Évelina.</stage>
+                        <p n="2">
+	<s n="1">Mademoiselle, il ne faut pas que cela nous empêche de déjeuner.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="3">
+	<s n="1">Plus souvent !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="4">
+	<s n="1">Vous offrirai-je une côtelette ?...</s>
+</p>
+                        <stage type="sit/eat">Il se met à table</stage>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="5">
+	<s n="1">Allez-y gaiement ! </s>
+	<s n="2">Et poussez m'en deux.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="6">
+	<s n="1">Elle a bon appétit ! </s>
+	<s n="2">C'est égal, elle ne mangera pas toute sa dot.</s>
+</p>
+                        <stage type="open">Faisant sauter le bouchon de la bouteille.</stage>
+                        <p n="7">
+	<s n="1">Une larme de vin !</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="8">
+	<s n="1">Pleurez ! </s>
+	<s n="2">Jeune homme, pleurez ! </s>
+	<s n="3">Mais attention, je n'aime pas la mousse. </s>
+	<s n="4">Monsieur n'a peut-être pas l'habitude de trinquer ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="9">
+	<s n="1">Mais, pardon !</s>
+</p>
+                        <stage type="drink">Ils trinquent.</stage>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="10">
+	<s n="1">Ah ! </s>
+	<s n="2">J'ai conservé quelques usages du monde. </s>
+	<s n="3">Faut vous dire que, telle que vous me voyez, j'appartiens à une famille de la première catégorie.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="11">
+	<s n="1">Mademoiselle, épargnez-moi ces détails ; je vois, je sais, je sens que votre naissance... mais je vous aime pour vous.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="12">
+	<s n="1">Tiens ! </s>
+	<s n="2">Vous avez une jolie épingle à votre cravate ! </s>
+	<s n="3">Montrez un peu !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, détachant son épingle. </speaker>
+                        <p n="13">
+	<s n="1">Bien modeste.</s>
+</p>
+                    </sp><!--@stage="dress"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="14">
+	<s n="1">Mais non ! </s>
+	<s n="2">Ça fait très bien pour attacher un châle.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="15">
+	<s n="1">Gardez-la, je vous en supplie.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="16">
+	<s n="1">Non ! </s>
+	<s n="2">Par exemple: je ne veux pas vous en priver.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="17">
+	<s n="1">Elle est en trop belles mains pour... pour... pour...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="18">
+	<s n="1">Eh bien ! </s>
+	<s n="2">C'est dit ; maintenant il ne me manque plus que le châle.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="19">
+	<s n="1">Il ne vous manquera pas longtemps, j'en suis sûr.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="20">
+	<s n="1">On en a beaucoup pour cinq millions...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="21">
+	<s n="1">Je vous redemanderai un peu de cornichons... </s>
+	<s n="2">Puisque Risette fait la petite bouche...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="22">
+	<s n="1">Elle a dit qu'elle n'avait pas faim.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="23">
+	<s n="1">C'est bien possible ; ces enfants de pauvres, ça mange comme des moineaux.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="24">
+	<s n="1">Il y a longtemps que vous vivez avec Mademoiselle_Risette ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="25">
+	<s n="1">Comme ça ! </s>
+	<s n="2">C'est depuis ma grande maladie. </s>
+	<s n="3">Nous demeurions sur le même carré, rue_Mouffetard, sur la lisière du Faubourg_Saint-Germain. </s>
+	<s n="4">Elle est entrée à mon service en qualité de garde-malade ; et je peux dire que sans elle je ne déjeunerais pas avec vous.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="26">
+	<s n="1">La brave fille !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="27">
+	<s n="1">Comme l'apothicaire avait mangé jusqu'à notre dernier sou, nous nous sommes mises ensemble pour économiser sur le loyer ! </s>
+	<s n="2">Je la recueille, quoi !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="28">
+	<s n="1">Toi, tu m'agaces !... </s>
+	<s n="2">Mais les millions!...</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="29">
+	<s n="1">Mademoiselle ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="30">
+	<s n="1">Qu'est-ce qui vous prend ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="31">
+	<s n="1">Demandez-moi plutôt ce qui m'a pris le jour où je vous ai vue pour la première fois.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="32">
+	<s n="1">Pas trop mal ! </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="33">
+	<s n="1">Ce jour-là je... ou plutôt vous... car c'était vous...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="34">
+	<s n="1">Certainement ! </s>
+	<s n="2">Je descendais avec la boîte au lait...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="35">
+	<s n="1">Peut-être !... </s>
+	<s n="2">Moi je passais sur le trottoir de l'autre côté de la rue, mon coeur battit, mes yeux se troublèrent...</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="36">
+	<s n="1">Va donc, charrette !...</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="37">
+	<s n="1">Mes yeux se troublèrent!... </s>
+	<s n="2">Mon coeur battit !... </s>
+	<s n="3">Et je sentis qu'il ne me restait qu'à mourir si vous n'acceptiez pas mon coeur et ma main.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, se reculant. </speaker>
+                        <p n="38">
+	<s n="1">Comment ! </s>
+	<s n="2">C'est pour le bon motif ?...</s>
+</p>
+                    </sp><!--@stage="away/frighten"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="39">
+	<s n="1">Pouvez-vous en douter, mademoiselle ?... </s>
+	<s n="2">Mon coeur... </s>
+	<s n="3">Vos principes, et d'ailleurs... </s>
+	<s n="4">Oh ! </s>
+	<s n="5">Épousez-moi pour la vie !...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="40">
+	<s n="1">Mais c'est impossible !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="41">
+	<s n="1">Mariée ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="42">
+	<s n="1">Non ! </s>
+	<s n="2">Mais engagée avec Jean_Gigonet.</s>
+</p>
+                        <stage type="stand">Ils se lèvent.</stage>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="43">
+	<s n="1">Qu'est-ce que c'est que ça, Jean_Gigonet ?...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="44">
+	<s n="1">Mon prétendu, Monsieur, officier de sergent au 135ème_de_ligne... </s>
+	<s n="2">Tenez, voici une bague en crin qu'il m'a donnée de ses cheveux. Voici son portrait, pas trop ressemblant, c'est un de ses camarades qui a posé.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="45">
+	<s n="1">Cinq millions à Jean_Gigonet ! </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Mais non!... </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="46">
+	<s n="1">Mademoiselle, je vous aime ! </s>
+	<s n="2">Ce mariage ne se fera pas... quand je devrais répandre le sang de Gigonet !... </s>
+	<s n="3">Oui, vous serez ma femme, je le jure sur la tête de mademoiselle_Risette.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="47">
+	<s n="1">Oh ! </s>
+	<s n="2">Permettez ; pour le mariage, mon prétendu a ma parole.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="48">
+	<s n="1">Vous vous dégagerez !... </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Dis-moi que tu te dégageras !...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, passant devant lui. </speaker>
+                        <p n="49">
+	<s n="1">Il est peut-être un peu tard.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="50">
+	<s n="1">Pourquoi ?... </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Pourquoi ?... </s>
+	<s n="4">Écoutez-moi, Risette !...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="51">
+	<s n="1">Comment ! </s>
+	<s n="2">Monsieur, Risette ?...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="52">
+	<s n="1">Vous avez raison ! </s>
+	<s n="2">Je ne sais pas ce que je dis. </s>
+	<s n="3">C'est le souvenir de cette pauvre fille qui me trouble... </s>
+	<s n="4">Elle n'a pas déjeuné... </s>
+	<s n="5">Je suis sûr que Risette n'a pas déjeuné.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="53">
+	<s n="1">Mais elle vous occupe beaucoup, je trouve.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="54">
+	<s n="1">Sans doute ! </s>
+	<s n="2">Sans doute ! </s>
+	<s n="3">Une enfant qui vous a soignée, qui vous a conservée à mon amour.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="55">
+	<s n="1">Je m'embrouillais tout à l'heure !... </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="56">
+	<s n="1">Je suis au désespoir de penser qu'elle est... </s>
+	<s n="2">Où peut-elle être ? </s>
+	<s n="3">Mon Dieu !...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="57">
+	<s n="1">Elle ! </s>
+	<s n="2">Chez la portière, je parie.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="58">
+	<s n="1">Quoi ! </s>
+	<s n="2">Dans la maison !... </s>
+	<s n="3">Je cours la chercher... lui présenter mes excuses, la ramener ici.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="59">
+	<s n="1">C'est ça ! </s>
+	<s n="2">Pour la compromettre ! </s>
+	<s n="3">J'aime mieux y aller moi-même.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="60">
+	<s n="1">Courez, Mademoiselle... </s>
+	<s n="2">Vous êtes bonne ! </s>
+	<s n="3">Mon coeur, ma reconnaissance...</s>
+</p>
+                        <stage type="exit">Évelina sort.</stage>
+                        <p n="61">
+	<s n="1">Elle a bien fait de sortir !... </s>
+	<s n="2">Le diable m'emporte si je sais ce que je lui ai dit.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX.</head>
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <stage type="away">Il se promène mélancoliquement en faisant le geste de peser quelque chose dans ses mains.</stage>
+                        <p n="1">
+	<s n="1">Un sergent, major ou autre !... </s>
+	<s n="2">Et cinq millions de l'autre côté. Jean_Gigonet ! </s>
+	<s n="3">Fi ! </s>
+	<s n="4">Mais cinq millions !... </s>
+	<s n="5">Parbleu ! </s>
+	<s n="6">Je donnerais bien cent sous pour savoir ce que Monsieur_Montyon ferait à ma place !...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Antonin, Évelina, Risette.</head>
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="1">
+	<s n="1">Allons, viens donc, il est très gentil !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="2">
+	<s n="1">Que vous êtes bonne, Mademoiselle !... </s>
+	<s n="2">Aussi bonne que jolie !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, bas. </speaker>
+                        <p n="3">
+	<s n="1">Dites donc, ce n'est pas pour lui faire de ces compliments que je vous l'ai ramenée.</s>
+</p>
+                    </sp><!--@stage="low"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="4">
+	<s n="1">Cette fille m'agace.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, très simplement. </speaker>
+                        <p n="5">
+	<s n="1">Je vous ai boudé, Monsieur_Antonin, j'ai eu tort !... </s>
+	<s n="2">Vous m'avez demandé la main ce matin, c'est moi qui maintenant demande la vôtre.</s>
+</p>
+                    </sp><!--@stage="shy"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="6">
+	<s n="1">De grand coeur, Mademoiselle.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="7">
+	<s n="1">Allons, mets-toi à table ; veux-tu des côtelettes ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, avec empressement. </speaker>
+                        <p n="8">
+	<s n="1">Où sont les côtelettes ?</s>
+</p>
+                    </sp><!--@stage="hurry"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="9">
+	<s n="1">Tiens, il n'y en a plus ! </s>
+	<s n="2">C'est monsieur qui les aura mangées de fond en comble.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="10">
+	<s n="1">Moi ! </s>
+	<s n="2">Par exemple...</s>
+</p>
+                        <stage type="sit">Ils s'asseyent a table.</stage>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="11">
+	<s n="1">Tiens ! </s>
+	<s n="2">Voilà du saucisson.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="12">
+	<s n="1">Merci ! </s>
+	<s n="2">Un biscuit dans un verre de vin de Champagne.</s>
+</p>
+                        <stage type="toward">À Évelina.</stage>
+                        <p n="13">
+	<s n="1">Devine ce qui nous est arrivé aujourd'hui.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="14">
+	<s n="1">Dame ! </s>
+	<s n="2">Cent mille livres de rente.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="15">
+	<s n="1">Peut-être ! </s>
+	<s n="2">Une lettre d'Amérique.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="16">
+	<s n="1">Fichtre !... </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="17">
+	<s n="1">Et cette lettre, vous l'avez ?</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="18">
+	<s n="1">Non ! </s>
+	<s n="2">Elle coûtait trois francs ; la portière l'a refusée.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="19">
+	<s n="1">Ah ! </s>
+	<s n="2">Bah ! </s>
+	<s n="3">Encore une lettre pour demander de l'argent. </s>
+	<s n="4">La portière a bien fait.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="20">
+	<s n="1">Les lettres qui demandent de l'argent sont toujours affranchies. J'ai dit qu'on l'accepte quand elle reviendra... </s>
+	<s n="2">C'est peut-être une fortune qui nous tombe d'Amérique.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="21">
+	<s n="1">Je sais bien ce que je ferais si j'étais millionnaire !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="22">
+	<s n="1">Ange, que feriez-vous ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="23">
+	<s n="1">J'éclabousserais joliment tous ceux qui m'ont rendu la vie si dure ! </s>
+	<s n="2">Je n'irais plus qu'en coupé !... </s>
+	<s n="3">Je ne boirais plus que du Champagne... j'aurais des laquais avec de grandes livrées...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="24">
+	<s n="1">Et Gigonet, qu'en ferions-nous ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="25">
+	<s n="1">Oh ! </s>
+	<s n="2">Mais je ne l'oublierais pas ! </s>
+	<s n="3">Il serait mon concierge !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="26">
+	<s n="1">Heureux Gigonet!</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="27">
+	<s n="1">Moi, si j'avais des millions, je voudrais que tout le monde fût heureux autour de moi... J'ai tant connu la misère que je ne la souhaite à personne.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, avec intérêt. </speaker>
+                        <p n="28">
+	<s n="1">Vous avez beaucoup souffert ?</s>
+</p>
+                    </sp><!--@stage="serious"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="29">
+	<s n="1">Pour ça, oui ! </s>
+	<s n="2">Ne me plaignez pas trop : c'était le bon temps ! </s>
+	<s n="3">Je riais au nez de la misère et lui faisais risette, comme dit la chanson !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="30">
+	<s n="1">Quelle chanson ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="31">
+	<s n="1">C'est cela, chante-nous ta chanson.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="32">
+	<s n="1">Volontiers ; mais vous reprendrez le refrain en choeur.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="33">
+	<s n="1">Soit !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <stage type="title">Air nouveau de Couder.</stage>
+                        <stage type="title">I</stage>
+                        <l n="14">À Paris, près de Pantin,</l>
+                        <l n="15">Je naquis un beau matin</l>
+                        <l n="16">De décembre.</l>
+                        <l n="17">Pour chasser le froid, la faim,</l>
+                        <l n="18">Nous n'avions ni feu ni pain</l>
+                        <l n="19">Dans la chambre.</l>
+                        <l n="20">Papa disait à maman :</l>
+                        <l n="21">Elle a mal pris son moment,</l>
+                        <l n="22">Ta fillette;</l>
+                        <l n="23">Mais le soleil par les trous</l>
+                        <l n="24">Du toit descendait chez nous,</l>
+                        <l n="25">Et de ses yeux les plus doux</l>
+                        <l n="26">Nous faisait à tous</l>
+                        <l n="27">Risette.</l>
+                        <stage type="title">II</stage>
+                        <l n="28">Jusqu'à l'âge de seize ans</l>
+                        <l n="29">J'ai chiffonné des rubans</l>
+                        <l n="30">Pour les autres.</l>
+                        <l n="31">J'ai couronné d'un bonnet</l>
+                        <l n="32">Plus d'un front qui ne valait</l>
+                        <l n="33">Pas les noires.</l>
+                        <l n="34">Parfois avant de dormir</l>
+                        <l n="35">J'ai soupé d'un gros soupir</l>
+                        <l n="36">Sans fourchette !</l>
+                        <l n="37">Mais pourquoi mouiller ses yeux ?</l>
+                        <l n="38">On ne s'en porte pas mieux :</l>
+                        <l n="39">Au sort le plus rigoureux</l>
+                        <l n="40">J'ai fait en tous lieux</l>
+                        <l n="41">Risette.</l>
+                        <stage type="location">Ils se lèvent et descendent la scène.</stage>
+                        <l n="42">Un monsieur m'offrit souvent</l>
+                        <l n="43">Son amour et son argent</l>
+                        <l n="44">Sans notaire !</l>
+                        <l n="45">Je ne me fâche de rien ;</l>
+                        <l n="46">Mais il ferait aussi bien</l>
+                        <l n="47">De se taire !</l>
+                        <l n="48">Une fille comme nous</l>
+                        <l n="49">Ne porte pas de bijoux</l>
+                        <l n="50">Qu'on achète ;</l>
+                        <l n="51">Mais celui que j'aimerai,</l>
+                        <l n="52">Un jour je le conduirai</l>
+                        <l n="53">Chez le maire et le curé,</l>
+                        <l n="54">Et je lui ferai</l>
+                        <l n="55">Risette.</l>
+                        <stage type="sit">Évelina se rassied à table à la place de Risette.</stage>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="24">
+	<s n="1">Vous n'avez jamais aimé ?...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="25">
+	<s n="1">Oh ! </s>
+	<s n="2">Si.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, avec douleur. </speaker>
+                        <p n="26">
+	<s n="1">Vraiment ! </s>
+	<s n="2">Qui cela ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="27">
+	<s n="1">Un brave garçon qui demeurait à côté de chez mon père, et qui était déjà un homme quand je n'étais encore qu'une petite fille. </s>
+	<s n="2">C'est lui qui me défendait.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="28">
+	<s n="1">Et contre qui ?...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="29">
+	<s n="1">Mon père s'était remarié... et j'étais battue plus souvent qu'à mon tour ; quand je m'attendais à une scène, j'allais trouver mon pauvre Valentin. </s>
+	<s n="2">Il venait avec moi : ma belle-mère n'osait pas frapper si fort quand il était là. </s>
+	<s n="3">Il pleurait quand j'avais les yeux rouges... </s>
+	<s n="4">Il me consolait, et nous finissions par rire ensemble. </s>
+	<s n="5">Ah ! </s>
+	<s n="6">Nous avons fait de bonnes parties de rire ! </s>
+	<s n="7">C'est lui qui m'a appris le peu que je sais... </s>
+	<s n="8">Il travaillait la nuit en cachette, le brave garçon, pour acquitter mes frais d'apprentissage !... </s>
+	<s n="9">C'était lui qui était mon père, ma mère, et toute ma famille !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="30">
+	<s n="1">Et vous l'aimiez ?...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="31">
+	<s n="1">Oh ! </s>
+	<s n="2">Oui, je l'aimais bien !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN. </speaker>
+                        <p n="32">
+	<s n="1">D'amour ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="33">
+	<s n="1">D'amour... </s>
+	<s n="2">Je n'en sais rien, mais d'une vraie, profonde et éternelle amitié... </s>
+	<s n="3">Il me fit jurer que je ne me marierais jamais avec un autre qu'avec lui.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="34">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon Dieu !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, le verre à la main. </speaker>
+                        <p n="35">
+	<s n="1">Je vous demande un peu ce que ça nous fait ?... </s>
+	<s n="2">On ne conte pas ces choses-là après dîner, ça trouble la digestion.</s>
+</p>
+                    </sp><!--@stage="carry"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="36">
+	<s n="1">Et vous tiendrez ce serment ?...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="37">
+	<s n="1">Je l'aurais tenu ; mais tout est fini.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="38">
+	<s n="1">Il est mort ?...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <note type="C">Guerre de Crimée : Guerre entre la Russie et une coalition composée du Royaume de Sardaigne, le Royaume-Uni, L'Empire Ottoman et la France.  (1853-1856)</note>
+                        <p n="39">
+	<s n="1">Le pauvre garçon a eu un mauvais numéro : il a fallu partir ! </s>
+	<s n="2">Il est allé en Crimée... </s>
+	<s n="3">Il m'écrivait quelquefois, et moi, je priais bien fort pour lui !... </s>
+	<s n="4">Rien n'y a fait ! </s>
+	<s n="5">Un boulet l'a emporté à l'assaut de Sébastopol !... </s>
+	<s n="6">Je ne sais pas même où est sa tombe.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, avec émotion.</speaker>
+                        <p n="40">
+	<s n="1">Pauvre enfant !</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="41">
+	<s n="1">Vous êtes bon !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="42">
+	<s n="1">À quoi ça sert-il de pleurer et de se tourner le sang ?... </s>
+	<s n="2">Oui ! </s>
+	<s n="3">Un boulet m'emporterait Jean_Gigonet... </s>
+	<s n="4">Dame ! </s>
+	<s n="5">Je pleurerais dans les premiers moments... mais, après cela, il faut se faire une raison, n'est-ce pas ?...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, avec impatience. </speaker>
+                        <p n="43">
+	<s n="1">Oui ! </s>
+	<s n="2">Oui ! </s>
+	<s n="3">C'est bon !... </s>
+</p>
+                        <stage type="toward">À Risette.</stage>
+                        <p n="44">
+	<s n="1">Et depuis, vous n'avez jamais aimé ?...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="45">
+	<s n="1">Elle ? </s>
+	<s n="2">Elle n'a pas de coeur !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="46">
+	<s n="1">Comme j'aurais du plaisir à la jeter par la fenêtre avec ses cinq millions !</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE. </speaker>
+                        <p n="47">
+	<s n="1">Elle a raison ! </s>
+	<s n="2">Ces souvenirs me font mal !... </s>
+	<s n="3">Je ne dois plus songer à l'amour.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, avec chaleur. </speaker>
+                        <p n="48">
+	<s n="1">N'y plus songer, Mademoiselle, n'y plus songer !... </s>
+	<s n="2">Croyez-le bien, il est encore ici-bas des coeurs dignes d'apprécier tant de candeur et de grâce.</s>
+</p>
+                    </sp><!--@stage="enthousiasm"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, bas, le pinçant. </speaker>
+                        <p n="49">
+	<s n="1">Qu'est-ce que vous dites donc là ?...</s>
+</p>
+                    </sp><!--@stage="low/hurt"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, à part. </speaker>
+                        <p n="50">
+	<s n="1">Aie ! </s>
+	<s n="2">C'est juste !... </s>
+</p>
+                        <stage type="show">Montrant Évelina. </stage>
+                        <p n="51">
+	<s n="1">Je répète ce que vous disiez tout à l'heure, Mademoiselle : C'est un ange, me disiez-vous...</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="52">
+	<s n="1">C'est inutile de le répéter !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="52">
+	<s n="1">Vous l'avez dit !... </s>
+	<s n="2">Ne m'avez-vous pas conté que c'était elle qui vous avait veillée, soignée, sauvée ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, le pinçant. </speaker>
+                        <p n="53">
+	<s n="1">Taisez-vous ! </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="54">
+	<s n="1">C'est bon, mon Dieu, c'est bon !</s>
+</p>
+                    </sp><!--@stage="hurt"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="55">
+	<s n="1">Laissez-moi lui exprimer ma reconnaissance des soins qu'elle vous a donnés ; laissez-moi lui dire ce que j'ai au fond du coeur pour elle...</s>
+</p>
+                        <stage type="hurt">Évelina le pince.</stage>
+                        <p n="56">
+	<s n="1">Et pour vous! </s>
+	<s n="2">Que vous êtes heureuse ! </s>
+	<s n="3">Votre vie se passe près d'elle, vous la voyez tous les jours !...</s>
+</p>
+                        <stage type="hurt/stand">Évelina le pince et se lève.</stage>
+                        <p n="57">
+	<s n="1">Je crois que je m'embrouille !...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="58">
+	<s n="1">Quelle drôle de figure vous faites !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="59">
+	<s n="1">J'aime mieux vous voir ainsi gaie, souriante, heureuse ! </s>
+	<s n="2">Le bonheur va si bien à votre charmant visage ? </s>
+	<s n="3">Votre sourire laisse entrevoir, à travers des lèvres si vermeilles, une rangée de dents si blanches !...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, descendant entre eux. </speaker>
+                        <p n="60">
+	<s n="1">Monsieur !...</s>
+</p>
+                    </sp><!--@stage="closer/location"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, reprenant. </speaker>
+                        <p n="61">
+	<s n="1">Aussi blanche que les dents de mademoiselle !... </s>
+	<s n="2">Votre rire a un éclat argentin comme le son de votre voix.</s>
+</p>
+                    </sp><!--@stage="continue"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="62">
+	<s n="1">Monsieur!...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="63">
+	<s n="1">Et de la voix de Mademoiselle !</s>
+</p>
+                        <stage type="aparte">À part. </stage>
+                        <p n="64">
+	<s n="1">Cette position est stupide, il faut absolument choisir !...</s>
+</p>
+                        <stage type="think/closer/quiet">Il semble prendre une résolution, s'avance vers Risette et avec beaucoup de respect.</stage>
+                        <p n="65">
+	<s n="1">Mademoiselle Risette...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#le-portier">
+                        <speaker>LE PORTIER, paraissant. </speaker>
+                        <p n="66">
+	<s n="1">Mam'selle Risette...</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="LE PORTIER"-->
+<sp who="#risette">
+                        <speaker>RISETTE, à part. </speaker>
+                        <p n="67">
+	<s n="1">Quel dommage ! </s>
+</p>
+                        <stage type="loud">Haut. </stage>
+                        <p n="68">
+	<s n="1">Qu'est-ce que vous voulez ?...</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="RISETTE"-->
+<sp who="#le-portier">
+                        <speaker>LE PORTIER.</speaker>
+                        <p n="69">
+	<s n="1">La lettre !...</s>
+</p>
+                    </sp><!--@who="LE PORTIER"-->
+<sp who="#risette">
+                        <speaker>RISETTE, allant à lui. </speaker>
+                        <p n="70">
+	<s n="1">La lettre d'Amérique ! </s>
+	<s n="2">Donnez !</s>
+</p>
+                        <stage type="exit">Le portier sort.</stage>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, bas à Antonin. </speaker>
+                        <p n="71">
+	<s n="1">Qu'est-ce que vous alliez donc lui dire ?...</s>
+</p>
+                    </sp><!--@stage="low/toward"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, passant derrière elle. </speaker>
+                        <p n="72">
+	<s n="1">Vous m'ennuyez !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="73">
+	<s n="1">Monsieur ! </s>
+	<s n="2">Vous êtes un... pas grand'chose.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN. </speaker>
+                        <p n="74">
+	<s n="1">Bien ! bien ! bien !</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="75">
+	<s n="1">Décidément j'aime mieux l'autre !... </s>
+	<s n="2">Quel plaisir j'aurais à lui dire : il y a cinq millions pour vous dans cette lettre, je ne veux ni de vous, ni de vos cinq millions !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="76">
+	<s n="1">You! you, you ?...</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="77">
+	<s n="1">You ! </s>
+	<s n="2">Ah ! </s>
+	<s n="3">C'est de l'anglais, ça veut dire : aime !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="78">
+	<s n="1">Comment ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="79">
+	<s n="1">J'ai connu un petit Anglais qui médisait toujours : I love you : I, je; love, vous ; you, aime ! </s>
+	<s n="2">Je vous aime ! </s>
+	<s n="3">Il m'aimait !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE. </speaker>
+                        <p n="80">
+	<s n="1">Savez-vous l'anglais, Monsieur ?...</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="81">
+	<s n="1">Un peu, Mademoiselle, trente leçons à deux francs le Cachet ; je déchiffre.</s>
+</p>
+                        <stage type="give">Elle lui donne la lettre, il lit tout bas à part.</stage>
+                        <p n="82">
+	<s n="1">C'est bien cela, Louise_Taboureau ! </s>
+	<s n="2">Cinq millions ; le chiffre y est !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette #evelina">
+                        <speaker>RISETTE et ÉVELINA, curieusement.</speaker>
+                        <p n="83">
+	<s n="1">Eh bien ?</s>
+</p>
+                    </sp><!--@stage="stress"--><!--@who="RISETTE, ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="84">
+	<s n="1">Je cherche à traduire... que faite ? </s>
+	<s n="2">Cinq millions, c'est tentant ; mais cette petite Risette est si jolie ! </s>
+	<s n="3">Et tant de grâce ! </s>
+	<s n="4">Et tant de coeur ! </s>
+	<s n="4">Et pas de Gigonet !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, à Évelina. </speaker>
+                        <p n="85">
+	<s n="1">Comme il a l'air agité ! </s>
+	<s n="2">Qu'y a-t-il ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="86">
+	<s n="1">Ah ! </s>
+	<s n="2">Tant pis, une chaumière et son coeur.</s>
+</p>
+                        <stage type="get">Il va prendre la main de Risette.</stage>
+                        <p n="87">
+	<s n="1">Risette, écoutez-moi, j'ai vingt-quatre ans, je suis d'une bonne famille, et ne suis point un méchant garçon...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="88">
+	<s n="1">Tout cela ne nous dit pas ce qu'il y a dans la lettre.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="89">
+	<s n="1">Tu interromps toujours... c'est ennuyeux!</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="90">
+	<s n="1">Mais, ma chère Risette...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, très sèchement. </speaker>
+                        <p n="91">
+	<s n="1">Après tout, les lettres que je reçois ne te regardent pas ?</s>
+</p>
+                    </sp><!--@stage="strong"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="93">
+	<s n="1">Il est vrai que ce sont tes affaires.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, très étonné.</speaker>
+                        <p n="94">
+	<s n="1">Comment ! </s>
+	<s n="2">Cette lettre est pour vous, Mademoiselle ?</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="95">
+	<s n="1">Oui, Monsieur. </s>
+	<s n="2">Pardon, vous disiez tout à l'heure que vous aviez vingt-quatre ans ?...</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="96">
+	<s n="1">Votre nom, Mademoiselle, je vous en supplie, votre nom de famille ?...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="97">
+	<s n="1">De quel air vous me demandez cela ! </s>
+	<s n="2">Louise_Taboureau.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="98">
+	<s n="1">Perdu, à tout jamais perdu.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, au comble de l'étonnement. </speaker>
+                        <p n="99">
+	<s n="1">Perdu ? </s>
+	<s n="2">Que veut-il dire ?</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="100">
+	<s n="1">Je le crois un peu fou.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="101">
+	<s n="1">C'est fini ! </s>
+	<s n="2">Je n'oserai plus ! </s>
+	<s n="3">Mon Dieu ! </s>
+	<s n="4">Mon Dieu !</s>
+</p>
+                        <stage type="fall">Il tombe sur une chaise à gauche.</stage>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="102">
+	<s n="1">Mais qu'avez-vous ? </s>
+	<s n="2">Monsieur ? </s>
+	<s n="3">Cette lettre contient elle quelque malheur ?</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="103">
+	<s n="1">Un grand malheur, plus grand que je ne saurais le dire.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="104">
+	<s n="1">Vous me faites trembler.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="105">
+	<s n="1">Rassurez-vous, Risette.</s>
+</p>
+                        <stage type="quiet">Se reprenant.</stage>
+                        <p n="106">
+	<s n="1">Mademoiselle, le malheur n'est pas pour vous.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="107">
+	<s n="1">Pour qui, alors ?</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="108">
+	<s n="1">Pour personne.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="109">
+	<s n="1">Expliquez-vous,je vous en conjure.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="110">
+	<s n="1">Je ne le puis.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="111">
+	<s n="1">Je le veux.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="112">
+	<s n="1">Vous ne me croiriez pas.</s>
+</p>
+                        <stage type="stand/hurry">Se levant avec violence.</stage>
+                        <p n="113">
+	<s n="1">Non, vous ne me croiriez pas, et le doute qui se glisserait dans votre coeur empoisonnerait ma vie tout entière. </s>
+	<s n="2">Je ne pourrais plus vous regarder sans rougir ; j'espère que vous conserverez quelque souvenir de moi; je veux que ce souvenir soit pur, pur comme votre front, pur comme le fond de mon coeur.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="114">
+	<s n="1">Je ne comprends rien à ce que vous me dites, Monsieur_Antonin, mais je vois que vous souffrez, et je voudrais savoir de quel mal vous souffrez, pour le guérir si cela est possible.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="115">
+	<s n="1">Ah ! </s>
+	<s n="2">Je n'en guérirai jamais, c'est mon plus cher espoir.</s>
+</p>
+                        <stage type="agitated">Il marche avec agitation.</stage>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="116">
+	<s n="1">Y comprends-tu un mot ?...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="117">
+	<s n="1">Peut-être. </s>
+	<s n="2">Je vais descendre au second ; il y a un professeur qui me lira ma lettre : garde-le en attendant.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="118">
+	<s n="1">Adieu, Mademoiselle, adieu pour jamais.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, près de la porte. </speaker>
+                        <p n="119">
+	<s n="1">Non, Monsieur, vous ne vous en irez pas ; j'ai moi-même à sortir un instant ; j'exige que vous m'attendiez.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="120">
+	<s n="1">Mademoiselle, je ne sais...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="121">
+	<s n="1">Je le veux. </s>
+	<s n="2">Au revoir.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. Évelina, Antonin.</head>
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <stage type="touch">Elle va le prendre par le bras et l'amène en scène. </stage>
+                        <p n="1">
+	<s n="1">M'expliquerez-vous tout ce que cela signifie ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="2">
+	<s n="1">Allez-vous-en à tous les diables ! </s>
+	<s n="2">Tout cela est de votre faute. </s>
+	<s n="3">On dit son nom aux gens; pourquoi ne m'avez vous pas dit votre nom ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="3">
+	<s n="1">Vous ne me l'avez pas demandé.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="4">
+	<s n="1">Est-ce qu'on a besoin de demander ces choses-là ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="5">
+	<s n="1">Dame!</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="6">
+	<s n="1">Comment vous appelez-vous donc ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="7">
+	<s n="1">Évelina_Balochard.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="8">
+	<s n="1">Évelina ! </s>
+	<s n="2">Peut-on s'appeler Évelina ! </s>
+	<s n="3">Il y a, ma parole d'honneur, des parrains bien stupides.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="9">
+	<s n="1">Ah çà ! </s>
+	<s n="2">Monsieur, à qui en avez-vous ? </s>
+	<s n="3">Est-ce moi qui suis allée vous chercher ? </s>
+	<s n="4">Vous êtes venu ce matin...</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="10">
+	<s n="1">J'étais une brute ce matin ; et vous qui n'avertissez pas : j'aurais dû m'en douter ; une fille qui mange des côtelettes aux cornichons, qui aime dans l'infanterie, qui connaît des cuisiniers ! </s>
+	<s n="2">Faut-il avoir été bête !...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="11">
+	<s n="1">Si vous n'en voulez point, n'en dégoûtez pas les autres. </s>
+	<s n="2">Qu'est-ce que tout cela ? </s>
+	<s n="3">Il y a une heure vous étiez à mes genoux, vous me disiez que vous m'aimiez...</s>
+</p>
+                        <stage type="sit">Elle va s'asseoir à gauche.</stage>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="12">
+	<s n="1">Moi, vous aimer ?...</s>
+</p>
+                        <stage type="entrance/listen">Risette entre doucement et écoute sans se montrer.</stage>
+                        <p n="13">
+	<s n="1">Moi, vous aimer ?... </s>
+	<s n="2">Mais je n'aime et je n'aimerai jamais qu'une fille au monde, la plus aimable des filles, qui réunit toutes les grâces et toutes les vertus, qui joint au plus charmant visage la voix la plus enchanteresse, qui n'a qu'à se montrer pour enlever tous les coeurs : je n'ai passé qu'une heure avec elle, et j'en suis amoureux pour la vie.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, sèchement. </speaker>
+                        <p n="14">
+	<s n="1">Je n'aime pas qu'on parle ainsi de mes amies devant moi. </s>
+	<s n="2">Allez lui dire ça à elle-même si vous voulez.</s>
+</p>
+                    </sp><!--@stage="strong"--><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="15">
+	<s n="1">Eh ! </s>
+	<s n="2">Le puis-je ? </s>
+	<s n="3">Voudra-t-elle me croire ? </s>
+	<s n="4">Aurai-je la pudeur de lui déclarer un amour qu'elle soupçonnera d'être intéressé ?...</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="16">
+	<s n="1">Intéressé ?... </s>
+	<s n="2">Elle n'a pas le sou.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="17">
+	<s n="1">Elle a cinq millions !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="18">
+	<s n="1">Cinq millions !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Risette, Évelina, Augustin.</head>
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien ! </s>
+	<s n="2">On se boude par ici ?</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, allant à elle. </speaker>
+                        <p n="2">
+	<s n="1">Est-ce que c'est vrai que tu es... que vous êtes millionnaire ?</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, riant.</speaker>
+                        <p n="3">
+	<s n="1">Qui t'a dit cela ?</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="4">
+	<s n="1">C'est monsieur.</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, d'un air forcé. </speaker>
+                        <p n="5">
+	<s n="1">Permettez-moi, Mademoiselle, de vous féliciter du bonheur qui vous arrive : croyez bien que je suis désolé... </s>
+	<s n="2">Enchanté, je veux dire...</s>
+</p>
+                    </sp><!--@stage="embarrassed"--><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE. </speaker>
+                        <p n="6">
+	<s n="1">Ne me félicitez pas, Monsieur ; il est fort probable que vous ne savez guère l'anglais et que vous avez mal lu ma lettre : il y est, en effet, question de millions ; mais ces millions ne sont pas pour moi.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN, avec joie. </speaker>
+                        <p n="7">
+	<s n="1">Comment ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, très simplement. </speaker>
+                        <p n="8">
+	<s n="1">Mon cher oncle était négociant, il a fait une faillite de cinq millions et il en est mort. </s>
+	<s n="2">Je suis sa seule héritière, et l'on me propose tout simplement d'accepter l'héritage.</s>
+</p>
+                    </sp><!--@stage="shy"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="9">
+	<s n="1">Est-il possible !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="10">
+	<s n="1">Rassurez-vous,je refuse, j'ai assez de mes dettes sans me charger encore des dettes de mon oncle.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="11">
+	<s n="1">Vous avez des dettes, quel bonheur !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="12">
+	<s n="1">Comment, monsieur, quel bonheur !...</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="12">
+	<s n="1">Oui, ma petite Risette ; il faut que je vous ouvre mon coeur, j'ai un aveu à vous faire.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, à part. </speaker>
+                        <p n="13">
+	<s n="1">Enfin !</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN. </speaker>
+                        <p n="14">
+	<s n="1">Je suis venu ici dans une intention mauvaise.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE, l'interrompent.</speaker>
+                        <p n="15">
+	<s n="1">Je ne veux pas le savoir.</s>
+</p>
+                    </sp><!--@stage="interrupt"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="16">
+	<s n="1">Eh bien, je vous aime, Risette, je vous aime comme un fou ; j'ai peu de chose, mais ce peu est à vous, comme mon coeur. </s>
+	<s n="3">Vous êtes une bonne fille ; voulez-vous d'un honnête et loyal garçon ?</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="17">
+	<s n="1">On se met à genoux, Monsieur.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="18">
+	<s n="1">Oui, ma petite Risette, à deux genoux devant toi, je voudrais passer ma vie comme cela.</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="19">
+	<s n="1">Cela serait fatigant.</s>
+</p>
+                        <stage type="give">Lui donnant la main.</stage>
+                        <p n="20">
+	<s n="1">Il vaut mieux vivre à côté des gens !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="21">
+	<s n="1">Chère petite femme!</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="22">
+	<s n="1">Vous êtes heureux ?...</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="23">
+	<s n="1">Si je le suis !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="24">
+	<s n="1">Eh bien, il faut que tout le monde le soit... </s>
+	<s n="2">Évelina !</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA, d'un air boudeur.</speaker>
+                        <p n="25">
+	<s n="1">Quoi ?...</s>
+</p>
+                    </sp><!--@stage="sad"--><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="26">
+	<s n="1">Combien te faudrait-il pour épouser Gigonet ?</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="27">
+	<s n="1">Dame ! </s>
+	<s n="2">Il me faudrait... </s>
+	<s n="3">Il me faudrait... </s>
+	<s n="4">Qu'est-ce ça te fait ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="28">
+	<s n="1">Dis toujours.</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="29">
+	<s n="1">Est-ce que je sais !</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="30">
+	<s n="1">Te faudrait-il dix mille francs, vingt mille francs, trente mille francs ?...</s>
+</p>
+                    </sp><!--@who="RISETTE"-->
+<sp who="#evelina">
+                        <speaker>ÉVELINA.</speaker>
+                        <p n="31">
+	<s n="1">Ah ça ! </s>
+	<s n="2">C'est vrai que tu as des milles et des cents ?</s>
+</p>
+                    </sp><!--@who="ÉVELINA"-->
+<sp who="#risette">
+                        <speaker>RISETTE, gaiment.</speaker>
+                        <p n="32">
+	<s n="1">Mais oui !</s>
+</p>
+                        <stage type="toward/tender">Très tendrement à Antonin.</stage>
+                        <p n="33">
+	<s n="1">Oui, mon ami,, je suis ... </s>
+	<s n="2">Nous sommes riches ... </s>
+	<s n="3">Très riches...</s>
+</p>
+                    </sp><!--@stage="happy"--><!--@who="RISETTE"-->
+<sp who="#antonin">
+                        <speaker>ANTONIN.</speaker>
+                        <p n="34">
+	<s n="1">Que m'importe maintenant !</s>
+</p>
+                    </sp><!--@who="ANTONIN"-->
+<sp who="#risette">
+                        <speaker>RISETTE.</speaker>
+                        <p n="35">
+	<s n="1">Très riche... et très heureux, ce qui vaut mieux encore !...</s>
+</p>
+                        <l n="56">Les mauvais jours ont fini :</l>
+                        <l n="57">Dieu d'un sourire a béni</l>
+                        <l n="58">La mansarde !</l>
+                        <l n="59">Pour que nous goûtions tous deux</l>
+                        <l n="60">Le bonheur qu'aux amoureux</l>
+                        <l n="61">Sa main garde ;</l>
+                        <l n="62">Pour qu'à mon coeur comme au sien</l>
+                        <l n="63">Ce jour ne rappelle rien</l>
+                        <l n="64">Qu'il regrette !</l>
+                        <l n="65">Ah ! Messieurs, point de sifflet</l>
+                        <l n="66">Mais, à ce dernier couplet,</l>
+                        <l n="67">Mon bonheur sera complet</l>
+                        <l n="68">Si vous avez fait </l>
+                        <l n="69">Risette.</l>
+                    </sp><!--@who="RISETTE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>
