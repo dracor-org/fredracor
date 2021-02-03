@@ -777,6 +777,7 @@ declare function local:construct-tei (
   $orig-name as xs:string
 ) as node() {
   let $id := string($id-map//play[@file eq $orig-name]/@id)
+  let $wikidata-id := string($id-map//play[@file eq $orig-name]/@wikidata)
 
   let $title := element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
     attribute type {'main'},
@@ -915,6 +916,11 @@ declare function local:construct-tei (
           <publisher xml:id="dracor">DraCor</publisher>
           <idno type="URL">https://dracor.org</idno>
           <idno type="dracor" xml:base="https://dracor.org/id/">{$id}</idno>
+          {if ($wikidata-id) then (
+            <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">
+              {$wikidata-id}
+            </idno>
+          ) else ()}
           <availability>
             <licence>
               <ab>CC BY-NC-SA 4.0</ab>
