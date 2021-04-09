@@ -1,0 +1,331 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Angélique ou Les Avantages de la Congrégation</title>
+                <title type="sub">Pour une Réception de Congréganistes</title>
+                <author>
+      <idno type="isni">0000000459540933</idno>
+      <persName>
+        <forename>Eugène</forename>
+        <surname>Gonnet</surname>
+      </persName>
+    </author><!--Eugène GONNET (abbé, 18..-18..)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001493</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/GONNET_ANGELIQUE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/GONNET_ANGELIQUE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1858"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5620486w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="angelique" sex="FEMALE">
+                        <persName>Angélique</persName>
+                    </person>
+                    <person xml:id="emilie" sex="FEMALE">
+                        <persName>Émilie</persName>
+                    </person>
+                    <person xml:id="celina" sex="FEMALE">
+                        <persName>Célina</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Dialogue</term>
+                    <term>vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">ANGÉLIQUE OU LES AVANTAGES DE LA CONGRÉGATION</titlePart>
+			<titlePart type="sub">POUR UNE RÉCEPTION DE CONGRÉGANISTES</titlePart>
+		</docTitle> 
+		<docDate when="1858">1858</docDate>
+		<docAuthor>Par l'Abbé E. GONNET.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="CAILLAT-BELHOMME">AVIGNON LIBRAIRE DE CAILLAT-BELHOMME, Éditeur. Rue Saunerie, 15.  PROPRIÉTÉ DE L'ÉDITEUR.</editor>-->
+			<div type="printer">
+                    <p>AVIGNON, typ. Jacquet, rue Saint-Marc, 22.</p>
+                </div><!--@id="JACQUET"-->
+			<div type="approbation">
+                    <head/>
+				<p>Avignon le 20 juillet 1858.</p>
+				<p>L'ARCHEVÊQUE D'AVIGNON.</p>
+				<p>Vu le rapport que lui a fait un des membres de la Commission chargée de l'examen des livres dans son diocèse..</p>
+				<p>Déclare que les Dialogues de M. L'Abbé E. Gonnet ne contiennent rien de contraire à la doctrine catholique et qu'ils méritent sou le rapport du fond et de la forme des félicitations et des encouragements..</p>
+				<p>J. M. M. archevêque d'Avignon.</p>
+			</div>
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#angelique">ANGÉLIQUE</role><!--@sex="2"--><!--@type="H"--><!--@statut="religieux"--><!--@age="J"--><!--@stat_amour="néant"-->, postulante.</castItem>
+			<castItem>
+                    <role corresp="#emilie">ÉMILIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="religieux"--><!--@age="J"--><!--@stat_amour="néant"-->, postulante, amie d'Angélique.</castItem>
+			<castItem>
+                    <role corresp="#celina">CÉLINA</role><!--@sex="2"--><!--@type="H"--><!--@statut="religieux"--><!--@age="J"--><!--@stat_amour="néant"-->, Congréganiste.</castItem>
+			<castItem>
+                    <role corresp="#le-choeur">LE CHOEUR</role><!--@sex="2"--><!--@type="H"--><!--@statut="religieux"--><!--@age="J"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Avignon" country="France" periode="XIXème" gps="43.893582, 4.9456364">La scène se passe dans une cour ombragée.</set>-->
+		<note>Extrait de "Dialogues en vers pour pensionnaires ou congrégations de jeunes demoiselles", 5ème cahier, de l'Abbé Eugène Gonnet. pp 11-24</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>ANGÉLIQUE OU LES AVANTAGES DE LA CONGRÉGATION.</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Angélique et Emilie.</head>
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="1">Mais, quand je te le dis, il me semble pourtant</l>
+                        <l n="2">Que tu devrais en croire un coeur qui t'aime tant.'</l>
+                        <l n="3">Émilie, après tout tu connais ma franchise.</l>
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="4">Eh ! Bien, oui, je le crois. Mais je suis fort surprise</l>
+                        <l n="5">Que la joie en ton coeur ait pu trouver accès,</l>
+                        <l n="6">Tandis qu'il nous vaut mieux exhaler des regrets.</l>
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="7">Et pour quelle raison devons-nous être tristes</l>
+                        <l n="8">Quand nous avons l'honneur d'être Congréganistes ?.</l>
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="9">Quoi ! ma chère Angélique, on nous forge des fers,</l>
+                        <l n="10">Et nous pourrions avoir des regrets trop amers ?...</l>
+                        <l n="11">Il est vrai qu'on a soin de dorer notre chaîne :</l>
+                        <l n="12">On dit : c'est un honneur. Avant que l'on m'y prenne...</l>
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="13">Émilie, ainsi donc, tu trompes mon espoir !</l>
+                        <l n="14">Toi qui désirais tant te faire recevoir !...</l>
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="15" part="I">Oui, mais j'ai réfléchi.</l><!--@syll="6"-->
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="15" part="F">Ciel ! Quelle forte tête !</l><!--@syll="6"-->
+                        <l n="16">Et, tout pesé, tu crois qu'il faut battre en retraite ?</l>
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="17">Je crois que, si l'on veut garder sa liberté,</l>
+                        <l n="18">Il faut se défier d'un honneur, tant vanté.</l>
+                        <l n="19">Or, moi, j'aime avant tout que l'on me laisse faire.</l>
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="20">Tu n'es pas difficile, avouons-le, ma chère.</l>
+                        <l n="21">Eh ! Qui ne voudrait pas faire sa volonté ?</l>
+                        <l n="22">Mais le peut-on toujours en toute sûreté ?</l>
+                        <l n="23">Oh ! Combien aujourd'hui regrettent en silence</l>
+                        <l n="24">D'avoir voulu marcher seules et sans défense !</l>
+                        <l n="25">La vertu de leur âge, elles l'auraient encor :</l>
+                        <l n="26">Hélas ! La liberté leur ravit ce trésor.</l>
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="27">Tu dis vrai : mais aussi, s'enchaîner à notre âge !...</l>
+                        <l n="28">Plus qu'un mot, Angélique : et, bien sûr ,je m'engage</l>
+                        <l n="29">à marcher sur tes pas, si je n'ai pas raison.</l>
+                        <l n="30">Nous sommes, tu le vois, à la belle saison.</l>
+                        <l n="31">La rose a revêtu sa brillante, parure ;</l>
+                        <l n="32">La campagne a repris son manteau de verdure ;</l>
+                        <l n="33">L'air est pur, l'onde claire et les ombrages frais ;</l>
+                        <l n="34">Le printemps, en un mot, verse tous ses bienfaits.</l>
+                        <l n="35">Tu promènes tes pas, au loin, dans la prairie ;</l>
+                        <l n="36">Ou tu dis aux échos ta douce rêverie :</l>
+                        <l n="37">Supposons-le. Soudain, quand tu n'y penses pas,</l>
+                        <l n="38">Un malfaiteur survient et t'enchaîne les bras.</l>
+                        <l n="39">Sans regret, il te plonge en un cachot humide.</l>
+                        <l n="40">Au lieu de doux parfums, c'est une odeur fétide</l>
+                        <l n="41">Que tu vas respirer dans cet affreux réduit.</l>
+                        <l n="42">Plus de riants tableaux : partout, la sombre nuit.</l>
+                        <l n="43">Quel contraste, ma soeur ! Quel changement terrible !</l>
+                        <l n="44">Et, tu ne vouerais pas une haine invincible</l>
+                        <l n="45">À celui qui t'aurait ravi la liberté ?...</l>
+                        <l n="46">Mon âme se soulève à cette cruauté...</l>
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="47">Je ne te croyais pas si savante en peinture.</l>
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="48" part="I">C'est que, quand je m'y mets...</l><!--@syll="6"-->
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="48" part="F">Tu peins d'après nature.</l><!--@syll="6"-->
+                        <l n="49">J'aimerais bien pourtant quelque application.</l>
+                        <l n="50">Tu n'as fait qu'écouter l'imagination :</l>
+                        <l n="51">Or, si nous en croyons une antique parole,</l>
+                        <l n="52">L'Imagination, du logis, est la folle.</l>
+                        <l n="53">Entends plutôt la voix de la saine raison ?</l>
+                        <l n="54">Et reviens avec moi sur ta comparaison.</l>
+                        <l n="55">La jeunesse, dis-tu, c'est la saison fleurie ;</l>
+                        <l n="56">C'est l'âge le plus beau des âges de la vie ;</l>
+                        <l n="57">Sans doute ; mais cet âge, aux dangers les plus grands.</l>
+                        <l n="58">Expose tous les jours mille coeurs imprudents.</l>
+                        <l n="59">Il me semble te voir au bord d'un précipice :</l>
+                        <l n="60">Je crains à chaque instant, que le pied ne te glisse.</l>
+                        <l n="61">Dans l'abîme, où je n'ose abaisser mes regards,</l>
+                        <l n="62">J'entends rugir des ours avec des léopards.</l>
+                        <l n="63">Un faux pas, c'est assez, et tu deviens leur proie.</l>
+                        <l n="64">Tout-à-coup, ô bonheur ! Une main se déploie.</l>
+                        <l n="65">C'est un ange du ciel qui vient à ton secours :</l>
+                        <l n="66">Sous son aile bénie il gardera tes jours.</l>
+                        <l n="67">Oh ! Comme tu saisis, dans ta marche tremblante,</l>
+                        <l n="68">Cet appui fortuné que sa main te présente !</l>
+                        <l n="69">Fallût-il t'enchaîner, (je ne me trompe pas,)</l>
+                        <l n="70">Tu baiserais les fers qui chargeraient tes bras.</l>
+                        <l n="71">Eh ! Bien, chère Émilie, eh ! Bien, voilà la chaîne</l>
+                        <l n="72" part="F">Qu'on nous offre en ce jour.</l><!--@syll="6"-->
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="72" part="F">Oh ! Je la prends sans peine,</l><!--@syll="6"-->
+                        <l n="73">Trop heureuse. à ce prix, d'échapper au danger !</l>
+                        <l n="74">Mondains, à vos plaisirs je ne veux plus songer.</l>
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="75">D'ailleurs,pour ces plaisirs dangereux ou coupables,</l>
+                        <l n="76">Tu vas en retrouver d'autres bien préférables.</l>
+                        <l n="77">Quand tu connaîtras mieux la Congrégation,</l>
+                        <l n="78" part="I">Tu le verras, ma chère.....</l><!--@syll="6"-->
+                    </sp><!--@who="ANGÉLIQUE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Les mêmes, Célina.</head>
+<sp who="#celina">
+                        <speaker>CÉLINA.</speaker>
+                        <l n="78" part="F">Ô douce émotion !</l><!--@syll="6"-->
+                    </sp><!--@who="CÉLINA"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="79" part="I">Qu'entends-je ?</l><!--@syll="3"-->
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="79" part="F">Célina ! Ciel ! Je suis confondue.</l><!--@syll="9"-->
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="80" part="I">Tu viens bien à propos.</l><!--@syll="6"-->
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#celina">
+                        <speaker>CÉLINA, à Émilie.</speaker>
+                        <l n="80" part="F">Enfin tu t'es rendue.</l><!--@syll="6"-->
+                    </sp><!--@who="CÉLINA"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="81" part="I">Excuse-moi, pardon.</l><!--@syll="6"-->
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#celina">
+                        <speaker>CÉLINA.</speaker>
+                        <l n="81" part="F">Va, ne te trouble pas.</l><!--@syll="6"-->
+                        <l n="82">Vous commenciez tantôt vos innocents débats,</l>
+                        <l n="83">Quand je suis arrivée. « Attendons à la porte,</l>
+                        <l n="84">Ai-je dit ; et voyons s'il faut prêter main-forte. »</l>
+                        <l n="85">Il s'agissait, je crois, d'une comparaison.</l>
+                    </sp><!--@who="CÉLINA"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="86">Émilie alléguait une vaine raison,</l>
+                        <l n="87">Pour ne pas accepter l'honneur qu'on lui défère.</l>
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="88">C'est que je n'y voyais qu'un sacrifice à faire.</l>
+                        <l n="89" part="I">Mais je suis convaincue.</l><!--@syll="6"-->
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#celina">
+                        <speaker>CÉLINA.</speaker>
+                        <l n="89" part="F">Angélique, c'est bien :</l><!--@syll="6"-->
+                        <l n="90">Oui, ton amie, en toi, trouve un ange_gardien.</l>
+                    </sp><!--@who="CÉLINA"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="91">J'allais lui dire aussi les plaisirs qu'en revanche</l>
+                        <l n="92">Elle pourra goûter ici chaque dimanche.</l>
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#celina">
+                        <speaker>CÉLINA.</speaker>
+                        <l n="93">C'est vrai : dans ce séjour où tout sait nous charmer,</l>
+                        <l n="94">On bénit le Seigneur, on apprend à l'aimer ;</l>
+                        <l n="95">On chante les bienfaits de la Vierge_Marie</l>
+                        <l n="96">Que la sainte parole à nos âmes confie ;</l>
+                        <l n="97">Parfois, des jours passés l'on ravive les jeux,</l>
+                        <l n="98">Quand on veut nous offrir un passe-temps heureux.</l>
+                        <l n="99">Ce n'est pas tout encor : on célèbre des fêtes</l>
+                        <l n="100">Qui certes ne font pas tourner les jeunes têtes :</l>
+                        <l n="101">Elles tournent les coeurs vers le souverain bien.</l>
+                    </sp><!--@who="CÉLINA"-->
+<sp who="#emilie">
+                        <speaker>ÉMILIE.</speaker>
+                        <l n="102">Que c'est beau Célina ! Puis, tu le dis si bien</l>
+                        <l n="103">Qu'il me semble déjà que ce bonheur m'enivre.</l>
+                    </sp><!--@who="ÉMILIE"-->
+<sp who="#angelique">
+                        <speaker>ANGÉLIQUE.</speaker>
+                        <l n="104">Ah ! C'est mon Émilie ! Elle me fait revivre.</l>
+                        <l n="105">Aussi, je ne puis plus contenir mon ardeur.</l>
+                        <stage type="kiss">Elle embrasse Émilie.</stage>
+                    </sp><!--@who="ANGÉLIQUE"-->
+<sp who="#celina">
+                        <speaker>CÉLINA.</speaker>
+                        <l n="106">Qu'il est doux de s'aimer dans l'amour du Seigneur !</l>
+                        <stage type="pull">Elle sépare les deux amies.</stage>
+                        <l n="107">Cependant, c'est assez : car j'entends vos amies</l>
+                        <l n="108">Qui brûlent de se voir à l'autel réunies.</l>
+                        <l n="109">Mais le chant se rapproche.... écoutez ces accords....</l>
+                        <l n="110">À leur douce harmonie unissons nos transports.</l>
+                        <stage type="entrance/sing">Le choeur arrive sur la scène en chantant un morceau de CONSÉCRATION.</stage>
+                    </sp><!--@who="CÉLINA"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,671 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">A l'Atelier</title>
+                <author>
+      <idno type="isni">0000000121452784</idno>
+      <persName>
+        <forename>Georges</forename>
+        <surname>Courteline</surname>
+      </persName>
+    </author><!--Georges COURTELINE (1858-1929)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001480</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/COURTELINE_ATELIER.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/COURTELINE_ATELIER.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1890"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k69179x</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="maudruc" sex="MALE">
+                        <persName>Maudruc</persName>
+                    </person>
+                    <person xml:id="lamerlette" sex="MALE">
+                        <persName>Lamerlette</persName>
+                    </person>
+                    <person xml:id="le-choeur" sex="MALE">
+                        <persName>Le choeur</persName>
+                    </person>
+                    <person xml:id="piegele" sex="MALE">
+                        <persName>Piégélé</persName>
+                    </person>
+                    <person xml:id="hannibal" sex="MALE">
+                        <persName>Hannibal</persName>
+                    </person>
+                    <person xml:id="des-voix" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Des-voix</persName>
+                    </person>
+                    <person xml:id="tous" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Tous</persName>
+                    </person>
+                    <person xml:id="antoinette" sex="FEMALE">
+                        <persName>Antoinette</persName>
+                    </person>
+                    <person xml:id="les-petardiers" sex="MALE">
+                        <persName>Les pétardiers</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynette</term>
+                    <term>prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">À L'ATELIER</titlePart>
+		</docTitle> 
+		<docDate when="1890">Tous droits réservés</docDate>
+		<docAuthor>de GEORGES COURTELINE.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, LIBRAIRIE MARPON et FLAMMARION, E. FLAMARRION, 26 rue Racine, près l'Odéon.</editor>-->
+			<div type="printer">
+                    <p>Fontenay-aux-Roses - Imprimerie Louis Bellemand.</p>
+                </div><!--@id="GRÉTÉ"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#maudruc">MAUDRUC</role><!--@sex="1"--><!--@type="H"--><!--@statut="peintre"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#lamerlette">LAMERLETTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="peintre"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-choeur">LE CHOEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#piegele">PIÉGÉLÉ</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#hannibal">HANNIBAL</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#antoinette">ANTOINETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="modèle"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#les-petardiers">LES PÉTARDIERS</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de "Potiron", coll. les auteurs gais, Paris, Flammarion, 1889. pp 38-59</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>À L'ATELIER</head>
+<div type="scene" n="1">
+                    <head/>
+<stage type="decor">La célèbre académie X... Grand hall vitré. Au mur, des fleurets ; par terre, des haltères ; dans un coin, un piano ouvert. Il est onze heures du matin. Les élèves sont à leurs chevalets. Antoinette occupe la table à modèle.</stage>
+<sp who="#maudruc">
+                        <speaker>MAUDRUC, le fil à plomb tenu au bout du bras.</speaker>
+                        <p n="1">
+	<s n="1">Tu disais donc, Lamerlette, qu'à l'Exposition du Champ-de-Mars le 1806 de Meissonier ne fut flanqué que de deux gardiens. </s>
+	<s n="2">Mais pour garder ces deux gardiens, n'était-il point, ô Lamerlette, de municipaux à cheval, et n'était-il point de canons qui gardassent les municipaux ?</s>
+</p>
+                    </sp><!--@stage="carry"--><!--@who="MAUDRUC"-->
+<sp who="#lamerlette">
+                        <speaker>LAMERLETTE.</speaker>
+                        <p n="2">
+	<s n="1">Non.</s>
+</p>
+                    </sp><!--@who="LAMERLETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="3">
+	<s n="1">Lamerlette, que tu m'affliges ! </s>
+	<s n="2">Que tu m'affliges donc, Lamerlette ! </s>
+	<s n="3">- Tiens, passe-moi un peu de cobalt ; cette Antoinette a les jambes d'un bleu ! </s>
+	<s n="4">Avec tout ça, où est donc Simonnet ?</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#le-choeur">
+                        <speaker>LE CHOEUR.</speaker>
+                        <p n="4">
+	<s n="1">Il est au bain de vapeur.</s>
+</p>
+                    </sp><!--@who="LE CHOEUR"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC, haussant les épaules.</speaker>
+                        <p n="5">
+	<s n="1">En voilà une scie idiote !</s>
+</p>
+                    </sp><!--@stage="wave"--><!--@who="MAUDRUC"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="6">
+	<s n="1">Maudruc, ne blague pas le père Meissonier ; tu ne sais pas ce que tu deviendras.</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <note type="L">Ernest Meissonnier (1815-1891), célèbre peintre, spécialiste de la peinture historique militaire.  </note>
+                        <note type="L">Caran d'Ache (1858-1909), dessinateur et caricaturiste.</note>
+                        <p n="7">
+	<s n="1">Blague le père Meissonier, au contraire, Maudruc. </s>
+	<s n="2">On nous embête avec le père Meissonier. </s>
+	<s n="3">Quoi, Meissonier ? </s>
+	<s n="4">Quoi, Meissonier ? </s>
+	<s n="5">Après tout, ce n'était pas plus fort que Caran d'Ache.</s>
+</p>
+                        <stage>Protestations et rires.</stage>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#lamerlette">
+                        <speaker>LAMERLETTE.</speaker>
+                        <p n="8">
+	<s n="1">Hannibal, tais-toi, tu es ivre.</s>
+</p>
+                    </sp><!--@who="LAMERLETTE"-->
+<sp who="#des-voix">
+                        <speaker>DES VOIX.</speaker>
+                        <p n="9">
+	<s n="1">Il est ivre ! </s>
+	<s n="2">Il est ivre ! </s>
+	<s n="3">Il a blasphémé ; il a mérité la mort !</s>
+</p>
+                    </sp><!--@who="DES VOIX"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="10">
+	<s n="1">Salut à la libératrice. </s>
+	<s n="2">- Où diable est mon tabac ?</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#le-choeur">
+                        <speaker>LE CHOEUR.</speaker>
+                        <p n="11">
+	<s n="1">Il est au bain de vapeur.</s>
+</p>
+                    </sp><!--@who="LE CHOEUR"-->
+<sp who="#lamerlette">
+                        <speaker>LAMERLETTE.</speaker>
+                        <p n="12">
+	<s n="1">Hannibal, conviens que tu es ivre, ou on va te mettre en broche-en-cul.</s>
+</p>
+                    </sp><!--@who="LAMERLETTE"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="13">
+	<s n="1">J'en conviens, Messieurs, je suis gris.</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#tous">
+                        <speaker>TOUS.</speaker>
+                        <p n="14">
+	<s n="1">Ah !</s>
+</p>
+                    </sp><!--@who="TOUS"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="15">
+	<s n="1">Mais ce n'est pas la boisson, au moins.</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#lamerlette">
+                        <speaker>LAMERLETTE.</speaker>
+                        <p n="16">
+	<s n="1">Qu'est-ce que c'est alors ?</s>
+</p>
+                    </sp><!--@who="LAMERLETTE"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="17">
+	<s n="1">La salade. </s>
+	<s n="2">J'ai un drôle de tempérament, je vous dirai. </s>
+	<s n="3">Je bois sec et abondamment, je supporte mieux que personne... </s>
+	<s n="4">- La jambe droite plus ferme, Antoinette –... le vin de champagne, les alcools ; mais la salade me fiche dedans.</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE, suffoquée.</speaker>
+                        <p n="18">
+	<s n="1">Ça, par exemple, c'est épatant.</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="ANTOINETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="19">
+	<s n="1">Dis que c'est triste.</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="20">
+	<s n="1">À quoi ça tient, dis, Hannibal, que tu sois saoul avec de la salade ?</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="21">
+	<s n="1">C'est le vinaigre qui me monte à la tête, parbleu !</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="22">
+	<s n="1">Tu ne devrais pas te laisser aller, puisque tu sais que ça te fait mal.</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="23">
+	<s n="1">Ah ! </s>
+	<s n="2">Va donc raisonner les passions ! </s>
+	<s n="3">Tonnerre de Dieu ! </s>
+	<s n="4">Si le bélître qui m'a dérobé mon tabac ne se déclare pas à l'instant même, je lui fends la figure avec une hache.</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#des-voix">
+                        <speaker>DES VOIX.</speaker>
+                        <p n="24">
+	<s n="1">Horreur ! </s>
+	<s n="2">C'est atroce ! </s>
+	<s n="3">Pas de sang ici !</s>
+</p>
+                    </sp><!--@who="DES VOIX"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="25">
+	<s n="1">Cet Hannibal est fort méchant.</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="26">
+	<s n="1">Je veux mon tabac ! </s>
+	<s n="2">Je le veux parce qu'il m'appartient et que je l'ai gagné avec mon travail.</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="27">
+	<s n="1">D'abord il ne t'appartient pas, par cette excellente raison qu'il a cessé de t'appartenir.</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="28">
+	<s n="1">C'est toi qui me l'as pris.</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="29">
+	<s n="1">Pardon ! </s>
+	<s n="2">Je ne l'ai pas pris ; je l'ai trouvé.</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="30">
+	<s n="1">Tu l'as trouvé... </s>
+	<s n="2">Où ça, donc ?</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="31">
+	<s n="1">Dans ta poche, Petitet est là qui peut le dire. </s>
+	<s n="2">N'est-ce pas, Petitet ? </s>
+	<s n="3">– Tiens, qu'est-ce qu'il est devenu ?</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#le-choeur">
+                        <speaker>LE CHOEUR.</speaker>
+                        <p n="32">
+	<s n="1">Il est au bain de vapeur.</s>
+</p>
+                    </sp><!--@who="LE CHOEUR"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="33">
+	<s n="1">Ah ! </s>
+	<s n="2">La barbe !</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="34">
+	<s n="1">Rends-le-moi, mon tabac, hein, dis ?</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="35">
+	<s n="1">Impossible.</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="36">
+	<s n="1">Voyons, rends-le-moi, Piégelé. </s>
+	<s n="2">Rends-moi mon tabac, s'il te plaît. </s>
+	<s n="3">Je me traîne à tes genoux moralement.</s>
+</p>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="37">
+	<s n="1">Tant de platitude me dégoûte, tu n'auras rien.</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL.</speaker>
+                        <p n="38">
+	<s n="1">Coeuur de roche ! </s>
+	<s n="2">C'est trop cochon !</s>
+</p>
+                        <stage type="ring/time">Onze heures sonnent.</stage>
+                    </sp><!--@who="HANNIBAL"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE, sautant à bas de la table.</speaker>
+                        <p n="39">
+	<s n="1">Onze heures ! </s>
+	<s n="2">Dix minutes d'arrêt.</s>
+</p>
+                        <stage type="shout">Protestations de quelques laborieux.</stage>
+                    </sp><!--@stage="jump/location"--><!--@who="ANTOINETTE"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="40">
+	<s n="1">Silence aux pétardiers ! </s>
+	<s n="2">J'ai mes trois quarts d'heure de pose, moi. </s>
+	<s n="3">J'en ai ma claque, à la fin.</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#les-petardiers">
+                        <speaker>LES PÉTARDIERS, désarmés.</speaker>
+                        <p n="41">
+	<s n="1">Devant ce torrent d'éloquence...</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="LES PÉTARDIERS"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="42">
+	<s n="1">C'est un fait que, pour moucher le monde, Antoinette n'a pas sa pareille.</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="43">
+	<s n="1">Tu parles ! </s>
+	<s n="2">– Et à propos, que je vous dise donc ! </s>
+	<s n="3">Je me suis disputée avec le chemin de fer.</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="44">
+	<s n="1">Bah !</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="45">
+	<s n="1">Et salement encore !</s>
+</p>
+                        <stage type="dress">Elle enfile sa chemise.</stage>
+                        <p n="46">
+	<s n="1">Je voulais aller à Royat, figurez-vous, retrouver quelqu'un que je connais... un... monsieur..., enfin..., un ami.</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#lamerlette">
+                        <speaker>LAMERLETTE, sèchement.</speaker>
+                        <p n="47">
+	<s n="1">Ah ! </s>
+	<s n="2">Pardon ; je suis là ! </s>
+	<s n="3">Je te prie de ne pas dire de saletés, Antoinette.</s>
+</p>
+                    </sp><!--@stage="strong"--><!--@who="LAMERLETTE"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE, ahurie.</speaker>
+                        <p n="48">
+	<s n="1">Je ne dis pas de saletés.</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="ANTOINETTE"-->
+<sp who="#lamerlette">
+                        <speaker>LAMERLETTE, s'emballant.</speaker>
+                        <p n="49">
+	<s n="1">Si, tu en dis ! </s>
+	<s n="2">Si, tu en dis ! </s>
+	<s n="3">Et je ne viens pas ici pour être insulté ! </s>
+	<s n="4">Je le savais bien qu'on me méprisait ! </s>
+	<s n="5">Oh ! </s>
+	<s n="6">Mon Dieu ! </s>
+	<s n="7">Oh ! </s>
+	<s n="8">Mon Dieu !...</s>
+</p>
+                        <stage type="cry/noise/confuse">Il éclate en sanglots grotesques. On le calme. Nouveau tumulte. Potin assourdissant. On entend : « Laissez-moi partir ! On m'a manqué de respect ! Je veux retourner chez mes bons parents qui sont des personnes honorables. » Des voix protestent : « Lamerlette ! Lamerlette ! Si on t'a insulté, c'est sans le faire exprès ! »</stage>
+                    </sp><!--@stage="hurry"--><!--@who="LAMERLETTE"-->
+<sp who="#hannibal">
+                        <speaker>HANNIBAL, dont l'organe aigu domine le charivari.</speaker>
+                        <p n="50">
+	<s n="1">Est-ce qu'on va me foutre à fumer, nom de D... !</s>
+</p>
+                        <stage type="quiet/sit">Lent apaisement. Ces messieurs regagnent leurs places.</stage>
+                        <stage type="wipe">Lamerlette essuie ses yeux.</stage>
+                    </sp><!--@stage="shout"--><!--@who="HANNIBAL"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="51">
+	<s n="1">Achève ton histoire, Antoinette, c'était d'un puissant intérêt.</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="52">
+	<s n="1">Je ne sais plus où j'en étais. </s>
+	<s n="2">Il me bouleverse, cet idiot-là, avec ses susceptibilités !</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <note type="C">Royat : Ville du Puy-de-Dome.</note>
+                        <p n="53">
+	<s n="1">Tu voulais aller à Royat.</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="54">
+	<s n="1">Ah ! </s>
+	<s n="2">Oui ! </s>
+	<s n="3">– Donc je voulais aller à Royat. </s>
+	<s n="4">Je regarde le prix : vingt balles ! </s>
+	<s n="5">Je trouve ça chaud, comme de juste, et j'en cause à Beaudunois, le paysagiste, qui me dit : « Écoute, Antoinette, si tu veux être bonne fille avec moi, je te donnerai le moyen de voyager à bon marché. »</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="55">
+	<s n="1">Tu acceptas ?</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="56">
+	<s n="1">Ma foi, oui. </s>
+	<s n="2">Tiens ! </s>
+	<s n="3">Je n'ai pas le moyen de perdre vingt francs, moi !</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="57">
+	<s n="1">C'est évident. </s>
+	<s n="2">- Quand ce fut fait ?...</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="58">
+	<s n="1">Quand ce fut fait, Beaudunois m'expliqua : « C'est bien simple, ma chère enfant, tu n'auras qu'à donner cent sous et à dire que tu es enceinte, vu que, sur les lignes de chemin de fer, les femmes enceintes voyagent à quart de place. »</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#tous">
+                        <speaker>L'ATELIER, d'une seule voix.</speaker>
+                        <p n="59">
+	<s n="1">Tu ne le savais pas ?</s>
+</p>
+                    </sp><!--@stage="together"--><!--@who="TOUS"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="60">
+	<s n="1">Mon Dieu non, et je l'appris avec plaisir. </s>
+	<s n="2">Il ajouta : « Tu vas aller voir de ma part le docteur Gustave, mon ami. C'est un garçon très complaisant ; il te donnera une attestation. » </s>
+	<s n="3">J'allai voir le docteur Gustave qui me dit...</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="61">
+	<s n="1">... « Soyez bonne fille, Antoinette, et je vous donnerai un certificat. »</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="62">
+	<s n="1">Qui est-ce qui te l'a dit ?</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="63">
+	<s n="1">Je l'ai deviné ; le docteur est si complaisant !</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="64">
+	<s n="1">C'est une justice à lui rendre. </s>
+	<s n="2">Cela n'empêche pas qu'au chemin de fer on n'a rien voulu savoir !</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#le-choeur">
+                        <speaker>LE CHOEUR, incrédule.</speaker>
+                        <p n="65">
+	<s n="1">Allons donc !</s>
+</p>
+                    </sp><!--@stage="surpise"--><!--@who="LE CHOEUR"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="66">
+	<s n="1">C'est comme je vous le dis.</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="67">
+	<s n="1">Tu ne me feras pas croire cela !</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="68">
+	<s n="1">C'est pourtant la vérité. </s>
+	<s n="2">Bien mieux ! </s>
+	<s n="3">On m'a traitée de femme soûle !</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="69">
+	<s n="1">Tas de crapules ! </s>
+	<s n="2">Tu devrais te plaindre dans les journaux, Antoinette.</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="70">
+	<s n="1">Tu crois ?</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="71">
+	<s n="1">Oui, et gueuler contre le monopole.</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="73">
+	<s n="1">Qu'est-ce que c'est que ça, le monopole ?</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#lamerlette">
+                        <speaker>LAMERLETTE.</speaker>
+                        <p n="74">
+	<s n="1">Je vais te l'expliquer en deux mots. </s>
+	<s n="é">C'est une espèce de télescope ; ça sert à mettre les parapluies et ça donne bon goût au boudin.</s>
+</p>
+                    </sp><!--@who="LAMERLETTE"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="75">
+	<s n="1">Messieurs, n'exagérons rien. </s>
+	<s n="2">Rien ne prouve que notre amie ait su se faire clairement comprendre de ces intelligences bouchées.</s>
+</p>
+                        <stage type="toward">À Antoinette.</stage>
+                        <p n="76">
+	<s n="1">Ne nous cache rien, Antoinette ; tu t'es bornée à dire que tu étais enceinte et à montrer le certificat ?</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="77">
+	<s n="1">Évidemment.</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#piegele">
+                        <speaker>PIÉGELÉ.</speaker>
+                        <p n="78">
+	<s n="1">Tout s'explique ! </s>
+	<s n="2">Il fallait demander une première militaire.</s>
+</p>
+                    </sp><!--@who="PIÉGELÉ"-->
+<sp who="#maudruc">
+                        <speaker>MAUDRUC.</speaker>
+                        <p n="79">
+	<s n="1">Parbleu ! </s>
+	<s n="2">- Retournes-y demain, Antoinette, et si tu n'as pas ce que tu veux...</s>
+</p>
+                    </sp><!--@who="MAUDRUC"-->
+<sp who="#le-choeur">
+                        <speaker>LE CHOEUR, avec un ensemble touchant.</speaker>
+                        <p n="80">
+	<s n="1">... Va chez le commissaire de police ! </s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="LE CHOEUR"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>
