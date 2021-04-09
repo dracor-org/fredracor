@@ -73,8 +73,8 @@
                     <person xml:id="levi" sex="MALE">
                         <persName>Lévi</persName>
                     </person>
-                    <person xml:id="passant" sex="MALE">
-                        <persName>Quelqu'un regardant sur le chemin</persName>
+                    <person xml:id="passant" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Passant</persName>
                     </person>
                 </listPerson>
             </particDesc>
@@ -132,11 +132,11 @@
 		<castItem>
                     <role corresp="#levi">LÉVI</role><!--@sex="1"--><!--@type="H"--><!--@statut="religieux"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#passant">QUELQU'UN REGARDANT SUR LE CHEMIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#un-passant">QUELQU'UN REGARDANT SUR LE CHEMIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
                     <role corresp="#soldats">SOLDATS</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 	</castList>
-	<!--TODO: usage of set in correct place but with unknown attributes <set location="Jérusalem" country="Israël" periode="Ier avant JC" link=""/>-->
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Jérusalem" country="Israël" periode="Avant JC Ier" gps="31.778019, 35.235408"/>-->
 	<note>D'après la traduction d'Achille Jubinal (1834). Le découpage en acte et scène est de Paul Fièvre pour Théâtre Classique. Le texte en ancien français n'est pas reproduit.</note>
 	</front>
 <body>

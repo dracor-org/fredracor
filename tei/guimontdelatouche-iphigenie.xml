@@ -135,7 +135,7 @@
 		<castItem>
                     <role corresp="#gardes">GARDES de Thoas</role><!--@sex="9"--><!--@type="H"--><!--@statut="garde"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 	</castList>
-	<!--TODO: usage of set in correct place but with unknown attributes <set location="Tauride" country="Grèce" periode="Temps mythologiques" link="">La scène est en Tauride, dans le temple de Diane.</set>--> 
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Tauride" country="Grèce" periode="Temps mythologiques" gps="(N/A)">La scène est en Tauride, dans le temple de Diane.</set>--> 
 </front>
 <body>
 <div type="acte" n="1">
@@ -564,7 +564,7 @@
                         <speaker>ORESTE dans le fond du théâtre.</speaker>
                         <l n="297">Ah ! Laissez-moi jouir du moment qui me reste,</l>
                         <l n="298" part="I">Et respectez mon sort.</l>
-                        <stage>Les gardes s'éloignent.</stage>
+                        <stage>Les gardes s'éloignent.</stage><!--@stage="exit"-->
                     </sp><!--@who="ORESTE"-->
 </div><!--@stage="chained"-->
 <div type="scene" n="2">
@@ -1213,7 +1213,7 @@
 <sp who="#iphigenie">
                         <speaker>IPHIGÉNIE.</speaker>
                         <l n="625" part="M">Éloignez-vous !</l><!--@syll="4"-->
-                        <stage>Oreste et Pylade se retirent au fond du théâtre.</stage>
+                        <stage type="away/location">Oreste et Pylade se retirent au fond du théâtre.</stage>
                         <l n="625" part="F">Ciel ! Que viens-tu m'apprendre ?</l><!--@syll="6"-->
                     </sp><!--@who="IPHIGÉNIE"-->
 <sp who="#ismenie">
@@ -2490,7 +2490,7 @@
 <sp who="#thoas">
                         <speaker>THOAS.</speaker>
                         <l n="1241">Qu'entends-je ? Oses-tu bien, insensé, téméraire....</l>
-                        <stage>À Iphigénie.</stage>
+                        <stage>À Iphigénie.</stage><!--@stage="toward"-->
                         <l n="1242" part="I">Obéissez, frappez.</l>
                     </sp><!--@who="THOAS"-->
 <sp who="#iphigenie">
