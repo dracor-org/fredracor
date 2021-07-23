@@ -1,0 +1,3410 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">C'est une Femme du Monde</title>
+                <title type="sub">écrite en collaboration avec Maurice Desvallières</title>
+                <title type="sub">Comédie en un acte représentée pour la première fois, sur la scène de la Renaissance, le 10 mars 1890</title>
+                <author>
+      <idno type="isni">0000000121184695</idno>
+      <idno type="wikidata">Q49465</idno>
+      <persName>
+        <forename>Georges</forename>
+        <surname>Feydeau</surname>
+      </persName>
+    </author><!--Georges FEYDEAU (1862-1921)-->
+                <author>
+      <idno type="isni">0000000066412703</idno>
+      <idno type="wikidata">Q17350101</idno>
+      <persName>
+        <forename>Maurice</forename>
+        <surname>Desvallières</surname>
+      </persName>
+    </author><!--Maurice DESVALLIÈRES (1857-1926)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000626</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/FEYDEAU_CESTUNEFEMMEDUMONDE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/FEYDEAU_CESTUNEFEMMEDUMONDE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1890"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="alfred" sex="MALE">
+                        <persName>Alfred</persName>
+                    </person>
+                    <person xml:id="philomele" sex="FEMALE">
+                        <persName>Philomèle</persName>
+                    </person>
+                    <person xml:id="paturon" sex="MALE">
+                        <persName>Paturon</persName>
+                    </person>
+                    <person xml:id="gigolet" sex="MALE">
+                        <persName>Gigolet</persName>
+                    </person>
+                    <person xml:id="pervenche" sex="FEMALE">
+                        <persName>Pervenche</persName>
+                    </person>
+                    <person xml:id="giboulette" sex="FEMALE">
+                        <persName>Giboulette</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">C'EST UNE FEMME DU MONDE</titlePart>
+			<titlePart type="sub">écrite en collaboration avec Maurice Desvallières</titlePart>
+			<titlePart type="sub">Comédie en un acte représentée pour la première fois, sur la scène de la Renaissance, le 10 mars 1890</titlePart>
+		</docTitle> 
+		<docDate when="1890">1890. Tous droits réservés.</docDate>
+		<docAuthor>de GEORGES FEYDEAU</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORF ÉDITEUR, 28 bis, rue de Richelieu, 28 bis.</editor>-->
+			<div type="printer">
+                    <p/>
+                </div>
+			
+		</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#paturon">PATURON</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#gigolet">GIGOLET</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#alfred">ALFRED</role><!--@sex="1"--><!--@type="H"--><!--@statut="maître d'hôtel"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#pervenche">Pervenche</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#giboulette">GIBOULETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#philomele">PHILOMÈLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="caissière"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>C'EST UNE FEMME DU MONDE</head>
+<stage type="decor/furniture">Un cabinet particulier dans un restaurant. Au fond, porte d'entrée donnant sur la salle où est la caisse. Portes à droite et à gauche, premier plan. Porte à gauche, deuxième plan. Une table servie à droite, au milieu de la scène. À gauche, un canapé. Au fond, à gauche, une desserte. Chaises, etc.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Alfred, puis Philomele.</head>
+<stage type="work/location">Au lever du rideau, Alfred est en train de mettre le couvert sur la table placée au milieu du théâtre.</stage>
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="1">
+	<s n="1">Voyons !... </s>
+	<s n="2">Combien mettrai-je de couverts à cette table ? </s>
+	<s n="3">Deux, trois ou quatre ?... </s>
+	<s n="4">Çà, c'est un jeu auquel je m'amuse souvent... </s>
+	<s n="5">Je me fais, des paris à moi-même, des sommes énormes !... </s>
+	<s n="6">Qu'est-ce que ça me coûte ?... </s>
+	<s n="7">Puisque ça me rentre... et c'est très amusant... </s>
+	<s n="8">Voyons !... deux... c'est pour les rendez-vous d'amour... trois pour les ménages à trois... et quatre pour les parties carrées... </s>
+	<s n="9">Allons, ce soir nous mettrons la partie carrée... </s>
+	<s n="10">D'abord, ça rapporte plus à la maison. Les tête-à-tête, ça n'est que la moitié et puis ça ne consomme pas !... </s>
+	<s n="11">Ils sont toujours pressés d'arriver au café... </s>
+	<s n="12">On pourrait même dire au pousse-café... </s>
+	<s n="13">Mettons quatre ! </s>
+	<s n="14">Dix mille francs que ce sera quatre !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, entrant du fond avec un plateau chargé de hors-d'oeuvre.</speaker>
+                        <p n="2">
+	<s n="1">Voilà les hors-d'oeuvre.</s>
+</p>
+                    </sp><!--@stage="entrance/carry"--><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, n° 1.</speaker>
+                        <p n="3">
+	<s n="1">Philomèle !... </s>
+	<s n="2">Arrive ici !...</s>
+</p>
+                        <stage type="kiss">Il l'embrasse.</stage>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, n° 2.</speaker>
+                        <p n="4">
+	<s n="1">Veux-tu bien te taire !... </s>
+	<s n="2">C'est lâche ! </s>
+	<s n="3">Tu vois que j'ai les mains prises !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, lui pinçant la taille.</speaker>
+                        <p n="5">
+	<s n="1">J'ai les miennes libres et j'en profite !...</s>
+</p>
+                        <stage type="kiss">Il l'embrasse.</stage>
+                    </sp><!--@stage="touch"--><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, donnant son plateau à Alfred qui va le déposer sur la desserte de gauche au fond.</speaker>
+                        <p n="6">
+	<s n="1">Assez, voyons !... </s>
+	<s n="2">Si le patron nous voyait ! </s>
+	<s n="3">Tu sais qu'il ne badine pas sur le... badinage !</s>
+</p>
+                    </sp><!--@stage="give"--><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, redescendant.</speaker>
+                        <p n="7">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Quoi, badinage ! </s>
+	<s n="3">Qu'est-ce qu'il a à dire ? </s>
+	<s n="4">Est-ce que le nôtre n'est pas légitime ? </s>
+	<s n="5">Est-ce que tu n'es pas ma femme ?</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="8">
+	<s n="1">C'est possible !... </s>
+	<s n="2">Mais ici je suis caissière et il dit qu'une caissière, ça n'est pas fait pour son mari, mais pour les clients !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="9">
+	<s n="1">Ouais !... </s>
+	<s n="2">Eh bien, qu'il fourre donc sa femme à la caisse, il verra si c'est fait pour les clients !...</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="10">
+	<s n="1">Oh ! </s>
+	<s n="2">Sa femme !... </s>
+	<s n="3">Tout le monde se sauverait !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="11">
+	<s n="1">Ça, c'est vrai ! </s>
+	<s n="2">C'est une basilique !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="12">
+	<s n="1">Et les basiliques, c'est si peu fréquenté !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="13">
+	<s n="1">En attendant, que je t'y prenne à badiner avec le client.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="14">
+	<s n="1">Oh ! </s>
+	<s n="2">Pas de danger ! </s>
+	<s n="3">Tu as vu l'autre jour le gommeux qui m'a fait des avances !... </s>
+	<s n="4">Je lui ai allongé une de ces gifles !...</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="15">
+	<s n="1">Tu as bien fait ! </s>
+	<s n="2">Seulement ce qui m'étonne, c'est que le patron ne t'ait rien dit !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="16">
+	<s n="1">Le patron ! </s>
+	<s n="2">Au contraire ! </s>
+	<s n="3">Il m'a augmentée !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="17">
+	<s n="1">Allons donc !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="18">
+	<s n="1">Parfaitement !... </s>
+	<s n="2">Il m'a dit : une gifle ! ça excite les hommes... </s>
+	<s n="3">Continuez !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="19">
+	<s n="1">Oui ?</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="20">
+	<s n="1">Tu vois donc que tu peux dormir sur les deux oreilles !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="21">
+	<s n="1">Sans transpercer mes oreillers !... </s>
+	<s n="2">C'est tout ce qu'il me faut.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="22">
+	<s n="1">Ah ! </s>
+	<s n="2">Alfred ! </s>
+	<s n="3">Tu sais bien que je n'aime que toi !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="23">
+	<s n="1">Oh ! </s>
+	<s n="2">Ma petite Philomèle !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="24">
+	<s n="1">Comme toi aussi, tu ne dois aimer que moi.</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, s'asseyant sur le canapé et la faisant asseoir sur ses genoux.</speaker>
+                        <p n="25">
+	<s n="1">Comment donc !</s>
+</p>
+                    </sp><!--@stage="sit/closer"--><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="26">
+	<s n="1">Tu les as bien aimées, dis, tes deux premières femmes !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="27">
+	<s n="1">Mais non ! </s>
+	<s n="2">Mais non !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="28">
+	<s n="1">C'est ça qui me fait enrager : quand je pense qu'une autre, que deux autres... sans compter le casuel...</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <note type="L">Casuel : Le gain, le revenu casuel, par opposition à gain, revenu fixe. [L]</note>
+                        <p n="29">
+	<s n="1">Oh ! </s>
+	<s n="2">Le casuel !...</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="30">
+	<s n="1">Ont été, comme ça, entre tes bras !... </s>
+	<s n="2">Non, ça me fait un effet !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="31">
+	<s n="1">Oh ! </s>
+	<s n="2">Voyons ! </s>
+	<s n="3">Tu es enfant !... </s>
+	<s n="4">D'abord, je ne les ai pas aimées tant, tant que ça !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="32">
+	<s n="1">Oh ! </s>
+	<s n="2">On dit cela !...</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="33">
+	<s n="1">Et puis enfin, puisque je suis veuf, doublement veuf !... </s>
+	<s n="2">Ce qui n'est plus n'est plus ! </s>
+	<s n="3">Eh bien ! </s>
+	<s n="4">N'en parlons plus !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="34">
+	<s n="1">Oh ! </s>
+	<s n="2">Bien, oui ! </s>
+	<s n="3">N'en parlons plus ! </s>
+	<s n="4">Seulement tu m'aimeras bien, dis, Alfred ?</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="35">
+	<s n="1">Mais oui ! </s>
+	<s n="2">Et encore davantage !</s>
+</p>
+                        <stage type="kiss">Philomèle l'embrasse.</stage>
+                    </sp><!--@who="ALFRED"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Les memes, Paturon.</head>
+<sp who="#paturon">
+                        <speaker>PATURON, entrant vivement du fond, il est en habit noir, avec un  pardessus clair.</speaker>
+                        <p n="1">
+	<s n="1">Oh ! </s>
+	<s n="2">Pardon !</s>
+</p>
+                    </sp><!--@stage="entrance/costume"--><!--@who="PATURON"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, se relevant vivement, passant devant Alfred et allant au</speaker>
+                        <p n="2">
+	<s n="1">Oh ! </s>
+	<s n="2">Un client !</s>
+</p>
+                    </sp><!--@stage="back"--><!--@who="PHILOMELE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="3">
+	<s n="1">Je m'en vais ! </s>
+	<s n="2">Je m'en vais !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="4">
+	<s n="1">Mais non ! </s>
+	<s n="2">Du tout !... </s>
+	<s n="3">Restez, monsieur, restez !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="5">
+	<s n="1">Le maître d'hôtel !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, à Philomèle.</speaker>
+                        <p n="6">
+	<s n="1">Toi, file !...</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, passant derrière le canapé par la gauche et en montant vers le fond.</speaker>
+                        <p n="7">
+	<s n="1">Oui... </s>
+</p>
+                        <stage type="wave">Saluant Paturon.</stage>
+                        <p n="8">
+	<s n="1">Monsieur !</s>
+</p>
+                        <stage type="exit">Elle sort par le fond.</stage>
+                    </sp><!--@stage="location"--><!--@who="PHILOMELE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, descendant en scène, n° 2.</speaker>
+                        <p n="9">
+	<s n="1">Eh bien, ne vous gênez pas, mon ami ! </s>
+	<s n="2">Qu'est-ce que vous faisiez là ?</s>
+</p>
+                    </sp><!--@stage="locatio,"--><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED (n° 1).</speaker>
+                        <p n="10">
+	<s n="1">Je vais vous dire, monsieur... </s>
+	<s n="2">C'était pour occuper mes loisirs...</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="11">
+	<s n="1">Je vois bien !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="12">
+	<s n="1">Et puis, comme c'était un cabinet neuf, le patron m'a dit : "Vois si tout est bien en état pour le confort du client".</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON, indiquant le canapé.</speaker>
+                        <p n="13">
+	<s n="1">Oui !... </s>
+	<s n="2">Vous fatiguiez les ressorts.</s>
+</p>
+                    </sp><!--@stage="show"--><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="14">
+	<s n="1">Monsieur exagère ! </s>
+	<s n="2">Et... qu'est-ce qui nous vaut la visite de monsieur Paturon ?</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="15">
+	<s n="1">Tiens ! </s>
+	<s n="2">Vous me connaissez donc !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="16">
+	<s n="1">Oh ! </s>
+	<s n="2">Moi, monsieur ! </s>
+	<s n="3">Je connais mon Paris ! </s>
+	<s n="4">C'est moi Alfred.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="17">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est vous Alfred ? </s>
+	<s n="3">Oui ! </s>
+	<s n="4">Oui !... </s>
+	<s n="5">Seulement je connais beaucoup d'Alfred !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="18">
+	<s n="1">Alfred ! </s>
+	<s n="2">L'ancien maître d'hôtel de la Maison d'Or !...</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <note type="L">Binette : Mot très familier. Tête ridicule. [L]</note>
+                        <p n="19">
+	<s n="1">Oh !... </s>
+	<s n="2">C'est juste !... </s>
+	<s n="3">Je me disais aussi : j'ai vu cette binette-là quelque part !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="20">
+	<s n="1">Monsieur me flatte !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="21">
+	<s n="1">Et alors, c'est comme ça que vous trompez votre femme avec la caissière !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="22">
+	<s n="1">Du tout, Monsieur !... </s>
+	<s n="2">La caissière, c'est ma femme !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="23">
+	<s n="1">Comment ! </s>
+	<s n="2">Je croyais qu'autrefois vous m'aviez dit qu'elle était dans les téléphones !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="24">
+	<s n="1">Oh ! </s>
+	<s n="2">Ce n'est pas la même, Monsieur ! </s>
+	<s n="3">Celle-ci, c'est ma troisième femme !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON, passant devant Alfred et allant au n° 1.</speaker>
+                        <p n="25">
+	<s n="1">Mâtin ! </s>
+	<s n="2">Quel gaillard !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="26">
+	<s n="1">Ah ! </s>
+	<s n="2">Monsieur !... </s>
+	<s n="3">Quand on ne les mène pas de front !... </s>
+	<s n="3">Ce n'est pas de la gaillardise !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="27">
+	<s n="1">Eh bien, qu'est-ce que vous avez fait de la seconde !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="28">
+	<s n="1">Ah ! </s>
+	<s n="2">Qu'est-ce que vous voulez, Monsieur !... </s>
+	<s n="3">Elle a succombé !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="29">
+	<s n="1">Oh ! </s>
+	<s n="2">La pauvre femme !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="30">
+	<s n="1">Elle a succombé à quelque enjôleur !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="31">
+	<s n="1">Aïe !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="32">
+	<s n="1">Elle a fait comme ma première !... </s>
+	<s n="2">Elle s'est fait enlever et depuis, je ne l'ai pas revue !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="33">
+	<s n="1">Eh bien, dites donc ! </s>
+	<s n="2">Vous n'avez pas de chance avec vos femmes !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="34">
+	<s n="1">Non, Monsieur ! </s>
+	<s n="2">J'ai toujours eu la bosse du mariage, elles n'ont jamais eu la bosse de la fidélité !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="35">
+	<s n="1">Ah ! </s>
+	<s n="2">Bien, qu'est-ce que vous voulez ? </s>
+	<s n="3">Ça aurait fait trop de bosses dans le ménage ! </s>
+</p>
+                        <stage type="sit">Il s'assoit sur le canapé.</stage>
+                        <p n="36">
+	<s n="1">Mais si je ne me trompe, vous étiez déjà divorcé d'avec votre première femme !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, s'asseyant sur le canapé à côté de Paturon toujours au n° 2.</speaker>
+                        <p n="37">
+	<s n="1">Parfaitement !... </s>
+	<s n="2">C'est même ce qui m'a permis d'épouser la seconde.</s>
+</p>
+                        <stage type="show/stand/continue">Paturon lui fait remarquer par un geste qu'il est assis à côté de lui. Alfred se lève et continue.</stage>
+                        <p n="38">
+	<s n="1">Et j'ai également divorcé d'avec la seconde, ce qui m'a permis d'épouser la troisième.</s>
+</p>
+                    </sp><!--@stage="sit/closer"--><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="39">
+	<s n="1">D'où il résulte que vous avez trois femmes sur le pavé de Paris !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="40">
+	<s n="1">C'est-à-dire qu'à vraiment parler... </s>
+	<s n="2">Je n'en ai qu'une, mais il y en a trois qui se croient chacune ma femme ! </s>
+	<s n="3">Parce que les deux premières, elles, ne savent rien du divorce !... </s>
+	<s n="4">Quand elles ont filé, j'ai fait constater la disparition et le divorce a été prononcé en leur absence.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON, se levant.</speaker>
+                        <p n="41">
+	<s n="1">Vraiment ? </s>
+	<s n="2">Les deux premières ignorent...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="42">
+	<s n="1">Les trois, même ! </s>
+	<s n="2">Parce que j'ai trouvé inutile de dire à ma dernière femme que j'étais divorcé : ça embête toujours les femmes, ces choses-là ! </s>
+	<s n="3">Je lui ai dit que j'étais veuf, c'était bien plus simple ! </s>
+	<s n="4">Et même, si vous la voyez, je vous prierai de ne pas faire d'allusion !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON, passant devant Alfred et allant au n° 2.</speaker>
+                        <p n="43">
+	<s n="1">Soyez tranquille !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="44">
+	<s n="1">Je vous dis ça à vous, parce que vous êtes un ami, mais motus !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="45">
+	<s n="1">Entendu ! </s>
+	<s n="2">Mais sans vouloir vous êtes désagréable, je vous avouerai que je ne suis pas venu exprès pour entendre vos histoires conjugales !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="46">
+	<s n="1">C'est juste, Monsieur !... </s>
+	<s n="2">Je me laissais aller à mes effusions.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="47">
+	<s n="1">Voilà ! </s>
+	<s n="2">J'aurais besoin d'un cabinet.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="48">
+	<s n="1">Je vois ! </s>
+	<s n="2">Eh bien, celui-ci... </s>
+	<s n="3">Il ne vous va pas ?</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="49">
+	<s n="1">Si, parfaitement ! </s>
+	<s n="2">Gardez-le moi ! </s>
+	<s n="3">Maintenant, pour le menu...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="50">
+	<s n="1">Oh ! </s>
+	<s n="2">Rapportez-vous en à moi ! </s>
+	<s n="3">Je connais vos goûts ! </s>
+	<s n="4">Vous serez content.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="51">
+	<s n="1">Bon !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="52">
+	<s n="1">Combien êtes-vous ?</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON, allant à l'extrême droite.</speaker>
+                        <p n="53">
+	<s n="1">Bêta !... </s>
+	<s n="2">Je suis deux !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="54">
+	<s n="1">Toujours, alors ! </s>
+	<s n="2">Eh bien, j'enlève deux couverts ! </s>
+</p>
+                        <stage type="get/drop/location">Prenant les deux couverts sur la table et les portant sur la desserte du fond, à part.</stage>
+                        <p n="55">
+	<s n="1">J'ai perdu mon pari ! </s>
+	<s n="2">C'est dix mille francs que je me dois !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE III. Les mêmes, Gigolet.</head>
+<sp who="#gigolet">
+                        <speaker>GIGOLET, entrant du fond, il est en habit noir sous son pardessus.</speaker>
+                        <p n="1">
+	<s n="1">Garçon !</s>
+</p>
+                    </sp><!--@stage="entrance/dress"--><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, n° 1 au fond.</speaker>
+                        <p n="2">
+	<s n="">Monsieur !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON (n° 3).</speaker>
+                        <p n="3">
+	<s n="1">Tiens ! </s>
+	<s n="2">Gigolet !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, descendant au n° 2.</speaker>
+                        <p n="4">
+	<s n="1">Paturon !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, descendant en scène au n° 1.</speaker>
+                        <p n="5">
+	<s n="1">Ah ! </s>
+	<s n="2">Bien, nous sommes en pays de connaissance !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="6">
+	<s n="1">Ah çà ! </s>
+	<s n="2">Par quel hasard vous trouve-t-on ici ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="7">
+	<s n="1">Oh ! </s>
+	<s n="2">Sans doute par le même que vous ! </s>
+	<s n="3">Partie fine ? </s>
+	<s n="4">Hein !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="8">
+	<s n="1">Partie fine !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, bon enfant.</speaker>
+                        <p n="9">
+	<s n="1">Partie fine !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="10">
+	<s n="1">Merci, mon ami !</s>
+</p>
+                        <stage type="toward">À Paturon.</stage>
+                        <p n="11">
+	<s n="1">Mais voilà des éternités que nous ne nous sommes vus !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="12">
+	<s n="1">Deux ans, mon cher ! </s>
+	<s n="2">Comme ça passe !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="13">
+	<s n="1">On m'a dit que vous aviez une liaison ?</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="14">
+	<s n="1">C'est vrai ! </s>
+	<s n="2">Eh bien, et vous, on m'a dit que vous étiez marié ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, passant devant Paturon et allant au n° 3.</speaker>
+                        <p n="15">
+	<s n="1">Marié ? </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Une liaison comme vous ! </s>
+	<s n="4">Moi, j'ai toujours été pour le ménage, seulement, que voulez-vous, j'ai toujours été gaucher.</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="16">
+	<s n="1">C'est ce qu'on appelle des ménages de la main gauche.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="17">
+	<s n="1">Merci, mon ami.</s>
+</p>
+                        <stage type="toward">À Paturon.</stage>
+                        <p n="18">
+	<s n="1">Il est familier, ce maître d'hôtel.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="19">
+	<s n="1">Oh ! </s>
+	<s n="2">C'est Alfred, l'ancien maître d'hôtel de la Maison d'Or ! </s>
+	<s n="3">C'est un ami pour les clients ! </s>
+</p>
+                        <stage>À Alfred, présentant Gigolet.</stage>
+                        <p n="20">
+	<s n="1">Monsieur Gigolet.</s>
+</p>
+                        <stage type="show">Présentant Alfred. </stage>
+                        <p n="21">
+	<s n="1">Alfred !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="22">
+	<s n="1">Enchanté, Monsieur.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, passant devant Paturon et allant à Alfred.</speaker>
+                        <p n="23">
+	<s n="1">Eh bien, Alfred, mon ami ! </s>
+	<s n="2">Il me faudrait un cabinet... un cabinet mystérieux.</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="24">
+	<s n="1">Pour abriter un premier amour ?</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="25">
+	<s n="1">Voilà !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, montrant la gauche.</speaker>
+                        <p n="26">
+	<s n="1">Eh bien, j'ai votre affaire !... </s>
+	<s n="2">J'ai un petit nid par là.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="27">
+	<s n="1">Bien ! </s>
+	<s n="2">Quant au menu...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="28">
+	<s n="1">Oh ! </s>
+	<s n="2">Rapportez-vous en à lui ! </s>
+	<s n="3">Il connaît mes goûts !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="29">
+	<s n="1">Oui, mais pas les miens.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="30">
+	<s n="1">Si ! Si ! </s>
+	<s n="2">Vous serez content !... </s>
+	<s n="3">Je vais !...</s>
+</p>
+                        <stage>Remontant par la gauche, en passant devant le canapé, à part.</stage>
+                        <p n="31">
+	<s n="1">Seulement, je n'ai pas de veine... </s>
+	<s n="2">J'avais aussi parié pour la partie carrée !... </s>
+	<s n="3">C'est encore dix mille francs que je me dois... </s>
+	<s n="4">Je me ruinerai ! </s>
+</p>
+                        <stage type="toward">À Gigolet.</stage>
+                        <p n="32">
+	<s n="1">Je vais mettre le couvert !</s>
+</p>
+                        <stage type="exit">Il sort par la gauche.</stage>
+                    </sp><!--@who="ALFRED"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Paturon, Gigolet.</head>
+<sp who="#paturon">
+                        <speaker>PATURON (N° 2).</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Ce cher Gigolet !... </s>
+	<s n="3">Ça fait plaisir de se retrouver !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET (N° 1).</speaker>
+                        <p n="2">
+	<s n="1">Ah ! </s>
+	<s n="2">Je crois bien ! </s>
+	<s n="3">On s'est connu dans une fredaine, on se retrouve dans une fredaine.</s>
+</p>
+                        <stage type="sit">Il s'assoit sur le canapé.</stage>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="3">
+	<s n="1">C'est le mot !</s>
+</p>
+                        <stage type="sit">S'asseyant à côté de lui. </stage>
+                        <note type="L">Main gauche : De la main gauche. (D'une manière) illégitime. [CNRTL]</note>
+                        <p n="4">
+	<s n="1">Car je vous avouerai que, ce soir, je trompe ma main gauche.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <note type="L">Coup de canif : Donner un coup de canif dans le contrat, être infidèle à son conjoint. [L]</note>
+                        <p n="5">
+	<s n="1">Parbleu ! </s>
+	<s n="2">Mais moi aussi ! </s>
+	<s n="3">En plein coup de canif !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="6">
+	<s n="1">Oui ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="7">
+	<s n="1">Absolument ! </s>
+	<s n="2">Moi, je trouve qu'on doit avoir les mêmes égards pour une maîtresse que pour sa légitime. </s>
+	<s n="3">Par conséquent, je la trompe !...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="8">
+	<s n="1">Dame !... </s>
+	<s n="2">Sans ça, autant se marier !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="9">
+	<s n="1">C'est évident !... </s>
+	<s n="2">Et puis, mon cher, il faut la voir, ma nouvelle conquête ! </s>
+	<s n="3">C'est une découverte !...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="10">
+	<s n="1">Ah ! </s>
+	<s n="2">Vraiment !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="11">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon cher ! </s>
+	<s n="3">C'est une merveille !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="12">
+	<s n="1">Et... quoi ?... </s>
+	<s n="2">Cocotte ?...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, se levant.</speaker>
+                        <p n="13">
+	<s n="1">Oh ! Là là !... </s>
+	<s n="2">Est-ce que je fréquente ! </s>
+	<s n="3">Non !</s>
+</p>
+                        <stage type="proud">Avec importance.</stage>
+                        <p n="14">
+	<s n="1">C'est une femme du monde !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON, se levant.</speaker>
+                        <p n="15">
+	<s n="1">Ah ! </s>
+	<s n="2">Comme vous avez raison ! </s>
+	<s n="3">Les femmes du monde, mais il n'y a que ça ! </s>
+	<s n="4">C'est le mystère ! </s>
+	<s n="5">Les rendez-vous discrets !... </s>
+	<s n="6">C'est la perspective d'un mari ridicule, jaloux !... </s>
+	<s n="7">C'est le flagrant délit qui menace !... </s>
+	<s n="8">Partout le danger ! </s>
+	<s n="9">La crainte !... </s>
+	<s n="10">Ah ! </s>
+	<s n="11">Quel piment dans l'amour ! </s>
+	<s n="12">Tandis que les cocottes, c'est la banalité, sans l'imprévu !... </s>
+	<s n="13">Sans le péril !... </s>
+	<s n="14">C'est l'amour à prix fixe ! </s>
+	<s n="15">L'amour dans un bazar, entrée libre !... </s>
+	<s n="16">Ah ! </s>
+	<s n="17">Non ! </s>
+	<s n="18">Non !... </s>
+	<s n="19">La femme du monde, la femme du monde et rien que la femme du monde !...</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="16">
+	<s n="1">D'où je dois conclure que votre conquête n'est pas une cocotte !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="17">
+	<s n="1">Parbleu !</s>
+</p>
+                        <stage type="proud">Avec importance.</stage>
+                        <p n="18">
+	<s n="1">C'est aussi une femme du monde !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="19">
+	<s n="1">Ce qui fait que nos deux bonnes fortunes...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#gigolet #paturon">
+                        <speaker>TOUS DEUX, ENSEMBLE.</speaker>
+                        <p n="19">
+	<s n="1">Sont des femmes du monde !</s>
+</p>
+                    </sp><!--@who="GIGOLET, PATURON"-->
+<sp who="#paturon">
+                        <speaker>PATURON (n° 2).</speaker>
+                        <p n="20">
+	<s n="1">La mienne est la toute jeune veuve d'un colonel d'artillerie.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET (n° 1).</speaker>
+                        <p n="21">
+	<s n="">Oui ?...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON, riant.</speaker>
+                        <p n="22">
+	<s n="1">Et... il paraît qu'il est mort au premier feu.</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="23">
+	<s n="1">Honneur aux braves ! </s>
+	<s n="2">Et pas d'autre escarmouche depuis ?</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="24">
+	<s n="1">Aucune !... </s>
+	<s n="2">Je serai sa première !... </s>
+	<s n="3">La pauvre enfant !... </s>
+	<s n="4">Elle vit retirée avec sa tante ; je l'ai rencontrée hier, au moment où elle allait la rejoindre. </s>
+	<s n="5">Il pleuvait tellement fort, et elle m'a vu si mouillé, si mouillé, qu'elle m'a dit : "Monsieur, voulez-vous la moitié de mon parapluie ?"</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="25">
+	<s n="1">Charmante enfant !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <note type="L">Roublard ! Qui est astucieux et rusé. [CNRTL]</note>
+                        <p n="26">
+	<s n="1">N'est-ce pas ?... </s>
+	<s n="2">Et quelle touchante inconséquence !... </s>
+	<s n="3">Est-ce qu'une roublarde aurait fait ça ?... </s>
+	<s n="4">Tandis qu'une femme du monde, ça ne voit pas le danger et ça s'y jette !... </s>
+	<s n="5">Voilà comment j'ai pu arriver, avec une peine infinie, à la décider à accepter ce soir ce premier rendez-vous ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="27">
+	<s n="1">Ah ! </s>
+	<s n="2">Bien, mon cher, j'ai eu bien plus de peine que vous encore !... </s>
+	<s n="3">Parce que la mienne, elle est mariée !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="28">
+	<s n="1">Ah ! ah ! </s>
+	<s n="2">Très tentant !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, avec importance.</speaker>
+                        <p n="29">
+	<s n="1">Et son mari la tient !... </s>
+</p>
+                        <stage type="low">Changeant de ton.</stage>
+                        <p n="30">
+	<s n="1">Il est au Canada !</s>
+</p>
+                    </sp><!--@stage="proud"--><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="31">
+	<s n="1">Ah ! </s>
+	<s n="2">Il la tient de loin !...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="32">
+	<s n="1">Oui !... </s>
+	<s n="2">Mais il l'a confiée à sa mère ! </s>
+	<s n="3">Une de ces femmes austères qui ne transigent pas sur les principes ; elle n'a qu'une chose pour elle, elle est sourde.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="33">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est une compensation !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <note type="L">Bouffes-Parisiens : Salle de spectacles parisienne située 4 rue Monsigny dans le IIème arr. à Paris. </note>
+                        <p n="34">
+	<s n="1">Elles étaient là toutes les deux, l'autre soir, aux Bouffes-Parisiens.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="35">
+	<s n="1">Aux Bouffes-Parisiens !... </s>
+	<s n="2">C'est léger pour une femme austère.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <note type="L">Opéra comique : Salle de spectacles de Paris située Place Boeldieu dans le second arrondissement.</note>
+                        <p n="36">
+	<s n="1">Oui, mais comme elle est sourde !... </s>
+	<s n="2">La petite lui avait fait croire qu'elle était à l'Opéra-Comique !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="37">
+	<s n="1">Allons donc !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="38">
+	<s n="1">Parfaitement !... </s>
+	<s n="2">Et même dans les entractes, petit amour-propre de sourde, pour avoir l'air d'avoir entendu, la mère chantonnait :</s>
+</p>
+                        <l n="1">"Prenez garde ! Prenez garde !</l>
+                        <l n="2">La dame blanche vous regarde !"</l>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="39">
+	<s n="1">Et vous preniez garde ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="40">
+	<s n="1">À ce que la vieille ne me regarde ! </s>
+	<s n="2">Parfaitement ! </s>
+	<s n="3">Et quant à la petite, très sans façon d'allures car c'est à remarquer combien les femmes du monde sont quelquefois sans façon d'allures, elle m'empruntait mon programme, ma lorgnette, et puis elle me racontait la pièce... </s>
+	<s n="4">C'était la huitième fois qu'elle la voyait !...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <note type="C">La Dame Blanche est un opéra comique de Boieldieu dont on donna 1500 représentations depuis le 10 décembre 1825.</note>
+                        <p n="41">
+	<s n="1">Sa mère aime la Dame blanche.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="42">
+	<s n="1">Et puis, quand elle m'a eu raconté la pièce, elle m'a raconté toute sa vie, son mariage, son mari au Canada, sa mère sévère et sourde.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="43">
+	<s n="1">Eh bien, et vous ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="44">
+	<s n="1">Moi ? </s>
+	<s n="2">Eh bien ! </s>
+	<s n="3">Je lui ai raconté que je connaissais ici un petit restaurant où les femmes mariées, dont les maris étaient au Canada, venaient très souvent, en laissant leurs mères sévères et sourdes à la maison.</s>
+</p>
+                        <stage type="location">Il passe devant Paturon et va au n° 2.</stage>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON (n° 1).</speaker>
+                        <p n="45">
+	<s n="1">Comment, vous lui avez dit ça ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="46">
+	<s n="1">Pas comme ça ! </s>
+	<s n="2">Vous pensez bien, n'est-ce pas, que cela aurait été cousu de fil blanc ! </s>
+	<s n="3">Elle m'aurait envoyé promener.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="47">
+	<s n="1">Evidemment ! </s>
+	<s n="2">Une femme du monde !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="48">
+	<s n="1">La preuve que je ne lui ai pas dit ça comme ça, c'est qu'elle va venir ici sans sa mère, à laquelle elle aura menti aujourd'hui pour la première fois.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="49">
+	<s n="1">Heureux coquin ! </s>
+	<s n="2">Va !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="50">
+	<s n="1">Seulement, le diable, c'est que j'avais l'autre !... </s>
+	<s n="2">Ma main gauche !... </s>
+	<s n="3">Elle me tient !... </s>
+	<s n="4">Elle me tient ! </s>
+	<s n="5">Vous comprenez que, comme elle est très fidèle, elle n'admettrait pas que je ne le sois pas !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="51">
+	<s n="1">Elle est fidèle ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="52">
+	<s n="1">À en être crampon !...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="53">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon cher, elle ne peut pas l'être plus que la mienne !...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="54">
+	<s n="1">Eh bien, il y a vraiment un Dieu pour les amoureux !... </s>
+	<s n="2">Au moment où je me cassais la tête pour trouver une craque à lui faire avaler, la voilà qui m'apporte une dépêche qui lui disait que sa tante était au plus mal et l'obligeait d'aller passer la nuit auprès d'elle !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="55">
+	<s n="1">Ah ! </s>
+	<s n="2">Bien, voilà qui est curieux !... </s>
+	<s n="3">Ma main gauche aussi !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="56">
+	<s n="1">Aussi ?</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="57">
+	<s n="1">Oui !... </s>
+	<s n="2">La même chose ! </s>
+	<s n="3">Sa tante, malade ! </s>
+	<s n="4">Obligée d'aller à son chevet ! </s>
+	<s n="5">Et elle m'a abandonné en toute confiance !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="58">
+	<s n="1">Comme moi ! </s>
+	<s n="2">Les femmes sont d'une imprudence !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="59">
+	<s n="1">Folle, mon ami ! </s>
+	<s n="2">Folle !... </s>
+	<s n="3">Et en ce moment, elle est chez sa tante à Passy.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="60">
+	<s n="1">À Passy ? </s>
+	<s n="2">Mais la mienne aussi !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="61">
+	<s n="1">Aussi !... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Que c'est curieux !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="62">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon Dieu ! </s>
+	<s n="3">Mais alors, c'est peut-être la même tante !... </s>
+	<s n="4">Nos deux mains gauches seraient donc parentes !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="63">
+	<s n="1">Evidemment ! </s>
+	<s n="2">Ça ne peut être que ça ! </s>
+	<s n="3">Mais alors, nous-mêmes, nous serions parents... par alliance !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="64">
+	<s n="1">Tiens ! </s>
+	<s n="2">Mais oui !... </s>
+	<s n="3">Par alliance gauche !...</s>
+</p>
+                        <stage type="touch">Lui serrant les mains.</stage>
+                        <p n="65">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon cher cousin !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="66">
+	<s n="1">Mon cher cousin !</s>
+</p>
+                        <stage type="laugh/location">Il passe en riant devant Gigolet et va au n° 2.</stage>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, n° 1.</speaker>
+                        <p n="67">
+	<s n="1">Mais sapristi ! </s>
+	<s n="2">Je bavarde !... </s>
+	<s n="3">Sept heures cinq !... </s>
+	<s n="4">Elle doit m'attendre !... </s>
+	<s n="5">Je lui ai donné rendez-vous en voiture au coin de la rue, à sept heures !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="68">
+	<s n="1">Allez !... </s>
+	<s n="2">Moi, je m'étonne... </s>
+	<s n="3">La mienne devait me rejoindre ici à sept heures également.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Les mêmes, Alfred, puis Philomele.</head>
+<sp who="#alfred">
+                        <speaker>ALFRED, entrant de gauche.</speaker>
+                        <p n="1">
+	<s n="1">Messieurs, votre couvert est mis.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON, à Alfred.</speaker>
+                        <p n="2">
+	<s n="1">Dites-moi !... </s>
+	<s n="2">Une dame n'est pas venue me demander ?</s>
+</p>
+                    </sp><!--@stage="towatd"--><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="3">
+	<s n="1">Non, Monsieur !</s>
+</p>
+                        <stage type="work">Pendant ce qui suit, Alfred arrange le couvert sur la table de droite.</stage>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="4">
+	<s n="1">Allons ! </s>
+	<s n="2">Je vous quitte ! </s>
+	<s n="3">Bonne chance !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="5">
+	<s n="1">Dites donc ! </s>
+	<s n="2">Il me vient une idée ! </s>
+	<s n="3">Savez-vous ce qui serait gentil ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="6">
+	<s n="1">Quoi ?</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="7">
+	<s n="1">Si nous réunissions nos parties fines !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="8">
+	<s n="1">Tiens !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="9">
+	<s n="1">Oui, si nous fusionnions !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="10">
+	<s n="1">Comment ? </s>
+	<s n="2">Vous voulez...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="11">
+	<s n="1">Mais oui, mon cher ! </s>
+	<s n="2">C'est bien plus amusant ! au lieu de deux tête-à-tête, une bonne partie carrée !... </s>
+	<s n="3">C'est ça qui rompt la glace !... </s>
+	<s n="4">Supposez qu'au dernier moment, une de nos femmes du monde ait des remords ; en tête-à-tête, elle fait sa tête !... </s>
+	<s n="5">Tandis qu'en partie carrée, </s>
+</p>
+                        <stage type="location">(Passant au n° 1) </stage>
+                        <p n="12">
+	<s n="1">il y a l'émulation, l'entraînement général ; elles finissent par y mettre de l'amour-propre ! </s>
+	<s n="2">C'est la victoire assurée !... </s>
+	<s n="3">Est-ce que ça ne serait pas plus gentil ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="13">
+	<s n="1">Mais oui !... </s>
+	<s n="2">Seulement, voilà !... </s>
+	<s n="3">Voudront-elles ?</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="14">
+	<s n="1">C'est vrai ! </s>
+	<s n="2">Des femmes du monde ! </s>
+	<s n="3">On ne peut pas agir avec elles comme avec celles du demi ! </s>
+	<s n="4">Elles auront peut-être peur de se compromettre ! </s>
+	<s n="5">Écoutez ! </s>
+	<s n="6">Je vais demander à la mienne !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="15">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Moi aussi, et si elles acceptent...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="16">
+	<s n="1">Elles accepteront !... </s>
+	<s n="2">Au fond, la mienne est bonne fille.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="17">
+	<s n="1">Et la mienne n'a pas de volonté !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="18">
+	<s n="1">Alors, c'est entendu !... </s>
+	<s n="2">Sauf avis contraire, la partie carrée.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="19">
+	<s n="1">La partie carrée !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, qui a mis le couvert pendant ce qui précède, venant se placer entre eux deux au n° 2.</speaker>
+                        <p n="20">
+	<s n="1">Mais c'est beaucoup plus gai !...</s>
+</p>
+                    </sp><!--@stage="location/work"--><!--@who="ALFRED"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="21">
+	<s n="1">C'est ça ! </s>
+	<s n="2">Et si nous nous grisons, tant pis ! </s>
+	<s n="3">Je me sens d'une humeur !... </s>
+	<s n="4">J'ai envie d'embrasser toutes les femmes !</s>
+</p>
+                        <stage type="entrance/carry/toward/kiss">À Philomèle qui entre du fond, un panier de vin à la main, l'embrassant.</stage>
+                        <p n="22">
+	<s n="1">Tiens ! </s>
+	<s n="2">Tu es gentille, toi !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="23">
+	<s n="1">Oh !</s>
+</p>
+                        <stage type="slap">Elle le gifle.</stage>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="24">
+	<s n="1">Aïe !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, avec bonhomie.</speaker>
+                        <p n="25">
+	<s n="1">C'est ma femme, Monsieur !</s>
+</p>
+                        <stage type="location">À ce moment les quatre personnages sont placés dans l'ordre suivant : Paturon 1. Alfred 2. Philomèle 3. Gigolet 4. Les trois derniers sont au fond devant la porte.</stage>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="26">
+	<s n="1">Ah ! </s>
+	<s n="2">Pardon ! </s>
+	<s n="3">Enchanté !...</s>
+</p>
+                        <stage>À Paturon. </stage>
+                        <p n="27">
+	<s n="">À tout à l'heure !</s>
+</p>
+                        <stage type="exit">Il sort par le fond.</stage>
+                    </sp><!--@who="GIGOLET"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Paturon, Alfred, Philomele.</head>
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien, mâtin ! </s>
+	<s n="2">Elle a la main leste, votre femme !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, à Alfred, descendant en scène avec lui.</speaker>
+                        <p n="2">
+	<s n="1">Hein ! </s>
+	<s n="2">Tu as vu ? </s>
+	<s n="3">Eh bien, si une femme t'en fait autant, tu feras comme moi !</s>
+</p>
+                        <stage type="toward">À Paturon.</stage>
+                        <p n="3">
+	<s n="1">Si tous les ménages étaient comme le nôtre, ça irait mieux dans le monde !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="4">
+	<s n="1">C'est parler d'or. </s>
+	<s n="2">Maintenant, Alfred, vous allez ajouter deux couverts !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="5">
+	<s n="1">Tout de suite, monsieur.</s>
+</p>
+                        <stage type="toward">À Philomèle.</stage>
+                        <p n="6">
+	<s n="1">Philomèle, mets deux couverts.</s>
+</p>
+                        <stage type="toward">À Paturon.</stage>
+                        <p n="7">
+	<s n="1">Alors, c'est la partie carrée !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="8">
+	<s n="1">Oui !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="9">
+	<s n="1">Eh bien ! </s>
+	<s n="2">J'ai gagné mon pari ! </s>
+	<s n="3">C'est dix mille francs que je me dois !... </s>
+	<s n="4">Mais je suis bête !... </s>
+	<s n="5">Quand je perds, je me dois dix mille francs, et quand je gagne, je me dois aussi dix mille francs... </s>
+	<s n="6">Mais alors, je joue un jeu de dupe !... </s>
+	<s n="7">C'est bien ! </s>
+	<s n="8">Je ne payerai pas !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, qui a mis le couvert.</speaker>
+                        <p n="10">
+	<s n="1">Le couvert est mis !</s>
+</p>
+                    </sp><!--@stage="work"--><!--@who="PHILOMELE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="11">
+	<s n="1">C'est bien !</s>
+</p>
+                        <stage type="toward">À Alfred.</stage>
+                        <p n="12">
+	<s n="1">Vous avez commandé le dîner ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="13">
+	<s n="1">Non ! </s>
+	<s n="2">Je descends à la cuisine !... </s>
+	<s n="3">Toi, Philomèle, à la caisse !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="14">
+	<s n="1">Vous avez peur de la laisser avec moi ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="15">
+	<s n="1">On ne sait jamais ce qui peut arriver.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="16">
+	<s n="1">Merci de votre confiance !</s>
+</p>
+                        <stage type="exit/together">Alfred sort par le fond avec Philomèle.</stage>
+                    </sp><!--@who="PATURON"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Paturon, puis Philomele et Pervenche.</head>
+<sp who="#paturon">
+                        <speaker>PATURON, seul, se regardant dans la glace à droite.</speaker>
+                        <p n="1">
+	<s n="1">Je suis décoiffé ! </s>
+	<s n="2">Ma mèche, ma mèche ne tient pas ! </s>
+	<s n="3">Sans cela le reste va.</s>
+</p>
+                        <stage type="smile">Souriant dans la glace.</stage>
+                        <p n="2">
+	<s n="1">Je suis en beauté ce soir !</s>
+</p>
+                        <stage type="get">Tirant sa montre.</stage>
+                        <p n="3">
+	<s n="1">Sapristi ! </s>
+	<s n="2">Elle est inexacte !... </s>
+	<s n="3">C'est le défaut des femmes du monde : elles sont inexactes !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, entrant du fond et introduisant Pervenche.</speaker>
+                        <p n="4">
+	<s n="1">Si vous voulez entrer, Madame...</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="PHILOMELE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="5">
+	<s n="1">Ah ! </s>
+	<s n="2">La voici !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="6">
+	<s n="1">C'est donc des femmes qui font le service ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="7">
+	<s n="1">Le maître d'hôtel est à la cuisine, Madame !</s>
+</p>
+                        <stage type="exit">Elle sort par le fond.</stage>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, allant à Pervenche.</speaker>
+                        <p n="8">
+	<s n="1">C'est charmant ! </s>
+	<s n="2">Elle croit que ce sont des femmes qui font le service !</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, à Paturon redescendant en scène avec lui.</speaker>
+                        <p n="9">
+	<s n="1">Ah ! </s>
+	<s n="2">Vous voilà, Monsieur !</s>
+</p>
+                    </sp><!--@stage="down"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, avec reproche.</speaker>
+                        <p n="9">
+	<s n="1">Oh ! </s>
+	<s n="2">Monsieur !... </s>
+	<s n="3">Ne m'appelez pas monsieur !</s>
+</p>
+                    </sp><!--@stage="sad"--><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="10">
+	<s n="1">C'est que je vous connais si peu !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="11">
+	<s n="1">Mais si ce n'est pas pour moi, que ce soit au moins pour le personnel, qu'il croie que c'est un mari avec sa femme !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="12">
+	<s n="1">Ah ! </s>
+	<s n="2">Monsieur, que dites-vous là ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="13">
+	<s n="1">Mais oui ! </s>
+	<s n="2">C'est pour ne pas vous compromettre !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="14">
+	<s n="1">À la bonne heure ! </s>
+	<s n="2">Je suis si émue de cette folie que je fais ! </s>
+	<s n="3">Dans la rue, je me figurais que tout le monde me regardait, je m'enfonçais dans mon fiacre ! </s>
+	<s n="4">Il me semblait que je n'arriverais jamais !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="15">
+	<s n="1">Et moi donc !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="16">
+	<s n="1">C'est pour ça que je suis arrivée si en avance !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="17">
+	<s n="1">Ah ! </s>
+	<s n="2">Vous savez ! </s>
+	<s n="3">Ce n'est pas si... si en avance que ça !...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="18">
+	<s n="1">Allons donc !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="19">
+	<s n="1">Non ! </s>
+	<s n="2">C'est juste !... </s>
+	<s n="3">Le rendez-vous était pour sept heures, il est sept heures un quart !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="20">
+	<s n="1">Bah ! </s>
+	<s n="2">Monsieur ! </s>
+	<s n="3">Si ma tante me voyait, elle me tuerait !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="21">
+	<s n="1">Bah ! </s>
+	<s n="2">Vous trouveriez quelque chose à lui raconter.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, sombre.</speaker>
+                        <p n="22">
+	<s n="1">Oui, mais il y en a un à qui on n'en raconte pas !</s>
+</p>
+                    </sp><!--@stage="sad"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="23">
+	<s n="1">Qui ça ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, montrant le plafond.</speaker>
+                        <p n="24">
+	<s n="1">Lui ! </s>
+	<s n="2">Là-haut !</s>
+</p>
+                    </sp><!--@stage="show"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="25">
+	<s n="1">Il y a quelqu'un au-dessus ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="26">
+	<s n="1">Mon pauvre mari qui me voit de là-haut !...</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="27">
+	<s n="1">Ah ! </s>
+	<s n="2">Bon, le... </s>
+	<s n="3">Oh ! </s>
+	<s n="4">Bien, ne parlons pas de lui, hein ! </s>
+	<s n="5">Ne parlons pas de lui !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="28">
+	<s n="1">Oh ! </s>
+	<s n="2">Non, n'est-ce pas ?... </s>
+	<s n="3">N'en parlons pas ! </s>
+	<s n="4">N'en parlons pas !...</s>
+</p>
+                        <stage type="sit">S'asseyant sur le canapé n° 1. </stage>
+                        <p n="29">
+	<s n="1">Ah ! </s>
+	<s n="2">Dites-moi que vous n'abuserez pas de la situation !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, s'asseyant à côté de Pervenche, n° 2.</speaker>
+                        <p n="30">
+	<s n="1">Mais non ! </s>
+	<s n="2">Mais non !</s>
+</p>
+                    </sp><!--@stage="sit/closer"--><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="31">
+	<s n="1">Ah ! </s>
+	<s n="2">Monsieur !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="32">
+	<s n="1">Oh ! </s>
+	<s n="2">Et puis ne m'appelez pas Monsieur ! </s>
+	<s n="3">Appelez-moi : Paturon !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="33">
+	<s n="1">Potiron ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="34">
+	<s n="1">Pas Potiron ! </s>
+	<s n="2">Paturon !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="35">
+	<s n="1">Ça se ressemble !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="26">
+	<s n="1">Mais non ! </s>
+	<s n="2">Ça ne se ressemble pas ! </s>
+	<s n="3">Allons, voyons, soyons gais ! </s>
+	<s n="4">Nous allons faire un bon petit dîner !... </s>
+	<s n="5">Il y aura du champagne ! Avez-vous déjà bu du champagne ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, s'oubliant.</speaker>
+                        <p n="27">
+	<s n="1">Ah ! </s>
+	<s n="2">Je te crois !</s>
+</p>
+                    </sp><!--@stage="loud"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="28">
+	<s n="1">Hein !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, rattrapant sa parole.</speaker>
+                        <p n="29">
+	<s n="1">Oh ! </s>
+	<s n="2">Pardon ! </s>
+	<s n="3">Je me suis laissée aller à vous tutoyer !</s>
+</p>
+                    </sp><!--@stage="low"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="30">
+	<s n="1">Mais laissez-vous aller !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="31">
+	<s n="1">C'est que je ne me reconnais pas, voyez-vous... </s>
+	<s n="2">Moi toujours si réservée !... </s>
+	<s n="3">Vrai, je ne puis me défendre d'une étrange sympathie pour vous ! </s>
+	<s n="4">Je vous connais à peine et cependant je me demande pourquoi.</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, avec passion.</speaker>
+                        <p n="32">
+	<s n="1">Non ! </s>
+	<s n="2">Ne vous demandez pas !</s>
+</p>
+                    </sp><!--@stage="enthousiasm"--><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="33">
+	<s n="1">Regardez-moi... </s>
+	<s n="2">Oui, ça doit être ça ! </s>
+	<s n="3">Vous avez le nez de mon pauvre mari.</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, se levant.</speaker>
+                        <p n="34">
+	<s n="1">Du colonel ?... </s>
+	<s n="2">J'ai ?... </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Bien non ! </s>
+	<s n="5">Ah ! </s>
+	<s n="6">Bien non !</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, se levant.</speaker>
+                        <p n="35">
+	<s n="1">Il l'avait beau !</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="36">
+	<s n="1">Eh bien, oui, je ne vous dis pas, mais nous avions promis que nous ne parlerions pas de lui, n'en parlons pas...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="37">
+	<s n="1">Oui, oui, je vous demande pardon !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="38">
+	<s n="1">Voyons, nous sommes en tête-à-tête, soyons à notre tête-à-tête.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="39">
+	<s n="1">Vous avez raison... quand le vin est versé...</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="40">
+	<s n="1">Il faut le boire...</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="41">
+	<s n="1">Elle a de l'esprit.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="42">
+	<s n="1">Et tenez, je vais vous faire une proposition.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="43">
+	<s n="1">Quoi ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="44">
+	<s n="1">Il faut d'abord que je vous dise que moi, je suis un dilettante.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="45">
+	<s n="1">Vous voulez faire de la musique ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="46">
+	<s n="1">Dieu m'en garde !... </s>
+	<s n="2">Je veux dire que je suis un artiste, un raffiné ! </s>
+	<s n="3">Eh bien, quand j'ai un plaisir, j'aime à le faire durer, à le retarder, à le contrarier même quelquefois, pour le goûter plus pleinement après.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="47">
+	<s n="1">Je ne vous comprends pas.</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="38">
+	<s n="1">Ah ! </s>
+	<s n="2">Ne cherchez pas à approfondir... </s>
+	<s n="3">Il y a un peu de dépravation là-dedans... </s>
+	<s n="4">Ce sont là de ces subtilités auxquelles on arrive qu'après avoir quitté le bel âge où l'on est simplement gourmand pour entrer dans celui où l'on est gourmet... </s>
+	<s n="5">Enfin, quoi, nous voilà en tête-à-tête : aucun obstacle entre nous, n'ayant qu'à étendre la main pour arriver à ce dénouement auquel il faut bien qu'on arrive, mais qui gagne tellement à être différé...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, à part.</speaker>
+                        <p n="39">
+	<s n="1">Oh ! </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Il me fait l'effet d'un homme qui ne se sent pas en voix !</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="40">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Ces obstacles qui nous manquent, qu'est-ce qui nous empêche de nous les créer ?... </s>
+	<s n="3">Qu'est-ce qui nous empêche de dîner ensemble, mais entre des indifférents dont la présence nous gênera n'ayant qu'une perspective : le moment où nous en serons débarrassés ? </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Non, voyez-vous, il n'y a que ça de vrai ! </s>
+	<s n="6">Et n'en déplaise au philosophe qui a dit : " Ousqu'y a de la gêne, il n'y a pas de plaisir", je lui dis moi : " Ousqu'y a pas de gêne, il n'y a pas de plaisir !"</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="41">
+	<s n="1">Enfin, où voulez-vous en venir ? </s>
+	<s n="3">Nous ne pouvons pas dîner à table d'hôte !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="42">
+	<s n="1">Écoutez ! </s>
+	<s n="2">Je viens de rencontrer un ancien ami à moi ! </s>
+	<s n="3">Il est comme moi en partie fine... </s>
+	<s n="4">J'ai pensé qu'au lieu de dîner tous les deux ensemble, nous pourrions dîner tous les quatre...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, passant devant Paturon et allant au n° 2.</speaker>
+                        <p n="43">
+	<s n="1">Permettez !... </s>
+	<s n="2">Mais quelle est la femme ? </s>
+	<s n="3">Qu'est-ce que c'est ?</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="44">
+	<s n="1">Oh ! </s>
+	<s n="2">Une femme du monde !... </s>
+	<s n="3">Sans cela je ne vous en aurais même pas parlé !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="45">
+	<s n="1">Une femme du monde ?... </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Alors oui...</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="46">
+	<s n="1">Ça m'amusera de dîner avec une femme du monde !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="47">
+	<s n="1">Et vous savez !... </s>
+	<s n="2">C'est un garçon charmant, spirituel !...</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="48">
+	<s n="1">Il est riche ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="49">
+	<s n="1">Très riche !... </s>
+	<s n="2">Mais il a une grue qui le dévore !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="50">
+	<s n="1">Une grue ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="51">
+	<s n="1">Oh ! </s>
+	<s n="2">Pardon ! </s>
+	<s n="3">Une courtisane !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, avec mépris.</speaker>
+                        <p n="52">
+	<s n="1">Ah ! </s>
+	<s n="2">Ah !... </s>
+	<s n="3">Fi !... </s>
+	<s n="4">Fi !...</s>
+</p>
+                    </sp><!--@stage="despite"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, même jeu.</speaker>
+                        <p n="53">
+	<s n="1">Ne m'en parlez pas !</s>
+</p>
+                    </sp><!--@stage="despite"--><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, à part.</speaker>
+                        <p n="54">
+	<s n="1">Riche ! </s>
+	<s n="2">Je le lui soufflerai, à sa grue !</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="55">
+	<s n="1">Alors, c'est entendu ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="56">
+	<s n="1">C'est entendu !...</s>
+</p>
+                        <stage type="location">Remontant vers le fond en passant devant la table de droite.</stage>
+                        <p n="57">
+	<s n="1">Mais je voudrais bien me débarrasser de mon manteau.</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="58">
+	<s n="1">Attendez !...</s>
+</p>
+                        <stage type="ring">Il appuie sur un timbre qui est sur la table.</stage>
+                    </sp><!--@who="PATURON"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, paraissant au fond.</speaker>
+                        <p n="59">
+	<s n="1">Monsieur ?</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="PHILOMELE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="60">
+	<s n="1">C'est Madame qui veut se débarrasser de son manteau.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, indiquant la droite.</speaker>
+                        <p n="61">
+	<s n="1">Si madame veut entrer là...</s>
+</p>
+                    </sp><!--@stage="show"--><!--@who="PHILOMELE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="62">
+	<s n="1">Parfaitement.</s>
+</p>
+                        <stage type="location/closer">Se dirigeant vers la droite, à Paturon.</stage>
+                        <p n="63">
+	<s n="1">Venez-vous ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="64">
+	<s n="1">Voilà, chère Madame !</s>
+</p>
+                        <stage type="entrance/follow">Il entre à droite à la suite de Pervenche.</stage>
+                    </sp><!--@who="PATURON"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Philomele, puis Gigolet et Giboulette.</head>
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="1">
+	<s n="1">Qu'est-ce que c'est que celle-là ?... </s>
+	<s n="2">Une femme du monde, ou une cocotte ?...</s>
+</p>
+                        <stage type="location">Descendant en scène.</stage>
+                        <p n="2">
+	<s n="1">Aujourd'hui, il n'y a plus moyen de s'y reconnaître.</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, entrant du fond avec Giboulette.</speaker>
+                        <p n="3">
+	<s n="1">Venez !... </s>
+	<s n="2">C'est ici, madame !... </s>
+	<s n="3">Vous voyez...</s>
+</p>
+                    </sp><!--@stage="entrance/location"--><!--@who="GIGOLET"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE, descendant en scène au n° 2.</speaker>
+                        <p n="4">
+	<s n="1">Très gentil !... </s>
+	<s n="2">Très gentil !... </s>
+	<s n="3">C'est çà qu'on appelle un cabinet particulier, alors ?</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="GIBOULETTE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, descendant au n° 1.</speaker>
+                        <p n="5">
+	<s n="1">Tout simplement !...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="6">
+	<s n="1">Mais c'est grand !... </s>
+	<s n="2">Moi, je me figurais qu'un cabinet particulier, c'était tout petit, tout petit, comme un sleeping-car !</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, à part.</speaker>
+                        <p n="7">
+	<s n="1">Charmante innocence !</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="GIGOLET"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="8">
+	<s n="1">Madame n'a besoin de rien ?...</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="9">
+	<s n="1">Non merci !...</s>
+</p>
+                        <stage type="exit/location">Philomèle sort par le fond.</stage>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="10">
+	<s n="1">Alors c'est entendu, n'est-ce pas, pour la partie carrée ?</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="11">
+	<s n="1">Oui, mais vous me promettez que c'est une femme du monde ?</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="12">
+	<s n="1">Naturellement !...</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="13">
+	<s n="1">Et lui... qu'il est discret ?</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="14">
+	<s n="1">Mon ami ?... </s>
+	<s n="2">C'est une tombe !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="15">
+	<s n="1">Ce n'est pas gai !...</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="16">
+	<s n="1">Oh ! </s>
+	<s n="2">C'est une tombe gaie !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE, passant devant Gigolet et allant au n° 1.</speaker>
+                        <p n="17">
+	<s n="1">J'ai tellement peur d'être compromise !... </s>
+	<s n="2">Je connais ma mère ! </s>
+	<s n="3">Si elle apprenait jamais mon équipée, elle me tuerait.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="GIBOULETTE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="18">
+	<s n="1">Voyons ! </s>
+	<s n="2">Voyons ! </s>
+	<s n="3">Ne pensez pas à cela ! </s>
+</p>
+                        <stage type="show">Indiquant la gauche.</stage>
+                        <p n="19">
+	<s n="1">Tenez, entrez par là et débarrassez-vous de votre chapeau.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE, se dirigeant vers la porte de gauche.</speaker>
+                        <p n="20">
+	<s n="1">Allons, puisqu'il le faut !... </s>
+</p>
+                        <stage type="location/turn">Arrivée sur le pas de la porte, elle se retourne.</stage>
+                        <p n="21">
+	<s n="1">Oh ! </s>
+	<s n="2">Monsieur, je suis bien coupable !</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="GIBOULETTE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="22">
+	<s n="1">Mais non ! </s>
+	<s n="2">Mais non ! </s>
+	<s n="3">Ça se fait tous les jours ! </s>
+	<s n="4">Allez !... </s>
+	<s n="5">Moi, je vais jeter un coup d'oeil sur le menu !</s>
+</p>
+                        <stage type="exit">Giboulette entre à gauche.</stage>
+                    </sp><!--@who="GIGOLET"-->
+</div>
+<div type="scene" n="O">
+                    <head>SCÈNE IX. Gigolet, puis Paturon.</head>
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="1">
+	<s n="1">Voyons, où est Alfred ?</s>
+</p>
+                        <stage type="locatio,">Il remonte.</stage>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON, entrant de droite.</speaker>
+                        <p n="2">
+	<s n="1">Tiens ! </s>
+	<s n="2">Gigolet ! </s>
+	<s n="3">Vous êtes revenu ?</s>
+</p>
+                    </sp><!--@stage="entrance/location"--><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="3">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="4">
+	<s n="1">Et votre conquête ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, indiquant la gauche.</speaker>
+                        <p n="5">
+	<s n="1">Elle est là !</s>
+</p>
+                    </sp><!--@stage="show"--><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON, indiquant la droite.</speaker>
+                        <p n="6">
+	<s n="1">La mienne est là !</s>
+</p>
+                    </sp><!--@stage="show"--><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="7">
+	<s n="1">Ah ? </s>
+	<s n="2">Je vais jeter un coup d'oeil sur le menu... </s>
+	<s n="3">Venez-vous ?</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="8">
+	<s n="1">Je vous suis !</s>
+</p>
+                        <stage type="exit/location">Gigolet sort par le fond. Paturon redescend jusqu'à la porte de droite.</stage>
+                    </sp><!--@who="PATURON"-->
+<sp who="#paturon">
+                        <speaker>PATURON, à Pervenche qui entre.</speaker>
+                        <p n="9">
+	<s n="1">Vous permettez ? </s>
+	<s n="2">Un moment !... </s>
+	<s n="3">Je vais jeter un coup d'oeil sur le menu.</s>
+</p>
+                    </sp><!--@stage="toward/entrance"--><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="10">
+	<s n="1">Allez, Monsieur !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, avec reproche.</speaker>
+                        <p n="11">
+	<s n="1">Oh ! </s>
+	<s n="2">Encore !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="12">
+	<s n="1">Non !... </s>
+	<s n="2">Euh !... </s>
+	<s n="3">Poti... Potu...</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="13">
+	<s n="1">Paturon !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="14">
+	<s n="1">Merci !... </s>
+	<s n="2">Allez, Paturon !...</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="15">
+	<s n="1">Elle est charmante !</s>
+</p>
+                        <stage type="exit/location">Il sort par le fond.</stage>
+                    </sp><!--@who="PATURON"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Pervenche, puis Giboulette.</head>
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, descendant en scène, à droite.</speaker>
+                        <p n="1">
+	<s n="1">Une femme du monde !... </s>
+	<s n="2">Je vais dîner avec une femme du monde !... </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Si ce pauvre Gigolet me voyait !... </s>
+	<s n="5">Faut-il que les hommes soient bêtes ! </s>
+	<s n="6">Dire que la tante malade, c'est vieux comme le monde, et ça prend toujours ! </s>
+	<s n="7">Elle s'arrange les cheveux devant la glace.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE, entrant de gauche.</speaker>
+                        <p n="2">
+	<s n="1">Me voilà prête !... </s>
+	<s n="2">Et dire que ce pauvre Paturon ne se doute de rien !... </s>
+</p>
+                        <stage>Apercevant Pervenche.</stage>
+                        <p n="3">
+	<s n="1">Oh ! </s>
+	<s n="2">Une dame !</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, se retournant.</speaker>
+                        <p n="4">
+	<s n="1">Tiens !... </s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="5">
+	<s n="1">C'est la femme du monde !</s>
+</p>
+                    </sp><!--@stage="turn"--><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="6">
+	<s n="1">C'est la femme du monde !</s>
+</p>
+                        <stage type="wave">Elles se font un grand salut cérémonieux.</stage>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="7">
+	<s n="1">Madame !...</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="8">
+	<s n="1">Madame !...</s>
+</p>
+                        <stage type="sit">Elles s'asseyent.</stage>
+                        <stage type="sit/location/furniture">Giboulette sur le canapé de gauche. Pervenche sur la chaise qui est placée à côté de la table de droite.</stage>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, à part.</speaker>
+                        <p n="9">
+	<s n="1">Une femme du monde, soignons le style.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="10">
+	<s n="1">Je suis heureuse, Madame, de l'éventualité qui me vaut l'heur d'entrer en relations avec vous.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE, à part avec admiration.</speaker>
+                        <p n="11">
+	<s n="1">Oh ! </s>
+	<s n="2">Là ! </s>
+	<s n="3">Là ! </s>
+	<s n="4">Comme ça parle, les femmes du monde ! </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="12">
+	<s n="1">Madame, l'heur est tout entier pour votre serviteuse... trice ; on dit les deux, je crois.</s>
+</p>
+                    </sp><!--@stage="aparte/admirate"--><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="13">
+	<s n="1">Les femmes comme nous disent comme elles veulent !... </s>
+	<s n="2">C'est une des prérogative de notre monde.</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="14">
+	<s n="1">Evidâmment !... </s>
+	<s n="2">Evidâmment !...</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="15">
+	<s n="1">Qui m'eût dit cependant que j'eusse eu, moi...</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE, à part, avec admiration.</speaker>
+                        <p n="16">
+	<s n="1">Oh ! </s>
+	<s n="2">"J'eusse eu !..."</s>
+</p>
+                    </sp><!--@stage="aparte/admirate"--><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="17">
+	<s n="1">La joie grande de collationner ce soir avec vous !...</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="18">
+	<s n="1">Mais je l'eusse-t-y cru moi-même, Madame ?...</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="19">
+	<s n="1">Je vois, madame, que vous être très peu sortie cet hiver !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="20">
+	<s n="1">Oh très peu, très peu !</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="21">
+	<s n="1">En effet !... </s>
+	<s n="2">J'eus beaucoup de bals cet hiver, dans la haute !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="22">
+	<s n="1">Evidâmment !... </s>
+	<s n="2">Evidâmment !... </s>
+	<s n="3">Nous n'allons que là... dans la haute !</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="23">
+	<s n="1">Et il ne me souvient pas que je vous y rencontrasse.</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="24">
+	<s n="1">Oh ! </s>
+	<s n="2">Madame, je suis si casernière.</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="25">
+	<s n="1">Vraiment ?...</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="26">
+	<s n="1">Oh ! </s>
+	<s n="2">Très casernière ! </s>
+	<s n="3">C'est le mot ! </s>
+	<s n="4">Je serais bien allée dans le grand monde, mais j'avais toujours peur qu'on ne s'y embêtasse !</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="27">
+	<s n="1">Et vous allez beaucoup aux courses ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="38">
+	<s n="1">Mais très souvent, ma toute chère ! </s>
+</p>
+                        <stage type="stand/closer">Se levant et allant à Pervenche.</stage>
+                        <note type="L">Guignon : Mauvaise chance, principalement au jeu. [L]</note>
+                        <p n="39">
+	<s n="">... Seulement, j'ai un guignon !</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, se levant aussi.</speaker>
+                        <p n="40">
+	<s n="1">Ah bien, pas plus que moi !... </s>
+	<s n="3">Dimanche on m'avait donné un tuyau...</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="41">
+	<s n="1">Ah ! </s>
+	<s n="2">Qui vous l'avait donné ?</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="42">
+	<s n="1">C'est le palefrenier du marquis...</s>
+</p>
+                        <stage type="hesitate">Se rattrapant.</stage>
+                        <p n="43">
+	<s n="1">De mon ami le marquis Desgranges. </s>
+	<s n="2">Eh bien, ma chère... </s>
+	<s n="3">Je colle ce que j'avais sur moi chez Potrimson, le bookmaker.</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="44">
+	<s n="1">L'amant à Zizi ?</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="45">
+	<s n="1">Précisément ! </s>
+	<s n="2">Eh bien, ma bonne, quand j'ai voulu me faire payer, il avait filé !...</s>
+</p>
+                        <stage type="hit">Se frappant sur la jambe.</stage>
+                        <p n="46">
+	<s n="1">Hein ? </s>
+	<s n="2">Qu'est-ce que vous dites de ça ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="47">
+	<s n="1">Oh ! </s>
+	<s n="2">C'est pignouf !</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="48">
+	<s n="1">Absolument pignouf ! </s>
+	<s n="2">Mais que je le rattrape !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="49">
+	<s n="1">Oh ! </s>
+	<s n="2">Ce monde des bookmakers ! </s>
+	<s n="3">Quel monde !</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="50">
+	<s n="1">Ne m'en parlez pas !... </s>
+	<s n="2">Heureusement que nous n'en sommes pas !... </s>
+	<s n="3">Et qui vous coiffe, ma toute belle ? </s>
+	<s n="4">Virot ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE, avec dédain.</speaker>
+                        <p n="51">
+	<s n="1">Oh ! </s>
+	<s n="2">Virot !... </s>
+	<s n="3">Tignasson !</s>
+</p>
+                    </sp><!--@stage="desdain"--><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="52">
+	<s n="1">Il coiffe bien ?</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="53">
+	<s n="1">C'est-à-dire qu'il faut être sa cliente... moi je lui ai dit : "vous savez, Tignasson, je veux bien que ce soit vous qui me coiffassiez, mais il faudra soigner ça !" </s>
+	<s n="2">Tenez ! </s>
+	<s n="3">Vous ne vîtes pas le chapeau que j'ai ce soir ?...</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="54">
+	<s n="1">Non ! </s>
+	<s n="2">Je ne vis pas !...</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="55">
+	<s n="1">Ah ! </s>
+	<s n="2">Ma chère, épatant !... </s>
+	<s n="3">Vous allez voir ça !...</s>
+</p>
+                        <stage type="exit/location">Elle sort vivement par la gauche.</stage>
+                    </sp><!--@who="GIBOULETTE"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. Pervenche, puis Paturon, puis Gigolet.</head>
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="1">
+	<s n="1">Elle est charmante ! </s>
+	<s n="2">Et quel genre !... </s>
+	<s n="3">Quelle distinction !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, entrant du fond, à Pervenche.</speaker>
+                        <p n="2">
+	<s n="1">Ne vous impatientez pas !... </s>
+	<s n="2">On apporte le dîner. </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Je vais vous présenter mon ami.</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="3">
+	<s n="1">Avec plaisir !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="4">
+	<s n="1">Où est-il donc ? </s>
+</p>
+                        <stage type="call">Appelant.</stage>
+                        <p n="5">
+	<s n="1">Mais venez donc ! </s>
+	<s n="2">Venez donc !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, entrant du fond.</speaker>
+                        <p n="6">
+	<s n="1">Voilà ! </s>
+	<s n="2">Voilà !</s>
+</p>
+                        <stage type="down">Il descend au numéro 1.</stage>
+                    </sp><!--@stage="entrance"--><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON, présentant Gigolet à Pervenche.</speaker>
+                        <p n="7">
+	<s n="1">Ma chère amie, je vous présente...</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="8">
+	<s n="1">Gigolet !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="9">
+	<s n="1">Pervenche !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="10">
+	<s n="1">Ils se connaissent ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, à Pervenche.</speaker>
+                        <p n="11">
+	<s n="">Qu'est-ce que vous faites ici ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="GIGOLET"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="12">
+	<s n="1">C'est moi qui vous le demande !... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">C'est trop fort !</s>
+</p>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="13">
+	<s n="1">C'est comme ça que vous soignez votre tante ?</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON, remonte.</speaker>
+                        <p n="14">
+	<s n="1">Hein ?</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="PATURON"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE, allant à Gigolet au numéro 2.</speaker>
+                        <p n="15">
+	<s n="1">Oui !... </s>
+	<s n="2">Je vous engage à parler de moi !... </s>
+	<s n="3">C'est vous qui soupez avec la femme du monde !</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="PERVENCHE"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="16">
+	<s n="1">Il ne s'agit pas de la femme du monde ! </s>
+	<s n="2">Vous êtes ici avec Monsieur !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON, redescendant devant le canapé toujours au numéro 1.</speaker>
+                        <p n="17">
+	<s n="1">Mais non, mais non, mais non !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="18">
+	<s n="1">Il n'y a pas de non !... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Vous marchez sur mes plates-bandes, vous !... </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Vous me prenez ma maîtresse ! </s>
+	<s n="6">Eh bien, vous m'en rendrez raison !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="19">
+	<s n="1">Mais voyons !... </s>
+	<s n="2">Vous n'y pensez pas !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Les mêmes, Giboulette.</head>
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE, entrant de gauche avec son chapeau à la main, et descendant en scène au numéro 1 devant le canapé.</speaker>
+                        <p n="1">
+	<s n="1">Voilà mon chapeau !</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="GIBOULETTE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="2">
+	<s n="1">Giboulette !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="3">
+	<s n="1">Paturon !</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#gigolet #pervenche">
+                        <speaker>GIGOLET ET PERVENCHE.</speaker>
+                        <p n="4">
+	<s n="1">Hein !</s>
+</p>
+                    </sp><!--@who="GIGOLET, PERVENCHE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="5">
+	<s n="1">Qu'est-ce que vous faites ici, malheureuse ? </s>
+	<s n="2">Qu'est-ce que vous faites ici ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="6">
+	<s n="1">Misérable !... </s>
+	<s n="2">Vous me trompez avec Madame !</s>
+</p>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="7">
+	<s n="1">Et vous, vous me trompez avec monsieur !</s>
+</p>
+                        <stage type="location/nervous">Remontant au fond avec Gigolet en se disputant avec lui.</stage>
+                        <p n="8">
+	<s n="1">Cela ne se passera pas comme ça, Monsieur, vous m'en rendrez raison !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="9">
+	<s n="1">Mais oui, Monsieur !</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE, à Pervenche, allant à elle.</speaker>
+                        <p n="10">
+	<s n="1">Ah ! </s>
+	<s n="2">Tu me prends Paturon, toi !</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="GIBOULETTE"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="11">
+	<s n="1">Ah ! </s>
+	<s n="2">Tu me prends Gigolet !</s>
+</p>
+                        <stage>Tumulte.</stage>
+                    </sp><!--@who="PERVENCHE"-->
+</div>
+<div type="scene" n="13">
+                    <head>SCÈNE XIII. Les mêmes, Alfred, suivi de Philomele.</head>
+<sp who="#alfred #philomele">
+                        <speaker>ALFRED ET PHILOMELE, accourant du fond.</speaker>
+                        <p n="1">
+	<s n="">Qu'est-ce qu'il y a ?</s>
+</p>
+                    </sp><!--@who="ALFRED, PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="2">
+	<s n="1">Messieurs !... </s>
+	<s n="2">Mesdames !...</s>
+</p>
+                        <stage>Se plaçant entre Pervenche et Giboulette et essayant de les séparer.</stage>
+                        <p n="3">
+	<s n="1">Voyons, Madame... </s>
+</p>
+                        <stage type="recognize">Reconnaissant Pervenche. </stage>
+                        <p n="4">
+	<s n="1">Ma femme !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#pervenche">
+                        <speaker>PERVENCHE.</speaker>
+                        <p n="5">
+	<s n="1">Mon mari !</s>
+</p>
+                        <stage type="away/location">Elle se sauve par le fond.</stage>
+                    </sp><!--@who="PERVENCHE"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, au fond à droite.</speaker>
+                        <p n="6">
+	<s n="1">Hein !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="7">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon Dieu !</s>
+</p>
+                        <stage type="turn/closer">Se retournant et se trouvant nez à nez avec Giboulette. </stage>
+                        <p n="8">
+	<s n="1">Ma femme !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#giboulette">
+                        <speaker>GIBOULETTE.</speaker>
+                        <p n="9">
+	<s n="1">Mon mari !</s>
+</p>
+                        <stage type="away/location">Elle se sauve par le fond.</stage>
+                    </sp><!--@who="GIBOULETTE"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="10">
+	<s n="1">Encore !</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="11">
+	<s n="1">Mes deux femmes !... </s>
+	<s n="2">Filons !...</s>
+</p>
+                        <stage type="hurry/location">Il se précipite à gauche.</stage>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, le suivant.</speaker>
+                        <p n="12">
+	<s n="1">Alfred !... </s>
+	<s n="2">Veux-tu m'expliquer !... </s>
+	<s n="3">Alfred !... </s>
+	<s n="4">Alfred !...</s>
+</p>
+                        <stage type="exit/location">Elle entre à gauche.</stage>
+                    </sp><!--@stage="follow"--><!--@who="PHILOMELE"-->
+</div>
+<div type="scene" n="14">
+                    <head>SCÈNE XIV. Paturon, Gigolet, puis Alfred, puis Philomele.</head>
+<sp who="#gigolet #paturon">
+                        <speaker>PATURON N° 1, GIGOLET N° 2, descendant en scène.</speaker>
+                        <p n="1">
+	<s n="1">Ah çà ! </s>
+	<s n="2">Qu'est-ce que ça veut dire ?</s>
+</p>
+                        <stage type="watch/laugh">Ils se regardent un instant en silence et éclatent de rire.</stage>
+                        <p n="2">
+	<s n="1">Ah ! </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Quelle aventure !</s>
+</p>
+                    </sp><!--@who="GIGOLET, PATURON"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="3">
+	<s n="1">Et dire que nous allions être assez bêtes pour aller sur le terrain en leur honneur !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="4">
+	<s n="1">Vous savez, ça n'a jamais été une femme du monde.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="5">
+	<s n="1">Mais la mienne non plus !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet #paturon">
+                        <speaker>TOUS LES DEUX ENSEMBLE.</speaker>
+                        <p n="6">
+	<s n="1">Oh ! </s>
+	<s n="2">Sommes-nous bêtes !</s>
+</p>
+                    </sp><!--@who="GIGOLET, PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, entrant de gauche avec Philomèle. Il porte une petite soupière en argent qu'il dépose sur la servante, au fond.</speaker>
+                        <p n="7">
+	<s n="1">Elles ne sont plus ici.</s>
+</p>
+                    </sp><!--@stage="entrance/"--><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="8">
+	<s n="1">Ah ! </s>
+	<s n="2">Çà ! </s>
+	<s n="3">Qu'est-ce qui vous a pris de filer comme ça ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE, descendant en scène au n° 1.</speaker>
+                        <p n="9">
+	<s n="1">Oh ! </s>
+	<s n="2">Oui ! </s>
+	<s n="3">Demandez-lui, monsieur.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="PHILOMELE"-->
+<sp who="#paturon">
+                        <speaker>PATURON, n° 3.</speaker>
+                        <p n="10">
+	<s n="">Tu connais donc Giboulette ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, n° 4.</speaker>
+                        <p n="11">
+	<s n="">Tu connais donc Pervenche ?</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, descendant au n° 2.</speaker>
+                        <p n="12">
+	<s n="1">Hélas ! </s>
+	<s n="2">Messieurs, ce sont mes deux femmes !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="ALFRED"-->
+<sp who="#gigolet #paturon">
+                        <speaker>PATURON ET GIGOLET.</speaker>
+                        <p n="13">
+	<s n="1">Oh ! </s>
+	<s n="2">Mon pauvre Alfred !</s>
+</p>
+                        <stage type="location">Ils remontent.</stage>
+                    </sp><!--@who="GIGOLET, PATURON"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <note type="L">Sacripant : Un querelleur, un mauvais sujet, un homme capable d'un mauvais coup. [L] Ici, tendrement.</note>
+                        <p n="14">
+	<s n="1">Mais, sacripant ! </s>
+	<s n="2">Pourquoi ne m'as-tu pas dit que tu étais deux fois divorcé ?</s>
+</p>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="15">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est que tu es tellement jalouse !... </s>
+	<s n="3">Je me suis dit : elle sera moins jalouse d'un passé mort, que d'un passé vivant !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#philomele">
+                        <speaker>PHILOMELE.</speaker>
+                        <p n="16">
+	<s n="1">Grande bête ! </s>
+	<s n="2">Au contraire... </s>
+	<s n="3">Je me disais : il est veuf ! </s>
+	<s n="4">Ça ne prouve pas qu'il l'ait désiré ; mais du moment que tu es divorcé, c'est que tu l'as bien voulu ! </s>
+	<s n="5">Alors je n'ai pas à être jalouse !</s>
+</p>
+                        <stage type="location">Elle va au fond à la servante.</stage>
+                    </sp><!--@who="PHILOMELE"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="17">
+	<s n="1">Ah ! </s>
+	<s n="2">Si j'avais su !</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="18">
+	<s n="1">Mais avec tout ça, nous n'avons pas dîné, nous !</s>
+</p>
+                        <stage type="sit/location">Ils s'asseyent à la table de droite : Paturon à droite, Gigolet à gauche.</stage>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET, à Alfred.</speaker>
+                        <p n="19">
+	<s n="1">Servez !</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, prenant la soupière.</speaker>
+                        <p n="20">
+	<s n="1">Voilà, Monsieur !... </s>
+	<s n="2">Potage à la bisque !</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON, haussant les épaules avec un peu de regret.</speaker>
+                        <p n="21">
+	<s n="1">De la poudre aux moineaux !</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#gigolet">
+                        <speaker>GIGOLET.</speaker>
+                        <p n="22">
+	<s n="1">Aux moineaux ! </s>
+	<s n="2">Allons donc ! </s>
+	<s n="3">Nous les retrouverons, les belles.</s>
+</p>
+                    </sp><!--@who="GIGOLET"-->
+<sp who="#alfred">
+                        <speaker>ALFRED, se plaçant entre eux deux, face au public et appuyant ses mains sur la table.</speaker>
+                        <p n="23">
+	<s n="1">Ah ! </s>
+	<s n="2">Ces messieurs ont l'intention de revoir ces dames.</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+<sp who="#paturon">
+                        <speaker>PATURON.</speaker>
+                        <p n="24">
+	<s n="1">Ça ne vous fâche pas ?</s>
+</p>
+                    </sp><!--@who="PATURON"-->
+<sp who="#alfred">
+                        <speaker>ALFRED.</speaker>
+                        <p n="25">
+	<s n="1">Pas du tout !... </s>
+	<s n="2">Mais si j'ai un conseil à donner à ces messieurs : tenez-les bien ! </s>
+	<s n="3">Car, je les connais, elles vous lâcheraient !...</s>
+</p>
+                    </sp><!--@who="ALFRED"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

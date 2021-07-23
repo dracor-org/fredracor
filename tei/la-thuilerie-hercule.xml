@@ -1,0 +1,2525 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Hercule</title>
+                <title type="sub">Tragédie</title>
+                <author>
+      <idno type="isni">000000004599568X</idno>
+      <idno type="wikidata">Q3213138</idno>
+      <persName>
+        <forename>Jean</forename>
+        <forename>François</forename>
+        <surname>Juvénon</surname>
+        <nameLink>de</nameLink>
+        <surname sort="1">La Thuilerie</surname>
+      </persName>
+    </author><!--Jean François Juvénon de La Thuilerie (1650-1688)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001458</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/LATHUILERIE_HERCULE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/LATHUILERIE_HERCULE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1682"/>
+                        <date type="premiere" when="1681-11-07">Représentée pour la première fois, à Paris, sur le Théâtre de l'Hôtel Guénégaud le 7 novembre 1681.</date>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5742924x</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="hercule" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Hercule</persName>
+                    </person>
+                    <person xml:id="lycas" sex="MALE">
+                        <persName>Lycas</persName>
+                    </person>
+                    <person xml:id="philoctete" sex="FEMALE">
+                        <persName>Philoctète</persName>
+                    </person>
+                    <person xml:id="agis" sex="MALE">
+                        <persName>Agis</persName>
+                    </person>
+                    <person xml:id="cleon" sex="MALE">
+                        <persName>Cléon</persName>
+                    </person>
+                    <person xml:id="iole" sex="FEMALE">
+                        <persName>Iole</persName>
+                    </person>
+                    <person xml:id="dejanire" sex="FEMALE">
+                        <persName>Déjanire</persName>
+                    </person>
+                    <person xml:id="phenice" sex="FEMALE">
+                        <persName>Phénice</persName>
+                    </person>
+                    <person xml:id="dirce" sex="FEMALE">
+                        <persName>Dircé</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Tragédie</term>
+                    <term>vers</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q80930</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">HERCULE</titlePart>
+			<titlePart type="sub">TRAGÉDIE</titlePart>
+		</docTitle> 
+		<docDate when="1682">M. DC. LXXXII. AVEC PRIVILÈGE DU ROI.</docDate>
+		<docAuthor>PAR LE SIEUR DE LA THUILERIE, comédien de la Troupe du Roi.</docAuthor>
+		<div type="docImprint">
+			<div type="printer">
+                    <p>À PARIS, Chez JEAN RIBOU, sur le Quai des Augustins, à la Défense du Pont-Neuf, au dessus de la Port de l'Église.</p>
+                </div><!--@id="MOETJENS"-->
+		</div>
+		<performance>
+			<ab type="premiere">Représentée pour la première fois, à Paris, sur le Théâtre de l'Hôtel Guénégaud le 7 novembre 1681.</ab><!--@date="1681-11-07"--><!--@location="Hôtel Guénégaud"-->
+		</performance>
+	<div type="dedicace">
+                <opener>
+                    <salute>À MADAME LA DAUPHINE</salute>
+                </opener>
+		<head>Madame,</head>
+			<p>Je n'aurais jamais osé prendre la liberté de mettre votre auguste Nom à la tête de cette Tragédie, si vous ne m'eussiez fait l'honneur de me dire vous-même que la représentation ne vous en avait pas déplu. J'ai crû, Madame, qu'un Ouvrage d'esprit, qui avait pu occuper durant quelques moments une des plus grandes et des plus spirituelles Princesses du monde, n'était pas absolument sans quelque beauté ; et j'ai eu la vanité de m'imaginer que la lecture ne vous en serait pas désagréable. Mais je dois vous avouer, Madame, que le principal motif du Présent que j'ose vous faire, a été le désir de pouvoir mêler ma joie à celle que donne à tout le monde l'assurance de votre heureuse grossesse, qui promet des Héros à la France, des Fils au plus charmant Prince de la terre, et des neveux au plus grand Roi qui fut jamais. C'est-là, Madame, tout ce que j'ose vous dire ; et il ne me reste plus qu'à vous protester que je suis avec un profond respect,</p>
+			<p>Madame,</p>
+			<p>Votre très humble et très obéissant Serviteur,</p>
+			<signed>LA THUILLERIE.</signed>
+	</div>
+	<div type="preface">
+                <head>PRÉFACE</head>
+		<p>J'ai lieu d'être content du succès de cette Tragédie, quoiqu'elle ait eu pour ennemis des personnes, qui devant être les plus intéressées à la faire réussir, n'ont pas laissé de l'interrompre dans le plus fort de son cours ; mais enfin le bon goût de la Cour, et l'équité du Public, m'ont vengé de leur injustice.</p>
+		<p>Deux ou trois petits génies, qui n'ayant jamais pu faire d'eux-mêmes quelque chose qui méritât des applaudissements, n'ont pu souffrir ceux que cette Pièce m'attirait tous les jours ; et n'osant pas la condamner absolument, parce que des gens d'un goût exquis la trouvaient digne de leur estime, ils ont pris le parti de dire que je ne l'avais pas faite. En effet, ils n'ont pas manqué de répandre dans le monde que je n'avais fait que prêter mon nom à un homme d'esprit de mes amis, qui est véritablement le seul que je consulte, et qui est peut-être aussi honteux de voir qu'on lui attribue mes Ouvrages, que je dois être glorieux de savoir qu'on les estime assez pour croire qu'il en soit l'Auteur. Quoiqu'il en soit, ceux qui ont fait courir ce bruit, n'ont pu avoir jusqu'ici cet avantage, et on ne leur a jamais fait l'honneur d'attribuer à un autre le peu de méchantes choses qui ont paru depuis quelque temps sous leur nom.</p>
+	</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#herculr">HERCULE</role><!--@sex="1"--><!--@type="H"--><!--@statut="demi-dieu"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#iole">IOLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="prince"--><!--@age="A"--><!--@stat_amour="néant"-->, Fille d'Euritus Roi d'OEcalie.</castItem>
+		<castItem>
+                    <role corresp="#dejanire">DÉJANIRE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, Femme d'Hercule.</castItem>
+		<castItem>
+                    <role corresp="#philoctete">PHILOCTÈTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="prince"--><!--@age="A"--><!--@stat_amour="néant"-->, Prince d'Eubée, Amant d'Iole.</castItem>
+		<castItem>
+                    <role corresp="#lycas">LYCAS</role><!--@sex="1"--><!--@type="H"--><!--@statut="capitaine"--><!--@age="A"--><!--@stat_amour="néant"-->, Capitaine des Gardes d'Hercule.</castItem>
+		<castItem>
+                    <role corresp="#cleon">CLÉON</role><!--@sex="1"--><!--@type="H"--><!--@statut="confident"--><!--@age="A"--><!--@stat_amour="néant"-->, Confident de Philoctète.</castItem>
+		<castItem>
+                    <role corresp="#phenice">PHÉNICE</role><!--@sex="2"--><!--@type="H"--><!--@statut="confident"--><!--@age="A"--><!--@stat_amour="néant"-->, Confidente de Déjanire.</castItem>
+		<castItem>
+                    <role corresp="#dirce">DIRCÉ</role><!--@sex="2"--><!--@type="H"--><!--@statut="confident"--><!--@age="A"--><!--@stat_amour="néant"-->, Confidente d'Iole.</castItem>
+		<castItem>
+                    <role corresp="#agis">AGIS</role><!--@sex="1"--><!--@type="H"--><!--@statut="garde"--><!--@age="A"--><!--@stat_amour="néant"-->, un des gardes de Déjanire.</castItem>
+		<castItem>
+                    <role corresp="#suite">SUITE</role><!--@sex="9"--><!--@type="H"--><!--@statut="suite"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Rome" country="Italie" periode="Avant JC IIème" gps="41.902783, 12.496365">La scène est dans le Camp des Volques devant Rome.</set>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>ACTE I</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Hercule, Lycas.</head>
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="1">OEcalie est soumise, et la mort d'Euritus,</l>
+                        <l n="2">Ne laisse aucun espoir à ses Peuples vaincus.</l>
+                        <l n="3">Mais, ô Ciel, que la fille a bien vengé le père</l>
+                        <l n="4">Lycas, et qu'à ce prix cette victoire est chère.</l>
+                        <l n="5">Que te dirai ? Iole a charmé son vainqueur :</l>
+                        <l n="6">Hercule lui soumet des États, et son coeur ;</l>
+                        <l n="7">Il l'aime ; et s'indignant de sa nouvelle gloire,</l>
+                        <l n="8">Le jour de son triomphe il pleure sa victoire.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="9" part="I">Vous, Seigneur ?</l><!--@syll="3"-->
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="9" part="F">Ah ! Junon, ce sont-là de tes coups.</l><!--@syll="9"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="10">Mais quoi ! pour le donner, ce coeur est-il à vous ?</l>
+                        <l n="11">Peut-être qu'à vos yeux je deviens téméraire,</l>
+                        <l n="12">Et qu'en parlant ainsi je pourrais vous déplaire.</l>
+                        <l n="13" part="I">Pardonnez-donc, Seigneur...</l><!--@syll="6"-->
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="13" part="F">Non, non, parle, Lycas</l><!--@syll="6"-->
+                        <l n="14">Condamne mon amour, je ne m'en plaindrai pas.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="15">Seigneur, que deviendra la triste Déjanire ?</l>
+                        <l n="16">De ce coeur elle seule a mérité l'empire ;</l>
+                        <l n="17">Vous le savez trop bien, os combats, vos serments,</l>
+                        <l n="18">Ont fait évanouir tous ses autres amants ;</l>
+                        <l n="19">Et ceux que le Destin a sauvés de vos armes,</l>
+                        <l n="20">Vous les avez vaincus près d'elle par vos larmes.</l>
+                        <l n="21">Combien, pour rassurer ses timides désirs,</l>
+                        <l n="22">Avez-vous prodigué de pleurs et de soupirs ?</l>
+                        <l n="23">Rappeler, rappelez cette nuit fortunée,</l>
+                        <l n="24">Que l'Amour éclaira des feux de l'Hyménée ;</l>
+                        <l n="25">L'aimable Déjanire embrassant vos genoux,</l>
+                        <l n="26">Des noeuds les plus sacrés l'Hymen m'unit à vous,</l>
+                        <l n="27">Vous dit-elle en pleurant ; et si jamais Hercule</l>
+                        <l n="28">Sent pour un autre objet le beau feu dont il brûle,</l>
+                        <l n="29">Non, ne prétendez pas qu'à votre changement</l>
+                        <l n="30°">Votre épouse, Seigneur, survive un seul moment.</l>
+                        <l n="31">Ne vous souvient-il plus combien de tendres plaintes,</l>
+                        <l n="32">De Déjanire en pleurs dissipèrent les craintes ?</l>
+                        <l n="33">Avec combien d'amour je vous la vis prier</l>
+                        <l n="34" part="I">De croire...</l><!--@syll="2"-->
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="34" part="F">Iole, hélas ! m'a tout fait oublier.</l><!--@syll="10"-->
+                        <l n="35">Mais pourquoi rappeler à ma triste mémoire</l>
+                        <l n="36">De mon fatal hymen la malheureuse Histoire ?</l>
+                        <l n="37">Je suis de mes remords assez persécuté ;</l>
+                        <l n="38">Je vois avec horreur mon infidélité ;</l>
+                        <l n="39">Je tremble, je frémis des fureurs d'une épouse</l>
+                        <l n="40">Injustement trahie, et justement jalouse ;</l>
+                        <l n="41">Absente de ces lieux, je la vois, je l'entends.</l>
+                        <l n="42">Quelquefois pour fixer mes désirs inconstants,</l>
+                        <l n="43">Pour rallumer des feux que j'éteins, que j'immole,</l>
+                        <l n="44">Je cherche des défauts dans la beauté d'Iole ;</l>
+                        <l n="45">Mais plus je l'examine avec u oeil censeur,</l>
+                        <l n="46">Plus je la trouve belle et digne de mon coeur.</l>
+                        <l n="47">Ce n'est pas tout. Souvent ma tendresse passée,</l>
+                        <l n="48">Pour rentrer dans mon coeur, vient flatter ma pensée,</l>
+                        <l n="49">Peint Déjanire aimable, et charmante à mes yeux,</l>
+                        <l n="50">Et me fait souhaiter de la voir en ces lieux ;</l>
+                        <l n="51">Mais presque en même temps un mouvement contraire,</l>
+                        <l n="52">Me fait voir son absence utile, nécessaire,</l>
+                        <l n="53">Et ramenant Iole à mes yeux satisfaits,</l>
+                        <l n="54">Condamne Déjanire à ne me voir jamais.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="55">Mais quoi, depuis un mois que le Roi_d_OEcalie</l>
+                        <l n="56">Perdit dans le combat et le trône et la vie,</l>
+                        <l n="57">Que le Ciel vous soumit sa fille et ses États,</l>
+                        <l n="58">Vous n'avez point paru touché de ses appas ?</l>
+                        <l n="59">Vous voyez tous les jours cette jeune Princesse,</l>
+                        <l n="60">Sans avoir jusqu'ici témoigné de faiblesse.</l>
+                        <l n="61">Aujourd'hui seulement cédez-vous à l'Amour ?</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="62">Non, je l'aime, Lycas, depuis ce premier jour.</l>
+                        <l n="63">De mille attraits divins je la trouvai pourvue</l>
+                        <l n="64">Dans le fatal moment qui l'offrir à ma vue.</l>
+                        <l n="65">En sortant du Combat, quand mille bruits confus</l>
+                        <l n="66">Annonçaient ma victoire, et la mort d'Euritus,</l>
+                        <l n="67">Pour la première fois je vis briller ses charmes ;</l>
+                        <l n="68">Son désordre, ses cris, son désespoir, ses larmes,</l>
+                        <l n="69">De l'aspect du Vainqueur ses regards alarmés,</l>
+                        <l n="70">Ses reproches, mes yeux de sa beauté charmés,</l>
+                        <l n="71">Le courroux de Junon, une Étoile secrète,</l>
+                        <l n="72">Tout lui livra ce coeur honteux de sa défaite.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="73">Rentrez-donc en vous-même, et songez qu'il s'agit,</l>
+                        <l n="74">Seigneur, d'éteindre un feu dont Hercule rougit ;</l>
+                        <l n="75">Mais ne lui donnez pas tout le loisir de croître,</l>
+                        <l n="76">Sur tout cachez-le bien aux yeux qui l'ont fait naître.</l>
+                        <l n="77" part="I">Ne vous déclarez point...</l><!--@syll="6"-->
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="77" part="F">Je me suis déclaré.</l><!--@syll="6"-->
+                        <l n="78">Oui, Lycas, à ses pieds Hercule a soupiré ;</l>
+                        <l n="79">Pour fléchir sa fierté, j'ai tout mis en usage,</l>
+                        <l n="80">De son vainqueur, l'ingrate a dédaigné l'hommage.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="81">Eh bien, Seigneur, il faut dans un coeur généreux</l>
+                        <l n="82">Que le dépit étouffe un amour malheureux ;</l>
+                        <l n="83">Songez qu'il est honteux de trahir Déjanire,</l>
+                        <l n="84">Mais qu'il l'est encor plus qu'Hercule en vain soupire.</l>
+                        <l n="85">À de nouveaux mépris vous exposeriez-vous ?</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="86">Je vaincrai ces mépris en m'offrant comme Époux,</l>
+                        <l n="87" part="I">Lycas, et je prétends...</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="87" part="F">Ciel, qu'osez-vous prétendre ?</l><!--@syll="6"-->
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="88">Oui, ce que je médire a lieu de te surprendre ;</l>
+                        <l n="89">J'en suis surpris moi-même, et mon coeur abattu</l>
+                        <l n="90">Voir dans ce triste Hymen l'écueil de ma vertu.</l>
+                        <l n="91">Mais la fière Junon à ma perte obstinée,</l>
+                        <l n="92">M'impose malgré moi ce funeste Hyménée ;</l>
+                        <l n="93">Elle en a, cher Lycas, pour supplice nouveau,</l>
+                        <l n="94">Dans le feu de sa haine allumé le flambeau.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="95">Déjanire n'a point mérité ce supplice.</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="96">C'est mon destin, Lycas, il faut qu'il s'accomplisse ;</l>
+                        <l n="97">Il faut que dès demain soumise à cette Loi,</l>
+                        <l n="98">Iole se dispose à recevoir ma foi.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="99" part="I">Mais est-elle avertie...</l><!--@syll="6"-->
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="99" part="F">Un ami plein de zèle</l><!--@syll="6"-->
+                        <l n="100">Lui portera bientôt cette triste nouvelle.</l>
+                        <l n="101">J'ai choisi Philoctète en ce pressant besoin.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="102">Quoi, vous le chargeriez de ce funeste soin ?</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="103">Lui-même. Je t'entends, Lycas : tu vas me dire</l>
+                        <l n="104">Que ce Prince est sorti du sang de Déjanire,</l>
+                        <l n="105">Et que ces noeuds serrés d'une tendre amitié</l>
+                        <l n="106">Lui feront de ses maux ressentir la moitié,</l>
+                        <l n="107">Sans lui donner encor la contrainte fatale</l>
+                        <l n="108">D'aller à mon hymen disposer sa rivale ?</l>
+                        <l n="109">Mais Philoctète seul peut servir mon amour ;</l>
+                        <l n="110">Il voit depuis un mois Iole chaque jour ;</l>
+                        <l n="111">Ce Prince généreux et plein de complaisance,</l>
+                        <l n="112">A su par ses respects gagner sa confidence,</l>
+                        <l n="113">Iole le distingue, et jusques aujourd'hui</l>
+                        <l n="114">Des Chefs de mon armée elle n'a vu que lui.</l>
+                        <l n="115">À qui donc, cher Lycas, veux-tu que je m'adresse</l>
+                        <l n="116">Pour servir mes desseins auprès de la Princesse ?</l>
+                        <l n="117">J'ai mandé Philoctète, et l'attends en ces Lieux.</l>
+                        <l n="118">Ma flamme jusqu'ici s'est cachée à ses yeux,</l>
+                        <l n="119">Je n'ai jamais osé lui faire confidence</l>
+                        <l n="120">D'un feu que j'espérais... Mais c'est lui qui s'avance.</l>
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Hercule, Philoctète, Lycas, Cléon.</head>
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="121">Prince, j'ai dû plutôt confier à vos soins</l>
+                        <l n="122">Des chagrins, dont j'ai fui vos regards pour témoins,</l>
+                        <l n="123">Mais ne vous plaignez pas. Ce secret, ce silence,</l>
+                        <l n="124">Vous marque son estime, et non ma défiance.</l>
+                        <l n="125">De mille vains désirs jusqu'ici combattu,</l>
+                        <l n="126">J'ai connu ma faiblesse, et craint votre vertu.</l>
+                        <l n="127">J'ai frémi, je l'avoue, avant que de vous dite</l>
+                        <l n="128">Qu'Iole de mon coeur a chassé Déjanire ;</l>
+                        <l n="129" part="I">Je l'aime...</l><!--@syll="3"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="129" part="M">Vous l'aimez ?</l><!--@syll="3"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="129" part="M">Je l'adore.</l><!--@syll="3"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="129" part="F">Ah ! Seigneur.</l><!--@syll="3"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="130">Prince, j'avais prévu votre juste douleur</l>
+                        <l n="131">Mais j'aime Iole enfin. Elle règne en mon âme,</l>
+                        <l n="132">Et ses premiers regards ont allumé ma flamme.</l>
+                        <l n="133">Pour tâcher de l'éteindre, en vain j'ai tout tenté,</l>
+                        <l n="134">Courte tous mes devoirs mon coeur s'est révolté,</l>
+                        <l n="135">Je n'ai pu ce matin me taire devant elle.</l>
+                        <l n="136">Elle m'a soupçonné d'une ardeur criminelle,</l>
+                        <l n="137">Je l'en ai vu frémir. Pour la désabuser,</l>
+                        <l n="138">J'ai formé le dessein, Prince, de l'épouser,</l>
+                        <l n="139">Et je vous ai choisi pour disposer son âme</l>
+                        <l n="140">À me voir par l'Hymen justifier ma flamme,</l>
+                        <l n="141">Dès ce jour la conduire au pied de nos autels,</l>
+                        <l n="142">Et l'unir à mon sort par des noeuds éternels.</l>
+                        <l n="143" part="I">Vous ne me dites rien...</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="143" part="F">Et que puis-je vous dire ?</l><!--@syll="6"-->
+                        <l n="144'">Dans le fond de mon coeur que ne pouvez-vous lire ?</l>
+                        <l n="145">Vous y verriez... Que dis-je... Ah, Seigneur, est-ce à moi</l>
+                        <l n="146">Qu'il fallait confier un si funeste emploi ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="147">Je sais, Prince, quel est l'intérêt qui vous touche ;</l>
+                        <l n="148">Iole ne doit pas ouïr de votre bouche,</l>
+                        <l n="149">Que pour l'associer à mon lit, à mon rang,</l>
+                        <l n="150">J'en écarte une Reine unie à votre sang ;</l>
+                        <l n="151">Mais je sais par l'accès que vous avez près d'elle,</l>
+                        <l n="152">Que vous seul lui pouvez porter cette nouvelle,</l>
+                        <l n="153">Que tout autre que vous aigrirait son dépit,</l>
+                        <l n="154">Que vous seul savez l'art d'adoucir son esprit,</l>
+                        <l n="155">Et que depuis un mois seul témoin de ses larmes,</l>
+                        <l n="156">Vous avez quelquefois dissipé ses alarmes.</l>
+                        <l n="157">Si vous êtes pour moi sensible à la pitié,</l>
+                        <l n="158">Si vous l'êtes aux noeuds d'une longue amitié,</l>
+                        <l n="159">N'opposez rien au cours d'une fureur subite,</l>
+                        <l n="160">Que la douceur apaise, et que l'obstacle irrite.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="161">Je commence à sortir de la stupidité</l>
+                        <l n="162">Où vos premiers discours, Seigneur, m'avaient jeté ;</l>
+                        <l n="163">D'un servile respect l'amitié me dispense ;</l>
+                        <l n="164">Rougissez de vos feux, et moi de mon silence :</l>
+                        <l n="165">Seigneur, je suis honteux de l'avoir tant gardé.</l>
+                        <l n="166">Pour Déjanire en vain j'ai trop appréhendé ;</l>
+                        <l n="167">Il faut, sans m'arrêter a ce premier scrupule,</l>
+                        <l n="168">Que Philoctète enfin parle en ami d'Hercule.</l>
+                        <l n="169">Souvenez-vous, Seigneur ; que vos fameux travaux</l>
+                        <l n="170">Ont réduit dans vos fers cent Princes vos égaux,</l>
+                        <l n="171">Et que votre valeur en miracles féconde</l>
+                        <l n="172">N'a borné vos exploits qu'aux limites du monde.</l>
+                        <l n="173">Après tant de périls, tant d'écueils évités,</l>
+                        <l n="174">Tant de Tyrans détruits, tant de Monstres domptés ;</l>
+                        <l n="175">Après tant de succès d'une force indomptable,</l>
+                        <l n="176">Qui vous donne en tous lieux le nom de redoutable,</l>
+                        <l n="177">Voulez-vous qu'on publie aux yeux de votre Cour</l>
+                        <l n="178">Que le Vainqueur du Monde est vaincu par l'Amour ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="179">Eh ! c'est payer bien cher ces grands noms, ces vains titres,</l>
+                        <l n="180">S'il faut que de mon coeur ils soient les seuls arbitres ;</l>
+                        <l n="181">Si donnant en Vainqueur les Sceptres, les États,</l>
+                        <l n="182">De ce coeur malheureux je ne dispose pas.</l>
+                        <l n="183">Non, puisque ma raison s'est trouvée impuissante</l>
+                        <l n="184">Pour réprimer l'ardeur d'une flamme naissante,</l>
+                        <l n="185">Prince, n'espérez pas malgré tous vos discours,</l>
+                        <l n="186">Que la raison d'un autre en arrête le cours ;</l>
+                        <l n="187">Et s'il fallait me vaincre en quittant ce que j'aime,</l>
+                        <l n="188">Je n'en voudrais devoir la gloire qu'à moi-même.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="189">Ainsi de Déjanire oubliant les appas...</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="190">Que Déjanire en paix règne dans ses États,</l>
+                        <l n="191">Et que de Calidon souveraine maîtresse,</l>
+                        <l n="192">Elle me laisse ici maître de ma tendresse.</l>
+                        <l n="193">Mais, Agis, quel dessein vous présente à mes yeux ?</l>
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Hercule, Philoctète, Lycas, Cléon, Agis.</head>
+<sp who="#agis">
+                        <speaker>AGIS.</speaker>
+                        <l n="194">Seigneur, j'ai devancé la Reine dans ces lieux.</l>
+                    </sp><!--@who="AGIS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="195" part="I">Que dites-vous ?</l><!--@syll="4"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="195" part="M">Qu'entends-je ?</l><!--@syll="2"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#agis">
+                        <speaker>AGIS.</speaker>
+                        <l n="195" part="F">Oui, de votre victoire</l><!--@syll="6"-->
+                        <l n="196">Déjanire avec vous vient partager la gloire.</l>
+                        <l n="197">Son amour inquiet, vos succès éclatants,</l>
+                        <l n="198">N'ont pu dans Calidon l'arrêter plus longtemps ;</l>
+                        <l n="199">Je viens de la quitter (du voyage affaiblie)</l>
+                        <l n="200">Dans un Temple qu'on voit des portes d'OEcalie.</l>
+                        <l n="201">Elle attend là votre ordre, ou vous-même, Seigneur,</l>
+                        <l n="202">Pour entrer dans ces lieux en femme du vainqueur.</l>
+                    </sp><!--@who="AGIS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="203" part="I">Cela suffit, allez.</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Hercule, Philoctète, Lycas, Cléon.</head>
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="203" part="F">Quelle épreuve cruelle,</l><!--@syll="6"-->
+                        <l n="204">Prince ! La Reine vient. Allez au devant d'elle.</l>
+                        <l n="205" part="I">Qu'ai-je fait ?</l><!--@syll="3"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="205" part="M">Quoi, Seigneur...</l><!--@syll="3"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="205" part="F">À nos derniers adieux...</l><!--@syll="6"-->
+                        <l n="206">Trop pénétré des pleurs qui coulaient de ses yeux,</l>
+                        <l n="207">Et de mille serments appuyant ma promesse,</l>
+                        <l n="208">Je permis ce départ qui confond ma tendresse :</l>
+                        <l n="209">Oui, Prince, je permis en quittant ses États,</l>
+                        <l n="210">Que si je tardais trop, elle suivît mes pas.</l>
+                        <l n="211">Je fis plus. Aveuglé d'un amour trop fidèle,</l>
+                        <l n="212">Après ce doux moment je soupirai plus qu'elle.</l>
+                        <l n="213">Enfin épargnez-nous la douleur de nous voir,</l>
+                        <l n="214">Moi plein d'un autre amour, elle de désespoir.</l>
+                        <l n="215" part="I">Quelle parte.</l><!--@syll="4"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="215" part="F">Mais quoi, Seigneur, sans l'avoir vue ?</l><!--@syll="8"-->
+                        <l n="216">À ce funeste accueil s'était-elle attendue ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="217">Je ne la verrai point, je n'y puis consentir,</l>
+                        <l n="218">Et pour me plaire, il faut l'oblige à partir.</l>
+                        <l n="219" part="I">Prince je vous l'ordonne.</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE, à part.</speaker>
+                        <l n="219" part="F">Ô Ciel, en quelle gêne...</l><!--@syll="6"-->
+                    </sp><!--@stage="aparte"--><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="220">Avant que de porter mes ordres à la Reine,</l>
+                        <l n="221">Entrez chez la Princesse, et représentez-lui</l>
+                        <l n="222">Tout ce que mon amour me fait faire aujourd'hui ;</l>
+                        <l n="223">Sur tout préparez-la, quoi que je doive craindre,</l>
+                        <l n="224">À couronner des feux que rien ne peut éteindre,</l>
+                        <l n="225">Et je vais cependant plein de crainte et d'amour,</l>
+                        <l n="226">Attendre pour la voir, jusqu'à votre retour.</l>
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Philoctète, Cléon.</head>
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="227">Tombe, tombe la foudre, après ce coup funeste.</l>
+                        <l n="228">L'espoir d'un prompt trépas, est le seul qui me reste.</l>
+                        <l n="229">Oui, puis qu'à perdre Iole il faut me préparer,</l>
+                        <l n="230">Je n'ai plus rien à craindre, et rien à désirer.</l>
+                        <l n="231">Obéissons aux Lois qu'on vient de nous prescrire,</l>
+                        <l n="232">Voyons sans différer, Iole, et Déjanire ;</l>
+                        <l n="233">Forçons l'une à trahir un malheureux Amour,</l>
+                        <l n="234">Et l'autre à s'éloigner d'une funeste Cour.</l>
+                        <l n="235">Quel succès d'un amour conçu dans les alarmes</l>
+                        <l n="236">Et qui ne s'est nourri que d'inutiles larmes !</l>
+                        <l n="237">J'ai pris, pour le cacher aux yeux de mon Rival,</l>
+                        <l n="238">Mille soins donc l'effet m'est devenu fatal.</l>
+                        <l n="239">Vaines précautions, cruelle prévoyance,</l>
+                        <l n="240">J'aime, et je meurs, voilà le fruit de mon silence.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+                        <l n="241">Ne désespérez pas, Seigneur, de votre sort.</l>
+                    </sp><!--@who="CLÉON"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="242">Non, non, l'amour d'Hercule est l'arrêt de ma mort.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+                        <l n="243" part="I">Mais enfin on vous aime ?</l><!--@syll="6"-->
+                    </sp><!--@who="CLÉON"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="243" part="F">Oui, j'ai le coeur d'Iole,</l><!--@syll="6"-->
+                        <l n="244">Je ne crains point, Cléon, qu'un autre me le vole ;</l>
+                        <l n="245">Mais je crains des malheurs qui me glacent d'effroi,</l>
+                        <l n="246">Et tu ne connais pas Hercule comme moi.</l>
+                        <l n="247">Il est dans ses fureurs, comme dans ses faiblesses,</l>
+                        <l n="248">Barbare à ses rivaux, injuste à ses Maîtresses,</l>
+                        <l n="249">Inexorable amant, implacable ennemi,</l>
+                        <l n="250">Enfin jamais jaloux, ni cruel à demi.</l>
+                        <l n="251">Que te dirai-je hélas ? la Princesse est perdue,</l>
+                        <l n="252">Si d'un amour d'un autre il la croit prévenue.</l>
+                        <l n="253">Voyons-la cependant. Mais elle vient à moi.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Iole, Philoctète, Cléon, Dircé.</head>
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="254" part="I">Je vous cherchais, Seigneur.</l><!--@syll="6"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="254" part="F">Est-ce vous que je vois,</l><!--@syll="6"-->
+                        <l n="255">Madame ? Mais, ô Ciel, que vais-je vous apprendre ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="256">Ne craignez rien, Seigneur, on m'a tout fait entendre,</l>
+                        <l n="257" part="I">Je sais qu'Hercule m'aime.</l><!--@syll="6"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="257" part="F">Il veut vous épouser,</l><!--@syll="6"-->
+                        <l n="258">Et m'a chargé du soin de vous y disposer.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="259">Vous, Prince... Ô Ciel, qu'entends-je ? À cette violence</l>
+                        <l n="260">Porte-t-il son amour au moment qu'il commence ?</l>
+                        <l n="261">Les Dieux souffriront-ils...Non, je m'alarme en vain,</l>
+                        <l n="262">Le Ciel a prévenu ce funeste dessein.</l>
+                        <l n="263">Aujourd'hui dans ces murs nous verrons Déjanire.</l>
+                        <l n="264">Je venais vous chercher, Prince, pour vous le dire ;</l>
+                        <l n="265">Il l'a beaucoup aimée, il craint ses yeux jaloux,</l>
+                        <l n="266">Elle arrive. Un regard lui rendra son Époux.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="267">Eh ! ne nous flattons point de cette vaine joie.</l>
+                        <l n="268">Quand Déjanire arrive, Hercule la renvoie,</l>
+                        <l n="269">Il lui défend sa vue ; et je vais de sa part</l>
+                        <l n="270">La contraindre moi-même à ce triste départ.</l>
+                        <l n="271">Fut-il jamais un sort plus cruel, plus barbare ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="272">Je ne sais que penser, et ma raison s'égare ;</l>
+                        <l n="273">Mais de tous ces malheurs ou vous me préparez,</l>
+                        <l n="274">Je serai la victime, et vous obéirez.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="275">Hélas ! si j'obéis à l'ordre qu'on me donne,</l>
+                        <l n="276">La crainte ne peut rien, c'est l'amour qui l'ordonne ;</l>
+                        <l n="277">Et quoique mon refus m'attirât son courroux,</l>
+                        <l n="278">Je ne crains que l'horreur d'être éloigné de vous.</l>
+                        <l n="279">Si je n'obéis pas, il faut fuir votre vue.</l>
+                        <l n="280">Mais, vous, à l'épouser êtes-vous résolue ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="281">Le croyez-vous, Seigneur ? Voyez-vous dans mes yeux</l>
+                        <l n="282">De quoi pouvoir former ce doute injurieux ?</l>
+                        <l n="283">Depuis tous mes malheurs m'a-t-on vue empressée</l>
+                        <l n="284">À réparer l'éclat de ma grandeur passée ?</l>
+                        <l n="285">Ai-je, pour m'attirer l'amitié du vainqueur,</l>
+                        <l n="286">Emprunté le secours d'aucun regard flatteur ?</l>
+                        <l n="287">Et de puisque vos soins consolent ma misère,</l>
+                        <l n="288">Mes yeux ont-ils pleuré que la mort de mon Pères ?</l>
+                        <l n="289">Hercule se déclare, il m'offre aux yeux de tous</l>
+                        <l n="290">Son amour par lui-même, et son hymen par vous.</l>
+                        <l n="291">Me croyez-vous, Seigneur, sensible à cette gloire ?</l>
+                        <l n="292">Vous le mériteriez, si vous osiez le croire.</l>
+                        <l n="293">Ah ! ce cruel Rival vous charge d'un emploi</l>
+                        <l n="294">Dont vous avez frémi peut-être moins que moi.</l>
+                        <l n="295">Cependant vous devez obéir tout à l'heure.</l>
+                        <l n="296">Que Déjanire parte, ou bien qu'elle demeure,</l>
+                        <l n="297">Que son volage époux se redonne à ses voeux,</l>
+                        <l n="298">Ou que par cet obstacle il redouble ses feux,</l>
+                        <l n="299">Je veux bien vous ouvrir mon coeur sans me contraindre.</l>
+                        <l n="300">Tant que vous m'aimerez vous n'aurez rien à craindre,</l>
+                        <l n="301">Vous avez sur Iole un empire absolu ;</l>
+                        <l n="302">Et si vous le perdez, vous l'aurez bien voulu.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="303">Princesse, quel bonheur votre bouche m'annonce !</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="304">Voyez la Reine. Hercule attend votre réponse.</l>
+                        <l n="305">Dites-lui de ma part, en portant mes refus,</l>
+                        <l n="306">Que je ne puis aimer le vainqueur d'Euritus,</l>
+                        <l n="307">Mais surtout cachez lui cette joie indiscrète,</l>
+                        <l n="308">Où je vois qu'à mes yeux ma tendresse vous jette.</l>
+                        <l n="309">Vous seriez en péril, s'il pouvait entrevoir</l>
+                        <l n="310">Que vous seul de mon coeur lui défendez l'espoir ;</l>
+                        <l n="311">Allez, Prince, partez faites ce qu'il désire ;</l>
+                        <l n="312">Et quand vous parlerez de moi, de Déjanire,</l>
+                        <l n="313">Paraissez à ses yeux libre, sans embarras,</l>
+                        <l n="314">Et tel que vous seriez, si vous ne m'aimiez pas.</l>
+                    </sp><!--@who="IOLE"-->
+</div>
+</div>
+<div type="acte" n="2">
+                <head>ACTE II</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Hercule, Philoctète.</head>
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="315">Déjanire craignant si peu de me déplaire,</l>
+                        <l n="316">Jusque dans ce Palais vient braver ma colère !</l>
+                        <l n="317">Et quand je lui défends d'approcher de ces lieux,</l>
+                        <l n="318">Elle y vient étaler ses mépris à mes yeux !</l>
+                        <l n="319">Comment puis-je expliquer sa désobéissance ?</l>
+                        <l n="320">Quel prétexte ? Auriez-vous trahi ma confidence ?</l>
+                        <l n="321">Et la Reine peut-elle imputer à l'amour</l>
+                        <l n="322">Les secrètes raisons qui pressent son retour ?</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="323">Seigneur, je n'ai rien dit, dont la Reine alarmée</l>
+                        <l n="324">Ait pu juger qu'ici votre âme soit charmée.</l>
+                        <l n="325">Mais dès que j'ai parlé d'un ordre si pressant,</l>
+                        <l n="326">Elle a jeté sur moi les yeux en frémissant ;</l>
+                        <l n="327">Et se faisant effort pour rompre le silence,</l>
+                        <l n="328">Hercule (a-t-elle dit) me défend sa présence ;</l>
+                        <l n="329">Eh bien, il faut mourir, puisque ma mort lui plaît,</l>
+                        <l n="330">Mais je veux de sa bouche en entendre l'Arrêt,</l>
+                        <l n="331">Je veux le voir. Je sais jusques où sa colère</l>
+                        <l n="332">Peut aller contre moi, si j'ose lui déplaire,</l>
+                        <l n="333">N'importe, c'est mourir que de ne le point voir,</l>
+                        <l n="334">Et je crains son courroux moins que mon désespoir.</l>
+                        <l n="335">Vous la verrez bientôt paraître à votre vue.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="336">Grands Dieux, que deviendra cette Épouse éperdue ?</l>
+                        <l n="337">Ici ses yeux jaloux auront pour tous objets</l>
+                        <l n="338">De mon fatal hymen, les superbes apprêts.</l>
+                        <l n="339">Quel spectacle aux regards d'une Reine jalouse,</l>
+                        <l n="340">De voir entre mes bras une nouvelle Épouse ?</l>
+                        <l n="341">Car, Prince, cet hymen occuperons mes soins.</l>
+                        <l n="342">Et ses yeux dès ce jour en seront les témoins.</l>
+                        <l n="343">La Princesse à mes voeux s'est-elle enfin rendue ?</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="344">Iole à cet hymen ne s'est point attendue,</l>
+                        <l n="345">Et bien loin que voûte offre ait flatté ses désirs,</l>
+                        <l n="346">Elle n'a répondu que par quelques soupirs.</l>
+                        <l n="347">Pour la faire parler, en vain je l'ai pressée ;</l>
+                        <l n="348">Ses soupirs m'ont encor expliqué sa pensée ;</l>
+                        <l n="349">Et si par les dehors je juge de son coeur,</l>
+                        <l n="350">Elle voit à regret l'amour de son Vainqueur.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="351">Je sais trop que son coeur n'a pour moi rien de tendre,</l>
+                        <l n="352">Prince, et qu'il n'est pas temps encor d'y prétendre :</l>
+                        <l n="353">Mais au défaut du coeur, la main suffit pour moi</l>
+                        <l n="354">Enfin est-elle prête à recevoir ma foi ?</l>
+                        <l n="355" part="I">Que vous a-t-elle dit ?</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="355" part="F">Qu'une Loi trop sévère</l><!--@syll="6"-->
+                        <l n="356">Lui défend d'épouser le vainqueur de son père.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="357">Vain prétexte ! Non, non, de si constant refus</l>
+                        <l n="358">Ont bien d'autres raisons que la mort d'Euritus :</l>
+                        <l n="359">Je ne la croirai point ; mais quoiqu'il en puisse être,</l>
+                        <l n="360">C'est trop être soumis, je veux agir en maître,</l>
+                        <l n="361">Tant d'obstacles unis pour me persécuter</l>
+                        <l n="362">Intéressent ma gloire à les tous surmonter.</l>
+                        <l n="363">Oui, Prince, à ces refus ma Captive fidèle,</l>
+                        <l n="364">Les fureurs d'une Épouse âmes ordres rebelle,</l>
+                        <l n="365">Les combats que soutient un reste de vertu,</l>
+                        <l n="366">Tout irrite un amour vainement combattu.</l>
+                        <l n="367">D'où, vient qu'à mes soupirs Iole inaccessible,</l>
+                        <l n="368">Du moins à mon hymen ne paraît pas sensible ?</l>
+                        <l n="369">Ah, si je découvrais qu'un Rival plus heureux</l>
+                        <l n="370">Triomphât en secret du malheur de mes feux,</l>
+                        <l n="371">Que sais-je, ma fureur étouffant ma tendresse,</l>
+                        <l n="372">Peut être confondrait l'Amant et la Maîtresse.</l>
+                        <l n="373" part="I">Mais que me veut Lycas ?</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Hercule, Philoctète, Lycas.</head>
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="373" part="F">C'est la Reine, Seigneur,</l><!--@syll="6"-->
+                        <l n="374">Qui vient jusqu'à vos pieds apporter sa douleur.</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="375">Quelle entre ? Juste Ciel ! Laissez-nous Philoctète.</l>
+                        <l n="376">Dans quel trouble secret, sa présence me jette !</l>
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Hercule, Déjanire, Phénice, Lycas.</head>
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="377">Permettez-moi, Seigneur, qu'embrassant vos genoux</l>
+                        <l n="378" part="I">J'ose vous demander...</l><!--@syll="6"-->
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="378" part="F">Madame, levez-vous.</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="379">Non, si de votre esprit mon souvenir s'efface,</l>
+                        <l n="380">Cet état suppliant sied bien à ma disgrâce.</l>
+                        <l n="381">Du moins apprenez-moi de quel crime odieux,</l>
+                        <l n="382">Seigneur, on a noirci Déjanire à vos yeux.</l>
+                        <l n="383">Hélas ! je suis toujours cette Épouse fidèle</l>
+                        <l n="384">Que l'hymen joint à vous d'une chaîne éternelle,</l>
+                        <l n="385">Heureuse au bout du monde auprès de son époux,</l>
+                        <l n="386">Et jusque dans les cieux malheureuse sans vous.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="387">De tant d'empressement Hercule vous dispense,</l>
+                        <l n="388">Madame ; moins d'amour, et plus d'obéissance.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="389">Moins d'amour ! Ah, Seigneur, qu'osez-vous prononcer ?</l>
+                        <l n="390">Qu'entends-je ? juste Ciel ! et que dois-je penser ?</l>
+                        <l n="391">Moins d'amour ! Et c'est vous enfin qui l'osez dire,</l>
+                        <l n="392">C'en est fait, puisqu'Hercule a trompé Déjanire,</l>
+                        <l n="393">Puisqu'à son ascendant il n'a pu résister,</l>
+                        <l n="394">Sur la foi des serments il ne faut plus compter.</l>
+                        <l n="395">Vains serments, c'est par vous qu'un traître m'a séduite.</l>
+                        <l n="396">Seigneur, voyez l'état où vous m'avez réduite,</l>
+                        <l n="397">Je me connais a peine. Une aveugle fureur</l>
+                        <l n="398">Convertir en poison tout l'amour de mon coeur.</l>
+                        <l n="399">Craignez de ce poison quelqu'atteinte mortelle...</l>
+                        <l n="400">Mais que dis-je ? Est-ce ainsi qu'on touche un infidèle ?</l>
+                        <l n="401">Est-ce par les fureurs, par les transports jaloux,</l>
+                        <l n="402">Qu'on ramène les coeurs des volages époux ?</l>
+                        <l n="403">Ah, Seigneur, pardonnez une aveugle faiblesse,</l>
+                        <l n="404">Et par mon désespoir jugez de ma tendresse.</l>
+                        <l n="405">La vôtre a toujours fait mes plaisirs les plus doux,</l>
+                        <l n="406">Je ne vis que par elle, et je ne vis qu'en vous.</l>
+                        <l n="407">La mort, l'affreuse mort, me paraît moins cruelle,</l>
+                        <l n="408">Que la fin d'une ardeur que j'ai crue éternelle.</l>
+                        <l n="409">Enfin pour épargner des discours superflus,</l>
+                        <l n="410">Où me réduisez-vous, si vous ne m'aimez plus ?</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="411">Apaisez mon courroux par votre complaisance.</l>
+                        <l n="412" part="I">Retournez...</l><!--@syll="3"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="412" part="F">Ah, Seigneur, vous craignez ma présence !</l><!--@syll="9"-->
+                        <l n="413">Après avoir vaincu, faire un si long séjour,</l>
+                        <l n="414">Refuser de me voir, mépriser mon amour,</l>
+                        <l n="415">Le bruit que la beauté d'Iole fait répandre...</l>
+                        <l n="416">Vos infidélités... vous craignez de m'entendre ?</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="417">Non, non, votre présence est nécessaire ailleurs.</l>
+                        <l n="418">La haine à Calidon règne dans tous les coeurs,</l>
+                        <l n="419">Je ne l'ai point éteinte, elle n'est qu'assoupie,</l>
+                        <l n="420">Par la sanglante mort des Tyrans d'AEtolie.</l>
+                        <l n="421">Le respect qu'a pour vous ce Peuple factieux,</l>
+                        <l n="422">Peut seul les empêcher d'éclater à vos yeux.</l>
+                        <l n="423" part="I">Retournez-y, Madame.</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="423" part="F">Eh, Seigneur, pourquoi feindre ?</l><!--@syll="5"-->
+                        <l n="424">Non, vous êtes trop craint pour avoir rien à craindre.</l>
+                        <l n="425">Je perce les raisons de votre juste effroi ;</l>
+                        <l n="426">Et de tous les mortels vous ne craignez que moi ?</l>
+                        <l n="427">Craignez-moi donc, perfide. Un amour qu'on outrage</l>
+                        <l n="428">A dans son désespoir les effets de la rage.</l>
+                        <l n="429">Hercule, tu n'es pas au bout de tes travaux :</l>
+                        <l n="430">Ma jalouse fureur t'en fournit de nouveaux,</l>
+                        <l n="431">Et je veux de ton coeur être plus respectée</l>
+                        <l n="432">Que ne le fut jamais le cruel Eurysthée.</l>
+                        <l n="433">Ah ! Lorsque prévenu de mes faibles appas</l>
+                        <l n="434">Tu me laissais tremblante au fond de mes États,</l>
+                        <l n="435">Lorsque tu me disais, pour calmer mes alarmes,</l>
+                        <l n="436">Si d'un heureux succès le Ciel comble mes armes,</l>
+                        <l n="437">Vous reverrez bientôt votre fidèle époux</l>
+                        <l n="438">Venir chargé de gloire embrasser vos genoux.</l>
+                        <l n="439">Mais s'il est retenu par une longue guerre,</l>
+                        <l n="440">Cherchez-le cet époux jusqu'au bout de la terre ;</l>
+                        <l n="441">Sans qu'un ordre nouveau presse votre départ,</l>
+                        <l n="442">Cherchez-le ; mais craignez de le trouver trop tard.</l>
+                        <l n="443">Oui, quand tu me tenais un langage si tendre,</l>
+                        <l n="444">Quand tu te promenais de me venir surprendre,</l>
+                        <l n="445">Que vainqueur d'Euritus retournant sur tes pas,</l>
+                        <l n="446">Tu te croyais déjà revoir entre mes bras,</l>
+                        <l n="447">Tu ne prévoyais pas qu'un jour ta perfidie</l>
+                        <l n="448">N'offrirait à tes yeux qu'une épouse trahie.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="449">Madame, modérez ces violents transports,</l>
+                        <l n="450">Et m'épargnez enfin d'inutiles remords.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="451">Non, ce n'est plus le temps de paraître timide.</l>
+                        <l n="452">Il faut, il faut parler en épouse d'Alcide.</l>
+                        <l n="453">Tu t'armeras en vain de toute ta rigueur :</l>
+                        <l n="454">Et qu'ai-je à craindre encor si tu m'ôtes ton coeur ?</l>
+                        <l n="455">Je te l'avais bien dit, ingrat, qu'il t'en souvienne,</l>
+                        <l n="456">Quand ta perfide main s'unit avec la mienne ;</l>
+                        <l n="457">Au pied de nos Autels, témoins de tes serments,</l>
+                        <l n="458">Je préparai ton âme à mes ressentiments.</l>
+                        <l n="459">Mais de la jalousie ignorant les atteintes,</l>
+                        <l n="460">Je ne te laissais voir que de légères craintes,</l>
+                        <l n="461">L'Amour était encor le maître de mes sens.</l>
+                        <l n="462">Je ne prévoyais pas les fureurs que je sens,</l>
+                        <l n="463">Et contre mon époux à mes yeux trop aimable,</l>
+                        <l n="464">Je ne connaissais point de quoi j'étais capable.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="465">Madame, vous voyez par ma tranquillité</l>
+                        <l n="466">Que je garde pour vous encor quelque bonté.</l>
+                        <l n="467" part="I">Partez...</l><!--@syll="2"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="467" part="F">Laisse-moi donc emmener ta Captive.</l><!--@syll="10"-->
+                        <l n="468">Je pars dès ce moment, pourvu qu'elle me suive ;</l>
+                        <l n="469">Mais ne te flatte pas, je ne pars qu'à ce prix.</l>
+                        <l n="470">Ah ! je le vois ce coup a frappé tes esprits,</l>
+                        <l n="471">Dans ton coeur ta Captive a vaincu ton Épouse.</l>
+                        <l n="472">Crains, crains le désespoir d'une femme jalouse.</l>
+                        <l n="473">Tu dois t'attendre à tous ; en l'état où je suis,</l>
+                        <l n="474">Poignarder ma Rivale, est le moins que je puis.</l>
+                        <l n="475">Je ne te réponds pas de respecter ta vie,</l>
+                        <l n="476">Et bien plus que Junon je suis ton ennemie.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="477" part="I">Madame, c'en est trop.</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="477" part="F">C'en est trop en effet ;</l><!--@syll="6"-->
+                        <l n="478">Mais pour m'abandonner, ingrat, que t'ai-je fait ?</l>
+                        <l n="479">De mes jaloux transports ton âme est alarmée.</l>
+                        <l n="480">Tu ne les craignais pas, tant que tu m'as aimée ;</l>
+                        <l n="481">Qu'est devenu le temps, que mes jaloux soupirs</l>
+                        <l n="482">De ton volage coeur rallumaient les désirs,</l>
+                        <l n="483">Et que pour dissiper mes soupçons, mes alarmes,</l>
+                        <l n="484">Tu venais à mes pieds me vaincre par tes larmes ?</l>
+                        <l n="485">Je te rappelle en vain le souvenir confus</l>
+                        <l n="486">D'un long attachement qui ne te touche plus ;</l>
+                        <l n="487">Qui ne te touche plus ! Après un tel outrage</l>
+                        <l n="488">Autant que j'eus d'amour, autant je sens de rage.</l>
+                        <l n="489">Mesure l'un par l'autre, et pour ta sûreté,</l>
+                        <l n="490">Crains autant mon amour que tu l'as souhaité.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Hercule, Lycas.</head>
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="491">Seigneur, redoutez tout des fureurs de la Reine.</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="492">Le temps et la raison adoucirait sa haine.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="493" part="I">Elle est femme ; on l'irrite.</l><!--@syll="6"-->
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="493" part="F">Eh ne crains rien, Lycas.</l><!--@syll="6"-->
+                        <l n="494">Son courroux contre moi s'exhale en vains éclats,</l>
+                        <l n="495">Mais dans le désespoir dont je la vois atteinte</l>
+                        <l n="496">C'est Iole qui fait le sujet de ma crainte.</l>
+                        <l n="497">Philoctète a trahi mon amour malheureux,</l>
+                        <l n="498">Et Déjanire arrive instruite de mes feux.</l>
+                        <l n="499">C'est lui qui prévenant une facile épouse.</l>
+                        <l n="500">A porté dans son coeur cette rage jalouse.</l>
+                        <l n="501">Si je puis l'en convaincre... Oui, Lycas, aujourd'hui</l>
+                        <l n="502">Tout mon ressentiment retomberait sur lui.</l>
+                        <l n="503">Quel intérêt prend-il à traverser ma flamme ?</l>
+                        <l n="504">Je ne t'explique point les soupçons de mon âme ;</l>
+                        <l n="505">Mais crois moi, je pourrais donner de la terreur</l>
+                        <l n="506">À quiconque oserait me disputer un coeur.</l>
+                        <l n="507">Mais Iole entre ici ; quel intérêt l'amène ?</l>
+                        <l n="508" part="I">Madame, demeurez.</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Hercule, Iole, Lycas, Dircé.</head>
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="508" part="F">J'ai crû trouver la Reine,</l><!--@syll="6"-->
+                        <l n="509">Seigneur, on m'avait dit, qu'elle était en ces lieux.</l>
+                        <l n="510">Je venais présenter sa Captive à ses yeux ;</l>
+                        <l n="511">Et puisqu'ainsi le veut la Fortune contraire,</l>
+                        <l n="512">Rendre à ma Souveraine un hommage sincère.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="513">Épargnez-vous ce soin, Madame, et pour jamais,</l>
+                        <l n="514">À ses jaloux regards dérober vos attraits.</l>
+                        <l n="515">Oui, Princesse, fuyez une fière ennemie,</l>
+                        <l n="516">Dans ses cruels soupçons justement affermie,</l>
+                        <l n="517">Qui veut punir sur vous un époux odieux,</l>
+                        <l n="518">Du malheureux amour qu'il a pris dans vos yeux.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="519">Ah, Seigneur, j'avais cru qu'une épouse confiante</l>
+                        <l n="520">Étoufferait sans peine une flamme naissante,</l>
+                        <l n="521">Et que de ses regards la charmante douceur,</l>
+                        <l n="522">Lui rendrait l'ascendant qu'elle eût sur votre coeur.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="523">Non, si vous l'avez cru, vous vous êtes trompée.</l>
+                        <l n="524">C'est de vos seuls appas que j'ai l'âme occupée,</l>
+                        <l n="525">Déjanire à mes yeux n'en a point d'assez doux</l>
+                        <l n="526">Pour vous ravir un coeur qui veut n'être qu'à vous.</l>
+                        <l n="527">Du bruit de vos beautés cette Reine alarmée</l>
+                        <l n="528">De mille attraits nouveaux vainement s'est armée ;</l>
+                        <l n="529">Et de quelque brillant qu'ils fussent rechaussés,</l>
+                        <l n="530">Votre seul souvenir les a tous effacés.</l>
+                        <l n="531">Et de quoi lui servait cette beauté nouvelle ?</l>
+                        <l n="532">Je ne pensais qu'à vous quand j'étais avec elle.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="533">Que je souffre, Seigneur, de vous voir prévenu,</l>
+                        <l n="534">D'un mouvement si tendre, et si mal reconnu !</l>
+                        <l n="535">Mais il faut bien enfin que la raison surmonte</l>
+                        <l n="536">Un amour, dont jamais on ne vous tiendra compte.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="537">Eh prenez-vous plaisir à me désespérer,</l>
+                        <l n="538" part="I">Madame ?</l><!--@syll="2"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="538" part="F">À cet effort il faut vous préparer.</l><!--@syll="10"-->
+                        <l n="539">Contre un injuste amour, tout parle, tour conspire.</l>
+                        <l n="540">Redonnez-vous, Seigneur, aux voeux de Déjanire,</l>
+                        <l n="541">Et si vous résistez à de si doux appas,</l>
+                        <l n="542">Cédez à son amour, et ne le bravez pas.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="543">Je l'ai bravé, Madame ; hélas, pour ce que j'aime</l>
+                        <l n="544">Je braverais le Ciel, la Terre et l'Enfer même ;</l>
+                        <l n="545">De la Reine tantôt l'éclatante fureur</l>
+                        <l n="546">A fait de vains efforts pour ébranler mon coeur.</l>
+                        <l n="547">Comme j'avais paru peu sensible à ses charmes,</l>
+                        <l n="548">Je l'ai paru de même à ses cris, à ses larmes ;</l>
+                        <l n="549">Et dût-elle me perdre, il me serait trop doux</l>
+                        <l n="550">De mourir de sa main, si je mourais pour vous.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="551">Ce que j'entends, Seigneur, ne sert qu'à me confondre.</l>
+                        <l n="552">Mais pourquoi tant d'amour, si je n'y puis répondre ?</l>
+                        <l n="553">Quoique du monde entier Hercule soit vainqueur,</l>
+                        <l n="554">Il ne doit point prétendre à régner dans mon coeur.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="555">Et qui peut y régner plus justement qu'Hercule</l>
+                        <l n="556">Dans ce coeur trop fidèle à l'ardeur qui le brûle ?</l>
+                        <l n="557">Non, ne prétendez pas qu'un rival odieux</l>
+                        <l n="558">Triomphe impunément de moi-même à mes yeux.</l>
+                        <l n="559">Et si de votre coeur il m'enlève l'Empire,</l>
+                        <l n="560" part="I">Craignez tout pour ses jours.</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="560" part="F">Seigneur, qu'osez-vous dire ?</l><!--@syll="6"-->
+                        <l n="561">Quel rival ? En est-il qui voulût contre vous...</l>
+                        <l n="562">Ah, si ma résistance aigrit votre courroux,</l>
+                        <l n="563">C'est moi qui fais le crime, il faut que je l'expie.</l>
+                        <l n="564">Au défaut de mon coeur, Seigneur, prenez ma vie ;</l>
+                        <l n="565">Ordonner mon trépas ; la justice y consent ;</l>
+                        <l n="566">Mais n'y confondez point quelque Prince innocent. :</l>
+                        <l n="567">Hélas, je ne vis point dans cette incertitude.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="568">Ah ! je vois votre amour dans votre inquiétude,</l>
+                        <l n="569">Ingrate ; et puisqu'enfin vous me désespérez,</l>
+                        <l n="570">Tremblez pour le Rival que vous me préférez.</l>
+                        <l n="571">C'est jouir trop longtemps de ma peine secrète ;</l>
+                        <l n="572">Allez. Et vous, Lycas, rappelez Philoctète.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="573" part="I">Seigneur, qu'allez-vous faire ?</l><!--@syll="6"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="573" part="F">Allez ; dans un moment</l><!--@syll="6"-->
+                        <l n="574">Vous saurez mes desseins et le sort d'un Amant.</l>
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI.</head>
+<sp who="#hercule">
+                        <speaker>HERCULE, seul.</speaker>
+                        <l n="575">Ne lasserai-je point la colère céleste ?</l>
+                        <l n="576">Maîtresse, Épouse, Ami, tout me devient funeste.</l>
+                        <l n="577">De tant de grands exploits qui flattaient mon orgueil</l>
+                        <l n="578">L'amour de Philoctète est aujourd'hui l'écueil.</l>
+                        <l n="579">En vain pour couronner mes conquêtes heureuses,</l>
+                        <l n="580">J'ai posé de mes mains deux colonnes fameuses</l>
+                        <l n="581">Sur ces bords dangereux, où mes derniers travaux</l>
+                        <l n="582">Des deux plus vastes Mers ont rassemblé les eaux.</l>
+                        <l n="583">Ce sont des monuments érigés à ma honte,</l>
+                        <l n="584">Si dans le coeur d'Iole un mortel me surmonte.</l>
+                    </sp><!--@stage="alone"--><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Hercule, Philoctète, Lycas, Suite.</head>
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="585">Prince, vous me voyez confus, désespéré,</l>
+                        <l n="586">J'aime depuis un mois, sans l'avoir déclaré.</l>
+                        <l n="587">Aujourd'hui seulement je m'ouvre à ma Captive,</l>
+                        <l n="588">À vous. On m'avertit que Déjanire arrive.</l>
+                        <l n="589">Je vous charge du soin de presser son retour,</l>
+                        <l n="590">Et d'engager Iole à souffrir mon amour.</l>
+                        <l n="591">Un esprit complaisant, et doux comme le vôtre,</l>
+                        <l n="592">Vous a gagné l'estime, et de l'une, et de l'autre,</l>
+                        <l n="593">Et j'ai cru qu'aisément vous feriez consentir</l>
+                        <l n="594">Iole à m'épouser, et la Reine à partir,</l>
+                        <l n="595">Cependant, Philoctète, après votre entremise,</l>
+                        <l n="596">Déjanire demeure, Iole me méprise,</l>
+                        <l n="597">De plaintes toutes deux me viennent accabler :</l>
+                        <l n="598">L'une instruite d'un feu qu'il lui fallait celer,</l>
+                        <l n="599">Et l'autre à mon amour, plus fière, et plus rebelle ;</l>
+                        <l n="600">Qu'avant que vous eussiez fait agit votre zèle.</l>
+                        <l n="601">Ce n'est pas tout, j'apprends qu'un Rival plus heureux ;</l>
+                        <l n="602">Du coeur de la Princesse a mérité les voeux,</l>
+                        <l n="603">On me cache son nom, mais faites-vous justice,</l>
+                        <l n="604">Puisqu'il faut qu'en ce jour mon destin s'éclaircisse.</l>
+                        <l n="605">Ai-je encore besoin de nouvelles raisons</l>
+                        <l n="606">Pour arrêter sur vous me funestes soupçons ?</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="607">Seigneur, n'attendez pas dans le temps qu'on m'accuse,</l>
+                        <l n="608">Que j'aille me parer de quelque vaine excuse,</l>
+                        <l n="609">Et pour me garantir du péril que je cours,</l>
+                        <l n="610">D'une fausse innocence emprunter le secours.</l>
+                        <l n="611">Non, je sais qu'un Rival malaisément pardonne,</l>
+                        <l n="612">Et qu'Hercule condamne au moment qu'il soupçonne.</l>
+                        <l n="613">Ainsi ne craignez point que mon coeur agité,</l>
+                        <l n="614">D'un mensonge sans fruit couvre la vérité.</l>
+                        <l n="615">Ce coeur de votre amour secret dépositaire,</l>
+                        <l n="616">Aux yeux de Déjanire en a fait un mystère.</l>
+                        <l n="617">C'est blesser ma vertu que ne le croire pas.</l>
+                        <l n="618">Mais si de la Princesse adorer les appas,</l>
+                        <l n="619">Si de tous mes désirs lui faire un sacrifice,</l>
+                        <l n="620">Est un crime à vos yeux si digne de supplice,</l>
+                        <l n="621">De tout votre pouvoir, armez votre courroux :</l>
+                        <l n="622">Je suis plus criminel, que vous n'êtes jaloux.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="623">À me vanter ton crime ose encore prétendre ?</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="624">Et qu'a-t-il de honteux, Seigneur, pour m'en défendre ?</l>
+                        <l n="625">Pouvais-je résister à des charmes si doux ?</l>
+                        <l n="626">Hélas ! ai-je le coeur moins sensible que vous ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="627">Moins sensible que moi ! Quoi, tu voudrais perfide...</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="628">Non, je sais le respect que doit prétendre Alcide :</l>
+                        <l n="629">Philoctète en aura pour vous jusqu'à la mort.</l>
+                        <l n="630">Je sais trop que le Ciel en marquant notre sort,</l>
+                        <l n="631">A mis votre fortune au-dessus de toute autre ;</l>
+                        <l n="632">Mais, Seigneur, mon amour a devancé le votre ;</l>
+                        <l n="633">Avant que le combat vous eût soumis ces lieux...</l>
+                        <l n="634">L'éclat de la Princesse avait frappé mes yeux.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="635">Ah ! C'est trop différer : Holà, Gardes qu'on vienne.</l>
+                        <l n="636">Notre tête, Lycas, me répond de la sienne :</l>
+                        <l n="637">En lieu de sûreté menez-le de ce pas.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="638" part="I">Seigneur, ne croyez point...</l><!--@syll="6"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="638" part="F">Obéissez, Lycas.</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+</div>
+</div>
+<div type="acte" n="3">
+                <head>ACTE III</head>
+<div type="scene" n="">
+                    <head>SCÈNE PREMIÈRE. Déjanire, Phénice.</head>
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="639">Non, Phénice, tu prends une peine inutile,</l>
+                        <l n="640">Pour me faire quitter cette funeste ville.</l>
+                        <l n="641">Je veux dans OEcalie chercher un autre sort ;</l>
+                        <l n="642">Elle a causé me honte, elle verra ma mort.</l>
+                        <l n="643">Mais il faut que le sang de celle qui m'affronte,</l>
+                        <l n="644">Venge aujourd'hui ma mort et répare ma honte.</l>
+                        <l n="645">Le malheur que je crains n'est que trop confirmé ;</l>
+                        <l n="646">Puisqu'Hercule aime Iole, Hercule en est aimé.</l>
+                        <l n="647">Et quel lieu de douter qu'il n'aime sa Captive,</l>
+                        <l n="648">Lui qui craignant le cours d'une tendresse oisive ;</l>
+                        <l n="649">Pour la renouveler après ses grands Exploits,</l>
+                        <l n="650">De Captives sans nombre a reconnu les Lois ?</l>
+                        <l n="651">Il a fait arrêter le Prince Philoctète</l>
+                        <l n="652">Qui s'opposait sans doute à son ardeur secrète,</l>
+                        <l n="653">Ou qui de la Princesse est peut-être amoureux,</l>
+                        <l n="654">Phénice, et la prison est le prix de ses feux.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="655">Madame, puisqu'enfin rien ne peut vous contraindre</l>
+                        <l n="656">À sortir d'une Ville où vous devez tout craindre,</l>
+                        <l n="657">N'est-il pas un moyen plus facile et plus doux,</l>
+                        <l n="658">De vous venger d'Iole et d'un volage époux ?</l>
+                    </sp><!--@who="PHÉNICE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="659">Oui sans doute il en est ; et je puis t'en répondre.</l>
+                        <l n="660">Je tiens en mon pouvoir ce qui peut les confondre.</l>
+                        <l n="661">J'ai, Phénice... À tes yeux je ne m'en cache plus,</l>
+                        <l n="662">Un voile teint du sang du perfide Nessus,</l>
+                        <l n="663">De Nessus qu'Ixion eût d'une amour si vaine,</l>
+                        <l n="664">De ce Centaure enfin, qui sur les bords d'Evene</l>
+                        <l n="665">Frappé d'un javelot qui lui perçoit le flanc,</l>
+                        <l n="666">Vomit devant mes yeux tout son perfide sang ;</l>
+                        <l n="667">Lorsque pour détourner une brutale envie,</l>
+                        <l n="668">Hercule de sa main lui fit perdre la vie.</l>
+                        <l n="669">Ce Centaure en mourant, de rage transporté,</l>
+                        <l n="670">Me dit de conserver ce voile ensanglanté ;</l>
+                        <l n="671">Que ce serait par lui que j'aurais l'avantage</l>
+                        <l n="672">De regagner le coeur d'un Époux trop volage,</l>
+                        <l n="673">Quand d'un nouvel amour reconnaissant la Loi,</l>
+                        <l n="674">Il pourrait se résoudre à violer sa foi.</l>
+                        <l n="675">Oui, du sang de Nessus le charme imperceptible</l>
+                        <l n="676">Est pour me rendre Hercule un moyen infaillible.</l>
+                        <l n="677">Mais je n'aurai donc point la secrète douceur</l>
+                        <l n="678">De ne devoir qu'à lui le retour de son coeur !</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="679">Eh ! sans porter si loin votre délicatesse,</l>
+                        <l n="680">Madame, d'un époux regagnez la tendresse.</l>
+                        <l n="681">Servez-vous du moyen qui vous est présenté.</l>
+                    </sp><!--@who="PHÉNICE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="682">Je n'en suis pas réduite à cette extrémité,</l>
+                        <l n="683">Phénice. Penses-tu, quoi qu'Hercule me brave,</l>
+                        <l n="684">Qu'il voulût à mes yeux épouser son esclave ?</l>
+                        <l n="685">Non, non, tu me verrais avant ce coup affreux</l>
+                        <l n="686">Poignarder l'un et l'autre, et moi-même après eux.</l>
+                        <l n="687">Quelle secrète horreur ! Qu'est-ce que j'envisage ?</l>
+                        <l n="688">L'Ingrat, jusqu'à ce point pousserait-il l'outrage ?</l>
+                        <l n="689">Oserait-il... Mais non, c'est trop tôt m'alarmer,</l>
+                        <l n="690">Sans épouser Iole, Hercule peut l'aimer.</l>
+                        <l n="691">Que dis-je... Ah juste Ciel ! c'est en vain que j'espère,</l>
+                        <l n="692">Après m'avoir trahie, Hercule peut tout faire.</l>
+                        <l n="693">Ne me déguise rien, Phénice, au nom des Dieux.</l>
+                        <l n="694" part="I">Que dit-on ? Qu'as-tu su ?</l><!--@syll="6"-->
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="694" part="F">Lycas entre en ces lieux,</l><!--@syll="6"-->
+                        <l n="695">Madame, c'est de lui que vous pourrez apprendre !</l>
+                    </sp><!--@who="PHÉNICE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Déjanire, Phénice, Lycas.</head>
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="696">Eh bien, Lycas, parlez, à quoi dois-je m'attendre ?</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="697">Madame, votre époux accablé de douleur,</l>
+                        <l n="698">Frémit du coup mortel qu'il porte à votre coeur ;</l>
+                        <l n="699">Mais enfin de Junon la colère immortelle</l>
+                        <l n="700">Le contraint, quoiqu'il fasse, à vous être infidèle ;</l>
+                        <l n="701">Et c'est pour épargner un supplice à vos yeux,</l>
+                        <l n="702">Qu'il ose vous prier d'abandonner ces lieux.</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="703">Quel supplice, Lycas ? Parlez sans vous contraindre ?</l>
+                        <l n="704">Mon Époux aime Iole, et qu'ai-je encor à craindre ?</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="705">Madame, il n'est plus temps de vous rien déguiser ;</l>
+                        <l n="706">Il l'aime, et dès ce jour il prétend l'épouser.</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="707" part="I">L'épouser !</l><!--@syll="3"-->
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="707" part="F">Oui, madame, et la pompe s'apprête.</l><!--@syll="9"-->
+                        <l n="708">Dérobez votre vue à cette triste Fête :</l>
+                        <l n="709">Cédez à la Fortune ; et que vos yeux au moins</l>
+                        <l n="710">De ce triomphe affreux ne soient pas les témoins.</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="711">La force, la raison, l'esprit, tout m'abandonne.</l>
+                        <l n="712">Mais il faut bien partir, puisqu'Hercule l'ordonne.</l>
+                        <l n="713">Oui, Lycas, je suis prête à sortir de ces lieux.</l>
+                        <l n="714">Ne puis-je pas au moins recevoir ses adieux ?</l>
+                        <l n="715">Avant que de partir il faut que je le voie :</l>
+                        <l n="716">Qu'il m'accorde, Lycas, cette dernière joie.</l>
+                        <l n="717">L'effort que je me fais pour observer sa Loi,</l>
+                        <l n="718">Hélas ! vaut bien celui qu'il se fera pour moi.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="719">Oui, de vous voir, Madame, il ne se peut défendre.</l>
+                        <l n="720">Je vais l'en avertir, et vous pouvez l'attendre.</l>
+                    </sp><!--@who="LYCAS"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Déjanire, Phénice.</head>
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="721">Admire le pouvoir que vous avez sur vous,</l>
+                        <l n="722">Madame, cet effort doit charmer votre Époux,</l>
+                        <l n="723" part="I">Cette rare vertu...</l><!--@syll="6"-->
+                    </sp><!--@who="PHÉNICE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="723" part="F">Quoi, tu crois que je parte,</l><!--@syll="6"-->
+                        <l n="724">Que de ces tristes lieux ma Rivale m'écarte !</l>
+                        <l n="725">Ah ! Phénice, jamais ne me connaîtras-tu ?</l>
+                        <l n="726">Pour cet effort barbare ai-je assez de vertu ?</l>
+                        <l n="727">Hélas ! Dans ce moment je n'ai que de la rage,</l>
+                        <l n="728">De la vertu l'Amour m'a fait perdre l'usage :</l>
+                        <l n="729">Je n'en ai plus, Phénice, et comment en avoir ?</l>
+                        <l n="730">Où la placer ? Mon coeur est plein de désespoir.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="731">Si vous ne partez pas, pourquoi donc cette feinte ?</l>
+                    </sp><!--@who="PHÉNICE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="732">Et d'Hercule et d'Iole, il faut calmer la crainte,</l>
+                        <l n="733">Dérober à leurs yeux ma jalouse fureur,</l>
+                        <l n="734">Et ne leur laisser voir qu'une rendre douleur.</l>
+                        <l n="735">Phénice, c'est ainsi qu'endormant leur prudence,</l>
+                        <l n="736">Je saurai ménager le temps de ma vengeance,</l>
+                        <l n="737">Éviter un départ plus cruel que la mort,</l>
+                        <l n="738">Et me rendre prés d'eux maîtresse de leur sort.</l>
+                        <l n="739">Cependant prévenons le sort qui nous menace</l>
+                        <l n="740">De mettre dès ce jour ma Rivale en ma place.</l>
+                        <l n="741">Ôtons-lui, s'il se peut, jusques à la douceur</l>
+                        <l n="742">De jouir un moment de ce fatal honneur.</l>
+                        <l n="743">Servons-nous de ce voile, où l'on remarque encore</l>
+                        <l n="744">Des vestiges rougis par le sang du Centaure.</l>
+                        <l n="745">Tu sauras que voulant le garder chèrement,</l>
+                        <l n="746">J'en fis faire autrefois un pompeux vêtement,</l>
+                        <l n="747">Où l'adresse de l'Art à la Richesse unie,</l>
+                        <l n="748">Le rend propre à l'éclat d'une cérémonie.</l>
+                        <l n="749">Il faut que renfermant tous mes transports jaloux,</l>
+                        <l n="750">Je parvienne aux moyens d'en orner mon époux.</l>
+                        <l n="751">Mais pour ne pas nourrir une vaine espérance,</l>
+                        <l n="752">Il faut par des respects gagner sa confiance.</l>
+                        <l n="753">Cruelle jalousie, où me réduisez-vous ?</l>
+                        <l n="754">Il faut feindre aujourd'hui pour fléchir mon époux.</l>
+                        <l n="755">Ah ! que je feindrai mal, et que de ma tendresse,</l>
+                        <l n="756">En voyant cet ingrat, je serai peu maîtresse !</l>
+                        <l n="757">Phénice, le voici. Pourquoi confondais-tu,</l>
+                        <l n="758">Ciel ! tant de perfidie avec tant de vertu ?</l>
+                    </sp><!--@who="DÉJANIRE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Hercule, Déjanire, Lycas, Phénice.</head>
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="759">Ma présence, Seigneur, blesse ici votre vue :</l>
+                        <l n="760">Vous voulez que je parte, et j'y suis résolue.</l>
+                        <l n="761">Du plaisir de vous voir, je prétendais jouir :</l>
+                        <l n="762">Vous me le défendez, il vous faut obéir.</l>
+                        <l n="763">Mais, Seigneur, puis qu'enfin nul espoir ne me flatte ;</l>
+                        <l n="764">Que dans tout ce Palais mon infortune éclate ;</l>
+                        <l n="765">Que tout y retentit de l'appareil pompeux</l>
+                        <l n="766">Dont votre amour honore un Hymen plus heureux :</l>
+                        <l n="767">Si c'est pour m'épargner l'horreur du sacrifice,</l>
+                        <l n="768">Que vous voulez, Seigneur, que je vous obéisse :</l>
+                        <l n="769">Rien n'égale l'horreur de m'éloigner de vous ;</l>
+                        <l n="770">Et c'est de mes tourments le plus cruel de tous.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="771">Quoi, jusqu'à cet excès la tendresse vous porte,</l>
+                        <l n="772">Madame ? Mais tantôt parliez-vous de la sorte ?</l>
+                        <l n="773">D'où vient ce changement, et quels sont vos desseins ?</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="774">Me séparer de vous est tout ce que je crains.</l>
+                        <l n="775">Mais puisque les fureurs, le désespoir, les plaintes</l>
+                        <l n="776">Ont fait de vains efforts pour rassurer mes craintes ;</l>
+                        <l n="777">Je ne veux plus m'armer que d'innocents soupirs,</l>
+                        <l n="778">Pour combattre l'ardeur de vos nouveaux désirs.</l>
+                        <l n="779">À mon devoir, Seigneur, je me rends toute entière :</l>
+                        <l n="780">Plus de fierté ; De quoi serais-je encore fière ?</l>
+                        <l n="781">De mon fidèle amour ? il ne vous touche plus :</l>
+                        <l n="782">De mes attraits ? une autre, hélas, les a vaincus.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="783">Madame, au nom des pleurs que je vous vois répandre,</l>
+                        <l n="784">Dérobez à mes yeux une douleur si tendre.</l>
+                        <l n="785">Vengez-vous en fuyant d'un infidèle époux,</l>
+                        <l n="786">Qui s'arrache à soi-même, en s'attachant à vous,</l>
+                        <l n="787" part="I">Mon trouble...</l><!--@syll="3"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="787" part="F">Eh bien, Seigneur, pour plaire à votre envie,</l><!--@syll="9"-->
+                        <l n="788">Où dois-je aller cacher ma déplorable vie !</l>
+                        <l n="789">Où me renvoyez-vous ? Irai-je à Calidon !</l>
+                        <l n="790">Quel respect à ce Peuple inspirera mon nom ?</l>
+                        <l n="791">Qui suis-je dans le temps qu'Hercule m'abandonne</l>
+                        <l n="792">Quel mérite me suit ? quel éclat m'environne ?</l>
+                        <l n="793">Enfin de tant de noms et de titres pompeux,</l>
+                        <l n="794">Que peut-il me rester qu'un souvenir honteux ?</l>
+                        <l n="795">Souffrez-moi près de vous. Votre nouvelle épouse,</l>
+                        <l n="796">Seigneur, n'aura pas lieu d'en paraître jalouse.</l>
+                        <l n="797">Accablée à ses yeux de tristesse et de deuil,</l>
+                        <l n="798">Je servirai sans doute à flatter son orgueil :</l>
+                        <l n="799">Car enfin je prétends, humble dans ma misère,</l>
+                        <l n="800">N'avoir plus d'autre soin que celui de lui plaire :</l>
+                        <l n="801">Trop heureuse, Seigneur, en lui faisant ma cour,</l>
+                        <l n="802">Si mes soumissions vous marquent mon amour.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="803">Qu'entends-je ? où vous emporte un excès de tendresse ?</l>
+                        <l n="804">Non, non, de votre sort vous serez la maîtresse.</l>
+                        <l n="805">Je rougis à vos yeux du trouble où je me vois.</l>
+                        <l n="806">Madame, disposez de vous à votre choix,</l>
+                        <l n="807">Et bannissant enfin une crainte timide,</l>
+                        <l n="808">Demeurez, ou partez en épouse d'Alcide.</l>
+                        <l n="809">Faites-vous un plaisir de mes transports secrets :</l>
+                        <l n="810">Mais prenez-vous au Ciel du tort que je vous fais.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="811">Ah ! si j'avais encor le bonheur de vous plaire,</l>
+                        <l n="812">Qu'aisément de Junon vous vaincriez la colère !</l>
+                        <l n="813">Ce triomphe pour vous ne serait pas nouveau.</l>
+                        <l n="814">Vous l'avez su braver même dès le berceau,</l>
+                        <l n="815">Lorsque vos seules mains vous servant de défense,</l>
+                        <l n="816">On vous vit des serpents vaincre la violence.</l>
+                        <l n="817">Par combien de brigands, et de monstres domptés,</l>
+                        <l n="818">Farouches ennemis par Junon suscités,</l>
+                        <l n="819">Avez-vous triomphé de sa haine immortelle ?</l>
+                        <l n="820">Ah ! ne lui cédez-vous que pour m'être infidèle ;</l>
+                        <l n="821">Et ne vous lassez-vous enfin d'être Vainqueur,</l>
+                        <l n="822">Que lorsqu'il faut, ingrat, me garder votre coeur ?</l>
+                        <l n="823">Qu'osai-je dire, ô Ciel ! mon amour m'a trahie.</l>
+                        <l n="824">Mais cet éclat sera le dernier de ma vie ;</l>
+                        <l n="825">Et quoique me suggère un dépit trop confus,</l>
+                        <l n="826">J'oublierai, si je puis, que vous ne m'aimez plus.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Hercule, Lycas.</head>
+<sp who="#lycas">
+                        <speaker>LYCAS.</speaker>
+                        <l n="827">Seigneur, d'un tel effort la croyez-vous capable ?</l>
+                    </sp><!--@who="LYCAS"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="828">Que cet effort, Lycas, soit feint ou véritable ;</l>
+                        <l n="829">Elle oserait en vain s'opposer à mes voeux,</l>
+                        <l n="830">Et je touche au moment qui me doit rendre heureux.</l>
+                        <l n="831">Ce n'est pas après tout que l'heureux Philoctète</l>
+                        <l n="832">Ne mêle dans ma joie une douleur secrète ;</l>
+                        <l n="833">Non que de sa prison pour lui-même inquiet,</l>
+                        <l n="834">Puisqu'il est mon Rival, je m'en venge à regret .</l>
+                        <l n="835">Mais puis-je l'avouer ? c'est qu'aimant la Princesse,</l>
+                        <l n="836">Il a surpris, Lycas, sa première tendresse ;</l>
+                        <l n="837">Et c'est pour mon amour un sujet de douleur,</l>
+                        <l n="838">Qu'avant moi ce Rival ait régné dans son coeur.</l>
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Hercule, Lycas, Iole, Dircé.</head>
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="839">Seigneur, si votre amour demande une victime ;</l>
+                        <l n="840">Prenez-là ; mais du moins épargnez vous un crime :</l>
+                        <l n="841">Et pour justifier cet éclatant courroux,</l>
+                        <l n="842">Voyez sur quelle tête il faut lancer vos coups,</l>
+                        <l n="843">Philoctète n'a point mérité sa disgrâce.</l>
+                        <l n="844">Ah ! détournez sur moi le sort qui le menace.</l>
+                        <l n="845">Oui, Seigneur, punissez mes criminels appas.</l>
+                        <l n="846">Il serait innocent, s'il ne les aimait pas.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="847">Il les aime, Madame ; et c'est de cette offense</l>
+                        <l n="848">Qu'un Rival méprisé cherche à tirer vengeance.</l>
+                        <l n="849">Eh quoi, lorsqu'à mes yeux de vous seule charmés,</l>
+                        <l n="850">Vous me haïssez presque autant que vous l'aimez ;</l>
+                        <l n="851">Osez-vous présumer qu'après un tel outrage,</l>
+                        <l n="852">La clémence pour moi soit d'un facile usage ?</l>
+                        <l n="853">Non, ne pouvant sur vous punir votre rigueur,</l>
+                        <l n="854">Sur Philoctète au moins j'en veux punir l'Auteur.</l>
+                        <l n="855">Ainsi votre Vainqueur cessant de se contraindre,</l>
+                        <l n="856">S'il ne se fait aimer, saura se faire craindre.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="857">Vous n'êtes que trop craint : tout tremble devant vous ;</l>
+                        <l n="858">Et jusques aux Enfers on craint votre courroux.</l>
+                        <l n="859">Mais l'amour par la crainte aisément s'effarouche :</l>
+                        <l n="860">Ce n'est ni la fierté, ni l'orgueil, qui le touche.</l>
+                        <l n="861">Les menaces enfin, les plaintes, la terreur,</l>
+                        <l n="862">Ne sont pas les chemins qui conduisent au coeur.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="863">Quels sont-ils donc, cruelle ? Au moins daignez m'instruire</l>
+                        <l n="864">De ces heureux moyens qui peuvent y conduire :</l>
+                        <l n="865">Et pour venir à bout de vos cruels mépris,</l>
+                        <l n="866">Montrez-moi les chemins que Philoctète a pris.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="867">Philoctète soumis et plein de complaisance,</l>
+                        <l n="868">N'a jamais contre Iole usé de violence ;</l>
+                        <l n="869">Philoctète au combat, épargnant les Vaincus,</l>
+                        <l n="870">N'a point trempé ses mains dans le sang d'Euritus.</l>
+                        <l n="871">Philoctète engagé dans une amour nouvelle,</l>
+                        <l n="872">Ne désespère point une épouse fidèle.</l>
+                        <l n="873">Et Philoctète enfin, en flattant ma douleur,</l>
+                        <l n="874">Sans me parler d'amour, a su toucher mon coeur.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="875">Puisqu'on fait de mon coeur la victime d'un autre,</l>
+                        <l n="876">À la dernière épreuve il faut mettre le votre.</l>
+                        <l n="877" part="I">C'en est trop.</l><!--@syll="3"-->
+                        <stage type="toward">À Lycas.</stage>
+                        <l n="877" part="F">Amenez Philoctète en ces lieux.</l><!--@syll="9"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="878" part="I">Quoi, Seigneur...</l><!--@syll="3"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="878" part="F">Je prétends vous confondre à ses yeux,</l><!--@syll="9"-->
+                        <l n="879">Ingrate, vos mépris ont lassé ma confiance.</l>
+                        <l n="880">Mon amour dans mon coeur fait place à la vengeance ;</l>
+                        <l n="881">Et si je ne pouvais encor le surmonter,</l>
+                        <l n="882">Je ne vous aimerais que pour vous tourmenter.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="883">Ne pouvant vous aimer, Seigneur, je veux vous plaindre.</l>
+                        <l n="884">À vous haïr pourquoi voulez-vous me contraindre ?</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="885">Non, non, je ne veux point d'une indigne pitié,</l>
+                        <l n="886">Et j'aime vos rigueurs plus que votre amitié.</l>
+                        <l n="887">Je voulais votre coeur, un autre le possède.</l>
+                        <l n="888">Ah ! c'est à cet affront que ma constance cède ;</l>
+                        <l n="889">Mais ne prétendez pas qu'en ne vous aimant plus,</l>
+                        <l n="890">Je veuille par l'oubli répondre à vos refus ;</l>
+                        <l n="891">Que contraint d'étouffer une vaine espérance,</l>
+                        <l n="892">Je cherche mon repos dans mon indifférence ;</l>
+                        <l n="893">Et que je sois enfin au gré de vos désirs,</l>
+                        <l n="894">Tranquille spectateur de vos heureux soupirs.</l>
+                    </sp><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VII. Hercule, Philoctète, Lycas, Iole, Phénice.</head>
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="895">Prince, l'amour sur moi vous donne la victoire.</l>
+                        <l n="896">Mais croyez-vous longtemps jouir de cette gloire ?</l>
+                        <l n="897">Croyez-vous qu'insensible à ce mortel affront,</l>
+                        <l n="898">Hercule impunément laisse rougir son front ?</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="899">Non, Seigneur, puisqu'à vous Iole me préfère,</l>
+                        <l n="900">Je prétendrais en vain fléchir votre colère,</l>
+                        <l n="901">Je dois me préparer à mourir à ses yeux.</l>
+                        <l n="902">Mais pouvais-je espérer un sort plus glorieux ?</l>
+                        <l n="903">Cent fois dans les combats j'ai hasardé ma vie,</l>
+                        <l n="904">Le Ciel n'a point permis qu'elle me fut ravie.</l>
+                        <l n="905">Il l'a voulu garder jusqu'à cet heureux jour,</l>
+                        <l n="906">Pour la faire servir de victime à l'Amour.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="907" part="I">Ô Ciel !</l><!--@syll="2"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="907" part="F">N'en doutez point, d'un amour qu'elle opprime,</l><!--@syll="10"-->
+                        <l n="908">Philoctète, à ses yeux vous serez la victime.</l>
+                        <l n="909">Mais je ne réponds point qu'après un tel effort,</l>
+                        <l n="910">Tout mon ressentiment se borne à votre mort.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="911">Ah ! je voudrais en vain me montrer intrépide :</l>
+                        <l n="912">Vous trouvez le secret de me rendre timide.</l>
+                        <l n="913">Et puisque contre Iole Hercule est irrité,</l>
+                        <l n="914">Ma crainte vient à bout de ma tranquillité.</l>
+                        <l n="915">Vengez-vous d'un rival dont l'amour vous offense :</l>
+                        <l n="916">Mais qu'Iole n'ait point de part à la vengeance.</l>
+                        <l n="917">Et si dans mon destin il faut l'envelopper,</l>
+                        <l n="918">Consultez votre coeur avant que de frapper.</l>
+                        <l n="919">D'un remords inutile épargnez-vous la gêne :</l>
+                        <l n="920">Dans mon malheureux sang éteignez votre haine.</l>
+                        <l n="921" part="I">Seigneur, que tardez-vous ?</l><!--@syll="6"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="921" part="F">Par une même loi,</l><!--@syll="6"-->
+                        <l n="922">Je dois mourir pour vous, si vous mourez pour moi.</l>
+                        <stage type="toward">À Hercule.</stage>
+                        <l n="923">En vain vous céderiez, Seigneur, à son envie :</l>
+                        <l n="924">Et je mourrais du coup dont il perdrait la vie.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="925">Non, non, malgré l'éclat d'un si tendre transport,</l>
+                        <l n="926">Ce jour éclairera mon hymen, ou sa mort.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="927" part="I">Quoi, Seigneur, voulez-vous...</l><!--@syll="6"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="927" part="F">Oui, je prétends, Madame,</l><!--@syll="6"-->
+                        <l n="928">Qu'à recevoir ma foi vous disposiez votre âme,</l>
+                        <l n="929">Ou que sans différer, au sortir de ces lieux,</l>
+                        <l n="930">À la mort d'un Amant vous prépariez vos yeux.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="931" part="I">Qu'entends-je ?</l><!--@syll="2"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="931" part="F">À l'un des deux il faut bien vous résoudre ;</l><!--@syll="10"-->
+                        <l n="932">Il est encore temps de retenir la foudre.</l>
+                        <l n="933">Mais demain vous pourriez le vouloir vainement.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="934">Princesse, devez-vous balancer un moment ?</l>
+                        <l n="935">Sacrifiez mes jours, le sang vous y convie.</l>
+                        <l n="936">Aussi bien vous perdant, aimerais-je la vie ?</l>
+                        <l n="937">Hercule, c'est assez, prononce mon trépas.</l>
+                        <l n="938">La Princesse me venge, en ne t'épousant pas.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="939">Non, moi-même à la vie il faut que je renonce.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="940">Lycas ira dans peu savoir votre réponse.</l>
+                        <l n="941">Songez de vos mépris à me faire raison.</l>
+                        <l n="942" part="I">Allez.</l><!--@syll="2"-->
+                        <stage type="toward">À Lycas.</stage>
+                        <l n="942" part="F">Vous, remmenez le Prince en sa prison.</l><!--@syll="10"-->
+                    </sp><!--@who="HERCULE"-->
+</div>
+</div>
+<div type="acte" n="4">
+                <head>ACTE IV</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Iole, Dircé.</head>
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="943">Quels que soient les malheurs où cet hymen me jette,</l>
+                        <l n="944">Je ne dois plus songer qu'à sauver Philoctète.</l>
+                        <l n="945">Je ne le puis, Dircé, qu'en lui manquant de foi :</l>
+                        <l n="946">J'en frémis, mais l'Amour m'impose cette loi.</l>
+                        <l n="947">Sauvons-le, en épousant l'Ennemi qui l'opprime,</l>
+                        <l n="948">Et de sa sûreté faisons-nous la victime.</l>
+                        <l n="949">Mais quand j'ai tant d'ardeur pour les jours d'un Amant,</l>
+                        <l n="950">Qu'Hercule répond mal à mon empressement !</l>
+                        <l n="951">Que sa lenteur, Dircé, m'est d'un funeste augure !</l>
+                        <l n="952">Lycas ne paraît point, et rien ne me rassure.</l>
+                        <l n="953">Dans cet effroi mortel je ne respire pas...</l>
+                        <l n="954">Va, Dircé, cours toi-même au devant de Lycas.</l>
+                        <l n="955">Cherche Hercule, dis-lui qu'à son sort enchaînée,</l>
+                        <l n="956">Je ne soupire plus qu'après son hyménée.</l>
+                        <l n="957">Hélas ! en m'imposant de si barbares Lois,</l>
+                        <l n="958">A-t-il un seul moment pu douter de mon choix ?</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#dirce">
+                        <speaker>DIRCÉ.</speaker>
+                        <l n="959" part="I">Il vient lui-même à vous, je le vois.</l><!--@syll="9"-->
+                    </sp><!--@who="DIRCÉ"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Hercule, Iole, Dircé, Lycas.</head>
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="959" part="F">Oui, Madame,</l><!--@syll="3"-->
+                        <l n="960">C'est moi qui viens savoir le destin de ma flamme.</l>
+                        <l n="961">Il faut de vos desseins vous expliquer à moi.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="962">Je suis prête, Seigneur, à vous donner ma foi.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="963">Qu'entends-je ? dois-je croire un aveu si contraire</l>
+                        <l n="964">À tant de vains efforts que j'ai fait pour vous plaire ?</l>
+                        <l n="965" part="I">Quel changement subit !</l><!--@syll="6"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="965" part="F">Il est grand ; mais, Seigneur,</l><!--@syll="6"-->
+                        <l n="966">Le Ciel en un moment peut bien changer un coeur.</l>
+                        <l n="967">Il a changé le mien ; et ce coeur ne respire</l>
+                        <l n="968">Qu'à prendre près de vous le rang de Déjanire.</l>
+                        <l n="969">Non que de l'injustice il ne soit irrité :</l>
+                        <l n="970">Mais elle lui devient une nécessité.</l>
+                        <l n="971">Vous le savez, Seigneur, aimé de Philoctète,</l>
+                        <l n="972">Ce coeur rendit à lui d'une chaîne secrète.</l>
+                        <l n="973">Je la romps aujourd'hui, pour lui sauver le jour ;</l>
+                        <l n="974">Et sa vie est pour vous le prix de mon amour.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="975">Dans quels heureux transports un tel aveu me jette,</l>
+                        <l n="976" part="I">Madame...</l><!--@syll="2"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="976" part="F">Mais, Seigneur, on retient Philoctète.</l><!--@syll="10"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE, à Lycas.</speaker>
+                        <l n="977">Courez sans perdre temps, et que sa liberté</l>
+                        <l n="978">Soit le prix d'un hymen que j'ai tant souhaité.</l>
+                        <l n="979">Étant sûr de la foi que vous m'avez donnée,</l>
+                        <l n="980">Je vais tout disposer pour ce grand hyménée ;</l>
+                        <l n="981">Et par un sacrifice auguste et glorieux,</l>
+                        <l n="982">Je veux à notre hymen intéresser les Dieux.</l>
+                    </sp><!--@stage="toward"--><!--@who="HERCULE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Iole, Dircé.</head>
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="983" part="I">Ah ! Dircé, qu'ai-je fait ?</l><!--@syll="6"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#dirce">
+                        <speaker>DIRCÉ.</speaker>
+                        <l n="983" part="F">Que pouviez-vous moins faire,</l><!--@syll="6"-->
+                        <l n="984">Pour sauver une vie à la votre si chère ?</l>
+                        <l n="985">Épouse d'un Héros fous qui semblent les Rois ;</l>
+                        <l n="986">Presqu'à tout l'Univers vous donnerez des Lois,</l>
+                        <l n="987">Madame, et dans ce temps vous oublierez, peut-être,</l>
+                        <l n="988">La perte d'un Amant qui vous laissait un Maître.</l>
+                    </sp><!--@who="DIRCÉ"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="989">Et depuis quand crois-tu qu'une vaine grandeur</l>
+                        <l n="990">Se mêle aux sentiments qui remplissent mon coeur ?</l>
+                        <l n="991">Non, non, quelques honneurs qu'Hercule me promettre,</l>
+                        <l n="992">Rien n'est pour moi, Dircé, du prix de Philoctète ;</l>
+                        <l n="993">De lui, de son amour, j'ai le coeur tout rempli,</l>
+                        <l n="994">Et laisse la fortune en un profond oubli.</l>
+                        <l n="995">Cependant, aujourd'hui je pourrai laisser croire,</l>
+                        <l n="996">Que je tourne mes voeux du côté de la gloire ;</l>
+                        <l n="997">Et qu'entre deux Amants j'immole au plus heureux,</l>
+                        <l n="998">Le plus aimable, hélas et le plus amoureux,</l>
+                        <l n="999">Ainsi, pour racheter les jours de ce que j'aime,</l>
+                        <l n="1000">Il faut y renoncer, m'arracher à moi-même,</l>
+                        <l n="1001">Et par ce sacrifice exposer ma vertu</l>
+                        <l n="1002">Aux funestes remords d'avoir mal combattu.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#dirce">
+                        <speaker>DIRCÉ.</speaker>
+                        <l n="1003" part="I">J'aperçois Philoctète.</l><!--@syll="6"-->
+                    </sp><!--@who="DIRCÉ"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1003" part="F">Ah ! Dieux, je suis perdue.</l><!--@syll="6"-->
+                    </sp><!--@who="IOLE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Philoctète, Iole, Dircé.</head>
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1004">Enfin la liberté vient de m'être rendue,</l>
+                        <l n="1005">Madame : il m'est permis d'approcher de ces lieux.</l>
+                        <l n="1006">Mais me permettez-vous d'y paraître à vos yeux ?</l>
+                        <l n="1007">Pourrez-vous voir sans honte un Prince misérable,</l>
+                        <l n="1008">Qui ne le serait pas, si vous n'étiez coupable ;</l>
+                        <l n="1009">Qui de tous ses malheurs eût vu trancher le cours</l>
+                        <l n="1010">Sans vos funestes soins pour conserver ses jours ;</l>
+                        <l n="1011">Et qui ne cherche plus qu'à finir une vie</l>
+                        <l n="1012">Qu'il ne veut point devoir à votre perfidie ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1013">Que me dit-on ! Grands Dieux ! ai-je bien entendu ?</l>
+                        <l n="1014">Moi perfide ! ce nom me fut-il jamais dû ?</l>
+                        <l n="1015">Méritai-je jamais que d'une telle injure</l>
+                        <l n="1016">On payât une flamme, et si tendre et si pure !</l>
+                        <l n="1017">Que d'un nom si cruel mon amour fût noirci !</l>
+                        <l n="1018">Philoctète, est-ce vous qui me traitez ainsi ?</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1019">Oui, cruelle, C'est moi, qui honteux de vos feintes,</l>
+                        <l n="1020">Cherche à flatter mes maux par le secours des plaintes,</l>
+                        <l n="1021">Et qui n'aime à sortir de ma captivité,</l>
+                        <l n="1022">Que pour vous reprocher votre infidélité,</l>
+                        <l n="1023">Vous épousez Hercule, et vous osez prétendre</l>
+                        <l n="1024">Que cette liberté que vous me faites rendre,</l>
+                        <l n="1025">Que ces malheureux jours, qu'on sauve malgré moi,</l>
+                        <l n="1026">Excusent à mes yeux votre manque de foi !</l>
+                        <l n="1027">Non, non, la liberté, le jour que je déteste,</l>
+                        <l n="1028">M'est un nouveau supplice, et d'autant plus funeste,</l>
+                        <l n="1029">Qu'il présente sans cesse à mon coeur amoureux</l>
+                        <l n="1030">Ma Maîtresse perfide, et mon Rival heureux.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1031">Ciel, qui pénétrés seul dans le fond de mon âme,</l>
+                        <l n="1032">Vois l'affront qu'un ingrat ose faire à ma flamme ;</l>
+                        <l n="1033">Et fais qu'un prompt remords, suivi du repentir,</l>
+                        <l n="1034">Lui montre son erreur, et l'en fasse sortir.</l>
+                        <l n="1035">Mais puisqu'en vous sauvant j'aigris votre colère,</l>
+                        <l n="1036">Me reste-t-il, Seigneur, un moyen pour vous plaire !</l>
+                        <l n="1037">Sur le bord du cercueil où vous allez courir,</l>
+                        <l n="1038" part="I">Comment faire ?</l><!--@syll="4"-->
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1038" part="F">M'aimer, et me laisser mourir.</l><!--@syll="8"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1039">Et vous laisser mourir ! Ah ! cruel ! Mais vous-même,</l>
+                        <l n="1040">Qui me parlez d'aimer, est-ce ainsi que l'on aime ?</l>
+                        <l n="1041">Quelle Amante jamais, jusques à ce moment,</l>
+                        <l n="1042">Préféra sa confiance aux jours de son Amant ?</l>
+                        <l n="1043">Quel exemple autorise un conseil si bizarre ?</l>
+                        <l n="1044">Non, un coeur bien touché ne devient point barbare.</l>
+                        <l n="1045">Je ne me pique point de cette fermeté</l>
+                        <l n="1046">Qui va contre un Amant jusqu'à la cruauté :</l>
+                        <l n="1047">Je ne me pique point par un excès de zèle,</l>
+                        <l n="1048">De vous laisser périr, pour demeurer fidèle.</l>
+                        <l n="1049">Malgré tant de serments de me garder à vous,</l>
+                        <l n="1050">À vos yeux aujourd'hui, je prends un autre époux :</l>
+                        <l n="1051">Au mépris de la foi que je vous ai donnée,</l>
+                        <l n="1052">L'Hymen avec Hercule unit ma destinée.</l>
+                        <l n="1053">Mais Iole jamais, quel que soit votre effroi,</l>
+                        <l n="1054">Ne vous a tant aimé, qu'en vous manquant de foi.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1055">Et quel amour fut-il jamais comme le vôtre ?</l>
+                        <l n="1056">Quoi, vous courez, Madame, entre les bras d'un autre ;</l>
+                        <l n="1057">Vous rompez vos serments tant de fois confirmés,</l>
+                        <l n="1058">Vous me désespérez enfin, et vous m'aimez !</l>
+                        <l n="1059">Mais si l'amour vous rend à ce point inhumaine,</l>
+                        <l n="1060">À quelle extrémité portez-vous donc la haine ?</l>
+                        <l n="1061">Quelles sont vos fureurs, et vos transports jaloux ?</l>
+                        <l n="1062">Enfin aimant ainsi, comment haïssez-vous ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1063">À votre sûreté, Seigneur, je sacrifie</l>
+                        <l n="1064">Le plaisir, le repos, le bonheur de ma vie :</l>
+                        <l n="1065">À conserver vos jours, je borne mes souhaits ;</l>
+                        <l n="1066">Et si c'est vous haïr, voila comme je hais.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1067">Eh ! ne vous faites point une vertu sublime</l>
+                        <l n="1068">D'un sacrifice affreux dont je suis la victime.</l>
+                        <l n="1069">Quel plaisir perdez vous, quel repos, quel bonheur,</l>
+                        <l n="1070">Donc la perte en secret ne flatte votre coeur ?</l>
+                        <l n="1071">Ah ! puisqu'à me quitter vous consentez sans peine,</l>
+                        <l n="1072">Qu'à de vastes projets votre orgueil vous entraîne !</l>
+                        <l n="1073">Et que la majesté du rang ou vous montez,</l>
+                        <l n="1074">Vous récompense bien de ce que vous quittez !</l>
+                        <l n="1075">Mais pourquoi me laisser une vie importune</l>
+                        <l n="1076">Qui pourrait bien encor troubler votre fortune ?</l>
+                        <l n="1077">Car ne présumez pas qu'en Amant interdit,</l>
+                        <l n="1078">À de simples regrets je borne mon dépit ;</l>
+                        <l n="1079">Que lâche spectateur du triomphe d'un autre,</l>
+                        <l n="1080">Mon coeur pleure en secret le changement du vôtre ;</l>
+                        <l n="1081">Ou que de tout, ici, devant me défier,</l>
+                        <l n="1082">Loin de ces tristes lieux, j'aille vous oublier.</l>
+                        <l n="1083">Non, non, quelques malheurs que mon destin m'apprête,</l>
+                        <l n="1084">Je veux de votre hymen voir la cruelle fête ;</l>
+                        <l n="1085">Dans le Temple, à l'Autel, me ranger près de vous,</l>
+                        <l n="1086">Et dans mon désespoir vous dire aux yeux de tous :</l>
+                        <l n="1087">Inhumaine, voyez où votre orgueil vous jette ;</l>
+                        <l n="1088">La foi que vous donnez est due à Philoctète,</l>
+                        <l n="1089">Les Dieux nouveaux témoins de vos engagements,</l>
+                        <l n="1090">Le furent autrefois de vos premiers serments.</l>
+                        <l n="1091">Que diront-ils, ces Dieux, que votre âme aveuglée</l>
+                        <l n="1092">Va prendre pour garants d'une foi violée ?</l>
+                        <l n="1093">À votre heureux Époux voudront-ils garantir</l>
+                        <l n="1094">Cette foi qu'à leurs yeux vous osez démentir ?</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1095">Je le vois bien, ingrat, vous voulez que je croie</l>
+                        <l n="1096">Qu'à me désespérer vous mettez votre joie.</l>
+                        <l n="1097">Repaissez donc vos yeux d'un spectacle si doux.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1098">Mais vous-même, pourquoi me désespérez-vous ?</l>
+                        <l n="1099">Pourquoi m'abusiez-vous par une indigne feinte ?</l>
+                        <l n="1100">Vous me disiez tantôt pour rassurer ma crainte,</l>
+                        <l n="1101">Que j'avais sur votre âme un empire absolu ;</l>
+                        <l n="1102">Que si je le perdais, je l'aurais bien voulu.</l>
+                        <l n="1103">L'ai-je voulu ? Parlez en présence d'Alcide,</l>
+                        <l n="1104">Ai-je paru tantôt incertain et timide ?</l>
+                        <l n="1105">Quand il vous a prescrit ses tyranniques lois,</l>
+                        <l n="1106">Moi-même ai-je un moment balancé sur le choix ?</l>
+                        <l n="1107">N'ai-je pas prévenu votre funeste envie,</l>
+                        <l n="1108">En vous sollicitant d'abandonner ma vie ?</l>
+                        <l n="1109">Mais en mourant pour vous, du moins j'ai prétendu</l>
+                        <l n="1110">Que vous me garderiez un coeur qui m'était dû.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1111">Eh bien, puis qu'à vos yeux je suis si criminelle,</l>
+                        <l n="1112">Punissez mes forfaits par un oubli fidèle.</l>
+                        <l n="1113">Mais fuyez pour jamais le dangereux aspect</l>
+                        <l n="1114">D'une fatale Cour où tout vous est suspect.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1115">Vous croyez, que fuyant un Rival qui m'opprime</l>
+                        <l n="1116">Je vous laisse en repos couronner votre crime !</l>
+                        <l n="1117">Que je ne tâche point par un dernier effort,</l>
+                        <l n="1118">De troubler un hymen qui me cause la mort !</l>
+                        <l n="1119">Ne vous en flattez point ; je vais me rendre au temple,</l>
+                        <l n="1120">Où d'un grand désespoir je veux donner l'exemple,</l>
+                        <l n="1121">Consacrer les fureurs où vous m'abandonnez,</l>
+                        <l n="1122">Suspendu les devoirs des Prêtres prosternés ;</l>
+                        <l n="1123">Moi-même aux Immortels m'offrir en sacrifice,</l>
+                        <l n="1124">Et de mon sang versé leur demander justice.</l>
+                        <l n="1125" part="I">Adieu, Madame.</l><!--@syll="4"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Iole, Dircé.</head>
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1125" part="F">Hélas, Dircé, quel autre coeur</l><!--@syll="8"-->
+                        <l n="1126">Éprouva-t-il jamais une telle rigueur ?</l>
+                        <l n="1127">Philoctète oserait.... Ah ! que je suis à plaindre ?</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#dirce">
+                        <speaker>DIRCÉ.</speaker>
+                        <l n="1128">Madame, à voir le Prince, On a lieu de tour craindre.</l>
+                        <l n="1129">Il pourrait se porter à quelque extrémité.</l>
+                    </sp><!--@who="DIRCÉ"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1130">Et dans ce désespoir, c'est moi qui l'ai jeté :</l>
+                        <l n="1131">C'est moi qui le condamne, et qui le désespère.</l>
+                        <l n="1132">Fuyons, Dircé, fuyons le jour qui nous éclaire.</l>
+                        <l n="1133">Allons chercher du calme à mes sens égarés,</l>
+                        <l n="1134" part="I">Je ne respire point...</l><!--@syll="6"-->
+                    </sp><!--@who="IOLE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Déjanire, Iole, Phénice, Dircé.</head>
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1134" part="F">Madame, demeurez.</l><!--@syll="6"-->
+                        <l n="1135">Enfin contre le Ciel la résistance est vaine.</l>
+                        <l n="1136">Vous triomphez, Iole, et ma honte est certaine.</l>
+                        <l n="1137">Les apprêts d'un hymen qu'autorisent les Dieux,</l>
+                        <l n="1138">Dans ce vaste palais frappent par tour mes yeux.</l>
+                        <l n="1139">De cet auguste jour dont la pompe s'apprête,</l>
+                        <l n="1140">Un sacrifice heureux doit couronner la fête ;</l>
+                        <l n="1141">Et ce fameux Vainqueur qui se soumet à vous,</l>
+                        <l n="1142">Ce Héros, que je n'ose appeler mon Époux,</l>
+                        <l n="1143">Possédé d'un amour qui n'eut jamais d'exemple,</l>
+                        <l n="1144">Hercule, prend le soin de faire orner le Temple ;</l>
+                        <l n="1145">Lui-même, pour répondre à vos désirs pressants,</l>
+                        <l n="1146">Couronne la Victime, et prépare l'encens,</l>
+                        <l n="1147">Je n'ai plus d'espérance : il n'est plus temps de feindre.</l>
+                        <l n="1148">J'espérais que dans peu je n'aurais rien à craindre,</l>
+                        <l n="1149">Et que je pourrais voir revenir mon Époux,</l>
+                        <l n="1150">Me demander pardon, d'avoir brûlé pour vous.</l>
+                        <l n="1151">Mais lorsqu'à votre orgueil le Ciel devient propice ;</l>
+                        <l n="1152">Qu'il semble pour vous plaire appuyer l'injustice ;</l>
+                        <l n="1153">Quand il vous livre un coeur, dont j'ai reçu la foi ;</l>
+                        <l n="1154">Quand je perds tout enfin, que pensez-vous de moi ?</l>
+                        <l n="1155">Croyez-vous que timide au fort de la tempête,</l>
+                        <l n="1156">Je ne songe qu'au soin d'en garantir ma tête ?</l>
+                        <l n="1157">Que j'aille loin d'ici, tremblante pour mes jours.</l>
+                        <l n="1158">Par une indigne suite en assurer le cours ?</l>
+                        <l n="1159">Eh ! de quelque façon que le Ciel nous accable,</l>
+                        <l n="1160">Vous de faveurs, et moi d'une haine implacable,</l>
+                        <l n="1161">Madame, je ne sais malgré tout mon effroi,</l>
+                        <l n="1162">Qui doit le plus trembler, ou de vous, ou de moi.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1163">Je le crois : mais du moins si je crains des disgrâces ;</l>
+                        <l n="1164">Madame, ce n'est point l'effet de vos menaces ;</l>
+                        <l n="1165">Et puisque mon destin vient de se confirmer,</l>
+                        <l n="1166">Je ne prévois plus rien qui puisse m'alarmer.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1167">Quoi ! tu veux que je pense, odieuse Rivale,</l>
+                        <l n="1168">Qu'esclave dans les fers tu deviens mon égale ?</l>
+                        <l n="1169">Ah ! ne t'abuse point d'en téméraire orgueil :</l>
+                        <l n="1170">Ta nouvelle fortune est près de son écueil.</l>
+                        <l n="1171">Avant que d'en jouir, goûtes-en l'amertume.</l>
+                        <l n="1172">Tremble, et vois dans mes yeux le courroux qui s'allume :</l>
+                        <l n="1173">Pénètres, si tu peux, jusqu'au fond de mon coeur ;</l>
+                        <l n="1174">Vois-y le désespoir, la rage, la fureur,</l>
+                        <l n="1175">Tout ce qu'a de cruel une haine barbare ;</l>
+                        <l n="1176">Et commence à frémir du coup qu'on te prépare ;</l>
+                        <l n="1177">Car mon juste courroux jusqu'au pied de l'Autel</l>
+                        <l n="1178">Te veut aux yeux de tous donner le coup mortel.</l>
+                        <l n="1179">T'immoler en secret, est peu pour ma vengeance,</l>
+                        <l n="1180">Oui, de tout l'Univers je voudrais la présence,</l>
+                        <l n="1181">Et que tous les mortels témoins de mon courroux,</l>
+                        <l n="1182">Te vissent expirer sous l'effort de mes coups.</l>
+                        <l n="1183">Ah ! pourquoi séduis-tu par tes funestes charmes</l>
+                        <l n="1184">Un époux que tu rends insensible à mes larmes ?</l>
+                        <l n="1185">Avant que de sa mort ton trépas soit suivi,</l>
+                        <l n="1186">Rends-le moi cet époux que tes yeux m'ont ravi ;</l>
+                        <l n="1187">Rends-moi sur ce Héros ce souverain empire</l>
+                        <l n="1188">Qu'il n'a pu justement donner qu'à Déjanire ;</l>
+                        <l n="1189">Rends-le moi ; mais au moins ne cours pas le hasard</l>
+                        <l n="1190">Pour moi, pour toi, pour lui, de le vouloir trop tard.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1191">Hélas ! en vous ôtant un époux que j'abhorre,</l>
+                        <l n="1192">Malheureuse, je perds un amant que j'adore.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1193" part="I">Qu'entends-je ?</l><!--@syll="3"-->
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1193" part="F">Croyez-moi, j'en atteste les Dieux,</l><!--@syll="9"-->
+                        <l n="1194">Mon coeur vous venge bien du crime de mes yeux.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1195"> Vous auriez pour ‘Hercule une haine secrète ?</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1196">Je le hais d'autant plus que j'aime Philoctète ;</l>
+                        <l n="1197">Nos coeurs devaient, Madame, être unis à jamais :</l>
+                        <l n="1198">Hercule en rompt es noeuds, jugez si je le hais.</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1199">Ciel ! que m'apprenez-vous, et que viens-je d'entendre ?</l>
+                        <l n="1200">N'aimant point cet époux, vous pouviez me le rendre,</l>
+                        <l n="1201">Du coeur de votre amant vous conserver les voeux,</l>
+                        <l n="1202">L'épouser, et par là nous rendre tous heureux.</l>
+                        <l n="1203">Vous saurez qu'autrefois le redoutable Alcide</l>
+                        <l n="1204">Fit mourir à mes yeux un Centaure perfide,</l>
+                        <l n="1205">Dont le sang est un charme, où l'arrêt des Destins</l>
+                        <l n="1206">Promet de nouveaux cours à des feux mal éteints.</l>
+                        <l n="1207">Un Vêtement que j'ai teint de ce sang funeste,</l>
+                        <l n="1208"> Est pour vous, et pour moi, tout l'espoir qui nous reste :</l>
+                        <l n="1209">Si vous pouvez, Madame, en parer mon époux,</l>
+                        <l n="1210">Il se redonne à moi, Philoctète est à vous,</l>
+                        <l n="1211">Et ces grands appareils dont votre âme est gênée,</l>
+                        <l n="1212">Serviront à l'éclat d'un plus digne hyménée.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1213">À quel espoir flatteur m'entraînent vos discours ?</l>
+                        <l n="1214">Mais pourquoi de ma main emprunter du secours,</l>
+                        <l n="1215">Madame ? C'est le soin d'une fidèle Épouse...</l>
+                    </sp><!--@who="IOLE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1216">Non, tout serait suspect d'une femme jalouse.</l>
+                        <l n="1217">Que ne pourrais-je point lui laisser soupçonner,</l>
+                        <l n="1218">De l'orner dans le temps qu'il va m'abandonner !</l>
+                        <l n="1219">Madame, tout dépend d'un peu de diligence :</l>
+                        <l n="1220" part="I">Profitons des moments...</l><!--@syll="6"-->
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#iole">
+                        <speaker>IOLE.</speaker>
+                        <l n="1220" part="F">Ciel, vois mon innocence.</l><!--@syll="6"-->
+                        <l n="1221">De mon coeur étonné tu connais les desseins :</l>
+                        <l n="1222">Dans ce que j'entreprends, si j'espère, je crains.</l>
+                        <l n="1223">Rendre Hercule confiant, et sauver Philoctète,</l>
+                        <l n="1224">Voilà Dieux immortels, tour ce que je souhaite.</l>
+                        <l n="1225">Madame, donnez-moi cet heureux vêtement.</l>
+                        <l n="1226">Toi, fidèle, Dircé, cours après mon amant.</l>
+                        <l n="1227">Dis-lui, pour modérer l'ennui qui le dévore,</l>
+                        <l n="1228">Que tout pourra changer, et qu'il espère encore.</l>
+                        <l n="1229">Allons. Madame, allons, je m'abandonne à vous :</l>
+                        <l n="1230">Et puissé-je aujourd'hui vous rendre votre époux.</l>
+                    </sp><!--@who="IOLE"-->
+</div>
+</div>
+<div type="acte" n="5">
+                <head>ACTE V</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE, seule.</speaker>
+                        <l n="1231">Enfin quelques périls qui menacent ma flamme,</l>
+                        <l n="1232">Un rayon d'espérance éclaire encor mon âme ;</l>
+                        <l n="1233">Et du sang de Nessus le succès que j'attends,</l>
+                        <l n="1234">Peut fixer d'un époux les désirs inconstants.</l>
+                        <l n="1235">Favorable à mes voeux, quoiqu'un peu trop timide,</l>
+                        <l n="1236">Iole en ce moment tâche à me rendre Alcide.</l>
+                        <l n="1237">Elle a dû lui porter ce vêtement pompeux</l>
+                        <l n="1238">Dont le charme secret va rallumer ses feux ;</l>
+                        <l n="1239">Et Phénice attentive à cet heureux mystère,</l>
+                        <l n="1240">Me viendra dire ici ce qu'il fait que j'espère.</l>
+                        <l n="1241">Ô vous, qui tenez seul mon sort entre vos mains,</l>
+                        <l n="1242">Qui pouvez ou confondre, ou servir mes desseins,</l>
+                        <l n="1243">Jupiter, si sur vous rejaillit mon injure,</l>
+                        <l n="1244">Faites que votre Fils cesse d'être parjure.</l>
+                        <l n="1245">Mais que Phénice tarde à me faire savoir</l>
+                        <l n="1246">S'il faut que je bannisse ou la crainte, ou l'espoir !</l>
+                        <l n="1247">Mon coeur en cet état rempli d'inquiétude</l>
+                        <l n="1248">Trouve un surcroît d'ennui dans son incertitude,</l>
+                        <l n="1249">Et cet espoir confus dont il se flatte en vain,</l>
+                        <l n="1250">Lui semble plus cruel, qu'un malheur plus certain.</l>
+                        <l n="1251">Hercule par un sort qui me poursuit sans cesse,</l>
+                        <l n="1252">N'aura point accepté le don de la Princesse :</l>
+                        <l n="1253">Ou peut-être elle-même oubliant mes avis,</l>
+                        <l n="1254">Dans ce grand embarras ne les a point suivis,</l>
+                        <l n="1255">Mais de quel sentiment suis-je préoccupée.</l>
+                        <l n="1256">Cette perfide, hélas, m'a peut-être trompée ;</l>
+                        <l n="1257">Elle n'a feint d'aimer Philoctète à mes yeux,</l>
+                        <l n="1258">De haïr mon époux, que pour me tromper mieux.</l>
+                        <l n="1259">Quoi, Junon avec lui ton coeur d'intelligence,</l>
+                        <l n="1260">Impuissant à le perdre, oublierait sa vengeance !</l>
+                        <l n="1261">Eh bien, je suffirai, puisque tu ne peux rien,</l>
+                        <l n="1262">À venger aujourd'hui ton affront et le mien.</l>
+                        <l n="1263">J'y cours, et s'il est vrai qu'Iole me trahisse,</l>
+                        <l n="1264">Son sang commencera l'horreur du sacrifice ;</l>
+                        <l n="1265">Et du même poignard dont j'armerai ma main,</l>
+                        <l n="1266">De mon perfide époux j'irai percer le sein ;</l>
+                        <l n="1267">Et le tournant sur moi, pour couronner mes crimes,</l>
+                        <l n="1268">Je me sacrifierai moi-même à mes victimes.</l>
+                    </sp><!--@stage="alone"--><!--@who="DÉJANIRE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Déjanire, Phénice.</head>
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1269">Parle, Phénice. Eh bien, dois-je me rassure ?</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="1270">Oui, de vos soins, Madame, il faut tout espérer.</l>
+                    </sp><!--@who="PHÉNICE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1271" part="I">Ô Ciel !</l><!--@syll="2"-->
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="1271" part="F">Je sors du Temple où votre ‘poux s'empresse</l><!--@syll="10"-->
+                        <l n="1272">De s'orner du présent qu'a porté la Princesse.</l>
+                        <l n="1273">Je l'ai vu dans ses mains avant que d'en sortir,</l>
+                        <l n="1274">Et j'ai couru d'abord pour vous en avertir.</l>
+                    </sp><!--@who="PHÉNICE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1275">Ô Dieux ! Junon, Iole, à qui j'ai sait outrage,</l>
+                        <l n="1276">Si le dernier transport de ma jalouse rage</l>
+                        <l n="1277">Est un crime envers vous que l'amour ait produit,</l>
+                        <l n="1278">Pardonnez-le en faveur du remords qui le suit.</l>
+                        <l n="1279">Phénice, pour flatter l'espoir de Déjanire,</l>
+                        <l n="1280">Redis-lui mille fois ce que tu viens de dire ;</l>
+                        <l n="1281">Et peints à mes regards amoureux et jaloux</l>
+                        <l n="1282">Ce présent dont Iole a paré mon époux.</l>
+                        <l n="1283">Dis-moi qu'il la regarde, et la trouve moins belle ;</l>
+                        <l n="1284">Que ses yeux t'ont paru moins amoureux pour elle ;</l>
+                        <l n="1285">Que lui montrant déjà quelques secrets ennuis,</l>
+                        <l n="1286">Il tourne ses regards vers les lieux où je suis ;</l>
+                        <l n="1287">Enfin, que rougissant de sa lâche injustice,</l>
+                        <l n="1288">Lui-même il interrompt ce triste sacrifice,</l>
+                        <l n="1289">Pour venir de son coeur me confirmer le don,</l>
+                        <l n="1290">Et de son inconstance implorer le pardon.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="1291">Madame, voûte esprit, par un secret augure,</l>
+                        <l n="1292">Devance le plaisir que le Ciel vous assure,</l>
+                        <l n="1293">Et fournit un moyen à votre coeur charmé,</l>
+                        <l n="1294">De jouir d'un bonheur avant qu'il soit formé.</l>
+                        <l n="1295">Je souhaite du moins que cette heureuse image</l>
+                        <l n="1296">Soit de votre destin l'infaillible présage,</l>
+                        <l n="1297">Et qu'on ne voie ici revenir votre époux</l>
+                        <l n="1298">Que pour vous assurer qu'il se redonne à vous.</l>
+                    </sp><!--@who="PHÉNICE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1299">N'en doute point, le charme agira sur Hercule,</l>
+                        <l n="1300">Et le Ciel (s'il ne trouve une épouse crédule)</l>
+                        <l n="1301">Le Ciel dit à mon coeur par des avis secrets,</l>
+                        <l n="1302">Qu'Hercule s'abandonne à de justes regrets.</l>
+                        <l n="1303">Mais Philoctète vient... Quel désespoir l'anime ?</l>
+                    </sp><!--@who="DÉJANIRE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Déjanire, Philoctète, Phénice, Cléon.</head>
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1304">Ah, Madame, qu'Hercule a bien payé son crime !</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1305" part="I">Quoi, Philoctète...</l><!--@syll="6"-->
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1305" part="F">Hélas, l'inconstance d'un coeur</l><!--@syll="6"-->
+                        <l n="1306">Ne sur jamais punie avec tant de rigueur.</l>
+                        <l n="1307">N'accusez plus Alcide, il s'agit de le plaindre.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1308" part="I">Ciel !</l><!--@syll="1"-->
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1308" part="F">Il brûle d'un feu qu'on ne saurait éteindre ;</l><!--@syll="11"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1309" part="I">Ah perfide Nessus, qu'entends-je ?</l><!--@syll="9"-->
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1309" part="F">Ce Vainqueur</l><!--@syll="3"-->
+                        <l n="1310">Dans ce moment fatal sent dévorer son coeur,</l>
+                        <l n="1311">Il crie, il court, s'agite, et rien ne le soulage.</l>
+                        <l n="1312">Par des regards de flamme il exprime sa rage ;</l>
+                        <l n="1313">Et quand il veut parler, pour marquer ses douleurs,</l>
+                        <l n="1314">Par ses gémissements il glace tous les coeurs.</l>
+                        <l n="1315">Aux cris de ce Héros mille cris se confondent :</l>
+                        <l n="1316">Le Temple en retentit, les voûtes y répondent :</l>
+                        <l n="1317">Tout semble être d'accord dans ce jour malheureux</l>
+                        <l n="1318">Tour redoubler l'horreur de ce spectacle affreux.</l>
+                        <l n="1319">Tantôt sa Garde fuit, et tantôt se rassemble :</l>
+                        <l n="1320">Tout se trouble, et le peuple, et les prêtres, tout tremble.</l>
+                        <l n="1321">On voit même frémir les Images des Dieux.</l>
+                        <l n="1322">Celle de Jupiter a détourné les yeux :</l>
+                        <l n="1323">Oui, Madame, ce Dieu qu'un métal représente,</l>
+                        <l n="1324">Dans nos coeurs étonnés a jeté l'épouvante ;</l>
+                        <l n="1325">Et comme prenant part aux malheurs de son Fils,</l>
+                        <l n="1326">Des regards menaçants il nous a tous surpris.</l>
+                        <l n="1327">Ce Fils l'implore en vain : l'ardeur qui le consume,</l>
+                        <l n="1328">Coule de veine en veine, et toujours se rallume,</l>
+                        <l n="1329">De ces habits brûlants, le feu mystérieux</l>
+                        <l n="1330">L'irrite d'autant plus qu'il se cache à ses yeux.</l>
+                        <l n="1331">En vain pour les ôter il met tout en usage :</l>
+                        <l n="1332">De sa force épuisée il redouble sa rage ;</l>
+                        <l n="1333">Et plus il fait d'effort pour se les arracher,</l>
+                        <l n="1334">Plus il les sent sur lui s'unir et s'attacher.</l>
+                        <l n="1335">Il court plein de courroux, oubliant sa tendresse,</l>
+                        <l n="1336">De reproches sanglants accabler la Princesse,</l>
+                        <l n="1337">Qui promenant sur lui ses regards incertains,</l>
+                        <l n="1338">Lui dit qu'elle a reçu ce présent de vos mains.</l>
+                        <l n="1339">On s'aperçoit alors que son esprit se trouble :</l>
+                        <l n="1340">Son désespoir s'augmente, et notre effroi redouble.</l>
+                        <l n="1341">Il vous nomme, il vous cherche ; et je crains qu'en ces lieux</l>
+                        <l n="1342">Bientôt de ses fureurs il n'alarme vos yeux.</l>
+                        <l n="1343">Voilà le triste effet du vêtement funeste</l>
+                        <l n="1344" part="I">Qu'Iole a par vos soins...</l><!--@syll="6"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1344" part="F">Prince, je sais le reste,</l><!--@syll="6"-->
+                        <l n="1345">Je vois tous mes forfaits. Pour ce coup inhumain,</l>
+                        <l n="1346">Le perfide Nessus s'est servi de ma main.</l>
+                        <l n="1347">Junon, en triomphant, rougis de ta victoire :</l>
+                        <l n="1348">Ma criminelle main, t'en a ravi la gloire,</l>
+                        <l n="1349">Et si de cet affront tu prétends me punir,</l>
+                        <l n="1350">Rougis encor, Junon, je vais te prévenir.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1351">Votre main de ce crime est la cause innocente,</l>
+                        <l n="1352">Madame ; et votre esprit s'agite, et se tourmente,</l>
+                        <l n="1353">Dans le temps qu'il faudrait éviter le danger,</l>
+                        <l n="1354" part="I">Qu'Hercule...</l><!--@syll="3"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1354" part="F">Je le tue, et je veux le venger.</l><!--@syll="9"-->
+                        <l n="1355">Hercule, ce Héros, cet époux que j'adore,</l>
+                        <l n="1356">Meurt par ma jalousie, et je vivrais encore !</l>
+                        <l n="1357">Et mon funeste amour qui devient son bourreau,</l>
+                        <l n="1358">Ne m'enseignerait pas le chemin du tombeau ?</l>
+                        <l n="1359">Je ne le suivrai point ! Que dis-je ? dois-je attendre</l>
+                        <l n="1360">Qu'Hercule y soit entré pour y vouloir descendre ?</l>
+                        <l n="1361">Eh ! tâchons s'il se peut, pour finir mon effroi,</l>
+                        <l n="1362">Qu'aux Enfers mon époux n'arrive qu'après moi.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <note type="L">Aucun vers ne rime le vers 1363.</note>
+                        <l n="1363">Au nom des Dieux, Madame, évitez sa présence,</l>
+                        <l n="1364">Je tremble pour vos jours, et ne viens vous trouver</l>
+                        <l n="1365">Que pour vous avertir de fuir, de vous sauver.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1366">Moi fuir... Mais quel désordre... Ah ! que vois-je, Phénice ?</l>
+                        <l n="1367">C'est Hercule qui vient pour hâter mon supplice.</l>
+                        <l n="1368">Regarde, vois ses yeux enflammés de courroux.</l>
+                        <l n="1369">Phénice, à ses fureurs je connais mon époux.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="1370">La raison l'abandonne, et son esprit s'égare.</l>
+                    </sp><!--@who="PHÉNICE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1371">Hercule, viens punir une Épouse barbare,</l>
+                        <l n="1372">Ne te contente point de menacer en vain,</l>
+                        <l n="1373">Frappe, frappe : à mon coeur je conduirai ta main</l>
+                        <l n="1374">Ou, si tu ne veux point ensanglanter la tienne,</l>
+                        <l n="1375">Viens, donne-moi ce fer ; il suffit de la mienne.</l>
+                        <l n="1376">Oui, cette main funeste, avec plus de loisir,</l>
+                        <l n="1377">Assouvira ma haine, et ton juste désir.</l>
+                        <l n="1378">Elle ira dans mon coeur, conduire par ma rage,</l>
+                        <l n="1379">En arracher la vie, avecque ton image,</l>
+                        <l n="1380">Qui toujours poursuive et de trouble et d'horreur,</l>
+                        <l n="1381">Ne peut plus s'arrêter dans ce perfide coeur.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1382">Emmenez-la, Phénice, et qu'une prompte fuite</l>
+                        <l n="1383">De ses égarements nous dérobe la suite.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#phenice">
+                        <speaker>PHÉNICE.</speaker>
+                        <l n="1384" part="I">Madame...</l><!--@syll="2"-->
+                    </sp><!--@who="PHÉNICE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1384" part="F">D'un Héros laisse agir le courroux.</l><!--@syll="10"-->
+                        <l n="1385">Pourquoi te viens-tu mettre au devant de ses coups ?</l>
+                        <l n="1386">Si la haine pour moi règne encor dans ton âme,</l>
+                        <l n="1387">Approche, assouvis-la dans le sang de ta femme.</l>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1388">Ô déplorable effet du céleste courroux !</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#dejanire">
+                        <speaker>DÉJANIRE.</speaker>
+                        <l n="1389">Mais je ne te vois plus, ombre de mon époux.</l>
+                        <l n="1390">Tu meurs, et je pourrais un moment te survivre !</l>
+                        <l n="1391">Non, dans le noir séjour je m'apprête à te suivre :</l>
+                        <l n="1392">J'apprendrai les chemins qui t'y furent ouverts,</l>
+                        <l n="1393">Et vivante j'irai te rejoindre aux Enfers</l>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@who="DÉJANIRE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1394">Cléon, suivez ses pas, et toujours auprès d'elle,</l>
+                        <l n="1395">En conservant ses jours, marquez-moi votre zèle</l>
+                        <l n="1396">Tandis que le coeur plein et d'amour et d'effroi,</l>
+                        <l n="1397">Je cours chercher Iole, Hercule... je le vois.</l>
+                    </sp><!--@who="PHILOCTÈTE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE IV. Hercule, Philoctète, Lycas, Suite.</head>
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="1398">Ô poison infernal, ô flammes dévorantes,</l>
+                        <l n="1399">Qui vous renouvelez dans mes vaines brûlantes !</l>
+                        <l n="1400">Funestes vêtements que mes plus grands efforts</l>
+                        <l n="1401">Ne sauraient arracher de ce malheureux corps !</l>
+                        <l n="1402">Et toi, femme exécrable, et digne du tonnerre,</l>
+                        <l n="1403">Montre dont je devais avoir purgé la Terre,</l>
+                        <l n="1404">Viens voir sous tes fureurs succomber un époux,</l>
+                        <l n="1405">Qui cent fois de Junon a bravé le courroux.</l>
+                        <l n="1406">Viens. Mais tout fuit comme elle, hélas ! tout m'abandonne.</l>
+                        <l n="1407">Chacun craint d'éprouver l'horreur qui m'environne.</l>
+                        <l n="1408">Moi-même je me suis dans ce commun effroi,</l>
+                        <l n="1409">Et je traîne partout mon Enfer avec moi.</l>
+                        <l n="1410">Je brûlais dans le Temple, et ce feu dure encore.</l>
+                        <l n="1411">Il ne consume rien de tout ce qu'il dévore ;</l>
+                        <l n="1412">Ou les Dieux ennemis d'un coeur désespéré,</l>
+                        <l n="1413">Reproduisent en moi ce qu'il a dévoré.</l>
+                        <l n="1414">Mais Ciel, si vous avez épuisé ma constance,</l>
+                        <l n="1415">Ne lasserez-vous point t'offre persévérance ?</l>
+                        <l n="1416">Ou bien, puisque je dois subir votre courroux,</l>
+                        <l n="1417">Ne méritai-je point de mourir par vos coups ?</l>
+                        <l n="1418">Et faut-il pour combler ma honte et ma misère,</l>
+                        <l n="1419">Qu'une femme exécute, ou Junon délibère ?</l>
+                        <l n="1420">Et vous, Maître des Dieux, si je suis votre Fils,</l>
+                        <l n="1421">Ne prêterez-vous point votre oreille à mes cris ?</l>
+                        <l n="1422">Je ne demande plus cette force indomptable</l>
+                        <l n="1423">Qui jusques aux Enfers m'a rendu redoutable ;</l>
+                        <l n="1424">Qui dans le vaste cours de mes travaux passés</l>
+                        <l n="1425">M'a soumis cent tyrans du Trône renversés ;</l>
+                        <l n="1426">Qui remplit autrefois d'horreur et d'épouvante</l>
+                        <l n="1427">La forêt_de_Némée et le Mont_d_Érymanthe,</l>
+                        <l n="1428">Et qui m'a fait dompter mille monstres affreux.</l>
+                        <l n="1429">Non, donnez-moi la mort, c'est tout ce que je veux.</l>
+                        <l n="1430">Du barbare Lycas la prudence inhumaine,</l>
+                        <l n="1431">En désarmant ma main, a prolongé ma peine.</l>
+                        <l n="1432">Venez à mon secours, Rois que j'ai protégés,</l>
+                        <l n="1433">Peuples que j'ai servis, Dieux que j'ai soulagés.</l>
+                        <l n="1434">Tout est sourd à mes cris ; et le Ciel et la Terre</l>
+                        <l n="1435">Aujourd'hui de concert me déclarent la guerre.</l>
+                        <l n="1436">Il me faut des Enfers emprunter le secours.</l>
+                        <l n="1437">Que dis-je, ils ont produit le bourreau de mes jours.</l>
+                        <l n="1438">C'est eux, qui pour me perdre enfantant Déjanire,</l>
+                        <l n="1439">Lui souffrent, malgré moi, le jour qu'elle respire ;</l>
+                        <l n="1440">Et qui la vomissant de leurs gouffres affreux,</l>
+                        <l n="1441">N'ont rien voulu garder de plus horrible qu'eux.</l>
+                        <l n="1442">Qu'on la cherche partout, Lycas, qu'on l'amène,</l>
+                        <l n="1443">Pour jouir à loisir des effets de sa haine.</l>
+                        <l n="1444">D'un spectacle si doux ne privons point ses yeux.</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1445">Cléon qui l'a suivie au sortir de ces lieux,</l>
+                        <l n="1446" part="I">Peut vous dire...</l><!--@syll="3"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Hercule, Philoctète, Lycas, Cléon, Suite.</head>
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+                        <l n="1446" part="F">Elle-même a choisi son supplice.</l><!--@syll="9"-->
+                        <l n="1447">Je l'ai vue expirer dans les bras de Phénice.</l>
+                        <l n="1448">Ah barbare Nessus, a-t-elle dit d'abord,</l>
+                        <l n="1449">Qu'aujourd'hui par ta main tu venges bien ta mort !</l>
+                        <l n="1450">Qu'ai-je fait, malheureuse ? Et toi, monstre perfide,</l>
+                        <l n="1451">Est-ce ainsi que ton sang me rend le coeur d'Alcide ?</l>
+                        <l n="1452">Ce vêtement souillé de ce sang infernal...</l>
+                    </sp><!--@who="CLÉON"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="1453" part="I">Qu'entends-je ?</l><!--@syll="2"-->
+                    </sp><!--@who="HERCULE"-->
+<sp who="#cleon">
+                        <speaker>CLÉON.</speaker>
+                        <l n="1453" part="F">À mon époux porte le coup fatal,</l><!--@syll="10"-->
+                        <l n="1454" part="I">Mais ma main...</l><!--@syll="4"-->
+                    </sp><!--@who="CLÉON"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="1454" part="F">C'est assez, ô mort que je désire,</l><!--@syll="8"-->
+                        <l n="1455">Mort prédite autrefois en la forêt_de_Cyrre,</l>
+                        <l n="1456">Lorsqu'un chêne sacré fit entendre à mon coeur</l>
+                        <l n="1457">Que la mort du vaincu punirait le Vainqueur.</l>
+                        <l n="1458">C'est le sang de Nessus qui remplir mon envie.</l>
+                        <l n="1459">Je meurs : ma destinée enfin est accomplie.</l>
+                        <l n="1460">J'en rends grâces aux Dieux, de ma douleur témoins ;</l>
+                        <l n="1461">Et sûr d'en voir la fin, je crois la sentir moins.</l>
+                        <l n="1462">Oui, je sens affaiblir (non le feu qui me brûle)</l>
+                        <l n="1463">Mais ma force ; et déjà je cesse d'être Hercule.</l>
+                        <l n="1464">Dès que la mort aura calmé tous mes transports...</l>
+                    </sp><!--@who="HERCULE"-->
+<sp who="#philoctete">
+                        <speaker>PHILOCTÈTE.</speaker>
+                        <l n="1465" part="I">Ciel !</l><!--@syll="2"-->
+                    </sp><!--@who="PHILOCTÈTE"-->
+<sp who="#hercule">
+                        <speaker>HERCULE.</speaker>
+                        <l n="1465" part="F">Sur le Mont_Eta faites porter mon corps.</l><!--@syll="10"-->
+                        <l n="1466">Oui, c'est-là que les Dieux par un heureux présage</l>
+                        <l n="1467">À l'immortalité m'ont promis le passage.</l>
+                        <l n="1468">Mais Hercule, en mourant, ne veut point voir vos pleurs.</l>
+                        <l n="1469">Vivez heureux. Adieu, Philoctète. Je meurs.</l>
+                    </sp><!--@who="HERCULE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

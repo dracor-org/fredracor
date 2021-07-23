@@ -1,0 +1,977 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Entretien entre d'Alembert et Diderot</title>
+                <author>
+      <idno type="isni">000000012133370X</idno>
+      <idno type="wikidata">Q448</idno>
+      <persName>
+        <forename>Denis</forename>
+        <surname>Diderot</surname>
+      </persName>
+    </author><!--Denis DIDEROT (1713-1784)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001492</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/DIDEROT_ENTRETIENDELAMBERTDIDEROT.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/DIDEROT_ENTRETIENDELAMBERTDIDEROT.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1830"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="d-alembert" sex="MALE">
+                        <persName>D'alembert</persName>
+                    </person>
+                    <person xml:id="diderot" sex="MALE">
+                        <persName>Diderot</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Dialogue</term>
+                    <term>prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+<front>
+	<docTitle>
+		<titlePart type="main">ENTRETIEN ENTRE D'ALEMBERT ET DIDEROT</titlePart>
+	</docTitle> 
+	<docDate when="1830">M DCCC XXX.</docDate>
+	<docAuthor>de DIDEROT</docAuthor>
+	<div type="docImprint">
+		<div type="approbation"/><!--@value=""-->
+			<div type="privilege">
+                    <head/>
+			</div><!--@value=""-->
+			<div type="acheveImprime">
+                    <p/>
+                </div>
+			<div type="printer">
+                    <p>PARIS, A. SAUTELET ET Cie, LIBRAIRES, RUE RICHELIEU, N°14.</p>
+                </div><!--@id="SAUTELET"-->
+	</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#d-alembert">D'ALEMBERT</role><!--@sex="1"--><!--@statut="philosophe"--><!--@age="A"-->.</castItem>
+		<castItem>
+                    <role corresp="#diderot">DIDEROT</role><!--@sex="1"--><!--@statut="philosophe"--><!--@age="A"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222"/>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>ENTRETIEN ENTRE D'ALEMBERT ET DIDEROT</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="1">
+	<s n="1">J'avoue qu'un Être qui existe quelque part et qui ne correspond à aucun point de l'espace ; un Être qui est inétendu et qui occupe de l'étendue ; qui est tout entier sous chaque partie de cette étendue ; qui diffère essentiellement de la matière et qui lui est uni ; qui la suit et qui la meut sans se mouvoir ; qui agit sur elle et qui en subit toutes les vicissitudes ; un Être dont je n'ai pas la moindre idée ; un Être d'une nature aussi contradictoire est difficile à admettre. </s>
+	<s n="2">Mais d'autres obscurités attendent celui qui le rejette ; car enfin cette sensibilité que vous lui substituez, si c'est une qualité générale et essentielle de la matière, il faut que la pierre sente.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="2">
+	<s n="1">Pourquoi non ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="3">
+	<s n="1">Cela est dur à croire.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="3">
+	<s n="1">Oui, pour celui qui la coupe, la taille, la broie et qui ne l'entend pas crier.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="5">
+	<s n="1">Je voudrais bien que vous me disiez quelle différence vous mettez entre l'homme et la statue, entre le marbre et la chair.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="6">
+	<s n="1">Assez peu. </s>
+	<s n="2">On fait du marbre avec de la chair, et de la chair avec du marbre.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="7">
+	<s n="1">Mais l'un n'est pas l'autre.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="8">
+	<s n="1">Comme ce que vous appelez la force vive n'est pas la force morte.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="9">
+	<s n="1">Je ne vous entends pas.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="10">
+	<s n="1">Je m'explique. </s>
+	<s n="2">Le transport d'un corps d'un lieu dans un autre n'est pas le mouvement, ce n'en est que l'effet. </s>
+	<s n="3">Le mouvement est également et dans le corps transféré et dans le corps immobile.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="11">
+	<s n="1">Cette façon de voir est nouvelle.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="12">
+	<s n="1">Elle n'en est pas moins vraie. </s>
+	<s n="2">Ôtez l'obstacle qui s'oppose au transport local du corps immobile, et il sera transféré. </s>
+	<s n="3">Supprimez par une raréfaction subite l'air qui environne cet énorme tronc de chêne, et l'eau qu'il contient, entrant tout à coup en expansion, le dispersera en cent mille éclats. </s>
+	<s n="4">J'en dis autant de votre propre corps.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="13">
+	<s n="1">Soit. </s>
+	<s n="2">Mais quel rapport y a-t-il entre le mouvement et la sensibilité ? </s>
+	<s n="3">Serait-ce par hasard que vous reconnaîtriez une sensibilité active et une sensibilité inerte, comme il y a une force vive et une force morte ? </s>
+	<s n="4">Une force vive qui se manifeste par la translation, une force morte qui se manifeste par la pression ; une sensibilité active qui se caractérise par certaines actions remarquables dans l'animal et peut-être dans la plante ; et une sensibilité inerte dont on serait assuré par le passage à l'état de sensibilité active.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="14">
+	<s n="1">À merveille. </s>
+	<s n="2">Vous l'avez dit.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="15">
+	<s n="1">Ainsi la statue n'a qu'une sensibilité inerte ; et l'homme, l'animal, la plante même peut-être, sont doués d'une sensibilité active.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="16">
+	<s n="1">Il y a sans doute cette différence entre le bloc de marbre et le tissu de chair ; mais vous concevez bien que ce n'est pas la seule.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="17">
+	<s n="1">Assurément. </s>
+	<s n="2">Quelque ressemblance qu'il y ait entre la forme extérieure de l'homme et de la statue, il n'y a point de rapport entre leur organisation intérieure. </s>
+	<s n="3">Le ciseau du plus habile statuaire ne fait pas même un épiderme. </s>
+	<s n="4">Mais il y a un procédé fort simple pour faire passer une force morte à l'état de force vive ; c'est une expérience qui se répète sous nos yeux cent fois par jour ; au lieu que je ne vois pas trop comment on fait passer un corps de l'état de sensibilité inerte à l'état de sensibilité active.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="18">
+	<s n="1">C'est que vous ne voulez pas le voir. </s>
+	<s n="2">C'est un phénomène aussi commun.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="19">
+	<s n="1">Et ce phénomène aussi commun, quel est-il, s'il vous plaît ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="20">
+	<s n="1">Je vais vous le dire, puisque vous en voulez avoir la honte. </s>
+	<s n="2">Cela se fait toutes les fois que vous mangez.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="21">
+	<s n="1">Toutes les fois que je mange !</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="22">
+	<s n="1">Oui ; car en mangeant, que faites-vous ? </s>
+	<s n="2">Vous levez les obstacles qui s'opposaient à la sensibilité active de l'aliment. </s>
+	<s n="3">Vous l'assimilez avec vous-même ; vous en faites de la chair ; vous l'animalisez ; vous le rendez sensible ; et ce que vous exécutez sur un aliment, je l'exécuterai quand il me plaira sur le marbre.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="23">
+	<s n="1">Et comment cela ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="24">
+	<s n="1">Comment ? </s>
+	<s n="2">je le rendrai comestible.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="25">
+	<s n="1">Rendre le marbre comestible, cela ne me paraît pas facile.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="26">
+	<s n="1">C'est mon affaire que de vous en indiquer le procédé. </s>
+	<s n="">Je prends la statue que vous voyez, je la mets dans un mortier, et à grands coups de pilon...</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <note type="L">HUEZ Jean-Baptiste-Cyprien d', (1729-1793), sculpteur, memebre de l'Académie de Royale de Peinture et de Sculpture. </note>
+                        <p n="27">
+	<s n="1">Doucement, s'il vous plaît : c'est le chef-d'oeuvre de Falconet. </s>
+	<s n="2">Encore si c'était un morceau d'Huez ou d'un autre...</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <note type="L">FALCONET Étienne Maurice, (1716-1791), sculpteur, écrivit l'article "Sculpture" de l'Encyclopédie à la demande de Diderot. </note>
+                        <p n="28">
+	<s n="1">Cela ne fait rien à Falconet ; la statue est payée, et Falconet fait peu de cas de la considération présente, aucun de la considération à venir.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="29">
+	<s n="1">Allons, pulvérisez donc.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="30">
+	<s n="1">Lorsque le bloc de marbre est réduit en poudre impalpable, je mêle cette poudre à de l'humus ou terre végétale ; je les pétris bien ensemble ; j'arrose le mélange, je le laisse putréfier un an, deux ans, un siècle, le temps ne me fait rien. </s>
+	<s n="2">Lorsque le tout s'est transformé en une matière à peu près homogène, en humus, savez-vous ce que je fais ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="31">
+	<s n="1">Je suis sûr que vous ne mangez pas de l'humus.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="32">
+	<s n="1">Non, mais il y a un moyen d'union, d'appropriation, entre l'humus et moi, un latus, comme vous dirait le chimiste.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="33">
+	<s n="1">Et ce latus, c'est la plante ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="34">
+	<s n="1">Fort bien. </s>
+	<s n="">J'y sème des pois, des fèves, des choux, d'autres plantes légumineuses. </s>
+	<s n="">Les plantes se nourrissent de la terre, et je me nourris des plantes.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="35">
+	<s n="1">Vrai ou faux, j'aime ce passage du marbre à l'humus, de l'humus au règne végétal, et du règne végétal au règne animal, à la chair.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="36">
+	<s n="1">Je fais donc de la chair ou de l'âme, comme dit ma fille, une matière activement sensible ; et si je ne résous pas le problème que vous m'avez proposé, du moins j'en approche beaucoup ; car vous m'avouerez qu'il y a bien plus loin d'un morceau de marbre à un être qui sent, que d'un être qui sent à un être qui pense.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="37">
+	<s n="1">J'en conviens. </s>
+	<s n="2">Avec tout cela l'être sensible n'est pas encore l'être pensant.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="38">
+	<s n="1">Avant que de faire un pas en avant, permettez-moi de vous faire l'histoire d'un des plus grands géomètres de l'Europe. </s>
+	<s n="2">Qu'était-ce d'abord que cet être merveilleux ? </s>
+	<s n="3">Rien.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="39">
+	<s n="1">Comment rien ! </s>
+	<s n="2">On ne fait rien de rien.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="40">
+	<s n="1">Vous prenez les mots trop à la lettre. </s>
+	<s n="2">Je veux dire qu'avant que sa mère, la belle et scélérate chanoinesse Tencin, eût atteint l'âge de puberté, avant que le militaire La_Touche fût adolescent, les molécules qui devaient former les premiers rudiments de mon géomètre étaient éparses dans les jeunes et frêles machines de l'un et de l'autre, se filtrèrent avec la lymphe, circulèrent avec le sang, jusqu'à ce qu'enfin elles se rendissent dans les réservoirs destinés à leur coalition, les testicules de son père et de sa mère. </s>
+	<s n="3">Voilà ce germe rare formé ; le voilà, comme c'est l'opinion commune, amené par les trompes de Fallope dans la matrice ; le voilà attaché à la matrice par un long pédicule ; le voilà, s'accroissant successivement et s'avançant à l'état de foetus ; voilà le moment de sa sortie de l'obscure prison arrivé ; le voilà né, exposé sur les degrés de Saint-Jean-le-Rond qui lui donna son nom ; tiré des Enfants-Trouvés ; attaché à la mamelle de la bonne vitrière, madame Rousseau ; allaité, devenu grand de corps et d'esprit, littérateur, mécanicien, géomètre. </s>
+	<s n="4">Comment cela s'est-il fait ? </s>
+	<s n="5">En mangeant et par d'autres opérations purement mécaniques. </s>
+	<s n="6">Voici en quatre mots la formule générale : Mangez, digérez, distillez in vasi licito, et fiat homo secundum artem. </s>
+	<s n="7">Et celui qui exposerait à l'Académie le progrès de la formation d'un homme ou d'un animal, n'emploierait que des agents matériels dont les effets successifs seraient un être inerte, un être sentant, un être pensant, un être résolvant le problème de la précession des équinoxes, un être sublime, un être merveilleux, un être vieillissant, dépérissant, mourant, dissous et rendu à la terre végétale.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="41">
+	<s n="1">Vous ne croyez donc pas aux germes préexistants ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="42">
+	<s n="1">Non.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="43">
+	<s n="1">Ah ! </s>
+	<s n="2">Que vous me faites plaisir !</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="44">
+	<s n="1">Cela est contre l'expérience et la raison : contre l'expérience qui chercherait inutilement ces germes dans l'oeuf et dans la plupart des animaux avant un certain âge ; contre la raison qui nous apprend que la divisibilité de la matière a un terme dans la nature, quoiqu'elle n'en ait aucun dans l'entendement, et qui répugne à concevoir un éléphant tout formé dans un atome, et dans cet atome un autre éléphant tout formé, et ainsi de suite à l'infini.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="45">
+	<s n="1">Mais sans ces germes préexistants, la génération première des animaux ne se conçoit pas.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="46">
+	<s n="1">Si la question de la priorité de l'oeuf sur la poule ou de la poule sur l'oeuf vous embarrasse, c'est que vous supposez que les animaux ont été originairement ce qu'ils sont à présent. </s>
+	<s n="2">Quelle folie ! </s>
+	<s n="">On ne sait non plus ce qu'ils ont été qu'on ne sait ce qu'ils deviendront. </s>
+	<s n="3">Le vermisseau imperceptible qui s'agite dans la fange, s'achemine peut-être à l'état de grand animal ; l'animal énorme, qui nous épouvante par sa grandeur, s'achemine peut-être à l'état de vermisseau, est peut-être une production particulière et momentanée de cette planète.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="47">
+	<s n="1">Comment avez-vous dit cela ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="48">
+	<s n="1">Je vous disais... </s>
+	<s n="2">Mais cela va nous écarter de notre première discussion.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="49">
+	<s n="1">Qu'est-ce que cela fait ? </s>
+	<s n="2">Nous y reviendrons ou nous n'y reviendrons pas.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="50">
+	<s n="1">Me permettriez-vous d'anticiper de quelques milliers d'années sur les temps ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="51">
+	<s n="1">Pourquoi non ? </s>
+	<s n="2">Le temps n'est rien pour la nature.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="52">
+	<s n="1">Vous consentez donc que j'éteigne notre soleil ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="53">
+	<s n="1">D'autant plus volontiers que ce ne sera pas le premier qui se soit éteint.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="54">
+	<s n="1">Le soleil éteint, qu'en arrivera-t-il ? </s>
+	<s n="2">Les plantes périront, les animaux périront, et voilà la terre solitaire et muette. </s>
+	<s n="3">Rallumez cet astre, et à l'instant vous rétablissez la cause nécessaire d'une infinité de générations nouvelles entre lesquelles je n'oserais assurer qu'à la suite des siècles nos plantes, nos animaux d'aujourd'hui se reproduiront ou ne se reproduiront pas.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="55">
+	<s n="1">Et pourquoi les mêmes éléments épars venant à se réunir, ne rendraient-ils pas les mêmes résultats ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="56">
+	<s n="1">C'est que tout tient dans la nature, et que celui qui suppose un nouveau phénomène ou ramène un instant passé, recrée un nouveau monde.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="57">
+	<s n="1">C'est ce qu'un penseur profond ne saurait nier. </s>
+	<s n="2">Mais pour en revenir à l'homme, puisque l'ordre général a voulu qu'il fût ; rappelez-vous que c'est au passage d'être sentant à l'être pensant que vous m'avez laissé.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="58">
+	<s n="1">Je m'en souviens.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="59">
+	<s n="1">Franchement vous m'obligeriez beaucoup de me tirer de là. </s>
+	<s n="2">Je suis un peu pressé de penser.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="60">
+	<s n="1">Quand je n'en viendrais pas à bout, qu'en résulterait-il contre un enchaînement de faits incontestable ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="61">
+	<s n="1">Rien, sinon que nous serions arrêtés là tout court.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="62">
+	<s n="1">Et pour aller plus loin, nous serait-il permis d'inventer un agent contradictoire dans ses attributs, un mot vide de sens, inintelligible ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="63">
+	<s n="1">Non.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="64">
+	<s n="1">Pourriez-vous me dire ce que c'est que l'existence d'un être sentant, par rapport à lui-même ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="65">
+	<s n="1">C'est la conscience d'avoir été lui, depuis le premier instant de sa réflexion jusqu'au moment présent.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="66">
+	<s n="1">Et sur quoi cette conscience est-elle fondée ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="67">
+	<s n="1">Sur la mémoire de ses actions.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="68">
+	<s n="1">Et sans cette mémoire ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="69">
+	<s n="1">Sans cette mémoire il n'aurait point de lui, puisque, ne sentant son existence que dans le moment de l'impression, il n'aurait aucune histoire de sa vie. </s>
+	<s n="2">Sa vie serait une suite interrompue de sensations que rien ne lierait.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="70">
+	<s n="1">Fort bien. </s>
+	<s n="2">Et qu'est-ce que la mémoire ? </s>
+	<s n="3">D'où naît-elle ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="71">
+	<s n="1">D'une certaine organisation qui s'accroît, s'affaiblit et se perd quelquefois entièrement.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="72">
+	<s n="1">Si donc un être qui sent et qui a cette organisation propre à la mémoire, lie les impressions qu'il reçoit, forme par cette liaison une histoire qui est celle de sa vie, et acquiert la conscience de lui, il nie, il affirme, il conclut, il pense.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="73">
+	<s n="1">Cela me paraît ; il ne me reste plus qu'une difficulté.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="74">
+	<s n="1">Vous vous trompez ; il vous en reste bien davantage.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="75">
+	<s n="1">Mais une principale ; c'est qu'il me semble que nous ne pouvons penser qu'à une seule chose à la fois, et que pour former, je ne dis pas ces énormes chaînes de raisonnements qui embrassent dans leur circuit des milliers d'idées, mais une simple proposition, on dirait qu'il faut avoir au moins deux choses présentes, l'objet qui semble rester sous l'oeil de l'entendement, tandis qu'il s'occupe de la qualité qu'il en affirmera ou niera.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="76">
+	<s n="1">Je le pense ; ce qui m'a fait quelquefois comparer les fibres de nos organes à des cordes vibrantes sensibles. </s>
+	<s n="2">La corde vibrante sensible oscille, résonne longtemps encore après qu'on l'a pincée. </s>
+	<s n="3">C'est cette oscillation, cette espèce de résonance nécessaire qui tient l'objet présent, tandis que l'entendement s'occupe de la qualité qui lui convient. </s>
+	<s n="4">Mais les cordes vibrantes ont encore une autre propriété, c'est d'en faire frémir d'autres ; et c'est ainsi qu'une première idée en rappelle une seconde, ces deux-là une troisième, toutes les trois une quatrième, et ainsi de suite, sans qu'on puisse fixer la limite des idées réveillées, enchaînées, du philosophe qui médite ou qui s'écoute dans le silence et l'obscurité. </s>
+	<s n="5">Cet instrument a des sauts étonnants, et une idée réveillée va faire quelquefois frémir une harmonique qui en est à un intervalle incompréhensible. </s>
+	<s n="6">Si le phénomène s'observe entre des cordes sonores, inertes et séparées, comment n'aurait-il pas lieu entre des points vivants et liés, entre des fibres continues et sensibles ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="77">
+	<s n="1">Si cela n'est pas vrai, cela est au moins très ingénieux. </s>
+	<s n="2">Mais on serait tenté de croire que vous tombez imperceptiblement dans l'inconvénient que vous vouliez éviter.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="78">
+	<s n="1">Quel ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="79">
+	<s n="1">Vous en voulez à la distinction des deux substances.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="80">
+	<s n="1">Je ne m'en cache pas.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="81">
+	<s n="1">Et si vous y regardez de près, vous faites de l'entendement du philosophe un être distinct de l'instrument, une espèce de musicien qui prête l'oreille aux cordes vibrantes, et qui prononce sur leur consonnance ou leur dissonance.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="81">
+	<s n="1">Il se peut que j'aie donné lieu à cette objection, que peut-être vous ne m'eussiez pas faite si vous eussiez considéré la différence de l'instrument philosophe et de l'instrument clavecin. </s>
+	<s n="2">L'instrument philosophe est sensible ; il est en même temps le musicien et l'instrument. </s>
+	<s n="3">Comme sensible, il a la conscience momentanée du son qu'il rend ; comme animal, il en a la mémoire. </s>
+	<s n="4">Cette faculté organique, en liant les sons en lui-même, y produit et conserve la mélodie. </s>
+	<s n="5">Supposez au clavecin de la sensibilité et de la mémoire, et dites-moi s'il ne se répétera pas de lui-même les airs que vous aurez exécutés sur ses touches. </s>
+	<s n="6">Nous sommes des instruments doués de sensibilité et de mémoire. </s>
+	<s n="7">Nos sens sont autant de touches qui sont pincées par la nature qui nous environne, et qui se pincent souvent elles-mêmes ; et voici, à mon jugement, tout ce qui se passe dans un clavecin organisé comme vous et moi. </s>
+	<s n="8">Il y a une impression qui a sa cause au dedans ou au dehors de l'instrument, une sensation qui naît de cette impression, une sensation qui dure ; car il est impossible d'imaginer qu'elle se fasse et qu'elle s'éteigne dans un instant indivisible ; une autre impression qui lui succède, et qui a pareillement sa cause au dedans et au dehors de l'animal ; une seconde sensation et des voix qui les désignent par des sons naturels ou conventionnels.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="82">
+	<s n="1">J'entends. </s>
+	<s n="2">Ainsi donc, si ce clavecin sensible et animé était encore doué de la faculté de se nourrir et de se reproduire, il vivrait et engendrerait de lui-même, ou avec sa femelle, de petits clavecins vivants et résonnants.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="83">
+	<s n="1">Sans doute. </s>
+	<s n="2">À votre avis, qu'est-ce autre chose qu'un pinson, un rossignol, un musicien, un homme ? </s>
+	<s n="3">Et quelle autre différence trouvez-vous entre le serin et la serinette ? </s>
+	<s n="4">Voyez-vous cet oeuf ? </s>
+	<s n="5">C'est avec cela qu'on renverse toutes les écoles de théologie et tous les temples de la terre. </s>
+	<s n="6">Qu'est-ce que cet oeuf ? </s>
+	<s n="7">Une masse insensible avant que le germe y soit introduit ; et après que le germe y est introduit, qu'est-ce encore ? </s>
+	<s n="8">Une masse insensible, car ce germe n'est lui-même qu'un fluide inerte et grossier. </s>
+	<s n="9">Comment cette masse passera-t-elle à une autre organisation, à la sensibilité, à la vie ? </s>
+	<s n="10">Par la chaleur. </s>
+	<s n="11">Qui produira la chaleur ? </s>
+	<s n="12">Le mouvement. </s>
+	<s n="13">Quels seront les effets successifs du mouvement ? </s>
+	<s n="14">Au lieu de me répondre, asseyez-vous, et suivons-les de l'oeil de moment en moment. </s>
+	<s n="15">D'abord c'est un point qui oscille, un filet qui s'étend et qui se colore ; de la chair qui se forme ; un bec, des bouts d'ailes, des yeux, des pattes qui paraissent ; une matière jaunâtre qui se dévide et produit des intestins ; c'est un animal. </s>
+	<s n="16">Cet animal se meut, s'agite, crie ; j'entends ses cris à travers la coque ; il se couvre de duvet ; il voit. </s>
+	<s n="17">La pesanteur de sa tête, qui oscille, porte sans cesse son bec contre la paroi intérieure de sa prison ; la voilà brisée ; il en sort, il marche, il vole, il s'irrite, il fuit, il approche, il se plaint, il souffre, il aime, il désire, il jouit ; il a toutes vos affections ; toutes vos actions, il les fait. </s>
+	<s n="18">Prétendrez-vous, avec Descartes, que c'est une pure machine imitative ? </s>
+	<s n="19">Mais les petits enfants se moqueront de vous, et les philosophes vous répliqueront que si c'est là une machine, vous en êtes une autre. </s>
+	<s n="20">Si vous avouez qu'entre l'animal et vous il n'y a de différence que dans l'organisation, vous montrerez du sens et de la raison, vous serez de bonne foi ; mais on en conclura contre vous qu'avec une matière inerte, disposée d'une certaine manière, imprégnée d'une autre matière inerte, de la chaleur et du mouvement on obtient de la sensibilité, de la vie, de la mémoire, de la conscience, des passions, de la pensée. </s>
+	<s n="21">Il ne vous reste qu'un de ces deux partis à prendre ; c'est d'imaginer dans la masse inerte de l'oeuf un élément caché qui en attendait le développement pour manifester sa présence, ou de supposer que cet élément imperceptible s'y est insinué à travers la coque dans un instant déterminé du développement. </s>
+	<s n="22">Mais qu'est-ce que cet élément ? </s>
+	<s n="23">Occupait-il de l'espace, ou n'en occupait-il point ? </s>
+	<s n="24">Comment est-il venu, ou s'est-il échappé, sans se mouvoir ? </s>
+	<s n="25">Où était-il ? </s>
+	<s n="26">Que faisait-il là ou ailleurs ? </s>
+	<s n="27">A-t-il été créé à l'instant du besoin ? </s>
+	<s n="28">Existait-il ? </s>
+	<s n="29">Attendait-il un domicile ? </s>
+	<s n="30">Homogène, il était matériel ; hétérogène, on ne conçoit ni son inertie avant le développement, ni son énergie dans l'animal développé. </s>
+	<s n="31">Écoutez-vous, et vous aurez pitié de vous-même ; vous sentirez que, pour ne pas admettre une supposition simple qui explique tout, la sensibilité, propriété générale de la matière, ou produit de l'organisation, vous renoncez au sens commun, et vous précipitez dans un abîme de mystères, de contradictions et d'absurdités.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="84">
+	<s n="1">Une supposition ! </s>
+	<s n="2">Cela vous plaît à dire. </s>
+	<s n="3">Mais si c'était une qualité essentiellement incompatible avec la matière ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="85">
+	<s n="1">Et d'où savez-vous que la sensibilité est essentiellement incompatible avec la matière, vous qui ne connaissez l'essence de quoi que ce soit, ni de la matière, ni de la sensibilité ? </s>
+	<s n="2">Entendez-vous mieux la nature du mouvement, son existence dans un corps, et sa communication d'un corps à un autre ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="86">
+	<s n="1">Sans concevoir la nature de la sensibilité, ni celle de la matière, je vois que la sensibilité est une qualité simple, une, indivisible et incompatible avec un sujet ou suppôt divisible.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="87">
+	<s n="1">Galimatias métaphysico-théologique. </s>
+	<s n="2">Quoi ? </s>
+	<s n="3">Est-ce que vous ne voyez pas que toutes les qualités, toutes les formes sensibles dont la matière est revêtue, sont essentiellement indivisibles ? </s>
+	<s n="4">Il n'y a ni plus ni moins d'impénétrabilité. </s>
+	<s n="5">Il y a la moitié d'un corps rond, mais il n'y a pas la moitié de la rondeur ; il y a plus ou moins de mouvement, mais il n'y a ni plus ni moins mouvement ; il n'y a ni la moitié, ni le tiers, ni le quart d'une tête, d'une oreille, d'un doigt, pas plus que la moitié, le tiers, le quart d'une pensée. </s>
+	<s n="6">Si dans l'univers il n'y a pas une molécule qui ressemble à une autre, dans une molécule pas un point qui ressemble à un autre point, convenez que l'atome même est doué d'une qualité, d'une forme indivisible ; convenez que la division est incompatible avec les essences des formes, puisqu'elle les détruit. </s>
+	<s n="7">Soyez physicien, et convenez de la production d'un effet lorsque vous le voyez produit, quoique vous ne puissiez vous expliquer la liaison de la cause à l'effet. </s>
+	<s n="8">Soyez logicien, et ne substituez pas à une cause qui est et qui explique tout, une autre cause qui ne se conçoit pas, dont la liaison avec l'effet se conçoit encore moins, qui engendre une multitude infinie de difficultés, et qui n'en résout aucune.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="88">
+	<s n="1">Mais si je me dépars de cette cause ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="89">
+	<s n="1">Il n'y a plus qu'une substance dans l'univers, dans l'homme, dans l'animal. </s>
+	<s n="2">La serinette est de bois, l'homme est de chair. </s>
+	<s n="3">Le serin est de chair, le musicien est d'une chair diversement organisée ; mais l'un et l'autre ont une même origine, une même formation, les mêmes fonctions et la même fin.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="90">
+	<s n="1">Et comment s'établit la convention des sons entre vos deux clavecins ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <note type="L">BERKELEY George (1685-1753), philosophe irlandais.</note>
+                        <p n="91">
+	<s n="1">Un animal étant un instrument sensible parfaitement semblable à un autre, doué de la même conformation, monté des mêmes cordes, pincé de la même manière par la joie, par la douleur, par la faim, par la soif, par la colique, par l'admiration, par l'effroi, il est impossible qu'au pôle et sous la ligne il rende des sons différents. </s>
+	<s n="2">Aussi trouverez-vous les interjections à peu près les mêmes dans toutes les langues mortes ou vivantes. </s>
+	<s n="3">Il faut tirer du besoin et de la proximité l'origine des sons conventionnels. </s>
+	<s n="4">L'instrument sensible ou l'animal a éprouvé qu'en rendant tel son il s'ensuivait tel effet hors de lui, que d'autres instruments sensibles pareils à lui ou d'autres animaux semblables s'approchaient, s'éloignaient, demandaient, offraient, blessaient, caressaient, et ces effets se sont liés dans sa mémoire et dans celle des autres à la formation de ces sons ; et remarquez qu'il n'y a dans le commerce des hommes que des bruits et des actions. </s>
+	<s n="5">Et pour donner à mon système toute sa force, remarquez encore qu'il est sujet à la même difficulté insurmontable que Berkeley a proposée contre l'existence des corps. </s>
+	<s n="6">Il y a un moment de délire où le clavecin sensible a pensé qu'il était le seul clavecin qu'il y eût au monde, et que toute l'harmonie de l'univers se passait en lui.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="92">
+	<s n="1">Il y a bien des choses à dire là-dessus.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="93">
+	<s n="1">Cela est vrai.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="94">
+	<s n="1">Par exemple, on ne conçoit pas trop, d'après votre système, comment nous formons des syllogismes, ni comment nous tirons des conséquences.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="95">
+	<s n="1">C'est que nous n'en tirons point : elles sont toutes tirées par la nature. </s>
+	<s n="2">Nous ne faisons qu'énoncer des phénomènes conjoints, dont la liaison est ou nécessaire ou contingente, phénomènes qui nous sont connus par l'expérience : nécessaires en mathématiques, en physique et autres sciences rigoureuses ; contingents en morale, en politique et autres sciences conjecturales.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="96">
+	<s n="1">Est-ce que la liaison des phénomènes est moins nécessaire dans un cas que dans un autre ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="97">
+	<s n="1">Non ; mais la cause subit trop de vicissitudes particulières qui nous échappent, pour que nous puissions compter infailliblement sur l'effet qui s'ensuivra. </s>
+	<s n="2">La certitude que nous avons qu'un homme violent s'irritera d'une injure, n'est pas la même que celle qu'un corps qui en frappe un plus petit le mettra en mouvement.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="98">
+	<s n="1">Et l'analogie ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="99">
+	<s n="1">L'analogie, dans les cas les plus composés, n'est qu'une règle de trois qui s'exécute dans l'instrument sensible. </s>
+	<s n="2">Si tel phénomène connu en nature est suivi de tel autre phénomène connu en nature, quel sera le quatrième phénomène conséquent à un troisième, ou donné par la nature, ou imaginé à l'imitation de la nature ? </s>
+	<s n="3">Si la lance d'un guerrier ordinaire a dix pieds de long, quelle sera la lance d'Ajax ? </s>
+	<s n="4">Si je puis lancer une pierre de quatre livres, Diomède doit remuer un quartier de rocher. </s>
+	<s n="5">Les enjambées des dieux et les bonds de leurs chevaux seront dans le rapport imaginé des dieux à l'homme. </s>
+	<s n="6">C'est une quatrième corde harmonique et proportionnelle à trois autres dont l'animal attend la résonance qui se fait toujours en lui-même, mais qui ne se fait pas toujours en nature. </s>
+	<s n="7">Peu importe au poète, il n'en est pas moins vrai. </s>
+	<s n="8">C'est autre chose pour le philosophe ; il faut qu'il interroge ensuite la nature qui, lui donnant souvent un phénomène tout à fait différent de celui qu'il avait présumé, alors il s'aperçoit que l'analogie l'a séduit.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="100">
+	<s n="1">Adieu, mon ami, bonsoir et bonne nuit.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="101">
+	<s n="1">Vous plaisantez ; mais vous rêverez sur votre oreiller à cet entretien, et s'il n'y prend pas de la consistance, tant pis pour vous, car vous serez forcé d'embrasser des hypothèses bien autrement ridicules.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="102">
+	<s n="1">Vous vous trompez ; sceptique je me serai couché, sceptique je me lèverai.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="103">
+	<s n="1">Sceptique ! </s>
+	<s n="">Est-ce qu'on est sceptique ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="104">
+	<s n="1">En voici bien d'une autre ! </s>
+	<s n="2">N'allez-vous pas me soutenir que je ne suis pas sceptique ? </s>
+	<s n="3">Et qui le sait mieux que moi ?</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="105">
+	<s n="1">Attendez un moment.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="106">
+	<s n="1">Dépêchez-vous, car je suis pressé de dormir.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="107">
+	<s n="1">Je serai court. </s>
+	<s n="2">Croyez-vous qu'il y ait une seule question discutée sur laquelle un homme reste avec une égale et rigoureuse mesure de raison pour et contre ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <note type="L">Âne de Buridan : Paradoxe comique sur l'indécision d'un choix qui aboutit à la mort de l'âne. Ce paradoxe serait l'invention du philosophe français Jean Buridan (1292-1363)</note>
+                        <p n="108">
+	<s n="1">Non, ce serait l'âne de Buridan.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="109">
+	<s n="1">En ce cas, il n'y a donc point de sceptique, puisqu'à l'exception des questions de mathématiques, qui ne comportent pas la moindre incertitude, il y a du pour et du contre dans toutes les autres. </s>
+	<s n="2">La balance n'est donc jamais égale, et il est impossible qu'elle ne penche pas du côté où nous croyons le plus de vraisemblance.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="110">
+	<s n="1">Mais je vois le matin la vraisemblance à ma droite, et l'après-midi elle est à ma gauche.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="111">
+	<s n="1">C'est-à-dire que vous êtes dogmatique pour, le matin, et dogmatique contre, l'après-midi.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="112">
+	<s n="1">Et le soir, quand je me rappelle cette circonstance si rapide de mes jugements, je ne crois rien, ni du matin, ni de l'après-midi.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="113">
+	<s n="1">C'est-à-dire que vous ne vous rappelez plus la prépondérance des deux opinions entre lesquelles vous avez oscillé ; que cette prépondérance vous paraît trop légère pour asseoir un sentiment fixe, et que vous prenez le parti de ne plus vous occuper de sujets aussi problématiques, d'en abandonner la discussion aux autres, et de n'en pas disputer davantage.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="114">
+	<s n="1">Cela se peut.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="115">
+	<s n="1">Mais si quelqu'un vous tirait à l'écart, et vous questionnant d'amitié, vous demandait, en conscience, des deux partis quel est celui où vous trouvez le moins de difficultés, de bonne foi, seriez-vous embarrassé de répondre, et réaliseriez-vous l'âne de Buridan ?</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="116">
+	<s n="1">Je crois que non.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="117">
+	<s n="1">Tenez, mon ami, si vous y pensez bien, vous trouverez qu'en tout, notre véritable sentiment n'est pas celui dans lequel nous n'avons jamais vacillé, mais celui auquel nous sommes le plus habituellement revenus.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="118">
+	<s n="1">Je crois que vous avez raison.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <note type="l">Memento, homo, quia pulvis es (...)  : Locution latine usuellement traduite pas "Souviens toi que tu es poussière et que tu redeviendras poussière" (Bible, passage du Livre de la Genèse - Génèse 3,19) </note>
+                        <p n="119">
+	<s n="1">Et moi aussi. </s>
+	<s n="2">Bonsoir, mon ami, et memento quia pulvis es, et in pulverem reverteris.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="120">
+	<s n="1">Cela est triste.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+<sp who="#diderot">
+                        <speaker>DIDEROT.</speaker>
+                        <p n="121">
+	<s n="1">Et nécessaire. </s>
+	<s n="2">Accordez à l'homme, je ne dis pas l'immortalité, mais seulement le double de sa durée, et vous verrez ce qui en arrivera.</s>
+</p>
+                    </sp><!--@who="DIDEROT"-->
+<sp who="#d-alembert">
+                        <speaker>D'ALEMBERT.</speaker>
+                        <p n="122">
+	<s n="1">Et que voulez-vous qu'il en arrive ? </s>
+	<s n="2">Mais qu'est-ce que cela me fait ? </s>
+	<s n="3">Qu'il en arrive ce qui pourra. </s>
+	<s n="4">Je veux dormir, bonsoir.</s>
+</p>
+                    </sp><!--@who="D'ALEMBERT"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

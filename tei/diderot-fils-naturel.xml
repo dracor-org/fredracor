@@ -1,0 +1,3680 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Fils Naturel</title>
+                <title type="sub">Ou les Epreuves de la Vertu</title>
+                <title type="sub">Comédie en Cinq Actes et en Prose, avec l'Histoire Véritable de la Pièce.</title>
+                <author>
+      <idno type="isni">000000012133370X</idno>
+      <idno type="wikidata">Q448</idno>
+      <persName>
+        <forename>Denis</forename>
+        <surname>Diderot</surname>
+      </persName>
+    </author><!--DIDEROT, Denis-->
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000498</idno>
+                <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">Q3222842</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/DIDEROT_FILSNATUREL.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/DIDEROT_FILSNATUREL.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1757"/>
+                        <date type="premiere" when="1757">Représenté pour la première fois en 1757 chez le Duc d'Ayen, Saint Germain-en-Laye.</date>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="dorval" sex="MALE">
+                        <persName>Dorval</persName>
+                    </person>
+                    <person xml:id="charles" sex="MALE">
+                        <persName>Charles</persName>
+                    </person>
+                    <person xml:id="constance" sex="FEMALE">
+                        <persName>Constance</persName>
+                    </person>
+                    <person xml:id="clairville" sex="MALE">
+                        <persName>Clairville</persName>
+                    </person>
+                    <person xml:id="rosalie" sex="FEMALE">
+                        <persName>Rosalie</persName>
+                    </person>
+                    <person xml:id="justine" sex="FEMALE">
+                        <persName>Justine</persName>
+                    </person>
+                    <person xml:id="sylvestre" sex="MALE">
+                        <persName>Sylvestre</persName>
+                    </person>
+                    <person xml:id="dorval_clairville" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Dorval_clairville</persName>
+                    </person>
+                    <person xml:id="andre" sex="MALE">
+                        <persName>André</persName>
+                    </person>
+                    <person xml:id="lysimond" sex="MALE">
+                        <persName>Lysimond</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Tragi-comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q192881</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+		<front>
+			<docTitle>
+				<titlePart type="main">LE FILS NATUREL</titlePart>
+				<titlePart type="sub">ou Les ÉPREUVES DE LA VERTU</titlePart>
+				<titlePart type="sub">COMÉDIE en CINQ ACTES et EN PROSE, avec l'histoire véritable de la pièce.</titlePart>
+			</docTitle> 
+			<docDate when="1757">M. DCC. LVII.</docDate>
+			<docAuthor>[par DENIS DIDEROT]</docAuthor><!--@bio="diderot"-->
+			<div type="docImprint">
+				<div type="privilege"/><!--@id="1632-**-**"-->
+				<div type="acheveImprime">
+                    <p/>
+                </div><!--@id="1632-**-**"-->
+				<div type="printer">
+                    <p>À Amsterdam, Chez Pierre Erialed, imprimeur libraire.</p>
+                </div><!--@id="ERIALED"-->
+			</div>
+			<performance>
+				<ab type="premiere">Représenté pour la première fois en 1757 chez le Duc d'Ayen, Saint Germain-en-Laye.</ab><!--@date="1757"--><!--@location="chez le Duc d'Ayen"-->
+			</performance>
+			<div type="preface">
+                <head>Préface</head>
+			<p>Le sixième volume de l'Encyclopédie venait de paraître , et j'étais allé chercher à la campagne du repos et de la santé ; lorsqu'un évenement, non moins intéressant par les circonstances que par les personnes, devint l'étonnement et l'entretien du canton. On n'y parlait que de l'homme rare qui avait eu, dans un même jour, le bonheur d'exposer sa vie pour son ami, et le courage de lui sacrifier sa passion, sa fortune et sa liberté.</p>
+			<p>Je voulus connaître cet homme. Je le connus, et je le trouvai tel qu'on me l'avoit peint, sombre et mélancolique. Le chagrin et la douleur, en sortant d'une âme où ils avaient habité trop longtemps, y avaient laissé la tristesse. Il était triste dans sa conversation et dans son maintien, à moins qu'il ne parlât de la vertu, ou qu'il n'éprouvât les transports qu'elle cause à ceux qui en sont fortement épris. Alors vous eussiez dit qu'il se transfigursit. La sérénité se déployait sur son visage. Ses yeux prenaient de l'éclat et de la douceur. Sa voix avait un charme inexprimable. Son discours devenait pathétique. C'était un enchaînement d'idées austères et d'images touchantes qui tenaient l'attention suspendue et l'âme ravie. Mais comme on voit le soir, en automne, dans un temps nébuleux et couvert, la lumière s'échapper d'un nuage, briller un moment, et se perdre en un ciel obscur : bientôt sa gaité s'éclipsait, et il retombait tout-à-coup dans le silence et la mélancolie.</p>
+			<p>Tel était Dorval. Soit qu'on l'eut prévenu favorablement, soit qu'il y ait, comme on le dit, des hommes faits pour s'aimer sitôt qu'ils se rencontreront, il m'accueillit d'une manière ouverte qui surprit tout le monde, excepté moi ; et dès la seconde fois que je le vis, je crus pouvoir, sans être indiscret, lui parler de sa famille , et de ce qui venait de s'y passer. Il satisfit à mes questions. Il me raconta son histoire. Je tremblai avec lui des épreuves auxquelles l'homme de bien est quelquefois exposé ; et je lui dis qu'un ouvrage dramatique dont ces épreuves seraient le sujet, ferait impression sur tous ceux qui ont de la sensibilité, de la vertu, et quelque idée de la faiblesse humaine.</p>
+			<p>Hélas ! me répondit-il en soupirant, vous avez eu la même pensée que mon père. Quelque temps après son arrivée, lorsqu'une joie plus tranquille et plus douce commençait à succéder à nos transports, et que nous goutions le plaisir d'être assis les uns à côté des autres, il me dit :</p>
+			<p>« Dorval, tous les jours je parle au Ciel de Rosalie et de toi. Je lui rend grâces de vous avoir conservés jusqu'à mon retour, mais surtout de vous avoir conservés innocents. Ah ! mon fils, je ne jette point les yeux sur Rosalie, sans frémir du danger que tu as couru. Plus je la vois, plus je la trouve honnête et belle, plus ce danger me paraît grand. Mais le Ciel qui veille aujourd'hui sur nous, peut nous abandonner demain. Nul de nous ne connaît son sort. Tout ce que nous savons, c'est qu'à mesure que la vie s'avance, nous échappons à la méchanceté qui nous suit. Voilà les réflexions que je fais toutes les fois que je me rappelle ton histoire. Elles me consolent du peu de temps qui me reste à vivre ; et si tu voulais, ce serait la morale d'une pièce dont une partie de notre vie serait le sujet, et que nous représenterions entre nous.» </p>
+			<p>« Une pièce, mon père ! »</p>
+			<p>« Oui, mon enfant. Il ne s'agit point d'élever ici des tréteaux, mais de conserver la mémoire, d'un événement qui nous touche , et de le rendre comme il s'est passé... Nous le renouvellerions nous-mêmes, tous les ans, dans cette maison : dans ce salon. Les choses que nous avons dites, nous les redirions. Tes enfants en feraient autant, et les leurs, leurs descendants. Et je me survivrais à moi-même, et j'irais converser ainsi, d'âge en âge, avec tous mes neveux... Dorval, penses-tu qu'un ouvrage qui leur transmettrait nos propres idées, nos vrais sentiments, les discours que nous avons tenus dans une des circonstances les plus importantes de notre vie, ne valut pas mieux que des portraits de famille qui ne montrent de nous qu'un moment de notre visage.</p>
+			<p>« C'est-à-dire que vous m'ordonnez de peindre votre âme, la mienne, celles de Constance, de Clairville, et de Rosalie. Ah, mon père, c'est une tâche au-dessus de mes forces, et vous le savez bien !»</p>
+			<p>Écoute ; je prétends y faire mon rôle une fois avant que de mourir ; et pour cet effet j'ai dit à André de serrer dans un coffre les habits que nous avons apportés des prisons.»</p>
+			<p>« Mon père... »</p>
+			<p>« Mes enfants ne m'ont jamais opposé de refus, ils ne voudront pas commencer si tard. »</p>
+			<p>En cet endroit, Dorval détournant son visage, et cachant ses larmes, me dit du ton d'un homme qui contraignait sa douleur... la pièce est faite... Mais celui qui l'a commandée n'est plus... Après un moment de silence, il ajouta : « ... Elle était restée-là cette pièce, et je l'avais presque oubliée ; mais ils m'ont repeté si souvent que c'était manquer à la volonté de mon père, qu'ils m'ont persuadé ; et dimanche prochain nous nous acquittons pour la première fois d'une chose qu'ils s'accordent tous à regarder comme un devoir. »</p>
+			<p>« Ah, Dorval, lui dis-je, si j'osais !... » </p>
+			<p>« Je vous entends, me répondit-il ; mais croyez-vous que ce soit une proposition à faire à Constance à Clairville, et à Rosalie ? Le sujet de la pièce vous est connu ; et vous n'aurez pas de peine à croire qu'il y a quelques scènes où la présence d'un étranger gênerait beaucoup. Cependant c'est moi qui fais ranger la salon. Je ne vous promets point. Je ne vous refuse pas. Je verrai. »</p>
+			<p>Nous nous séparâmes Dorval et moi. C'était le lundi. Il ne me fit rien dire de toute la semaine. Mais le dimanche matin il m'écrivit... « Aujourd'hui, à trois heures précises, à la porte du jardin ».... Je m'y rendis. J'entrai dans le salon par la fenêtre ; et Dorval qui avait écarté tout le monde me plaça dans un coin, d'où, sans être vu, je vis et j'entendis ce qu'on va lire, excepté la dernière scène. Une autre fois je dirai pourquoi je n'entendis pas la dernière scène.</p>
+			</div>
+<castList>
+                <head>Voici le liste des personnages réels de la pièces, avec eux des acteurs qui pourraient les remplacer.</head>
+	<castItem>
+                    <role corresp="#lysimond">LYSIMOND</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, père de Dorval et de Rosalie, M. Sarrazin.</castItem>
+	<castItem>
+                    <role corresp="#dorval">DORVAL</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour="néant"-->, fils naturel de lisimond, et ami de Clairville, M. Grandval.</castItem>
+	<castItem>
+                    <role corresp="#rosalie">ROSALIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour="néant"-->, fille de Lysimond, Melle Gaussin.</castItem>
+	<castItem>
+                    <role corresp="#justine">JUSTINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="suivante"--><!--@age="A"--><!--@stat_amour="néant"-->, suivante de Rosalie, Melle Dangeville.</castItem>
+	<castItem>
+                    <role corresp="#andre">ANDRÉ</role><!--@sex="1"--><!--@type="H"--><!--@statut="domestique"--><!--@age="A"--><!--@stat_amour="néant"-->, domestique de Lysimond, M. Le Grand.</castItem>
+	<castItem>
+                    <role corresp="#charles">CHARLES</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, valet de Dorval, M. Armand.</castItem>
+	<castItem>
+                    <role corresp="#clairville">CLAIRVILLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, ami de Dorval et amant de Rosalie, Melle Clairon.</castItem>
+	<castItem>
+                    <role corresp="#constance">CONSTANCE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour="néant"-->, jeune veuve, soeur de Clairville, Melle Clairon.</castItem>
+	<castItem>
+                    <role corresp="#sylvestre">SYLVESTRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, valet de Clairvillle.</castItem>
+	<castItem>
+                    <role corresp="#domestiques">Autres domestiques</role><!--@sex="9"--><!--@type="H"--><!--@statut="domestique"--><!--@age="A"--><!--@stat_amour="néant"-->, de la maison de Clairville.</castItem>
+</castList>
+<!--TODO: usage of set in correct place but with unknown attributes <set location="Saint-Germain-en-Laye" country="France" periode="XVIIIème" gps="(N/A)">La scène est à Saint-Germain-en-Laye. L'action commence avec le jour, et se passe dans un salon de la maison de Clairville.</set>-->
+</front>
+<body>
+<div type="act" n="1">
+                <head>ACTE I</head>
+<stage type="decor/furniture">La scène est dans un salon. On y voit un clavecin, des chaises, des tables de jeu ; sur une de ces tables un trictrac ; sur une autre quelques brochures ; d'un côté, un métier à tapisserie, etc... ; dans le fond un canapé, etc.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE I.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, seul.</speaker>
+                        <stage type="costme/decor/narration">Il est en habit de campagne, en cheveux négligés, assis dans un fauteuil, à côté d'une table sur laquelle il y a des brochures. Il paraît agité. Après quelques mouvements violents, il s'appuie sur un des bras de son fauteuil, comme pour dormir. Il quitte bientôt cette situation. Il tire sa montre, et dit : </stage>
+                        <p n="1">
+	<s n="1">À peine est-il six heures.</s>
+</p>
+                        <stage type="sit/stand">Il se jette sur l'autre bras de son fauteuil ; mais il n'y est pas plus tôt, qu'il se relève et dit : </stage>
+                        <p n="2">
+	<s n="1">Je ne saurais dormir.</s>
+</p>
+                        <stage type="get/open/close">Il prend un livre qu'il ouvre au hasard, et qu'il referme presque sur-le-champ.</stage>
+                        <p n="3">
+	<s n="1">Je lis sans rien entendre.</s>
+</p>
+                        <stage type="stand/walk">Il se lève, se promène.</stage>
+                        <p n="4">
+	<s n="1">Je ne peux m'éviter... </s>
+	<s n="2">Il faut sortir d'ici... </s>
+	<s n="3">Sortir d'ici ! </s>
+	<s n="4">Et j'y suis enchaîné ! J'aime...</s>
+</p>
+                        <stage type="frighten">Comme effrayé.</stage>
+                        <p n="5">
+	<s n="1">Et qui aimé-je !... </s>
+	<s n="2">J'ose me l'avouer, malheureux ! </s>
+	<s n="3">Et je reste.</s>
+</p>
+                        <stage type="call">Il appelle violemment : </stage>
+                        <p n="6">
+	<s n="1">Charles ! </s>
+	<s n="2">Charles ! </s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Dorval, Charles.</head>
+<stage type="give/drop/location">Charles croit que son maître demande son chapeau et son épée ; il les apporte, les pose sur un fauteuil.</stage>
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="1">
+	<s n="1">Monsieur, ne vous faut-il plus rien ?</s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="2">
+	<s n="1">Des chevaux, ma chaise.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="3">
+	<s n="1">Quoi ! </s>
+	<s n="2">Nous partons ?</s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="4">
+	<s n="1">À l'instant.</s>
+</p>
+                        <stage type="sit/get">Il est assis dans le fauteuil ; et, tout en parlant, il ramasse des livres, des papiers, des brochures, comme pour en faire des paquets.</stage>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="5">
+	<s n="1">Monsieur, tout dort encore ici.</s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="6">
+	<s n="1">Je ne verrai personne.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="7">
+	<s n="1">Cela se peut-il ?</s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="8">
+	<s n="1">Il le faut.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="9">
+	<s n="1">Monsieur...</s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, se tournant vers Charles, d'un air triste et accablé.</speaker>
+                        <p n="10">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Charles.</s>
+</p>
+                    </sp><!--@stage="turn/sad"--><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="11">
+	<s n="1">Avoir été accueilli dans cette maison, chéri de tout le monde, prévenu sur tout, et s'en aller sans parler à personne ! </s>
+	<s n="2">Permettez, monsieur...</s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="12">
+	<s n="1">J'ai tout entendu ; tu as raison. </s>
+	<s n="2">Mais je pars.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="13">
+	<s n="1">Que dira Clairville, votre ami ? </s>
+	<s n="2">Constance, sa soeur, qui n'a rien négligé pour vous faire aimer ce séjour ?</s>
+</p>
+                        <stage type="low">D'un ton plus bas : </stage>
+                        <p n="14">
+	<s n="1">Et Rosalie ?... </s>
+	<s n="2">Vous ne les verrez point ?</s>
+</p>
+                        <stage type="sigh/touch">Dorval soupire profondément, laisse tomber sa tête sur ses mains ; et Charles continue.</stage>
+                        <p n="15">
+	<s n="1">Clairville et Rosalie s'étaient flattés de vous avoir pour témoin de leur mariage. </s>
+	<s n="2">Rosalie se faisait une joie de vous présenter à son père. </s>
+	<s n="3">Vous deviez les accompagner tous à l'autel.</s>
+</p>
+                        <stage type="sigh/agitated">Dorval soupire, s'agite, etc.</stage>
+                        <p n="16">
+	<s n="1">Le bonhomme arrive, et vous partez ! </s>
+	<s n="2">Tenez, mon cher maître, j'ose vous le dire : les conduites bizarres sont rarement sensées... </s>
+	<s n="3">Clairville ! </s>
+	<s n="4">Constance ! </s>
+	<s n="5">Rosalie !</s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, brusquement, en se levant.</speaker>
+                        <p n="17">
+	<s n="1">Des chevaux, ma chaise, te dis-je.</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="18">
+	<s n="1">Au moment où le père de Rosalie arrive d'un voyage de plus de mille lieues ! </s>
+	<s n="2">À la veille du mariage de votre ami ! </s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, en colère, à Charles.</speaker>
+                        <p n="19">
+	<s n="1">Malheureux !...</s>
+</p>
+                        <stage type="toward/hurt">À lui-même, en se mordant la lèvre et se frappant la poitrine.</stage>
+                        <p n="20">
+	<s n="1">Que je suis... </s>
+	<s n="2">Tu perds le temps, et je demeure.</s>
+</p>
+                    </sp><!--@stage="anger/toward"--><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="21">
+	<s n="1">Je vais.</s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="22">
+	<s n="1">Qu'on se dépêche.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, seul.</speaker>
+                        <stage type="walk/dream">Il continue de se promener et de rêver.</stage>
+                        <p n="1">
+	<s n="1">Partir sans dire adieu ! </s>
+	<s n="2">Il a raison ; cela serait d'une bizarrerie, d'une inconséquence... </s>
+	<s n="3">Et qu'est-ce que ces mots signifient ? </s>
+	<s n="4">Est-il question de ce qu'on croira, ou de ce qu'il est honnête de faire ? </s>
+	<s n="5">Mais, après tout, pourquoi ne verrais-je pas Clairville et sa soeur ? </s>
+	<s n="6">Ne puis-je les quitter et leur en taire le motif ?... et Rosalie ? </s>
+	<s n="7">Je ne la verrai point ? </s>
+	<s n="8">Non... </s>
+	<s n="9">L'amour et l'amitié n'imposent point ici les mêmes devoirs ; surtout un amour insensé qu'on ignore et qu'il faut étouffer... </s>
+	<s n="10">Mais que dira-t-elle ? </s>
+	<s n="11">Que pensera-t-elle ?... </s>
+	<s n="12">Amour, sophiste dangereux, je t'entends.</s>
+</p>
+                        <stage type="entrance/costume">Constance arrive en robe de matin, tourmentée de son côté par une passion qui lui a ôté le repos. Un moment après, entrent des domestiques qui rangent le salon, et qui ramassent les choses qui sont à Dorval... Charles, qui a envoyé à la poste pour avoir des chevaux, rentre aussi.</stage>
+                    </sp><!--@stage="alone"--><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Dorval, Constance, des domestiques.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="1">
+	<s n="1">Quoi ! </s>
+	<s n="2">Madame, si matin !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="2">
+	<s n="1">J'ai perdu le sommeil. </s>
+	<s n="2">Mais vous-même, déjà habillé !</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, vite.</speaker>
+                        <p n="3">
+	<s n="1">Je reçois des lettres à l'instant. </s>
+	<s n="2">Une affaire pressée m'appelle à Paris ; elle y demande ma présence : je prends le thé. </s>
+	<s n="3">Charles, du thé. </s>
+	<s n="4">J'embrasse Clairville ; je vous rends grâce à tous les deux des bontés que vous avez eues pour moi. </s>
+	<s n="5">Je me jette dans ma chaise ; et je pars.</s>
+</p>
+                    </sp><!--@stage="quick"--><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="4">
+	<s n="1">Vous partez ! </s>
+	<s n="2">Est-il possible ?</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="5">
+	<s n="1">Rien, malheureusement, n'est plus nécessaire.</s>
+</p>
+                        <stage type="exit/drink/expression">les domestiques, qui ont achevé de ranger le salon et de ramasser ce qui est à Dorval, s'éloignent. Charles laisse le thé sur une des tables. Dorval prend le thé. Constance, un coude appuyé sur la table, et la tête penchée sur une de ses mains, demeure dans cette situation pensive.</stage>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="6">
+	<s n="1">Constance, vous rêvez ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, émue, ou plutôt d'un sang-froid un peu contraint.</speaker>
+                        <p n="7">
+	<s n="1">Oui, je rêve... </s>
+	<s n="2">Mais j'ai tort... </s>
+	<s n="3">La vie que l'on mène ici vous ennuie... </s>
+	<s n="4">Ce n'est pas d'aujourd'hui que je m'en aperçois.</s>
+</p>
+                    </sp><!--@stage="stress"--><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="8">
+	<s n="1">Elle m'ennuie ! </s>
+	<s n="2">Non, madame, ce n'est pas cela.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="9">
+	<s n="1">Qu'avez-vous donc ?... </s>
+	<s n="2">Un air sombre que je vous trouve...</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="10">
+	<s n="1">Les malheurs laissent des impressions... </s>
+	<s n="2">Vous savez... </s>
+	<s n="3">Madame... </s>
+	<s n="4">Je vous jure que depuis longtemps je ne connaissais de douceurs que celles que je goûtais ici. </s>
+	<s n="5">Si cela est, vous revenez sans doute.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="11">
+	<s n="1">Je ne sais... </s>
+	<s n="2">Ai-je jamais su ce que je deviendrais ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, après s'être promenée un instant.</speaker>
+                        <p n="12">
+	<s n="1">Ce moment est donc le seul qui me reste. </s>
+	<s n="2">Il faut parler.</s>
+</p>
+                        <stage type="silence">Une pause.</stage>
+                        <p n="13">
+	<s n="1">Dorval, écoutez-moi. Vous m'avez trouvée ici il y a six mois, tranquille et heureuse. </s>
+	<s n="2">J'avais éprouvé tous les malheurs des noeuds mal assortis. </s>
+	<s n="3">Libre de ces noeuds, je m'étais promis une indépendance éternelle ; et j'avais fondé mon bonheur sur l'aversion de tout lien, et dans la sécurité d'une vie retirée. </s>
+	<s n="4">Après les longs chagrins, la solitude a tant de charmes ! </s>
+	<s n="5">On y respire en liberté. IJ'y jouissais de moi ; j'y jouissais de mes peines passées. </s>
+	<s n="6">Il me semblait qu'elles avaient épuré ma raison. </s>
+	<s n="7">Mes journées, toujours innocentes, quelquefois délicieuses, se partageaient entre la lecture, la promenade et la conversation de mon frère. </s>
+	<s n="8">Clairville me parlait sans cesse de son austère et sublime ami. Que j'avais de plaisir à l'entendre ! </s>
+	<s n="9">Combien je désirais de connaître un homme que mon frère aimait, respectait à tant de titres, et qui avait développé dans son coeur les premiers germes de la sagesse ! </s>
+	<s n="10">Je vous dirai plus : loin de vous, je marchais déjà sur vos traces ; et cette jeune Rosalie, que vous voyez ici, était l'objet de tous mes soins, comme Clairville avait été l'objet des vôtres.</s>
+</p>
+                    </sp><!--@stage="walk"--><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, ému et attendri.</speaker>
+                        <p n="14">
+	<s n="1">Rosalie !</s>
+</p>
+                    </sp><!--@stage="tender"--><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="15">
+	<s n="1">Je m'aperçus du goût que Clairville prenait pour elle ; et je m'occupai à former l'esprit, et surtout le caractère de cette enfant, qui devait un jour faire la destinée de mon frère. </s>
+	<s n="2">Il est étourdi ; je la rendais prudente. </s>
+	<s n="3">Il est violent ; je cultivais sa douceur naturelle. </s>
+	<s n="4">Je me complaisais à penser que je préparais, de concert avec vous, l'union la plus heureuse qu'il y eût peut-être au monde, lorsque vous arrivâtes. </s>
+	<s n="5">Hélas !...</s>
+</p>
+                        <stage type="expression">La voix de Constance prend ici l'accent de la tendresse, et s'affaiblit un peu.</stage>
+                        <p n="16">
+	<s n="1">Votre présence, qui devait m'éclairer et m'encourager, n'eut point ces effets que j'en attendais. </s>
+	<s n="2">Peu à peu mes soins se détournèrent de Rosalie ; je ne lui enseignai plus à plaire... </s>
+	<s n="3">Et je n'en ignorai pas longtemps la raison. Dorval, je connus tout l'empire que la vertu avait sur vous ; et il me parut que je l'en aimais encore davantage. </s>
+	<s n="4">Je me proposai d'entrer dans votre âme avec elle ; et je crus n'avoir jamais formé de dessein qui fût si bien selon mon coeur. </s>
+	<s n="5">Qu'une femme est heureuse, me disais-je, lorsque le seul moyen qu'elle ait d'attacher celui qu'elle a distingué, c'est d'ajouter de plus en plus à l'estime qu'elle se doit ; c'est de s'élever sans cesse à ses propres yeux ! </s>
+	<s n="6">Je n'en ai point employé d'autre. Si je n'en ai pas attendu le succès, si je parle, c'est le temps, et non la confiance, qui m'a manqué. </s>
+	<s n="7">Je ne doutai jamais que la vertu ne fît naître l'amour, quand le moment en serait venu.</s>
+</p>
+                        <stage type="silence">Une petite pause.</stage>
+                        <p n="17">
+	<s n="1">Ce qui suit doit coûter à dire à une femme telle que Constance. </s>
+	<s n="2">Vous avouerai-je ce qui m'a coûté le plus ? </s>
+	<s n="3">C'était de vous dérober ces mouvements si tendres et si peu libres, qui trahissent presque toujours une femme qui aime. </s> 
+	<s n="4">La raison se fait entendre par intervalles ; le coeur importun parle sans cesse. </s>
+	<s n="5">Dorval, cent fois le mot fatal à mon projet s'est présenté sur mes lèvres. Il m'est échappé quelquefois ; mais vous ne l'avez point entendu, et je m'en suis toujours félicitée. </s>
+	<s n="6">Telle est Constance. </s>
+	<s n="7">Si vous la fuyez, du moins elle n'aura point à rougir d'elle. </s>
+	<s n="8">Éloignée de vous, elle se retrouvera dans le sein de la vertu. </s>
+	<s n="9">Et tandis que tant de femmes détesteront l'instant où l'objet d'une criminelle tendresse arracha de leur coeur un premier soupir, Constance ne se rappellera Dorval que pour s'applaudir de l'avoir connu. </s>
+	<s n="10">Ou s'il se mêle quelque amertume à son souvenir, il lui restera toujours une consolation douce et solide dans les sentiments mêmes que vous lui aurez inspirés.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Dorval, Constance, Clairville.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="1">
+	<s n="1">Madame, voilà votre frère.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, attristée.</speaker>
+                        <p n="19">
+	<s n="1">Mon frère, Dorval nous quitte.</s>
+</p>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@stage="sad"--><!--@who="CONSTANCE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="20">
+	<s n="1">On vient de me l'apprendre.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Dorval, Clairville.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, faisant quelques pas, distrait et embarrassé.</speaker>
+                        <p n="1">
+	<s n="1">Des lettres de Paris... </s>
+	<s n="2">Des affaires qui pressent... </s>
+	<s n="3">Un banquier qui chancelle...</s>
+</p>
+                    </sp><!--@stage="walk/dream/embarrassed"--><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Mon ami, vous ne partirez point sans m'accorder un moment d'entretien. </s>
+	<s n="2">Je n'ai jamais eu un si grand besoin de votre secours.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="3">
+	<s n="1">Disposez de moi ; mais si vous me rendez justice, vous ne douterez pas que je n'aie les raisons les plus fortes...</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, affligé.</speaker>
+                        <p n="4">
+	<s n="1">J'avais un ami, et cet ami m'abandonne ; j'étais aimé de Rosalie, et Rosalie ne m'aime plus. </s>
+	<s n="2">Je suis désespéré... </s>
+	<s n="3">Dorval, m'abandonnerez-vous ?...</s>
+</p>
+                    </sp><!--@stage="afflicted"--><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="5">
+	<s n="1">Que puis-je faire pour vous ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="6">
+	<s n="1">Vous savez si j'aime Rosalie !... </s>
+	<s n="2">Mais non, vous n'en savez rien. </s>
+	<s n="3">Devant les autres, l'amour est ma première vertu ; j'en rougis presque devant vous... </s>
+	<s n="4">Eh bien ! </s>
+	<s n="5">Dorval, je rougirai, s'il le faut, mais je l'adore... </s>
+	<s n="6">Que ne puis-je vous dire tout ce que j'ai souffert ! </s>
+	<s n="7">Avec quel ménagement, quelle délicatesse j'ai imposé silence à la passion la plus forte !... </s>
+	<s n="8">Rosalie vivait retirée près d'ici avec une tante. </s>
+	<s n="9">C'était une américaine fort âgée, une amie de Constance. </s>
+	<s n="10">Je voyais Rosalie tous les jours ; et tous les jours je voyais augmenter ses charmes ; je sentais augmenter mon trouble. </s>
+	<s n="11">Sa tante meurt. </s>
+	<s n="12">Dans ses derniers moments, elle appelle ma soeur, lui tend une main défaillante, et, lui montrant Rosalie qui se désolait au bord de son lit, elle la regardait sans parler ; ensuite elle regardait Constance ; des larmes tombaient de ses yeux ; elle soupirait, et ma soeur entendait tout cela. Rosalie devint sa compagne, sa pupille, son élève ; et moi, je fus le plus heureux des hommes. </s>
+	<s n="13">Constance voyait ma passion, Rosalie en paraissait touchée. </s>
+	<s n="14">Mon bonheur n'était plus traversé que par la volonté d'une mère inquiète qui redemandait sa fille. </s>
+	<s n="15">Je me préparais à passer dans les climats éloignés où Rosalie a pris naissance : mais sa mère meurt ; et son père, malgré sa vieillesse, prend le parti de revenir parmi nous. </s>
+	<s n="16">Je l'attendais, ce père, pour achever mon bonheur ; il arrive, et il me trouvera désolé.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="7">
+	<s n="1">Je ne vois pas encore les raisons que vous avez de l'être.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="8">
+	<s n="1">Je vous l'ai dit d'abord ; Rosalie ne m'aime plus. </s>
+	<s n="2">À mesure que les obstacles qui s'opposaient à mon bonheur ont disparu, elle est devenue réservée, froide, indifférente. </s>
+	<s n="3">Ces sentiments tendres qui sortaient de sa bouche avec une naïveté qui me ravissait, ont fait place à une politesse qui me tue. </s>
+	<s n="4">Tout lui est insipide ; rien ne l'occupe ; rien ne l'amuse. </s>
+	<s n="5">M'aperçoit-elle, son premier mouvement est de s'éloigner. </s>
+	<s n="6">Son père arrive, et l'on dirait qu'un événement si désiré, si longtemps attendu, n'a plus rien qui la touche. </s>
+	<s n="7">Un goût sombre pour la solitude est tout ce qui lui reste. </s>
+	<s n="8">Constance n'est pas mieux traitée que moi. </s>
+	<s n="9">Si Rosalie nous cherche encore, c'est pour nous éviter l'un par l'autre ; et, pour comble de malheur, ma soeur même ne paraît plus s'intéresser à moi.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="9">
+	<s n="1">Je reconnais bien là Clairville. </s>
+	<s n="2">Il s'inquiète, il se chagrine, et il touche au moment de son bonheur.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="10">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon cher Dorval, vous ne le croyez pas. </s>
+	<s n="3">Voyez...</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="11">
+	<s n="1">Je ne vois, dans toute la conduite de Rosalie, que de ces inégalités auxquelles les femmes les mieux nées sont le plus sujettes, et qu'il est quelquefois si doux d'avoir à leur pardonner. </s>
+	<s n="2">Elles ont le sentiment si exquis, leur âme est si sensible, leurs organes sont si délicats, qu'un soupçon, un mot, une idée suffit pour les alarmer. </s>
+	<s n="3">Mon ami, leur âme est semblable au cristal d'une onde pure et transparente, où le spectacle tranquille de la nature s'est peint. </s>
+	<s n="4">Si une feuille en tombant vient à en agiter la surface, tous les objets sont vacillants.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, affligé.</speaker>
+                        <p n="12">
+	<s n="1">Vous me consolez, Dorval, je suis perdu. </s>
+	<s n="2">Je ne sens que trop... que je ne peux vivre sans Rosalie ; mais quel_que_soit le sort qui m'attend, j'en veux être éclairci avant l'arrivée de son père.</s>
+</p>
+                    </sp><!--@stage="afflicted"--><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="13">
+	<s n="1">En quoi puis-je vous servir ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="14">
+	<s n="1">Il faut que vous parliez à Rosalie.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="15">
+	<s n="1">Que je lui parle !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="16">
+	<s n="1">Oui, mon ami. </s>
+	<s n="2">Il n'y a que vous au monde qui puissiez me la rendre. </s>
+	<s n="3">L'estime qu'elle a pour vous me fait tout espérer.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="17">
+	<s n="1">Clairville, que me demandez-vous ! </s>
+	<s n="2">À peine Rosalie me connaît-elle ; et je suis si peu fait pour ces sortes de discussions.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="18">
+	<s n="1">Vous pouvez tout ; et vous ne me refuserez point. </s>
+	<s n="2">Rosalie vous révère : votre présence la saisit de respect ; c'est elle qui l'a dit. </s>
+	<s n="3">Elle n'osera jamais être injuste, inconstante, ingrate à vos yeux. </s>
+	<s n="4">Tel est l'auguste privilège de la vertu ; elle en impose à tout ce qui l'approche. </s>
+	<s n="5">Dorval, paraissez devant Rosalie ; et bientôt elle redeviendra pour moi ce qu'elle doit être, ce qu'elle était.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, posant la main sur l'épaule de Clairville.</speaker>
+                        <p n="19">
+	<s n="1">Ah ! </s>
+	<s n="2">Malheureux !</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="20">
+	<s n="1">Mon ami, si je le suis !</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="21">
+	<s n="1">Vous exigez...</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="22">
+	<s n="1">J'exige...</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="23">
+	<s n="1">Vous serez satisfait.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, seul.</speaker>
+                        <p n="1">
+	<s n="1">Quels nouveaux embarras !... </s>
+	<s n="2">Le frère... </s>
+	<s n="3">La soeur... </s>
+	<s n="4">Ami cruel, amant aveugle, que me proposez-vous ?... </s>
+	<s n="5">"Paraissez devant Rosalie ! " </s>
+	<s n="6">Moi, paraître devant Rosalie ; et je voudrais me cacher à moi-même... </s>
+	<s n="7">Que deviens-je, si Rosalie me devine ? </s>
+	<s n="8">Et comment en imposerai-je à mes yeux, à ma voix, à mon coeur ?... </s>
+	<s n="9">Qui me répondra de moi ?... </s>
+	<s n="10">La vertu ?... </s>
+	<s n="11">M'en reste-t-il encore ?</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="DORVAL"-->
+</div>
+</div>
+<div type="act" n="2">
+                <head>ACTE II</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Rosalie, Justine.</head>
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="1">
+	<s n="1">Justine, approchez mon ouvrage.</s>
+</p>
+                        <stage type="exit/narration">Justine approche un métier à tapisserie. Rosalie est tristement appuyée sur ce métier. Justine est assise d'un autre côté. Elles travaillent. Rosalie n'interrompt son ouvrage que pour essuyer des larmes qui tombent de ses yeux. Elle le reprend ensuite. Le silence dure un moment, pendant lequel Justine laisse l'ouvrage et considère sa maîtresse.</stage>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="2">
+	<s n="1">Est-ce là la joie avec laquelle vous attendez monsieur votre père ? </s>
+	<s n="2">Sont-ce là les transports que vous lui préparez ? </s>
+	<s n="3">Depuis un temps, je n'entends rien à votre âme. </s>
+	<s n="4">Il faut que ce qui s'y passe soit mal ; car vous me le cachez ; et vous faites très bien. </s>
+</p>
+                        <stage type="sigh/silence/cry">Point de réponse de la part de Rosalie ; mais des soupirs, du silence et des larmes.</stage>
+                        <p n="3">
+	<s n="1">Perdez-vous l'esprit, Mademoiselle ? </s>
+	<s n="2">Au moment de l'arrivée d'un père ! </s>
+	<s n="3">À la veille d'un mariage ! </s>
+	<s n="4">Encore un coup, perdez-vous l'esprit ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="4">
+	<s n="1">Non, Justine.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, après une pause.</speaker>
+                        <p n="5">
+	<s n="1">Serait-il arrivé quelque malheur à monsieur votre père ?</s>
+</p>
+                    </sp><!--@stage="pause"--><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="6">
+	<s n="1">Non, Justine.</s>
+</p>
+                        <stage type="explicit">Toutes ces questions se font à différents intervalles, dans lesquels Justine quitte et reprend son ouvrage.</stage>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, après une pause un peu plus longue.</speaker>
+                        <p n="7">
+	<s n="1">Par hasard, est-ce que vous n'aimeriez plus Clairville ?</s>
+</p>
+                    </sp><!--@stage="pause"--><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="8">
+	<s n="1">Non, Justine. Justine reste un peu stupéfaite. </s>
+	<s n="2">Elle dit ensuite : la voilà donc la cause de ces soupirs, de ce silence et de ces larmes ?... </s>
+	<s n="3">Oh ! </s>
+	<s n="4">Pour le coup, les hommes n'ont qu'à dire que nous sommes folles ; que la tête nous tourne aujourd'hui pour un objet que demain nous voudrions savoir à mille lieues. </s>
+	<s n="5">Qu'ils disent de nous tout ce qu'ils voudront, je veux mourir si je les en dédis... </s>
+	<s n="6">Vous ne vous êtes pas attendue, mademoiselle, que j'approuverais ce caprice... </s>
+	<s n="7">Clairville vous aime éperdument. </s>
+	<s n="8">Vous n'avez aucun sujet de vous plaindre de lui. </s>
+	<s n="9">Si jamais femme a pu se flatter d'avoir un amant tendre, fidèle, honnête ; de s'être attaché un homme qui eût de l'esprit, de la figure, des moeurs ; c'est vous. </s>
+	<s n="10">Des moeurs ! </s>
+	<s n="11">Mademoiselle, des moeurs !... </s>
+	<s n="12">Je n'ai jamais pu concevoir, moi, qu'on cessât d'aimer ; à plus forte raison, qu'on cessât sans sujet. </s>
+	<s n="13">Il y a là quelque chose où je n'entends rien.</s>
+</p>
+                        <stage type="stop/cry/narration">Justine s'arrête un moment. Rosalie continue de travailler et de pleurer. Justine reprend, d'un ton hypocrite et radouci, et dit tout en travaillant, et sans lever les yeux de dessus son ouvrage.</stage>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="9">
+	<s n="1">Après tout, si vous n'aimez plus Clairville, cela est fâcheux... </s>
+	<s n="2">Mais il ne faut pas s'en désespérer comme vous faites... quoi donc ! </s>
+	<s n="3">Après lui n'y aurait-il plus personne au monde que vous pussiez aimer ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="10">
+	<s n="1">Non, Justine.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="11">
+	<s n="1">Oh ! </s>
+	<s n="2">Pour celui-là, on ne s'y attend pas.</s>
+</p>
+                        <stage type="entrance/exit/cry">Dorval entre ; Justine se retire. Rosalie quitte son métier, se hâte de s'essuyer les yeux, et de se composer un visage tranquille. Elle a dit auparavant.</stage>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="12">
+	<s n="1">Ô ciel ! </s>
+	<s n="2">C'est Dorval.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Rosalie, Dorval.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, un peu ému.</speaker>
+                        <p n="1">
+	<s n="1">Permettez, Mademoiselle, qu'avant mon départ...</s>
+</p>
+                        <stage type="estonish">À ces mots Rosalie paraît étonnée.</stage>
+                        <p n="2">
+	<s n="1">J'obéisse à un ami, et que je cherche à lui rendre, auprès de vous, un service qu'il croit important. </s>
+	<s n="2">Personne ne s'intéresse plus que moi à votre bonheur et au sien, vous le savez. </s>
+	<s n="3">Souffrez donc que je vous demande en quoi Clairville a pu vous déplaire, et comment il a mérité la froideur avec laquelle il dit qu'il est traité.</s>
+</p>
+                    </sp><!--@stage="affected"--><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="3">
+	<s n="1">C'est que je ne l'aime plus.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="4">
+	<s n="1">Vous ne l'aimez plus !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="5">
+	<s n="1">Non, Dorval.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="6">
+	<s n="1">Et qu'a-t-il fait pour s'attirer cette horrible disgrâce ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="7">
+	<s n="1">Rien. Je l'aimais ; j'ai cessé : j'étais légère apparemment, sans m'en douter.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="8">
+	<s n="1">Avez-vous oublié que Clairville est l'amant que votre coeur a préféré ?... </s>
+	<s n="2">Songez-vous qu'il traînerait des jours bien malheureux, si l'espérance de recouvrer votre tendresse lui était ôtée ?... </s>
+	<s n="3">Mademoiselle, croyez-vous qu'il soit permis à une honnête femme, de se jouer du bonheur d'un honnête homme ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="9">
+	<s n="1">Je sais, là-dessus, tout ce qu'on peut me dire. </s>
+	<s n="2">Je m'accable sans cesse de reproches ; je suis désolée ; je voudrais être morte !</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="10">
+	<s n="1">Vous n'êtes point injuste.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="11">
+	<s n="1">Je ne sais plus ce que je suis ; je ne m'estime plus.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="12">
+	<s n="1">Mais pourquoi n'aimez-vous plus Clairville ? </s>
+	<s n="2">Il y a des raisons à tout.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="13">
+	<s n="1">C'est que j'en aime un autre.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, avec un étonnement mêlé de reproches.</speaker>
+                        <p n="14">
+	<s n="1">Rosalie ! </s>
+	<s n="2">Elle !</s>
+</p>
+                    </sp><!--@stage="estonish/reproche"--><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="15">
+	<s n="1">Oui, Dorval... </s>
+	<s n="2">Clairville sera bien vengé !</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="16">
+	<s n="1">Rosalie... si par malheur il était arrivé... que votre coeur surpris... fût entraîné par un penchant... dont votre raison vous fît un crime... j'ai connu cet état cruel !... que je vous plaindrais !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="17">
+	<s n="1">Plaignez-moi donc.</s>
+</p>
+                        <stage type="wave">Dorval ne lui répond que par un geste de commisération.</stage>
+                        <p n="18">
+	<s n="1">J'aimais Clairville ; je n'imaginais pas que je pusse en aimer un autre, lorsque je rencontrai l'écueil de ma constance et de notre bonheur... les traits, l'esprit, le regard, le son de la voix ; tout, dans cet objet doux et terrible, semblait répondre à je ne sais quelle image que la nature avait gravée dans mon coeur. </s>
+	<s n="2">Je le vis ; je crus y reconnaître la vérité de toutes ces chimères de perfection que je m'étais faites ; et d'abord il eut ma confiance... </s>
+	<s n="3">Si j'avais pu concevoir que je manquais à Clairville !... </s>
+	<s n="4">Mais, hélas ! Je n'en avais pas eu le premier soupçon, que j'étais tout accoutumée à aimer son rival... </s>
+	<s n="5">Et comment ne l'aurais-je pas aimé ?... </s>
+	<s n="6">Ce qu'il disait, je le pensais toujours. </s>
+	<s n="7">Il ne manquait jamais de blâmer ce qui devait me déplaire ; je louais quelquefois d'avance ce qu'il allait approuver. </s>
+	<s n="8">S'il exprimait un sentiment, je croyais qu'il avait deviné le mien... que vous dirai-je enfin ? </s>
+	<s n="9">Je me voyais à peine dans les autres</s>
+</p>
+                        <stage type="low/watch">Elle ajoute, en baissant les yeux et la voix.</stage>
+                        <p n="19">
+	<s n="1">Et je me retrouvais sans cesse en lui.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="20">
+	<s n="1">Et ce mortel heureux, connaît-il son bonheur ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="21">
+	<s n="1">Si c'est un bonheur, il doit le connaître.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="22">
+	<s n="1">Si vous aimez, on vous aime sans doute ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="23">
+	<s n="1">Dorval, vous le savez.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, vivement.</speaker>
+                        <p n="24">
+	<s n="1">Oui, je le sais ; et mon coeur le sent... </s>
+	<s n="2">Qu'ai-je entendu ?... </s>
+	<s n="3">Qu'ai-je dit ?... </s>
+	<s n="4">Qui me sauvera de moi-même ?...</s>
+</p>
+                        <stage type="silence/cry/sad/shout">Dorval et Rosalie se regardent un moment en silence. Rosalie pleure amèrement. On annonce Clairville.</stage>
+                    </sp><!--@stage="stress"--><!--@who="DORVAL"-->
+<sp who="#sylvestre">
+                        <speaker>SYLVESTRE, à Dorval.</speaker>
+                        <p n="25">
+	<s n="1">Monsieur, Clairville demande à vous parler.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="SYLVESTRE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, à Rosalie.</speaker>
+                        <p n="26">
+	<s n="1">Rosalie... mais on vient... y pensez-vous ?... </s>
+	<s n="2">C'est Clairville. </s>
+	<s n="3">C'est mon ami. </s>
+	<s n="4">C'est votre amant.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="27">
+	<s n="1">Adieu, Dorval.</s>
+</p>
+                        <stage type="touch/kiss">Elle lui tend une main ; Dorval la prend, et laisse tomber tristement sa bouche sur cette main ; et Rosalie ajoute : </stage>
+                        <p n="28">
+	<s n="1">Adieu. </s>
+	<s n="2">Quel mot !</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, seul.</speaker>
+                        <p n="1">
+	<s n="1">Dans sa douleur, qu'elle m'a paru belle ! </s>
+	<s n="2">Que ses charmes étaient touchants ! </s>
+	<s n="3">J'aurais donné ma vie pour recueillir une des larmes qui coulaient de ses yeux... </s>
+	<s n="4">" Dorval, vous le savez... " </s>
+	<s n="5">Ces mots retentissent encore dans le fond de mon coeur... </s>
+	<s n="6">Ils ne sortiront pas sitôt de ma mémoire...</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Dorval, Clairville.</head>
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Excusez mon impatience. </s>
+	<s n="2">Eh bien ! </s>
+	<s n="3">Dorval...</s>
+</p>
+                        <stage type="embarrassed/affected">Dorval est troublé. Il tâche de se remettre, mais il y réussit mal.</stage>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, qui cherche à lire sur son visage, s'en aperçoit, se méprend et dit : </speaker>
+                        <p n="1">
+	<s n="1">Vous êtes troublé ! </s>
+	<s n="2">Vous ne me parlez point ! </s>
+	<s n="3">Vos yeux se remplissent de larmes ! </s>
+	<s n="4">Je vous entends ; je suis perdu !</s>
+</p>
+                        <stage type="hugh/cry/low">Clairville, en achevant ces mots, se jette dans le sein de son ami. Il y reste un moment en silence. Dorval verse quelques larmes sur lui ; et Clairville dit, sans se déplacer, d'une voix basse et sanglotante : </stage>
+                    </sp><!--@stage="watch"--><!--@who="CLAIRVILLE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Qu'a-t-elle dit ? </s>
+	<s n="2">Quel est mon crime ? </s>
+	<s n="3">Ami, de grâce, achevez-moi.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="3">
+	<s n="1">Que je l'achève !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="4">
+	<s n="1">Elle m'enfonce un poignard dans le sein ! </s>
+	<s n="2">Et vous, le seul homme qui pût l'arracher peut-être, vous vous éloignez ! </s>
+	<s n="3">Vous m'abandonnez à mon désespoir !... </s>
+	<s n="4">Trahi par ma maîtresse ! </s>
+	<s n="5">Abandonné de mon ami ! </s>
+	<s n="6">Que vais-je devenir ? </s>
+	<s n="7">Dorval, vous ne me dites rien ! </s>
+	<s n="8">Que vous dirai-je ?... </s>
+	<s n="9">Je crains de parler.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="5">
+	<s n="1">Je crains bien plus de vous entendre ; parlez pourtant, je changerai du moins de supplice... votre silence me semble en ce moment le plus cruel de tous.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, en hésitant.</speaker>
+                        <p n="6">
+	<s n="1">Rosalie...</s>
+</p>
+                    </sp><!--@stage="hesitate"--><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, en hésitant.</speaker>
+                        <p n="7">
+	<s n="1">Rosalie ?...</s>
+</p>
+                    </sp><!--@stage="hesitate"--><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="8">
+	<s n="1">Vous me l'aviez bien dit... ne me paraît plus avoir cet empressement qui vous promettait un bonheur si prochain.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="9">
+	<s n="1">Elle a changé !... </s>
+	<s n="2">Que me reproche-t-elle ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="10">
+	<s n="1">Elle n'a pas changé, si vous voulez... </s>
+	<s n="2">Elle ne vous reproche rien... mais son père.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="11">
+	<s n="1">Son père a-t-il repris son consentement ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="12">
+	<s n="1">Non ; mais elle attend son retour... </s>
+	<s n="2">Elle craint... </s>
+	<s n="3">Vous savez mieux que moi qu'une fille bien née craint toujours.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="13">
+	<s n="1">Il n'y a plus de crainte à avoir. </s>
+	<s n="2">Tous les obstacles sont levés. </s>
+	<s n="3">C'était sa mère qui s'opposait à nos voeux, elle n'est plus ; et son père n'arrive que pour m'unir à sa fille, se fixer parmi nous, et finir ses jours tranquillement dans sa patrie, au sein de sa famille, au milieu de ses amis. </s>
+	<s n="4">Si j'en juge par ses lettres, ce respectable vieillard ne sera guère moins affligé que moi. </s>
+	<s n="5">Songez, Dorval, que rien n'a pu l'arrêter ; qu'il a vendu ses habitations, qu'il s'est embarqué avec toute sa fortune, à l'âge de quatre-vingts ans, je crois, sur des mers couvertes de vaisseaux ennemis.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="14">
+	<s n="1">Clairville, il faut l'attendre. </s>
+	<s n="2">Il faut tout espérer des bontés du père, de l'honnêteté de la fille, de votre amour et de mon amitié. </s>
+	<s n="3">Le ciel ne permettra pas que des êtres qu'il semble avoir formés pour servir de consolation et d'encouragement à la vertu, soient tous malheureux sans l'avoir mérité.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="15">
+	<s n="1">Vous voulez donc que je vive ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="16">
+	<s n="1">Si je le veux !... </s>
+	<s n="2">Si Clairville pouvait lire au fond de mon âme !... </s>
+	<s n="3">Mais j'ai satisfait à ce que vous exigiez.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="17">
+	<s n="1">C'est à regret que je vous entends. </s>
+	<s n="2">Allez, mon ami. Puisque vous m'abandonnez dans la triste situation où je suis, je peux tout croire des motifs qui vous rappellent. </s>
+	<s n="3">Il ne me reste plus qu'à vous demander un moment. </s>
+	<s n="4">Ma soeur, alarmée de quelques bruits fâcheux qui se sont répandus ici sur la fortune de Rosalie et sur le retour de son père, est sortie malgré elle. </s>
+	<s n="5">Je lui ai promis que vous ne partiriez point qu'elle ne fût rentrée. </s>
+	<s n="6">Vous ne me refuserez pas de l'attendre.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="18">
+	<s n="1">Y a-t-il quelque chose que Constance ne puisse obtenir de moi ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="19">
+	<s n="1">Constance, hélas ! </s>
+	<s n="2">J'ai pensé quelquefois... </s>
+	<s n="3">Mais renvoyons ces idées à des temps plus heureux... </s>
+	<s n="4">Je sais où elle est, et je vais hâter son retour.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, seul.</speaker>
+                        <p n="1">
+	<s n="1">Suis-je assez malheureux !... </s>
+	<s n="2">J'inspire une passion secrète à la soeur de mon ami... </s>
+	<s n="3">J'en prends une insensée pour sa maîtresse ; elle, pour moi... </s>
+	<s n="4">Que fais-je encore dans une maison que je remplis de désordre ? </s>
+	<s n="5">Où est l'honnêteté ! </s>
+	<s n="6">Y en a-t-il dans ma conduite ?...</s>
+</p>
+                        <stage type="call">Il appelle comme un forcené : </stage>
+                        <p n="2">
+	<s n="1">Charles ! </s>
+	<s n="2">Charles !... </s>
+	<s n="3">On ne vient point... </s>
+	<s n="4">Tout m'abandonne...</s>
+</p>
+                        <stage type="sit/dream/hesitate">Il se renverse dans un fauteuil. Il s'abîme dans la rêverie. Il jette ces mots par intervalles : </stage>
+                        <p n="3">
+	<s n="1">... Encore, si c'étaient là les premiers malheureux que je fais !... </s>
+	<s n="2">Mais non ; je traîne partout l'infortune... </s>
+	<s n="3">Tristes mortels, misérables jouets des événements... </s>
+	<s n="4">Soyez bien fiers de votre bonheur, de votre vertu !... </s>
+	<s n="5">Je viens ici, j'y porte une âme pure... </s>
+	<s n="6">Oui, car elle l'est encore... </s>
+	<s n="7">J'y trouve trois êtres favorisés du ciel, une femme vertueuse et tranquille, un amant passionné et payé de retour, une jeune amante raisonnable et sensible... </s>
+	<s n="8">La femme vertueuse a perdu sa tranquillité. </s>
+	<s n="9">Elle nourrit dans son coeur une passion qui la tourmente. </s>
+	<s n="10">L'amant est désespéré. </s>
+	<s n="11">Sa maîtresse devient inconstante, et n'en est que plus malheureuse... </s>
+	<s n="12">Quel plus grand mal eût fait un scélérat ?... </s>
+	<s n="13">Ô toi qui conduis tout, qui m'as conduit ici, te chargeras-tu de te justifier ?... </s>
+	<s n="14">Je ne sais où j'en suis.</s>
+</p>
+                        <stage type="loud">Il crie encore : </stage>
+                        <p n="4">
+	<s n="1">Charles ! </s>
+	<s n="2">Charles !</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Dorval, Charles, Sylvestre.</head>
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="1">
+	<s n="1">Monsieur, les chevaux sont mis. </s>
+	<s n="2">Tout est prêt.</s>
+</p>
+                        <stage type="exit">Il sort.</stage>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#sylvestre">
+                        <speaker>SYLVESTRE, entre.</speaker>
+                        <p n="2">
+	<s n="1">Madame vient de rentrer. </s>
+	<s n="2">Elle va descendre.</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="SYLVESTRE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="3">
+	<s n="1">Constance ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#sylvestre">
+                        <speaker>SYLVESTRE.</speaker>
+                        <p n="4">
+	<s n="1">Oui, monsieur.</s>
+</p>
+                        <stage type="exit/entrance/toxard/listen/watch">Il sort. Charles rentre, et dit à Dorval, qui, l'air sombre et les bras croisés, l'écoute et le regarde.</stage>
+                    </sp><!--@who="SYLVESTRE"-->
+<sp who="#charles">
+                        <speaker>CHARLES, en cherchant dans ses poches.</speaker>
+                        <p n="5">
+	<s n="1">Monsieur... </s>
+	<s n="2">Vous me troublez aussi, avec vos impatiences... </s>
+	<s n="3">Non, il semble que le bon sens se soit enfui de cette maison... </s>
+	<s n="4">Dieu veuille que nous le rattrapions en route !... </s>
+	<s n="5">Je ne pensais plus que j'avais une lettre ; et maintenant que j'y pense, je ne la trouve plus.</s>
+</p>
+                        <stage type="search/find/give">À Force de chercher, il trouve la lettre, et la donne à Dorval.</stage>
+                    </sp><!--@stage="search"--><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="6">
+	<s n="1">Et donne donc.</s>
+</p>
+                        <stage type="exit">Charles sort.</stage>
+                    </sp><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, seul. Il lit.</speaker>
+                        <p n="1">
+	<s n="1">"La honte et le remords me poursuivent... </s>
+	<s n="2">Dorval, vous connaissez les lois de l'innocence... </s>
+	<s n="3">Suis-je criminelle ?... </s>
+	<s n="4">Sauvez-moi !... </s>
+	<s n="5">Hélas ! </s>
+	<s n="6">En est-il temps encore ?... </s>
+	<s n="7">Que je plains mon père !... </s>
+	<s n="8">Mon père !... </s>
+	<s n="9">Et Clairville, je donnerais ma vie pour lui... </s>
+	<s n="10">Adieu, Dorval : je donnerais pour vous mille vies... </s>
+	<s n="11">Adieu !... </s>
+	<s n="12">Vous vous éloignez, et je vais mourir de douleur. "</s>
+</p>
+                        <stage type="read/sit/read">Après avoir lu d'une voix entrecoupée, et dans un trouble extrême, il se jette dans un fauteuil. Il garde un moment le silence. Tournant ensuite des yeux égarés et distraits sur la lettre, qu'il tient d'une main tremblante, il en relit quelques mots : </stage>
+                        <p n="2">
+	<s n="1">" La honte et le remords me poursuivent. "</s>
+	<s n="2">C'est à moi de rougir, d'être déchiré... </s>
+	<s n="3">"Vous connaissez les lois de l'innocence ?... " </s>
+	<s n="4">Je les connus autrefois... </s>
+	<s n="5">" Suis-je criminelle ?... " </s>
+	<s n="6">Non, c'est moi qui le suis... </s>
+	<s n="7">" Vous vous éloignez, et je vais mourir... " </s>
+	<s n="8">Ô ciel ! </s>
+	<s n="9">Je succombe !...</s>
+</p>
+                        <stage type="stand">En se levant.</stage>
+                        <p n="3">
+	<s n="1">Arrachons-nous d'ici... je veux... je ne puis... ma raison se trouble... dans quelles ténèbres suis-je tombé ?... </s>
+	<s n="2">Ô Rosalie ! </s>
+	<s n="3">Ô vertu ! </s>
+	<s n="4">Ô tourment !</s>
+</p>
+                        <stage type="stand/walk/read/loud">Après un moment de silence, il se lève, mais avec peine. Il s'approche lentement d'une table. Il écrit quelques lignes pénibles ; mais, tout au travers de son écriture, arrive Charles, en criant : </stage>
+                    </sp><!--@stage="alone/read"--><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Dorval, Charles.</head>
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="">
+	<s n="">Monsieur, au secours. </s>
+	<s n="">On assassine... Clairville...</s>
+</p>
+                        <stage type="run/keep/run">Dorval quitte la table où il écrit, laisse sa lettre à moitié, se jette sur son épée, qu'il trouve sur un fauteuil, et vole au secours de son ami. Dans ces mouvements, Constance survient, et demeure fort surprise de se voir laisser seule par le maître et par le valet.</stage>
+                    </sp><!--@who="CHARLES"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX.</head>
+<sp who="#constance">
+                        <speaker>CONSTANCE, seule.</speaker>
+                        <p n="1">
+	<s n="1">Que veut dire cette fuite ?... </s>
+	<s n="2">Il a dû m'attendre. </s>
+	<s n="3">J'arrive, il disparaît... </s>
+	<s n="4">Dorval, vous me connaissez mal... </s>
+	<s n="5">J'en peux guérir...</s>
+</p>
+                        <stage type="walk/watch">Elle approche de la table, et aperçoit la lettre à demi écrite.</stage>
+                        <p n="2">
+	<s n="1">Une lettre !</s>
+</p>
+                        <stage type="take/read">Elle prend la lettre et la lit.</stage>
+                        <p n="3">
+	<s n="1">" Je vous aime, et je fuis... hélas ! </s>
+	<s n="2">Beaucoup trop tard... </s>
+	<s n="3">Je suis l'ami de Clairville... </s>
+	<s n="4">Les devoirs de l'amitié, les lois sacrées de l'hospitalité ?... " </s>
+	<s n="5">Ciel ! </s>
+	<s n="6">Quel est mon bonheur !... </s>
+	<s n="7">Il m'aime... </s>
+	<s n="8">Dorval, vous m'aimez...</s>
+</p>
+                        <stage type="walk/expression">Elle se promène agitée.</stage>
+                        <p n="4">
+	<s n="1">Non, vous ne partirez point... </s>
+	<s n="2">Vos craintes sont frivoles... </s>
+	<s n="3">Votre délicatesse est vaine... </s>
+	<s n="4">Vous avez ma tendresse... </s>
+	<s n="5">Vous ne connaissez ni Constance ni votre ami... </s>
+	<s n="6">Non, vous ne les connaissez pas... </s>
+	<s n="7">Mais peut-être qu'il s'éloigne, qu'il fuit au moment où je parle ?</s>
+</p>
+                        <stage type="exit/run">Elle sort de la scène avec quelque précipitation.</stage>
+                    </sp><!--@stage="alone"--><!--@who="CONSTANCE"-->
+</div>
+</div>
+<div type="act" n="3">
+                <head>ACTE III</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Dorval, Clairville.</head>
+<stage type="entrance/dress/quiet">Ils rentrent le chapeau sur la tête. Dorval remet le sien avec son épée sur le fauteuil.</stage>
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Soyez assuré que ce que j'ai fait, tout autre l'eût fait à ma place.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="2">
+	<s n="1">Je le crois. </s>
+	<s n="2">Mais je connais Clairville ; il est vif.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="3">
+	<s n="1">J'étais trop affligé pour m'offenser légèrement... </s>
+	<s n="2">Mais que pensez-vous de ces bruits qui avaient appelé Constance chez son amie ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="4">
+	<s n="1">Il ne s'agit pas de cela.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="5">
+	<s n="1">Pardonnez-moi. </s>
+	<s n="2">Les noms s'accordent ; on parle d'un vaisseau pris, d'un vieillard appelé Merian...</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="6">
+	<s n="1">De grâce, laissons pour un moment ce vaisseau, ce vieillard, et venons à votre affaire. </s>
+	<s n="2">Pourquoi me taire une chose dont tout le monde s'entretient à présent et qu'il faut que j'apprenne ? </s>
+	<s n="3">J'aimerais mieux qu'un autre vous la dît.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="7">
+	<s n="1">Je n'en veux croire que vous.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="8">
+	<s n="1">Puisque absolument vous voulez que je parle ; il s'agissait de vous.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="9">
+	<s n="1">De moi ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="10">
+	<s n="1">De vous. </s>
+	<s n="2">Ceux contre lesquels vous m'avez secouru sont deux méchants et deux lâches. </s>
+	<s n="3">L'un s'est fait chasser de chez Constance pour des noirceurs ; l'autre eut, pour quelque temps, des vues sur Rosalie. </s>
+	<s n="4">Je les trouve chez cette femme que ma soeur venait de quitter. </s>
+	<s n="5">Ils parlaient de votre départ ; car tout se sait ici. </s>
+	<s n="6">Ils doutaient s'il fallait m'en féliciter ou m'en plaindre. </s>
+	<s n="7">Ils en étaient également surpris.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="11">
+	<s n="1">Pourquoi surpris ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="12">
+	<s n="1">C'est, disait l'un, que ma soeur vous aime.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="13">
+	<s n="1">Ce discours m'honore.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="14">
+	<s n="1">L'autre, que vous aimez ma maîtresse.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="15">
+	<s n="1">Moi ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="16">
+	<s n="1">Vous.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="17">
+	<s n="1">Rosalie ? </s>
+	<s n="2">Rosalie.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="18">
+	<s n="1">Clairville, vous croiriez...</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="19">
+	<s n="1">Je vous crois incapable d'une trahison.</s>
+</p>
+                        <stage type="agitated">Dorval s'agite.</stage>
+                        <p n="20">
+	<s n="1">Jamais un sentiment bas n'entra dans l'âme de Dorval, ni un soupçon injurieux dans l'esprit de Clairville.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="21">
+	<s n="1">Clairville, épargnez-moi.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="22">
+	<s n="1">Je vous rends justice. </s>
+	<s n="2">Aussi, tournant sur eux des regards d'indignation et de mépris ?</s>
+</p>
+                        <stage type="watch/turn/hide">Clairville regardant Dorval avec ces yeux, Dorval ne peut les soutenir. Il détourne la tête et se couvre le visage avec les mains.</stage>
+                        <p n="23">
+	<s n="1"> je leur fis entendre qu'on portait en soi le germe des bassesses</s>
+</p>
+                        <stage type="pain">Dorval est tourmenté.</stage>
+                        <p n="24">
+	<s n="1">dont on était si prompt à soupçonner autrui ; et que partout où j'étais, je prétendais qu'on respectât ma maîtresse, ma soeur et mon ami... </s>
+	<s n="2">Vous m'approuvez, je pense.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="25">
+	<s n="1">Je ne peux vous blâmer... </s>
+	<s n="2">Non... </s>
+	<s n="3">Mais...</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="26">
+	<s n="1">Ce discours ne demeura pas sans réponse. </s>
+	<s n="2">Ils sortent. </s>
+	<s n="3">Je sors. </s>
+	<s n="4">Ils m'attaquent...</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="27">
+	<s n="1">Et vous périssiez, si je n'étais accouru ?...</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="28">
+	<s n="1">Il est certain que je vous dois la vie.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="29">
+	<s n="1">C'est-à-dire qu'un moment plus tard je devenais votre assassin.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="30">
+	<s n="1">Vous n'y pensez pas ; vous perdiez votre ami, mais vous restiez toujours vous-même. </s>
+	<s n="2">Pouviez-vous prévenir un indigne soupçon ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="31">
+	<s n="1">Peut-être.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="32">
+	<s n="1">Empêcher d'injurieux propos ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="33">
+	<s n="1">Peut-être.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="34">
+	<s n="1">Que vous êtes injuste envers vous !</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="35">
+	<s n="1">Que l'innocence et la vertu sont grandes, et que le vice obscur est petit devant elles !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Dorval, Clairville, Constance.</head>
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="1">
+	<s n="1">Dorval... mon frère... dans quelles inquiétudes vous nous jetez !... </s>
+	<s n="2">Vous m'en voyez encore toute tremblante ; et Rosalie en est à moitié morte.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval_clairville">
+                        <speaker>DORVAL et CLAIRVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Rosalie !</s>
+</p>
+                        <stage type="stress">Dorval se contraint subitement.</stage>
+                    </sp><!--@who="DORVAL_CLAIRVILLE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="3">
+	<s n="1">J'y vais ; j'y cours.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, l'arrêtant par le bras.</speaker>
+                        <p n="4">
+	<s n="1">Elle est avec Justine ; je l'ai vue, je la quitte ; n'en soyez point inquiet.</s>
+</p>
+                    </sp><!--@stage="touch/stop"--><!--@who="CONSTANCE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="5">
+	<s n="1">Je le suis d'elle... </s>
+	<s n="2">Je le suis de Dorval... </s>
+	<s n="3">Il est d'un sombre qui ne se conçoit pas... au moment où il sauve la vie à son ami !... </s>
+	<s n="4">Mon ami, si vous avez quelques chagrins, pourquoi ne pas les répandre dans le sein d'un homme qui partage tous vos sentiments ; qui, s'il était heureux, ne vivrait que pour Dorval et pour Rosalie ? </s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, tirant une lettre de son sein, la donne à son frère et lui dit :</speaker>
+                        <p n="6">
+	<s n="1">Tenez, mon frère, voilà son secret, le mien ; et le sujet apparemment de sa mélancolie.</s>
+</p>
+                        <stage type="read/loud/recognize">Clairville prend la lettre et la lit. Dorval, qui reconnaît cette lettre pour celle qu'il écrivait à Rosalie, s'écrie : </stage>
+                    </sp><!--@stage="show/give/toward"--><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="8">
+	<s n="1">Juste ciel ! </s>
+	<s n="2">C'est ma lettre !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="9">
+	<s n="1">Oui, Dorval, vous ne partez plus. </s>
+	<s n="2">Je sais tout ; tout est arrangé... </s>
+	<s n="3">Quelle délicatesse vous rendait ennemi de notre bonheur ?... </s>
+	<s n="4">Vous m'aimiez !... </s>
+	<s n="5">Vous m'écriviez !... </s>
+	<s n="6">Vous fuyez !...</s>
+</p>
+                        <stage type="toward/stress">À chacun de ces mots, Dorval s'agite et se tourmente.</stage>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="10">
+	<s n="1">Il le fallait ; il le faut encore ; un sort cruel me poursuit. </s>
+	<s n="2">Madame, cette lettre...</s>
+</p>
+                        <stage type="low">Bas.</stage>
+                        <p n="11">
+	<s n="1">Ciel ! </s>
+	<s n="2">Qu'allais-je dire ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="12">
+	<s n="1">Qu'ai-je lu ? </s>
+	<s n="2">Mon ami, mon libérateur va devenir mon frère ! </s>
+	<s n="3">Quel surcroît de bonheur et de reconnaissance !</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="13">
+	<s n="1">Aux transports de sa joie, reconnaissez enfin la vérité de ses sentiments et l'injustice de votre inquiétude. </s>
+	<s n="2">Mais quel motif ignoré peut encore suspendre les vôtres ? </s>
+	<s n="3">Dorval, si j'ai votre tendresse, pourquoi n'ai-je pas aussi votre confiance ? </s>
+	<s n="4">Dorval, d'un ton triste et avec un air abattu. Clairville !</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="14">
+	<s n="1">Mon ami, vous êtes triste.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="15">
+	<s n="1">Il est vrai.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="16">
+	<s n="1">Parlez, ne vous contraignez plus... </s>
+	<s n="2">Dorval, prenez quelque confiance en votre ami.</s>
+</p>
+                        <stage type="silence">Dorval continuant toujours de se taire, Constance ajoute : </stage>
+                        <p n="17">
+	<s n="1">Mais je vois que ma présence vous gêne ; je vous laisse avec lui.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Dorval, Clairville.</head>
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Dorval, nous sommes seuls... </s>
+	<s n="2">Auriez-vous douté si j'approuverais l'union de Constance avec vous ?... </s>
+	<s n="3">Pourquoi m'avoir fait un mystère de votre penchant ? </s>
+	<s n="4">J'excuse Constance, c'est une femme... </s>
+	<s n="5">Mais vous !... </s>
+	<s n="6">Vous ne me répondez pas.</s>
+</p>
+                        <stage type="listen">Dorval écoute la tête penchée et les bras croisés.</stage>
+                        <p n="2">
+	<s n="1">Auriez-vous craint que ma soeur, instruite des circonstances de votre naissance...</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, sans changer de posture, seulement en tournant la tête vers Clairville.</speaker>
+                        <p n="3">
+	<s n="1">Clairville, vous m'offensez. </s>
+	<s n="2">Je porte une âme trop haute pour concevoir de pareilles craintes. </s>
+	<s n="3">Si Constance était capable de ce préjugé, j'ose le dire, elle ne serait pas digne de moi.</s>
+</p>
+                    </sp><!--@stage="turn/toward"--><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="4">
+	<s n="1">Pardonnez, mon cher Dorval. </s>
+	<s n="2">La tristesse opiniâtre où je vous vois plongé, quand tout paraît seconder vos voeux...</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, bas et avec amertume.</speaker>
+                        <p n="5">
+	<s n="1">Oui, tout me réussit singulièrement.</s>
+</p>
+                    </sp><!--@stage="low/sad"--><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="6">
+	<s n="1">Cette tristesse m'agite, me confond et porte mon esprit sur toutes sortes d'idées. </s>
+	<s n="2">Un peu plus de confiance de votre part m'en épargnerait beaucoup de fausses... </s>
+	<s n="3">Mon ami, vous n'avez jamais eu d'ouverture avec moi... </s>
+	<s n="4">Dorval ne connaît point ces doux épanchements... </s>
+	<s n="5">Son âme renfermée... </s>
+	<s n="6">Mais enfin, vous aurais-je compris ? </s>
+	<s n="7">Auriez-vous appréhendé que, privé, par un second mariage de Constance, de la moitié d'une fortune, à la vérité peu considérable, mais qu'on me croyait assurée, je ne fusse plus assez riche pour épouser Rosalie ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, tristement.</speaker>
+                        <p n="7">
+	<s n="1">La voilà, cette Rosalie !... </s>
+	<s n="2">Clairville, songez à soutenir l'impression que votre péril a dû faire sur elle.</s>
+</p>
+                    </sp><!--@stage="sad"--><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE IV. Dorval, Clairville, Rosalie, Justine.</head>
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, se hâtant d'aller au-devant de Rosalie.</speaker>
+                        <p n="1">
+	<s n="1">Est-il bien vrai que Rosalie ait craint de me perdre ; qu'elle ait tremblé pour ma vie ? </s>
+	<s n="2">Que l'instant où j'allais périr me serait cher, s'il avait rallumé dans son coeur une étincelle d'intérêt !</s>
+</p>
+                    </sp><!--@stage="hurry/closer/location"--><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="2">
+	<s n="1">Il est vrai que votre imprudence m'a fait frémir.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="3">
+	<s n="1">Que je suis fortuné !</s>
+</p>
+                        <stage type="kiss/pull">Il veut baiser la main de Rosalie, qui la retire.</stage>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="4">
+	<s n="1">Arrêtez, monsieur. </s>
+	<s n="2">Je sens toute l'obligation que nous avons à Dorval. </s>
+	<s n="3">Mais je n'ignore pas que, de quelque manière que se terminent ces événements pour un homme, les suites en sont toujours fâcheuses pour une femme.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="5">
+	<s n="1">Mademoiselle, le hasard nous engage ; et l'honneur a ses lois.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="6">
+	<s n="1">Rosalie, je suis au désespoir de vous avoir déplu. </s>
+	<s n="2">Mais n'accablez pas l'amant le plus soumis et le plus tendre. </s>
+	<s n="3">Ou si vous l'avez résolu, du moins n'affligez pas davantage un ami qui serait heureux sans votre injustice. </s>
+	<s n="4">Dorval aime Constance. </s>
+	<s n="5">Il en est aimé. </s>
+	<s n="6">Il partait. </s>
+	<s n="7">Une lettre surprise a tout découvert... </s>
+	<s n="8">Rosalie, dites un mot, et nous allons tous être unis d'un lien éternel, Dorval à Constance, Clairville à Rosalie ; un mot ! </s>
+	<s n="9">Et le ciel reverra ce séjour avec complaisance.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, tombant dans un fauteuil.</speaker>
+                        <p n="7">
+	<s n="1">Je me meurs.</s>
+</p>
+                    </sp><!--@stage="fall/sit"--><!--@who="ROSALIE"-->
+<sp who="#dorval_clairville">
+                        <speaker>DORVAL et CLAIRVILLE.</speaker>
+                        <p n="8">
+	<s n="1">Ô ciel ! </s>
+	<s n="2">Elle se meurt.</s>
+</p>
+                        <stage type="kneel">Clairville tombe aux genoux de Rosalie.</stage>
+                    </sp><!--@who="DORVAL_CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL? appelle les domestiques.</speaker>
+                        <p n="9">
+	<s n="1">Charles, Sylvestre, Justine ! </s>
+	<s n="2">Justine, secourant sa maîtresse. </s>
+	<s n="3">Vous voyez, mademoiselle... vous avez voulu sortir... je vous l'avais prédit...</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, revenant à elle et se levant.</speaker>
+                        <p n="10">
+	<s n="1">Allons, Justine.</s>
+</p>
+                    </sp><!--@stage="awake/stand"--><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE veut lui donner le bras et la soutenir.</speaker>
+                        <p n="11">
+	<s n="1">Rosalie...</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="12">
+	<s n="1">Laissez-moi... </s>
+	<s n="2">Je vous hais... </s>
+	<s n="3">Laissez-moi, vous dis-je.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Dorval, Clairville.</head>
+<stage type="narration">Clairville quitte Rosalie. Il est comme un fou. Il va, il vient, il s'arrête. Il soupire de douleur, de fureur. Il s'appuie les coudes sur le dos d'un fauteuil, la tête sur ses mains, et les poings dans les yeux. Le silence dure un moment. Enfin il dit : </stage>
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="1">
+	<s n="1">En est-ce assez ?... </s>
+	<s n="2">Voilà donc le prix de mes inquiétudes ! </s>
+	<s n="3">Voilà le fruit de toute ma tendresse ! </s>
+	<s n="4">Laissez-moi. </s>
+	<s n="5">Je vous hais. </s>
+	<s n="6">Ah !</s>
+</p>
+                        <stage type="expression/walk/loud">Il pousse l'accent inarticulé du désespoir ; il se promène avec agitation, et il répète sous différentes sortes de déclamations violentes : </stage>
+                        <p n="2">
+	<s n="1">Laissez-moi, je vous hais.</s>
+</p>
+                        <stage type="sit/wait/low">Il se jette dans un fauteuil. Il y demeure un moment en silence. Puis il dit d'un ton sourd et bas : </stage>
+                        <p n="3">
+	<s n="1">Elle me hait !... </s>
+	<s n="2">Et qu'ai-je fait pour qu'elle me haïsse ? </s>
+	<s n="3">Je l'ai trop aimée.</s>
+</p>
+                        <stage type="wait/stand/walk">Il se tait encore un moment. Il se lève, il se promène. Il paraît s'être un peu tranquillisé. Il dit : </stage>
+                        <p n="4">
+	<s n="1">Oui, je lui suis odieux. </s>
+	<s n="2">Je le vois. </s>
+	<s n="3">Je le sens. </s>
+	<s n="4">Dorval, vous êtes mon ami. </s>
+	<s n="5">Faut-il se détacher d'elle... et mourir ? </s>
+	<s n="6">Parlez. </s>
+	<s n="7">Décidez de mon sort.</s>
+</p>
+                        <stage type="entrance/walk">Charles entre. Clairville se promène.</stage>
+                    </sp><!--@who="CLAIRVILLE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Dorval, Clairville, Charles.</head>
+<sp who="#charles">
+                        <speaker>CHARLES, en tremblant, à Clairville qu'il voit agité.</speaker>
+                        <p n="1">
+	<s n="1">Monsieur...</s>
+</p>
+                    </sp><!--@stage="shake/agitated"--><!--@who="CHARLES"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, le regardant de côté.</speaker>
+                        <p n="2">
+	<s n="1">Eh bien ?</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="CLAIRVILLE"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="3">
+	<s n="1">Il y a là-bas un inconnu qui demande à parler à quelqu'un.</s>
+</p>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, brusquement.</speaker>
+                        <p n="4">
+	<s n="1">Qu'il attende.</s>
+</p>
+                    </sp><!--@stage="abrupt"--><!--@who="CLAIRVILLE"-->
+<sp who="#charles">
+                        <speaker>CHARLES, toujours en tremblant, et fort bas.</speaker>
+                        <p n="5">
+	<s n="1">C'est un malheureux, et il y a longtemps qu'il attend.</s>
+</p>
+                    </sp><!--@stage="shake/low"--><!--@who="CHARLES"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, avec impatience.</speaker>
+                        <p n="6">
+	<s n="1">Qu'il entre.</s>
+</p>
+                        <stage type="action/entrance">Dorval, Clairville, Justine, Sylvestre, André, et les autres domestiques de la maison, attirés par la curiosité et diversement répandus sur la scène. Justine arrive un peu plus tard que les autres.</stage>
+                    </sp><!--@stage="impatient"--><!--@who="CLAIRVILLE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, un peu brusquement.</speaker>
+                        <p n="7">
+	<s n="1">Qui êtes-vous ? </s>
+	<s n="2">Que voulez-vous ?</s>
+</p>
+                    </sp><!--@stage="abrupt"--><!--@who="CLAIRVILLE"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="8">
+	<s n="1">Monsieur, je m'appelle André. </s>
+	<s n="2">Je suis au service d'un honnête vieillard. </s>
+	<s n="3">J'ai été le compagnon de ses infortunes ; et je venais annoncer son retour à sa fille.</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="9">
+	<s n="1">À Rosalie ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="10">
+	<s n="1">Oui, monsieur.</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="11">
+	<s n="1">Encore des malheurs ! </s>
+	<s n="2">Où est votre maître ? </s>
+	<s n="3">Qu'en avez-vous fait ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="12">
+	<s n="1">Rassurez-vous, monsieur. </s>
+	<s n="2">Il vit. </s>
+	<s n="3">Il arrive. </s>
+	<s n="4">Je vous instruirai de tout, si j'en ai la force, et si vous avez la bonté de m'entendre.</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="13">
+	<s n="1">Parlez.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="14">
+	<s n="1">Nous sommes partis, mon maître et moi, sur le vaisseau l'Apparent, de la rade du Fort-Royal, le six du mois de juillet. </s>
+	<s n="2">Jamais mon maître n'avait eu plus de santé ni montré tant de joie. </s>
+	<s n="3">Tantôt le visage tourné où les vents semblaient nous porter, il élevait ses mains au ciel, et lui demandait un prompt retour. </s>
+	<s n="4">Tantôt me regardant avec des yeux remplis d'espérance, il disait : " André, encore quinze jours, et je verrai mes enfants, et je les embrasserai ; et je serai heureux une fois du moins avant que de mourir. "</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, touché, à Dorval.</speaker>
+                        <p n="15">
+	<s n="1">Vous entendez. </s>
+	<s n="2">Il m'appelait déjà du doux nom de fils. </s>
+	<s n="3">Eh bien ! </s>
+	<s n="4">André ?</s>
+</p>
+                    </sp><!--@stage="ému/toward"--><!--@who="CLAIRVILLE"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="16">
+	<s n="1">Monsieur, que vous dirai-je ? Nous avions eu la navigation la plus heureuse. </s>
+	<s n="2">Nous touchions aux côtes de la France. </s>
+	<s n="3">Échappés aux dangers de la mer, nous avions salué la terre par mille cris de joie ; et nous nous embrassions les uns les autres, commandants, officiers, passagers, matelots, lorsque nous sommes approchés par des vaisseaux qui nous crient, la paix, la paix, abordés à la faveur de ces cris perfides, et faits prisonniers. </s>
+	<s n="4">Dorval et Clairville, en marquant leur surprise et leur douleur chacun par l'action qui convient à son caractère. </s>
+	<s n="5">Prisonniers !</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="17">
+	<s n="1">Que devint alors mon maître ! </s>
+	<s n="2">Des larmes coulaient de ses yeux. </s>
+	<s n="3">Il poussait de profonds soupirs. </s>
+	<s n="4">Il tournait ses regards, il étendait ses bras, son âme semblait s'élancer vers les rivages d'où nous nous éloignions. </s>
+	<s n="5">Mais à peine les eûmes-nous perdus de vue, que ses yeux se séchèrent, son coeur se serra, sa vue s'attacha sur les eaux ; il tomba dans une douleur sombre et morne qui me fit trembler pour sa vie. </s>
+	<s n="6">Je lui présentai plusieurs fois du pain et de l'eau, qu'il repoussa.</s>
+</p>
+                        <stage type="stop/cry">André s'arrête ici un moment pour pleurer.</stage>
+                        <p n="18">
+	<s n="1">Cependant nous arrivons dans le port ennemi... </s>
+	<s n="2">Dispensez-moi de vous dire le reste... </s>
+	<s n="3">Non, je ne pourrai jamais.</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="19">
+	<s n="1">André, continuez.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="20">
+	<s n="1">On me dépouille. </s>
+	<s n="2">On charge mon maître de liens. </s>
+	<s n="3">Ce fut alors que je ne pus retenir mes cris. </s>
+	<s n="4">Je l'appelai plusieurs fois : " mon maître, mon cher maître. " </s>
+	<s n="5">Il m'entendit, me regarda, laissa tomber ses bras tristement, se retourna, et suivit, sans parler, ceux qui l'environnaient... </s>
+	<s n="6">Cependant on me jette, à moitié nu, dans le lieu le plus profond d'un bâtiment, pêle-mêle avec une foule de malheureux abandonnés impitoyablement, dans la fange, aux extrémités terribles de la faim, de la soif et des maladies. </s>
+	<s n="7">Et pour vous peindre en un mot toute l'horreur du lieu, je vous dirai qu'en un instant j'y entendis tous les accents de la douleur, toutes les voix du désespoir, et que, de quelque côté que je regardasse, je voyais mourir.</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="21">
+	<s n="1">Voilà donc ces peuples dont on nous vante la sagesse, qu'on nous propose sans cesse pour modèles ! </s>
+	<s n="2">C'est ainsi qu'ils traitent les hommes !</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="22">
+	<s n="1">Combien l'esprit de cette nation généreuse a changé !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="23">
+	<s n="1">Il y avait trois jours que j'étais confondu dans cet amas de morts et de mourants, tous français, tous victimes de la trahison, lorsque j'en fus tiré. </s>
+	<s n="2">On me couvrit de lambeaux déchirés, et l'on me conduisit, avec quelques-uns de mes malheureux compagnons, dans la ville, à travers des rues pleines d'une populace effrénée, qui nous accablait d'imprécations et d'injures, tandis qu'un monde tout à fait différent, que le tumulte avait attiré aux fenêtres, faisait pleuvoir sur nous l'argent et les secours.</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="24">
+	<s n="1">Quel mélange incroyable d'humanité, de bienfaisance et de barbarie !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="25">
+	<s n="1">Je ne savais si l'on nous conduisait à la liberté, ou si l'on nous conduisait au supplice.</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="26">
+	<s n="1">Et votre maître, André ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="27">
+	<s n="1">J'allais à lui ; c'était le premier des bons offices d'un ancien correspondant qu'il avait informé de notre malheur. </s>
+	<s n="2">J'arrivai à une des prisons de la ville. </s>
+	<s n="3">On ouvrit les portes d'un cachot obscur où je descendis. </s>
+	<s n="4">Il y avait déjà quelque temps que j'étais immobile dans ces ténèbres, lorsque je fus frappé d'une voix mourante qui se faisait entendre, et qui disait en s'éteignant : " André, est-ce toi ? </s>
+	<s n="5">Il y a longtemps que je t'attends. " </s>
+	<s n="6">Je courus à l'endroit d'où venait cette voix, et je rencontrai des bras nus qui cherchaient dans l'obscurité. </s>
+	<s n="7">Je les saisis. </s>
+	<s n="8">Je les baisai. </s>
+	<s n="9">Je les baignai de larmes. </s>
+	<s n="10">C'étaient ceux de mon maître.</s>
+</p>
+                        <stage type="wait">Une petite pause.</stage>
+                        <p n="28">
+	<s n="1">Il était nu. </s>
+	<s n="2">Il était étendu sur la terre humide... </s>
+	<s n="3">" Les malheureux qui sont ici, me dit-il à voix basse, ont abusé de mon âge et de ma faiblesse, pour m'arracher le pain, et pour m'ôter ma paille. "</s>
+</p>
+                        <stage type="loud/loud/stop/cry">Ici les domestiques poussent un cri de douleur. Clairville ne peut plus contenir la sienne. Dorval fait signe à André de s'arrêter un moment. André s'arrête. Puis, il continue, en sanglotant : </stage>
+                        <p n="28">
+	<s n="1">Cependant je me dépouille de mes lambeaux, et je les étends sous mon maître, qui bénissait d'une voix expirante la bonté du ciel... </s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, bas, à part, et avec amertume.</speaker>
+                        <p n="29">
+	<s n="1">Qui le faisait mourir dans le fond d'un cachot, sur les haillons de son valet !</s>
+</p>
+                    </sp><!--@stage="low/aparte/sad"--><!--@who="DORVAL"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="29">
+	<s n="1">Je me souvins alors des aumônes que j'avais reçues. </s>
+	<s n="2">J'appelai du secours, et je ranimai mon vieux et respectable maître. </s>
+	<s n="3">Lorsqu'il eut un peu repris ses forces, " André, me dit-il, aie bon courage ; tu sortiras d'ici. </s>
+	<s n="4">Pour moi, je sens, à ma faiblesse, qu'il faut que j'y meure. " </s>
+	<s n="5">Alors je sentis ses bras se passer autour de mon cou, son visage s'approcher du mien, et ses pleurs couler sur mes joues. </s>
+	<s n="6">" Mon ami, me dit-il et ce fut ainsi qu'il m'appela souvent, tu vas recevoir mes derniers soupirs ; tu porteras mes dernières paroles à mes enfants. </s>
+	<s n="7">Hélas ! </s>
+	<s n="8">C'était de moi qu'ils devaient les entendre ! " </s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, regardant Dorval et pleurant.</speaker>
+                        <p n="30">
+	<s n="1">Ses enfants !</s>
+</p>
+                    </sp><!--@stage="watch/cry"--><!--@who="CLAIRVILLE"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="31">
+	<s n="1">Il m'avait dit, pendant la traversée, qu'il était né français ; qu'il ne s'appelait point Mérian ; qu'en s'éloignant de sa patrie, il avait quitté son nom de famille, pour des raisons que je saurais un jour. </s>
+	<s n="2">Hélas ! </s>
+	<s n="3">Il ne croyait pas ce jour si prochain ! </s>
+	<s n="4">Il soupirait, et j'en allais apprendre davantage, lorsque nous entendîmes notre cachot s'ouvrir. </s>
+	<s n="5">On nous appela ; c'était cet ancien correspondant qui nous avait réunis, et qui venait nous délivrer. </s>
+	<s n="6">Quelle fut sa douleur, lorsqu'il jeta ses regards sur un vieillard qui ne lui paraissait plus qu'un cadavre palpitant ! </s>
+	<s n="7">Des larmes tombèrent de ses yeux ; il se dépouilla ; il le couvrit de ses vêtements, et nous allâmes nous établir chez cet hôte, et y recevoir toutes les marques possibles d'humanité. </s>
+	<s n="8">On eût dit que cette honnête famille rougissait en secret de la cruauté et de l'injustice de la nation.</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="32">
+	<s n="1">Rien n'humilie donc autant que l'injustice ! </s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ, s'essuyant les yeux, et reprenant un air tranquille.</speaker>
+                        <p n="33">
+	<s n="1">Bientôt mon maître reprit de la santé et des forces. </s>
+	<s n="2">On lui offrit des secours ; et je présume qu'il en accepta ; car, au sortir de la prison, nous n'avions pas de quoi avoir un morceau de pain. </s>
+	<s n="3">Tout s'arrangea pour notre retour ; et nous étions prêts à partir, lorsque mon maître me tirant à l'écart.</s>
+	<s n="4">Non, je ne l'oublierai de ma vie ! </s>
+	<s n="5">Me dit : " André, n'as-tu plus rien à faire ici ? </s>
+	<s n="6">" Non, monsieur, lui répondis-je... " et nos compatriotes que nous avons laissés dans la misère d'où la bonté du ciel nous a tirés, tu n'y penses donc plus ? </s>
+	<s n="7">Tiens, mon enfant ; va leur dire adieu. " </s>
+	<s n="8">J'y courus. </s>
+	<s n="9">Hélas ! </s>
+	<s n="10">De tant de misérables, il n'en restait qu'un petit nombre, si exténués, si proches de leur fin, que la plupart n'avaient pas la force de tendre la main pour recevoir. </s>
+	<s n="11">Voilà, monsieur, tout le détail de notre malheureux voyage.</s>
+</p>
+                        <stage type="wait/walk">On garde ici un assez long silence, après lequel André dit ce qui suit. Cependant, Dorval, rêveur, se promène vers le fond du salon.</stage>
+                        <p n="34">
+	<s n="1">J'ai laissé mon maître à Paris pour y prendre un peu de repos. </s>
+	<s n="2">Il s'était fait une grande joie d'y retrouver un ami.</s>
+</p>
+                        <stage type="action">Ici Dorval se retourne du côté d'André, et lui donne attention.</stage>
+                        <p n="35">
+	<s n="1">Mais cet ami est absent depuis plusieurs mois ; et mon maître comptait me suivre de près.</s>
+</p>
+                        <stage type="walk">Dorval continue de se promener en rêvant.</stage>
+                    </sp><!--@stage="cry/quiet"--><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="36">
+	<s n="1">Avez-vous vu Rosalie ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#andre">
+                        <speaker>ANDRÉ.</speaker>
+                        <p n="37">
+	<s n="1">Non, monsieur. </s>
+	<s n="2">Je ne lui apporte que de la douleur, et je n'ai pas osé paraître devant elle.</s>
+</p>
+                    </sp><!--@who="ANDRÉ"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="38">
+	<s n="1">André, allez vous reposer. </s>
+	<s n="2">Sylvestre, je vous le recommande... qu'il ne lui manque rien.</s>
+</p>
+                        <stage type="catch/push/exit">Tous les domestiques s'emparent d'André et l'emmènent.</stage>
+                    </sp><!--@who="CLAIRVILLE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Dorval, Clairville.</head>
+<stage type="wait/walk/expression">Après un silence, pendant lequel Dorval est resté immobile, la tête baissée, l'air pensif et les bras croisés. C'est assez son attitude ordinaire, et Clairville s'est promené avec agitation.</stage>
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Mon ami, ce jour n'est-il pas fatal pour la probité ? </s>
+	<s n="3">Et croyez-vous qu'à l'heure que je vous parle, il y ait un seul honnête homme heureux sur la terre ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="2">
+	<s n="1">Vous voulez dire un seul méchant ; mais, Clairville, laissons la morale ; on en raisonne mal, quand on croit avoir à se plaindre du ciel... </s>
+	<s n="2">Quels sont maintenant vos desseins ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="3">
+	<s n="1">Vous voyez toute l'étendue de mon malheur : j'ai perdu le coeur de Rosalie. </s>
+	<s n="2">Hélas ! </s>
+	<s n="3">C'est le seul bien que je regrette. </s>
+	<s n="4">Je n'ose soupçonner que la médiocrité de ma fortune soit la raison secrète de son inconstance ; mais si cela est, à quelle distance n'est-elle pas de moi, à présent qu'elle est réduite elle-même à une fortune assez bornée ! </s>
+	<s n="5">S'exposera-t-elle, pour un homme qu'elle n'aime plus, à toutes les suites d'un état presque indigent ? </s>
+	<s n="6">Moi-même, irai-je l'en solliciter ? </s>
+	<s n="7">Le puis-je ? </s>
+	<s n="8">Le dois-je ? </s>
+	<s n="9">Son père va devenir pour elle un surcroît onéreux. </s>
+	<s n="10">Il est incertain qu'il veuille m'accorder sa fille. </s>
+	<s n="11">Il est presque évident qu'en l'acceptant, j'achèverais de la ruiner. </s>
+	<s n="12">Voyez et décidez.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="4">
+	<s n="1">Cet André a jeté le trouble dans mon âme. </s>
+	<s n="2">Si vous saviez les idées qui me sont venues pendant son récit... </s>
+	<s n="3">Ce vieillard... ses discours... son caractère... ce changement de nom... </s>
+	<s n="4">Mais laissez-moi dissiper un soupçon qui m'obsède et penser à votre affaire.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="5">
+	<s n="1">Songez, Dorval, que le sort de Clairville est entre vos mains.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, seul.</speaker>
+                        <p n="1">
+	<s n="1">Quel jour d'amertume et de trouble ! </s>
+	<s n="2">Quelle variété de tourments ! </s>
+	<s n="3">Il semble que d'épaisses ténèbres se forment autour de moi et couvrent ce coeur accablé sous mille sentiments douloureux !... </s>
+	<s n="4">Ô ciel ! Ne m'accorderas-tu pas un moment de repos !... </s>
+	<s n="5">Le mensonge, la dissimulation me sont en horreur ; et dans un instant, j'en impose à mon ami, à sa soeur, à Rosalie... </s>
+	<s n="6">Que doit-elle penser de moi ?... </s>
+	<s n="7">Que déciderai-je de son amant ?... </s>
+	<s n="8">Quel parti prendre avec Constance ?... </s>
+	<s n="9">Dorval, cesseras-tu, continueras-tu d'être homme de bien ?... </s>
+	<s n="10">Un événement imprévu a ruiné Rosalie ; elle est indigente. </s>
+	<s n="11">Je suis riche, je l'aime, j'en suis aimé. </s>
+	<s n="12">Clairville ne peut l'obtenir... </s>
+	<s n="13">Sortez de mon esprit, éloignez-vous de mon coeur, illusions honteuses ! </s>
+	<s n="14">Je peux être le plus malheureux des hommes, mais je ne me rendrai pas le plus vil... </s>
+	<s n="15">Vertu ! </s>
+	<s n="16">Douce et cruelle idée ! </s>
+	<s n="17">Chers et barbares devoirs !... </s>
+	<s n="18">Amitié qui m'enchaîne et me déchire, vous serez obéie ! </s>
+	<s n="19">Ô vertu ! </s>
+	<s n="20">Qu'es-tu, si tu n'exiges aucun sacrifice ? </s>
+	<s n="21">Amitié, tu n'es qu'un vain nom, si tu n'imposes aucune loi... </s>
+	<s n="22">Clairville épousera donc Rosalie.</s>
+</p>
+                        <stage type="action/fall">Il tombe presque sans sentiment dans un fauteuil ; il se relève ensuite et il dit : </stage>
+                        <p n="2">
+	<s n="1">Non, je n'enlèverai point à mon ami sa maîtresse ; je ne me dégraderai point jusque-là, mon coeur m'en répond. </s>
+	<s n="2">Malheur à celui qui n'écoute point la voix de son coeur !... </s>
+	<s n="3">Mais Clairville n'a point de fortune ; Rosalie n'en a plus... </s>
+	<s n="4">Il faut écarter ces obstacles. </s>
+	<s n="5">Je le puis ; je le veux. </s>
+	<s n="6">Y a-t-il quelque peine dont un acte généreux ne console ? </s>
+	<s n="7">Ah ! </s>
+	<s n="8">Je commence à respirer !... </s>
+	<s n="9">Si je n'épouse point Rosalie, qu'ai-je besoin de fortune ? </s>
+	<s n="10">Quel plus digne usage que d'en disposer en faveur de deux êtres qui me sont chers ? </s>
+	<s n="11">Hélas ! </s>
+	<s n="12">À bien juger, ce sacrifice si peu commun n'est rien... </s>
+	<s n="13">Clairville me devra son bonheur ! </s>
+	<s n="14">Rosalie me devra son bonheur ! </s>
+	<s n="15">Le père de Rosalie me devra son bonheur !... </s>
+	<s n="16">Et Constance ?... </s>
+	<s n="17">Elle entendra de moi la vérité ; elle me connaîtra ; elle tremblera pour la femme qui oserait s'attacher à ma destinée... en rendant le calme à tout ce qui m'environne, je trouverai sans doute un repos qui me fuit ?...</s>
+</p>
+                        <stage type="expression">Il soupire.</stage>
+                        <p n="3">
+	<s n="1">Dorval, pourquoi souffres-tu donc ? </s>
+	<s n="2">Pourquoi suis-je déchiré ? </s>
+	<s n="3">Ô vertu ! </s>
+	<s n="4">N'ai-je point encore assez fait pour toi ! </s>
+	<s n="5">Mais Rosalie ne voudra point accepter de moi sa fortune. </s>
+	<s n="6">Elle connaît trop le prix de cette grâce, pour l'accorder à un homme qu'elle doit haïr, mépriser... </s>
+	<s n="7">Il faudra donc la tromper !... </s>
+	<s n="8">Et si je m'y résous, comment y réussir ? </s>
+	<s n="9">Prévenir l'arrivée de son père ?... </s>
+	<s n="10">Faire répandre, par les papiers publics, que le vaisseau qui portait sa fortune était assuré ?... </s>
+	<s n="11">Lui envoyer par un inconnu la valeur de ce qu'elle a perdu ?... </s>
+	<s n="12">Pourquoi non ? </s>
+	<s n="13">Le moyen est naturel ; il me plaît ; il ne faut qu'un peu de célérité.</s>
+</p>
+                        <stage type="call">Il appelle Charles.</stage>
+                        <p n="4">
+	<s n="1">Charles !</s>
+</p>
+                        <stage type="sit/write">Il se met à une table et il écrit.</stage>
+                    </sp><!--@stage="alone"--><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Dorval, Charles.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL lui donne un billet et dit :</speaker>
+                        <p n="1">
+	<s n="1">À Paris, chez mon banquier.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+</div>
+</div>
+<div type="act" n="4">
+                <head>ACTE IV</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Rosalie, Justine.</head>
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Mademoiselle, vous avez voulu voir André ; vous l'avez vu. </s>
+	<s n="3">Monsieur votre père arrive ; mais vous voilà sans fortune.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, un mouchoir à la main.</speaker>
+                        <p n="2">
+	<s n="1">Que puis-je contre le sort ? </s>
+	<s n="2">Mon père survit. </s>
+	<s n="3">Si la perte de sa fortune n'a pas altéré sa santé, le reste n'est rien.</s>
+</p>
+                    </sp><!--@stage="carry"--><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="3">
+	<s n="1">Comment, le reste n'est rien ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="4">
+	<s n="1">Non, Justine ; je connaîtrai l'indigence ; il y a de plus grands maux.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="5">
+	<s n="1">Ne vous y trompez pas, mademoiselle ; il n'y en a point qui lasse plus vite.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="6">
+	<s n="1">Avec des richesses, serais-je moins à plaindre ?... </s>
+	<s n="2">C'est dans une âme innocente et tranquille que le bonheur habite ; et cette âme, Justine, je l'avais.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="7">
+	<s n="1">Et Clairville y régnait.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, assise et pleurant.</speaker>
+                        <p n="8">
+	<s n="1">Amant qui m'étais alors si cher ! </s>
+	<s n="2">Clairville que j'estime et que je désespère ! </s>
+	<s n="3">Ô toi à qui un bien moins digne a ravi toute ma tendresse, te voilà bien vengé ! </s>
+	<s n="4">Je pleure ; et l'on se rit de mes larmes. </s>
+	<s n="5">Justine, que penses-tu de ce Dorval ?... </s>
+	<s n="6">Le voilà donc, cet ami si tendre, cet homme si vrai, ce mortel si vertueux. </s>
+	<s n="7">Il n'est, comme les autres, qu'un méchant qui se joue de ce qu'il y a de plus sacré, l'amour, l'amitié, la vertu, la vérité !... </s>
+	<s n="8">Que je plains Constance ! </s>
+	<s n="9">Il m'a trompée ; il peut bien la tromper aussi...</s>
+</p>
+                        <stage type="stand">En se levant.</stage>
+                        <p n="9">
+	<s n="1">Mais j'entends quelqu'un... Justine, si c'était lui !</s>
+</p>
+                    </sp><!--@stage="sit/cry"--><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="10">
+	<s n="1">Mademoiselle, ce n'est personne.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE se rassied et dit :</speaker>
+                        <p n="11">
+	<s n="1">Qu'ils sont méchants, ces hommes ! </s>
+	<s n="2">Et que nous sommes simples !... </s>
+	<s n="3">Vois, Justine, comme dans leur coeur la vérité est à côté du parjure ; comme l'élévation y touche à la bassesse !... </s>
+	<s n="4">Ce Dorval qui expose sa vie pour son ami, c'est le même qui le trompe, qui trompe sa soeur, qui se prend pour moi de tendresse. </s>
+	<s n="5">Mais pourquoi lui reprocher de la tendresse ? </s>
+	<s n="6">C'est mon crime ; le sien est une fausseté qui n'eut jamais d'exemple.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Rosalie, Constance.</head>
+<sp who="#rosalie">
+                        <speaker>ROSALIE, allant au-devant de Constance.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Madame ! </s>
+	<s n="3">En quel état vous me surprenez !</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="2">
+	<s n="1">Je viens partager votre peine.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="3">
+	<s n="1">Puissiez-vous toujours être heureuse !</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE s'assied, fait asseoir Rosalie à côté d'elle et lui prend les deux mains.</speaker>
+                        <p n="4">
+	<s n="1">Rosalie, je ne demande que la liberté de m'affliger avec vous. </s>
+	<s n="2">J'ai longtemps éprouvé l'incertitude des choses de la vie ; et vous savez si je vous aime.</s>
+</p>
+                    </sp><!--@stage="sit/touch"--><!--@who="CONSTANCE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="5">
+	<s n="1">Tout a changé, tout s'est détruit en un moment.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="6">
+	<s n="1">Constance vous reste... et Clairville.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="7">
+	<s n="1">Je ne peux m'éloigner trop tôt d'un séjour où ma douleur est importune.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="8">
+	<s n="1">Mon enfant, prenez garde ; le malheur vous rend injuste et cruelle ; mais ce n'est point à vous que j'en dois faire le reproche. </s>
+	<s n="2">Dans le sein du bonheur, j'oubliai de vous préparer aux revers. </s>
+	<s n="3">Heureuse, j'ai perdu de vue les malheureux. J'en suis bien punie ; c'est vous qui m'en rapprochez... mais votre père !</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="9">
+	<s n="1">Je lui ai déjà coûté bien des larmes !... </s>
+	<s n="2">Madame, vous serez mère un jour... que je vous plains !...</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="10">
+	<s n="1">Rosalie, rappelez-vous la volonté de votre tante ; ses dernières paroles me confiaient votre bonheur... </s>
+	<s n="2">Mais ne parlons point de mes droits ; c'est une marque d'estime que j'attends : jugez combien un refus pourrait m'offenser !... </s>
+	<s n="3">Rosalie, ne détachez point votre sort du mien. </s>
+	<s n="4">Vous connaissez Dorval. </s>
+	<s n="5">Il vous aime. </s>
+	<s n="6">Je lui demanderai Rosalie. </s>
+	<s n="7">Je l'obtiendrai ; et ce gage sera pour moi le premier et le plus doux de sa tendresse. </s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, dégage avec vivacité ses mains de celles de Constance, se lève avec une sorte d'indignation et dit :</speaker>
+                        <p n="11">
+	<s n="1">Dorval !</s>
+</p>
+                    </sp><!--@stage="away/stand/offended"--><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="12">
+	<s n="1">Vous avez toute son estime.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="13">
+	<s n="1">Un étranger !... </s>
+	<s n="2">Un inconnu !... </s>
+	<s n="3">Un homme qui n'a paru qu'un moment parmi nous !... </s>
+	<s n="4">Dont on n'a jamais nommé les parents !... </s>
+	<s n="5">Dont la vertu peut être feinte !... </s>
+	<s n="6">Madame, pardonnez... </s>
+	<s n="7">J'oubliais... </s>
+	<s n="8">Vous le connaissez bien, sans doute ?...</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="14">
+	<s n="1">Il faut vous pardonner ; vous êtes dans la nuit ; mais souffrez que je vous fasse luire un rayon d'espérance.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="15">
+	<s n="1">J'ai espéré, j'ai été trompée, je n'espérerai plus.</s>
+</p>
+                        <stage type="smile">Constance sourit tristement.</stage>
+                        <p n="16">
+	<s n="1">Hélas ! </s>
+	<s n="2">Si Constance eût été seule, retirée comme autrefois ; peut-être... encore, n'est-ce qu'une idée vaine qui nous aurait trompées toutes deux. </s>
+	<s n="3">Notre amie devient malheureuse ; on craint de se manquer à soi-même ; un premier mouvement de générosité nous emporte. </s>
+	<s n="4">Mais le temps ! </s>
+	<s n="5">Le temps !... </s>
+	<s n="6">Madame, les malheureux sont fiers, importuns, ombrageux ; on s'accoutume peu à peu au spectacle de leur douleur ; bientôt on s'en lasse ; épargnons-nous des torts réciproques. </s>
+	<s n="7">J'ai tout perdu : sauvons du moins notre amitié du naufrage... il me semble que je dois déjà quelque chose à l'infortune... toujours soutenue de vos conseils, Rosalie n'a rien fait encore dont elle puisse s'honorer à ses propres yeux. </s>
+	<s n="8">Il est temps qu'elle apprenne ce dont elle sera capable, instruite par Constance et par les malheurs. </s>
+	<s n="9">Lui envieriez-vous le seul bien qui lui reste, celui de se connaître elle-même ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="17">
+	<s n="1">Rosalie, vous êtes dans l'enthousiasme ; méfiez-vous de cet état. </s>
+	<s n="2">Le premier effet du malheur est de raidir une âme ; le dernier est de la briser... vous qui craignez tout du temps pour vous et pour moi, n'en craignez-vous rien pour vous seule ?... </s>
+	<s n="3">Songez, Rosalie, que l'infortune vous rend sacrée. </s>
+	<s n="4">S'il m'arrivait jamais de manquer de respect au malheur, rappelez-moi, faites-moi rougir pour la première fois... </s>
+	<s n="5">Mon enfant, j'ai vécu, j'ai souffert ; je crois avoir acquis le droit de présumer quelque chose de moi : cependant je ne vous demande que de compter autant sur mon amitié que sur votre courage... </s>
+	<s n="6">Si vous vous promettez tout de vous-même et que vous n'attendiez rien de Constance, ne serez-vous pas injuste ?... </s>
+	<s n="7">Mais les idées de bienfait et de reconnaissance vous effrayeraient-elles ?... </s>
+	<s n="8">Rendez votre tendresse à mon frère, et c'est moi qui vous devrai tout.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="18">
+	<s n="1">Madame, voilà Dorval... </s>
+	<s n="2">Permettez que je m'éloigne... </s>
+	<s n="3">J'ajouterais si peu de chose à son triomphe.</s>
+</p>
+                        <stage type="entrance">Dorval entre.</stage>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="19">
+	<s n="1">Rosalie... Dorval, retenez cette enfant... mais, elle nous échappe.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Constance, Dorval.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="1">
+	<s n="1">Madame, laissons-lui le triste plaisir de s'affliger sans témoins.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="2">
+	<s n="1">C'est à vous à changer son sort. Dorval, le jour de mon bonheur peut devenir le commencement de son repos.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="3">
+	<s n="1">Madame, souffrez que je vous parle librement ; qu'en vous confiant ses plus secrètes pensées, Dorval s'efforce d'être digne de ce que vous faisiez pour lui ; et que du moins il soit plaint et regretté.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="4">
+	<s n="1">Quoi, Dorval ! </s>
+	<s n="2">Mais parlez.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="5">
+	<s n="1">Je vais parler. </s>
+	<s n="2">Je vous le dois. </s>
+	<s n="3">Je le dois à votre frère. </s>
+	<s n="4">Je me le dois à moi-même... </s>
+	<s n="5">Vous voulez le bonheur de Dorval ; mais connaissez-vous bien Dorval ?... </s>
+	<s n="6">De faibles services dont un jeune homme bien né s'est exagéré le mérite ; ses transports à l'apparence de quelques vertus ; sa sensibilité pour quelques-uns de mes malheurs ; tout a préparé et établi en vous des préjugés que la vérité m'ordonne de détruire. </s>
+	<s n="7">L'esprit de Clairville est jeune. </s>
+	<s n="8">Constance doit porter de moi d'autres jugements.</s>
+</p>
+                        <stage type="wait">Une pause.</stage>
+                        <p n="6">
+	<s n="1">J'ai reçu du ciel un coeur droit ; c'est le seul avantage qu'il ait voulu m'accorder... mais ce coeur est flétri, et je suis, comme vous voyez... sombre et mélancolique. </s>
+	<s n="2">J'ai... de la vertu, mais elle est austère ; des moeurs, mais sauvages... une âme tendre, mais aigrie par de longues disgrâces. </s>
+	<s n="3">Je peux encore verser des larmes, mais elles sont rares et cruelles... non, un homme de ce caractère n'est point l'époux qui convient à Constance.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="7">
+	<s n="1">Dorval, rassurez-vous. Lorsque mon coeur céda aux impressions de vos vertus, je vous vis tel que vous vous peignez. </s>
+	<s n="2">Je reconnus le malheur et ses effets terribles. </s>
+	<s n="3">Je vous plaignis ; et ma tendresse commença peut-être par ce sentiment.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="8">
+	<s n="1">Le malheur a cessé pour vous ; il s'est appesanti sur moi... </s>
+	<s n="2">Combien je suis malheureux, et qu'il y a de temps ! </s>
+	<s n="3">Abandonné presque en naissant, entre le désert et la société, quand j'ouvris les yeux afin de reconnaître les liens qui pouvaient m'attacher aux hommes, à peine en trouvai-je des débris. </s>
+	<s n="4">Il y avait trente ans, madame, que j'errais parmi eux, isolé, inconnu, négligé, sans avoir éprouvé la tendresse de personne ni rencontré personne qui recherchât la mienne, lorsque votre frère vint à moi. Mon âme attendait la sienne. Ce fut dans son sein que je versai un torrent de sentiments qui cherchaient depuis si longtemps à s'épancher ; et je n'imaginai pas qu'il pût y avoir dans ma vie un moment plus doux que celui où je me délivrai du long ennui d'exister seul... que j'ai payé cher cet instant de bonheur !... </s>
+	<s n="5">Si vous saviez...</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="9">
+	<s n="">Vous avez été malheureux ; mais tout a son terme ; et j'ose croire que vous touchez au moment d'une révolution durable et fortunée.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="10">
+	<s n="1">Nous nous sommes assez éprouvés, le sort et moi. </s>
+	<s n="2">Il ne s'agit plus de bonheur... </s>
+	<s n="3">Je hais le commerce des hommes ; et je sens que c'est loin de ceux mêmes qui me sont chers que le repos m'attend... </s>
+	<s n="4">Madame, puisse le ciel vous accorder sa faveur qu'il me refuse et rendre Constance la plus heureuse des femmes !... </s>
+</p>
+                        <stage type="expression">Un peu attendri.</stage>
+                        <p n="11">
+	<s n="1">Je l'apprendrai peut-être dans ma retraite ; et j'en ressentirai de la joie.</s> 
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="12">
+	<s n="1">Dorval, vous vous trompez. Pour être tranquille, il faut avoir l'approbation de son coeur, et peut-être celle des hommes. </s>
+	<s n="2">Vous n'obtiendrez point celle-ci, et vous n'emporterez point la première, si vous quittez le poste qui vous est marqué. </s>
+	<s n="3">Vous avez reçu les talents les plus rares ; et vous en devez compte à la société. Que cette foule d'êtres inutiles qui s'y meuvent sans objet et l'embarrassent sans la servir s'en éloignent s'ils veulent. </s>
+	<s n="3">Mais vous, j'ose le dire, vous ne le pouvez sans crime. </s>
+	<s n="4">C'est à une femme qui vous aime à vous arrêter parmi les hommes ; c'est à Constance à conserver à la vertu opprimée un appui ; au vice arrogant, un fléau ; un frère à tous les gens de bien ; à tant de malheureux, un père qu'ils attendent ; au genre humain, son ami ; à mille projets honnêtes, utiles et grands, cet esprit libre de préjugés et cette âme forte qu'ils exigent et que vous avez... vous, renoncer à la société ! </s>
+	<s n="5">J'en appelle à votre coeur ; interrogez-le ; et il vous dira que l'homme de bien est dans la société, et qu'il n'y a que le méchant qui soit seul.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="13">
+	<s n="1">Mais le malheur me suit et se répand sur tout ce qui m'approche. </s>
+	<s n="2">Le ciel qui veut que je vive dans les ennuis, veut-il aussi que j'y plonge les autres ? </s>
+	<s n="3">On était heureux ici, quand j'y vins.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="14">
+	<s n="1">Le ciel s'obscurcit quelquefois ; et si nous sommes sous le nuage, un instant l'a formé, ce nuage ; un instant le dissipera. Mais quoi qu'il en arrive, l'homme sage reste à sa place et y attend la fin de ses peines.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="15">
+	<s n="1">Mais ne craindra-t-il pas de l'éloigner, en multipliant les objets de son attachement ?... </s>
+	<s n="2">Constance, je ne suis point étranger à cette pente si générale et si douce qui entraîne tous les êtres, et qui les porte à éterniser leur espèce. </s>
+	<s n="3">J'ai senti dans mon coeur que l'univers ne serait jamais pour moi qu'une vaste solitude sans une compagne qui partageât mon bonheur et ma peine... </s>
+	<s n="4">Dans mes accès de mélancolie, je l'appelais, cette compagne.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="16">
+	<s n="1">Et le ciel vous l'envoie.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="17">
+	<s n="1">Trop tard pour mon malheur ! </s>
+	<s n="2">Il a effarouché une âme simple, qui aurait été heureuse de ses moindres faveurs. </s>
+	<s n="3">Il l'a remplie de craintes, de terreurs, d'une horreur secrète... </s>
+	<s n="4">Dorval oserait se charger du bonheur d'une femme !... </s>
+	<s n="5">Il serait père !... </s>
+	<s n="6">Il aurait des enfants !... </s>
+	<s n="7">Des enfants !... </s>
+	<s n="8">Quand je pense que nous sommes jetés, tout en naissant, dans un chaos de préjugés, d'extravagances, de vices et de misères, l'idée m'en fait frémir.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="18">
+	<s n="1">Vous êtes obsédé de fantômes ; et je n'en suis pas étonnée. </s>
+	<s n="2">L'histoire de la vie est si peu connue, celle de la mort est si obscure, et l'apparence du mal dans l'univers est si claire... </s>
+	<s n="3">Dorval, vos enfants ne sont point destinés à tomber dans le chaos que vous redoutez. </s>
+	<s n="4">Ils passeront sous vos yeux les premières années de leur vie ; et c'en est assez pour vous répondre de celles qui suivront. </s>
+	<s n="5">Ils apprendront de vous à penser comme vous. </s>
+	<s n="6">Vos passions, vos goûts, vos idées passeront en eux. </s>
+	<s n="7">Ils tiendront de vous ces notions si justes que vous avez de la grandeur et de la bassesse réelles ; du bonheur véritable et de la misère apparente. </s>
+	<s n="8">Il ne dépendra que de vous, qu'ils aient une conscience toute semblable à la vôtre. </s>
+	<s n="9">Ils vous verront agir ; ils m'entendront parler quelquefois.</s>
+</p>
+                        <stage type="smile">En souriant avec dignité, elle ajoute : </stage>
+                        <p n="19">
+	<s n="1">Dorval, vos filles seront honnêtes et décentes ; vos fils seront nobles et fiers. Tous vos enfants seront charmants.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, prend la main de Constance, la presse entre les deux siennes, lui sourit d'un air touché et lui dit : </speaker>
+                        <p n="1">
+	<s n="1">Si, par malheur, Constance se trompait... </s>
+	<s n="2">Si j'avais des enfants comme j'en vois tant d'autres, malheureux et méchants... </s>
+	<s n="3">Je me connais ; j'en mourrais de douleur.</s>
+</p>
+                    </sp><!--@stage="touch/smile/ému"--><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, d'un ton pathétique et d'un air pénétré.</speaker>
+                        <p n="2">
+	<s n="1">Mais auriez-vous cette crainte, si vous pensiez que l'effet de la vertu sur notre âme n'est ni moins nécessaire, ni moins puissant que celui de la beauté sur nos sens ; qu'il est dans le coeur de l'homme un goût de l'ordre plus ancien qu'aucun sentiment réfléchi ; que c'est ce goût qui nous rend sensibles à la honte, la honte qui nous fait redouter le mépris au delà même du trépas ; que l'imitation nous est naturelle ; et qu'il n'y a point d'exemple qui captive plus fortement que celui de la vertu, pas même l'exemple du vice ?... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Dorval, combien de moyens de rendre les hommes bons !</s>
+</p>
+                    </sp><!--@stage="sad"--><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="3">
+	<s n="1">Oui, si nous savions en faire usage... mais je veux qu'avec des soins assidus, secondés d'heureux naturels, vous puissiez les garantir du vice ; en seront-ils beaucoup moins à plaindre ? </s>
+	<s n="2">Comment écarterez-vous d'eux la terreur et les préjugés qui les attendent à l'entrée de ce monde et qui les suivront jusqu'au tombeau ? </s>
+	<s n="3">La folie et la misère de l'homme m'épouvantent. </s>
+	<s n="4">Combien d'opinions monstrueuses dont il est tour à tour l'auteur et la victime ! </s>
+	<s n="5">Ah ! </s>
+	<s n="6">Constance, qui ne tremblerait d'augmenter le nombre de ces malheureux qu'on a comparés à des forçats qu'on voit dans un cachot funeste, se pouvant secourir, l'un sur l'autre acharnés, combattre avec les fers dont ils sont enchaînés ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="4">
+	<s n="1">Je connais les maux que le fanatisme a causés et ceux qu'il en faut craindre... </s>
+	<s n="2">Mais s'il paraissait aujourd'hui... parmi nous... </s>
+	<s n="3">Un monstre tel qu'il en a produit dans les temps de ténèbres, où sa fureur et ses illusions arrosaient de sang cette terre... qu'on vît ce monstre s'avancer au plus grand des crimes en invoquant le secours du ciel... et tenant la loi de son dieu d'une main et de l'autre un poignard, préparer aux peuples de longs regrets... </s>
+	<s n="4">Croyez, Dorval, qu'on en aurait autant d'étonnement que d'horreur... </s>
+	<s n="5">Il y a sans doute encore des barbares ; et quand n'y en aura-t-il plus ? </s>
+	<s n="6">Mais les temps de barbarie sont passés ; le siècle s'est éclairé ; la raison s'est épurée ; ses préceptes remplissent les ouvrages de la nation : ceux où l'on inspire aux hommes la bienveillance générale sont presque les seuls qui soient lus. </s>
+	<s n="7">Voilà les leçons dont nos théâtres retentissent et dont ils ne peuvent retentir trop souvent ; et le philosophe dont vous m'avez rappelé les vers doit principalement ses succès aux sentiments d'humanité qu'il a répandus dans ses poèmes et au pouvoir qu'ils ont sur nos âmes. </s>
+	<s n="8">Non, Dorval, un peuple qui vient s'attendrir tous les jours sur la vertu malheureuse ne peut être ni méchant, ni farouche. </s>
+	<s n="9">C'est vous-même, ce sont les hommes qui vous ressemblent, que la nation honore et que le gouvernement doit protéger plus que jamais, qui affranchiront vos enfants de cette chaîne terrible dont votre mélancolie vous montre leurs mains innocentes chargées. </s>
+	<s n="10">Et quel sera mon devoir et le vôtre, sinon de les accoutumer à n'admirer, même dans l'auteur de toutes choses, que les qualités qu'ils chériront en nous ! </s>
+	<s n="11">Nous leur représenterons sans cesse que les lois de l'humanité sont immuables ; que rien n'en peut dispenser : et nous verrons germer dans leurs âmes ce sentiment de bienfaisance universelle qui embrasse toute la nature... vous m'avez dit cent fois qu'une âme tendre n'envisageait point le système général des êtres sensibles sans en désirer fortement le bonheur, sans y participer ; et je ne crains pas qu'une âme cruelle soit jamais formée dans mon sein, et de votre sang.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="5">
+	<s n="1">Constance, une famille demande une grande fortune ; et je ne vous cacherai pas que la mienne vient d'être réduite à la moitié.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="6">
+	<s n="1">Les besoins réels ont une limite ; ceux de la fantaisie sont sans bornes. </s>
+	<s n="2">Quelque fortune que vous accumuliez, Dorval, si la vertu manque à vos enfants, ils seront toujours pauvres.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="7">
+	<s n="1">La vertu ! </s>
+	<s n="2">On en parle beaucoup.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="8">
+	<s n="1">C'est la chose dans l'univers la mieux connue et la plus révérée. </s>
+	<s n="2">Mais, Dorval, on s'y attache plus encore par les sacrifices qu'on lui fait, que par les charmes qu'on lui croit ; et malheur à celui qui ne lui a pas assez sacrifié pour la préférer à tout ; ne vivre, ne respirer que pour elle ; s'enivrer de sa douce vapeur ; et trouver la fin de ses jours dans cette ivresse !</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="9">
+	<s n="1">Quelle femme !</s>
+</p>
+                        <stage type="expression">Il est étonné ; il garde le silence un moment ; il dit ensuite : </stage>
+                        <p n="10">
+	<s n="1">Femme adorable et cruelle, à quoi me réduisez-vous ! </s>
+	<s n="2">Vous m'arrachez le mystère de ma naissance : sachez donc qu'à peine ai-je connu ma mère. </s>
+	<s n="3">Une jeune infortunée, trop tendre, trop sensible, me donna la vie, et mourut peu de temps après. </s>
+	<s n="4">Ses parents irrités et puissants avaient forcé mon père de passer aux îles. </s>
+	<s n="5">Il y apprit la mort de ma mère, au moment où il pouvait se flatter de devenir son époux. </s>
+	<s n="6">Privé de cet espoir, il s'y fixa ; mais il n'oublia point l'enfant qu'il avait eu d'une femme chérie. </s>
+	<s n="7">Constance, je suis cet enfant... </s>
+	<s n="8">Mon père a fait plusieurs voyages en France : je l'ai vu. </s>
+	<s n="9">J'espérais le revoir encore ; mais je ne l'espère plus. </s>
+	<s n="10">Vous voyez ; ma naissance est abjecte aux yeux des hommes, et ma fortune a disparu.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="11">
+	<s n="1">La naissance nous est donnée ; mais nos vertus sont à nous. </s>
+	<s n="2">Pour ces richesses, toujours embarrassantes et souvent dangereuses, le ciel, en les répandant indifféremment sur la surface de la terre, et les faisant tomber sans distinction sur le bon et sur le méchant, dicte lui-même le jugement qu'on doit en porter. </s>
+	<s n="3">Naissance, dignités, fortune, grandeurs, le méchant peut tout avoir, excepté la faveur du ciel. </s>
+	<s n="4">Voilà ce qu'un peu de raison m'avait appris longtemps avant qu'on m'eût confié vos secrets ; et il ne me restait à savoir que le jour de mon bonheur et de ma gloire.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="12">
+	<s n="">Rosalie est malheureuse ; Clairville est au désespoir.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="13">
+	<s n="1">Je rougis du reproche. Dorval, voyez mon frère ; je reverrai Rosalie ; sans doute c'est à nous à rapprocher ces deux êtres si dignes d'être unis. </s>
+	<s n="2">Si nous y réussissons, j'ose espérer qu'il ne manquera plus rien à nos voeux.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, seul.</speaker>
+                        <p n="1">
+	<s n="1">Voilà la femme par qui Rosalie a été élevée ! </s>
+	<s n="2">Voilà les principes qu'elle a reçus !</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Dorval, Clairville.</head>
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Dorval, que deviens-je ? </s>
+	<s n="2">Qu'avez-vous résolu de moi ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="2">
+	<s n="1">Que vous vous attachiez plus fortement que jamais à Rosalie.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="3">
+	<s n="1">Vous me le conseillez ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="4">
+	<s n="1">Je vous le conseille.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, en lui sautant au cou.</speaker>
+                        <p n="5">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon ami, vous me rendez la vie : je vous la dois deux fois en un jour ; je venais en tremblant apprendre mon sort. </s>
+	<s n="3">Combien j'ai souffert depuis que je vous ai quitté ! </s>
+	<s n="4">Jamais je n'ai si bien connu que j'étais destiné à l'aimer, tout injuste qu'elle est. </s>
+	<s n="5">Dans un instant de désespoir, on forme un projet violent ; mais l'instant passe, le projet se dissipe, et la passion reste.</s>
+</p>
+                    </sp><!--@stage="hurry/hugh"--><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, en souriant.</speaker>
+                        <p n="6">
+	<s n="1">Je savais tout cela. Mais votre peu de fortune ? </s>
+	<s n="2">La médiocrité de la sienne ?</s>
+</p>
+                    </sp><!--@stage="smile"--><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="7">
+	<s n="1">L'état le plus misérable à mes yeux est de vivre sans Rosalie : j'y ai pensé ; et mon parti est pris. </s>
+	<s n="2">S'il est permis de supporter impatiemment l'indigence, c'est aux amants, aux pères de famille, à tous les hommes bienfaisants ; et il est toujours des voies pour en sortir.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="8">
+	<s n="1">Que ferez-vous ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="9">
+	<s n="1">Je commercerai.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="10">
+	<s n="1">Avec le nom que vous portez, auriez-vous ce courage ?</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="11">
+	<s n="1">Qu'appelez-vous courage ? </s>
+	<s n="2">Je n'en trouve point à cela. </s>
+	<s n="3">Avec une âme fière, un caractère inflexible, il est trop incertain que j'obtienne, de la faveur, la fortune dont j'ai besoin. </s>
+	<s n="4">Celle qu'on fait par l'intrigue est prompte, mais vile ; par les armes, glorieuse, mais lente ; par les talents, toujours difficile et médiocre. </s>
+	<s n="5">Il est d'autres états qui mènent rapidement à la richesse ; mais le commerce est presque le seul où les grandes fortunes soient proportionnées au travail, à l'industrie, aux dangers qui les rendent honnêtes. </s>
+	<s n="6">Je commercerai, vous dis-je ; il ne me manque que des lumières et des expédients ; et j'espère les trouver en vous.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="12">
+	<s n="1">Vous pensez juste ; je vois que l'amour est sans préjugé ; mais ne songez qu'à fléchir Rosalie, et vous n'aurez point à changer d'état. </s>
+	<s n="2">Si le vaisseau qui portait sa fortune est tombé entre les mains des ennemis, il était assuré ; et la perte n'est rien. </s>
+	<s n="3">La nouvelle en est dans les papiers publics ; et je vous conseille de l'annoncer à Rosalie.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="13">
+	<s n="1">J'y cours.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Dorval, Charles, encore botté.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, se promène.</speaker>
+                        <p n="1">
+	<s n="1">Il ne la fléchira point... non... mais pourquoi, si je veux ?... </s>
+	<s n="2">Un exemple d'honnêteté, de courage, un dernier effort sur soi-même... sur elle... </s>
+</p>
+                    </sp><!--@stage="walk"--><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES entre, et reste debout sans mot dire, jusqu'à ce que son maître l'aperçoive ; alors il dit : </speaker>
+                        <p n="2">
+	<s n="1">Monsieur, j'ai fait remettre à Rosalie.</s>
+</p>
+                    </sp><!--@stage="entrance/stay/silence"--><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="3">
+	<s n="1">J'entends.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#charles">
+                        <speaker>CHARLES.</speaker>
+                        <p n="4">
+	<s n="1">En voilà la preuve.</s>
+</p>
+                        <stage type="give">Il donne à son maître le reçu de Rosalie.</stage>
+                    </sp><!--@who="CHARLES"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="5">
+	<s n="1">Il suffit.</s>
+</p>
+                        <stage type="exit/walk">Charles sort. Dorval se promène encore ; après une courte pause, il dit : </stage>
+                    </sp><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII.</head>
+<sp who="#dorval">
+                        <speaker>DORVAL, seul.</speaker>
+                        <p n="1">
+	<s n="1">J'aurai donc tout sacrifié. </s>
+	<s n="2">La fortune !</s>
+</p>
+                        <stage type="repeat/disdain">Il répète avec dédain : </stage>
+                        <p n="2">
+	<s n="1">La fortune ! </s>
+	<s n="2">Ma passion ! </s>
+	<s n="3">La liberté !... </s>
+	<s n="4">Mais le sacrifice de ma liberté est-il bien résolu !... </s>
+	<s n="5">Ô	raison ! </s>
+	<s n="6">Qui peut te résister, quand tu prends l'accent enchanteur et la voix de la femme !... </s>
+	<s n="7">Homme petit et borné, assez simple pour imaginer que tes erreurs et ton infortune sont de quelque importance dans l'univers ; qu'un concours de hasards infinis préparait de tout temps ton malheur ; que ton attachement à un être mène la chaîne de sa destinée ; viens entendre Constance, et reconnais la vanité de tes pensées !... </s>
+	<s n="8">Ah ! </s>
+	<s n="9">Si je pouvais trouver en moi la force de sens et la supériorité de lumières avec laquelle cette femme s'emparait de mon âme et la dominait, je verrais Rosalie ; elle m'entendrait, et Clairville serait heureux... </s>
+	<s n="10">Mais pourquoi n'obtiendrais-je pas sur cette âme tendre et flexible le même ascendant que Constance a su prendre sur moi ? Depuis quand la vertu a-t-elle perdu son empire ?... </s>
+	<s n="11">Voyons-la ; parlons-lui ; et espérons tout de la vérité de son caractère, et du sentiment qui m'anime. </s>
+	<s n="12">C'est moi qui ai égaré ses pas innocents ; c'est moi qui l'ai plongée dans la douleur et dans l'abattement : c'est à moi à lui tendre la main, et à la ramener dans la voie du bonheur.</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="DORVAL"-->
+</div>
+</div>
+<div type="act" n="5">
+                <head>ACTE V</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Rosalie, Justine.</head>
+<stage type="walk/wait">Rosalie, sombre, se promène ou reste immobile, sans attention pour ce que Justine lui dit.</stage>
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="1">
+	<s n="1">Votre père échappe à mille dangers ! </s>
+	<s n="2">Votre fortune est réparée ! </s>
+	<s n="3">Vous devenez maîtresse de votre sort, et rien ne vous touche ! </s>
+	<s n="4">En vérité, mademoiselle, vous ne méritez guère le bien qui vous arrive.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="2">
+	<s n="1">... Un lien éternel va les unir !... </s>
+	<s n="2">Justine, André est-il instruit ? </s>
+	<s n="3">Est-il parti ? </s>
+	<s n="4">Revient-il ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="3">
+	<s n="1">Mademoiselle, qu'allez-vous faire ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="4">
+	<s n="1">Ma volonté... </s>
+	<s n="2">Non, mon père n'entrera point dans cette maison fatale ! </s>
+	<s n="3">Je ne serai point le témoin de leur joie... </s>
+	<s n="4">J'échapperai du moins à des amitiés qui me tuent.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Rosalie, Justine, Clairville.</head>
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE arrive précipitamment ; et tout en approchant de Rosalie, il se jette à ses genoux, et lui dit :</speaker>
+                        <p n="1">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Cruelle, ôtez-moi donc la vie ! </s>
+	<s n="3">Je sais tout. </s>
+	<s n="4">André m'a tout dit. </s>
+	<s n="5">Vous éloignez d'ici votre père. </s>
+	<s n="6">Et de qui l'éloignez-vous ? </s>
+	<s n="7">D'un homme qui vous adore, qui quittait sans regret son pays, sa famille, ses amis, pour traverser les mers, pour aller se jeter aux genoux de vos inflexibles parents, y mourir ou vous obtenir...</s>
+	<s n="8">Alors Rosalie, tendre, sensible, fidèle, partageait mes ennuis ; aujourd'hui, c'est elle qui les cause.</s>
+</p>
+                    </sp><!--@stage="entrance/quick/closer/kneel"--><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, émue et un peu déconcertée.</speaker>
+                        <p n="2">
+	<s n="1">Cet André est un imprudent. </s>
+	<s n="2">Je ne voulais pas que vous sussiez mon projet.</s>
+</p>
+                    </sp><!--@stage="ému/embarrassed"--><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="3">
+	<s n="1">Vous vouliez me tromper.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, vivement.</speaker>
+                        <p n="4">
+	<s n="1">Je n'ai jamais trompé personne.</s>
+</p>
+                    </sp><!--@stage="stress"--><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="5">
+	<s n="1">Dites-moi donc pourquoi vous ne m'aimez plus ? </s>
+	<s n="2">M'ôter votre coeur, c'est me condamner à mourir. </s>
+	<s n="3">Vous voulez ma mort ; vous la voulez, je le vois.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="6">
+	<s n="1">Non, Clairville. </s>
+	<s n="2">Je voudrais bien que vous fussiez heureux.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="7">
+	<s n="1">Et vous m'abandonnez !</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="8">
+	<s n="1">Mais ne pourriez-vous pas être heureux sans moi ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="9">
+	<s n="1">Vous me percez le coeur...</s>
+</p>
+                        <stage type="kneel">Il est toujours aux genoux de Rosalie. En disant ces mots, il tombe la tête appuyée contre elle, et garde un moment le silence.</stage>
+                        <p n="10">
+	<s n="1">Vous ne deviez jamais changer !... </s>
+	<s n="2">Vous le jurâtes !... </s>
+	<s n="3">Insensé que j'étais, je vous crus... </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Rosalie, cette foi donnée et reçue chaque jour avec de nouveaux transports, qu'est-elle devenue ? </s>
+	<s n="6">Que sont devenus vos serments ? </s>
+	<s n="7">Mon coeur, fait pour recevoir et garder éternellement l'impression de vos vertus et de vos charmes, n'a rien perdu de ses sentiments ; il ne vous reste rien des vôtres... </s>
+	<s n="8">Qu'ai-je fait pour qu'ils se soient détruits ?</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="11">
+	<s n="1">Rien.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="12">
+	<s n="1">Et pourquoi donc ne sont-ils plus, ni ces instants si doux où je lisais mes sentiments dans vos yeux ?... </s>
+</p>
+                        <stage type="keep">Il prend une main.</stage>
+                        <p n="13">
+	<s n="1">Ou ces mains... daignaient essuyer mes larmes, ces larmes tantôt amères, tantôt délicieuses, que la crainte et la tendresse faisaient couler tour à tour !... </s>
+	<s n="2">Rosalie, ne me désespérez pas !... </s>
+	<s n="3">Par pitié pour vous-même. </s>
+	<s n="4">Vous ne connaissez pas votre coeur. </s>
+	<s n="5">Non, vous ne le connaissez pas. </s>
+	<s n="6">Vous ne savez pas tout le chagrin que vous vous préparez.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="14">
+	<s n="1">J'en ai déjà beaucoup souffert.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="15">
+	<s n="1">Je laisserai au fond de votre âme une image terrible qui y entretiendra le trouble et la douleur. </s>
+	<s n="2">Votre injustice vous suivra.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="16">
+	<s n="1">Clairville, ne m'effrayez pas.</s>
+</p>
+                        <stage type="watch">En le regardant fixement.</stage>
+                        <p n="17">
+	<s n="1">Que voulez-vous de moi ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="18">
+	<s n="1">Vous fléchir ou mourir.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, après une pause.</speaker>
+                        <p n="19">
+	<s n="1">Dorval est votre ami ?</s>
+</p>
+                    </sp><!--@stage="pause"--><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="20">
+	<s n="1">Il sait ma peine. </s>
+	<s n="2">Il la partage.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="21">
+	<s n="1">Il vous trompe.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="22">
+	<s n="1">Je périssais par vos rigueurs. Ses conseils m'ont conservé. </s>
+	<s n="2">Sans Dorval, je ne serais plus.</s>
+</p>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="23">
+	<s n="1">Il vous trompe, vous dis-je. </s>
+	<s n="2">C'est un méchant.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="24">
+	<s n="1">Dorval un méchant ! </s>
+	<s n="2">Rosalie, y pensez-vous ? </s>
+	<s n="3">Il est au monde deux êtres que je porte au fond de mon coeur ; c'est Dorval et Rosalie. Les attaquer dans cet asile, c'est me causer une peine mortelle. </s>
+	<s n="4">Dorval, un méchant ! </s>
+	<s n="5">C'est Rosalie qui le dit ! </s>
+	<s n="6">Elle !... </s>
+	<s n="7">Il ne lui restait plus, pour m'accabler, que d'accuser mon ami !</s>
+</p>
+                        <stage type="entrance">Dorval entre.</stage>
+                    </sp><!--@who="CLAIRVILLE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Rosalie, Justine, Clairville, Dorval.</head>
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Venez, mon ami, venez. </s>
+	<s n="2">Cette Rosalie, autrefois si sensible, maintenant si cruelle, vous accuse sans sujet, et me condamne à un désespoir sans fin, moi qui mourrais plutôt que de lui causer la peine la plus légère.</s>
+</p>
+                        <stage type="cry/walk/sit/expression">Cela dit, il cache ses larmes ; il s'éloigne, et il va se mettre sur un canapé, au fond du salon, dans l'attitude d'un homme désolé.</stage>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, montrant Clairville à Rosalie.</speaker>
+                        <p n="2">
+	<s n="1">Mademoiselle, considérez votre ouvrage et le mien. </s>
+	<s n="2">Est-ce là le sort qu'il devait attendre de nous ? </s>
+	<s n="3">Un désespoir funeste sera donc le fruit amer de mon amitié et de votre tendresse ; et nous le laisserons périr ainsi !</s>
+</p>
+                        <stage type="stand/walk/watch/low">Clairville se lève, et s'en va comme un homme qui erre. Rosalie le suit des yeux ; et Dorval, après avoir un peu rêvé, continue d'un ton bas, sans regarder Rosalie.</stage>
+                        <p n="3">
+	<s n="1">S'il s'afflige, c'est du moins sans contrainte. </s>
+	<s n="2">Son âme honnête peut montrer toute sa douleur... </s>
+	<s n="3">Et nous, honteux de nos sentiments, nous n'osons les confier à personne ; nous nous les cachons... </s>
+	<s n="4">Dorval et Rosalie, contents d'échapper aux soupçons, sont peut-être assez vils pour s'en applaudir en secret...</s>
+</p>
+                        <stage type="action">Ici, il se tourne subitement vers Rosalie.</stage>
+                        <p n="4">
+	<s n="1">Ah !... </s>
+	<s n="2">Mademoiselle, sommes-nous faits pour tant d'humiliations ? </s>
+	<s n="3">Voudrons-nous plus longtemps d'une vie aussi abjecte ? </s>
+	<s n="4">Pour moi, je ne pourrais me souffrir parmi les hommes, s'il y avait sur tout l'espace qu'ils habitent, un seul endroit où j'eusse mérité le mépris. </s>
+	<s n="5">Échappé au danger, je viens à votre secours. </s>
+	<s n="6">Il faut que je vous replace au rang où je vous ai trouvée, ou que je meure de regrets.</s>
+</p>
+                        <stage type="wait">Il s'arrête un peu, puis il dit : </stage>
+                        <p n="5">
+	<s n="1">Rosalie, répondez-moi. </s>
+	<s n="2">La vertu a-t-elle pour vous quelque prix ? </s>
+	<s n="3">L'aimez-vous encore ?</s>
+</p>
+                    </sp><!--@stage="show/toward"--><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="6">
+	<s n="1">Elle m'est plus chère que la vie.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="7">
+	<s n="1">Je vais donc vous parler du seul moyen de vous réconcilier avec vous, d'être digne de la société dans laquelle vous vivez, d'être appelée l'élève et l'amie de Constance, et d'être l'objet du respect et de la tendresse de Clairville.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="8">
+	<s n="1">Parlez ; je vous écoute.</s>
+</p>
+                        <stage type="sit/expression">Rosalie s'appuie sur le dos d'un fauteuil, la tête penchée sur une main, et Dorval continue : </stage>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="9">
+	<s n="1">Songez, mademoiselle, qu'une seule idée fâcheuse qui nous suit, suffit pour anéantir le bonheur ; et que la conscience d'une mauvaise action est la plus fâcheuse de toutes les idées.</s>
+</p>
+                        <stage type="expression">Vivement et rapidement.</stage>
+                        <p n="10">
+	<s n="1">Quand nous avons commis le mal, il ne nous quitte plus ; il s'établit au fond de notre âme avec la honte et le remords ; nous le portons avec nous, et il nous tourmente. </s>
+	<s n="2">Si vous suivez un penchant injuste, il y a des regards qu'il faut éviter pour jamais ; et ces regards sont ceux des deux personnes que nous révérons le plus sur la terre. </s>
+	<s n="3">Il faut s'éloigner, fuir devant eux et marcher dans le monde la tête baissée.</s>
+</p>
+                        <stage type="expression">Rosalie soupire.</stage>
+                        <p n="11">
+	<s n="1">Et loin de Clairville et de Constance, où irions-nous ? </s>
+	<s n="2">Que deviendrions-nous ? </s>
+	<s n="3">Quelle serait notre société ?... </s>
+	<s n="4">Être méchant, c'est se condamner à vivre, à se plaire avec les méchants ; c'est vouloir demeurer confondu dans une foule d'êtres sans principes, sans moeurs et sans caractère ; vivre dans un mensonge continuel d'une vie incertaine et troublée ; louer, en rougissant, la vertu qu'on a abandonnée ; entendre, dans la bouche des autres, le blâme des actions qu'on a faites ; chercher le repos dans des systèmes, que le souffle d'un homme de bien renverse ; se fermer pour toujours la source des véritables joies, des seules qui soient honnêtes, austères et sublimes ; et se livrer, pour se fuir, à l'ennui de tous ces amusements frivoles où le jour s'écoule dans l'oubli de soi-même, et où la vie s'échappe et se perd... </s>
+	<s n="5">Rosalie, je n'exagère point. </s>
+	<s n="6">Lorsque le fil du labyrinthe se rompt on n'est plus maître de son sort ; on ne sait jusqu'où l'on peut s'égarer. Vous êtes effrayée ! </s>
+	<s n="7">Et vous ne connaissez encore qu'une partie de votre péril. </s>
+	<s n="8">Rosalie, vous avez été sur le point de perdre le plus grand bien qu'une femme puisse posséder sur la terre ; un bien qu'elle doit incessamment demander au ciel, qui en est avare ; un époux vertueux ! </s>
+	<s n="9">Vous alliez marquer par une injustice le jour le plus solennel de votre vie, et vous condamner à rougir au souvenir d'un instant qu'on ne doit se rappeler qu'avec un sentiment délicieux... </s>
+	<s n="10">Songez qu'aux pieds de ces autels où vous auriez reçu mes serments, où j'aurais exigé les vôtres, l'idée de Clairville trahi et désespéré vous aurait suivie : vous eussiez vu le regard sévère de Constance attaché sur vous. </s>
+	<s n="11">Voilà quels auraient été les témoins effrayants de notre union... </s>
+	<s n="12">Et ce mot, si doux à prononcer et à entendre lorsqu'il assure et qu'il comble le bonheur de deux êtres dont l'innocence et la vertu consacraient les désirs ; ce mot fatal eût scellé pour jamais notre injustice et notre malheur... </s>
+	<s n="13">Oui, mademoiselle, pour jamais. </s>
+	<s n="14">L'ivresse passe ; on se voit tel qu'on est, on se méprise ; on s'accuse ; et la misère commence.</s>
+</p>
+                        <stage type="cry">Il échappe ici à Rosalie quelques larmes qu'elle essuie furtivement.</stage>
+                        <p n="12">
+	<s n="1">En effet, quelle confiance avoir en une femme lorsqu'elle a pu trahir son amant ? </s>
+	<s n="2">En un homme lorsqu'il a pu tromper son ami ?... </s>
+	<s n="3">Mademoiselle, il faut que celui qui ose s'engager en des liens indissolubles, voie dans sa compagne la première des femmes ; et, malgré elle, Rosalie ne verrait en moi que le dernier des hommes... </s>
+	<s n="3">Cela ne peut être... </s>
+	<s n="4">Je ne saurais trop respecter la mère de mes enfants ; et je ne saurais en être trop considéré. </s>
+	<s n="5">Vous rougissez. </s>
+	<s n="6">Vous baissez les yeux !... </s>
+	<s n="7">Quoi donc ! </s>
+	<s n="8">Seriez-vous offensée qu'il y eût dans la nature quelque chose pour moi de plus sacré que vous ? </s>
+	<s n="9">Voudriez-vous me revoir encore dans ces instants humiliants et cruels, où vous me méprisiez sans doute, où je me haïssais, où je craignais de vous rencontrer, où vous trembliez de m'entendre, et où nos âmes, flottantes entre le vice et la vertu, étaient déchirées ?... </s>
+	<s n="10">Que nous avons été malheureux, mademoiselle ! </s>
+	<s n="11">Mais mon malheur a cessé au moment où j'ai commencé d'être juste. </s>
+	<s n="12">J'ai remporté sur moi la victoire la plus difficile, mais la plus entière. Je suis rentré dans mon caractère. </s>
+	<s n="13">Rosalie ne m'est plus redoutable ; et je pourrais, sans crainte, lui avouer tout le désordre qu'elle avait jeté dans mon âme, lorsque, dans le plus grand trouble de sentiments et d'idées qu'aucun mortel ait jamais éprouvé, je répondais... </s>
+	<s n="14">Mais un événement imprévu, l'erreur de Constance, la vôtre, mes efforts m'ont affranchi... </s>
+	<s n="15">Je suis libre...</s>
+</p>
+                        <stage type="toward">À ces mots, Rosalie paraît accablée. Dorval, qui s'en aperçoit, se tourne vers elle, et la regardant d'un air plus doux, il continue : </stage>
+                        <p n="13">
+	<s n="1">Mais, qu'ai-je exécuté que Rosalie ne le puisse mille fois plus facilement ! </s>
+	<s n="2">Son coeur est fait pour sentir, son esprit pour penser, sa bouche pour annoncer tout ce qui est honnête. </s>
+	<s n="3">Si j'avais différé d'un instant, j'aurais entendu de Rosalie tout ce qu'elle vient d'entendre de moi. </s>
+	<s n="4">Je l'aurais écoutée. </s>
+	<s n="5">Je l'aurais regardée comme une divinité bienfaisante qui me tendait la main, et qui rassurait mes pas chancelants. </s>
+	<s n="6">À sa voix, la vertu se serait rallumée dans mon coeur.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, d'une voix tremblante.</speaker>
+                        <p n="14">
+	<s n="1">Dorval...</s>
+</p>
+                    </sp><!--@stage="stress"--><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, avec humanité.</speaker>
+                        <p n="15">
+	<s n="1">Rosalie...</s>
+</p>
+                    </sp><!--@stage="humble"--><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="16">
+	<s n="1">Que faut-il que je fasse ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="17">
+	<s n="1">Nous avons placé l'estime de nous-mêmes à un haut prix !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="18">
+	<s n="1">Est-ce mon désespoir que vous voulez ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="19">
+	<s n="1">Non. </s>
+	<s n="2">Mais il est des occasions où il n'y a qu'une action forte qui nous relève.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="20">
+	<s n="1">Je vous entends. </s>
+	<s n="2">Vous êtes mon ami... </s>
+	<s n="3">Oui, j'en aurai le courage... </s>
+	<s n="4">Je brûle de voir Constance... </s>
+	<s n="5">Je sais enfin où le bonheur m'attend.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="21">
+	<s n="1">Ah ! </s>
+	<s n="2">Rosalie, je vous reconnais. </s>
+	<s n="3">C'est vous, mais plus belle, plus touchante à mes yeux que jamais ! </s>
+	<s n="4">Vous voilà digne de l'amitié de Constance, de la tendresse de Clairville, et de toute mon estime ; car j'ose à présent me nommer.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Rosalie, Justine, Dorval, Constance.</head>
+<sp who="#rosalie">
+                        <speaker>ROSALIE court au-devant de Constance.</speaker>
+                        <p n="1">
+	<s n="1">Venez, Constance, venez recevoir de la main de votre pupille le seul mortel qui soit digne de vous.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <p n="2">
+	<s n="1">Et vous, mademoiselle, courez embrasser votre père. </s>
+	<s n="2">Le voilà.</s>
+</p>
+                    </sp><!--@who="CONSTANCE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Rosalie, Justine, Dorval, Constance, le vieux Lysimond, tenu sous les bras par Clairville et par André ; Charles, Sylvestre ; toute la maison.</head>
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="1">
+	<s n="1">Mon père !</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="2">
+	<s n="1">Ciel ! </s>
+	<s n="2">Que vois-je ? </s>
+	<s n="3">C'est Lysimond ! </s>
+	<s n="4">C'est mon père !</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND.</speaker>
+                        <p n="3">
+	<s n="1">Oui, mon fils, oui, c'est moi.</s>
+</p>
+                        <stage type="toward">À Dorval et à Rosalie.</stage>
+                        <p n="4">
+	<s n="1">Approchez, mes enfants, que je vous embrasse... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Ma fille ! </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Mon fils !...</s>
+</p>
+                        <stage type="watch">Il les regarde.</stage>
+                        <p n="5">
+	<s n="1">Du moins, je les ai vus...</s>
+</p>
+                        <stage type="expression">Dorval et Rosalie sont étonnés ; Lysimond s'en aperçoit.</stage>
+                        <p n="6">
+	<s n="1">Mon fils, voilà ta soeur... </s>
+	<s n="2">Ma fille, voilà ton frère.</s>
+</p>
+                    </sp><!--@who="LYSIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="7">
+	<s n="1">Mon frère !</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="8">
+	<s n="1">Ma soeur ! </s>
+	<s n="2">Rosalie.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="9">
+	<s n="1">Dorval. Rosalie !</s>
+</p>
+                        <stage type="expression">Ces mots se disent avec toute la vitesse de la surprise, et se font entendre presque au même instant.</stage>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND est assis.</speaker>
+                        <p n="10">
+	<s n="1">Oui, mes enfants ; vous saurez tout... </s>
+	<s n="2">Approchez, que je vous embrasse encore...</s>
+</p>
+                        <stage type="expression">Il lève ses mains au ciel...</stage>
+                        <p n="11">
+	<s n="1">Que le ciel, qui me rend à vous, qui vous rend à moi, vous bénisse... qu'il nous bénisse tous.</s>
+</p>
+                        <stage type="toward">À Clairville.</stage>
+                        <p n="12">
+	<s n="1">Clairville;</s>
+</p>
+                        <stage type="toward">À Constance.</stage>
+                        <p n="13">
+	<s n="1">Madame, pardonnez à un père qui retrouve ses enfants. </s>
+	<s n="2">Je les croyais perdus pour moi... </s>
+	<s n="3">Je me suis dit cent fois : je ne les reverrai jamais... </s>
+	<s n="4">Ils ne me reverront plus. </s>
+	<s n="5">Peut-être, hélas ! </s>
+	<s n="6">Ils s'ignoreront toujours !... </s>
+	<s n="7">Quand je partis, ma chère Rosalie, mon espérance la plus douce était de te montrer un fils digne de moi, un frère digne de toute ta tendresse, qui te servît d'appui quand je ne serai plus... </s>
+	<s n="8">Et, mon enfant, ce sera bientôt... </s>
+	<s n="9">Mais, mes enfants, pourquoi ne vois-je point encore sur vos visages ces transports que je m'étais promis... </s>
+	<s n="10">Mon âge, mes infirmités, ma mort prochaine vous affligent... </s>
+	<s n="11">Ah ! </s>
+	<s n="12">Mes enfants, j'ai tant travaillé, tant souffert !... </s>
+	<s n="13">Dorval, Rosalie !</s>
+</p>
+                        <stage type="expression/kneel">En disant ces mots, le vieillard tient ses bras étendus vers ses enfants, qu'il regarde alternativement, et qu'il invite à se reconnaître. Dorval et Rosalie se regardent, tombent dans les bras l'un de l'autre, et vont ensemble embrasser les genoux de leur père, en s'écriant : </stage>
+                    </sp><!--@who="LYSIMOND"-->
+<sp who="#dorval #rosalie">
+                        <speaker>DORVAL, ROSALIE.</speaker>
+                        <p n="14">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon père !</s>
+</p>
+                    </sp><!--@stage="together"--><!--@who="DORVAL, ROSALIE"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND, leur imposant ses mains, et levant ses yeux au ciel, dit :</speaker>
+                        <p n="15">
+	<s n="1">Ô ciel ! </s>
+	<s n="2">Je te rends grâces ! </s>
+	<s n="3">Mes enfants se sont vus ; ils s'aimeront, je l'espère, et je mourrai content... </s>
+	<s n="4">Clairville, Rosalie vous était chère... </s>
+	<s n="5">Rosalie, tu aimais Clairville ; tu l'aimes toujours : approchez que je vous unisse.</s>
+</p>
+                        <stage type="hugh">Clairville, sans oser approcher, se contente de tendre les bras à Rosalie, avec tout le mouvement du désir et de la passion. Il attend. Rosalie le regarde un instant, et s'avance. Clairville se précipite, et Lysimond les unit.</stage>
+                    </sp><!--@stage="touch/watch"--><!--@who="LYSIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, en interrogation.</speaker>
+                        <p n="16">
+	<s n="1">Mon père ?</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="ROSALIE"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND.</speaker>
+                        <p n="17">
+	<s n="1">Mon enfant ?</s>
+</p>
+                    </sp><!--@who="LYSIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="18">
+	<s n="1">Constance... </s>
+	<s n="2">Dorval... </s>
+	<s n="3">Ils sont dignes l'un de l'autre.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND, à Constance et à Dorval.</speaker>
+                        <p n="19">
+	<s n="1">Je t'entends. </s>
+	<s n="2">Venez, mes chers enfants, venez ; vous doublez mon bonheur.</s>
+</p>
+                        <stage type="walk/kiss">Constance et Dorval s'approchent gravement de Lysimond. Le bon vieillard prend la main de Constance, la baise, et lui présente celle de son fils, que Constance reçoit.</stage>
+                    </sp><!--@stage="toward"--><!--@who="LYSIMOND"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND, pleurant et s'essuyant les yeux avec la main, dit :</speaker>
+                        <p n="20">
+	<s n="1">Celles-ci sont de joie ; et ce seront les dernières. </s>
+	<s n="2">Je vous laisse une grande fortune, jouissez-en comme je l'ai acquise : ma richesse ne coûta jamais rien à ma probité. </s>
+	<s n="3">Mes enfants, vous la pourrez posséder sans remords... </s>
+	<s n="4">Rosalie, tu regardes ton frère, et tes yeux baignés de larmes reviennent sur moi... </s>
+	<s n="5">Mon enfant, tu sauras tout, je te l'ai déjà dit... épargne cet aveu à ton père, à un frère sensible et délicat... le ciel, qui a trempé d'amertumes toute ma vie, ne m'a réservé de purs que ces derniers instants. Chère enfant, laisse-m'en jouir... tout est arrangé entre vous... ma fille, voilà l'état de mes biens...</s>
+</p>
+                    </sp><!--@stage="cry/wipe"--><!--@who="LYSIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="21">
+	<s n="1">Mon père...</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND.</speaker>
+                        <p n="22">
+	<s n="1">Prends, mon enfant. </s>
+	<s n="2">J'ai vécu. </s>
+	<s n="3">Il est temps que vous viviez, et que je cesse ; demain, si le ciel le veut, ce sera sans regret... </s>
+	<s n="4">Tiens, mon fils, c'est le précis de mes dernières volontés. </s>
+	<s n="5">Tu les respecteras. Surtout n'oubliez pas André. </s>
+	<s n="6">C'est à lui que je devrai la satisfaction de mourir au milieu de vous. Rosalie, je me ressouviendrai d'André, lorsque ta main me fermera les yeux... </s>
+	<s n="7">Vous verrez, mes enfants, que je n'ai consulté que ma tendresse, et que je vous aimais tous deux également. </s>
+	<s n="8">La perte que j'ai faite est peu de chose ; vous la supporterez en commun.</s>
+</p>
+                    </sp><!--@who="LYSIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="23">
+	<s n="1">Qu'entends-je, mon père ?... </s>
+	<s n="2">On m'a remis...</s>
+</p>
+                        <stage type="give">Elle présente à son père le portefeuille envoyé par Dorval.</stage>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND.</speaker>
+                        <p n="24">
+	<s n="1">On t'a remis... </s>
+	<s n="2">Voyons...</s>
+</p>
+                        <stage type="watch">Il ouvre le portefeuille, il examine ce qu'il contient, et dit : </stage>
+                        <p n="25">
+	<s n="1">Dorval, tu peux seul éclaircir ce mystère ; ces effets t'appartenaient. </s>
+	<s n="2">Parle : dis-nous comment ils se trouvent entre les mains de ta soeur ?</s>
+</p>
+                    </sp><!--@who="LYSIMOND"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE, vivement.</speaker>
+                        <p n="26">
+	<s n="1">J'ai tout compris. </s>
+	<s n="2">Il exposa sa vie pour moi ; il me sacrifiait sa fortune !</s>
+</p>
+                    </sp><!--@stage="quick"--><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, à Clairville.</speaker>
+                        <p n="27">
+	<s n="1">Sa passion !</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="ROSALIE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, à Clairville.</speaker>
+                        <p n="28">
+	<s n="1">Sa liberté !</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="CONSTANCE"-->
+<sp who="#clairville">
+                        <speaker>CLAIRVILLE.</speaker>
+                        <p n="29">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon ami !</s>
+</p>
+                        <stage type="kiss">Il l'embrasse.</stage>
+                        <stage type="expression">Ces mots se disent avec beaucoup de vitesse et sont presque entendus en même temps.</stage>
+                    </sp><!--@who="CLAIRVILLE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE, en se jetant dans le sein de son frère et baissant la vue.</speaker>
+                        <p n="30">
+	<s n="1">Mon frère...</s>
+</p>
+                    </sp><!--@stage="hugh/watch"--><!--@who="ROSALIE"-->
+<sp who="#dorval">
+                        <speaker>DORVAL, en souriant.</speaker>
+                        <p n="31">
+	<s n="1">J'étais un insensé, vous étiez un enfant.</s>
+</p>
+                    </sp><!--@stage="smile"--><!--@who="DORVAL"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND.</speaker>
+                        <p n="32">
+	<s n="1">Mon fils, que te veulent-ils ? </s>
+	<s n="2">Il faut que tu leur aies donné quelque grand sujet d'admiration et de joie, que je ne comprends pas, que ton père ne peut partager.</s>
+</p>
+                    </sp><!--@who="LYSIMOND"-->
+<sp who="#dorval">
+                        <speaker>DORVAL.</speaker>
+                        <p n="33">
+	<s n="1">Mon père, la joie de vous revoir nous a tous transportés.</s>
+</p>
+                    </sp><!--@who="DORVAL"-->
+<sp who="#lysimond">
+                        <speaker>LYSIMOND.</speaker>
+                        <p n="34">
+	<s n="1">Puisse le ciel, qui bénit les enfants par les pères, et les pères par les enfants, vous en accorder qui vous ressemblent, et qui vous rendent la tendresse que vous avez pour moi !</s>
+</p>
+                    </sp><!--@who="LYSIMOND"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

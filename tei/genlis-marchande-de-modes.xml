@@ -1,0 +1,1773 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Marchande de Modes</title>
+                <title type="sub">Comédie en un Acte</title>
+                <author>
+      <idno type="isni">0000000121386051</idno>
+      <idno type="wikidata">Q55037230</idno>
+      <persName>
+        <forename>Stéphanie-Félicité</forename>
+        <nameLink>du</nameLink>
+        <surname>Crest</surname>
+        <nameLink>de</nameLink>
+        <surname sort="1">Genlis</surname>
+      </persName>
+    </author><!--GENLIS, Stéphanie-Félicité Du Crest de (1746-1830)-->
+                <editor>Paul Fièvre</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000696</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/GENLIS_MARCHANDEDEMODES.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/GENLIS_MARCHANDEDEMODES.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1829"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="madame-dupre" sex="FEMALE">
+                        <persName>Madame dupré</persName>
+                    </person>
+                    <person xml:id="justine" sex="FEMALE">
+                        <persName>Justine</persName>
+                    </person>
+                    <person xml:id="marthe" sex="FEMALE">
+                        <persName>Marthe</persName>
+                    </person>
+                    <person xml:id="josephine" sex="FEMALE">
+                        <persName>Joséphine</persName>
+                    </person>
+                    <person xml:id="isabelle" sex="FEMALE">
+                        <persName>Isabelle</persName>
+                    </person>
+                    <person xml:id="annette" sex="FEMALE">
+                        <persName>Annette</persName>
+                    </person>
+                    <person xml:id="la-baronne" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>La-baronne</persName>
+                    </person>
+                    <person xml:id="martre" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Martre</persName>
+                    </person>
+                    <person xml:id="la-marquise" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>La-marquise</persName>
+                    </person>
+                    <person xml:id="toutes" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Toutes</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LA MARCHANDE DE MODES</titlePart>
+			<titlePart type="sub">COMÉDIE EN UN ACTE</titlePart>
+		</docTitle> 
+		<docDate when="1829">1829</docDate>
+		
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor>PARIS DIDIER, LIBRAIRE ÉDITEUR, 33, Quai des Augustins.</editor>-->
+			<div type="printer">
+                    <p>BELIN-LEPRIEUR ET MORIZOT Éditeurs, 5 rue Pavé-Saint-André.</p>
+                </div>
+		</div>
+		<castList>
+                <head>PERSONNAGES</head>
+			<castItem>
+                    <role corresp="#madame-dupre">MADAME DUPRÉ</role><!--@sex="2"--><!--@type="H"--><!--@statut="commerçant"--><!--@age="A"--><!--@stat_amour="néant"-->, marchande de modes.</castItem>
+			<castItem>
+                    <role corresp="#justine">JUSTINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="employé"--><!--@age="A"--><!--@stat_amour="néant"-->, première fille de boutique.</castItem>
+			<castItem>
+                    <role corresp="#annette">ANNETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="employé"--><!--@age="A"--><!--@stat_amour="néant"-->, fille de boutique.</castItem>
+			<castItem>
+                    <role corresp="#marthe">MARTHE</role><!--@sex="2"--><!--@type="H"--><!--@statut="employé"--><!--@age="A"--><!--@stat_amour="néant"-->, fille de boutique.</castItem>
+			<castItem>
+                    <role corresp="#josephine">JOSÉPHINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="employé"--><!--@age="A"--><!--@stat_amour="néant"-->, fille de boutique.</castItem>
+			<castItem>
+                    <role corresp="#isabelle">ISABELLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="employé"--><!--@age="A"--><!--@stat_amour="néant"-->, fille de boutique.</castItem>
+			<castItem>
+                    <role corresp="#la-marquise-de-lince">LA MARQUISE DE LINCÉ</role><!--@sex="2"--><!--@type="H"--><!--@statut="marquis"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#la-baronne-d-elsac">LA BARONNE d'ELSAC</role><!--@sex="2"--><!--@type="H"--><!--@statut="baron"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La scène est à Paris, chez madame Dupré.</set>-->
+		<note>issu de THÉÂTRE D'ÉDUCATION à l'usage de la Jeunesse par Mme de Genlis, Nouvelle édition revue et corrigée, pp. 73-86</note>
+	</front>
+<body>
+<div type="act" n="1">
+                <head>LA MARCHANDE DE MODES</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Madame Dupré, Justine.</head>
+<stage type="decor/sit/work">Madame Dupré assise et travaillant; Justine est à côté d'elle ; après Justine, Annette ; de l'autre côté sont rangées Marthe, Isabelle et Joséphine, travaillant aussi : des lumières sont posées sur les comptoirs.</stage>
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ, après un moment de silence, lève la tète, et voit vis-à-vis d'elle les jeunes filles qui parlent tout bas.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien, Mesdemoiselles, qu'est-ce que c'est donc que toutes ces chuchoteries-là ? </s>
+	<s n="2">Est-ce comme cela que vous travaillez ?... </s>
+	<s n="3">Il faut donc toujours avoir l'oeil sur vous ? </s>
+	<s n="4">Habituez-vous donc à être laborieuses, appliquées. </s>
+	<s n="5">Voyez Justine; a-t-elle jamais l'oreille au guet, le nez en l'air ? </s>
+	<s n="6">Elle ne songe qu'à son ouvrage ; et pourtant elle aime à rire comme une autre ; c'est de son âge ; mais il y a temps pour tout.</s>
+</p>
+                        <stage type="silence">Ici un grand silence.</stage>
+                        <p n="2">
+	<s n="1">Justine, du fil.</s>
+</p>
+                    </sp><!--@stage="silence/watch"--><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="3">
+	<s n="1">En voici, madame.</s>
+</p>
+                        <stage type="silence/laugh">Un silence, après lequel les jeunes filles, vis-à-vis de Madame Dupré, éclatent de rire en se cachant, et comme malgré elles.</stage>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="4">
+	<s n="1">Eh bien ?...</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="5">
+	<s n="1">Mon Dieu, Madame, c'est mademoiselle Joséphine qui nous fait rire.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="6">
+	<s n="1">Ah, mademoiselle, c'est vous qui avez commencé.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="7">
+	<s n="1">Moi ?... </s>
+	<s n="2">Je n'ai rien dit.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="8">
+	<s n="1">Je ne trouve pas mauvais que vous vous divertissiez, pourvu que l'ouvrage aille son train ; il faut bien, d'ailleurs, passer quelque chose à la jeunesse ; mais ce que je vous demande expressément, c'est de ne me point faire de cachotteries, et de ne pas parler bas. </s>
+	<s n="2">Vous devez toutes me regarder comme votre mère, et vous auriez tort d'avoir, des secrets pour moi.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="9">
+	<s n="1">Oh ! </s>
+	<s n="2">Pour cela, Madame, il faudrait que nous fussions bien ingrates, si nous ne vous aimions pas de tout notre coeur, moi, surtout !</s>
+</p>
+                        <stage type="sigh">Elle soupire.</stage>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="10">
+	<s n="1">Assurément je ne veux que votre bien.</s>
+</p>
+                        <stage type="silence">Après un silence.</stage>
+                        <p n="11">
+	<s n="1">Allons, il est sept heures, il faut que je sorte. </s>
+	<s n="2">Justine, va me chercher mon mantelet.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, se levant.</speaker>
+                        <p n="12">
+	<s n="1">Madame, allez-vous sortir seule ?</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="13">
+	<s n="1">Oui ; je vais chez Madame de Clémont. </s>
+</p>
+                        <stage type="exit">Justine sort.</stage>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="14">
+	<s n="1">Madame de Clémont, qui demeure dans la rue de Richelieu ?</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="15">
+	<s n="1">Justement.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="16">
+	<s n="1">J'ai été deux fois chez elle ; c'est une dame déjà d'un certain âge, mais bien aimable.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="17">
+	<s n="1">J'ai eu l'honneur de la servir pendant quinze ans, je sais ce qui en est. </s>
+	<s n="2">Je lui dois ma fortune ; c'est elle qui m'a mariée, établie, et mise à la mode : aussi il n'y a rien au monde que je ne fisse pour elle.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="18">
+	<s n="1">C'est bien naturel.</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="19">
+	<s n="1">C'est la mère de Madame la Marquise de Lincé ?</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="20">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="21">
+	<s n="1">Qu'elle est jolie, Madame la Marquise de Lincé !</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="22">
+	<s n="1">Et bonne !</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="23">
+	<s n="1">Je ne l'ai jamais vue ?</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="24">
+	<s n="1">Non, parce qu'il y a trois mois qu'elle est dans ses terres.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, revenant, à Madame Dupré.</speaker>
+                        <p n="25">
+	<s n="1">Madame, voici votre mantelet et vos gants. </s>
+	<s n="2">Quel carton voulez-vous emporter ?</s>
+</p>
+                    </sp><!--@stage="back/closer/give"--><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ, se levant.</speaker>
+                        <p n="26">
+	<s n="1">Je n'en veux point. </s>
+	<s n="2">Madame de Clémont n'achète plus de chiffons ; elle est revenue de cela.</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="MADAME DUPRÉ"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="27">
+	<s n="1">Pourtant Madame_la_Baronne d'Elsac est bien aussi âgée qu'elle, et elle les aime.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="28">
+	<s n="1">Oui ; c'est que l'une est raisonnable, et l'autre folle... </s>
+	<s n="2">Mais il est tard. </s>
+	<s n="3">Adieu, mes enfants, travaillez bien. </s>
+	<s n="4">Justine, ma mère est-elle là-haut ?</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="29">
+	<s n="1">Oui, Madame.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="30">
+	<s n="1">Madelon est avec elle ?</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="31">
+	<s n="1">Oui, Madame.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="32">
+	<s n="1">Allons, c'est bon ; je m'en vais, je reviendrai dans une heure.</s>
+</p>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Justine se met à la place de Madame Dupré,
+Annette, Marthe, Joséphine, Isabelle.</head>
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="1">
+	<s n="1">Comme elle a soin de sa mère !</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="2">
+	<s n="1">Elle lui donnerait son sang.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="3">
+	<s n="1">C'est une excellente femme aussi que madame Moreau.</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE, à Isabelle.</speaker>
+                        <p n="4">
+	<s n="1">Il n'y a que trois semaines que vous êtes ici ; mais quand vous la connaîtrez mieux, vous l'aimerez bien davantage. </s>
+	<s n="2">Elle est aussi honnête, aussi charitable, aussi pieuse que sa fille, c'est tout dire.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="ANNETTE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="5">
+	<s n="1">Mademoiselle Annette, dites-moi donc pourquoi elle ne porte jamais de robes garnies ?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="6">
+	<s n="1">C'est qu'elle était paysanne avant que Madame Dupré eût fait fortune.</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="7">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est donc ça qu'elle parle un peu patois ?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="8">
+	<s n="1">Vraiment oui.</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="9">
+	<s n="1">Madame Dupré, quand elle se vit en état, la tira de son village, et la fit venir ici.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE, en soupirant.</speaker>
+                        <p n="10">
+	<s n="1">C'est bien heureux de pouvoir faire le bonheur de sa mère !</s>
+</p>
+                    </sp><!--@stage="sigh"--><!--@who="ISABELLE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="11">
+	<s n="1">Oui ; seulement d'en avoir l'espérance donne du coeur pour travailler. </s>
+</p>
+                        <stage type="silence">Un long silence.</stage>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="12">
+	<s n="1">C'est demain fête ; j'en suis bien aise.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="13">
+	<s n="1">Oui, après l'office nous irons nous promener.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="14">
+	<s n="1">Oh ! </s>
+	<s n="2">J'aurai encore un plaisir bien plus grand.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="15">
+	<s n="1">Lequel donc ?</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="16">
+	<s n="1">C'est que Madame Dupré m'a prêté un livre qui est joli, joli !...</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="17">
+	<s n="1">Paméla, je parie.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="18">
+	<s n="1">Précisément.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="19">
+	<s n="1">Elle me l'a fait lire deux fois ; il m'a bien fait pleurer, toujours. </s>
+	<s n="2">Paméla est si vertueuse ; elle aime tant son père et sa mère !...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="20">
+	<s n="1">On ne peut se défendre du désir de lui ressembler.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="21">
+	<s n="1">Oh, Mademoiselle Joséphine, je vous en prie, vous me prêterez ce livre ?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="22">
+	<s n="1">Oui, je vous le promets.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="23">
+	<s n="1">Mademoiselle Justine, on dit qu'aux jours gras, Madame Dupré fait venir des musiciens ; je voulais toujours vous demander cela... </s>
+	<s n="2">(Ah! v'là mon aiguille cassée.) </s>
+	<s n="3">Est-ce vrai?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="24">
+	<s n="1">Oui. </s>
+	<s n="2">Madame Dupré veut qu'on travaille ; mais aussi elle nous procure des amusements.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="25">
+	<s n="1">Oh ! </s>
+	<s n="2">Oui ; le lundi et le mardi gras, elle invite ses connaissances, et elle nous fait toutes danser, depuis cinq heures jusqu'à dix.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="26">
+	<s n="1">Combien y a-t-il encore d'ici au mardi gras ?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="27">
+	<s n="1">Hélas ! </s>
+	<s n="2">Cinq grandes semaines.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="28">
+	<s n="1">C'est bien long ! </s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, se levant, et sortant du comptoir.</speaker>
+                        <p n="29">
+	<s n="1">Il faut que je marche un moment, j'ai les pieds tout engourdis de froid.</s>
+</p>
+                    </sp><!--@stage="stand/exit"--><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE, se levant.</speaker>
+                        <p n="30">
+	<s n="1">Et moi aussi.</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="ISABELLE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE, à Juliette.</speaker>
+                        <p n="31">
+	<s n="1">Justine, n'as-tu pas été ce matin chez Madame_la_Baronne d'Elsac ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="ANNETTE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="32">
+	<s n="1">Oui, avec Joséphine.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="33">
+	<s n="1">Mon Dieu, quelle museuse que cette madame d'Elsac ! </s>
+	<s n="2">Elle nous a retenues plus de deux heures. </s>
+	<s n="3">C'est bien drôle, une vieille coquette... </s>
+	<s n="4">Je ne voudrais pas être sa femme de chambre, toujours...</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="34">
+	<s n="1">Est-ce qu'elle était à sa toilette ?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="35">
+	<s n="1">Oui, devant un miroir ; elle s'y regardait tristement, et je crois que ça lui donnait de l'humeur, car elle n'est jamais plus malgracieuse que lorsqu'on est à la coiffer... </s>
+	<s n="2">Elle était plus grognon !... </s>
+	<s n="3">Elle faisait un train à son valet de chambre, à ses femmes... </s>
+	<s n="4">Elle les ahurissait tant, que cela faisait pitié... </s>
+	<s n="5">« Que vous êtes maladroite ! que vous êtes gauche!... » </s>
+	<s n="6">Elle n'a que ça à leur dire ; et puis un ton si brusque, les yeux si furibonds !... </s>
+	<s n="7">Ô la méchante dame !...</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="36">
+	<s n="1">Et vous a-t-elle acheté des modes?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="37">
+	<s n="1">Oui, tout notre carton ; mais fallait voir de quel air !... </s>
+	<s n="2">Avec une mine dédaigneuse et nonchalante, comme pour dire qu'elle n'avait envie de rien...</s>
+</p>
+                        <stage type="imitate">Elle la contrefait. </stage>
+                        <p n="38">
+	<s n="1">« Mademoiselle, de quel prix est cela ?... </s>
+	<s n="2">- Deux louis, Madame... </s>
+	<s n="3">- C'est horrible !... </s>
+	<s n="4">C'est hideux !... d'un goût... baroque !... »</s>
+</p>
+                        <stage type="laugh">Toutes les jeunes filles rient, à l'exception de Justine.</stage>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE, riant toujours.</speaker>
+                        <p n="39">
+	<s n="1">Elle fait toutes ces simagrées-là ?</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="ISABELLE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="40">
+	<s n="1">Oh ! </s>
+	<s n="2">C'est vrai, c'est bien cela.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="41">
+	<s n="1">Et puis, toujours en rechignant, elle achète. </s>
+	<s n="2">Tout cela c'est pour jouer la détachée, l'indifférente ; pour faire croire qu'elle ne se soucie plus de parure, parce qu'au fond elle sait bien qu'il est ridicule à son âge d'en être si occupée ; mais le plus drôle, c'est quand on lui montre quelque chiffon visiblement trop jeune pour elle ; oh ! </s>
+	<s n="3">Alors c'est une comédie... </s>
+	<s n="4">« Fi donc ! dit-elle, qui est-ce qui peut porter cela ? </s>
+	<s n="5">Quelle extravagance !... </s>
+	<s n="6">Quel mauvais goût !... </s>
+	<s n="7">C'est ignoble à l'excès !... »</s>
+</p>
+                        <stage type="laugh">Les jeunes filles recommencent à rire.</stage>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="42">
+	<s n="1">Ah çà, Joséphine, dites-moi un peu : si Madame Dupré était ici, feriez-vous tous ces contes-là ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="43">
+	<s n="1">Ce ne sont point des contes ; je n'invente rien.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="44">
+	<s n="1">Mais est-il bien de se moquer comme cela de son prochain, et surtout des personnes à qui on doit du respect ?... </s>
+	<s n="2">Vous n'inventez rien ; pardi, v'là un beau mérite ; et la médisance donc ! </s>
+	<s n="3">Croyez-vous que ce ne soit pas un défaut ?...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="45">
+	<s n="1">Justine a raison ; et nous autres, nous avons eu tort de rire...</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, à Joséphine.</speaker>
+                        <p n="46">
+	<s n="1">Ce que je vous en dis, Joséphine, c'est par amitié pour vous.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="47">
+	<s n="1">Aussi j'en profiterai, ma chère Justine ;</s>
+</p>
+                        <stage type="kiss">Elle l'embrasse.</stage>
+                        <p n="48">
+	<s n="1">Ne soyez plus fâchée. Dam, vous êtes plus âgée que moi ; il y a longtemps que vous êtes avec Madame Dupré, c'est naturel que vous soyez prudente et raisonnable ; mais je vous le promets, je ne ferai plus de médisances... </s>
+	<s n="2">Allons, je vais me remettre à l'ouvrage : viens, Isabelle. 
+</s>
+</p>
+                        <stage type="sit">Elles retournent à leur place.</stage>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="49">
+	<s n="1">Mademoiselle Justine, pourquoi donc Madame Dupré ne m'envoie-t-elle jamais en ville ?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="50">
+	<s n="1">Parce que vous n'avez que quatorze ans.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="51">
+	<s n="1">Mais, Joséphine n'en a que quinze.</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="52">
+	<s n="1">Aussi, au grand jamais, je n'y vas toute seule... </s>
+	<s n="2">Il n'y a qu'Annette et Justine qui sortent quelquefois sans compagne, encore c'est rare.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="53">
+	<s n="1">Mais je pourrais aller avec une autre.</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="54">
+	<s n="1">Sûrement; mais, en général, Madame Dupré n'aime pas que des jeunesses comme nous sortent souvent.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="55">
+	<s n="1">J'aimerais pourtant bien voir des dames à leur toilette... </s>
+	<s n="1">Ah, v'là un carrosse qui s'arrête à la porte.</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="56">
+	<s n="1">Annette, va voir ce que c'est.</s>
+</p>
+                        <stage type="stand/open/back/laugh">Annette se lève et va ouvrir la porte : elle revient en riant.</stage>
+                        <p n="57">
+	<s n="1">Eh bien ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE, riant.</speaker>
+                        <p n="58">
+	<s n="1">C'est...</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="ANNETTE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="59">
+	<s n="1">Qui donc ?...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="60">
+	<s n="1">C'est Madame_la_Baronne d'Elsac...</s>
+</p>
+                        <stage type="laugh">Toutes les jeunes filles se mettent à rire.</stage>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="61">
+	<s n="1">La dame que Joséphine vient de contrefaire ?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="62">
+	<s n="1">Justement.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="63">
+	<s n="1">Ah çà, mesdemoiselles, point de ricaneries.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="64">
+	<s n="1">Oh ! N'ayez pas peur.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, bas à Isabelle.</speaker>
+                        <p n="65">
+	<s n="1">Prends donc ton sérieux.</s>
+</p>
+                    </sp><!--@stage="low/toward"--><!--@who="JOSÉPHINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE, bas.</speaker>
+                        <p n="66">
+	<s n="1">Je ne peux pas.</s>
+</p>
+                    </sp><!--@stage="low"--><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, bas.</speaker>
+                        <p n="67">
+	<s n="1">Ni moi... </s>
+	<s n="2">Faisons semblant de nous moucher...</s>
+</p>
+                        <stage type="get">Elles tirent leurs mouchoirs.</stage>
+                    </sp><!--@stage="low"--><!--@who="JOSÉPHINE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="68">
+	<s n="1">La voilà.</s>
+</p>
+                        <stage type="stand">Toutes les jeunes filles se lèvent.</stage>
+                    </sp><!--@who="JUSTINE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. La Baronne, suivie de ses gens, qui restent
+dans le fond du théâtre, Justine, Annette, Marthe, Joséphine, Isabelle.</head>
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="1">
+	<s n="1">Où est madame Dupré ?</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="2">
+	<s n="1">Madame, elle est sortie.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="3">
+	<s n="1">Et ma robe, est-elle garnie ?</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="4">
+	<s n="1">Madame ne l'a demandée que pour lundi.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="5">
+	<s n="1">Je veux l'avoir demain absolument.</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="6">
+	<s n="1">Cela est impossible.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="7">
+	<s n="1">Impossible !... </s>
+	<s n="2">Vous n'avez qu'à passer la nuit.</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="8">
+	<s n="1">Madame, ici on ne passe jamais de nuits la veille des fêtes, à cause des offices du lendemain...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="9">
+	<s n="1">Ah, vous ne passez point de nuits... c'est différent...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="10">
+	<s n="1">Pardonnez-moi, Madame, j'ai l'honneur de vous dire...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="11">
+	<s n="1">Allez chercher ma robe, Mademoiselle, je vais la remporter... </s>
+</p>
+                        <stage type="exit">Justine sort.</stage>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="12">
+	<s n="1">La jupe est toute garnie, et fait le plus joli effet...</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="13">
+	<s n="1">Ce n'est pas que je m'en soucie ; je ne mets pas grande attache à tout cela... mais je veux être servie avec promptitude...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="14">
+	<s n="1">Si Madame avait dit d'abord qu'elle voulait l'avoir pour demain, ou aurait tout quitté...</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="15">
+	<s n="1">Montrez-moi des bonnets.</s>
+</p>
+                        <stage type="stand/get">Annette et Marthe se lèvent, et prennent des cartons.</stage>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="16">
+	<s n="1">Madame veut-elle une chaise ?</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="17">
+	<s n="1">Non ; je ne compte pas faire un long établissement ici...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, à part.</speaker>
+                        <p n="18">
+	<s n="1">Je parie qu'elle y restera une heure.</s>
+</p>
+                        <stage type="give">Annette et Marthe lui apportent un carton.</stage>
+                    </sp><!--@stage="aparte"--><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="19">
+	<s n="1">Tout cela est bien commun...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="20">
+	<s n="1">En voici deux charmants.</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="21">
+	<s n="1">Oui, comme cela, sur la main ; et puis, quand on s'en coiffera, ils iront à faire horreur.</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#martre">
+                        <speaker>MARTRE, à part.</speaker>
+                        <p n="22">
+	<s n="1">Je le crois bien, sur ce visage-là...</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="MARTRE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="23">
+	<s n="1">Allons, je les prends... </s>
+	<s n="2">Et des chapeaux, en avez-vous de tout faits ?</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="24">
+	<s n="1">Oui, Madame.</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="25">
+	<s n="1">Je les veux très simples, sans prétention ; d'ailleurs ils ne sont jolis que comme cela.</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="26">
+	<s n="1">Madame en veut-elle voir un de six louis, qui nous a été commandé.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="27">
+	<s n="1">Un chapeau de six louis ! cela doit être curieux... </s>
+	<s n="2">Comment peut-on mettre six louis à un chapeau ? </s>
+	<s n="3">Il faut être bien folle !</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="28">
+	<s n="1">Pourtant, Madame est elle-même bien magnifique, car nous avons eu l'honneur de faire pour elle, il y a quinze jours, une Conti en blonde, qu'elle a payée sept louis... </s>
+	<s n="2">Voici le chapeau.</s>
+</p>
+                        <stage type="show">Elle lui présente un chapeau garni de fleurs et de plumes.</stage>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="29">
+	<s n="1">C'est effroyable !...</s>
+</p>
+                        <stage type="turn/laugh">Les jeunes filles se détournent en riant.</stage>
+                        <p n="30">
+	<s n="1">Pour qui est-il ?</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="31">
+	<s n="1">Pour Madame la Marquise de Lincé...</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="32">
+	<s n="1">C'est d'une folie !...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="33">
+	<s n="1">Oh ! </s>
+	<s n="2">Ce n'est pas elle qui l'a commandé, c'est Monsieur son beau-père... </s>
+	<s n="3">Elle n'aime pas les chiffons chers ; elle n'a pas besoin de cela : elle est si jeune et si jolie !...</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE, avec beaucoup d'humeur.</speaker>
+                        <p n="33">
+	<s n="1">Remportez ce chapeau, et même les autres aussi ; ils sont tous affreux. </s>
+	<s n="2">Je ne sais pas pourquoi j'en prends ici, car on ne les fait bien que chez Mademoiselle Maillard.</s>
+</p>
+                    </sp><!--@stage="nervous"--><!--@who="LA BARONNE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="34">
+	<s n="1">Ah ! </s>
+	<s n="2">Voici Justine. </s>
+</p>
+                        <stage type="carry">Justine revient tenant une jupe de robe garnie.</stage>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="35">
+	<s n="1">Voyons, approchez-moi cela... </s>
+	<s n="2">Eh bien, je n'en suis pas mécontente ; c'est d'un assez bon goût...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="36">
+	<s n="1">Madame a demandé tout ce qu'il y avait de plus beau en blonde...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="37">
+	<s n="1">C'est fort bien, fort noble... </s>
+	<s n="2">Quelle différence de cela à une robe garnie de fleurs !... </s>
+	<s n="3">Vous m'ajouterez des glands ?</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="38">
+	<s n="1">Oui, madame.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="39">
+	<s n="1">Je vous en ai donné l'échantillon.</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="40">
+	<s n="1">Ils sont déjà faits...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE, réfléchissant sur son jupon.</speaker>
+                        <p n="41">
+	<s n="1">Il me semble qu'il faudrait des noeuds dans ces creux ?...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="42">
+	<s n="1">Eh bien, Madame, on en mettra.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="43">
+	<s n="1">De quelle couleur ?</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="44">
+	<s n="1">Blancs ?...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="45">
+	<s n="1">Non, cela se confondrait avec la blonde... mais couleur de chair ?...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="46">
+	<s n="1">Ce sera très-joli.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, à part, en haussant les épaules.</speaker>
+                        <p n="47">
+	<s n="1">À quarante-cinq ans, porter une robe garnie de rubans couleur de rose !...</s>
+</p>
+                    </sp><!--@stage="aparte/wave"--><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <note type="L">Puce : Qui est d'un brun semblable à celui de la puce.</note>
+                        <note type="L">Prune de monsieur : Sorte de prune ronde, d’un beau violet. Par métonymie la couleur elle-même.</note>
+                        <p n="48">
+	<s n="1">Je n'aime que les couleurs gaies ; je ne puis souffrir le prune de monsieur et le puce.</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="49">
+	<s n="1">J'entends encore une voiture qui s'arrête.</s>
+</p>
+                        <stage type="watch">Elle va voir.</stage>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE, regardant toujours son jupon.</speaker>
+                        <p n="50">
+	<s n="1">Quand les glands et les noeuds seront posés, ce sera véritablement charmant.</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, revenant.</speaker>
+                        <p n="51">
+	<s n="1">Mademoiselle Justine, c'est madame la Marquise de Lincé !</s>
+</p>
+                    </sp><!--@stage="back"--><!--@who="JOSÉPHINE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, pose le jupon sur le comptoir.</speaker>
+                        <p n="52">
+	<s n="1">Bon !... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Que j'en suis aise ! </s>
+</p>
+                        <stage type="run/location">Elle court à la porte.</stage>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="53">
+	<s n="1">Mon Dieu, quels transports !... </s>
+	<s n="2">Mesdemoiselles, reportez ma jupe là-haut, et ne faites voir ma robe à personne... </s>
+	<s n="3">Allons, où sont mes gens ?...</s>
+</p>
+                        <stage type="away/entrance">Elle fait quelques pas pour s'en aller, la marquise paraît.</stage>
+                    </sp><!--@who="LA BARONNE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. La Baronne, La Marquise, Justine,
+Annette, Marthe, Joséphine, Isabelle.</head>
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE, à la Marquise.</speaker>
+                        <p n="1">
+	<s n="1">Enfin vous voilà revenue, Madame ! </s>
+	<s n="2">Oserais-je vous demander depuis combien de jours ?...</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LA BARONNE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="2">
+	<s n="1">Nous sommes arrivés cette nuit...</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="3">
+	<s n="1">Et un de vos premiers soins est de venir chez Madame Dupré ; cela me paraît tout simple : au reste, à votre âge... </s>
+	<s n="2">Je vous trouve un peu maigrie...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="4">
+	<s n="1">Je suis peut-être changée, mais je me porte à merveille.</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="5">
+	<s n="1">Je me flatte que nous soupons ensemble lundi chez madame de Clémont ?</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="6">
+	<s n="1">Non, madame, je n'aurai point cet honneur ; je pars demain pour trois semaines.</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="7">
+	<s n="1">Quoi, si promptement !... </s>
+	<s n="2">Allons, Madame, je vous laisse, car sûrement vous avez de grandes affaires ici...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="8">
+	<s n="1">Mais, Madame, moi-même n'ai-je pas troublé les vôtres ?...</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="9">
+	<s n="1">Je n'étais venue ici que par hasard, comme vous le croyez bien...</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, à la baronne.</speaker>
+                        <p n="10">
+	<s n="1">Madame n'a-t-elle pas dit qu'elle voulait emporter sa robe ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE, sèchement.</speaker>
+                        <p n="11">
+	<s n="1">Non, gardez-la...</s>
+</p>
+                    </sp><!--@stage="stress"--><!--@who="LA BARONNE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, prenant la jupe qui est restée sur le comptoir.</speaker>
+                        <p n="12">
+	<s n="1">Il faut ôter cette jupe de dessus ce comptoir.</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="JOSÉPHINE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE, regardant la jupe.</speaker>
+                        <p n="13">
+	<s n="1">Ah ! </s>
+	<s n="2">Cela me paraît charmant !</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="LA MARQUISE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="14">
+	<s n="1">Il y aura des rubans couleur de chair dans les creux...</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="15">
+	<s n="1">Et cette robe est à madame ?...</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="16">
+	<s n="1">Vous la trouvez peut-être un peu jeune pour moi ; mais c'est une fantaisie de madame Dupré.</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE, regardant toujours la jupe.</speaker>
+                        <p n="17">
+	<s n="1">C'est une fantaisie très gaie...</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="LA MARQUISE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, à part.</speaker>
+                        <p n="18">
+	<s n="1">Risible même.</s>
+</p>
+                    </sp><!--@stage="aparye"--><!--@who="JOSÉPHINE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="19">
+	<s n="1">Adieu, Madame ; je suis charmée d'avoir eu l'honneur de vous rencontrer ; mais, je vous en prie, ménagez votre santé, afin de nous rapporter cette charmante fraîcheur que l'on vous enviait.</s>
+</p>
+                    </sp><!--@who="LA BARONNE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE, en souriant.</speaker>
+                        <p n="20">
+	<s n="1">Quel prix doit-on attacher à un agrément que trois mois peuvent faire perdre ?</s>
+</p>
+                    </sp><!--@stage="smile"--><!--@who="LA MARQUISE"-->
+<sp who="#la-baronne">
+                        <speaker>LA BARONNE.</speaker>
+                        <p n="21">
+	<s n="1">La santé est une chose si précieuse!... </s>
+	<s n="2">Mademoiselle Justine, vous direz à madame Dupré qu'elle vienne me parler demain. </s>
+	<s n="3">Adieu, Madame.</s>
+</p>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@who="LA BARONNE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. La Marquise, Justine, Annette, Marthe, Joséphine, Isabelle.</head> 
+<stage type="closer">Les jeunes filles viennent toutes auprès d'elle.</stage>
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="1">
+	<s n="1">Mais où prend-elle donc que madame la Marquise est changée ?...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="2">
+	<s n="1">Elle avait bonne envie de dire qu'elle était enlaidie, je vous en réponds.</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="3">
+	<s n="1">Ma chère Justine, j'aurais bien voulu voir madame Dupré ; j'ai besoin d'une femme de chambre, je voudrais la tenir de sa main : elle est si honnête, Madame Dupré !... </s>
+	<s n="2">Comment se porte-t-elle ?</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="4">
+	<s n="1">À merveille, Madame, Dieu merci... </s>
+	<s n="2">Elle est allée chez Madame de Clémont...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="5">
+	<s n="1">Chez ma mère ?... </s>
+	<s n="2">C'est sûrement pour mon affaire. </s>
+	<s n="3">Mais j'en ai encore une autre : j'ai amené avec moi une pauvre petite paysanne, qui a, je crois, cinq ou six frères, et je voudrais que Madame Dupré la prît chez elle.</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="6">
+	<s n="1">Pour apprendre les modes !</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="7">
+	<s n="1">Oui. </s>
+	<s n="2">Elle n'a que quatorze ans, et elle est tout à fait gentille, bien douce, bien modeste. </s>
+	<s n="3">Elle a tant pleuré en quittant son père et sa mère ?... </s>
+	<s n="4">Pauvre petite ! </s>
+	<s n="5">Elle est réellement intéressante. </s>
+	<s n="6">Je suis sûre qu'elle conservera ici un bon coeur, de la piété, des moeurs pures, et Madame Dupré me rendra un vrai service en s'en chargeant.</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="8">
+	<s n="1">Madame Dupré la prendra certainement avec plaisir : elle est si dévouée à Madame la Marquise... qu'elle a vue naître, à qui elle doit tout...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="9">
+	<s n="1">Je l'aime aussi de grand coeur. </s>
+	<s n="2">Et sa bonne mère, comment va-t-elle ?</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="10">
+	<s n="1">Parfaitement bien.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE, regardant Isabelle.</speaker>
+                        <p n="11">
+	<s n="1">Voilà une jeune fille que je ne connais pas.</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="LA MARQUISE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE, faisant la révérence.</speaker>
+                        <p n="12">
+	<s n="1">Je ne suis ici, madame, que depuis trois semaines.</s>
+</p>
+                    </sp><!--@stage="wave"--><!--@who="ISABELLE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="13">
+	<s n="1">Ah ! </s>
+	<s n="2">Madame, cette intéressante enfant a une mère qui travaillait en linge pour les gens du commun, et gagnait sa vie tout doucement, quand, par malheur, à la suite d'une maladie de langueur, elle s'est vue réduite à la dernière misère. </s>
+	<s n="3">Alors Isabelle se mit servante chez une dame qui demeure ici près, et tous les jours la pauvre enfant portait à sa mère son dîner et son souper ; sa mère étant plus malade, Isabelle passait les nuits à veiller, sans se vanter de cela ; de façon qu'on ne l'a découvert qu'au bout d'un certain temps. </s>
+	<s n="4">La bonne fille était devenue maigre comme du bois, jamais ne se plaignait, et travaillait toujours ; enfin madame Dupré ayant appris tout cela, s'est chargée d'Isabelle, et la traite comme sa fille.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE, regardant Isabelle.</speaker>
+                        <p n="14">
+	<s n="1">La charmante enfant !... </s>
+	<s n="2">Venez ici, ma chère Isabelle... </s>
+	<s n="3">Mon Dieu, que je la trouve jolie ! </s>
+	<s n="4">Depuis que je sais cela surtout... </s>
+	<s n="5">Embrassez-moi, mon coeur.</s>
+</p>
+                        <stage type="kiss">Elle l'embrasse ; Isabelle lui baise la main. </stage>
+                        <p n="15">
+	<s n="1">Servante ! </s>
+	<s n="2">Avec cet air délicat... </s>
+	<s n="3">Quel force, quelles vertus un bon coeur peut donner !... </s>
+	<s n="4">Et votre mère est-elle rétablie ?</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="LA MARQUISE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="16">
+	<s n="1">Oui, madame, grâce à Dieu, et elle a repris son travail. </s>
+	<s n="2">Elle avait vendu le peu de meubles qu'elle possédait ; mais madame Dupré lui en a racheté, et même de plus une belle armoire de bois de noyer : ma mère est bien heureuse à présent.</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="17">
+	<s n="1">Bonne madame Dupré !... </s>
+	<s n="2">Comme vous devez l'aimer !</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="18">
+	<s n="1">Oh ! </s>
+	<s n="2">Oui, Madame.</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="19">
+	<s n="1">Il faut le lui prouver en suivant bien ses conseils, et en travaillant avec application.</s>
+</p>
+                        <stage type="get/give">Elle tire une bourse de sa poche et la lui donne.</stage>
+                        <p n="20">
+	<s n="1">Mais, tenez, mon enfant, vous serez bien aise, j'imagine de donner cela à votre mère ; Madame Dupré trouvera bon que vous acceptiez de moi cette petite preuve d'intérêt.</s>
+</p>
+                        <stage type="kiss">Elle l'embrasse encore.</stage>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="21">
+	<s n="1">Mon Dieu, Madame, je suis confuse...</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, bas à Annelle.</speaker>
+                        <p n="22">
+	<s n="1">Quelle aimable dame !...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="23">
+	<s n="1">Justine, je vous en prie, n'oubliez pas ma commission pour madame Dupré, au sujet de ma petite paysanne. </s>
+	<s n="2">Mesdemoiselles, je vous la recommande.</s>
+</p>
+                    </sp><!--@who="LA MARQUISE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="24">
+	<s n="1">Je voudrais remercier Madame... </s>
+	<s n="2">Mais je ne peux pas... j'ai le coeur si gros !...</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#la-marquise">
+                        <speaker>LA MARQUISE.</speaker>
+                        <p n="25">
+	<s n="1">Ne me parlez jamais de cela, mon enfant.... Adieu, je vous charge de dire à madame Dupré que sa bonté pour vous me la fait aimer encore davantage. Voilà véritablement une belle action, et qui doit vous inspirer une reconnaissance éternelle.</s>
+</p>
+                        <stage type="exit/follow">Elle sort ; toutes les jeunes filles la suivent jusqu'à la porte.</stage>
+                    </sp><!--@who="LA MARQUISE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Justine, Annette, Marthe, Joséphine, Isabelle.</head>
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien, y a-t-il dans le monde une plus charmante dame ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#toutes">
+                        <speaker>TOUTES À LA FOIS.</speaker>
+                        <p n="2">
+	<s n="1">Oh ! </s>
+	<s n="2">Non assurément.</s>
+</p>
+                    </sp><!--@who="TOUTES"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE, à Justine.</speaker>
+                        <p n="3">
+	<s n="1">Tenez, Mademoiselle, voyez ce qu'elle m'a donné. </s>
+</p>
+                        <stage type="give">Elle lui donne la bourse.</stage>
+                    </sp><!--@stage="toward"--><!--@who="ISABELLE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, après avoir compté l'argent.</speaker>
+                        <p n="4">
+	<s n="1">Il y a dix louis !...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="5">
+	<s n="1">Ma pauvre mère !... </s>
+	<s n="2">Comme elle sera joyeuse !... </s>
+	<s n="3">Mon Dieu, mademoiselle Justine, il est tard, mais pourtant je voudrais bien porter cela ce soir à ma mère...</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="6">
+	<s n="1">C'est juste ; Annette, veux-tu aller avec elle ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#annette">
+                        <speaker>ANNETTE.</speaker>
+                        <p n="7">
+	<s n="1">Moi, de tout mon coeur, me voilà prête.</s>
+</p>
+                    </sp><!--@who="ANNETTE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="8">
+	<s n="1">Que vous êtes bonne, ma chère Mademoiselle Annette... </s>
+	<s n="2">Mais, madame Dupré ne grondera-telle pas ?</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, à Isabelle.</speaker>
+                        <p n="9">
+	<s n="1">Non, j'en réponds.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, à Isabelle.</speaker>
+                        <p n="10">
+	<s n="1">D'ailleurs, pour que ta tâche d'aujourd'hui soit faite, je t'aiderai quand tu reviendras, et nous nous coucherons une heure plus tard.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="JOSÉPHINE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="11">
+	<s n="1">Je lui aiderai aussi, moi, d'autant que j'ai fini mon bonnet.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#isabelle">
+                        <speaker>ISABELLE.</speaker>
+                        <p n="12">
+	<s n="1">Merci, mesdemoiselles ; je vous assure que vous n'obligez pas une ingrate.</s>
+</p>
+                    </sp><!--@who="ISABELLE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE, à Isabelle.</speaker>
+                        <p n="13">
+	<s n="1">Attends que je t'embrasse... car je suis aussi aise que toi-même de ton bonheur. </s>
+	<s n="2">Allons, ne perds plus de temps ; va-t'en bien vite.</s>
+</p>
+                        <stage type="exit">Isabelle et Annette sortent.</stage>
+                    </sp><!--@who="JOSÉPHINE"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Justine, Marthe, Joséphine.</head>
+<stage type="work">Elles se remettent à l'ouvrage.</stage>
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="1">
+	<s n="1">Cette pauvre Isabelle, elle mérite bien d'être heureuse !... </s>
+	<s n="2">On frappe.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="2">
+	<s n="1">J'y vas.</s>
+</p>
+                        <stage type="stand/location">Elle se lève et va à la porte.</stage>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="3">
+	<s n="1">C'est peut-être Madame Dupré.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#josephine">
+                        <speaker>JOSÉPHINE.</speaker>
+                        <p n="4">
+	<s n="1">C'est une vieille Milady, nouvellement débarquée, car elle a un terrible baragouin, et qui demande des chiffons dans sa voiture. Je vais lui porter quelques vieux garde-boutiques qui sont là dans un carton, et elle achètera cela comme tout ce qu'il y a de plus nouveau...</s>
+</p>
+                    </sp><!--@who="JOSÉPHINE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="5">
+	<s n="1">Fi donc, Joséphine ! </s>
+	<s n="2">Est-ce qu'il faut tromper une dame parce qu'elle est étrangère ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="6">
+	<s n="1">J'entends, je crois, la voix de Madame Dupré.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="7">
+	<s n="1">Oui, elle parle à Joséphine...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#marthe">
+                        <speaker>MARTHE.</speaker>
+                        <p n="8">
+	<s n="1">Ah, les voici.</s>
+</p>
+                    </sp><!--@who="MARTHE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Madame Dupré, Justine, Marthe, Joséphine.</head>
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="1">
+	<s n="1">Allons, Joséphine, fermez la boutique, il est neuf heures.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="2">
+	<s n="1">Madame, savez-vous l'histoire d'Isabelle ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="3">
+	<s n="1">Oui ; Joséphine vient de m'apprendre ce trait généreux de madame la marquise de Lincé ; je n'en suis pas surprise, je sais d'elle mille autres traits de ce genre. </s>
+	<s n="2">Mais, mesdemoiselles, allez attendre Annette et Isabelle pour souper ; pendant, ce temps je causerai avec Justine; j'ai quelque chose à lui dire. </s>
+	<s n="3">Allez...</s>
+</p>
+                        <stage type="exit">Joséphine et Marthe sortent.</stage>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Madame Dupré, Justine.</head>
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="1">
+	<s n="1">Je viens, comme vous savez, de chez madame de Clémont, qui m'a chargée de chercher une femme de chambre pour Madame la Marquise de Lincé : elle me demande un bon sujet, une jeune fille enfin dont je puisse répondre, et j'ai jeté les yeux sur vous, ma chère Justine...</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="2">
+	<s n="1">Moi, Madame, vous quitter, après tout ce que je vous dois ! </s>
+	<s n="2">Non, il n'y a point d'avantages qui puissent me tenter à ce prix.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="3">
+	<s n="1">Mon enfant, je fais certainement un grand sacrifice en vous cédant ; mais Madame de Clémont est ma bienfaitrice, je me trouve trop heureuse de pouvoir lui donner cette preuve d'attachement, et je vous demande en grâce d'y consentir.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="4">
+	<s n="1">Mon Dieu, Madame, je ferai tout ce que vous m'ordonnerez ; cependant...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="5">
+	<s n="1">Vous aurez dans Madame de Lincé une maîtresse bonne, vertueuse...</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="6">
+	<s n="1">Je le sais, Madame ; et sûrement, sans le chagrin que j'ai de vous quitter, j'entrerais à son service avec la plus grande joie...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="7">
+	<s n="1">Elle part demain ; il faut, Justine, partir avec elle ; je l'ai promis à Madame de Clémont, qui le désire beaucoup.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="8">
+	<s n="1">Quoi ! Sitôt ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="9">
+	<s n="1">Oui, mon enfant, dès qu'on se décide à une chose, on doit y mettre toute la bonne grâce qu'on peut.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="10">
+	<s n="1">Mais, madame, je n'ai pas d'idée du service d'une dame, ni de la manière dont il faut se conduire dans une grande maison.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="11">
+	<s n="1">Il faut être polie avec tous les domestiques, n'avoir de familiarité avec aucun, et vous serez considérée de tous.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="12">
+	<s n="1">J'aurai un grand bonheur, c'est que Madame de Lincé est la bonté même, qu'elle n'a jamais de caprices, d'humeur...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="13">
+	<s n="1">Justine, il n'y a personne de parfait sur la terre ; il faut vous attendre à cela ; mais quand on trouve dans une maîtresse de la justice et un bon coeur, on doit tout supporter sans peine.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="14">
+	<s n="1">Vous croyez que Madame de Lincé a des défauts?...</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="15">
+	<s n="1">Je ne lui en connais point; je sais seulement qu'on ne peut manquer d'en trouver à la personne qu'on voit tous les jours, surtout lorsqu'elle n'a nul intérêt à nous plaire, et que rien ne l'oblige à se contraindre avec nous.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="16">
+	<s n="1">Mais comment faudra-t-il m'y prendre pour lui plaire, pour m'en faire aimer ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="17">
+	<s n="1">En vous attachant véritablement à elle ; si vous l'aimez, elle vous aimera : ce moyen seul peut réussir; n'en cherchez point d'autres, vous vous abuseriez.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="18">
+	<s n="1">Oh ! </s>
+	<s n="2">Moi, j'aimerai ma maîtresse de toute mon âme, j'en suis bien sûre.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="19">
+	<s n="1">Alors vous serez parfaitement heureuse. </s>
+	<s n="2">Ne parlez jamais de votre maîtresse à qui que ce soit que pour en dire du bien : vous devez cacher ses défauts, et vous glorifier de ses bonnes qualités. </s>
+	<s n="3">Quand je servais Madame de Clémont, je me souviens que j'étais plus fière, lorsqu'on la vantait, que si on m'eût louée moi-même ; je me regardais dans sa maison comme dans ma famille ; je n'avais d'intérêts que les siens ; loin de songer à me faire donner, je ne m'occupais que des moyens de lui épargner de la dépense ; je vivais bien avec mes camarades ; je n'avais jamais de dispute avec personne : mais si je voyais quelque domestique se mal conduire et faire du tort à ma maîtresse, après m'en être bien assurée (car il ne faut pas soupçonner légèrement), j'en avertissais sans balancer. </s>
+	<s n="4">De cette manière, dans les quinze ans que j'ai servi Madame de Clémont, je puis me vanter de lui avoir été d'une grande utilité, et d'avoir établi un excellent ordre dans sa maison. </s>
+	<s n="5">J'en suis bien récompensée, d'abord par le témoignage de ma conscience, et enfin par les bienfaits sans nombre de cette bonne maîtresse. </s>
+	<s n="6">J'avais pour compagne une fille avare, intéressée, qui n'avait d'autre idée que celle d'accrocher des présents et d'accumuler des profits : elle est sortie de chez Madame de Clémont avec beaucoup de robes, de linge, et environ trois ou quatre mille francs d'argent comptant, qu'elle avait acquis aux dépens de la probité. </s>
+	<s n="7">Comme elle s'était payée par ses mains, elle n'a point eu de récompense ; elle a perdu, pour de petites pilleries qui ne lui ont pas assuré son pain, et sa réputation et une pension ; et moi, qui n'avais rien amassé, on m'a fait une fortune qui surpassait toutes mes espérances.</s>
+</p>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="20">
+	<s n="1">Je vous écoute, Madame, avec autant de plaisir que d'attention, car ces raisonnements sont trop clairs pour être au-dessus de ma portée ; je pense d'ailleurs que, dans tous les états de la vie, la satisfaction de soi-même et une bonne réputation valent tous les trésors du monde.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-dupre">
+                        <speaker>MADAME DUPRÉ.</speaker>
+                        <p n="21">
+	<s n="1">Conserve ces honnêtes sentiments, ma chère fille ; sois toujours pieuse, vertueuse ; préfère, honneur à tout, et dans ton humble condition tu seras respectable, honorée, et la fortune même viendra te chercher et préviendra tes voeux. </s>
+	<s n="2">Mais, allons retrouver ma mère, elle sera bien aise d'apprendre cette bonne nouvelle, car elle est attachée à la famille de Madame de Clémont autant que, je le suis moi-même. </s>
+	<s n="3">Viens, mon enfant.</s>
+</p>
+                        <stage type="touch/exit">Elle lui prend le bras. Elles sortent.</stage>
+                    </sp><!--@who="MADAME DUPRÉ"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>
