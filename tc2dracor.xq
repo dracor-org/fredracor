@@ -776,8 +776,11 @@ declare function local:construct-tei (
   $doc as element(),
   $orig-name as xs:string
 ) as node() {
-  let $id := string($id-map//play[@file eq $orig-name]/@id)
-  let $wikidata-id := string($id-map//play[@file eq $orig-name]/@wikidata)
+  let $id-entry := $id-map//play[@file eq $orig-name]
+  let $id := string($id-entry/@id)
+  let $wikidata-id := string($id-entry/@wikidata)
+  let $written := tokenize($id-entry/@written, '-')
+  let $print := tokenize($id-entry/@print, '-')
 
   let $title := element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
     attribute type {'main'},
@@ -879,10 +882,38 @@ declare function local:construct-tei (
     - MOLIERE_MEDICINVOLANT.xml has a second docDate with an empty @value
   :)
   let $doc-date := $doc//*:docDate[matches(@value, '^\d{4}$')][1]
-  let $print-date := if ($doc-date) then
+  let $print-date := if (count($print) = 2) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+      attribute type {'print'},
+      attribute notBefore {$print[1]},
+      attribute notAfter {$print[2]},
+      ""
+    }
+  else if (count($print) = 1) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+      attribute type {'print'},
+      attribute when {string($print)},
+      ""
+    }
+  else if ($doc-date) then
     element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
       attribute type {'print'},
       attribute when {string($doc-date/@value)},
+      ""
+    }
+  else ()
+
+  let $written-date := if (count($written) = 2) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+      attribute type {'written'},
+      attribute notBefore {$written[1]},
+      attribute notAfter {$written[2]},
+      ""
+    }
+  else if (count($written) = 1) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+      attribute type {'written'},
+      attribute when {string($written)},
       ""
     }
   else ()
@@ -940,6 +971,7 @@ declare function local:construct-tei (
               </licence>
             </availability>
             <bibl type="originalSource">
+              {$written-date}
               {$print-date}
               {$premiere-date}
               <idno type="URL">{string($doc//*:permalien)}</idno>
