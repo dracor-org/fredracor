@@ -6,13 +6,20 @@ Based on the extensive work from Paul Fièvre, we are working towards a
 DraCor-ready version of the Théâtre Classique. The result should become a valid
 TEI P5 resource.
 
-By now, the 1452 files from the source have been structurally cleaned and
+By now, the 1500 files from the source have been structurally cleaned and
 converted. We copied some information from the `castList` to the `particDesc`
 section and tried to preserve as much as possible.
 
 Besides the fact that all texts are out of copyright, the files (including
 intellectual work represented as markup) is – according to the source files –
-licensed under a [CC BY NC SA 3.0]() licence.
+licensed under a [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+licence.
+
+## To cite FreDraCor …
+
+… we suggest the following:
+
+* French Drama Corpus (FreDraCor): A TEI P5 Version of Paul Fièvre's "Théâtre Classique" Corpus. Edited by Carsten Milling, Frank Fischer and Mathias Göbel. Hosted on GitHub, 2021–. https://github.com/dracor-org/fredracor
 
 ## Changes made on top of the source
 
