@@ -1,7 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script is used to convert the original corpus to FreDraCor using one or
 # more eXistDB instances in parallel. To spin up the databases podman is used
 # when available, otherwise it falls back to docker.
+
+declare -A SLUGS
 
 usage () {
   cat <<EOF
@@ -77,10 +79,14 @@ process_slice () {
   for i in $(seq $instance ${#PORTS[@]} $num); do
     file=$(list_sources | head -$i | tail -1)
     file_name=$(basename $file)
-    dracor_name=$(
-      echo $file_name | tr '[:upper:]' '[:lower:]'  | \
-      sed 's/%20//g' | sed 's/_/-/g'
-    )
+    if [ -n "${SLUGS[$file_name]}" ]; then
+      dracor_name="${SLUGS[$file_name]}.xml"
+    else
+      dracor_name=$(
+        echo $file_name | tr '[:upper:]' '[:lower:]'  | \
+        sed 's/%20//g' | sed 's/_/-/g'
+      )
+    fi
   
     if [[ -n "$PROGRESS" ]]; then
       # create dummy files for determining progress
@@ -210,6 +216,17 @@ then
   exit 1
 fi
 cd - > /dev/null
+
+# build list of names
+
+SLUGS=()
+for line in $(xsltproc slugs.xsl ids.xml); do
+  # echo $line
+  file=$(echo $line | cut -d: -f1)
+  name=$(echo $line | cut -d: -f2)
+  SLUGS[$file]=$name
+done
+
 
 THREADS=${THREADS:-1}
 [ -z $PORT ] && echo "Threads: $THREADS"

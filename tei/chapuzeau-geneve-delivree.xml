@@ -1,0 +1,804 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Genève Délivrée</title>
+                <title type="sub">Comédie sur l'Escalade</title>
+                <title type="sub">Composée en 1662, par Samuel Chappuzeau, homme de Lettres</title>
+                <author>
+      <idno type="isni">0000000080777346</idno>
+      <idno type="wikidata">Q330573</idno>
+      <persName>
+        <forename>Samuel</forename>
+        <surname>Chappuzeau</surname>
+      </persName>
+    </author><!--Samuel CHAPPUZEAU (1625-1701)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001476</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/CHAPUZEAU_GENEVEDELIVREE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/CHAPUZEAU_GENEVEDELIVREE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1862"/>
+                        <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k65783834</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-bon-genie" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le-bon-genie</persName>
+                    </person>
+                    <person xml:id="geneve" sex="MALE">
+                        <persName>Genève</persName>
+                    </person>
+                    <person xml:id="d-attignac-l-aine" sex="MALE">
+                        <persName>D'attignac l'aîné</persName>
+                    </person>
+                    <person xml:id="d-attignac-le-cadet" sex="MALE">
+                        <persName>D'attignac le cadet</persName>
+                    </person>
+                    <person xml:id="d-albigny" sex="MALE">
+                        <persName>D'albigny</persName>
+                    </person>
+                    <person xml:id="le-pere-alexandre" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le-pere-alexandre</persName>
+                    </person>
+                    <person xml:id="d-andelot" sex="MALE">
+                        <persName>D'andelot</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>vers</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+<front>
+	<docTitle>
+		<titlePart type="main">GENÈVE DÉLIVRÉE</titlePart>
+		<titlePart type="sub">COMÉDIE SUR L'ESCALADE</titlePart>
+		<titlePart type="sub">Composée en 1662, par Samuel Chappuzeau, homme de Lettres</titlePart>
+	</docTitle> 
+	<docDate when="1862">1862</docDate>
+	
+	<div type="docImprint">
+		<!--TODO: handling of editor name at this place unclear <editor value="GALISSE, FICK">Publié par J.-J.-G. Galisse et Ed. Fick.</editor>-->
+		<div type="printer">
+                    <p>Imprimerie de Jules-Guillaume Fick</p>
+                </div><!--@id="FICK"-->
+	</div>
+	<div type="preface">
+                <head>AU LECTEUR.</head>
+		<p>Dans ce petit poème, que j'ai disposé en faveur de la jeunesse pour l'accoutumer à se produire en public, je n'avance que ce que m'ont produit quelques mémoires imprimés, touchant l'entreprise faite sur Genève le 12 décembre 1602. Je me suis attaché autant que je l'ai pu à toutes les circonstances ; je n'en ai peut-être oublié aucune, et ne crois pas avoir rien altéré de la vérité, si j'en excepte deux choses, que les privilèges de la poésie pour l'une, et la bienséance pour l'autre, ont dû me permettre. J'ai donné au jeune d'Attignac des sentiments d'honneur et de vertu, différents sentiments de l'aîné ; et cette opposition, outre qu'elle  ne choque point le vraisemblable, et que deux frères qui n'ont pas toujours les mêmes inclinations se communiquent plus librement leurs pensées que deux étrangers, sert beaucoup à l'intelligence de l'histoire, et des motifs qui poussent les auteurs de l'entreprise. L'autre licence que j'ai cru devoir prendre, et dont je ne serai sans doute pas désavoué, est lors que je rejette toute l'imprudence et l'injustice de l'action, que d'autres moins discrets, ou moins bien instruits pourraient imputer au Prince, sur les mauvais conseils de deux de ses serviteurs, et mêmes étrangers de son état, qui ne se souciaient pas beaucoup de ménager, ni sa gloire ni ses forces, et qui manquaient de cet amour sincère, que des sujets naturels ont ordinairement pour leur Prince légitime, lorsque je rejette, dis-je, cette méchante action, sur un d'Albigny né Français, qui avait déserté le service de son Roi, et d'un père Alexandre, écossais qui s'était retiré depuis quelques années en Savoie. Je parle donc de la nation et du souverain avec respect, et avec bien plus de circonspection que n'en apporte à l'égard d'un Prince qui voit le soleil se lever et se coucher dans ses États, une des premières villes des Provinces-Unies, dans la magnifique représentation qu'elle donne à tout son peuple, et à tous ceux qui se rendent dans le grand amphithéâtre qu'elle fait dresser, de sa fameuse délivrance sous le Duc d'Albe. Ne puis- e pas dire en passant que les noms de d'Albe et de d'Albigny ont quelque rapport, comme il y en a eu beaucoup et dans leurs desseins et dans leur humeur portée au sang, dont tous les historiens n'ont pu se taire quand il leur a fallu parler du premier ? Pour le Père Alexandre, il ne doit pas se plaindre que le jeune d'Attignac, imbu des maximes de ceux de sa compagnie, s'en explique de même qu'une bonne partie de la communion Romaine s'en est expliquée en France et ailleurs : comme on ne doit pas aussi trouver mauvais que ce père, en revanche, traite avec mépris et Genève et la doctrine qui y est prêchée. J'ajouterai qu'un vieux vaudeville qui court encore parmi le peuple, m'a fourni la matière d'une scène où je fais un matamore et un capitan de d'Albigny. Enfin le bon Génie que je donne à la ville de Genève ne doit m'attirer aucun procès ; et sans alléguer que Dieu commande non - seulement en général à ses anges, de nous garder en quelque lieu que nos pas se portent : mais aussi qu'il en commande un en particulier pour se mettre entre l'armée de Pharaon et l'armée d'Israël, et un autre encore pour battre les troupes assyriennes en faveur d'Esechias ; et qu'il en peut commettre un de même quand il lui plaira, à la conservation d'une ville où sa vérité est annoncée, sans alléguer encore la liberté que la poésie, plus souveraine que le style libre, prétend se donner, pour couper chemin à tout, par ce bon Génie, je n'entends autre chose que ce que des auteurs très sages et très chrétiens ont voulu entendre par leur destin, à savoir la providence particulière de DIEU sur Genève, comme je le témoigne assez dans ce vers qu'il dit d'abord :</p>
+			<l>Ou sans moi, mais plutôt sans le Dieu que tu sers,</l>
+		<p>et dans beaucoup d'autres où il exhorte incessamment la ville à reconnaître l'auteur de sa délivrance .</p>
+	</div>	
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#geneve">GENÈVE</role><!--@sex="1"--><!--@type="A"--><!--@statut="allégorie"--><!--@age="A"-->.</castItem>
+		<castItem>
+                    <role corresp="#le-bon-genie-de-la-ville">LE BON GÉNIE DE LA VILLE</role><!--@sex="1"--><!--@type="A"--><!--@statut="allégorie"--><!--@age="A"-->.</castItem>
+		<castItem>
+                    <role corresp="#d-albigny">D'ALBIGNY</role><!--@sex="1"--><!--@type="H"--><!--@statut="général"--><!--@age="A"-->, Lieutenant Général du Duc de Savoie.</castItem>
+		<castItem>
+                    <role corresp="#d-attignac-l-aine">D'ATTIGNAC L'AÎNÉ</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"-->, Gentilhomme savoyard.</castItem>
+		<castItem>
+                    <role corresp="#d-attignac-le-cadet">D'ATTIGNAC LE CADET</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"-->, Gentilhomme savoyard.</castItem>
+		<castItem>
+                    <role corresp="#d-andelot">D'ANDELOT</role><!--@sex="1"--><!--@type="H"--><!--@statut="chevalier"--><!--@age="A"-->, chevalier Comtois.</castItem>
+		<castItem>
+                    <role corresp="#le-pere-alxeandre">LE PÈRE ALXEANDRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="religieux"--><!--@age="A"-->, jésuite écossais.</castItem>
+		<castItem>
+                    <role corresp="#un-garde-d-albigny">UN GARDE D'ALBIGNY</role><!--@sex="1"--><!--@type="H"--><!--@statut="garde"--><!--@age="A"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Genève" country="Suisse" periode="XVIIème" gps="">La scène est au Camp de Savoie sur la rivière d'Arve, près de Genève.</set>-->
+	<note>De ce texte de 1662, la première édition connue est une édition suisse de 1822.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>PROLOGUE</head>
+<div type="scene" n="1">
+                    <head>Genève et son bon Genie.</head>
+<sp who="#le-bon-genie">
+                        <speaker>LE BON GÉNIE.</speaker>
+                        <l n="1">Genève, tu me vois toujours auprès de toi,</l>
+                        <l n="2">Tu peux te reposer sur mon zèle et ma foi.</l>
+                        <l n="3">Je suis ton bon génie, et depuis plusieurs lustres</l>
+                        <l n="4">Tu reçois de mes soins mille marques illustres.</l>
+                        <l n="5">Tu jouis d'un repos et d'une calme si doux,</l>
+                        <l n="6">Qu'il rend de ton bonheur tous les peuples jaloux.</l>
+                        <l n="7">Des sages magistrats,, qui pour toi tiennent ferme,</l>
+                        <l n="8">L'esprit agit toujours, l'oeil jamais ne se ferme :</l>
+                        <l n="9">Ce sont des surveillants que le ciel t'a donnés,</l>
+                        <l n="10">Que tu dois plus chérir que des fronts couronnés.</l>
+                        <l n="11">Tu vois du Dieu puissant les fidèles ministres</l>
+                        <l n="12">Qui détournent de toi tous accidents sinistres,</l>
+                        <l n="13">Ces Moïses ardents les mains toujours en haut,</l>
+                        <l n="14">Tendis que du démon tu repousses l'assaut,</l>
+                        <l n="15">Dont le zèle t'échauffe, et l'exemple t'anime</l>
+                        <l n="16">À fuir de même qu'eux jusqu'à l'ombre du crime,</l>
+                        <l n="17">Et qui par la vigueur de leurs doctes leçons</l>
+                        <l n="18">Savent rompre des coeurs les plus fermes glaçons</l>
+                        <l n="19">Tes murs où retentit la voix de l'Évangile</l>
+                        <l n="20">Ont la gloire d'offrir à tous un doux asile ;</l>
+                        <l n="21">L'abondance qui règne autour de tes remparts</l>
+                        <l n="22">Semble les inviter chez toi de toutes parts.</l>
+                        <l n="23">Ce petit océan, ces monts, et cette plaine</l>
+                        <l n="24">Qui rendent ton assiette et si belle et si saine,</l>
+                        <note type="L">Il s'agit du Rhône.</note>
+                        <l n="25">Ce fleuve qu'en ton sein tu sembles concevoir</l>
+                        <l n="26">Font naître à mille gens le désir de te voir .</l>
+                        <l n="27">Cependant tes enfants, par un bonheur insigne,</l>
+                        <l n="28">Chacun sous son figuier, et chacun sous sa vigne,</l>
+                        <l n="29">Mieux que sous les lambris des plus vastes palais,</l>
+                        <l n="30">Gouttent tous les plaisirs d'une profonde paix.</l>
+                        <l n="31">Te souvient-il encor de cette nuit fatale</l>
+                        <l n="32">Où je veillai pour toi d'une ardeur sans égale,</l>
+                        <l n="33">Où sans moi, mais plutôt sans le Dieu que tu sers,</l>
+                        <l n="34">Tu perdais tous ces biens, tu tombais dans les fers ?</l>
+                        <l n="35">Où tes fiers ennemis, montés sur tes murailles,</l>
+                        <l n="36">T'allaient en un moment combler de funérailles,</l>
+                        <l n="37">Si de ces ennemis qui creusaient ton cercueil</l>
+                        <l n="38">Le Ciel en un moment n'eut abattu l'orgueil ?</l>
+                    </sp><!--@who="LE BON GÉNIE"-->
+<sp who="#geneve">
+                        <speaker>GENÈVE.</speaker>
+                        <l n="39">Oui, je m'en ressouviens, ô fidèle Génie !</l>
+                        <l n="40">Tu m'aidas puissamment à fuir leur tyrannie :</l>
+                        <l n="41">Tu bannis de mes yeux un funeste sommeil</l>
+                        <l n="42">Qui ne m'aurait offert qu'horreur à mon réveil.</l>
+                        <l n="43">Oui, je m'en ressouviens, et d'un bienfait si rare</l>
+                        <l n="44">L'image de mon coeur jamais ne se sépare ;</l>
+                        <l n="45">J'en rends incessamment grâces au souverain</l>
+                        <l n="46">Qui fit à cette nuit suivre un jour si serein.</l>
+                        <l n="47">Tous les ans de ce jour pour eux si plein de gloire,</l>
+                        <l n="48">Mes enfants à l'envi célèbrent la mémoire.</l>
+                        <l n="49">Ils font voir à l'envi des cours reconnaissants</l>
+                        <l n="50">Et poussent vers le Ciel leurs voeux et leurs encens.</l>
+                        <l n="51">Ils ne peuvent avoir, après cette assistance,</l>
+                        <l n="52">De souvenir plus doux que de leur délivrance ;</l>
+                        <l n="53">Je les vois s'embraser d'un zèle tout nouveau</l>
+                        <l n="54">Aussitôt qu'à leurs yeux s'en offre le tableau ;</l>
+                        <l n="55">Et méprisant du siècle et les jeux et les fables,</l>
+                        <l n="56">Ils font de ce récit leurs plaisirs véritables.</l>
+                    </sp><!--@who="GENÈVE"-->
+<sp who="#le-bon-genie">
+                        <speaker>LE BON GÉNIE.</speaker>
+                        <l n="57">Hé bien, de ce récit je vais les réjouir;</l>
+                        <l n="58">Que chacun avec toi se dispose à l'ouïr !</l>
+                        <l n="59">Paraissez ennemis, et dressés vos échelles</l>
+                        <l n="60">Qui portaient dans ces murs vos troupes criminelles !</l>
+                        <l n="61">Mais toi ! Parais aussi, grand Dieu, qui des humains</l>
+                        <l n="62">Renverses tout d'un coup les inutiles desseins !</l>
+                    </sp><!--@who="LE BON GÉNIE"-->
+</div>
+</div>
+<div type="acte" n="2">
+                <head>GENÈVE DÉLIVRÉE</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. D'Attignac l'aisné, d'AtTignac le cadet.</head>
+<sp who="#d-attignac-l-aine">
+                        <speaker>L'AÎNÉ.</speaker>
+                        <l n="63">Mon frère, vous tremblez ; d'où naît cette faiblesse ?</l>
+                        <l n="64">Le courage au besoin honteusement vous laisse ?</l>
+                        <l n="65">Le grand nom d'Attignac que nous portons tous deux</l>
+                        <l n="66">Nous défend de trouver rien de trop hasardeux.</l>
+                        <l n="67">Quoi ! Genève est à nous, le Ciel nous l'abandonne,</l>
+                        <l n="68">Et lorsque tout nous rit, le péril vous étonne ?</l>
+                        <l n="69">Déjà jusqu'au fossé l'accès nous est permis,</l>
+                        <l n="70">Et vous craignez encor des peuples endormis.</l>
+                    </sp><!--@who="D'ATTIGNAC L'AÎNÉ"-->
+<sp who="#d-attignac-le-cadet">
+                        <speaker>LE CADET.</speaker>
+                        <l n="71">Oui, mon frère, je crains, à vous parler sans feinte ;</l>
+                        <l n="72">Mais d'une indigne peur je n'ai point l'âme atteinte.</l>
+                        <l n="73">Le Danger de mourir n'alarme point mon coeur,</l>
+                        <l n="74">Et j'ai donné cent fois des marques de valeur.</l>
+                        <l n="75">La maison d'Attignac qui m'enfle le courage</l>
+                        <l n="76">Me laisse avec cela des vertus en partage ;</l>
+                        <l n="77">La justice en est une, et je crains aujourd'hui</l>
+                        <l n="78">Qu'elle n'ait plus chez nous d'asile ni d'appui.</l>
+                        <l n="79">Oui ! Je crains en effet, je crains, pour ma patrie,</l>
+                        <l n="80">Que sa gloire ne soit honteusement flétrie,</l>
+                        <l n="81">Que l'on ne lui reproche avec juste raison</l>
+                        <l n="82">Au milieu d'une paix sa lâche trahison ;</l>
+                        <l n="83">Que le Ciel en courroux, qui punit les parjures</l>
+                        <l n="84">N'aide les Genevois à venger leurs injures</l>
+                        <l n="85">Et qu'il ne reste au Duc, après cette action,</l>
+                        <l n="86">Que honte, que regret, et que confusion</l>
+                    </sp><!--@who="D'ATTIGNAC LE CADET"-->
+<sp who="#d-attignac-l-aine">
+                        <speaker>L'AÎNÉ.</speaker>
+                        <l n="87">Hà ! Cessez ce discours, bannissez ce scrupule !</l>
+                        <l n="88">Votre crainte, mon frère, est vaine et ridicule ;</l>
+                        <l n="89">Un prince a toujours droit, et de sa volonté</l>
+                        <l n="90">Dépendant en tous lieux les lois et l'équité :</l>
+                        <l n="91">Son canon est sa règle, et sa raison l'épée.</l>
+                        <l n="92">Quittez donc cette erreur dont votre âme est frappée,</l>
+                        <l n="93">Cette erreur qui pour vous enfin me fait rougir ;</l>
+                        <l n="94">Notre Prince n'agit que comme il doit agir ! </l>
+                    </sp><!--@who="D'ATTIGNAC L'AÎNÉ"-->
+<sp who="#d-attignac-le-cadet">
+                        <speaker>LE CADET.</speaker>
+                        <l n="95">Dites, dites plutôt, qu'il agit par l'organe</l>
+                        <l n="96">De ces docteurs rusés, ces esprits de chicane,</l>
+                        <note type="L">Ignace de Loyola (1491-1556), prêtre basque-espagnol créateur de l'ordre des Jésuites. Canonisé le 12 mars 1662 par Grégoire XV.</note>
+                        <note type="L">Alexander Hume, jésuite d'origine écossaise.</note>
+                        <l n="97">Et qu'un père Alexandre, instruit dans Loyola,</l>
+                        <l n="98">Pas ses mauvais conseils l'a porté jusque là.</l>
+                        <l n="99">On ne le voit que trop, ces bonnets à trois cornes</l>
+                        <l n="100">À leur ambition ne mettent point de bornes :</l>
+                        <l n="101">Il faut pour l'assouvir que le Duc aujourd'hui</l>
+                        <l n="102">Permette une action si peu digne de lui !</l>
+                        <l n="103">On l'abuse, et ces gens ont d'étranges maximes.</l>
+                        <l n="104">Souvent pour des vertus ils font passer des crimes :</l>
+                        <l n="105">À qui n'est pas des leurs, ne point garder la foi ;</l>
+                        <l n="106">Pour la religion, attenter sur un Roi ;</l>
+                        <l n="107">Pour sauver son honneur, assassiner son frère ;</l>
+                        <l n="108">Ce sont de leurs leçons que l'on n'approuve guère</l>
+                        <l n="109">Genève est dans l'erreur, et c'est de leur aveu</l>
+                        <l n="110">Que l'on court l'en tirer par le fer et le feu ;</l>
+                        <l n="111">Que l'on court l'en tirer avec peu de courage,</l>
+                        <l n="112">Puisqu'on choisit la nuit pour ce honteux carnage !</l>
+                        <l n="113">Il faut de cette erreur autrement le guérir ;</l>
+                        <l n="114">Ce n'est pas l'en tirer, c'est l'y faire périr !</l>
+                    </sp><!--@who="D'ATTIGNAC LE CADET"-->
+<sp who="#d-attignac-l-aine">
+                        <speaker>L'AÎNÉ</speaker>
+                        <l n="115">Enfin, à vous ouïr, je vous croirai sans peine</l>
+                        <l n="116">Plus habile orateur que vaillant capitaine ;</l>
+                        <l n="117">Vraiment, pour un soldat, c'est en savoir beaucoup.</l>
+                        <l n="118">Allons, mon frère, allons donner le premier coup !</l>
+                        <l n="119">Nos gens sont avancés, nos échelles sont prêtes ;</l>
+                        <l n="120">Ajoutons cette ville à nos autres conquêtes.</l>
+                        <l n="121">Tous les chemins sont beaux contre des ennemis ;</l>
+                        <l n="122">Soit ruse, soit valeur, tout en guerre est permis</l>
+                        <l n="123">Et l'intérêt du Ciel se venant joindre au nôtre,</l>
+                        <l n="124">Nous devons tout oser, et pour l'un et pour l'autre !</l>
+                        <l n="125">D'Albigny qui nous suit, ce vaillant général...</l>
+                    </sp><!--@who="D'ATTIGNAC L'AÎNÉ"-->
+<sp who="#d-attignac-le-cadet">
+                        <speaker>LE CADET.</speaker>
+                        <l n="126">D'Albigny, croyez-moi, causera bien du mal ;</l>
+                        <l n="127">Lui seul inspire au Duc une action si noire</l>
+                        <l n="128">Qui chez tous nos voisins va ternir sa mémoire.</l>
+                        <l n="129">Ayant osé trahir et la France et son Roi,</l>
+                        <l n="130">Au Duc bien aisément il peut manquer de foi,</l>
+                        <l n="131">Et dans l'espoir douteux d'une honteuse proie </l>
+                        <l n="132">Il expose aujourd'hui l'honneur de la Savoie.</l>
+                        <l n="133">Non, je connais le Duc, il a trop d'équité</l>
+                        <l n="134">Pour former un dessein si plein de lâcheté ;</l>
+                        <l n="135">Il a l'esprit trop bon, il paraît trop habile</l>
+                        <l n="136">Pour s'en persuader le succès si facile.</l>
+                        <l n="137">C'est ainsi que jadis, un Duc_d'Albe trop vain</l>
+                        <l n="138">Pour vouloir tout gagner, perdit tout à la fin,</l>
+                        <l n="139">De maître qu'il servait ménageant mal les forces,</l>
+                        <l n="140">La liberté bientôt fit goûter ses amorces ;</l>
+                        <l n="141">Le peuple se révolte, et l'on a vu soudain</l>
+                        <l n="142">Six provinces s'unir contre leur souverain.</l>
+                        <l n="143">Au milieu de la paix n'allumons point la guerre,</l>
+                        <l n="144">Nous respirons à peine après un long tonnerre ;</l>
+                        <l n="145">D'Albigny fit toujours des projets trop hardis : </l>
+                        <l n="146">Nous n'avons point Genève, et je vous le prédis.</l>
+                    </sp><!--@who="D'ATTIGNAC LE CADET"-->
+<sp who="#d-attignac-l-aine">
+                        <speaker>L'AÎNÉ.</speaker>
+                        <l n="147">Le voici ! Cachez-lui du moins votre faiblesse.</l>
+                    </sp><!--@who="D'ATTIGNAC L'AÎNÉ"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. D'Antignac l'aisné et le cadet, d'Albigny, d'Andelor.</head>
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="148">Il est temps de marcher, amis, l'heure nous presse !</l>
+                        <l n="149">Brunaulieu, Chaffardon, Payen, La_Tour, Sonnaz,</l>
+                        <l n="150">Sont tous au pied du mur ; et vous ne suivez pas ?</l>
+                        <l n="151">Qui vous retient ici, jeunesse magnanime,</l>
+                        <l n="152">Pour ne vous pas hâter d'acquérir de l'estime ?</l>
+                        <l n="153">Vos vaillants compagnons peut-être sont aux coups ;</l>
+                        <l n="154">si vous tardez encor, tout se fera sans vous !</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#d-attignac-l-aine">
+                        <speaker>D'ATTIGNAC L'AÎNÉ.</speaker>
+                        <l n="155">Nous attendions votre ordre, et que l'heure donnée</l>
+                        <l n="156">Avançât le succès d'une nuit fortunée.</l>
+                        <l n="157">Nous y courons tous deux, la gloire nous l'enjoint,</l>
+                        <l n="158">Et Genève sans nous ne succombera point.</l>
+                    </sp><!--@who="D'ATTIGNAC L'AÎNÉ"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="159">Oui, de quelque côté que tourne la victoire,</l>
+                        <l n="160">Nous voulons partager, ou la honte ou la gloire ;</l>
+                        <l n="161">Et di dans ce dessein, il faut vaincre ou périr,</l>
+                        <l n="162">Et nous savons combattre, et nous savons mourir.</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="163">Hà, vous ne mourrez point, la victoire est certaine !</l>
+                        <l n="164">Tout est bien concerté ; vous monterez sans peine ;</l>
+                        <l n="165">Nous avons des amis, et vous verrez d'en bas</l>
+                        <l n="166">Des gens vous inviter et vous rendre les bras.</l>
+                        <l n="167">Deux cents hommes de coeur doivent vous faire escorte ;</l>
+                        <l n="168">Et d'abord le pétard ayant ouvert la porte</l>
+                        <l n="169">sans donner au bourgeois le temps de se lever,</l>
+                        <l n="170">Nos troupes à l'instant iront tout achever.</l>
+                        <l n="171">Dans l'ombre de la nuit, lorsque tout est paisible,</l>
+                        <l n="172">L'entreprise est aisée, et l'issue infaillible .</l>
+                        <l n="173">Mais voici le bon père, et nous allons savoir</l>
+                        <l n="174">Si chacun se dispose à faire son devoir.</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. D'Arrignac l'aîné, ď'Artignac le cadet, d'Albigny.</head>
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="175">Hé bien, nos gens enfin montrent-ils du courage ?</l>
+                        <l n="176">La peur n'est-elle point peinte sur leur visage ?</l>
+                        <l n="177">sont-ils bien résolus, et marchent-ils d'un pas</l>
+                        <l n="178">À vous faire juger qu'ils bravent le trépas ?</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#le-pere-alexandre">
+                        <speaker>LE PÈRE ALEXANDRE.</speaker>
+                        <l n="179">Oui, chaque soldat porte un front de capitaine,</l>
+                        <l n="180">Chacun tient en les mains la victoire certaine,</l>
+                        <l n="181">Chacun court au triomphe et le promet demain</l>
+                        <l n="182">D'un honneur immortel l'inestimable gain.</l>
+                        <l n="183">Le seul nom de Jésus leur donne à tous des ailes ;</l>
+                        <l n="184">sans en sentir le poids, ils portent leurs échelles ;</l>
+                        <l n="185">La joie est dans leurs yeux et leur bouillante ardeur</l>
+                        <l n="186">Me fait de leur courage admirer la grandeur.</l>
+                        <l n="187">Et vous, braves guerriers, allez, allez les joindre :</l>
+                        <l n="188">Si le péril est grand, la gloire n'est pas moindre.</l>
+                        <l n="189">Mais, que dis-je ? Non, non, je m'abuse en ce point :</l>
+                        <l n="190">Hé, pourquoi vous parler d'un péril qui n'est point ?</l>
+                        <l n="191">Vous ne pouvez manquer cette juste entreprise ;</l>
+                        <l n="192">Votre Prince l'ordonne, et le Ciel l'autorise !</l>
+                        <l n="193">Le monstre de l'erreur dans ces murs renfermé</l>
+                        <l n="194">Doit au fond de leurs eaux être enfin abîmé.</l>
+                        <l n="195">Il faut dans ce grand lac noyer cette hérésie</l>
+                        <l n="196">Qui de mille autres lieux s'est hardiment saisie :</l>
+                        <l n="197">Il faut par le tranchant de vos brillants aciers</l>
+                        <l n="198">Faire courir la mort dedans tous les quartiers !</l>
+                        <l n="199">Faire couler le sang, par le fer et les flammes,</l>
+                        <l n="200">Des jeunes et des vieux, des hommes et des femmes !</l>
+                        <l n="201">Il faut à la pitié refuser tout crédit</l>
+                        <l n="202">Et sans rien épargner tout mettre à l'interdit !</l>
+                        <l n="203">Par de si beaux exploits, vous vivrez dans l'histoire,</l>
+                        <l n="204">Vous en verrez partout célébrer la mémoire :</l>
+                        <l n="205">Et ce monstre par vous heureusement dompté</l>
+                        <l n="206">Va rendre vos noms chers à la postérité.</l>
+                        <l n="207">Si j'ajoute du Ciel la conquête infaillible,</l>
+                        <l n="208">Pouvez-vous rien trouver de rude ou d'impossible ?</l>
+                        <l n="209">Ce mur est l'échelon qui peut vous y servir</l>
+                        <l n="210">Et les violents seuls ont droit de le gravir .</l>
+                    </sp><!--@who="LE PÈRE ALEXANDRE"-->
+<sp who="#d-attignac-le-cadet">
+                        <speaker>D'ATTIGNAC LE CADET.</speaker>
+                        <l n="211">Vos discours, je l'avoue, ont une grande force :</l>
+                        <l n="212">La conquête du Ciel est une douce amorce !</l>
+                        <l n="213">Par un chemin si court, par un si beau sentier,</l>
+                        <l n="214">Nous vous verrons monter sans doute le premier ?</l>
+                    </sp><!--@who="D'ATTIGNAC LE CADET"-->
+<sp who="#le-pere-alexandre">
+                        <speaker>LE PÈRE ALEXANDRE.</speaker>
+                        <l n="215">Non, ma présence en bas semble trop nécessaire,</l>
+                        <l n="216">Et je dois exhorter un chacun à bien faire.</l>
+                        <l n="217">Si quelqu'un relâchait, je dois le raffermir</l>
+                        <l n="218">Et je n'aurai pas là le temps de m'endormir.</l>
+                    </sp><!--@who="LE PÈRE ALEXANDRE"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="219">C'est assez haranguer ; parlons d'agir, mon père !</l>
+                        <l n="220">De nos gens animés soutenons la colère.</l>
+                        <l n="221">Déjà dans cette plaine ils sont tous avancés</l>
+                        <l n="222">Et n'ont qu'à faire un pas pour gagner les fossés ;</l>
+                        <note type="L">Arve : rivière savoyarde qui se jette dans le Rhône juste en aval à l'ouest de Genève.</note>
+                        <l n="223">Je tiendrai cependant entre l'Avre et la plaine</l>
+                        <l n="224">Pour vous joindre bientôt, mes troupes en haleine.</l>
+                        <l n="225">On voir régner partout la nuit et le sommeil : </l>
+                        <l n="226">Empêchons ces mutins de revoir le soleil.</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#d-attignac-le-cadet">
+                        <speaker>D'ATTIGNAC LE CADET.</speaker>
+                        <l n="227" part="I">Allons, puisqu'il le faut !</l><!--@syll="6"-->
+                    </sp><!--@who="D'ATTIGNAC LE CADET"-->
+<sp who="#le-pere-alexandre">
+                        <speaker>LE PÈRE ALEXANDRE.</speaker>
+                        <l n="227" part="F">Allons brave jeunesse,</l><!--@syll="6"-->
+                        <l n="228">Ne ralentissez point cette ardeur qui vous presse ;</l>
+                        <l n="229">Aucun de vous ne doit dans un dessein si beau</l>
+                        <l n="230">Rien craindre, ni du fer, ni du feu, ni de l'eau ;</l>
+                        <l n="231" part="I">Oui, je vous en réponds !</l><!--@syll="6"-->
+                    </sp><!--@who="LE PÈRE ALEXANDRE"-->
+<sp who="#d-attignac-l-aine">
+                        <speaker>D'ATTIGNAC L'AÎNÉ.</speaker>
+                        <l n="231" part="F">Allons sans plus attendre.</l><!--@syll="6"-->
+                    </sp><!--@who="D'ATTIGNAC L'AÎNÉ"-->
+<sp who="#d-attignac-le-cadet">
+                        <speaker>D'ATTIGNAC LE CADET, à part soi.</speaker>
+                        <l n="232">La belle caution que le père Alexandre !</l>
+                        <stage type="exit/pull">Ils s'en vont, et d'Albigny retient par le bras d'Andelot qui les suivait.</stage>
+                    </sp><!--@stage="aparte"--><!--@who="D'ATTIGNAC LE CADET"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="233">Demeure d'Andelot, tu suivras avec moi.</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#d-andelot">
+                        <speaker>D'ANDELOT.</speaker>
+                        <l n="234">De vos ordres, Monsieur, je me fais une loi.</l>
+                        <l n="235">Mais s'il m'était permis de suivre mon envie,</l>
+                        <l n="236">À la tête de tous j'irais porter ma vie,</l>
+                        <l n="237">Et ne souffrirais pas qu'à quelque lâcheté</l>
+                        <l n="238">Trop de respect pour vous me put être imputé.</l>
+                        <l n="239">Il ne sera point dit que jamais la Bourgogne</l>
+                        <l n="240">Ait produit un soldat qui du péril s'éloigne !</l>
+                        <l n="241">La gloire des dangers ne saurait l'assouvir,</l>
+                        <l n="242">Et puisque je vous sers, je veux vous bien servir !</l>
+                    </sp><!--@who="D'ANDELOT"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="243">Va donc, cher d'Andelot, où ton honneur t'engage !</l>
+                        <l n="244">Va les animer tous par ce noble courage !</l>
+                        <l n="245">Va, ne perds point de temps, cours vite et fais leur voir</l>
+                        <l n="246">Ce que sur les grands coeurs la gloire a de pouvoir !</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#d-andelot">
+                        <speaker>D'ANDELOT.</speaker>
+                        <l n="247" part="I">J'y cours, songez au reste.</l><!--@syll="6"-->
+                    </sp><!--@who="D'ANDELOT"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY, seul.</speaker>
+                        <l n="247" part="F">Enfin, qu'aurais-je à craindre ?</l><!--@syll="6"-->
+                        <l n="248">Nel d'eux pour cet assaut ne se laisse contraindre ;</l>
+                        <l n="249">Tout nous rit, et dans peu le Prince que je sers</l>
+                        <l n="250">Se verra par mes soins maître de l'univers.</l>
+                        <l n="251">Genève est le théâtre où j'ouvrirai la scène ;</l>
+                        <l n="252">Ses voisins alarmés se rangeront sans peine ;</l>
+                        <l n="253">De dessus ses remparts le bruit de nos canons</l>
+                        <l n="254">Fera fuir les Comtois, et trembler les Cantons !</l>
+                        <note type="L">Schaffouse est la ville et le Canton le plus septentrional de la Suisse, frontalier avec l'Allemagne à l'ouest du Lac de Constance.</note>
+                        <l n="255">J'aurai Berne aisément, et Zurich et Schaffouse </l>
+                        <l n="256">Et dans un progrès si prompte l'Allemagne jalouse,</l>
+                        <l n="257">Loin de nous opposer d'inutiles efforts,</l>
+                        <l n="258">Par crainte, ou par amour, se viendra rendre en corps !</l>
+                        <l n="259">L'Autriche à la Savoie enfin cédant l'Empire,</l>
+                        <l n="260">On verra tous les Rois s'empresser d'y souscrire :</l>
+                        <l n="261">La France, l'Angleterre et l'Espagne à l'envi</l>
+                        <l n="262">Suivront incontinent le Germain asservi !</l>
+                        <l n="263">Rome, Gênes, Mantoue, et Venise, et Florence</l>
+                        <l n="264">Se soumettront bientôt à notre obéissance ;</l>
+                        <l n="265">L'Ottoman, redoutant notre insigne bonheur,</l>
+                        <l n="266">Du Janissaire en vain rappellera le coeur,</l>
+                        <note type="C">Vers manquant.</note>
+                        <l n="267">. . . . . . . . . . . . . . . .</l>
+                        <l n="268">Et pour nous rendre Chypre en voudrait être quitte !</l>
+                        <l n="269">Enfin, mieux qu'en Xerxes contraint d'en déplacer </l>
+                        <l n="270">De l'Europe en Asie on nous verra passer !</l>
+                        <l n="271">On nous verra tout prendre, et maîtres du Bosphore</l>
+                        <l n="272">Aller assujettir les peuples de l'aurore : </l>
+                        <l n="273">Le Scythe, le Persan, l'Indien, le Chinois,</l>
+                        <l n="274">Et plus loin qu'Alexandre étendre nos exploits !</l>
+                        <l n="275">Puis rebroussant de là vers les bords atlantiques,</l>
+                        <l n="276">Nous pousserons enfin jusques aux Amériques !!</l>
+                        <note type="C">Charles-Emmanuel Ier, duc de Savoie.</note>
+                        <l n="277">Ainsi le monde entier au Grand Charles soumis,</l>
+                        <l n="278">Nous cesserons de vaincre en manquant d'ennemis !!!</l>
+                    </sp><!--@stage="alone"--><!--@who="D'ALBIGNY"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. D'Albigny, le père Alexandre.</head>
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <note type="C">Il n'existe pas de scène IV. LA numérotation est propre à cette édition.</note>
+                        <l n="279">Hé bien, sont-ils montés ? Aurons-nous bonne issue ?</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#le-pere-alexandre">
+                        <speaker>LE PÈRE ALEXANDRE.</speaker>
+                        <l n="280">Très bonne, et l'entreprise était trop bien conçue.</l>
+                        <l n="281">Déjà plus de deux cents ont franchi le danger</l>
+                        <l n="282">Et vont le long du mur doucement se ranger.</l>
+                        <l n="283">À l'ombre de deux tours cette troupe vaillante</l>
+                        <l n="284">Du prochain parapet couvre toute la pente ;</l>
+                        <l n="285">Et c'est là que sans bruit, sur le ventre couchés,</l>
+                        <l n="286">Dans l'attente du jour, ils demeurent cachés.</l>
+                        <l n="287">Toutefois dans l'espoir du butin qui les charme,</l>
+                        <l n="288">Les plus impatients veulent donner l'alarme :</l>
+                        <note>Pétardier Picot : héros genevois qui fit un bon usage des pétards. </note>
+                        <l n="289">Picot brûle d'ardeur, et son pétard tout prêt</l>
+                        <l n="290">Du sort des Genevois doit prononcer l'arrêt !</l>
+                        <stage type="noise">En cet endroit le bruit d'un mousquet, d'un tambour et d'une trompette se fait entendre.</stage>
+                        <l n="291">Qu'entends-je ? C'en est fait, ils nous ouvrent la porte,</l>
+                        <l n="292">Et ce grand bruit en est une preuve assez forte !</l>
+                        <l n="293">Il en nous reste plus d'obstacle à surmonter,</l>
+                        <l n="294">Et la ville à nous, il n'en faut plus douter !</l>
+                    </sp><!--@who="LE PÈRE ALEXANDRE"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="295">Nous n'en pouvons avoir de preuve plus fidèle .</l>
+                        <stage type="toward">Il parle à un des gardes qui se trouve là proche.</stage>
+                        <l n="296">Va cours vite à Turin en porter la nouvelle !</l>
+                        <l n="297">Que chez tous nos voisins ce bruit soit répandu !</l>
+                        <l n="298" part="I">Avançons cependant.</l><!--@syll="6"-->
+                    </sp><!--@who="D'ALBIGNY"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. D'Andelor, d'Albigny, le père  Alexandre.</head>
+<sp who="#d-andelot">
+                        <speaker>D'ANDELOT.</speaker>
+                        <l n="298" part="F">Monsieur, tout est perdu !</l><!--@syll="6"-->
+                    </sp><!--@who="D'ANDELOT"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="299" part="I">Que dis-tu, d'Andelot ?</l><!--@syll="6"-->
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#d-andelot">
+                        <speaker>D'ANDELOT.</speaker>
+                        <l n="299" part="F">Que tous vos capitaines</l><!--@syll="6"-->
+                        <l n="300">Sont, ou morts, ou blessés, ou sont chargés de chaînes</l>
+                        <l n="301">Et qu'ayant presque seul regagné le fossé,</l>
+                        <l n="302">J'ai l'épaule rompue, et le nez enfoncé.</l>
+                    </sp><!--@who="D'ANDELOT"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="303">Ou ton rapport est faux, ou ce père m'abuse ! .</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#d-andelot">
+                        <speaker>D'ANDELOT.</speaker>
+                        <l n="304">Vous connaissez trop tard cet esprit plein de ruse.</l>
+                        <l n="305">Nous avions, disait-il, dans un dessein si beau</l>
+                        <l n="306">Rien à craindre du fer, ni du feu, ni de l'eau !</l>
+                        <l n="307">Mais dans ce beau détail, je ne vois point contée</l>
+                        <l n="308">La corde, que lui seul n'a que trop méritée.</l>
+                        <l n="309">Quoi, pouvez-vous encor souffrir auprès de vous</l>
+                        <l n="310">Un traître que le Ciel ne doit voir qu'en courroux,</l>
+                        <l n="311">Qui par des traits flatteurs qu'un faux zèle déploie</l>
+                        <l n="312">Ose ainsi prodiguer tout le sang de Savoie ?</l>
+                        <l n="313">Ce monstre que l'Écosse ou l'enfer a produit,</l>
+                        <l n="314">Pour perdre tant de gens dans une seule nuit !...</l>
+                        <l n="315">Oui, Genève triomphe et venge son outrage</l>
+                        <l n="316">Sur vos meilleurs soldats, sur Gruffy, sur Cornage ;</l>
+                        <note type="C">François Gerbais de Sonnaz fut prisonnier lors de Escalade, condamné et exécuté en 1602.</note>
+                        <l n="317">Je ne vois pour Sonnaz, Brunaulieu, Chaffardon</l>
+                        <l n="318">Pour Payen, ni La_tour, nul espoir de pardon.</l>
+                        <l n="319">Les vaillants d'Attignac, ces deux généreux frères,</l>
+                        <l n="320">sont livrés avec eux aux bourreaux sanguinaires ;</l>
+                        <l n="321">Et le plus noble sang d'un pays si fameux</l>
+                        <l n="322">Est soumis à l'affront d'un supplice honteux.</l>
+                    </sp><!--@who="D'ANDELOT"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="323">Tout ce que tu nous dis est-il bien véritable ?</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#d-andelot">
+                        <speaker>D'ANDELOT.</speaker>
+                        <l n="324">Il n'est que trop constant et que trop déplorable !</l>
+                        <l n="325">J'en ferai le récit, puisqu'on vous l'a flatté,</l>
+                        <l n="326">Avec moins d'éloquence et plus de vérité.</l>
+                        <l n="327">Après qu'on nous eut peint la victoire certaine,</l>
+                        <l n="328">Avec joie et sans bruit nous traversions la plaine ;</l>
+                        <l n="329">Quand en l'air tout à coup une flamme reluit</l>
+                        <l n="330">Qui perce l'épaisseur de cette sombre nuit !...</l>
+                        <l n="331">Quelques uns, à ce feu devenus tout de glace,</l>
+                        <l n="332">Croyaient que du soleil il vint tenir la place,</l>
+                        <l n="333">Et que le Ciel contre eux déclaré tout soudain</l>
+                        <l n="334">Allât aux ennemis déclarer leur dessein.</l>
+                        <l n="335">Le bon père, savant dans l'art de bien séduire,</l>
+                        <l n="336">Dit que cette clarté n'est que pour les conduire ;</l>
+                        <l n="337">Que c'est du peuple élu la colonne de feu,</l>
+                        <l n="338">En tire un bon augure et les rassure un peu.</l>
+                        <l n="339">Cette flamme s'étant à peine dissipée,</l>
+                        <l n="340">D'une terreur nouvelle on a l'âme frappée !...</l>
+                        <l n="341">À dix pas du fossé, de certains pieux plantés</l>
+                        <l n="342">Les moins hardis encor restent épouvantés...</l>
+                        <l n="343">Puis approchant du mur pour dresser nos échelles,</l>
+                        <l n="344">Des canards effrayés battent l'air de leurs ailes,</l>
+                        <l n="345">Et semblent avertir le bourgeois endormi,</l>
+                        <l n="346">Comme Rome échappa jadis de l'ennemi !</l>
+                        <l n="347">Mais le destin plus fort que tous les vains présages</l>
+                        <l n="348">Par la honte ou l'espoir raffermit les courages ;</l>
+                        <l n="349">On monte, et ce docteur crie aux plus refroidis</l>
+                        <l n="350">Que le bout de l'échelle atteint le paradis...</l>
+                        <l n="351">Pourquoi vous différer une fin si funeste ?</l>
+                        <l n="352">Deux cents étaient montés dans l'attente du reste,</l>
+                        <l n="353">Lorsqu'une sentinelle avance fièrement</l>
+                        <l n="354">Et nous lâche son coup sans autre compliment !</l>
+                        <l n="355">Par la punition que les nôtres en firent,</l>
+                        <l n="356">Le bruit s'accrût bientôt, d'autres soldats suivirent ;</l>
+                        <l n="357">Le bourgeois éveillé fort à demi vêtu</l>
+                        <l n="358">Et ne nous montre point à demi la vertu.</l>
+                        <l n="359">Nous voyant découverts, nous songeons à combattre :</l>
+                        <l n="360">Le jeune d'Attignac lui seul en abat quatre !</l>
+                        <l n="361">Nous les poussons d'abord et gagnons à la fin</l>
+                        <l n="362">La porte, où le pétard ne s'est porté qu'en vain.</l>
+                        <l n="363">Au moment qu'il allait nous rendre un bon office,</l>
+                        <l n="364">Un soldat plus adroit fait tomber la coulisse.</l>
+                        <l n="365">Le canon à l'instant du prochain boulevard,</l>
+                        <l n="366">Dont le bruit a passé pour celui du pétard,</l>
+                        <l n="367">D'un seul coup, coup fatal, a brisé nos échelles</l>
+                        <l n="368">Et fermé le passage à vos troupes fidèles !...</l>
+                        <l n="369">Pour moi, sans consulter, j'ai hasardé le faux.</l>
+                        <l n="370">J'entends déjà le Duc nous railler comme il faut,</l>
+                        <l n="371">Et sachant le succès d'une telle escalade,</l>
+                        <note type="L2">Cacade : Fig. Fuite, retraite honteuse, ruine causée par la couardise, le manque de tête, d'habileté. [L]</note>
+                        <l n="372">« Ils ont fait, » dira-t-il, « une belle cacade ! »</l>
+                    </sp><!--@who="D'ANDELOT"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="373" part="I">Ciel, que t'ai-je dont fait !</l><!--@syll="6"-->
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#d-andelot">
+                        <speaker>D'ANDELOT.</speaker>
+                        <l n="373" part="F">Retirons-nous sans bruit,</l><!--@syll="6"-->
+                        <l n="374">Et cachons notre affront du manteau de la nuit.</l>
+                    </sp><!--@who="D'ANDELOT"-->
+<sp who="#d-albigny">
+                        <speaker>D'ALBIGNY.</speaker>
+                        <l n="375">Bon père, reprenez le chemin de l'Écosse</l>
+                        <l n="376">Et ne vous mêlez plus d'un semblable négoce.</l>
+                        <l n="377">Croyez-moi, désormais ailleurs que dans Thonon</l>
+                        <l n="378">Il vous faudra tâcher d'acquérir du renom.</l>
+                    </sp><!--@who="D'ALBIGNY"-->
+<sp who="#le-pere-alexandre">
+                        <speaker>LE PÈRE ALEXANDRE.</speaker>
+                        <l n="379">Avec soumission, j'écoute ce reproche.</l>
+                        <note type="loud/low">Le premier est prononcé haut, et les trois autres plus bas, après que l'Albigny est parti.</note>
+                        <l n="380">Non, crois que je l'écoute avec un coeur de roche !</l>
+                        <l n="381">J'aime mieux qu'ils soient tous, ou roués, ou pendus</l>
+                        <l n="382">Que deux de les cheveux eussent été perdus !</l>
+                    </sp><!--@who="LE PÈRE ALEXANDRE"-->
+</div>
+</div>
+<div type="acte" n="3">
+                <head>ÉPILOGUE.</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I.</head>
+<sp who="#geneve">
+                        <speaker>GENÈVE, en deuil.</speaker><!--<poem>-->
+                        <ab type="strophes">
+<lg n="1">
+	<l n="383">Dans ce lugubre habit dont la triste couleur</l>
+	<l n="384">Marque assez ma disgrâce, ainsi que ma douleur,</l>
+	<l n="385">Seigneur, je t'apporte mes larmes.</l>
+	<l n="386">Un barbare me plonge un poignard dans le sein ;</l>
+	<l n="387">Pour lui ma voix n'a point de charmes.</l>
+	<l n="388">Je meurs si rompant son dessein,</l>
+	<l n="389">Toi-même tu ne le désarmes.</l>
+</lg>
+<lg n="2">
+	<l n="390">J'entends de toutes parts les cris de mes enfants</l>
+	<l n="391">Dont l'enfer a rendu des tigres triomphants.</l>
+	<l n="392">Je les cherche, aucun ne se trouve ; </l>
+	<l n="393">Hélas ! Du cher époux que tu m'avais donné</l>
+	<l n="394">Faut-il que si tôt je sois veuve !</l>
+	<l n="395">Et ne l'as l'as-tu destiné.</l>
+	<l n="396">Que pour une si rude épreuve ?</l>
+</lg>
+<lg n="3">
+	<l n="397">Quoi, n'ai-je point d'amis dans un si juste deuil ?</l>
+	<l n="398">Irai-je donc ainsi toute seule au cercueil</l>
+	<l n="399">Sans que personne me console ?</l>
+	<l n="400">Peut-on ouïr mes cris, peut-on me voir en pleurs</l>
+	<l n="401">Gémir pour le bien qu'on me vole,</l>
+	<l n="402">Si au moins flatter mes douleurs </l>
+	<l n="403">D'un soupir, ou d'une parole ?</l>
+</lg>
+<lg n="4">
+	<l n="404">Non, du secours humain, Genève n'attend rien !</l>
+	<l n="405">si mon ingratitude a retardé le tien,</l>
+	<l n="406">Ô grand Dieu, perds-en la mémoire !</l>
+	<l n="407">De mes cruels tyrans dissipe la fureur ;</l>
+	<l n="408">Ton bras te doit cette victoire ;</l>
+	<l n="409">Comme il y va de mon bonheur</l>
+	<l n="410">Seigneur, il y va de ta gloire ! </l>
+</lg>
+<lg n="5">
+	<l n="411">Perds donc mes ennemis, qui noirs de trahison</l>
+	<l n="412">Se préparent déjà d'entrer dans la maison</l>
+	<l n="413">Où ta majesté se contemple.</l>
+	<l n="414">Chasse-les pour jamais de ta sainte cité,</l>
+	<l n="415">Et ce que mémorable exemple</l>
+	<l n="416">Apprenne à sa postérité</l>
+	<l n="417">Comme il faut respecter ton temple !</l>
+</lg>
+</ab><!--</poem>-->
+                    </sp><!--@stage="costume"--><!--@who="GENÈVE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Genève et son bon Génie.</head>
+<sp who="#le-bon-genie">
+                        <speaker>LE BON GÉNIE.</speaker>
+                        <l n="418">Quitte enfin ces habits si tristement traînés :</l>
+                        <l n="419">Tu n'as plus d'ennemis qui ne soient enchaînés.</l>
+                        <l n="420">Ton Dieu, pour sa querelle, autant que pour la tienne,</l>
+                        <l n="421">Dans tous les mauvais pas veut que je te soutienne.</l>
+                        <l n="422">Il t'aime, et te fait voir par un secours si prompt</l>
+                        <l n="423">Qu'il se rit des projets que tous les humains font.</l>
+                    </sp><!--@who="LE BON GÉNIE"-->
+<sp who="#geneve">
+                        <speaker>GENÈVE.</speaker>
+                        <l n="424">Quoi, de ce doux espoir, puis-je flatter mon âme ?</l>
+                    </sp><!--@who="GENÈVE"-->
+<sp who="#le-bon-genie">
+                        <speaker>LE BON GÉNIE.</speaker>
+                        <l n="425">Le Seigneur rend les bras d'abord qu'on le réclame :</l>
+                        <l n="426">Apprends par un récit que tu dois souhaiter</l>
+                        <l n="427">Comme ses bras puissants ont daigné t'assister.</l>
+                        <l n="428">L'ennemi dans tes murs allait pousser sa rage,</l>
+                        <l n="429">Quand Dieux de tes enfants réveilla la courage.</l>
+                        <l n="430">Du zèle de son temple également piqués,</l>
+                        <l n="431">On voir à te venger tous les soins appliqués.</l>
+                        <l n="432">Dans cette occasion ils trouvent la mort belle</l>
+                        <l n="433">Et vont tête baissée où le bruit les appelle.</l>
+                        <l n="434">Un des chefs du Conseil et chef de son quartier,</l>
+                        <l n="435">Fait offre à son pays de son sang tout entier.</l>
+                        <l n="436">Ô que de grands exploits, que d'actions célèbres</l>
+                        <l n="437">Viennent de s'étouffer dans l'horreur des ténèbres !</l>
+                        <l n="438">Ô coups, sous qui bientôt le barbare est tombé !</l>
+                        <l n="439">Que de lustre et d'éclat par la nuit dérobé !</l>
+                        <l n="440">Mais pourquoi plus longtemps te retarder ta joie ?... </l>
+                        <note type="L">Boulevard de l'Oie : Lieu sur les bastions proche de l'actuelle Place de Neuve à Genève. </note>
+                        <l n="441">Le canon à l'instant du Boulevard de l'Oie</l>
+                        <l n="442">Jette de grands éclairs, tonne, foudroie, abat</l>
+                        <l n="443">Et met les ennemis enfin hors de combat.</l>
+                        <l n="444">Alors, pour éviter les peines qu'ils méritent</l>
+                        <l n="445">Des murs dans le fossé plusieurs se précipitent ;</l>
+                        <l n="446">Cinquante ou plus sont morts, et le Ciel satisfait</l>
+                        <l n="447">N'en réserve que treize à l'affront du gibet.</l>
+                        <l n="448">On les traite en voleurs, en traîtres, en infâmes,</l>
+                        <l n="449">Qui voulaient violer tes filles et tes femmes ;</l>
+                        <l n="450">Et le juste dépit de ton peuple outragé,</l>
+                        <l n="451">Par ce honteux supplice est un peu soulagé.</l>
+                        <l n="452">Voilà dans une paix qu'on a peu révérée</l>
+                        <l n="453">Le digne châtiment d'une foi parjurée !</l>
+                        <l n="454">Voilà dans le secours d'un Dieu qui t'aime tant</l>
+                        <l n="455">Le digne et grand sujet d'un éloge éclatant !</l>
+                    </sp><!--@who="LE BON GÉNIE"-->
+<sp who="#geneve">
+                        <speaker>GENÈVE.</speaker>
+                        <l n="456">Oui, je dois t'en louer, ô Maître des Monarques,</l>
+                        <l n="457">Qui daignes de tes soins me donner tant de marques !</l>
+                        <l n="458">Oui, sans cesse, grand Dieu, je veux les exalter,</l>
+                        <l n="459">Sans cesse à mes enfants je les veux raconter !</l>
+                        <l n="460">Je veux que de David ce petit héritage</l>
+                        <l n="461">Se souvienne à jamais d'un si saint avantage,</l>
+                        <l n="462">Et que dans ta maison, où ta bonté pourvut,</l>
+                        <l n="463">Tu nous as élevé la corne de salut.</l>
+                    </sp><!--@who="GENÈVE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

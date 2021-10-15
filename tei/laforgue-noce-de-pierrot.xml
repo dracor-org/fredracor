@@ -1,0 +1,623 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Noce de Pierrot</title>
+                <title type="sub">Gravures de Charles Martin</title>
+                <author>
+      <idno type="isni">0000000108861823</idno>
+      <idno type="wikidata">Q380275</idno>
+      <persName>
+        <forename>Jules</forename>
+        <surname>Laforgue</surname>
+      </persName>
+    </author><!--Jules LAFORGUE (1860-1887)-->
+                <editor>Paul FIEVRE à partir de la revue du Mercure de septembre 2019.</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000829</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/LAFORGUE_NOCEDEPIERROT.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/LAFORGUE_NOCEDEPIERROT.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1927"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k1525391b?rk=257512;0</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="colombinette" sex="FEMALE">
+                        <persName>Colombinette</persName>
+                    </person>
+                    <person xml:id="pierrot" sex="MALE">
+                        <persName>Pierrot</persName>
+                    </person>
+                    <person xml:id="le-mendiant" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le-mendiant</persName>
+                    </person>
+                    <person xml:id="le-suisse" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le-suisse</persName>
+                    </person>
+                    <person xml:id="monsieur-colombin" sex="MALE">
+                        <persName>Monsiru colombin</persName>
+                    </person>
+                    <person xml:id="madame-colombine" sex="FEMALE">
+                        <persName>Madame colombine</persName>
+                    </person>
+                    <person xml:id="madame-ventre" sex="FEMALE">
+                        <persName>Madame ventre</persName>
+                    </person>
+                    <person xml:id="une-dame-de-la-noce" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Une-dame-de-la-noce</persName>
+                    </person>
+                    <person xml:id="son-mari" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Son-mari</persName>
+                    </person>
+                    <person xml:id="le-cocher" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le-cocher</persName>
+                    </person>
+                    <person xml:id="l-ivrogne" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L-ivrogne</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LA NOCE DE PIERROT</titlePart>
+			<titlePart type="sub">Gravures de Charles Martin</titlePart>			
+		</docTitle> 
+		<docDate when="1927"/>
+		<docAuthor>de JULES LAFORGUE.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor>Éditions Emile-Paul frères, à Paris, 14 rue de l'Abbaye</editor>-->
+			<div type="printer">
+                    <p>Cet ouvrage a été tiré à 7 exemplaire sur papier japon impérial avec un dessin et une double suite, et 200 exemplaires sur papier d'arches. Il a été achevé d'imprimer à Paris, le vingt-cinq mars mille neuf cent vingt sept, sur les presses du maître imprimeur LOUIS KALDOR, pour la typographie et chez ROGER LACOURIÈRE pour la taille-douce.</p>
+                </div><!--@id=""-->
+		</div>
+	<castList>
+                <head>ACTEURS</head>
+		<castItem>
+                    <role corresp="#pierrot">PIERROT</role><!--@sex="1"--><!--@type="H"--><!--@statut="poète"--><!--@age="A"--><!--@stat_amour="néant"-->, poète très lyrique et boursier, 30 ans.</castItem>
+		<castItem>
+                    <role corresp="#arlequin">ARLEQUIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, cousin de Colombine.</castItem>
+		<castItem>
+                    <role corresp="#le-docteur">LE DOCTEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="docteur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#madame-colombine">MADAME COLOMBINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, belle-mère.</castItem>
+		<castItem>
+                    <role corresp="#monsieur-colombin">MONSIRU COLOMBIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, homme nul, mais marié.</castItem>
+		<castItem>
+                    <role corresp="#madame-ventre">MADAME VENTRE</role><!--@sex="2"--><!--@type="H"--><!--@statut="marchand"--><!--@age="A"--><!--@stat_amour="néant"-->, marchande de journaux, Place de la Madelaine.</castItem>
+		<castItem>
+                    <role corresp="#un-mendiant-aise">UN MENDIANT AISÉ</role><!--@sex="1"--><!--@type="H"--><!--@statut="pauvre"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#un-sergent-de-ville">UN SERGENT DE VILLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="policier"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#un-cocher-de-corbillard">UN COCHER DE CORBILLARD</role><!--@sex="1"--><!--@type="H"--><!--@statut="cocher"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#un-croque-mort">UN CROQUE MORT</role><!--@sex="1"--><!--@type="H"--><!--@statut="croque-mort"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#un-ivrogne">UN IVROGNE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#des-gens-de-lettres">DES GENS DE LETTES</role><!--@sex="9"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#colombinette">COLOMBINETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, ingénue, 19 ans.</castItem>
+		<castItem>
+                    <role corresp="#un-suisse-de-la-madeleine">UN SUISSE DE LA MADELEINE</role><!--@sex="1"--><!--@type="H"--><!--@statut="suisse"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+    </castList>
+<!--TODO: usage of set in correct place but with unknown attributes <set location="Place de la Madeleine, Paris" country="France" periode="XIXème" gps="48.869536, 2.324250">[la scène est devant la Place de la Madeleine à Paris.]</set>-->
+<note>Texte issu de l'ouvrage "Pierrot fumiste par Jules Laforgue" cote BnF Rés. M. YF-41. pp.1-23 </note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LA NOCE DE PIERROT</head>
+<div type="scene" n="1">
+                    <head>SCÈNE UNIQUE</head>
+<stage type="decor">La place de la Madeleine. - La façade de l'église, l'escalier. - Voitures de noce et voitures des pompes funèbres stationnant . - Au moment où la noce sort de l'église, des ouvriers des pompes funèbres clouent des tentures noires aux initiales C. P. - Un beau ciel bleu de premier mai -10 heures du matin. - La noce sort précédée du Suisse chamarré qui se range. - Pierrot en habit blanc et cravate noire, monocle incrusté dans l'arcade sourcilière. - Colombinette à son bras, adorable, les yeux baissés, avançant ses minuscules pieds de satin, - au fond, les cierges dans la nuit - Les derniers roulements de l'orgue. Pierrot s'avance digne. Il aperçoit les tentures noires que l'on cloue, et les initiales C. P. Il pousse soudain un cri formidable et suraigu qui révolutionne place et remonte les boulevards. - La noce se précipite, on les entoure.</stage>
+<sp who="#colombinette">
+                        <speaker>COLOMBINETTE, effrayée se tournant vers lui.</speaker>
+                        <p n="1">
+	<s n="1">Quoi ? </s>
+	<s n="2">Monsieur Pierrot.</s>
+</p>
+                    </sp><!--@stage="turn/frighten"--><!--@who="COLOMBINETTE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, glacial et calme.</speaker>
+                        <p n="2">
+	<s n="1">Rien. </s>
+	<s n="2">Ces initiales C. P. Colombinette Pierrot. </s>
+	<s n="3">Notre raison sociale.</s>
+</p>
+                        <stage type="closer">Il s'avance vers l'un des ouvriers qui clouent les tentures, lui tape sur le ventre et ricanent en clignant de l'oeil.</stage>
+                        <p n="3">
+	<s n="1">Connu, on veut être plus fumiste que Papa.</s>
+</p>
+                        <stage type="estonish/walk">Ahurissement des dits ouvriers. Pierrot se calme soudain, et reprend sa marche.</stage>
+                    </sp><!--@stage="quiet"--><!--@who="PIERROT"-->
+<sp who="#le-mendiant">
+                        <speaker>UN MENDIANT, geignant.</speaker>
+                        <p n="4">
+	<s n="1">Mon bon Monsieur Pierrot, j'ai cinq enfants en bas âge...</s>
+</p>
+                    </sp><!--@stage="pain"--><!--@who="LE MENDIANT"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, se cabrant.</speaker>
+                        <p n="5">
+	<s n="1">Monsieur ! </s>
+	<s n="2">Est-ce une allusion à mon impuissance notoire ? </s>
+	<s n="3">Il me semble que le moment est mal choisi.</s>
+</p>
+                    </sp><!--@stage="impatient"--><!--@who="PIERROT"-->
+<sp who="#le-mendiant">
+                        <speaker>LE MENDIANT, tendant ta main.</speaker>
+                        <p n="6">
+	<s n="1">Mon bon Monsieur Pierrot, une petite aumône.</s>
+</p>
+                    </sp><!--@stage="wave"--><!--@who="LE MENDIANT"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT se campe, met son monocle et le lorgne. Il le lorgne durant trois minutes, très calme. La noce qui attend s'impatiente. Sur la place les populations font des rassemblements. Pierrot lorgne toujours, on n'entend pas voler une mouche, et soudain, au mendiant qui tend toujours la main :</speaker>
+                        <p n="7">
+	<s n="1">Flûte !</s>
+</p>
+                    </sp><!--@stage="narration"--><!--@who="PIERROT"-->
+<sp who="#le-mendiant">
+                        <speaker>LE MENDIANT, vexé.</speaker>
+                        <p n="8">
+	<s n="1">Prenez garde, Monsieur Pierrot, vous le serez...</s>
+</p>
+                    </sp><!--@stage="offended"--><!--@who="LE MENDIANT"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, épanoui.</speaker>
+                        <p n="9">
+	<s n="1">Merci ! </s>
+</p>
+                        <stage type="touch/give">Il lui tape sur le ventre, et lui donne un louis, en lui baisant galamment bout des doigts, et comme Colombinette parait étonnée.</stage>
+                        <p n="10">
+	<s n="1">C'est un faux louis, un louis faux, c'est tout ce qu'il loui faut.</s>
+</p>
+                        <stage type="laugh/narration">Colombinette rit complaisamment comme doit faire la femme d'un homme de lettres. Pierrot, lui, en rit à se tordre. La noce commence à s'impatienter. Soudain Pierrot se calme, et s'arrête reprenant son masque blême. Quoi encore ? la noce est dans l'attente. Pierrot tend son cou hors de sa fraise tuyautée et pousse«a un formidable et suraigu :</stage>
+                        <p n="11">
+	<s n="1">Cocorico ! </s>
+</p>
+                        <stage type="laugh/noise">Et il rit à se tordre. Rumeurs.</stage>
+                    </sp><!--@stage="happy"--><!--@who="PIERROT"-->
+<sp who="#le-suisse">
+                        <speaker>LE SUISSE, s'approchant sévère et majestueusement frappe un coup de hallebarde.</speaker>
+                        <p n="12">
+	<s n="1">Monsieur...</s>
+</p>
+                    </sp><!--@stage="closer/hit"--><!--@who="LE SUISSE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, calmé soudain, le lorgne, et soudain joyeux :</speaker>
+                        <p n="13">
+	<s n="1">Tiens ! </s>
+	<s n="2">Bonjour Eustache ! </s>
+</p>
+                        <stage type="touch">Il lui caresse les mollets.</stage>
+                    </sp><!--@who="PIERROT"-->
+<sp who="#le-suisse">
+                        <speaker>LE SUISSE, se reculant.</speaker>
+                        <p n="14">
+	<s n="1">Ces familiarités...</s>
+</p>
+                    </sp><!--@stage="away"--><!--@who="LE SUISSE"-->
+<sp who="#monsieur-colombin">
+                        <speaker>MONSIEUR COLOMBIN, s'approche timidement de Pierrot.</speaker>
+                        <p n="15">
+	<s n="1">Cher gendre, nos invités attendent.</s>
+</p>
+                    </sp><!--@stage="closer/shy"--><!--@who="MONSIEUR COLOMBIN"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, lève les deux bras convulsivement.</speaker>
+                        <p n="16">
+	<s n="1">Quel beau, jour, beau-père ! </s>
+</p>
+                        <stage type="quiet/touch/away/sweet">Il se calme et reprenant le bras de Colombinette, ils descendent les escaliers. À Colombinette, langoureusement :</stage>
+                        <p n="17">
+	<s n="1">Quel beau jour!...</s>
+</p>
+                    </sp><!--@stage="wave"--><!--@who="PIERROT"-->
+<sp who="#colombinette">
+                        <speaker>COLOMBINETTE, si douce.</speaker>
+                        <p n="18">
+	<s n="1">Oh ! </s>
+	<s n="2">Oui, monsieur Pierrot, un beau jour...</s>
+</p>
+                    </sp><!--@stage="sweet"--><!--@who="COLOMBINETTE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, s'exaltant.</speaker>
+                        <p n="19">
+	<s n="1">Pas un nuage, les parfums des fleurs, les récoltes seront belles.</s>
+</p>
+                        <stage type="explicit">Puis sur un ton familier, explicatif.</stage>
+                        <p n="20">
+	<s n="">Ma chère amie, ce suisse que vous m'avez entendu interpeller par son petit nom, Eustache, est un ancien domestique à moi. </s>
+	<s n="2">J'ai constaté avec un attendrissement que vous comprendrez que ses mollets méritent mieux la plastique épithète de dodus que lorsque j'avais à le nourrir. </s>
+	<s n="3">Mais il doit avoir moins de religion, aussi. </s>
+	<s n="4">- Avez vous de la religion, Colombinette, de mes sens ?</s>
+</p>
+                    </sp><!--@stage="enthousiasm"--><!--@who="PIERROT"-->
+<sp who="#colombinette">
+                        <speaker>COLOMBINETTE, les yeux mouillés.</speaker>
+                        <p n="21">
+	<s n="1">Oh ! </s>
+	<s n="2">Oui, monsieur Pierrot. </s>
+	<s n="3">J'aime la Sainte Vierge, et les chérubins la nuit de Noël ; voyez vous, mon doux monsieur Pierrot, cet orgue m'a rendue bien triste.</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="COLOMBINETTE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, reste rêveur.</speaker>
+                        <stage type="walk/whout">Ils descendent en silence. Soudain à la dernière marche, il pousse un cri.</stage>
+                        <p n="22">
+	<s n="1">Une puce colombinetticide. </s>
+</p>
+                        <stage type="touch/lazzi">Il pince la nuque de Colombinette qui pousse un cri. Tumulte, Pierrot sur ses mains fait la roue.</stage>
+                    </sp><!--@stage="dream/shout"--><!--@who="PIERROT"-->
+<sp who="#monsieur-colombin">
+                        <speaker>MONSIEUR COLOMBIN.</speaker>
+                        <p n="23">
+	<s n="1">C'est scandaleux, mon gendre ! </s>
+</p>
+                        <stage type="quiet">Pierrot retombe sur ses pieds, fait hum! hum! et feint un air penaud d'écolier surpris par le pion.</stage>
+                    </sp><!--@who="MONSIEUR COLOMBIN"-->
+<sp who="#madame-colombine">
+                        <speaker>MADAME COLOMBINE, doucement à son mari.</speaker>
+                        <p n="24">
+	<s n="1">Laisse, Borromée. </s>
+	<s n="2">Il est original, mais un coeur d'or.</s>
+</p>
+                        <stage type="quiet/toward">Tout se calme. Mme Colombine continuant sa conversation avec une dame.</stage>
+                        <p n="25">
+	<s n="1">Oui, ma chère Eulalie, il l'a prise sans dot, lui célèbre et riche. </s>
+	<s n="2">Et puis un coeur d'or. </s>
+	<s n="3">Un peu original, oui, et ma grosse peur était pour l'église, mais avez vous vu sa tenue et son émotion ?</s>
+</p>
+                    </sp><!--@stage="sweet"--><!--@who="MADAME COLOMBINE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, continuant sa marche.</speaker>
+                        <stage type="narration/shout">On a déjà fait signe aux voitures. Soudain à la vue d'un kiosque aux journaux, il crie d'une voix formidable, mettant ses mains en entonnoir devant le rouge de sa bouche.</stage>
+                        <p n="26">
+	<s n="1">Madame Ventre ! </s>
+	<s n="2">Ohé ! </s>
+</p>
+                        <stage type="narration">La noce est consternée, et s'apprête déjà à quelque nouvelle scène. Des gens tirent leur montre. Des dames s'assoient sur les marches, attendant la fin.</stage>
+                    </sp><!--@stage="walk"--><!--@who="PIERROT"-->
+<sp who="#madame-ventre">
+                        <speaker>MADAME VENTRE, apparaît énorme.</speaker>
+                        <p n="27">
+	<s n="1">Plaît-il, monsieur Pierrot ?</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="MADAME VENTRE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, lui envoie un baiser, en levant les yeux au ciel.</speaker>
+                        <p n="28">
+	<s n="1">Mon journal ?</s>
+</p>
+                    </sp><!--@stage="kiss/watch"--><!--@who="PIERROT"-->
+<sp who="#madame-ventre">
+                        <speaker>MADAME VENTRE.</speaker>
+                        <p n="29">
+	<s n="1">Votre ?</s>
+</p>
+                    </sp><!--@who="MADAME VENTRE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT.</speaker>
+                        <p n="30">
+	<s n="1">Mon journal habituel. </s>
+</p>
+                        <stage type="silence/shout">Silence. - Il hurle.</stage>
+                        <p n="31">
+	<s n="1">Le Pornographe_illustré ! </s>
+	<s n="2">Petite carogne ! </s>
+</p>
+                        <stage type="search/show">Tandis que Madame Ventre cherche la feuille en question, fouillant son éventaire, Pierrot la présente aux gens de la noce.</stage>
+                        <p n="32">
+	<s n="1">Madame Ventre ! </s>
+	<s n="2">Une riche nature ! </s>
+	<s n="3">En vie ! </s>
+</p>
+                        <stage type="give/enthousiasm">Madame Ventre lui remet le journal et attend l'argent. Pierrot continue, très exalté.</stage>
+                        <p n="33">
+	<s n="1">Née en 1835, de parents pauvres quoique malhonnêtes...</s>
+</p>
+                    </sp><!--@who="PIERROT"-->
+<sp who="#madame-ventre">
+                        <speaker>MADAME VENTRE.</speaker>
+                        <p n="34">
+	<s n="1">C'est quinze centimes.</s>
+</p>
+                    </sp><!--@who="MADAME VENTRE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT.</speaker>
+                        <p n="35">
+	<s n="1">Heureux, Madame, qui deviendra propriétaire de vos arrondissements !</s>
+</p>
+                    </sp><!--@who="PIERROT"-->
+<sp who="#madame-ventre">
+                        <speaker>MADAME VENTRE, incorruptible.</speaker>
+                        <p n="36">
+	<s n="1">C'est quinze centimes.</s>
+</p>
+                    </sp><!--@stage="serious"--><!--@who="MADAME VENTRE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT.</speaker>
+                        <p n="37">
+	<s n="1">C'est pas cher.</s>
+</p>
+                    </sp><!--@who="PIERROT"-->
+<sp who="#colombinette">
+                        <speaker>COLOMBINETTE, la blâmant doucement.</speaker>
+                        <p n="38">
+	<s n="1">Monsieur Pierrot.</s>
+</p>
+                    </sp><!--@stage="serious"--><!--@who="COLOMBINETTE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT.</speaker>
+                        <p n="39">
+	<s n="1">C'est juste. </s>
+	<s n="2">Quinze centimes.</s>
+</p>
+                        <stage type="search">Il se fouille.</stage>
+                        <p n="40">
+	<s n="1">Rien ? </s>
+	<s n="2">- Comment pas d'argent ! </s>
+</p>
+                        <stage type="stress">Tragique.</stage>
+                        <p n="41">
+	<s n="1">Non ! </s>
+	<s n="2">Il ne sera pas dit qu'un si beau jour... </s>
+</p>
+                        <stage type="dress/search/wait">Il sort sa veste, l'étale à terre et, à plat ventre, se met en devoir de fouiller les doublures. La noce trépigne.</stage>
+                        <p n="42">
+	<s n="1">Ah ! </s>
+	<s n="2">Quelle journée !</s>
+</p>
+                    </sp><!--@who="PIERROT"-->
+<sp who="#une-dame-de-la-noce">
+                        <speaker>UNE DAME DE LA NOCE, doucement à son mari.</speaker>
+                        <p n="43">
+	<s n="1">Ah ! </s>
+	<s n="2">Non, j'en ai assez, s'il se croit drôle!</s>
+</p>
+                    </sp><!--@stage="low/toward"--><!--@who="UNE DAME DE LA NOCE"-->
+<sp who="#son-mari">
+                        <speaker>SON MARI, doucement.</speaker>
+                        <p n="44">
+	<s n="1">Patience, mon chat. </s>
+	<s n="2">Tu sais qu'il n'y a rien à manger à la maison aujourd'hui, il ne faut pas manquer un bon repas qui nous soutiendra deux jours. </s>
+	<s n="3">Passe-moi un bout de chocolat s'il en reste. </s>
+	<s n="4">Il n'y en a plus ?</s>
+</p>
+                    </sp><!--@stage="low"--><!--@who="SON MARI"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT.</speaker>
+                        <p n="45">
+	<s n="1">Rien.</s>
+</p>
+                        <stage type="dress/toward">Il remet sa veste. - À Colombinette : </stage>
+                        <p n="46">
+	<s n="1">Mon enfant, êtes vous en fonds ? </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Je ne fais pas allusion à ce capital de jeune fille dont parle Dumas fils.</s>
+</p>
+                        <stage type="low">D'une voix caverneuse.</stage>
+                        <p n="47">
+	<s n="1">Si j'en doutais seulement.</s>
+</p>
+                        <stage type="WAVE">Montrant le poing à sa belle-mère.</stage>
+                    </sp><!--@who="PIERROT"-->
+<sp who="#madame-colombine">
+                        <speaker>MADAME COLOMBINE, de loin, lui envoyant un baiser.</speaker>
+                        <p n="48">
+	<s n="1">Coeur d'or, va!</s>
+</p>
+                    </sp><!--@stage=""--><!--@who="MADAME COLOMBINE"-->
+<sp who="#colombinette">
+                        <speaker>COLOMBINETTE, confuse et soumise.</speaker>
+                        <p n="49">
+	<s n="1">Certainement, Monsieur Pierrot, je possède...</s>
+</p>
+                    </sp><!--@stage="confuse"--><!--@who="COLOMBINETTE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT.</speaker>
+                        <p n="50">
+	<s n="1">Eh bien, donnez.</s>
+</p>
+                    </sp><!--@who="PIERROT"-->
+<sp who="#colombinette">
+                        <speaker>COLOMBINETTE, confuse, balbutiant.</speaker>
+                        <p n="51">
+	<s n="1">Oh ! </s>
+	<s n="2">Ici ? </s>
+	<s n="3">Non, ce soir !...</s>
+</p>
+                    </sp><!--@who="COLOMBINETTE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, levant les bras au ciel, à part.</speaker>
+                        <p n="52">
+	<s n="1">Qu'elle est bête ! </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="53">
+	<s n="1">C'est de l'argent que je te demande ! </s>
+	<s n="2">Quinze malheureux centimes ! </s>
+</p>
+                        <stage type="aparte">À part. </stage>
+                        <p n="54">
+	<s n="1">Non, ces gens-là me feront mourir !</s>
+</p>
+                    </sp><!--@stage="wave/aparte"--><!--@who="PIERROT"-->
+<sp who="#colombinette">
+                        <speaker>COLOMBINETTE, très douce, inaltérable.</speaker>
+                        <p n="55">
+	<s n="1">J'ai un louis, monsieur Pierrot.</s>
+</p>
+                    </sp><!--@stage="sweet"--><!--@who="COLOMBINETTE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, lui arrache le louis et le donne à madame Ventre en lui baisant les doigts.</speaker>
+                        <p n="56">
+	<s n="1">Riche nature, va ! </s>
+</p>
+                        <stage type="give/away">Madame Ventre veut lui rendre la monnaie, Pierrot fait un noble geste de refus.</stage>
+                        <p n="57">
+	<s n="1">Jamais ! </s>
+</p>
+                        <stage type="kiss">Embrassant Colombinette.</stage>
+                        <p n="58">
+	<s n="1">Un si beau jour ! </s>
+</p>
+                        <stage type="narration">Il pousse un sanglot, tire un grand mouchoir noir dont il s'essuie les yeux, puis il le porte à son nez et se mouche bruyamment en imitant à s'y m'éprendre le hennissements des étalons. Une jument qui passe lui répond par un autre hennissement. Toute la noce est stupéfaite. Pierrot avec un geste large à tous :</stage>
+                        <p n="59">
+	<s n="1">Sympathie de situation ! </s>
+</p>
+                        <stage type="narration">Il replie son mouchoir, le tord et le rince comme pour le faire égoutter, et force Colombinette à le tenir d'un bout pour l'aider dans cette tâche. Cela fait, il déploie le Pornographe illustré, le parcours et soudain :</stage>
+                        <p n="60"> 
+	<s n="1">Ah ! </s>
+	<s n="2">Voilà mon article ! </s>
+</p>
+                        <stage>Il s'installe sur une marche, fait un geste qui rassemble la noce en galerie et commence :</stage>
+                        <p n="61">
+	<s n="1">« Le mariage est assurément une belle chose; les anciens...</s>
+</p>
+                    </sp><!--@stage="steal/give/kiss"--><!--@who="PIERROT"-->
+<sp who="#monsieur-colombin">
+                        <speaker>MONSIEUR COLOMBIN, rusé, se jetant sur lui et lui arrachant la feuille.</speaker>
+                        <p n="62">
+	<s n="1">Ah ! </s>
+	<s n="2">Oui, quel beau jour!</s>
+</p>
+                    </sp><!--@stage="closer/steal"--><!--@who="MONSIEUR COLOMBIN"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, froid et mettant son monocle.</speaker>
+                        <p n="63">
+	<s n="1">Si vous m'interrompez comme ça.</s>
+</p>
+                        <stage type="get">Il reprend.</stage>
+                        <p n="64">
+	<s n="">« Le mariage est assurément...</s>
+</p>
+                        <stage>Un sergent de ville s'avance, et, se penchant vers lui, lui dit quelques mots.</stage>
+                    </sp><!--@who="PIERROT"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, se redressant.</speaker>
+                        <p n="65">
+	<s n="1">Ange va ! </s>
+	<s n="2">Tu as raison, tu parles d'or. </s>
+</p>
+                        <note type="L">Sergo : sergent.</note>
+                        <stage type="narration">Il veut l'embrasser, le sergo se dérobe ; il cligne de l'oeil d'un air entendu et lui offre un louis. Le sergo refuse. Alors Pierrot lui fait le salut militaire.</stage>
+                        <p n="65">
+	<s n="1">L'incident est clos! </s>
+</p>
+                        <stage type="kneel/kiss">Il se jette convulsivement à terre et baise tour à tour les petits pieds de Colombinette.</stage>
+                    </sp><!--@stage="stand"--><!--@who="PIERROT"-->
+<sp who="#colombinette">
+                        <speaker>COLOMBINETTE, rougissante, se dégageant.</speaker>
+                        <p n="66">
+	<s n="1">Oh ! </s>
+	<s n="2">Monsieur Pierrot ! </s>
+	<s n="3">Monsieur Pierrot! </s>
+</p>
+                        <stage type="narration">Il se relève et se frotte l'estomac, en faisant claquer sa langue, comme après un bon morceau. La noce s'avance enfin sur le trottoir. On monte dans les voitures. Seulement Pierrot qui a aperçu une voiture des Pompes funèbres là, stationnant, se précipite dedans.</stage>
+                    </sp><!--@who="COLOMBINETTE"-->
+<sp who="#le-cocher">
+                        <speaker>LE COCHER, descendant avec ses grandes bottes et son fouet.</speaker>
+                        <p n="67">
+	<s n="1">Attends un peu, Cadet ! </s>
+</p>
+                        <stage type="narration">Il attrape Pierrot par un pied et tire. Celui-ci se cramponne aux coussins avec des cris de merluche. On parvient à arracher Pierrot de cette voiture. Il donne, avec une tape amicale sur la joue, un louis de pourboire au cocher ébloui. On met Pierrot dans sa voiture où est déjà Colombinette. On ferme la portière. La noce monte dans les voitures, levant les bras au ciel et disant : Sauvés, mon Dieu ! Au moment où les voitures vont s'ébranler, Colombinette appelle. Quoi encore ? On constate que Pierrot s'est évadé par l'autre portière. Effectivement, on l'aperçoit courant au galop. On le poursuit. On le rattrape au marché aux fleurs de la Madeleine. Il révolutionne le marché, réclamant une plante inconnue qu'il appelle : Rosa sempervirens funulariflera. Il dit cela en montant et descendant la gamme, malgré son exaltation. On ne connaît que ça. Il cite Linné. En vain. Alors il se décide à acheter un bouquet de violettes de dix centimes. On le ramène. Il va offrir le bouquet de violettes à Madame Ventre. Pendant ce temps, on voit Arlequin qui console sa cousine Colombinette. - Un ivrogne passe.</stage>
+                    </sp><!--@stage="dow/threat"--><!--@who="LE COCHER"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT l'arrête, le lorgne et le prenant par un bouton.</speaker>
+                        <p n="68">
+	<s n="1">Le mariage est assurément, mon ami...</s>
+</p>
+                    </sp><!--@stage="stop/watch/touch"--><!--@who="PIERROT"-->
+<sp who="#l-ivrogne">
+                        <speaker>L'IVROGNE, lui faisant: bas les pattes !</speaker>
+                        <p n="69">
+	<s n="1">Eh ! </s>
+	<s n="2">Va donc, aristo, kroumir, capitaliste.</s>
+</p>
+                        <stage type="push">Le sergo le pousse au large.</stage>
+                    </sp><!--@stage="wave"--><!--@who="L'IVROGNE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, revient à Colombinette, rêveur, et apercevant Arlequin qui s'éloigne.</speaker>
+                        <p n="70">
+	<s n="1">Capitaliste ! </s>
+	<s n="2">- Est-ce vrai, Colombinette de mes sens, que vous l'avez, votre capital ?</s>
+</p>
+                    </sp><!--@stage="back/dream/watch"--><!--@who="PIERROT"-->
+<sp who="#colombinette">
+                        <speaker>COLOMBINETTE, par la portière.</speaker>
+                        <p n="71">
+	<s n="1">Oh ! </s>
+	<s n="2">Monsieur Pierrot...</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="COLOMBINETTE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, d'une voix de tonnerre.</speaker>
+                        <p n="72">
+	<s n="1">Enfer et damnation !</s>
+</p>
+                        <stage type="quiet">Calme.</stage>
+                        <p n="73">
+	<s n="1">Enfin, nous verrons.</s>
+</p>
+                        <stage type="location">Il entre dans la voiture. La noce remonte également.</stage>
+                    </sp><!--@stage="shout"--><!--@who="PIERROT"-->
+<sp who="#l-ivrogne">
+                        <speaker>L'IVROGNE, causant avec un croque-mort.</speaker>
+                        <p n="74">
+	<s n="1">T'es donc de remorque aujourd'hui ?...</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="L'IVROGNE"-->
+<sp who="#pierrot">
+                        <speaker>PIERROT, ressort de la voiture. Nouvel effroi de la noce. Lui avec un geste large.</speaker>
+                        <p n="75">
+	<s n="1">Cochers ! </s>
+	<s n="2">Tous à Cythère! </s>
+	<s n="3">Au pays de Watteau !</s>
+</p>
+                        <stage type="narration">Il remonte dans la voiture. La noce qui était redescendue remonte. On va partir. Pierrots ressortant une troisième fois de la voiture, cette fois la noce gronde ! Les cochers s'impatientent ! C'en est trop ! L'originalité a ses limites, à la fin ! On attend. Pierrot s'incline et fait un grand salut à la place de la Madeleine et remonte. C'est fini ! Les voitures s'ébranlent. On voit des têtes d'invités se pencher aux portières, pas tout à fait rassurés encore. Un beau ciel de mai.</stage>
+                    </sp><!--@stage=""--><!--@who="PIERROT"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

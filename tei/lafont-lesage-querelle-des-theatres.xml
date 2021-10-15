@@ -1,0 +1,934 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Querelle des Théâtres</title>
+                <title type="sub">Prologue</title>
+                <author>
+      <persName>
+        <forename>Joseph</forename>
+        <nameLink>de</nameLink>
+        <surname>Lafont</surname>
+      </persName>
+    </author>
+                <author>
+      <idno type="isni">0000000121258113</idno>
+      <idno type="wikidata">Q267962</idno>
+      <persName>
+        <forename>Alain-René</forename>
+        <surname>Lesage</surname>
+      </persName>
+    </author><!--LAFONT, Joseph de ; LESAGE, Alain-René-->
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000825</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/LAFONTLESAGE_QUERELLEDESTHEATRES.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/LAFONTLESAGE_QUERELLEDESTHEATRES.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1718"/>
+                        <date type="premiere" when="1710-06-14">Représenté à la Foire de Saint-Laurent 1718. Et ensuite sur le Théâtre de l'Opera, par l'ordre de S. A. R. MADAME.</date>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="la-foire" sex="FEMALE">
+                        <persName>La foire</persName>
+                    </person>
+                    <person xml:id="mezzetin" sex="MALE">
+                        <persName>Mezzetin</persName>
+                    </person>
+                    <person xml:id="la-comedie-française" sex="FEMALE">
+                        <persName>La comédie française</persName>
+                    </person>
+                    <person xml:id="la-comedie-italienne" sex="FEMALE">
+                        <persName>La comédie italienne</persName>
+                    </person>
+                    <person xml:id="monsieur-charitides" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur-charitides</persName>
+                    </person>
+                    <person xml:id="gille" sex="MALE">
+                        <persName>Un gille</persName>
+                    </person>
+                    <person xml:id="l-opera" sex="MALE">
+                        <persName>L'opéra</persName>
+                    </person>
+                    <person xml:id="les-deux-comedies" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Les-deux-comedies</persName>
+                    </person>
+                    <person xml:id="la-foire-et-mezettin" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>La-foire-et-mezettin</persName>
+                    </person>
+                    <person xml:id="polichinelle" sex="MALE">
+                        <persName>Polichinelle</persName>
+                    </person>
+                    <person xml:id="le-choeur" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le-choeur</persName>
+                    </person>
+                    <person xml:id="tous" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Tous</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Prologue</term>
+                    <term>vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LA QUERELLE DES THÉÂTRES</titlePart>
+			<titlePart type="sub">PROLOGUE</titlePart>
+		</docTitle> 
+		<docDate when="1718">1718.</docDate>
+		<docAuthor>Par Messieurs LE S** et de la F**</docAuthor><!--@bio=""-->
+		<div type="docImprint">
+			<div type="privilege"/><!--@id=""-->
+			<div type="acheveImprime">
+                    <p/>
+                </div><!--@id=""-->
+			<!--TODO: handling of editor name at this place unclear <editor id=""/>-->
+		</div>
+		<performance>
+			<ab type="premiere">Représenté à la Foire de Saint-Laurent 1718. Et ensuite sur le Théâtre de l'Opera, par l'ordre de S. A. R. MADAME.</ab><!--@date="1710-06-14"--><!--@location="Théâtre de la rue des Fossés Saint-Germain"-->
+		</performance>
+
+	<castList>
+                <head>ACTEURS.</head>
+		<castItem>
+                    <role corresp="#la-comedie-française">LA COMÉDIE FRANÇAISE</role><!--@sex="2"--><!--@type="P"--><!--@statut="institution"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#la-comedie-italienne">LA COMÉDIE ITALIENNE</role><!--@sex="2"--><!--@type="P"--><!--@statut="institution"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
+		<castItem>
+                    <role corresp="#l-opera">L'OPÉRA</role><!--@sex="1"--><!--@type="P"--><!--@statut="institution"--><!--@age="A"--><!--@stat_amour="néant"-->, Arlequin.</castItem> 
+		<castItem>
+                    <role corresp="#la-foire">LA FOIRE</role><!--@sex="2"--><!--@type="P"--><!--@statut="institution"--><!--@age="A"--><!--@stat_amour="néant"-->, Pierrot.</castItem> 
+		<castItem>
+                    <role corresp="#mezzetin">MEZZETIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@stat_amour="néant"-->, Suivant de la Foire.</castItem> 
+		<castItem>
+                    <role corresp="#polichinelle">POLICHINELLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@stat_amour="néant"-->, Suivant de la Foire.</castItem>
+		<castItem>
+                    <role corresp="#gille">UN GILLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@stat_amour="néant"-->, Suivant de la Foire.</castItem>
+		<castItem>
+                    <role corresp="#un-auteur-tragique">UN AUTEUR TRAGIQUE</role><!--@sex="1"--><!--@type="H"--><!--@statut="auteur"--><!--@age="A"--><!--@stat_amour="néant"-->, suivant de la Comédie Française.</castItem>
+		<castItem>
+                    <role corresp="#un-acteur">UN ACTEUR habillé à la Romaine</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@stat_amour="néant"-->, suivant de la Comédie Française.</castItem>
+		<castItem>
+                    <role corresp="#crispin">UN CRISPIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@stat_amour="néant"-->, suivant de la Comédie Française.</castItem>
+		<castItem>
+                    <role corresp="#pantalon">UN PANTALON</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@stat_amour="néant"-->, suivant de la Comédie Italienne.</castItem>
+		<castItem>
+                    <role corresp="#scapin">UN SCAPIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@stat_amour="néant"-->, suivant de la Comédie Italienne.</castItem>
+	</castList>
+<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La Scène se passe dans la Salle de l'Opéra Comique.</set>-->
+</front>
+<body>
+<div type="act" n="1">
+                <head/>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<stage type="decor">Le théâtre représente la Salle de L'Opéra Comique.</stage>
+<sp who="#la-foire">
+                        <speaker>LA FOIRE, seule.</speaker>
+                        <p n="1">
+	<s n="1">Holà, Danseurs, Chanteurs de Vaudevilles.</s>
+</p>
+                        <stage type="title">AIR 87. Din, dan, don.</stage>
+                        <l n="1">Peuples à mes ordres soumis,</l>
+                        <l n="2">Histrions forains mes amis,</l>
+                        <l n="3">Venez, tous ;</l>
+                        <l n="4">Accourez, troupe comique,</l>
+                        <l n="5">Vite assemblez-vous.</l>
+                        <l n="6">De votre lyrique</l>
+                        <l n="7">Rendez tous les théâtres jaloux.</l>
+                        <p n="2">
+	<s n="1">Quoi, personne n'accourt à ma voix !</s>
+	<s n="2">N'entendez-vous pas votre, maîtresse qui vous appelle ? </s>
+	<s n="3">Songez-vous ; que c'est aujourd'hui le premier jour de mes spectacles d'été ? </s>
+	<s n="4">Holà donc, Mezzetin, Olivette, Docteur , Polichinelle.</s>
+</p>
+                        <stage type="title">AIR 44. J'entends déjà le bruit des armes.</stage>
+                        <l n="8">Répondez donc à mon attente,</l>
+                        <l n="9">Mes enfants, venez, il est temps,</l>
+                        <l n="10">Déjà le Marchand se tourmente,</l>
+                        <l n="11">Sa voix appelle les chalands ;</l>
+                        <note type="L">Massy : célèbre limonadier. [NdA]</note>
+                        <l n="12">Et l'obligeant Massy présente</l>
+                        <l n="13">Du tabac aux honnêtes gens.</l>
+                    </sp><!--@stage="alone"--><!--@who="LA FOIRE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. La Foire, Mezzetin.</head>
+<sp who="#mezzetin">
+                        <speaker>MEZZETIN, riant.</speaker>
+                        <p n="1">
+	<s n="1">Ha, ha, ha, ha, ha !</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="MEZZETIN"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="2">
+	<s n="1">Quel sujet avez-vous de rire ?</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#mezzetin">
+                        <speaker>MEZZETIN, riant encore.</speaker>
+                        <p n="3">
+	<s n="1">Ha, ha, ha, ha, ha !</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="MEZZETIN"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="4">
+	<s n="1">Pourquoi donc ces ris immodérés ?</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#mezzetin">
+                        <speaker>MEZZETIN.</speaker>
+                        <p n="5">
+	<s n="1">La Comédie Française et la Comédie Italienne...</s>
+</p>
+                        <stage type="laugh">Il continue de rire.</stage>
+                        <p n="6">
+	<s n="1">Ha, ha, ha, ha, ha !</s>
+</p>
+                    </sp><!--@who="MEZZETIN"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="7">
+	<s n="1">Encore ? </s>
+	<s n="2">Hé bien, la Comédie Française et la Comédie Italienne ?...</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#mezzetin">
+                        <speaker>MEZZETIN.</speaker>
+                        <p n="8">
+	<s n="1">Ces cieux Dames sont dans le préau. </s>
+	<s n="2">Elles veulent honorer de leur présence l'ouverture de notre théâtre. </s>
+	<s n="3">Elles viennent voir si la Foire sera bonne.</s>
+</p>
+                        <stage type="title">AIR 17. Menuet d'Hésione.</stage>
+                        <l n="14">Elles ont vu beaucoup de monde</l>
+                        <l n="15">Venir en foule dans nos jeux.</l>
+                        <l n="16">Je ris de la douleur profonde</l>
+                        <l n="17">Que fait paraître une des deux.</l>
+                    </sp><!--@who="MEZZETIN"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="9">
+	<s n="1">C'est la Française apparemment ?</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#mezzetin">
+                        <speaker>MEZZETIN.</speaker>
+                        <p n="10">
+	<s n="1">Vous l'avez dit.</s>
+</p>
+                        <stage type="title">AIR 2. Quand je tiens de ce jus d'Octobre.</stage>
+                        <l n="18">Elle se livre à sa tristesse,</l>
+                        <l n="19">Qui déconcerte son maintien :</l>
+                        <l n="20">L'autre de la sienne es tmaîtresse.</l>
+                    </sp><!--@who="MEZZETIN"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="11">
+	<s n="1">Oh ! </s>
+	<s n="2">C'est l'esprit Italien !</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#mezzetin">
+                        <speaker>MEZZETIN.</speaker>
+                        <p n="12">
+	<s n="1">Mais les voici.</s>
+</p>
+                    </sp><!--@who="MEZZETIN"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="13">
+	<s n="1">Qu'on ait soin de les bien placer. </s>
+	<s n="2">Ce sont mes supérieures, que ces Dames-là. </s>
+	<s n="3">Je ne suis que leur très humble servante. </s>
+	<s n="4">Je ne puis leur marquer trop de respect.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. La Foire, Mazzerin, La Comédie Française La Comédie Italienne, Monsieur Charitides, auteur tragique.</head>
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <stage type="help/declamate">Elle est appuyée d'un coté Sur la Comédie Italienne, et de l'autre sur Monsieur Charitides. Elle déclame les vers suivant dans le goût des Héroïnes du Théâtre.</stage>
+                        <l n="21">N'allons pas plus avant, demeurons ma mignonne.</l>
+                        <l n="22">Je ne me soutiens plus, la force m'abandonne,</l>
+                        <l n="23">Mes yeux sont étonnés du monde que je vois :</l>
+                        <l n="24">Pourquoi faut-il, hélas ! Qu'il ne soit pas chez moi !</l>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE, quittant le bras de la Comédie Française.</speaker>
+                        <p n="1">
+	<s n="1">Oh ! </s>
+	<s n="2">Tâchez de vous soutenir toute seule... </s>
+	<s n="3">J'aI assez de peine à me soutenir moi-même.</s>
+</p>
+                    </sp><!--@stage="away"--><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE, à l'Auteur.</speaker>
+                        <p n="2">
+	<s n="1">Aidez-moi donc, vous, Monsieur Charitides.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#monsieur-charitides">
+                        <speaker>MONSIEUR CHARITIDES, la repoussant.</speaker>
+                        <p n="3">
+	<s n="1">Je suis votre valet. </s>
+	<s n="2">Quand vous vous portiez bien, vous ne me regardiez pas : à présent que vous êtes malade, vous implorez mon secours : Serviteur.</s>
+</p>
+                    </sp><!--@stage="push"--><!--@who="MONSIEUR CHARITIDES"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE, à la Comédie Française.</speaker>
+                        <p n="4">
+	<s n="1">Madame,je suis ravie d'avoir l'honneur de vous voir. </s>
+	<s n="2">Permettez-moi de vous embrasser.</s>
+</p>
+                        <stage type="closer/kiss">Elle s'avance pour l'embrasser.</stage>
+                    </sp><!--@stage="toward"--><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE, la repoussant.</speaker>
+                        <p n="5">
+	<s n="1">Je me trouve mal.</s>
+</p>
+                    </sp><!--@stage="push"--><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE.</speaker>
+                        <p n="6">
+	<s n="1">Et moi, tout de même.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="6">
+	<s n="1">Des fauteuils à ces Dames. </s>
+	<s n="2">Hé vite des fauteuils. </s>
+	<s n="3">Je crois qu'elles vont tomber en faiblesse.</s>
+</p>
+                        <stage type="hugh/sit">La Foire et Mezzetin prennent les deux Comédies entre leurs bras, jusqu'à ce qu'on ait apporté des fauteuils. Les Comédies s'y mettent, et la Foire s'assied sur un Tabouret.</stage>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <p n="7">
+	<s n="1">Je n'en puis plus.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE.</speaker>
+                        <p n="8">
+	<s n="1">Je me meurs. </s>
+	<s n="2">Je crois que je serai obligée d'aller prendre l'air natal, ou de faite ici corps-neuf.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#mezzetin">
+                        <speaker>MEZZETIN, à la Comédie Française.</speaker>
+                        <note type="L">Eau de la reine de Hongrie : est une distillation qui se fait au bain de sable des fleurs de romarin mondées de leurs calices sans aucune partie de l'herbe, dans de l'esprit de vin bien rectifié. [F] [ce parfum renferme : romarin, lavande, berga, jasmin, cirse, ambre.]</note>
+                        <p n="9">
+	<s n="1">Voulez-vous de l'eau de la Reine de Hongrie.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="MEZZETIN"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE, le regardant de travers.</speaker>
+                        <p n="10">
+	<s n="1">Retire-toi, profane.</s>
+</p>
+                        <stage type="toward/declamate">u Public, en déclamant.</stage>
+                        <l n="25">Public, qui connaissez le prix de mes ouvrages</l>
+                        <l n="26">Pouvez-vous accorder à ceux-ci vos suffrages.</l>
+                    </sp><!--@stage="watch"--><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="11">
+	<s n="1">Ah ! </s>
+	<s n="2">Je vois la cause de votre défaillance ! </s>
+	<s n="3">Vous êtes fâchée de voir ici bonne compagnie, n'est-ce pas ?</s>
+</p>
+                        <stage type="toward">À Mezzetin.</stage>
+                        <note type="L">Enclouure : Empêchement, noeud d'une difficulté. "De l'argent, dites-vous, ah ! voilà l'enclouure", MOL. l'Étour. II, 5. [L]</note>
+                        <p n="12">
+	<s n="1">Voilà l'enclouûre. </s>
+	<s n="2">Hé, ventrebleu ! </s>
+	<s n="3">Madame, que ne faites-vous comme nous ? </s>
+	<s n="4">Mettez-vous en quatre pour plaire au public.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="13">
+	<s n="1">Il a raison. </s>
+	<s n="2">Il semble que vous preniez plaisir à vous laisser-mourir de faim. </s>
+	<s n="3">Donnez des nouveautés.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <p n="14">
+	<s n="1">La bonne drogue, que des nouveautés ! </s>
+	<s n="2">Ne fais-je pas mieux ? </s>
+	<s n="3">Je donne tous les chef-d'oeuvres de mon Théâtre,</s>
+</p>
+                        <stage type="title">AIR 15. Je ne suis né ni Roi, ni prince.</stage>
+                        <l n="27">Mes pièces les plus excellentes,</l>
+                        <l n="28">Tartuffe et les Femmes savantes ,</l>
+                        <l n="29">Amphitryon, le Grondeur,</l>
+                        <l n="30">Et presque tous les jours l'Avare.</l>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#mezzetin">
+                        <speaker>MEZZETIN.</speaker>
+                        <p n="15">
+	<s n="1">Bon, l'on sait ces pièces par coeur.</s>
+</p>
+                    </sp><!--@who="MEZZETIN"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <p n="16">
+	<s n="1">Non, non , le public est bizarre.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE.</speaker>
+                        <p n="17">
+	<s n="1">Effectivement, on ne sait comment ; faire pour le contenter. </s>
+	<s n="2">Il est saoul des vieilles pièces, les nouvelles le rassasient dès la première représentation.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="18">
+	<s n="1">Il est vrai que vos nouveautés passent comme des ombres.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE, levant les yeux au Ciel.</speaker>
+                        <p n="19">
+	<s n="1">Que Paris est aujourd'hui de mauvais goût !</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <stage type="title">AIR 19 : J'offre ici mon savoir faire.</stage>
+                        <l n="31">Vous le trouvez raisonnable,</l>
+                        <l n="32">Lorsqu'il va s'amuser chez vous ;</l>
+                        <l n="33">Mais vient-il s'amuser chez nous,</l>
+                        <l n="34">Son goût vous paraît détestable,</l>
+                        <l n="35">Mais vient-il s'amuser chez nous,</l>
+                        <l n="36">Son goût vous paraît détestable.</l>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE.</speaker>
+                        <p n="20">
+	<s n="1">Sans doute. </s>
+	<s n="2">Il entend, chez nous des choses dignes de son attention : mais vos
+fariboles, vos fariboles...</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <stage type="title">AIR : Je ne suis né ni Roi, ni Prince.</stage>
+                        <l n="37">Qu'appelez-vous des fariboles ?</l>
+                        <note type="L">Fariboles : Contes ; choses vaines qui ne méritent aucune considération. Ce mot est bas. [F]</note>
+                        <l n="38">N'apprécions point les paroles ;</l>
+                        <l n="39">Qui veut sainement en juger,</l>
+                        <l n="40">Madame, trouve que les vôtres,</l>
+                        <l n="41">Malgré l'idiome étranger,</l>
+                        <l n="42">Ne valent pas mieux que les nôtres.</l>
+                    </sp><!--@who="LA FOIRE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. La Comédie Française, La Comédie Italienne, La Foire, Un Gille.</head>
+<sp who="#gille">
+                        <speaker>LE GILLE, à la Foire.</speaker>
+                        <p n="1">
+	<s n="1">Monsieur votre cousin , Madame.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="GILLE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="2">
+	<s n="1">Mon cousin !</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#gille">
+                        <speaker>LE GILLE.</speaker>
+                        <p n="3">
+	<s n="1">Oui, votre cousin. </s>
+	<s n="2">C'est un grand Monsieur de bonne mine, qui chante à tort et à travers tout ce qui lui vient dans l'esprit.</s>
+</p>
+                    </sp><!--@who="GILLE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="4">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est l'opéra : c'est ce fou-là.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <p n="5">
+	<s n="1">L'Opéra ? </s>
+	<s n="2">Le traître ? </s>
+	<s n="3">C'est l'auteur de nos malheurs.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE.</speaker>
+                        <p n="6">
+	<s n="1">À ce nom, je sens redoubler ma colère.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <p n="7">
+	<s n="1">C'est lui, maudite Foire, qui t'a retiré du néant où je t'avais fait rentrer.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE.</speaker>
+                        <p n="8">
+	<s n="1">Le voici. </s>
+	<s n="2">Je sois tentée de le mettre en pièces.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="9">
+	<s n="1">Mettre en pièces l'Opéra ! </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Laisse ce soin-là à ses poètes et à ses musiciens.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. La Comédie Française, la Comédie Italienne, la Foire, L'Opéra.</head> 
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA, vient en dansant, et en chantant.</speaker>
+                        <stage type="title">AIR 141 : Cotillon des Fêtes de Thalie.</stage>
+                        <l n="43">Dans ce temps,</l>
+                        <l n="44">Filles de quinze ans.,</l>
+                        <l n="45">Vous n'en savez pas moins que vos Mamans*</l>
+                        <l n="46">Dès qu'on a quitté la lisière ,</l>
+                        <l n="46">On voudrait déjà...</l>
+                        <l n="47">Tati, tati, tari , tata.</l>
+                        <l n="48">Dans ce temps</l>
+                        <l n="49">Filles de quinze ans,</l>
+                        <l n="50">Vous n'en savez pas moins que vos mamans.</l>
+                        <stage type="watch">Apercevant les Comédies.</stage>
+                        <p n="1">
+	<s n="1">Eh ! </s>
+	<s n="2">Bonjour, Mesdames. </s>
+	<s n="3">Vous ici ! </s>
+	<s n="4">Je croyais qu'il n'était permis qu'à moi de faufiler avec la Foire.</s>
+</p>
+                    </sp><!--@stage="danse/sing"--><!--@who="L'OPÉRA"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE, le prenant a la gorge.</speaker>
+                        <p n="2">
+	<s n="1">Il faut que je t'étrangle, Malheureux.</s>
+</p>
+                    </sp><!--@stage="hurt"--><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE, se jetant sur lui.</speaker>
+                        <note type="L">Dévisager : Déchirer le visage avec les ongles ou les griffes. [L]</note>
+                        <p n="3">
+	<s n="1">Que je te dévisage.</s>
+</p>
+                    </sp><!--@stage="push"--><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA, se débarrassant d'elles.</speaker>
+                        <p n="4">
+	<s n="1">Point d'emportement, Mesdames. </s>
+	<s n="2">Croyez-moi, vivons dans la concorde.</s>
+</p>
+                    </sp><!--@stage="away"--><!--@who="L'OPÉRA"-->
+<sp who="#les-deux-comedies">
+                        <speaker>LES DEUX COMÉDIES, ensemble.</speaker>
+                        <stage type="title">AIR 202 : Gorgones de Persée.</stage>
+                        <l n="51">Non, ce n'est que pour la colère</l>
+                        <l n="52">Que nos coeurs malheureux font faits ;</l>
+                        <l n="53">La concorde ne peut nous plaire,</l>
+                        <l n="54">Nous y renonçons pour jamais.</l>
+                        <l n="55">Non &gt; ce n'est que pour la colère</l>
+                        <l n="56">Que nos coeurs malheureux font faits.</l>
+                    </sp><!--@stage="together"--><!--@who="LES DEUX COMÉDIES"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <p n="5">
+	<s n="1">Vous avez beau faire, Monsieur l'Opéra, je perdrai mon ennemie.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA.</speaker>
+                        <p n="6">
+	<s n="1">J'y mettrai bon ordre.</s>
+</p>
+                    </sp><!--@who="L'OPÉRA"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE, à la Foire.</speaker>
+                        <p n="7">
+	<s n="1">Nous vous détruirons.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE, se moquant de ses menaces.</speaker>
+                        <p n="8">
+	<s n="1">Prrr.</s>
+</p>
+                    </sp><!--@stage="ironic"--><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE, lui mettant le poing sous le nez.</speaker>
+                        <p n="9">
+	<s n="1">Oui, nous vous abîmerons.</s>
+</p>
+                    </sp><!--@stage="hit"--><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE, la repoussant.</speaker>
+                        <p n="10">
+	<s n="1">Il ne faut pas pour cela me mettre le poing sous le nez. </s>
+	<s n="2">Vos airs ne me conviennent point du tout.</s>
+</p>
+                    </sp><!--@stage="push"--><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE, fièrement.</speaker>
+                        <p n="11">
+	<s n="1">Je puis les avoir avec une petite créature comme vous.</s>
+</p>
+                    </sp><!--@stage="proud"--><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE, en fureur d'une voix aigre.</speaker>
+                        <p n="12">
+	<s n="1">Petite Créature ! </s>
+	<s n="2">Vous n'êtes qu'une insolente.</s>
+</p>
+                    </sp><!--@stage="furious"--><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <p n="13">
+	<s n="1">Juste Ciel !</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE.</speaker>
+                        <p n="14">
+	<s n="1">Vous perdez le respect, ma mie.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE ITALIENNE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="15">
+	<s n="1">Le respect ! </s>
+	<s n="2">Je veux que cinq cents diables m'emportent, si je ne vous applique à toutes deux mon respect sur le visage.</s>
+</p>
+                        <stage type="spit">Elle fait l'action de cracher dans sa main.</stage>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE, outrée.</speaker>
+                        <p n="16">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est trop en souffrir !...</s>
+</p>
+                        <stage type="declamate">Elle déclame.</stage>
+                        <l n="57">Allons, c'est à nous deux à nous rendre justice.</l>
+                        <l n="58">Que de cris de douleur la Foire retentisse.</l>
+                        <l n="59">Courons chercher main-forte et d'un air furieux,</l>
+                        <l n="60">Revenons saccager, tout briser dans ces lieux ;</l>
+                        <l n="61">Nous n'épargnerons rien dans le désordre extrême</l>
+                        <l n="62">Tout nous sera Forain, fût-ce l'Opéra même.</l>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@stage="offended"--><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA, riant.</speaker>
+                        <p n="17">
+	<s n="1">Ha, ha, ha, ha, ha!</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="L'OPÉRA"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE, en s'en allant.</speaker>
+                        <p n="18">
+	<s n="1">Oui, rira bien qui rira le dernier. </s>
+	<s n="2">Vederète, vederète, Razza maledetta.</s>
+</p>
+                    </sp><!--@stage="away"--><!--@who="LA COMÉDIE ITALIENNE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. La Foire, L'Opéra, Mezzetin.</head>
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <stage type="title">AIR 203 : L'amour est pour le bel âge.</stage>
+                        <l n="63">Quoi, chez nous on nous menace !</l>
+                        <l n="64">Souffrirons nous cette audace ?</l>
+                        <l n="65">Quoi, chez nous on nous menace !</l>
+                        <l n="66">N'est-ce pas nous outrager ? .</l>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA, riant.</speaker>
+                        <stage type="title">Même Air.</stage>
+                        <l n="67">Au Public tâchez de plaire ;</l>
+                        <l n="68">Et méprisez leur colère,</l>
+                        <l n="69">Au Public tâchez de plaire ;</l>
+                        <l n="70">Pouvez-vous mieux vous venger ?</l>
+                        <stage type="together">La Foire, L'Opéra et Mezzetin, ensemble.</stage>
+                    </sp><!--@stage="laugh"--><!--@who="L'OPÉRA"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA.</speaker>
+                        <l n="71">Au Public tâchez de plaire,</l>
+                    </sp><!--@who="L'OPÉRA"-->
+<sp who="#la-foire-et-mezettin">
+                        <speaker>LA FOIRE et MEZETTIN.</speaker>
+                        <l n="72">Au Public tâchons de plaire,</l>
+                    </sp><!--@who="LA FOIRE et MEZETTIN"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA.</speaker>
+                        <l n="73">Et méprisez leur colère.</l>
+                    </sp><!--@who="L'OPÉRA"-->
+<sp who="#la-foire-et-mezettin">
+                        <speaker>LA FOIRE et MEZETTIN.</speaker>
+                        <l n="74">Et méprisons leur colère.</l>
+                    </sp><!--@who="LA FOIRE et MEZETTIN"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA.</speaker>
+                        <l n="75">Au Public tâchez de plaire,</l>
+                    </sp><!--@who="L'OPÉRA"-->
+<sp who="#la-foire-et-mezettin">
+                        <speaker>LA FOIRE et MEZETTIN.</speaker>
+                        <l n="76">Au Public tâchons de plaire,</l>
+                    </sp><!--@who="LA FOIRE et MEZETTIN"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA.</speaker>
+                        <l n="77">Pouvez-vous mieux vous venger.</l>
+                    </sp><!--@who="L'OPÉRA"-->
+<sp who="#la-foire-et-mezettin">
+                        <speaker>LA FOIRE et MEZETTIN.</speaker>
+                        <l n="78">Pouvons-nous mieux nous venger.</l>
+                    </sp><!--@who="LA FOIRE et MEZETTIN"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA.</speaker>
+                        <p n="1">
+	<s n="1">Hoçà, Cousine. </s>
+	<s n="2">J'ai une prière à vous faire : </s>
+	<s n="3">Avancez-moi, de grâce, un quartier de ma pension.</s>
+</p>
+                    </sp><!--@who="L'OPÉRA"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="2">
+	<s n="1">En vérité, mou Cousin, vous êtes bien intéressé. </s>
+	<s n="2">Vous ne manquez pas d'argent.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA.</speaker>
+                        <p n="3">
+	<s n="1">Pardonnez-moi. </s>
+	<s n="2">Je dépense, et je dois beaucoup.</s>
+</p>
+                    </sp><!--@who="L'OPÉRA"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="4">
+	<s n="1">Je vous l'enverrai demain.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#l-opera">
+                        <speaker>L'OPÉRA.</speaker>
+                        <p n="5">
+	<s n="1">Cela suffit. </s>
+	<s n="2">Adieu, petite Mère.</s>
+</p>
+                        <stage type="away/sing/danse">Il s'en retourne comme il est venu , en chantant et dansant.</stage>
+                        <l n="79">Dès qu'on a quitté la lisière,</l>
+                        <l n="80">On voudrait déjà...</l>
+                        <l n="81">Tati, tati, tati, tata.</l>
+                    </sp><!--@who="L'OPÉRA"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. La Foire, Mezzetin.</head>
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="1">
+	<s n="1">Allons, Mezzetin. Avertissez tous vos camarades : Il est temps de commencer.</s>
+</p>
+                        <stage type="title">AIR 113 : Préparons-nous pour la fête nouvelle.</stage>
+                        <l n="82">Préparez-vous pour la fête nouvelle...</l>
+                    </sp><!--@who="LA FOIRE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. La Foire, Mezzetin, Polichinelle, un Gille.</head> 
+<sp who="#polichinelle">
+                        <speaker>POLICHINELLE, l'épée à la main.</speaker>
+                        <p n="1">
+	<s n="1">Au feu ! </s>
+	<s n="2">Au feu !</s>
+</p>
+                        <stage type="title">AIR 59 : Aux armes, Camarades.</stage>
+                        <l n="83">Aux armes, Camarades,</l>
+                        <l n="84">L'Ennemi vient à nous ;</l>
+                        <l n="85">Préparons-nous tous,</l>
+                        <l n="86">Aux armes, Camarades ;</l>
+                        <l n="87">N'allons point ici filer doux.</l>
+                    </sp><!--@stage="threat"--><!--@who="POLICHINELLE"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="2">
+	<s n="1">Qu'y a-t-il donc ?</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#polichinelle">
+                        <speaker>POLICHINELLE.</speaker>
+                        <stage type="title">AIR 61 : Les Trembleurs.</stage>
+                        <l n="88">Nos deux fières Ennemies,</l>
+                        <l n="89">De tous leurs Acteurs suivies,</l>
+                        <l n="90">Viennent comme des Furies,</l>
+                        <l n="91">Mes chers amis, fondre ici.</l>
+                        <l n="92">Animons notre courage ;</l>
+                        <l n="93">Ne cédons point l'avantage</l>
+                        <l n="94">À leur envieuse rage.</l>
+                    </sp><!--@who="POLICHINELLE"-->
+<sp who="#mezzetin">
+                        <speaker>MEZZETIN, allant chercher son épée.</speaker>
+                        <p n="3">
+	<s n="1">Défendons-nous. </s>
+	<s n="2">Les voici.</s>
+</p>
+                    </sp><!--@stage="search"--><!--@who="MEZZETIN"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCENE IX. La Foire, Mezzetin, Polichinelle, un Gille, les Comédies Françaises et Italiennes avec leur suite.</head>
+<sp who="#les-deux-comedies">
+                        <speaker>LES DEUX COMÉDIES, ensemble.</speaker>
+                        <stage type="title">AIR 110 : Poursuivons jusqu'au trépas.</stage>
+                        <l n="95">Détruisons tous les Forains</l>
+                        <l n="96">Auteurs de notre indigence ;</l>
+                        <l n="97">De nos propres mains</l>
+                        <l n="98">Tuons cette engeance.</l>
+                        <stage type="fight">Les Suivant des deux Comédies, et ceux de la Foire se battent à coups d'épée. Les derniers sont repoussés, et abandonnent le champ de bataille.</stage>
+                    </sp><!--@stage="together"--><!--@who="LES DEUX COMÉDIES"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <stage type="title">AIR 49 : Jardinier, ne vois-tu, pas ?</stage>
+                        <l n="99">Rasons jusqu'aux fondements</l>
+                        <l n="100">Ce Jeu qui nous outrage.</l>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#les-deux-comedies">
+                        <speaker>LES DEUX COMÉDIES, ensemble.</speaker>
+                        <l n="101">Oui ? dans nos ressentiments,</l>
+                        <l n="102">Laissons-y des monuments</l>
+                        <l n="103">De rage, de rage, de rage.</l>
+                        <stage type="break">Leurs suivants brisent les décorations.</stage>
+                    </sp><!--@stage="together"--><!--@who="LES DEUX COMÉDIES"-->
+<sp who="#les-deux-comedies">
+                        <speaker>LES DEUX COMÉDIES.</speaker>
+                        <stage type="title">AIR 204 : Parodie des Gorgones de Persée.</stage>
+                        <l n="104">Ah ! Qu'il est doux pour notre rage</l>
+                        <l n="105">De pouvoir faire ici tapage !</l>
+                        <l n="106">Heureuse la fureur</l>
+                        <l n="107">Qui remplit ces lieux-ci d'horreur.</l>
+                        <stage type="music">On entend dans cet endroit, un bruit de timbales et de trompettes.</stage>
+                    </sp><!--@who="LES DEUX COMÉDIES"-->
+<sp who="#la-comedie-française">
+                        <speaker>LA COMÉDIE FRANÇAISE.</speaker>
+                        <p n="1">
+	<s n="1">Quel bruit se fait entendre ? </s>
+	<s n="2">Nos ennemis auraient-ils repris courage ?</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE FRANÇAISE"-->
+<sp who="#la-comedie-italienne">
+                        <speaker>LA COMÉDIE ITALIENNE.</speaker>
+                        <p n="2">
+	<s n="1">Ils reviennent à la charge, qans doute.</s>
+</p>
+                    </sp><!--@who="LA COMÉDIE ITALIENNE"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Les deux Comédies, et leurs Suivants, la Foire, Suite de la Foire, L'Opéra.</head> 
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <stage type="title">AIR 8 : Je reviendrai demain au soir.</stage>
+                        <l n="108">Oui, vous revoyez les Forains.</l>
+                        <stage type="bis">Bis.</stage>
+                        <l n="109">Défendez-vous,Romains.</l>
+                        <l n="110">Voici notre ami l'Opéra,</l>
+                        <stage type="bis">bis. </stage>
+                        <l n="11">Qui pour nous combattra.</l>
+                        <stage type="fight/exit">Les Forains chargent leurs ennemis. L'Opéra se bat contre un auteur habillé à la Romaine, et le culbute. Les Comédies et leurs suivants se retirent, et les Forains demeurent vainqueurs.</stage>
+                    </sp><!--@who="LA FOIRE"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI ET DERNIÈRE. La Foire, Suivants de la Foire.</head>
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <stage type="title">AIR 62 : Les Rats.</stage>
+                        <l n="111">Laissons la poursuite</l>
+                        <l n="112">De nos ennemis ;</l>
+                        <l n="113">Il suffit qu'en fuite,</l>
+                        <l n="114">Nous les ayons mis.</l>
+                        <l n="115">Pour célébrer notre victoire.</l>
+                        <l n="116">Venez ici, mes favoris.</l>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#le-choeur">
+                        <speaker>CHOEUR des Suivants de la Foire.</speaker>
+                        <l n="117">Ô Alegria !</l>
+                    </sp><!--@who="LE CHOEUR"-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="2">
+	<s n="1">Amis, chantons : Vive la Foire.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#le-choeur">
+                        <speaker>LE CHOEUR.</speaker>
+                        <l n="118">Ô Alegria !</l>
+                    </sp><!--@who="LE CHOEUR."-->
+<sp who="#la-foire">
+                        <speaker>LA FOIRE.</speaker>
+                        <p n="3">
+	<s n="1">Vive la Foire et l'Opéra.</s>
+</p>
+                    </sp><!--@who="LA FOIRE"-->
+<sp who="#tous">
+                        <speaker>TOUS, ensemble.</speaker>
+                        <l n="119">Ô Alegria !</l>
+                        <p n="4">
+	<s n="1">Vive la Foire et l'Opéra.</s>
+</p>
+                        <stage type="danse">Tous les Acteurs de la Foire se réunissent pour danser, le Prologue finit par là.</stage>
+                    </sp><!--@stage="together"--><!--@who="TOUS"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

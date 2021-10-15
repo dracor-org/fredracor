@@ -1,0 +1,803 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Passe-Dix ou Le Mauvais Exemple</title>
+                <title type="sub">Drame en un Acte.</title>
+                <title type="sub">Cinquième Proverbe.</title>
+                <author>
+      <idno type="isni">0000000083709277</idno>
+      <idno type="wikidata">Q56007043</idno>
+      <persName>
+        <forename>Charles-Georges-Thomas</forename>
+        <surname>Garnier</surname>
+      </persName>
+    </author><!--GARNIER, Charles-Georges-Thomas-->
+                <editor>Paul FIEVRE janvier 2018</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000675</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/GARNIERT_PASSEDIX.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/GARNIERT_PASSEDIX.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1785"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="l-abbe-dursaint" sex="MALE">
+                        <persName>L'abbé dursaint</persName>
+                    </person>
+                    <person xml:id="le-petit-dorville" sex="MALE">
+                        <persName>Le petit dorville</persName>
+                    </person>
+                    <person xml:id="le-petit-villiers" sex="MALE">
+                        <persName>Le petit villiers</persName>
+                    </person>
+                    <person xml:id="dorville" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Dorville</persName>
+                    </person>
+                    <person xml:id="monsieur-dorville" sex="MALE">
+                        <persName>Monsieur dorville</persName>
+                    </person>
+                    <person xml:id="saint-jean" sex="MALE">
+                        <persName>Saint-jean</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Proverbe</term>
+                    <term>prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LE PASSE-DIX</titlePart>
+			<titlePart type="main">OU LE MAUVAIS EXEMPLE</titlePart>
+			<titlePart type="sub">DRAME EN UN ACTE.</titlePart>
+			<titlePart type="sub">CINQUIÈME PROVERBE.</titlePart>
+		</docTitle> 
+		<docDate when="1785">M. DCC. LXXXV.</docDate>
+		<docAuthor>Par MONSIEUR G***.</docAuthor><!--@bio="garnier"-->
+		<div type="docImprint">
+			<div type="printer">
+                    <p>À LIÈGE, Chez F.J. DESOER, Imprimeur-Libraire, sur le Pontd'Isle, à la Croix d'Or.</p>
+                </div><!--@id="JORRY"-->
+		</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#monsieur-dorville">MONSIEUR DORVILLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#l-abbe-dursaint">L'ABBÉ DURSAINT</role><!--@sex="1"--><!--@type="H"--><!--@statut="précepteur"--><!--@age="A"--><!--@stat_amour="néant"-->, Précepteur du petit Dorville.</castItem>
+		<castItem>
+                    <role corresp="#le-petit-dorville">LE PETIT DORVILLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="E"--><!--@stat_amour="néant"-->, âgé de dix à douze ans.</castItem>
+		<castItem>
+                    <role corresp="#le-petit-villiers">LE PETIT VILLIERS</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="E"--><!--@stat_amour="néant"-->, Ami du petit Dorville.</castItem>
+		<castItem>
+                    <role corresp="#saint-jean">SAINT-JEAN</role><!--@sex="1"--><!--@type="H"--><!--@statut="domestique"--><!--@age="A"--><!--@stat_amour="néant"-->, Domestique.</castItem>
+   </castList>
+<!--TODO: usage of set in correct place but with unknown attributes <set location="Province" country="France" periode="XVIIIème" gps="(N/A)">La scène est chez M. Dorville.</set>-->
+<note>Le texte est issu de "Nouveaux proverbes dramatiques ou recueil de comédies de société pour servir de suite aux Théâtres de Société et d'Éducation" par Monsieur G[arnier], 1785. pp. 75-92.</note>
+</front>
+<body>
+<div type="act" n="1">
+                <head>LE PASSE-DIX</head>
+<stage type="decor">Le Théâtre représente la chambre de l'Abbé Dursaint. On voit dans le fond une porte vitrée ; sur le devant du Théâtre est une table à tiroir, sur laquelle sont quelques livres, quelques papiers et une écritoire. L'action se passe sur les deux heures après-midi.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. L'Abbé Dursaint, Le Petit Dorville.</head>
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT entre dans sa chambre ; il est suivi du petit Dorville qui pleure.</speaker>
+                        <p n="1">
+	<s n="1">Allons, Monsieur, entrez ; d'aujourd'hui vous ne sortirez d'ici ; cela est fort joli vraiment. </s>
+	<s n="2">À votre âge ! </s>
+	<s n="3">Tenir de pareils propos ! </s>
+	<s n="4">En vérité, mais il n'y a plus d'enfants. </s>
+	<s n="5">Ce sont sûrement ces amis, ces lectures de toute espèce qui vous rendent prématuré.</s>
+</p>
+                    </sp><!--@stage="entrance/follow/cry"--><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Mon Dieu ! </s>
+	<s n="2">Voyez donc ; parce que j'ai dit quelques mots pour rire à Mademoiselle Toinette, et dont elle ne s'est feulement pas fâchée, vous faites du bruit comme tout.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT.</speaker>
+                        <p n="3">
+	<s n="1">Qu'appelez-vous, petit libertin, des mots pour rire ? </s>
+	<s n="2">Des équivoques, des indécences, un morveux de votre espèce !</s>
+</p>
+                    </sp><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="4">
+	<s n="1">Oui, morveux, je sais bien que vous me traitez toujours comme si j'en étais un, mais je ne le suis pourtant pas autant que vous le pensez ; j'ai eu avant - hier douze ans, et il n'est pas aussi mal à moi de dire ce que j'ai dit, qu'à vous d'embrasser, comme vous le faites en cachette, la femme de chambre de Maman... là.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT, rougissant.</speaker>
+                        <p n="5">
+	<s n="1">Taisez-vous, petit imposteur. </s>
+	<s n="2">Je vous crois bien capable de répandre cette calomnie, mais heureusement nous sommes trop connus l'un et l'autre pour appréhender que qui que ce soit y ajoute foi.</s>
+</p>
+                    </sp><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="6">
+	<s n="1">Ho ! </s>
+	<s n="2">Vous croyez que votre air dévot en impose. </s>
+	<s n="3">Allez, si j'ai souvent tort avec vous, c'est parce que vous êtes mon précepteur : si j'étais le vôtre, moi, je saurais bien faire connaître à mon papa et à maman des choses...</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT, avec colère.</speaker>
+                        <p n="7">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Quoi ? </s>
+	<s n="3">Petit monstre ! </s>
+	<s n="4">Vous auriez la scélératesse d'inventer... </s>
+	<s n="5">Vous mériteriez... </s>
+</p>
+                        <stage type="threat">Il le menace.</stage>
+                    </sp><!--@stage="anger"--><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="8">
+	<s n="1">Ah bien, par exemple, avisez-vous de me donner un soufflet pour voir... comme mon papa ne le saurait pas tout à l'heure.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT, avec un sang froid forcé.</speaker>
+                        <p n="9">
+	<s n="1">Allez, vous êtes un petit malheureux. </s>
+	<s n="2">Je ne vous crains... </s>
+	<s n="3">Je ne vous crains point du tout, vous dis-je ; mais par provision, vous aurez la bonté de garder la chambre tout le reste de la journée, et de me traduire les deux premiers chapitres de l'Apocalypse. </s>
+	<s n="4">- À propos, le jeu de cartes avec lequel vous jouiez ce matin avec Mademoiselle votre soeur, où est-il ?</s>
+</p>
+                    </sp><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="10">
+	<s n="1">Dame, est-ce que je le fais, moi ? </s>
+	<s n="2">Elle l'a pris, ou il est resté fur la table.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT.</speaker>
+                        <p n="11">
+	<s n="1">Vous êtes un menteur ; car je vous l'ai vu mettre dans votre poche. </s>
+	<s n="3">Tenez, il doit être dans celle-là.</s>
+</p>
+                        <stage type="show">Il montre une des poches du petit Dorville.</stage>
+                        <p n="12">
+	<s n="">Donne-le-moi tout à l'heure, ou je saurai vous le faire donner d'une manière qui ne vous sera pas agréable.</s>
+</p>
+                    </sp><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE, avec un ris forcé.</speaker>
+                        <p n="13">
+	<s n="1">Oh ! </s>
+	<s n="2">La belle vengeance ! </s>
+	<s n="3">Vous croyez me faire bien de la peine.</s>
+</p>
+                        <stage type="get/give/drop">Il tire de sa poche le jeu de cartes, et en le donnant, il le froisse avec les mains et en répand la moitié à terre.</stage>
+                        <p n="14">
+	<s n="1">Allez, tenez, le voilà, votre jeu de cartes.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT, prenant les cartes et poussant hors de la chambre avec le pied celles qui font à terre.</speaker>
+                        <p n="15">
+	<s n="1">Hum, le mauvais sujet ! </s>
+	<s n="2">Qu'un Précepteur est à plaindre lorsqu'il a à faire à de pareils garnements. </s>
+	<s n="3">Allons, Monsieur, à l'ouvrage. </s>
+	<s n="4">Dites adieu pour longtemps aux divertissements, à la promenade et surtout au jeu ; car il ne vous manquait plus, pour avoir tous les défauts, que d'être un dé terminé joueur. </s>
+	<s n="5">Heureusement il n'y a ici ni cartes, ni dés ; d'ailleurs, vous n'aurez personne avec qui vous puissiez jouer ; ainsi, si vous ne prenez le parti de faire l'ouvrage que je vous ai donné, vous aurez tout le temps de vous entretenir avec vos charmantes idées : il est vrai que vous n'aurez pas l'agrément d'épier mes démarches et de les travestir au gré de votre aimable caractère ; mais c'est un petit plaisir dont vous vous passerez aujourd'hui, s'il vous plait. </s>
+	<s n="6">Travaillez, je vous le conseille, sinon vous ferez encore enfermé demain, je vous en avertis.</s>
+</p>
+                        <stage>Il sort et ferme la porte de la chambre à double tour.</stage>
+                    </sp><!--@stage="get/throw"--><!--@who="L'ABBÉ DURSAINT"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II.</head>
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE, seul.</speaker>
+                        <stage type="get/throw">Il prend son Dictionnaire et le jette de toutes ses forces contre la porte.</stage>
+                        <stage type="explicit">Les - marquent les intervalles de filence.</stage>
+                        <p n="1">
+	<s n="1">Va, maudit Abbé, tu n'oublies rien pour me faire enrager. </s>
+	<s n="2">Mais si je puis jamais te rendre la pareille... </s>
+	<s n="3">Ne compte pas avoir à faire à un ingrat. </s>
+</p>
+                        <stage type="stand/walk">Il se lève et se promène dans la chambre. </stage>
+                        <p n="2">
+	<s n="1">- Que vais-je donc faire ? </s>
+	<s n="2">Il est pourtant bien ennuyeux de passer ici toute la soirée. </s>
+	<s n="3">- Il n'a sûrement pas oublié de fermer la porte à double tour.</s>
+</p>
+                        <stage type="location/shake/anger">Il va à la porte et secoue la ferrure avec colère. </stage>
+                        <p n="3">
+	<s n="1">Chien de pédant, je te déteste ! </s>
+</p>
+                        <stage type="back">Il retourne à sa table. </stage>
+                        <p n="4">
+	<s n="1">- Aussi mon papa est bien singulier, de me donner un Précepteur à mon âge ; il doit pourtant savoir qu'à douze ans on n'est plus enfant, et qu'un grand garçon comme moi est bien capable de se conduire lui-même.</s>
+</p>
+                        <stage type="sit">Il s'assied. </stage>
+                        <p n="5">
+	<s n="1">- Mon Dieu, comme je m'ennuie !... </s>
+	<s n="2">Je m'en vais faire ma version, peut-être cela me désennuiera.</s>
+</p>
+                        <stage type="read">Il feuillette un oeuvre. </stage>
+                        <p n="6">
+	<s n="1">Oh, quelle longueur ! </s>
+	<s n="2">Copier tout cela, et du latin en français encore !... </s>
+	<s n="3">Je n'en aurai jamais le courage ; et puis Monsieur l'Abbé serait trop content. </s>
+	<s n="4">Non ; pour le faire enrager, je n'écrirai pas un seul mot.</s>
+</p>
+                        <stage type="walk">Il fait plusieurs tours de chambre d'un air désoeuvré, puis il revient à fa place. </stage>
+                        <p n="7">
+	<s n="1">Cependant si je ne travaille point, je serai encore enfermé de main. </s>
+	<s n="2">- Monsieur l'Abbé a oublié, je crois, de fermer fon tiroir.</s>
+</p>
+                        <stage type="open">Il ouvre le tiroir.</stage>
+                        <p n="8">
+	<s n="1">Voyons. </s>
+</p>
+                        <stage type="search/get">Il cherche dans le tiroir et y prend un livre.</stage>
+                        <p n="9">
+	<s n="1">Voici de quoi me désennuyer... </s>
+	<s n="2">C'est peut-être un livre de dévotion.</s>
+</p>
+                        <stage type="open">Il ouvre le livre.</stage>
+                        <p n="10">
+	<s n="1">Les Contes de la Fontaine. </s>
+	<s n="2">Ah, des contes ! </s>
+	<s n="3">Cela doit être joli, des contes.</s>
+</p>
+                        <stage type="read">Il parcourt le livre. </stage>
+                        <p n="11">
+	<s n="1">Regardons d'abord les images.</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS, du dedans.</speaker>
+                        <p n="12">
+	<s n="1">Dorville... </s>
+	<s n="2">Dorville.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="13">
+	<s n="1">Ah ! </s>
+	<s n="2">Voilà Villiers qui m'appelle... </s>
+	<s n="3">Je lui avais donné parole... </s>
+	<s n="4">Que cela est en rageant ! </s>
+	<s n="5">Mais il ne faut rien dire.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Le Petit Dorville, Le Petit Villiers.</head>
+<sp who="#dorville">
+                        <speaker>DORVILLE, regardant à travers les vitres de la porte.</speaker>
+                        <p n="1">
+	<s n="1">Dorville, qu'est-ce que tu fais donc là ?</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="DORVILLE"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE, sans regarder.</speaker>
+                        <p n="2">
+	<s n="1">Laisse-moi tranquille, j'ai de l'ouvrage pressé.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="3">
+	<s n="1">De l'ouvrage pressé, dis-tu ; bon, bon, il faut remettre cela à une autre fois. </s>
+	<s n="2">Je vais te donner ta revanche de ce que je t'ai gagné hier au soir. </s>
+	<s n="3">Eh bien ?... </s>
+	<s n="4">Ouvre donc ta porte au moins.</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="4">
+	<s n="1">Non, je te dis que je ne peux... que je n'ai pas le temps, encore une fois.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="5">
+	<s n="1">Oh, oh ! </s>
+	<s n="1">Voici du nouveau ; tu refuses ta revanche, ceci est extraordinaire.</s>
+</p>
+                        <stage type="hurt">Il frappe à la porte du toutes ses forces. </stage>
+                        <p n="6">
+	<s n="1">Allons, allons, ouvre donc... </s>
+	<s n="2">Mais par aventure, ne serais-tu pas enfermé, mon drôle ?</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="7">
+	<s n="1">Enfermé ! </s>
+	<s n="2">Ah, je voudrais bien voir... </s>
+	<s n="3">D'ailleurs, qu'est-ce que ça te fait ? </s>
+	<s n="4">Va te promener ; laisse-moi en repos.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="8">
+	<s n="1">Hé, mon Dieu ! </s>
+	<s n="2">Tu te fâches ; quand cela serait ; voyez le grand malheur.</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="9">
+	<s n="1">Sérieusement, Villiers ; va-t-en, tu m'ennuies.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS, riant.</speaker>
+                        <p n="10">
+	<s n="1">Dorville, sans tant faire le fin, veux-tu ta revanche ? </s>
+	<s n="2">Je trouverai bien le moyen de jouer, quoique tu sois enfermé, sinon je suis ton serviteur.</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE, se retourne.</speaker>
+                        <p n="11">
+	<s n="1">Bon ; et comment t'y prendrais-tu ?</s>
+</p>
+                    </sp><!--@stage="turn"--><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="12">
+	<s n="1">Voilà un carreau de vitre qui ne tient qu'à quatre pointes, il est aisé de l'ôter et de jouer par là.</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="13">
+	<s n="1">Ah ! </s>
+	<s n="2">Pardi, voyons.</s>
+</p>
+                        <stage type="closer">Il s'approche de la porte.</stage>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="14">
+	<s n="1">Tiens, l'affaire est faite.</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="15">
+	<s n="1">Je m'en vais prendre mon Dictionnaire ; en le mettant en travers, il nous servira de table.</s>
+</p>
+                        <stage type="drop">Il met le livre en travers de la vitre et s'assied auprès. </stage>
+                        <p n="16">
+	<s n="1">Il est heureusement de la largeur de la vitre.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="17">
+	<s n="1">Bien imaginé !</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="18">
+	<s n="1">Je t'avertis d'abord que je n'ai ni cartes ni dés.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="19">
+	<s n="1">Ne t'inquiète pas, je ne vais jamais sans cela, moi. </s>
+	<s n="2">Tiens, voilà des dés, notre table est trop petite pour jouer aux cartes.</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <note type="L">Passe-dix : Jeu à trois dés dans lequel un des joueurs parie amener plus de dix. [L]</note>
+                        <p n="20">
+	<s n="1">Bon. </s>
+	<s n="2">Aussi bien je veux jouer au Passe-dix ; celui qui perd a droit de choisir le jeu.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="21">
+	<s n="1">Je le veux bien. </s>
+	<s n="2">Prends-tu les dés.</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="22">
+	<s n="1">Non, tiens-les, toi. </s>
+	<s n="2">Allons, les trois livres que tu m'as gagnées hier.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="23">
+	<s n="1">C'est beaucoup. </s>
+	<s n="2">Les voilà, je ne veux pas disputer.</s>
+</p>
+                        <stage type="play">Il joue.</stage>
+                        <p n="24">
+	<s n="1">Rien... </s>
+	<s n="2">Rien encore... </s>
+	<s n="3">Voilà pourtant dix-sept.</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="25">
+	<s n="1">J'ai mal fait déjouer, je suis en malheur ; tu vas me gagner tout mon argent. </s>
+	<s n="2">Allons, encore trois livres.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="26">
+	<s n="1">Allons.</s>
+</p>
+                        <stage type="play">Il joue. </stage>
+                        <p n="27">
+	<s n="1">Rien... </s>
+	<s n="2">Rien... </s>
+	<s n="3">Dix-sept, encore gagné. </s>
+	<s n="4">Veux-tu jouer les six francs, quoique ce soit la troisième main ; tu vois bien que je n'ai pas envie de gagner ton argent.</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="28">
+	<s n="1">Comme tu joues de bonheur ! </s>
+	<s n="2">Tu vas me ruiner ; allons, voilà mon reste.</s>
+</p>
+                        <stage type="drop">Il met l'argent sur le livre.</stage>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="29">
+	<s n="1">Oh ! Non ; car je me sens en malheur à ce coup-ci.</s>
+</p>
+                        <stage type="play">Il joue. </stage>
+                        <p n="30">
+	<s n="1">Rien... </s>
+	<s n="2">Rien... </s>
+	<s n="3">Je vais perdre... </s>
+	<s n="4">Ma foi, non, en voilà dix-huit.</s>
+</p>
+                        <stage type="get/abrupt">Il tire brusquement les enjeux.</stage>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="31">
+	<s n="1">Monsieur Villiers, doucement, s'il vous plait : Voilà trois fois de suite que vous passez ; cela n'est pas naturel ; et vous trichez certainement.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="32">
+	<s n="1">Qu'appelles-tu tricher ? </s>
+	<s n="2">Tu es plaisant : parce que tu perds, tu es de mauvaise humeur, tu me dis des sottises. </s>
+	<s n="3">Si tu n'étais pas enfermé, je t'apprendrais à parler ; tricher !</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="33">
+	<s n="1">Je me moque de cela. </s>
+	<s n="2">Tu m'as sûrement trompé, et je veux ravoir mon argent, entends-tu ? </s>
+	<s n="3">Allons, rends-le moi, ou je vais faire un bruit de diable.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS.</speaker>
+                        <p n="34">
+	<s n="1">Ah ! </s>
+	<s n="2">Pardi ; celui-là est bon : que je te le rende ; il m'appartient, je l'ai bien gagné ; tout ce que je puis faire, c'est de te donner ta revanche ; vois si tu le veux.</s>
+</p>
+                    </sp><!--@who="LE PETIT VILLIERS"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="35">
+	<s n="1">Non, il me faut mon argent ; si je ne l'ai pas tout à l'heure, je vais appeler monsieur l'Abbé, qui te le fera bien rendre.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#le-petit-villiers">
+                        <speaker>LE PETIT VILLIERS, se sauvant.</speaker>
+                        <p n="36">
+	<s n="1">Je me moque de monsieur l'Abbé et de toi aussi.</s>
+</p>
+                    </sp><!--@stage="away"--><!--@who="LE PETIT VILLIERS"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV.</head>
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE, seul.</speaker>
+                        <p n="1">
+	<s n="1">Villiers... </s>
+	<s n="2">Villiers... </s>
+	<s n="3">Écoute donc, je veux bien jouer la revanche.</s>
+</p>
+                        <stage type="away">Villiers reparaît.</stage>
+                        <p n="2">
+	<s n="1">Mais pourvu que tu me fasses crédit.</s>
+</p>
+                        <stage type="exit">Villiers disparaît. </stage>
+                        <p n="3">
+	<s n="1">Villiers... </s>
+	<s n="2">Entends-tu ? </s>
+	<s n="3">Je ne demande que ma revanche... </s>
+	<s n="4">Il est parti. </s>
+</p>
+                        <stage type="shout">Il crie de toutes ses forces.</stage>
+                        <p n="4">
+	<s n="1">Villiers... </s>
+	<s n="2">Villiers... </s>
+	<s n="3">Ah, le fripon... </s>
+	<s n="4">Il emporterait comme cela mon argent... </s>
+	<s n="5">Villiers... </s>
+	<s n="6">Jean... </s>
+	<s n="7">Arrêtez donc Villiers qui me vole...</s>
+</p>
+                        <stage type="hurt/knock">Il donne de grands coups de livre contre la porte.</stage>
+                    </sp><!--@stage="alone"--><!--@who="LE PETIT DORVILLE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. LE. PETIT DORVILLE, M. DORVILLE, UN DOMESTIQUE en dedans.</head> 
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Mais, qu'est-ce que tout ceci signifie donc ? </s>
+	<s n="2">Voilà un vacarme épouvantable ; est-ce que vous êtes enfermé là dedans, Dorville ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Oui, mon papa ; mais faites donc vite courir après le petit Villiers, qui m'a pris mon argent et qui se sauve avec.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="3">
+	<s n="1">Comment, monsieur Villiers s'enfuit avec votre argent, et de quelle manière vous l'a-t-il pris ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="4">
+	<s n="1">Mon papa, c'est à travers cette vitre... </s>
+	<s n="2">C'est que...</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="5">
+	<s n="1">À travers cette vitre ; cela est singulier... </s>
+	<s n="2">Je conçois... </s>
+	<s n="3">Vous jouiez par là tous les deux, n'est-ce pas ? </s>
+	<s n="4">Nous allons voir cela.</s>
+</p>
+                        <stage type="call">Il appelle.</stage>
+                        <p n="6">
+	<s n="1">Saint-Jean... </s>
+	<s n="2">Allez demander à Monsieur l'Abbé la clef de sa chambre.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#saint-jean">
+                        <speaker>SAINT-JEAN.</speaker>
+                        <p n="7">
+	<s n="1">Oui, monsieur.</s>
+</p>
+                    </sp><!--@who="SAINT-JEAN"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="8">
+	<s n="1">Où est-il, monsieur l'Abbé ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#saint-jean">
+                        <speaker>SAINT-JEAN.</speaker>
+                        <p n="9">
+	<s n="1">Monsieur ; il est là-bas dans le salon ; il joue avec monsieur l'abbé Bigotin.</s>
+</p>
+                    </sp><!--@who="SAINT-JEAN"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="10">
+	<s n="1">Dites-lui en même temps qu'il se rende ici sur le champ, que c'est moi qui le demande ; qu'il quitte tout.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#saint-jean">
+                        <speaker>SAINT-JEAN.</speaker>
+                        <p n="11">
+	<s n="1">Oui, monsieur.</s>
+</p>
+                    </sp><!--@who="SAINT-JEAN"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Monsieur Dorville, Le Petit Dorville.</head>
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Mon papa, faites plutôt courir après Villiers : cela est plus pressé ; il est peut-être déjà bien loin.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Taisez-vous, petit coquin. </s>
+	<s n="2">Tout à l'heure nous allons compter ensemble.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Monsieur Dorville, L'Abbé Dursaint, Le Petit Dorville.</head>
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT, ouvrant la porte.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Monsieur, j'aurais voulu vous épargner le chagrin d'apprendre les fredaines de monsieur votre fils, mais je vois qu'elles éclatent malheureusement malgré moi. </s>
+	<s n="3">Je me suis trouvé obligé cet après-midi, de le renfermer pour le punir de son amour pour tout ce qui peut le distraire de l'étude, et principalement pour le lieu.</s>
+</p>
+                    </sp><!--@stage="open"--><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Vous avez fort bien réussi ; et pour commencer sa réforme, ce petit monsieur jouait à l'instant avec un de ses amis à travers cette vitre.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT, au petit Dorville.</speaker>
+                        <p n="2">
+	<s n="1">Comment, monsieur , après toutes mes remontrances ? </s>
+	<s n="2">De quoi vous ont donc servi tous les discours que je vous ai tenus sur les inconvénients du jeu, et l'horreur que tous les honnêtes gens doivent avoir pour cette passion ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="3">
+	<s n="1">Monsieur l'Abbé, vos discours étaient admirables, sans contredit, si cependant vous eussiez pris la peine de veiller vous-même sur mon fils, tout ceci ne seroit pas arrivé. </s>
+	<s n="2">Qu'est-ce que vous lui aviez donné à faire ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT.</speaker>
+                        <p n="4">
+	<s n="1">Hélas ! </s>
+	<s n="2">Monsieur, il devait me traduire les deux premiers Chapitres de l'Apocalypse. </s>
+	<s n="3">Il est bon qu'en l'instruisant dans les sciences, on lui inculque, en même temps, les principes sacrés de notre Religion.</s>
+</p>
+                    </sp><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="5">
+	<s n="1">Votre méthode est excellente ; et vous vous y prenez merveilleusement. </s>
+	<s n="2">Voyons son ouvrage.</s>
+</p>
+                        <stage type="get">Il prend un livre sur la table. </stage>
+                        <p n="6">
+	<s n="1">Mais que diable ! </s>
+	<s n="2">Ceci ne ressemble point du tout à l'Apocalypse : les Contes de la Fontaine. </s>
+	<s n="3">Comment, petit drôle, vous lisez de ces sortes de livres.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#le-petit-dorville">
+                        <speaker>LE PETIT DORVILLE.</speaker>
+                        <p n="7">
+	<s n="1">Oh ! </s>
+	<s n="2">Mon papa, ce livre ne peut pas être mauvais ; car il appartient à monsieur l'Abbé ; je l'ai trouvé dans son tiroir.</s>
+</p>
+                    </sp><!--@who="LE PETIT DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT, au petit Dorville à demi-bas.</speaker>
+                        <p n="8">
+	<s n="">Je n'ai pas cru que vous eussiez poussé la hardiesse jusqu'à fouiller dans mes tiroirs.</s>
+</p>
+                        <stage type="toward">À Monsieur Dorville. </stage>
+                        <p n="9">
+	<s n="1">Monsieur, ne pensez pas que je fasse ma lecture d'un semblable livre ; c'est un de mes amis qui l'avait laissé ici... et...</s>
+</p>
+                    </sp><!--@stage="toward/low"--><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="10">
+	<s n="1">Je sais à quoi m'en tenir là-dessus, mon sieur l'Abbé.</s>
+</p>
+                        <stage type="toward">À son fils.</stage>
+                        <p n="11">
+	<s n="1">Retirez-vous, nous nous verrons tantôt. </s>
+	<s n="2">Si jamais je trouve des livres de cette espèce dans vos mains, prenez garde à ce qui vous en arrivera... </s>
+	<s n="3">Allez...</s>
+</p>
+                        <stage type="exit">Le petit Dorville sort.</stage>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII et dernière. Monsieur Dorville, L'Abbé Dursaint.</head>
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Pour vous, monsieur l'Abbé, je vous suis très obligé de vos services ; mais je sens la nécessité de veiller moi-même sur mon fils.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT.</speaker>
+                        <p n="2">
+	<s n="1">Je ne crois pas, Monsieur, que vous ayez sujet de vous plaindre de moi ; j'ai toujours pris soin de former autant qu'il a été en mon pouvoir l'esprit et le coeur de Monsieur votre fils ; j'y ai travaillé jusqu'à présent avec une assiduité qui a peu d'exemples ; et il est bien humiliant pour moi, de me voir ainsi congédié.</s>
+</p>
+                    </sp><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="3">
+	<s n="1">À vous parler franchement, Monsieur l'Abbé, je suis peu touché de cette assiduité. </s>
+	<s n="2">Je ne me plains pas de vos leçons, je veux bien croire que mon fils n'en a reçu de vous que d'excellentes ; mais il aurait été à propos qu'elles eussent été soutenues par de bons exemples.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+<sp who="#l-abbe-dursaint">
+                        <speaker>L'ABBÉ DURSAINT.</speaker>
+                        <p n="4">
+	<s n="1">Comment, Monsieur, de bons exemples ! Qui est-ce qui pourrait taxer ma conduite de la moindre irrégularité ?</s>
+</p>
+                    </sp><!--@who="L'ABBÉ DURSAINT"-->
+<sp who="#monsieur-dorville">
+                        <speaker>MONSIEUR DORVILLE.</speaker>
+                        <p n="5">
+	<s n="1">Tenez, monsieur l'Abbé, ne me pressez pas davantage ; j'ai le malheur d'être franc, vous n'y trouveriez pas votre compte. </s>
+	<s n="2">Enfin vous êtes inexcusable de n'avoir pas eu les yeux sur mon fils, de l'avoir laissé continuellement à lui-même comme vous l'avez fait. </s>
+	<s n="3">Vous l'enfermez dans votre chambre, pour vous divertir d'un autre côté plus à votre aise ; ensuite vous avez des amis qui laissent dans vos tiroirs de mauvais livres qui tombent malheureusement entre les mains de mon fils... </s>
+	<s n="4">Tout cela, et quelques petites découvertes que j'ai faites, et que je ne juge pas à propos de rapporter, m'ont déterminé depuis longtemps au projet que j'exécute aujourd'hui. </s>
+	<s n="5">J'éprouve de plus en plus qu'un père doit s'occuper d'une manière particulière de l'éducation de son fils, et que rien n'est tel que le bon exemple.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DORVILLE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,1689 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Silence dans les Rangs !</title>
+                <title type="sub">Comédie en un Acte</title>
+                <author>
+      <idno type="isni">000000010927249X</idno>
+      <idno type="wikidata">Q1356595</idno>
+      <persName xml:space="preserve">
+        <forename>Ernest</forename>
+        <nameLink>d'</nameLink><surname>Hervilly</surname>
+      </persName>
+    </author><!--HERVILLY, Ernest d' (1839-1911)-->
+                <editor>Paul FIEVRE juillet 2019</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre000768</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/HERVILLY_SILENCEDANSLESRANGS.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/HERVILLY_SILENCEDANSLESRANGS.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1876"/>
+                        <date type="premiere" when="1875-03-19">Représentée pour la première fois au Cercle artistique et littéraire de Bruxelles, le 19 mars 1875.</date>
+                        <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k5662215v</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="gabrielle" sex="FEMALE">
+                        <persName>Gabrielle</persName>
+                    </person>
+                    <person xml:id="georges" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Georges</persName>
+                    </person>
+                    <person xml:id="david" sex="MALE">
+                        <persName>David</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+<front>
+		<docTitle>
+			<titlePart type="main">SILENCE DANS LES RANGS !</titlePart>
+			<titlePart type="sub">COMÉDIE EN UN ACTE</titlePart>
+			</docTitle> 
+		<docDate when="1876">1876</docDate>
+		<docAuthor>PAR M. ERNEST D'HERVILLY</docAuthor>
+		<div type="docImprint">
+				<div type="printer">
+                    <p>À PARIS, Chez Paul OLLENDORFF, ÉDITEUR, 28 bis rue de Richelieu.</p>
+                </div><!--@id="OLLENDORF"-->
+		</div>
+		<performance>	
+			<ab type="premiere">Représentée pour la première fois au Cercle artistique et littéraire de Bruxelles, le 19 mars 1875.</ab><!--@date="1875-03-19"--><!--@location="Cercle artistique et littéraire de Bruxelles"-->
+		</performance>
+			<!--TODO: handling of editor name at this place unclear <editor>PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, rue de Richelieu.</editor>-->
+			<div type="acheveImprime">
+                <p>PARIS. IMPRIMERIE JULES LE CLERE et Cie, rue Cassette, 29.</p>
+            </div><!--@id=""-->
+		<castList>
+			<head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#david">DAVID</role><!--@sex="1"--><!--@type="H"--><!--@statut="capitaine"--><!--@age="A"--><!--@statut_amoureux="néant"-->, capitaine au 151e de ligne. M. C. Coquelin.</castItem>
+			<castItem>
+                    <role corresp="#georges-de-hazebrouck">GEORGES DE HAZEBROUCK</role><!--@sex="1"--><!--@type="H"--><!--@statut="commandant"--><!--@age="A"--><!--@statut_amoureux="néant"-->, commandant en retraite. M. Coquelin cadet.</castItem>
+			<castItem>
+                    <role corresp="#gabrielle">GABRIELLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@statut_amoureux="néant"-->, sa jeune soeur. Melle Bartet.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222">Le théâtre représente l'intérieur du passage Jouffroy.</set>-->
+		<note>Extrait de Théâtre de Campagne, Quatrième série, Paris, Paul Ollendrof, 1878. pp. 35-42</note>
+</front>
+<note>Extrait de "Théâtre de campagne, première série". Paris : Paul Ollendorf, 1876.</note>
+<body>
+<div type="acte" n="1">
+                <head>SILENCE DANS LES RANGS</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<stage type="decor">Un petit salon de travail et de lecture, à la campagne, de plein pied avec un jardin dont l'automne a déjà rouillé les verdures. - C'est, le matin. - Portes à droite, à gauche et au fond.</stage>
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <stage type="sit/decor/furniture">Elle est assise sur une chaise basse près de la cheminée où flambent quelques sarments, et contemple d'un air pensif une petite photographie encadrée, qu'elle tient à la main. Un ouvrage de tapisserie a roulé de ses genoux par terre.</stage>
+                        <p n="1">
+	<s n="1">Voyons, soyons raisonnable. </s>
+	<s n="2">Essayons de l'être, du moins. </s>
+	<s n="3">Et pour n'y plus penser... d'aujourd'hui, remettons à la place, d'où il nous regarde silencieusement depuis tant de longues années, le portrait de cet... </s>
+	<s n="4">Je ne puis l'appeler un ingrat, pourtant... </s>
+	<s n="5">Non, le portrait de ce cher et cruel aveugle...</s>
+</p>
+                        <stage type="drop/location">Elle met la photographie sur la cheminée.</stage>
+                        <p n="2">
+	<s n="1">Allons, comme dit mon frère Georges : F A I T fait ! </s>
+	<s n="2">C'est fait !</s>
+</p>
+                        <stage type="sit/get">Elle s'assied et ramasse sa tapisserie.</stage>
+                        <p n="2">
+	<s n="1">C'est fait, pour aujourd'hui, hélas ! Mais demain ?</s>
+</p>
+                        <stage type="watch">Elle lève les yeux et regarde de nouveau le portrait.</stage>
+                        <p n="3">
+	<s n="1">Quelle bonne et brave figure ! </s>
+	<s n="2">Oui, le voilà bien, tel qu'il est encore à présent,cce gai et insoucieux soldat qui semblait si effrayant à mes camarades de la pension, quand il venait m'y voir, en compagnie de Georges. </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Capitaine David ! </s>
+	<s n="5">Capitaine David !... </s>
+	<s n="6">Malgré vos grosses moustaches..., et peut-être même à cause de ces grosses moustaches bien françaises... </s>
+	<s n="7">Votre visage dut apparaître comme celui d'un ange héroïque et sauveur, d'un Saint-Michel à l'épée flamboyante, le jour où là-bas, à mon pauvre Georges, étendu sur le sable, blessé, n'attendant plus que la mort, il se montra tout à coup, terrible et pâle, entre les sabres levés des hussards autrichiens ! </s>
+	<s n="8">Cher portrait ! </s>
+	<s n="9">Il nous fut envoyé de bien loin, un an après cette terrible histoire, un soir d'octobre, ici. </s>
+	<s n="10">Mon brave Georges, retraité depuis peu à cause de ses blessures, était là, près de la cheminée ; et moi, petite fillette qui venais de prendre aussi mes invalides... de pensionnaire, j'étais assise de l'autre côté du foyer. </s>
+	<s n="11">Georges me tendit cette photographie sans mot dire, en souriant... </s>
+	<s n="12">Oh ! </s>
+	<s n="13">Je reconnus qui c'était tout de suite ! « C'est David » , m'écriai-je... « c'est Monsieur le Capitaine David, » repris-je en rougissant, beaucoup. </s>
+	<s n="14">- « Non, tu as raison, Gabrielle, fit mon frère. </s>
+	<s n="15">Appelle-le toujours simplement David... </s>
+	<s n="16">Aussi bien l'enfant, dont le ciel a sauvé le père, ne remercie pas monsieur le bon Dieu ; il dit : Dieu, tout court. » </s>
+	<s n="17">Et voilà, j'ai suivi le conseil de Georges.</s>
+</p>
+                        <stage type="sigh">Après un soupir. </stage>
+                        <p n="4">
+	<s n="1">Mais je crois bien que j'ai dit trop souvent David tout court, toute seule ?... </s>
+	<s n="2">Hélas ! </s>
+	<s n="3">Dans la lettre qui accompagnait le portrait, ne disait-on pas « qu'on espérait que cette image rappellerait parfois quelqu'un à certaines personnes » ? </s>
+	<s n="4">Les certaines personnes, je croyais bien que c'était moi ! </s>
+	<s n="5">Aussi j'ai fait ce qu'on me demandait : je me suis rappelé l'absent, non pas parfois, mais toujours !... </s>
+	<s n="6">Je ne me le reproche pas, mais je le vois maintenant, j'ai eu tort de songer peu à peu à David autrement que comme au sauveur de mon frère... </s>
+	<s n="7">Ah ! </s>
+	<s n="8">Comme on se leurre, comme on s'égare en de vains rêves !...</s>
+</p>
+                        <stage type="smile">Avec un triste sourire.</stage>
+                        <l n="1">À la photographie </l>
+                        <l n="2">Bien folle est qui se fie...</l>
+                        <stage type="work">Elle fait quelques points.</stage>
+                        <p n="5">
+	<s n="1">Et demain il s'en va, le capitaine David ! </s>
+	<s n="2">Il nous quitte... pour de longs et tristes mois encore !... </s>
+	<s n="3">Son congé est fini. </s>
+	<s n="4">Il retourne à son dépôt, à Verdun ! </s>
+	<s n="5">Et il ne m'a rien dit... rien !</s>
+</p>
+                        <stage type="wipe">Elle essuie une larme. </stage>
+                        <stage type="cough/plaisir">On entend une toux militaire dans le jardin.</stage>
+                        <p n="6">
+	<s n="1">Mais voici Georges. </s>
+	<s n="2">Soyons gaie.</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="GABRIELLE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Georges, Gabrielle.</head>
+<sp who="#georges">
+                        <speaker>GEORGES, gaiement.</speaker>
+                        <p n="1">
+	<s n="1">Bonjour, petite soeur ; déjà au travail, ma jolie abeille ?</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, faisant le salut militaire.</speaker>
+                        <note type="C">Le Maréchal Josias de Rantzau (1609-1650) fut un brillant militaire qui se fit une immense réputation de glorieux aventurier.</note>
+                        <p n="2">
+	<s n="">Bonjour, Maréchal de Rantzau !</s>
+</p>
+                    </sp><!--@stage="wave"--><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="3">
+	<s n="1">Oh ! </s>
+	<s n="2">Mais non, sabre d'azur ! </s>
+	<s n="3">Pas encore, Gabrielle ! </s>
+	<s n="4">Le brave guerrier dont tu parles n'avait d'entier que le coeur, à ce que dit la chanson, ou l'histoire... je ne sais plus au juste, et au fait, c'est à peu près la même chose, l'histoire et la chanson... </s>
+	<s n="5">Mais, moi, petite soeur !... </s>
+	<s n="6">C'est-à-dire que tous mes membres peuvent répondre à l'appel : présents !</s>
+</p>
+                        <stage type="cough">Il tousse.</stage>
+                        <p n="3">
+	<s n="1">Il n'y a que le poumon qui cloche... à l'automne surtout... </s>
+	<s n="2">C'est comme le poumon du Jeune Malade à pas lents, tu sais ?... </s>
+	<s n="3">Que tu récitais si mal à ta pension, le jour des prix. </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Dame, on n'est pas embroché comme un poulet, et à plusieurs reprises, par plusieurs militaires... sans s'en ressentir un peu... par le brouillard, de temps à- autre... Mais FAIT fait ! </s>
+	<s n="6">c'est fait ; n'en parlons plus. </s>
+	<s n="">As-tu vu ce scélérat de David, ce matin ?</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="4">
+	<s n="1">Je l'ai vu un instant... tout à l'heure... </s>
+	<s n="2">Il m'a dit bonjour et il est parti...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="5">
+	<s n="1">Toujours dehors, ce garçon-là !... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Si j'étais encore son commandant ! </s>
+	<s n="4">Je te lui flanquerais sept ans d'arrêts forcés ! </s>
+	<s n="5">Mais je ne suis que son hôte et son obligé, et je dois...</s>
+</p>
+                        <stage type="closer/watch">Il regarde Gabrielle de près.</stage>
+                        <p n="6">
+	<s n="1">Ah ! </s>
+	<s n="2">Ça !... </s>
+	<s n="3">Qu'est-ce qui s'est passé ici, tout à l'heure ?... </s>
+	<s n="4">Tu as l'air troublé !..</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, souriant.</speaker>
+                        <p n="7">
+	<s n="1">Moi, Georges !</s>
+</p>
+                    </sp><!--@stage="smile"--><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="8">
+	<s n="1">Oui, toi. </s>
+	<s n="2">Viens un peu ici ! </s>
+	<s n="3">Avance à l'ordre ! </s>
+	<s n="4">Mais tu as les yeux rouges !... </s>
+	<s n="5">Sacrebleu, tu as pleuré, Gabrielle !... </s>
+	<s n="6">Et tu dis que David vient de te quitter... </s>
+	<s n="7">Est-ce que...?</s>
+</p>
+                        <stage type="happy">Joyeusement.</stage>
+                        <p n="9">
+	<s n="1">Oui, je devine !... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Sournoise de petite soeur ! </s>
+	<s n="4">On a profité de l'absence du vieil invalide de frère!  </s>
+	<s n="5">Vive la France ! </s>
+	<s n="6">F A I T fait ! </s>
+	<s n="7">C'est fait »... </s>
+	<s n="8">Il t'a demandé de l'épouser, hein ? </s>
+	<s n="9">Et tu lui as répondu : « Volontiers, Capitaine ! »</s>
+</p>
+                        <stage type="laugh">Riant.</stage>
+                        <p n="10">
+	<s n="1">Allons, voilà qui est bien. </s>
+	<s n="2">Enfants ! </s>
+	<s n="3">Je vous bénis.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, avec douceur.</speaker>
+                        <p n="11">
+	<s n="1">Non ; monsieur le capitaine David ne m'a pas fait l'honneur de me demander</s>
+</p>
+                    </sp><!--@stage="sweet"--><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <note type="L">Shako : ou Schako. Sorte de coiffure militaire à l'usage de quelques troupes à cheval et de la plupart des corps d'infanterie. [L]</note>
+                        <p n="12">
+	<s n="1">Il ne t'a pas fait l'honneur ?... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">En voilà un imbécile ! </s>
+	<s n="4">Oh ! </s>
+	<s n="5">Si j'étais encore son commandant ! </s>
+	<s n="6">Comment ! </s>
+	<s n="7">Il ne t'a pas suppliée, à deux genoux, de consentir à devenir la femme d'un animal comme lui ! </s>
+	<s n="8">Et il n'est venu ici que pour ça, j'en suis sûr ! </s>
+	<s n="9">Et il part demain ! </s>
+	<s n="10">Mais alors il est fou du talon de ses bottes au pompon de son shako !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="13">
+	<s n="1">Il n'est pas fou. </s>
+	<s n="2">Je ne lui plais pas, sans doute, voilà tout.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="14">
+	<s n="1">Tu ne lui plais pas !</s>
+</p>
+                        <stage type="cough">Il tousse. </stage>
+                        <p n="15">
+	<s n="1">Maudit brouillard ! </s>
+	<s n="2">Tu ne lui plais pas, toi, ma petite Gabrielle, Mademoiselle de Hazebrouck, la soeur du commandant de Hazebrouck ! </s>
+	<s n="3">Je voudrais bien l'entendre me dire ça en face !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="16">
+	<s n="1">Il me regarde comme une tendre soeur... mais...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="17">
+	<s n="1">Il ne s'agit pas de la soeur ici. </s>
+	<s n="2">La soeur ça me regarde. </s>
+	<s n="3">Mais j'ai des yeux, vertugadin du diable ! </s>
+	<s n="4">Je te dis, moi, qu'il t'aime !... </s>
+	<s n="5">Mais voilà : cet imbécile-là m'a sauvé la vie, tu es riche... et il fait le délicat ! </s>
+	<s n="6">Il avale sa langue comme un conscrit ! </s>
+	<s n="7">Il crèverait plutôt que de réclamer de moi un service !...</s>
+</p>
+                        <stage type="cough">Nouvel accès de toux.</stage>
+                        <p n="18">
+	<s n="1">Maudit brouillard ! </s>
+	<s n="2">Voilà ma toux qui me reprend dans un moment solennel !... </s>
+	<s n="3">Mais je ne veux pas que ça se passe comme ça, moi, entends-tu bien ? </s>
+	<s n="4">Qu'est-ce qui m'a donné un gueux comme celui-là, qui refuse une fille belle, bonne et riche, et un beau-frère encore passable ! </s>
+	<s n="5">Eh ! </s>
+	<s n="6">Je connais bien sa position : il est tombé dans la fosse aux créanciers, c'est possible ; mais je ne veux pas qu'il y soit mangé. </s>
+	<s n="7">Caparaçon d'enfer ! </s>
+	<s n="8">Il ne m'empêchera pas une fois dans la vie, qu'il m'a conservée, de payer une partie de ma dette en payant toutes les siennes. </s>
+	<s n="9">Pour commencer, je veux qu'il t'épouse !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="19">
+	<s n="1">Georges !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="20">
+	<s n="1">Il n'y a pas de Georges qui tienne! Tu l'aimes...</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="21">
+	<s n="1">Un peu...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="22">
+	<s n="1">Un peu... beaucoup... </s>
+	<s n="2">Oui, tu l'aimes... jusqu'au bout des feuilles de la marguerite !... </s>
+	<s n="3">Il n'y a pas de mal à ça, Colinette ! </s>
+	<s n="4">Et j'en suis ravi. </s>
+	<s n="5">C'est un coeur d'or, cet imbécile de David.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="23">
+	<s n="1">Je l'ai pensé quelquefois.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="24">
+	<s n="1">Et moi, toujours. </s>
+	<s n="2">C'est le mari qu'il nous faut, te dis6je, sabre d'azur ! </s>
+	<s n="3">Une occasion d'être heureux tous les trois se présente : poursuivons-la ! </s>
+	<s n="4">David est muet : parlons ! </s>
+	<s n="5">Il se cache, c'est le moment de nous montrer. </s>
+	<s n="6">Entends-tu, Gabrielle, je te prie, je t'ordonne de mettre ce gaillard-là au pied du mur... de la mairie ! </s>
+	<s n="7">C'est le monde à l'envers ? </s>
+	<s n="8">Soit ! </s>
+	<s n="9">Tant mieux ! </s>
+	<s n="10">Il y a trop longtemps qu'il est à l'endroit, et que les honnêtes coeurs en souffrent. </s>
+	<s n="11">En avant ! </s>
+	<s n="12">Je vais d'abord lui pousser quelques bottes vigoureuses, au camarade. </s>
+	<s n="13">Puis, je te le livre. </s>
+	<s n="14">Après l'escarmouche, le combat. </s>
+	<s n="15">Ah ! </s>
+	<s n="16">Sa loyauté va former le carré, parbleu, je le connais. </s>
+	<s n="17">C'est à toi de l'enfoncer et de lui faire demander grâce ! </s>
+	<s n="18">À la baïonnette, petite soeur ! </s>
+	<s n="19">À la baïonnette !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="25">
+	<s n="1">Et si je suis repoussée ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="26">
+	<s n="1">Replie-toi en bon ordre, et appelle-moi. </s>
+	<s n="2">Et je ferai donner la réserve, et alors, mille parapluies d'acier ! </s>
+	<s n="3">FAIT fait ! </s>
+	<s n="4">Ce sera fait !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="27">
+	<s n="1">Oh ! </s>
+	<s n="2">Mon bon Georges !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <note type="C">La Sainte-Catherine est fêtée el 25 novembre, lors de cette fête les jennes filles non mariées de plus de 25 ans doivent porter un chapeau fleuri.</note>
+                        <p n="28">
+	<s n="1">Je veux ton bonheur, moi ! </s>
+	<s n="2">Comptes-tu, par hasard, quand tu auras atteint la quarantaine, ouvrir boutique de regrets et mettre en vente un fonds de bonnets blancs garnis de fleurs d'oranger, avec cette enseigne : Mademoiselle Gabrielle de Hazebrouck, modiste de sainte-Catherine !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="29">
+	<s n="1">Je préférerais en effet une autre profession... mais...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="30">
+	<s n="1">D'ailleurs, j'attends, moi, que tu aies passé le grand uniforme de mariée, pour... </s>
+	<s n="2">Enfin, il suffit !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="31">
+	<s n="1">Tu voudrais te marier, Georges ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="32">
+	<s n="1">Après toi, s'il en reste, oui, petite soeur ! </s>
+	<s n="2">Mais nous causerons de cela plus tard.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="33">
+	<s n="1">Oh ! </s>
+	<s n="2">Alors, Georges, ne t'inquiète pas de moi ! </s>
+	<s n="3">Marie-toi ! Tes enfants seront si contents d'avoir, à côté de leur mère, une bonne vieille petite tante pour les dorloter... pour les gâter... </s>
+	<s n="4">Je les aimerai tant, mes neveux  : ou mes nièces !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <note type="L">Chasselas : Raisin blanc estimé pour sa délicatesse. [L]</note>
+                        <p n="34">
+	<s n="1">Ta ta ta ta ... </s>
+	<s n="2">Les neveux et les nièces, c'est très gentil ; mais c'est comme le chasselas qu'on achète : quelque bon qu'il soit, il ne semble jamais aussi savoureux que le petit raisin noiraud de son propre jardin !... </s>
+	<s n="3">Marie-toi !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="35">
+	<s n="1">Eh bien, Georges, puisque tu l'exiges... </s>
+	<s n="2">J'essayerai de...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="36">
+	<s n="1">Sabre au clair, ma belle ! </s>
+	<s n="2">Et en avant !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, prêtant l'oreille.</speaker>
+                        <p n="37">
+	<s n="1">J'entends le pas du capitaine David...</s>
+</p>
+                    </sp><!--@stage="listen"--><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="38">
+	<s n="1">Bon ! </s>
+	<s n="2">Laisse-moi lui dire deux mots d'amitié, d'abord.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, souriant.</speaker>
+                        <p n="39">
+	<s n="1">Sois bon... avec modération, Georges.</s>
+</p>
+                        <stage type="exit/location">Elle sort par la porte de gauche.</stage>
+                    </sp><!--@stage="smile"--><!--@who="GABRIELLE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. David, Georges.</head>
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Te voilà, Monsieur le flâneur.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID, en toilette de cérémonie.</speaker>
+                        <p n="2">
+	<s n="1">Oui, mon commandant... </s>
+	<s n="2">Et à vos ordres...</s>
+</p>
+                    </sp><!--@stage="dress"--><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="3">
+	<s n="1">La première fois qu'il t'arrivera de ne pas me tutoyer, je te supprime le vermouth à cinq heures !... </s>
+	<s n="2">Mais d'où viens-tu ?... </s>
+	<s n="3">Que veut dire ce costume ? </s>
+	<s n="4">Un habit noir dès l'aurore ! </s>
+	<s n="5">Une cravate blanche avant le déjeuner !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="4">
+	<s n="1">Mon commandant, je veux dire Georges, c'est que je suis sur le point de faire une démarche grave dans cinq minutes : je vais demander la main d'une jeune personne.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES, avec joie.</speaker>
+                        <p n="5">
+	<s n="1">Allons donc ! </s>
+	<s n="2">Tu y viens enfin, mon vieux copain ! </s>
+	<s n="3">Je m'y attendais un peu, je te l'avoue.</s>
+</p>
+                    </sp><!--@stage="happy"--><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="6">
+	<s n="1">Eh bien, ce n'est pas comme le colonel Verdière... </s>
+	<s n="2">Tu connais bien Verdière, mon colonel ? </s>
+	<s n="3">Un petit vieux, sec et brun, dur à avaler comme un hanneton en chocolat ?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <note type="C">Blidah : ville d'Algérie.</note>
+                        <p n="7">
+	<s n="1">Si je le connais, Verdière ! </s>
+	<s n="2">Caserne du diable ! </s>
+	<s n="3">Verdière ! </s>
+	<s n="4">Je l'ai brossé cent fois au piquet, quand nous étions à Blidah.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="8">
+	<s n="1">J'ignorais ce détail biographique. </s>
+	<s n="2">Eh bien ! </s>
+	<s n="3">Mon colonel ne s'y attendait pas du tout, lui, à la demande que tu trouves si naturelle. </s>
+	<s n="4">J'ai été le trouver, et je lui ai dit : « Mon colonel, est-ce que par hasard, après le service, vous n'avez jamais regardé les oiseaux dans la volière de la colonelle ? » </s>
+	<s n="5">- « Si, parfois, entre mes repas,» m'a répondu le colonel. </s>
+	<s n="6">- « Eh bien, mon colonel, vous avez dû voir, à une certaine époque de l'année, que toutes ces petites bêtes ont l'air inquiet, troublé, et qu'elles voltigent, de ci de là, sur les bâtons ; il y en a qui ramassent des brins de verdure, il y en a d'autres qui portent des bouts de fil au bout du bec ? » </s>
+	<s n="7">- « Oui, capitaine, j'ai remarqué cela entre mes repas, » m'a répondu le colonel, « et ça veut dire qu'elles veulent faire une fin, construire un nid, se caser, quoi ! ». </s>
+	<s n="8">- « Oui, mon colonel ! </s>
+	<s n="9">Eh bien, mon colonel, » ai-je repris, « je suis comme les oiseaux de madame : moralement parlant, je suis arrivé à cette époque de la vie où l'on songe à l'avenir, et voilà plusieurs années que je me promène de ci de là, d'un bâton à l'autre, avec des brins de fil et de la verdure au bec, mon colonel ! » </s>
+	<s n="10">- « Capitaine David,vous voulez vous marier ! » s'est écrié avec effroi le vieux Verdière... sec et brun, dur à avaler comme un hanneton en chocolat. </s>
+	<s n="11">- « Oui, mon colonel, » ai-je fait en baissant la tête, « et je viens vous demander un congé pour exécuter mon projet. »</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="9">
+	<s n="1">Et que t'a-t-il répondu, le vieux dur à cuire ?</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="10">
+	<s n="1">Il m'a répondu : «Eh bien, capitaine, allez au diable ! </s>
+	<s n="2">Et restez-y un mois ! »</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="11">
+	<s n="1">Très bien... </s>
+	<s n="2">Mais, voilà le mois fini, mon bon David ! </s>
+	<s n="3">Et tu ne l'es pas encore... casé, sacristi !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="12">
+	<s n="1">Non, mais je le serai peut-être avant ce soir. </s>
+	<s n="2">Ce matin, j'ai pris mon courage des dimanches, j'ai passé la grande tenue civile et je vais aller solliciter la main de Mademoiselle Lucie Raymond.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES, tombant des nues.</speaker>
+                        <p n="13">
+	<s n="1">Lucie Raymond !... </s>
+	<s n="2">Lucie!... </s>
+	<s n="3">Ah ! tu me... </s>
+	<s n="4">Lucie Raymond !</s>
+</p>
+                    </sp><!--@stage="surprise"--><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="14">
+	<s n="1">Lucie Raymond, oui ; le n°4 des filles du père Raymond, ton voisin de campagne, parbleu ! </s>
+	<s n="2">Et notre ancien de Saint-Cyr. </s>
+	<s n="3">Mais qu'est-ce qu'il y a là qui t'étonne si fort ?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="15">
+	<s n="1">Sabre d'azur ! </s>
+	<s n="2">Si je m'attendais à cela, par exemple, je veux être empoisonné ! </s>
+	<s n="3">Mais tu l'aimes donc, la petite n°4 du père Raymond ?</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID, assez froidement.</speaker>
+                        <p n="16">
+	<s n="1">Non, pas encore, mais c'est une très bonne créature !... </s>
+	<s n="2">Et puis je rendrai service au bonhomme Raymond. </s>
+	<s n="3">Lucie partie, il ne sera plus forcé de couper en cinq la bouchée quotidienne... et quoique pauvre...</s>
+</p>
+                    </sp><!--@stage="cold"--><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="17">
+	<s n="1">Quel brave toqué tu fais !... </s>
+	<s n="2">Alors c'est par pure charité que tu vas épouser ?... </s>
+	<s n="3">Mais tu es le capitaine au petit manteau bleu, mon cher !...</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID, avec embarras.</speaker>
+                        <p n="18">
+	<s n="1">Ce n'est pas par charité !... </s>
+	<s n="2">C'est par sympathie... </s>
+	<s n="3">Et puis, quoi ! </s>
+	<s n="4">Je ne peux pas sauter toute ma vie d'un bâton à l'autre, avec mes brins de fil au bec... </s>
+	<s n="5">Comme les oiseaux du colonel... </s>
+	<s n="6">Il faut se ranger ! </s>
+	<s n="7">Il faut se faire une raison... </s>
+	<s n="8">Et quand on ne peut pas avoir le pain qu'on a rêvé à se mettre sous la dent... </s>
+	<s n="9">Il faut se contenter... de la brioche, comme disait la princesse... </s>
+	<s n="10">Lucie sera ma brioche...</s>
+</p>
+                    </sp><!--@stage="embarrassed"--><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES, à mi-voix.</speaker>
+                        <p n="19">
+	<s n="1">Aveugle, va !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="20">
+	<s n="1">Aveugle ? </s>
+	<s n="2">Non, pas tant que cela ! </s>
+	<s n="3">Mademoiselle Lucie est charmante... </s>
+	<s n="4">Mais au fait, je n'ai pas besoin de te détailler tous les mérites de cette jeune fille... </s>
+	<s n="5">Tu la connais...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="21">
+	<s n="1">Oui, certes ! </s>
+	<s n="2">C'est une petite fée ! </s>
+	<s n="3">Je le sais mieux que toi !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="22">
+	<s n="1">Tu la connais de longue date, toi, son voisin ?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="23">
+	<s n="1">J'aurais pu la voir naître, et j'espère bien qu'elle me verra mourir.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="24">
+	<s n="1">Alors, tu m'approuves ?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES, avec colère.</speaker>
+                        <p n="25">
+	<s n="1">Comme le colonel Verdière ! </s>
+	<s n="2">Va-t'en au diable !</s>
+</p>
+                    </sp><!--@stage="anger"--><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="26">
+	<s n="1">Merci !... </s>
+	<s n="2">J'y cours!... </s>
+	<s n="3">Cinq minutes et je reviens !...</s>
+</p>
+                        <stage type="exit">Il sort.</stage>
+                    </sp><!--@who="DAVID"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Gabrielle, Georges.</head>
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, passant la tête par la porte entrebaillée.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien ! </s>
+	<s n="2">F A I T fait ?</s>
+</p>
+                    </sp><!--@stage="entrance/location"--><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="2">
+	<s n="1">Non... </s>
+	<s n="2">Pas encore... </s>
+	<s n="3">Mais sois sans crainte... </s>
+	<s n="4">Patience ! </s>
+	<s n="5">Il vient de se sauver !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="3">
+	<s n="1">Tu l'auras brusqué !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="4">
+	<s n="1">C'est lui qui m'a estomaqué, au contraire!</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="5">
+	<s n="1">Que veux-tu dire ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="6">
+	<s n="1">Je veux dire qu'il est arrivé un troisième larron... </s>
+	<s n="2">Et que tout le monde a l'air de se disputer le capitaine David, ici.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="7">
+	<s n="1">Oh ! </s>
+	<s n="2">Mon Dieu ! </s>
+	<s n="3">Qui est le troisième larron ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="8">
+	<s n="1">C'est ton amie Lucie Raymond.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="9">
+	<s n="1">Hélas !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="10">
+	<s n="1">Mais rassure-toi : il ne l'aime pas !...</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="11">
+	<s n="1">Il ne l'aime pas ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="12">
+	<s n="1">Non. </s>
+	<s n="2">Il ne l'aime pas ; David, j'en suis certain, ne se jette bravement dans le gouffre d'un mariage de raison que parce qu'il est assez lâche pour ne pas faire un mariage d'amour. </s>
+	<s n="3">Il t'aime, Gabrielle, il t'aime ! </s>
+	<s n="4">Oui. </s>
+	<s n="5">Pendant qu'il m'annonçait sa résolution suprême, en couvrant d'un voile de plaisanterie la blessure de son coeur, ses yeux se tournaient anxieusement du côté de ton appartement... </s>
+	<s n="5">Il t'aime... mais il n'ose pas parler...</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="12">
+	<s n="1">Que tu me fais de mal, Georges !...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="13">
+	<s n="1">Du calme, petite soeur ! </s>
+	<s n="2">Lucie ne te le mangera pas, ton imbécile de capitaine !... </s>
+	<s n="3">Je t'en donne ma parole d'honneur ! </s>
+	<s n="4">Elle a de bien autres pensées en tête. </s>
+	<s n="5">Je la connais ! </s>
+	<s n="6">Moi !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="14">
+	<s n="1">Tu crois ? </s>
+	<s n="2">Mais qui te le fait croire ? </s>
+	<s n="3">Lucie a comme moi des yeux et des oreilles. </s>
+	<s n="4">Elle sait, comme moi, tout le prix de l'excellent coeur qui va s'offrir à elle ; et, bien qu'elle soit jeune, ce ne sont pas quelques cheveux gris, çà et là... sur une tête bien aimée ..</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="15">
+	<s n="1">Mille obus à la coque ! </s>
+	<s n="2">Non, je l'espère bien, ce ne sont pas, comme tu le dis, quelques cheveux gris... ou blancs, çà et là... qui... mais, chut, voilà ton amoureux prodigue... de discrétion. </s>
+	<s n="3">Je m'éclipse. </s>
+	<s n="4">Allons, petite soeur, du courage ! </s>
+	<s n="5">L'ennemi approche... </s>
+	<s n="6">Apprêt' vos armes !... </s>
+	<s n="7">Joue !...</s>
+</p>
+                        <stage type="exit/location">Il sort par la droite.</stage>
+                    </sp><!--@who="GEORGES"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Gabrielle, David.</head>
+<stage type="sit/work">Gabrielle s'assied et fait de la tapisserie avec ardeur. David paraît à la porte du fond, la tète basse.</stage>
+<sp who="#david">
+                        <speaker>DAVID, sans voir Gabrielle.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Quelle sombre roulette que la vie ! </s>
+	<s n="3">Voilà quarante ans, non trente-six, que je mets sur la rouge du bonheur, et c'est la noire qui sort toujours !... </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Gabrielle !... </s>
+	<s n="6">Au fait, non, que le diable mette dans sa hotte toutes les femmes d'ici-bas, les bonnes comme les mauvaises...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="2">
+	<s n="1">Merci, Capitaine...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID, avec inquiétude.</speaker>
+                        <p n="3">
+	<s n="1">Comment ! </s>
+	<s n="2">Vous étiez là, mademoiselle ?</s>
+</p>
+                    </sp><!--@stage="anxious"--><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="4">
+	<s n="1">Oh ! </s>
+	<s n="2">Je viens d'entrer seulement... sur la fin de votre belle exclamation.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="5">
+	<s n="1">Je vous demande bien pardon, Mademoiselle... mais je suis si furieux ; et j'ai raison de l'être !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="6">
+	<s n="1">Que vous est-il donc arrivé ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="7">
+	<s n="1">Voulez-vous que je vous le dise ?... </s>
+	<s n="2">Mais vous aurez de la peine à comprendre l'état d'irritation dans lequel je me trouve... </s>
+	<s n="3">Vous, qui êtes une petite personne si calme...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="8">
+	<s n="1">Je n'ai pas un caractère de brouillon, c'est vrai...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="9">
+	<s n="1">Merci ! </s>
+	<s n="2">Voilà mon clou rivé. </s>
+	<s n="3">Mais passons... </s>
+	<s n="4">Donc, voici ce qui m'arrive. </s>
+	<s n="5">Je suis franc, vous le savez... Je ne cache jamais ce que j'ai dans le coeur.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="10">
+	<s n="1">Hum !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="11">
+	<s n="1">Comment, hum ? </s>
+	<s n="2">Oui, je suis franc, franc comme un ours. </s>
+	<s n="3">Je n'ai peut-être que ce seul mérite-là, mais je l'ai ! </s>
+	<s n="4">Donc, Mademoiselle, il y a quelques minutes, j'ai été demander à Mlle Lucie Raymond de devenir ma femme.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="12">
+	<s n="1">Hein ! </s>
+	<s n="2">Quelle idée subite ! </s>
+	<s n="3">Mais on peut en avoir de plus mauvaises.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="13">
+	<s n="1">Subite est le mot. </s>
+	<s n="2">Mais les raisons qui l'ont fait naître ce matin datent de bien loin, Mademoiselle Gabrielle ! </s>
+	<s n="3">Elles ont près de dix ans de bouteille !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="14">
+	<s n="1">Ah ! </s>
+	<s n="2">Je ne tiens pas à les connaître, capitaine. </s>
+	<s n="3">Au fait !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="15">
+	<s n="1">Très bien. </s>
+	<s n="2">Enfin, voici la chose : je demande un instant d'entretien à Mademoiselle Lucie, elle me l'accorde, et aussitôt que nous sommes face à face, et seuls, je lui dis : Mademoiselle, regardez-moi bien ; je suis un peu fripé du côté de la jeunesse, mais j'ai bien d'autres défaut ; je suis joueur, viveur, querelleur, coureur... un peu toqué... </s>
+	<s n="3">Voulez-vous de moi ?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="16">
+	<s n="1">Ah ! </s>
+	<s n="2">Capitaine David ! </s>
+	<s n="3">Quel début !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="17">
+	<s n="1">Eh bien, quoi ! </s>
+	<s n="2">Mademoiselle ! </s>
+	<s n="3">Je débutais en homme d'honneur, franchement, sans rien cacher ; j'étais sur le terrain, je mettais habit bas, et je découvrais ma poitrine !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, à part.</speaker>
+                        <p n="18">
+	<s n="1">Quel fou ! </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="19">
+	<s n="1">Et qu'a répondu Lucie à votre séduisant préambule ?...</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID, furieux.</speaker>
+                        <p n="20">
+	<s n="1">Elle m'a ri au nez, en me renvoyant aux calendes grecques.</s>
+</p>
+                    </sp><!--@stage="furious"--><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, riant.</speaker>
+                        <p n="21">
+	<s n="1">Il n'est pas possible !</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="22">
+	<s n="1">C'est comme j'ai l'honneur de vous le dire...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="23">
+	<s n="1">Convenez-en, elle avait le droit de se montrer au moins surprise, cette pauvre Lucie !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="24">
+	<s n="1">Comment, pauvre Lucie !... </s>
+	<s n="2">Mais cette petite... fille-là ne m'a pas seulement donné le temps d'achever ma phrase... Je lui donnais de mon âme un signalement succinct, c'est vrai, mais il me restait quelques signes particuliers à déclarer... </s>
+	<s n="3">Et ils ne sont pas à dédaigner tant que cela, même par votre pauvre Lucie !...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="25">
+	<s n="1">Elle doit en être aux regrets, la pauvre Lucie !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="26">
+	<s n="1">Et pourquoi pas ! </s>
+	<s n="2">Sait-elle, en somme, ce qu'elle a refusé ? </s>
+	<s n="3">Que ne me laissait-elle expliquer ! </s>
+	<s n="4">Elle aurait compris sans doute tout ce qu'il y avait de flatteur et d'honorable pour elle dans le fait d'un soldat qui vient trouver une femme et lui dit ingénument : Je sais que je ne suis qu'un caillou ; mais vous êtes une fée, transformez-moi en une pierre... plus ou moins précieuse. </s>
+	<s n="5">Et c'est cela qu'elle ne m'a pas laissé le temps de lui dire. </s>
+	<s n="6">Je venais lui avouer ceci encore : Ce qu'il me faut à moi, qui me connais, qui sais combien je suis querelleur, noceur, joueur, flâneur et coureur, c'est une femme chez qui mes défauts, mes passions, mes vices soient mis en un rude sevrage... </s>
+	<s n="7">Il me faut une maîtresse femme, à moi ! </s>
+	<s n="8">Un professeur impeccable de bonne vie et moeurs !... </s>
+	<s n="9">J'ai besoin, je le dis sans honte, d'une femme... à poigne !... </s>
+	<s n="10">Ce qu'il faut pour me gouverner, pour me faire marcher droit, c'est une main de velours sous un gantelet de fer ; oh ! </s>
+	<s n="11">Pardon, je veux dire un gantelet de fer sous une main de velours ; enfin, bref, vous me comprenez... et ce n'est pas une femmelette comme vous, ma chère Gabrielle, qui ferait mon affaire, voilà !...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE,vivement.</speaker>
+                        <p n="27">
+	<s n="1">Capitaine David !</s>
+</p>
+                        <stage type="quiet">Avec calme.</stage>
+                        <p n="27">
+	<s n="1">Mais il est bien inutile de se fâcher contre un enfant comme vous... </s>
+	<s n="2">Vous feriez bien mieux d'être assez poli pour rattraper mon peloton de laine rouge qui vient de rouler sous le fauteuil là-bas...</s>
+</p>
+                    </sp><!--@stage="quick"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="28">
+	<s n="1">Volontiers !</s>
+</p>
+                        <stage type="search">Il cherche sous tous les meubles. </stage>
+                        <p n="29">
+	<s n="1">Nonc! </s>
+	<s n="2">Je ne veux pas d'une femmelette !... </s>
+	<s n="3">Et cette petite mais impérieuse Lucie Raymond était tout-à-fait mon affaire... </s>
+	<s n="4">Où diable est ce peloton ? </s>
+	<s n="5">Ce que je désire, moi, c'est obéir ; il y a trop longtemps que je commande !... </s>
+	<s n="6">Ah ! </s>
+	<s n="7">Mais ! </s>
+	<s n="8">Ce peloton est enragé ! </s>
+	<s n="9">Ne tirez donc pas votre laine, Mademoiselle Gabrielle !... </s>
+	<s n="10">Moi, j'obéirais à une femme solide, avec délices !... </s>
+	<s n="11">Oh ! </s>
+	<s n="12">Je crois que je l'ai, ce misérable peloton !... </s>
+	<s n="13">Voyons, ne tirez pas sur le fil... sac !... </s>
+</p>
+                        <stage type="get">Il se jette sur le peloton.</stage>
+                        <p n="30">
+	<s n="1">Peloton, halte !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="30">
+	<s n="1">Enfin, vous le tenez ? </s>
+	<s n="2">Ce n'est pas malheureux !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="31">
+	<s n="1">Le voilà. </s>
+	<s n="2">Et je vous disais que...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, l'interrompant.</speaker>
+                        <p n="32">
+	<s n="1">Pardon, capitaine ; moi femmelette, je n'ordonne pas, je prie ; voulez-vous me rendre un autre service maintenant ?</s>
+</p>
+                    </sp><!--@stage="interrupt"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="33">
+	<s n="1">Vingt-deux, Mademoiselle !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE,riant.</speaker>
+                        <note type="L">Purpurin : Qui approche de la couleur de pourpre. [L]</note>
+                        <p n="34">
+	<s n="1">Eh bien, recevez de mes blanches mains ce magnifique écheveau de laine purpurine, et daignez m'aider à le dévider sans retard... </s>
+</p>
+                        <stage type="give">Elle lui offre un écheveau volumineux.</stage>
+                    </sp><!--@stage="laugh"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID, tendant les mains.</speaker>
+                        <p n="35">
+	<s n="1">Oui, mais vous me laisserez achever mes doléances, Mademoiselle ?</s>
+</p>
+                    </sp><!--@stage="give"--><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="36">
+	<s n="1">Oui, mais vous serez bref ?</s>
+</p>
+                        <stage type="work">Elle lui arrange l'échevau sur les doigts. </stage>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID s'assied sur un tabouret, à ses genoux. Puis il se relève, et, en parlant, pivote sur lui-même. La laine s'enroule autour de lui.</speaker>
+                        <p n="37">
+	<s n="1">Bref comme une carpe ! </s>
+	<s n="2">Je vous disais que je veux être l'esclave de ma femme. </s>
+	<s n="3">Je sais que je suis trop disposé à prendre de la liberté, comme on prend du galon : eh bien, je veux être maîtrisé, bridé, tenu en laisse. </s>
+	<s n="4">Si je réplique, je veux qu'on dise : Halte-là ! </s>
+	<s n="5">Si je proteste, je veux qu'on me cric : Silence dans les rangs ! </s>
+	<s n="6">Ah ! </s>
+	<s n="7">Une femme comme celle que je rêve, qui me la donnera ? </s>
+	<s n="8">Dans quel pays l'aller chercher ? </s>
+	<s n="9">Avec une créature de ce calibre-là, plus moyen pour le flâneur de capitaine David d'aller dîner sans cesse avec des camarades, plus de cartes, plus de jacquet, plus de punch, plus de toute sorte d'autres choses !... </s>
+	<s n="10">Ah ! </s>
+	<s n="11">Par exemple, dans le premier moment, je me révolterai bien un peu, je regimberai, je renâclerai, je ferai feu des quatre pieds, tout ce que vous voudrez, mais je finirai toujours par obéir avec reconnaissance, avec amour, avec ivresse !</s>
+</p>
+                    </sp><!--@stage="sit/kneel/stand"--><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="38">
+	<s n="1">Capitaine ! </s>
+	<s n="2">Ne crispez pas ainsi vos mains... </s>
+	<s n="3">Vous me faites faire de très mauvaise besogne... </s>
+	<s n="4">Vous embrouilleztous les fils...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="39">
+	<s n="1">Il ne s'agit pas de dévider de la laine, Gabrielle ! </s>
+	<s n="2">Vous êtes ma meilleure amie : je peux bien vous dire tout ce que j'ai dans le coeur.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="40">
+	<s n="1">Hum !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="41">
+	<s n="1">Encore un hum ? </s>
+	<s n="2">Vous êtes donc enrhumée ce matin?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="42">
+	<s n="1">Non... </s>
+	<s n="2">Mais tenez mieux vos pouces ; le fil vous échappe à chaque instant. </s>
+	<s n="3">Soyez donc complaisant. </s>
+	<s n="4">Faites comme si vous étiez auprès de Lucie et voulant la subjuguer par votre docilité.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="43">
+	<s n="1">Oh ! </s>
+	<s n="2">Ne me parlez plus de cette péronnelle ! </s>
+	<s n="3">Avec cela, sans me flatter, qu'elle en trouvera beaucoup et souvent des bons garçons comme moi, joueur, coureur, flâneur, viveur... mais honnête et sensible, mais tendre, mais sincère...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, lui relevant vivement les mains.</speaker>
+                        <p n="44">
+	<s n="1">Capitaine ! </s>
+	<s n="2">Capitaine ! </s>
+	<s n="3">Mon Dieu ! </s>
+	<s n="4">Que vous auriez fait un mauvais Hercule au pied d'Omphale !</s>
+</p>
+                    </sp><!--@stage="up"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="45">
+	<s n="1">Hercule !... </s>
+	<s n="2">En voilà un encore qui est mort trop tôt. </s>
+	<s n="3">Il aurait dû vivre assez pour débarrasser la terre... </s>
+	<s n="4">Tenez, entre autres, de ce petit monstre de Lucie.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="46">
+	<s n="1">Ah ! </s>
+	<s n="2">Capitaine ! </s>
+	<s n="3">C'est assez de dépit ! </s>
+	<s n="4">Vous avez assez maudit vos juges. </s>
+	<s n="5">Je vous prie de parler plus convenablement de ma chère Lucie !</s>
+	<s n="6">Taisez-vous, s'il vous plaît, et relevez les pouces.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID, grognon.</speaker>
+                        <p n="47">
+	<s n="1">Non, je ne me tairai pas.</s>
+</p>
+                    </sp><!--@stage="offended"--><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="48">
+	<s n="1">Je vous en supplie, taisez-vous !... </s>
+	<s n="2">Et tenez-vous mieux... </s>
+	<s n="3">Lucie a pu vous éconduire, mais elle n'en reste pas moins une fille charmante.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID, en colère.</speaker>
+                        <p n="49">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Non ! </s>
+	<s n="3">C'est une... bégueule !</s>
+</p>
+                    </sp><!--@stage="anger"--><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="50">
+	<s n="1">Capitaine ! </s>
+	<s n="2">Silence dans les rangs ! </s>
+	<s n="3">Sabre d'azur !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="51">
+	<s n="1">Tiens, vous avez très bien dit cela. </s>
+	<s n="2">Bonne intonation.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="52">
+	<s n="1">Il ne s'agit pas de plaisanter. </s>
+	<s n="2">Relevez donc les bras, Monsieur. </s>
+	<s n="3">Un autre jour, quand vous me ferez l'honneurcde m'aider dans mes travaux d'aiguille, tâchez donc de ne plus revenir de chez les Raymond, afin d'être plus calme...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="53">
+	<s n="1">Petite sotte !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="54">
+	<s n="1">Eh ! </s>
+	<s n="2">De qui parlez-vous ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="55">
+	<s n="1">De qui, parbleu ! </s>
+	<s n="2">De votre belle amie Lucie!</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="56">
+	<s n="1">Ah ! </s>
+	<s n="2">Capitaine, allez-vous digérer son refus en silence, à la fin ! </s>
+	<s n="3">Quand je parle, je veux être obéie, entendez-vous ? </s>
+	<s n="4">Je ne suis pas la soeur de votre commandant pour rien, je pense...</s>
+</p>
+                        <stage type="strong">Rudement.</stage>
+                        <p n="57">
+	<s n="1">Relevez le pouce droit...</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID, il obéit.</speaker>
+                        <p n="58">
+	<s n="1">Mais c'est que je commence à être fatigué, Mademoiselle !</s>
+</p>
+                    </sp><!--@stage="quiet"--><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="59">
+	<s n="1">Bon ! </s>
+	<s n="2">Vous en verrez bien d'autres, quand vous serez marié !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="60">
+	<s n="1">Moi ?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="61">
+	<s n="1">Oui, vous !</s>
+</p>
+                        <stage type="strong">Rudement.</stage>
+                        <p n="62">
+	<s n="1">Relevez le pouce gauche.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="63">
+	<s n="1">C'est possible ! </s>
+	<s n="2">Mais j'aurais dû lui dire son fait tout de suite, à cette gamine impertinente.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="64">
+	<s n="1">C'aurait été du joli, Capitaine !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="65">
+	<s n="1">C'est encore possible, mais... après tout, je ne me tiens pas pour battu. </s>
+	<s n="2">Non, mille cartouches, et je vais aller lui dire...</s>
+</p>
+                        <stage type="stand">Il se lève.</stage>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, le forçant à se rasseoir.</speaker>
+                        <p n="66">
+	<s n="">Restez ici !</s>
+</p>
+                    </sp><!--@stage="strong/sit"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="67">
+	<s n="1">Voyons, Mademoiselle Gabrielle, un instant ! </s>
+	<s n="2">La laine est une chose sérieuse, mais l'honneur en est une autre aussi. </s>
+	<s n="3">Laissez-moi m'en aller. </s>
+	<s n="4">On s'est moqué de moi en somme ! </s>
+	<s n="5">On ne répond pas comme cela, par un éclat de rire, à un Capitaine, décoré, deux fois blessé... </s>
+	<s n="6">Oui, c'est dit... </s>
+	<s n="7">Je vais...</s>
+</p>
+                        <stage type="stand">Il se lève de nouveau.</stage>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, le faisant tomber à genoux.</speaker>
+                        <p n="68">
+	<s n="">Silence dans les rangs !</s>
+</p>
+                    </sp><!--@stage="kneel"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="69">
+	<s n="1">Oh ! </s>
+	<s n="2">Mais dites donc, mon amie Mademoiselle Gabrielle... </s>
+	<s n="3">Vous le prenez sur un ton...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="70">
+	<s n="1">Je le prends sur le ton qui me plaît. </s>
+	<s n="2">Je vous défends d'aller insulter cette innocente enfant ! </s>
+	<s n="3">Elle a eu raison de refuser un brutal comme vous !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="71">
+	<s n="1">Oh ! </s>
+	<s n="2">Mais, mademoiselle Gabrielle !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="72">
+	<s n="1">Oh ! </s>
+	<s n="2">Mais, Monsieur le capitaine !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="73">
+	<s n="1">Mais c'est que je ne suis pas votre mari, moi !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="74">
+	<s n="1">Non, vous ne l'êtes pas. </s>
+	<s n="2">Et j'en suis fort ennuyée !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="75">
+	<s n="1">Et pourquoi cela ?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="76">
+	<s n="1">Parce qu'il y a cinq minutes au moins que vous auriez été corrigé solidement !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="77">
+	<s n="1">Moi !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="78">
+	<s n="1">Oui, vous ! </s>
+	<s n="2">Ne m'agacez pas les nerfs.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="79">
+	<s n="1">Oh ! </s>
+	<s n="2">Par exemple ! </s>
+	<s n="3">Toutes les jeunes filles ont donc perdu la tête aujourd'hui ?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="80">
+	<s n="1">Toutes ! </s>
+	<s n="2">C'est dire que vous avez l'aplomb d'insinuer que je suis folle ! </s>
+	<s n="3">Et vous osez me dire cela, à moi, à la soeur du commandant Hazebrouck?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="81">
+	<s n="1">Mademoiselle, je n'ai jamais reculé d'une semelle et je suis franc ; je suis coureur, viveur, querelleur, flâneur, soit ! mais vous, vous êtes...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, lui donnant un soufflet.</speaker>
+                        <p n="82">
+	<s n="1">Silence dans les rangs !</s>
+</p>
+                    </sp><!--@stage="slap"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="83">
+	<s n="1">Un soufflet !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="84">
+	<s n="1">Une claque, oui !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Les mêmes, Georges.</head>
+<sp who="#david">
+                        <speaker>DAVID, se frottant la joue.</speaker>
+                        <p n="1">
+	<s n="1">Bigre ! </s>
+	<s n="2">Le commandant ! </s>
+	<s n="3">Je suis déshonoré.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="2">
+	<s n="1">Quel tapage vous faites ! </s>
+	<s n="2">Pas moyen de lire avec fruit le Moniteur de l'armée. </s>
+	<s n="3">Est-ce que vous vous battiez?</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="3">
+	<s n="1">Oui, mon commandant. </s>
+	<s n="2">C'est-à-dire que c'est mademoiselle qui m'a battu ! </s>
+	<s n="3">J'ai reçu de sa main une caresse de la dernière gravité.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="4">
+	<s n="1">Tant mieux !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="5">
+	<s n="1">Ah ! </s>
+	<s n="2">Commandant !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="6">
+	<s n="1">Sans doute ! </s>
+	<s n="2">Tu voulais une femme qui te soumît, qui te domptât, qui te vainquît ; eh bien, tu as trouvé ce que tu désires... mon garçon, FAIT fait ! </s>
+	<s n="3">C'est fait !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="7">
+	<s n="1">Dompté soit, mais je voulais ne l'être que légitimement... par ma femme, et Mademoiselle Gabrielle n'est pas commissionnée pour cela !... </s>
+	<s n="2">Et je suis déshonoré... </s>
+	<s n="3">Mais je ne sortirai pas d'ici sans avoir obtenu une réparation.</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="8">
+	<s n="1">Déshonoré ! </s>
+	<s n="2">Et l'homme qui essaie de supplanter un ami de vingt ans dans le coeur d'une femme, celui qui forme le projet d'enlever la fiancée d'un camarade, n'est-il pas plus déshonoré encore que l'homme qui reçoit une petite claque de la petite main d'une petite fille, tonnerre... de printemps !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID, gravement.</speaker>
+                        <note type="L">Bambocheur : Homme, femme de vie déréglée. Populaire. [L]</note>
+                        <p n="9">
+	<s n="1">Oh ! </s>
+	<s n="2">Georges ! </s>
+	<s n="3">Je suis flâneur, viveur, hâbleur, joueur, bambocheur, soit ! </s>
+	<s n="3">Mais je dis que l'homme dont tu parles est un misérable et un lâche...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="10">
+	<s n="1">Eh bien, cet homme-là, c'est toi !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="11">
+	<s n="1">Moi !</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="12">
+	<s n="1">Oui, tu as été demander la main de Mademoiselle Lucie, ce matin, n'est-ce pas ? </s>
+	<s n="2">Eh bien ! </s>
+	<s n="3">Depuis hier, le petit numéro 4 du père Raymond, comme tu l'appelles, c'est ma fiancée...</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="13">
+	<s n="1">Oh ! </s>
+	<s n="2">Méchant frère !... </s>
+	<s n="3">C'était donc là le secret... </s>
+	<s n="4">Et tu me l'as caché !... </s>
+	<s n="5">À moi !</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="14">
+	<s n="1">Oh ! </s>
+	<s n="2">Méchant Georges ! </s>
+	<s n="3">Pourquoi as-tu gardé le silence avec moi ?</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="15">
+	<s n="1">Pourquoi as-tu gardé le silence aussi, toi, triple coupable ? </s>
+	<s n="2">Pourquoi ne m'as-tu pas avoué, absurde animal, que tu étais désespéré, que tu n'osais pas demander à ton vieux frère d'armes la main de sa petite soeur ? </s>
+	<s n="3">Pourquoi as-tu été assez bête pour penser que tu es pauvre, quand je suis riche ?... </s>
+	<s n="4">Allons,à genoux ! </s>
+	<s n="5">Courbe-toi, fier Sicambre !...  </s>
+	<s n="6">Comme dit la chanson, ou l'histoire, je ne sais plus au juste... et adore ce que tu voulais... fuir.</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID, aux genoux de Gabrielle.</speaker>
+                        <p n="16">
+	<s n="1">Ah ! </s>
+	<s n="2">Mademoiselle ! </s>
+	<s n="3">Est-ce que vous pourrez oublier jamais...</s>
+</p>
+                    </sp><!--@stage="knelle"--><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE, doucement.</speaker>
+                        <p n="17">
+	<s n="1">Silence dans les rangs !</s>
+</p>
+                    </sp><!--@stage="sweet"--><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="18">
+	<s n="1">Non, je ne me tairai pas... </s>
+	<s n="2">Je ne suis pas encore en puissance d'épouse... et je vous dis ceci, Gabrielle : « Voici mon autre joue ; accordez-moi un second soufflet, et la main avec... </s>
+	<s n="3">Oh ! </s>
+	<s n="4">Je l'ai bien mérité ! »</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="19">
+	<s n="1">Le soufflet, David?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#david">
+                        <speaker>DAVID.</speaker>
+                        <p n="20">
+	<s n="1">Oui, le soufflet !... </s>
+	<s n="Z">Pour n'avoir pas su deviner que vous ne me détestiez pas... et que, depuis longtemps, vous daigniez...</s>
+</p>
+                    </sp><!--@who="DAVID"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="21">
+	<s n="1">Silence dans les rangs !</s>
+</p>
+                        <stage type="wave">Elle lui tend la main.</stage>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="22">
+	<s n="1">FAIT fait ! </s>
+	<s n="2">C'est fait !... </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Je me sens si heureux que j'oublie de tousser, ma parole !</s>
+</p>
+                    </sp><!--@who="GEORGES"-->
+<sp who="#david">
+                        <speaker>DAVID, il embrasse le commandant.</speaker>
+                        <p n="23">
+	<s n="1">Mon frère !... </s>
+	<s n="2">C'est le colonel Verdière qui va être étonné ! </s>
+	<s n="3">Il m'envoie au diable et je lui ramène un ange !</s>
+</p>
+                    </sp><!--@stage="kiss"--><!--@who="DAVID"-->
+<sp who="#georges">
+                        <speaker>GEORGES.</speaker>
+                        <p n="24">
+	<s n="1">Allons, il est midi. </s>
+	<s n="2">À table ! </s>
+	<s n="3">On pleurera au dessert !</s>
+</p>
+                        <stage>La toile tombe.</stage>
+                    </sp><!--@who="GEORGES"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>
