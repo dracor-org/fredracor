@@ -23,44 +23,37 @@ licence.
 
 ## Changes made on top of the source
 
-Here is a list of changes we made:
+Among others these are the most significant modifications performed on the
+original documents:
 
-- adding TEI namespace
-- adding XML decleration
-- replacing the `teiHeader` with a DraCor-specific version
-  - preserveing as much as possible
-- adding a `particDesc`
-- translating the `@who` and `@xml:id`
-  - prefix leading numbers to be XML compatible
-  - remove diacritics and other special characters (e.g. `*`) from IDs
-  - separate multiple speakers by whitespace
-  - add a leading `#` to become a data pointer
-- moving numeral `@id` to `@n` on `tei:s` and `tei:l`
-- refine licence statement
-  - use current version 3.0 of the named licence
-  - add URL to the complete document
+- add TEI namespace
+- add XML declaration
+- replace the `teiHeader` with a DraCor-specific version while preserving as
+  much as possible of original content
+- refine licence statement using current version 3.0 of the given licence and
+  adding URL
+- add a `particDesc`
+- transform the `@xml:id` and `@who` attributes into proper IDs and ID
+  references
+- transform numeral `@id` into `@n` on `tei:s` and `tei:l`
 - replace `@id` with `@corresp` at `castItem/role`
-- move `tei:l/@syll` in comment
 - upper-case `tei:l/@part`
-- move unknown attributes from `tei:role` to comment
-- renamed unknown `docDate/@value` to `docDate/@when`
-- moved `addresse` to `tei:opener/tei:salute`
-- moved `sgnature` to `tei:signed`
-- removed a text `4+` between speech acts at ABEILLE_CORIOLAN.xml
-- 35 documents are using the TEI namespace - removed to process them like all
-  the others (of course the result is in the namespace)
-- removed text in `tei:sp` at audiffret-albertdurer.xml
-- move ending dot into `tei:castItem`, when it is right after (and so a child of
-  `tei:castList`)
+- remove instances of `tei:l/@syll` (commented)
+- remove unknown attributes from `tei:role` (commented)
+- rename `docDate/@value` to `docDate/@when`
+- transform `addresse` element to `tei:opener/tei:salute`
+- transform `signature` element to `tei:signed`
 - remove empty `@type`
+- add written and print dates where available
+- adjust case of character names
+  (https://github.com/dracor-org/fredracor/pull/14)
+- normalize author names
+- add Wikidata IDs for authors and plays (work in progress)
 
-## TODO
-
-- as of 2020-12-04 we do not have valid TEI-all
-- the following error is reported during transformation on 112, 137 and 1112:
-  `04 Dec 2020 13:13:54,509 [qtp281487983-628] INFO  (Predicate.java
-  [selectByPosition]:454) - contextSet and outerNodeSet don't share any document`
-- rewrite element `tei:ab[@type="stances"]` (and possible typos) to tei:lg
+For a comprehensive insight into our changes see both the
+[tc2dracor.xq](tc2dracor.xq) transformation script and the adjustments made on
+the [`dracor` branch of the theatre-classique](https://github.com/dracor-org/theatre-classique/tree/dracor)
+repository.
 
 ## DraCor IDs
 
@@ -100,8 +93,7 @@ instances can be started in parallel using either [Podman](https://podman.io) or
    database(s)
 3. process each source file by posting it to the transformation XQuery and
    storing the output to the [tei](tei) directory
-4. persist the eXist log files for debugging
-5. stop and remove all pods (or containers)
+4. stop and remove all pods (or containers)
 
 ### Usage
 
@@ -168,3 +160,13 @@ log from every pod can be viewed while the conversion is running:
 ```bash
 podman logs -f $(cat $(ls -rtd /tmp/tc2dracor-* | tail -1)/containers)
 ```
+
+For debugging purposes the logs of all containers are also stored in a temporary
+working directory after the transformation has finished. Use the `-v` option to
+see the exact location of these files at the end of the script run.
+
+## TODO
+
+As of now, 78 documents do not comply to the TEI-All schema yet. See the
+[list of open issues](https://github.com/dracor-org/fredracor/issues) for
+details on this and possible other enhancements.

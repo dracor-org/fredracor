@@ -128,7 +128,9 @@ declare function local:transform($nodes) {
             
 
             case text() return
-                (: at ABEILLE_CORIOLAN.xml there is '4+' in the middle of nowhere, other case is a tei:sp with '****' :)
+                (: at ABEILLE_CORIOLAN.xml there is '4+' in the middle of
+                   nowhere, other case is a tei:sp with '****' :)
+                (: FIXME: this should be changed in theatre-classique#dracor :)
                 if(
                     ($node/parent::*:sp
                     or $node/parent::*:div1
@@ -249,7 +251,9 @@ declare function local:transform($nodes) {
                         else
                             '#' || (normalize-space($node/speaker) => local:translate())
                 },
-                local:transform($node/node() except $node/text()) (: there is text within sp audiffret-albertdurer.xml :)
+                (: FIXME: this should be changed in theatre-classique#dracor :)
+                (: there is text within sp audiffret-albertdurer.xml :)
+                local:transform($node/node() except $node/text())
             }, ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward, $node/@ge, $node/@syll, $node/@aparte) ! local:attribute-to-comment(.) ) (: @class was used a single time, so we do not take the effort to write it to a comment :)
             
             case element(s) return
@@ -1058,3 +1062,23 @@ return if (not(request:exists())) then (
 ) else (
   $data => local:prepare() => local:construct-tei($name)
 )
+
+(:
+These are some of the gory details we do here. They were previously mentioned
+in the README but moved here to keep the growing list of changes in shape.
+
+We should consider fixing some of these very particular issues on the dracor
+branch of https://github.com/dracor-org/theatre-classique.
+
+- @who/@xml:id fixes
+  - prefix leading numbers to be XML compatible
+  - remove diacritics and other special characters (e.g. `*`) from IDs
+  - separate multiple speakers by whitespace
+  - add a leading `#` to become a data pointer
+
+- removed a text `4+` between speech acts at ABEILLE_CORIOLAN.xml
+- 35 documents are using the TEI namespace - removed to process them like all
+  the others (of course the result is in the namespace)
+- move ending dot into `tei:castItem`, when it is right after (and so a child of
+  `tei:castList`)
+:)
