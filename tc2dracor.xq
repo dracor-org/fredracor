@@ -75,7 +75,7 @@ declare function local:prepare ($doc as node()) as item()* {
     ) else $doc/*
 };
 
-declare function local:titlecase ($input as node()*) as xs:string? {
+declare function local:titlecase ($input as item()*) as xs:string? {
    string-join($input, " ") => normalize-space() => tcf:convert-ou()
 };
 
@@ -997,12 +997,11 @@ declare function local:construct-tei (
       if($castItem[2])
       then comment {'WARNING: multiple roles/castItems found in source, may result of local:translate#1'}
       else ()
-    let $persName := string($castItem[1]/*:role)
-    let $persName := substring($persName, 1, 1) || lower-case(substring($persName, 2, 900))
+
+    let $persName := local:titlecase($castItem[1]/*:role)
     let $persName :=
-      if($persName eq '')
-      then upper-case(substring($who, 1, 1)) || substring($who, 2, 900)
-      else $persName
+      if($persName eq '') then
+        local:titlecase(translate($who, '-', ' ')) else $persName
     return
       <person xml:id="{$who}" sex="{$sex}">{if(not($castItem)) then comment { 'WARNING: no castItem found for reference in @who' } else ()}
         <persName>{$persName}</persName>
