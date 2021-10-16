@@ -168,6 +168,6 @@ see the exact location of these files at the end of the script run.
 
 ## TODO
 
-As of now, 78 documents do not comply to the TEI-All schema yet. See the
+As of now, 76 documents do not comply to the TEI-All schema yet. See the
 [list of open issues](https://github.com/dracor-org/fredracor/issues) for
 details on this and possible other enhancements.
