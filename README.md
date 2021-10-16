@@ -50,10 +50,11 @@ original documents:
 - normalize author names
 - add Wikidata IDs for authors and plays (work in progress)
 
-For a comprehensive insight into our changes see both the
-[tc2dracor.xq](tc2dracor.xq) transformation script and the adjustments made on
-the [`dracor` branch of the theatre-classique](https://github.com/dracor-org/theatre-classique/tree/dracor)
-repository.
+For comprehensive insight into our changes see both the
+[adjustments](https://github.com/dracor-org/theatre-classique/compare/dracor)
+made on the
+[`dracor` branch of the theatre-classique](https://github.com/dracor-org/theatre-classique/tree/dracor)
+repository and the [tc2dracor.xq](tc2dracor.xq) transformation script.
 
 ## DraCor IDs
 
