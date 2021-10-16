@@ -125,27 +125,8 @@ declare function local:transform($nodes) {
             case element(pinter) return
                 element {QName('', 'printer')} {
                 $node/node()} => local:transform()
-            
 
-            case text() return
-                (: at ABEILLE_CORIOLAN.xml there is '4+' in the middle of
-                   nowhere, other case is a tei:sp with '****' :)
-                (: FIXME: this should be changed in theatre-classique#dracor :)
-                if(
-                    ($node/parent::*:sp
-                    or $node/parent::*:div1
-                    or $node/parent::*:div2
-                    or $node/parent::*:castList
-                    or $node/parent::*:body
-                    or $node/parent::*:front
-                    or $node/parent::*:div
-                    or $node/parent::*:docImprint)
-                    
-                    and matches($node, '\S'))
-                then
-                    comment { 'text():' || replace($node, '-$', '- ') }
-                else
-                    $node
+            case text() return $node
 
             case comment() return $node
 
@@ -396,6 +377,10 @@ declare function local:transform($nodes) {
         :)
             case element(docImprint) return
                 (: remove unknown element :)
+                (: FIXME: this looses the following text node in in
+                   boyer-jeune-marius:
+                   "À PARIS, Chez GABRIEL QUINET, au Palais, dans la Galerie des Prisonniers, à l'Ange Gabriel"
+                :)
                 element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
                 $node/@* except $node/@type,
                 attribute type {'docImprint'},
@@ -1076,7 +1061,6 @@ branch of https://github.com/dracor-org/theatre-classique.
   - separate multiple speakers by whitespace
   - add a leading `#` to become a data pointer
 
-- removed a text `4+` between speech acts at ABEILLE_CORIOLAN.xml
 - 35 documents are using the TEI namespace - removed to process them like all
   the others (of course the result is in the namespace)
 - move ending dot into `tei:castItem`, when it is right after (and so a child of
