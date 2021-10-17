@@ -126,7 +126,10 @@ declare function local:transform($nodes) {
                 element {QName('', 'printer')} {
                 $node/node()} => local:transform()
 
-            case text() return $node
+            case text() return
+              (: replace occurrences of 'quart_d_heure' :)
+              (: see https://github.com/dracor-org/theatre-classique/commit/0e1f871dea95f4343895dad7e648de750c6dcf91 :)
+              replace($node, '([Qq])uart_d_heure', '$1uart d''heure')
 
             case comment() return $node
 
