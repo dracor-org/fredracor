@@ -397,6 +397,15 @@ declare function local:transform($nodes) {
                 local:transform($node/node() except $node/text()[matches(., '\S')])
             }, ($node/@id, $node/@date, $node/@value) ! local:attribute-to-comment(.))
 
+            case element(editeur) return
+                (: remove unknown element :)
+                (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+                $node/@* except $node/@id,
+                attribute type {'editeur'},
+                element {QName('http://www.tei-c.org/ns/1.0', 'p')}{
+                    local:transform($node/node())}
+            }, ($node/@id) ! local:attribute-to-comment(.))
+            
             case element(imprimeur) return
                 (: remove unknown element :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
