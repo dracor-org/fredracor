@@ -652,11 +652,11 @@ declare function local:transform($nodes) {
                     })
                 else
                 (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
-                $node/@* except ($node/@id, $node/@stage, $exceptionsType),
+                $node/@* except ($node/(@id|@stage|@decor), $exceptionsType),
                 $newType,
                 $node/@id ! attribute n {string(.)},
                 local:transform($node/node())
-            }, $node/@stage ! local:attribute-to-comment(.))
+            }, $node/(@stage|@decor) ! local:attribute-to-comment(.))
 
             case element(source) return
                 (: unclear what "source" means here. should be part of the teiHeader :)
