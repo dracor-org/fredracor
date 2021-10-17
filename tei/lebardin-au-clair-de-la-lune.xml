@@ -1,0 +1,963 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Au Clair de la Lune Historiette en un Acte à l'Usage des Collèges, Petits-Séminaires, Sociétés de Persévérance, Etc. Prix : 75 Centimes.</title>
+                <author>
+      <persName>
+        <roleName>Abbé</roleName>
+        <surname>Lebardin</surname>
+      </persName>
+    </author><!--LEBARDIN, Abbé-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001552</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/LEBARDIN_AUCLAIRDELALUNE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/LEBARDIN_AUCLAIRDELALUNE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1858"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k6121379q</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="lepine" sex="MALE">
+                        <persName>Lépine</persName>
+                    </person>
+                    <person xml:id="crepon" sex="MALE">
+                        <persName>Crêpon</persName>
+                    </person>
+                    <person xml:id="janrad" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Janrad</persName>
+                    </person>
+                    <person xml:id="lulli" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Lulli</persName>
+                    </person>
+                    <person xml:id="le-duc" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Duc</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>mixte</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+<front>
+	<docTitle>
+		<titlePart type="main">AU CLAIR DE LA LUNE</titlePart>
+		<titlePart type="main">HISTORIETTE EN UN ACTE</titlePart>
+		<titlePart type="main">À L'USAGE DES COLLÈGES, PETITS-SÉMINAIRES, SOCIÉTÉS DE PERSÉVÉRANCE, Etc.</titlePart>
+		<titlePart type="main">Prix : 75 centimes.</titlePart>
+	</docTitle> 
+	<docDate when="1858">1858</docDate>
+	<docAuthor>PAR L'ABBÉ L. Professeur de Belles-Lettres.</docAuthor>
+	<div type="docImprint">
+		<div type="approbation"/><!--@value=""-->
+			<div type="privilege">
+                    <head/>
+			</div><!--@value=""-->
+			<!--TODO: handling of editor name at this place unclear <editor value="CHAUMAS">BORDEAUX. P. CHAUMAS, LIBRAIRE-ÉDITEUR Fossés du Chapeau-Rouge, 34.</editor>-->
+			<div type="printer">
+                    <p>Bordeaux. Imprimerie de J. DELMAS, rue Sainte-Catherine, 139.</p>
+                </div><!--@id="DELMAS"-->
+	</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#le-duc-de-montpensier">LE DUC DE MONTPENSIER</role><!--@sex="1"--><!--@statut="duc"--><!--@age="A"-->.</castItem>
+		<castItem>
+                    <role corresp="#crepon">CRÊPON</role><!--@sex="1"--><!--@statut="patissier"--><!--@age="A"-->, pâtissier.</castItem>
+		<castItem>
+                    <role corresp="#lanrad">JANRAD</role><!--@sex="1"--><!--@statut="écrivain public"--><!--@age="A"-->, écrivain public.</castItem>
+		<castItem>
+                    <role corresp="#giovanni-lulli">GIOVANNI LULLI</role><!--@sex="1"--><!--@statut="musicien"--><!--@age="A"-->.</castItem>
+		<castItem>
+                    <role corresp="#lepine">LÉPINE</role><!--@sex="1"--><!--@statut="valet"--><!--@age="A"-->, valet.</castItem>
+		<castItem>
+                    <role corresp="#voisins">VOISINS</role><!--@sex="9"--><!--@statut="peuple"--><!--@age="A"-->, etc.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222">La scène est à Paris.</set>-->
+	<note>Cette charmante nouvelle fut publiée, il y a une vingtaine d'années, par le Journal des Enfants. Nous n'avons guère fait que la mettre en drame.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>AU CLAIR DE LA LUNE</head>
+<stage type="decor">Une place publique où aboutissent plusieurs rues. D'un coté, la boutique de Crêpon avec un étalage vide ; de l'autre, l'échoppe de Janrad, écrivain public.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Crêpon, assis, Lépine, arrivant  avec un paquet.</head>
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="1">
+	<s n="1">L'écrivain public, Monsieur, s'il vous plaît ?</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="1">Sa maison est en face ;</l>
+                        <l n="2">Frappez un coup, de grâce,</l>
+                        <l n="3">Vous le verrez venir,</l>
+                        <l n="4">Tout prêt a vous servir.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE, après avoir frappé.</speaker>
+                        <p n="2">
+	<s n="1">Personne ne répond.</s>
+</p>
+                    </sp><!--@stage="knock"--><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="5">Eh bien ! je conclus, dans ce cas,</l>
+                        <l n="6">Que l'ami Janrad n'y est pas ;</l>
+                        <l n="7">Attendu que s'il répondait</l>
+                        <l n="8">Assurément il y serait.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE, à part.</speaker>
+                        <p n="3">
+	<s n="1">Voilà un homme qui parle tout drôlement. </s>
+	<s n="2">Pourtant, je crois qu'il a raison.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="4">
+	<s n="1">Reviendra-t-il bientôt ?</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="9">Vous me demandez, mon compère,</l>
+                        <l n="10">Quand mon voisin Pierre_Janrad</l>
+                        <l n="11">Dans son échoppe rentrera,</l>
+                        <l n="12">Quand rentrera mon voisin Pierre...</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="5">
+	<s n="1">Oui, monsieur.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="13">Qui peut savoir ces choses-là ?</l>
+                        <l n="14">Pourtant, je vous le dis, compère,</l>
+                        <l n="15">Mon voisin Pierre rentrera,</l>
+                        <l n="16">Quand mon voisin Pierre_Janrad</l>
+                        <l n="17">Rentrera chez mon voisin Pierre.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE, à part.</speaker>
+                        <p n="6">
+	<s n="1">Quel baragouin ! </s>
+	<s n="2">Est-ce qu'il se moque de moi ?... </s>
+	<s n="3">Non ; il a trop bonne mine... </s>
+	<s n="4">Il est tout simplement fou, ou peu s'en faut.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="7">
+	<s n="1">J'aurais besoin de lui parler.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="18">Lui parler, et pourquoi ?</l>
+                        <l n="19">Voyons, dites-le moi.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="8">
+	<s n="1">Voici. </s>
+	<s n="2">J'ai longtemps été cuisinier dans les premières maisons de Pézenas, qu'est mon pays, d'où je suis né natif. </s>
+	<s n="3">Fatigué de respirer l'air de Pézenas, je suis venu goûter de celui de Paris, qui sera peut-être plus favorable à ma santé et à ma bourse. </s>
+	<s n="4">J'ai dessein d'entrer dans les cuisines du Maréchal_de_Villeroi ; mais pour solliciter cette dignité, il me faut un placet, où se trouvent écrits mes nom, prénoms, titres et qualités.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="20">Sans autre préliminaire,</l>
+                        <l n="21">Je comprends votre affaire.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="9">
+	<s n="1">Ce placet, monsieur, je suis incapable de le rédiger, attendu qu'en fait de littérature, je ne connais guère que la soupe aux choux, l'omelette au lard, les sauces et les pâtés. </s>
+	<s n="2">Vous comprenez que tout cela ne peut pas m'être d'un grand secours dans la circonstance présente.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="22">Je le comprends fort bien,</l>
+                        <l n="23">Achevez votre entretien.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="10">
+	<s n="1">Eh bien ! </s>
+	<s n="2">C'est fini.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <p n="11">
+	<s n="1">Le ciel en soit béni.</s>
+</p>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="12">
+	<s n="1">Oui, mais tout cela ne m'arrange pas.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="24">À vous parler sans nul mystère,</l>
+                        <l n="25">Mon cher ami, bientôt j'espère</l>
+                        <l n="26">Pouvoir, dans ce fâcheux cas,</l>
+                        <l n="27">Vous tirer d'embarras.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="13">
+	<s n="1">Je le désire.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="28">Je ferai votre placet.</l>
+                        <l n="29">Votre nom, s'il vous plait ?</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="14">
+	<s n="1">Dominique_Lépine, âgé de vingt-deux ans, ancien cuisinier de Monsieur_le_Comte-Philostorge_d_Albicrac.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="30">Nous allons commencer sur l'heure;</l>
+                        <l n="31">Mais, à présent, je n'ai dans ma demeure</l>
+                        <l n="32">Que ma plume et mon encrier.</l>
+                        <l n="33">Les rats ont mangé mon papier.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="15">
+	<s n="1">S'il ne vous faut que du papier, en voici. </s>
+	<s n="2">Je l'ai acheté tout exprès.</s>
+</p>
+                        <stage type="get">Il le tire de son sac.</stage>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="34">J'accepte de grand coeur ce signalé service,</l>
+                        <l n="35">Et je vais à mon tour vous rendre un bon office.</l>
+                    </sp><!--@who="CRÊPON"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II.</head>
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="1">
+	<s n="1">Quelle drôle de langue !... </s>
+	<s n="2">C'est à ne rien y comprendre. </s>
+	<s n="3">On m'avait bien dit, en partant de Pézenas, qu'à Paris on ne parlait pas comme ailleurs. </s>
+	<s n="4">Voilà comme on s'instruit en voyageant... ; mais notre homme sort de sa boutique. </s>
+	<s n="5">Est-ce qu'il aurait déjà terminé ? </s>
+	<s n="6">Peste ! </s>
+	<s n="7">Il n'y va pas de main morte.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Crêpon, Lépine.</head>
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="36">Voici votre placet.</l>
+                        <l n="37">Écoutez, s'il vous plaît.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="1">
+	<s n="1">J'écoute, Monsieur.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON, lisant.</speaker>
+                        <l n="38">Dominique_de_Lépine,</l>
+                        <l n="39">Sachant faire la cuisine,</l>
+                        <l n="40">Brosser, cirer, et_coetera,</l>
+                        <l n="41">A servi treize semaines</l>
+                        <l n="42">Monseigneur_le_duc_du_Maine,</l>
+                        <l n="43">Puis des marquis par douzaines,</l>
+                        <l n="44">Un danseur de l'Opéra,</l>
+                        <l n="45">Deux juges à la grand'chambre,</l>
+                        <l n="46">De l'Académie un membre,</l>
+                        <l n="47">Un évêque, un amiral,</l>
+                        <l n="48">Toutes personnes fort honnêtes</l>
+                        <l n="49">Et toutes fort satisfaites</l>
+                        <l n="50">De ses talents en général.</l>
+                    </sp><!--@stage="read"--><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="2">
+	<s n="1">Mais, Monsieur, je n'ai jamais connu tout ce monde-là.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="1">Et qu'importe, mon cher, que vous l'ayez connu ?</l>
+                        <l n="1">Si ces noms sont ici, la rime l'a voulu.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="3">
+	<s n="1">Il n'y a ni rime ni rame qui tienne ! </s>
+	<s n="2">Je ne suis pas de Lépine, mais Lépine tout court. </s>
+	<s n="3">Je viens de chez le Comte_d_Albicrac. </s>
+	<s n="4">Je n'ai jamais servi ni d'évêque, ni d'amiral, ni de danseur ; et je ne prétends pas...</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="51">Jeune provincial, on le voit, de la muse</l>
+                        <l n="52">Vous ignorez encor les écarts et... la ruse.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="4">
+	<s n="1">Mais, Monsieur, il n'est pas permis de mentir de la sorte.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="53">Le mensonge est permis dans cette circonstance.</l>
+                        <l n="54">En langue poétique il s'appelle licence.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="5">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est différent.</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="55">Au noble maréchal présentez ce placet ;</l>
+                        <l n="56">Bientôt vous obtiendrez un triomphe complet.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="6">
+	<s n="1">Je le souhaite.... </s>
+	<s n="2">Combien vous dois-je ?</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="57">Rien.</l>
+                        <l n="58">Je rime pour la gloire, et je m'en trouve bien.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE.</speaker>
+                        <p n="7">
+	<s n="1">Alors je vous remercie.... </s>
+	<s n="2">Vous êtes pâtissier, ce me semble ?</s>
+</p>
+                    </sp><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="59">Je fais des tartes, des galettes,</l>
+                        <l n="60">Des pâtés chauds, des pâtés froids,</l>
+                        <l n="61">Des tourtes, vrai manger de rois,</l>
+                        <l n="62">Des croquets et des tartelettes.</l>
+                        <l n="63">J'ai des massepains excellents,</l>
+                        <l n="64">Des échaudés, bons pour les dents,</l>
+                        <l n="65">Des biscuits tout sucre et tout crème</l>
+                        <l n="66">Et des gâteaux que chacun aime.</l>
+                        <l n="67">Entrez, mangez ; je suis Crêpon,</l>
+                        <l n="68">Pâtissier du Roi_de_Japon.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE, à part.</speaker>
+                        <p n="8">
+	<s n="1">Du roi dé Japon !... </s>
+	<s n="2">Peste!... </s>
+	<s n="3">Mais il n'a plus rien sur son étalage, et sa boutique me semble aussi misérable que possible.... </s>
+	<s n="4">Peut-être que le Roi_de_Japon a tout mangé ; on dit qu'il est vorace à l'excès...</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="9">
+	<s n="1">Monsieur, je n'ai pas le temps de m'arrêter.... </s>
+	<s n="2">Je vous remercie bien de votre complaisance.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="LÉPINE"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="69">Monsieur, je vous fais sans façon</l>
+                        <l n="70">Mon compliment, foi de Crêpon.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lepine">
+                        <speaker>LÉPINE, se retirant.</speaker>
+                        <p n="10">
+	<s n="1">Je n'aurais jamais cru qu'on parlât de la sorte à Paris. </s>
+	<s n="2">Si le Maréchal_de_Villeroi me tient un pareil langage, j'enverrai promener sa cuisine et ses fourneaux.</s>
+</p>
+                    </sp><!--@stage="awayt"--><!--@who="LÉPINE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Crêpon, Janrad.</head>
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Encore une pratique que je vois sortir de chez vous.</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="71">Un empereur de grande renommée,</l>
+                        <l n="72">Disait jadis, sachez le bien :</l>
+                        <l n="73">Amis, j'ai perdu ma journée,</l>
+                        <l n="74">Car je n'ai pu faire aucun bien.</l>
+                        <l n="75">Et moi, Janrad, si d'aventure,</l>
+                        <l n="76">Je ne puis faire de placet,</l>
+                        <l n="77">Je suis tout en.... déconfiture,</l>
+                        <l n="78">Et mon coeur n'est pas satisfait.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="2">
+	<s n="1">En déconfiture ! </s>
+	<s n="2">Autrefois vous y étiez; mais, depuis longtemps, je ne vois plus rien sur vos misérables planches. </s>
+	<s n="3">La fureur de rimailler vous a réduit à la misère ; et vous le méritez bien. Au lieu de surveiller vos garçons et de faire vous-même la vente, vous vous amusiez à fabriquer des vers. </s>
+	<s n="4">Si vous vouliez préparer la fournée, au lieu de dire : Vous allumerez le four à huit heures, à neuf heures et demie, à dix heures trente-cinq minutes, vous disiez :</s>
+</p>
+                        <l n="79">Vous allumerez le four,</l>
+                        <l n="80">Quand il ne fera plus jour.</l>
+                        <p n="3">
+	<s n="1">Plaisante manière d'avoir des gâteaux levés et cuits à point.</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="81">Un homme n'est jamais malheureux, s'il estime</l>
+                        <l n="82">Qu'un bon pâté vaut moins qu'une excellente rime.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="4">
+	<s n="1">Oui, une rime vous remplit bien le gousset.</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="83">Malgré nia pauvreté, je rimerai toujours ;</l>
+                        <l n="84">Les vers, jusqu'à la mort, seront mes seuls amours ;</l>
+                        <l n="85">Et même je consens qu'on m'accuse d'un crime</l>
+                        <l n="86">Si jamais, en parlant, je manque d'une rime.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="5">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Vous pourrez rimer à votre aise; vos pratiques ne viendront plus vous inquiéter.... </s>
+	<s n="3">Si encore vous m'aviez laissé les miennes !... </s>
+	<s n="4">Mais non ; vous vous êtes mis dans la tête d'écrire pour rien, et nous n'avons plus qu'à prendre tous deux le chemin de l'hôpital. </s>
+	<s n="5">On sait que Pégase y porte ordinairement les poètes ; mais un écrivain public tient à vieillir chez soi.</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="87">Janrad, mon cher Janrad, bien à tort tu te fâches.</l>
+                        <l n="88">Calme un peu la fureur qui dresse tes moustaches.</l>
+                        <l n="89">Si ma muse jadis t'a porté quelque tort,</l>
+                        <l n="90">Les temps sont bien changés. Je te dirai d'abord</l>
+                        <l n="91">Qu'en foule les clients désertent mon échoppe.</l>
+                        <l n="92">Je n'ai, pour me couvrir, plus que cette... enveloppé.</l>
+                        <l n="93">Il ne me reste plus ni crayon ni papier ;</l>
+                        <l n="94">Je n'ai que cette plume et ce vieil encrier :</l>
+                        <l n="95">Cet ami, qui vieillit auprès de ma personne,</l>
+                        <l n="96">Si tu veux l'accepter, Janrad, je te le donne.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="6">
+	<s n="1">Votre encrier !... </s>
+	<s n="2">Que voulez-vous que j'en fasse ?</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="97">Sur ton pupitre il pourra trouver place.</l>
+                        <l n="98">Janrad, mon cher Janrad, accepte-le de grâce.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="7">
+	<s n="1">Non, je veux vous l'acheter.</s>
+</p>
+                        <stage type="get">Il le prend.</stage>
+                        <p n="8">
+	<s n="2">Je vous en donne trois sous. </s>
+	<s n="3">C'est dix fois trop payé ; mais c'est égal. </s>
+	<s n="4">Vous les aurez demain.</s>
+</p>
+                        <stage type="aparte">À part. </stage>
+                        <p n="9">
+	<s n="1">Puisque je tiens son encrier, il ne pourra plus écrire, et je n'aurai pas à craindre sa concurrence.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="10">
+	<s n="1">Vous auriez bien l'air, Monsieur_Crêpon, de continuer à nous faire de la pâtisserie.</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="99">J'en ferais volontiers encore,</l>
+                        <l n="100">Car ce désir me presse et me dévore ;</l>
+                        <l n="101">Et je prétends, soyez-en bien certain,</l>
+                        <l n="102">Commencer dès demain.</l>
+                        <l n="103">Il me manque des oeufs, du sucre, des farines,</l>
+                        <l n="104">Des citrons, du café, des substances... salines.</l>
+                        <l n="105">Si je puis réussir à me les procurer,</l>
+                        <l n="106">Dès demain, cher Janrad, je deviens pâtissier.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="11">
+	<s n="1">Je crois que ce sera difficile.</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="107">Ah ! Pâtissier, c'est un si noble état !</l>
+                        <l n="108">On se voit recherché par plus d'un potentat.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="12">
+	<s n="1">Reprenez-le donc tout de suite, et faites-nous des pâtés et des brioches plus succulents que ceux que nous trouvons dans vos écritures.</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="109">Janrad, tu fus toujours moqueur;</l>
+                        <l n="110">Je te pardonne de bon coeur.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="13">
+	<s n="1">Bonsoir.</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="111">Au revoir.</l>
+                    </sp><!--@who="CRÊPON"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="112">Déjà la nuit sur nous étend ses voiles ;</l>
+                        <l n="113">La lune brille au milieu des étoiles ;</l>
+                        <l n="114">Sans nul retard, il faut nous occuper</l>
+                        <l n="115">À préparer notre souper.</l>
+                        <l n="116">Mais bien en vain je me creuse la tête ;</l>
+                        <l n="117">Je n'ai plus rien à mettre sous la dent ;</l>
+                        <l n="118">Je vais souper par coeur assurément,</l>
+                        <l n="119">Et c'est une fort maigre fête.</l>
+                        <l n="120">Petit à petit,</l>
+                        <l n="121">Gagnons notre lit,</l>
+                        <l n="122">Et dormons d'un sommeil tranquille,</l>
+                        <l n="123">Pendant que la nuit</l>
+                        <l n="124">Régnera sur la ville.</l>
+                        <l n="125">J'aime fort le propos de ce Roi_de_Médine,</l>
+                        <l n="126">Lequel étant à jeun et n'ayant pas le sou,</l>
+                        <l n="127">Disait, en s'enfonçant dans son lit jusqu'au cou :</l>
+                        <l n="128">Quand on a faim, il faut se coucher : qui dort dîne.</l>
+                        <stage type="listen/location/music">On entend, dans la coulisse, le son d'un violon.</stage>
+                    </sp><!--@who="CRÊPON"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Crêpon, Lulli.</head>
+<sp who="#lulli">
+                        <speaker>LULLI, chantant.</speaker>
+                        <stage>Mozart, la Flûte enchantée.</stage>
+                        <l n="129">O eara armonia</l>
+                        <l n="130">O dolee piacer.</l>
+                        <stage>Il s'interrompt en voyant Crêpon.</stage>
+                        <p n="1">
+	<s n="1">Mossiou lo serivano poublic ; mossiou Crepone ?</s>
+</p>
+                    </sp><!--@stage="sing"--><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="131">Que voulez-vous, mon jeune ami ?</l>
+                        <l n="132">Quel motif vous amène ici ?</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="2">
+	<s n="1">Conoscete vô il signor Crepone ? Oun grand poèta.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON, à part.</speaker>
+                        <l n="133">Poète ! Ah ! Ce doux nom qui frappe mon oreille,</l>
+                        <l n="134">D'un plaisir inconnu me charme et me... réveille.</l>
+                    </sp><!--@stage="aparte"--><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="3">
+	<s n="1">Lo conoscete vô ?</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="135">Oui, je connais ce Crêpon,</l>
+                        <l n="136">Pâtissier du Roi_de_Japon.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="4">
+	<s n="1">No, no pâtissière, ma poèta, poèta.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON, à part.</speaker>
+                        <l n="137">Ô gloire ! Tes rayons viennent frapper mon coeur.</l>
+                        <l n="138">Je nage dans des flots de joie et de bonheur.</l>
+                    </sp><!--@stage="aparte"--><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="5">
+	<s n="1">Ma respondete dunque.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="139">Oui, je connais fort, Crêpon....</l>
+                        <l n="140">Poète du Roi_de_Japon.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="6">
+	<s n="2">Où demoure-t-il ?</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="141">Il demeure ici même,</l>
+                        <l n="142">Et sa joie est extrême,</l>
+                        <l n="143">En rencontrant</l>
+                        <l n="144">Un si charmant enfant.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="7">
+	<s n="1">Vô être il signor Crepone ?</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="145">En vain je voudrais le nier ;</l>
+                        <l n="146">Vous avez su le deviner.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="8">
+	<s n="1">Per Racco ! </s>
+	<s n="2">Mossiou Crepone, ze souis ensanté de vô eonoscere. </s>
+	<s n="3">Ze vourais que vô mé fariez oun petit billéte per presentar à la Madama_Montpensier.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="147">Enfant, veuillez bien m'excuser,</l>
+                        <l n="148">Vous me paraissez étranger.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="9">
+	<s n="1">Ze m'appelle Giovanni Lulli. </s>
+	<s n="2">Ze souis Italiano et employé dans les couisines de la Madame_Montpensier. </s>
+	<s n="3">Ma le mestiere de marmitone non mi conviene ; ze veux être mousiciano, mousiciano ; l'intendete bene ?</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="149">Oui, je vous comprends fort bien :</l>
+                        <l n="150">Vous voulez être musicien.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="19">
+	<s n="1">Si, si, si. </s>
+	<s n="2">Ze veux être célèbre dans la mousica comme, vô dans la poésia ; ze veux être oun grand ouomo.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="151">Eh bien ! Dites donc, entre nous,</l>
+                        <l n="152">Ce que je puis faire pour vous.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="20">
+	<s n="1">Ze vourais présentar oun placet à la madama_Montpensier, per loui demandar la soua protezionc et un maestro que mi ensegna le re, mi, fa, sol.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="153">Hélas ! Mon petit étranger,</l>
+                        <l n="154">Je n'ai ni plume ni papier,</l>
+                        <l n="155">Ni quoique ce soit pour vous faire</l>
+                        <l n="156">Votre requête épistolaire ;</l>
+                        <l n="157">Mais peut-être bien que Janrad</l>
+                        <l n="158">Plume et papier me prêtera.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="21">
+	<s n="1">Où denioure-t-il ce Zanrad ?</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="159">Il demeure en face,</l>
+                        <l n="160">Attendez, de grâce,</l>
+                        <l n="161">Ayez bon espoir,</l>
+                        <l n="162">Au revoir.</l>
+                        <stage type="knock">Il frappe à la porte de Janrad.</stage>
+                        <l n="163">Voisin Janrad.... Voisin Pierre... Voisin Pierrot !...</l>
+                        <l n="164">Oh ! Oh !...</l>
+                        <l n="165">Un bruit frappe mon oreille ;</l>
+                        <l n="166">Je l'entends qui se réveille ;</l>
+                        <l n="167">Il se lève.... Ah ! Cher Pierrot</l>
+                        <l n="168">Je vais te revoir bientôt.</l>
+                    </sp><!--@who="CRÊPON"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Les mêmes, Janrad, à une lucarne.</head>
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="1">
+	<s n="1">Qu'est-ce donc ?... </s>
+	<s n="2">Encore vous ?... </s>
+	<s n="3">Vous ne pouvez pas laisser les gens en repos... </s>
+	<s n="4">Voyons, que voulez-vous ?</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="169">Je voudrais, si cela te plait,</l>
+                        <l n="170">Écrire un illustre placet.</l>
+                        <l n="171">Le vent a soufflé tout à l'heure</l>
+                        <l n="172">Ma chandelle dans ma demeure ;</l>
+                        <l n="173">Je n'ai pu trouver, crois-le bien,</l>
+                        <l n="174">Ni plume, ni feu, ni rien.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="2">
+	<s n="1">Je le crois bien aussi.... </s>
+	<s n="2">Laissez-moi dormir en repos et allez vous promener.</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="175">Ma foi, je ne m'attendais pas,</l>
+                        <l n="176">Je l'avoue, à ce fâcheux cas.</l>
+                        <stage type="serious">Avec solennité.</stage>
+                        <l n="177">Au clair de la lune,</l>
+                        <l n="178">Mon ami Pierrot,</l>
+                        <l n="179">Prête-moi ta plume</l>
+                        <l n="180">Pour écrire un mot.</l>
+                        <l n="181">Ma chandelle est morte,</l>
+                        <l n="182">Je n'ai plus de feu ;</l>
+                        <l n="183">Ouvre moi ta porte</l>
+                        <l n="184">Pour l'amour de Dieu.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <l n="185">Je n'ouvre pas ma porte</l>
+                        <l n="186">À un pâtissier,</l>
+                        <l n="187">Qui la lune porte</l>
+                        <l n="188">Dans son tablier.</l>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON, déployant son tablier où se trouve un trou rond.</speaker>
+                        <l n="189">Que veut-il dire enfin ce rimeur singulier...,</l>
+                        <l n="190">Que je porte la lune au fond de mon tablier ?</l>
+                    </sp><!--@stage="dress"--><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="3">
+	<s n="1">Ricommineiate la canzone, mossiou.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="191">Quelle chanson ?</l>
+                        <l n="192">Dites-le sans façon.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <l n="193">Al clar de la louna.</l>
+                        <stage type="repeat">Crêpon répète la strophe avec lenteur. Lulli adapte l'air connu en le suivant vers par vers et en s'accompagnant de son violon.</stage>
+                    </sp><!--@who="LULLI"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="4">
+	<s n="1">Voulez-vous les autres paroles ?</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="5">
+	<s n="1">Que otré parole ?</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#janrad">
+                        <speaker>JANRAD.</speaker>
+                        <p n="6">
+	<s n="1">Je n'ouvre pas ma porte...</s>
+</p>
+                    </sp><!--@who="JANRAD"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="7">
+	<s n="1">No, no, al clar de la louna....</s>
+</p>
+                        <stage type="sing/together">Il reprend l'air. Les voisins, qui se sont groupés sur la place, le chantent avec lui.</stage>
+                    </sp><!--@who="LULLI"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Les mêmes, Le Duc de Montpensier.</head>
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <p n="1">
+	<s n="1">Vous voilà, petit mauvais sujet. </s>
+	<s n="2">C'est ainsi que vous désertez  la cuisine.</s>
+</p>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="2">
+	<s n="1">Monsignore, zai voulou far la connaissance del poèta Crepone. </s>
+	<s n="2">Loui fara les versi et io faro la mousica.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <p n="3">
+	<s n="1">Vous devriez plutôt songer à aller tourner la broche.</s>
+</p>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="4">
+	<s n="">Monsignore, ascoltate. </s>
+</p>
+                        <stage type="sing">Il chante l'air en entier.</stage>
+                    </sp><!--@who="LULLI"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <p n="5">
+	<s n="1">En vérité, il y a chez cet enfant un talent extraordinaire.</s>
+</p>
+                        <stage type="toward">À Lulli.</stage>
+                        <p n="6">
+	<s n="1">Vous voulez donc être musicien ?</s>
+</p>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="7">
+	<s n="1">Si, monsignore. </s>
+	<s n="2">Et ze santerai toutté lé vostré belle azioni.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <p n="8">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Vous le serez.</s>
+</p>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lulli">
+                        <speaker>LULLI.</speaker>
+                        <p n="9">
+	<s n="1">Merci, monsignore !</s>
+</p>
+                        <stage type="kiss">Il lui baise la main.</stage>
+                        <p n="10">
+	<s n="1">Zai une grâce à vô demander per il poèta Crepone. </s>
+	<s n="2">Que venga en vostro palazzo ; sara il vostro improvisatore.</s>
+</p>
+                    </sp><!--@who="LULLI"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <p n="11">
+	<s n="1">Mon improvisateur.... </s>
+	<s n="2">Je le veux bien. </s>
+	<s n="3">Voulez-vous me suivre, Monsieur ?</s>
+</p>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#crepon">
+                        <speaker>CRÊPON.</speaker>
+                        <l n="194">Ô monseigneur,je ne puis refuser</l>
+                        <l n="195">Ce que vous voulez bien ici me proposer.</l>
+                        <l n="196">Je vous suivrai jusques au bout du monde,</l>
+                        <l n="197">À travers les déserts de la terre... et de l'onde.</l>
+                    </sp><!--@who="CRÊPON"-->
+<sp who="#janrad">
+                        <speaker>JANRAD, à sa fenêtre.</speaker>
+                        <p n="12">
+	<s n="1">Et moi, Monseigneur, ne puis-je pas vous suivre, pour tenir vos écritures.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="JANRAD"-->
+<sp who="#lulli">
+                        <speaker>LULLI, à Janrad.</speaker>
+                        <p n="13">
+	<s n="1">No, no ; vô être oun fripone, oun birbante, oun ouomo senza couore ; restate al clar de la louna, et se vô avoir faine, attrapate la colle denti.</s>
+</p>
+                        <stage>Tous reprennent AU CLAIR DE LA LUNE.</stage>
+                    </sp><!--@stage="toward"--><!--@who="LULLI"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

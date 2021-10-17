@@ -1,0 +1,1256 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Guignol et la Cabaretière</title>
+                <title type="sub">Théâtre de Guignol.</title>
+                <author>
+      <persName>
+        <forename>Fernand</forename>
+        <surname>Beissier</surname>
+      </persName>
+      <idno type="isni">0000 0001 1474 4543</idno>
+    </author><!--Fernand BEISSIER (1858-1936)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001512</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/BEISSIER_GUIGNOLCABARETIERE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/BEISSIER_GUIGNOLCABARETIERE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1894"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k57435258</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="guignol" sex="MALE">
+                        <persName>Guignol</persName>
+                    </person>
+                    <person xml:id="la-cabaretiere" sex="FEMALE">
+                        <persName>La Cabaretière</persName>
+                    </person>
+                    <person xml:id="le-gendarme" sex="MALE">
+                        <persName>Le Gendarme</persName>
+                    </person>
+                    <person xml:id="le-juge" sex="MALE">
+                        <persName>Le Juge</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">GUIGNOL ET LA CABARETIÈRE</titlePart>
+			<titlePart type="sub">THÉÂTRE DE GUIGNOL.</titlePart>
+			</docTitle> 
+		<docDate when="1894">1894.</docDate>
+		<docAuthor>Fernand BESSIER</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor>PARIS, LIBRAIRIE THÉÂTRALE, 14 rue Grammont, 14.</editor>-->
+		</div>
+	<castList>
+                <head>PERSONNAGES.</head>
+		<castItem>
+                    <role corresp="#guignol">GUIGNOL</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#le-gendarme">LE GENDARME</role><!--@sex="1"--><!--@type="H"--><!--@statut="gendarme"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#la-cabaretiere">LA CABARETIÈRE</role><!--@sex="2"--><!--@type="H"--><!--@statut="cabaretier"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#le-juge">LE JUGE</role><!--@sex="1"--><!--@type="H"--><!--@statut="juge"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Village" country="France" periode="XIXème" gps="">La grande place du village. À droite, le cabaret, la prison au fond. À gauche, des arbres.</set>-->
+	<note>Fernand BESSIER, "Théâtre de Guignol", Paris, Librairie théâtrale, 1894, pp. 1-28. </note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>GUIGNOL ET LA CABARETIÈRE</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Guignol, La Cabaretière.</head>
+<sp who="#guignol">
+                        <speaker>GUIGNOL, entre.</speaker>
+                        <p n="1">
+	<s n="1">J'ai soif... </s>
+	<s n="2">Il fait une chaleur terrible aujourd'hui !</s>
+</p>
+                        <stage type="closer/knock">Il va à la porte du cabaret et frappe.</stage>
+                        <p n="2">
+	<s n="1">Oh ! </s>
+	<s n="2">Là.</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="3">
+	<s n="">Tiens, c'est vous, Monsieur_Guignol ?</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="4">
+	<s n="1">Eh ! </s>
+	<s n="2">Oui... </s>
+	<s n="3">C'est moi, Mère_Michel. </s>
+	<s n="4">Ça va bien ce matin ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="5">
+	<s n="1">Mais pas mal... </s>
+	<s n="2">Je vous remercie.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="6">
+	<s n="1">Allons ! </s>
+	<s n="2">Tant mieux, tant mieux. </s>
+	<s n="3">Dites donc... </s>
+	<s n="4">Vous allez me servir quelque chose.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE, saluant.</speaker>
+                        <p n="7">
+	<s n="1">Vous servir à boire ?</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="8">
+	<s n="1">À boire, comme vous le dites si élégamment.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE, mêmejeu.</speaker>
+                        <p n="9">
+	<s n="">Votre servante, Monsieur_Guignol.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="10">
+	<s n="1">Vous refusez ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="11">
+	<s n="1">Absolument.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="12">
+	<s n="1">Ça n'est pas possible.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="13">
+	<s n="1">Ça n'est pas possible, mais ça est.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="14">
+	<s n="1">Et pour quelles raisons, s'il vous plaît ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="15">
+	<s n="1">Oh !... </s>
+	<s n="2">Une seule... et suffisante... </s>
+	<s n="3">Payez-moi d'abord ce que vous me devez... et puis après nous verrons.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="16">
+	<s n="1">Je vous dois quelque chose ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE</speaker>
+                        <p n="17">
+	<s n="1">Vous l'avez oublié ?</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="18">
+	<s n="1">Non. </s>
+	<s n="2">Alors vous voulez que je vous paie ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="19">
+	<s n="1">Payez... et je vous servirai.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, lui donnant un coup de bâton.</speaker>
+                        <p n="20">
+	<s n="1">Voila !</s>
+</p>
+                    </sp><!--@stage="hit"--><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="21">
+	<s n="1">Au secours !</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, frappant en comptant ses coups.</speaker>
+                        <p n="22">
+	<s n="1">Un franc, deux francs, trois francs, quatre francs, cinq, six, sept, huit... </s>
+	<s n="2">Ça fait-il votre compte ?</s>
+</p>
+                    </sp><!--@stage="hit"--><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="23">
+	<s n="1">Et cinquante centimes.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL» saluant.</speaker>
+                        <p n="24">
+	<s n="1">Voilà... </s>
+	<s n="2">Et maintenant vous êtes payée.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="25">
+	<s n="1">Ah ! </s>
+	<s n="2">Gueux ! </s>
+	<s n="3">Bandit!... </s>
+	<s n="4">Je vais aller chercher la police.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="26">
+	<s n="1">Allez chercher qui vous voudrez.</s>
+</p>
+                        <stage type="exit/furious">La cabaretière sort furieuse.</stage>
+                    </sp><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II.</head>
+<sp who="#guignol">
+                        <speaker>GUIGNOL, seul, ta regardant s'en aller.</speaker>
+                        <p n="1">
+	<s n="1">Et elle court... et elle court. </s>
+	<s n="2">Va donc ! </s>
+	<s n="3">Mais va donc ! </s>
+</p>
+                        <stage type="turn">Se retournant.</stage>
+                        <p n="2">
+	<s n="1">Si du moins elle avait laissé la porte de son cabaret ouverte, j'en aurais profilé... </s>
+	<s n="2">Fermée !... </s>
+	<s n="2">Oh ! </s>
+	<s n="4">La vieille méfiante ! </s>
+	<s n="5">C'est vrai que j'ai cogné un peu... </s>
+	<s n="6">Mais enfin c'est sa faute. </s>
+	<s n="7">- Est-ce qu'on réclame une dette ? </s>
+	<s n="8">- Ça ne se fait pas entre gens du monde. </s>
+	<s n="9">Quand votre créancier l'oublie, il ne faut pas l'en faire souvenir. </s>
+	<s n="10">Surtout quand il ne la nie pas.</s>
+</p>
+                        <stage type="watch">Regardant.</stage>
+                        <p n="3">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon Dieu ! </s>
+	<s n="3">Le gendarme avec la mère Michel. </s>
+	<s n="4">Où me cacher ?... </s>
+	<s n="5">Ah ! </s>
+	<s n="6">Dans les branches de cet arbre.</s>
+</p>
+                        <stage type="up/location">Il disparaît, à gauche, derrière un arbre.</stage>
+                    </sp><!--@stage="alone/watch"--><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Le Gendarme, La Cabaretière.</head>
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="1">
+	<s n="1">Oui, mon bon gendarme, il m'a frappée ; il m'a tuée ; je suis morte. </s>
+	<s n="2">Aussi je veux qu'on l'arrête, qu'on le charge de chaînes, qu'on le conduise en prison. </s>
+	<s n="3">Puis on le pendra à une bonne potence, bien solide.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="2">
+	<s n="1">Ça ne va pas être long, vous allez voir. </s>
+	<s n="2">Où est-il ? </s>
+	<s n="3">Montrez-le moi ? </s>
+	<s n="4">Je l'arrête, je le conduis chez le commissaire, on le juge, on le condamne, et on le pend subito.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, passant sa tête et disparaissant.</speaker>
+                        <p n="3">
+	<s n="1">Imbécile !</s>
+</p>
+                        <stage type="turn/estonish">Le gendarme et la cabaretière se retournent étonnés.</stage>
+                    </sp><!--@stage="entrance/away"--><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, à la cabaretière.</speaker>
+                        <p n="4">
+	<s n="1">Pourquoi m'appelez-vous imbécile ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="5">
+	<s n="1">Moi. </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Seigneur Dieu ! </s>
+	<s n="4">Si c'est possible !</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="6">
+	<s n="1">J'ai bien entendu. </s>
+	<s n="2">- Et faudrait pas recommencer ; sans ça je vous arrête aussi. </s>
+	<s n="3">- J'arrête tout le monde. </s>
+	<s n="4">- Un gendarme, vous savez, c'est sacré. </s>
+	<s n="5">- Il peut faire des bêtises - mais c'est jamais un imbécile.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="7">
+	<s n="1">Mais...</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="8">
+	<s n="1">Suffit !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="9">
+	<s n="1">Je n'ai...</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, imitant le roulement du tambour.</speaker>
+                        <p n="10">
+	<s n="1">Rrrr !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="11">
+	<s n="1">Laissez-moi au moins....</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, mime jeu que plus haut.</speaker>
+                        <p n="12">
+	<s n="1">Vieille marmite !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="13">
+	<s n="1">Oh !</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="14">
+	<s n="1">Quoi ?</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="15">
+	<s n="1">Vieille marmite ! </s>
+	<s n="2">C'est dur.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, tirant son sabre.</speaker>
+                        <p n="16">
+	<s n="1">Vieille marmite ! </s>
+	<s n="2">Qui ça, vieille marmite ? </s>
+	<s n="3">- Où ça ? </s>
+	<s n="4">Est-ce encore quelqu'un qu'il faut arrêter ?</s>
+</p>
+                    </sp><!--@stage="threat"--><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="17">
+	<s n="1">Non. </s>
+	<s n="2">Et d'ailleurs je ne vous en veux pas.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="18">
+	<s n="1">De quoi ?</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE</speaker>
+                        <p n="19">
+	<s n="1">Rien. </s>
+	<s n="2">Parlons plutôt de mon voleur.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, à part.</speaker>
+                        <p n="20">
+	<s n="1">Elle est folle, la vieille.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE, à part.</speaker>
+                        <p n="21">
+	<s n="1">Si je n'avais pas besoin de lui, je lui aurais déjà rompu mon balai sur le dos. </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="22">
+	<s n="1">Et quand allez-vous l'arrêter ce scélérat ?</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="23">
+	<s n="1">Mais tout de suite. </s>
+	<s n="2">Où est-il ?</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="24">
+	<s n="1">Il était là, il n'y a qu'un instant.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="25">
+	<s n="1">Je vais me mettre à sa recherche. </s>
+	<s n="2">- Vous, pendant ce temps, allez-vous en chez le juge ; vous l'amènerez ici. </s>
+	<s n="3">Guignol sera enchaîné, ligoté, ficelé comme un simple saucisson.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE, saluant.</speaker>
+                        <p n="26">
+	<s n="1">J'y cours, Monsieur_le_Gendarme, mon cher Monsieur_le_Gendarme.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME,solennel.</speaker>
+                        <p n="27">
+	<s n="1">C'est bien. </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Un mot, Madame_Michel. </s>
+	<s n="4">Laissez-moi donc la clef de votre maison.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="28">
+	<s n="1">La clef !</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="29">
+	<s n="1">Laissez-en la porte ouverte, si vous préférez, pour que je puisse de temps en temps aller me recueillir près d'un bon verre de vin.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE, à part, allant outrir la perle.</speaker>
+                        <p n="30">
+	<s n="1">Oh ! </s>
+	<s n="2">Si je ne tenais pas tant à ce que tu attrapes le scélérat qui m'a rouée de coups, tu verrais comment je te l'ouvrirais, ma porte. </s>
+	<s n="3">Je le connais ton recueillement. </s>
+	<s n="4">Il va me coûter quelques bouteilles.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="31">
+	<s n="1">V'là ! </s>
+	<s n="2">C'est fait.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="32">
+	<s n="1">Faitement. </s>
+	<s n="2">- Et maintenant à droite, en avant : arrrchce. </s>
+	<s n="3">Accélérez le mouvement et pressez-vous.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="33">
+	<s n="1">Voilà ! </s>
+	<s n="2">Voilà !</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="34">
+	<s n="1">Et revenez vite !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="35">
+	<s n="">Le plus vite possible : </s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="36">
+	<s n="1">Moins je reste, moins il boira.</s>
+</p>
+                        <stage type="loud">Haut. </stage>
+                        <p n="37">
+	<s n="1">Voilà ! </s>
+	<s n="2">Voilà!</s>
+</p>
+                        <stage type="exit/location">Elle sort par la droite.</stage>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV.</head>
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, seul.</speaker>
+                        <p n="1">
+	<s n="1">Et maintenant je vais tranquillement attendre que mon prisonnier arrive. </s>
+	<s n="2">- C'est le seul moyen de faire de bonnes et solides arrestations. </s>
+	<s n="3">Pourquoi m'en irais-je courir, me fatiguer, sans savoir où prendre, ni où trouver mon homme ? </s>
+	<s n="4">J'aime bien mieux qu'il vienne de lui-même me tendre ses mains pour les lui enchaîner. </s>
+	<s n="5">- En attendant je vais chercher par là-bas une bonne bouteille de vin - derrière les fagots : je connais le coin. </s>
+	<s n="6">Ça m'inspirera !...</s>
+</p>
+                        <stage type="zentrance">Il entre</stage>
+                        <stage type="sing">Chantant.</stage>
+                        <l n="1">Bouteille jolie,</l>
+                        <l n="2">Chante-nous</l>
+                        <l n="3">Tes jolis glous-glous,</l>
+                        <l n="4">Ma mie.</l>
+                    </sp><!--@who="LE GENDARME"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp who="#guignol">
+                        <speaker>GUIGNOL, paraissant doucement.</speaker>
+                        <p n="1">
+	<s n="1">Il y va - il va boire - le sans-coeur. </s>
+	<s n="2">- Et il ne m'invite pas — un gendarme et un prisonnier cependant ça doit aller ensemble. </s>
+	<s n="3">- J'irais bien m'inviter moi-même, mais la potence. </s>
+	<s n="4">- Brr ! </s>
+	<s n="5">- Boire - je veux bien - mais être pendu - pas si bête. </s>
+	<s n="6">Si pourtant je pouvais ! </s>
+	<s n="7">Il vient. </s>
+	<s n="8">- Cachons-nous encore.</s>
+</p>
+                    </sp><!--@stage="entrance/quiet"--><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. LE GENDARME, puis GUIGNOL.</head>
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Ça va bien, ça va mieux, ça va même très bien. </s>
+	<s n="3">- Je me sens tout ragaillardi. </s>
+	<s n="4">- Maintenant Guignol n'a qu'à paraître, et vous allez voir.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, paise sa tète entre les branches.</speaker>
+                        <p n="2">
+	<s n="1">Bonjour, Gendarme.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="3">
+	<s n="1">Tiens ! </s>
+	<s n="2">Guignol ! </s>
+	<s n="3">Tu étais là !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="4">
+	<s n="1">Mais oui - je vous admire depuis quelques instants.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME,</speaker>
+                        <p n="5">
+	<s n="1">Tu sais pourquoi je suis ici ?</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, à l'instant.</speaker>
+                        <p n="6">
+	<s n="1">Pour m'arrêter.</s>
+</p>
+                    </sp><!--@stage="hurry"--><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="7">
+	<s n="1">Faitement. </s>
+	<s n="2">- Aussi tu n'as qu'à descendre, - je vais te ficeler. </s>
+	<s n="3">- Une - deux. </s>
+	<s n="4">- Ce ne sera pas long.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="8">
+	<s n="1">Une - deux. </s>
+	<s n="2">- Il faudra voir !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="9">
+	<s n="1">Allons ! </s>
+	<s n="2">Descends !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="10">
+	<s n="1">S'il vous plaît ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="11">
+	<s n="1">Ne te fais pas prier - j'ai là une bonne petite corde. </s>
+	<s n="3">- Le juge va venir, - et tu étrenneras une bonne petite potence toute neuve.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="12">
+	<s n="1">Voyez-vous ça.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="13">
+	<s n="1">Tu me feras plaisir !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="14">
+	<s n="1">Vous êtes bien bon. </s>
+	<s n="2">Alors approchez-vous pour me donner la main.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, s'approchant.</speaker>
+                        <p n="15">
+	<s n="1">Voila !</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="16">
+	<s n="1">Plus près.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, mêmejeu.</speaker>
+                        <p n="17">
+	<s n="1">Voilà !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="18">
+	<s n="1">Bien. </s>
+	<s n="2">- Maintenant dressez-vous un peu - baissez la tête, tendez votre dos... </s>
+	<s n="3">- Vous me ferez la courte échelle.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="19">
+	<s n="1">Faitement. </s>
+	<s n="2">- Quand je vous le disais : les prisonniers, ce sont des anges. </s>
+	<s n="3">— Ils viennent se faire arrêter tout seuls.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="20">
+	<s n="1">Y êtes-vous ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="21">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="22">
+	<s n="1">Et surtout ne bougez pas.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="23">
+	<s n="1">Je ne bouge pas.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, descend doucement, puis vient derrière lui et lui donne un grand coup de bâton.</speaker>
+                        <p n="24">
+	<s n="1">Une - deux.</s>
+</p>
+                        <stage type="escape">Il s'enfuit.</stage>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="25">
+	<s n="1">Oh ! </s>
+	<s n="2">Ça n'est pas de jeu, et si je t'attrape...</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, reparaissant au haut de l'arbre.</speaker>
+                        <p n="26">
+	<s n="1">Coucou ! </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Le voilà !</s>
+</p>
+                    </sp><!--@stage="up/location"--><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="27">
+	<s n="1">Descends, ou tu vas voir !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="28">
+	<s n="1">Kss... Kss...</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="29">
+	<s n="1">Ah ! </s>
+	<s n="2">Si je n'avais pas mes bottes !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="30">
+	<s n="1">Oui, mais tu as tes bottes.</s>
+</p>
+                        <stage type="sing">Chantant.</stage>
+                        <l n="5">Et il a des bottes,</l>
+                        <l n="6">Il a des bottes, Bastien.</l>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="31">
+	<s n="1">La moutarde me monte au nez.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="32">
+	<s n="1">Prenez garde, vous allez éternuer.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="33">
+	<s n="1">Et il rit encore le sans-coeur !</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="34">
+	<s n="1">Je te crois.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, à part.</speaker>
+                        <p n="35">
+	<s n="1">Je vais me cacher. </s>
+	<s n="2">Il ne me verra pas ; il se croira seul et il descendra.</s>
+</p>
+                        <stage type="hide/location">Il se cache au bas de l'arbre.</stage>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, regardant sans le voir.</speaker>
+                        <p n="36">
+	<s n="1">Personne ! </s>
+	<s n="2">Serait-il parti... </s>
+	<s n="3">Et en laissant la porte du cabaret ouverte ? </s>
+	<s n="4">Voyons un peu.</s>
+</p>
+                        <stage type="down">Il descend</stage>
+                        <stage type="show/hit/lazzis">Il passe ta tête par la coulisse de gauche, - Le gendarme avance la sienne, - il lui donne un coup de bâton. Le même jeu recommence plusieurs fois. - Lazzis.</stage>
+                        <stage type="follow/close/location">Poursuite de Guignol par le gendarme. Il veut le conduire en prison. Il finit par rattraper, mais au moment de le faire entrer, Guignol s'échappe encore. - La même scène recommence. - Ils se débattent - et finalement c'est Guignol qui enferme le gendarme dans la prison, qui est à droite - du côté du cabaret de la Mère Michel.</stage>
+                    </sp><!--@stage="watch"--><!--@who="GUIGNOL"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, éclatant de rire.</speaker>
+                        <p n="37">
+	<s n="1">Ah ! ah ! ah !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, rappelant.</speaker>
+                        <p n="38">
+	<s n="1">Mon petit Guignol, ouvre-moi, je t'en prie.</s>
+</p>
+                    </sp><!--@stage="call"--><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.eAanfonl.</speaker>
+                        <l n="7">Sur l'air du tra</l>
+                        <l n="9">La la la la.</l>
+                        <p n="39">
+	<s n="1">Bonsoir. </s>
+	<s n="2">- Amusez-vous bien. </s>
+	<s n="3">- Et maintenant allons vitement boire un verre.</s>
+</p>
+                        <stage type="exit/watch">Il va pour entrer au cabaret, regardant.</stage>
+                        <p n="40">
+	<s n="1">Ah ! </s>
+	<s n="2">Mais non ! </s>
+	<s n="3">- Prenons bien garde. </s>
+	<s n="4">Voici le juge et la Mère_Michel. </s>
+	<s n="5">Ne nous laissons pas surprendre.</s>
+</p>
+                        <stage type="hide/location">Il se cache encore à gauche.</stage>
+                    </sp><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Le Juge, La Cabaretière, Guignol, caché.</head>
+<sp who="#le-juge">
+                        <speaker>LE JUGE, il arrive, portant une potence sur le dos.</speaker>
+                        <p n="1">
+	<s n="1">Soyez tranquille, Mère_Michel. </s>
+	<s n="2">Dans un petit quart d'heure tout va être terminé : je place la potence, je lui lis quelques mots latins ; - le gendarme lui passe la corde au cou.</s>
+</p>
+                    </sp><!--@stage="entrance/carry"--><!--@who="LE JUGE"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="2">
+	<s n="1">À la potence ?</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="3">
+	<s n="1">Non, à Guignol. </s>
+	<s n="2">Puis une fois bien placée, bien clouée, bien arrangée...</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE,</speaker>
+                        <p n="4">
+	<s n="1">Qui ? </s>
+	<s n="2">Guignol.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="5">
+	<s n="1">Non - la potence. </s>
+	<s n="2">- Vous ne comprenez donc rien ?  -</s>
+</p>
+                        <stage type="hit">Il lui envoie un coup sur la tête avec ta potence. </stage>
+                        <p n="6">
+	<s n="1">Ça n'entre donc pas ?</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, vient derrière et à son tour envoie un coup de bâton sur la tête du juge.</speaker>
+                        <p n="7">
+	<s n="1">Entrez !</s>
+</p>
+                    </sp><!--@stage="entrance/location/hit"--><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="8">
+	<s n="1">Je me suis cogné contre l'arbre.</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE, se frottant la tête.</speaker>
+                        <p n="9">
+	<s n="1">Je comprends, très bien, très bien, Monsieur_le_Juge. </s>
+	<s n="2">Vous avez des arguments qui frappent fort.</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="10">
+	<s n="1">Ce sont les meilleurs.</s>
+</p>
+                        <stage type="aparte/idem">À part. Même jeu.</stage>
+                        <p n="11">
+	<s n="1">Sapristi, que je me suis donc cogné fort moi aussi.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="12">
+	<s n="1">Voyons, ce n'est pas le tout. </s>
+	<s n="2">Voici la potence: je la plante.</s>
+</p>
+                        <stage type="work">Il la plante.</stage>
+                        <p n="13">
+	<s n="1">Voici la corde. </s>
+	<s n="2">- Maintenant amenez-moi mon gendarme et votre voleur. </s>
+	<s n="3">- Moi je vais ouvrir mon code pour le condamner avec tout le cérémonial obligatoire en pareil cas. </s>
+	<s n="4">Sans le code, voyez vous, pas de jugement. </s>
+	<s n="5">C'est comme nous : sans robe et sans bonnet carré, pas de juge. </s>
+	<s n="6">- Eh bien ! </s>
+	<s n="7">Vous restez là à me regarder. </s>
+	<s n="8">- Cherchez-moi donc tout mon monde. </s>
+	<s n="9">M'auriez-vous dérangé pour rien, nom d'un pantin !</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, caché.</speaker>
+                        <p n="14">
+	<s n="1">Crétin !</s>
+</p>
+                    </sp><!--@stage="hide"--><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE, Honni.</speaker>
+                        <p n="15">
+	<s n="1">Il y a de l'écho, ici. </s>
+	<s n="2">Répondez, cabaretière... </s>
+	<s n="3">Mais doucement.</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="16">
+	<s n="1">J'ai laissé, ici, le gendarme à la recherche de Guignol.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="17">
+	<s n="1">Il cherchait Guignol. </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Alors, soyez tranquille, il ne reviendra que lorsqu'il l'aura trouvé. </s>
+	<s n="4">Nous ne sommes pas pressés. </s>
+	<s n="5">Et puis nous sommes sûrs de notre affaire. </s>
+	<s n="6">Mon gendarme est un dur à cuire - duribus cuiribus, - comme dit le code - jamais un prisonnier ne s'échappe de ses mains. </s>
+	<s n="7">Prisonnierus, prisonnierum, comme dit le même code. </s>
+	<s n="8">Saluez.</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="18">
+	<s n="1">Que c'est beau les savants ! </s>
+	<s n="2">C'est égal, il me tarde bien de le voir arrêté ce bandit. </s>
+</p>
+                        <stage type="closer">Elle s'approche.</stage>
+                        <p n="19">
+	<s n="1">Ainsi, je vais le voir se balancer au bout de cette corde. </s>
+	<s n="2">Ça doit gêner sur le moment !</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, doucement, il s'approche sans qu'on le voie.</speaker>
+                        <stage type="aparte">À part.</stage>
+                        <p n="20">
+	<s n="1">Tu vas voir si cela va me gêner.</s>
+</p>
+                    </sp><!--@stage="closer/watch"--><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="21">
+	<s n="1">Vous n'avez jamais vu pendre ?</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="22">
+	<s n="1">Jamais.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="23">
+	<s n="1">Tenez, on passe la corde au cou comme ceci. </s>
+</p>
+                        <stage type="work">Il fait en même temps les gestes.</stage>
+                        <p n="24">
+	<s n="1">Oh ! </s>
+	<s n="2">Il n'y a pas de danger - voyez, le noeud est coulant, j'y passe ma tête, passez-y la vôtre. </s>
+	<s n="3">Puis on tire... et...</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, s'est approché, il tire la corde, et le juge et la cabaretière se trouvent pendus.</speaker>
+                        <p n="25">
+	<s n="1">À deux sous, les polichinelles !</s>
+</p>
+                    </sp><!--@stage="hang"--><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE, LA CABARETIÈRE.</speaker>
+                        <p n="26">
+	<s n="1">Au secours ! </s>
+	<s n="2">Au secours !</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="27">
+	<s n="1">Tu peux crier, on ne viendra pas.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="28">
+	<s n="1">Gendarme ! </s>
+	<s n="2">Gendarme !</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Les mêmes, puis Le Gendarme, paraissant à la fenêtre de la prison.</head>
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="1">
+	<s n="1">Qui m'appelle ? </s>
+	<s n="2">Ciel ! </s>
+	<s n="3">Le juge et la Mère_Michel pendus ! </s>
+	<s n="4">Qu'est-ce que vous faites-là ?</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="2">
+	<s n="1">Ils prennent le frais.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="3">
+	<s n="1">Viens nous détacher !</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="4">
+	<s n="1">Je ne peux pas, je suis enfermé.</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="5">
+	<s n="1">Faut-il tirer le cordon ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="6">
+	<s n="1">Bandit !</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="7">
+	<s n="1">Ah ! </s>
+	<s n="2">Pas de gros mots ! </s>
+	<s n="3">Soyons polis, ou je cogne. </s>
+	<s n="5">Qu'est-ce que je vous dois ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="8">
+	<s n="1">Huit francs cinquante centimes.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="9">
+	<s n="1">En êtes-vous sûr ?</s>
+</p>
+                        <stage type="hit">Avec son bâton il frappe sur la calaretière et sur le juge.</stage>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE.</speaker>
+                        <p n="10">
+	<s n="1">Non ! Non ! Non! </s>
+	<s n="2">Tu ne me dois rien, plus rien, je te fais crédit. </s>
+	<s n="3">Mais lâche la corde.</s>
+</p>
+                    </sp><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="11">
+	<s n="1">Et vous, Monsieur_le_Juge, mon bon juge ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="12">
+	<s n="1">Moi, je te ferai pendre. </s>
+	<s n="2">Pendere !</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#la-cabaretiere">
+                        <speaker>LA CABARETIÈRE, au juge.</speaker>
+                        <p n="13">
+	<s n="1">Eh ! </s>
+	<s n="2">Laissez là votre Chinois, puisque je ne peux plus me faire payer.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LA CABARETIÈRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="14">
+	<s n="1">Tu me feras pendre, mon bon juge ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="15">
+	<s n="1">Haut et court.</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="16">
+	<s n="1">Haulus, courtus. Hautum, courtum.</s>
+</p>
+                        <stage type="hit">À chacun des mots il cogne du bâton.</stage>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="17">
+	<s n="1">Non ! </s>
+	<s n="2">Non, grâce ! </s>
+	<s n="3">Il ne te sera rien fait...</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="18">
+	<s n="1">Vous le jurez ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="19">
+	<s n="1">Je le jure.</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="20">
+	<s n="1">En latin.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-juge">
+                        <speaker>LE JUGE.</speaker>
+                        <p n="21">
+	<s n="">Juro.</s>
+</p>
+                    </sp><!--@who="LE JUGE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, tâchant ta corde.</speaker>
+                        <p n="22">
+	<s n="1">Bravo ! </s>
+	<s n="2">Et maintenant je vais ouvrir au gendarme.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME, de la fenêtre.</speaker>
+                        <p n="23">
+	<s n="1">Encore plus bravo !</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="LE GENDARME"-->
+<stage type="open/entrance/unattach">Guignol, va lui ouvrir, il entre en scène. Le juge et la cabaretière se détachent de la potence.</stage>
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="24">
+	<s n="1">Et maintenant, pour prix de noire peine, la mère_Michel va nous servir un joli dîner. </s>
+	<s n="2">Le juge le paiera. </s>
+	<s n="3">Le gendarme coupera le bois et soufflera le feu. </s>
+	<s n="4">La Mère_Michel mettra le couvert.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-gendarme">
+                        <speaker>LE GENDARME.</speaker>
+                        <p n="25">
+	<s n="1">Et toi ?</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="26">
+	<s n="1">Moi je mangerai ! </s>
+</p>
+                        <stage type="toward">Au public.</stage>
+                        <p n="27">
+	<s n="1">Ainsi finit la comédie !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

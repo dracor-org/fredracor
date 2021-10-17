@@ -1,0 +1,1353 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Docteur Sourabaya</title>
+                <title type="sub">Comédie.</title>
+                <author>
+      <persName>
+        <forename>Adolphe</forename>
+        <surname>Carcassonne</surname>
+      </persName>
+      <idno type="isni">0000 0001 1756 1275</idno>
+    </author><!--Adolphe CARCASSONNE (1826-1891)-->
+                <editor>Paul FIEVRE juin 2021</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001523</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/CARCASSONNE_DOCTEURSOURABAYA.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/CARCASSONNE_DOCTEURSOURABAYA.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1889"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5742849d</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="roger" sex="MALE">
+                        <persName>Roger</persName>
+                    </person>
+                    <person xml:id="felix" sex="MALE">
+                        <persName>Félix</persName>
+                    </person>
+                    <person xml:id="bonne-maman" sex="FEMALE">
+                        <persName>Bonne-Maman</persName>
+                    </person>
+                    <person xml:id="une-bonne" sex="FEMALE">
+                        <persName>Une Bonne</persName>
+                    </person>
+                    <person xml:id="le-docteur" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Docteur</persName>
+                    </person>
+                    <person xml:id="l-aide-de-droite" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L Aide de Droite</persName>
+                    </person>
+                    <person xml:id="l-aide-de-gauche" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L Aide de Gauche</persName>
+                    </person>
+                    <person xml:id="l-un-des-aides" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L un des Aides</persName>
+                    </person>
+                    <person xml:id="l-autre-aide" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L Autre Aide</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LE DOCTEUR SOURABAYA</titlePart>
+			<titlePart type="sub">COMÉDIE.</titlePart>
+		</docTitle> 
+		<docDate when="1889">1889</docDate>
+		<docAuthor>Adolphe CARCASSONNE.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="MARPON, FLAMMARION">PARIS C. MARPON et E. FLAMMARION, ÉDITEURS, rue Racine, 26 près de l'Odéon.</editor>-->
+			<div type="printer">
+                    <p>ÉMILE COLIN - IMPRIMERIE DE LAGNY.</p>
+                </div><!--@id="COLIN"-->
+		</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#roger">ROGER</role><!--@sex="1"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 12 ans.</castItem>
+		<castItem>
+                    <role corresp="#felix">FÉLIX</role><!--@sex="1"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 10 ans.</castItem>
+		<castItem>
+                    <role corresp="#docteur-sourabaya">LE DOCTEUR SOURABAYA</role><!--@sex="1"--><!--@type="H"--><!--@statut="docteur"--><!--@age="A"--><!--@stat_amour="(néant)"-->.</castItem>
+		<castItem>
+                    <role corresp="#bonne-maman">BONNE-MAMAN</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="(néant)"-->.</castItem>
+		<castItem>
+                    <role corresp="#une-bonne">UNE BONNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="domestique"--><!--@age="A"--><!--@stat_amour="(néant)"-->.</castItem>
+		<castItem>
+                    <role corresp="#aides-du-docteur">AIDES DU DOCTEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="assistant"--><!--@age="A"--><!--@stat_amour="(néant)"-->.</castItem>
+   </castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="À la campagne" country="France" periode="XIXème" gps=""/>-->
+<note>Extrait de "Nouveau Théâtre d'enfants, Dix pièces en prose, à jouer dans les familles et dans les pensionnats", Paris, Marpon et Flammarion, Le Jay Libraires, 1889. pp. 23-63.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LE DOCTEUR SOURABAYA</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Roger, Félix.</head>
+<stage type="decor/furniture/location/sit/lie">La chambre de Félix. - Une table au milieu. - Un sofa a droite. - Portes des deux côtés et au fond. Au lever du rideau, Félix est allongé sur le sofa, Roger est assis auprès de lui.</stage>
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Ça, mon cher Félix, est-ce que cette maladie va durer longtemps encore ?</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="2">
+	<s n="1">J'en ai peur.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="3">
+	<s n="1">Il me semble pourtant qu'elle devrait être guérie.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="4">
+	<s n="1">Tu n'y penses pas. </s>
+	<s n="2">Vois donc tout ce que j'ai : coliques, douleurs de reins, et surtout un affaiblissement dans la jambe droite qui me fait marcher comme un boiteux.</s>
+	<s n="2">Avec cela...</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="5">
+	<s n="1">Quoi ! </s>
+	<s n="2">Il y a autre chose?</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="6">
+	<s n="1">Bien sûr ; avec cela des maux de tête et des étourdissements à ne pas pouvoir rester debout.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="7">
+	<s n="1">Et même à dormir debout.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="8">
+	<s n="1">Tu as l'air de ne pas me croire.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="9">
+	<s n="1">Veux-tu que je te dise toute ma pensée ?</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="10">
+	<s n="1">Dis.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER, se levant.</speaker>
+                        <p n="11">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Non, je ne crois pas à ta maladie.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="12">
+	<s n="1">C'est trop fort !</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="13">
+	<s n="1">Je crois plutôt que tu tiens à te faire dorloter et surtout à ne pas aller à l'école.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="14">
+	<s n="1">Ce que tu dis là n'est pas d'un ami.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="15">
+	<s n="1">Tu sais combien ta bonne maman est faible pour toi et tu en profiles.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="16">
+	<s n="1">Elle me voit souffrir et elle cherche à me soulager.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="17">
+	<s n="1">Elle n'y est pas encore parvenue.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="18">
+	<s n="1">Pas encore, c'est vrai.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="19">
+	<s n="1">Et je crains qu'elle n'y parvienne pas de longtemps.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="20">
+	<s n="1">C'est bien possible.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="21">
+	<s n="1">J'ai donc raison de croire que tous les maux dont tu te plains ne sont qu'un prétexte.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="22">
+	<s n="1">Et moi, j'ai raison de croire que tu n'es pas mon ami.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="23">
+	<s n="1">Au contraire, tu devrais me remercier de ma franchise. </s>
+	<s n="2">Crois-moi, mon cher Félix, dans ce que tu fais il y a un mauvais service et une mauvaise action.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="24">
+	<s n="1">Ah ?</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="25">
+	<s n="1">Le mauvais service retombe sur toi. </s>
+	<s n="2">Si tu continues à ne pas aller à l'école, que deviendras-tu plus tard ? </s>
+	<s n="3">Tu ne sais rien et tu n'apprends rien ; tu seras donc toute ta vie un ignorant.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="26">
+	<s n="1">Ça ne me chagrine pas.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="27">
+	<s n="1">C'est ton droit, puisqu'il ne s'agit que de toi ; mais ce qui devrait te chagriner, et voilà la mauvaise action, c'est la triste existence que tu fais à ta bonne maman. </s>
+	<s n="2">Pauvre femme ! </s>
+	<s n="3">Elle n'a que toi, elle ne pense qu'à toi, et tu la rends malheureuse par tes plaintes et par des souffrances qui...</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX, l'interrompant et avec humeur.</speaker>
+                        <p n="28">
+	<s n="1">Vas-tu recommencer ?</s>
+</p>
+                    </sp><!--@stage="interrupt"--><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="29">
+	<s n="1">Non, si cela t'ennuie.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="30">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Oui, cela m'ennuie... </s>
+	<s n="3">Après tout, garde tes observations pour toi et laisse-moi tranquille... </s>
+	<s n="4">Je fais ce que je veux et cela ne te regarde pas... </s>
+	<s n="5">Tu me rends encore plus malade.</s>
+</p>
+                        <stage type="hurt">Il porte la main à son ventre.</stage>
+                        <p n="31">
+	<s n="1">Ah ! </s>
+	<s n="2">Quelles coliques !</s>
+</p>
+                        <stage type="exit/pain">Il sort en boitant par la porte de droite.</stage>
+                    </sp><!--@who="FÉLIX"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II.</head>
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="1">
+	<s n="1">Il a peut-être raison... </s>
+	<s n="2">Qu'ai-je avoir dans ce qu'il dit souffrir ? </s>
+	<s n="3">Qu'ai-je à faire avec ses coliques ? </s>
+	<s n="4">Qu'il soit actif ou paresseux, intelligent ou bête, que m'importe ? </s>
+	<s n="5">Ma foi, qu'il fasse ce que bon lui semble.</s>
+</p>
+                        <stage type="location/drop">Il se dirige vers la porte du fond lorsque Bonne Maman entre ; elle a dans la main un petit sac en papier qu'elle met sur la table.</stage>
+                    </sp><!--@who="ROGER"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Roger, Bonne Maman.</head>
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="1">
+	<s n="1">Bonjour, mon ami, vous êtes venu voir Félix.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="2">
+	<s n="1">Oui, Madame, je suis venu passer un moment avec lui.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="3">
+	<s n="1">Que vous êtes gentil !... </s>
+	<s n="2">Mais je ne vois pas ce cher enfant.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="4">
+	<s n="1">Il reviendra bientôt.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="5">
+	<s n="1">Encore indisposé ! </s>
+	<s n="2">Toujours souffrant ! </s>
+	<s n="3">C'est affreux à son âge.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="6">
+	<s n="1">Voilà longtemps qu'il est ainsi.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="7">
+	<s n="1">Plus de trois mois. </s>
+	<s n="2">Aussi, mon inquiétude est très vive et elle s'augmente encore chaque jour. </s>
+	<s n="3">Mon cher Félix ! </s>
+	<s n="4">Que de souffrances à la fois ! </s>
+	<s n="5">Maux de tête, coliques, douleurs de reins... </s>
+	<s n="6">Mais ce qui me tourmente le plus, c'est l'affaiblissement de la jambe droite ; je crains une paralysie. </s>
+	<s n="7">Ah ! </s>
+	<s n="8">Si un pareil malheur arrivait, j'en mourrai.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER, à part.</speaker>
+                        <p n="8">
+	<s n="1">Pauvre femme !</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="9">
+	<s n="1">Je le crois, mais cela n'arrivera pas et il ne faut pas désespérer.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="10">
+	<s n="1">C'est cependant désespérant, car, je le répète, il me semble voir Félix dépérir chaque jour.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="11">
+	<s n="1">Il doit, sans doute, manquer d'appétit ?</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="12">
+	<s n="1">Non ; au contraire, il mange très bien.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="13">
+	<s n="1">Et il doit avoir des nuits très agitées ?</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="14">
+	<s n="1">Pas du tout, il dort très bien. </s>
+	<s n="2">Je vais auprès de lui chaque nuit et j'ai toujours remarqué que son sommeil est calme et paisible. </s>
+	<s n="3">Sans cela, que serait devenu mon pauvre petit ?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="15">
+	<s n="1">N'avez-vous pas consulté un médecin ?</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="16">
+	<s n="1">J'en ai même consulté plusieurs.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="17">
+	<s n="1">Eh bien ?</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="18">
+	<s n="1">Ils n'y comprennent rien ; leurs ordonnances n'ont produit aucun effet.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="19">
+	<s n="1">Les maux de tête et les coliques ne sont pourtant pas difficiles à guérir.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="20">
+	<s n="1">Oui, mais la paralysie de la jambe ?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="21">
+	<s n="1">C'est là votre plus grande crainte.</s>
+</p>
+                        <stage type="silence">Après un silence.</stage>
+                        <p n="22">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Écoutez-moi.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="23">
+	<s n="1">Dites, mon enfant.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="24">
+	<s n="1">Un ami de mon père vient d'arriver de l'Inde avec un docteur célèbre dont les cures ont fait grand bruit sur les bords du Gange. </s>
+	<s n="2">Le docteur_Sourabaya est considéré, dans ces pays lointains, comme un véritable sauveur. </s>
+	<s n="3">Tout le monde parle de sa science et des découvertes qu'il a faites. </s>
+	<s n="4">Or, comme il loge à la maison, je vais, si vous le voulez, le prier de se rendre ici ; je suis sûr qu'il viendra tout de suite. </s>
+	<s n="5">Le voulez-vous ?</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="25">
+	<s n="1">Si je le veux ! </s>
+	<s n="2">Mais j'en suis bien heureuse ! </s>
+	<s n="3">Oui, j'accepte avec reconnaissance l'offre obligeante que vous me faites et je vous en remercie de tout mon coeur.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="26">
+	<s n="1">Je me rends donc auprès du docteur. </s>
+	<s n="2">Ce ne sera pas long, puisque nous sommes presque voisins.</s>
+</p>
+                        <stage type="location/turn">Il se dirige vers le fond, puis il se retourne.</stage>
+                        <p n="27">
+	<s n="1">Ne dites rien à Félix de cette visite. </s>
+	<s n="2">Il faut que le docteur se rende bien compte de son état pour indiquer le traitement à suivre.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="28">
+	<s n="1">Soyez tranquille. </s>
+	<s n="2">Merci, mon enfant... </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Que je vous embrasse !</s>
+</p>
+                        <stage type="run/kiss/exit">Elle court l'embrasser. Roger sort.</stage>
+                    </sp><!--@who="BONNE MAMAN"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Bonne Maman, puis Félix.</head>
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="1">
+	<s n="1">Je n'ai jamais eu autant d'espoir qu'aujourd'hui... </s>
+	<s n="2">Il me semble que ce docteur va guérir mon cher Félix... </s>
+	<s n="3">L'Inde est le pays des merveilles et la science, là-bas, a des secrets qui nous sont inconnus.</s>
+</p>
+                        <stage type="entrance/watch/sit">Félix rentre et se met à boiter en regagnant le sopha.</stage>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="2">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Mon chéri, comment te sens tu ?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="3">
+	<s n="1">Très mal, Bonne_Maman, très mal.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="4">
+	<s n="1">Quoi ! </s>
+	<s n="2">Tu souffres toujours autant ?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="5">
+	<s n="1">Autant et même plus. </s>
+	<s n="2">Ma jambe est lourde comme elle ne l'a jamais été ; je ne puis presque plus marcher.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="6">
+	<s n="1">Aie du courage, tu guériras.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="7">
+	<s n="1">Tu me le dis toujours et je ne suis pas guéri.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="8">
+	<s n="1">Mais je suis sûre que lu le seras. </s>
+	<s n="2">Voyons, mon chéri, essaie un peu de marcher.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="9">
+	<s n="1">Pourquoi me fatiguer encore ?.. </s>
+	<s n="2">Enfin, si tu le veux...</s>
+</p>
+                        <stage type="stand/walk">Il se lève et il fait quelques pas avec effort et en boitant beaucoup.</stage>
+                        <p n="10">
+	<s n="1">Tu vois bien que je ne puis pas.</s>
+</p>
+                        <stage type="sit/location">Il se remet sur le sofa.</stage>
+                        <p n="11">
+	<s n="1">Je ne guérirai jamais.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="12">
+	<s n="1">Moi, je sais le contraire. </s>
+	<s n="2">Il faut avoir un peu de patience.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="13">
+	<s n="1">C'est bon à dire.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN, allant prendre le sac qu'elle a mis sur la table et l'ouvrant.</speaker>
+                        <p n="14">
+	<s n="1">Tiens, voilà pour t'en donner un peu.</s>
+</p>
+                    </sp><!--@stage="get/drop/open"--><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="15">
+	<s n="1">Des gâteaux ?</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="16">
+	<s n="1">Oui, et des meilleurs que j'ai pu trouver... </s>
+	<s n="2">Mange d'abord ce baba, il a l'air excellent.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX, mangeant.</speaker>
+                        <p n="17">
+	<s n="1">Il est parfait et je le mange très volontiers. </s>
+	<s n="2">Tu n'en as porté qu'un, Bonne_Maman ?</s>
+</p>
+                    </sp><!--@stage="eat"--><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="18">
+	<s n="1">Oui, mon chéri, mais je t'ai apporté autre chose.</s>
+</p>
+                        <stage type="get">Elle prend des petits biscuits ronds et plats.</stage>
+                        <p n="19">
+	<s n="1">Des biscuits...</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="20">
+	<s n="1">Qu'on appelle des patiences... </s>
+	<s n="2">Je les aime aussi beaucoup.</s>
+</p>
+                        <stage type="eat">Il mange.</stage>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="21">
+	<s n="1">Je suis heureuse de te voir manger ainsi.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="22">
+	<s n="1">Est-ce qu'il n'y en a plus ?</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN, prenant dans le sac</speaker>
+                        <p n="23">
+	<s n="1">En voilà encore.</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FELIX, mangeant.</speaker>
+                        <p n="24">
+	<s n="1">C'est très bon et, comme tu le dis, ça fait prendre patience... </s>
+	<s n="2">Est-ce qu'il n'y en a plus ?</s>
+</p>
+                    </sp><!--@stage="eat"--><!--@who="FELIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="25">
+	<s n="1">Non, mon enfant, ça ne peut pas durer toujours.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="26">
+	<s n="1">Ne te fâche pas, Bonne_Maman.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="27">
+	<s n="1">Me fâcher ! </s>
+	<s n="2">Pourquoi ?</s>
+</p>
+                        <stage type="laugh">Riant.</stage>
+                        <p n="28">
+	<s n="1">Ce n'est pas moi, c'est le sac qui est à bout de... patience.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#une-bonne">
+                        <speaker>UNE BONNE, entrant et annonçant.</speaker>
+                        <p n="29">
+	<s n="1">Le docteur_Sourabaya.</s>
+</p>
+                    </sp><!--@stage="entrance/declamate"--><!--@who="UNE BONNE"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="30">
+	<s n="1">Qu'est-ce que c'est que ça ?</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="31">
+	<s n="1">C'est un savant docteur indien qui... </s>
+</p>
+                        <stage type="entrance/carry/drop/costume/locaiton/exit">Le docteur entre tenant une trousse qu'il pose sur la table ; il est enveloppé dans une grande robe et il porte une barbe noire. Il est suivi de deux aides également enveloppés dans une robe et portant une barbe ; ils se placent de chaque côté de la porte du fond. - La bonne sort.</stage>
+                    </sp><!--@who="BONNE MAMAN"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Bonne Maman, Félix, Le Docteur Sourabaya, Les aides.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, aux aides.</speaker>
+                        <p n="1">
+	<s n="1">Indiana ! </s>
+	<s n="2">Ramayana ! </s>
+	<s n="3">Mayana !</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LE DOCTEUR"-->
+<sp who="#l-aide-de-droite">
+                        <speaker>L'AIDE DE DROITE, en s'inclinant profondément.</speaker>
+                        <p n="2">
+	<s n="1">Ramayana !</s>
+</p>
+                    </sp><!--@stage="wave"--><!--@who="L'AIDE DE DROITE"-->
+<sp who="#l-aide-de-gauche">
+                        <speaker>L'AIDE DE GAUCHE, même jeu.</speaker>
+                        <p n="3">
+	<s n="1">Ramayana !</s>
+</p>
+                    </sp><!--@stage="wave"--><!--@who="L'AIDE DE GAUCHE"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, à Bonne maman.</speaker>
+                        <p n="4">
+	<s n="1">Salufa, Madama, al noma Brahma...</s>
+</p>
+                        <stage type="ajust">Se reprenant.</stage>
+                        <p n="5">
+	<s n="1">Pardon, Madame, je vous parle indien... </s>
+	<s n="2">C'est un oubli... </s>
+	<s n="3">Excusez-moi.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="6">
+	<s n="1">Vous n'ayez pas à vous excuser, docteur ; c'est nous qui avons à vous demander pardon du dérangement que nous vous causons en vous faisant venir ici.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="7">
+	<s n="1">Les docteurs sont faits pour tous les dérangements, même ceux d'intestins... </s>
+	<s n="2">Vous avez ici un malade, n'est-ce pas ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN, indiquant Félix.</speaker>
+                        <p n="8">
+	<s n="1">Oui, docteur, mon cher petit Félix.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, s'approchant de Félix.</speaker>
+                        <p n="9">
+	<s n="1">De quoi souffrez-vous ?</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="10">
+	<s n="1">De la tête, des reins et du ventre.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="11">
+	<s n="1">Parle aussi de ta jambe engourdie.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="12">
+	<s n="1">Ah ! </s>
+	<s n="2">Il y a une jambe engourdie ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="13">
+	<s n="1">Oui, et c'est ce qui m'inquiète le plus.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="14">
+	<s n="1">Nous verrons cela tout à l'heure. </s>
+	<s n="2">Commençons par le commencement ; occupons-nous de la tête.</s>
+</p>
+                        <stage type="toward">À Félix.</stage>
+                        <p n="15">
+	<s n="1">Mettez-vous sur votre séant.</s>
+</p>
+                        <stage type="sit/listen">Félix se met sur son séant et le docteur vient poser l'oreille sur sa tète.</stage>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="16">
+	<s n="1">Que faites-vous, docteur ?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, se relevant un instant.</speaker>
+                        <p n="17">
+	<s n="1">J'ausculte le cerveau.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="18">
+	<s n="1">Ah ?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="19">
+	<s n="1">En Europe, où la science est encore fort en retard, on ausculte la poitrine. </s>
+	<s n="2">Chez nous, on ausculte aussi le cerveau et l'on voit très clairement ce qui s'y passe.</s>
+</p>
+                        <stage type="listen/stay">Il remet l'oreille sur la tête de Félix et il demeure ainsi un instant.</stage>
+                        <p n="20">
+	<s n="1">Vous avez presque toujours des douleurs, n'est-ce pas ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="21">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="22">
+	<s n="1">Et, par moments, elles deviennent plus fortes ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="23">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, se levant.</speaker>
+                        <p n="24">
+	<s n="1">C'est bien cela, j'ai vu.</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="25">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Docteur ?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="26">
+	<s n="1">Le cerveau s'est gonflé et ce gonflement cause les douleurs éprouvées. </s>
+	<s n="2">Quand ces douleurs deviennent plus vives, c'est qu'il se forme un gonflement sur le gonflement.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="27">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon Dieu !</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="28">
+	<s n="1">Cela a été déterminé par un excès de travail.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="29">
+	<s n="1">Oui, bonne maman, le docteur a raison et j'ai besoin de repos.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="30">
+	<s n="1">D'un repos absolu.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="31">
+	<s n="1">Très bien.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="32">
+	<s n="1">Passons maintenant au ventre. </s>
+	<s n="2">Voyons, avez-vous des coliques do haut en bas ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="33">
+	<s n="1">Oui, de haut en bas.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="34">
+	<s n="1">Pas de long en large ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="35">
+	<s n="1">Non, de haut en bas.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="36">
+	<s n="1">C'est bien cela, c'est un ver perpendiculaire.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="37">
+	<s n="1">Mon pauvre petit !</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="38">
+	<s n="1">Un ver rongeur de premier degré.</s>
+</p>
+                        <stage type="toward">À Félix.</stage>
+                        <p n="39">
+	<s n="1">Vous aimez beaucoup les gâteaux, sans doute ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="40">
+	<s n="1">Beaucoup, peut-être trop.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>.</speaker>
+                        <p n="41">
+	<s n="1">N'en accusez pas le sujet, Madame. </s>
+	<s n="2">C'est le ver qui aime les gâteaux et qui manifeste son désir en se remuant et en donnant ainsi des coliques. </s>
+	<s n="3">Il est inutile de s'occuper des maux de reins, ils tiennent à la même cause et j'indiquerai tout à l'heure ce qu'il faut faire.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="42">
+	<s n="1">Il faut un repos absolu.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="43">
+	<s n="1">Maintenant, passons à la jambe.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="44">
+	<s n="1">Oui, docteur.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, à Félix.</speaker>
+                        <p n="45">
+	<s n="1">Quelle est celle dont vous souffrez ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="46">
+	<s n="1">La droite ; je n'en souffre pas, mais je ne puis pas m'en servir.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="47">
+	<s n="1">Ce qui est pire, car il est toujours facile de guérir une douleur. </s>
+	<s n="2">Voyons, levez-vous et marchez.</s>
+</p>
+                        <stage type="stand/pain">Félix se lève et il fait quelques pas en boitant très fortement.</stage>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="48">
+	<s n="1">Cela vous fatigue.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="49">
+	<s n="1">Beaucoup.</s>
+</p>
+                        <stage type="sit/location">Il se rassied sur le sofa.</stage>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="50">
+	<s n="1">Vous éprouvez une grande lourdeur, comme si votre jambe dormait, n'est-ce pas ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="51">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, à Bonne maman</speaker>
+                        <p n="52">
+	<s n="1">Vous devez sentir aussi un certain engourdissement dans la jambe gauche ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="53">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, à Bonne maman</speaker>
+                        <p n="54">
+	<s n="1">C'est très grave et vous avez bien raison d'en être préoccupée.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="55">
+	<s n="1">Vous m'effrayez, docteur.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="56">
+	<s n="1">Il me faut un repos absolu.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="57">
+	<s n="1">C'est une paralysie.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN, joignant les mains.</speaker>
+                        <p n="58">
+	<s n="1">Je le pressentais.</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="59">
+	<s n="1">Or, écoutez bien ceci : Quand un oeil s'en va, l'autre le suit ; quand un poumon se prend, l'autre se prend aussi. </s>
+	<s n="2">La jambe droite du sujet est prise de paralysie, et voilà que la gauche commence à l'être. </s>
+	<s n="3">Il faut un remède immédiat et énergique.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="60">
+	<s n="1">De grâce ! </s>
+	<s n="2">Docteur, apportez ce remède.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, indiquant la trousse.</speaker>
+                        <p n="61">
+	<s n="1">Le voilà.</s>
+</p>
+                        <stage type="open/show/closer">Il ouvre la trousse de laquelle il sort un bistouri et il s'approche de Félix.</stage>
+                    </sp><!--@stage="show"--><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="62">
+	<s n="1">Ah ! </s>
+	<s n="2">Ça ! </s>
+	<s n="3">Qu'est-ce que vous allez faire ?</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="63">
+	<s n="1">Je vais vous couper la jambe droite.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="64">
+	<s n="1">Hein ?</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN, au docteur.</speaker>
+                        <p n="65">
+	<s n="1">Que dites-vous ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="66">
+	<s n="1">Il le faut, il le faut absolument. </s>
+	<s n="2">Si nous ne coupons pas la jambe droite, la gauche se paralysera, puis, le corps, puis, la tête, puis...</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="67">
+	<s n="1">Puis ?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="68">
+	<s n="1">Ce sera fini. </s>
+	<s n="2">Il faut donc couper et couper immédiatement.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="69">
+	<s n="1">Non ! </s>
+	<s n="2">Je ne veux pas !</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="70">
+	<s n="1">Pourtant, mon chéri...</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="71">
+	<s n="1">Je ne veux pas !</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, à Félix.</speaker>
+                        <p n="72">
+	<s n="1">Quand le docteur Sourabaya a fait une prescription, il faut qu'on l'exécute.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="73">
+	<s n="1">Je ne veux pas ! </s>
+	<s n="2">Je ne veux pas !</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, allant vers ses aides</speaker>
+                        <p n="74">
+	<s n="1">Ramayana ! </s>
+	<s n="2">Mayana !</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="LE DOCTEUR"-->
+<sp who="#l-un-des-aides">
+                        <speaker>L'UN DES AIDES.</speaker>
+                        <p n="75">
+	<s n="1">Ramayana !</s>
+</p>
+                    </sp><!--@who="L'UN DES AIDES"-->
+<sp who="#l-autre-aide">
+                        <speaker>L'AUTRE AIDE.</speaker>
+                        <p n="76">
+	<s n="1">Ramayana !</s>
+</p>
+                    </sp><!--@who="L'AUTRE AIDE"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="77">
+	<s n="1">Préparationa cordona.</s>
+</p>
+                        <stage type="show">L'un des aides sort une corde de sa robe.</stage>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, indiquant Félix</speaker>
+                        <p n="78">
+	<s n="1">Empoignana garçona, opérationa jamba !</s>
+</p>
+                        <stage type="closer/jump/run/follow/whout">Les aides vont vers Félix qui bondit sur lui-même et se met à courir sur la scène sans songer à boiter. Les aides le poursuivent en criant :</stage>
+                        <p n="79">
+	<s n="1">Ramayana ! </s>
+	<s n="2">Mais ils ne peuvent l'atteindre.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, qui est venu près de Bonne maman</speaker>
+                        <p n="80">
+	<s n="1">Il me semble qu'il est plus dégourdi qu'engourdi.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="81">
+	<s n="1">En effet et je n'y comprends rien. Après avoir fait, avec, la même rapidité, deux fois le tour de la scène, Félix vient se réfugier auprès de Bonne_maman.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN, à Félix.</speaker>
+                        <p n="82">
+	<s n="1">Monsieur mon petit-fils, vous ne pouviez plus marcher et je vous vois courir ; vous étiez très malade et vous voilà très bien. </s>
+	<s n="2">Qu'est-ce que cela signifie ?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="83">
+	<s n="1">Cela signifie... </s>
+	<s n="2">Cela signifie... </s>
+	<s n="3">Vrai, je n'ose pas.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="84">
+	<s n="1">Dire la vérité est le meilleur moyen de faire pardonner les fautes commises.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="85">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Oui, je dirai tout : Pour avoir des gâteaux et ne pas aller à l'école, j'ai fait le malade.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="86">
+	<s n="1">Gourmand et paresseux ! </s>
+	<s n="2">C'est affreux !... </s>
+	<s n="3">Et dire que j'ai cru à celte maladie !</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="87">
+	<s n="1">Beaucoup trop, en vérité.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="88">
+	<s n="1">Mais, docteur, vous y avez cru vous-même.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="89">
+	<s n="1">Non, le docteur Sourabaya ne pouvait croire...</s>
+</p>
+                        <stage type="open">Il ouvre sa robe et il enlève sa barbe, les aide ; en font autant. </stage>
+                        <p n="90">
+	<s n="1">À ce que l'ami Roger et ses frères n'ont jamais cru.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="91">
+	<s n="1">Roger !... </s>
+	<s n="2">Tu m'as fait une fière peur !</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="92">
+	<s n="1">Je le crois bien. </s>
+	<s n="2">Je me suis servi de tous les mots dont se sert mon cousin Émile, l'étudiant en médecine, et j'ai même pris sa trousse qu'il a laissée hier à la maison. </s>
+	<s n="3">Tu as eu grand peur, mais il fallait mettre fin à la comédie jouée.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="93">
+	<s n="1">Et je t'en remercie.</s>
+</p>
+                        <stage type="toward">À Bonne maman.</stage>
+                        <p n="94">
+	<s n="1">Bonne_maman, me pardonnes-tu ?</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#roger">
+                        <speaker>ROGER.</speaker>
+                        <p n="95">
+	<s n="1">Le pardon est le traitement que j'impose.</s>
+</p>
+                    </sp><!--@who="ROGER"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="96">
+	<s n="1">Je suis déjà bien puni, puisque je vois que je n'aurai plus de gâteaux.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="97">
+	<s n="1">En te pardonnant, je ne puis supprimer ce que tu aimes ; je te porterai donc des gâteaux, mais à l'école et à l'école seulement.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#felix">
+                        <speaker>FÉLIX.</speaker>
+                        <p n="98">
+	<s n="1">Bonne_maman, j'y rentre demain, sans faute.</s>
+</p>
+                    </sp><!--@who="FÉLIX"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

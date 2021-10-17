@@ -1,0 +1,886 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Bon Mari</title>
+                <title type="sub">Comédie.</title>
+                <title type="sub">Cinquante-Cinquième Proverbe.</title>
+                <author>
+      <idno type="isni">0000000079771756</idno>
+      <idno type="wikidata">Q982053</idno>
+      <persName>
+        <forename>Louis</forename>
+        <surname>Carrogis</surname>
+        <nameLink>de</nameLink>
+        <surname sort="1">Carmontelle</surname>
+      </persName>
+    </author><!--CARMONTELLE, Louis Carrogis de (1717-1806)-->
+                <editor>Paul FIEVRE juin 2021</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001534</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/CARMONTELLE_BONMARI.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/CARMONTELLE_BONMARI.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1771"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-chevalier" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Chevalier</persName>
+                    </person>
+                    <person xml:id="le-vicomte" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Vicomte</persName>
+                    </person>
+                    <person xml:id="la-comtesse" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>La Comtesse</persName>
+                    </person>
+                    <person xml:id="le-comte" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Comte</persName>
+                    </person>
+                    <person xml:id="duval" sex="MALE">
+                        <persName>Duval</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Proverbe</term>
+                    <term>prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LE BON MARI</titlePart>
+			<titlePart type="sub">COMÉDIE.</titlePart>
+			<titlePart type="sub">CINQUANTE-CINQUIÈME PROVERBE.</titlePart>
+		</docTitle> 
+		<docDate when="1771">M. DCC. LXXI. Avec approbation et privilège du Roi</docDate>
+		<docAuthor>de CARMONTELLE.</docAuthor>
+		<div type="docImprint">
+			<div type="printer">
+                    <p>À Paris, Chez Sébastien JORRY, vis à vs de la Comédie Française, Chez LE JAY, rue Saint Jacques, près celle des Mathurins.</p>
+                </div><!--@id="JORRY/JAY"-->
+		</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#le-comte-de-bourville">LE COMTE DE BOURVILLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="comte"--><!--@age="A"--><!--@stat_amour="(néant)"-->.</castItem>
+		<castItem>
+                    <role corresp="#la-comtesse-de-bourville">LA COMTESSE DE BOURVILLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="comte"--><!--@age="A"--><!--@stat_amour="(néant)"-->.</castItem>
+		<castItem>
+                    <role corresp="#le-vicomte-de-conisieres">LE VICOMTE DE CONISIERES</role><!--@sex="1"--><!--@type="H"--><!--@statut="vicomte"--><!--@age="A"--><!--@stat_amour="(néant)"-->.</castItem>
+		<castItem>
+                    <role corresp="#le-chevalier-de-la-cerisaye">LE CHEVALIER DE LA CERISAYE</role><!--@sex="1"--><!--@type="H"--><!--@statut="chevalier"--><!--@age="A"--><!--@stat_amour="(néant)"-->, bien mis.</castItem>
+		<castItem>
+                    <role corresp="#duval">DUVAL</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet de chambre"--><!--@age="A"--><!--@stat_amour="(néant)"-->, Valet-de-Chambre de la Comtesse de Bourville.</castItem>
+   </castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La Scène est chez la Comtesse de Bourville.</set>-->
+<note>Extrait de PROVERBES DRAMATIQUES (...), Tome Quatrième, Paris, chez Sébastien Jorry, Le Jay Libraires, 1771. pp. 27-47.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LE BON MARI</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Le Vicomte, Le Chevalier.</head>
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="1">
+	<s n="1">Mais, dis-moi donc, Vicomte, qu'est-ce que c'est que cette conduite-là ? </s>
+	<s n="2">Que viens-tu faire encore ici ?</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="2">
+	<s n="1">Ce que j'y ai toujours fait, depuis que j'y viens.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="3">
+	<s n="1">Quoi ! </s>
+	<s n="2">N'as-tu pas quitté la Comtesse ?</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="4">
+	<s n="1">Moi, la quitter ? </s>
+	<s n="2">J'en serais au désespoir ; je l'aime réellement, j'en suis aimé à la fureur, pourquoi la quitterais-je ? </s>
+	<s n="3">Non, jamais je n'aurai cette pensée.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="5">
+	<s n="1">Voilà un très beau projet de constance, il est rare ; mais entendons-nous. </s>
+	<s n="2">Qu'est-ce que tu fais de la Marquise_de_Villenon ?</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="6">
+	<s n="1">De la Marquise ?</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="7">
+	<s n="1">Oui, parle-moi naturellement.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="8">
+	<s n="1">La Marquise est aimable ; mais elle ne vaut pas la Comtesse.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="9">
+	<s n="1">Qu'est-ce que c'est donc que cette fantaisie de les avoir ensemble ?</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="10">
+	<s n="1">Paix donc, si on t'entendait.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="11">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Réponds-moi nettement là-dessus.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="12">
+	<s n="1">Pourquoi cela ?</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="13">
+	<s n="1">C'est que tu es venu me troubler dans le moment, où j'espérais toucher la Marquise, et que tu as renversé tous mes projets. </s>
+	<s n="2">Si tu l'aimais véritablement, je ne te dirais rien ; mais vouloir la conserver en_même_temps que la Comtesse ; c'est les trahir toutes les deux.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="14">
+	<s n="1">Les trahir ! </s>
+	<s n="2">C'est un grand mot. </s>
+	<s n="3">Si je leur plais également, c'est, au contraire, faire à la fois le bonheur de deux femmes.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="15">
+	<s n="1">Tout cela est bon pour la plaisanterie ; mais si tu restes attaché à la Comtesse, je te réponds que j'emploierai tous mes soins pour réussir auprès de la Marquise.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="15">
+	<s n="1">À la bonne-heure, je ne saurais t'en empêcher.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="16">
+	<s n="1">Je ne négligerai rien, je t'en avertis.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="17">
+	<s n="1">Je te le conseille.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="18">
+	<s n="1">Tu n'auras point de reproches à me faire, après ce que je viens de te dire.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="19">
+	<s n="1">Un rival est un triomphe de plus.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="20">
+	<s n="1">Tu parles en homme bien sûr de plaire.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="21">
+	<s n="1">On plaît toujours quand on est aimé.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="22">
+	<s n="1">Mais on peut cesser de l'être.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="23">
+	<s n="1">Il est vrai que cela arrive quelquefois, et il ne faut que des certains hommes, comme j'en connais, pour donner à une femme la réputation d'être légère.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="24">
+	<s n="1">Tu n'as donc jamais connu des ces femmes-là ?</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="25">
+	<s n="1">Non ; parce que j'ai su les fixer.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="26">
+	<s n="1">À la bonne-heure ; nous verrons si tu parleras toujours sur le même ton.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="27">
+	<s n="1">Je l'espère.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="28">
+	<s n="1">Adieu, tu vois que je me comporte en galant homme.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="29">
+	<s n="1">Tous les hommes ont le droit de tenter fortune auprès des Femmes ; et lorsqu'elles changent, ce n'est qu'à elles qu'il faut s'en prendre : et très sérieusement, je ne me brouillerai jamais avec mon ami, parce qu'il aura trouvé le moyen de plaire mieux que moi.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-chevalier">
+                        <speaker>LE CHEVALIER.</speaker>
+                        <p n="">
+	<s n="1">Si tu deviens modeste, tu ne vaux plus rien, je m'enfuis.</s>
+</p>
+                    </sp><!--@who="LE CHEVALIER"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. La Comtesse, Le Vicomte.</head>
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE, entrant par une autre porte.</speaker>
+                        <p n="1">
+	<s n="1">Le Chevalier n'est plus ici ?</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="2">
+	<s n="1">Non, Madame.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="3">
+	<s n="1">Mais il était avec vous, tout_à_l_heure.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="4">
+	<s n="1">Il vient de sortir dans l'instant.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="5">
+	<s n="1">Je croyais qu'il m'aurait attendu.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="6">
+	<s n="1">Ces regrets m'étonnent ; je ne saurais m'empêcher de vous le dire, Madame. </s>
+	<s n="">J'osais me flatter que vous ne seriez pas fâchée de vous trouver seule avec moi.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="7">
+	<s n="1">Vous vous flattiez un peu légèrement, comme vous le voyez.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="8">
+	<s n="1">Ce n'est pas sérieusement que vous dites cela ?</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="9">
+	<s n="1">Très sérieusement.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="10">
+	<s n="1">Madame, expliquez-vous, de grâce.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="11">
+	<s n="1">Expliquez-moi, vous-même, pourquoi, pendant que j'ai été à Courci, je ne vous y ai vu qu'une fois, une seule fois en quinze jours ? </s>
+	<s n="2">Il y a six mois que vous n'auriez pas été si longtemps sans me voir.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="12">
+	<s n="1">J'ai eu l'honneur de vous dire et de vous mander, que les affaires de mon Régiment m'obligent d'être à Versailles, presque tous les jours.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="13">
+	<s n="1">Ce n'est pas ce que vous m'avez dit que je veux savoir ; c'est ce qui est, ce que vous ne m'avez pas dit.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="14">
+	<s n="1">Je serais bien embarrassé de vous dire autre chose.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="15">
+	<s n="1">Je le crois, puisque vous ne me le dites pas. </s>
+	<s n="2">Avez-vous des projets d'ambition qui puissent m'alarmer ? </s>
+	<s n="3">Ne le craignez pas, je fautai sacrifier tout à votre gloire, et je ne me plaindrai pas.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="16">
+	<s n="1">Moi, avoir d'autre ambition que de vous aimer et de vous plaire toute ma vie ! </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Madame ! </s>
+	<s n="4">Ne le croyez pas ; l'ambition étouffe la tendresse, elle est avide, ne jouit jamais ; et je perdrais, pour elle, un bonheur réel, sans lequel il me serait impossible de vivre ! </s>
+	<s n="5">Non, Madame, vous ne devez avoir aucune inquiétude. </s>
+	<s n="6">Bannissez toutes ces craintes, je vous en supplie, pour votre repos et pour le mien.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="17">
+	<s n="1">Ah ! </s>
+	<s n="2">Vicomte ! </s>
+	<s n="3">Je ne sais pourquoi ; mais je ne puis m'ôter de l'esprit que vous me trompez.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="18">
+	<s n="1">Vous pouvez me soupçonner ?...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="19">
+	<s n="1">Je me le reproche : mais en_même_temps rien ne peut me rassurer, ni ce que je me dis en votre faveur, ni ce que vous me dites vous-même.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="20">
+	<s n="1">Souvenez-vous du tourment que vous ont donné les soupçons que vous avez eus que j'aimais Madame_d_Ancille.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="21">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Voilà justement ce que j'ai déjà pensé : je vous vois le même air et la même conduite que dans ce temps-là.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="22">
+	<s n="1">Cependant, vous avez été bien sûre que je ne l'aimais pas ?</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="23">
+	<s n="1">Bien sûre ; parce que vous m'avez dit que je me trompais, et que je trouvais indigne de vous et de moi de ne vous pas croire, et de faire d'autre recherche pour savoir si cela était vrai ; voilà comme je suis.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="24">
+	<s n="1">Et vous pourriez avec cette façon de penser et d'aimer, croire que je vous sacrifierais à un autre ? </s>
+	<s n="2">Où trouverai-je rien aussi digne de m'attacher pour la vie ? </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Madame ! </s>
+	<s n="5">Rendez-vous plus de justice...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="25">
+	<s n="1">Si vous me trompiez, Vicomte, à quels maux ne serais-je pas en proie ! </s>
+	<s n="2">Songez donc à tout ce que j'ai souffert pour résister à ce penchant invincible, où tout m'entraînait malgré moi ; les reproches que je me suis toujours faits, et que je me fais encore, sans cesse, de tromper un mari, dont je n'ai jamais eu, un instant, lieu de me plaindre.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="26">
+	<s n="1">Mais il n'a point d'amour pour vous.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="27">
+	<s n="1">Cela peut être ; mais il m'estime : et être toujours au moment de ne pas mériter cette estime, et craindre de me voir confondue avec tant d'autres femmes, est un supplice continuel. </s>
+	<s n="2">S'il étAit possible que ce fût pour un ingrat, j'en mourrais de douleur.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="28">
+	<s n="1">Que dites-vous, Comtesse, moi ingrat !...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="29">
+	<s n="1">Je le crains.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE, à genoux.</speaker>
+                        <p n="30">
+	<s n="1">Je jure à vos pieds...</s>
+</p>
+                    </sp><!--@stage="kneel"--><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="31">
+	<s n="1">Ah ! </s>
+	<s n="2">Vicomte !... </s>
+	<s n="3">Ô Ciel ! </s>
+	<s n="4">Levez-vous. </s>
+	<s n="5">C'est mon mari : il vous a vu. </s>
+	<s n="6">Je suis perdue !</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE, toujours à genoux.</speaker>
+                        <p n="32">
+	<s n="1">Non, non, laissez-moi faire, et ne vous troublez pas.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Le Comte, La Comtesse, Le Vicomte.</head>
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE, se levant lentement.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Comte, je vous en prie, aidez-moi à obtenir de la Comtesse de me raccommoder avec une femme que j'aime. </s>
+	<s n="3">Il ne s'agit que de lui persuader que j'ai soupé hier ici, et elle ne veut pas consentir à le lui dire ; c'est en vain que je l'en prie, elle me désespère.</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <note type="L">"Bibliothèque de campagne, ou Amusements de l'esprit et du coeur" est une série d'ouvrages du XVIIIème siècle recueillant des oeuvres diverses : histoire, nouvelle, comte, poème.</note>
+                        <p n="2">
+	<s n="1">La ruse que vous employez-là pour détourner mes idées, mon cher Vicomte, est tout_à_fait spirituelle : mais, par malheur pour vous, j'ai lu, dans la Bibliothèque_de_campagne, l'Histoire_du_Comte_de_Tende, et je connais cette situation-là.</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="3">
+	<s n="1">Que voulez-vous dire ?</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="4">
+	<s n="1">Que les maris des romans ne sont pas faits comme ceux d'à présent, non plus que les amants. </s>
+	<s n="2">Ces derniers ne trompaient que les maris ; mais jamais les femmes. </s>
+	<s n="3">La mode change tout.</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="5">
+	<s n="1">Quelle erreur ! </s>
+	<s n="2">Quoi...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="6">
+	<s n="1">Il n'y a point d'erreur à cela ; et je ne pardonne jamais, à qui se donne pour un galant homme, de tromper une femme. </s>
+	<s n="2">Je suis bien sûr que je passerai pour ridicule en paraissant aussi délicat.</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="7">
+	<s n="1">Ridicule, non vraiment, je pense comme vous.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="8">
+	<s n="1">Pourquoi donc agir différemment ?</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="9">
+	<s n="1">C'est un persiflage que tout cela.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="10">
+	<s n="1">Je ne persifle point ; je sais très bien que vous êtes attaché, depuis près d'un mois, à la Marquise_de_Villenon.</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="11">
+	<s n="1">Moi ?</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="12">
+	<s n="1">Oui, vous, et trahir une femme honnête, pour une femme aussi légère, rien n'est plus affreux !</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="13">
+	<s n="1">Je vous assure que je n'aime point Madame_de_Villenon.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="14">
+	<s n="1">Vraiment je sais bien que vous n'irez pas en convenir ici.</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="15">
+	<s n="1">Ni ici, ni ailleurs.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="15">
+	<s n="1">Allons, allons, je sais là dessus tout ce que l'on peut savoir. </s>
+</p>
+                        <stage n="away">Il veut s'en aller.</stage>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="16">
+	<s n="1">Non, attendez que je vous explique...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="17">
+	<s n="1">Cela ne me regarde pas ; je ne me mêle des affaires de personne.</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="18">
+	<s n="1">Il m'est très important de vous désabuser.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="19">
+	<s n="1">Chacun à sa manière de se comporter.</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="20">
+	<s n="1">Si vous vouliez m'entendre...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="21">
+	<s n="1">Cela est inutile. </s>
+	<s n="2">Que diable pourriez-vous me dire ? </s>
+	<s n="3">Vos principes sont différents des miens ; et quand on pense différemment, on ne se persuade jamais l'un l'autre.</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="22">
+	<s n="1">Mais je pense comme vous, et je vous jure que je ne tromperais jamais une femme, quand il s'agirait de tout au monde...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="23">
+	<s n="1">Ce n'est pas à moi que l'on fait croire ces choses-là. </s>
+	<s n="2">Adieu, adieu.</s>
+</p>
+                    </sp><!--@who="LE COMTE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="24">
+	<s n="1">En vérité, Comte, je peux vous désabuser. </s>
+	<s n="2">Revenez.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#le-comte">
+                        <speaker>LE COMTE.</speaker>
+                        <p n="25">
+	<s n="1">Oui, je reviens ; mais c'est pour vous dire que vous êtes un étourdi. </s>
+	<s n="2">Il fallait me mettre dans votre confidence, pour m'empêcher de dévoiler votre secret ; cela eût été même très adroit et bien plus neuf, que ce que vous avez voulu me faire croire, quand je vous ai trouvé aux genoux de Madame.</s>
+</p>
+                        <stage type="exit">Il sort.</stage>
+                    </sp><!--@who="LE COMTE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. La Comtesse, Le Vicomte.</head>
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE, à la Comtesse qui veut rentrer chez elle.</speaker>
+                        <p n="1">
+	<s n="1">Madame, que faites-vous ?</s>
+</p>
+                    </sp><!--@stage="toward/away"--><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="2">
+	<s n="1">Non, Monsieur, ne me retenez pas, ou craignez mon indignation.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="3">
+	<s n="1">Il n'y a rien à quoi je ne m'expose plutôt que de vous laisser dans une aussi cruelle erreur. </s>
+	<s n="2">Le Comte n'est point jaloux, je le sais ; mais l'amour-propre, apparemment, lui fait employer ce moyen, pour me perdre auprès de vous : cela n'est pas difficile à comprendre ; comment, vous-même, ne l'avez-vous pas imaginé, et n'avez-vous pas cherché à ne me pas trouver coupable ?</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="4">
+	<s n="1">Serait-il possible ?...</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="5">
+	<s n="1">Madame, en vérité, j'ai lieu de me plaindre de la facilité avec laquelle vous vous livrez à tout ce qui peut me détruire auprès de vous.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="6">
+	<s n="1">Non seulement je vous perds ; mais je perds encore l'estime de mon mari !</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="7">
+	<s n="1">Vous ne me perdrez point, Madame, et vous ne me perdrez jamais. </s>
+	<s n="2">Quand à l'estime de votre mari, elle ne saurait être diminuée. </s>
+	<s n="3">Sa manière de penser n'est point différente de celle de tout le monde. </s>
+	<s n="'">Ce qui perd une femme, à présent, c'est le choix qu'elle fait ; voilà sur quoi on peut se récrier, quand l'homme, qui s'attache à elle, est un homme réellement méprisable.</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="8">
+	<s n="1">Quelle morale ! </s>
+	<s n="2">Pouvez-vous croire que je l'adopte, et que, sans cette chaîne qui me tyrannise, j'eusse jamais voulu la suivre ? </s>
+	<s n="3">Je sais qu'on plaint, et même qu'on a dans le monde une ridicule vénération pour une femme qui a un attachement durable ; mais, pour cela, peut-elle ne pas sentir qu'elle agir contre ses devoirs, contre ce qu'elle se doit à elle-même ?</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="9">
+	<s n="1">Ce qu'elle se doit ! </s>
+	<s n="2">Mais se doit-elle plus que son mari ne lui doit ?</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="10">
+	<s n="1">Les torts des autres peuvent-ils nous excuser ? </s>
+	<s n="2">Le penchant nous entraîne ; et si l'on avait le courage de combattre plus fortement...</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="11">
+	<s n="1">Ah ! </s>
+	<s n="2">bannissez ces idées, ne vous occupez, à l'avenir, que de la douceur d'aimer et d'être aimée. </s>
+	<s n="3">C'est un bien auquel il ne faut point mêler d'amertume ; vous devez être sûre de moi ; ne me cachez rien de ce qui se passe dans votre âme ; je ne veux pas y laisser établir le plus léger soupçon ; je vous sacrifierai tout ; il n'est pas juste que vous ayez la moindre inquiétude. </s>
+	<s n="4">Promettez-moi donc de me mettre à portée de détruire toutes celles qui pourraient naître, et je vous jure que jamais...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. La Comtesse, Le Vicomte, Duval.</head>
+<sp who="#duval">
+                        <speaker>DUVAL.</speaker>
+                        <p n="1">
+	<s n="1">Madame ; c'est de la part de Madame_la_Marquise_de_Villenon.</s>
+</p>
+                    </sp><!--@who="DUVAL"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="2">
+	<s n="1">La Marquise_de_Villenon ?</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#duval">
+                        <speaker>DUVAL.</speaker>
+                        <p n="3">
+	<s n="1">Et il n'y a point de réponse ?</s>
+</p>
+                    </sp><!--@who="DUVAL"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="4">
+	<s n="1">C'est assez.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE, à part et troublé.</speaker>
+                        <p n="5">
+	<s n="1">Ô Ciel ! </s>
+	<s n="2">Que peut-elle lui mander ?</s>
+</p>
+                    </sp><!--@stage="aparte/embarrassed"--><!--@who="LE VICOMTE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. La Comtesse, Le Vicomte.</head>
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE, après avoir lu la lettre.</speaker>
+                        <p n="1">
+	<s n="1">Mes pressentiments étaient donc vrais !</s>
+</p>
+                    </sp><!--@stage="read"--><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="2">
+	<s n="1">Ah ! </s>
+	<s n="2">Madame ! </s>
+	<s n="3">Pourriez-vous croire...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="3">
+	<s n="1">Oui, Monsieur, je vous crois capable de tout. </s>
+	<s n="2">Voyez le billet de la Marquise.</s>
+</p>
+                        <stage type="read">Elle lit.</stage>
+                        <p n="4">
+	<s n="1">« Le Vicomte m'avait juré qu'il ne vous aimait plus, Madame ; il nous trompait également : je vous l'abandonne, et je ne veux le revoir de ma vie. »</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="5">
+	<s n="1">Ne croyez pas, Madame, qu'elle veuille ne plus me voir ; elle veut me brouiller avec vous, voilà tout ; elle se venge de ma froideur pour elle...</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="6">
+	<s n="1">Pouvez-vous espérer de me tromper davantage ? </s>
+	<s n="2">Votre ingratitude anéantit tout l'amour que j'avais pour vous. </s>
+	<s n="3">Il ne me reste que le regret de vous avoir aimé.</s>
+</p>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#le-vicomte">
+                        <speaker>LE VICOMTE.</speaker>
+                        <p n="7">
+	<s n="1">Que dites-vous ? </s>
+	<s n="2">Quoi ! </s>
+	<s n="3">Madame....</s>
+</p>
+                    </sp><!--@who="LE VICOMTE"-->
+<sp who="#la-comtesse">
+                        <speaker>LA COMTESSE.</speaker>
+                        <p n="8">
+	<s n="1">C'en est assez, ne me revoyez jamais.</s>
+</p>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@who="LA COMTESSE"-->
+<sp who="#la-comtesse">
+                        <speaker>LE VICOMTE, douloureusement.</speaker>
+                        <p n="9">
+	<s n="1">Le Chevalier ne m'a que trop bien tenu parole : je perds tout en un jour, je suis désespéré ! </s>
+</p>
+                        <stage type="exit">Il s'en va.</stage>
+                        <stage type="explicit">Explication du Proverbe : 55. Entre deux selles, le cul à terre.</stage>
+                    </sp><!--@who="LA COMTESSE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

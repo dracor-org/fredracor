@@ -1,0 +1,3121 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Madeleine</title>
+                <title type="sub">Drame en trois actes</title>
+                <title type="sub">Représenté pour la première fois au Théâtre-Libre, le 2 mai 1889.</title>
+                <author>
+      <persName>
+        <forename>Émile</forename>
+        <surname>Zola</surname>
+      </persName>
+      <idno type="isni">0000000120958660</idno>
+    </author><!--ZOLA Émile-->
+                <editor>Paul Fièvre</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001559</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/ZOLA_MADELEINE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/ZOLA_MADELEINE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1875"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="veronique" sex="FEMALE">
+                        <persName>Véronique</persName>
+                    </person>
+                    <person xml:id="madame-hubert" sex="FEMALE">
+                        <persName>Madame Hubert</persName>
+                    </person>
+                    <person xml:id="madeleine" sex="FEMALE">
+                        <persName>Madeleine</persName>
+                    </person>
+                    <person xml:id="francis" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Francis</persName>
+                    </person>
+                    <person xml:id="jacques" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Jacques</persName>
+                    </person>
+                    <person xml:id="joseph" sex="MALE">
+                        <persName>Joseph</persName>
+                    </person>
+                    <person xml:id="laurence" sex="FEMALE">
+                        <persName>Laurence</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Drame</term>
+                    <term>prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">MADELEINE</titlePart>
+			<titlePart type="sub">Drame en trois actes</titlePart>
+			<titlePart type="sub">Représenté pour la première fois au Théâtre-Libre, le 2 mai 1889.</titlePart>
+		</docTitle> 
+		<docDate when="1875">1875. Droits de reproduction,de traduction et de représentation réserves.</docDate>
+		<docAuthor>Émile ZOLA.</docAuthor>
+		<castList>
+                <head>PERSONNAGES</head>
+			<castItem>
+                    <role corresp="#francis-hubert">FRANCIS HUBERT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#jacques-gauthier">JACQUES GAUTHIER</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, ami de Francis.</castItem>
+			<castItem>
+                    <role corresp="#joseph">JOSEPH</role><!--@sex="1"--><!--@type="H"--><!--@statut="employé"--><!--@age="A"--><!--@stat_amour="néant"-->, garçon d'auberge.</castItem>
+			<castItem>
+                    <role corresp="#madame-hubert">MADAME HUBERT</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="V"--><!--@stat_amour="néant"-->, mère de Francis.</castItem>
+			<castItem>
+                    <role corresp="#madeleine">MADELEINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, femme de Francis.</castItem>
+			<castItem>
+                    <role corresp="#veronique">VÉRONIQUE</role><!--@sex="2"--><!--@type="H"--><!--@statut="servante"--><!--@age="A"--><!--@stat_amour="néant"-->, servante.</castItem>
+			<castItem>
+                    <role corresp="#laurence">LAURENCE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, ancienne amie de Madeleine.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Montpellier" country="France" periode="XIXème" gps="43.6112422, 3.8767337"/>-->
+	</front>
+<body>
+<div type="acte" n="1">
+                <head>ACTE PREMIER</head>
+<stage type="decor">Un salon de province, par un soir d'hiver. Au-dehors, le vent souffle ; au-dedans un grand calme. Lorsque le rideau se lève, Madeleine brode près de la cheminée ; Mme Hubert penchée sur un berceau, en écarte les petits rideaux blancs ; Véronique, assise devant la table, lit à voix haute une énorme bible, sur laquelle un abat-jour jette toute la lumière de la lampe. Un couvert est mis sur la table.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Madeleine, Madame Hubert, Véronique.</head> 
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE, lisant.</speaker>
+                        <p n="1">
+	<s n="1">« Et une femme de la ville, qui avait été de mauvaise vie, ayant su qu'il était à table dans la maison du pharisien, elle y apporta un vase d'albâtre, plein d'une huile odoriférante. </s>
+	<s n="2">Et se tenant derrière, aux pieds de Jésus, elle se mit à pleurer ; elle lui arrosait les pieds de ses larmes, et les essuyait avec ses cheveux ; elle lui baisait les pieds, et elle les oignait avec cette huile... »</s>
+</p>
+                    </sp><!--@stage="read"--><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT, penchée sur le berceau.</speaker>
+                        <p n="2">
+	<s n="1">Plus bas, Véronique, lisez plus bas. </s>
+	<s n="2">L'enfant dort. </s>
+	<s n="3">Voyez donc, Madeleine, elle respire avec une douceur de chérubin. </s>
+	<s n="4">Je suis une heureuse grand-mère, chère fille... </s>
+	<s n="5">C'est tout le portrait de mon fils.</s>
+</p>
+                        <stage type="sit/closer/sit/location">Elle embrasse l'enfant et revient s'asseoir près de Madeleine.</stage>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="3">
+	<s n="1">Neuf heures, et Francis ne revient pas.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="4">
+	<s n="1">Cette pluie battante a défoncé les routes... </s>
+	<s n="2">Il se sera attardé chez quelque malade. </s>
+	<s n="3">Les médecins, mon enfant, mangent souvent leur dîner froid.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="5">
+	<s n="1">J'ai peur, lorsque j'entends souffler ainsi le vent... </s>
+	<s n="2">N'a-t-il pas dit l'heure à laquelle il rentrerait ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="6">
+	<s n="1">Il a dit que nous ne l'attendions pas pour dîner, voilà tout. </s>
+	<s n="2">Je pense qu'il est allé jusqu'à Montpellier... </s>
+	<s n="3">Véronique, portez le berceau dans la chambre.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE, lisant à demi-voix.</speaker>
+                        <p n="7">
+	<s n="">« Puis Jésus dit à la femme : Tes péchés te sont pardonnés. »</s>
+</p>
+                        <stage type="close">Elle ferme la bible et va prendre le berceau.</stage>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT, à Véronique.</speaker>
+                        <p n="8">
+	<s n="1">Voilà de grandes paroles. </s>
+	<s n="2">Je préfère cette histoire de pitié et de miséricorde aux pages cruelles que vous nous lisez parfois. </s>
+	<s n="3">Le pardon est doux à accorder.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE, sur le seuil, emportant le berceau.</speaker>
+                        <p n="8">
+	<s n="1">Dieu le Père n'aurait pas pardonné.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="VÉRONIQUE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. MADELEINE, MME HUBERT.</head>
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="1">
+	<s n="1">Cette femme m'effraie... </s>
+	<s n="2">Elle n'a pas la bonté de la vieillesse. </s>
+	<s n="3">Je tremble presque, chaque soir, lorsque je lui vois emporter ma fille.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="2">
+	<s n="1">Oh ! </s>
+	<s n="2">Madeleine... </s>
+	<s n="3">Elle a élevé Francis, elle adore la petite.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="3">
+	<s n="1">Oui, mais elle ne se plaît que dans des pensées de châtiment. </s>
+	<s n="2">Son Dieu est sans pardon... </s>
+	<s n="3">Elle m'effraie.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="4">
+	<s n="1">Êtes-vous enfant ! </s>
+	<s n="2">Laissez-la donc rêver de justice, vous qui n'avez rien à vous faire pardonner... </s>
+	<s n="3">Véronique est une de ces vieilles protestantes, têtes fanatiques, âmes droites et coeurs dévoués. </s>
+	<s n="4">Elle est fille de ces campagnes, elle a du sang de martyr dans les veines... </s>
+	<s n="5">Voici près de quarante ans qu'elle nous sert. </s>
+	<s n="6">Aujourd'hui, elle est de la famille.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="5">
+	<s n="1">Le soir, tandis que nous attendons Francis et que nous travaillons, près de cette cheminée, je la regarde, je l'écoute avec un frisson lire sa grande bible.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT, souriant.</speaker>
+                        <p n="6">
+	<s n="1">Allons, soyez franche. </s>
+	<s n="2">La vérité est que vous vous ennuyez ici.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE. avec étonnement.</speaker>
+                        <p n="7">
+	<s n="1">Je m'ennuie ici...</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="8">
+	<s n="1">Ne dites pas non... </s>
+	<s n="2">À vingt-cinq ans, être enfermée au fond d'une maison de province, en tête à tête avec une vieille femme. </s>
+	<s n="3">Voici déjà une année que cela dure. </s>
+	<s n="4">La plus raisonnable en ferait une maladie.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="9">
+	<s n="1">Cette maison me plaît, chère mère.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="10">
+	<s n="1">À d'autres !... </s>
+	<s n="2">J'ai été jeune et j'ai rêvé les plaisirs. </s>
+	<s n="3">Vous que mon fils a ramenée de Paris, vous ne devez pouvoir vous habituer à cette vie morne dans laquelle vous n'êtes pas née... </s>
+	<s n="4">J'ai dit tout cela à Francis, et il m'a répondu que vous étiez une sage personne.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="11">
+	<s n="1">Je ne sais si je suis sage, mais j'ai besoin de tranquillité.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="12">
+	<s n="1">Lorsque Francis m'a écrit qu'il vous aimait et que vous étiez sans famille, je ne lui ai point fait de questions, je lui ai dit de vous amener bien vite pour que je pusse vous embrasser. </s>
+	<s n="2">Mon fils a dû choisir une femme digne de lui. </s>
+	<s n="3">Mais, je l'avoue, j'ai craint, plus tard, que notre tendresse ne vous lassât, et que vous n'en vinssiez, dans l'ennui de ce vieux logis silencieux, à regretter les plaisirs que vous aviez laissés.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="13">
+	<s n="1">Je n'ai laissé aucun plaisir. J'étais orpheline... </s>
+	<s n="2">J'aime ce logis, parce que pas un bruit du dehors n'y pénètre et que rien ne vient nous y troubler dans notre bonheur.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="14">
+	<s n="1">Ainsi, aucun regret, bien sûr ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="15">
+	<s n="1">Aucun. </s>
+	<s n="2">Si vous saviez comme c'est bon d'être là, tranquille, aimée de tous ceux qui vous entourent !</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="16">
+	<s n="1">Vous êtes heureuse ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="17">
+	<s n="1">Heureuse, je vous le jure, heureuse de vous appeler ma mère, heureuse par mon mari et par ma fille, heureuse de ce silence et de cette ombre... </s>
+	<s n="2">Il me semble que je vole quelqu'un... </s>
+	<s n="2">Je désespérais de tout ce bonheur.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="18">
+	<s n="1">Et pourquoi ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="19">
+	<s n="1">Pourquoi ?... </s>
+	<s n="2">Parce que j'étais seule au monde. </s>
+	<s n="3">Vous ne pouvez savoir... </s>
+	<s n="4">J'aime tant, ici, ces longues soirées si uniformes, cette grande pièce si paisible, cette lampe qui sommeille... </s>
+	<s n="5">Je deviens meilleure.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="20">
+	<s n="1">Bon, bon, je m'étais trompée, vous ne vous ennuyez pas, voilà qui est entendu... </s>
+	<s n="2">Il ne vous reste qu'à aimer Véronique.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="21">
+	<s n="1">Ah ! </s>
+	<s n="2">Cela, plus tard, peut-être... </s>
+	<s n="3">Elle a dit que Dieu ne pardonnait pas. </s>
+	<s n="4">Elle devrait avoir l'âme plus tendre, ayant vécu dans cette maison. </s>
+	<s n="5">Vous regardez la pendule. </s>
+	<s n="6">Neuf heures et quart, et Francis n'est point ici.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="22">
+	<s n="1">On dirait que le vent redouble.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <note type="C">Verneuil : ancienne commune au nord-ouest de Montpellier.</note>
+                        <p n="23">
+	<s n="1">Il va rentrer bien las... </s>
+	<s n="2">N'est-ce pas demain qu'il doit partir pour passer deux jours à Verneuil, au-delà de Montpellier, chez votre frère qui le réclame depuis longtemps ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="24">
+	<s n="1">Oui, demain... </s>
+	<s n="2">Le cher enfant n'aura guère de repos.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="25">
+	<s n="1">Écoutez, j'entends un bruit de roues...</s>
+</p>
+                        <stage type="location">Elle va à la fenêtre.</stage>
+                        <p n="26">
+	<s n="1">Ah ! </s>
+	<s n="2">Le voici enfin !</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Madeleine, Francis, Madame  Hubert.</head>
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="1">
+	<s n="1">Bonsoir, mère... </s>
+	<s n="2">Bonsoir, Madeleine.</s>
+</p>
+                        <stage type="kiss">Il les embrasse.</stage>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="2">
+	<s n="1">Nous étions inquiètes. </s>
+	<s n="2">Tu nous reviens bien tard.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="3">
+	<s n="1">Le vent aveuglait le cheval, et les chemins sont si mauvais... </s>
+	<s n="2">Vous ne m'avez pas attendu pour dîner, j'espère ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="4">
+	<s n="1">Non. </s>
+	<s n="2">Tu vas dîner tout seul. </s>
+	<s n="3">Assieds-toi là.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="5">
+	<s n="1">Ah bien, oui ! </s>
+	<s n="2">J'ai mangé à Montpellier, mangé comme quatre...</s>
+</p>
+                        <stage type="toward">À Madame Hubert.</stage>
+                        <p n="6">
+	<s n="1">Devine avec qui j'ai dîné ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="7">
+	<s n="1">Avec qui ?...</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="8">
+	<s n="1">Oui... cherche et tu ne trouveras pas... </s>
+	<s n="2">J'ai une grande et bonne nouvelle, là, dans mon coeur.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="9">
+	<s n="1">Dis vite.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="10">
+	<s n="1">J'ai mangé avec un mort.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="11">
+	<s n="1">Avec un mort...</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="12">
+	<s n="1">Avec mon vieil ami, mon frère, Jacques_Gauthier.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, d'une voix étranglée.</speaker>
+                        <p n="13">
+	<s n="1">Jacques !</s>
+</p>
+                        <stage type="sit">Elle s'assoit.</stage>
+                    </sp><!--@stage="stress"--><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <note type="L">La Bataile de Magenta (Lombardie) eut lieu le 4 juin 1859 entre les troupes de Napoléon III allié aux Sardes contre les Autrichiens.</note>
+                        <p n="14">
+	<s n="1">Mais il est mort, les Autrichiens nous l'ont tué à Magenta.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="15">
+	<s n="1">Eh non ! </s>
+	<s n="2">C'est tout un roman... </s>
+	<s n="3">Jacques a été fait prisonnier, presque assassiné ensuite dans un hôpital de Vienne par un chirurgien ignorant. </s>
+	<s n="4">Mais c'est un corps de fer, et il s'en est tiré.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="16">
+	<s n="1">Le cher enfant !</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="17">
+	<s n="1">Je le rencontre dans Montpellier : il venait ici. </s>
+	<s n="2">Je crois que j'ai eu peur de lui... </s>
+	<s n="3">Nous nous sommes embrassés en pleurant.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="18">
+	<s n="1">Et nous le verrons demain ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE,se relevant.</speaker>
+                        <p n="19">
+	<s n="1">Demain ! </s>
+	<s n="2">Mais il est parti, n'est-ce pas ? </s>
+	<s n="3">Il a vu Francis, c'est tout ce qu'il voulait... </s>
+	<s n="4">Il est parti.</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <note type="L">Cabriolet : Voiture attelée tirée par un seul cheval ayant 2 à 3 places, la capote pouvait être amovible.</note>
+                        <p n="30">
+	<s n="1">Ah ! </s>
+	<s n="2">Oui, parti ! </s>
+	<s n="3">Il est en bas. </s>
+	<s n="4">Je l'ai amené dans mon cabriolet... </s>
+	<s n="4">Il va monter.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, réprimant un cri d'effroi.</speaker>
+                        <p n="31">
+	<s n="1">Oh ! </s>
+	<s n="2">Elle chancelle et se rassoit.</s>
+</p>
+                    </sp><!--@stage="frighten"--><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="22">
+	<s n="1">Je cours préparer la chambre bleue.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, allant à Madeleine.</speaker>
+                        <p n="23">
+	<s n="1">Madeleine ! </s>
+	<s n="2">Qu'as-tu donc ?... </s>
+	<s n="3">Elle s'évanouit...</s>
+</p>
+                        <stage type="toward">À Mme Hubert.</stage>
+                        <p n="24">
+	<s n="1">Mère, donne-moi le flacon rouge, là, dans la petite pharmacie... </s>
+	<s n="2">Pas celui-ci, c'est de la strychnine... </s>
+	<s n="3">L'autre, à côté.</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="25">
+	<s n="1">Merci, ce n'est rien... </s>
+	<s n="2">Il fait très chaud ici, et je suis un peu lasse.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="26">
+	<s n="1">Ce n'est rien ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="27">
+	<s n="1">Bien vrai ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="28">
+	<s n="1">Je vous assure... </s>
+	<s n="2">Je vais aller me coucher tout de suite.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="29">
+	<s n="1">Attends Jacques, pour que je lui présente celle qu'il ne connaît pas et qu'il nomme déjà sa soeur.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="30">
+	<s n="1">Non, j'ai besoin de repos, laisse-moi me retirer.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="31">
+	<s n="1">Je cours préparer la chambre bleue.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Francis, puis Jacques.</head>
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="1">
+	<s n="1">Je lui montrerai Madeleine demain matin. Il vaut mieux que je lui dise tout auparavant... </s>
+</p>
+                        <stage type="toward">À Jacques qui entre.</stage>
+                        <p n="2">
+	<s n="1">Te voilà. </s>
+	<s n="2">Tu reconnais la maison.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="3">
+	<s n="1">Moi !... </s>
+	<s n="2">J'irais partout sans lumière. </s>
+	<s n="3">À dix ans, j'ai descendu un jour l'escalier, la tête en avant : je connais chaque marche... </s>
+	<s n="4">Ta mère ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="4">
+	<s n="1">Tu vas la voir. </s>
+	<s n="2">Elle met des draps à ton lit.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="5">
+	<s n="1">Ta femme ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="6">
+	<s n="1">Elle était lasse, elle s'est couchée. </s>
+	<s n="2">Tu la verras demain. </s>
+	<s n="3">Nous avons un quart_d_heure devant nous. </s>
+	<s n="4">Allumons un cigare, et causons, causons comme autrefois, dans cette grande pièce, devant cette cheminée, toi ici et moi là...</s>
+</p>
+                        <stage type="smoke/sit">Ils allument des cigares et s'asseyent.</stage>
+                        <p n="7">
+	<s n="1">Tu te rappelles les jours passés ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="8">
+	<s n="1">Je ne puis regarder dans mes souvenirs, sans apercevoir ta jeune tête et la bonne figure de ta mère. </s>
+	<s n="2">Les jours de congé, Maman_Hubert, comme je l'appelais, venait te chercher au lycée de Montpellier. </s>
+	<s n="3">Au lieu d'un enfant, elle en emmenait toujours deux. </s>
+	<s n="4">J'étais de la partie, et quel bruit alors dans la maison muette !</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="9">
+	<s n="1">Elle te nommait son fils, elle partageait ses caresses, pour te faire oublier les parents que tu n'avais plus.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="10">
+	<s n="1">Nous étions deux frères.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="11">
+	<s n="1">Et nous sommes restés frères, Jacques... </s>
+	<s n="2">Voici trois ans bientôt que je ne t'ai vu.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="12">
+	<s n="1">Trois ans... </s>
+	<s n="2">Oui, je suis arrivé à Paris un an avant toi, et huit à dix mois après, je partais pour l'Italie comme chirurgien... </s>
+	<s n="3">Environ deux ans là-bas... </s>
+	<s n="4">Trois ans en effet.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="13">
+	<s n="1">Moi, j'ai quitté la faculté de Montpellier, un an après toi... </s>
+	<s n="2">À Paris, je ne te trouvai plus. </s>
+	<s n="3">Je me hâtai de terminer mes études, et je revins ici. </s>
+	<s n="4">Le docteur_Bernard me cède peu à peu la clientèle qu'il a dans ce pays. </s>
+	<s n="5">D'ailleurs, j'ai quelque fortune, et je ne travaille guère en ce moment qu'à mon bonheur... </s>
+	<s n="6">Et toi, Jacques, que vas-tu faire ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="14">
+	<s n="1">Je te l'ai dit, je vais vivre... </s>
+	<s n="2">Me voici riche. </s>
+	<s n="3">Mon oncle, le terrible homme qui ne venait jamais me voir au collège, est mort sans avoir eu le temps de me déshériter... </s>
+	<s n="4">Je vais vivre.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="15">
+	<s n="1">Marie-toi et fixe-toi ici... </s>
+	<s n="2">C'est la seule façon de bien vivre.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="16">
+	<s n="1">Je viendrai mourir ici, mais je veux aller vivre à Paris, au moins pendant quelques années. </s>
+	<s n="2">Tu te souviens de nos grandes discussions d'autrefois sur les femmes et sur le mariage ? </s>
+	<s n="3">J'avais les paradoxes et les appétits d'un amant romantique, tu avais toute la raison et toute la foi d'un mari.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="17">
+	<s n="1">Nous étions des enfants.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="18">
+	<s n="1">Les enfants ont grandi, voilà tout... </s>
+	<s n="2">Je n'ai certes pas fait couler bien des larmes, mais je n'ai pas épousé, non plus, la première femme qui m'a aimé.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="19">
+	<s n="1">C'est vrai, je suis faible devant la tendresse, je ne sais pas être aimé sans aimer, et je ne sais pas aimer sans aimer toujours.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="20">
+	<s n="1">Tiens ! </s>
+	<s n="2">C'est là une de tes phrases de jadis. </s>
+	<s n="3">Je la reconnais... </s>
+	<s n="4">Veux-tu que je te rappelle une autre de tes pensées, qui m'exaspérait singulièrement, celle-là ? </s>
+	<s n="5">Tu me disais: « J'aimerais une maîtresse, une femme dont je ne connaîtrais pas le passé ; si cette femme m'aimait, je l'épouserais. » </s>
+	<s n="6">Et tu te hâtais d'ajouter : « Je ne ferais pas cela par un motif bête de rédemption, je ne chercherais pas à racheter une âme ; je croirais simplement conclure une bonne affaire en m'attachant pour toujours une femme dont le coeur m'appartiendrait. » </s>
+	<s n="7">Et je me fâchais, et je te criais que ta femme te tromperait au bout de six mois, et que cela serait bien fait.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="21">
+	<s n="1">Jacques !... </s>
+	<s n="2">Il ne peut y avoir de secret entre nous. </s>
+	<s n="3">J'avais un aveu à te faire, et tu facilites cet aveu. </s>
+	<s n="'">J'ai épousé ma maîtresse, mon ami.</s>
+</p>
+                        <stage type="stand">Ils se lèvent.</stage>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="22">
+	<s n="1">Tu as fait cela ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="23">
+	<s n="1">J'étais seul à Paris. </s>
+	<s n="2">Tu n'étais plus là, j'avais froid dans cette grande ville où je ne connaissais personne. </s>
+	<s n="3">Je me mis à aimer, pour me réchauffer un peu le coeur, et je fus aimé. </s>
+	<s n="4">Alors, je ne voulus pas connaître les fautes commises, j'écrivis à ma mère et je vins épouser celle qui est ma femme depuis un an. </s>
+	<s n="5">Tu me blâmes ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="24">
+	<s n="1">Oui, je te blâme, Francis.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="25">
+	<s n="1">Je m'attendais à ta réponse. </s>
+	<s n="2">Aussi ne voulais-je te faire cette confidence qu'après t'avoir montré ma femme. </s>
+	<s n="3">Tu aurais été touché de notre bonheur, tu aurais mieux compris ma décision en nous voyant réunis dans ce coin perdu, loin de Paris, nous reposant fermement dans un avenir de paix et d'affection.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="26">
+	<s n="1">Je n'ose t'enlever ta foi... </s>
+	<s n="2">Je ne discute plus maintenant, je regrette les paroles qui me sont échappées... </s>
+	<s n="3">Mais, vois-tu, Francis, le passé d'une femme ne meurt jamais et revit tôt ou tard. </s>
+	<s n="'">Pardonne-moi mes craintes.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="27">
+	<s n="1">Parle hardiment. </s>
+	<s n="2">Je me suis dit ces choses, et je n'ai point hésité... </s>
+	<s n="3">Parle...</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="28">
+	<s n="1">Non, je n'ajoute rien... </s>
+	<s n="2">As-tu tout avoué à ta mère ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="29">
+	<s n="1">Pas encore... </s>
+	<s n="2">J'ai voulu qu'elle connût auparavant le coeur que j'avais choisi. </s>
+	<s n="3">Je lui ai simplement dit que ma femme était une orpheline qui avait besoin d'être aimée, et ma mère l'a accueillie comme elle t'a accueilli toi-même autrefois, comme son enfant.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="30">
+	<s n="1">Tu le vois, tu as menti, tu as senti que tu agissais mal.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="31">
+	<s n="1">J'ai menti pour lui faire accepter une fille dévouée... </s>
+	<s n="2">D'ailleurs, tu as raison, ce mensonge me pèse. </s>
+	<s n="3">L'épreuve a été assez longue, et je parlerai bientôt.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="32">
+	<s n="1">Tu me pardonnes ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="33">
+	<s n="1">Je te pardonnerai demain, quand tu auras vu ma femme...</s>
+</p>
+                        <stage type="closer">Le conduisant à la porte.</stage>
+                        <p n="34">
+	<s n="1">Et, maintenant, bonne nuit, mon vieil ami. </s>
+	<s n="2">Tu vas trouver ma mère dans ta chambre, la chambre bleue, tu sais ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="35">
+	<s n="1">Au fond du corridor... </s>
+	<s n="2">Nous y couchions ensemble, dans un grand lit à vieux rideaux de perse, et tu prenais toute la place... </s>
+	<s n="3">Bonne nuit, Francis...</s>
+</p>
+                        <stage type="back">Revenant.</stage>
+                        <p n="36">
+	<s n="1">Tu es heureux ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, souriant.</speaker>
+                        <p n="37">
+	<s n="1">Oui, je suis heureux, bien heureux. </s>
+	<s n="2">Tout le monde est  heureux ici.</s>
+</p>
+                    </sp><!--@stage="smile"--><!--@who="FRANCIS"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Francis, Madeleine.</head>
+<sp who="#francis">
+                        <speaker>FRANCIS, se retournant et voyant entrer Madeleine.</speaker>
+                        <p n="1">
+	<s n="1">Toi !... </s>
+	<s n="2">Qu'as-tu ? </s>
+	<s n="3">Tu ne t'es donc pas couchée ?</s>
+</p>
+                    </sp><!--@stage="turn/watch"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="2">
+	<s n="1">Non...</s>
+</p>
+                        <stage type="show">Indiquant la porte à gauche.</stage>
+                        <p n="3">
+	<s n="1">J'étais là... </s>
+	<s n="2">Monsieur_Jacques_Gauthier est ton ami, n'est-ce pas ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="4">
+	<s n="1">Oui, nous avons été élevés ensemble.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="5">
+	<s n="1">Tu l'appelles ton frère, n'est-ce pas ? </s>
+	<s n="2">Tu voudrais qu'il vînt habiter ici pour l'avoir toujours à ton côté ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="6">
+	<s n="1">C'est un de mes plus chers désirs. </s>
+	<s n="2">Enfants, nous ne pouvions faire un pas l'un sans l'autre. </s>
+	<s n="3">Je le retrouve et je voudrais le garder... </s>
+	<s n="4">Nous avions fait le rêve, autrefois, d'avoir tout en commun.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, amèrement.</speaker>
+                        <p n="7">
+	<s n="1">Tout en commun... </s>
+	<s n="2">Eh bien ! </s>
+	<s n="3">À Paris, avant de te connaître, j'ai connu Monsieur_Jacques_Gauthier.</s>
+</p>
+                    </sp><!--@stage="sad"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="8">
+	<s n="1">Tu as connu Jacques... </s>
+	<s n="2">Qu'importe ! </s>
+	<s n="3">Je viens de lui conter notre mariage. </s>
+	<s n="4">Je ne rougis pas de toi, je puis dire qui tu es et qui je suis.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="9">
+	<s n="1">Tu ne m'entends pas, Francis. </s>
+	<s n="2">J'ai connu Monsieur_Jacques_Gauthier à Paris, avant toi.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="10">
+	<s n="1">Eh bien ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="11">
+	<s n="1">Écoute, tu m'as priée de ne jamais parler du passé. </s>
+	<s n="2">J'ai gardé le silence et j'ai presque oublié. </s>
+	<s n="3">Mais voilà que le passé vient me trouver et me menacer, moi qui vis tranquille ici. </s>
+	<s n="4">Je ne puis pourtant pas me taire. </s>
+	<s n="5">Il faut que je te parle de cela, pour que tu empêches Jacques de me voir. </s>
+	<s n="6">Je l'ai connu... </s>
+	<s n="7">Comprends-tu ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="12">
+	<s n="1">Lui !... </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Malheureuse !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, à genoux, suppliant.</speaker>
+                        <p n="13">
+	<s n="1">Pardon, pardon !... </s>
+	<s n="2">Voilà ce que je craignais, ce qui me faisait pleurer parfois, dans mon bonheur. </s>
+	<s n="3">On dit : « Le passé est mort... » </s>
+	<s n="4">Le passé, c'était cet homme qui avait reçu trois balles dans la poitrine, cet homme dont tout le monde m'avait affirmé la mort et que je croyais enterré avec ma honte dans le coin de quelque champ perdu. </s>
+	<s n="5">Eh bien ! </s>
+	<s n="6">Non, le voilà qui ressuscite, exprès pour me voler ma paix ! </s>
+	<s n="7">Il était mort, il n'est plus mort. </s>
+	<s n="8">Comprends-tu cela, toi, Francis ? </s>
+	<s n="9">Le passé ne meurt jamais.</s>
+</p>
+                    </sp><!--@stage="kneel/pain"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="14">
+	<s n="1">Malheureuse, malheureuse...</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="16">
+	<s n="1">Je te le disais, rappelle-toi : « Ne m'épouse pas, aimons-nous comme cela, à quoi bon un autre lien ? » </s>
+	<s n="2">Et toi, tu me répondais que tu voulais m'emmener et m'aimer dans la maison de ta mère. </s>
+	<s n="3">Moi, je tremblais, je pensais qu'en restant ta maîtresse, si jamais je devenais indigne à tes yeux, tu pourrais me chasser et m'oublier. </s>
+	<s n="4">Et voilà qu'aujourd'hui je porte ton nom et que nous avons une petite fille. </s>
+	<s n="5">Tu ne peux plus me chasser... </s>
+	<s n="6">Ah ! </s>
+	<s n="7">J'ai été lâche de te céder.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="17">
+	<s n="1">C'est moi qui ai voulu cela.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="18">
+	<s n="1">Non, j'ai été lâche, mais il faut tout comprendre. </s>
+	<s n="2">Si tu savais quel besoin j'avais d'être heureuse ! </s>
+	<s n="3">Ici, j'ai vécu heureuse, je finissais par me persuader que j'y avais toujours vécu. </s>
+	<s n="4">Je me croyais honnête, quand j'embrassais notre fille ; j'appelais ta mère « ma mère » sans rougir. </s>
+	<s n="5">Tout m'avait apaisé, au fond de cette vieille demeure. </s>
+	<s n="6">Et la maison croule...</s>
+</p>
+                        <stage type="listen">Prêtant l'oreille. </stage>
+                        <p n="19">
+	<s n="1">Écoute ! </s>
+	<s n="2">Il peut descendre d'un moment à l'autre.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="20">
+	<s n="1">Ignorais-tu qu'il fût mon ami, mon frère ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="21">
+	<s n="1">Dans les commencements, oui, je te le jure. </s>
+	<s n="2">Lorsque je t'ai connu, il m'avait quitté depuis deux mois, il était parti pour l'Italie. </s>
+	<s n="3">J'avais cependant traversé avec lui Montpellier, où j'étais venue le rejoindre... </s>
+	<s n="4">Plus tard, j'ai su le hasard qui m'avait conduite de lui à toi. </s>
+	<s n="5">Mais tu m'aimais déjà, et je n'ai pas voulu te désespérer. </s>
+	<s n="6">Ah ! </s>
+	<s n="7">Je sentais bien que je volais quelqu'un !...</s>
+</p>
+                        <stage type="listen">Prêtant l'oreille.</stage>
+                        <p n="22">
+	<s n="1">N'as-tu pas entendu du bruit dans l'escalier ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="23">
+	<s n="1">Qu'il vienne... </s>
+	<s n="2">Il est homme d'honneur. </s>
+	<s n="3">Il faut que je lui parle une dernière fois.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="24">
+	<s n="1">Je ne veux pas !... </s>
+	<s n="2">Je ne veux pas que tu aies cette souffrance de te rencontrer avec mon passé. </s>
+	<s n="3">Comment aborderais-tu ton frère, et que lui dirais-tu, pour lui expliquer que, moi, je lui ai pris sa place ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="25">
+	<s n="1">Je t'assure qu'une explication immédiate vaudrait mieux. </s>
+	<s n="2">Ce serait fini.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="26">
+	<s n="1">Non, non ! </s>
+	<s n="2">Il ne doit pas nous revoir. </s>
+	<s n="3">C'en est fait de notre amour, si l'un de nous revoit cet homme. </s>
+	<s n="4">Il serait toujours là, entre nous.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="27">
+	<s n="1">Tu t'affoles, tu entres dans le cauchemar... </s>
+	<s n="2">Laisse-moi monter.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, le retenant.</speaker>
+                        <p n="28">
+	<s n="1">Je te dis que je ne veux pas ! </s>
+	<s n="2">Si je deviens folle, c'est à toi de ménager ma raison... </s>
+	<s n="3">Il ne doit pas nous revoir. </s>
+	<s n="4">Nous allons partir.</s>
+</p>
+                    </sp><!--@stage="pull"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="29">
+	<s n="1">Partir...</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="30">
+	<s n="1">Tout de suite... </s>
+	<s n="2">Demain tu devais nous quitter pour aller passer deux jours chez ton oncle. </s>
+	<s n="3">Eh bien ! </s>
+	<s n="4">Tu as reçu une dépêche, il est au plus mal, et tu m'emmènes.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="31">
+	<s n="1">Et ma mère ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="32">
+	<s n="1">Tu lui écriras demain. </s>
+	<s n="2">Nous reviendrons dans huit jours, dans quinze jours, nous faire pardonner par elle, quand nous nous serons calmés dans quelque coin perdu.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="33">
+	<s n="1">Et notre fille ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, pleurant.</speaker>
+                        <p n="34">
+	<s n="1">Mon Dieu ! </s>
+	<s n="2">Mon Dieu ! </s>
+	<s n="3">Notre fille... </s>
+	<s n="4">Ta mère veillera sur notre fille, et c'est elle, au retour, qui la remettra dans nos bras.</s>
+</p>
+                    </sp><!--@stage="cry"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="35">
+	<s n="1">Madeleine, je fais ce que tu veux, car il faut que tu oublies... </s>
+	<s n="2">Puisque tu crois que là est la guérison, partons, partons ensemble.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Francis, Madeleine, Madame Hubert.</head>
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="1">
+	<s n="1">Vous partez ? </s>
+	<s n="2">Comment !</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="2">
+	<s n="1">Oui, mère... </s>
+	<s n="2">Une dépêche de mon oncle... </s>
+	<s n="3">Il n'y a pas une minute à perdre.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="3">
+	<s n="1">Il est dix heures, les chemins sont atroces...</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="4">
+	<s n="1">Jean nous conduira avec le cabriolet jusqu'à Montpellier... </s>
+	<s n="2">Il le faut.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="5">
+	<s n="1">Mais tes malades ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="6">
+	<s n="1">Je vais écrire au Docteur_Bernard qui reprendra mes visites pendant mon absence.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="7">
+	<s n="1">Et Jacques ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="8">
+	<s n="1">Jacques, Jacques... Tu lui diras que j'ai été appelé, et qu'il s'en aille, oui, qu'il s'en aille !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="9">
+	<s n="1">Voyons, mes enfants, qu'avez-vous, que se passe-t-il ? </s>
+	<s n="2">Regardez-moi donc. </s>
+	<s n="3">Vous êtes bouleversés tous les deux... </s>
+	<s n="4">Je ne puis vous laisser partir ainsi. </s>
+	<s n="5">Je veux savoir...</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="10">
+	<s n="1">Mère, mère, je t'en prie... </s>
+	<s n="2">Ne nous interroge pas, nous ne pouvons parler maintenant. </s>
+	<s n="3">Mais tu sauras tout, je t'écrirai demain. </s>
+	<s n="4">Soigne bien notre petite fille... </s>
+	<s n="5">Nous reviendrons calmes et guéris.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT, les embrassant.</speaker>
+                        <p n="11">
+	<s n="1">Allez donc, mes enfants. </s>
+	<s n="2">J'ai foi en vous. </s>
+	<s n="3">Mais vous me laissez bien inquiète, car vous semblez fuir devant quelqu'un.</s>
+</p>
+                        <stage type="location">Francis et Madeleine se dirigent vers la porte.</stage>
+                    </sp><!--@stage="kiss"--><!--@who="MADAME HUBERT"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, en s'en allant, à part.</speaker>
+                        <p n="12">
+	<s n="1">Ah ! </s>
+	<s n="2">Les souvenirs sont lâchés. </s>
+	<s n="3">Je les sens derrière moi qui me poursuivent.</s>
+</p>
+                    </sp><!--@stage="away/aparte"--><!--@who="MADELEINE"-->
+</div>
+</div>
+<div type="acte" n="2">
+                <head>ACTE II</head>
+<stage type="decor/costume/entrance">Une chambre d'auberge. Lit, commode, table de noyer, chaises de paille, rideaux en cotonnade rouge. Aux murs, est pendue, dans de petits cadres noirs, la suite d'images représentant l'histoire de Roméo et Juliette. La chambre est grande, froide, banale. Au lever du rideau, entrent Jacques et Joseph, celui-ci en tablier blanc, une bougie à la main.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Jacques, Joseph.</head>
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="1">
+	<s n="1">Vous préférez cette chambre, Monsieur ?... </s>
+	<s n="2">Celle que vous avez habitée, il y a trois ans, avec cette dame blonde si gaie.</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#jacques">
+                        <speaker>JACQUES, à lui-même.</speaker>
+                        <p n="2">
+	<s n="1">Oui, c'est vrai, je la laissai ici près d'une semaine, lors d'un séjour que je fis à Montpellier.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="JACQUES"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="3">
+	<s n="1">En voilà une qui donnait des pourboires !... </s>
+	<s n="2">Est-ce que monsieur attend madame ?</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="4">
+	<s n="1">Non, Joseph, non, je n'attends personne... </s>
+	<s n="2">Je loge chez un ami, à quelques lieues d'ici, et comme cet ami a dû partir tout d'un coup, je m'amuse à revoir le pays en  l'attendant... </s>
+	<s n="3">Rien n'a été changé dans cette chambre ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="5">
+	<s n="1">Rien, monsieur.</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="6">
+	<s n="1">En effet, je reconnais les rideaux rouges... </s>
+	<s n="2">Voici l'histoire de Roméo et Juliette en huit tableaux... </s>
+	<s n="3">Et la table, vous n'avez pas gratté la table ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="7">
+	<s n="1">Non, Monsieur.</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="8">
+	<s n="1">Donnez-moi la bougie... </s>
+	<s n="2">Ce doit être ici, dans ce coin... </s>
+	<s n="3">Eh ! </s>
+	<s n="4">Oui, l'écriture paraît encore fraîche...</s>
+</p>
+                        <stage type="read">Lisant.</stage>
+                        <p n="9">
+	<s n="1">« J'aime Jacques. »...</s>
+</p>
+                        <stage type="aparte/dream">À lui-même, rêvant.</stage>
+                        <p n="10">
+	<s n="1">C'était la veille de notre départ. </s>
+	<s n="2">J'écrivais, là. </s>
+	<s n="3">Elle s'ennuyait, elle trempa le bout de son petit doigt dans l'encre, et elle fit ces grosses lettres : « J'aime Jacques. »... </s>
+	<s n="4">Pendant plusieurs jours, son ongle en garda une tache noire que je baisais avec dévotion.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="11">
+	<s n="1">Monsieur prend cette chambre ?</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="12">
+	<s n="1">Non... </s>
+	<s n="2">Décidément, il y fait trop froid. </s>
+	<s n="3">Tout cela est mort, mon coeur gèle ici.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="13">
+	<s n="1">Je pourrais faire du feu.</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="14">
+	<s n="1">Merci, cela ne me réchaufferait pas... </s>
+	<s n="2">Je resterai au numéro_8... </s>
+	<s n="3">J'y trouverai du feu et de la lumière, n'est-ce pas ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="15">
+	<s n="1">Oui, Monsieur, j'avais tout préparé.</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="16">
+	<s n="1">Bien. </s>
+	<s n="2">N'oubliez pas de m'éveiller de bonne heure.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Joseph, puis Francis et Madeleine.</head>
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="1">
+	<s n="1">Il ne sait pas ce qu'il veut, ce garçon. </s>
+	<s n="2">Il m'appelle, pour me dire qu'il préfère coucher dans cette chambre. </s>
+	<s n="3">Il entre, regarde, puis s'en va...</s>
+</p>
+                        <stage type="closer">Allant à la porte.</stage>
+                        <p n="2">
+	<s n="1">Ah ! </s>
+	<s n="2">Voici les voyageurs qui descendent de voiture. </s>
+	<s n="3">Je vais les caser...</s>
+</p>
+                        <stage type="toward">À Francis et à Madeleine.</stage>
+                        <p n="3">
+	<s n="1">Par ici, Monsieur et Madame.</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, entrant avec Madeleine.</speaker>
+                        <p n="4">
+	<s n="1">Cette chambre est libre ?</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="FRANCIS"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="5">
+	<s n="1">Oui, monsieur... </s>
+	<s n="2">Je vais allumer le feu.</s>
+</p>
+                        <stage type="light">Il allume le feu.</stage>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="6">
+	<s n="1">À quelle distance sommes-nous de Montpellier ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="7">
+	<s n="1">À trois lieues... </s>
+	<s n="2">Nous coucherons ici, puisque ce voyage dans les ténèbres t'inquiète... </s>
+	<s n="3">Ma mère doit avoir ma lettre, à cette heure.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="8">
+	<s n="1">Oui, elle sait tout.</s>
+</p>
+                        <stage type="dress">Elle ôte son manteau et son chapeau.</stage>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH, se retournant et la reconnaissant.</speaker>
+                        <p n="9">
+	<s n="1">Madame Madeleine ! </s>
+	<s n="2">Avec un autre !... </s>
+	<s n="3">En voilà une histoire !</s>
+</p>
+                        <stage type="exit">Il va pour sortir.</stage>
+                    </sp><!--@stage="turn/recognize"--><!--@who="JOSEPH"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, le rappelant.</speaker>
+                        <p n="10">
+	<s n="1">Écoutez, je vais descendre commander notre dîner. </s>
+	<s n="2">Vous mettrez le tout dans une corbeille, que vous monterez. </s>
+	<s n="3">Nous nous servirons nous-mêmes.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="11">
+	<s n="1">Bien, Monsieur.</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Francis, Madeleine.</head>
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="1">
+	<s n="1">Nous sommes seuls... seuls, entends-tu, Madeleine, ignorés, perdus... </s>
+	<s n="2">Ta pensée est-elle plus calme, ton coeur est-il plus confiant ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, sans l'entendre, regardant autour d'elle.</speaker>
+                        <p n="2">
+	<s n="1">Il me semble reconnaître cette chambre... </s>
+	<s n="2">Au bord de la route, dans la nuit, j'ai aperçu des arbres que j'ai déjà vus.</s>
+</p>
+                    </sp><!--@stage="listen/watch"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="3">
+	<s n="1">Tous les arbres se ressemblent, dans l'ombre. </s>
+	<s n="2">Tu es encore secouée, et tu rêves, les yeux ouverts... </s>
+	<s n="3">Apaise-toi. </s>
+	<s n="4">Je t'aime... </s>
+	<s n="5">Nous avons bien fait, de passer cette journée à Montpellier et d'écrire de cette ville à ma mère, avant de partir pour Nice... </s>
+	<s n="6">Nous voyagerons à petites étapes, couchant le soir où nous nous trouverons.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, sans l'entendre.</speaker>
+                        <p n="4">
+	<s n="1">Quelle pouvait être cette femme qui suivait en courant notre voiture ? </s>
+	<s n="2">Elle me regardait fixement aux lueurs de la lanterne.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="5">
+	<s n="1">Une mendiante à qui j'ai donné une aumône... </s>
+	<s n="2">Elle s'est éloignée.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="6">
+	<s n="1">Non, elle nous a suivis jusqu'ici. </s>
+	<s n="2">Je l'ai vue en bas.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="7">
+	<s n="1">Que nous fait cette femme !... </s>
+	<s n="2">Dis-toi que nous sommes seuls et que rien ne peut nous séparer désormais... </s>
+	<s n="3">J'ai choisi cette maison isolée et comme oubliée au bord de la grand-route, parce que c'est la maison qu'il nous faut, ce soir... </s>
+	<s n="4">Quel silence, quelle paix profonde ! </s>
+	<s n="5">Nous sommes en dehors du monde, en dehors de la vie, et nous pouvons nous appartenir, sans que personne se lève entre nous.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="8">
+	<s n="1">Oh ! </s>
+	<s n="2">Francis, Francis...</s>
+</p>
+                        <stage type="cry">Elle pleure.</stage>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="9">
+	<s n="1">Tu pleures, Madeleine, tu n'as plus confiance en ma tendresse... </s>
+	<s n="2">Sais-tu que je ne veux que ton coeur ! </s>
+	<s n="3">Que m'importe le reste !... </s>
+	<s n="4">Vois. </s>
+	<s n="5">Qui y a-t-il ici ? </s>
+	<s n="6">Deux êtres qui s'aiment et dont personne ne s'occupe... </s>
+	<s n="7">Ici, il n'y a point de passé, il n'y a qu'un présent tranquille et bon.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="10">
+	<s n="1">Non, j'ai peur, j'ai froid.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, la faisant asseoir.</speaker>
+                        <p n="11">
+	<s n="1">Assieds-toi là, devant le feu... </s>
+</p>
+                        <stage type="sit/location">Il s'assied à ses pieds. </stage>
+                        <p n="12">
+	<s n="1">Dis-moi que tu espères. </s>
+	<s n="2">Moi, ce calme qui m'entoure, me fait du bien. </s>
+	<s n="3">Je suis heureux de pouvoir t'aimer ainsi, de penser que seuls nous existons et que seuls nous nous aimons... </s>
+	<s n="4">Imagine-toi que nous sommes plus loin et plus haut, au-delà de tout... </s>
+	<s n="5">Nous nous aimons et nous nous reposons.</s>
+</p>
+                    </sp><!--@stage="sit"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="13">
+	<s n="1">Tu es bon, Francis... </s>
+	<s n="2">Le monde n'est plus, tu as tué le monde, mais tu ne pourras tuer les souvenirs.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, avec force.</speaker>
+                        <p n="14">
+	<s n="1">Si, je tuerai les souvenirs, je les tuerai dans ce voyage dont nous reviendrons guéris tous deux... </s>
+	<s n="2">Demain, nous partirons, nous irons le long des routes, partout où il y aura du soleil... </s>
+	<s n="3">Tu souris, chère enfant. </s>
+	<s n="4">Espère !</s>
+</p>
+                    </sp><!--@stage="strong"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="15">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Oui, j'espère... </s>
+	<s n="3">Je veux espérer, parce que je ne vois plus que toi et que tu m'empêches de me bien voir. </s>
+	<s n="4">Nous irons devant nous, toujours seuls.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="16">
+	<s n="1">D'abord, nous allons descendre jusqu'à Marseille. </s>
+	<s n="2">Là, nous prendrons la mer.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="17">
+	<s n="1">À Nice, nous chercherons un coin écarté... </s>
+	<s n="2">Il doit faire bon, sous ce large ciel. </s>
+	<s n="3">Je guérirai peut-être.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="18">
+	<s n="1">Et, lorsque nous nous sentirons plus calmes, j'écrirai de nouveau à ma mère, je lui dirai de venir nous rejoindre avec notre fille. </s>
+	<s n="2">Elle aura pardonné. Nous serons quatre à nous aimer...</s>
+</p>
+                        <stage type="stand">Il se lève.</stage>
+                        <p n="19">
+	<s n="1">On est bien dans cette chambre, nous y rêvons de bonheur. </s>
+	<s n="2">On a dû y aimer déjà, pour qu'elle soit si douce... </s>
+	<s n="3">J'ai toujours vécu gaiement dans ces grandes chambres d'auberge. </s>
+	<s n="4">Elles ont je ne sais quoi de naïf qui me rafraîchit. </s>
+	<s n="5">Tout le monde y passe et tout le monde y laisse un peu de ses larmes et un peu de ses rires.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="20">
+	<s n="1">C'est vrai. </s>
+	<s n="2">Je finis par m'y sentir plus courageuse... </s>
+	<s n="3">Mes craintes s'en vont une à une.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="21">
+	<s n="1">Chère Madeleine... </s>
+	<s n="2">Eh bien ! </s>
+	<s n="3">Nous allons vivre cette soirée comme autrefois, lorsque nous nous sauvions du monde pendant des journées entières... </s>
+	<s n="4">Tu n'as plus peur ici, tu ne pleureras pas toute seule ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="22">
+	<s n="1">Non.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="23">
+	<s n="1">Je puis descendre un instant ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="24">
+	<s n="1">Va. </s>
+	<s n="2">Je suis forte.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE IV.</head>
+<sp who="#madeleine">
+                        <speaker>MADELEINE, seule.</speaker>
+                        <stage type="silence/watchs">Après un long silence, regardant autour d'elle.</stage>
+                        <p n="1">
+	<s n="1">Je connais cette chambre... </s>
+	<s n="2">J'ai vu ces gravures, j'ai dormi sous des rideaux rouges pareils à ceux-ci... </s>
+	<s n="3">S'il faisait jour, j'aurais certainement reconnu cette maison. </s>
+	<s n="4">Les ténèbres déforment tout. </s>
+	<s n="5">Puis, j'ai la fièvre... </s>
+	<s n="6">J'étais en voyage, il y a quelques années...</s>
+</p>
+                        <stage type="stand">Se dressant brusquement.</stage>
+                        <p n="2">
+	<s n="1">Seigneur Dieu ! </s>
+	<s n="2">Je me souviens !</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="MADELEINE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Madeleine, Jacques.</head>
+<sp who="#jacques">
+                        <speaker>JACQUES, ouvrant la porte et restant sur le seuil.</speaker>
+                        <p n="1">
+	<s n="1">Eh oui ! </s>
+	<s n="2">C'est bien Madeleine... </s>
+</p>
+                        <stage type="happy">Gaiement.</stage>
+                        <p n="2">
+	<s n="1">Puis-je entrer ?</s>
+</p>
+                    </sp><!--@stage="open/location"--><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, étranglée.</speaker>
+                        <p n="3">
+	<s n="1">Lui !</s>
+</p>
+                    </sp><!--@stage="frighten"--><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="4">
+	<s n="1">Monsieur n'est pas là, je l'ai entendu descendre.</s>
+</p>
+                        <stage type="entrance">Il entre.</stage>
+                        <p n="5">
+	<s n="1">Ce diable de Joseph a une mémoire ! </s>
+	<s n="2">Il vient de me dire que tu étais ici, avec une personne... </s>
+	<s n="4">J'ai voulu te serrer la main.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, reculant.</speaker>
+                        <p n="6">
+	<s n="1">Oh ! </s>
+	<s n="2">Non !</s>
+</p>
+                    </sp><!--@stage="away"--><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="7">
+	<s n="1">Non ? </s>
+	<s n="2">Pourquoi ?... </s>
+	<s n="3">Comme tu voudras, ma fille. </s>
+	<s n="4">Je ne veux pas te faire du tort. </s>
+	<s n="5">J'ai attendu que la personne ne fût plus là, et je me sauverai avant qu'elle revienne... </s>
+	<s n="6">Est-ce le gros Gustave ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="8">
+	<s n="1">Je vous en prie...</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="9">
+	<s n="1">Si je lui disais tout...</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="10">
+	<s n="1">Traite-moi donc en ami, nous sommes de vieux camarades... </s>
+	<s n="2">Est-ce toi qui as choisi cette chambre ? </s>
+	<s n="3">Et l'autre ne sait rien, n'est-ce pas ? </s>
+	<s n="4">Un mauvais tour que tu lui joues là, ma fille.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, à part.</speaker>
+                        <p n="11">
+	<s n="1">Je ne puis parler maintenant.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="12">
+	<s n="1">Nous nous sommes donc quittés fâchés ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="13">
+	<s n="1">Non.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="14">
+	<s n="1">Je te répète que tu peux être tranquille. </s>
+	<s n="2">Je parais et je disparais.... </s>
+	<s n="3">Je loge à quelques lieues d'ici, chez un ami qui a eu le caprice de m'abandonner le soir même de mon arrivée. </s>
+	<s n="4">Je l'attends... </s>
+	<s n="5">Et toi, que fais-tu ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="15">
+	<s n="1">Rien.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="16">
+	<s n="1">Ah !... </s>
+	<s n="2">Mais comme tu es froide ! </s>
+	<s n="3">Moi qui croyais que tu allais me sauter au cou... </s>
+	<s n="4">Tu l'aimes donc ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="17">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="18">
+	<s n="1">Ce n'est pas le gros Gustave, bien, sûr ?... </s>
+	<s n="2">Georges peut-être ? </s>
+	<s n="3">Non ?... </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Sans doute le petit blond, Julien_Dupré ? </s>
+	<s n="6">Pas davantage ?... </s>
+	<s n="7">Bon ! </s>
+	<s n="8">C'est alors quelqu'un que je ne connais pas... </s>
+	<s n="9">Et tu ne vois plus les garçons que je viens de nommer ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="19">
+	<s n="1">Non.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="20">
+	<s n="1">C'étaient de braves enfants, des camarades d'un jour que j'ai regrettés plus d'une fois... </s>
+	<s n="2">Les joyeuses journées que nous avons passées avec eux ! </s>
+	<s n="3">Te souviens-tu ?... </s>
+	<s n="4">J'ai toujours pensé qu'un de ces amis avait pris ma place dans ton coeur.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="21">
+	<s n="1">Monsieur, par pitié !</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="22">
+	<s n="1">Allons, cela a dû être. </s>
+	<s n="2">Ne dis pas non... </s>
+	<s n="3">Mais qu'as-tu, ma pauvre Madeleine. </s>
+	<s n="4">Toi, si gaie et si insouciante ! </s>
+	<s n="5">Et pourtant tu as encore embelli... </s>
+	<s n="6">Tu ne veux pas que je t'embrasse, avant de m'en aller ?</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="23">
+	<s n="1">Non, laissez-moi.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#jacques">
+                        <speaker>JACQUES.</speaker>
+                        <p n="24">
+	<s n="1">Tiens ! </s>
+	<s n="2">Tu as raison. </s>
+	<s n="3">Je suis fou. </s>
+	<s n="4">Mais je crains bien que tu n'aies ni mémoire ni coeur, Madeleine. </s>
+	<s n="5">Si tu aimes cet homme, ne reste pas avec lui dans cette chambre. </s>
+	<s n="6">Les murs te parleraient de moi et t'empêcheraient de l'entendre... </s>
+	<s n="7">Adieu.</s>
+</p>
+                    </sp><!--@who="JACQUES"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI.</head>
+<sp who="#madeleine">
+                        <speaker>MADELEINE, seule.</speaker>
+                        <p n="1">
+	<s n="1">Oui, les murs parlent, et je les entends maintenant... </s>
+	<s n="2">Je sais pourquoi j'avais peur. </s>
+	<s n="3">Francis m'assurait que nous étions seuls dans cette chambre. </s>
+	<s n="4">Il ne voyait pas le passé qui était là, autour de nous... </s>
+	<s n="5">Ah ! </s>
+	<s n="6">Je voudrais mourir !</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="MADELEINE"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Madeleine, Joseph, puis  Laurence.</head>
+<sp who="#joseph">
+                        <speaker>JOSEPH, posant une corbeille sur la table.</speaker>
+                        <p n="1">
+	<s n="1">Voici le dîner, Madame... </s>
+	<s n="2">Monsieur va monter.</s>
+</p>
+                    </sp><!--@stage="drop"--><!--@who="JOSEPH"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="2">
+	<s n="1">Bien.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#joseph">
+                        <speaker>JOSEPH.</speaker>
+                        <p n="3">
+	<s n="1">Ah ! </s>
+	<s n="2">J'oubliais. </s>
+	<s n="3">Il y a là une femme qui insiste pour vous dire un mot.</s>
+</p>
+                    </sp><!--@who="JOSEPH"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE, entrant.</speaker>
+                        <p n="4">
+	<s n="1">C'est moi, Madeleine.</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="5">
+	<s n="1">la reconnaissant. </s>
+	<s n="2">Laurence !...</s>
+</p>
+                        <stage type="toward">À Joseph.</stage>
+                        <p n="6">
+	<s n="1">Retirez-vous.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Madeleine, Laurence.</head>
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="1">
+	<s n="1">Tu me reconnais, maintenant, je le vois. </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Moi, j'étais sûre de ne pas me tromper, je t'avais reconnue tout de suite.</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="2">
+	<s n="1">Que me voulez-vous ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="3">
+	<s n="1">Tu ne me tutoies plus, tu fais la fière... </s>
+	<s n="2">Est-ce parce que tu es bien nippée ? </s>
+	<s n="3">Mais tu sais, ma fille, il y a des hauts et des bas dans l'existence.</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="4">
+	<s n="1">Vous vous trompez, je ne suis plus celle que vous avez connue. </s>
+	<s n="2">Je suis mariée. </s>
+	<s n="3">Laissez-moi.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="5">
+	<s n="1">Bah ! </s>
+	<s n="2">Tu es mariée, pour tout de bon ?... </s>
+	<s n="3">Moi qui te croyais avec un Anglais ou un Russe, lorsque je t'ai vue rouler carrosse... </s>
+	<s n="4">Alors, c'est ton mari, ce jeune homme qui m'a donné cent sous par la portière ?</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="6">
+	<s n="1">Oui... </s>
+	<s n="2">Laissez-moi.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="7">
+	<s n="1">Ah ! </s>
+	<s n="2">Dis donc, faut pas m'humilier... </s>
+	<s n="3">Cent sous, c'est toujours bon à prendre. </s>
+	<s n="4">D'ailleurs, je croyais que c'était un amant. </s>
+	<s n="5">Puisque ce monsieur est ton mari, je vas te les rendre tes cent sous.</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="8">
+	<s n="1">Gardez-les... </s>
+	<s n="2">Que voulez-vous encore ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="9">
+	<s n="1">Mais je ne veux rien, ma fille... </s>
+	<s n="2">Je voulais t'embrasser, rire un peu ensemble... </s>
+	<s n="3">Tu me reçois comme un chien. </s>
+	<s n="4">Je vais m'en aller... </s>
+	<s n="5">Tu as toujours été si drôle. </s>
+	<s n="6">Moi ton aînée, ça me faisait rire, de voir une belle fille pleurer, des fois, parce que les hommes lui disaient dans la rue qu'elle était jolie. </s>
+	<s n="7">Tu te rappelles ce garçon qui, un jour...</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="10">
+	<s n="1">Je vous en prie, allez-vous-en. </s>
+	<s n="2">Je vous répète que je suis mariée, que j'ai une petite fille.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="11">
+	<s n="1">Moi aussi, j'ai eu une petite fille... </s>
+	<s n="2">Elle est morte... </s>
+	<s n="3">J'étais si malheureuse, à Paris, que j'ai préféré revenir dans ce pays, qui est le mien. </s>
+	<s n="4">Mon père m'a chassée et les enfants me jettent des pierres, quand je passe. </s>
+	<s n="5">J'aime mieux retourner là-bas, quitte à crever de faim sur le trottoir... </s>
+	<s n="6">Peut-être que quelqu'un voudra bien m'y ramasser... </s>
+	<s n="7">Tu as eu de la chance, toi !</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, pleurant.</speaker>
+                        <p n="12">
+	<s n="1">Mon Dieu, mon Dieu !</s>
+</p>
+                    </sp><!--@stage="cry"--><!--@who="MADELEINE"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="13">
+	<s n="1">Écoute donc, cela pouvait m'arriver comme à toi. </s>
+	<s n="2">Tu n'étais pas plus princesse qu'une autre... </s>
+	<s n="3">Dis-toi ça, ma fille, et tu ne chercheras plus à humilier le monde.</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, avec force.</speaker>
+                        <p n="14">
+	<s n="1">Vous avez raison. </s>
+	<s n="2">Voici mon mari qui monte. </s>
+	<s n="3">Restez !</s>
+</p>
+                    </sp><!--@stage="strong"--><!--@who="MADELEINE"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="15">
+	<s n="1">Eh non ! </s>
+	<s n="2">C'est qu'à la fin tu m'as mise en colère. </s>
+	<s n="3">Tu es trop fière Madeleine... </s>
+	<s n="4">Je m'en vais. </s>
+	<s n="5">Je ne veux pas te faire arriver du mal !</s>
+</p>
+                        <stage type="entrance/away">Francis entre. Laurence recule.</stage>
+                    </sp><!--@who="LAURENCE"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Francis, Madeleine, Laurence.</head>
+<sp who="#francis">
+                        <speaker>FRANCIS, entrant, portant la nappe.</speaker>
+                        <p n="1">
+	<s n="1">Voici la nappe, que le garçon avait oubliée. </s>
+	<s n="2">Mettons vite la table et dînons. </s>
+	<s n="3">Comme aux premiers jours, nous nous enfermerons pour manger dans la même assiette...</s>
+</p>
+                        <stage type="watch">Apercevant Laurence qui se tient au fond.</stage>
+                        <p n="2">
+	<s n="1">Quelle est cette femme?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="3">
+	<s n="1">C'est une de mes amies, Francis. </s>
+	<s n="2">Elle va dîner avec nous... </s>
+	<s n="3">Je le veux.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="4">
+	<s n="1">Cette femme ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="5">
+	<s n="1">Oui... </s>
+	<s n="2">Elle nous parlera du passé. </s>
+	<s n="3">Elle te contera de bonnes histoires... </s>
+	<s n="4">Et nous rirons !</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="6">
+	<s n="1">Madeleine !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="7">
+	<s n="1">Ne l'écoutez pas, Monsieur. </s>
+	<s n="2">Si j'avais su, je ne serais pas montée. </s>
+	<s n="3">Je voulais causer un peu avec elle, simplement... </s>
+	<s n="4">Ne la maltraitez pas.</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="8">
+	<s n="1">Vous avez connu Madeleine...</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#laurence">
+                        <speaker>LAURENCE.</speaker>
+                        <p n="9">
+	<s n="1">Bonsoir.</s>
+</p>
+                    </sp><!--@who="LAURENCE"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Madeleine, Francis.</head>
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="1">
+	<s n="1">Qu'est-il donc arrivé ?... </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Notre pauvre bonheur !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="2">
+	<s n="1">Tu avais raison. </s>
+	<s n="2">Nous avons eu tort de fuir. </s>
+	<s n="3">C'était lâche. </s>
+	<s n="4">Là-bas nous aurions lutté. </s>
+	<s n="5">Maintenant, nous n'avons plus qu'à doubler le pas... </s>
+	<s n="6">On n'échappe point aux souvenirs.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="3">
+	<s n="1">Dis-moi tout.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="4">
+	<s n="1">Nous cherchions un coin perdu où nous puissions être seuls. </s>
+	<s n="2">Seuls ! </s>
+	<s n="3">Jamais plus nous ne serons seuls, Francis... </s>
+	<s n="4">Le passé était ici, dans cette chambre à nous attendre.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="5">
+	<s n="1">Dans cette chambre...</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="6">
+	<s n="1">Tu as vu cette femme. </s>
+	<s n="2">Elle a été mon amie, elle est un peu de ces jours d'autrefois que je voudrais oublier... </s>
+	<s n="3">Personne, disais-tu, ne devait ici se dresser entre nous ; nous étions en dehors du monde, en dehors de la vie... </s>
+	<s n="4">Et cette femme t'a fait mentir.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="7">
+	<s n="1">Elle s'est trouvée là, c'est un hasard. </s>
+	<s n="2">Elle est partie, nous ne la verrons plus.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="8">
+	<s n="1">Ah ! </s>
+	<s n="2">Tu crois que je vais pouvoir me heurter à chaque pas et conserver ma tête froide et saine. </s>
+	<s n="3">Je ne me sens point cette force. </s>
+	<s n="4">Il me faut de la paix, ou je ne réponds plus de ma raison... </s>
+	<s n="5">Sais-tu qui est là, dans une pièce voisine ? </s>
+	<s n="6">Sais-tu qui je viens de voir, qui est entré, pendant ton absence ?... </s>
+	<s n="7">Jacques ! </s>
+	<s n="8">Jacques m'a tutoyée et m'a demandé un baiser en riant.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="9">
+	<s n="1">Jacques !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="10">
+	<s n="1">Je suis une pauvre fille, moi, une fille qu'il a le droit d'insulter. </s>
+	<s n="2">Il ne sait pas qu'on me respecte maintenant, il ne m'a pas vue à ton bras... </s>
+	<s n="3">Et veux-tu savoir pourquoi je l'ai laissé rire et me tutoyer ainsi ?... </s>
+	<s n="4">J'avais reconnu cette chambre, je l'ai habitée huit jours avec lui.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="11">
+	<s n="1">Madeleine, calme-toi... </s>
+	<s n="2">Ne regarde pas ces murs, de ces yeux de folie !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="12">
+	<s n="1">Oh ! </s>
+	<s n="2">Je les connais, va, je les connais bien... </s>
+	<s n="3">Ma pauvre tête éclate. </s>
+	<s n="4">Il faut me pardonner, vois-tu. </s>
+	<s n="5">Je ne puis m'empêcher de dire ces choses... </s>
+	<s n="6">C'est une effroyable souffrance que de penser. </s>
+	<s n="7">Oh ! </s>
+	<s n="8">Par pitié, tue, tue ma pensée !</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="13">
+	<s n="1">Calme-toi, reviens à toi, Madeleine.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="14">
+	<s n="1">Non, je voudrais ne plus penser, car ce que je pense est horrible, et je pense tout haut... </s>
+	<s n="2">Ces images, il y a en six. </s>
+	<s n="3">Je montais sur une chaise pour les mieux voir... </s>
+	<s n="4">Celle-ci m'a fait pleurer. </s>
+	<s n="5">Jacques riait.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="15">
+	<s n="1">Tais-toi !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, allant à la fenêtre.</speaker>
+                        <p n="16">
+	<s n="1">Par la fenêtre, on voit la cour. </s>
+	<s n="2">Je me souviens bien. </s>
+	<s n="3">Il y a, dans un coin, un vieil arbre, près d'une fontaine. </s>
+	<s n="4">En face est le pigeonnier... </s>
+	<s n="5">Jacques et moi, à la tombée du jour, nous regardions les pigeons qui rentraient un à un.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="17">
+	<s n="1">Par pitié, tais-toi !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, devant le lit.</speaker>
+                        <p n="18">
+	<s n="1">C'était en été. </s>
+	<s n="2">Les nuits étaient étouffantes. </s>
+	<s n="3">Nous rejetions le soir les rideaux derrière le lit...</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="19">
+	<s n="1">Oh !... </s>
+	<s n="2">Je ne puis pourtant la tuer.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="20">
+	<s n="1">courant à la table. </s>
+	<s n="2">Là, j'ai écrit quelque chose. </s>
+	<s n="3">Oui, la veille de notre départ. </s>
+	<s n="4">J'ai trempé mon petit doigt dans l'encre et j'ai écrit : « J'aime Jacques. »</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, levant les deux poings.</speaker>
+                        <p n="21">
+	<s n="1">Misérable !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, se retournant vers lui.</speaker>
+                        <p n="22">
+	<s n="1">C'est cela, tue-moi... </s>
+	<s n="2">Tu vois bien que je suis folle et que tu dois me tuer. </s>
+	<s n="3">Qu'attends-tu encore ?</s>
+</p>
+                    </sp><!--@stage="turn"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, s'abattant sur une chaise.</speaker>
+                        <p n="23">
+	<s n="1">Ah ! </s>
+	<s n="2">Que je souffre!</s>
+</p>
+                    </sp><!--@stage="sit"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, à genoux, sanglotant.</speaker>
+                        <p n="24">
+	<s n="1">Tu souffres parce que tu m'aimes et que je ne puis plus être à toi. </s>
+	<s n="2">Je te dis des choses, n'est-ce pas ? qui te font saigner le coeur. </s>
+	<s n="3">Je ne sais pourquoi je te conte tout cela. </s>
+	<s n="4">Ne me crois pas méchante... </s>
+	<s n="5">Tu te rappelles combien j'étais douce chez ta mère. </s>
+	<s n="6">Je vous aimais bien, j'avais oublié, je me croyais une créature pareille à vous. </s>
+	<s n="7">Jamais une image du passé ne s'éveillait... </s>
+	<s n="8">Ici, tout m'a repris à la gorge, et j'étoufferais, si je ne parlais.</s>
+</p>
+                    </sp><!--@stage="kneel/cry"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, lentement. </speaker>
+                        <p n="25">
+	<s n="1">Il paraît qu'ils ont raison, les autres, ceux qui n'ont ni foi ni espoir.</s>
+</p>
+                        <stage type="stand">Il se lève.</stage>
+                        <p n="26">
+	<s n="1">Allons, c'est la destinée. </s>
+	<s n="2">Partons.</s>
+</p>
+                    </sp><!--@stage="slow"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="27">
+	<s n="1">Fuir encore... </s>
+	<s n="2">Pourquoi ? </s>
+	<s n="3">Tout n'est-il pas fini ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="28">
+	<s n="1">Tout ne peut être fini entre nous.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="29">
+	<s n="1">Sois franc. </s>
+	<s n="2">T'ai-je épargné, moi, dans ma folie ?... </s>
+	<s n="3">Il y a désormais quelqu'un qui nous sépare. </s>
+	<s n="4">Est-ce que tu oserais m'embrasser, Francis ?... </s>
+	<s n="5">Tu vois bien, tu ne réponds pas.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="30">
+	<s n="1">Nous irons devant nous, toujours devant nous, jusqu'à ce que nous nous endormions de lassitude.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="31">
+	<s n="1">Aller plus loin... </s>
+	<s n="2">Pour habiter des chambres qui me rendraient folle, pour rencontrer sur les routes des femmes en loques qui me tutoieraient !... </s>
+	<s n="3">Non, j'aime mieux m'arrêter ici. </s>
+	<s n="4">À chaque relais, j'aurais peur de trébucher contre des fantômes.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="32">
+	<s n="1">Alors, que veux-tu faire ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="33">
+	<s n="1">Mourir !</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="34">
+	<s n="1">Tu oublies ta fille, Madeleine.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="35">
+	<s n="1">Je ne l'oublie pas. </s>
+	<s n="2">Il vaudrait mieux que cette enfant ne me connût jamais.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="36">
+	<s n="1">Écoute, allons passer la nuit à Montpellier, et demain retournons dans cette maison que nous n'aurions pas dû quitter, retournons près de ma mère. </s>
+	<s n="2">Elle sait tout, elle seule peut nous pardonner et nous calmer.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="37">
+	<s n="1">Attendre, souffrir encore !... </s>
+	<s n="2">Et s'il n'y a plus de refuge, si ta mère me repousse, diras-tu comme moi que tout est bien fini ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="38">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE? remettant son manteau.</speaker>
+                        <p n="39">
+	<s n="1">Allons !... </s>
+	<s n="2">C'est le dernier espoir.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+</div>
+</div>
+<div type="acte" n="3">
+                <head>ACTE III</head>
+<stage type="decor">Même décor qu'au premier acte. Huit heures du soir.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT, assise devant la cheminée.</speaker>
+                        <p n="1">
+	<s n="1">Que les soirées d'hiver sont longues, à mon âge, quand on est seule ! </s>
+	<s n="2">Huit heures à peine... </s>
+	<s n="3">Cette femme m'a volé mon fils. </s>
+	<s n="4">Et je suis seule...</s>
+</p>
+                        <stage type="etrance/sit/work">Véronique entre lentement. Elle va s'asseoir devant la table où est la bible et se met à tricoter.</stage>
+                    </sp><!--@stage="sit"--><!--@who="MADAME HUBERT"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Madame Hubert, Véronique.</head>
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="1">
+	<s n="1">La petite ne voulait pas s'endormir.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="2">
+	<s n="1">Elle dort ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="3">
+	<s n="1">Oui. </s>
+	<s n="2">J'ai dû la bercer longtemps.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="4">
+	<s n="1">Monsieur_Jacques_Gauthier est-il rentré ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="5">
+	<s n="1">Pas encore... </s>
+	<s n="2">Il reviendra certainement ce soir.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="6">
+	<s n="1">Je veux lui parler.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="7">
+	<s n="1">J'ai dit à Jean de le faire monter, dès qu'il sera de retour.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="8">
+	<s n="1">Il ne peut rester ici une heure de plus... </s>
+	<s n="2">Je ne sais comment lui dire cela.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="9">
+	<s n="1">La honte n'est pas pour vous, elle est pour ceux qui ont commis la faute.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="10">
+	<s n="1">Ah ! </s>
+	<s n="2">Véronique, vous avez la main rude, vous ne fléchissez jamais.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="11">
+	<s n="1">Voulez-vous que ce soit moi qui lui parle ?</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="12">
+	<s n="1">Non, je trouverai les paroles nécessaires... </s>
+	<s n="2">Je suis bien lasse, ma pauvre Véronique, bien triste.</s>
+</p>
+                        <stage type="cry">Elle pleure.</stage>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="13">
+	<s n="1">Vous êtes faible...</s>
+</p>
+                        <stage type="drop">Posant la main sur la bible.</stage>
+                        <p n="14">
+	<s n="1">Voulez-vous que nous consultions Dieu pour qu'il vous enseigne votre devoir ?</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="15">
+	<s n="1">Croyez-vous donc qu'il ne faut pas pardonner ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="16">
+	<s n="1">Pardonner, c'est encourager le mal.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="17">
+	<s n="1">Pardonner, Véronique, c'est tuer le mal.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="18">
+	<s n="1">Vous êtes faible, vous dis-je. </s>
+	<s n="2">Il faudra chasser cette femme, si elle ose jamais remettre les pieds dans cette maison. </s>
+	<s n="3">Elle n'a pas droit au bonheur. </s>
+	<s n="4">Que penseraient les méchants, s'ils apprenaient qu'une pécheresse a été récompensée ici du bien qu'elle n'a pas fait ?</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="19">
+	<s n="1">Cette pécheresse est aimée de mon fils, et cela désormais la rend nécessaire à notre paix à tous... </s>
+	<s n="2">Vous vivez en dehors du monde, Véronique.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="20">
+	<s n="1">Je ne sais pas, moi... </s>
+	<s n="2">Les coupables doivent toujours être condamnés.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="21">
+	<s n="1">Lisez-moi, si vous voulez, cette douce histoire de Jésus pardonnant à la femme de mauvaise vie.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="22">
+	<s n="1">Oui, Jésus pardonna. </s>
+	<s n="2">Mais la femme s'était repentie... </s>
+	<s n="3">Je n'ai pas lu un seul mot de remords dans là lettre de Francis. </s>
+	<s n="4">Ils se sont enfuis devant le châtiment, et vous voilà seule à pleurer... </s>
+	<s n="5">Comprenez-vous que vous êtes punie, vous aussi, punie de votre aveuglement ?</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="23">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon pauvre coeur éclate de chagrin et de doute.</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE, se levant.</speaker>
+                        <p n="24">
+	<s n="1">Si vous pardonnez, c'est Dieu qui punira.</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="25">
+	<s n="1">Taisez-vous... </s>
+	<s n="2">Voici, je crois, Jacques qui revient. </s>
+	<s n="3">J'entends du bruit dans la cour. </s>
+	<s n="4">Voyez donc.</s>
+</p>
+                        <stage type="away/location">Véronique va à la fenêtre.</stage>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="26">
+	<s n="1">Ce sont eux !</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="27">
+	<s n="1">Qui, eux ?</s>
+</p>
+                    </sp><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="28">
+	<s n="1">Francis et Madeleine.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT, se levant.</speaker>
+                        <p n="29">
+	<s n="1">Oh ! </s>
+	<s n="2">Déjà !</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="MADAME HUBERT"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="30">
+	<s n="1">Francis est entré dans l'écurie, Madeleine monte.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madame-hubert">
+                        <speaker>MADAME HUBERT.</speaker>
+                        <p n="31">
+	<s n="1">Non, non, je ne puis la voir en ce moment, je ne puis encore l'embrasser... </s>
+	<s n="2">Dans un instant, tout à l'heure.</s>
+</p>
+                        <stage type="entrance/dress/watch">Elle sort, Madeleine entre, ôte son chapeau et son manteau. Véronique la regarde faire en silence.</stage>
+                    </sp><!--@who="MADAME HUBERT"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Madeleine, Véronique.</head>
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="1">
+	<s n="1">Pourquoi me regardez-vous de la sorte ?... </s>
+	<s n="2">Vous savez tout, n'est-ce pas ? </s>
+	<s n="3">Vous êtes de la famille... </s>
+	<s n="4">Je suis donc bien étrange à voir ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="2">
+	<s n="1">Je regarde si vous baissez les yeux.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="3">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est vrai, vous allez m'insulter, vous. </s>
+	<s n="3">Cela doit être, car vous êtes une honnête femme... </s>
+	<s n="4">À quoi me condamnez-vous ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="4">
+	<s n="1">Vous n'avez pas droit à la colère. </s>
+	<s n="2">Humiliez-vous, n'irritez pas le Ciel davantage.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="5">
+	<s n="1">J'ai assez de souffrance... </s>
+	<s n="2">Si j'avais songé que je vous retrouverais dans cette maison, je n'y serais pas revenue, car je savais que vous deviez m'être impitoyable.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="6">
+	<s n="1">Écoutez... </s>
+	<s n="2">J'avais dix ans, lorsque je perdis mon père et ma mère...</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="7">
+	<s n="1">C'est cela, contez-moi votre vie, je vous conterai la mienne... </s>
+	<s n="2">À dix ans, j'étais heureuse. </s>
+	<s n="3">J'avais des jouets plein une chambre. </s>
+	<s n="4">Ma mère ne m'envoyait pas à l'école, pour ne point me faire pleurer.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE, posant la main sur la bible.</speaker>
+                        <p n="8">
+	<s n="1">Dieu déjà m'enseignait la vie... </s>
+	<s n="2">Je me fis servante, je vécus humble et tranquille.</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="9">
+	<s n="1">J'avais de petites mains blanches qui faisaient mon orgueil... </s>
+	<s n="2">Plus tard, à seize ans, j'aimais le soleil. </s>
+	<s n="3">Un matin, je sortis et je ne rentrai pas... </s>
+	<s n="4">Il faisait beau dehors.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="10">
+	<s n="1">Mon aïeul est mort pour la foi, et c'est le sang de ce martyr qui m'a protégée... Vous voyez bien que j'ai le droit de vous parler d'humilité.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="11">
+	<s n="1">Puisque vous n'avez pas vécu, comment osez-vous juger la vie ?... </s>
+	<s n="2">Pouvez-vous me consoler ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="12">
+	<s n="1">Non, il faut que vos larmes coulent, il faut que vous baisiez la main qui vous châtie.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="13">
+	<s n="1">Pouvez-vous faire que mon coeur se calme, que je rende à Francis la paix et la foi?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="14">
+	<s n="1">Non, plus vous vous déchirerez, plus vous souffrirez, et plus vous monterez vers le pardon.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="15">
+	<s n="1">Pouvez-vous défaire ce qui a été fait, me promettre que je souffrirai seule ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="16">
+	<s n="1">Non, si les autres souffrent, c'est qu'ils sont coupables. </s>
+	<s n="2">Dieu ne frappe pas en aveugle.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, avec force.</speaker>
+                        <p n="17">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Alors, si vous ne pouvez rien, que faites-vous là, pourquoi me torturez-vous ?... </s>
+	<s n="3">Vous êtes une honnête femme, c'est bon, laissez-moi !... </s>
+	<s n="4">Et tenez ! </s>
+	<s n="5">Votre Dieu n'est pas plus puissant que vous. </s>
+	<s n="6">Lui non plus ne peut rien.</s>
+</p>
+                    </sp><!--@stage="strong"--><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="18">
+	<s n="1">Malheureuse, vous blasphémez, vous ne méritez aucune pitié.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="19">
+	<s n="1">Laissez-moi... </s>
+	<s n="2">Où est Madame_Hubert.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE, rudement.</speaker>
+                        <p n="20">
+	<s n="1">Elle est partie.</s>
+</p>
+                    </sp><!--@stage="stress"--><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="21">
+	<s n="1">Pourquoi partie ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="22">
+	<s n="1">Pour ne pas vous voir.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="23">
+	<s n="1">Ah !... </s>
+	<s n="2">Et ma fille ? </s>
+	<s n="3">Donnez-moi ma fille que je m'en aille.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE.</speaker>
+                        <p n="24">
+	<s n="1">Madame_Hubert a emmené votre fille.</s>
+</p>
+                    </sp><!--@who="VÉRONIQUE"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="25">
+	<s n="1">C'est bien, je comprends... </s>
+	<s n="2">J'ai rencontré sur le grand chemin mon passé de vice qui m'a rendue folle, et je trouve ici la vertu qui m'achève... </s>
+	<s n="3">Mais vous n'aviez pas besoin de m'insulter. </s>
+	<s n="4">Vous n'aviez qu'à me dire tout de suite que je n'ai plus de mère et que je n'ai plus de fille... </s>
+	<s n="5">Allez-vous en.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Madeleine, Francis.</head>
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="1">
+	<s n="1">Viens ici, Francis... </s>
+	<s n="2">N'est-ce pas ? </s>
+	<s n="3">Je suis calme et j'ai toute ma raison... </s>
+	<s n="4">Je veux causer avec toi.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="2">
+	<s n="1">Voyons ma mère avant tout.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="3">
+	<s n="1">Ta mère est partie. </s>
+	<s n="2">Elle a fui devant moi.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="4">
+	<s n="1">Et notre fille ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="5">
+	<s n="1">Ta mère a emmené notre fille... </s>
+	<s n="2">La maison est vide.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, accablé.</speaker>
+                        <p n="6">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est la fin de tout !</s>
+</p>
+                    </sp><!--@stage="stress"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="7">
+	<s n="1">L'espérance est morte, n'est-ce pas ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="8">
+	<s n="1">Oui.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="9">
+	<s n="1">Tu ne me diras plus de tenter l'oubli ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="10">
+	<s n="1">Non.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE</speaker>
+                        <p n="11">
+	<s n="1">Tu vois où nous en sommes, liés l'un à l'autre, traqués, enfermés, nous blessant, nous faisant saigner le coeur... </s>
+	<s n="2">Est-ce que je puis t'appartenir maintenant ? </s>
+	<s n="3">Est-ce que tu peux m'aimer encore ? </s>
+	<s n="4">Nous aurions beau nous aveugler : par instants, nous verrions clair, et nos bras se glaceraient, nous aurions peut-être de la haine... </s>
+	<s n="5">À moins que tu ne consentes à vivre séparés, toi ici et moi là, comme ces ménages qui s'acceptent uniquement devant le monde, pour sauver les apparences.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="12">
+	<s n="1">Non, je t'aime. </s>
+	<s n="2">Je te veux, toi ou rien.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="13">
+	<s n="1">Alors, tout est bien fini, tu en es convaincu, n'est-ce pas ? </s>
+	<s n="2">Car j'entends ne rien faire contre la raison... </s>
+	<s n="3">Rappelle-toi, je voulais mourir là-bas, dans l'auberge. </s>
+	<s n="4">Tu m'as dit d'attendre, tu désirais que ta mère décidât de mon sort. </s>
+	<s n="5">Et elle a décidé, elle est partie... </s>
+	<s n="6">La maison est vide, je veux mourir.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="14">
+	<s n="1">Je mourrai avec toi.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="15">
+	<s n="1">Que dis-tu là ?... </s>
+	<s n="2">Tu ne dois pas mourir, toi, Francis. </s>
+	<s n="3">Ce serait une mort inutile.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="16">
+	<s n="1">Tu n'as pas compté que je resterais seul à souffrir ?</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="17">
+	<s n="1">Qui te parle de souffrance ! </s>
+	<s n="2">Est-ce que tu aurais peur de souffrir ? </s>
+	<s n="3">S'il ne s'agissait que de souffrir, je resterais, je lutterais... </s>
+	<s n="4">Je meurs parce que je suis de trop.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="18">
+	<s n="1">Tu ne mourras pas seule.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="19">
+	<s n="1">Épargne-moi, ne me rends pas plus coupable... </s>
+	<s n="2">Nous ne sommes plus dans les choses ordinaires de la vie. </s>
+	<s n="3">Nous sommes loin, vois-tu, bien loin du monde.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="20">
+	<s n="1">Que me fait le monde ? </s>
+	<s n="2">C'est mon coeur qui me dit de te suivre.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="21">
+	<s n="1">Impose silence à ton coeur... </s>
+	<s n="2">Il faut que je meure, il faut que tu vives.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="22">
+	<s n="1">Madeleine...</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="23">
+	<s n="1">Ah ! </s>
+	<s n="2">Francis, reste pour que je m'en aille avec la pensée que quelqu'un me pleurera... </s>
+	<s n="3">Et il y a encore ta mère, il y a notre fille. </s>
+	<s n="4">Tu leur parleras de moi, elles me pardonneront, et vous serez ainsi trois à m'aimer... </s>
+	<s n="5">Veux-tu ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="25">
+	<s n="1">Non, non, cherchons encore.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="26">
+	<s n="1">Pourquoi tes lèvres disent-elles cela ? </s>
+	<s n="2">Je lis dans ton regard que tu me donnes raison.</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="27">
+	<s n="1">Mais tu ne peux mourir ainsi, je t'aime, je ne laisserai pas accomplir ce meurtre devant moi.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="28">
+	<s n="1">Il faut que cela soit... </s>
+	<s n="2">Laisse-moi faire.</s>
+</p>
+                        <stage type="get/location">Elle va prendre le flacon dans la petite pharmacie qui est sur le buffet.</stage>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, courant à elle.</speaker>
+                        <p n="29">
+	<s n="1">Je ne veux pas, je ne veux pas.</s>
+</p>
+                    </sp><!--@stage="run/closer"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, tenant le flacon.</speaker>
+                        <p n="30">
+	<s n="1">Ce flacon contient de la strychnine... </s>
+	<s n="2">Tu me l'as appris l'autre soir.</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, lui prenant les mains.</speaker>
+                        <p n="31">
+	<s n="1">Je te briserai plutôt les poignets... </s>
+	<s n="2">S'il faut que je vive, je veux que tu vives.</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE, le regardant en face.</speaker>
+                        <p n="32">
+	<s n="1">Tu sais bien que c'est impossible.</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="33">
+	<s n="1">Rends-moi le flacon.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="34">
+	<s n="1">Tu fais l'enfant... </s>
+	<s n="2">Lâche-moi !</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS, la tenant toujours.</speaker>
+                        <p n="35">
+	<s n="1">Non, je t'aime.</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="36">
+	<s n="1">Tu ne te rappelles pas la chambre d'auberge, les gravures qui m'ont fait pleurer, les rideaux rouges que j'écartais pendant les nuits étouffantes ?</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="37">
+	<s n="1">Non, je t'aime.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="38">
+	<s n="1">Tu ne te souviens pas de la table et de l'aveu qui s'y trouve ?... </s>
+	<s n="2">« J'aime Jacques ! »</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="39">
+	<s n="1">Ah ! </s>
+	<s n="2">Misère ! </s>
+	<s n="3">Il la repousse, tombe dans un fauteuil et sanglote, pendant qu'elle vide le petit flacon d'un trait.</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="40">
+	<s n="1">Maintenant, Francis, je puis t'embrasser... Je vais mourir.</s>
+</p>
+                        <stage type="closer/hugh/sit">Elle se penche vers lui, il la prend dans ses bras et l'assoit sur le fauteuil.</stage>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="41">
+	<s n="1">Oh ! </s>
+	<s n="2">Malheureux ! </s>
+	<s n="3">Qu'avons-nous fait, que viens-tu de faire ? </s>
+	<s n="4">Et ce poison qu'on ne peut combattre... </s>
+	<s n="5">Mais c'est abominable, je suis un assassin, moi, d'avoir permis ce meurtre !</s>
+</p>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="42">
+	<s n="1">Non, c'est une expiation... </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Je souffre, ma poitrine brûle !... </s>
+	<s n="4">Écoute, lorsque je serai morte, tu me couvriras la face. </s>
+	<s n="5">Si Jacques vient, il ne pourra me reconnaître... </s>
+	<s n="6">Oh ! </s>
+	<s n="7">Je souffre, je souffre !</s>
+</p>
+                    </sp><!--@who="MADELEINE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Madeleine, Francis, Madame Hubert, Jacques, puis Véronique.</head>
+<sp who="#jacques">
+                        <speaker>JACQUES, entrant, la main tendue.</speaker>
+                        <p n="1">
+	<s n="1">J'arrive. </s>
+	<s n="2">Qu'y a-t-il donc ?</s>
+</p>
+                    </sp><!--@stage="entrance/touch"--><!--@who="JACQUES"-->
+<sp who="#francis">
+                        <speaker>FRANCIS.</speaker>
+                        <p n="2">
+	<s n="1">Sortez, sortez, par pitié !</s>
+</p>
+                        <stage type="away">Il recule à mesure que Jacques approche et découvre ainsi Madeleine.</stage>
+                    </sp><!--@who="FRANCIS"-->
+<sp who="#jacques">
+                        <speaker>JACQUES, la reconnaissant.</speaker>
+                        <p n="3">
+	<s n="1">Madeleine.</s>
+</p>
+                    </sp><!--@stage="recognize"--><!--@who="JACQUES"-->
+<sp who="#madeleine">
+                        <speaker>MADELEINE.</speaker>
+                        <p n="4">
+	<s n="1">Cache-moi, cache-moi. Ah !...</s>
+</p>
+                        <stage type="die">Elle meurt.</stage>
+                    </sp><!--@who="MADELEINE"-->
+<sp who="#veronique">
+                        <speaker>VÉRONIQUE, sur le seuil de la porte au fond.</speaker>
+                        <p n="5">
+	<s n="1">Dieu le Père n'a pas pardonné.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="VÉRONIQUE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

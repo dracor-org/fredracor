@@ -1,0 +1,463 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Dialogue de l'Amour et de l'Amitié</title>
+                <author>
+      <persName>
+        <forename>Charles</forename>
+        <surname>Perrault</surname>
+      </persName>
+      <idno type="isni">0000 0001 2127 2484</idno>
+    </author><!--Charles PERRAULT (1628-1703)-->
+                <editor>Paul FIEVRE juin 2021</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001554</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/PERRAULT_DIALOGUEAMOURAMITIE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/PERRAULT_DIALOGUEAMOURAMITIE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1665"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k108211q</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="l-amour" sex="MALE">
+                        <persName>L'Amour</persName>
+                    </person>
+                    <person xml:id="l-amitie" sex="FEMALE">
+                        <persName>L'Amitié</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Dialogue</term>
+                    <term>mixte</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">DIALOGUE DE L'AMOUR ET DE L'AMITIÉ</titlePart>
+		</docTitle> 
+		<docDate when="1665">M. DC.LXV. Avec Privilège du Roi.</docDate>
+		<docAuthor>Adolphe CARCASSONNE.</docAuthor>
+		<div type="docImprint">
+			<div type="privilege">
+                    <head>Extrait du privilège du Roi</head>
+				<p>Par grâce et privilège du Roi, donné au mois de Mars, l'en de grâce 1660. Signé par le roi en son conseil, SYMON. Il est permis à  Pierre Bienfait marchand libraire àParis, d'imprimer, faire imprimer, vendre et débiter un livre intitulé Dialogue de l'Amour et de l'Amitié, et défenses sont faites à toutes personnes, de quelque qualité et de conditions qu'ils soient de l'imprimer, faire imprimer, vendre et débiter, pendant le temps et espace de cinq ans, à peine de trois mille livres d'amende, et de tous dépens, dommages et intérêts, ainsi qu'il est plus au long porté par lesdites lettres et de privilège.</p>
+				<p>Registré sur le livre de la Communauté, suivant l'arrêt de la Cour du 8 avril 1653.</p>
+				<p>Signé, G.JOSSE, syndic.</p>
+				<p>Et le dit Bienfait a fait part du Privilège ci-dessus à Charles de Sercy, et Étienne Loyson ; aussi Marchands Libraires, pour en jouir suivant l'accors l'accord fait entre eux.</p>
+				<p>Les Exemplaires ont été fournis.</p>
+			</div><!--@id=""-->
+			<!--TODO: handling of editor name at this place unclear <editor id="BIENFAIT">À PARIS, Chez PIERRE BIENFAIT, au Palais, dans la Grand'Salle, du côté de la Cour des Aides,à l'Image Saint-Pierre.</editor>-->
+		</div>
+	<div type="dedicace">
+                <opener>
+                    <salute>LETTRE À MONSIEUR H. A. D'A.</salute>
+                </opener>
+		<head>Sur le dialogue de l'Amour et de l'Amitié.</head>
+		<p>Puisque ce n'est pas assez que je vous aie lu mon dialogue, et que vous désire encore en avoir une copie, je ne veux pas vous la refuser. J'avoue, MONSIEUR, que j'ai eu bien de la peine à m'y résoudre, et qu'étant persuadé comme je le suis, que vous êtes l'Homme du monde qui a le goût le plus fin et le plus délicat en toutes choses, et principalement pour ces sortes d'ouvrages, j'ai bien appréhendé que la réflexion plus exacte que vous pourrez faire sur celui-ci en le lisant, ne vous fit diminuer beaucoup de l'approbation que vous lui avez donnée. La valeur de votre estime, et l'apparence qu'il y a que j'en vais perdre une bonne partie, rendant assurément ma crainte très raisonnable ; néanmoins quelque chose qui en arrive, je serai satisfait. On trouve toujours son compte avec vous ; et si je n'obtiens pas des louanges, je recevrai des avis que j'aime davantage, parce qu'il me sont plus utiles, et parce qu'ils me seront aussi des marques plus assurées de votre amitié de votre amitié. Mais, MONSIEUR, avant que vous lisiez cette petite galanterie, il faut que je vous dise deux ou trois questions que l'on me fit en une conversation où je me trouvais il y a quelques jours, et que vous sachiez aussi ce que je répondis. On me demanda d'abord pourquoi l'Amour et l'Amitié s'appellent frère et soeur. Je ne pensais pas, à vous dire le vrai, que l'on dut s'arrêter à cela, et qu'on s'avisât jamais de leur disputer cette qualité ; car si tous les jours mille personnes que le sang ni l'alliance n'ont point unis, se donnent l'un à l'autre ces noms tendres et doux, parce qu'ils s'aiment, ou seulement parce qu'ils veulent se la persuader, doit-on trouver étrange que l'Amour même, et l'Amitiés en personne, en usent de la sorte, et qu'ils appellent frère et soeur, quand même ils se seraient pas ? Mais il le sont en effet, et l'on ne peut pas en disconvenir, pour peut qu'on examine leur généalogie. Il est constant que l'Amour et fils du Désir, et le la Beauté ; Platon qui le connaissait particulièrement nous en assure, il l'appelle même le Désir de la la Beauté et lui donne ce nom composé de celui de ses père et mère, pour nous marquer son origine. Il est aussi très certain que l'Amitié est fille du Désir s'attachant à la Bonté, parce que si le désir, s'attachent à la Beauté, a donné l'être à la Beauté, a donné l'être àl'Amour,on ne peut pas douter que le même désir et la Beauté ne s'étant pas unis ensemble, n'aient donné naissance à l'Amitié. En effet nous voyons encore aujourd'hui, que si nous aimons une maîtresse parce qu'elle est belle, nous aimons un ami parce qu'il es bon. Cela ne pouvant pas être contesté, il paraît que l'Amour et l'Amitié sont frère frère et soeur du côté de leur père, bien qu'à la vérité ils aient des mères différentes. Ensuite de cette question on ne fit une autre qui me sembla fort jolie, et qui ne venait aussi d'une femme d'esprit que vous connaissez ; elle demanda qui était l'ainé des deux, de l'Amour et de l'Amitié. Quoi qu'il soit malaisé de dire précisément ce qui en est, à cause de longtemps, qu'il y a qu'ils sont au monde, je ne doutai pas néanmoins d'assurer que l'Amour était l'aîné. Je ne me fondai point sur ce que les poètes disent qu'il a démêlé la Chaos, et qu'il est plus vieux que le Monde, bien loin d'être le cadet de l'Amitié, parce que c'est du premier et grand amour, père de toutes choses, que les poètes ont voulu parler, et non pas de celui-ci qui n'est que son fils. Je n'arrêterai point non plus sur la différence que quelques-uns ont mise être l'Amour en l'Amitié, que celle-ci est toujours réciproque, et que l'autre ne l'est jamais, et qu'ainsi l'Amour précède l'Amitié, puisqu'en effet il faut que l'affection naisse premièrement de l'un des deux côtés avant que d'être mutuelle. Je ne m'arrêtai pas, dis-je, à cette différence, parce que je la trouve absolument fausse. L'on sait que l'Amour et l'Amitié sont quelquefois réciproques, et que quelquefois il ne le sont pas. Je ne ma réglai que sur la généalogie que j'ai déjà avancée, et sur l'histoire de leur naissance, que je leur contai le plus naïvement qu'il me fut possible. Je leur dis donc que la Beauté et la Bonté étaient deux soeurs si accomplies et i charmantes, qu'on ne pouvait pas les voir ni les connaître sans les aimer ; quelques uns les trouvèrent si semblables ; qu'ils les prirent souvent l'une pour l'autre, et leur donnèrent aussi le même nom. Mai ceux qui les observèrent plus soigneusement, remarquèrent  une très grande différence entre elles. La Beauté avait beaucoup d'éclat et d'apparence qui donnait dans la vue d'abord ; et sans mentir ou pouvait dire que pour la conquête d'un coeur elle n'avait besoin que d'être regardée, aussi était-elle extrêmement impérieuse et fière ; et quoi qu'elle n'eut ni gardes ni soldats autour d'elle, il n'était point de rois sur la Terre qui se fissent obéir si promptement, et dont l'Empire fut plus absolu que la tyrannie qu'elle exerçait sur tout ce qui aurait un coeur et des yeux. Elle était fort coquette, et aimait passionnément à se produire dans le grand monde, afin de s'attirer des louanges dont elle témoignait ne se soucier pas beaucoup, mais néanmoins qui lui plaisait tellement, qu'elle obligeait et forçait même toutes sortes de gens à lui ne donner. La Bonté tout au contraire était fort modeste et fort retirée ; et quoi qu'elle fut d'une humeur assez sociale et assez communicative avec les personnes qu'elle connaissait, elle fuyait pourtant la foule autant qu'elle pouvait, et elle ne haïssait rien tant que de se faire de fête mal à propos. Il est vrai qu'elle n'avait pas ce brillant et cet abord surprenant se sa soeur ; mais quand on s'était donné le loisir de la considérer avec attention, et de la pratiquer quelque temps,on demeurait persuadé qu'elle était infiniment aimable, et que ses charmes étaient bien plus solides et plus véritables que ceux de la Beauté. Le désir jeune et bouillant qui voyageait presque toujours pour satisfaire son humeur prompte et inquiète, et qui ne trouvait point de pire maison que la sienne, se promenant un jour et cherchant quelque aventure, rencontra la Beauté assise à la porte de son logis, où elle se tenait presque toujours oisive, et seulement pour être vue, pendant que la Bonté sa soeur était dans la maison qu'elle gardait, et où elle ne se tenait pas sans rien faire. Le désir, dis-je ayant rencontré la Beauté, se sentit tout ému et tout hors de soi en la voyant : mais comme il était assez hardi de son naturel, il l'aborde quoi  qu'il ne la connut pas ; il la cajole, et lui fait cent galanterie qu'elle reçut avec beaucoup de joie. La procédé brusque et enjoué du cavalier lui plut extrêmement, elle crut voir en lui quelque chose de noble et de généreux, capable des plus hautes entreprises, et qui témoignait sans doute une illustre naissance ; elle s'imagina même que le ciel l'avait destinée pour lui, et qu'assurément il les avait faits l'un et l'autre; de sorte qu'après quelques recherches de la part du désir, leur mariage s'accomplit assez promptement. De ce mariage naquit l'amour,qui donna bien de la satisfaction à ses père et mère durant les premiers jours de son enfance ; car au lieu que les autres enfants ne font que crier et pleurer en venant au monde, celui-ci  ne faisait que chanter et danser, il ne demandait qu'à rire et à se réjouir, il discourait de toute chose agréablement, il faisait même de petits vers et des billets doux les plus spirituels qu'on eut jamais vus ; enfin son père et sa mère en étaient si contents, qu'ils rompaient la tête à tout le monde des jolies choses qu'il avait dites ou qu'il avait faites ; mais lorsqu'il fut un peu plus grand, il changea si fort,qu'il n'était pas reconnaissable. Il devint rêveur et chagrin, il ne voulait ni boire ni manger, il soupirait sans cesse, il ne dormait point; il ne faisait que se plaindre, et réveillait son père, sans avoir le plus souvent ce qu'il lui fallait ; car on ne lui avait pas plutôt donné une chose qu'il en était las, et qu'il en demandait une autre,quine le contentait pas plus que la première : enfin c'était bien le plus cruel enfant qui fut jamais, et qui donna le plus de peine à élever ; mais revenons à notre histoire. Le Désir après quelques jours de mariage, ayant jeté les yeux sur la bonté sa belle-soeur, qu'il n'avait pas encore bien considérée à cause de la grande passion qu'il avait eu d'abord pour sa femme, mais qui commençait un peu à se refroidir : l'ayant, dis-je regardée de plus près, il remarqua en elle mille agréments et mille perfections qui la touchèrent sensiblement. Surtout il fut charmé de son humeur douce, complaisante, et officieuse, qui m'aimait qu'à faire du bien, et dont il y avait lieu d'attendre bien plus de secours dans les besoins et dans les rencontres fâcheuses de la vie, que de la Beauté sa soeur, qui semblait n'être née que pour la joie, et qui en effet né se connaissait point du tout à prendre part aux afflictions : il l'a reconnut patiente et généreuse, jusqu'à obliger ceux-même qui l'avaient offensée ; tout au contraire de la Beauté, qui bien loin de souffrir des mépris, se fâchais quand on ne la cajolait pas assez galamment. Enfin il jugea que si dans la possession de la Bonté on ne goûtait pas des plaisirs si sensibles ni si touchants qu'en celle de laBeauté, on en recevait assurément de plus tranquille et de plus durables. Épris de tant de perfection, et de tant d'aimables qualités, il lui découvre les sentiments qu'il avait pour elle ; la Bonté qui était facile, et qui ne pouvait pas refuser ceux qui la priaient de bonne grâce, lui accorda volontiers ce qu'il souhaitait, et le reçut pour son mari.De leur alliance naquit l'amitié, qui fut les délices et la joie de tout le monde. Il est vrai que durant son premier âge elle ne fut pas si gentille ni si agréable que l'avait été l'Amour : mais lorsqu'elle commença d'être un peu grande, elle parut si belle et si charmante, qu'elle fut désirée et recherchée de tous ceux qui la virent.  On tâchait de la mettre de toutes les parties que l'on faisait, et une compagnie ne semblait pas complète et en état de se bien divertir, si elle manquait à s'y rencontrer ; les philosophes mêmes ne doutaient pas de dire que sa présence diminuait toutes les affliction et redoublait tous les plaisirs, et que la vie était ennuyeuse sans elle. Il est vrai qu'elle donnait sujet à toutes sortes de personnes de sa louer de sa conduite, et qu'elle était aussi sage et aussi discrète que l'Amour était fou et emporté ; aussi son père qui le reconnu dans plusieurs rencontres se plaignait souvent à elle des déplaisirs que lui donnait son frère, et lui en faisait confidence pour en recevoir du conseil et de la consolation. Voilà, MONSIEUR, comme je leur en fis l'Histoire, qui fait voir non seulement que l'Amour et l'Amitié sont frère et soeur, mais aussi que l'Amour est l'ainé. Ce qui paraît encore assez dans leur manière d'agir ensemble : car enfin il ne faut que considérer comme l'Amour gourmande sa soeur, comment il la fait passer par où il veut, et de quelle sorte il lui fait sa part, pour remarquer qu'il la traite en cadette, et qu'il use souvent de son droit d'aînesse. Tout cela fut assez bien reçu de la compagnie, et l'on n'y trouva rien à redire, sinon que le désir eut épousé deux femmes en même temps, et encore deux soeurs ; mais je ne pense pas que l'on doive chicaner là-dessus, ni que l'on veuille lui faire son procès à la Tournelle ou à l'Officialité, comme à un Bigame. Il y a trop longtemps que toute cette intrigue est découverte, sans que personne en ait jamais formé la moindre plainte, et de plus cela s'est passé dans le premier âge du Monde, où il n'était pas défendu d'épouser les deux soeurs. On sait d'ailleurs que le Désir n'est pas d'humeur à se contenter d'une femme, et qu'enfin outre la Beauté et la Bonté il a encore l'utilité, l'Honnêteté et le Belle Joie, eu qualité de femmes légitimes, sans compter les maîtresses qu'il entretient en ville, comme la Richesse, la Vaine Gloire, et la Volupté, dont il a même des enfants ; qui sont l'Avarice,   l'Ambition et le Débauche, ses Filles naturelles. On n'ignore pas non plus qu'il conserve d'autres petites inclinations qu'il aime éperdument : car c'est sa coutume de sa porter avec plus d'empressement et de chaleur aux choses qui lui sont défendues, qu'à celles qui lui sont permises. Vous pouvez maintenant MONSIEUR, lie le Dialogue de l'Amour et de l'Amitié, et voir comment ils s'entretiennent. Je sais bien que vous leur avez ouï dire cent fois les mêmes choses d'une manière bien plus galante, et que si vous vouliez nous en faire le récit, nous y remarquerions si bien leurs véritables caractères, qu'ils nous semblerait les entendre discourir eux-même ; mais chacun rapporte les choses à sa façon et du mieux qu'il lui est possible. Je leur ai ouï faire encore quantité d'autres conversations assez jolies, que je pourrai vous écrire quelque jour, si je vois que celle-ci ait eu le bonheur de vous plaire, à vous, dis-je, que je puis nommer l'arbitre des bonnes choses, et le grand maître desAllégories. En cette qualité vous pouvez faire tout ce que vous voudrez de ce Dialogue, et traiter en toute rigueur l'amour et l'amitié qui y sont, pourvu que vous me conserviez celle que vous m'avez promise. Vous penserez aussi ce qu'il vous plaira de ce que je leur fait dire, pourvu que vous croyez que l'Amitié dit vrai, quand elle vous assure que je suis passionnément,</p>
+		<p>MONSIEUR,</p>
+		<p>votre très humble et très affectionné serviteur, P.</p>
+	</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#l-amour">L'AMOUR</role><!--@sex="1"--><!--@type="A"--><!--@statut="personnification"--><!--@age="A"--><!--@stat_amour="(néant)"-->, frère de l'Amitié.</castItem>
+		<castItem>
+                    <role corresp="#l-amitie">L'AMITIÉ</role><!--@sex="2"--><!--@type="A"--><!--@statut="personnification"--><!--@age="A"--><!--@stat_amour="(néant)"-->, soeur de l'Amour.</castItem>
+  </castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="(sans lieu)" country="(sans pays)" periode="XVIIème" gps=""/>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>DIALOGUE DE L'AMOUR ET DE L'AMITIÉ</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="1">
+	<s n="1">Il faut avouer, ma chère soeur, que nous faisons bien parler de nous dans le monde.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="2">
+	<s n="1">Il est vrai, mon frère, qu'il n'est point de compagnie un peu galante, où nous ne soyons le sujet de la conversation, et où l'on n'examine qui nous sommes, notre naissance, notre pouvoir, et toutes nos actions.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="3">
+	<s n="1">Cela me déplaît assez, car il n'est pas possible de s'imaginer le mal qu'on dit de moi. </s>
+	<s n="2">Les sérieux me traitent de folâtre et d'emporté, les enjoués de chagrin et de mélancolique ; les vieillards de fainéant et de débauché qui corrompt la jeunesse ; les jeunes gens de cruel et de tyran qui leur fait souffrir mille martyres, qui les retient en prison, qui les brûle tout vifs et qui ne se repaît que de leurs soupirs et de leurs larmes. </s>
+	<s n="3">Mais ce qui me fâche le plus, c'est que je suis tellement décrié parmi les femmes qu'on n'oserait presque leur parler de moi, ou si on leur en parle, il faut bien se donner de garde de me nommer : mon nom seul leur fait peur et les fait rougir. </s>
+	<s n="4">Pour vous, ma soeur, chacun s'empresse de vous louer ; on vous nomme la douceur de la vie, l'union des belles âmes, le doux lien de la société ; et enfin, ceux qui se mêlent de pousser les beaux sentiments disent tout d'une voix, et le disent en cent façons, qu'il n'est rien de si beau, ni de si charmant que la belle Amitié.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="4">
+	<s n="1">Vous vous raillez bien agréablement ; je me connais, mon frère, et je n'ai garde de prendre pour moi les douceurs qui s'adressent à vous. </s>
+	<s n="2">Quoiqu'il soit bien aisé de me tromper et que je sois fort simple et fort naïve, je ne le suis pas néanmoins assez pour ne pas voir qu'on me joue et qu'on se sert de mon nom pour parler de vous ; mais je ne dois pas le trouver étrange, puisque vous-même vous l'empruntez tous les jours pour vous introduire dans mille coeurs, dont vous savez bien que l'on vous refuserait l'entrée si vous disiez le vôtre.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="5">
+	<s n="1">J'avoue, ma soeur, que je me sers souvent de cet artifice qui me réussit heureusement ; d'autres fois, je m'appelle Respect, et j'en imite si bien la manière d'agir, les civilités et les révérences qu'on me prend aisément pour lui. </s>
+	<s n="2">Je passe même quelquefois pour une simple galanterie, tant je sais bien me déguiser quand je veux. </s>
+	<s n="3">Et à vous dire le vrai, je n'ai point de plus grand plaisir que d'entrer dans un coeur incognito. </s>
+	<s n="4">D'ailleurs je suis si peu jaloux de mon nom que je prends volontiers le premier qu'on me donne : je trouve bon que toutes les femmes m'appellent Estime, Complaisance, Bonté ; et même si elles veulent une disposition à ne pas haïr, il ne m'importe, puisqu'enfin mon pouvoir n'en diminue pas, et que sous ces différents noms, je suis toujours le même ; ce sont de petites façons qu'elles s'imaginent que leur gloire les oblige de faire.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="6">
+	<s n="1">Peut-être, mon frère, vous donnent-elles tous ces noms faute de vous connaître.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="7">
+	<s n="1">Je vous assure, ma soeur, qu'elles savent bien ce qu'elles disent : je n'entre guère dans un coeur qu'il ne s'en aperçoive ; la joie qui me précède, l'émotion qui m'accompagne et le petit chagrin qui me suit font assez connaître qui je suis. </s>
+	<s n="2">Mais quoi, elles mourraient plutôt mille fois que de me nommer par mon nom. </s>
+	<s n="3">J'ai beau les faire soupirer pour leurs amants, les faire pleurer pour leur absence ou pour leur infidélité, les rendre pâles et défaites, les faire même tomber malades, elles ne veulent point avouer que je sois maître de leur coeur, cette opiniâtreté est cause que je prends plaisir à les maltraiter davantage, étant d'ailleurs bien assuré qu'elles ne m'accuseront pas des maux que je leur fais souffrir : je sais qu'elles s'en prendront bien plutôt à la migraine, ou à la rate, qui en sont tout à fait innocentes, et que si on les presse de déclarer ce qui leur fait mal, elles ne diront jamais que c'est moi. </s>
+	<s n="4">Il n'en est pas ainsi des hommes : ils crient aussitôt que je les approche, et bien souvent même avant que je les touche, et pour peu que je les maltraite, ils s'en plaignent à toute la terre, et même aux arbres et aux rochers ; ils me disent des injures étranges, et font de moi des peintures si épouvantables qu'elles seraient capables de me faire haïr de tout le monde, si tout le monde ne me connaissait.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="8">
+	<s n="1">Si quelques hommes ont fait de vous des peintures capables de vous faire haïr, il faut avouer qu'une infinité d'autres en ont fait de bien propres à vous faire aimer : ils vous ont dépeint en cent façons les plus agréables du monde ; et vous savez que tous les amants ne tâchent qu'à vous représenter le plus naïvement qu'ils peuvent, et avec tous vos charmes, pour vous faire agréer de leurs maîtresses. </s>
+	<s n="2">Mais puisque nous en sommes sur les personnes qui se mêlent de vous dépeindre, ne vous êtes-vous point avisé de faire vous-même votre portrait, à présent que chacun fait le sien ? </s>
+	<s n="3">Vous devriez vous en donner la peine, quand ce ne serait que pour désabuser mille gens qui ne vous connaissent que sur de faux rapports, et qui se forment de vous une idée monstrueuse et tout à fait extravagante.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="9">
+	<s n="1">Un portrait comme vous l'entendez, quand même il serait de ma main, servirait peu à me faire connaître ; il n'est pas que vous n'ayez vu celui qui fut fait autrefois en Grèce par un excellent maître, et qui depuis a couru par toute la terre, sous le nom de l'Amour fugitif ; vous avez pu voir encore une copie du même portrait de la main du Tasse. </s>
+	<s n="2">Ce sont deux pièces admirables, et telles que plusieurs ont voulu que j'en fusse l'auteur. </s>
+	<s n="3">Cependant, quoique tous mes traits y soient fort bien représentés, il est vrai néanmoins qu'il y manque, comme dans tous les autres portraits qu'on fait de moi, un certain je ne sais quoi de tendre, de doux et de touchant qui me distingue de quelques passions qui me ressemblent, et qui est en effet mon véritable caractère : les coeurs que je touche moi-même le ressentent fort bien, mais ni les couleurs ni les paroles ne pourront jamais l'exprimer. </s>
+	<s n="4">Il faut pourtant que je vous en montre un en petit qui est assez joli, et qui sans doute ne vous déplaira pas ; il m'est tombé par hasard entre les mains et je l'aime pour sa petitesse ; le voici.</s>
+</p>
+                        <l n="1">L'Amour est un enfant aussi vieux que le monde,</l>
+                        <l n="2">Il est le plus petit et le plus grand des dieux,</l>
+                        <l n="3">De ses feux il remplit le ciel, la terre et l'onde,</l>
+                        <l n="4">Et toutefois Iris le loge dans ses yeux.</l>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="10">
+	<s n="1">Ce portrait me plaît extrêmement, et je trouve qu'on peut ajouter comme une chose qui n'est pas moins étonnante que les autres l'adresse avec laquelle il vous renferme dans quatre vers, vous qui remplissez tant de volumes. </s>
+	<s n="2">Cependant, mon frère, vous êtes bien heureux de trouver ainsi des peintres qui fassent votre portrait. </s>
+	<s n="3">Pour moi je ne connais personne qui voulût se donner la peine de travailler au mien ; de sorte que pour avoir la satisfaction d'en voir un, il a fallu que je l'aie fait moi-même ; vous verrez si j'ai bien réussi et si je ne me suis point flattée, moi qui fais profession de ne flatter personne.</s>
+</p><!--<poem>-->
+                        <ab type="strophes">
+<lg n="1">
+	<l n="5">J'ai le visage long, et la mine naïve,</l>
+	<l n="6">Je suis sans finesse et sans art ;</l>
+	<l n="7">Mon teint est fort uni, sa couleur assez vive</l>
+	<l n="8">Et je ne mets jamais de fard.</l>
+</lg>
+<lg n="2">
+	<l n="9">Mon abord est civil, j'ai la bouche riante</l>
+	<l n="10">Et mes yeux ont mille douceurs,</l>
+	<l n="11">Mais quoique je sois belle, agréable et charmante,</l>
+	<l n="12">Je règne sur bien peu de coeurs.</l>
+</lg>
+<lg n="3">
+	<l n="13">On me cajole assez, et presque tous les hommes</l>
+	<l n="14">Se vantent de suivre mes lois ;</l>
+	<l n="15">Mais que j'en connais peu dans le siècle où nous sommes,</l>
+	<l n="16">Dont le coeur réponde à la voix !</l>
+</lg>
+<lg n="4">
+	<l n="17">Ceux que je fais aimer d'une flamme fidèle</l>
+	<l n="18">Me font l'objet de tous leurs soins ;</l>
+	<l n="19">Et quoique je vieillisse ils me trouvent fort belle</l>
+	<l n="20">Et ne m'en estiment pas moins.</l>
+</lg>
+<lg n="5">
+	<l n="21">On m'accuse souvent d'aimer trop à paraître</l>
+	<l n="22">Où l'on voit la prospérité,</l>
+	<l n="23">Cependant il est vrai qu'on ne peut me connaître</l>
+	<l n="24">Qu'au milieu de l'adversité.</l>
+</lg>
+</ab><!--</poem>-->
+                        <p n="11">
+	<s n="1">J'ai vu le temps que je n'aurais pas eu le loisir de faire ce portrait, lorsque j'étais de toutes les sociétés et que je me trouvais dans toutes les grandes assemblées ; mais à présent que je me vois bannie du commerce de la plupart du monde, j'ai tâché de me divertir quelques moments dans cette innocente occupation.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="12">
+	<s n="1">Je trouve, ma soeur, que vous y avez fort bien réussi, si ce n'est à la vérité que vous êtes un peu trop modeste, et que vous ne dites pas la moitié des bonnes qualités qui sont en vous, puisqu'enfin vous ne parlez point de cette générosité désintéressée qui vous est si naturelle et qui vous porte avec tant de chaleur à servir vos amis.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="13">
+	<s n="1">Vous voyez cependant l'état que l'on fait de moi dans le monde : il semble que je ne sois plus bonne à rien, et parce que je n'ai point cette complaisance étudiée et cet art de flatter qu'il faut avoir pour plaire, on trouve que je dis les choses avec une naïveté ridicule et qu'en un mot je ne suis plus de ce temps-ci. </s>
+	<s n="2">Vous savez, mon frère, que je n'ai pas été toujours si méprisée, et vous m'avez vu régner autrefois sur la terre avec un empire aussi grand et aussi absolu que le vôtre. </s>
+	<s n="3">Il n'était rien alors que l'on ne fît pour moi, rien que l'on ne crût m'être dû, et rien que l'on osât me refuser : l'on faisait gloire de me donner toutes choses, et même de mourir pour moi si l'on croyait que je le voulusse ; et je puis dire que je me voyais alors maîtresse de beaucoup plus de coeurs que je n'en possède à présent, bien que les hommes de ce temps-là n'eussent la plupart qu'un même coeur à deux, et qu'aujourd'hui il ne s'en trouve presque point qui ne l'ait double. </s>
+	<s n="4">Je ne sais pas pourquoi l'on m'a quittée ainsi, moi qui fais du bien à tout le monde et dont jamais personne n'a reçu de déplaisir, et que cependant chacun continue à vous suivre aveuglément, vous qui traitez si mal ceux qui vivent sous votre empire, et qui les outragez de telle sorte qu'on n'entend en tous lieux que des gens qui soupirent et qui se plaignent de votre tyrannie.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="14">
+	<s n="1">Il est vrai que la plupart de mes sujets murmurent incessamment, ils crient même tout haut qu'ils n'en peuvent plus et que je les réduis à la dernière extrémité, et bien souvent ils me menacent de secouer le joug, mais tout leur bruit ne m'émeut guère ; je sais qu'ils font toujours le mal plus grand qu'il n'est, et qu'il s'en faut beaucoup qu'ils soient aussi malheureux qu'ils veulent qu'on les croie.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="15">
+	<s n="1">Je suis persuadée qu'ils le sont encore plus qu'ils ne le disent, et je ne connais rien dont les hommes reçoivent plus de mal que de vous. </s>
+	<s n="2">La guerre, la famine et les maladies affligent en de certains temps quelque coin de la terre, et quelques personnes seulement, pendant que le reste du monde jouit de la paix de l'abondance et de la santé ; mais il n'y a point dé temps, de lieux ni de personnes qui soient exempts de votre persécution. </s>
+	<s n="3">On aime durant l'hiver comme durant l'été, aux Indes comme en France, et les rois soupirent comme les bergers ; les enfants même que leur âge en avait jusqu'ici préservés y sont sujets comme les autres, et par un prodige étonnant vous faites qu'ils aiment avant que de connaître, et qu'ils perdent la raison avant que de l'avoir. </s>
+	<s n="4">Vous n'ignorez pas les maux que vous causez, puisqu'on ne voit partout que des amants qui se désespèrent, des jaloux qui se servent de poison, et des rivaux qui s'entretuent.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="16">
+	<s n="1">J'avoue que je suis bien méchant quand je suis irrité, et il est vrai qu'en de certaines rencontres je deviens si terrible que bien des gens se sont imaginé que je me changeais en fureur. </s>
+	<s n="2">Mais s'il m'arrive quelquefois de faire beaucoup de mal, je puis dire qu'en récompense je fais beaucoup de bien. </s>
+	<s n="3">La Fortune qui se vante partout que c'est à elle seule qu'il appartient de rendre heureux ceux qu'il lui plaît n'y entend rien au prix de moi ; quelques biens et quelques honneurs qu'elle donne à un homme, il n'est jamais content de sa condition ; et on lui voit toujours envier celle des autres, ce qui n'arrive point aux vrais amants. </s>
+	<s n="4">Pour peu que je leur sois favorable, ils ne croient pas qu'il y ait au monde de félicité comparable à la leur ; lors même que je les maltraite, ils se trouvent encore trop heureux de vivre sous mon empire ; et je vois tous les jours de simples bergers qui ne changeraient pas leur condition avec celle des rois, s'il leur en coûtait l'amour qu'ils ont pour leurs bergères, toutes cruelles et ingrates qu'elles sont.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="17">
+	<s n="1">Ces bergers dont vous venez de parler font bien voir que vous gâtez l'esprit de tous ceux qui vous reçoivent, mais non pas que vous les rendiez effectivement heureux. </s>
+	<s n="2">Car enfin, quelle extravagance d'être malade, comme ils disent qu'ils le sont, et ne vouloir pas guérir ; être en prison et refuser la liberté ; en un mot être misérable, et ne vouloir pas cesser de l'être.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="18">
+	<s n="1">Leur extravagance serait encore plus grande de vouloir guérir, ou sortir de prison, non seulement parce que leur maladie est plus agréable que la santé et qu'il est moins doux d'être libre que d'être prisonnier de la sorte, mais aussi parce qu'il leur serait fort inutile de le vouloir, si je ne le voulais pas aussi. </s>
+	<s n="2">Je ne suis pas un hôte qu'on chasse de chez soi quand on veut ; comme j'entre quelquefois chez les gens contre leur volonté, j'y demeure aussi bien souvent malgré qu'ils en aient et je me soucie aussi peu de la résolution que l'on prend de me faire sortir que de celle que l'on fait de m'empêcher d'entrer.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="19">
+	<s n="1">Votre procédé, mon frère, est bien différent du mien. </s>
+	<s n="2">Je quitte les gens dès le moment que je les incommode, l'on ne m'a qu'autant que l'on veut m'avoir et l'on ne voit point d'amis qui le soient malgré eux. </s>
+	<s n="3">Quand je suis dans un coeur, et qu'il vous prend fantaisie d'y venir pour prendre ma place, vous savez avec quelle douceur je vous la quitte. </s>
+	<s n="4">Je me retire insensiblement et sans bruit, le coeur même où se fait cet échange ne s'en aperçoit pas, et quelquefois il y a longtemps que vous le brûlez qu'il croit que c'est moi qui l'échauffe encore et qui le fais aimer. </s>
+	<s n="5">Vous n'avez garde d'en user de la sorte lorsqu'un pauvre coeur se résout à vous échanger avec moi, parce que la raison le commande et l'y contraint, bien qu'il ait un extrême regret de se voir obligé à une si cruelle séparation, bien qu'il vous conjure en soupirant de le laisser en paix, et que vous n'ignoriez pas qu'il ne me veut avoir que parce que je vous ressemble et que c'est en quelque façon vous retenir que de m'avoir en votre place. </s>
+	<s n="6">Néanmoins avec quelle cruauté ne vous moquez-vous point de ses soupirs ! </s>
+	<s n="7">Vous le poussez à bout, et parce qu'il a eu seulement la pensée de se mettre en liberté vous redoublez ses chaînes et l'accablez de nouveaux supplices. </s>
+	<s n="8">Que si vous le laissez en repos quelque temps, en sorte qu'il commence à croire qu'il s'est heureusement délivré de vous, quel plaisir ne prenez-vous point à lui faire sentir qu'il n'est pas où il pense ; vous le pressez de toute votre force, et par un soupir redoublé qui lui échappe, ou par quelque pointe de jalousie qui le pique, il ne connaît que trop que vous êtes encore le maître chez lui, mais le maître plus absolu et plus redoutable que jamais.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="20">
+	<s n="1">J'en use ainsi, ma soeur, pour montrer que l'on ne peut rien sur moi et que pour entrer dans un coeur ou pour en sortir, je ne dépends de qui que ce soit au monde. </s>
+	<s n="2">Quelques-uns se sont imaginé que j'avais besoin du secours de la sympathie pour m'insinuer dans les coeurs, et que je m'efforcerais en vain de m'en rendre le maître si auparavant elle ne les disposait à me recevoir. </s>
+	<s n="3">C'est une vieille erreur que l'expérience détruit tous les jours ; et en effet, bien loin d'être toujours redevable de mon empire à la sympathie, c'est moi qui lui donne entrée et qui l'établis en bien des coeurs où sans moi elle ne se serait jamais rencontrée. </s>
+	<s n="4">Combien voit-on de gens dont l'humeur et l'inclination étaient tout à fait opposées, que je fais s'entr'aimer, et qui dès aussitôt que je les ai touchés changent de sentiment en faveur l'un de l'autre, viennent à aimer et à haïr les mêmes choses, et enfin deviennent tout à fait semblables.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="21">
+	<s n="1">Pour moi j'avoue que je suis redevable à la Sympathie de la facilité que je trouve à m'établir dans les coeurs, et je dirai même qu'il me serait impossible de les lier étroitement si auparavant elle ne prenait la peine de les assortir. </s>
+	<s n="2">Il ne semble pas qu'elle se mêle de quoi que ce soit, on n'entend jamais de bruit ni de dispute où elle est, et assurément il n'est rien de si doux ni de si tranquille que la Sympathie. </s>
+	<s n="3">Cependant, par de secrètes intelligences qu'elle a dans les coeurs, et par de certains ressorts qu'on ne connaît point, elle fait des choses inconcevables et sans se remuer en apparence elle remue toute la terre. </s>
+	<s n="4">Les philosophes ont souhaité de tout temps d'avoir sa connaissance, mais il ne leur a pas été possible d'y parvenir et elle a toujours aimé à vivre cachée aux yeux de tout le monde. </s>
+	<s n="5">Quelques-uns ont pris pour elle la Ressemblance des humeurs, mais ils ont bien reconnu qu'ils s'étaient trompés, et que si elle a de l'air de la Sympathie elle ne l'est pas effectivement. </s>
+	<s n="6">Il n'est personne qui les connaisse mieux que moi toutes deux et qui sache précisément la différence qui est entre elles. </s>
+	<s n="7">Autant que j'aime à me trouver avec la Sympathie, autant ai-je de peine à m'accorder avec la Ressemblance des humeurs.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="22">
+	<s n="1">Ce que vous dites là paraît étrange, et l'on a toujours cru que la conformité d'humeurs était une disposition très grande à s'entr'aimer.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="23">
+	<s n="1">Il est pourtant vrai que les personnes de même profession et qui réussissent également ne s'aiment point ; cette égalité est toujours accompagnée de l'Envie, mon ennemie jurée, et avec laquelle je ne me rencontre jamais. </s>
+	<s n="2">Ceux même qui ont le plus d'esprit ne peuvent vivre ensemble quand ils croient en avoir autant l'un que l'autre, et principalement lorsque, l'ayant tourné de la même façon, ils sont persuadés qu'ils excellent dans une même chose. </s>
+	<s n="3">On sait que les enjoués, les diseurs de bons mots, ceux qui font profession de divertir agréablement une compagnie ne peuvent souffrir leurs semblables et qu'ils ont bien du dépit quand ils en rencontrent d'autres qui parlent autant qu'eux. </s>
+	<s n="4">Mais surtout la Ressemblance et la Conformité d'humeurs me nuit parmi les femmes. </s>
+	<s n="5">Deux coquettes se haïssent nécessairement ; deux précieuses encore plus, quelque mine qu'elles fassent de s'aimer ; et même c'est assez pour être assuré que deux femmes ne seront jamais bonnes amies, si elles dansent ou si elles chantent bien toutes deux. </s>
+	<s n="6">Je trouve cent fois mieux mon compte lorsque leurs humeurs, ou leurs perfections, ont moins de rapport ; lorsque l'une d'elles se pique de beauté et l'autre d'esprit ; l'une d'être fière et sérieuse, et l'autre d'être enjouée et de dire cent jolies choses qui divertissent. </s>
+	<s n="7">La raison de cette bonne intelligence est bien aisée à deviner, c'est que ces sortes de personnes n'ont rien à partager ensemble ; les douceurs qu'on dit à l'une ne sont point à l'usage de l'autre et elles s'entendent cajoler sans jalousie, ce qui n'arrive pas lorsqu'elles ont les mêmes avantages. </s>
+	<s n="8">A vous dire le vrai, de quelque humeur que soient les femmes, je ne me rencontre guère avec elles, ou si je m'y rencontre quelquefois, je n'y demeure pas longtemps : ma sincérité leur déplaît et elles sont tellement accoutumées à la flatterie qu'elles rompent aisément avec leurs mielleuses amies, dès la première vérité qu'elles leur disent. </s>
+	<s n="9">Néanmoins ce qui m'empêche d'avoir grand commerce avec elles, ce n'est pas tant parce qu'elles se disent leurs vérités que parce qu'elles ne se les disent pas ; car enfin, si une femme s'aperçoit que son amie a quelque défaut dont elle pourrait se corriger, si elle-même le connaissait ne pensez pas qu'elle l'en avertisse ; elle aura une maligne joie de voir que ce défaut lui donne avantage sur elle ; et même si une coiffure ou un ajustement lui sied mal, elle aura la malice de lui dire qu'il lui sied admirablement. </s>
+	<s n="10">Ceci n'est pas vrai néanmoins pour toutes les femmes : j'en sais qui observent mes lois avec beaucoup d'exactitude et de soumission.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="24">
+	<s n="1">Je puis dire aussi que je connais des femmes qui savent parfaitement aimer, et qui pourraient faire à tous les hommes des leçons de fidélité et de constance. </s>
+	<s n="2">Je dirai même que c'est une injustice que l'on a faite de tout temps à ce beau sexe de l'accuser de légèreté et que je ne sais point d'autre raison de la mauvaise réputation qu'il a d'être inconstant que parce que les hommes font les livres et qu'il leur plaît de le dire et de l'écrire ainsi. </s>
+	<s n="3">Il est constant que comme les femmes aiment presque toujours les dernières, elles ne cessent aussi presque jamais d'aimer que lorsqu'on ne les aime plus ; et que, comme il faut un long temps et de fortes raisons pour les engager dans l'affection des hommes, elles ne s'en retirent aussi que pour des sujets qui le méritent et qui les y obligent absolument.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="25">
+	<s n="1">Ce n'est pas là l'opinion commune ; et si la chose est ainsi que vous le dites, je connais bien des gens dans l'erreur et qu'il serait malaisé de désabuser. </s>
+	<s n="2">Quoi qu'il en soit, je ne vois pas que les femmes doivent tirer beaucoup de gloire de cette constance et de cette fidélité dont vous les louez, puisqu'il en est si peu qui en sachent bien user, et que la plupart ne s'en servent que pour aimer des personnes qu'elles feraient mieux de n'aimer point du tout. </s>
+	<s n="3">En vérité, mon frère, c'est une chose étrange que vous preniez plaisir à mettre la division et le désordre dans les familles, vous qui devriez n'avoir d'autre emploi que d'y conserver l'union et la paix ; et que ne pouvant durer longtemps où vous avez obligation de vous trouver, vous n'ayez point de plus grande joie que de vous couler adroitement où il est défendu de vous recevoir. </s>
+	<s n="4">Il semble même que l'hyménée que vous témoignez souhaiter quelquefois si ardemment vous chasse de tous les lieux où il vous rencontre. </s>
+	<s n="5">Car enfin, depuis que je vais au Cours, je ne me souviens point de vous avoir vu en portière entre le mari et la femme, au lieu que l'on vous voit sans cesse entre la femme et le galant, où vous faites cent gentillesses et cent folies, pendant que le mari se promène un peu loin de là, entre le Chagrin et la Jalousie qui le tourmentent cruellement, et qui de temps en temps ouvrent et ferment les rideaux de son carrosse. </s>
+	<s n="6">Sa Jalousie les ouvre incessamment pour lui faire voir ce qui se passe, et le Chagrin les referme aussitôt pour l'empêcher de rien voir qui lui déplaise.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="26">
+	<s n="1">Il me semble, ma soeur, que toute sage que vous êtes, vous ne vous acquittez pas mieux que moi de votre devoir, et qu'on ne vous rencontre guère souvent où vous devriez être toujours, je veux dire entre les frères et les soeurs et entre les parents les plus proches qui, faute de vous avoir au milieu d'eux se déchirent les uns les autres et se haïssent mortellement.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="27">
+	<s n="1">J'en ai bien du regret, mais je n'y saurais que faire : ils sont la plupart tellement attachés à l'Intérêt, mon ennemi caché et avec lequel j'ai une horrible antipathie ; car vous savez qu'il veut tout avoir à lui, et qu'au contraire je fais profession de n'avoir rien à moi ; ils sont, dis-je, tellement attachés à ce lâche Intérêt qu'ils m'abandonnent volontiers plutôt que lui. </s>
+	<s n="2">D'ailleurs, comme ils tirent chacun de leur côté, ils rompent tous mes liens et m'échappent sans cesse.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="28">
+	<s n="1">Je vous pardonnerais d'abandonner des parents intéressés et déraisonnables, si c'était pour vous trouver avec des étrangers sages et vertueux ; mais il est certain que le plus souvent ce n'est que la débauche et le vice qui vous attirent et qui vous font demeurer où vous êtes, et que deux hommes ne seront bons amis que parce que ce sont deux bons ivrognes, deux francs voleurs, ou deux vrais impies.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="29">
+	<s n="1">Je ne me suis jamais rencontrée avec ces gens-là ; j'avoue qu'il y a entre eux une certaine affection brutale et emportée qui me ressemble en quelque chose, et qui affecte fort de m'imiter. </s>
+	<s n="2">Il est encore véritable qu'elle fait en apparence les mêmes actions que moi ; je dis ces actions éclatantes qui étonnent toute la terre, mais ce n'est point par le principe de générosité qui m'anime, et l'on peut dire qu'elle les fait de la même manière que la magie fait les miracles. </s>
+	<s n="3">Les sages qui connaissent les choses n'ignorent pas la différence qui est entre elle et moi, et ils ont toujours bien su que je ne me rencontre jamais qu'avec la Vertu, et au milieu des vertueux.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="30">
+	<s n="1">S'il en est ainsi, ma soeur, on ne vous trouve pas aisément, et votre demeure est bien difficile à trouver.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="31">
+	<s n="1">Elle l'est assurément plus que la vôtre, puisque je ne me plais qu'avec les sages qui sont fort rares, et que vous au contraire ne vous plaisez qu'avec les fous dont le nombre est presque infini et dont vous aimez tant la compagnie que si les personnes qui vous reçoivent ne le sont pas encore tout à fait, vous ne tardez guère à les achever.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="32">
+	<s n="1">Je sais bien, ma soeur, qu'il y a longtemps qu'on me reproche de ne pouvoir vivre avec la Raison, et qu'on m'accuse de la chasser de tous les coeurs dont je me rends le maître ; mais je puis dire que fort souvent nous nous accordons bien ensemble et que si quelquefois je me vois obligé à lui faire quelque violence, il y a de sa faute bien plus que de la mienne.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="33">
+	<s n="1">N'est-ce point que la Raison a tort, que vous êtes bien plus raisonnable que la Raison même ?</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="34">
+	<s n="1">Je ne voudrais pas vous l'assurer ; mais je sais bien que si elle voulait ne se point mêler de mes affaires, comme je ne me mêle point des siennes, nous vivrions fort bien ensemble. </s>
+	<s n="2">Je n'empêche point qu'elle ne conduise les hommes dans les affaires importantes de leur vie ; je veux bien qu'elle les rende grands politiques, bons capitaines et sages magistrats ; mais je ne puis souffrir qu'elle s'ingère de contrôler mes divertissements et mes plaisirs, ni moins encore de régler la dépense des fêtes, des bals et de toutes les galanteries des amants. </s>
+	<s n="3">N'a-t-elle pas assez d'autres choses plus sérieuses pour s'occuper, et pourquoi faut-il qu'elle s'amuse à mille bagatelles dont elle n'a que faire ? </s>
+	<s n="4">Que voulez-vous que je vous dise, c'est une superbe et une vaine qui veut régner partout, qui critique tout, et qui ne trouve rien de bien fait que ce qu'elle fait elle-même ; je la repousse à la vérité d'une terrible force quand je ne suis pas en humeur d'en souffrir, et fort souvent nous nous donnons des combats effroyables. </s>
+	<s n="5">Mais pour vous montrer que j'en use mieux qu'elle en toutes choses ; quand elle est la plus forte et qu'elle a avantage sur moi, elle ne me donne point de quartier, elle me chasse honteusement et publie en tous lieux la victoire qu'elle a remportée. </s>
+	<s n="6">Pour moi, quand je demeure le vainqueur, ce qui arrive assez souvent, je me contente de me rendre le maître de la place ; et pourvu que le coeur m'obéisse, je lui laisse disposer à sa fantaisie de tous les dehors ; je ne me vante point de l'avoir battue, et comme elle est glorieuse, elle ne s'en vante pas aussi, elle fait bonne mine et paraît toujours la maîtresse.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="35">
+	<s n="1">On remarque en effet que tous les amants, quelque fous qu'ils soient, veulent paraître sages, et qu'on n'en voit point qui ne prétendent être fort raisonnables ; mais de toutes leurs extravagances, je n'en trouve point de plus plaisante que celle qui leur est commune à tous, je veux dire la forte persuasion qu'ils ont que la personne qu'ils aiment est la plus belle et la plus accomplie de toutes celles qui sont au monde ; je me suis cent fois étonnée de cette extravagance.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="36">
+	<s n="1">Est-il bien possible, ma soeur, que vous n'en sachiez pas la cause, et que vous n'ayez pas encore remarqué que les amants ne jugent ainsi favorablement de la beauté qu'ils aiment que parce qu'ils ne la voient jamais qu'à la lueur de mon flambeau qui a la vertu d'embellir tout ce qu'il éclaire : c'est un secret qui est fort naturel, mais cependant que peu de gens ont devine. </s>
+	<s n="2">Les uns se sont imaginé que j'aveuglais tous les amants, les autres que je leur mettais un bandeau devant les yeux pour les empêcher de voir les défauts de la personne aimée ; mais les uns et les autres ont mal rencontré ; car enfin il n'est point de gens au monde qui voient si clair que les amants : on sait qu'ils remarquent cent petites choses dont les autres personnes ne s'aperçoivent pas, et qu'en un moment ils découvrent dans les yeux l'un de l'autre tout ce qui se passe dans le fond de leur coeur. </s>
+	<s n="3">Je ne comprends pas ce qui a pu donner lieu à de si étranges imaginations, si ce n'est peut-être qu'on ait pris pour un bandeau de certains petits cristaux que je leur mets au-devant des yeux, lorsque je leur fais regarder les personnes qu'ils aiment. </s>
+	<s n="4">Ces cristaux ont la vertu de corriger les défauts des objets, et de les réduire dans leur juste proportion. </s>
+	<s n="5">Si une femme a les yeux trop petits, ou le front trop étroit, je mets au-devant des yeux de son amant un cristal qui grossit les objets, en sorte qu'il lui voit des yeux assez grands et un front raisonnablement large. </s>
+	<s n="6">Si au contraire elle a la bouche un peu trop grande et le menton trop long, je lui en mets un autre qui apetisse, et qui lui représente une petite bouche et un petit menton. </s>
+	<s n="7">Ces cristaux sont assez ordinaires, mais j'en ai de plus curieux, et ce sont des cristaux qui apetissent des bouches et agrandissent des yeux en même temps ; j'en ai aussi pour les couleurs, qui font voir blanc ce qui est pâle, clair ce qui est brun, et blond ce qui est roux ; ainsi de tout le reste. </s>
+	<s n="8">Mais à qui est-ce que je parle, n'en avez-vous pas aussi bien que moi de toutes les façons ?</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="37">
+	<s n="1">Il est vrai, mon frère, que j'en ai, mais il s'en faut bien qu'ils fassent un effet aussi prodigieux que les vôtres ; ils ne font qu'adoucir les défauts des objets, et les rendre plus supportables, sans empêcher qu'on ne les voie. </s>
+	<s n="2">Cependant, mon frère, il me semble que nous parlons ici bien plaisamment de nos petites affaires et qu'on se moquerait bien de nous si l'on nous entendait dire naïvement, comme nous faisons, les nouvelles de l'école.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="38">
+	<s n="1">Je connais à la vérité bien des personnes qui trouveraient notre entretien fort simple et fort commun ; mais j'en sais d'autres dont le jugement serait plus favorable et qui le trouveraient assez divertissant.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+<sp who="#l-amitie">
+                        <speaker>L'AMITIÉ.</speaker>
+                        <p n="39">
+	<s n="1">Je sais du moins qu'il m'a divertie extrêmement et que j'ai bien du regret de ne pouvoir causer davantage avec vous ; mais je ne veux pas donner sujet de se plaindre de moi à quelques personnes qui m'aiment plus que leur vie et qui ne me le pardonneraient jamais si j'étais plus longtemps sans leur donner des marques de mon souvenir.</s>
+</p>
+                    </sp><!--@who="L'AMITIÉ"-->
+<sp who="#l-amour">
+                        <speaker>L'AMOUR.</speaker>
+                        <p n="40">
+	<s n="1">Adieu donc, ma soeur ; aussi bien ai-je encore plus d'affaires que vous, et qui pressent toutes étrangement. </s>
+	<s n="A">J'ai des amants à punir, j'en ai d'autres à récompenser, et avec tout cela il faut que je me rende auprès d'Iris qui va partir pour aller au bal où je dois lui conquérir le coeur de tout ce qu'il y aura d'honnêtes gens dans l'assemblée et leur faire avouer qu'elle est la plus belle et la plus aimable personne du monde.</s>
+</p>
+                    </sp><!--@who="L'AMOUR"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

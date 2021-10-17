@@ -1,0 +1,801 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Compliment</title>
+                <title type="sub">Comédie.</title>
+                <author>
+      <persName>
+        <forename>Adolphe</forename>
+        <surname>Carcassonne</surname>
+      </persName>
+      <idno type="isni">0000 0001 1756 1275</idno>
+    </author><!--Adolphe CARCASSONNE (1826-1891)-->
+                <editor>Paul FIEVRE juin 2021</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001520</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/CARCASSONNE_COMPLIMENT.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/CARCASSONNE_COMPLIMENT.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1889"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5742849d</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="gabrielle" sex="FEMALE">
+                        <persName>Gabrielle</persName>
+                    </person>
+                    <person xml:id="alice" sex="FEMALE">
+                        <persName>Alice</persName>
+                    </person>
+                    <person xml:id="marie" sex="FEMALE">
+                        <persName>Marie</persName>
+                    </person>
+                    <person xml:id="renee" sex="FEMALE">
+                        <persName>Renée</persName>
+                    </person>
+                    <person xml:id="madame-de-lucet" sex="FEMALE">
+                        <persName>Madame de Lucet</persName>
+                    </person>
+                    <person xml:id="bonne-maman" sex="FEMALE">
+                        <persName>Bonne Maman</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LE COMPLIMENT</titlePart>
+			<titlePart type="sub">COMÉDIE.</titlePart>
+		</docTitle> 
+		<docDate when="1889">1889</docDate>
+		<docAuthor>Adolphe CARCASSONNE.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="MARPON, FLAMMARION">PARIS C. MARPON et E. FLAMMARION, ÉDITEURS, rue Racine, 26 près de l'Odéon.</editor>-->
+			<div type="printer">
+                    <p>ÉMILE COLIN - IMPRIMERIE DE LAGNY.</p>
+                </div><!--@id="COLIN"-->
+		</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#renee">RENÉE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, ll ans.</castItem>
+		<castItem>
+                    <role corresp="#gabrielle">GABRIELLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 10 ans.</castItem>
+		<castItem>
+                    <role corresp="#alice">ALICE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 10 ans, soeur de Renée.</castItem>
+		<castItem>
+                    <role corresp="#marie">MARIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 6 ans, soeur de Renée.</castItem>
+		<castItem>
+                    <role corresp="#madame-de-lucet">MADAME DE LUCET</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="(néant)"-->, leur mère.</castItem>
+		<castItem>
+                    <role corresp="#bonne-maman">BONNE MAMAN</role><!--@sex="2"--><!--@type="H"--><!--@statut="arisrtocrate"--><!--@age="V"--><!--@stat_amour="(néant)"-->.</castItem>
+   </castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="À la campagne" country="France" periode="XIXème" gps=""/>-->
+<note>Extrait de "Nouveau Théâtre d'enfants, Dix pièces en prose, à jouer dans les familles et dans les pensionnats, Paris, Marpon et Flammarion, Le Jay Libraires, 1889. pp. 161-192.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>UN COMPLIMENT</head>
+<stage type="decor/furniture/">Un salon. - À droite, un peu vers le fond, une table avec ce qu'il faut pour écrire. - Un grand fauteuil à gauche. - Porte au fond et portes latérales. Au lever du rideau, Alice et Gabrielle sont en scène. À gauche, Marie va de long en large en portant de temps eu temps la main a son front.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Alice, Gabrielle, Marie.</head>
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="1">
+	<s n="1">À quoi penses-tu, ma chère Alice ? </s>
+	<s n="2">Est-ce un grand secret ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="2">
+	<s n="1">Je pense à quelque chose, mais ce n'est pas un secret ; je puis te dire ce que c'est, car tu es ma meilleure amie et je n'ai rien de caché pour toi.</s>
+</p>
+                    </sp><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="3">
+	<s n="1">Alors, dis.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="4">
+	<s n="1">C'est aujourd'hui la fête de Bonne_maman. </s>
+	<s n="2">Renée, Marie et moi allons lui porter les compliments faits pour elle. </s>
+	<s n="3">Mais figure-toi que cette fois Bonne maman a dit qu'elle donnerait une montre en or à celle qui lui fera le plus joli compliment. </s>
+	<s n="4">Je voudrais bien gagner le beau cadeau.</s>
+</p>
+                    </sp><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="5">
+	<s n="1">Pourquoi ne le gagnerais-tu pas ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="6">
+	<s n="1">Marie ne concourt pas, mais ma soeur Renée est bien plus forte que moi.</s>
+</p>
+                    </sp><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="7">
+	<s n="1">Elle a un an de plus et l'on en doit tenir compte.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#marie">
+                        <speaker>MARIE, en se tournant vers le public.</speaker>
+                        <p n="8">
+	<s n="1">J'y suis et je le sais maintenant.</s>
+</p>
+                    </sp><!--@stage="turn/watch"--><!--@who="MARIE"-->
+<sp who="#alice">
+                        <speaker>ALICE, sans remarquer ce que dit Marie.</speaker>
+                        <p n="9">
+	<s n="1">On ne l'a pas dit et je ne sais pas si l'on tiendra compte de l'âge, mais ce que je sais bien, c'est...</s>
+</p>
+                        <stage type="hesitate">Elle hésite.</stage>
+                        <p n="10">
+	<s n="1">Voilà que maintenant je n'ose pas te le dire.</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="11">
+	<s n="1">Pourquoi, ma chère Alice ?</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="12">
+	<s n="1">Parce que je vais te paraître mauvaise et jalouse.</s>
+</p>
+                    </sp><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="13">
+	<s n="1">Pour cela, non.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="14">
+	<s n="1">Tu ne me connais pas bien.</s>
+</p>
+                    </sp><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="15">
+	<s n="1">Va donc jusqu'au bout.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="16">
+	<s n="1">Si je n'avais pas ce beau cadeau...</s>
+</p>
+                        <stage type="listen/turn">En entendant ce dernier mot, Marie se tourne du côté des jeunes filles et elle écoute.</stage>
+                    </sp><!--@who="ALICE"-->
+<sp who="#alice">
+                        <speaker>ALICE, continuant.</speaker>
+                        <p n="17">
+	<s n="1">J'en aurais un grand chagrin. </s>
+	<s n="2">C'est mal, n'est-ce pas ? </s>
+	<s n="3">Car, enfin, si on ne me le donne pas, c'est que je ne l'aurai pas mérité.</s>
+</p>
+                    </sp><!--@stage="continue"--><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="18">
+	<s n="1">Un pareil chagrin est naturel et tout le monde le comprendra.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="19">
+	<s n="1">Mais il serait si grand pour moi qu'il me rendrait méchante. </s>
+	<s n="2">Je serais désespérée en voyant Renée gagner la montre. </s>
+	<s n="3">Être jalouse de sa soeur, c'est laid !... </s>
+	<s n="4">Et pourtant, je ne puis changer mon coeur, c'est plus fort que moi...</s>
+</p>
+                    </sp><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="20">
+	<s n="1">Mais, je le répète, pourquoi ne gagnerais-tu pas le prix ? </s>
+	<s n="2">Tu as déjà fait de très jolies compositions.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="21">
+	<s n="1">Veux-tu voir mon compliment ?</s>
+</p>
+                    </sp><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="22">
+	<s n="1">J'allais te le demander.</s>
+</p>
+                    </sp><!--@who="GABRIELLE"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="23">
+	<s n="1">Allons dans ma chambre.</s>
+</p>
+                        <stage type="silence">Après un silence.</stage>
+                        <p n="24">
+	<s n="1">Ma chère Gabrielle, il est bien entendu que tu me diras ce que tu penses, mais rien de plus. </s>
+	<s n="2">Pas un avis, pas un conseil ; ce ne serait pas honnête.</s>
+</p>
+                    </sp><!--@who="ALICE"-->
+<sp who="#gabrielle">
+                        <speaker>GABRIELLE.</speaker>
+                        <p n="24">
+	<s n="1">Tu as raison, je ne donnerai que mon opinion.</s>
+</p>
+                        <stage type="exit/location">Elles sortent par la gauche.</stage>
+                    </sp><!--@who="GABRIELLE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Marie, puis Renée.</head>
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="1">
+	<s n="1">Je fais mon compliment... </s>
+	<s n="2">J'en sais même deux, un en prose, l'autre en vers... </s>
+	<s n="3">Quel est le plus joli ? </s>
+	<s n="4">Je ne sais pas... </s>
+	<s n="5">Bien sûr, je ne puis pas en dire deux.</s>
+</p>
+                        <stage type="entrance">Renée entre en scène</stage>
+                    </sp><!--@who="MARIE"-->
+<sp who="#marie">
+                        <speaker>MARIE, venant auprès d'elle</speaker>
+                        <p n="2">
+	<s n="1">Grande soeur, qu'est-ce qui est plus joli, la prose ou les vers ?</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="3">
+	<s n="1">Tous les deux peuvent être très jolis.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="4">
+	<s n="1">Mais pour un compliment ?</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="5">
+	<s n="1">Pour cela, les vers sont souvent préférables.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="6">
+	<s n="1">Alors, je dirai les vers.</s>
+</p>
+                        <stage type="silence/closer">Après un silence et se rapprochant de Renée.</stage>
+                        <p n="7">
+	<s n="1">Mais grande soeur, les vers sont-ils propres ?</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="8">
+	<s n="1">S'ils sont propres ! </s>
+	<s n="2">Pourquoi demandes-tu cela, chérie?</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="9">
+	<s n="1">Parce que j'ai entendu dire qu'on tirait les vers du nez.</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="10">
+	<s n="1">Tais-toi, petite soeur, et ne te sers plus d'une expression que lu ne peux comprendre et qui est très laide.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="11">
+	<s n="1">Je ne le savais pas, je ne le dirai plus... </s>
+	<s n="2">Je réciterai le compliment en vers.</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="12">
+	<s n="1">Chacune récitera le sien.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="13">
+	<s n="1">Toi aussi, grande soeur ?</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="14">
+	<s n="1">Moi, aussi, ma chérie.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="15">
+	<s n="1">Et Alice aussi ?</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="16">
+	<s n="1">Certainement.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="17">
+	<s n="1">Est-ce que tu gagneras la montre en or ?</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="18">
+	<s n="1">Peut-être.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="19">
+	<s n="1">Alice alors ne la gagnera pas ?</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="20">
+	<s n="1">Non, si je la gagne.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="21">
+	<s n="1">Pauvre Alice !</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="22">
+	<s n="1">Que dis-tu ? </s>
+	<s n="2">Je ne te comprends pas, petite soeur. </s>
+	<s n="3">Pourquoi pauvre Alice ?</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="23">
+	<s n="1">Tout à l'heure, je l'ai entendue parler avec Gabrielle.</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="24">
+	<s n="1">Eh bien ?</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="25">
+	<s n="1">Elle disait que si elle ne gagnait pas le prix, elle serait bien malheureuse.</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="26">
+	<s n="1">Bien malheureuse !</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="27">
+	<s n="1">Elle disait aussi que c'est très laid d'être jalouse de sa soeur, mais que c était plus fort qu'elle et qu'elle serait désespérée si elle n'avait pas la montre.</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="28">
+	<s n="1">Elle a dit cela ?</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="29">
+	<s n="1">Oui, grande soeur, je l'ai entendue.</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#madame-de-lucet">
+                        <speaker>MADAME DE LUCET, paraissant à la porte de droite et</speaker>
+                        <p n="30">
+	<s n="1">Marie ?</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="MADAME DE LUCET"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="31">
+	<s n="1">Me voilà, Maman.</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#madame-de-lucet">
+                        <speaker>MADAME DE LUCET</speaker>
+                        <p n="32">
+	<s n="1">Viens donc, ma chérie.</s>
+</p>
+                    </sp><!--@who="MADAME DE LUCET"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="33">
+	<s n="1">Oui, Maman.</s>
+</p>
+                        <stage type="exit/location/together">Elle sort par la droite avec sa mère.</stage>
+                    </sp><!--@who="MARIE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III.</head>
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="1">
+	<s n="1">Pauvre Alice ! </s>
+	<s n="2">Pourquoi ne m'a-t-elle rien dit ?...</s>
+</p>
+                        <stage type="silence">Après un silence.</stage>
+                        <p n="2">
+	<s n="1">Je tiens aussi à cette montre et je serais charmée de l'avoir, car elle est bien belle... </s>
+	<s n="2">Mais Alice en serait malheureuse et je veux lui éviter le moindre chagrin.</s>
+</p>
+                        <stage>Elle sort un écrit de sa poche.</stage>
+                        <p n="3">
+	<s n="1">Mon devoir est donc tout tracé...</s>
+</p>
+                        <stage type="location/furniture/sit">Elle va vers la table à droite et elle s'assied.</stage>
+                        <p n="4">
+	<s n="1">Chère Alice ! </s>
+	<s n="2">Elle aurait de la peine par moi !... </s>
+	<s n="3">Non, jamais !...</s>
+</p>
+                        <stage type="write">Elle efface une ligne.</stage>
+                        <p n="5">
+	<s n="1">Je suis contente du hasard qui m'a fait connaître la vérité.</s>
+</p>
+                        <stage type="write">Elle efface encore.</stage>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#madame-de-lucet">
+                        <speaker>MADAME DE LUCET, à la porte de droite et à part.</speaker>
+                        <p n="6">
+	<s n="1">Que m'a dit Marie ?</s>
+</p>
+                        <stage type="closer/quiet">Elle s'avance un peu sur la pointe des pieds et elle observe un instant Renée qui continue à effacer sur le papier.</stage>
+                        <p n="7">
+	<s n="1">Ah ! </s>
+	<s n="2">Je comprends ! </s>
+	<s n="3">Chère, chère enfant !</s>
+</p>
+                        <stage type="away/kiss/exit">Elle regagne la porte, elle envoie un baiser à Renée et elle sort sans que celle-ci l'ait vue.</stage>
+                    </sp><!--@who="MADAME DE LUCET"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="8">
+	<s n="1">Allons, voilà qui est fait...</s>
+</p>
+                        <stage type="stand">Elle se lève.</stage>
+                        <p n="9">
+	<s n="1">Je n'ai même plus besoin de repasser cet écrit.</s>
+</p>
+                        <stage type="watch/location">Regardant vers le fond.</stage>
+                        <p n="10">
+	<s n="1">Je n'aurai pas le cadeau, mais Alice n'aura pas de chagrin... </s>
+	<s n="2">C'est une compensation.</s>
+</p>
+                        <stage type="hide">Elle met l'écrit dans sa poche.</stage>
+                        <p n="11">
+	<s n="1">Ah ! </s>
+	<s n="2">Voici Bonne_Maman.</s>
+</p>
+                        <stage type="entrance">Bonne Maman entre ; elle est suivie d'Alice et de Marie ; madame de Lucet vient ensuite. Bonne maman s'assied dans le grand fauteuil. Madame de Lucet se met à sa gauche.</stage>
+                    </sp><!--@who="RENÉE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Renée, Bonne Maman, Madame de Lucet, Alice, Marie.</head>
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="1">
+	<s n="1">Bonjour, mes chères enfants.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#madame-de-lucet">
+                        <speaker>MADAME DE LUCET.</speaker>
+                        <p n="2">
+	<s n="1">Allons, mes fillettes.</s>
+</p>
+                    </sp><!--@who="MADAME DE LUCET"-->
+<sp who="#renee">
+                        <speaker>RENÉE, s'approchant de Bonne maman.</speaker>
+                        <p n="3">
+	<s n="1">Chère Bonne_maman, je te souhaite, une bonne fête et je t'embrasse de tout mon coeur.</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN, après avoir réprimé un mouvement de surprise.</speaker>
+                        <p n="4">
+	<s n="1">Merci, ma chère Renée.</s>
+</p>
+                        <stage type="kiss/location">Elle l'embrasse ; Renée passe à droite, Alice vient à son tour devant Bonne maman.</stage>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#alice">
+                        <speaker>ALICE.</speaker>
+                        <p n="5">
+	<s n="1">C'est aujourd'hui ta fête, chère Bonne Maman. </s>
+	<s n="2">Aussi, je suis descendue ce matin au jardin. </s>
+	<s n="3">J'ai dit aux arbres de te prêter encore longtemps leur ombrage ; j'ai dit aux fleurs de t'offrir encore longtemps leurs parfums ; j'ai dit aux oiseaux de chanter encore longtemps pour toi leurs plus jolies chansons. </s>
+	<s n="4">Puis, comme le soleil paraissait, je lui ai dit de se lever encore longtemps sur tes pas. </s>
+	<s n="5">Les arbres, les fleurs, les oiseaux et le soleil m'ont promis de faire ce que je leur ai demandé, chacun me l'a dit à sa façon, et moi, je viens te le dire à la mienne et en te faisant deux gros baisers.</s>
+</p>
+                    </sp><!--@who="ALICE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="6">
+	<s n="1">Merci, ma chérie, de ton joli compliment.</s>
+</p>
+                        <stage type="kiss/location/closer">Elle embrasse Alice qui passe a droite. - Marie s'approche.</stage>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <l n="1">Bonne_maman, voici mes souhaits pour ta fête.</l>
+                        <l n="2">Joie à ton coeur, santé parfaite,</l>
+                        <l n="3">Horizon jamais obscurci,</l>
+                        <l n="4">Et pouvoir l'embrasser pendant vingt ans ainsi.</l>
+                    </sp><!--@who="MARIE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="7">
+	<s n="1">Merci, mon cher trésor.</s>
+</p>
+                        <stage type="kiss">Marie l'embrasse et elle rejoint ses soeurs à droite.</stage>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="8">
+	<s n="1">Maintenant, approchez-vous, mes enfants. </s>
+	<s n="2">Vous savez que j'ai promis une montre à celle qui m'aura dit le plus joli compliment.</s>
+</p>
+                        <stage>Elle prend dans sa poche un écrin qu'elle ouvre.</stage>
+                        <p n="9">
+	<s n="1">Chère Alice, c'est toi qui as mérité ce prix, le voilà.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#alice">
+                        <speaker>ALICE, prenant la montre.</speaker>
+                        <p n="10">
+	<s n="1">Oh ! </s>
+	<s n="2">Quel bonheur ! </s>
+	<s n="3">Merci, Bonne Maman, merci !</s>
+</p>
+                        <stage type="toward">À madame de Lucet.</stage>
+                        <p n="11">
+	<s n="1">Mère, me permets-tu d'aller le dire à Gabrielle ?</s>
+</p>
+                    </sp><!--@stage="give"--><!--@who="ALICE"-->
+<sp who="#marie">
+                        <speaker>MARIE.</speaker>
+                        <p n="12">
+	<s n="1">Me permets-tu d'accompagner Alice ?</s>
+</p>
+                    </sp><!--@who="MARIE"-->
+<sp who="#madame-de-lucet">
+                        <speaker>MADAME DE LUCET.</speaker>
+                        <p n="13">
+	<s n="1">Allez, mes enfants, et revenez bientôt.</s>
+</p>
+                        <stage type="exit">Alice et Marie sortent par le fond. Renée se dirige vers la droite.</stage>
+                    </sp><!--@who="MADAME DE LUCET"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="14">
+	<s n="1">Ma chère Renée, j'ai à causer un instant avec toi.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="15">
+	<s n="1">Bien, grand-mère.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#madame-de-lucet">
+                        <speaker>MADAME DE LUCET.</speaker>
+                        <p n="16">
+	<s n="1">Causez toutes les deux.</s>
+</p>
+                        <stage type="location/aparte">Elle va vers la droite et elle dit à part.</stage>
+                        <p n="17">
+	<s n="1">Que va-t-il se passer et que va faire Renée ?</s>
+</p>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@who="MADAME DE LUCET"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Renée, Bonne_Maman.</head>
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="1">
+	<s n="1">Tu as, sans doute, compris pourquoi j'ai voulu te parler, mon enfant.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="2">
+	<s n="1">Quelle qu'en soit la raison, j'en suis heureuse, car tu sais que mes meilleurs moments sont ceux que je passe auprès de toi.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="3">
+	<s n="1">As-tu remarqué le mouvement de surprise que je n'ai pu réprimer en entendant ton compliment.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="4">
+	<s n="1">Oui, grand-mère.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="5">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Qu'en as-tu pensé?</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="6">
+	<s n="1">Que tu n'en étais pas contente.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="7">
+	<s n="1">Et c'est vrai. </s>
+	<s n="2">Ce que tu as dit est presque une banalité et n'a rien de comparable avec ton gentil compliment de l'année dernière.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="8">
+	<s n="1">L'esprit n'est pas toujours disposé...</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="9">
+	<s n="1">L'esprit, peut-être, mais non le coeur.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="10">
+	<s n="1">Le coeur lui-même ne peut pas toujours dire ce qu'il sent.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="11">
+	<s n="1">Mais de là à la phrase dont tu t'es servie, il y a loin.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="12">
+	<s n="1">Alors, pardonne-la moi, grand-mère.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="13">
+	<s n="1">Écoute, mon enfant : un pareil fait ne se produit pas sans raison et je ne puis admettre celle que tu m'as donnée.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="14">
+	<s n="1">Pourtant...</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="15">
+	<s n="1">Tu connaissais la date de ma fête, tu pouvais donc t'y prendre en temps. </s>
+	<s n="2">L'inspiration, en tel cas surtout, ne fait pas défaut quinze jours de suite. </s>
+	<s n="3">Il y a une autre cause, ma chère Renée.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="16">
+	<s n="1">Je ne puis rien ajouter à ce que tu sais déjà.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="17">
+	<s n="1">Il y a une autre cause, te dis-je, et je désire la connaître.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="18">
+	<s n="1">Mais, grand-mère...</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+<sp who="#bonne-maman">
+                        <speaker>BONNE MAMAN.</speaker>
+                        <p n="19">
+	<s n="1">Je vois, à tes hésitations, que tu me caches quelque chose ; tu ne sais pas mentir, mon enfant.</s>
+</p>
+                    </sp><!--@who="BONNE MAMAN"-->
+<sp who="#renee">
+                        <speaker>RENÉE.</speaker>
+                        <p n="20">
+	<s n="1">Je ne puis dire plus que je n'ai dit.</s>
+</p>
+                    </sp><!--@who="RENÉE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

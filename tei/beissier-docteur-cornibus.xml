@@ -1,0 +1,1515 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Docteur Cornibus</title>
+                <title type="sub">- Guignol Domestique -</title>
+                <title type="sub">Théâtre de Guignol.</title>
+                <author>
+      <persName>
+        <forename>Fernand</forename>
+        <surname>Beissier</surname>
+      </persName>
+      <idno type="isni">0000 0001 1474 4543</idno>
+    </author><!--Fernand BEISSIER (1858-1936)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001511</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/BEISSIER_DOCTEURCORNIBUS.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/BEISSIER_DOCTEURCORNIBUS.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1894"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k57435258</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-docteur" sex="MALE">
+                        <persName>Le Docteur</persName>
+                    </person>
+                    <person xml:id="guignol" sex="MALE">
+                        <persName>Guignol</persName>
+                    </person>
+                    <person xml:id="la-dame" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>La Dame</persName>
+                    </person>
+                    <person xml:id="le-vieux-monsieur" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Vieux Monsieur</persName>
+                    </person>
+                    <person xml:id="l-apothicaire" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L Apothicaire</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">DOCTEUR CORNIBUS</titlePart>
+			<titlePart type="sub">- GUIGNOL DOMESTIQUE -</titlePart>
+			<titlePart type="sub">THÉÂTRE DE GUIGNOL.</titlePart>
+			</docTitle> 
+		<docDate when="1894">1894.</docDate>
+		<docAuthor>Fernand BESSIER</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor>PARIS, LIBRAIRIE THÉÂTRALE, 14 rue Grammont, 14.</editor>-->
+		</div>
+	<castList>
+                <head>PERSONNAGES.</head>
+		<castItem>
+                    <role corresp="#le-docteur">LE DOCTEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="docteur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#une-vieille-dame">UNE VIEILLE DAME</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="V"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#le-commissaire">LE COMMISSAIRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#guignol">GUIGNOL</role><!--@sex="1"--><!--@type="H"--><!--@statut="domestique"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#un-apothicaire">UN APOTHICAIRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="apothicaire"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#un-vieux-monsieur">UN VIEUX MONSIEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="V"--><!--@stat_amour="néant"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="">Un salon chez le docteur Cornibus.</set>-->
+	<note>Fernand BESSIER, "Théâtre de Guignol", Paris, Librairie théâtrale, 1894, pp. 31-55. </note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LE DOCTEUR CORNIBUS</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. </head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, entrant.</speaker>
+                        <p n="1">
+	<s n="1">Déjà dix heures et le nouveau domestique qu'on m'a annoncé n'arrive pas. </s>
+	<s n="2">- C'est très ennuyeux, et cela aujourd'hui justement où j'ai besoin de sortir. - </s>
+	<s n="3">Il peut m'arriver du monde pour me consulter et personne ne sera là pour recevoir mes clients. </s>
+	<s n="4">J'avais pourtant dit qu'on m'envoyât ce domestique, dès le malin. </s>
+	<s n="5">- J'en ai absolument besoin ; il faut même que je le prenne tel qu'il sera, quitte à le renvoyer demain.</s>
+</p>
+                        <stage type="knock">On frappe. </stage>
+                        <p n="2">
+	<s n="1">Si c'était lui !</s>
+</p>
+                        <stage type="open">Il va ouvrir.</stage>
+                    </sp><!--@stage="entrance"--><!--@who="LE DOCTEUR"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Guignol, Le Docteur.</head>
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="1">
+	<s n="1">Le docteur_Bornibus ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="2">
+	<s n="1">Cornibus, vous voulez dire.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="3">
+	<s n="1">Bornibus, Cornibus, ça m'est égal.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="4">
+	<s n="1">C'est moi.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="5">
+	<s n="1">Vous en êtes sûr ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="6">
+	<s n="1">Comment ! Si j'en suis sûr ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="7">
+	<s n="1">Êtes-vous bien le docteur Barlabus ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="8">
+	<s n="1">Cornibus !</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="9">
+	<s n="1">Ça m'est égal.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="10">
+	<s n="1">C'est moi.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="11">
+	<s n="1">Vous n'êtes pas beau !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="12">
+	<s n="1">Comment ! </s>
+	<s n="2">Je ne suis pas beau !</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="13">
+	<s n="1">Vous êtes laid.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="14">
+	<s n="1">Mais !...</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="15">
+	<s n="1">Ça c'est votre affaire. </s>
+	<s n="2">- Je ne vous en veux pas. </s>
+	<s n="3">- Je suis votre nouveau domestique,Jean_Boniface_Guignol.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="16">
+	<s n="1">Vous !</s>
+</p>
+                        <stage type="aparte">À part. </stage>
+                        <p n="17">
+	<s n="1">Il n'est pas poli. </s>
+	<s n="2">- Mais j'en ai besoin, patientons.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="18">
+	<s n="1">Ah ! </s>
+	<s n="2">Parfait alors. </s>
+	<s n="3">- Vous arrivez un peu en retard.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="19">
+	<s n="1">Je dormais.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="20">
+	<s n="1">Ah !</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="21">
+	<s n="1">Et quand je dors je n'aime pas qu'on me dérange. </s>
+	<s n="2">Tenez-vous pour averti, sans ça je cogne. </s>
+	<s n="3">Han ! </s>
+</p>
+                        <stage type="hit">Il lui donne un coup de bâton. </stage>
+                        <p n="22">
+	<s n="1">Comme ceci.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, à part.</speaker>
+                        <p n="23">
+	<s n="1">Il est paresseux et brutal, mais il le faut.</s>
+</p>
+                        <stage type="lour">Haut.</stage>
+                        <p n="24">
+	<s n="1">Je tâcherai donc pas te réveiller trop matin.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="25">
+	<s n="1">Je le flanquerai à la porte demain dès l'aube.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="26">
+	<s n="1">Et les gages ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="27">
+	<s n="1">Les gages ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="28">
+	<s n="1">Oui, les gages ? </s>
+	<s n="2">Vous croyez peut-être que je vais vous servir à l'oeil, vieille morue !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR fait un geste d'impatience, puis se contient.</speaker>
+                        <p n="29">
+	<s n="1">Non, mon cher Guignol.</s>
+</p>
+                    </sp><!--@stage="impatient"--><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="30">
+	<s n="1">Dites donc, monsieur ne vous écorcherait pas trop la bouche, ce me semble. </s>
+	<s n="2">Faut être poli, vieux mollusque!</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, même jeu.</speaker>
+                        <p n="31">
+	<s n="1">Pardon,mon cher monsieur Guignol.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="32">
+	<s n="1">Demain tu paieras tout cela, gredin !</s>
+</p>
+                    </sp><!--@stage="impatient"--><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="33">
+	<s n="1">Vous dites ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="34">
+	<s n="1">Je dis qu'il fera beau demain.</s>
+</p>
+                        <stage type="quiet">Reprenant.</stage>
+                        <p n="35">
+	<s n="1">Nous disions que ces gages seraient de...</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="36">
+	<s n="1">Attendez, laissez-moi les fixer moi-même, j'aime mieux ça.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="37">
+	<s n="1">Ah !</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="38">
+	<s n="1">Oui. </s>
+	<s n="2">Il vaut mieux que ce soient les domestiques qui fixent eux-mêmes leurs conditions, puisque ce sont eux qui ont le plus de mal. </s>
+	<s n="3">Je veux deux cents francs.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="39">
+	<s n="1">Par an !</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="40">
+	<s n="1">Par an ? </s>
+	<s n="2">Han !</s>
+</p>
+                        <stage type="hit">Il lui donne un coup de bâton. </stage>
+                        <p n="41">
+	<s n="1">Non, par mois. </s>
+	<s n="2">Est-il bête !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, se contenant toujours.</speaker>
+                        <p n="42">
+	<s n="1">Tu les auras.</s>
+</p>
+                    </sp><!--@stage="quiet"--><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="43">
+	<s n="1">Le matin, le chocolat.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, même jeu.</speaker>
+                        <p n="44">
+	<s n="">Tu l'auras.</s>
+</p>
+                    </sp><!--@stage="quiet "--><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="45">
+	<s n="">Dans le lit.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="46">
+	<s n="1">Dans le lit.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="47">
+	<s n="1">Tu verras le chocolat, celui que je te servirai demain matin.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="48">
+	<s n="1">À déjeuner trois plats, deux desserts, vin et pain à volonté. </s>
+	<s n="2">À quatre heures, un petit goûter. </s>
+	<s n="3">Oh ! </s>
+	<s n="4">Un rien, une aile de poulet, une cuisse de dindon, quelques gâteaux, une assiettée de soupe et une salade d'oeufs durs. </s>
+	<s n="5">À dîner, potage, hors_d_oeuvre_variés ; entrée ; rôti, entremets sucré, dessert, vin et pain, comme à déjeuner. </s>
+	<s n="6">Et voilà !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="49">
+	<s n="1">Et c'est tout ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="50">
+	<s n="1">Pour le moment. </s>
+	<s n="2">Si j'oublie quelque chose, je vous le dirai.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="51">
+	<s n="1">Et vous avez servi souvent ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="52">
+	<s n="1">Jamais. </s>
+	<s n="Z">C'est la première fois que je me présente chez quelqu'un. </s>
+	<s n="3">La dame du bureau de placement, en me donnant votre adresse, m'a dit : Guignol, tu peux y aller sans crainte. </s>
+	<s n="4">Le docteur_Cornibus est vieux, riche, ladre comme un rat. </s>
+	<s n="5">Ainsi ne te gêne pas. </s>
+	<s n="6">Vous voyez qu'elle vous connait. </s>
+	<s n="7">Aussi je n'ai fait ni une ni deux. </s>
+	<s n="8">J'ai dit, puisque le monsieur a le sac, j'y vais ; s'il résiste, je cognerai. </s>
+	<s n="9">Et me voilà. </s>
+	<s n="10">Maintenant avancez-moi six mois de gages.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="53">
+	<s n="1">Comment ! </s>
+	<s n="2">Que je t'avance six mois de gages ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="54">
+	<s n="1">Parfaitement. </s>
+	<s n="2">Je ne vous connais pas, vous ; vous pouvez filer, me planter là. </s>
+	<s n="3">Ce sera toujours autant de pris.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="55">
+	<s n="1">Ah ! </s>
+	<s n="2">Mais non.</s>
+</p>
+                        <stage type="aparte">À part. </stage>
+                        <p n="56">
+	<s n="1">Il va trop loin.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="57">
+	<s n="1">Vous ne voulez pas ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="58">
+	<s n="1">Non, mille fois non. </s>
+	<s n="2">Et tu peux t'en aller de suite si tu veux. </s>
+	<s n="3">Six mois de gages !</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="59">
+	<s n="1">Alors vous m'avez fait venir, pour rien, déranger, pour rien, causer, pour rien. </s>
+	<s n="2">Attends un peu. </s>
+	<s n="3">Et vlan ! </s>
+	<s n="2">Et vlan !</s>
+</p>
+                        <stage type="hit">Il cogne avec son bâton.</stage>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, criant.</speaker>
+                        <p n="60">
+	<s n="1">Mais il m'assomme ! </s>
+	<s n="2">Au secours !</s>
+</p>
+                    </sp><!--@stage="shout"--><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, même jeu.</speaker>
+                        <p n="61">
+	<s n="1">Veux-tu ne pas crier comme ça. </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Tu demandes un domestique et puis tu n'en veux plus. </s>
+	<s n="4">Et aïe donc ! </s>
+	<s n="5">Aïe donc !</s>
+</p>
+                    </sp><!--@stage="hit"--><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="62">
+	<s n="1">J'accepte. </s>
+	<s n="2">J'accepte tout ce que lu voudras. </s>
+	<s n="3">Tiens.</s>
+</p>
+                        <stage type="get/give">Il va chercher de l'argent.</stage>
+                        <p n="63">
+	<s n="1">Voici tes six mois de gages.</s>
+</p>
+                        <stage type="aparte">À part. </stage>
+                        <p n="64">
+	<s n="1">Pendard ! </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="65">
+	<s n="1">Tu feras tout ce que tu voudras. </s>
+	<s n="2">Le chocolat, le dîner, le goûter, le déjeuner, tu auras tout.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="66">
+	<s n="1">À la bonne heure ! </s>
+	<s n="2">Vous voyez bien qu'il n'y a qu'à s'expliquer pour s'entendre.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <stage type="aparte">À part. </stage>
+                        <p n="67">
+	<s n="1">Et me voilà obligé de le garder maintenant six mois, puisque je lui ai payé ses gages.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="68">
+	<s n="1">Qu'est-ce que vous dites ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="69">
+	<s n="1">Je dis que je suis très heureux de ton explication. </s>
+	<s n="2">Tes arguments sont...</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="70">
+	<s n="1">Très sensibles, je le sais. </s>
+	<s n="2">Maintenant, vous verrez, je ne suis pas mauvais garçon. </s>
+	<s n="3">Dites-moi ce qu'il y a à faire et pourvu que ce ne soit pas trop difficile, pourvu qu'il n'y ait pas trop à se fatiguer, je vais me mettre à l'ouvrage.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <stage type="aparte">À part.</stage>
+                        <p n="71">
+	<s n="1">Il pourra peut-être faire mon affaire, avec de la patience ?</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="72">
+	<s n="1">Voici ton occupation. </s>
+	<s n="2">Je vais sortir ; il viendra probablement des personnes, des clients, pour me consulter. </s>
+	<s n="3">Tu leur répondras que je les recevrai demain, que j'ai été obligé de m'absenter aujourd'hui. </s>
+	<s n="4">Tu les recevras poliment, tu leur parleras respectueusement.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="73">
+	<s n="1">C'est bon ! </s>
+	<s n="2">C'est bon ! </s>
+	<s n="3">On sait son métier, que diable ! </s>
+	<s n="4">J'ai été deux ans à l'école. </s>
+	<s n="5">Je sais compter jusqu'à dix.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="74">
+	<s n="1">Tu leur demanderas leurs noms ? </s>
+	<s n="2">- Tu tâcheras de ne pas les oublier, et tu me les diras à mon retour pour que j'en prenne note. </s>
+	<s n="3">Tu as compris ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="75">
+	<s n="1">Mais parfaitement. </s>
+	<s n="2">Tu peux filer, maintenant, vieux singe !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR. dporl.</speaker>
+                        <p n="76">
+	<s n="1">Il est trop familier. </s>
+	<s n="2">Enfin - il se corrigera peut-être !</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="77">
+	<s n="1">Allons ! </s>
+	<s n="2">À ce soir.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="78">
+	<s n="1">À ce soir.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="79">
+	<s n="1">Et n'oublie aucune de mes recommandations.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, le poussant dehors.</speaker>
+                        <p n="80">
+	<s n="1">Mais oui ! </s>
+	<s n="2">Mais oui ! </s>
+	<s n="3">En voilà une montre à répétition !...</s>
+</p>
+                        <stage type="exit">Le docteur sort.</stage>
+                    </sp><!--@stage="push/away"--><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III.</head>
+<sp who="#guignol">
+                        <speaker>GUIGNOL, seul.</speaker>
+                        <p n="1">
+	<s n="1">Maintenant si j'allais faire un tour à la cuisine.</s>
+</p>
+                        <stage type="watch">Il regarde.</stage>
+                        <p n="2">
+	<s n="1">Un joli pâté sur la table, un reste de poulet, mais c'est tout ce qu'il me faut. </s>
+	<s n="2">Et je vais de ce pas dire quelques mots à toutes ces bonnes choses.</s>
+</p>
+                        <stage type="exit">Il sort.</stage>
+                    </sp><!--@stage="alone"--><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE IV. Guignol, puis une dame.</head>
+<stage type="ring">On entend sonner, une fois, deux fois, trois fois, puis la sonnerie va [ca]rillonne sans s'arrêter.</stage> 
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="1">
+	<s n="1">On y va ! </s>
+	<s n="2">On y va ! </s>
+</p>
+                        <stage type="entrance">Il paraît, la serviette nouée autour du cou.</stage>
+                        <p n="2">
+	<s n="1">Il n'y a donc pas moyen de rester tranquille une minute. </s>
+	<s n="2">On y va ! </s>
+	<s n="3">On y va ! </s>
+	<s n="4">C'est-il, Dieu possible, de déranger ainsi les gens ! </s>
+	<s n="5">On y va !</s>
+</p>
+                        <stage type="shout">Criant.</stage>
+                        <p n="3">
+	<s n="1">J'y vais, on finirait par démolir la maison.</s>
+</p>
+                        <stage type="open/entrance/together">Il va ouvrir, puis il entre suivi dune dame. </stage>
+                        <p n="4">
+	<s n="1">Entrez, Madame, entrez !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-dame">
+                        <speaker>LA DAME.</speaker>
+                        <p n="5">
+	<s n="1">Je croyais qu'on ne viendrait pas.</s>
+</p>
+                    </sp><!--@who="LA DAME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="6">
+	<s n="1">Dites donc, vous ! </s>
+	<s n="2">Est ce que je vais vous déranger quand vous êtes à table ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-dame">
+                        <speaker>LA DAME.</speaker>
+                        <p n="7">
+	<s n="1">Insolent !</s>
+</p>
+                    </sp><!--@who="LA DAME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="8">
+	<s n="1">Insolent ! </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Tu sais, toi, ne recommence pas, ou ça va se gâter.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-dame">
+                        <speaker>LA DAME, furieuse.</speaker>
+                        <p n="9">
+	<s n="1">Où est le docteur ?</s>
+</p>
+                    </sp><!--@stage="furious"--><!--@who="LA DAME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="10">
+	<s n="1">Je ne sais pas. </s>
+	<s n="2">Qu'est-ce que vous lui voulez ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-dame">
+                        <speaker>LA DAME.</speaker>
+                        <p n="11">
+	<s n="1">Vous faire chasser d'abord, puis le consulter ensuite.</s>
+</p>
+                    </sp><!--@who="LA DAME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="12">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Si j'ai un conseil à vous donner, c'est de me dire votre maladie pour que je la lui raconte, car il n'est pas là.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-dame">
+                        <speaker>LA DAME.</speaker>
+                        <p n="13">
+	<s n="1">Ma maladie ! </s>
+	<s n="2">À un domestique ! </s>
+	<s n="3">Ouvrez-moi la porte tout de suite. </s>
+	<s n="4">Puisque le docteur n'est pas là, je reviendrai.</s>
+</p>
+                    </sp><!--@who="LA DAME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="14">
+	<s n="1">Alors vous ne voulez pas me dire pourquoi vous veniez le consulter ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-dame">
+                        <speaker>LA DAME.</speaker>
+                        <p n="15">
+	<s n="1">Jamais de la vie !</s>
+</p>
+                    </sp><!--@who="LA DAME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="16">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Je vais vous la donner tout de même votre consultation. </s>
+	<s n="3">On ne dérange pas les gens pour rien.</s>
+</p>
+                        <stage type="get/hit">Il va prendre le balai et frappe. </stage>
+                        <p n="17">
+	<s n="1">Tenez, voici pour la migraine, pour les foulures, pour les brûlures, pour les luxures, pour la phtisie, l'hydropisie, la pulmonie, et toutes les autres maladies.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#la-dame">
+                        <speaker>LA DAME, sesauvant poursuiviepar Guignol.</speaker>
+                        <p n="18">
+	<s n="1">Au secours ! </s>
+	<s n="2">Au secours ! </s>
+	<s n="3">On m'assassine !</s>
+</p>
+                    </sp><!--@who="LA DAME"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, mêmejeu.</speaker>
+                        <p n="19">
+	<s n="1">Non, je vous consulte. </s>
+	<s n="2">Et aïe donc !... </s>
+	<s n="3">Et aïe donc !</s>
+</p>
+                        <stage type="lazzis/get/shout">Lazzis. - Ils s'arrachent le balai mutuellement, puis, la dame s'enfuit, sans chapeau, sans perruque, appelant au secours.</stage>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, seul.</speaker>
+                        <p n="20">
+	<s n="1">Tiens ! </s>
+	<s n="2">Elle a oublié de me dire son nom. </s>
+	<s n="3">Elle reviendra... </s>
+	<s n="4">Je crois que pour la première consultation, je ne m'en suis pas trop mal tiré. </s>
+	<s n="5">Maintenant, allons-nous en reprendre notre petit déjeuner. </s>
+	<s n="6">Il n'y a que le vin que je n'ai pas trouvé encore, mais en cherchant bien...</s>
+</p>
+                        <stage type="away/ring">Au moment où il va pour sortir, on sonne.</stage>
+                        <p n="21">
+	<s n="1">Encore ! </s>
+	<s n="2">Ah ! </s>
+	<s n="3">J'en ai assez moi !</s>
+</p>
+                        <stage type="ring">Drelin, drelin.</stage>
+                        <p n="22">
+	<s n="1">On y va. </s>
+	<s n="2">Est-ce que ça durera toute la journée ! </s>
+</p>
+                        <stage type="ring">Drelin, drelin, drelin.</stage>
+                        <p n="23">
+	<s n="1">On y va !... </s>
+	<s n="2">Attends ! </s>
+	<s n="3">Je m'en vais te l'expédier celui-là ! </s>
+	<s n="4">Et un peu vite.</s>
+</p>
+                        <stage type="away/open">Il va ouvrir.</stage>
+                    </sp><!--@stage="alone"--><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Guignol, entrant suivi d'un vieux monsieur.</head>
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="1">
+	<s n="1">Le Docteur_Cornibus, s'il vous plaît ! </s>
+	<s n="2">Je viens lui apporter de l'argent.</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="2">
+	<s n="1">De l'argent ! </s>
+	<s n="2">Bonne aubaine ! </s>
+	<s n="3">Le Docteur_Cornibus, c'est moi, Monsieur.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="3">
+	<s n="1">Vous ?</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="4">
+	<s n="1">Moi-même. </s>
+	<s n="2">Le grand, l'illustre, le célèbre, le seul docteur_Cornibus, inventeur de la poudre de ce nom, arracheur_de_dents du Schah_de_Perse, pédicure de l'Éléphant blanc du Roi_de_Siam, médecin breveté du Grand_Lama, etc, etc..</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR, s'inclinant.</speaker>
+                        <p n="5">
+	<s n="1">Un de mes amis que vous avez soigné, m'a prié de vous remettre le prix de visites à lui faites, et j'ai été très heureux de me charger de cette commission, d'autant plus que j'avais moi-même une consultation à vous demander.</s>
+</p>
+                    </sp><!--@stage="wave"--><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="6">
+	<s n="1">Une consultation ?</s>
+</p>
+                        <stage type="aparte">À part. </stage>
+                        <p n="7">
+	<s n="1">Ça va être plus difficile.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="8">
+	<s n="1">Voici d'abord l'argent. </s>
+	<s n="2">Dix visites à dix francs, cent francs. </s>
+	<s n="3">Est-ce bien votre compte ?</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, premnt Faryent.</speaker>
+                        <p n="9">
+	<s n="1">Parfaitement.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="10">
+	<s n="1">Et maintenant voici ce sur quoi je voulais vous consulter. </s>
+	<s n="2">Il y a un mois environ que je ne peux plus dormir, j'ai des insomnies. </s>
+	<s n="3">J'ai beau me coucher de bonne heure, me coucher tard, rien n'y fait ! </s>
+	<s n="4">Que me conseillez-vous ?</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="11">
+	<s n="1">Je ne sais pas.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="12">
+	<s n="1">Comment ! </s>
+	<s n="2">Vous ne savez pas.</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="13">
+	<s n="1">Si - je veux dire que je sais parfaitement. </s>
+	<s n="2">Seulement c'est grave !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="14">
+	<s n="1">Grave ?</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="15">
+	<s n="1">Très grave, encore plus grave, excessivement grave !</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="16">
+	<s n="1">Je vais lui parler latin, cela fera très bien.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="17">
+	<s n="1">Gravus, grava, gravum, encore plus gravum. </s>
+	<s n="2">Voilà !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="18">
+	<s n="1">Et que dois-je faire ?</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="19">
+	<s n="1">Vous coucher.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="20">
+	<s n="1">Mais je ne peux pas dormir.</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="21">
+	<s n="1">Vous essaierez.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="22">
+	<s n="1">C'est impossible. </s>
+	<s n="2">Il faut trouver autre chose.</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="23">
+	<s n="1">Ah ! </s>
+	<s n="2">Il faut trouver autre chose. </s>
+	<s n="3">Attends. </s>
+	<s n="4">Tournez-vous.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="24">
+	<s n="1">Que je me tourne ?</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL, le plaçant.</speaker>
+                        <p n="25">
+	<s n="1">Oui, là, comme ceci.</s>
+</p>
+                        <stage type="hit">Il va prendre te balai et frappe.</stage>
+                        <p n="26">
+	<s n="1">Voilà le remède.</s>
+</p>
+                        <stage type="lazzis/hit">Lazzis, coups de bâton.</stage>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-vieux-monsieur">
+                        <speaker>LE VIEUX MONSIEUR.</speaker>
+                        <p n="27">
+	<s n="1">Au secours !</s>
+</p>
+                    </sp><!--@who="LE VIEUX MONSIEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="28">
+	<s n="1">Et aïe donc ! </s>
+	<s n="2">Et aïe donc !</s>
+</p>
+                        <stage type="exit/escape">Le vieux monsieur s'enfuit.</stage>
+                    </sp><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VI.</head>
+<sp who="#guignol">
+                        <speaker>GUIGNOL, seul.</speaker>
+                        <p n="1">
+	<s n="1">Mais c'est très amusant d'être domestique chez un docteur. </s>
+	<s n="2">De l'argent, de bons repas. </s>
+	<s n="3">Je crois que je me trouverai très bien ici. </s>
+	<s n="4">En parlant de repas, j'ai soif et je n'aperçois pas la plus petite bouteille. </s>
+	<s n="5">Où diable met-il son vin cet homme-là ? </s>
+	<s n="6">C'est la première des choses à indiquera un domestique, la cave... </s>
+	<s n="7">Cherchons.</s>
+</p>
+                        <stage type="ring">On sonne.</stage>
+                        <p n="2">
+	<s n="1">Encore. </s>
+	<s n="2">Ah non ! </s>
+	<s n="3">Cette fois. </s>
+	<s n="4">Mais il ne s'arrêtera pas. Attends!</s>
+</p>
+                        <stage type="location/get/hit">Il va à la porte prend son bâton, ouvre et en donne un grand coup sur l'apothicaire qui entre.</stage>
+                    </sp><!--@stage="alone"--><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Guignol, L'Apothicaire, tenant une bouteille.</head>
+<sp who="#l-apothicaire">
+                        <speaker>L'APOTHICAIRE.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon Dieu!</s>
+</p>
+                    </sp><!--@who="L'APOTHICAIRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="2">
+	<s n="1">Oh ! </s>
+	<s n="2">Pardon.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="3">
+	<s n="1">Un marchand de vin.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#l-apothicaire">
+                        <speaker>L'APOTHICAIRE.</speaker>
+                        <p n="4">
+	<s n="1">Vous pourriez faire un peu plus attention.</s>
+</p>
+                    </sp><!--@who="L'APOTHICAIRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="5">
+	<s n="1">Ça m'a échappé. </s>
+	<s n="2">Vous demandez?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#l-apothicaire">
+                        <speaker>L'APOTHICAIRE.</speaker>
+                        <p n="6">
+	<s n="1">Rien du tout. </s>
+	<s n="2">Cette bouteille à remettre au docteur dès qu'il rentrera. </s>
+	<s n="3">Vous lui direz que je l'ai préparée moi-même. </s>
+	<s n="4">Elle est délicieuse, un parfum exquis. </s>
+	<s n="5">Il la boira avec un plaisir extrême.</s>
+</p>
+                    </sp><!--@who="L'APOTHICAIRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="7">
+	<s n="1">Donnez.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#l-apothicaire">
+                        <speaker>L'APOTHICAIRE.</speaker>
+                        <p n="8">
+	<s n="1">Et maintenant je pars, car on m'attend à la boutique, j'ai d'autres bouteilles à préparer.</s>
+</p>
+                    </sp><!--@who="L'APOTHICAIRE"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="9">
+	<s n="1">Au revoir 1</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#l-apothicaire">
+                        <speaker>L'APOTHICAIRE, le retenant.</speaker>
+                        <p n="10">
+	<s n="1">Non, vous savez, restez là. </s>
+	<s n="2">Ne m'accompagnez pas. </s>
+	<s n="3">J'aime mieux ça.</s>
+</p>
+                    </sp><!--@stage="pul"--><!--@who="L'APOTHICAIRE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII.</head>
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="1">
+	<s n="1">Plus souvent que j'irais taper sur un individu qui apporta de si bonnes choses ! </s>
+	<s n="2">Une bouteille ! </s>
+	<s n="3">Comme cela se trouve bien, moi qui mourais de soif. </s>
+	<s n="4">Ce doit être exquis.</s>
+</p>
+                        <stage type="watch">Il regarde la bouteille.</stage>
+                        <p n="2">
+	<s n="1">Limonade_Rogé... </s>
+	<s n="2">Limonade !... </s>
+	<s n="3">J'adore la limonade. </s>
+	<s n="4">Voyons.</s>
+</p>
+                        <stage type="drink">Il boit.</stage>
+                        <p n="3">
+	<s n="1">Oh ! </s>
+	<s n="2">C'est délicieux... </s>
+	<s n="3">Ça vous a un petit goût. </s>
+	<s n="4">Mais un goût ! </s>
+	<s n="5">Est-il heureux le docteur de pouvoir de payer des douceurs pareilles. </s>
+	<s n="6">Oh ! </s>
+	<s n="7">Décidément pour une bonne place, c'est une bonne place ; je n'ai pas à me plaindre et si tous les jours se ressemblent, bravo ! </s>
+	<s n="8">Bien nourri, bien logé, bien payé... </s>
+	<s n="9">Et de la bonne limonade.</s>
+</p>
+                        <stage type="drink">Il boit.</stage>
+                        <p n="4">
+	<s n="1">De l'excellente limonade... </s>
+	<s n="2">Quand le docteur reviendra je lui dirai qu'on n'a rien apporté du tout... </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Ça va mieux -... </s>
+	<s n="5">Et maintenant, voyons, que vais-je faire ?... </s>
+	<s n="6">Ma foi, tant pis, je vais me coucher un peu... </s>
+	<s n="7">Le repos après le travail, c'est nécessaire... </s>
+	<s n="8">Si on sonne, je laisserai sonner... </s>
+	<s n="9">Le docteur doit avoir sa clef... </s>
+	<s n="10">S'il ne l'a pas, il attendra que je me réveille... </s>
+	<s n="11">Ah ! </s>
+	<s n="12">Que je vais bien dormir. </s>
+	<s n="13">Encore un peu de limonade !</s>
+</p>
+                        <stage type="drink">Il boit.</stage>
+                        <p n="5">
+	<s n="1">Il faudra que je lui dise de faire faire ses bouteilles plus grandes. </s>
+	<s n="2">Il n'y en a pas pour un enfant.</s>
+</p>
+                        <stage type="exit">Il sort.</stage>
+                    </sp><!--@stage="alone"--><!--@who="GUIGNOL"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Le Docteur, puis Guignol.</head>
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, entrant.</speaker>
+                        <p n="1">
+	<s n="1">J'ai eu fini mes affaires plus tôt que je ne pensais et je me suis hâté de rentrer, parce que j'ai peur que mon nouveau domestique ne soit pas encore assez bien au courant. </s>
+	<s n="3">Il m'a bien promis d'être poli... </s>
+	<s n="4">Mais je me méfie — d'autant que j'attendais aujourd'hui la vieille Comtesse_d_Escarlagnos, une de mes meilleures clientes, et que je suis pressé de savoir ce qu'elle a dit. </s>
+	<s n="5">Elle devait venir me consulter... </s>
+	<s n="6">Ah ça ! </s>
+	<s n="7">Mais où est Guignol ! </s>
+	<s n="8">Je ne le vois pas. </s>
+	<s n="9">Guignol !</s>
+</p>
+                        <stage type="call">Il appelle.</stage>
+                        <p n="2">
+	<s n="1">Guignol ! </s>
+	<s n="2">Guignol ! </s>
+	<s n="3">Où est-il donc allé à cette heure ?... </s>
+	<s n="4">Guignol ! </s>
+	<s n="5">Guignol !</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL apparaît, pâle, se soutenant à peine, les mains sur le ventre.</speaker>
+                        <p n="3">
+	<s n="1">Voilà ! </s>
+	<s n="2">Voilà !</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="4">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon Dieu ! </s>
+	<s n="3">Que t'arrive-t-il ? </s>
+	<s n="4">Tu es tout pâle, tu te soutiens à peine.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="5">
+	<s n="1">Rien... </s>
+	<s n="2">La chaleur, le.... </s>
+	<s n="3">Ah !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="6">
+	<s n="1">Mais il se trouve mal ! </s>
+	<s n="2">Qu'as-tu,voyons ? </s>
+	<s n="3">Que te sens-tu ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="7">
+	<s n="1">C'est là... dans le coeur, et puis là... dans le ventre, ça me fait... </s>
+	<s n="2">Ah ! ah ! ah !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="8">
+	<s n="1">Aurais-tu touché à quelques-unes de ces fioles enfermées dans les armoires ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="9">
+	<s n="1">Oh ! </s>
+	<s n="2">Non ! </s>
+	<s n="3">Non ! - </s>
+	<s n="4">Mais ça me fait mal ! </s>
+	<s n="5">Ça me... </s>
+	<s n="6">Ah ! ah ! ah !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="10">
+	<s n="1">Tu as dû faire quelque tour de ton métier.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="11">
+	<s n="1">Je vous jure...</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="12">
+	<s n="1">Ne jure pas. </s>
+	<s n="2">Je vois ce que c'est... </s>
+	<s n="3">Tu es empoisonné !</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="13">
+	<s n="1">Empoisonné... </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Ma mère...</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="14">
+	<s n="1">Allons ! </s>
+	<s n="2">Du courage !</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="15">
+	<s n="1">Vous êtes bon, vous... </s>
+	<s n="2">Empoisonné... </s>
+	<s n="3">Mais il n'y a donc aucun moyen de me sauver ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="16">
+	<s n="1">Si, peut-être... </s>
+	<s n="2">Je vais l'ouvrir le ventre et regarder ce qu'il y a dedans.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="17">
+	<s n="1">Non pas cela ! </s>
+	<s n="2">J'aime mieux...</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="18">
+	<s n="1">Quoi ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="19">
+	<s n="1">Tout vous dire.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="20">
+	<s n="1">Eh bien ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="21">
+	<s n="1">J'ai...</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="22">
+	<s n="1">Quoi ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="23">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon Dieu !</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="24">
+	<s n="1">Dépêche-toi... </s>
+	<s n="2">Tout à l'heure il ne sera plus temps.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="25">
+	<s n="1">J'ai bu une bouteille de limonade... qu'on avait apportée pour vous... </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Mon Dieu ! </s>
+	<s n="4">Voilà que ça me reprend.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="26">
+	<s n="1">Une limonade_Rogé...</s>
+</p>
+                        <stage type="wave">Guignol fait signe que oui.</stage>
+                        <p n="27">
+	<s n="1">Tu es un homme mort.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="28">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon Dieu!</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="29">
+	<s n="1">Le seul remède qu'il y ait à ton mal coûte très cher, et je ne sais...</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="30">
+	<s n="1">Combien... ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="31">
+	<s n="1">Cent francs.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="32">
+	<s n="1">Les voilà... </s>
+	<s n="2">Mais donnez-moi vite quelque chose... </s>
+	<s n="3">Le coeur me manque.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR, à part, prenant l'argent.</speaker>
+                        <p n="33">
+	<s n="1">Je rentre dans mes fonds.</s>
+</p>
+                    </sp><!--@stage="aparte/get"--><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="34">
+	<s n="1">Eh bien ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="35">
+	<s n="1">Mais il faut tout me dire... </s>
+	<s n="2">Est-ce bien tout ce que tu as fait ?...</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="36">
+	<s n="1">J'ai encore rossé une vieille dame.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="37">
+	<s n="1">Pendard !</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="38">
+	<s n="1">Ah ! </s>
+	<s n="2">Ne m'accablez pas, puisque je vais mourir.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="39">
+	<s n="1">Et c'est tout ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="40">
+	<s n="1">Puis il est venu un vieux monsieur, qui m'a remis do l'argent. </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Le voilà, Monsieur, je ne voulais pas le garder. </s>
+	<s n="4">Mais vite, vite un remède, je sens que je m'en vais.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="41">
+	<s n="1">Et c'est tout ?</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="42">
+	<s n="1">Je vous le jure...</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="43">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Tu vas t'en aller, tu te coucheras... </s>
+	<s n="3">Et demain ça ira mieux.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="44">
+	<s n="1">Comment, c'est tout votre remède ? </s>
+	<s n="2">Et l'empoisonnement ? </s>
+	<s n="3">La limonade ?</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="45">
+	<s n="1">Une purge.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="46">
+	<s n="1">Suis-je bête ! </s>
+	<s n="2">Dites donc, rendez-moi mon argent.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="47">
+	<s n="1">Une autre fois ! </s>
+	<s n="2">Et maintenant bon voyage, je ne te retiens plus.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="48">
+	<s n="1">Je suis joué... </s>
+	<s n="2">J'ai voulu duper les autres, et c'est moi qu'on a dupé... </s>
+	<s n="3">C'est égal, si je n'étais pas malade... </s>
+	<s n="4">Mais, je ne peux pas. </s>
+	<s n="5">Et puis ces docteurs il faut toujours se méfier ; jamais plus je ne me placerai chez eux... </s>
+	<s n="6">Je n'oserais plus boire ni manger.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+<sp who="#le-docteur">
+                        <speaker>LE DOCTEUR.</speaker>
+                        <p n="49">
+	<s n="1">Bien mal acquis ne profite jamais.</s>
+</p>
+                    </sp><!--@who="LE DOCTEUR"-->
+<sp who="#guignol">
+                        <speaker>GUIGNOL.</speaker>
+                        <p n="50">
+	<s n="1">Ainsi finit la comédie.</s>
+</p>
+                    </sp><!--@who="GUIGNOL"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

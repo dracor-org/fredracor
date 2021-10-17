@@ -1,0 +1,863 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Les Troqueurs</title>
+                <title type="sub">En un Acte</title>
+                <title type="sub">Le prix est de 24 s.</title>
+                <title type="sub">Représenté pour la première fois sur le théâtre de la Foire Saint-Martin le 30 juillet 1753.</title>
+                <author>
+      <idno type="isni">0000000122775219</idno>
+      <idno type="wikidata">Q276675</idno>
+      <persName>
+        <forename>Jean-Joseph</forename>
+        <surname>Vadé</surname>
+      </persName>
+    </author><!--Jean-Joseph VADÉ (1720-1757)-->
+                <editor>Paul FIEVRE janvier 2021.</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001556</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/VADE_TROQUEURS.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/VADE_TROQUEURS.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1754"/>
+                        <date type="premiere" when="1753">Représenté pour la première fois sur le théâtre de la Foire Saint-Martin le 30 juillet 1753.</date>
+                        <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k9809876</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="lubin" sex="MALE">
+                        <persName>Lubin</persName>
+                    </person>
+                    <person xml:id="lucas" sex="MALE">
+                        <persName>Lucas</persName>
+                    </person>
+                    <person xml:id="fanchon" sex="FEMALE">
+                        <persName>Fanchon</persName>
+                    </person>
+                    <person xml:id="margot" sex="FEMALE">
+                        <persName>Margot</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>vers</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LES TROQUEURS</titlePart>
+			<titlePart type="sub">EN UN ACTE</titlePart>
+			<titlePart type="sub">Le prix est de 24 s.</titlePart>
+			<titlePart type="sub">Représenté pour la première fois sur le théâtre de la Foire Saint-Martin le 30 juillet 1753.</titlePart>
+		</docTitle> 
+		<docDate when="1754">M. DCC. LIV. Avec Approbation et Privilège du Roi.</docDate>
+		<docAuthor>PAR M. VADÉ.</docAuthor>
+		<div type="docImprint">
+			<div type="approbation">
+                    <head>APPROBATION.</head>
+				<p>J'ai lu par ordre de Monseigneur le chancelier, Les TROQUEURS en un acte : Et je crois que l'on peut en permettre l'impression. Ce 15juillet 1753. CREBILLON.</p>
+			</div><!--@date=""-->
+			<!--TODO: handling of editor name at this place unclear <editor>À PARIS, Chez DUCHESNE, Libraire, rue S. Jacques, au-dessous de la Fontaine S. Benoît, au Temple du Goût.</editor>-->
+			<div type="printer">
+                    <p>De l'Imprimerie de BALLARD, Imprimeur du Roi.</p>
+                </div>
+		</div>
+		<performance>
+			<ab type="premiere">Représenté pour la première fois sur le théâtre de la Foire Saint-Martin le 30 juillet 1753.</ab><!--@date="1753"--><!--@location="Théâtre de la Foire Saint-Martin"-->
+		</performance>
+	<castList>
+                <head>ACTEURS</head>
+		<castItem>
+                    <role corresp="#lubin">LUBIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="Margot"-->, amant de Margot.</castItem>
+		<castItem>
+                    <role corresp="#lucas">LUCAS</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="Fanchon"-->, amant de Fanchon.</castItem>
+		<castItem>
+                    <role corresp="#margot">MARGOT</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="Lubin"-->, fiancée avec Lubin.</castItem>
+		<castItem>
+                    <role corresp="#fanchon">FANCHON</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="Lucas"-->, fiancée avec Lucas.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Village" country="France" periode="XVIIIème" link=""/>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LES TROQUEURS</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#lubin">
+                        <speaker>LUBIN fiuU.</speaker>
+                        <stage type="title">ÀIR. Tout cela m'est indifférent.</stage>
+                        <l n="1">Quand sur fis vieux jours un garçon</l>
+                        <l n="2">Devient le mari d'un tendron,</l>
+                        <l n="3">Un galant rit de la folle ;</l>
+                        <l n="4">Le reste est bientôt projeté :</l>
+                        <l n="5">Mais qu'un bon vivant se marie</l>
+                        <l n="6">Les rieurs sont de son côté.</l>
+                        <stage type="title">Ariette.</stage>
+                        <l n="7">On ne peut trop tôt</l>
+                        <l n="8">Se mettre en ménage,</l>
+                        <l n="9">J'ai beaucoup d'ouvrage ;</l>
+                        <l n="10">Et le mariage</l>
+                        <l n="11">Est mon vrai ballot.</l>
+                        <l n="12">Un contrat m'engage,</l>
+                        <l n="13">J'épouse Margot,</l>
+                        <l n="14">Son humeur volage</l>
+                        <l n="15">Est presque le gage</l>
+                        <l n="16">D'un mauvais lot.</l>
+                        <l n="17">Mais contre l'orage</l>
+                        <l n="18">On met en usage</l>
+                        <l n="19">Les moyens qu'il faut.</l>
+                        <l n="20">Une femme est sage</l>
+                        <l n="21">Quand l'homme en un mot</l>
+                        <l n="22">N'est pas un sot.</l>
+                    </sp><!--@who="LUBIN"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Lubin, Lucas.</head>
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="23">Nous voilà fiancés par un double contrat,</l>
+                        <l n="24">L'indolente Fanchon va devenir ta femme.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="25">L'égrillarde Margot va te mettre en état</l>
+                        <l n="26">De chanter chaque jour une amoureuse gamme.</l>
+                        <l n="27">Compère es-tu content de ton marché, dis moi ?</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="28">Et toi, compère ?</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="29">Et toi ?</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="30">Parles-toi ;</l>
+                        <l n="31">Et-tu bien satisfait ?</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="32">Compère es-tu bien aise ?</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS, le montrant au doigt.</speaker>
+                        <l n="33">Pour Margot tout de feu.</l>
+                    </sp><!--@stage="show"--><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN le montrant du doigtà son tour.</speaker>
+                        <l n="34">Pour Fanchon tout de braise, </l>
+                        <l n="35">Es-tu bien satisfait ?</l>
+                    </sp><!--@stage="show"--><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="36">Compère es-tu bien aise ?</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="37">Mais dis auparavant ?</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="38">Tu le veux ? Tiens, ma foi</l>
+                        <l n="39">Je ne sais. Mais Fanchon est lente et paresseuse.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <stage type="title">Ariette.</stage>
+                        <l n="40">Margot, morbleu,</l>
+                        <l n="41">Est par trop joyeuse, </l>
+                        <l n="42">Elle est jaseuse,</l>
+                        <l n="43">Gausseuse</l>
+                        <l n="44">Pour peu</l>
+                        <l n="45">Qu'on la mette en Jeu</l>
+                        <l n="46">Elle prend feu. Fin.</l>
+                        <l n="47">La voilà quinteuse, </l>
+                        <l n="48">Grogneuse, </l>
+                        <l n="49">Fâcheuse,</l>
+                        <l n="50">Dites-lui</l>
+                        <l n="51">Oui,</l>
+                        <l n="52">Elle répond</l>
+                        <l n="53">Non,</l>
+                        <l n="54">Oui.</l>
+                        <l n="55">Non.</l>
+                        <l n="56">Non,</l>
+                        <l n="57">Oui ;</l>
+                        <l n="58">Un démenti</l>
+                        <l n="59">Vous met en colère,</l>
+                        <l n="60">Prend-on le parti</l>
+                        <l n="61">De la faire taire, </l>
+                        <l n="62">Le bruit double encor,</l>
+                        <l n="63">Jamais d'accord.</l>
+                        <l n="64">On se désole,</l>
+                        <l n="65">Soufflets vont leur train,</l>
+                        <l n="66">On les rend soudain,</l>
+                        <l n="67">Et le bonnet vole.</l>
+                        <l n="68">Margot, etc.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <note type="L">Trogne : Terme familier et de moquerie. Visage. [L]</note>
+                        <l n="69">Le défaut de Fanchon me fait maigrir la trogne ;</l>
+                        <l n="70">Son air froid, engourdi, m'a désolé vingt fois.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="71">Tiens, nous avons été par trop vite en besogne,</l>
+                        <l n="72" part="I">Margot te convient mieux.</l><!--@syll="6"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="72" part="F">C'est bien dit, je le crois.</l><!--@syll="6"-->
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="73">Je m'accommoderais de Fanchon à merveille.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="74">Troquons.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="75">Va.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="76">Tope.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="77">Allons.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lubin #lucas">
+                        <speaker>ENSEMBLE.</speaker>
+                        <l n="78">Le changement réveille.</l>
+                    </sp><!--@stage="together"--><!--@who="LUBIN, LUCAS"-->
+<stage type="together">ENSEMBLE.</stage>
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="79">Troquons, troquons,</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="80">Changeons compère.</l>
+                        <l n="81">Point de façons ;</l>
+                        <l n="82">Foin du Notaire.</l>
+                        <l n="83">Tiens déchirons </l>
+                        <stage type="tear">Ils déchirent leurs contrats.</stage>
+                        <l n="84">Ce biau chiffon. </l>
+                        <l n="85">Troquons, troquons,</l>
+                        <l n="86">Changeons compère,</l>
+                        <l n="87">Bien n'est si bon.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="88">Mais de chacun de nous s'avance la future.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="89">Faisons les consentir.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="90">Va. Nous allons conclure.</l>
+                    </sp><!--@who="LUBIN"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Lucas, Lubin, Margot, Fanchon.</head>
+<sp who="#lucas">
+                        <speaker>LUCAS, prend Margot sous le bras.</speaker>
+                        <l n="91">Bonjour Margot.</l>
+                    </sp><!--@stage="touch"--><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="92">Fanchon bonjour.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="93" part="I">Tu te trompes !</l><!--@syll="3"-->
+                    </sp><!--@who="FANCHON"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="93" part="F">Non ma chère.</l><!--@syll="3"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT, à Lucas qui lui baise la main.</speaker>
+                        <l n="94">Mais, finis donc.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON, à Lubin qui lui en fait autant.</speaker>
+                        <l n="95">Veux-tu te taire ?</l>
+                    </sp><!--@who="FANCHON"-->
+<sp who="#fanchon #margot">
+                        <speaker>MARGOT, FANCHON.</speaker>
+                        <l n="96">À ton ami peux-tu jouer ce tour ?</l>
+                    </sp><!--@who="FANCHON, MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="97">Margot va m'en vouloir.</l>
+                    </sp><!--@who="FANCHON"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="98">Fanchon sera jalouse.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN, à Fanchon.</speaker>
+                        <l n="99">Écoute ; c'est moi qui t'épouse.</l>
+                    </sp><!--@stage="toward"--><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS, à Margot.</speaker>
+                        <l n="100">C'est moi qui serai ton mari.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT, lui montrant Lubin.</speaker>
+                        <stage type="title">Ariette en quatuor.</stage>
+                        <l n="101" part="I">Et non c'est lui.</l><!--@syll="4"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="101" part="F">Et non c'est moi.</l><!--@syll="4"-->
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN, à Fanchon.</speaker>
+                        <l n="102">Nous nous unirons aujourd'hui.</l>
+                    </sp><!--@stage="toward"--><!--@who="LUBIN"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="103">Pas avec toi ;</l>
+                        <l n="104">C'est avec lui.</l>
+                    </sp><!--@who="FANCHON"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="105" part="I">C'est moi qui serai ton mari.</l><!--@syll="8"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON, montrant Lucas.</speaker>
+                        <l n="105" part="F">C'est lui.</l><!--@syll="2"-->
+                    </sp><!--@stage="show"--><!--@who="FANCHON"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="106">Moi, moi.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="107">Lui, lui.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin #lucas #fanchon #margot">
+                        <speaker>QUATUOR.</speaker>
+                        <l n="108">Eh non c'est lui,</l>
+                        <l n="109">Eh non c'est moi.</l>
+                    </sp><!--@who="LUBIN, LUCAS, FANCHON, MARGOT"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <stage type="title">Ariette.</stage>
+                        <l n="110">D'un amant inconstant</l>
+                        <l n="111">L'amour se venge,</l>
+                        <l n="112">Même à l'instant.</l>
+                        <l n="113">Que son coeur change, </l>
+                        <l n="114">Il n'est pas content ;</l>
+                        <l n="115">C'est où ce Dieu l'attend.</l>
+                        <l n="116">Des feux d'un volage</l>
+                        <l n="117">On est peu flatté ;</l>
+                        <l n="118">Le plus doux langage</l>
+                        <l n="119">Est toujours rejette</l>
+                        <l n="120">Quand il est l'hommage</l>
+                        <l n="121">De la légèreté.</l>
+                        <l n="122">Sans alarmer Flore,</l>
+                        <l n="123">Le badin Zéphir</l>
+                        <l n="124">Vole avec plaisir</l>
+                        <l n="125">Sur les fleurs qu'elle tait éclore.</l>
+                        <l n="126">Un tendre soupir</l>
+                        <l n="127">Bientôt le rappelle,</l>
+                        <l n="128">Il revient près d'elle</l>
+                        <l n="129">Sur l'aile du Désir.</l>
+                        <l n="130">D'un amant, etc.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON, lentement.</speaker>
+                        <stage type="titile">AIR. Pourvu que Colin ah voyez vous.</stage>
+                        <l n="131">On dit que l'hymen est bien doux,</l>
+                        <l n="132">Pour moi c'est un mystère :</l>
+                        <l n="133">Qu'importe l'un ou l'autre époux,</l>
+                        <l n="134">Pourvu que l'on soit femme, voyez-vous ?</l>
+                        <l n="135">Le choix ici n'est pas fort nécessaire,</l>
+                        <l n="136">Tous deux ne valent guère.</l>
+                    </sp><!--@stage="slow"--><!--@who="FANCHON"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="137">Margot, si tu m'en crois nous les laisserons faire.</l>
+                    </sp><!--@who="FANCHON"-->
+<sp who="#lubin #lucas">
+                        <speaker>LUBIN et LUCAS.</speaker>
+                        <l n="138">Bon, bon, Fanchon entend déjà raison.</l>
+                        <stage type="low/toward">Pendant ce temps Fanchon et Margot se parlent à l'oreille.</stage>
+                    </sp><!--@who="LUBIN, LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT, à part.</speaker>
+                        <l n="139" part="I">Je l'en dégoûterai.</l><!--@syll="6"-->
+                        <stage type="loud">Haut.</stage>
+                        <l n="139" part="F">Terminons donc l'affaire.</l><!--@syll="6"-->
+                    </sp><!--@stage="aparte"--><!--@who="MARGOT"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="140">Ah ! Quel bonheur ! Margot pense comme Fanchon.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <stage type="title">Ariette en quatuor.</stage>
+                        <l n="141">Changeons, ma chère,</l>
+                        <l n="142">Troquons, troquons.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="143">Troquons, troquons,</l>
+                        <l n="144">Changeons, ma chère.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT. </speaker>
+                        <l n="145">Troquons, troquons.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON. </speaker>
+                        <l n="146">Changeons compère.</l>
+                    </sp><!--@who="FANCHON"-->
+<sp who="#lubin #lucas #fanchon #margot">
+                        <speaker>TOUS QUATRE.</speaker>
+                        <l n="147">Troquons, troquons ;</l>
+                        <l n="148">Changeons compère.</l>
+                        <stage type="exit.pull">Lubin emmène Fancbon.</stage>
+                    </sp><!--@stage="together"--><!--@who="LUBIN, LUCAS, FANCHON, MARGOT"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Margot, Lucas.</head>
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="149">Vive, vive Margot, j'aime son caractère.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT, à part finement.</speaker>
+                        <l n="150">Oui, tu vas l'éprouver.</l>
+                    </sp><!--@stage="aparte"--><!--@who="MARGOT"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="151">Que nous serons heureux !</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lucas">
+                        <speaker>LUCAS, ironiquement.</speaker>
+                        <l n="152">Tu me parais charmant.</l>
+                    </sp><!--@stage="ironic"--><!--@who="LUCAS"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="153">Que tu sais bien me plaire !</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT, se moquant de lui.</speaker>
+                        <l n="154">Je brûle d'être à toi.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="155">Viens donc combler mes voeux.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <stage type="title">Ariette.</stage>
+                        <l n="156">Ah ! Qu'il me tarde</l>
+                        <l n="157">De te voir mon époux ;</l>
+                        <l n="158">Surtout prends bien garde</l>
+                        <l n="159">D'être jaloux.</l>
+                        <l n="160">Quand un galant me flatte</l>
+                        <l n="161">Je ne fuis pas ingrate </l>
+                        <l n="162">Si tu raisonnais</l>
+                        <l n="163">Tu verrais</l>
+                        <l n="164">Ce que je ferais.</l>
+                        <l n="165">J'aime la dépense;</l>
+                        <l n="166">Ainsi je pense</l>
+                        <l n="167">Que tu sauras gagner</l>
+                        <l n="168">De quoi faire régner.</l>
+                        <l n="169">Chez moi l'abondance,</l>
+                        <l n="170">Les jeux et la danse ;</l>
+                        <l n="171">Car autrement</l>
+                        <l n="172">Je fais serment</l>
+                        <l n="173">Que le tapage,</l>
+                        <l n="174">L'outrage,</l>
+                        <l n="175">La rage</l>
+                        <l n="176">Feront ravage</l>
+                        <l n="177">Dans ton ménage ;</l>
+                        <l n="178">C'est mon dernier mot.</l>
+                        <l n="179">À ce prix nigaud,</l>
+                        <l n="180">Épouse Margot,</l>
+                        <l n="181">Jusqu'au revoir, magot,</l>
+                        <l n="182">Magot, magot.</l>
+                        <stage type="exit">Magot. Jusques dans les coulisses.</stage>
+                    </sp><!--@who="MARGOT"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp who="#lucas">
+                        <speaker>LUCAS, seul.</speaker>
+                        <l n="183">Va, va, j'épouserais morbleu plutôt le diable,</l>
+                        <l n="184">Ah, Fanchon, qu'à présent tu me parais aimable !</l>
+                        <stage type="title">Ariette.</stage>
+                        <l n="185">Pauvre Lucas</l>
+                        <l n="186">Quelle est ta peine ?</l>
+                        <l n="187">Une femme hautaine</l>
+                        <l n="188">Ne te va pas,</l>
+                        <l n="189">Sans cesse la gêne, </l>
+                        <l n="190">L'aigreur, l'altercas,</l>
+                        <l n="191">Les cris, le tracas,</l>
+                        <l n="192">Les pleurs, le fracas,</l>
+                        <l n="193">Sept fois la semaine</l>
+                        <l n="194">Joueront une scène, </l>
+                        <l n="195">Où tout hors d'haleine</l>
+                        <l n="196">Tu chanteras</l>
+                        <l n="197">Hélas, hélas, hélas,</l>
+                        <l n="198">Sortons d'embarras.</l>
+                        <l n="199">Fanchon est ma reine,</l>
+                        <l n="200">Je cours de ce pas</l>
+                        <l n="201">Reprendre ma chaîne ;</l>
+                        <l n="202">Ah, qu'elle a d'appas !</l>
+                        <stage type="exit">Ils sort.</stage>
+                    </sp><!--@stage="alone"--><!--@who="LUCAS"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI.</head>
+<sp who="#lubin">
+                        <speaker>LUBIN, seul.</speaker>
+                        <l n="203">J'ai cru faire un beau coup en changeant de future,</l>
+                        <l n="204">Margot était mon fait : peste soit du marché !</l>
+                        <l n="205">Avec Fanchon, hélas ! Il faudra donc conclure ?</l>
+                        <l n="206">Qui moi ! Garder Fanchon ? J'en serais bien fâché.</l>
+                        <stage type="title">Ariette.</stage>
+                        <l n="207">Sa nonchalance</l>
+                        <l n="208">Ferait mon tourment,</l>
+                        <l n="209">Une heure elle balance</l>
+                        <l n="210">Pour dire froidement</l>
+                        <l n="211">Oui dà.... vraiment...</l>
+                        <l n="212">Plait-il... Comment ?...</l>
+                        <l n="213">Chaque mot est si lent</l>
+                        <l n="214">Que j'en perds patience.</l>
+                        <l n="215">Ou bien en silence</l>
+                        <l n="216">D'un pas chancelant</l>
+                        <l n="217">Elle s'avance,</l>
+                        <l n="218">Puis marche en dormant </l>
+                        <l n="219">Et rit en baillant.</l>
+                        <l n="220">Quelle différence</l>
+                        <l n="221">De ce tempérament</l>
+                        <l n="222">À la pétulance</l>
+                        <l n="223">De celle que j'attends ?</l>
+                    </sp><!--@who="LUBIN"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Margot, Lubin.</head>
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="224" part="I">Margot ?</l><!--@syll="2"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="224" part="M">Eh bien ?</l><!--@syll="2"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="224" part="F">Rends-toi, j'ai reconnu ma faute.</l><!--@syll="8"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="225">Tout beau, tu comptes sans ton hôte.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <stage type="title">Ariette.</stage>
+                        <l n="226" part="I">Sans rire, comment va le désir conjugal ?</l><!--@syll="11"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="226" part="F">Mal.</l><!--@syll="1"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="227" part="I">Va, dès ce soir, tu porteras mon nom.</l><!--@syll="9"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="227" part="F">Non.</l><!--@syll="1"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="228" part="I">Va, tu ne penses pas ainsi.</l><!--@syll="8"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="228" part="F">Si. </l><!--@syll="1"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="229" part="I">Méprises-tu mon tendre effort ?</l><!--@syll="8"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="229" part="F">Fort.</l><!--@syll="1"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="230" part="I">Tu veux donc causer mon ennui ?</l><!--@syll="9"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="230" part="F">Oui.</l><!--@syll="1"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="231" part="I">Fais-moi plutôt un amoureux défi.</l><!--@syll="10"-->
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="231" part="F">Fi. </l><!--@syll="1"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="232">Ta cruauté me désole.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="233">Va, cours, fuis, fors, vole</l>
+                        <l n="234">Sur les pas de Fanchon, je m'en tiens à Lucas.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="235">Reçois mon repentir.</l>
+                    </sp><!--@who="LUBIN"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Lubin, Margot, Lucas, Fanchon.</head>
+<sp who="#lucas">
+                        <speaker>LUCAS, à Fanchon.</speaker>
+                        <stage type="title">Ariette en quatuor.</stage>
+                        <l n="236">Ne me rebute pas.</l>
+                    </sp><!--@stage="toward"--><!--@who="LUCAS"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON, montrant Margot.</speaker>
+                        <l n="237">Oh, laisse-moi, voilà la tienne.</l>
+                    </sp><!--@stage="show"--><!--@who="FANCHON"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="238">Non, c'est la mienne.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#margot">
+                        <speaker>MARGOT, montrant Fanchon à Lubin.</speaker>
+                        <l n="239">Voilà la tienne.</l>
+                    </sp><!--@stage="show/toward"--><!--@who="MARGOT"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="240">Non, c'est la mienne.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT, se saisissant de Lucas.</speaker>
+                        <l n="241">Je prends le mien.</l>
+                    </sp><!--@stage="pull"--><!--@who="MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON, sautant sur Lubin.</speaker>
+                        <l n="242">Chacun le sien.</l>
+                    </sp><!--@stage="pull"--><!--@who="FANCHON"-->
+<sp who="#lubin">
+                        <speaker>LUBIN, à Fanchon qui le tient au collet.</speaker>
+                        <l n="243">Le diable t'emporte.</l>
+                    </sp><!--@stage="toward"--><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS, tenu par Margot.</speaker>
+                        <l n="244">Ah, quel embarras !</l>
+                    </sp><!--@stage="pull"--><!--@who="LUCAS"-->
+<sp who="#fanchon #margot">
+                        <speaker>MARGOT et FANCHON.</speaker>
+                        <l n="245">Tu m'épouseras.</l>
+                    </sp><!--@who="FANCHON, MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="246">Peut-on, hélas !</l>
+                        <l n="247">Me punir de la sorte;</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="248">Tu m'épouseras.</l>
+                    </sp><!--@who="FANCHON"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="249">Le diable t'emporte.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="250">Tu m'épouseras.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN, s'échappant.</speaker>
+                        <l n="251">Ah ! Margot.</l>
+                    </sp><!--@stage="escape"--><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS, s'échappant.</speaker>
+                        <l n="252">Ah ! Fanchon.</l>
+                    </sp><!--@stage="escape"--><!--@who="LUCAS"-->
+<sp who="#fanchon #margot">
+                        <speaker>MARGOT et FANCHON.</speaker>
+                        <l n="253">Quel accès te transporte ?</l>
+                    </sp><!--@who="FANCHON, MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN, à Margot.</speaker>
+                        <l n="254">Reprends-moi.</l>
+                    </sp><!--@stage="toward"--><!--@who="LUBIN"-->
+<sp who="#lubin #lucas">
+                        <speaker>LUBIN et LUCAS.</speaker>
+                        <l n="255">Que je sois ton époux.</l>
+                    </sp><!--@who="LUBIN, LUCAS"-->
+<sp who="#fanchon #margot">
+                        <speaker>MARGOT et FANCHON.</speaker>
+                        <l n="256">Vous avez fait la loi.</l>
+                    </sp><!--@who="FANCHON, MARGOT"-->
+<sp who="#lubin #lucas">
+                        <speaker>LUBIN et LUCAS.</speaker>
+                        <l n="257">Je t'en prie à genoux.</l>
+                        <stage type="drop">Ils se jettent à genoux,</stage>
+                    </sp><!--@who="LUBIN, LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT, riant.</speaker>
+                        <l n="258">Fanchon ? Ah, ah, ah, ah, ah.</l>
+                    </sp><!--@stage="laugh"--><!--@who="MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON, riant.</speaker>
+                        <l n="259">Margot ? Ah, ah, ah, ah, ah.</l>
+                    </sp><!--@stage="laugh"--><!--@who="FANCHON"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="260" part="I">Cruelle.</l><!--@syll="2"-->
+                    </sp><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="260" part="F">Traîtresse,</l><!--@syll="2"-->
+                        <l n="261">Pardonne-nous.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="262">Pardonne-nous.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="263">Fileras-tu doux !</l>
+                    </sp><!--@who="FANCHON"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="264">Je filerai doux.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT, à Lubin.</speaker>
+                        <l n="265">Au logis je serai maîtresse.</l>
+                    </sp><!--@stage="toward"--><!--@who="MARGOT"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <l n="266">Maîtresse.</l>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON, à Lucas.</speaker>
+                        <l n="267">Et tu m'obéiras sans cesse.</l>
+                    </sp><!--@stage="toward"--><!--@who="FANCHON"-->
+<sp who="#lucas">
+                        <speaker>LUCAS.</speaker>
+                        <l n="268">Sans cesse.</l>
+                    </sp><!--@who="LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="269">Fanchon, je me résous.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="270">Margot, je me résous.</l>
+                    </sp><!--@who="FANCHON"-->
+<sp who="#lucas">
+                        <speaker>LUCAS, se relevant.</speaker>
+                        <l n="271">Fanchon, quelle allégresse !</l>
+                    </sp><!--@stage="stand"--><!--@who="LUCAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN, se relevant.</speaker>
+                        <l n="272">Margot, quelle allégresse !</l>
+                    </sp><!--@stage="stand"--><!--@who="LUBIN"-->
+<sp who="#fanchon #margot">
+                        <speaker>FANCHON et MARGOT.</speaker>
+                        <l n="273">Remettez-vous ?</l>
+                    </sp><!--@who="FANCHON, MARGOT"-->
+<sp who="#lubin #lucas">
+                        <speaker>LUBIN et LUCAS, se remettent à genoux.</speaker>
+                        <l n="274">Quelle tristesse !</l>
+                    </sp><!--@stage="kneel"--><!--@who="LUBIN, LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="275" part="I">Fanchon.</l><!--@syll="2"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="275" part="M">Margot.</l><!--@syll="2"-->
+                    </sp><!--@who="FANCHON"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="275" part="M">Cédons.</l><!--@syll="2"-->
+                    </sp><!--@who="MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="275" part="F">Cédons.</l><!--@syll="2"-->
+                    </sp><!--@who="FANCHON"-->
+<sp who="#lubin #lucas">
+                        <speaker>LUBIN et LUCAS.</speaker>
+                        <l n="276">Quelle allégresse !</l>
+                    </sp><!--@who="LUBIN, LUCAS"-->
+<sp who="#margot">
+                        <speaker>MARGOT.</speaker>
+                        <l n="277">Levez-vous.</l>
+                    </sp><!--@who="MARGOT"-->
+<sp who="#fanchon">
+                        <speaker>FANCHON.</speaker>
+                        <l n="278">Nous en ferons ma foi de commodes époux.</l>
+                    </sp><!--@who="FANCHON"-->
+<sp who="#lubin #lucas #fanchon #margot">
+                        <speaker>TOUS QUATRE.</speaker>
+                        <l n="279">Quelle allégresse !</l>
+                        <stage type="danse">On danse.</stage>
+                    </sp><!--@who="LUBIN, LUCAS, FANCHON, MARGOT"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

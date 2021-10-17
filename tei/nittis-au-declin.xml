@@ -1,0 +1,796 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Au Déclin</title>
+                <title type="sub">A Propos en un Acte et en Vers.</title>
+                <title type="sub">Représenté pour le première fois sur le Théâtre de l'Odéon le 21 décembre 1894.</title>
+                <title type="sub">À l'occasion du 255ème anniversaire de la naissance de Racine.</title>
+                <author>
+      <persName>
+        <forename>Jacques</forename>
+        <nameLink>de</nameLink>
+        <surname>Nittis</surname>
+      </persName>
+      <idno type="isni">0000 0000 0168 1531</idno>
+    </author><!--NITTIS, Jacques de (1872-1907)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001553</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/NITTIS_AUDECLIN.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/NITTIS_AUDECLIN.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1895"/>
+                        <date type="premiere" when="1664-01-29">Représentée pour la première fois au Louvre, par ordre de sa majesté, le 29e du mois de janvier 1664, et donnée depuis au public sur le Théâtre du Palais-Royal le 15e du mois de février de la même année 1664 par la Troupe de Monsieur, frère unique du Roi.</date>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k57769151?rk=21459;2</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="manicamp" sex="MALE">
+                        <persName>Manicamp</persName>
+                    </person>
+                    <person xml:id="racine" sex="MALE">
+                        <persName>Racine</persName>
+                    </person>
+                    <person xml:id="laure" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Laure</persName>
+                    </person>
+                    <person xml:id="madame-de-maintenon" sex="FEMALE">
+                        <persName>Madame de Maintenon</persName>
+                    </person>
+                    <person xml:id="le-roi" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Roi</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>À propos</term>
+                    <term>prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">AU DÉCLIN</titlePart>
+			<titlePart type="sub">À PROPOS EN  UN ACTE ET EN VERS.</titlePart>
+			<titlePart type="sub">Représenté pour le première fois sur le Théâtre de l'Odéon le 21 décembre 1894.</titlePart>
+			<titlePart type="sub">À l'occasion du 255ème anniversaire de la naissance de Racine.</titlePart>
+		</docTitle> 
+		<docDate when="1895">1895. Tous droits de reproduction, de traduction et de représentation réservés pour tous les pays y compris la Suède et la Norvège </docDate>
+		<docAuthor>JACQUES DE NITTIS</docAuthor>
+		<div type="docImprint">
+			<div type="printer">
+                    <p>IMP. NOIZETTE et Cie, 8 RUE CAMPAGNE-Ier, PARIS.</p>
+                </div><!--@id="NOIZETTE"-->
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis rue de RICHELIEU, 28 bis.</editor>-->
+		</div>
+		<performance>
+			<ab type="premiere">Représentée pour la première fois au Louvre, par ordre de sa majesté, le 29e du mois de janvier 1664, et donnée depuis au public sur le Théâtre du Palais-Royal le 15e du mois de février de la même année 1664 par la Troupe de Monsieur, frère unique du Roi.</ab><!--@date="1664-01-29"--><!--@location="Château du Louvre"-->
+		</performance>
+	<div type="dedicace">
+                <opener>
+                    <salute>Au Maître Josè-Maria de HRRÈDIA</salute>
+                </opener>
+		<p>Patris familiarissimum, nobis jam inde a puero amicuro, eximium aitificem, vclim hune libellum non ingratus ad te déferre jubeas.</p>
+		<signed>JACQUES DP. NITTIS</signed>
+	</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#madame-de-maintenon">MADAME DE MAINTENON</role><!--@sex="2"--><!--@type="H"--><!--@statut="roi"--><!--@age="A"--><!--@stat_amour="néant"-->. Melle ARBES.</castItem> 
+		<castItem>
+                    <role corresp="#laure-de-naves">LAURE DE NAVES</role><!--@sex="2"--><!--@type="H"--><!--@statut="commerçant"--><!--@age="A"--><!--@stat_amour="néant"-->. CHAPELAS.</castItem> 
+		<castItem>
+                    <role corresp="#racine">RACINE</role><!--@sex="1"--><!--@type="H"--><!--@statut="auteur"--><!--@age="J"--><!--@stat_amour="Lycaste"-->, M. JAHAN.</castItem> 
+		<castItem>
+                    <role corresp="#louis-xiv">LOUIS XIV</role><!--@sex="1"--><!--@type="H"--><!--@statut="roi"--><!--@age="A"--><!--@stat_amour="néant"-->, père de Dorimène. Béjart</castItem> 
+		<castItem>
+                    <role corresp="#manicamp">MANICAMP</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, M. TALDY.</castItem> 
+		<castItem>
+                    <role corresp="#courtisans">COURTISANS</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="Dorimène"-->, amant de Dorimène. La Grange.</castItem> 
+		<castItem>
+                    <role corresp="#suivantes-de-madame-de-maintenon">SUIVANTES de MADAME DE MAINTENON</role><!--@sex="2"--><!--@type="H"--><!--@statut="bohémien"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Marly" country="France" periode="XVIIème" gps="48.866669, 2.08333">La scène se passe en 1693. — Une galerie de Marly.
+</set>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>AU DÉCLIN</head>
+<stage type="decor">Une galerie de Marly.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Racine, Manicamp.</head>
+<stage type="toward">Ils causent.</stage>
+<sp who="#manicamp">
+                        <speaker>MANICAMP.</speaker>
+                        <l n="1">On vous nommait déjà janséniste et boudeur</l>
+                        <l n="2">Car vous nous témoignez, monsieur, quelque froideur.</l>
+                        <l n="3">Et l'on ne vous voit guère à la Cour, sans reproche...</l>
+                    </sp><!--@who="MANICAMP"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="4">Que voulez-vous, marquis, peu de chose rapproche</l>
+                        <l n="5">De ces lieux fortunés un poète vieilli</l>
+                        <l n="6">Avec quelque respect qu'il y soit accueilli.</l>
+                        <l n="7">Mais, si la Cour et moi faisons mauvais ménage</l>
+                        <l n="8">Il n'en faut, malgré tout, accuser que mon âge :</l>
+                        <l n="9">Je ne sais presque plus tourner un compliment.</l>
+                        <l n="10">Mais chacun, au surplus, s'en console aisément.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#manicamp">
+                        <speaker>MANICAMP.</speaker>
+                        <l n="11">Oh ! Pour ce mot, Monsieur_Racine, je proteste :</l>
+                        <l n="12">Vous êtes admiré des plus fiers sans conteste.</l>
+                        <l n="13">Pour frivoles et vains que soient les courtisans</l>
+                        <l n="14">Ils ne sont point frappés que par des.mots plaisants</l>
+                        <l n="15">Et savent mesurer, remplis de déférence,</l>
+                        <l n="16">Du génie à l'esprit toute la différence,</l>
+                        <l n="17">Et le nom de Racine est parmi les grands noms !</l>
+                    </sp><!--@who="MANICAMP"-->
+<sp who="#racine">
+                        <speaker>RACINE, saluant.</speaker>
+                        <l n="18" part="I">Monsieur !...</l><!--@syll="2"-->
+                    </sp><!--@stage="wave"--><!--@who="RACINE"-->
+<sp who="#manicamp">
+                        <speaker>MANICAMP, confidentiel.</speaker>
+                        <l n="18" part="F">De vous à moi, nous nous embéguinons !</l><!--@syll="10"-->
+                        <l n="19">Ne cherchez plus ici la gaité familière</l>
+                        <l n="20">Du temps où souriait, charmante, La_Vallière</l>
+                        <l n="21">Ni même de celui, plus noble, où Montespan,</l>
+                        <l n="22">Hautaine et fastueuse, escortait son amant.</l>
+                        <l n="23">Nous sommes vertueux ! L'ennui nous assassine</l>
+                        <l n="24">Et nous avons l'aspect grave et l'humeur chagrine.</l>
+                        <l n="25">Louis est soucieux : comment ne l'être pas ?</l>
+                        <l n="26">La gêne appesantit nos discours et nos pas.</l>
+                        <l n="27" part="I">Mais vous nous revenez tout à fait ?...</l><!--@syll="9"-->
+                    </sp><!--@stage="low"--><!--@who="MANICAMP"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="27" part="F">Non. Peut-être</l><!--@syll="3"-->
+                        <l n="28" part="I">M'en irai-je demain.</l><!--@syll="6"-->
+                    </sp><!--@who="RACINE"-->
+<sp who="#manicamp">
+                        <speaker>MANICAMP.</speaker>
+                        <l n="28" part="F">Diable ! On ne saurait être</l><!--@syll="6"-->
+                        <l n="29" part="I">Plus pressé.</l><!--@syll="3"-->
+                    </sp><!--@who="MANICAMP"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="29" part="F">Je voulais, au Roi, lire un placet</l><!--@syll="9"-->
+                        <l n="30">Mon volontaire exil suivra son insuccès.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#manicamp">
+                        <speaker>MANICAMP.</speaker>
+                        <l n="31">Nous en reparlerons ; ce sujet m'intéresse.</l>
+                        <l n="32">Excusez-moi. Monsieur ; c'est l'heure de la messe.</l>
+                        <stage type="away">Manicamp s'éloigne.</stage>
+                    </sp><!--@who="MANICAMP"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II.</head>
+<sp who="#racine">
+                        <speaker>RACINE, seul.</speaker>
+                        <l n="33">Ô rêves ! Ô désirs ! Cruels et durs vainqueurs !</l>
+                        <l n="34">Vous, que rien ne saurait étouffer dans les coeurs</l>
+                        <l n="35">Où vous dormez, sommeil prudent que tout agite !</l>
+                        <l n="36">Notre sagesse est vaine et n'est que la faillite</l>
+                        <l n="37">Des beaux espoirs, qu'enfants, nous conçûmes parfois</l>
+                        <l n="38">Lorsque vous nous parliez avec vos douces voix.</l>
+                        <l n="39">Nos coeurs sont la forêt où l'ombre s'accumule,</l>
+                        <l n="40">Où des oiseaux, qui se sont tus au crépuscule</l>
+                        <l n="41">S'éveillent en sursaut, si la brise du soir</l>
+                        <l n="42">Fait frissonner le bois. Il suffit d'un espoir</l>
+                        <l n="43">Pour réveiller en nous les angoisses passées</l>
+                        <l n="44">Les amours d'autrefois, les peines trépassées...</l>
+                        <l n="45">Je me leurrais en vain du prétexte menteur</l>
+                        <l n="46">De vouloir soulager le peuple et son malheur.</l>
+                        <l n="47">À de plus doux objets mon âme s'intéresse</l>
+                        <l n="48">Et je suis revenu, poussé par ma tendresse.</l>
+                        <l n="49">Ô faible coeur humain ! La fatigue et les ans</l>
+                        <l n="50">N'en peuvent apaiser les soucis séduisants.</l>
+                        <l n="51">Hélas ! Les vrais amants aiment toute la vie !</l>
+                        <l n="52">Leur âme, large ouverte et jamais assouvie</l>
+                        <l n="53">Ne saurait se plier au mol apaisement</l>
+                        <l n="54">De la sagesse, sans plaisir et sans tourment.</l>
+                        <l n="55">Or, j'ai voulu revoir, tant ce rêve m'oppresse,</l>
+                        <l n="56">La douce enfant qui me montra quelque tendresse :</l>
+                        <l n="57">Un amour très câlin, pur comme un malin clair</l>
+                        <l n="58">Quand, à Saint-Cyr, jadis, elle jouait Esther.</l>
+                        <l n="59">Mais, depuis ce temps-là !... L'enfant s'est faite femme</l>
+                        <l n="60">Et peut-être, son coeur chanta l'épithalame</l>
+                        <l n="61">De quelque amour nouveau  ?... J'avais le souvenir,</l>
+                        <l n="62">N'ai-je pas eu grand tort, mon Dieu, de revenir?</l>
+                        <l n="63">Et pourtant !... Et pourtant, que l'espoir est vivace !</l>
+                        <l n="64">Comme ce bref bonheur de naguère m'enlace :</l>
+                        <l n="65">La caresse de ses yeux noirs et de ses mains</l>
+                        <l n="66">Dans les miennes ! Depuis, loin des tracas mondains</l>
+                        <l n="67">Je voulais oublier tout dans la solitude</l>
+                        <l n="68">...Et, ce regard d'enfant troublait ma quiétude.</l>
+                        <l n="69">Se souvient-elle encor qu'elle faillit m'aimer?</l>
+                        <l n="70">Le temps inexorable a pu la transformer</l>
+                        <l n="71">À tel point que j'aurai peine à la reconnaître ?</l>
+                        <stage type="entrance">Laure entre sans te voir.</stage>
+                        <l n="72">Ah ! C'est elle ! Mon Dieu ! Ne laissons rien paraître.</l>
+                    </sp><!--@stage="alone"--><!--@who="RACINE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Racine, Laure de Naves.</head>
+<sp who="#racine">
+                        <speaker>RACINE, haut.</speaker>
+                        <l n="73" part="I">Mademoiselle...</l><!--@syll="4"-->
+                    </sp><!--@stage="loud"--><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, le voyant seulement alors.</speaker>
+                        <l n="73" part="F">Ah ! La bonne surprise ! Et moi,</l><!--@syll="8"-->
+                        <l n="74">J'avais renoncé presque à vous revoir! Pourquoi</l>
+                        <l n="75" part="I">Nous négliger depuis si longtemps ?</l><!--@syll="9"-->
+                    </sp><!--@stage="watch"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="75" part="F">Que lui dire</l><!--@syll="3"-->
+                        <l n="76">Le poète parfois désapprend de sourire...</l>
+                        <l n="77">Hélas ! Il ne sait point, coeur toujours agité,</l>
+                        <l n="78">Porter la lourde vie avec sérénité !</l>
+                        <l n="79">Or, le moindre souci, broché sur cette trame,</l>
+                        <l n="80">Se répercute en longs frissons parmi son âme.</l>
+                        <l n="81" part="I">... Et puis, l'âge est venu...</l><!--@syll="6"-->
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="81" part="F">La Gloire, n'est-ce pas</l><!--@syll="6"-->
+                        <l n="82" part="I">L'éternelle jeunesse ?</l><!--@syll="6"-->
+                    </sp><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="82" part="F">Au delà du trépas</l><!--@syll="6"-->
+                        <l n="83">Peut-être ! En attendant, j'aimerais mieux la vôtre :</l>
+                        <l n="84" part="I">C'est celle de l'amour !...</l><!--@syll="6"-->
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="84" part="F">Moi, je choisirais l'autre.</l><!--@syll="6"-->
+                    </sp><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="85">Ah ! Pouvoir être aimé ! Ce bonheur est sans prix !</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, coquette.</speaker>
+                        <l n="86" part="I">Ne le pourriez-vous pas ?</l><!--@syll="6"-->
+                    </sp><!--@stage="proud"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE, à part.</speaker>
+                        <l n="86" part="F">Aurait-elle compris ?</l><!--@syll="6"-->
+                    </sp><!--@stage="aparte"--><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="87" part="I">Et vous aimez... quelqu'un?</l><!--@syll="6"-->
+                    </sp><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE, hésitant.</speaker>
+                        <l n="87" part="F">C'est presque ridicule</l><!--@syll="6"-->
+                        <l n="88">À dire, moi qui suis tout près du crépuscule !</l>
+                    </sp><!--@stage="hesitate"--><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, souriant.</speaker>
+                        <l n="89">En vérité, monsieur, vous êtes bien pressé</l>
+                        <l n="90" part="I">De perdre le courage...</l><!--@syll="6"-->
+                    </sp><!--@stage="smile"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE, à part.</speaker>
+                        <l n="90" part="F">Oh ! Quel rêve insensé !</l><!--@syll="6"-->
+                        <l n="91">Où sont les désespoirs et les folles rancunes ?</l>
+                        <l n="92">Un vent du large a balayé ces importunes.</l>
+                    </sp><!--@stage="aparte"--><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, avec hésitation.</speaker>
+                        <l n="93" part="I">Vous n'avez pas la foi ?</l><!--@syll="6"-->
+                    </sp><!--@stage="hesitate"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="93" part="F">Hélas ! non ; j'ai souffert.</l><!--@syll="6"-->
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, avec élan.</speaker>
+                        <l n="94" part="I">Alors, je vous comprends !</l><!--@syll="6"-->
+                    </sp><!--@stage="enthousiasme"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE, légèrement surpris.</speaker>
+                        <l n="94" part="F">Tant de bonheur offert</l><!--@syll="6"-->
+                        <l n="95">Ne vous le permet pas ! Relie, heureuse, entourée,</l>
+                        <l n="96">Ô vous que la douleur n'a jamais effleurée,</l>
+                        <l n="97">Non, vous ne pouvez pas savoir l'âpre combat</l>
+                        <l n="98">Qui se livre en moi-même, et comme se débat</l>
+                        <l n="99">Un être fier et fort, sous l'étreinte pesante</l>
+                        <l n="100">Du Destin ! Cette vie aimable et complaisante,</l>
+                        <l n="101">- La vôtre maintenant, — fut la mienne autrefois.</l>
+                        <l n="102">J'ai connu le triomphe et les câlines voix</l>
+                        <l n="103">Et les douces langueurs, les aveux qu'on soupire...</l>
+                        <l n="104">... Et maintenant !... C'est le retour... et je n'inspire</l>
+                        <l n="105">Du passé, proche encor, suprême survivant</l>
+                        <l n="106">Qu'hommage inattentif, et respect décevant !...</l>
+                        <l n="107">Beaux discours, ciselés comme par des orfèvres</l>
+                        <l n="108">Les mots que l'on me dit ne partent que des lèvres.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="109" part="I">Mais la Gloire ?...</l><!--@syll="3"-->
+                    </sp><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="109" part="F">Ah ! Comme on donnerait, volontiers</l><!--@syll="9"-->
+                        <l n="110">Tout au monde ! Et la Gloire ! Et ses fracas ailiers,</l>
+                        <l n="111">Et ce pompeux bonheur, dépourvu d'allégresse...</l>
+                        <l n="112">Allez ! Comme on donnerait tout pour la tendresse !</l>
+                        <l n="113">Deux bras qui s'ouvrent !... Mais, c'est tout le rêve humain !</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="114">Et quand ils font défaut, que tout le reste est vain !</l>
+                    </sp><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE, frappé.</speaker>
+                        <l n="115">Elle aime !... C'en est fait !... C'était inévitable !</l>
+                        <l n="116">Il suffit de la voir ! Ô peine inexorable !</l>
+                        <l n="117">Elle aime !... Elle aime !... Et moi, j'en demeure atterré,</l>
+                        <l n="118">Quel chimérique espoir m'avait déjà leurré ?</l>
+                    </sp><!--@stage="hit"--><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="119">Je ne suis plus la même, et je me passionne</l>
+                        <l n="120">Aux ténébreux tourments de Phèdre et d'Hermione.</l>
+                        <l n="121">Vous pouvez maintenant me dire vos secrets,</l>
+                        <l n="122">Car la communauté de peines rend discrets</l>
+                        <l n="123">Ceux qui souffrent... Ce sont peut-être des chimères</l>
+                        <l n="124">Sur le ciel du bonheur, nuages éphémères !</l>
+                        <l n="125" part="I">Et vous serez heureux...</l><!--@syll="6"-->
+                    </sp><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE, avec douleur et comme à soi-même.</speaker>
+                        <l n="125" part="F">Ah ! Celle que j'aimais</l><!--@syll="6"-->
+                        <l n="126">Est morte et je voudrais l'oublier à jamais,</l>
+                        <l n="127">Ou, tout au moins, l'aimer comme on aime une morte !</l>
+                        <l n="128">Rien d'elle ne survit ; une étrangère apporte</l>
+                        <l n="129">À mon coeur transformé des gestes inconnus.</l>
+                        <l n="130">— Ses gestes caressants, que sont-ils devenus ?</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, étonnée.</speaker>
+                        <l n="131" part="I">Mais alors, que t'ont-il ?...</l><!--@syll="6"-->
+                    </sp><!--@stage="estonish"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="131" part="F">Ma misère est extrême</l><!--@syll="6"-->
+                        <l n="132">Car elle ne sait pas seulement que je l'aime !</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="133" part="I">Si vous ne parlez pas !...</l><!--@syll="6"-->
+                    </sp><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE, avec ironie.</speaker>
+                        <l n="133" part="F">Sourire, elle saurait,</l><!--@syll="6"-->
+                        <l n="134">Et s'émouvoir aussi, juste comme il faudrait.</l>
+                        <l n="135">Un jour, imprudemment, je faillis tout lui dire,</l>
+                        <l n="136">M'attirer l'ironique et très gentil sourire...</l>
+                        <l n="137">Mais, au dernier moment, je me suis aperçu</l>
+                        <l n="138" part="I">De mon absurdité...</l><!--@syll="6"-->
+                    </sp><!--@stage="ironic"--><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, rêveuse.</speaker>
+                        <l n="138" part="F">Voyez l'espoir déçu,</l><!--@syll="6"-->
+                        <l n="139" part="I">Cela peut arriver toujours !</l><!--@syll="8"-->
+                    </sp><!--@stage="dream"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="139" part="F">Pas à votre âge</l><!--@syll="4"-->
+                        <l n="140">Et vos charmes n'ont point à craindre un tel outrage.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, faiblement.</speaker>
+                        <l n="141" part="I">Hélas !</l><!--@syll="2"-->
+                    </sp><!--@stage="low"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="141" part="F">Avez-vous des chagrins mystérieux ?</l><!--@syll="10"-->
+                        <l n="142">Dites-les moi sans crainte, allez ! Je suis..... si vieux</l>
+                        <l n="143">Confiez-vous à moi ; ce sont peines légères</l>
+                        <l n="144">Sans doute; et vous tremblez d'alarmes passagères?</l>
+                        <l n="145" part="I">Mon enfant...</l><!--@syll="3"-->
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, avec élan.</speaker>
+                        <l n="145" part="F">Hé bien oui ! C'est vrai ! J'aime et j'ai peur !</l><!--@syll="9"-->
+                    </sp><!--@stage="enthousiasm"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="146" part="I">Que craignez-vous ?</l><!--@syll="4"-->
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="146" part="F">D'être oubliée, en plein bonheur,</l><!--@syll="8"-->
+                        <l n="147">Après l'aveu, au lendemain de l'espérance !</l>
+                        <l n="148">Racine, croyez m'en, c'est la pire souffrance !</l>
+                        <l n="149">Oh ! Oui, j'aime ! Et je doute, et voudrais oublier.</l>
+                        <l n="150">Je ne sais que pleurer et que m'humilier.</l>
+                    </sp><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="151">Faites-le devant Dieu qui, seul, guérit les âmes.</l>
+                        <l n="152">Sa bonté verse en nous les suprêmes dictâmes.</l>
+                        <l n="153">Le hautain réconfort, l'apaisement, l'oubli !</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="154">Qui sait ! Autour de moi, tout me semble pâli.</l>
+                        <l n="155">Voyez-vous, je dois, tant ma douleur est affreuse,</l>
+                        <l n="156">Renoncer à l'espoir d'être jamais heureuse,</l>
+                        <l n="157">J'entends quelqu'un, je crois; Racine, sans adieu,</l>
+                        <l n="158" part="I">Au revoir.</l><!--@syll="3"-->
+                        <stage type="aparte/away">À part, en s'en allant.</stage>
+                        <l n="158" part="F">Sera-t-il au rendez-vous, mon Dieu.</l><!--@syll="9"-->
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@who="LAURE"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE IV.</head>
+<sp who="#racine">
+                        <speaker>RACINE, seul.</speaker>
+                        <l n="159">Si les hommes pouvaient traiter en choses vaines</l>
+                        <l n="160">Ces tendres sentiments qui causent tant de peines.</l>
+                        <l n="161">Ne chercher en l'amour qu'un doux délassement,</l>
+                        <l n="162">Au lieu de s'épuiser — si désespérément! —</l>
+                        <l n="163">A poursuivre au delà de leur vaine apparence</l>
+                        <l n="164">Les âmes mêmes, en leur manteau d'indifférence!</l>
+                        <stage type="silence/strong">Après un silence, d'une voix raffermie.</stage>
+                        <l n="165">Sans plus m'importuner de ma triste rancoeur,</l>
+                        <l n="166">Je veux, souci plus haut que mon propre bonheur,</l>
+                        <l n="167">Espoir moins décevant que l'amour et son leurre,</l>
+                        <l n="168">Aider au réconfort de ce peuple qui pleure.</l>
+                    </sp><!--@stage="alone"--><!--@who="RACINE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Racine, Madame de Maintenon.</head>
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="169">Ah ! Madame_de_Maintenon vient justement.</l>
+                        <stage type="closer/kiss">Il va au-devant d'elle et lui baise la main.</stage>
+                        <l n="170">Madame, je voudrais vous parler un moment</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON.</speaker>
+                        <l n="171">Monsieur de Manicamp, au sortir de la messe,</l>
+                        <l n="172">Me l'avait dit ; aussi, Racine, je m'empresse</l>
+                        <l n="173">Vers celui qui, pourtant, put nous abandonner,</l>
+                        <l n="174">Puisqu'une affaire, seule, a su vous ramener.</l>
+                    </sp><!--@who="MADAME DE MAINTENON"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="175" part="I">Madame, excusez-moi, j'ai vieilli...</l><!--@syll="9"-->
+                    </sp><!--@who="RACINE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON.</speaker>
+                        <l n="175" part="F">Non, Racine.</l><!--@syll="3"-->
+                        <l n="176">Et nul ne vous croira ; votre air et votre mine</l>
+                        <l n="177" part="I">Le démentent.</l><!--@syll="3"-->
+                    </sp><!--@who="MADAME DE MAINTENON"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="177" part="F">Pourtant, sans faire de façons.</l><!--@syll="9"-->
+                        <l n="178">La vie, à ce sujet, m'a donné ses leçons.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON.</speaker>
+                        <l n="179">Comme à chacun de nous. Au lieu qu'on s'en attriste</l>
+                        <l n="180" part="I">Il faut s'incliner...</l><!--@syll="5"-->
+                    </sp><!--@who="MADAME DE MAINTENON"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="180" part="M">Sans murmurer ?</l><!--@syll="4"-->
+                    </sp><!--@who="RACINE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON, le menaçant du doigt.</speaker>
+                        <l n="180" part="F">Janséniste !</l><!--@syll="3"-->
+                        <l n="181">Mais voyons ce qui vous amène. Vous savez</l>
+                        <l n="182">Que mes soins amicaux vous furent conservés</l>
+                        <l n="183">Malgré l'ingratitude et malgré votre absence ;</l>
+                        <l n="184">Et que le Roi, pour vous est plein de complaisance.</l>
+                    </sp><!--@stage="threat"--><!--@who="MADAME DE MAINTENON"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="185">Madame, je voudrais plaider auprès du Roi</l>
+                        <l n="186">La cause de son peuple en piteux désarroi.</l>
+                        <l n="187">Il ne peut supporter plus longtemps sa misère.</l>
+                        <l n="188">Pour remettre un placet, c'est en vous que j'espère.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON.</speaker>
+                        <l n="189">Le moment fut très mal choisi. Sa Majesté</l>
+                        <l n="190">Doit pourvoir tout d'abord à la sécurité</l>
+                        <l n="191" part="I">Du royaume.</l><!--@syll="3"-->
+                    </sp><!--@who="MADAME DE MAINTENON"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="191" part="F">Pourtant, le peuple s'exténue</l><!--@syll="9"-->
+                        <l n="192">À la peine ; et si la misère continue</l>
+                        <l n="193">On n'aura plus à protéger que des cercueils.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON, tressaillant.</speaker>
+                        <l n="194">En ce moment, votre projet est plein d'écueils ;</l>
+                        <l n="195">Le Roi pourrait s'en offenser, comme d'un blâme.</l>
+                    </sp><!--@stage="frighten"--><!--@who="MADAME DE MAINTENON"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="196">Mais vous ne doutez point de mon respect, madame.</l>
+                        <l n="197">C'est l'intérêt du Roi, qui, seul, me fait parler ;</l>
+                        <l n="198">Moi, je crois qu'il ne faut rien lui dissimuler.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON.</speaker>
+                        <l n="199">Donnez-moi ce papier, je veux d'abord le lire.</l>
+                        <l n="200">Et, dès que je pourrai le faire sans vous nuire,</l>
+                        <l n="201" part="I">Je vous promets de l'appuyer.</l><!--@syll="8"-->
+                        <stage type="frighten">Avec un mouvement do frayeur.</stage>
+                        <l n="201" part="F">Mon Dieu ! Le Roi !</l><!--@syll="4"-->
+                    </sp><!--@who="MADAME DE MAINTENON"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE VI. Racine, Le Roi, Madame de Maintenon.</head>
+<stage n="wave">Madame de Maintenon fait un mouvement pour dissimuler le placet. Le Roi les examine, moitié riant, déjà soupçonneux.</stage>
+<sp who="#le-roi">
+                        <speaker>LE ROI.</speaker>
+                        <l n="202">Quel trouble tout à coup ! C'est un complot, je crois.</l>
+                        <stage type="show">Montrant le placet.</stage>
+                        <l n="203">Contient-il un pamphlet dont on me fait mystère,</l>
+                        <l n="204">Ou d'un obscur dessein est-il dépositaire ?</l>
+                    </sp><!--@who="LE ROI"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON, émue encore.</speaker>
+                        <l n="205" part="I">Sire, c'est un placet.</l><!--@syll="6"-->
+                    </sp><!--@stage="stress"--><!--@who="MADAME DE MAINTENON"-->
+<sp who="#le-roi">
+                        <speaker>LE ROI, rasséréné.</speaker>
+                        <l n="205" part="F">Vous avez bien choisi,</l><!--@syll="6"-->
+                        <l n="206">Pour le remettre, la douce main que voici.</l>
+                        <stage type="kiss">Il baise la main de la marquise.</stage>
+                        <l n="207">Donnez-le moi, Madame, et soyez assurée</l>
+                        <l n="208" part="I">De tout mon bon vouloir.</l><!--@syll="6"-->
+                    </sp><!--@stage="quiet"--><!--@who="LE ROI"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON, à part.</speaker>
+                        <l n="208" part="F">Ah ! Je suis atterrée !</l><!--@syll=""-->
+                    </sp><!--@stage="aparte"--><!--@who="MADAME DE MAINTENON"-->
+<sp who="#le-roi">
+                        <speaker>LE ROI, qui s'efforce de lire le placet qu'on ne lui donne pas.</speaker>
+                        <l n="209" part="I">Mémoire pour le peuple ?</l><!--@syll="6"-->
+                        <stage type="proud">Avec hauteur.</stage>
+                        <l n="209" part="F">Alors, il faut parler.</l><!--@syll="6"-->
+                        <l n="210">S'agirait-il d'abus qu'on veut me signaler?</l>
+                    </sp><!--@stage="read/get"--><!--@who="LE ROI"-->
+<sp who="#racine">
+                        <speaker>RACINE, s'enflammant peu à peu.</speaker>
+                        <l n="211">Le seul désir de voir votre règne prospère</l>
+                        <l n="212">Autant que glorieux, me fait parler. J'espère</l>
+                        <l n="213">Que vous m'excuserez de vous énumérer</l>
+                        <l n="214">Les misères d'en bas qu'on vous laisse ignorer.</l>
+                        <l n="215">Les champs restent abandonnés et sans culture;</l>
+                        <l n="216">Vos paysans ruinés n'ont d'autre nourriture</l>
+                        <l n="217">Que le pain d'orge et quelques fruits ; à peine" humains</l>
+                        <l n="218">Ils s'en vont mendier le long des grands chemins.</l>
+                        <l n="219">Sire, vous avez fait du grand peuple de France</l>
+                        <l n="220">Le premier parmi tous ; mais sa longue souffrance</l>
+                        <l n="221">Réclame maintenant quelque tranquillité.</l>
+                        <l n="222">Ô Sire, vous serez, pour la postérité,</l>
+                        <l n="223">Le roi superbe et grand, qui fit la France grande !</l>
+                        <l n="224">Mais le pays lassé vous implore et demande</l>
+                        <l n="225">L'apaisement. S'il est partout au premier rang</l>
+                        <l n="226">Cela lui coûta trop de larmes et de sang !</l>
+                        <l n="227">Ou le pressure par la gabelle et la taille</l>
+                        <l n="228">Pour que vos généraux gagnent une bataille.</l>
+                        <l n="229">Le peuple meurt de faim au chant des Te_Deum.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON, effrayée.</speaker>
+                        <l n="230" part="I">Racine !</l><!--@syll="2"-->
+                    </sp><!--@stage="frighten"--><!--@who="MADAME DE MAINTENON"-->
+<sp who="#le-roi">
+                        <speaker>LE ROI, avec hauteur.</speaker>
+                        <l n="230" part="F">Vous parlez, ma foi, comme un tribun...</l><!--@syll="10"-->
+                        <l n="231">Allez! Faites des vers et non des remontrances,</l>
+                        <l n="232">J'ai de meilleurs commis pour me parler finances.</l>
+                        <stage type="toward">À Madame de Maintenon.</stage>
+                        <l n="233">Vous pourrez, tout au long, lire ce bel écrit !</l>
+                        <stage type="exit/watch">Il se retire sans même regarder Racine.</stage>
+                    </sp><!--@stage="proud"--><!--@who="LE ROI"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON, à part et regardant Racine.</speaker>
+                        <l n="234">Hélas ! Le malheureux ! Je crois qu'il perd l'esprit !</l>
+                        <stage type="exit/follow">Elle sort à la suite du Roi.</stage>
+                    </sp><!--@stage="aparte/watch"--><!--@who="MADAME DE MAINTENON"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII.</head>
+<sp who="#racine">
+                        <speaker>RACINE, seul.</speaker>
+                        <l n="235">Ô Roi ! Si tu montrais le fond de ta pensée !</l>
+                        <l n="236">Vanité tyrannique et toujours encensée</l>
+                        <l n="237">Par les nobles valets attachés à tes pas ;</l>
+                        <l n="238">Égoïsme intraitable et qui ne rougit pas</l>
+                        <l n="239">De bâtir des palais quand le peuple mendie...</l>
+                        <l n="240">— Peuple d'esclaves, mais dont la plainte assourdie</l>
+                        <l n="241">Peut soudain se changer en longs cris de fureur;</l>
+                        <l n="242">Âpre orgueil qui se croit au-dessus de l'erreur;</l>
+                        <l n="243">Haine des êtres fiers de leur indépendance,</l>
+                        <l n="244">Indulgent seulement pour quiconque l'encense;</l>
+                        <l n="245">Seul besoin de splendeur; superbe et vanité</l>
+                        <l n="246">C'est tout ce que contient ton âme, en vérité !</l>
+                        <l n="247">Que, pour ta politique et pour ta fantaisie</l>
+                        <l n="248">Tout un peuple s'épuise ; et que se rassasie</l>
+                        <l n="249">Ta monstrueuse ambition sans s'émouvoir</l>
+                        <l n="250">Des appétits d'en bas ; tu ne sais concevoir</l>
+                        <l n="251">Que l'or et le gala de ta cour solennelle.</l>
+                        <l n="252">Et quand tu protégeas — de façon paternelle</l>
+                        <l n="253">Comme l'on dit — les Arts, tu ne voyais en eux</l>
+                        <l n="254">Qu'une gloire de plus pour ton règne ruineux.</l>
+                        <l n="255">Mais tu n'entends donc pas la houle inassouvie</l>
+                        <l n="256">Qui monte, réclamant une part de la vie ?</l>
+                        <l n="257">Comme un rocher rompant tout l'effort de la mer,</l>
+                        <l n="258">Entre ton peuple et toi,tu mets un mur de fer !</l>
+                        <l n="259">Pour toi, tout ! Et pour lui,l'angoisse et la souffrance!</l>
+                        <l n="260">Ô despote ! Crois-tu donc que toute la France</l>
+                        <l n="261">C'est toi seul ! Fou d'orgueil, enivré par ton rang,</l>
+                        <l n="262">Prodiguant sans remords sa richesse et son sang ?</l>
+                        <l n="263">... Et si, quoiqu'un, venant troubler ta quiétude,</l>
+                        <l n="264">Te révèle combien souffre la multitude,</l>
+                        <l n="265">Seul, ton orgueil écoute ! Et de mots protecteurs</l>
+                        <l n="266">Il te plaît d'offenser tes plus vieux serviteurs.</l>
+                        <stage type="stop">Une pause.</stage>
+                        <l n="267">Allons, le coeur frappé d'une double blessure,</l>
+                        <l n="268">Je rentrerai, plus las, dans ma retraite obscure</l>
+                    </sp><!--@stage="alone"--><!--@who="RACINE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Racine, Laure.</head>
+<sp who="#laure">
+                        <speaker>LAURE, revient affolée.</speaker>
+                        <l n="269" part="I">Il me trompait ! J'en ai la preuve !</l><!--@syll="8"-->
+                        <stage type="watch">Alors seulement elle voit Racine.</stage>
+                        <l n="269" part="F">Ah ! Maintenant</l><!--@syll="4"-->
+                        <l n="270">Je suivrai vos conseils. A l'ombre d'un couvent,</l>
+                        <l n="271">J'oublierai dans la paix l'ingrat lâche et frivole</l>
+                        <l n="272">Qui brise un coeur de femme et trahit sa parole.</l>
+                    </sp><!--@stage="back/stress"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="273">Enfant, n'y croyez pas. Jusqu'au pied des autels</l>
+                        <l n="274">L'amour viendra chanter ses refrains immortels</l>
+                        <l n="275">Quand on aime une fois, il faut aimer encore.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="276" part="I">Vous dites ?</l><!--@syll="2"-->
+                    </sp><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="276" part="F">Au déclin des jours comme à l'aurore</l><!--@syll="10"-->
+                        <l n="277">Il faut au coeur blessé de nouvelles amours,</l>
+                        <l n="278">Et Dieu ne suffit pas... même en priant toujours !</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, saisie.</speaker>
+                        <l n="279">Je ne vous comprends plus ! Mais je me désespère !</l>
+                        <l n="280">Conseillez-moi ; tantôt, vous me parliez en père ;</l>
+                        <l n="281" part="I">J'ai besoin d'un appui ;...</l><!--@syll="6"-->
+                    </sp><!--@stage="estonish"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="281" part="F">Vous êtes, mon enfant,</l><!--@syll="6"-->
+                        <l n="282">À l'aube de la vie et l'amour triomphant</l>
+                        <l n="283">Reviendra, digne en tout, de vos jeunes tendresses.</l>
+                        <l n="284">Chassez pour votre orgueil, d'inutiles tristesses.</l>
+                    </sp><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE, étonnée.</speaker>
+                        <l n="285" part="I">Vous êtes mon ami, pourtant...</l><!--@syll="8"-->
+                    </sp><!--@stage="estonish"--><!--@who="LAURE"-->
+<sp who="#racine">
+                        <speaker>RACINE.</speaker>
+                        <l n="285" part="F">Je vous trompais</l><!--@syll="4"-->
+                        <l n="286">Ou plutôt, je me suis leurré. Je vous aimais</l>
+                        <l n="287" part="I">D'amour !</l><!--@syll="2"-->
+                        <stage type="entrance/think/silence/suprise">Madame de Maintenon entre soucieuse, un peu solennelle. Laure demeure muette et clouée sur place par la surprise que lui cause le mot de Racine.</stage>
+                    </sp><!--@who="RACINE"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Racine, Laure, Madame de Maintenon.</head>
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="287" part="M">Mon Dieu !</l><!--@syll="2"-->
+                    </sp><!--@who="LAURE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON.</speaker>
+                        <l n="287" part="F">Qu'avez-vous fait ? Quelle imprudence!</l><!--@syll="8"-->
+                        <l n="288">Un tel discours, au Roi ! Mais c'est de la démence !</l>
+                        <l n="289">Vous pouviez, sans retour, nous perdre tous les deux.</l>
+                        <l n="290">Quel orgueil vous dicta ces pensers hasardeux ?</l>
+                        <l n="291">Laissez agir pourtant mon amitié fidèle.</l>
+                        <l n="292">Mais restez à la cour, il le faut, mon rebelle !</l>
+                    </sp><!--@who="MADAME DE MAINTENON"-->
+<sp who="#racine">
+                        <speaker>RACINE, réfléchit, puis, s'approchant de Laure.</speaker>
+                        <l n="293">De songes merveilleux, moi, je vous bercerai ;</l>
+                        <l n="294">Laure, oubliez l'ingrat ! Je vous consolerai.</l>
+                    </sp><!--@stage="think/close"--><!--@who="RACINE"-->
+<sp who="#laure">
+                        <speaker>LAURE.</speaker>
+                        <l n="295">Malgré la trahison, Racine, j'aime encore...</l>
+                    </sp><!--@who="LAURE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON, frappée d'une compréhension subite.</speaker>
+                        <l n="296">J'ai compris maintenant ; c'est elle qu'il adore !</l>
+                    </sp><!--@stage="think"--><!--@who="MADAME DE MAINTENON"-->
+<sp who="#racine">
+                        <speaker>RACINE, relevant la tête.</speaker>
+                        <l n="297">Madame, c'en est fait, je ne veux pas lutter</l>
+                        <l n="298">Et mon coeur méconnu n'a rien à regretter.</l>
+                    </sp><!--@stage="wave"--><!--@who="RACINE"-->
+<sp who="#madame-de-maintenon">
+                        <speaker>MADAME DE MAINTENON, très douce.</speaker>
+                        <l n="299">Ô Racine, parfois il est dans l'existence</l>
+                        <l n="300">Un jour de deuil où quelque peine plus intense</l>
+                        <l n="301">Harcèle et fait plier le coeur endolori.</l>
+                        <l n="302">L'avenir, devant nous, paraît tout assombri !</l>
+                        <l n="303">Mais qu'importe, pour vous, le lourd chagrin d'une heure !</l>
+                        <l n="304">Sur les troubles présents, votre gloire demeure</l>
+                        <l n="305">Triomphale, éclatante, et durera toujours !</l>
+                        <l n="306">Nos intrigues, nos pleurs et les pâles amours</l>
+                        <l n="307">Où notre coeur, parfois, s'amoindrit et succombe,</l>
+                        <l n="308">Seront, depuis longtemps, enfermés dans la tombe,</l>
+                        <l n="309">Que vous demeurerez, planant sur l'univers !</l>
+                        <l n="310">Ce siècle, tout entier, revivra dans vos vers !</l>
+                        <l n="311">Racine, croyez-vous que jamais on oublie</l>
+                        <l n="312">Votre Esther, Bérénice, Andromaque, Athalie ?</l>
+                        <l n="313">Pourquoi vous vois-je ici, sombre et désespéré ?</l>
+                        <l n="314" part="I">La Gloire vous attend !</l><!--@syll="6"-->
+                    </sp><!--@stage="sweet"--><!--@who="MADAME DE MAINTENON"-->
+<sp who="#racine">
+                        <speaker>RACINE regarde Laure.</speaker>
+                        <l n="314" part="F">Madame, j'en mourrai !</l><!--@syll="6"-->
+                    </sp><!--@stage="watch/toward"--><!--@who="RACINE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

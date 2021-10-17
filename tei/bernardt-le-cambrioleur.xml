@@ -1,0 +1,601 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Cambrioleur, Saynète</title>
+                <author>
+      <idno type="isni">0000000121371490</idno>
+      <idno type="wikidata">Q379949</idno>
+      <persName>
+        <forename>Tristan</forename>
+        <surname>Bernard</surname>
+      </persName>
+    </author><!--Tristan BERNARD (1866-1947)-->
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001517</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/BERNARDT_CAMBRIOLEUR.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/BERNARDT_CAMBRIOLEUR.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1900"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k3042236m</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="lafrappe" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Lafrappe</persName>
+                    </person>
+                    <person xml:id="l-agent" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L Agent</persName>
+                    </person>
+                    <person xml:id="le-gendarme" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Gendarme</persName>
+                    </person>
+                    <person xml:id="le-commissaire" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Commissaire</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+<front>
+	<docTitle>
+	    <titlePart type="main">LE CAMBRIOLEUR</titlePart>
+		<titlePart type="sub">SAYNÈTE</titlePart> 
+		<titlePart type="sub">Saynète jouée par M. Lucien Guitry, le 2 décembre 1897, à la SALLE DES FÊTES DU JOURNAL.</titlePart> 
+	</docTitle>
+   <docDate when="1900">1900.</docDate>
+   <docAuthor>de Tristan Bernard.</docAuthor>
+	<div type="docImprint">
+		<!--TODO: handling of editor name at this place unclear <editor>PARIS, LIBRAIRIE THÉÂTRALE, 30 RUE DE GRAMMOND, 30 </editor>-->
+		<div type="printer">
+                    <p>Imprimerie Générale de Chatillon-sur-Seine. - A. PICHAT</p>
+                </div>
+		<div type="copyright">
+                    <p>Droits de traduction, reproduction, représentation réservée, pour tous les pays, y compris la Suède  et la Norvège.</p>
+                </div>
+	</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#la-frappe">LA FRAPPE</role><!--@sex="1"--><!--@type="H"--><!--@statut="voleur"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+		<castItem>
+                    <role corresp="#un-commissaire-de-police">UN COMMISSAIRE DE POLICE</role><!--@sex="1"--><!--@type="H"--><!--@statut="commissaire"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+		<castItem>
+                    <role corresp="#un-gendarme">UN GENDARME</role><!--@sex="1"--><!--@type="H"--><!--@statut="gendarme"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+		<castItem>
+                    <role corresp="#un-agent">UN AGENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="agent"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+		<castItem>
+                    <role corresp="#un-vieillard">UN VIEILLARD</role><!--@sex="1"--><!--@type="V"--><!--@age="A"--><!--@stat_amour=""--><!--@statu="bourgeois"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XXème" gps="48.856614, 2.352222"/>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LE CAMBRIOLAGE</head>
+<stage type="decor/furniture/light">Une porte au fond. - Deux portes à droite.- Une fenêtreà gauche.- Un bahut au fond à droite. - Il fait nuit. La scène est faiblement éclairée par une lumière qui vient du dehors par la fenêtre de gauche.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE I.</head>
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE, entrant par la porte du fond.</speaker>
+                        <p n="1">
+	<s n="1">Sacrée saleté de pince-monseigneur de les deux oreilles ! </s>
+	<s n="2">Je me suis arraché la peau du pouce.</s>
+</p>
+                        <stage type="suck/watch"/>
+                        <p n="2">
+	<s n="1">C'est bien comme l'a dit le petit marchand d'oiseaux. </s>
+	<s n="2">Il ne s'était trompé dans aucun détail. </s>
+	<s n="3">La murette basse sur les champs, l'allée de gravier, le porte de derrière. </s>
+	<s n="4">Me voilà dans la salle à manger. </s>
+	<s n="5">C'est là que se trouvent l'argenterie et les titres au porteur. </s>
+	<s n="6">La vieux singe doit dormir en haut. </s>
+	<s n="7">Qu'il repose en paix.</s>
+</p>
+                        <stage type="light">Il allume un bout de bougie qu'il a tiré de sa poche et qu'il pose sur la cheminée.</stage>
+                        <p n="3">
+	<s n="1">Ah ! </s>
+	<s n="2">Tout irait bien sans mon rhumatisme. </s>
+	<s n="3">Chaque fois que j'allonge le genou droit, c'est à crier. </s>
+	<s n="4">Je ne suis plus fichu d'escalader un mur de trois mètres... </s>
+	<s n="5">Aie, aie, aie, aie, aie. </s>
+	<s n="6">Je vais prendre un cachet.</s>
+</p>
+                        <stage type="get/furniture">Il prend un verre et une carafe d'eau sur le bahut.</stage>
+                        <p n="4">
+	<s n="1">Passer par le devant de la maison, il ne fallait pas y songer. </s>
+	<s n="2">La rue_des_Ormeaux est très passagère, même à ces heures-ci... </s>
+	<s n="3">Il n'est guère que onze_heures d'ailleurs... </s>
+	<s n="4">Comme mon train est demain matin à sept_heures_quarante, je n'ai pas besoin de me presser... </s>
+	<s n="5">J'ai toute ma nuit... </s>
+	<s n="6">J'aime autant rester tranquillement ici, où il fait chaud, que d'aller poser dans une salle d'attente... </s>
+	<s n="7">Non ! </s>
+	<s n="8">Ces rhumatismes !... </s>
+	<s n="9">C'est de la guigne ! </s>
+	<s n="9">C'est de la guigne ! </s>
+	<s n="10">Je n'avais rien senti depuis huit jours et justement aujourd'hui... où il faut que je travaille !... </s>
+	<s n="11">Et je ne pouvais pas remettre la chose... </s>
+</p>
+                        <stage type="serious">Gravement.</stage>
+                        <p n="5">
+	<s n="1">D'abord parce qu'il ne faut jamais rien remettre au lendemain.</s>
+</p>
+                        <stage type="drop/furniture">Remuant la cuiller dans le verre.</stage>
+                        <p n="6">
+	<s n="1">Et puis le petit marchand d'oiseaux qui m'a donné le tuyau aujourd'hui pouvait très bien le donner à un autre demains... </s>
+</p>
+                        <stage type="think">Après réflexion.</stage>
+                        <p n="7">
+	<s n="1">Quoiqu'il soit honnête.</s>
+</p>
+                        <stage type="drop/furniture">Il remue la cuiller dans le verre.</stage>
+                        <p n="8">
+	<s n="1">C'est long à fondre, ce machin-là... </s>
+	<s n="2">Heureusement que je ne suis pas pressé...</s>
+</p>
+                        <stage type="silence">Après un silence.</stage>
+                        <p n="9">
+	<s n="1">Ah ! </s>
+	<s n="2">Oui, alors... </s>
+	<s n="3">Un affaire comme celle d'aujourd'hui, il faut en profiter. </s>
+	<s n="4">Les clients se font terriblement rares. </s>
+	<s n="5">On ne saurait croire combine les journaux avancés nous font du tort en prêchant le mépris des lois. Les clients se disent que nous n'avons plus peur des lois, que le police est impuissante à les défendre, et que dans ces conditions là, il vaut mieux qu'ils se gardent eux-même.</s>
+</p>
+                        <stage type="drink/disgu">Il boit et fait la grimace.</stage>
+                        <p n="10">
+	<s n="1">Ce n'est pas bon cette affaire là.</s>
+</p>
+                        <stage type="watch/hide">Il examine sa cuiller, puis la met dans sa poche.</stage>
+                        <p n="11">
+	<s n="1">Ce qui fait que le métier est plus dur qu'il n'a jamais été. </s>
+	<s n="2">Il y a trente ans, à ce que des anciens m'ont dit, un bon cambrioleur se faisait ses trois cents francs par moi... </s>
+	<s n="3">Aujourd'hui, quand j'ai fait cinq_cent_francs dans ma saison d'été, je m'estime heureux. </s>
+	<s n="4">C'est égal, ce n'est pas payé.</s>
+</p>
+                        <stage type="silence">Après un silence.</stage>
+                        <p n="12">
+	<s n="1">Ce qu'il y a de terrible, c'est que je deviens taffeur, moi qui n'avais jamais peur de rien... </s>
+	<s n="2">C'est que voilà bientôt que je n'ai pas été à la grosse malle, et ça me dégoûterait d'y retourner.</s>
+</p>
+                        <stage>Attendri.</stage>
+                        <p n="13">
+	<s n="1">Et puis ça me ferait du mal de ne plus revoir ma gosse... </s>
+	<s n="2">Ma petite brunette...</s>
+</p>
+                        <stage type="happy">Gaiment.</stage>
+                        <p n="14">
+	<s n="1">Si je ramasse un peu de pognon aujourd'hui, je vais chercher la gosse à Versailles et je vais me coucher pendant huit jours. </s>
+	<s n="2">C'est la seule façon d'en finir avec mon rhumatisme. </s>
+	<s n="3">Moi, je ne vole pas pour aller au café. </s>
+	<s n="4">L'alcool me fait mal à l'estomac. </s>
+	<s n="5">Je ne bois que de l'eau_d'Evian à mes repas. Je vole pour pouvoir rester coucher à me faire dorloter par ma petite môme. </s>
+	<s n="6">Quand ce n'est pas pour celle d'aujourd'hui, c'est pas une autre. </s>
+	<s n="7">J'en change tous les trois ou quatre ans. </s>
+	<s n="8">Je les prends à seize ans, et je les garde jusqu'à vingt ans.</s>
+</p>
+                        <stage type="serious">Sévèrement.</stage>
+                        <p n="15">
+	<s n="1">Quand elles commencent à raisonner, à discuter, à faire leur madame, je les saque, et je les remplace.</s>
+</p>
+                        <stage type="dress">Il ôte sa veste.</stage>
+                        <p n="16">
+	<s n="1">C'est pour avoir ma liberté que je n'ai pas voulu me flanque dans une bande. </s>
+	<s n="2">C'est pourtant un travail plus régulier, on a un petit fixe par mois. </s>
+	<s n="3">On est assuré contre les accidents. Mais c'est dangereux parce qu'on n'est jamais sûr l'un de l'autre, et qu'il y a des faux frères ! </s>
+	<s n="4">J'aime mieux travailler individuellement et choisir ma spécialité : les villas inhabitées. </s>
+	<s n="5">Aujourd'hui j'ai accepté de venir ici, parce que c'est kif-kif : il n'y a personne dans le tôle. </s>
+	<s n="6">Il n'y a qu'un vieux au premier.</s>
+</p>
+                        <stage type="dress/drop">Posant sa veste sur un meuble.</stage>
+                        <p n="17">
+	<s n="1">Allons, il ne faut pas s'éterniser ici... </s>
+	<s n="2">Je me reposerai à Versailles. Je vais lire un peu pendant ces huit jours. Je suis du moment en train de lire l'Histoire_de_la_Restauration_de_Vaulabelle. </s>
+	<s n="3">Quand, j'ai mal aux yeux, c'est la gosse qui me lit, comme elle sait lire, en louchant à toutes les phrases et en estropiant les noms propres. </s>
+	<s n="4">Ah ! </s>
+	<s n="5">C'est quelque chose d'amusant à voir ! </s>
+	<s n="6">Le soir je fais des réussites, puis on se couche à dix heures.</s>
+</p>
+                        <stage type="get">Il tire une pince-monseigneur de sa poche.</stage>
+                        <p n="18">
+	<s n="1">Quel sale outil tout de même. </s>
+	<s n="2">Qu'est ce que vous voulez foute avec ça ? </s>
+	<s n="3">Il faut voir les outils anglais, les pinces-monseigneur nickelés qu'on fabrique à Sheffield. </s>
+	<s n="4">Ça peut s'appeler des outils, ça. </s>
+	<s n="5">D'abord, c'est fait avec des aciers que nous n'avons pas, que nous pouvons avoir en France. </s>
+	<s n="6">Et puis, c'est une fabrication sérieuse. </s>
+	<s n="7">Quand une machine a estampé cent_mille pièces, on la met au rancart, et on la vend à la ferraille. </s>
+	<s n="8">Aussi ce sont des bijoux de précisions. </s>
+	<s n="9">D'abord ça n'a plus l'aspect de ces grands machines d'un autre âge. </s>
+	<s n="10">Avec un outil grand comme le doigt, on soulève une porte-cochère. </s>
+	<s n="11">Et puis les gars qui les manient savent un peu ce que c'est que le travail.</s>
+</p>
+                        <stage type="admirate">D'un air d'admiration.</stage>
+                        <p n="19">
+	<s n="1">Ah ! </s>
+	<s n="2">Les Anglais ! </s>
+	<s n="3">Il faut les voir à la besogne. </s>
+	<s n="4">C'est merveilleux. </s>
+	<s n="5">Ils n'ont qu'un défaut. </s>
+	<s n="6">Ils se cuitent. </s>
+	<s n="7">Surtout en France où il y a du champagne. </s>
+	<s n="8">Mais si ces gens ne se cuitaient pas, ah ! </s>
+	<s n="9">Messieurs ! </s>
+	<s n="10">Qu'est ce que nous ferions ! </s>
+	<s n="11">Nous n'aurions plus qu'à rester chez nous.</s>
+</p>
+                        <p n="20">
+	<s n="1">Il faut pourtant que je m'occupe. </s>
+	<s n="2">L'argenterie est là dans le bahut. </s>
+	<s n="3">Un beau bahut. </s>
+	<s n="4">Je vais encore l'abîmer. </s>
+	<s n="5">Je me dégoûte d'abîme pour abîmer. </s>
+	<s n="6">Je vais esquinter un bahut de cent_cinquante_louis, pour chauffer peut-être trois_cents_francs d'argenterie ! </s>
+	<s n="7">Et puis après, il va falloir l'emporter... </s>
+	<s n="8">C'est curieux, il y en a un à peu près pareil au château_de_Luidan, où j'ai travaillé l'année dernière. </s>
+	<s n="9">Et où ai-je donc vu des ferrures comme ça ?... </s>
+	<s n="10">Ah ! </s>
+	<s n="11">Chez Bruninger, le banquier de Rueil. </s>
+	<s n="12">Ben voilà : j'aurais un outil anglais pour ouvrir ça, ça tournerait comme dans du beurre ; au lieu qu'avec ce sale outil-là, c'est un vrai moulin_à_café !</s>
+</p>
+                        <stage type="work">Tout en travaillant.</stage>
+                        <p n="21">
+	<s n="1">C'est ma faute, aussi ; je me promets chaque semaine d'écrire à Sheffield pour avoir des outils un peu propres, et je n'y pense jamais.</s>
+</p>
+                        <stage type="low">Entre les dents.</stage>
+                        <l n="1">Tous les plaisirs ne sont que tromperie...</l>
+                        <p n="21">
+	<s n="1">Oh ! </s>
+	<s n="2">Il n'y a pas de danger : le vieux est sourd.</s>
+</p>
+                        <l n="2">Tous les plaisirs ne sont que tromperie,</l>
+                        <l n="3">Que triste leurre et folle vanité ?</l>
+                        <l n="4">Le travail seul embellit notre vie,</l>
+                        <l n="5">C'est la travail qui donne le gaité,</l>
+                        <l n="6">Oui, le travail nous donne la gaité !</l>
+                        <p n="22">
+	<s n="1">Ça vient... </s>
+	<s n="2">Ça vient... </s>
+	<s n="3">C'est ouvert... </s>
+	<s n="4">Voilà la boite à argenterie.</s>
+</p>
+                        <stage type="watch">Examinant le contenu.</stage>
+                        <p n="23">
+	<s n="1">Ah ! </s>
+	<s n="2">Ils ne se sont pas fichus de moi.... </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Ben, ce n'est pas de la camelote.</s>
+</p>
+                        <stage type="drop/furniture">Il pose la boite sur la table, la met dans un toilette dont il noue les quatre coins.</stage>
+                        <p n="24">
+	<s n="1">À présent, nous allons faire un petit baluchon... bien gentiment.</s>
+</p>
+                        <stage type="sing">Puis chantonnant.</stage>
+                        <p n="25">
+	<s n="1">Nouez, Fanchon, joyeuse lavandière, nouez, Fanchon, votr' petit baluchon. </s>
+	<s n="2">Là... </s>
+	<s n="3">Voilà... </s>
+	<s n="4">Le meuble n'est pas trop esquinté. </s>
+	<s n="5">Parfait !... </s>
+	<s n="6">Maintenant, qu'est ce que c'est que ça ?</s>
+</p>
+                        <stage type="blow/light">Il souffle la bougie.</stage>
+                        <p n="26">
+	<s n="1">Voilà le vieux qui vient dans le couloir... </s>
+	<s n="2">Il n'était donc pas en haut.</s>
+</p>
+                        <stage type="serious">Sévèrement.</stage>
+                        <p n="27">
+	<s n="1">Oh ! </s>
+	<s n="2">Je n'aime pas ça... </s>
+	<s n="3">Il a tort de me déranger, ce vieux. </s>
+	<s n="4">Il a tort !...</s>
+</p>
+                        <stage type="away/location/carry/furniture">Il va s'installer derrière le bahut avec sa canne d'entraînement</stage>
+                        <p n="28">
+	<s n="1">Quelle déveine !... </s>
+	<s n="2">Tout allais si bien. </s>
+	<s n="3">Il va falloir intervenir... </s>
+	<s n="4">Ça m'embête d'être obligé d'en venir à ces extrémités. </s>
+	<s n="5">D'autant plus que c'est cher, quand on est pris. </s>
+	<s n="6">Le vol qualifié, c'est moins grave. </s>
+	<s n="7">On vous recherche moins... </s>
+	<s n="8">Ah ! </s>
+	<s n="9">C'est bien ma veine ! </s>
+	<s n="10">Le voilà qui vient...</s>
+	<s n="11">je ne peux pas sauter par la fenêtre. </s>
+	<s n="12">Il y a du monde dans la rue... </s>
+	<s n="13">Juste de bec de gaz, en face. </s>
+	<s n="14">Et ces abrutis-là ne peuvent pas laisser travailler le monde tranquille !... </s>
+	<s n="15">C'est vrai, ça... </s>
+	<s n="16">S'ils veulent qu'on ne les dérange pas, ils n'ont qu'à pas garder l'argent chez eux ! </s>
+	<s n="17">Il y a des coffres-forts dans les grands établissement de crédit. </s>
+	<s n="18">Attention.</s>
+</p>
+                        <stage type="entrance/location/costume/carry/away/back">Le vieillard entre par la porte de droite, deuxième pan ; il est vêtu d'un pantalon et d'une chemise, il tient à la main une carabine. Pendant ce qui suit, il va lentement de la porte de droite à la fenêtre de gauche.</stage>
+                    </sp><!--@stage="entrance/location"--><!--@who="LAFRAPPE"-->
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE, entre ses dents.</speaker>
+                        <p n="29">
+	<s n="1">Ah ! </s>
+	<s n="2">Diable ! </s>
+	<s n="3">C'est un vieux de bonne famille !... </s>
+	<s n="4">Il coûtera cher, s'il faut payer... </s>
+	<s n="5">Allons, allons ! </s>
+	<s n="6">Je vais être obligé de l'attaquer par derrière, avec un moulinet sans élégance.</s>
+</p>
+                        <stage type="hit/fall">Il donne un coup de sa canne d'entrainement sur la tête du vieillard qui tombe par la fenêtre la tête en avant.</stage>
+                        <p n="30">
+	<s n="1">Comme ceci, c'est gagné.</s>
+</p>
+                        <stage type="get">Prenant sa veste sous son bras.</stage>
+                        <p n="31">
+	<s n="1">Éloignons nous discrètement de ce lieu de carnage.</s>
+</p>
+                        <stage type="noise/voice/location">Bruits, clameurs, derrière la porte du fond.</stage>
+                        <p n="32">
+	<s n="1">Ah ! </s>
+	<s n="2">Bougre !</s>
+</p>
+                        <stage type="away/location">Allant à la porte de droite ; premier plan.</stage>
+                        <p n="33">
+	<s n="1">Je ne sais pas où ça.</s>
+</p>
+                        <stage type="exit/location">Il disparaît par cette porte.</stage>
+                    </sp><!--@stage="low"--><!--@who="LAFRAPPE"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE II. Le commissaire, Un agent et un gendarme, portent des lumières.</head>
+<sp who="#l-agent">
+                        <speaker>UN AGENT, entrant avec une lumière.</speaker>
+                        <p n="1">
+	<s n="1">Où est-il ? </s>
+	<s n="2">Où est-il ? </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Il est épatant ! </s>
+	<s n="5">Avez-vous vu comme il a tapé !</s>
+</p>
+                    </sp><!--@stage="entrance/light"--><!--@who="L'AGENT"-->
+<sp who="#le-gendarme">
+                        <speaker>UN GENDARME, entrant avec une autre lumière.</speaker>
+                        <p n="2">
+	<s n="1">Où est-il ? </s>
+	<s n="2">Où est-il ? </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Ah !</s>
+	<s n="5">C'est un gaillard ! </s>
+	<s n="6">Il a mouché du premier coup !</s>
+</p>
+                    </sp><!--@stage=""--><!--@who="LE GENDARME"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE, entrant.</speaker>
+                        <p n="3">
+	<s n="1">Où est-il ? Croyez-vous qu'il l'a bien touché !</s>
+</p>
+                    </sp><!--@stage="entrance"--><!--@who="LE COMMISSAIRE"-->
+<sp who="#l-agent">
+                        <speaker>L'AGENT.</speaker>
+                        <p n="4">
+	<s n="1">Je ne sais pas. </s>
+	<s n="2">Il a dû passer par là.</s>
+</p>
+                    </sp><!--@who="L'AGENT"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE.</speaker>
+                        <p n="5">
+	<s n="1">Mais dites-lui donc qu'il vienne ici. </s>
+	<s n="2">Je tiens absolument à le voir. </s>
+	<s n="3">Pourquoi se cache-t-il ? </s>
+	<s n="4">Le nigaud !</s>
+</p>
+                        <stage type="exit/location">L'agent sort par la droite, second plan.</stage>
+                    </sp><!--@who="LE COMMISSAIRE"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE, au gendarme.</speaker>
+                        <p n="6">
+	<s n="1">Gendarme, vous allez partir à_franc_étrier jusqu'à la préfecture, et vous direz qu'un courageux citoyen vient d'abattre d'un coup de canne... </s>
+	<s n="2">C'était bien un coup de canne ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LE COMMISSAIRE"-->
+<sp who="#le-gendarme">
+                        <speaker/>
+                        <p n="7">
+	<s n="1">Oui, oui, sûrement. </s>
+	<s n="2">Je l'ai bien vu d'en bas...</s>
+</p>
+                    </sp><!--@who="LE GENDARME"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE.</speaker>
+                        <p n="8">
+	<s n="1">Quel magnifique coup de canne !... </s>
+	<s n="2">Vous direz donc qu'un héroïque citoyen vient d'abattre d'un coup de canne le vieux fou furieux qui, depuis ce matin, terrorisait le quartier avec sa carabine, et qui avait déjà blessé trois personnes... </s>
+	<s n="3">Allez !</s>
+</p>
+                        <stage type="exit">Exit le gendarme.</stage>
+                        <note type="L">Venette : Terme bas et populaire. Peur, inquiétude, alarme.</note>
+                        <p n="9">
+	<s n="1">C'était le seul moyen de le toucher ! </s>
+	<s n="2">Par derrière, avec un coup de canne. </s>
+	<s n="3">Mais c'est égal ! </s>
+	<s n="4">Il ne fallait par avoir la venette !</s>
+</p>
+                    </sp><!--@who="LE COMMISSAIRE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. La Commissaire, L'Agent, puis Lafrappe</head>
+<sp who="#l-agent">
+                        <speaker>L'AGENT, rentrant par la porte du second plan à droite.</speaker>
+                        <p n="1">
+	<s n="1">Il n'est pas par là.</s>
+</p>
+                        <stage type="open">Ouvrant la porte du premier plan.</stage>
+                        <p n="2">
+	<s n="1">Il est peut-être là... </s>
+	<s n="2">Oui, il est là.</s>
+</p>
+                        <stage type="toward">À Lafrappe.</stage>
+                        <p n="3">
+	<s n="1">Arrivez donc.</s>
+</p>
+                    </sp><!--@stage="entrance/location"--><!--@who="L'AGENT"-->
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE, sortant, tout penaud, à lui-même.</speaker>
+                        <p n="4">
+	<s n="1">Allons ! </s>
+	<s n="2">Ça y est ! </s>
+	<s n="3">Je suis fait ! </s>
+	<s n="4">Je suis pincé.</s>
+</p>
+                    </sp><!--@stage="shame"--><!--@who="LAFRAPPE"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE, allant à Lafrappe et lui serrant la main.</speaker>
+                        <p n="5">
+	<s n="1">Ah ! </s>
+	<s n="2">Permettez-moi de vous féliciter !... </s>
+	<s n="3">Et bien chaudement, vous savez ! </s>
+	<s n="4">Et de tout coeur !... </s>
+	<s n="5">Tout le monde en est émerveillé... </s>
+	<s n="6">Tenez, l'agent en est tout ému.</s>
+</p>
+                    </sp><!--@stage="toward/touch"--><!--@who="LE COMMISSAIRE"-->
+<sp who="#l-agent">
+                        <speaker>L'AGENT.</speaker>
+                        <p n="6">
+	<s n="1">C'est magnifique.</s>
+</p>
+                        <stage type="touch/shake">Il prend la main de Lafrappe et la secoue avec énergie.</stage>
+                    </sp><!--@who="L'AGENT"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE, s'asseyant à la table.</speaker>
+                        <p n="7">
+	<s n="1">Vous allez me donner votre nom... </s>
+	<s n="2">Comment vous appelez-vous ?</s>
+</p>
+                    </sp><!--@stage="sit/location"--><!--@who="LE COMMISSAIRE"-->
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE, ahuri.</speaker>
+                        <p n="8">
+	<s n="1">Dorival !</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="LAFRAPPE"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE.</speaker>
+                        <p n="9">
+	<s n="1">Plaît-il ?</s>
+</p>
+                    </sp><!--@who="LE COMMISSAIRE"-->
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE, de même.</speaker>
+                        <p n="10">
+	<s n="1">Doriveau.</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="LAFRAPPE"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE.</speaker>
+                        <p n="11">
+	<s n="1">Ça s'écrit ?</s>
+</p>
+                    </sp><!--@who="LE COMMISSAIRE"-->
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE, de même.</speaker>
+                        <p n="12">
+	<s n="1">D O Du R A ri V U veau.</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="LAFRAPPE"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE.</speaker>
+                        <p n="13">
+	<s n="1">Votre adresse ?</s>
+</p>
+                    </sp><!--@who="LE COMMISSAIRE"-->
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE.</speaker>
+                        <p n="14">
+	<s n="1">De passage.</s>
+</p>
+                    </sp><!--@who="LAFRAPPE"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE.</speaker>
+                        <p n="15">
+	<s n="1">Vous pouvez aller vous coucher. </s>
+	<s n="2">Vous devez avoir besoin de repos... </s>
+	<s n="3">Mais venez demain au commissariat, vers dix heures.</s>
+</p>
+                    </sp><!--@who="LE COMMISSAIRE"-->
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE, ahuri.</speaker>
+                        <p n="16">
+	<s n="1">Ah ! </s>
+	<s n="2">Il faut que je vienne... demain...</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="LAFRAPPE"-->
+<sp who="#le-commissaire">
+                        <speaker>LE COMMISSAIRE.</speaker>
+                        <p n="17">
+	<s n="1">Oui, pour la médaille... car vous aurez certainement une médaille d'or... </s>
+	<s n="2">Allons ! </s>
+	<s n="3">Allez vous reposer... </s>
+	<s n="4">Vous n'avez pas perdu cette journée.</s>
+</p>
+                    </sp><!--@who="LE COMMISSAIRE"-->
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE.</speaker>
+                        <p n="18">
+	<s n="1">Au revoir, messieurs.</s>
+</p>
+                    </sp><!--@who="LAFRAPPE"-->
+<sp who="#l-agent">
+                        <speaker>L'AGENT, lui tendant un paquet d'argenterie.</speaker>
+                        <p n="19">
+	<s n="1">Vous oubliez votre paquet.</s>
+</p>
+                    </sp><!--@stage="give"--><!--@who="L'AGENT"-->
+<sp who="#lafrappe">
+                        <speaker>LAFRAPPE.</speaker>
+                        <p n="20">
+	<s n="1">Merci, merci, monsieur...</s>
+</p>
+                        <stage type="exit/location">Il va vers le fond. Au moment de sortir, il regarde encore le commissaire et l'argent. À lui-même :</stage>
+                        <p n="21">
+	<s n="1">Où allons-nous !</s>
+</p>
+                    </sp><!--@who="LAFRAPPE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

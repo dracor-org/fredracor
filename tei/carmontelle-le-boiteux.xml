@@ -1,0 +1,3132 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Boiteux.</title>
+                <title type="sub">Comédie.</title>
+                <title type="sub">Vingt Neuvième Proverbe.</title>
+                <author>
+      <idno type="isni">0000000079771756</idno>
+      <idno type="wikidata">Q982053</idno>
+      <persName>
+        <forename>Louis</forename>
+        <surname>Carrogis</surname>
+        <nameLink>de</nameLink>
+        <surname sort="1">Carmontelle</surname>
+      </persName>
+    </author><!--CARMONTELLE, Louis Carrogis de (1717-1806)-->
+                <editor>Paul FIEVRE avril 2021</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001533</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/CARMONTELLE_BOITEUX.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/CARMONTELLE_BOITEUX.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1783"/>
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="rosalie" sex="FEMALE">
+                        <persName>Rosalie</persName>
+                    </person>
+                    <person xml:id="justine" sex="FEMALE">
+                        <persName>Justine</persName>
+                    </person>
+                    <person xml:id="grand-pierre" sex="MALE">
+                        <persName>Grand-Pierre</persName>
+                    </person>
+                    <person xml:id="de-l-aune" sex="MALE">
+                        <persName>De l'Aune</persName>
+                    </person>
+                    <person xml:id="mademoiselle-javotte" sex="FEMALE">
+                        <persName>Mademoiselle Javotte</persName>
+                    </person>
+                    <person xml:id="monsieur-raimond" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur Raimond</persName>
+                    </person>
+                    <person xml:id="madame-louvier" sex="FEMALE">
+                        <persName>Madame Louvier</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Proverbe</term>
+                    <term>prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LE BOITEUX.</titlePart>
+			<titlePart type="sub">COMÉDIE.</titlePart>
+			<titlePart type="sub">VINGT NEUVIÈME PROVERBE.</titlePart>
+		</docTitle> 
+		<docDate when="1783">M. DCC. LXXXIII. Avec approbation et privilège du Roi</docDate>
+		<docAuthor>de CARMONTELLE.</docAuthor>
+		<div type="docImprint">
+			<div type="printer">
+                    <p>À VERSAILLES, chez POINÇOT, libraire rue Dauphine, et à Paris Chez MERIGOT Jeune, quai des Augustins, NYON Jeune, Quai des quatre Nations, LA PORTE, rue des Noyers, BELI, rue Saint-Jacques, DE SAINE, au Palais-Royal,Libraires.</p>
+                </div><!--@id="POINÇOT"-->
+		</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#justine">JUSTINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="marquis"--><!--@age="A"--><!--@stat_amour="(néant)"-->, Marchande de Modes. En Marchande, avec des tabliers de taffetas vert.</castItem>
+		<castItem>
+                    <role corresp="#rosalie">ROSALIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="marquis"--><!--@age="A"--><!--@stat_amour="(néant)"-->, Marchande de Modes. En Marchande, avec des tabliers de taffetas vert.</castItem>
+		<castItem>
+                    <role corresp="#madame-louvier">MADAME LOUVIER</role><!--@sex="2"--><!--@type="H"--><!--@statut="marchande"--><!--@age="A"--><!--@stat_amour="(néant)"-->, Marchande de Drap. En robe rayée, un tablier noir avec un bonnet en papillon, et une coiffe.</castItem>
+		<castItem>
+                    <role corresp="#mademoiselle-javotte">MADEMOISELLE JAVOTTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="marchande"--><!--@age="J"--><!--@stat_amour="(néant)"-->, fille de Madame Bouvier. Robe grise, tablier noir.</castItem>
+		<castItem>
+                    <role corresp="#de-l-aune">DE L'AUNE</role><!--@sex="1"--><!--@type="H"--><!--@statut="employé"--><!--@age="A"--><!--@stat_amour="(néant)"-->, Garçon de boutique de Madame Bouvier. Habit noir, longs cheveux sans chapeau.</castItem>
+		<castItem>
+                    <role corresp="#monsieur-raymond">MONSIEUR RAIMOND</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="(néant)"-->, boiteux et bredouilleur. Habit brun, veste d'or, perruque à noeuds, mise de travers, avec une canne.</castItem>
+		<castItem>
+                    <role corresp="#grand-pierre">GRAND-PIERRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="commissaire de quartier"--><!--@age="A"--><!--@stat_amour="(néant)"-->, Commissionnaire du quartier. En veste déchirée, col déboutonné, mauvais chapeau et des guêtres.</castItem>
+   </castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La Scène est à Paris.</set>-->
+<note>Extrait de PROVERBES DRAMATIQUES DE CARMONTELLE (...), chez Poinçot libraire, Tome Second, Versailles, 1783. pp. 215-276.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LE BOITEUX</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Justine et Rosalie, travaillant 
+dans leur boutique ; De L'Aune, se promenant dans la boutique de Madame Louvier 
+; Grand-Pierre, balayant la rue.</head>
+<stage type="decor">La Scène représente une place ; au milieu il y a une rue qui sépare deux maisons. Dans celle qui est à droite, demeure Madame Louvier, Marchande de Drap, à la Couronne d'or ; dans celle qui est à gauche, demeurent des Marchandes de Modes, à l'Alliance. Ces deux enseignes sont aux coins de chaque maison, sur des tapis, etc.</stage>
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="1">
+	<s n="1">Justine, la lettre pour Monsieur_Raimond, est-elle cachetée ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="2">
+	<s n="1">Oui, la voilà.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="3">
+	<s n="1">Il faut la donner à Grand-Pierre.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="4">
+	<s n="1">Je m'en vais l'appeler. </s>
+	<s n="2">Grand-Pierre, Grand-Pierre.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="5">
+	<s n="1">Tout-à-l_heure, Mademoiselle. </s>
+	<s n="2">Il va regarder dans la boutique de Madame_Louvier.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="6">
+	<s n="1">Hé bien, Grand-Pierre ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="7">
+	<s n="1">Me voilà, me voilà.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="8">
+	<s n="1">Qu'est-ce que tu regardais donc ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="9">
+	<s n="1">Eh, je regardais si Mademoiselle_Javotte, n'était pas dans sa boutique ; mais il n'y a que Monsieur De l'Aune.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="10">
+	<s n="1">Bon, tu as toujours peur.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="11">
+	<s n="1">C'est que je crains que Monsieur_Raimond ne découvre que nous le trompons ; et cela pourrait finir mal, voyez-vous.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="12">
+	<s n="1">Tu es bien poltron ! </s>
+	<s n="2">Ne te paye-t-il pas bien ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="13">
+	<s n="1">Oh, pour cela oui ; j'en ai déjà eu plus de vingt écus.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="14">
+	<s n="1">De quoi te plains-tu donc ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="15">
+	<s n="1">Je ne me plains pas de ce qu'il m'a donné ; mais...	</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="16">
+	<s n="1">C'est pourtant nous qui t'avons valu cela ; car tu n'y pensais seulement pas.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="17">
+	<s n="1">C'est bien vrai.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="18">
+	<s n="1">Tu n'as pas refusé le premier écu qu'il t'a donné, pour remettre une lettre à Mademoiselle_Javotte ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="19">
+	<s n="1">Non, et c'était sans savoir ce que j'en ferais de cette lettre.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="20">
+	<s n="1">Hé bien, si nous ne faisions pas toutes les réponses au nom de Mademoiselle_Javotte, aurais-tu ces vingt écus ? </s>
+	<s n="2">Et si tu lui avais rendu cette lettre de Monsieur_Raimond, et qu'elle l'eût dit à sa mère, Madame_Louvier, tu aurais été chassé de chez elle : et tu ne ferais plus les commissions.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="21">
+	<s n="1">Sûrement : mais tromper ce Monsieur_Raimond, qui est le meilleur homme du monde, il me semble que c'est mal fait.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="22">
+	<s n="1">Mal fait ? </s>
+	<s n="2">Au contraire. </s>
+	<s n="3">N'est-il pas trop heureux, ce vilain boiteux-là, puisqu'il se croit aimé d'une jeune et jolie personne comme Mademoiselle_Javotte ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="23">
+	<s n="1">Vous avez raison ; mais s'il vient à lui parler, il découvrira tout.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="24">
+	<s n="1">Je te réponds qu'il ne lui parlera pas ; nous lui défendons toujours dans nos lettres, et nous lui faisons craindre que si Madame_Louvier découvrait son amour pour sa fille, elle ne la mît dans un couvent.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="25">
+	<s n="1">J'entends bien cela ; mais comme il passe à tout moment devant sa porte, j'ai toujours peur qu'il n'entre dans la maison.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="26">
+	<s n="1">Dis donc toujours la même chose.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="27">
+	<s n="1">Et puis vous lui demandez sans cesse : ce sont des gants, des jarretières, des mules, des bas de soie...</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="28">
+	<s n="1">Et toi, ne prends-tu pas les écus qu'il te donne ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="29">
+	<s n="1">Oui ; mais je ne lui demande pas ; ainsi ce n'est pas ma faute. </s>
+	<s n="2">Attendez que je voie si Mademoiselle_Javotte est dans la boutique ; parce que pendant que je suis ici, Monsieur_Raimond pourrait bien venir.</s>
+</p>
+                        <stage type="watch">Il va regarder.</stage>
+                    </sp><!--@who="GRAND-PIERRE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Justine, Rosalie, Madamoiselle Javotte, De L'Aune, Grand-Pierre.</head>
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE, avec embarras.</speaker>
+                        <p n="1">
+	<s n="1">Je vous souhaite bien le bon jour, Mademoiselle_Javotte.</s>
+</p>
+                    </sp><!--@stage="embarrassed"--><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="2">
+	<s n="1">Je suis bien votre servante, Monsieur De l'Aune.</s>
+</p>
+                        <stage type="sit/work/watch">Elle s'assied et travaille à la tapisserie. De l'Aune a grande envie de lui parler ; mais lorsqu'elle le regarde, il n'ose plus. Il se détermine pourtant.</stage>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="3">
+	<s n="1">Vous vous portez bien aujourd'hui, Mademoiselle_Javotte ?</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="4">
+	<s n="1">Fort bien. </s>
+	<s n="2">Monsieur ; et vous ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="5">
+	<s n="1">À votre Service, Mademoiselle.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="6">
+	<s n="1">Vous avez bien de la bonté.</s>
+</p>
+                        <stage type="work">Elle continue de travailler ; et elle ne lève les yeux qu'à la dérobée sur De l'Aune, qui n'ose lui rien dire.</stage>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE, à Justine et à Rosalie.</speaker>
+                        <p n="7">
+	<s n="1">J'ai bien fait d'aller voir ; elle est dans la boutique. </s>
+	<s n="2">Il faut que je me mette en sentinelle, en cas que Monsieur_Raimond passe.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="8">
+	<s n="1">Et la lettre, Justine ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="9">
+	<s n="1">Je m'en vais lui donner. </s>
+	<s n="2">Tiens, Grand-Pierre, voilà la réponse à la lettre d'hier, de Monsieur_Raimond.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="10">
+	<s n="1">C'est bon, je lui donnerai quand il viendra.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="11">
+	<s n="1">S'il te donne quelque chose pour nous, tu nous l'apporteras.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="12">
+	<s n="1">Sûrement. </s>
+	<s n="2">Ne croyez-vous pas que je le garderai ?</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="13">
+	<s n="1">Je ne dis pas cela.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="14">
+	<s n="1">Et puis vous le verrez bien.</s>
+</p>
+                        <stage type="sit/location/work/low/laugh">Il va s'asseoir sur une borne au coin de la rue. La scène muette de Javotte et De l'Aune continue. Justine et Rosalie travaillent, et parlent ensemble tout bas en riant de temps en temps.</stage>
+                    </sp><!--@who="GRAND-PIERRE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Rosalie, Justine, Mademoiselle Javotte, De L'Aune, Grand-Pierre, Monsieur Raimond.</head>
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND, venant du côté droit.</speaker>
+                        <stage type="explicit">Il est nécessaire que ce rôle soit rendu en bredouillant, comme un homme qui veut parler vite, qui cherche, qui répète et non pas en bégayant. Sans cette façon de le rendre, il ferait moins d'effet, et ne serait point comique.</stage>
+                        <p n="1">
+	<s n="1">Ne sera-t-elle jamais seule !</s>
+</p>
+                        <stage type="wave/stand/exit/desparate">Il fait une grande révérence à Mademoiselle Javotte, qui l'aperçoit à peine, se lève et s'en va. Il en est consterné.</stage>
+                    </sp><!--@stage="location"--><!--@who="MONSIEUR RAIMOND"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Rosalie, Justine, Monsieur Raimond, De L'Aune, Grand-Pierre.</head>
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="1">
+	<s n="1">Que peut-elle avoir contre moi ? </s>
+	<s n="2">Elle ne m'a jamais traité comme cela.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="2">
+	<s n="1">Monsieur, j'allais aller chez vous.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="3">
+	<s n="1">Dis-moi donc, Grand-Pierre, est-ce que Mademoiselle_Javotte est fâchée contre moi ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="4">
+	<s n="1">Pourquoi donc ?</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="5">
+	<s n="1">C'est qu'à peine m'a-t-elle vue, qu'elle s'est retirée tout de suite.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="6">
+	<s n="1">Elle a peut-être cru voir venir sa mère.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="7">
+	<s n="1">Non, elle n'y était pas ; et voilà ce qui me surprend de plus en plus.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="8">
+	<s n="1">Bon, tout cela ne fait rien. </s>
+	<s n="2">Tenez, voilà sa réponse à la lettre d'hier au soir ; lisez-la, vous verrez de quoi il retourne.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="9">
+	<s n="1">Hé donne donc.</s>
+</p>
+                        <stage type="read">Il lit la lettre.</stage>
+                        <p n="10">
+	<s n="1">Je vous remercie bien, Monsieur, de ce que vous m'avez envoyé avec votre lettre ; c'est bien galant à vous ; aussi je ne vois personne qui vous ressemble. </s>
+	<s n="2">J'ai bien du regret de ne pas pouvoir vous parler ; il faut que je fasse comme cela, à cause de ma mère, qui me dit toujours qu'il faut fuir l'amour, parce que tous les hommes sont des trompeurs ; je ne crois pourtant pas que vous en soyez un ; c'est pourquoi...</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="11">
+	<s n="1">C'est pour cela qu'elle s'est en allée quand elle vous a vu.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="12">
+	<s n="1">Tu le crois, Grand-Pierre ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="13">
+	<s n="1">Ah, sûrement, Monsieur.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND, lisant.</speaker>
+                        <p n="14">
+	<s n="1">C'est pourquoi il faut que vous preniez patience, et que vous ne fassiez que ce que je vous manderai quand il en sera temps. </s>
+	<s n="2">J'ai changé d'avis au sujet des bas de soie ; j'aimerais mieux un petit coeur d'or, pour pendre à mon col ; parce que cela ressemblerait tout-à-fait au vôtre, et que je le verrais toujours. </s>
+	<s n="3">Si cependant vous avez acheté la paire de bas de soie, envoyez-la-moi. </s>
+	<s n="4">Adieu, mon cher Monsieur, j'entends ma mère, je ne puis vous en dire davantage. </s>
+	<s n="4">JAVOTTE.</s>
+</p>
+                        <p n="15">
+	<s n="1">Qu'elle est charmante ! </s>
+	<s n="2">Qu'elle a de l'esprit ! </s>
+	<s n="3">Ne trouves-tu pas, Grand-Pierre ?</s>
+</p>
+                    </sp><!--@stage="read"--><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="16">
+	<s n="1">Oh, Monsieur, sans doute ; mais ce n'est pas-là tout ; si vous entendiez, quand elle parle, ce qu'elle dit de vous.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="17">
+	<s n="1">Hé, dis donc, dis donc ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="18">
+	<s n="1">Elle dit tout plein de choses.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="19">
+	<s n="1">Mais quoi, encore ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="20">
+	<s n="1">Dame, premièrement elle disait... </s>
+	<s n="2">Attendez, attendez... </s>
+	<s n="3">Je ne saurais me souvenir de tout cela.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="21">
+	<s n="1">Disait-elle qu'elle m'aimait ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="22">
+	<s n="1">Oh, beaucoup, beaucoup.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="23">
+	<s n="1">Cela est bien vrai ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="24">
+	<s n="1">C'est toujours par où elle commence.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="25">
+	<s n="1">Cette chère enfant ! </s>
+	<s n="2">Qu'elle est aimable ! </s>
+	<s n="3">Allons, je m'en vais lui écrire et lui acheter ce qu'elle me demande. </s>
+	<s n="4">Mais, dis donc, n'ai-je pas bien raison de l'aimer de tout mon coeur ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="26">
+	<s n="1">Vantez-vous-en. </s>
+	<s n="2">N'allez pourtant pas songer à vouloir lui parler avant qu'elle vous le mande.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="27">
+	<s n="1">Ne crains rien, ne crains rien. </s>
+	<s n="2">Ce n'est pas la première fois que j'ai eu une intrigue amoureuse ; je sais comme cela se mène.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="28">
+	<s n="1">Vous me paraissez bien malin, vous, Monsieur_Raimond.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND, riant.</speaker>
+                        <p n="29">
+	<s n="1">Pas mal, pas mal. </s>
+	<s n="2">Ah, j'oubliais bien le meilleur. </s>
+	<s n="3">Ma lettre et les bas. </s>
+	<s n="4">Tiens, donnes-lui cela. </s>
+	<s n="5">La joie m'étourdit si fort !...</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="30">
+	<s n="1">Je le vois bien.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="31">
+	<s n="1">Sûrement, puisque j'oubliais aussi de te donner quelque chose. </s>
+	<s n="2">Tiens.</s>
+</p>
+                        <stage type="give">Il lui donne un écu.</stage>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="32">
+	<s n="1">Oh, Monsieur, cela ne fait rien ; et ce n'est pas pour cela que j'en parle.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="33">
+	<s n="1">Adieu, adieu... </s>
+	<s n="2">Je te retrouverai ici ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="34">
+	<s n="1">Oui, oui, Monsieur ; je n'en démarrerai pas.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine #rosalie">
+                        <speaker>JUSTINE, ROSALIE, voyant en aller Monsieur Raimond, chantent.</speaker>
+                        <l n="1">Il est pris.</l>
+                        <l n="2">Il est pris.</l>
+                        <l n="3">Il est pris.</l>
+                    </sp><!--@stage="sing/watch"--><!--@who="JUSTINE, ROSALIE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Rosalie, Justine, De L'Aune, lisant ; soupirant, et levant les yeux au Ciel, de temps en temps ; GRAND-PIERRE, regardant aller Monsieur Raimond.</head>
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE, à Justine et à Rosalie.</speaker>
+                        <p n="1">
+	<s n="1">Tenez, Mesdemoiselles, voilà une lettre.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="2">
+	<s n="1">Oui ; mais il y a encore autre chose.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="3">
+	<s n="1">Il y a des bas. </s>
+	<s n="2">Les voilà.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="4">
+	<s n="1">Voyons, voyons. </s>
+	<s n="2">Ah, il y en a deux paires.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="5">
+	<s n="1">Cela fera une pour toi, et une pour moi.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="6">
+	<s n="1">Sans doute. </s>
+	<s n="2">Ils sont assez beaux.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="7">
+	<s n="1">Et sa lettre ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="8">
+	<s n="1">Oui, voyons ce qu'elle dit.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="9">
+	<s n="1">Il est bon de savoir s'il n'a pas grande envie de parler à Mademoiselle_Javotte.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, lit.</speaker>
+                        <p n="10">
+	<s n="1">Je suis bien charmé, Mademoiselle, de ce que vous me faites l'honneur de me dire, que tout ce qui vient de moi vous fait toujours plaisir ; je le redouble aujourd'hui ce plaisir, en vous envoyant deux paires de bas, au lieu d'une que vous m'avez demandée ; je vous prie de les accepter ; je crains seulement qu'ils ne soient trop larges, pour une jambe aussi jolie que la vôtre. </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Si je pouvais baiser ce qui est au bout, je veux dire, votre pied ; que je serais heureux !...</s>
+</p>
+                    </sp><!--@stage="read"--><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="11">
+	<s n="1">Je croyais que c'était le genou, moi, qu'il voulait dire.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="12">
+	<s n="1">Le genou, Justine !</s>
+</p>
+                        <stage type="laugh">Riant.</stage>
+                        <p n="13">
+	<s n="1">Ah, ah, ah ! </s>
+	<s n="2">Il n'est pas si malin que cela.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="14">
+	<s n="1">Oh, pour cela non.</s>
+</p>
+                        <stage>Elle continue de lire.</stage>
+                        <p n="15">
+	<s n="1">Que je serais heureux ! </s>
+	<s n="2">J'attends le moment fortuné, où je pourrai vous dire de vive voix, que vous régnerez toujours dans mon coeur ; je ne vous crois pas ingrate ; mais il faudrait me le prouver. Je vous l'ai déjà écrit, et vos beaux yeux ont dû lire et penser que je suis incapable de vous rechercher autrement, qu'en légitime mariage, et comme votre très humble et très obéissant et respectueux serviteur. </s>
+	<s n="3">RAIMOND.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="16">
+	<s n="1">Il n'est pas trop empressé ; ainsi, tu vois bien, que tu n'as rien à craindre.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="17">
+	<s n="1">N'a-t-il pas envie de lui parler de vive voix ? </s>
+	<s n="2">S'il allait l'entreprendre et rencontrer la mère, Madame_Louvier, je serais flambé.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="18">
+	<s n="1">Je m'en vais lui recommander encore de se tenir tranquille ; ne sois pas inquiet. </s>
+	<s n="2">Rosalie, donne-moi l'écritoire.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="19">
+	<s n="1">Tiens, la voilà.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="20">
+	<s n="1">Ah bien, je m'en vais vous laisser faire.</s>
+</p>
+                        <stage type="sit/location/smoke">Il va s'asseoir sur une pierre, et il fume sa pipe.</stage>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, la plume à la main.</speaker>
+                        <p n="21">
+	<s n="1">Ah çà, que demanderons-nous à présent ? </s>
+	<s n="2">Je voudrais bien avoir une montre.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="22">
+	<s n="1">Ah, une montre ; c'est trop cher.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="23">
+	<s n="1">Oui, c'est vrai ; mais quelque chose qui nous valût un peu d'argent.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="24">
+	<s n="1">Un peu d'argent ? </s>
+	<s n="2">Comment faire ? </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Tiens, il faut lui demander un bonnet_à_la_grippe ; il viendra peut-être l'acheter ici ; cela nous divertira ; et nous aurons l'argent et la marchandise.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="25">
+	<s n="1">Tu as raison ; c'est bien imaginé. </s>
+	<s n="2">Allons, je m'en vais écrire. </s>
+	<s n="3">Elle écrit, et elle montre à Rosalie à mesure ; et elles rient toutes les deux en faisant la lettre.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+</div><!--@stage="read/sigh/watch"-->
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Rosalie, Justine, Madame Louvier, Mademoiselle Javotte, De L'Aune, Grand-Pierre.</head>
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="1">
+	<s n="1">De l'Aune, pendant que nous allons garder la boutique, vous devriez aller replier toutes les pièces de draps d'hier, dans le magasin.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="2">
+	<s n="1">Je m'en y vais, Madame.</s>
+</p>
+                        <stage type="watch/away">Il regarde Javotte en s'en allant, qui le regarde aussi.</stage>
+                    </sp><!--@who="DE L'AUNE"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Rosalie, Justine, Madame Louvier, Madame Javotte, Grand-Pierre.</head>
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER, s'asseyant et tricottant.</speaker>
+                        <p n="1">
+	<s n="1">Tenez, Javotte, asseyez-vous-là. </s>
+</p>
+                        <stage type="sit/work">Javotte s'assied et travaille à la tapisserie.</stage>
+                        <p n="2">
+	<s n="1">Votre tapisserie est-elle bien avancée ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="3">
+	<s n="1">Oui, Maman ; tenez, voyez tout ce que j'ai fait depuis hier.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="4">
+	<s n="1">C'est bon. </s>
+	<s n="2">Et votre arithmétique ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="5">
+	<s n="1">Ah, Maman ! </s>
+	<s n="2">J'ai fait aujourd'hui une multiplication avec sols et deniers, sans faute ; si vous voulez, je m'en vais vous l'aller chercher ; vous verrez. </s>
+</p>
+                        <stage type="stand">Elle se lève.</stage>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="6">
+	<s n="1">Non, non ; restez-là.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="7">
+	<s n="1">C'est que je dis, vous verriez...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="8">
+	<s n="1">Non. </s>
+	<s n="2">Écoutez-moi ; quand vous êtes ici toute seule avec De l'Aune, qu'est-ce qu'il vous dit ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="9">
+	<s n="1">Lui ? </s>
+	<s n="2">Presque jamais rien, surtout depuis quelque temps ; il me paraît même bien triste.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="10">
+	<s n="1">Bien triste ? </s>
+	<s n="2">Je ne vois pas cela ; il me semble qu'il est tout comme à son ordinaire.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="11">
+	<s n="1">Oui, quand vous y êtes ; mais avec moi, il est bien différent. </s>
+	<s n="2">Autrefois, il était de la meilleure humeur du monde, quand nous étions ensemble ; à présent ce n'est plus la même chose.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="12">
+	<s n="1">Il s'ennuie peut-être d'être Garçon_Marchand.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="13">
+	<s n="1">Ah, mon Dieu, non ; car je lui ai demandé, et il m'a assuré que, tout au contraire, il voudrait rester toujours comme il est.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="14">
+	<s n="1">Tout cela, ce sont des contes. </s>
+	<s n="2">Ma fille, il ne faut pas croire tout ce que disent les garçons ; c'est pour attraper les filles.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="15">
+	<s n="1">Attraper les filles ? </s>
+	<s n="2">Oh, je jurerais bien qu'il ne m'attrapera pas ; vous ne le connaissez pas, Maman ; il n'est pas assez malin pour cela ; je l'attraperais plutôt, moi.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="16">
+	<s n="1">Il ne faut vous attraper ni l'un ni l'autre. </s>
+	<s n="2">Je vais vous parler naturellement, comme une bonne mère et qui a confiance en vous ; répondez-moi de même.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="17">
+	<s n="1">Oui, Maman.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="18">
+	<s n="1">Je voudrais savoir si De l'Aune n'a point d'amour pour vous ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="19">
+	<s n="1">Je n'en sais rien, Maman ; mais si vous voulez je lui demanderai.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="20">
+	<s n="1">Gardez-vous en bien.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="21">
+	<s n="1">Pourquoi donc ? </s>
+	<s n="2">Si vous voulez le savoir, cela sera bien plutôt fait.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="22">
+	<s n="1">C'est une simple curiosité.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="23">
+	<s n="1">Oh bien, laissez, laissez-moi faire.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="24">
+	<s n="1">Je vous le défends, entendez-vous ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="25">
+	<s n="1">Mais, Maman, c'est que je ne serais pas fâchée de le savoir aussi, moi.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="26">
+	<s n="1">Comment ; pourquoi donc ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="27">
+	<s n="1">Maman ; c'est qu'il me dirait peut-être la différence qu'il y a de l'amour à l'amitié ; car je commence à croire qu'il y en a.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="28">
+	<s n="1">Vous me paraissez bien savante.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="29">
+	<s n="1">Ah, Maman, c'est donc vrai ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="30">
+	<s n="1">Non, non, ce sont des contes qu'on lit dans les Histoires des Romans ; et il ne faut pas qu'une fille en lise jamais.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="31">
+	<s n="1">Oh, je le sais bien ; parce que tout cela n'est pas vrai ; et j'en suis bien fâchée !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="32">
+	<s n="1">Est-ce que vous en avez lu ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="33">
+	<s n="1">Oui, Maman, au Couvent ; j'en ai lu un qui s'appelait Hippolite_Comte_de_Duglas.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="34">
+	<s n="1">C'est fort bien. </s>
+	<s n="2">C'est donc-là que vous avez appris que l'on avait de l'amour ? </s>
+	<s n="3">Tout cela n'est qu'un nom ; c'est de l'amitié qu'il faut dire ; et une fille ne doit jamais prononcer le mot d'amour, entendez-vous ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="35">
+	<s n="1">Oui, Maman ; mais si ce n'est pas la même chose.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="36">
+	<s n="1">Comment, et pourquoi ne serait-ce pas la même chose ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="37">
+	<s n="1">Je m'entends bien, Maman. </s>
+	<s n="2">Tenez, l'amitié, c'est je crois, ce que je sens pour vous, pour ma tante, pour ma cousine...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="38">
+	<s n="1">Oui, cela est vrai.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="39">
+	<s n="1">Et l'amour est une autre amitié qu'on sent pour...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="40">
+	<s n="1">Achevez, pour ?...</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="41">
+	<s n="1">Pour des hommes.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="42">
+	<s n="1">Pour des hommes ? </s>
+	<s n="2">Mais est-ce que vous n'avez pas aussi de l'amitié pour votre oncle ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="43">
+	<s n="1">Oui ; mais ce n'est pas-là ce que je veux dire.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="44">
+	<s n="1">Allons, allons ; vous rêvez. </s>
+	<s n="2">Croyez-moi ; c'est ce que vous avez de mieux à faire.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="45">
+	<s n="1">Je le sais bien, Maman.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="46">
+	<s n="1">Si vous le savez, pourquoi donc avoir des idées comme celles-là ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="47">
+	<s n="1">Mais, Maman, ce n'est pas ma faute, elles viennent sans que j'y pense.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="48">
+	<s n="1">Voilà qui est bien ; ne parlons plus de cela.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="49">
+	<s n="1">Comme vous voudrez, Maman.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Justine, Rosalie, Monsieur Raimond, Madame Louvier, Mademoiselle Javotte, Grand-Pierre.</head>
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="1">
+	<s n="1">Grand-Pierre ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="Z">
+	<s n="1">Mademoiselle.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="3">
+	<s n="1">Tiens, voilà sa réponse.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="4">
+	<s n="1">C'est bon.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="5">
+	<s n="1">Ah, voilà Monsieur_Raimond !</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, effrayée.</speaker>
+                        <p n="6">
+	<s n="1">Il veut entrer chez Madame_Louvier, je crois.</s>
+</p>
+                    </sp><!--@stage="frighten"--><!--@who="JUSTINE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="7">
+	<s n="1">Oh, nous sommes perdus ! </s>
+</p>
+                        <stage type="run/listen">Il court écouter ce que dit Monsieur_Raimond.</stage>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND, croyant Mademoiselle Javotte seule, ne voyant pas sa mère.</speaker>
+                        <p n="8">
+	<s n="1">Mademoiselle, je vous apporte moi-même...</s>
+</p>
+                    </sp><!--@stage="explicit/watch"--><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER, se levant.</speaker>
+                        <p n="9">
+	<s n="1">Monsieur, qu'est-ce qu'il y a pour votre service ?</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="10">
+	<s n="1">Madame... </s>
+	<s n="2">Mais je me trompe... </s>
+	<s n="3">Je cherchais... </s>
+	<s n="4">Je croyais que c'était ici... </s>
+	<s n="5">L'enseigne_de_la_Lune_d_argent.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <note type="C">Rue Thibautodé : ancienne rue de Paris (Ier arr.) qui reliait la Rue Saint-Germain l'Auxerrois et la rue de Bétisy (rue de Rivoli).</note>
+                        <p n="11">
+	<s n="1">Non, Monsieur ; c'est dans la rue_Thibautodé, la deuxième rue après celle-ci.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="12">
+	<s n="1">Madame, je vous demande bien pardon.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="13">
+	<s n="1">Monsieur, il n'y a pas de mal.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="14">
+	<s n="1">Je suis bien votre très humble serviteur.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="15">
+	<s n="1">Et moi, Monsieur, votre très humble servante.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND, à Grand-Pierre, qui vient au-devant de lui.</speaker>
+                        <p n="16">
+	<s n="1">Ah, Grand-Pierre, je viens de faire une terrible faute !</s>
+</p>
+                    </sp><!--@stage="toward/closer"--><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="17">
+	<s n="1">Et je vous ai bien vu.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="18">
+	<s n="1">J'ai cru Mademoiselle_Javotte seule... </s>
+	<s n="2">J'ai peur qu'elle ne soit fâchée contre moi.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="19">
+	<s n="1">Et que n'attendiez-vous aussi ce qu'elle vous manderait ?</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="20">
+	<s n="1">Hé, vraiment oui, mais quand je ne la vois pas, je veux la voir ; quand je la vois, je veux lui parler, et puis... </s>
+	<s n="2">Mais, dis-moi ; m'a-t-elle fait réponse ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="21">
+	<s n="1">Oui, Monsieur, la voilà.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="22">
+	<s n="1">Que tu es heureux ! </s>
+	<s n="2">Tu lui parle comme tu veux, toi.</s>
+</p>
+                        <stage type="read">Il lit.</stage>
+                        <p n="23">
+	<s n="1">Hum, hum, hum... </s>
+	<s n="2">Ah, toujours charmante ! </s>
+	<s n="3">Hum, hum, hum... </s>
+	<s n="4">Oui, oui ; cela ne m'arrivera plus, bien sûrement. </s>
+	<s n="5">Hum, hum, hum... </s>
+	<s n="6">Comment ne l'aimerais-je pas ? </s>
+	<s n="7">Hum, hum, hum... </s>
+	<s n="8">Un bonnet_à_la_grippe ? </s>
+	<s n="9">Où trouverai-je cela ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="24">
+	<s n="1">Un bonnet_à_la_grippe ?</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="25">
+	<s n="1">Oui ; qu'est-ce que c'est que cela ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="26">
+	<s n="1">Ma foi, je n'en sais rien. </s>
+	<s n="2">Un bonnet ? </s>
+	<s n="3">Ce ne peut être que pour elle. </s>
+	<s n="4">Les Marchandes_de_Modes vous diront cela.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="27">
+	<s n="1">Les Marchandes_de_Modes ? </s>
+	<s n="2">Je crois que tu as raison. </s>
+	<s n="3">Celles qui demeurent là, sont-elles habiles ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="28">
+	<s n="1">Oh ! </s>
+	<s n="2">Monsieur, ce sont les plus fameuses de Paris.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="29">
+	<s n="1">Allons, je vais y entrer.</s>
+</p>
+                        <stage type="give">Donnant un petit paquet à Grand-Pierre. </stage>
+                        <p n="30">
+	<s n="1">Tiens, tâche, dès que tu le pourras, de donner ceci à Mademoiselle_Javotte, et de lui dire que je suis bien fâché de n'avoir pas vu sa mère ; que je n'aurais pas tenté de lui parler malgré elle, que je lui en demande bien pardon. </s>
+	<s n="2">Entends-tu ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="31">
+	<s n="1">Oui, Monsieur.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="32">
+	<s n="1">Je dirai qu'on te donne le bonnet_à_la_grippe ; et je t'apporterai une lettre d'excuses pour Mademoiselle_Javotte, que tu lui donneras avec... </s>
+	<s n="2">Tu comprends bien ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="33">
+	<s n="1">Oui, oui, Monsieur ; ne vous embarrassez pas. </s>
+	<s n="2">Je m'en vais entrer chez elle ; et dès qu'elle sera seule, je lui remettrai cela.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="34">
+	<s n="1">C'est fort bien ; je vais acheter ce bonnet qu'elle me demande.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="35">
+	<s n="1">Allez, allez ; ces Demoiselles vous serviront bien.</s>
+</p>
+                        <stage type="exit/together/location">Il entre chez Madame Louvier ; et Monsieur Raimond entre chez  Justine et Rosalie.</stage>
+                    </sp><!--@who="GRAND-PIERRE"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Rosalie, Justine, Madame Louvier, Mademoiselle Javotte, Monsieur RAIMOND.</head>
+<sp who="#justine">
+                        <speaker>JUSTINE, à Monsieur Raimond.</speaker>
+                        <p n="1">
+	<s n="1">Y a-t-il quelque chose pour le service de Monsieur ? </s>
+	<s n="2">Des bourses_à_cheveux, des noeuds_d_épées, cordons_de_cannes, cordons_de_montres ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="2">
+	<s n="1">Des sacs à ouvrage pour les Dames, des bonnets_à_la_paysanne, des bonnets_à_la_grippe ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="3">
+	<s n="1">Voilà précisément Mesdemoiselles, ce que je demande.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="4">
+	<s n="1">Monsieur, donnez-vous la peine de vous asseoir. </s>
+	<s n="2">Vous allez voir tout ce qu'il y a de plus beau en bonnets_à_la_paysanne.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="5">
+	<s n="1">Non, non ; ce n'est pas cela.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="6">
+	<s n="1">C'est des bonnets_à_la_grippe, que Monsieur veut ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="7">
+	<s n="1">Oui, Mesdemoiselles, à la grippe.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="8">
+	<s n="1">Oh, Monsieur, nous en avons : vous allez en voir, et tout ce qu'il y a de mieux fait.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="9">
+	<s n="1">Je ne veux pas épargner, ainsi...</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="10">
+	<s n="1">Monsieur, vous n'en avez pas l'air ; et nous connaissons un peu notre monde. </s>
+	<s n="2">Tenez, Monsieur, regardez cela ; voilà un des plus beaux bonnets_à_la_grippe, qu'il y ait jamais eu.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="11">
+	<s n="1">Vous me l'assurez ; parce que moi...</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="12">
+	<s n="1">Oh, pour cela, ce n'est pas Monsieur que nous voudrions tromper.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="13">
+	<s n="1">Je le crois ; et combien le vendez-vous ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="14">
+	<s n="1">Faut-il parler à Monsieur en confidence ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="15">
+	<s n="1">Sans doute, sans doute ; je n'aime pas à marchander.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="16">
+	<s n="1">Hé bien, Monsieur ; c'est douze francs, ni plus, ni moins.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="17">
+	<s n="1">Douze francs ? </s>
+	<s n="2">Ne pourriez-vous pas l'embellir un peu ? </s>
+	<s n="3">Mais d'une façon modeste, cependant ; je voudrais y mettre un louis.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="18">
+	<s n="1">Monsieur, rien n'est plus aisé. </s>
+	<s n="2">Justine, il n'y a qu'à y mettre un ruban de dentelle.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="19">
+	<s n="1">Oui ; mais c'est une affaire de quinze francs de plus.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="20">
+	<s n="1">Oh, bon, avec Monsieur ; nous ne regarderons pas à un écu. </s>
+	<s n="2">Si Monsieur veut attendre, cela sera fait dans le moment. </s>
+	<s n="3">Elle travaille au bonnet.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="21">
+	<s n="1">C'est que je suis un peu pressé. </s>
+	<s n="2">Vous demeurez-là dans un beau quartier.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="22">
+	<s n="1">Oui, Monsieur, et un quartier d'honnêtes gens : voilà ce qu'il y a de plus agréable.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="23">
+	<s n="1">Vous connaissez sûrement Madame_Louvier ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="24">
+	<s n="1">Fort peu, Monsieur ; c'est une femme froide et sévère.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="25">
+	<s n="1">C'est ce qui me paraît. </s>
+	<s n="2">Est-ce sa fille qui est avec elle ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="26">
+	<s n="1">Oui, Monsieur ; oh ! </s>
+	<s n="2">C'est bien le plus joli caractère du monde ! </s>
+	<s n="3">Elle est charmante !</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="27">
+	<s n="1">C'est bien vrai cela, qu'elle est charmante, Mademoiselle_Javotte.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="28">
+	<s n="1">Ah, vous savez son nom ; vous la connaissez donc ?</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="29">
+	<s n="1">Moi ? </s>
+	<s n="2">Non... Comme cela. </s>
+	<s n="3">Vient-elle quelquefois ici ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="30">
+	<s n="1">Non, Monsieur, elle ne quitte jamais sa mère ; et elles ne nous ont encore rien acheté, depuis que nous sommes dans le quartier.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="31">
+	<s n="1">Est-ce quelle est méchante, Madame_Louvier ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="32">
+	<s n="1">Méchante ? </s>
+	<s n="2">Je crois que non, n'est-ce pas, Justine ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="33">
+	<s n="1">Je ne sais pas, mais... </s>
+	<s n="2">Il ne faut pas dire de mal de ses voisins.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="34">
+	<s n="1">J'entends ; elle n'est pas trop bonne.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="35">
+	<s n="1">Je ne dis pas cela ; cependant, il ne faudrait pas trop s'y frotter.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="36">
+	<s n="1">Elle a fait mourir son mari de chagrin, par sa jalousie ; c'est une femme qui prend la mouche sur un rien.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="37">
+	<s n="1">Cela n'est pas agréable.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="38">
+	<s n="1">Oh ! </s>
+	<s n="2">Point du tout ;  et je crois que la petite personne a beaucoup à souffrir avec elle. </s>
+	<s n="3">Enfin, elle n'ose seulement pas nous saluer devant sa mère.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="39">
+	<s n="1">C'est un peu extraordinaire.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="40">
+	<s n="1">Ajoutez à cela, qu'elle est d'une avarice affreuse.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="41">
+	<s n="1">On m'en avait dit quelque chose.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="42">
+	<s n="1">Elle refuse tout à sa fille.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="43">
+	<s n="1">Que je la plains !</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="44">
+	<s n="1">Monsieur, ne dites pas que nous vous avons dit cela ; car il faut vivre en paix avec ses voisins, quels qu'ils soient.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="45">
+	<s n="1">Ne vous mettez pas en peine ; je ne dis jamais rien de tout ce que je sais.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="46">
+	<s n="1">Voilà votre bonnet qui va être bientôt fini.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="47">
+	<s n="1">Oui ; mais j'ai affaire, et je ne peux pas rester plus longtemps. </s>
+	<s n="2">Je vais vous le payer ; et je vous prierai de le donner à Grand-Pierre, qui sait où je demeure, et qui me l'apportera.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="48">
+	<s n="1">Grand-Pierre ?</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="49">
+	<s n="1">Oui ; vous le connaissez ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="50">
+	<s n="1">C'est lui qui fait toutes nos commissions.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND, comptant de l'argent.</speaker>
+                        <p n="51">
+	<s n="1">Voilà douze francs, dix-huit, vingt-quatre.</s>
+</p>
+                    </sp><!--@stage="count"--><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="52">
+	<s n="1">Monsieur, en vous remerciant ; quand il vous faudra autre chose, nous vous demandons la préférence.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND, se levant.</speaker>
+                        <p n="53">
+	<s n="">Sûrement.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="54">
+	<s n="1">Donnez une enseigne à Monsieur.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="55">
+	<s n="1">Je n'en ai pas besoin ; je passe tous les jours par ici. </s>
+	<s n="2">Adieu, Mesdemoiselles ; je suis bien votre serviteur.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="56">
+	<s n="1">Monsieur, nous nous recommandons à vous, pour vous et pour vos amis.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND, en s'en allant.</speaker>
+                        <p n="57">
+	<s n="1">Oui, oui.</s>
+</p>
+                    </sp><!--@stage="away"--><!--@who="MONSIEUR RAIMOND"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Madame Louvier, Mademoiselle Javotte, Justine, Grand-Pierre, Rosalie, De L'Aune.</head>
+<sp who="#justine">
+                        <speaker>JUSTINE, riant.</speaker>
+                        <p n="1">
+	<s n="1">Hé bien, le bonnet_à_la_grippe a bien réussi.</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="2">
+	<s n="1">Je mourrais d'envie de rire.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="3">
+	<s n="1">Paix donc ; il pourrait revenir.</s>
+</p>
+                        <stage type="low/laugh">Elles parlent bas et rient.</stage>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="4">
+	<s n="1">J'ai envie de sortir un moment. </s>
+	<s n="2">Grand-Pierre, dites à De l'Aune de descendre.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="5">
+	<s n="1">Le voilà, Madame.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="6">
+	<s n="1">Monsieur De l'Aune ; c'est que je vais aller chez Madame Dupont. </s>
+	<s n="2">Je vous en prie ne sortez pas ; je m'en vais revenir.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="7">
+	<s n="1">Oui, Madame.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="8">
+	<s n="1">On m'a dit que Monsieur votre oncle était à Paris, depuis quelques jours ; je l'ai prié de me venir voir.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="9">
+	<s n="1">Mon oncle, Madame ?</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="10">
+	<s n="1">Oui, j'ai affaire à lui.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="11">
+	<s n="1">Mais, Madame, j'ai cru que vous ne le connaissiez pas.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="12">
+	<s n="1">Je ne l'ai jamais vu ; mais il m'a écrit. </s>
+	<s n="2">S'il vient, priez-le de m'attendre : je ne ferai qu'aller et venir. </s>
+</p>
+                        <stage type="dress/exit">Elle prend sa robe qu'elle retrousse et sort de la maison.</stage>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="13">
+	<s n="1">Madame, je n'y manquerai pas.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. Rosalie, Justine, Mademoiselle Javotte, Grand-Pierre, De L'Aune, toujours embarrassé, vis-à vis de Mademoiselle. Javotte.</head>
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE, à Justine et à Rosalie.</speaker>
+                        <p n="1">
+	<s n="1">Madame_Louvier est sortie ; ainsi je ne m'éloignerai pas. </s>
+	<s n="2">Tenez, voilà ce que Monsieur_Raimond m'a donné.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="2">
+	<s n="1">C'est bon ; nous allons voir.</s>
+</p>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#rosalie">
+                        <speaker>ROSALIE.</speaker>
+                        <p n="3">
+	<s n="1">Tu peux être tranquille ; je ne crois pas qu'il ait envie de rencontrer une seconde fois Madame_Louvier.</s>
+</p>
+                    </sp><!--@who="ROSALIE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="4">
+	<s n="1">Je vais toujours m'asseoir au coin de la rue, pour le voir venir.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE.</speaker>
+                        <p n="5">
+	<s n="1">Nous t'avertirons. </s>
+</p>
+                        <stage>Elles lisent la lettre de Monsieur_Raimond ; et elles rient tout bas. Grand-Pierre se couche à terre et s'endort.</stage>
+                    </sp><!--@who="JUSTINE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE, à De l'Aune, après avoir hésité.</speaker>
+                        <p n="6">
+	<s n="1">Monsieur De l'Aune, vous avez donc un oncle ?</s>
+</p>
+                    </sp><!--@stage="toward/hasitate"--><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="7">
+	<s n="1">Oui, Mademoiselle.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="8">
+	<s n="1">Et il est à Paris ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="9">
+	<s n="1">On me l'a dit ; mais je ne l'ai jamais vu.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="10">
+	<s n="1">Pourquoi cela ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="11">
+	<s n="1">C'est qu'il est fâché contre moi.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="12">
+	<s n="1">Mais, tant_pis. </s>
+	<s n="2">Et à cause de quoi ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="13">
+	<s n="1">Parce qu'il avait décidé que je serais médecin.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="14">
+	<s n="1">Et vous n'avez pas voulu l'être ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="15">
+	<s n="1">Je vous demande pardon, Mademoiselle.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="16">
+	<s n="1">Et pourquoi donc ne l'avez-vous pas été ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE, avec embarras.</speaker>
+                        <p n="17">
+	<s n="1">Parce que... </s>
+	<s n="2">Tout d'un coup, il m'a pris envie de me faire marchand_de_drap.</s>
+</p>
+                    </sp><!--@stage="embarrassed"--><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE, soupirant.</speaker>
+                        <p n="18">
+	<s n="1">Marchand de drap ?</s>
+</p>
+                    </sp><!--@stage="sigh"--><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE, soupirant.</speaker>
+                        <p n="19">
+	<s n="1">Oui, Marchand de drap.</s>
+</p>
+                    </sp><!--@stage="sigh"--><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="20">
+	<s n="1">C'est bien penser... </s>
+	<s n="2">Et... en avez-vous encore envie ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="21">
+	<s n="1">Toujours, je ne changerai jamais.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="22">
+	<s n="1">Jamais ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="23">
+	<s n="1">Non, Mademoiselle.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="24">
+	<s n="1">Et comment s'appelle Monsieur votre oncle ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="25">
+	<s n="1">Monsieur_le_Roux ; il est Receveur_des_Gabelles à Melun.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="26">
+	<s n="1">C'est-il bien loin, Melun ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="27">
+	<s n="1">Oh ! </s>
+	<s n="2">Oui, Mademoiselle.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="28">
+	<s n="1">Bien loin, bien loin ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="29">
+	<s n="1">Il y a, je crois, plus de treize lieues.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="30">
+	<s n="1">Treize lieues ! </s>
+	<s n="2">Je n'irai jamais dans ce pays-là.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="31">
+	<s n="1">Oh ! </s>
+	<s n="2">Ni moi non plus, j'en suis bien sûr.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="32">
+	<s n="1">Il ne faut jurer de rien.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="33">
+	<s n="1">Ah, mon Dieu, Mademoiselle, vous me faites trembler !</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="34">
+	<s n="1">On ne sait pas ce qui peut arriver.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="35">
+	<s n="1">Comment, sauriez-vous ?...</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="36">
+	<s n="1">Non ; mais c'est qu'un malheur vient tout d'un coup, quelquefois.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="37">
+	<s n="1">Est-ce que vous en auriez jamais vu arriver des malheurs ?</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="38">
+	<s n="1">Non ; mais j'en ai lu : et quoiqu'on dise que les livres ne sont pas vrais, je ne sais pourquoi, mais je crains toujours ce qu'ils prédisent.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="39">
+	<s n="1">Ah ! Il disent quelquefois des choses bien heureuses.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="40">
+	<s n="1">C'est que vous en connaissez de bons, apparemment ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE, s'asseyant.</speaker>
+                        <p n="41">
+	<s n="">Si vous aviez lu Hippolite_Comte_de_Duglas, par exemple...</s>
+</p>
+                    </sp><!--@stage="sit"--><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="42">
+	<s n="1">Mais je l'ai lu.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="43">
+	<s n="1">Il y a là une Julie...</s>
+</p>
+                        <stage type="sigh">Il soupire. </stage>
+                        <p n="44">
+	<s n="1">Je sais bien à qui elle ressemble.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="45">
+	<s n="1">Et Hippolite, il me semble que je le vois tous les jours.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="46">
+	<s n="1">Comme Hippolite aime Julie !</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="47">
+	<s n="1">Et comme Julie aime Hippolite !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="48">
+	<s n="1">C'est un grand bonheur de s'aimer comme cela.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="49">
+	<s n="1">Oui ; c'est un grand bonheur... </s>
+	<s n="2">Quand il n'arrive pas de malheur.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="50">
+	<s n="1">Mais, dans le malheur on pense toujours à ce qu'on aime.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="51">
+	<s n="1">Ah, toujours, toujours. </s>
+	<s n="2">C'est bien dommage, qu'on ne puisse pas être comme les personnages des livres !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="52">
+	<s n="1">Je vous assure qu'il y a des gens comme cela.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="53">
+	<s n="1">Oh ! </s>
+	<s n="2">Guère, je crois.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="54">
+	<s n="1">J'en connais qui sont à moitié tout de même.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="55">
+	<s n="1">À moitié ?... </s>
+	<s n="2">Qu'est-ce que cela veut dire ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="56">
+	<s n="1">Cela veut dire... </s>
+	<s n="2">Je n'oserai jamais vous l'expliquer.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="57">
+	<s n="1">Pourquoi ? </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Je vous en prie, Monsieur De l'Aune, dites, dites donc ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="58">
+	<s n="1">Hé bien, ne me regardez pas.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE, le regardant.</speaker>
+                        <p n="59">
+	<s n="">Je ne vous regarderai pas.</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="60">
+	<s n="1">C'est-à-dire, qui aiment... </s>
+	<s n="2">Et qui voudraient...</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="61">
+	<s n="1">Et qui voudraient ?...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="62">
+	<s n="1">Et qui voudraient bien être aimés.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="63">
+	<s n="1">Ah, oui, je comprends cela. </s>
+	<s n="2">Vous seriez donc bien aise d'être Hippolite ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="64">
+	<s n="1">Et vous, voudriez-vous être Julie ?</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="65">
+	<s n="1">Mais cela ne se peut pas.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="66">
+	<s n="1">Non ; mais nous pourrions être comme eux.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="67">
+	<s n="1">Avoir de l'amour ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="68">
+	<s n="1">Mais...</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="69">
+	<s n="1">Si c'était de l'amitié, encore passe.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="70">
+	<s n="1">De l'amitié ? </s>
+	<s n="2">Ce n'était pas de l'amitié que Julie avait pour Hippolite.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="71">
+	<s n="1">C'est vrai.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="72">
+	<s n="1">J'imite bien plus en cela Hippolite que vous n'imitez Julie ; et voilà mon malheur, à moi.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="73">
+	<s n="1">Sans cet amour, je vous aimerais bien ; ayez de l'amitié.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE, soupirant.</speaker>
+                        <p n="74">
+	<s n="1">Julie ne disait pas cela à Hippolite.</s>
+</p>
+                    </sp><!--@stage="sigh"--><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="75">
+	<s n="1">Comment voulez-vous donc que je fasse ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="76">
+	<s n="1">Comme moi.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="77">
+	<s n="1">Comme vous ?</s>
+</p>
+                        <stage type="dream">Rêvant. </stage>
+                        <p n="78">
+	<s n="1">Si personne que nous ne le savait encore.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="79">
+	<s n="1">Oh ! </s>
+	<s n="2">Je vous réponds de vous bien garder le secret.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="80">
+	<s n="1">C'est que ma mère... </s>
+	<s n="2">Votre oncle peut-être...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="81">
+	<s n="1">Ils n'en sauront rien.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="82">
+	<s n="1">Il faudra que nous lisions ensemble le livre d'Hippolite.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="83">
+	<s n="1">C'est bien penser.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="84">
+	<s n="1">Et nous nous dirons tout ce qu'ils se disaient.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="85">
+	<s n="1">Je vous dirais bien encore autre chose, si vous vouliez m'aimer toujours.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="86">
+	<s n="1">Hé bien, Monsieur De l'Aune, dites, je vous le promets ; qu'est-ce que c'est ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="87">
+	<s n="1">Je voudrais bien que vous voulussiez lire ce que... je vous ai écrit, il y a déjà longtemps.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="88">
+	<s n="1">Donnez.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="89">
+	<s n="1">Je vais le chercher.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="90">
+	<s n="1">Attendez, il me vient une idée.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="91">
+	<s n="1">Qu'est-ce que c'est ?</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="92">
+	<s n="1">Si nous disions notre secret à votre oncle, peut-être qu'il en parlerait à ma mère ; et puis...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="93">
+	<s n="1">On pourrait nous marier ensemble. </s>
+	<s n="2">Ah, quel bonheur !</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="94">
+	<s n="1">Vous en seriez donc bien aise ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="95">
+	<s n="1">Bien aise ? </s>
+	<s n="2">Ah !... </s>
+	<s n="3">Vous allez le voir dans ce que je vous ai écrit. </s>
+	<s n="4">Laissez, laissez-moi faire. </s>
+	<s n="4">Je vais vous le chercher, et puis j'apporterai aussi le livre d'Hippolite.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="96">
+	<s n="1">Si Monsieur_le_Roux venait avant ma mère.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="97">
+	<s n="1">Cela serait bien heureux. </s>
+	<s n="2">Nous verrons, je vas revenir.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Justine, Rosalie, travaillant, Mademoiselle Javotte, Monsieur Raimond, Grand-Pierre, dormant.</head>
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE, voyant venir Monsieur Raimond.</speaker>
+                        <p n="1">
+	<s n="1">Monsieur De l'Aune ? </s>
+	<s n="2">Monsieur De l'Aune ; venez, venez ; je crois que voilà Monsieur_le_Roux.</s>
+</p>
+                    </sp><!--@stage="watch/entrance"--><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="2">
+	<s n="1">Mademoiselle, je viens de voir Madame_Louvier dans une maison ; souffrez que je puisse avoir l'honneur de vous parler un moment.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="3">
+	<s n="1">Monsieur, je serai très aise de vous parler aussi avant qu'elle revienne ; donnez-vous la peine de vous asseoir. </s>
+	<s n="2">Monsieur De l'Aune va venir ; et j'ai une grâce à vous demander.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="4">
+	<s n="1">À moi, Mademoiselle ? </s>
+	<s n="2">Je suis charmé, enchanté, réjoui de ce que c'est un bonheur...</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="5">
+	<s n="1">Un bonheur, oui, si vous ne retournez pas à Melun tout de suite.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="6">
+	<s n="1">À Melun ? </s>
+	<s n="2">Non, Mademoiselle, je veux rester ici à vous aimer toujours.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="7">
+	<s n="1">Je le voudrais bien, Monsieur, et votre neveu aussi.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="8">
+	<s n="1">Mon neveu, mon neveu ? </s>
+	<s n="2">Je n'ai point d'autre désir, Mademoiselle, écoutez-moi, je vous en supplie. </s>
+	<s n="3">Je suis riche, et si vous voulez consentir...</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="9">
+	<s n="1">Monsieur, ce n'est pas le bien qui me fait souhaiter...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="10">
+	<s n="1">Ah, je le sais ; je connais votre façon de penser ; elle est adorable.</s>
+</p>
+                        <stage type="entrance/wave">De l'Aune paraît ; et Javotte lui fait signe de rester derrière.</stage>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+</div><!--@stage="work/sleep"-->
+<div type="scene" n="13">
+                    <head>SCÈNE XIII. Rosalie, Justine, travaillant ; Monsieur Raimond, Mademoiselle Javotte, Grand-Pierre, dormant, De L'Aune, paraissant.</head>
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="1">
+	<s n="1">Monsieur, je suis trop heureuse, si vous m'estimez assez pour me demander à ma mère, pour...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="2">
+	<s n="1">Je n'ai jamais eu d'autre dessein, Mademoiselle ; vous le savez bien, et...</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE, à part.</speaker>
+                        <p n="3">
+	<s n="1">Ah, que je suis heureux !</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="4">
+	<s n="1">Monsieur, je n'en savais rien ; mais je ne puis vous dissimuler que je suis charmée de vous voir dans des dispositions aussi favorables pour nous.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="5">
+	<s n="1">En ce cas-là, je ne perdrai point de temps ; je vais en parler dans l'instant à Madame_Louvier.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE, à De l'Aune.</speaker>
+                        <p n="6">
+	<s n="1">Tenez, Monsieur_De_l_Aune ; venez remercier Monsieur_le_Roux, de ses bonnes intentions.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="7">
+	<s n="1">Vous vous trompez de nom, Mademoiselle ; quant à mes intentions, je suis bien aise que Monsieur les approuve ; puisque vous le désirez.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="8">
+	<s n="1">Sûrement ; c'est le plus grand bonheur !...</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="9">
+	<s n="1">Ah, sans doute.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="10">
+	<s n="1">Pour nous !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="11">
+	<s n="1">Que vous êtes charmante ! </s>
+	<s n="2">Je le croyais bien partout ce que j'ai lu ; mais vous êtes encore au-dessus de tout ce que je pensais : cependant, vos lettres m'enchantaient !</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="12">
+	<s n="1">Mes lettres ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="13">
+	<s n="1">Oui ; puisque Monsieur est dans le secret, je peux le dire devant lui ; je n'ai jamais rien lu qui m'ait fait autant de plaisir.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="14">
+	<s n="1">Quoi ! </s>
+	<s n="2">Mon oncle, Mademoiselle Javotte vous a écrit ? </s>
+	<s n="3">Vous ne m'avez pas dit cela, Mademoiselle.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="15">
+	<s n="1">Je ne sais ce qu'il veut dire.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="16">
+	<s n="1">Mademoiselle, est-ce que Monsieur est votre neveu, qu'il m'appelle déjà son oncle ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="17">
+	<s n="1">Non, Monsieur ; quelle plaisanterie ! </s>
+	<s n="2">Dites-lui donc, je vous en prie, si je vous ai jamais écrit.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="18">
+	<s n="1">Pourquoi ne pas en convenir ? </s>
+	<s n="2">Il n'y a plus de mystère.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="19">
+	<s n="1">Comment, je vous ai écrit, moi ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="20">
+	<s n="1">Oui, charmante Javotte ; et sans cela, aurais-je pu vivre, sans le bonheur de me savoir aimé de vous.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="21">
+	<s n="1">En vérité, Monsieur_le_Roux, je ne vous comprends point.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="22">
+	<s n="1">Mais, je ne vois pas pourquoi vous voulez toujours m'appeler Monsieur_le_Roux.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="23">
+	<s n="1">Quoi ! </s>
+	<s n="2">Monsieur, vous n'êtes pas mon oncle ?</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="24">
+	<s n="1">Non, je ne suis pas votre oncle ; en voici bien d'une autre ; quelle fantaisie !</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="25">
+	<s n="1">Et Mademoiselle_Javotte, vous a écrit qu'elle vous aimait ?</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="26">
+	<s n="1">Oui, Monsieur ; pourquoi pas ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="27">
+	<s n="1">C'est une fausseté.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="28">
+	<s n="1">Ah, Mademoiselle_Javotte !...</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="29">
+	<s n="1">Tenez, Monsieur, cela est si vrai, que je peux vous montrer ses lettres.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="30">
+	<s n="1">Voyons, Monsieur.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="31">
+	<s n="1">Non, je ne le ferai pas ; mais voilà Grand-Pierre, qui vous dira que cela est vrai ; il n'y a qu'à le réveiller ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="32">
+	<s n="1">Grand-Pierre ! </s>
+	<s n="2">Grand-Pierre !</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE, se réveillant.</speaker>
+                        <p n="33">
+	<s n="1">Qu'est-ce qu'il y a ?</s>
+</p>
+                        <stage type="watch">Voyant Monsieur Raimond. </stage>
+                        <p n="34">
+	<s n="1">Eh, Monsieur, qu'est-ce que vous faites ici ?</s>
+</p>
+                    </sp><!--@stage="awake"--><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="35">
+	<s n="1">Grand-Pierre ? </s>
+	<s n="2">N'est-ce pas toi, qui donnais mes lettres à Mademoiselle_Javotte ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="36">
+	<s n="1">Moi, Monsieur ?</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="37">
+	<s n="1">Allons, parle.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="38">
+	<s n="1">Oui, oui, Monsieur.</s>
+</p>
+                        <stage type="toward">À De l'Aune. </stage>
+                        <p n="39">
+	<s n="1">C'est un fou.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="40">
+	<s n="1">Non, non ; je ne suis pas fou ; et je vais le prouver.</s>
+</p>
+                        <stage type="search">Il cherche dans ses poches.</stage>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE, à part.</speaker>
+                        <p n="41">
+	<s n="1">Allons-nous-en. </s>
+</p>
+                        <stage type="away">Il veut s'en aller.</stage>
+                    </sp><!--@stage="aparte"--><!--@who="GRAND-PIERRE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE, le retenant.</speaker>
+                        <p n="42">
+	<s n="1">Reste-là.</s>
+</p>
+                    </sp><!--@stage="pull"--><!--@who="DE L'AUNE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="43">
+	<s n="1">Je vois que vous m'avez trompé, et que vous aimez Monsieur_De_l_Aune, ingrate.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="44">
+	<s n="1">Ah, voilà Madame_Louvier, je suis perdu ! Il veut encore s'en aller.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="45">
+	<s n="1">C'est inutile, tu ne t'en iras pas.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+</div><!--@stage="entrance"-->
+<div type="scene" n="14">
+                    <head>SCÈNE XIV. Rosalie, Justine, Madame Louvier, Mademoiselle Javotte, Monsieur Raimond, De L'Aune, Grand-Pierre.</head>
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER, à Monsieur Raimond.</speaker>
+                        <p n="1">
+	<s n="1">Monsieur, je vous demande bien pardon, de vous avoir fait attendre.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="2">
+	<s n="1">Ah ! </s>
+	<s n="2">Madame, prenez pitié de l'homme du monde le plus malheureux.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="3">
+	<s n="1">Il n'y a point de malheur à cela, Monsieur ; je m'en étais toujours douté.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="4">
+	<s n="1">Quoi, Madame, réellement ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="5">
+	<s n="1">Oui, vraiment ; et quand on se convient...</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND, avec joie.</speaker>
+                        <p n="6">
+	<s n="1">Ah, Madame, vous me rendez la vie !</s>
+</p>
+                    </sp><!--@stage="happy"--><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="7">
+	<s n="1">Il y a longtemps que j'ai pensé que Monsieur_De_l_Aune et ma fille s'aimaient, quoiqu'elle n'en ait pas voulu convenir avec moi ; et voilà pourquoi je vous ai fait prier de me venir voir.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="8">
+	<s n="1">Vous m'avez fait prier de venir vous voir ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="9">
+	<s n="1">Oui, Monsieur.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="10">
+	<s n="1">Et pour me dire cela ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="11">
+	<s n="1">Sans doute, et je ne vois pas que nous ayons rien de mieux à faire, que de les marier ensemble.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="12">
+	<s n="1">Quoi, Mademoiselle, vous y consentiriez ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="13">
+	<s n="1">Oui, Monsieur ; puisque c'est la volonté de Maman.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="14">
+	<s n="1">Pourquoi n'y consentiriez-vous pas aussi ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="15">
+	<s n="1">Peut-on être trompé aussi cruellement !</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="16">
+	<s n="1">Répondez-moi donc ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE, à Monsieur Raimond.</speaker>
+                        <p n="17">
+	<s n="1">Allons, Monsieur, croyez-moi, allez-vous-en.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="18">
+	<s n="1">Non, Madame ; ce mariage-là ne se fera pas, si vous voulez m'entendre.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="19">
+	<s n="1">Je ne vous comprends pas.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="20">
+	<s n="1">Je m'en vais m'expliquer. </s>
+	<s n="2">Je vois que vous me croyez l'oncle de Monsieur_De_l_Aune, et je ne le suis pas ; mais j'aime aussi Mademoiselle_Javotte.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="21">
+	<s n="1">Monsieur, je suis fâchée qu'elle en aime un autre ; mais je ne puis pas la rendre malheureuse pour vous faire plaisir.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="22">
+	<s n="1">Apprenez du moins, comme elle s'est jouée de ma faiblesse.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="23">
+	<s n="1">Ma fille ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="24">
+	<s n="1">Oui, Madame.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, à Rosalie, en venant écouter.</speaker>
+                        <p n="25">
+	<s n="1">Je m'en vais écouter ; cela me paraît long.</s>
+</p>
+                    </sp><!--@stage="toward/closer/listen"--><!--@who="JUSTINE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="26">
+	<s n="1">J'ai aimé Mademoiselle_Javotte, dès que je l'ai vue. J'ai du bien ; mais j'ai voulu avoir son consentement, avant de vous la demander. </s>
+	<s n="2">J'ai chargé Grand-Pierre de lui remettre une lettre de ma part. Il m'a rapporté une réponse favorable. </s>
+	<s n="3">Je lui en ai écrit encore beaucoup d'autres ; elle m'a toujours mandé qu'elle me dirait quand il serait temps de vous parler.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="27">
+	<s n="1">Ah, Maman ! </s>
+	<s n="2">Il n'y a pas un mot de vrai.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="28">
+	<s n="1">Ce que vous me dites là, Monsieur, m'étonne ; qu'elle réponde elle-même.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="29">
+	<s n="1">Non, non, Maman, ne le croyez pas. </s>
+	<s n="2">C'est un procédé dont je suis incapable, Monsieur_De_l_Aune.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="30">
+	<s n="1">Hé bien, Monsieur ?</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="31">
+	<s n="1">Madame, je n'ai rien avancé qui ne soit très vrai ; en voilà la preuve. </s>
+	<s n="2">Lisez ces lettres. </s>
+	<s n="3">Il donne des lettres à Madame_Louvier.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="32">
+	<s n="1">De moi, Monsieur ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="33">
+	<s n="1">Oui, Mademoiselle ; il n'est plus temps de dissimuler : vous savez comme je vous aime ; je vous donne tout mon bien, si...</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="34">
+	<s n="1">Mais, Monsieur, ce n'est pas-là l'écriture de ma fille.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="35">
+	<s n="1">Comment, Madame ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="36">
+	<s n="1">Non, Monsieur ; et je vous crois trop honnête homme, pour vouloir employer des moyens aussi grossiers pour avoir une fille malgré elle et ses parents.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#mademoiselle-javotte">
+                        <speaker>MADEMOISELLE JAVOTTE.</speaker>
+                        <p n="37">
+	<s n="1">Ah, je respire !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE JAVOTTE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="38">
+	<s n="1">Je n'y comprends rien ; mais Grand-Pierre peut vous certifier ce que j'avance.</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#de-l-aune">
+                        <speaker>DE L'AUNE.</speaker>
+                        <p n="39">
+	<s n="1">Grand-Pierre, dis ce que tu sais tout-à-l_heure.</s>
+</p>
+                    </sp><!--@who="DE L'AUNE"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="40">
+	<s n="1">Mais, Monsieur...</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="41">
+	<s n="1">Il n'y a qu'à le mener chez le Commissaire.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE, à genoux.</speaker>
+                        <p n="42">
+	<s n="">Hé bien, Monsieur, je vais tout avouer.</s>
+</p>
+                    </sp><!--@stage="kneel"--><!--@who="GRAND-PIERRE"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, effrayée.</speaker>
+                        <p n="43">
+	<s n="1">Rosalie, viens vite ici.</s>
+</p>
+                    </sp><!--@stage="frighten"--><!--@who="JUSTINE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="44">
+	<s n="1">Parle donc.</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="45">
+	<s n="1">Hé bien, Madame, tout ce qu'a dit Monsieur est très vrai.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="46">
+	<s n="1">Quoi, ma fille ?...</s>
+</p>
+                    </sp><!--@who="MADAME LOUVIER"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="47">
+	<s n="1">Non, Madame, les lettres ne sont pas d'elle ; mais comme cela me valait de l'argent, je les ai fait faire.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="48">
+	<s n="1">Et par qui, coquin ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#grand-pierre">
+                        <speaker>GRAND-PIERRE.</speaker>
+                        <p n="39">
+	<s n="1">Ah, Monsieur, par d'aimables Demoiselles, que cela divertissait beaucoup, nos voisines d'ici à côté, et qui ne vous demandent rien pour cela ; car vous les avez bien payées.</s>
+</p>
+                    </sp><!--@who="GRAND-PIERRE"-->
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="40">
+	<s n="1">Tais-toi... </s>
+	<s n="2">J'ai donc été la dupe de ma bonne foi !</s>
+</p>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+<sp who="#justine">
+                        <speaker>JUSTINE, à Rosalie, en s'en allant.</speaker>
+                        <p n="41">
+	<s n="">Allons nous cacher, jusqu'à ce qu'il soit parti.</s>
+</p>
+                    </sp><!--@stage="toward/away"--><!--@who="JUSTINE"-->
+</div>
+<div type="scene" n="15">
+                    <head>SCÈNE XV. Madame Louvier, Madamoiselle Javotte, Monsieur Raimond, De L'aune, Grand-Pierre.</head>
+<sp who="#monsieur-raimond">
+                        <speaker>MONSIEUR RAIMOND.</speaker>
+                        <p n="1">
+	<s n="1">Vous voyez, Madame, que je suis excusable. </s>
+	<s n="2">J'espère que vous me pardonnerez ceci ; je suis trop puni de ma sotte crédulité. </s>
+	<s n="3">Que Mademoiselle soit heureuse avec Monsieur_De_l_Aune ; elle le mérite ; et j'en serai charmé.</s>
+</p>
+                        <stage type="toward">À Grand-Pierre. </stage>
+                        <p n="2">
+	<s n="1">Pour toi, coquin, que je ne te revoie jamais, non plus que celles qui se sont aussi impudemment moquées de moi.</s>
+</p>
+                        <stage type="exit">Il s'en va.</stage>
+                    </sp><!--@who="MONSIEUR RAIMOND"-->
+</div>
+<div type="scene" n="16">
+                    <head>SCÈNE XVI. Madame Louvier, Mademoiselle Javotte, De L'Aune.</head>
+<sp who="#madame-louvier">
+                        <speaker>MADAME LOUVIER.</speaker>
+                        <p n="1">
+	<s n="1">Ma fille, si vous m'aviez dit que vous aimiez Monsieur De l'Aune, votre bonheur serait plus avancé : mais il n'y a rien de perdu ; et j'espère qu'avec les avantages que je vous ferai, son oncle ne s'y opposera pas.</s>
+</p>
+                        <stage type="explicit">Explication du Proverbe 29. L'occasion fait le Larron.</stage>
+                    </sp><!--@who="MADAME LOUVIER"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

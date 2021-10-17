@@ -1,0 +1,589 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Rose et Rosette</title>
+                <title type="sub">Comédie.</title>
+                <author>
+      <persName>
+        <forename>Adolphe</forename>
+        <surname>Carcassonne</surname>
+      </persName>
+      <idno type="isni">0000 0001 1756 1275</idno>
+    </author><!--Adolphe CARCASSONNE (1826-1891)-->
+                <editor>Paul FIEVRE juin 2021</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001530</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/CARCASSONNE_ROSEETROSETTE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/CARCASSONNE_ROSEETROSETTE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1889"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5742849d</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="rosette" sex="FEMALE">
+                        <persName>Rosette</persName>
+                    </person>
+                    <person xml:id="rose" sex="FEMALE">
+                        <persName>Rose</persName>
+                    </person>
+                    <person xml:id="madame-de-lancy" sex="FEMALE">
+                        <persName>Madame de Lancy</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">ROSE ET ROSETTE</titlePart>
+			<titlePart type="sub">COMÉDIE.</titlePart>
+		</docTitle> 
+		<docDate when="1889">1889</docDate>
+		<docAuthor>Adolphe CARCASSONNE.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="MARPON, FLAMMARION">PARIS C. MARPON et E. FLAMMARION, ÉDITEURS, rue Racine, 26 près de l'Odéon.</editor>-->
+			<div type="printer">
+                    <p>ÉMILE COLIN - IMPRIMERIE DE LAGNY.</p>
+                </div><!--@id="COLIN"-->
+		</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#rose">ROSE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 7 ans.</castItem>
+		<castItem>
+                    <role corresp="#rosette">ROSETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 7 ans.</castItem>
+		<castItem>
+                    <role corresp="#madame-de-lancy">MADAME DE LANCY</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="E"--><!--@stat_amour="(néant)"-->, mère de Rose.</castItem>
+   </castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="À la campagne" country="France" periode="XIXème" gps=""/>-->
+<note>Extrait de "Nouveau Théâtre d'enfants, Dix pièces en prose, à jouer dans les familles et dans les pensionnats, Paris, Marpon et Flammarion, Le Jay Libraires, 1889. pp. 193-210.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>ROSE ET ROSETTE</head>
+<stage type="decor">Un petit salon chez Madame de Lancy. Porte au fond et a gauche. Un guéridon au milieu. Fauteuils.</stage>
+<div type="scene" n="1">
+                    <head/>
+<stage type="entrance/carry">Au lever du rideau, Rose est en scène. Rosette entre par le fond avec un bouquet à la main.</stage>
+<sp who="#rosette">
+                        <speaker>ROSETTE, présentant le bouquet;</speaker>
+                        <p n="1">
+	<s n="1">Je viens vous souhaiter une bonne fête et vous offrir ce petit bouquet pour Maman et pour moi.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="2">
+	<s n="1">Merci pour toi, ma chère Rosette, et pour ta mère qui ne m'a pas oubliée.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="3">
+	<s n="1">Maman vous oublier ! </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Non ; elle parle de vous tous les jours et elle dit qu'elle n'a jamais vu de maîtresse aussi bonne que Madame_de_Lancy.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="4">
+	<s n="1">C'est comme Maman qui dit toujours que ta mère a été sa plus gentille femme de chambre. </s>
+	<s n="2">Comment va celle bonne Émilie ?</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="5">
+	<s n="1">Elle est très bien et je suis contente que vous me parliez d'elle, car elle m'a dit de vous demander quelque chose.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="6">
+	<s n="1">Dis-moi vite ce qu'elle veut.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="7">
+	<s n="1">Une de nos voisines a une jeune fille qui s'appelle Marthe et qui est du même âge que moi. </s>
+	<s n="2">La voisine veut qu'avec sa petite Marthe nous jouions à la Dame dans une fête_de_famille. </s>
+	<s n="3">Je ne connais pas ce jeu ; Marthe, non plus. </s>
+	<s n="4">Pouvez-vous me dire ce que c'est ? Vous ferez bien plaisir à Maman et à moi.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="8">
+	<s n="1">Je le puis, ma chère Rosette. </s>
+	<s n="2">Beaucoup de dames viennent voir Maman ; je connais donc très bien ce jeu et je vais le jouer devant toi.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="9">
+	<s n="1">Que vous êtes bonne ! </s>
+	<s n="2">Merci.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="10">
+	<s n="1">Ce n'est pas difficile, tu n'as qu'à bien suivre ce que je dis.</s>
+</p>
+                        <stage type="furniture/location/wave">Elle roule deux fauteuils au milieu de la scène, puis, elle va vers la porte du fond en tendant les mains.</stage>
+                        <p n="11">
+	<s n="1">- Bonjour, chère, je suis charmée de vous revoir.</s>
+</p>
+                        <stage type="imitate">Changeant de voix comme si l'autre dame parlait.</stage>
+                        <p n="12">
+	<s n="1">- Que vous êtes aimable !</s>
+</p>
+                        <stage type="closer">Elle s'approche du fauteuil de gauche et elle indique celui de droite.</stage>
+                        <p n="13">
+	<s n="1">- Asseyez-vous.</s>
+</p>
+                        <stage type="imitate/explicit">Elle continue à changer de voix chaque fois que la visiteuse est censée parler.</stage>
+                        <p n="14">
+	<s n="1">- Quel joli chapeau vous avez ! </s>
+	<s n="2">Il vous va à merveille.</s>
+</p>
+                        <p n="15">
+	<s n="1">- Vous trouvez ? </s>
+	<s n="2">Il me semble qu'il m'allonge un peu la figure.</s>
+</p>
+                        <p n="16">
+	<s n="1">- N'en croyez rien, vous êtes belle comme un ange... </s>
+	<s n="2">Voyons, qu'avez-vous fait ? </s>
+	<s n="3">Qu'êtes-vous devenue ?</s>
+</p>
+                        <p n="17">
+	<s n="1">- J'ai été à Marseille.</s>
+</p>
+                        <p n="18">
+	<s n="1">- Au pays du soleil ?</s>
+</p>
+                        <p n="19">
+	<s n="1">- Oui, mais ce n'est pas le soleil que j'y ai trouvé.</s>
+</p>
+                        <p n="20">
+	<s n="1">- Ah ! </s>
+	<s n="2">Et quoi donc ?</s>
+</p>
+                        <p n="21">
+	<s n="1">- Le mistral.</s>
+</p>
+                        <p n="21">
+	<s n="1">- J'ai entendu parler de lui, mais je ne le connais pas.</s>
+</p>
+                        <p n="22">
+	<s n="1">- Ne désirez pas faire sa connaissance, ma chère. C'est une chose insupportable. </s>
+	<s n="2">La bise qui passe sur les ponts de Paris est un zéphir auprès de ces coups de vent qui vous mettent les robes sur la tête.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE, interrompant</speaker>
+                        <p n="23">
+	<s n="1">Oh ! </s>
+	<s n="2">Les robes sur la tête ! </s>
+	<s n="3">Ce n'est pas joli, ça.</s>
+</p>
+                    </sp><!--@stage="interrupt"--><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="24">
+	<s n="1">Bien sûr que ce n'est pas joli, mais le mistral n'a pas d'éducation... </s>
+	<s n="2">Tu comprends bien le jeu, n'est-ce pas ?</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="25">
+	<s n="1">Très bien.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="26">
+	<s n="1">Alors, je continue.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="27">
+	<s n="1">Oui, oui.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="28">
+	<s n="1">- Vous allez rester à Paris quelque temps encore, j'espère.</s>
+</p>
+                        <p n="29">
+	<s n="1">- Jusqu'à mon départ pour Étretat... </s>
+	<s n="2">J'admire votre toilette.</s>
+</p>
+                        <p n="30">
+	<s n="1">- Je suis charmée qu'elle soit à votre goût... </s>
+	<s n="2">À propos, étiez-vous hier au concert_Lamoureux ?</s>
+</p>
+                        <p n="31">
+	<s n="1">- Hélas ! </s>
+	<s n="2">Oui.</s>
+</p>
+                        <p n="32">
+	<s n="1">- Pourquoi, hélas ?</s>
+</p>
+                        <p n="33">
+	<s n="1">- Je m'y suis mortellement ennuyée.</s>
+</p>
+                        <p n="34">
+	<s n="1">- C'était du Wagner, cependant ; vous n'aimez peut-être pas ce genre.</s>
+</p>
+                        <p n="35">
+	<s n="1">- Le genre m'importe peu, mais je n'aime pas la musique de qui n'aime pas mon pays.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE, interrompant encore.</speaker>
+                        <p n="36">
+	<s n="1">C'est très bien, ça.</s>
+</p>
+                    </sp><!--@stage="interrupt"--><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="37">
+	<s n="1">C'est Maman qui l'a dit l'autre jour en parlant avec une dame et je l'ai retenu.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="38">
+	<s n="1">Je le crois bien... </s>
+	<s n="2">Maintenant, Mademoiselle_Rose, je comprends le jeu et je vous remercie.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="39">
+	<s n="1">Veux-tu essayer de finir la scène ?</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="40">
+	<s n="1">Volontiers.</s>
+</p>
+                        <stage type="sit/furniture">Elle s'assied sur le fauteuil de droite.</stage>
+                        <p n="41">
+	<s n="1">- Vous n'irez plus à ces concerts.</s>
+</p>
+                        <p n="42">
+	<s n="1">- J'irai quand on y jouera une autre musique.</s>
+</p>
+                        <stage type="stand">Se levant.</stage>
+                        <p n="43">
+	<s n="1">- Quoi ! </s>
+	<s n="2">Vous partez déjà ?</s>
+</p>
+                        <p n="44">
+	<s n="1">— Il le faut, ma chère ; je dois aller voir toutes mes amies ; j'ai commencé par vous.</s>
+</p>
+                        <p n="45">
+	<s n="1">- Merci.</s>
+</p>
+                        <stage type="away">Faisant mine de l'accompagner vers le fond.</stage>
+                        <p n="46">
+	<s n="1">- Quand vous reverrai-je ?</s>
+</p>
+                        <p n="47">
+	<s n="1">- Le plus tôt sera le mieux pour moi.</s>
+</p>
+                        <p n="48">
+	<s n="1">- Et pour moi, donc !</s>
+</p>
+                        <p n="49">
+	<s n="1">- Que vous êtes charmante !</s>
+</p>
+                        <p n="50">
+	<s n="1">- À bientôt.</s>
+</p>
+                        <p n="51">
+	<s n="1">- À bientôt.</s>
+</p>
+                        <stage type="wave/">Elle salue et elle revient en scène</stage>
+                        <p n="52">
+	<s n="1">- Ouf ! </s>
+	<s n="2">Elle est partie.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="53">
+	<s n="1">C'est cela et tu peux jouer à la Dame aussi bien que moi.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="54">
+	<s n="1">Je vous remercie encore.
+</s>
+</p>
+                        <stage type="away/location">Elle fait quelques pas vers le fond.</stage>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="55">
+	<s n="1">Mais, ma chère Rosette, c'est aussi ta fête aujourd'hui. </s>
+	<s n="2">Je te la souhaite bonne en t'embrassant de tout mon coeur.</s>
+</p>
+                        <stage type="kiss/silence">Elle l'embrasse ; puis, après un silence.</stage>
+                        <p n="56">
+	<s n="1">Veux-tu voir les cadeaux que j'ai reçus ?</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="57">
+	<s n="1">Oui, Mademoiselle_Rose.</s>
+</p>
+                        <stage type="exit/entrance/carry">Rose sort par la gauche et elle revient d'abord avec une petite voiture, puis, avec une poupée et un berceau qu'elle met sur le guéridon</stage>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="58">
+	<s n="1">Oh ! </s>
+	<s n="2">Les jolis cadeaux ! </s>
+	<s n="3">La belle poupée !</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="59">
+	<s n="1">Ce n'est pas tout, regarde.</s>
+</p>
+                        <stage type="show">Elle lui met un bracelet sous les yeux.</stage>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="60">
+	<s n="1">Un bracelet... </s>
+	<s n="2">Il est aussi bien joli.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="61">
+	<s n="1">On m'a gâtée, n'est-ce pas ?</s>
+</p>
+                        <stage type="silence">Après un nouveau silence.</stage>
+                        <p n="62">
+	<s n="1">Dis-moi, de tous ces cadeaux quel est celui que tu aimes le plus ?</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE, montrant la poupée.</speaker>
+                        <p n="63">
+	<s n="1">Celui-là.</s>
+</p>
+                    </sp><!--@stage="show"--><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="64">
+	<s n="1">Vrai, tu trouves cette poupée jolie ?</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="65">
+	<s n="1">Bien jolie.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="66">
+	<s n="1">Moi, non.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="67">
+	<s n="1">Comment ! </s>
+	<s n="2">Cette poupée ne vous plait pas ?</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="68">
+	<s n="1">Non, elle est trop pâle... puis, elle est malade.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="69">
+	<s n="1">Il me semble qu'elle se porte bien.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="70">
+	<s n="1">Non, moi qui la connais déjà, je puis t'assurer qu'elle est malade et même très malade.</s>
+</p>
+                        <stage type="hit">Comme frappée d'une idée subite.</stage>
+                        <p n="71">
+	<s n="1">Écoute-moi, Rosette : comme je ne peux pas la soigner assez bien, veux-tu la soigner toi-même ?</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="72">
+	<s n="1">Oh ! </s>
+	<s n="2">Oui.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE, prenant la poupée sur le guéridon.</speaker>
+                        <p n="73">
+	<s n="1">Si tu la sauves, elle deviendra ta petite fille et elle restera avec toi. </s>
+	<s n="2">Le veux-tu ?</s>
+</p>
+                    </sp><!--@stage="get/location"--><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="74">
+	<s n="1">Je n'ose pas dire oui... </s>
+	<s n="2">Vous êtes trop bonne pour moi.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="75">
+	<s n="1">C'est entendu et la voilà.</s>
+</p>
+                        <stage type="drop/location">Elle met la poupée dans les bras de Rosette</stage>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE, à la poupée.</speaker>
+                        <p n="76">
+	<s n="1">Je t'aime déjà, ma chérie. </s>
+	<s n="2">Je vais bien te soigner pour que tu sois vite guérie et que nous puissions venir revoir mademoiselle_Rose.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="77">
+	<s n="1">Je l'espère bien... </s>
+	<s n="2">Mais j'y pense... </s>
+	<s n="3">Quand un malade a besoin d'être soigné, la première chose qu'il lui faut, c'est un bon lit. </s>
+	<s n="4">Tiens, voilà le berceau où tu mettras ta chère poupée.</s>
+</p>
+                        <stage type="get/location/drop">Elle prend le berceau sur le guéridon et elle le met près de Rosette.</stage>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="78">
+	<s n="1">Oh ! </s>
+	<s n="2">Non, je n'accepte pas cela, mademoiselle_Rose, c'est beaucoup trop. </s>
+	<s n="3">Je soignerai ma petite malade et quand elle sera fatiguée, je la mettrai dans mon lit.</s>
+</p>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="79">
+	<s n="1">Non, non, elle est habituée à son berceau et elle ne dormirait pas dans ton lit. </s>
+	<s n="2">Accepte donc.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE.</speaker>
+                        <p n="80">
+	<s n="1">Non, je n'accepte pas. </s>
+	<s n="2">Votre mère, si elle le savait, vous gronderait...</s>
+</p>
+                        <stage type="entrance/location">Madame de Lancy parait à la porte de gauche.</stage>
+                    </sp><!--@who="ROSETTE"-->
+<sp who="#madame-de-lancy">
+                        <speaker>MADAME DE LANCY.</speaker>
+                        <p n="81">
+	<s n="1">Non, mes enfants, je ne gronderai pas Rose pour ce qu'elle veut faire et l'approuve entièrement.</s>
+</p>
+                        <stage type="toward/entrance">À Rosette, en venant en scène.</stage>
+                        <p n="82">
+	<s n="1">Accepte donc la poupée et le berceau. </s>
+	<s n="2">Aujourd'hui même, je remplacerai l'une et l'autre à ma chère Rose.</s>
+</p>
+                    </sp><!--@who="MADAME DE LANCY"-->
+<sp who="#rosette">
+                        <speaker>ROSETTE, frappant des mains.</speaker>
+                        <p n="83">
+	<s n="1">Alors, j'accepte ! </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Que je vais aimer ma chère poupée et que je vous aime aussi, Mademoiselle_Rose !</s>
+</p>
+                        <stage type="kiss/wave">Elle l'embrasse, puis, elle vient faire une révérence devant Madame de Lancy.</stage>
+                        <p n="84">
+	<s n="1">Merci, Madame.</s>
+</p>
+                    </sp><!--@stage="clap"--><!--@who="ROSETTE"-->
+<sp who="#madame-de-lancy">
+                        <speaker>MADAME DE LANCY.</speaker>
+                        <p n="85">
+	<s n="1">J'enverrai tout cela chez toi, ma chère Rosette.</s>
+</p>
+                    </sp><!--@who="MADAME DE LANCY"-->
+<sp who="#rose">
+                        <speaker>ROSE.</speaker>
+                        <p n="86">
+	<s n="1">Que tu es gentille et que je t'aime, petite mère.</s>
+</p>
+                    </sp><!--@who="ROSE"-->
+<sp who="#madame-de-lancy">
+                        <speaker>MADAME DE LANCY.</speaker>
+                        <p n="87">
+	<s n="1">Tu as fait une bonne action, ma fille, et une bonne action est toujours récompensée.</s>
+</p>
+                    </sp><!--@who="MADAME DE LANCY"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

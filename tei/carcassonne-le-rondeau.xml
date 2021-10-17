@@ -1,0 +1,661 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Rondeau</title>
+                <title type="sub">Comédie.</title>
+                <title type="sub">Cinquante-Sixième Proverbe.</title>
+                <author>
+      <idno type="isni">0000000079771756</idno>
+      <idno type="wikidata">Q982053</idno>
+      <persName>
+        <forename>Louis</forename>
+        <surname>Carrogis</surname>
+        <nameLink>de</nameLink>
+        <surname sort="1">Carmontelle</surname>
+      </persName>
+    </author>
+                <author>
+      <persName>
+        <forename>Adolphe</forename>
+        <surname>Carcassonne</surname>
+      </persName>
+      <idno type="isni">0000 0001 1756 1275</idno>
+    </author><!--Adolphe CARCASSONNE (1826-1891)-->
+                <editor>Paul FIEVRE juin 2021</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <idno type="dracor" xml:base="https://dracor.org/id/">fre001529</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/CARCASSONNE_RONDEAU.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/CARCASSONNE_RONDEAU.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <date type="print" when="1889"/>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5742849d</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="berthe" sex="FEMALE">
+                        <persName>Berthe</persName>
+                    </person>
+                    <person xml:id="blanche" sex="FEMALE">
+                        <persName>Blanche</persName>
+                    </person>
+                    <person xml:id="antoinette" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Antoinette</persName>
+                    </person>
+                    <person xml:id="jeanne" sex="FEMALE">
+                        <persName>Jeanne</persName>
+                    </person>
+                    <person xml:id="amelie" sex="FEMALE">
+                        <persName>Amélie</persName>
+                    </person>
+                    <person xml:id="les-jeunes-filles" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Les Jeunes Filles</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LE RONDEAU</titlePart>
+			<titlePart type="sub">COMÉDIE.</titlePart>
+			<titlePart type="sub">CINQUANTE-SIXIÈME PROVERBE.</titlePart>
+		</docTitle> 
+		<docDate when="1889">1889</docDate>
+		<docAuthor>ADOLPHE CARCASSONNE.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="MARPON, FLAMMARION">PARIS, C. MARPON ET E. FLAMMARION, ÉDITEURS, RUE RACINE, 26, PRÈS L'ODÉON.</editor>-->
+		</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#berthe">BERTHE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 10 ans.</castItem>
+		<castItem>
+                    <role corresp="#blanche">BLANCHE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 10 ans.</castItem>
+		<castItem>
+                    <role corresp="#amelie">AMÉLIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 9 ans.</castItem>
+		<castItem>
+                    <role corresp="#jeanne">JEANNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 7 ans.</castItem>
+		<castItem>
+                    <role corresp="#empty-string">JEANNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="enfant"--><!--@age="E"--><!--@stat_amour="(néant)"-->, 8 ans.</castItem>
+   </castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="À la campagne" country="France" periode="XIXème" gps=""/>-->
+<note>Extrait de Nouveau théâtre d'enfants : dix pièces en prose à jouer dans les familles et dans les pensionnats, Adolphe Carcassonne. Paris,  pp. 1-21.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LE RONDEAU</head>
+<stage type="decor">À gauche, la grille ouverte d'une maison de campagne ;
+cette grille donne sur une petite place. - En face de la grille, à droite, un banc. Au lever du rideau, Berthe, Blanche, Amélie et Jeanne font un rondeau en chantant : Nous n'irons plus au bois.
+</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Berthe, Blanche, Amélie, Jeanne.</head>
+<sp who="#berthe">
+                        <speaker>BERTHE, arrêtant le rondeau.</speaker>
+                        <p n="1">
+	<s n="1">Il fait très chaud ; nous ferions mieux d'aller continuer notre rondeau sous le grand marronnier, à l'entrée de la campagne.</s>
+</p>
+                    </sp><!--@stage="stop"--><!--@who="BERTHE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="2">
+	<s n="1">Tu as raison, allons-y.</s>
+</p>
+                        <stage type="music/exit/entrance">Elles reprennent le rondeau et elles sortent par la grille, tandis qu'Antoinette, la petite pauvresse, vient par la droite ; elle tient un panier à la main.</stage>
+                    </sp><!--@who="BLANCHE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II.</head>
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="1">
+	<s n="1">On ne m'a rien donné... </s>
+	<s n="2">Pourtant, j'ai beaucoup marché et je suis bien fatiguée... </s>
+	<s n="3">Ce doit être un mal de demander aux gens, puisque j'ai honte en tendant la main... </s>
+	<s n="4">Mais que faire ? </s>
+	<s n="5">Grand-mère malade a besoin de secours... </s>
+	<s n="6">Je ne puis pas travailler, je ne suis pas assez forte... </s>
+	<s n="7">Si je le pouvais, je ne demanderais rien à personne...</s>
+</p>
+                        <stage type="sing">On entend au dehors les jeunes filles qui chantent le rondeau ; Antoinette regarde du coté de la grille.</stage>
+                        <p n="2">
+	<s n="1">Oh ! </s>
+	<s n="2">Les belles demoiselles !... </s>
+	<s n="3">Comme elles s'amusent !... </s>
+	<s n="4">Que c'est joli de tourner comme ça, en chantant... </s>
+	<s n="5">Moi aussi, je saurais tourner et chanter... </s>
+	<s n="6">Mais on ne m'a rien donné pour grand-mère... puis, je suis fatiguée...</s>
+</p>
+                        <stage type="watch">Elle aperçoit le banc.</stage>
+                        <p n="3">
+	<s n="1">Un banc, je vais m'y reposer un peu.</s>
+</p>
+                        <stage type="sit/drop">Elle s'assied et met son panier à côté d'elle.</stage>
+                        <p n="4">
+	<s n="1">Comme on est bien ici !...</s>
+</p>
+                        <stage type="watch">Elle regarde vers la grille.</stage>
+                        <p n="5">
+	<s n="1">Je vois danser en rond ces belles demoiselles !... </s>
+	<s n="2">Comme c'est joli !... </s>
+	<s n="3">Elles sont bien contentes...</s>
+</p>
+                        <stage type="help">Elle appuie sa tête sur le dossier du banc.</stage>
+                        <p n="6">
+	<s n="1">Il fait frais... </s>
+	<s n="2">Comme on est bien !... </s>
+	<s n="3">Pourtant...</s>
+</p>
+                        <stage>Sa tête se balance un instant.</stage>
+                        <p n="7">
+	<s n="1">Grand-mère... </s>
+	<s n="2">Grand-mère...</s>
+</p>
+                        <stage type="sleep/entrance">Elle s'endort. - Berthe entre.</stage>
+                    </sp><!--@who="ANTOINETTE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Antoinette, endormie, - Berthe.</head>
+<sp who="#berthe">
+                        <speaker>BERTHE, sans voir Antoinette.</speaker>
+                        <p n="1">
+	<s n="1">Tout à l'heure, il m'a semblé voir une petite fille avec un panier à la main... </s>
+	<s n="2">Serait-elle partie ?...</s>
+</p>
+                        <stage type="watch/location">Apercevant Antoinette sur le banc.</stage>
+                        <p n="2">
+	<s n="1">Non, la voilà...</s>
+</p>
+                        <stage type="closer">Elle s'approche.</stage>
+                        <p n="3">
+	<s n="1">Tiens ! </s>
+	<s n="2">Elle dort.</s>
+</p>
+                        <stage type="watch">Elle regarde un instant.</stage>
+                        <p n="4">
+	<s n="1">Comme elle est jolie sous ses pauvres habits!... Elle doit être bien malheureuse.</s>
+</p>
+                        <stage type="location/low">Elle va vers la grille et appelle à demi-voix :</stage>
+                        <p n="5">
+	<s n="">Venez donc.</s>
+</p>
+                        <stage type="entrance">À son appel, Blanche, Amélie et Jeanne entrent.</stage>
+                    </sp><!--@stage=""--><!--@who="BERTHE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Antoinette, endormie, Berthe, Blanche, Amélie, Jeanne.</head>
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="1">
+	<s n="1">Mes amies, venez voir la petite dormeuse, elle m'intéresse beaucoup.</s>
+</p>
+                        <stage type="closer">Les jeunes filles s'approchent d'Antoinette.</stage>
+                    </sp><!--@who="BERTHE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="1">
+	<s n="1">Elle est très jolie.</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE, h haute voix.</speaker>
+                        <p n="2">
+	<s n="1">Oui, elle est bien jolie.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#amelie">
+                        <speaker>AMÉLIE.</speaker>
+                        <p n="3">
+	<s n="1">Parle moins haut, il ne faut pas éveiller la petite fille qui dort.</s>
+</p>
+                    </sp><!--@who="AMÉLIE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="4">
+	<s n="1">Le chat non plus.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="5">
+	<s n="1">Elle a l'air malheureux.</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#amelie">
+                        <speaker>AMÉLIE, après avoir regardé dans le panier.</speaker>
+                        <p n="6">
+	<s n="1">Son panier est vide.</s>
+</p>
+                    </sp><!--@stage="watch/location"--><!--@who="AMÉLIE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="7">
+	<s n="1">Berthe, regarde-la maintenant, elle sourit.</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="8">
+	<s n="1">C'est vrai... </s>
+	<s n="2">Elle doit faire un joli rêve, car sa figure est toute joyeuse...</s>
+</p>
+                        <stage type="stop/estonish">Après une pause et comme frappée d'une idée subite.</stage>
+                        <p n="9">
+	<s n="1">Si nous réalisions son rêve !</s>
+</p>
+                    </sp><!--@who="BERTHE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="10">
+	<s n="1">Ce serait bien gentil, mais comment savoir...</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE, interrompant.</speaker>
+                        <p n="11">
+	<s n="1">Qu'est-ce que c'est, un rêve ?</s>
+</p>
+                    </sp><!--@stage="interrupt"--><!--@who="JEANNE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="12">
+	<s n="1">C'est croire avoir ce qu'on n'a pas.</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#amelie">
+                        <speaker>AMÉLIE.</speaker>
+                        <p n="13">
+	<s n="1">Alors, elle doit rêver qu'elle a de beaux habits, de l'argent, des poupées...</s>
+</p>
+                    </sp><!--@who="AMÉLIE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="14">
+	<s n="1">Et de bons gâteaux pour goûter.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="15">
+	<s n="1">J'ai une idée, attendez-moi un instant.</s>
+</p>
+                        <stage type="exit">Elle sort par la grille.</stage>
+                    </sp><!--@who="BERTHE"-->
+<sp who="#amelie">
+                        <speaker>AMÉLIE, à Blanche.</speaker>
+                        <p n="16">
+	<s n="">Où va-t-elle ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="AMÉLIE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="17">
+	<s n="1">Laissons-la faire, elle a bon coeur et elle nous donnera un bon conseil ou un bon exemple.</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="18">
+	<s n="1">Comme les exemples d'écriture.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="19">
+	<s n="1">Pourquoi non ? </s>
+	<s n="2">On peut copier tout ce qui est bien...</s>
+</p>
+                        <stage type="watch">Regardant la grille.</stage>
+                        <p n="20">
+	<s n="1">Voici Berthe.</s>
+</p>
+                        <stage type="entrance/costule">Berthe rentre avec une petite écharpe de soie à la main.</stage>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="21">
+	<s n="1">Voilà de quoi réaliser peut-être une partie de son rêve.</s>
+</p>
+                    </sp><!--@who="BERTHE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="22">
+	<s n="1">Je te comprends, ma chère Berthe ; j'étais sûre que tu trouverais quelque chose.</s>
+</p>
+                        <stage type="turn">Se tournant vers les autres jeunes filles.</stage>
+                        <p n="23">
+	<s n="1">Viens, Amélie ! </s>
+	<s n="2">Viens, Jeanne !</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="24">
+	<s n="1">Où ça ?</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="25">
+	<s n="1">Viens toujours.</s>
+</p>
+                        <stage type="exit/follow">Elle sort, suivie de Berthe et de Jeanne.</stage>
+                    </sp><!--@who="BLANCHE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Antoinette, toujours endormie, Berthe.</head>
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="1">
+	<s n="1">J'ai souvent entendu dire par ma petite mère que sécher une larme aux yeux de ceux qui pleurent est une bonne action, et petite mère a bien raison. </s>
+	<s n="2">Le bonheur donné, ne fût-ce qu'un moment, aux malheureux que nous voyons souffrir, leur réjouit le coeur et revient nous dire : Tu as bien fait.</s>
+</p>
+                        <stage type="watch">Regardant du côté d'Antoinette.</stage>
+                        <p n="2">
+	<s n="1">Pauvre petite ! </s>
+	<s n="2">Qui sait combien de peines elle a déjà ?...</s>
+</p>
+                        <stage type="entrance/carry">Blanche rentre avec Amélie, qui porte une poupée, et Jeanne qui tient à la main une petite boite.</stage>
+                    </sp><!--@stage="alone"--><!--@who="BERTHE"-->
+</div><!--@stage="sleep"-->
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Antoinette, Berthe, Blanche, Amélie, Jeanne.</head>
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="1">
+	<s n="1">Tu m'as bien comprise, ma chère Blanche ?</s>
+</p>
+                    </sp><!--@who="BERTHE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="2">
+	<s n="1">Et j'en suis contente, ma chère Berthe.</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="3">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Tâchons de réaliser le rêve.</s>
+</p>
+                        <stage type="closer">Elle s'approche d'Anloinette sur la pointe des pieds.</stage>
+                        <p n="4">
+	<s n="1">Petite dormeuse, tu n'as pas de beaux habits, voilà mon écharpe de soie.</s>
+</p>
+                        <stage type="dress/location">Elle lui met l'écharpe sur les épaules, puis elle
+contourne légèrement et elle vient à gauche.</stage>
+                    </sp><!--@who="BERTHE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE, prenant une bourse dans sa poche et s'approchant aussi sur la pointe des pieds.</speaker>
+                        <p n="5">
+	<s n="1">Petite dormeuse, tu n'as pas d'argent, voilà ma bourse, je l'ai garnie autant que je l'ai pu.</s>
+</p>
+                        <stage type="drop">Elle glisse la bourse dans la poche d'Antoinette et elle va rejoindre Berthe.</stage>
+                    </sp><!--@stage="closer/get/silence"--><!--@who="BLANCHE"-->
+<sp who="#amelie">
+                        <speaker>AMÉLIE, s'approchant à son tour.</speaker>
+                        <p n="6">
+	<s n="1">Petite dormeuse, tu n'as pas de poupée, voilà la mienne.</s>
+</p>
+                        <stage type="toward">À la poupée.</stage>
+                        <p n="7">
+	<s n="1">Adieu, ma bonne Minette, sois bien sage.</s>
+</p>
+                        <stage type="kiss">Elle embrasse la poupée, elle la met dans le panier et elle va rejoindre Berthe et Blanche.</stage>
+                    </sp><!--@who="AMÉLIE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE, même jeu.</speaker>
+                        <p n="8">
+	<s n="1">Petite dormeuse, tu n'as pas de gâteaux à la crème, de tartes à la confiture, en voilà ; tu verras comme c'est bon.</s>
+</p>
+                        <stage>Elle met la boite dans le panier.</stage>
+                        <p n="9">
+	<s n="1">Bon appétit, petite dormeuse.</s>
+</p>
+                        <stage type="closer">Elle rejoint les autres jeunes filles.</stage>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="10">
+	<s n="1">Et maintenant, que faut-il faire ?</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="11">
+	<s n="1">Il faut aller goûter.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="12">
+	<s n="1">Voilà que le jour baisse et la pauvre petite dort toujours. </s>
+	<s n="2">Peut-être elle demeure bien loin et elle a besoin de se remettre en route. </s>
+	<s n="3">Je crois qu'il est bon de la réveiller.</s>
+</p>
+                    </sp><!--@who="BERTHE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="13">
+	<s n="1">Nous le pouvons en reprenant le rondeau ; ça lui fera un gentil réveil.</s>
+</p>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#amelie">
+                        <speaker>AMÉLIE.</speaker>
+                        <p n="14">
+	<s n="1">Oui, faisons le rondeau.</s>
+</p>
+                    </sp><!--@who="AMÉLIE"-->
+<sp who="#blanche">
+                        <speaker>BLANCHE.</speaker>
+                        <p n="15">
+	<s n="1">Et élevons la voix.</s>
+</p>
+                        <stage type="dance/sing/wave">Les jeunes filles dansent en rond et en chantant. Au bout d'un instant, Antoinette fait un mouvement.</stage>
+                    </sp><!--@who="BLANCHE"-->
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="16">
+	<s n="1">Elle s'éveille... </s>
+	<s n="2">Allons vers le fond et voyons ce qu'elle va  faire.</s>
+</p>
+                        <stage type="location/awake">Elles vont vers le fond, à droite. Antoinette s'éveille lentement.</stage>
+                    </sp><!--@who="BERTHE"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="17">
+	<s n="1">Tiens ! </s>
+	<s n="2">Je me suis endormie...</s>
+</p>
+                        <stage type="stand">Elle se lève.</stage>
+                        <p n="18">
+	<s n="1">Il est peut-être tard et grand'mère m'attend... </s>
+	<s n="2">Allons, en route !</s>
+</p>
+                        <stage type="away">Elle fait quelques pas vers le milieu de la scène
+et elle remarque l'écharpe qu'elle a sur elle.</stage>
+                        <p n="19">
+	<s n="1">Ô la belle écharpe ! </s>
+	<s n="2">Qui donc l'a mise sur mes épaules ?...</s>
+</p>
+                        <stage>Après un silence.</stage>
+                        <p n="20">
+	<s n="1">Je sens quelque chose dans ma poche...</s>
+</p>
+                        <stage type="touch/show">Elle met la main dans sa poche et elle en sort la bourse.</stage>
+                        <p n="21">
+	<s n="1">Une bourse !</s>
+</p>
+                        <stage type="open">Elle l'ouvre.</stage>
+                        <p n="22">
+	<s n="1">Oh ! </s>
+	<s n="2">Que d'argent !... </s>
+	<s n="3">Et une pièce d'or... </s>
+	<s n="4">Mais ce n'est pas possible !... </s>
+	<s n="5">Puis, mon panier où il n'y avait rien et qui est plein...</s>
+</p>
+                        <stage type="hide/open/show">Elle remet la bourse dans sa poche ; elle ouvre
+le panier, d'où elle sort la poupée.</stage>
+                        <p n="23">
+	<s n="1">La jolie poupée !... </s>
+	<s n="2">Comme je t'aimerais, si tu étais ma petite fille !...</s>
+</p>
+                        <stage type="kiss/hide/location/show">Elle l'embrasse et elle la remet dans le panier d'où elle sort la boite contenant les gâteaux.</stage>
+                        <p n="24">
+	<s n="1">Des gâteaux aussi!... Ils ont l'air d'être bien bons...</s>
+</p>
+                        <stage type="eat">Elle en prend un qu'elle porte à sa bouche, mais elle s'arrête soudainement.</stage>
+                        <p n="25">
+	<s n="1">Non, ces gâteaux ne sont pas à moi, et s'ils étaient à moi, il faudrait les garder pour grand'mère.</s>
+</p>
+                        <stage type="give">Elle remet le gâteau dans la boite et la boite dans le panier.</stage>
+                        <p n="26">
+	<s n="1">Voyons, est-ce que je suis éveillée ?... </s>
+	<s n="2">Est-ce que je rêve?... </s>
+	<s n="3">Non... mais j'ai rêvé tout à l'heure. </s>
+	<s n="4">Grand'mère m'a dit que les enfants ont des anges qui veillent sur eux et que ces anges viennent leur parler pendant leur sommeil. </s>
+	<s n="5">Eh bien ! </s>
+	<s n="6">Tout à l'heure, quand je dormais, j'ai entendu de jolies voix qui me parlaient... </s>
+	<s n="7">Bien sûr, c'étaient les anges qui veillent sur moi et qui m'ont donné ces jolies choses.</s>
+</p>
+                        <stage type="closer">Sur un signe de Berthe, les jeunes filles s'approchent
+d'Antoinette.</stage>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE, continuant.</speaker>
+                        <p n="27">
+	<s n="1">Grand'mère dit aussi qu'il faut les remercier...</s>
+</p>
+                        <stage type="wave">Elle joint les mains.</stage>
+                        <p n="28">
+	<s n="1">Ô mes anges gardiens ! </s>
+	<s n="2">Merci !..</s>
+</p>
+                        <stage type="touch/sing">Les jeunes filles se donnent la main et font, en chantant, le rondeau autour d'Antoinette ; arrivées à "Celle qui tous plaira le mieux" elles s'arrêtent.</stage>
+                    </sp><!--@stage="continue"--><!--@who="ANTOINETTE"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE, avec joie.</speaker>
+                        <p n="29">
+	<s n="1">Mes anges gardiens, les voilà, je reconnais leurs voix.</s>
+</p>
+                    </sp><!--@stage="happy"--><!--@who="ANTOINETTE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE, à Antoinette.</speaker>
+                        <p n="30">
+	<s n="1">Comment t'appelles-tu ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="JEANNE"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="31">
+	<s n="1">Je m'appelle Antoinette.</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="32">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Antoinette, il faut embrasser celle que tu aimes le mieux.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE, avec émotion.</speaker>
+                        <p n="33">
+	<s n="1">Mais alors... </s>
+	<s n="2">Mais alors... </s>
+	<s n="3">Il faut que je vous embrasse toutes.</s>
+</p>
+                    </sp><!--@stage="touched"--><!--@who="ANTOINETTE"-->
+<sp who="#les-jeunes-filles">
+                        <speaker>LES JEUNES FILLES.</speaker>
+                        <p n="34">
+	<s n="1">Embrasse-nous donc.</s>
+</p>
+                        <stage type="kiss">Antoinette les embrasse.</stage>
+                    </sp><!--@who="LES JEUNES FILLES"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="35">
+	<s n="1">C'est vous qui avez fait tout cela pour moi, merci, mes belles demoiselles, merci !... </s>
+	<s n="2">Et maintenant, je retourne auprès de grand'mère.</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#berthe">
+                        <speaker>BERTHE.</speaker>
+                        <p n="36">
+	<s n="1">Va, ma chère Antoinette, mais reviens jeudi prochain.</s>
+</p>
+                    </sp><!--@who="BERTHE"-->
+<sp who="#les-jeunes-filles">
+                        <speaker>LES JEUNES FILLES.</speaker>
+                        <p n="37">
+	<s n="1">Oui, oui, reviens jeudi.</s>
+</p>
+                    </sp><!--@who="LES JEUNES FILLES"-->
+<sp who="#antoinette">
+                        <speaker>ANTOINETTE.</speaker>
+                        <p n="38">
+	<s n="1">Merci encore. </s>
+	<s n="2">Grand'mère va être bien contente, et comme elle dit que les prières des pauvres vont au ciel, elle priera Dieu pour vous.</s>
+</p>
+                        <stage type="get/wave">Elle prend son panier et elle fait une révérence.</stage>
+                        <p n="39">
+	<s n="1">Merci, mes belles demoiselles.</s>
+</p>
+                        <stage type="location/turn/kiss">Elle va vers la droite, arrivée au fond, elle se retourne et elle envoie un long baiser aux jeunes filles, en répétant.</stage>
+                        <p n="40">
+	<s n="1">Merci.</s>
+</p>
+                    </sp><!--@who="ANTOINETTE"-->
+<sp who="#berthe">
+                        <speaker>BERTHE, à Antoinette.</speaker>
+                        <p n="41">
+	<s n="1">À jeudi.</s>
+</p>
+                        <stage type="turn">Elle se retourne vers les jeunes filles.</stage>
+                        <p n="42">
+	<s n="1">Et nous, mes amies, reprenons le rondeau.</s>
+</p>
+                        <stage type="touch/sing/exit/location">Elles se donnent la main et elles se dirigent, en chantant, vers l'entrée de la campagne.</stage>
+                    </sp><!--@stage="toward"--><!--@who="BERTHE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>
