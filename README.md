@@ -1,12 +1,13 @@
 # FreDraCor (French Drama Corpus, TEI P5)
 
-## Corpus Description
+## Corpus description
 
-Based on the extensive work from Paul Fièvre, we are working towards a
-DraCor-ready version of the Théâtre Classique. The result should become a valid
-TEI P5 resource.
+Based on the extensive work of Paul Fièvre, we have been working on a
+[**DraCor**](https://dracor.org/)-ready
+version of [Théâtre Classique](https://www.theatre-classique.fr/index.html).
+FreDraCor is intended to be a valid TEI P5 resource.
 
-By now, the 1500 files from the source have been structurally cleaned and
+By now, the 1560 files from the source have been structurally cleaned and
 converted. We copied some information from the `castList` to the `particDesc`
 section and tried to preserve as much as possible.
 
@@ -15,15 +16,17 @@ intellectual work represented as markup) is – according to the source files �
 licensed under a [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 licence.
 
+The corpus can be explored at [**dracor.org/fre**](https://dracor.org/fre).
+
 ## To cite FreDraCor …
 
 … we suggest the following:
 
 * French Drama Corpus (FreDraCor): A TEI P5 Version of Paul Fièvre's "Théâtre Classique" Corpus. Edited by Carsten Milling, Frank Fischer and Mathias Göbel. Hosted on GitHub, 2021–. https://github.com/dracor-org/fredracor
 
-## Changes made on top of the source
+## Changes, corrections and additions we have made
 
-Among others these are the most significant modifications performed on the
+Here are, among others, the most significant modifications performed on the
 original documents:
 
 - add TEI namespace
@@ -59,7 +62,7 @@ repository and the [tc2dracor.xq](tc2dracor.xq) transformation script.
 ## DraCor IDs
 
 Each FreDraCor play is given a DraCor ID (e.g.
-[`fre000784`](tei/jarry-uburoi.xml#L20)). These IDs are mapped to the Théâtre
+[`fre000784`](tei/jarry-ubu-roi.xml#L21)). These IDs are mapped to the Théâtre
 Classique documents in [ids.xml](ids.xml). When a new play from Théâtre
 Classique is added to the corpus a new ID needs to be assigned and added to
 `ids.xml`.
