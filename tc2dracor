@@ -87,14 +87,14 @@ process_slice () {
         sed 's/%20//g' | sed 's/_/-/g'
       )
     fi
-  
+
     if [[ -n "$PROGRESS" ]]; then
       # create dummy files for determining progress
       touch $WORK_DIR/progress/$file_name
     else
       echo "$instance $i $file_name -> $OUT_DIR/$dracor_name"
     fi
-  
+
     curl -s -X POST \
       -H 'Content-Type: application/xml' \
       -H "X-Filename: $file_name" \
@@ -283,7 +283,7 @@ done
 
 for port in ${PORTS[@]}; do
   echo "Putting scripts on localhost:$port"
-  for file in $BASE_DIR/tc2dracor.xq; do
+  for file in $BASE_DIR/{tc2dracor,titlecase}.xq; do
     [ -z $VERBOSE ] || echo "$file"
     name=$(basename $file)
     curl -X PUT \
