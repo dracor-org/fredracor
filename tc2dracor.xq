@@ -239,7 +239,7 @@ declare function local:transform($nodes) {
                 (: there is text within sp audiffret-albertdurer.xml :)
                 local:transform($node/node() except $node/text())
             }, ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward, $node/@ge, $node/@syll, $node/@aparte) ! local:attribute-to-comment(.) ) (: @class was used a single time, so we do not take the effort to write it to a comment :)
-            
+
             case element(s) return
                 (: minor correction to prevent multiple usage of an ID :)
                 element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
@@ -285,7 +285,7 @@ declare function local:transform($nodes) {
                 if(not($node/@n)) then () else comment {'WARNING: source contains @n as well. it is removed here.'},
                 local:transform($node/node())
             }, ($exceptionsEtc) ! local:attribute-to-comment(.) )
-            
+
             case element(lg) return
                 element {QName('http://www.tei-c.org/ns/1.0', 'lg')} {
                     $node/@* except ($node/@id),
@@ -319,7 +319,7 @@ declare function local:transform($nodes) {
                             or ($node/@typee = $vers)
                             or ($node/@tyope = $vers)
                             or ($node/@class = $vers)
-                
+
                 return
                     if($isVers)
                 then
@@ -334,7 +334,7 @@ declare function local:transform($nodes) {
                     $exceptionsId ! attribute n {string(.)},
                     local:transform($node/node())
                 }, ($node/@class) ! local:attribute-to-comment(.) )
-                
+
             case element(role) return
                 (: correct invalid IDs here as well :)
                 (: removing unknown attributes @sex, @type, @statut, @age, @stat_amour :)
@@ -408,7 +408,7 @@ declare function local:transform($nodes) {
                 element {QName('http://www.tei-c.org/ns/1.0', 'p')}{
                     local:transform($node/node())}
             }, ($node/@id) ! local:attribute-to-comment(.))
-            
+
             case element(imprimeur) return
                 (: remove unknown element :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
@@ -417,7 +417,7 @@ declare function local:transform($nodes) {
                 element {QName('http://www.tei-c.org/ns/1.0', 'p')}{
                     local:transform($node/node())}
             }, ($node/@id) ! local:attribute-to-comment(.))
-            
+
             case element(acheveImprime) return
                 (: remove unknown element :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
@@ -465,7 +465,7 @@ declare function local:transform($nodes) {
                 attribute type {'enregistrement'},
                 local:transform($node/node())
             }, $node/@id ! local:attribute-to-comment(.) )
-            
+
             case element(postface) return
                 (: remove unknown element :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
@@ -498,7 +498,7 @@ declare function local:transform($nodes) {
                 local:transform($node/node())
             }, $node/@id ! local:attribute-to-comment(.) )
         (: END :)
-            
+
             case element(poem) return
                 (: move poem to ab, preserve via comments :)
                 (comment { '<poem>' },
@@ -571,7 +571,7 @@ declare function local:transform($nodes) {
                     $exceptionsType ! attribute type {string( . )},
                     local:transform($node/node())
                 }, $node/@note ! local:attribute-to-comment(.) )
-        
+
             case element(titlePart) return
                 (: rename attribute part to type :)
                 element {QName('http://www.tei-c.org/ns/1.0', 'titlePart')} {
@@ -586,7 +586,7 @@ declare function local:transform($nodes) {
                 attribute type {'premiere'},
                 local:transform($node/node())
             }, $node/@* ! local:attribute-to-comment(.) )
-            
+
             case element(adresse) return
                 (: move this to opener/salute :)
                 element {QName('http://www.tei-c.org/ns/1.0', 'opener')} {
@@ -650,7 +650,7 @@ declare function local:transform($nodes) {
                                     )
                 let $newType :=
                     ($exceptionsType)[. != ''] ! attribute type { string(.) }
-                
+
                 return
 
                 (: element stage with attribute stage is invalid :)
@@ -682,7 +682,7 @@ declare function local:transform($nodes) {
                     $node/@href ! attribute target {string(.)},
                     local:transform($node/node())
             }
-            
+
             case element(em) return
                 element {QName('http://www.tei-c.org/ns/1.0', 'hi')} {
                     $node/@*,
@@ -884,38 +884,38 @@ declare function local:construct-tei (
   :)
   let $doc-date := $doc//*:docDate[matches(@value, '^\d{4}$')][1]
   let $print-date := if (count($print) = 2) then
-    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+    element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
       attribute type {'print'},
       attribute notBefore {$print[1]},
       attribute notAfter {$print[2]},
-      ""
+      element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {""}
     }
   else if (count($print) = 1) then
-    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+    element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
       attribute type {'print'},
       attribute when {string($print)},
-      ""
+      element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {""}
     }
   else if ($doc-date) then
-    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+    element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
       attribute type {'print'},
       attribute when {string($doc-date/@value)},
-      ""
+      element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {""}
     }
   else ()
 
   let $written-date := if (count($written) = 2) then
-    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+    element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
       attribute type {'written'},
       attribute notBefore {$written[1]},
       attribute notAfter {$written[2]},
-      ""
+      element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {""}
     }
   else if (count($written) = 1) then
-    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+    element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
       attribute type {'written'},
       attribute when {string($written)},
-      ""
+      element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {""}
     }
   else ()
 
@@ -927,15 +927,28 @@ declare function local:construct-tei (
   let $premiere :=
     $doc//*:premiere[matches(@date, '^\d{4}(-\d{2}(-\d{2})?)?$')][1]
   let $premiere-date := if ($premiere) then
-    element {QName('http://www.tei-c.org/ns/1.0', 'date')} {
+    element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
       attribute type {'premiere'},
       attribute when {string($premiere/@date)},
-      normalize-space($premiere)
+      element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {
+        normalize-space($premiere)
+      }
+    }
+  else ()
+
+  let $list-relation := if ($wikidata-id) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'listRelation')} {
+      element {QName('http://www.tei-c.org/ns/1.0', 'relation')} {
+        attribute name {'wikidata'},
+        attribute active {'https://dracor.org/entity/' || $id},
+        attribute passive {'http://www.wikidata.org/entity/' || $wikidata-id},
+        ""
+      }
     }
   else ()
 
   let $tei :=
-  <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre">
+  <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$id}" xml:lang="fre">
     <teiHeader>
       <fileDesc>
         <titleStmt>
@@ -947,12 +960,6 @@ declare function local:construct-tei (
         <publicationStmt>
           <publisher xml:id="dracor">DraCor</publisher>
           <idno type="URL">https://dracor.org</idno>
-          <idno type="dracor" xml:base="https://dracor.org/id/">{$id}</idno>
-          {if ($wikidata-id) then (
-            <idno type="wikidata" xml:base="http://www.wikidata.org/entity/">
-              {$wikidata-id}
-            </idno>
-          ) else ()}
           <availability>
             <licence>
               <ab>CC BY-NC-SA 4.0</ab>
@@ -972,9 +979,6 @@ declare function local:construct-tei (
               </licence>
             </availability>
             <bibl type="originalSource">
-              {$written-date}
-              {$print-date}
-              {$premiere-date}
               <idno type="URL">{string($doc//*:permalien)}</idno>
             </bibl>
           </bibl>
@@ -1025,6 +1029,16 @@ declare function local:construct-tei (
         </listChange>
       </revisionDesc>
     </teiHeader>
+    <standOff>
+      {$list-relation}
+      {if ($written-date or $premiere-date or $print-date) then
+        <listEvent>
+          {$written-date}
+          {$print-date}
+          {$premiere-date}
+        </listEvent>
+      else ()}
+    </standOff>
   {
     local:transform($doc/*:text)
   }
