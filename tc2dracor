@@ -272,9 +272,9 @@ echo ${CONTAINERS[*]} > $WORK_DIR/containers
 echo "waiting for eXist to get ready..."
 for port in ${PORTS[@]}; do
   echo -n "localhost:$port "
-  while [[ $(curl -I -s http://localhost:$port | grep -c "200 OK") -eq "0" ]]; do
+  while [[ $(curl -I -s http://localhost:$port/exist | grep -c "302 Found") -eq "0" ]]; do
     echo -n "."
-    sleep 1s
+    sleep 1
   done
   echo " ready"
 done
