@@ -782,6 +782,7 @@ declare function local:construct-tei (
   let $wikidata-id := string($id-entry/@wikidata)
   let $written := tokenize($id-entry/@written, '-')
   let $print := tokenize($id-entry/@print, '-')
+  let $premiere := tokenize($id-entry/@premiere, '-')
 
   let $title := element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
     attribute type {'main'},
@@ -924,14 +925,27 @@ declare function local:construct-tei (
     See https://github.com/dracor-org/theatre-classique/pull/1 for DraCor fixes
     to the original sources.
   :)
-  let $premiere :=
+  let $premiere-elem :=
     $doc//*:premiere[matches(@date, '^\d{4}(-\d{2}(-\d{2})?)?$')][1]
-  let $premiere-date := if ($premiere) then
+  let $premiere-date := if (count($premiere) = 2) then
     element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
       attribute type {'premiere'},
-      attribute when {string($premiere/@date)},
+      attribute notBefore {$premiere[1]},
+      attribute notAfter {$premiere[2]},
+      element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {""}
+    }
+  else if (count($premiere) = 1) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
+      attribute type {'premiere'},
+      attribute when {string($premiere)},
+      element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {""}
+  }
+  else if ($premiere-elem) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
+      attribute type {'premiere'},
+      attribute when {string($premiere-elem/@date)},
       element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {
-        normalize-space($premiere)
+        normalize-space($premiere-elem)
       }
     }
   else ()
