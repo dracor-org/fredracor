@@ -810,13 +810,7 @@ declare function local:construct-tei (
       let $normalized :=
         $author-map//author[isni eq $isni or name eq $content]/tei:author
 
-      return if (
-        (: fix duplicate author in CORNEILLEP_OTHON.xml :)
-        $content = "CORNEILLE, Pierre"
-          and $author/../author[@ISNI = "0000 0001 2129 6128"]
-      ) then (
-        comment {"duplicate: " || $content}
-      ) else if ($normalized) then (
+      return if ($normalized) then (
         $normalized,
         comment {$content}
       ) else (
