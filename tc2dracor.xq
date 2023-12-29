@@ -118,11 +118,11 @@ declare function local:make-authors ($doc, $filename) {
         return
           <author xmlns="http://www.tei-c.org/ns/1.0">
             {
+              local:split-name($content),
               if (count($map)) then (
-                local:split-name($map?name),
+                comment {'Wikidata label: ' || $map?name},
                 <idno type="wikidata">{$map?id}</idno>
               ) else (
-                local:split-name($content),
                 "&#xA;",
                 comment {'ISNI not found in Wikidata'}
               )
