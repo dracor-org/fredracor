@@ -1,0 +1,4260 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001703" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Cénie</title>
+                <title type="sub">Pièce en Cinq Actes</title>
+                <title type="sub">Représentée pour le première fois par les Comédiens Français ordinaires du roi, le 25 juin 1750.</title>
+                <author>
+      <idno type="isni">0000000081151740</idno>
+      <idno type="wikidata">Q449451</idno>
+      <persName>
+        <forename>Françoise</forename>
+        <nameLink>de</nameLink>
+        <surname>Graffigny</surname>
+      </persName>
+    </author><!--GRAFFIGNY, Françoise de (1695-1758)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/GRAFFIGNY_CENIE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/GRAFFIGNY_CENIE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k108179h/f4.image</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="lisette" sex="FEMALE">
+                        <persName>Lisette</persName>
+                    </person>
+                    <person xml:id="mericourt" sex="MALE">
+                        <persName>Méricourt</persName>
+                    </person>
+                    <person xml:id="dorimond" sex="MALE">
+                        <persName>Dorimond</persName>
+                    </person>
+                    <person xml:id="dorsainville" sex="MALE">
+                        <persName>Dorsainville</persName>
+                    </person>
+                    <person xml:id="clerval" sex="MALE">
+                        <persName>Clerval</persName>
+                    </person>
+                    <person xml:id="orphise" sex="FEMALE">
+                        <persName>Orphise</persName>
+                    </person>
+                    <person xml:id="cenie" sex="FEMALE">
+                        <persName>Cénie</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1751">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+<front>
+	<docTitle>
+		<titlePart type="main">CÉNIE</titlePart>
+		<titlePart type="sub">PIÈCE EN CINQ ACTES</titlePart>
+		<titlePart type="sub">Représentée pour le première fois par les Comédiens Français ordinaires du roi, le 25 juin 1750.</titlePart>	</docTitle>
+
+	<docDate when="1751">M. DCC. LI. Avec Approbation et Privilège du Roi.</docDate>
+		 
+	<div type="docImprint">
+		<div type="approbation">
+                    <head>APPROBATION.</head>
+			<p>J'ai lu par ordre de Monseigneur le Chancelier, un Manuscrit qui a pour titre : Cénie , Pièce en cinq actes. Fait à Paris, ce premier Octobre 1750.</p>
+			<signed>JOLLY.</signed>
+		</div>
+		<!--TODO: handling of editor name at this place unclear <editor id="CAILLEAU">À Paris, chez CAILLEAU, Libraire, Rue Saint-Jacques, au dessus de la rue des Mathurins, à Saint-André.</editor>-->
+	</div>
+		<div type="dedicace">
+			<opener>
+                    <salute>À MONSEIGNEUR LE COMTE DE CLERMONT, PRINCE DE SANG.</salute>
+                </opener>
+			<head>MONSEIGNEUR,</head>
+
+			<p>En dédiant Cénie à VOTRE ALTESSE SÉRÉNISSIME, c'est lui faire hommage de son propre bienfait. Vous savez, Monseigneur, que le seul désir de contribuer à vos amusements me fit reprendre un ouvrage abandonné depuis plusieurs années. Vous daignâtes en remarquer les défauts ; il devint moins informe. Vous savez pris sur vous le danger de la rendre public, le nom de VOTRE ALTESSE SÉRÉNISSIME en a fait le succès.</p>
+			<p>Ce n'est pas sans peine extrême, Monseigneur, que je m'imposer silence sur le tribut des louanges que m'inspirerait ma reconnaissance. Mais si l'on pardonne difficilement aux femmes de penser et d'écrire sur des matières qui sont à leur portée, comment recevrait on la peinture ébauchée que je pourrais faire des qualités éminentes, qui font admirer à tout l'Europe la grandeur de votre âme ? Me conviendrait-il de parles des villes prises par votre courage et votre prudence, des batailles gagnées par une valeur héréditaire aux héros de votre sang, dont vous rappelez sans cesse le souvenir et l'image ? Non, Monseigneur : il faut que je m'en tienne à l'admiration, et au profond respect avec lequel je suis,</p> 
+			<p>MONSEIGNEUR,</p>
+			<p>DE VOTRE ALTESSE SÉRÉNISSIME,</p>
+			<p>La très humble et très obéissante servante.</p>
+			<p>D'HAPPONCOURT DE GRAFIGNY.</p>
+		</div>
+	<castList>
+                <head>ACTEURS.</head>
+		<castItem>
+                    <role corresp="#dorimond">DORIMOND</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="V"--><!--@stat_amour=""-->, Vieillard. M. Sarrasin.</castItem>
+		<castItem>
+                    <role corresp="#mericourt">MÉRICOURT</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour=""-->, neveu de Dorimond. M. Rosélie.</castItem>
+		<castItem>
+                    <role corresp="#clerval">CLERVAL</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour=""-->, neveu de Dorimond. M. Grandval.</castItem>
+		<castItem>
+                    <role corresp="#cenie">CÉNIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour=""-->. Mademoiselle de Gaussin.</castItem>
+		<castItem>
+                    <role corresp="#orphise">ORPHISE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour=""-->, Gouvernante de Cénie. Melle Dumesnil.</castItem>
+		<castItem>
+                    <role corresp="#lisette">LISETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="suivante"--><!--@age="A"--><!--@stat_amour=""-->, suivante de Cénie. Melle Gautier.</castItem>
+		<castItem>
+                    <role corresp="#dorsainville">DORSAINVILLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour=""-->, amis de Clerval. M. Lanoue.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Campagne" country="France" periode="XVIIIème" gps="(N/A)">La scène est dans la Galerie de la maison de Dorimond.</set>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>ACTE I</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE, seule.</speaker>
+                        <p n="1">
+	<s n="1">Méricourt me ferait-il échappé ? </s>
+	<s n="2">J'ai cru le voir prendre le chemin de cette galerie. </s>
+	<s n="3">Oui, je ne me suis pas trompée. </s>
+	<s n="4">Monsieur, Monsieur....</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Méricourt, Lisette.</head>
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="1">
+	<s n="1">Quoi ! </s>
+	<s n="2">C'est l'aimable Lisette que je trouve ici ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="2">
+	<s n="1">Oui, Monsieur c'est Lisette, toujours fidèle à vos intérêts, qui guette depuis une heure le moment de vous entretenir.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="3">
+	<s n="1">Il faut, ma chère enfant, remettre cette conversation à un autre temps. </s>
+	<s n="2">Mon oncle s'est emparé de moi au sortir de ma chaise, je n'ai encore vu personne.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="4">
+	<s n="1">Je veux vous parler la première ; excepté votre oncle; tout dort dans la maison, et j'aurai le loisir de vous bien quereller. </s>
+	<s n="2">A-t-on jamais fait ; dites moi, une si longue absence : quand tout devait vous rappeler ici ? </s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="5">
+	<s n="1">Je n'ai pu revenir plus tôt. </s>
+	<s n="2">Tu sais que mon oncle, par le même courrier que je lui dépêchai à la mort de Mélisse, me manda de na point quitter la Province, sans avoir terminé le procès commencé.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="6">
+	<s n="1">Je vous avais donné une bon conseil ; il fallait ne me point renvoyer ; me laisser soin des funérailles, et venir vous-même lui annoncer la mort de sa femme.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="7">
+	<s n="1">Le conseil était très mauvais. </s>
+	<s n="2">Dorimond a une naïveté dans l'âme, qui ne lui laisse voir les choses que comme naturellement elles doivent être. </s>
+	<s n="3">Ne point attendre ses ordres, ne point rendre les derniers devoirs à une femme si chère, eût été l'offenser par l'endroit le plus sensible. </s>
+	<s n="4">Mais, dis-moi ; on a donc quitté le deuil ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="8">
+	<s n="1">Oui, depuis hier nos six mois sont finis. </s>
+	<s n="2">Pour votre oncle il le portera, je crois, toute sa vie.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="9">
+	<s n="1">Je l'ai trouvé encor plus affligé que je ne le croyais. </s>
+	<s n="2">Comment a-t-il pu se résoudre à te garder ici ? </s>
+	<s n="3"> Toi, qui le fais souvenir sans cesse de la porte qu'il a faite.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="10">
+	<s n="1">Bon ! </s>
+	<s n="2">A-t-il jamais renvoyé personne ? </s>
+	<s n="3">À mon arrivé le bonhomme me dit en sanglotant que je ne devais pas songer à sortir de chez lui. </s>
+	<s n="4">Je vis qu'il était de votre intérêt que j'y restasse ; j'y restai.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="11">
+	<s n="1">De mon intérêt ! </s>
+	<s n="2">Tu es donc à Cénie ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="12">
+	<s n="1">J'y suis sans y être.Car Madame la Gouvernant, avec ses manières poliment impérieuses, m'écartent de sa pupille autant qu'il est possible. </s>
+	<s n="2">Mais si par là elle m'empêche de vous servir autant que je le voudrais, je suis du moins en état de vous avertir de ce qui se passe.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="13">
+	<s n="1">Eh bien, Lisette?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="14">
+	<s n="1">Vos affaires vont mal.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="15">
+	<s n="1">Comment ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="16">
+	<s n="1">Très mal vous dis-je.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="17">
+	<s n="1">Parle donc.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="18">
+	<s n="1">Patience. </s>
+	<s n="2">Avant que de parler, il me faut un secret. </s>
+	<s n="3">Voyez si vous pouvez vous résoudre à me le confier.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="19">
+	<s n="1">Eh, tu n'as qu'à dire ; tout mes secrets sont à toi.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="20">
+	<s n="2">Qui ne vous connaîtrait, croirais-je déjà les tenir.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="21">
+	<s n="1">Comment veux-tu que je te satisfasse, si tu ne me dis pas ce que tu veux savoir ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="22">
+	<s n="1">Étiez-vous amoureux de Mélisse ?</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="23">
+	<s n="1">Vous êtes folle, Lisette ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="24">
+	<s n="1">Elle est morte, il n'y a plus rien à cacher.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="25">
+	<s n="1">Vous n'y pensez pas ; quoi l'épouse adorée d'un oncle à qui je dois tout !</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="26">
+	<s n="1">Quant aux scrupules, laissons-les à part, je ne vous en connais pas beaucoup.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="27">
+	<s n="1">Je ne suis pas un monstre, et Lisette en serait un, si elle parlait sérieusement.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="28">
+	<s n="1">Voyons donc si mon idée a si peu de vraisemblance : Mélisse d'un caractère détestable séduit par de fausse vertus un vieillard d'une probité scrupuleuse, bon par excellence, esclave de l'honneur, ennemi des soupçons, et que la crainte d'être injuste rend facile à tromper. </s>
+	<s n="2">Elle s'empare de lui à l'exclusion de tout le monde, elle lui donne un enfant, renverse votre fortune ; vous êtes ambitieux, vous devez la haïr, et vous rampez devant elle ? </s>
+	<s n="3">Vous êtes plus faux, ou le plus amoureux des hommes.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="29">
+	<s n="1">Deux mots éclaircissent le mystère. </s>
+	<s n="2">Dorimond ne voyait que par les yeux de Mélisse, ce n'est donc par elle que je pouvais me maintenir auprès de lui. </s>
+	<s n="3">Elle avait, comme tu dis, renversé ma fortune, elle pouvait la rétablir en me donnant sa fille ; je la ménageais ; cela est tout simple.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="30">
+	<s n="1">La peste, quelle simplicité !</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="31">
+	<s n="1">La dissimulation n'est point un vice, et trop de sincérité est souvent un défaut.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="32">
+	<s n="1">Ah ! </s>
+	<s n="2">Ce défaut là ne vous fera jamais rougir : mais l'amitié de Mélisse ne pouvait-elle se ménager tout haut ? </s>
+	<s n="3">Pourquoi tant de mots à l'oreille pendant sa vie, et des conférences si secrètes aux approches de sa mort ?</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="33">
+	<s n="1">Lisette, n'allez pas plus loin, et modérez votre curiosité.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="34">
+	<s n="1">Soit, aussi bien la patrie n'est pas égale.</s>
+	<s n="2">Il ne me reste donc qu'à vous avertir ; premièrement, de vous délier d'Orphise : elle ne vous aime pas.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="35">
+	<s n="1">Quand à la mauvaise volonté de Madame_Orphise, je m'en embarrasse peu : passons. </s>
+	<s n="2">Comment mon frère est-il avec mon oncle ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="36">
+	<s n="1">À merveille. </s>
+	<s n="2">Depuis son retour Dorimond a redoublé d'amitiés pour lui. </s>
+	<s n="3">Il croit ne pouvoir trop le dédommager de l'inutilité de son voyage.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="37">
+	<s n="1">Comment ? Clerval...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="38">
+	<s n="1">Clerval n'a rapporté de de-là des mers que la cruelle certitude qu'il ne vous reste pas, à l'un et à l'autre aucun bien sur la terre : mais avec cela je ne vous plaindrais pas, s'il n'était plus amoureux qu'il n'est intéressé.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="39">
+	<s n="1">Quoi ! </s>
+	<s n="2">Mon frère serait amoureux de Cénie ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="40">
+	<s n="1">Il est plus ; il est aimé.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="41">
+	<s n="1">Aimé ! </s>
+	<s n="2">Cela est fort. </s>
+	<s n="3">Mon oncle est-il instruit de cette intrigue ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="42">
+	<s n="1">non, vraiment : de l'humeur dont il est, il les aurait déjà mariés.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="43">
+	<s n="1">Peut-être ; c'est selon la manière dont il l'aurait appris. </s>
+	<s n="2">Clerval m'enlever Cénie !... </s>
+	<s n="3">Lui !... </s>
+	<s n="4">C'est ce qu'i faudra voir. </s>
+	<s n="5">Mais, es-tu bien sûre de ce que tu dis ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="44">
+	<s n="1">Très sûre, je m'y connais.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="45">
+	<s n="1">Que Cénie ait reçu des soins qui devaient la persuader...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="46">
+	<s n="1">D'un amour que vous ne sentiez pas.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="47">
+	<s n="1">Je le passais à son extrême jeunesse.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="48">
+	<s n="1">La jeunesse a quelquefois un instinct plus sûr que l'expérience.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="49">
+	<s n="1">Mais elle aime Monsieur mon frère ! </s>
+	<s n="2">Il faudra, s'il lui plait, qu'elle s'en détache.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="50">
+	<s n="1">Cela n'est pas aisé, je vous en avertis. </s>
+	<s n="2">Clerval est aimable, et tout jeune qu'il est, il s'est acquis une réputation à la guerre qui le met fort bien à la Cour ; cela ne laisse pas d'être un mérite auprès d'une jeune personne.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="51">
+	<s n="1">Nous trouverons des armes pour le combattre.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="52">
+	<s n="1">Pour moi, je ne vous vois de ressource que dans l'amitié que Mélisse avait pour vois. </s>
+	<s n="2">Sa mémoire est plus chère que jamais à votre oncle ; profitez de la circonstance. </s>
+	<s n="3">Le voici, je vous laisse avec lui.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Dorimond, Méricourt.</head>
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="1">
+	<s n="1">Je ne saurais me passer de te voir, mon cher neveu ; je t'ai quitté pour me remettre du saisissement que m'a causé notre première entrevue ; je te cherche à présent, hélas ! </s>
+	<s n="2">Qui sait pourquoi ? </s>
+	<s n="3">Peut-être pour m'affliger de nouveau.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="2">
+	<s n="1">Il est naturel, Monsieur, que mon retour ait renouvelé votre douleur. </s>
+	<s n="2">Elle est si juste.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="3">
+	<s n="1">Tu sais mieux que personne, si je dois pleurer toute ma vie cette vertueuse épouse. </s>
+	<s n="2">Tu excuses mes faiblesses ; ce n'est qu'avec toi que je puis donner un libre cours à mes regrets, cependant je ne voudrais pas t'en accabler.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="4">
+	<s n="1">Je les partage si sincèrement...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="5">
+	<s n="1">C'est ce qui doit me retenir. </s>
+	<s n="2">Tâchons de les suspendre pour un moment ; et parlons de tes intérêts. </s>
+	<s n="3">Je t'ai mille obligations, mon cher Méricourt, tu as conduit mes affaire mieux que je n'aurais fait moi-même ; mais je sens encore plus vivement les soins que tu as rendus à Mélisse jusqu'à sa dernière heure. </s>
+	<s n="4">Je veux récompenser ton zèle, et je voudrais la récompenser à ton goût ; car ce n'est pas faire du bien si on ne le fait au gré de ceux qu'on oblige.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="6">
+	<s n="1">Si j'ai mérité quelque chose, Monsieur, ce n'est que par mon attachement.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="7">
+	<s n="1">J'attendais ton retour avec impatience pour exécuter un projet formé depuis longtemps. </s>
+	<s n="2">Tu marquais autrefois du goût pour Clarice ; c'est une fille faite qui convient à ton âge ; ses parents sont des amis, ils ne me la refuseront pas : je te la destine avec le quart de mon bien. </s>
+	<s n="3">Ma fille sera pour ton frère, il sont d'un âge plus convenable. </s>
+	<s n="4">Cet arrangement te plaît-il ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="8">
+	<s n="1">Pourquoi en faire, Monsieur ? </s>
+	<s n="2">Pourquoi vous dépouiller ? </s>
+	<s n="3">Jouissez de vos richesses, elles vous ont coûté tant de périls et de travaux !</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="9">
+	<s n="1">J'en jouira, je vous rendrai heureux.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="10">
+	<s n="1">Eh ! </s>
+	<s n="2">Monsieur, que n'avez vous pas fait pour nous ? </s>
+	<s n="3">Vos neveux n'ont-ils pas trouvé dans votre maison des bontés paternelles, une éducation, une abondance...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="11">
+	<s n="1">Je compte cela pour rien, c'était un devoir.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="12">
+	<s n="1">Un devoir !</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="13">
+	<s n="1">Oui, un devoir. </s>
+	<s n="2">J'avais contribué au mariage de ma soeur, je croyais la rendre heureuse, il en est arrivé autrement. </s>
+	<s n="3">Elle n'a pu survivre au désastre de ses affaires, à la perte de son mari : n'était-il pas juste que je me chargeasse de ses enfants ? </s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="14">
+	<s n="1">Eh  bien, Monsieur, vos prétendus devoirs sont remplis par tout ce que vous avez fait. </s>
+	<s n="2"> C'est à nous à présent à travailler à notre fortune.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="15">
+	<s n="1">Pourquoi vous en laisser la peine, si je puis vous l'épargner ? </s>
+	<s n="2">Le mariage que je te propos, est-il à ton goût ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="16">
+	<s n="1">Monsieur,... mon obéissance...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="17">
+	<s n="1">Ne parlons pas d'obéissance ; c'est une gêne ; je n'en veux plus imposer à personne.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="18">
+	<s n="1">On peut obéir sans contrainte.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="19">
+	<s n="1">Oui, mais quand on accepte mes offres, je veux remarquer sur le visage une certaine joie, qui m'assure que l'on a autant de satisfaction ; que je prétends en donner.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="20">
+	<s n="1">Vous devez voir, Monsieur...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="21">
+	<s n="1">Je ne vois rien qui me plaise. </s>
+	<s n="2">Tu sais que je chéris la franchise autant que je hais les détours.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="22">
+	<s n="1">Ah ! </s>
+	<s n="2">Sur la franchise, je crois avoir fait mes preuves.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="23">
+	<s n="1">Pas toujours. </s>
+	<s n="2">Je te soupçonnais autrefois d'avoir un peu trop de cette dissimulation, que des gens plus défiants que moi auraient prise pour de la fausseté ; mais depuis longtemps Mélisse m'en avait fait revenir.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="24">
+	<s n="1">Ah ! </s>
+	<s n="2">Monsieur, si je ne dois votre retour qu'à Mélisse, elle n'est plus. </s>
+	<s n="3">Qui me répondra qu'à l'avenir...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="25">
+	<s n="1">Mon coeur. </s>
+	<s n="2">Outre qu'il m'est doux d'aimer mon neveu, c'est que les soupçons m'importunes ; et de tous les maux nécessaires à la société, la défiance est à mon gré la plus insupportable.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="26">
+	<s n="1">Vos bontés me rassurent à peine contre le malheur de perdre votre estime, moi qui fais mon unique étude de mériter cette de tout le monde.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="27">
+	<s n="1">Et tu as grande raison ; je tiens ceci de moi. </s>
+	<s n="2">Avec l'estime générale on de saurait être tout-à-fait malheureux. </s>
+	<s n="3">C'est elle qui m'a soutenu dans mes traverses, je lui dois mes richesses, et la satisfaction de n'avoir rien perdu des droits de ma naissance dans un commerce que ma probité a rendu honorable. </s>
+	<s n="4">Au reste, ne te fais pas une peine du passé. </s>
+	<s n="5">Si je ne t'estimais pas, je pourrais te faire de bien, mais je ne vivrais pas avec toi. </s>
+	<s n="6">Revenons à notre affaire, et parle sincèrement.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="28">
+	<s n="1">Vous le voulez, Monsieur : hé bien, je comptais assez sur vos bontés pour me flatter de devenir votre gendre.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="29">
+	<s n="1">Tu aimes Cénie ? </s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="30">
+	<s n="1">Oui, Monsieur, mon goût pour elle, le désir de vous être plus étroitement attaché , tout se rassemblait pour faire de cette union l'objet de tous mes voeux.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="31">
+	<s n="1">Je t'en sais gré. </s>
+	<s n="2">Quoique Cénie soit biEn jeune pour toi, je serais ravi... </s>
+	<s n="3">T'aime-t-elle ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="32">
+	<s n="1">Je l'ignore, Monsieur ; il ne me convenait pas de faire aucune démarche là-dessus sans votre aveu.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="33">
+	<s n="1">On ne peut se conduire avec plus de sagesse et de décence. </s>
+	<s n="2">Tu ne sais pas la satisfaction que tu me donnes, mon cher neveu. </s>
+	<s n="3">Il y a longtemps que je t'aurais proposé ma fille, si je n'ai crains de gêner ton goût pour Clarice.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="34">
+	<s n="1">Pouviez-vous douter de mes sentiments ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="35">
+	<s n="1">Allons, je vais de ce pas te proposer à Cénie.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="36">
+	<s n="1">Je crois, Monsieur, qu'il n'est pas à propos de lui parler devant sa gouvernante.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="37">
+	<s n="1">Pourquoi ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="38">
+	<s n="1">Il est toujours prudent de ne point confier ses desseins à un domestique.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="39">
+	<s n="1">Tu ne connais pas Orphise. </s>
+	<s n="2">C'est une femme d'un mérite supérieur, et qui n'a rien de la bassesse de son état.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="40">
+	<s n="1">Il est vrai ; mais comme cette confiance n'est pas nécessaire, on peut s'en dispenser comme d'une chose inutile.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="41">
+	<s n="1">Soit. </s>
+	<s n="2">Je vais savoir si ma fille est éveillée, et lui communiquer notre projet.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE IV. </head>
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT, seul.</speaker>
+                        <p n="1">
+	<s n="1">Voilà, Dieu merci, mes affaires vont bon train. </s>
+	<s n="2">Mais Dorimont est si facile...</s>
+	<s n="3">Les refus de sa filles peuvent en un moment le faire changer de résolution... </s>
+	<s n="4">Ah Cénie ! </s>
+	<s n="5">Tremblez pour votre sort, si vous aimez assez Clerval pour braver mon ambition. </s>
+	<s n="6">Je ne perdrai pas impunément quinze ans de contrainte. </s>
+	<s n="7">J'ai de quoi me venger de vos mépris.</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="MÉRICOURT"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Méricourt, Lisette.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien, Monsieur, j'ai vu sortir Dorimond : comment vont vos affaires ?</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="2">
+	<s n="1">Fort bien. </s>
+	<s n="2">Mon oncle va me proposer à Cénie.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="3">
+	<s n="1">Cela est bon : mais si elle refuse ?</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="4">
+	<s n="1">Elle n'oserait. </s>
+	<s n="2">À son âge on ne sait qu'obéir.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="5">
+	<s n="1">Elle est jeune, Monsieur ; mais son esprit....</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="6">
+	<s n="1">Je ne suis pas un sort, Lisette.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="7">
+	<s n="1">D'accord, mais elle aime Clerval.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="8">
+	<s n="1">Et Dorimond m'aime.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="9">
+	<s n="1">Ne nous flattons pas, nous n'avez du bonhomme qu'une amitié acquise à force d'art. </s>
+	<s n="2">Il aime Clerval tout naturellement, la différence est grande.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="10">
+	<s n="1">Je m'attends à tout je saurai tout parer.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="11">
+	<s n="1">En ce cas mes petits avis vous sont inutiles, prenez que je n'ai rien dit.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="12">
+	<s n="1">Tu te fâches Lisette.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="13">
+	<s n="1">Oui, je me fâche. </s>
+	<s n="2">C'est d'avoir une grande habitude d'être faux que de l'être avec moi.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="14">
+	<s n="1">Moi faux ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="15">
+	<s n="1">Oui, quelque mine que vous fassiez, vous n'êtes pas à votre aise. </s>
+	<s n="2">J'avais un secours à vous donner, mais...</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="16">
+	<s n="1">Dites toujours.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="17">
+	<s n="1">Je m'intéresse à vous, je ne saurais m'en défendre ; et hais complètement Madame_Orphise. </s>
+	<s n="2">Si l'on pouvait faire connaître à Dorimond certaines intrigues de votre frère, il en rabattrait sur son compte. </s>
+	<s n="3">Je m'imagine qu'elle s'intéresse pour Clerval ; quel plaisir de la contrarier ! </s>
+	<s n="4">Ce serait un grand point.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="18">
+	<s n="1">Quoi, Lisette, il y aurait du dérangement dans le conduite de Clerval ?</s>
+	<s n="2">Ah parlez vite.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="19">
+	<s n="1">Je ne sais pas bien de quoi il est question. </s>
+	<s n="2">Je vois seulement rôder ici une espèce de soldat, avec lequel votre frère a des conférences très mystérieuses.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="20">
+	<s n="1">Eh bien, ce soldat ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="21">
+	<s n="1">Patience, c'est un homme qu'il a ramené des Indes.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="22">
+	<s n="1">Après ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="23">
+	<s n="1">Je n'en sais guère plus. </s>
+	<s n="2">Jusqu'ici ils ont pris tant de précautions pour se parler, que je n'ai pu attraper que quelques mots, de grâce... de Ministre...</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="24">
+	<s n="1">Il faut approfondir ce mystère. Clerval est un jeune homme imprudent, il pourrait s'être embarqué dans une affaire fâcheuse...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="25">
+	<s n="1">Dont vous voudriez le tirer sans doute ? </s>
+	<s n="2">La belle âme ?</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="26">
+	<s n="1">Lisette !</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="27">
+	<s n="1">Que diantre aussi, pourquoi voulez-vous m'en imposer ? </s>
+	<s n="2">Tenez voici notre homme qui se fâche. </s>
+	<s n="3">Retirez-vous, je veux le questionner.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="28">
+	<s n="1">Emploie toute ton adresse à démêler cette intrigue, ma chère Lisette, je t'en conjure.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="29">
+	<s n="1">Vous êtes vrai dans certains moments. </s>
+	<s n="2">Allez.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Lisette, Dorsainville.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="1">
+	<s n="1">Avancez, je suis seule à présent.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Savez-vous, Mademoiselle, si Clerval est ici ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="3">
+	<s n="1">Clerval ! </s>
+	<s n="2">Vous êtes donc bien familiers ensemble ?</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="4">
+	<s n="1">J'ai tort. </s>
+	<s n="2">Mais est-il seul ? </s>
+	<s n="3">Puis-je monter chez lui ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="5">
+	<s n="1">Vous êtes bien pressé,. </s>
+	<s n="2">Causons un moment. </s>
+	<s n="3">Qu'est-ce ? </s>
+	<s n="4">Je vous trouve l'air triste.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="6">
+	<s n="1">Rarement je suis gai.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="7">
+	<s n="1">Vous êtes donc bien malheureux ? </s>
+	<s n="2">Écoutez ; j'ai le coeur bon, et je m'intéresse à vous. </s>
+	<s n="3">Vous vous mêlez d'intrigue, je m'en même aussi : confiez-vous à moi, je pourrai vous rendre service.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="8">
+	<s n="1">Je reviendrai dans un autre moment.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="9">
+	<s n="1">Je ne tirerai rien de ce diable d'homme. </s>
+	<s n="2">Attendez ? </s>
+	<s n="3">Clerval est en compagnie, je vais l'avertir, vous pouvez l'attendre ici.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII.</head>
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE, seul.</speaker>
+                        <p n="1">
+	<s n="1">Que l'infortune a de détails, qui ne sont connus que des malheureux : </s>
+	<s n="2">On soutient avec fermeté un revers éclatant : le courage s'affaisse sous le mépris de ceux même que l'on méprise. </s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="DORSAINVILLE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Dorsainville, Clerval.</head>
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="1">
+	<s n="1">Je vous ai fait chercher avec le plus grand empressement ; je vis hier au soir le Ministre, votre grâce est assurée.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Digne ami des malheureux !</s>
+	<s n="2">Je vous dois trop.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="3">
+	<s n="1">Vous ne me devez rien. </s>
+	<s n="2">La Cour a senti, comme moi, que quand une affaire d'honneur a réduit un homme de votre naissance au métier de simple soldat, et qu'il a signalé sa valeur, le rendre à sa patrie ; c'est une justice, et non une grâce qu'on lui accorde.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="4">
+	<s n="1">Hélas ! </s>
+	<s n="2">Que me servira ce retour de fortune, si je ne puis la partager avec une épouse si digne d'être aimée ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="5">
+	<s n="1">Quelle nouvelle en avez-vous apprises ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="6">
+	<s n="1">Toujours les mêmes. </s>
+	<s n="2">Elle a disparu puisqu'en_même_temps que moi, après avoir donné le jour à une malheureuse qui le perdit en naissant. </s>
+	<s n="3">Et depuis quinze ans aucune de nos connaissances ne sait ce qu'elle est devenue.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="7">
+	<s n="1">Vous ne devez pas encore désespérer. </s>
+	<s n="2">Quand vous aurez repris votre nom que vous pourrez agir ouvertement, vous trouverez plus de facilité dans vos recherches.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="8">
+	<s n="1">Il y a longtemps que j'en fais d'inutiles, je ne les verrai plus.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="9">
+	<s n="1">Eh quoi ! </s>
+	<s n="2">Le courage vous abandonne, quand vous touchez à la fin de vos peines ? </s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="10">
+	<s n="1">Pardon, cher ami, si je ne sens point assez le prix de vos bontés. </s>
+	<s n="2">Ma femme me tenait lieu de toit. </s>
+	<s n="3">Sans elle il n'est point de bonheur pour moi.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="11">
+	<s n="1">Vous la retrouverez.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="12">
+	<s n="1">Eh comment n'aurait-elle pas succombé à l'horrible état où je l'ai laissée ? </s>
+	<s n="2">Prête à donner le jour au premier fruit de notre tendresse, je m'arrache de ses bras, je la laisse sans bien, sans secours : dans cette extrémité que pouvait-elle devenir ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="13">
+	<s n="1">Il y a des asiles pour les femmes de son rang que le malheur poursuit.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="14">
+	<s n="1">Les couvents sont plus l'asile de la décence, que celui du malheur : l'extrême indigence n'y est point accueillie ; et c'est l'état d'où j'ai laissé ma femme. </s>
+	<s n="3">Cependant je n'ai rien négligé ; je les ai parcourus inutilement.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="15">
+	<s n="1">Peut-être, ainsi que vous, a-t-elle changé de nom ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="16">
+	<s n="1">Mais quand cela serait, pourquoi ne m'avoir pas écrit ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="17">
+	<s n="1">La guerre, vous le savez, avait interrompu le commerce. </s>
+	<s n="2">Vos lettres et les siennes peuvent avoir été perdues. </s>
+	<s n="3">Moi-même je n'ai reçu aucune nouvelle de ma famille pendant tout le temps de mon séjour aux Indes.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="18">
+	<s n="1">Que les soins d'un ami ont de pouvoir sur une âme désespérée ? </s>
+	<s n="2">Vos raisons me flattent, vous ranimez mon espérance.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="19">
+	<s n="1">Je la seconderai. </s>
+	<s n="2">Laissez moi terminer votre affaire, ensuite nous agirons de concert pour l'intérêt de votre coeur. </s>
+	<s n="3">Vos lettres de grâce seront expédiées ce soir ; il reste quelques formalités à remplir, le Ministre exige encore de vous de ne point paraître aujourd'hui. </s>
+	<s n="4">Pour plus de sûreté, passez ce jour dans mon appartement ; ne nous quittons plus, je jouirai du plaisir de vous y voir ; souffrez cette contrainte pour ma propre tranquillité.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="20">
+	<s n="1">Qu'il est doux de vous devoir ! </s>
+	<s n="2">Ah cher ami ! </s>
+	<s n="3">La reconnaissance que vous inspirez n'est point à charge : elle m'accable point un coeur délicat sous le poids de bienfaits : elle écarte ce que la crainte d'être importun a de rebutant. </s>
+	<s n="4">Vous ne serez jamais d'ingrat.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="21">
+	<s n="1">Ami, je n'ai point vu Cénie aujourd'hui, il ne nous reste rien à dire, souffrez que je vous quitte.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="22">
+	<s n="1">Allez, si votre aimable maîtresse connait comme moi le prix de votre coeur, vous êtes aussi heureux que vous mérités de l'être.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="23">
+	<s n="1">Ne montez-vous pas chez moi ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="24">
+	<s n="1">Trouvez bon qu'auparavant j'aille encore parler à une personne qui pourrait savoir des nouvelles plus positives de ma femme : après cette démarche je viens vous rejoindre.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+</div>
+</div>
+<div type="acte" n="2">
+                <head>ACTE II</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Cénie, Orphise.</head>
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="1">
+	<s n="1">Qu'avez-vous, Cénie ? </s>
+	<s n="2">Vous quittez votre père les yeux remplis de larmes. </s>
+	<s n="3">Auriez-vous eu le malheur de lui déplaire.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="2">
+	<s n="1">Non, ma bonne, jamais il ne m'a témoigné tant de bontés. </s>
+	<s n="3">C'est sa tendresse qui m'afflige.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="3">
+	<s n="1">Comment ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="4">
+	<s n="1">Il vient de me déclarer qu'il veut m'unir à Méricourt, il croit me rendre heureuse.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="5">
+	<s n="1">Pourquoi ne la feriez vous pas ? </s>
+	<s n="2">Méricourt a de l'esprit de la politesse ; c'est autant qu'il en faut pour le rendre aimable.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="6">
+	<s n="1">Je suis cependant bien sûre de ne l'aimer jamais.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="7">
+	<s n="1">Il y a peut-être un peu de prévention dans votre dégoût. </s>
+	<s n="2">C'est un défaut de l'esprit, que la raison corrigera.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="8">
+	<s n="1">Non, Madame ; au contraire, il me semble que la raison a beaucoup de part à ma répugnance. </s>
+	<s n="2">Je suis sûre qu'à ma place vous penseriez comme moi.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="9">
+	<s n="1">Il n'est pas question de mes sentiments.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="10">
+	<s n="1">Pardonnez moi, ma bonne, je me plais à faire cas des personnes que vous estimez. </s>
+	<s n="2">Et sûrement mon cousin n'est pas du nombre.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="11">
+	<s n="1">Pourquoi ? </s>
+	<s n="2">Si vous en jugiez sur ses manières dédaigneuses avec moi, vous pourriez vous tromper : c'est un désagrément attaché à mon état, et non pas à son caractère.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="12">
+	<s n="1">Mais, Madame, s'il est vrai que la fausseté est un vice méprisable, comment estimez-vous Méricourt ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="13">
+	<s n="1">Je le connais peu. </s>
+	<s n="2">Renfermée dans les bornes de mon devoir, je ne me suis point mise à portée de la connaître. </s>
+	<s n="3">Mais quand il aurait la fausseté dont vous l'accusez, elle est souvent le vice du monde, plus que celui du coeur. </s>
+	<s n="4">Votre franchise lui donnera du goût pour le vérité, vous le corrigerez.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="14">
+	<s n="1">Si le malheur que je crains arrivait, je me garderais bien de la corriger. </s>
+	<s n="2">En lui ôtant la fausseté, il ne lui resterait pas même l'apparence de vertus.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="15">
+	<s n="1">On ne fait pas à votre âge de si profondes réflexions.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="16">
+	<s n="1">Pardonnez-moi, Madame, lorsqu'un vif intérêt nous y porte. </s>
+	<s n="2">Depuis longtemps je prévois les intentions de mon père. </s>
+	<s n="3">J'ai cru ne pouvoir trop pénétrer la caractère de Méricourt ; hélas ! </s>
+	<s n="4">je n'y ai rien trouvé qui ne s'oppose à mon bonheur.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="17">
+	<s n="1">Le bonheur n'est pas toujours où l'on croit le voir : et la vertu a son point de vue assuré. </s>
+	<s n="2">Suivez-la, obéissez à votre père, vous trouverez en vous-même la récompense du sacrifice. </s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="18">
+	<s n="1">Quelle récompense ! Madame, en me donnant ce conseil, pensez-vous à l'horreur de s'unir à un mari que l'on ne peut aimer ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="19">
+	<s n="1">Hélas ! </s>
+	<s n="2">C'est quelquefois un bonheur de n'avoir pour son époux qu'une tendresse mesurée.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="20">
+	<s n="1">Je me suis fait une idée différente du mariage. </s>
+	<s n="2">Un mari qui n'est point aimé ne  me paraît qu'un maître redoutable. </s>
+	<s n="3">Les vertus, les devoirs, la complaisance, rien n'est de notre choix ; tout devient tyrannique, on fléchit sous le joug, on n'a que le mérite d'une esclave obéissant. </s>
+	<s n="4">Mais si l'on trouve dans un époux l'objet de tous ses voeux je crois que le désir de lui plaire rend les vertu facile, on les pratique par sentiment, l'estime générale en est le fruit, on acquiert sans violence la seule gloire qu'il nous soit permis d'ambitionner.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="21">
+	<s n="1">Hélas ! </s>
+	<s n="2">Votre erreur est bien naturelle. </s>
+	<s n="3">L'expérience peut seule nous découvrir les peines inséparables d'un attachement trop tendre. </s>
+	<s n="4">Mais cette félicité, dont l'image vous séduit, dépend trop de la vie, des sentiments, du bonheur même de l'objet aimé, pour qu'elle soit durable. </s>
+	<s n="5">La tendresse double notre sensibilité naturelle, elle multiplie des peines de détail, dont la répétition nous accable. </s>
+	<s n="6">Les véritables malheurs sont ceux du coeur.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="22">
+	<s n="1">Vous vous attendrissez: ha, ma bonne ! </s>
+	<s n="2">Auriez-vous éprouvé des maux, dont vous semblez si pénétrée ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="23">
+	<s n="1">Pardon, ma chère Cénie, s'il m'échappe des sentiments que l'état où vous allez entrer me rappelle. </s>
+	<s n="2">Je les crains pour vous.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="24">
+	<s n="1">Vous croyez que je ne mérite pas encore votre confiance ? </s>
+	<s n="2">Cependant mon coeur en serait digne.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="25">
+	<s n="1">Aimable enfant,partagez plutôt la douceur que vous me faites souvent, éprouver. </s>
+	<s n="2">Il est des moments... changeons de discours, votre âge n'est point celui de la tristesse.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="26">
+	<s n="1">Je suis si malheureuse, que je trouve de la douceur à plaindre les infortunés.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="27">
+	<s n="1">Vous m'affligez. </s>
+	<s n="2">Je voudrais que la raison vous fit envisager d'une autre oeil le sort qui vous attend.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="28">
+	<s n="1">Je ne le puis.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="29">
+	<s n="1">Avec la fortune brillante dans laquelle vous êtes née, avez-vous pu penser que vous seriez maîtresse de votre choix ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="30">
+	<s n="1">Je m'en était flattée.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="31">
+	<s n="1">En auriez-vous fait un ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="32">
+	<s n="1">Oui, ma bonne.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="33">
+	<s n="1">Quoi Cénie ? </s>
+	<s n="2">Vous avez disposé de votre coeur ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="34">
+	<s n="1">Épargnez-moi les reproches, je n'ai besoin que de conseils.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="35">
+	<s n="1">Mes conseils vous déplairont. </s>
+	<s n="2">Je vous plains.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="36">
+	<s n="1">Quoi, Madame, vous refuseriez de ma conduite dans un temps...</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="37">
+	<s n="1">Je n'ai garde de vous abandonner. </s>
+	<s n="2">Votre heureux naturel a prévenu jusqu'ici ce que mes avis auraient pu vous inspirer : c'est de ce moment que vous avez besoin de moi, pour vous aider à soutenir avec courage le sacrifice que vous allez faire de votre goût à la vertu.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="38">
+	<s n="1">N'est-il donc qu'une façon d'en avoir ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="39">
+	<s n="1">Il est des occasions malheureuses, où le choix ne nous est pas permis. </s>
+	<s n="2">Dans la situation où vous êtes, il ne vous reste que l'obéissance.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="40">
+	<s n="1">Eh bien, Madame, mon père est bon ; peut-être s'il était instruit de mes sentiments, il lui serait égal de ma donner pour époux l'un ou l'autre de ses neveux.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="41">
+	<s n="1">C'est Clerval que vous aimez ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="42">
+	<s n="1">Oui, Madame ; condamnez-vous mon choix ? </s>
+	<s n="2">Vous estimez Clerval, vous savez s'il mérite d'être aimé. </s>
+	<s n="3">Quelle comparaison !</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="43">
+	<s n="1">Est-il instruit de vos sentiments ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="44">
+	<s n="1">Non, Madame, au moins je ne lui en ai pas fait l'aveu.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="45">
+	<s n="1">Et qu'avez-vous répondu à votre père ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="46">
+	<s n="1">Hélas ! </s>
+	<s n="2">Rien du tout. </s>
+	<s n="3">La surprise et la douleur m'ont fermé la bouche. </s>
+	<s n="4">On est entré, je me suis retirée pour cacher mes larmes ; je crois cependant que mon père s'en est aperçu.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="47">
+	<s n="1">Je n'en suis pas fâchée.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="48">
+	<s n="1">Vous ne condamnez donc pas le dessin que j'ai de lui déclarer mes sentiments ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="49">
+	<s n="1">Je le condamne très fort. </s>
+	<s n="2">Il est permis tout au plus à une fille bien née d'avouer sa répugnance,et jamais son penchant.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="50">
+	<s n="1">Ah, Clerval ! </s>
+	<s n="2">Qu'allez-vous devenir ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="51">
+	<s n="1">C'est lui que vous plaignez ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="52">
+	<s n="1">Oui, Madame: je puis avec courage envisager mon malheur, et je ne puis soutenir l'idée de celui où je vais le plonger.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="53">
+	<s n="1">Voilà bien la confiance de votre âge. </s>
+	<s n="2">L'expérience vous apprendra que dans le coeur d'un homme l'amour même console des malheurs qu'il cause.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="54">
+	<s n="1">Eh bien, Madame ! </s>
+	<s n="2">Parlez-lui vous-même. </s>
+	<s n="3">Si vous lui trouvez la légèreté dont vous le croyez capable, quelqu'aversion que je sente pour le parti qu'on me propose, j'obéirai aveuglément. </s>
+	<s n="4">La voici,je vous laisse avec lui.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Orphise, Clerval.</head>
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="1">
+	<s n="1">Demeurez un moment, Monsieur, j'ai à vous parler de la part de Cénie.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="2">
+	<s n="1">Elle me fuit,la douleur est peinte sur son visage, la vôtre semble m'annoncer un malheur ; parlez, Madame, ô ciel : </s>
+	<s n="2">Qu'allez-vous m'apprendre ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="3">
+	<s n="1">Que Cénie m'a confié vos sentiments pour elle ; qu'il faut les étouffer.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="4">
+	<s n="1">Et c'est elle qui vous a chargé de me le dire ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="5">
+	<s n="1">Oui, Monsieur.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="6">
+	<s n="1">Cénie me méprise assez, pour ne pas daigner me parler elle même ! Madame,pardonnez ma défiance : Je ne puis me croire aussi malheureux que vous le dites.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="7">
+	<s n="1">Cénie épouse votre frère : voilà la vérité.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="8">
+	<s n="1">Mon frère ! </s>
+	<s n="2">Ah Madame ! </s>
+	<s n="3">Plus vous ajoutez à mon malheur, moins je le trouve vraisemblable.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="9">
+	<s n="1">Vous vous flattiez d'être aimé apparemment.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="10">
+	<s n="1">Non Madame ; mais je ne me croyait point de rival.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="11">
+	<s n="1">Si vous en avez un, il peut n'être pas aimé. </s>
+	<s n="2">Il me paraît que Cénie à son père, qu'elle fuit son devoir.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="12">
+	<s n="1">Ah ! </s>
+	<s n="2">Je respire. </s>
+	<s n="3">Mon oncle ne sera pas inflexible.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="13">
+	<s n="1">Quoi, Monsieur ! </s>
+	<s n="3">Vous prétendez faire des démarches ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="14">
+	<s n="1">Qui m'en empêcherait ? </s>
+	<s n="2">Je ne dois rien à mon frère.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="15">
+	<s n="1">Non ; mais vous vous devez à vous même de ne pas porter le désordre dans votre famille, pour satisfaire un goût que la première occasion fera changer d'objet.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="16">
+	<s n="1">Je me mépriserais moi-même ; si j'avais les sentiments dont vous m'accusez. </s>
+	<s n="2">Non,Madame, j'eus toujours en horreur la lâcheté qui nous autorise à manquer de bonne foi avec les femmes. </s>
+	<s n="3">Si l'on ne croit pas aux amours éternels, on doit sentir ce que peut une tendre estime sur un coeur vertueux. </s>
+	<s n="">Les charmes naissants de Cénie me firent connaître l'amour ; le développement de son caractère ma fixa pour jamais : c'est son coeur, c'est son âme que j'adore ; ce n'est qu'à la beauté que l'on devient infidèle.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="17">
+	<s n="1">Il faut cependant renoncer à Cénie. </s>
+	<s n="2">Plus vous l'aimez, plus vous devez ménager sa gloire. </s>
+	<s n="3">Qui nous détourne de nos devoirs, nous manque plus plus essentiellement que qui nous est infidèle.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="18">
+	<s n="1">Manquerais-je à Cénie en me jetant au pieds de Dorimond en lui déclarant mon amour pour sa fille, en implorant sa bonté ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="19">
+	<s n="1">Ce serait du moins affliger le meilleur des hommes, et le plus tendre bienfaiteur. </s>
+	<s n="2">Prenez-y garde, Monsieur ; la reconnaissance et l'ingratitude ne sont point incompatibles ! </s>
+	<s n="3">On n'a que trop souvent les procédés de l'une avec les sentiments de l'autre. </s>
+	<s n="4">Qu'importe à Dorimond que vous sentiez au font de votre coeur la prix de ses bontés, si vous paraissez ingrat en traversant ses desseins, en affligeant son âme, en le privant de la seule satisfaction qui reste à la vieillesse, celle de disposer à son gré de son bien et de ses volontés ? </s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="20">
+	<s n="1">Ah Madame ! </s>
+	<s n="2">De quelles armes vous servez-vous pour combattre mon amour ? </s>
+	<s n="3">Ce sont là les seules qui pouvaient m'imposer une silence, dont ma mort sera la fruit.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="21">
+	<s n="1">L'honnêteté de vos sentiments me touche, Monsieur ; j'ai quelque crédit sur l'esprit de votre oncle, je n'abuserai point de sa confiance, j'emploierai seulement....</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="22">
+	<s n="1">Vous me rendez la vie. </s>
+	<s n="2">Oui, Madame, parlez à Dorimond, ménagez son coeur et ses bontés, je compte sur les vôtres ; ne m'abandonnez pas. </s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="23">
+	<s n="1">Je ne m'engage à rien du côté de vote amour. Je vous promets seulement de fonder les véritables sentiments de votre oncle, de pénétrer s'il est bien affermi dans sa résolution : alors vous verrez comment vous devez vous conduire.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Dorimond, Orphise, Lisette Clerval.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE, à Dorimond.</speaker>
+                        <p n="1">
+	<s n="1">Le voilà, Monsieur; je savais bien qu'il devait être ici</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LISETTE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="2">
+	<s n="1">Je vous cherche, Clerval, pour vous dire que je suis très mécontent de vous.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="3">
+	<s n="1">En quoi, Monsieur, aurais-je eu le malheur de vous mécontenter.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="4">
+	<s n="1">En ce que ma maison n'est point faite pour y retirer des intrigants, dont je ne t'aurais jamais soupçonné d'être la protecteur.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="5">
+	<s n="1">J'entends, Monsieur, de qui vous voulez parler; une telle calomnie me fait frémir.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="6">
+	<s n="1">Diras-tu qu'il ne vient point chez moi un inconnu, avec qui tu as encore eu ce matin une conversation mystérieuse.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="7">
+	<s n="1">Non, Monsieur ; mais dans peu je vous ferai connaître le plus honnête homme, et le plus infortuné des amis.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, à part.</speaker>
+                        <p n="8">
+	<s n="1">Tout est perdu ; des amis, des malheurs : nous ne tenons pas contre tout cela.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="LISETTE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND, à Clerval.</speaker>
+                        <p n="9">
+	<s n="1">Un ami que l'on ose avouer est toujours fort suspect. </s>
+	<s n="2">Je sais des choses là-dessus...</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="10">
+	<s n="1">On vous abuse, Monsieur ; s'il m'était permis de parler, je détruirais facilement ces odieux soupçons.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="11">
+	<s n="1">Je ne saurais croire ; on n'emploie pas tant de mystère pour des choses honnêtes.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="12">
+	<s n="1">Eh bien, mon oncle, le secret de cet infortuné doit éclater demain ; en attendant, si vous voulez m'accorder un moment d'entretien, je vous ferai connaître l'erreur où l'on vous a jeté, en vous rappelant le nom et la funeste aventure d'un homme, dont plus d'une fois vous avez plaint le malheur.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="13">
+	<s n="1">Je t'en serai obligé.</s>
+	<s n="2">C'est gagner beaucoup que de détruire un soupçon. </s>
+	<s n="3">Dans un moment nous passerons dans mon cabinet. </s>
+	<s n="4">J'ai aussi à te parler d'un mariage très convenable pour toi.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="14">
+	<s n="1">Pour moi, Monsieur ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="15">
+	<s n="1">Oui, pour toi. </s>
+	<s n="2">C'est Clarice que je te destine ; elle a du mérite, tu la connais ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="16">
+	<s n="1">Je vous supplie, Monsieur...</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="17">
+	<s n="1">De quoi ? </s>
+	<s n="2">Est-ce encore un refus ? </s>
+	<s n="3">Je commence à être las d'en essuyer. </s>
+	<s n="4">Je ne m'étonne pas que le monde soit rempli de méchants : le penchant au mal est toujours sûr de réussir ; on peut faire des malheureux même sans les connaître, mais quelqu'envie qu'on en ait, il n'est pas si aisé qu'on le pense de faire des heureux. </s>
+	<s n="5">Cela rebute, et l'on devient dur, faute de succès.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="18">
+	<s n="1">Eh Monsieur, ne vous mettez point en colère ;  Monsieur votre neveu n'est pas capable de vous désobéir ; et pour peu que vous lui fassiez connaître que vous avez pris votre résolutions, il prendra la sienne.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="19">
+	<s n="1">Il n'est pas jusqu'à ma file...</s>
+</p>
+                        <stage type="toward">À Orphise.</stage>
+                        <p n="20">
+	<s n="1">Madame, je suis fâché de m'en prendre à vous. </s>
+	<s n="2">Je vous estime, et je vous croyais fort au-dessus de ces petites intrigues de femmes qui troublent sans cesse le repos des familles.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="21">
+	<s n="1">Est-ce bien à moi, Monsieur, que ce discours s'adresse ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="22">
+	<s n="1">À vous-même, je vous le répète. </s>
+	<s n="2">Je suis fâché de perdre la haute opinion que j'avais de vous ; mais je n'ignore pas que les conseils que vous donnez à Cénie.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="23">
+	<s n="1">Si vous les savez, Monsieur, ils font ma justification ; je n'ai rien à répondre.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="24">
+	<s n="1">Ne le prenez point sur ce ton-là ; j'ai vu moi-même sur son visage l'impression du dégoût que vous lui inspirez pour les gens que j'aime. </s>
+	<s n="2">Je n'ai pas eu le temps de m'expliquer avec elle, mais... </s>
+	<s n="3">Enfin, Madame, pour le peu de temps qu'elle aura besoin de vous, je vous prie de ne plus vous mêler de nos affaires.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="25">
+	<s n="1">Quel contre-temps ! </s>
+	<s n="2">Ô ciel !</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="26">
+	<s n="1">Je dois vous obéir, Monsieur, vos serez satisfait.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="27">
+	<s n="1">Allons, Clerval, je suis prêt à t'entendre, viens me donner le plaisir de te justifier.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Orphise, Lisette.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="1">
+	<s n="1">Je ne reviens point de la la surprise que me cause la mauvaise humeur de Dorimond ! </s>
+	<s n="2">Au moins, Madame, je n'y ai point part. </s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="2">
+	<s n="1">Vous êtes entrée avec lui, vous pourriez en savoir la cause.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="3">
+	<s n="1">Moi ! </s>
+	<s n="2">Point du tout. </s>
+	<s n="3">Monsieur cherchait Clerval ; je le savais ici, je l'y au conduit sans dire mot. </s>
+	<s n="4">Vous me soupçonnez, je le vois : cela est pardonnable après la petite mortification qu'on vient de vous donner.</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="4">
+	<s n="1">Si j'aimais moins Cénie, je serais peu touchée...</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="5">
+	<s n="1">Oui, Madame, vous l'aimez, et beaucoup, on le sait. </s>
+	<s n="2">Mais permettez-moi de vous dire que vous l'aimez mal. </s>
+	<s n="3">Pourquoi l'empêcher d'obéir à son père ?</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="6">
+	<s n="1">Si je l'empêchais, c'est que j'aurais des raisons pour cela, et je ne les cacherais pas. </s>
+	<s n="2">Je l'exhorte à l'obéissance, mais ce n'est pas sans désapprouver au fond de mon coeur le choix de Dorimond.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="7">
+	<s n="1">Peut-on savoir ce qui vous déplaît en Méricourt ?</s>
+</p>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="8">
+	<s n="1">Son âge : quoiqu'il soit peu avancé, il est si disproportionné à celui de Cénie, qu'il devrait être un obstacle invincible.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <p n="9">
+	<s n="1">Si vous entendiez les intérêts de votre pupille, c'est justement ce qui vous le ferait désirer, et Méricourt vous paraîtrait encore trop jeune. </s>
+	<s n="2">Je connais un peu le monde. </s>
+	<s n="3">Une jeune personne, en épousant un homme âgé, devient une femme intéressante. </s>
+	<s n="4">Pour peu que sa conduite soit régulière, on la plaint, en l'admire, elle acquiert du mérite, ses charmes s'embellissent de la décrépitude de son mari.; </s>
+	<s n="5">Il meurt : eût-elle quarante ans, c'est une jeune veuve. </s>
+	<s n="6 La caducité "/>
+</p>
+                    </sp><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp who="#orphise">
+                        <speaker>ORPHISE, seule.</speaker>
+                        <p n="1">
+	<s n="1">C'est donc, pour mettre le comble à mon abaissement, que Dorimond devient injuste ? </s>
+	<s n="2">Hélas ! </s>
+	<s n="3">J'étais réservée à des traitements injurieux !</s>
+	<s n="4">Digne fruit de l'état où le malheur m'a réduite... </s>
+	<s n="5">Pardonne, Dorsainville : pour conserver la vie d'une épouse qui t'es chère, il ne me restait que le choix des plus villes conditions. </s>
+	<s n="6">Tu n'en rougiras pas, j'ai sauvé de l'opprobre ton nom et le mien... </s>
+	<s n="7">Époux infortuné, devais-tu m'abandonner ?... </s>
+	<s n="8">Quel que soit le désert qui te sert d'asile, c'est celui de l'honneur. </s>
+	<s n="9">La honte, ce tyran des âmes nobles, n'habite qu'avec les hommes : fuyons-les...</s>
+	<s n="10">Mais plus on m'éloigne de Cénie, plus mes conseils lui sont nécessaires. </s>
+	<s n="11">Sans offenser Dorimond, rendons à sa fille ce qu'exigent de moi sa confiance et mon amitié. </s>
+	<s n="12">On n'est pas tout-à-fait malheureux, quand il reste du bien à faire.</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="ORPHISE"-->
+</div>
+</div>
+<div type="acte" n="3">
+                <head>ACTE III</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Dorimond, Méricourt.</head>
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="1">
+	<s n="1">J'en suis pour le moins aussi fâché que toi; mais il n'y faut plus penser.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="2">
+	<s n="1">Je me soumets sans murmurer, Monsieur. M'est-il seulement permis de vous demander sur quoi Cénie fonde ses refus ? </s>
+	<s n="2">Est-ce sa haine ? </s>
+	<s n="3">Est-ce mépris pour moi ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="3">
+	<s n="1">Ce n'est ni l'un ni l'autre ; elle ne m'a pas dit un mot à ton désavantage.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="4">
+	<s n="1">Vous voulez ménager ma disgrâce, Monsieur ; vos bontés se montrent partout.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="5">
+	<s n="1">Il n'y a point de bonté en cela, c'est la vérité pure. </s>
+	<s n="2">Cénie ne m'a pas témoigné qu'une répugnance générale pour une engagement qui l'effraye. </s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="6">
+	<s n="1">Et cette répugnance est sans doute bien naturelle ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="7">
+	<s n="1">Ah ! </s>
+	<s n="Z">N'en doutez pas.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="8">
+	<s n="1">Cénie ne peut avoir une inclinaison secrète ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="9">
+	<s n="1">Je voudrais qu'elle m'aimât ; elle n'aurait fait qu'un bon choix, et bientôt... </s>
+	<s n="2">Saurais-tu quelque chose là-dessus ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="10">
+	<s n="1">Gardez-vous bien de la penser, Monsieur. </s>
+	<s n="2">Cénie est trop sage pour avoir fait un choix sans votre aveu, et trop ingénue pour avoir eu l'adresse de cacher une passion ; vous vous en seriez aperçu. 3</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="11">
+	<s n="1">Moi !</s>
+	<s n="2">Point du tout : je suis aussi aisé à tromper sur cette matière, que sur bien d'autres. </s>
+	<s n="3">Je ne saurais me résoudre à être fin ; la finesse ne va guère sans la méchanceté. </s>
+	<s n="4">Quoi qu'il en soit, j'ai donné ma parole, et je la tiendrai. </s>
+	<s n="5">On ne saurait pousser l'indulgence trop loin, quand il s'agit d'un engagement éternel. </s>
+	<s n="6">Peut être dans quelque temps Cénie prendra d'autres idées ; alors je proposerai ton frère.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="12">
+	<s n="1">Mon frère !...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="13">
+	<s n="1">Il est jeune, il peut attendre.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="14">
+	<s n="1">Mon frère... </s>
+	<s n="2">Je n'en reviens point.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="15">
+	<s n="1">Tu m'étonnes. </s>
+	<s n="2">Ne pouvant être mon gendre, tu devrais être ravi de me voir jeter les yeux sur Clerval.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="16">
+	<s n="1">Je le ferais, si l'intérêt avait quelque pouvoir sur moi ; mais je ne connais que le vôtre, et assurément Clerval.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="17">
+	<s n="1">Écoutes : tu dois savoir qu'il me déplaît très fort d'entendre mal parler de lui. Tu m'avais déjà ce matin des avis, dont il s'est pleinement justifié.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="18">
+	<s n="1">J'ai pu me tromper, Monsieur : c'est l'effet d'un zèle ardent. </s>
+	<s n="2">J'apprends avec joie que Clerval n'a laissé aucune obscurité sur sa conduite.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="19">
+	<s n="1">Cela étant, tu dois voir du du même oeil la fortune que je lui prépare.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="20">
+	<s n="1">La rendre Mélisse l'a prévu ; les regrets qu'elle emporte au tombeau n'étaient que trop fondés.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="21">
+	<s n="1">Comment ! </s>
+	<s n="2">Si elle s'est expliquée  sur l'établissement de sa fille, pourquoi m'en faire un mystère ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="22">
+	<s n="1">Dois-je croire, Monsieur, que vous ignoriez ses intentions, et que si elle avait choisi un époux à la fille, ce n'eût pas été de concert avec vous ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="23">
+	<s n="1">Il est vrai que l'établissement de Cénie faisait souvent le sujet de nos entretiens. </s>
+	<s n="2">Cette vertueuse femme, par délicatesse de sentiment, avait résolu de ne la donner qu'à l'un de vous deux ; mais je l'ai toujours vue incertaine sur le choix de l'un ou de l'autre. </s>
+	<s n="3">Si tu en sais davantage, tu as tort de me le cacher.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="24">
+	<s n="1">Il est rare qu'un mourant ne s'explique pas sur les dispositions de sa famille.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="25">
+	<s n="1">Et bien ! </s>
+	<s n="2">Parles donc.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="26">
+	<s n="1">Non, Monsieur. </s>
+	<s n="2">Dans l'état où sont les choses vous pourriez soupçonner...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="27">
+	<s n="1">Je le vois : c'est en ta faveur qu'elle s'est déclarée ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="28">
+	<s n="1">Oui ; Monsieur. </s>
+	<s n="2">Mélisse touchant au terme de sa vie, me fit approcher de son lit, Méricourt, me dit-elle, d'une voix presqu'éteinte, dans un moment je ne serai plus, écoutez mes deniers sentiments. </s>
+	<s n="3">J'adorai mon époux, je luis dois mon bonheur ; vous l'aimez, héritez encore de ma tendresse pour lui ; devenez l'époux de ma fille, soyez le fils de Dorimond ; répondez moi du repos de ses jours, prolongez-en la durée, et je perds les miens sans regret.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="29">
+	<s n="1">Arrêtez, mon cher neveux, je ne puis soutenir.... </s>
+	<s n="2">Hélas ! </s>
+	<s n="3">Que ne donnerais-je pas pour que Cénie...</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="30">
+	<s n="1">Elle ignore les dernières volontés de sa mère. </s>
+	<s n="2">Si vous me permettiez, Monsieur, d'avoir un entretien particulier avec elle ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="31">
+	<s n="1">Volontiers : demeurez, je vais te l'envoyer. Songes que tu me rendras le plus grand service, si tu peux obtenir son aveu.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="32">
+	<s n="1">Je n'y épargnerai rien.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="33">
+	<s n="1">Je te défends cependant de l'intimider par la crainte de me déplaire. </s>
+	<s n="2">Obtenons tout par la tendres, et rien par autorité.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II.</head>
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT, seul.</speaker>
+                        <p n="1">
+	<s n="1">Voici donc le moment décisif. </s>
+	<s n="2">Je n'ai plus rien à ménager... </s>
+	<s n="3">Je le prévois : l'obstination de Cénie me forcera d'employer contre elle les armes que Mélisse m'a laissées ; elles peuvent devenir cruelles contre moi-même ; mais une fortune immense peut-elle s'acheter à trop haut prix.</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="MÉRICOURT"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Méricourt, Cénie.</head>
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="1">
+	<s n="1">On m'avait dit que mon père me demandait ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="2">
+	<s n="1">Arrêtez Cénie : c'est par son ordre que je vous attends ici. </s>
+	<s n="2">Dorimond sensible aux mépris dont vous m'accablez, me permet d'essayer encore une fois de les vaincre.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="3">
+	<s n="1">Est-ce vous mépriser, Monsieur, que d'épargner à votre délicatesse la douleur d'avoir rendu quelqu'un malheureux ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="4">
+	<s n="1">Vous me bravez, ignare, vous triomphez : vous croyez que l'excessive complaisance de Dorimond ne vous laisse plus rien à redouter. </s>
+	<s n="2">Si vous saviez à quel excès je pousse sa générosité à votre égard, cette orgueilleuse ironie changerait bientôt de ton.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="5">
+	<s n="1">J'ignore, Monsieur, les obligations que je vous ai : si vous vouliez m'en instruire...</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="6">
+	<s n="1">Vous ne le saurez que trop tôt. </s>
+	<s n="2">Vous vous repentirez peut-être dans un moment de m'avoir forcé à vous les apprendre.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="7">
+	<s n="1">Vous me feriez tremblez, si j'avais des reproches à me faire.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="8">
+	<s n="1">Cénie, écoutez mes conseils : consentez à me donner la main, votre propre intérêt ma porte à vous en conjurer à genoux, le temps presse, n'abusez pas de ma faiblesse ; parlez, il n'est plus temps de balancer. </s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="9">
+	<s n="1">Je ne balance point, Monsieur.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="10">
+	<s n="1">Quel parti prenez vous ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="11">
+	<s n="1">Celui de rompre une entretien aussi fâcheux pour l'un que pour l'autre.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT, la retenant par le bras.</speaker>
+                        <p n="12">
+	<s n="1">Non, non : il faut que ce moment décide de votre sort.</s>
+</p>
+                    </sp><!--@stage="pull"--><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="13">
+	<s n="1">Comment ! Vous êtes assez hardi... Méricourt, comptera moins sur les bontés de mon père ; il daignera m'entendre.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="16">
+	<s n="1">Non, vous ne sortirez point,il me faut un mot décisif.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="17">
+	<s n="1">Vous le voulez ? </s>
+	<s n="2">Le voici: mon père m'a donné sa parole de ne point me contraindre: rien ne peut me faire changé de résolution.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="18">
+	<s n="1">Ah ! </s>
+	<s n="2">C'est est trop ; il est temps de confondre tant de mépris. </s>
+	<s n="3">Connaissez-vous cette écriture ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="19">
+	<s n="1">Oui ; c'est celle de ma mère.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="20">
+	<s n="1">Elle est pour Dorimond : mais qu'importe : écoutez ; </s>
+</p>
+                        <stage type="read">Il lit.</stage>
+                        <p n="21">
+	<s n="1">Je vous ai trompé, Monsieur, et mes remords ne peuvent s'ensevelir avec moi. </s>
+	<s n="2">La disproportion de nos âges m'a fait craindre de tomber dans l'indigence,dont vous m'aviez tirée. </s>
+	<s n="3">Pour assurer ma fortune, j'ai supposé une enfant. </s>
+	<s n="4">Votre dernier voyage me facilitera les moyens de faire passer Cénie pour ma fille. </s>
+	<s n="5">La mort me force à révéler mon secret. </s>
+	<s n="6">Pardonnez...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE, tombe évanouie.</speaker>
+                        <p n="22">
+	<s n="1">Je meurs.</s>
+</p>
+                    </sp><!--@stage="faint"--><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="23">
+	<s n="1">Cénie, écoutez-moi, connaissez du moins en ce moment l'excès de mon amour ; il en est temps encore. </s>
+	<s n="2">Je vous offre ma main, je répare la honte de votre naissance, je renferme à jamais votre secret dans les noeuds de notre mariage. </s>
+	<s n="3">Est-ce là vous aimer ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="24">
+	<s n="1">Que gagnerais-je à tromper tout le monde ? </s>
+	<s n="2">Pourrais-je me tromper moi-même ? </s>
+	<s n="3">Montrez-moi cette lettre. </s>
+</p>
+                        <stage type="read">Après avoir lu.</stage>
+                        <p n="25">
+	<s n="1">Mon malheur n'est que trop certain.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT, reprend la lettre.</speaker>
+                        <p n="25">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Quels sont à présent vos sentiments !</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="26">
+	<s n="1">LEs mêmes.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="27">
+	<s n="1">Quel orgueil ! </s>
+	<s n="2">Est-ce à vous de résister, quand mon amour surmonte les obstacles, quand je devrais rougir ?...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="28">
+	<s n="1">Rougissez donc, mais de la fourberie dans laquelle vous n'auriez pas honte de m'associer. </s>
+	<s n="2">Moi, tromper le meilleur des humains ! </s>
+	<s n="3">Moi, usurper les biens d'une maison ! </s>
+	<s n="4">Vous me faites horreur.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="29">
+	<s n="1">C'est aimer Dorimond que de lui conserver son erreur. </s>
+	<s n="2">Mélisse en me confiant votre secret, voulez vous rendre heureuse, et remettre les biens de mon oncle à leur légitime possesseur.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="30">
+	<s n="1">Répare-t-on un crime par une autre ? </s>
+	<s n="2">Chaque moment me rend complice de tant de forfaits. </s>
+	<s n="3">Je ne saurais trop tôt...</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="31">
+	<s n="1">Arrêtez : je pénètre vos desseins, vous voulez me perdre. </s>
+	<s n="2">Gardez-vous de suivre les mouvements de votre haine.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="32">
+	<s n="1">Je ne suivrai que mon devoir.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="33">
+	<s n="1">Non, non, je sais mieux que vous ne pensez la causes de vos dédains. </s>
+	<s n="2">C'est moins l'honneur que l'amour qui vous guide. </s>
+	<s n="3">Vous croyez que Clerval... </s>
+	<s n="4">Il faut y renoncer. </s>
+	<s n="5">Quand il serait assez lâche... </s>
+	<s n="6">Il me reste des armes... </s>
+	<s n="7">Gardez votre secret, c'est le dernier conseil que je vous donne : je vous laisse y rêver. </s>
+	<s n="8">Ne poussez pas plus loin ma vengeance ; ou tremblez d'en apprendre davantage.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="34">
+	<s n="1">Que peut-il m'arriver ?... </s>
+	<s n="2">Ô ciel ! </s>
+	<s n="3">Que vois-je ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Cénie, Clerval.</head>
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="1">
+	<s n="1">Cénie, vous pleurez ! </s>
+	<s n="2">Ma chère Cénie, qu'avez-vous ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="2">
+	<s n="1">Clerval, je suis perdue.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="3">
+	<s n="1">Mon frère vient de vous quitter, a-t-il obtenu de Dorimond...</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="4">
+	<s n="1">Oubliez-moi. </s>
+	<s n="2">Il n'est plus pour vous d'autre bonheur.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="5">
+	<s n="1">Quoi, mon frère ! </s>
+	<s n="2">Je cours me jeter aux pieds de Dorimond ; il verra mon désespoir, et il en sera touché.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="6">
+	<s n="1">Ah ! </s>
+	<s n="2">Gardez-vous de lui parlez.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="7">
+	<s n="1">C'est vous, Cénie, qui me retenez ! </s>
+	<s n="2">Je m'étais flatté au moins de n'être pas haï. </s>
+	<s n="3">Vous m'auriez vu sans répugnance devenir votre époux, vous me l'avez dit !</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="8">
+	<s n="1">J'en étais digne alors... </s>
+	<s n="2">Je ne le suis plus.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="9">
+	<s n="1">Vous ne l'êtes plus ! </s>
+	<s n="2">Vous aimez donc mon frère ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="10">
+	<s n="1">Moi, j'aimerais Méricourt ! </s>
+	<s n="2">Vous me faites frémir.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="11">
+	<s n="1">Eh bien ? </s>
+	<s n="2">Si vous ne l'aimez pas, dites-moi que vous m'aimez ; rassurez mon coeur éperdu, laissez moi disputer à Méricourt les bontés de mon oncle.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="12">
+	<s n="1">Mon sort ne dépend plus de Dorimond.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="13">
+	<s n="1">Vous me désespérez. </s>
+	<s n="2">Quel est ce langage obscur ? </s>
+	<s n="3">Que je sache du moins la cause de mon malheur ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="14">
+	<s n="1">Elle est en moi seule, elle est dans mon horrible destinée. </s>
+	<s n="2">Ne me forcez pas à rougir à vos yeux.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="15">
+	<s n="1">Vous craignez de rougir ? </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Vous me trahissez.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="16">
+	<s n="1">Si vous saviez... </s>
+	<s n="2">Clerval, croyez-moi, je ne suis point coupable... </s>
+	<s n="3">Adieu.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="17">
+	<s n="1">Cénie, qu'allez-vous faire ? </s>
+	<s n="2">Si la pitié encore quelque chose sur votre coeur, éclaircissez mon sort, que j'apprenne de votre bouche.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="18">
+	<s n="1">Vous-même, prenez pitié de moi ; voyez ma douleur, ma confusion. </s>
+	<s n="2">Hélas ! </s>
+	<s n="3">Je n'ose lever les yeux sur vous.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="19">
+	<s n="1">Au nom de l'amour le plus tendre, délivrez-moi du tourment que j'endure : parlez.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="20">
+	<s n="1">Non, je ne prononcerai pas l'arrêt cruel qui nous sépare.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="21">
+	<s n="1">Vous prononcez celui de ma mort. </s>
+	<s n="2">Craignez de m'abandonner à mon désespoir. </s>
+	<s n="3">Je ne vous réponds pas de ma vie.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="22">
+	<s n="1">Quelle horrible menace, pour un coeur qui ne voudrait vivre que pour vous !</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="23">
+	<s n="1">Vous m'aimez, Cénie ; je n'ai plus rien à craindre : cet aveu me suffit. </s>
+	<s n="2">Cruelle ! Pourquoi tant différer mon bonheur ? </s>
+	<s n="3">Doutiez vous de mon amour ? </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Jugez-en par l'excès de ma joie.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="24">
+	<s n="1">Voilà ce que je redoutais le plus. </s>
+	<s n="2">Ce funeste aveu met le comble à vos maux. </s>
+	<s n="3">Clerval souvenez-vous que vous me l'avez arraché.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Cénie, Dorsainville, Clerval.</head>
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Ami, partagez mon transport : ma femme n'est point morte, et je puis espérer... </s>
+	<s n="2">Que vois-je !... </s>
+	<s n="3">Je fais une imprudence.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE, à Dorsainville.</speaker>
+                        <p n="2">
+	<s n="1">Monsieur, vous ne pouviez venir plus à propos. </s>
+	<s n="2">Je crois reconnaître en vous cet ami de Clerval, dont il m'a conté les malheurs ; ils m'ont touchée, ils doivent vous rendre sensible à ceux des autres. </s>
+	<s n="3">Ne quittez point votre ami. </s>
+	<s n="4">Dans un moment... </s>
+	<s n="5">Je vous laisse. </s>
+	<s n="6">Adieu mon cher Clerval, ne me suivez pas.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="CÉNIE"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE VI. Dorsainville, Clerval.</head>
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Cher ami, pardonnez mon indiscrétion ; je ne sans plus que votre peine. </s>
+	<s n="2">Quel est le malheur dont Cénie vous menace ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="2">
+	<s n="1">Je l'ignore. </s>
+	<s n="2">Elle veut m'épargner la douleur de l'annoncer. </s>
+	<s n="3">Hélas ! </s>
+	<s n="4">Il me serait bien moins cruel de l'apprendre de sa bouche. </s>
+	<s n="5">S'il fallait la perdre !... </s>
+	<s n="6">Non, je ne puis rester dans la cruelle incertitude où je suis.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="3">
+	<s n="1">Je ne vous quitte pas.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="4">
+	<s n="1">Laissez-moi, cher ami ; il faut que j'éclaircisse cet horrible mystère. </s>
+	<s n="2">Cénie m'a défendu de la suivre, j'éviterai sa rencontre : mais quelqu'autre pourra m'instruire. </s>
+	<s n="3">Ami, ne me retenez plus ; allez m'attendre, je vous en conjure : peut-être aurais-je besoin de vous.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+</div>
+</div>
+<div type="acte" n="4">
+                <head>ACTE IV</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Cénie, Orphise.</head>
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="1">
+	<s n="1">Oui, je vous attendais. </s>
+	<s n="2">Venez courageuse Cénie, venez jouir dans mes bras de la victoire que vous remportez sur vous-même.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="2">
+	<s n="1">J'ai frappé Dorimond du coup de la mort. </s>
+	<s n="2">Ce vieillard généreux n'y survivrai pas.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="3">
+	<s n="1">En rendant témoignage à la vérité, vous illustrez à jamais votre innocence. </s>
+	<s n="2">La gloire est la récompense de la vertu.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="4">
+	<s n="1">Quelle gloire ! Quelle est humiliante, ah ! </s>
+	<s n="2">Madame, que je suis malheureuse !</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="5">
+	<s n="1">C'est l'excès de malheur qu'il faut ranimer son courage : souvent les plaintes l'amollissent.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="6">
+	<s n="1">Eh quoi ! Me seraient-elle interdites, quand le Ciel me ravit ce qu'il m'accorde aux plus vils mortels ? </s>
+	<s n="2">Je ne prononcerai plus les tendres mots de père et de mère. </s>
+	<s n="3">Je sens anéantir dans mon coeur la confiance qu'ils inspirent. </s>
+	<s n="4">Plus de soutien, plus de défenseur, plus de guide à mes volonté ! </s>
+	<s n="5">Mon indépendance m'épouvante ; je ne tiens plus à rien, et rien ne tient à moi. </s>
+	<s n="6">Madame, m'abandonnez-vous ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="7">
+	<s n="1">Non, ma chère Cénie ; vous perdez beaucoup, mais il vous reste un coeur. </s>
+	<s n="2">Si ma vie vous est nécessaire, elle deviendra intéressante.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="8">
+	<s n="1">Que ne vous dois-je pas ? </s>
+	<s n="2">Quelle générosité !</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="9">
+	<s n="1">Ah ! </s>
+	<s n="2">Dites plutôt, quel bonheur pour Orphise !</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="10">
+	<s n="1">Madame, vous aurez donc pitié de moi ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="11">
+	<s n="1">Ma chère Cénie, ma tendre compassion ne peut plus s'exprimer que par mes larmes.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="12">
+	<s n="1">Elles me sont bien chères, elles bannissent de mon coeur la crainte qui l'avait saisi. </s>
+	<s n="2">Daignez me protéger, me conduire, me tenir lieu de mère ; et que mes services effaces la honte de ceux que vous m'avez rendus. </s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="13">
+	<s n="1">Vous, me servir Cénie ! </s>
+	<s n="2">Gardez-vous bien de perdre l'estime de vous même ; le découragement est le poison de la vertu. </s>
+	<s n="3">Qui sait à qui vous devez la naissance ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="14">
+	<s n="1">Eh, Madame ! </s>
+	<s n="2">De quels parent peut être née une malheureuse que l'on n'a pas daigné avouer, à laquelle on a renoncé pour un vil intérêt ? </s>
+	<s n="3">Quelle preuve plus convaincante de mon néant ? </s>
+	<s n="4">Sur quel fondement pourrais-je me flatter ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="15">
+	<s n="1">Sur l'élévation de votre âme, sur la noblesse de votre coeurs, sur vos sentiments...</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="16">
+	<s n="1">Ils sont tels que vous les avez fait naître : je ne suis que votre ouvrage. </s>
+	<s n="2">Quelle âme, que coeur vos soins et vos conseils n'auraient-ils pas élevés ? </s>
+	<s n="3">Je vous dois tout, et je ne suis plus rien.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="17">
+	<s n="1">J'ai tout perdu, ma chère Cénie, vous serez tout pour moi. </s>
+	<s n="2">Mais Dorimond pourra-t-il se résoudre à vous abandonner ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="18">
+	<s n="1">Quoi, Madame ! </s>
+	<s n="2">Si ses bontés s'étendaient jusqu'à vouloir me garder chez lui, pensez-vous que j'y restasse ? </s>
+	<s n="3">Pourrais-je envisager Méricourt sans horreur ? </s>
+	<s n="4">Est-il un courage à l'épreuve des regards humiliants des domestiques, de la pitié insultante des gens du monde ? </s>
+	<s n="5">Ma funeste aventure deviendrait la Nouvelle du Jour, et je serais l'objet de la curiosité du public. </s>
+	<s n="6">J'ose à peine lever les yeux sur moi. </s>
+	<s n="7">Ce faste qui ne me convient plus ma fait horreur. </s>
+	<s n="8">Fuyons, Madame : que la plus obscure retraite ensevelisse à jamais le souvenir de ce que je crus être.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Cénie, Orphise, Dorimond.</head>
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="1">
+	<s n="1">Tu m'abandonnes à ma douleur, ma chère Cénie ; viens donc ma rassurer contre l'imposture. </s>
+	<s n="2">Tu es ma fille, je le sens à ma tendresse pour toi.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="2">
+	<s n="1">Hélas, Monsieur ! </s>
+	<s n="2">Il n'est que trop vrai que j'ai perdu la meilleur des pères !</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="3">
+	<s n="1">Tes pleurs m'ont saisi, ta douleur a troublé mon jugement : la réflexion m'éclaire ; un tel crime n'est pas seulement vraisemblable. </s>
+	<s n="2">On te trompe, ma chère enfant, ou toi-même abusée...</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="4">
+	<s n="1">J'ai vu, Monsieur, j'ai lu la fatale vérité écrite de la main de Mélisse.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="5">
+	<s n="1">La perfide ! </s>
+	<s n="2">Me trahir aussi cruellement, moi qui l'adorais ! </s>
+	<s n="3">Non, je ne puis le croire. </s>
+	<s n="4">Qui seraient les complice de cette horrible fourberie ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="6">
+	<s n="1">Méricourt pourra vous en instruire ; je vous ai déjà dit qu'il en était le dépositaire.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="7">
+	<s n="1">Méricourt ! </s>
+	<s n="2">De peut-il... </s>
+	<s n="3">Je le fais chercher ; il ne paraît point ! </s>
+	<s n="4">Il craint sans doute ma présence. </s>
+	<s n="5">Ah, Cénie ! </s>
+	<s n="6">Devais-tu me révéler ce funeste secret ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="8">
+	<s n="1">Pouvais-je le garder ? </s>
+	<s n="2">Pouvais-je vous tromper ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="9">
+	<s n="1">Mais tu m'ôtes la vie : si je te perds, tout est perdu pour moi.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="10">
+	<s n="1">Ah, Monsieur ! </s>
+	<s n="2">Vos bontés mettent le comble à mes maux. </s>
+	<s n="3">Ne voyez plus en moi qu'une malheureuse victime de l'ambition. </s>
+	<s n="4">Je ne suis plus digne de votre tendresse ; ne m'accordez que de la pitié ; ne me rendez point odieuse à moi-même, en me chargeant du malheur affreux de votre perte.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="11">
+	<s n="1">Est-ce donc de toi que je me plains, ma chère enfant ? Sois toujours ma fille, et mes jours sont en sûreté. </s>
+	<s n="2">Méricourt ne viens point ! </s>
+	<s n="3">Qu'il tarde à mon impatience ! </s>
+	<s n="4">Ô Ciel ! </s>
+	<s n="5">Le voici ; mes sens se troublent à sa vue. </s>
+</p>
+                        <stage type="toward">À Cénie.</stage>
+                        <p n="12">
+	<s n="1">Ne sortez point.</s>
+</p>
+                        <stage type="toxard">À Orphise.</stage>
+                        <p n="13">
+	<s n="1">Madame, demeurez. </s>
+	<s n="2">Ciel ! </s>
+	<s n="3">Que va-t-il dire ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Cénie, Orphise, Dorimond, M2ricourt.</head>
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="1">
+	<s n="1">Approchez : venez, s'il se peut, détruire le soupçon d'en forfait dont je ne saurais vous croire le complice.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="2">
+	<s n="1">Moi, Monsieur !</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="3">
+	<s n="1">Qu'est ce qu'une prétendue lettre de Mélisse qui vous rendrait aussi coupable qu'elle ? </s>
+	<s n="2">Si vous pouvez vous justifier, ne tardez pas.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="4">
+	<s n="1">Pour me justifier, il faudrait savoir de quoi l'on m'accuse.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="5">
+	<s n="1">Je vous l'ai dit : on parle d'une lettre d'une Mélisse, qui renferme un mystère odieux. </s>
+	<s n="2">Si vous avez des preuves du contraire, ne balancez pas à les mettre au jour.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="6">
+	<s n="1">Qui peut être assez hardi, pour porter jusqu'à vous ?...</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="7">
+	<s n="1">Moi, Monsieur : la vérité fera toujours ma loi.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="8">
+	<s n="1">Voyez donc ce que vous pouvez opposer à cette accusation : parlez.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="9">
+	<s n="1">Oui, je parlerai : je ne saurais trop tôt punir l'ingrate qui veut vous donner la mort. </s>
+	<s n="2">Apprenez donc qu'elle n'est point votre fille ; Mélisse pressée de ses remords, rend dans cette lettre un témoignage authentique à la vérité. </s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND, après avoir lu bas.</speaker>
+                        <p n="10">
+	<s n="1">Qu'ai-je lu ? </s>
+	<s n="2">Se peut-il que tant d'horreurs ? </s>
+	<s n="3">Cruelle Mélisse ! </s>
+	<s n="4">Que vous avais-je fait pour me jeter dans l'erreur, ou pour m'en tirer ? </s>
+	<s n="5">Ma mort sera le prix de vos forfaits !</s>
+</p>
+                    </sp><!--@stage="read"--><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="11">
+	<s n="1">Elle a craint de perdre votre tendresse.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="12">
+	<s n="1">Avec quelle perfidie, en m'accablant de caresses, elle excitait en moi un amour paternel, hélas ! </s>
+	<s n="2">Trop bien fondé !... </s>
+	<s n="3">Mon coeur se déchire à ce cruel souvenir.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="13">
+	<s n="1">Monsieur, calmez votre douleur.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="14">
+	<s n="1">Et vous, malheureux, qui me gardiez depuis six mois ce funeste dépôt, quelles raisons vous y engageaient.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="15">
+	<s n="1">En vous découvrant cette triste vérité, c'était, je l'ai prévu, vous porter la coup mortel. </s>
+	<s n="2">Plutôt que de m'y résoudre, vous savez à quoi je m'étais réduit. </s>
+	<s n="3">J'épousais une inconnue sans aveu, sans parents. </s>
+	<s n="4">Que n'aurais-je pas sacrifié, pour vous conserver une erreur qui vous était chère ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="16">
+	<s n="1">Eh ! </s>
+	<s n="2">Pourquoi donc m'en tirer ? </s>
+	<s n="3">Pourquoi se servir de ces cruelles armes pour perdre Cénie, ou pour l'engager dans un hymen qu'elle abhorre ? </s>
+	<s n="4">Méricourt : ton coeur se dévoile... </s>
+	<s n="5">Brisons là-dessus. </s>
+	<s n="6">Tu ne goûteras pas le fruit de ta trahison. </s>
+	<s n="7">Cénie : je vous adopte.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="17">
+	<s n="1">Qu'entends-je ?</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="18">
+	<s n="1">Moi ! </s>
+	<s n="2">Je serais toujours votre fille ! ... </s>
+	<s n="3">Monsieur... </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Modérez vos bontés ; je ne suis pas digne de cet honneur.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="19">
+	<s n="1">Tu es digne de mon coeur, tu es digne de ma tendresse ! </s>
+	<s n="2">Ma chère enfant, rentres dans tous tes droits.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="20">
+	<s n="1">Non, Monsieur : votre gloire m'est plus chère que mon bonheur. </s>
+	<s n="2">Souffrez qu'une retraite ensevelie avec moi l'ignorance où je suis malheureux à qui je dois le vie.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="21">
+	<s n="1">Tes parents sont des infortunés; Eh bien ! </s>
+	<s n="2">Ils m'en sont que plus respectables. </s>
+	<s n="3">Que nos chagrins disparaissent. </s>
+	<s n="4">Madame, tout ceci m'ouvre les yeux sur les mauvais procédés dont on vous accusait : demeurez avec nous, reprenez vos fonctions auprès de ma fille.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="22">
+	<s n="1">Monsieur...</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="23">
+	<s n="1">Je ne t'écoutes plus ; je te donne mon nom, mon bien ; et plus que tout cela, l'amour d'un père tendre.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="24">
+	<s n="1">Je me jette à vos pieds.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="25">
+	<s n="1">Attendez un moment pour exprimer votre reconnaissance. </s>
+	<s n="2">Vous auriez, Monsieur, de justes reproches à me faire, si je tardais plus longtemps à vous faire connaître, si je tardais plus longtemps à vous faire connaître le digne objet de votre adoption. </s>
+	<s n="3">Cette lettre est pour Mademoiselle ; mais vous pouvez la lire.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND, lit.</speaker>
+                        <p n="26">
+	<s n="1">« Ce n'est pas sans pitié que je vous révèle votre naissance : mais je touche au moment de la vérité. Vote mère vous croit morte, et son erreur assurait encore mon secret ; vous pouvez l'en instruire. </s>
+	<s n="2">Informée de l'extrême misère où elle était réduit, je l'en tirai pour vous servir de Gouvernante. </s>
+	<s n="3">C'est dans ses mains que je vous remets. »</s>
+</p>
+                    </sp><!--@stage="read"--><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE,dans les bras de sa mère.</speaker>
+                        <p n="27">
+	<s n="1">Vous êtes ma mère ! </s>
+	<s n="2">Mes malheurs sont finis.</s>
+</p>
+                    </sp><!--@stage="hugh"--><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="28">
+	<s n="1">Ma chère fille ! </s>
+	<s n="2">Quoi, c'est vous que j'embrasse !</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="29">
+	<s n="1">Ma mère ! </s>
+	<s n="2">Que ce nom m'est doux !</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="30">
+	<s n="1">Trop malheureux enfant ! </s>
+	<s n="2">Hélas, que vous êtes à plaindre !</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="31">
+	<s n="1">Je dois le jour à la vertu même :mon sort est assez beau.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="32">
+	<s n="1">Voilà le dernier coup que la perfidie me réservait. </s>
+	<s n="2">Un mortel saisissement... </s>
+</p>
+                        <stage type="toward">À Cénie.</stage>
+                        <p n="33">
+	<s n="1">Trop aimable enfant... </s>
+	<s n="2">Je ne saurais parler... </s>
+	<s n="3">Je me meurs.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE, courant à Dorimond.</speaker>
+                        <p n="34">
+	<s n="1">Ah ! </s>
+	<s n="2">Monsieur...</s>
+</p>
+                    </sp><!--@stage="run/closer"--><!--@who="CÉNIE"-->
+<sp who="#mericourt">
+                        <speaker>MÉRICOURT.</speaker>
+                        <p n="35">
+	<s n="1">L[a]issez : on se passera de vos soins ; vous n'êtes plus rien ici.</s>
+</p>
+                    </sp><!--@who="MÉRICOURT"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Cénie, Orphise.</head>
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="1">
+	<s n="1">Ma mère, ayez pitié de moi, le courage m'abandonne, je ne saurais supporter le mépris.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="2">
+	<s n="1">Rappelez votre courage, ma chère fille.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="3">
+	<s n="1">Que je vous aime ! </s>
+	<s n="2">Je ne devrais sentir que ma tendresse. </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Ne jugez pas de mon coeur de cet affreux moment : la joie, la douleur, l'indignation avec tant de violence...</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="4">
+	<s n="1">Ces mouvement sont naturels, ma chère enfant. </s>
+	<s n="2">Vous avez vu le bonheur, il a disparu. </s>
+	<s n="3">Cependant ne désespérez pas ; peut-être un jour le Ciel moins rigoureux...</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="5">
+	<s n="1">Ah ! </s>
+	<s n="2">Je ne regrette rien ; vos bontés me tiendront lieu de tout. </s>
+	<s n="3">Mais sortons de cette maison, où je ne respire plus que le bonne et le mépris. </s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="6">
+	<s n="1">Allons, allons chercher un asile où nous puissions être malheureuses sans rougie.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="7">
+	<s n="1">Ma mère, puissent mes respects, ma tendresse, ma soumission, vous tenir lieu de ce que vous avez perdu ! </s>
+	<s n="2">Je n'ose vous rappeler le souvenir de mon père.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="8">
+	<s n="1">Il n'est pas temps d'en parler, ma chère Cénie ; l'âme la plus ferme n'est quelquefois pas assez forte pour soutenir tant de disgrâce à la fois. </s>
+	<s n="2">Vous apprendrez un jour avec quel courage votre père sacrifié la fortune à l'honneur. </s>
+	<s n="3">Quel père ! </s>
+	<s n="4">Quel époux !</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="9">
+	<s n="1">Que vois-je ? </s>
+	<s n="2">C'est Clerval ! </s>
+	<s n="3">Ah souffrez que je fuie.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Orphise, Clerval. </head>
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="1">
+	<s n="1">Ah, Madame ! </s>
+	<s n="2">Que je vous rencontre à propos ! </s>
+	<s n="3">Mon oncle m'a ordonné de chercher Méricourt : en vain j'ai parcouru toutes les maisons où il a coutume d'aller : je ne l'ai point trouvé. </s>
+	<s n="4">J'ignore ce qui s'est passé. </s>
+	<s n="5">A-t-il éclairci la sort de Cénie ? </s>
+	<s n="6">Parler.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="2">
+	<s n="1">Oui, Monsieur : son malheur est confirmé.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="3">
+	<s n="1">Ah Dieux ! </s>
+	<s n="2">Madame, ne  me cachez rien : quel parti va-t-elle prendre ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="3">
+	<s n="1">Celui de la retraite : il n'en est point d'autre pour elle.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="4">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Oui, Madame, un couvent est un asile respectable pour elle. </s>
+	<s n="3">Mais n'aurez-vous pas le bonté de l'y accompagner ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="5">
+	<s n="1">En pouvez vous douter ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="6">
+	<s n="1">Je connais le bonté de votre coeur. </s>
+	<s n="2">Eh bien, vous la suivrez donc. </s>
+	<s n="3">Mais dans ce moment de trouble, vous ne pouvez prendre les soins nécessaires à ce nouvel établissement : souffrez, que me services... </s>
+	<s n="4">Je me charge de tout, je vais tout préparer.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="7">
+	<s n="1">Arrêtez, Monsieur : tant d'empressement à servir les malheureux honorerait l'humanité, s'il était dépouillé de tout intérêt. </s>
+	<s n="2">Mais vous aimez Cénie. </s>
+	<s n="3">Dans la situation où elle se trouve ; vos soins ne peuvent plus être qu'injurieux pour elle.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="8">
+	<s n="1">Ah, Madame ! </s>
+	<s n="2">Qu'osez vous dire ? </s>
+	<s n="3">Oui, je l'adore : et le couvent où je vous conjure de l'accompagner, vous doit être un si garant de mes intentions. </s>
+	<s n="4">Vous lui tiendrez lieu de mère. </s>
+	<s n="5">Soumis l'un à l'autre à vos volontés, je ne le verrai qu'autant que vous l'approuverez. </s>
+	<s n="6">Et si ce n'est pas assez, je m'engage à ne la voir, qu'en lui offrant une main. </s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="9">
+	<s n="1">Vous ! </s>
+	<s n="2">Épousez Cénie ! </s>
+	<s n="3">Y pensez-vous, Monsieur ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="10">
+	<s n="1">Oui, Madame. Je sais ce que vous pouvez m'opposer ; mais toutes les chimères adoptées par les hommes disparaissent à mes yeux, dès qu'ils entrent en comparaison avec la vertu.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="11">
+	<s n="1">Cette générosité ne suffit pas à une homme comme vous : il doit se respecter dans le choix de son coeur. </s>
+	<s n="2">Si la naissance de Cénie se trouvait d'une telle obscurité, qu'elle vous fit rougir ?... </s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="12">
+	<s n="1">Non, Madame : les hommes s'avilissent que par leur propre bassesse. </s>
+	<s n="2">Le temps vous apprendre...</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="13">
+	<s n="1">J'admire avec quelle adresse les passions transforment leurs désirs en vertus. </s>
+	<s n="2">Un zèle trop ardent est comme le plus prompt à se démentir ; un malheur récent échauffe l'imagination : l'héroïsme s'empare de l'esprit ; on veut tout entreprendre pour les malheureux : insensiblement on s'accoutume à les voir ; on se refroidit, et l'on devient comme les autres hommes.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="14">
+	<s n="1">Ah, Madame ! </s>
+	<s n="2">En m'accablant de douleur, ne m'accablez pas de mépris. </s>
+	<s n="3">Je n'aurais par d'autre épouse que Cénie, recevez en ma parole d'honneur.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="15">
+	<s n="1">Je l'accepte, Monsieur... </s>
+	<s n="2">Cénie est ma fille.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="16">
+	<s n="1">Vous êtes sa mère ? </s>
+	<s n="2">Tous mes yeux sont remplis.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="17">
+	<s n="1">Non, Monsieur. </s>
+	<s n="2">Reconnaissez l'effet de votre aveugle transport : que ceci vous serve de leçon. </s>
+	<s n="3">Je vous rends votre parole.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="18">
+	<s n="1">Et moi, je la confirme par tout ce que l'honneur a de plus sacré. </s>
+	<s n="2">Madame, accorder-moi votre confiance sur les faibles services que je puis vous rendre, et donnez moi le temps de mériter votre estime.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="19">
+	<s n="1">Je vous honore, Monsieur ; et je vais vous en donner une preuve. </s>
+	<s n="2">L'affreuse circonstance où je me trouve, m'engage à ma confier à vos soins ; j'accepte pour ces premiers moments les services que vous m'offrez. </s>
+	<s n="3">Cherchez nous une retraite ; donnez moi un guide pour nous y conduire ; la décence ne vous permet pas de nous y accompagner. </s>
+	<s n="4">Allez. </s>
+	<s n="5">Je vais tout préparer pour mon départ, et prendre congés de Dorimond.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="20">
+	<s n="1">Et moi, je cours exécuter vos ordres, et je reviens vous avertir.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+</div>
+</div>
+<div type="acte" n="5">
+                <head>ACTE V</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Clerval, Dorsainville.</head>
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="1">
+	<s n="1">Reposez vous sur moi : j'aurai soin de tout.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="2">
+	<s n="1">Ne les présentez point comme des infortunées. </s>
+	<s n="2">Les malheurs ne sont pas toujours une bonne recommandation.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="3">
+	<s n="1">Je sais ce qu'il faut dire.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="4">
+	<s n="1">Qu'elles soient bien traitées ; si la pension ne suffit pas, on le doublera.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="5">
+	<s n="1">Vous m'avez dit tout cela.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="6">
+	<s n="1">Recommandez que l'on vous avertisse, s'il arrivait la moindre incommodité à Cénie.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="7">
+	<s n="1">Je n'y manquerai pas.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="9">
+	<s n="1">Faites bien sentir que ce sont des femmes de mérite. </s>
+	<s n="2">Ce n'est qu'en montrant pour elle une grande considération, que vous pourrez leur en attirer.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="10">
+	<s n="1">Je n'oublierai rien.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="11">
+	<s n="1">Qu'il est fâcheux dans certaines circonstances de ne pouvoir agir soi-même !</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="12">
+	<s n="1">Quoi ! </s>
+	<s n="2">Vous doutez de mon zèle ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="13">
+	<s n="1">Non cher ami. </s>
+	<s n="2">Mais vous ne connaissez point les deux personnes qui méritent le plus qu'on s'intéresse vivement à elles. </s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="14">
+	<s n="1">Vous les aimez, cela ma suffit.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="15">
+	<s n="1">Il faut servir les malheureux avec tant de circonspection, d'égards et de respect !</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="16">
+	<s n="1">Qui doit mieux que moi savoir les ménager ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="17">
+	<s n="1">Il est vrai : mais un homme de courage contracte une certaine dureté pour lui-même, qu'il peut étendre aux autres, sans même qu'il s'en aperçoive. </s>
+	<s n="2"> Il est mille petites attentions qu'on ne peut négliger, sans blesser ceux qui ont droit de les attendre.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="18">
+	<s n="1">Je ne manquerai à rien ; je vous en donne ma parole.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="19">
+	<s n="1">Quel inconvénient y aurait-il que je vous accompagnasse à cette première entrevue ? </s>
+	<s n="2">Je parlerais vivement ; c'est le premier moment qui décide ; il est important...</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="20">
+	<s n="1">De n'en point trop dire. </s>
+	<s n="2">Loin de les servir, votre âge, votre ton pourraient faire un mauvais effet. </s>
+	<s n="3">Je crains déjà que vos arrangements ne nuisent à votre réputation.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="21">
+	<s n="1">Comment ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="22">
+	<s n="1">Par un faste qui me paraît déplacé.</s>
+	<s n="2">Il est bien difficile que leur aventure ne transpire pas : que voulez-vous que l'on pense de ce que vous faites pour elles ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="23">
+	<s n="1">Cela ne me regarde plus, je ne fais à présent qu'exécuter les ordres de mon oncle.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="24">
+	<s n="1">Qu'importe ? </s>
+	<s n="2">Il eut été prudent de les mettre d'abord sur un ton approchant de leur état.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="25">
+	<s n="1">De leur état ! </s>
+	<s n="2">Ah! </s>
+	<s n="3">Gardez-vous de croire qu'il soit tel qu'il paraît.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="26">
+	<s n="1">Avez-vous des éclaircissements là-dessus ?</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="27">
+	<s n="1">Il n'en est pas besoin : tout parle pour elles, tout annonce ce qu'elle font. </s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="28">
+	<s n="1">Je crois que la mère et la fille ont mille qualités ; mais enfin ce ne sont pas des preuves. </s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="29">
+	<s n="1">Depuis longtemps je soupçonne Orphise de cacher sa naissance. </s>
+	<s n="2">Tout ce que je vois me le confirme ; mon respect ne l'étonne point ; il lui est naturel d'entendre le ton dont je lui parle ; elle devine sans doute ce que je pense d'elle, et cependant elle ne me dépend point.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="30">
+	<s n="1">Elle vous a fait grâce de l'affirmative. </s>
+	<s n="2">Il est peu de gens de cette espèce, qui n'aient une histoire toute étrangère u malheur qui les a réduits à servir.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="31">
+	<s n="1">Ami, en cherchant à avilir ce que j'aime, pensez-vous ?...</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="32">
+	<s n="1">J'ai tort. </s>
+	<s n="2">Pardonnez à un zèle peut-être trop prévoyant. </s>
+	<s n="3">Je crains qu'entraîné par votre passion...</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="33">
+	<s n="1">Je vous entends : vous craignez je n'épouse Cénie ? </s>
+	<s n="2">Eh, bien ! </s>
+	<s n="3">Apprenez que mon parti est pris, que rien ne pourra m'y faire renoncer, qu'elle sera ma femme dès que sa mère y consentira.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="34">
+	<s n="1">Quoique mes discours vous offensent, me taire serait vous trahir.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="35">
+	<s n="1">Voilà, voilà ce que je prévoyais ! </s>
+	<s n="2">N'ayant pas de la mère et de la fille les mêmes idées que moi ; vos soins manqueront d'égard, votre politesse sera humiliante. </s>
+	<s n="3">Ô Ciel ! </s>
+	<s n="4">S'il vous échappait...</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="36">
+	<s n="1">Ah cessez de ma faire injure ! </s>
+	<s n="2">Je ne suis point assez barbare pour humilier les malheureux. </s>
+	<s n="3">Je respecte ce que vous aimez : mais je ne suis point assez lâche pour n'oser combattre un penchant qui vous égare.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="37">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Vous le combattrez. </s>
+	<s n="3">Mais pour ce moment n'abusez pas du besoin que j'ai de votre amitié ; et surtout que Cénie ne s'aperçoive pas de vois sentiments : renfermez votre zèle. </s>
+	<s n="4">Dorimond vient ici : votre présence lui serait opportune ; ne vous écartez pas, je vous en conjure.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Dorimond, Clerval.</head>
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="1">
+	<s n="1">Clerval ; elle se prépare à partir ! </s>
+	<s n="2">Sauves-moi par pitié des adieux que je ne soutiendrais pas. </s>
+	<s n="3">Tu vois un vieillard malheureux réduit au désespoir !</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="2">
+	<s n="1">Pourquoi vous abandonner à la douleur, Monsieur ?</s>
+	<s n="2">N'êtes vous pas le maître de garder Cénie ? </s>
+	<s n="3">Qui vous en empêche ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="3">
+	<s n="1">Ses refus, que je n'ai pu vaincre, la bienséance, la compassion pour elle et pour moi-même.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="4">
+	<s n="1">Si vous vouliez, Monsieur...</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="5">
+	<s n="1">Non : il y aurait de la barbarie à la retenir malgré elle, dans une maison où tout lui rappellerait son infortune.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="6">
+	<s n="1">Eh, Monsieur ! N'est-il pas un moyen de vous l'attacher par des noeuds si sacrés, que jamais ?....</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="7">
+	<s n="1">Je l'avais imaginé d'abord : mais l'adoption de Cénie te priverait de mon bien : ce serait une injustice dont jamais je ne ma rendrai coupable.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="8">
+	<s n="1">Eh, Monsieur ! </s>
+	<s n="2">Que m'importe votre bien ? </s>
+	<s n="3">Disposez-en à votre gré ; j'y renonce ; je le signerai de mon sang.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="9">
+	<s n="1">Ton désintéressement ne peut être une excuse pour moi. </s>
+	<s n="2">Si je cédais à tes désirs, ta générosité dégénérerait en extravagance, et ma complaisance en faiblesse... </s>
+	<s n="3">Je mettrai Cénie et sa mère à l'abri des coups de la fortune. </s>
+	<s n="4">Tu donneras ce porte-feuille à Orphise ; ce n'est qu'en attendant que je m'arrange pour le reste. </s>
+	<s n="5">Je prétends aussi que Cénie trouve dans sa retraite, non seulement le nécessaire en abondance, mais les choses de pus agrément : il faut de toute manière tâcher d'adoucir son infortune.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="10">
+	<s n="1">Mon oncle, achevez votre ouvrage ; ne mettez point de bornes à vos bontés. </s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="11">
+	<s n="1">C'est sur moi, mon cher neveu, que je dois à présent les répandre. </s>
+	<s n="2">Je veux réparer mes torts, et te faire un bonheur durable.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="12">
+	<s n="1">Oui Monsieur : il dépend de vous. </s>
+	<s n="2">D'un seul mot vous pouvez combler tous les voeux de mon coeur.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="13">
+	<s n="1">Si tu aimes, que ne parles-tu ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="14">
+	<s n="1">Monsieur...</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="15">
+	<s n="1">Que je suis interdit !...</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="16">
+	<s n="1">Je n'ose prononcer...</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="17">
+	<s n="1">Ton embarras fait le moitié de la confidence: achevez, nommes-moi ma nièce.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="18">
+	<s n="1">Cénie.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="19">
+	<s n="1">Cénie !</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="20">
+	<s n="1">Oui, je ne puis vivre sans l'adorer. </s>
+	<s n="2">Vous l'aimez ; vous craignez de la perdre ; rendez-lui son état, illustrez sa vertu, et que notre félicité prolonge la durée de nos jours.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="21">
+	<s n="1">J'apprends ta passion avec douleur, sans pouvoir la condamner. Cénie n'est que trop digne d'être aimée, mais elle ne peut être ta femme.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="22">
+	<s n="1">Quel obstacle invincible ?...</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="23">
+	<s n="1">Sa naissance.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="24">
+	<s n="1">Vous vouliez l'adopter ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="25">
+	<s n="1">Je crois te l'avoir dit. </s>
+	<s n="2">Quand j'eus cette pensée, le funeste succès n'était découvert qu'à demi. </s>
+	<s n="3">Ses parents inconnus pouvaient ne pas porter la honte dans ma famille. </s>
+	<s n="4">Mais sa mère...</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="26">
+	<s n="1">Orphise n'est point née pour l'état où elle est, Monsieur. </s>
+	<s n="2">Des disgrâces l'ont sûrement réduite à l'abaissement que vous lui reprochez.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="27">
+	<s n="1">Vas ! </s>
+	<s n="2">Mon cher neveu, tu t'abuses ; si elle avait quelque naissance, elle n'en ferait plus mystère. </s>
+	<s n="3">L'humiliation est la peine la plus sensible ; on ne la souffre pas, quand on peut s'en garantir.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="28">
+	<s n="1">Elle est peut-être d'un rang si élevé, que même la modestie l'oblige à la cacher.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="29">
+	<s n="1">Eh, bien ! </s>
+	<s n="2">Pour te prouver combien je désire ton bonheur ; vois, cherches à donner quelque certitude à tes soupçons. </s>
+	<s n="3">Hélas ! </s>
+	<s n="4">Je désire plus que toi ce que je ne puis espérer.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="30">
+	<s n="1">J'y cours : mais la voici.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Dorimond, Clerval, Cénie, Orphise.</head>
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="1">
+	<s n="1">C'est à vos genoux, Monsieur, que je viens vous rendre grâces à tant de bienfaits. </s>
+	<s n="2">Je n'oublierai jamais que j'eus l'honneur d'être votre fille ; vous ne rougirez pas d'avoir été mon père.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="2">
+	<s n="1">Je m'arrache à moi-même en me séparant de toi, et je suis pas moins à plaindre.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL, qui a parlé bas à Orphise.</speaker>
+                        <p n="3">
+	<s n="1">Non, Madame : vous n'êtes point ce que vous voulez paraître ; dites un mot, vous assurez mon bonheur.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="4">
+	<s n="1">S'il dépendait de moi, Monsieur... </s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="5">
+	<s n="1">Il en dépend, confiez à mon oncle le secret de votre naissance. </s>
+	<s n="2">Doutez-vous de la discrétion ? </s>
+	<s n="3">Doutez-vous de sa présence ? </s>
+	<s n="4">Ah Madame ! </s>
+	<s n="5">Parlez.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="6">
+	<s n="1">Le courage et le silence sont le noblesse des malheureux. </s>
+	<s n="2">Ne m'enviez pas la seule gloire qui me reste.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="7">
+	<s n="1">Monsieur ; est-ce ainsi que le vulgaire s'exprime ? </s>
+	<s n="2">Est-il des titres plus nobles que les sentiments.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="8">
+	<s n="1">Madame : puisque vous le voulez, je ne ferai aucun effort pour arracher votre secret. </s>
+	<s n="2">Mais comment se peut-il que votre fille vous ait été ravie, sans qu'aucun soupçon vous ait engagée à faire des recherches, qui  nous auraient à tous deux épargné bien des peines ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="9">
+	<s n="1">Les plus funestes circonstances présidèrent à la naissance de cette infortunée. </s>
+	<s n="2">Dans cet affreux moment on l'ôta de mes yeux. </s>
+	<s n="3">La mort n'avait qu'un pas à faire pour venir jusqu'à moi : le Ciel en courroux me rendis à la vie, mais ne me rendit point ma fille. </s>
+	<s n="4">On m'annonça sa mort. </s>
+	<s n="5">Quelles raisons m'auraient engagée à prendre des soupçons sur nu accident si commun. </s>
+	<s n="6">Vous savez le reste.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="10">
+	<s n="1">Oui, j'en sais assez pou me déterminer. </s>
+	<s n="2">Madame, rendez-moi ma fille, et que l'hymen de Clerval nous réunisse !</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="11">
+	<s n="1">Ah, mon oncle !</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="12">
+	<s n="1">Madame, vous ne répondez point ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="13">
+	<s n="1">J'ose à peine, Monsieur, prononcer une résolution que peut-être vous trouverez étrange. </s>
+	<s n="2">Dans toutes autres circonstance vos bontés honoreraient Cénie ; dans celles où nous sommes, la retraite est le seul parti qui nous reste.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="14">
+	<s n="1">Quoi ! </s>
+	<s n="2">Vous me refuser ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="15">
+	<s n="1">En admirant, en respectant vos vertus, en leur payant un tribut de larmes, je ne puis accepter des offres qui auraient fait l'objet de ma désirs dans un temps plus heureux. </s>
+</p>
+                        <stage type="toward">À Clerval.</stage>
+                        <p n="16">
+	<s n="1">Monsieur, vous m'avez promis une guide ; un plus long retardement ne servirait qu'à prolonger des regrets que nous devons épargnez à tous. </s>
+	<s n="2">Daignez les abréger.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL, avez dépit.</speaker>
+                        <p n="17">
+	<s n="1">Oui ; Madame, oui : vous serez obéie.</s>
+</p>
+                    </sp><!--@stage="despite"--><!--@who="CLERVAL"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Dorimond Orphise Cénie.</head>
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="1">
+	<s n="1">Je vois que mes refus vous offensent, Monsieur. </s>
+	<s n="2">En effet, que pouvez vous pensez du parti que je prends ; quand vous ne devez attendre que de la reconnaissance ? </s>
+	<s n="3">J'en suis pénétrée, et votre estime m'est trop chère pour ne pas l'acheter d'une partie de mon secret. </s>
+	<s n="4">Jugez-moi, Monsieur ; puis-je ravir au père de Cénie le droit de disposer de ma fille.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="2">
+	<s n="1">Quoi ! </s>
+	<s n="2">Mon père est vivant ? </s>
+	<s n="3">Pourquoi n'est-il pas ici ? </s>
+	<s n="4">Courons le chercher.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="3">
+	<s n="1">Malheureuse Cénie ! </s>
+	<s n="2">Vous apprendrez tous vos malheurs.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Orphine, Cénie, Dorimond, Clerval, Dorsainville.</head>
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="1">
+	<s n="1">Clerval : te voilà déjà ! </s>
+	<s n="2">Ma tendresse redouble dans cet affreux moment. </s>
+	<s n="3">Madame, ne l'emmenez pas encore, je sens le prix de chaque instant. </s>
+	<s n="4">Monsieur, vous êtes sans doute cet ami de Clerval, qui veut bien se prêter à la douloureuse circonstance où nous nous trouvons ? </s>
+	<s n="5">Que ne puis-je payer ce service ?... </s>
+	<s n="6">Si Clerval m'avait confié plutôt....</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="2">
+	<s n="1">Monsieur...</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="3">
+	<s n="1">Madame, avant de nous quitter expliquons nous, je vous en conjure, vous menacez Cénie de nouveaux malheurs ! </s>
+	<s n="2">Dois-je les ignorer ? </s>
+	<s n="3">Ne pourrais-je les prévenir ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="4">
+	<s n="1">non, Monsieur. </s>
+	<s n="2">Le sort qui les a rassemblés sur sa tête peut seul les faire cesser. </s>
+	<s n="3">Souffrez que je vous épargne des confidences qui ne doivent être faites qu'aux coeurs sensibles.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="5">
+	<s n="1">Quels son de voix !... </s>
+	<s n="2">Il porte dans mes sens une émotion !...</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="6">
+	<s n="1">Monsieur, je vous les recommande ; devenez leur ami et le mien.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="7">
+	<s n="1">Monsieur, le reconnaissance et l'amitié m'attachent depuis longtemps à votre famille.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="8">
+	<s n="1">Qu'entends-je ?... Quel saisissement !</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="9">
+	<s n="1">Ma chère Cénie !...</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="10">
+	<s n="1">Que j'expire dans vos bras.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="11">
+	<s n="1">Les malheurs l'ont changée. </s>
+	<s n="2">Mais cette vois si chère, est-elle une illusion ?</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="12">
+	<s n="1">Adieu, Clerval.</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL, prenant avec transport le main de Cénie.</speaker>
+                        <p n="13">
+	<s n="1">Ami, donnez la mains à Madame.</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="CLERVAL"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="14">
+	<s n="1">Que vois-je ?... </s>
+	<s n="2">Je n'en serais douter.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="15">
+	<s n="1">C'est lui !... Je meurs !</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="16">
+	<s n="1">Épouse infortunée ! </s>
+	<s n="2">Ouvrez les yeux : reconnaissez le plus heureux des hommes, et le mari le plus tendre.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="17">
+	<s n="1">Dorsainville !... </s>
+	<s n="2">Cher époux !... </s>
+	<s n="3">Par quel bonheur ?... </s>
+	<s n="4">Cénie embrassez votre père.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="18">
+	<s n="1">Cénie, ma fille ! </s>
+	<s n="2">Ciel ! </s>
+	<s n="3">Vous me comblez de biens !</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="19">
+	<s n="1">Quoi ! </s>
+	<s n="2">Monsieur...</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="20">
+	<s n="1">Oui, mon oncle : c'est chez vous que le Marquis_Dorsainville trouve la fin de ses peines, et son bonheur.</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="21">
+	<s n="1">Je suis prêt à mourir de joie. </s>
+	<s n="2">Madame, quelles excuses n'ai-je pas à vous faire . </s>
+	<s n="3">Monsieur, refuserez-vous Cénie aux voeux de Clerval ?</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#cenie">
+                        <speaker>CÉNIE.</speaker>
+                        <p n="22">
+	<s n="1">Monsieur, vous avez lu dans mon coeur ; suis-je digne de vos bontés ?</s>
+</p>
+                    </sp><!--@who="CÉNIE"-->
+<sp who="#dorsainville">
+                        <speaker>DORSAINVILLE.</speaker>
+                        <p n="23">
+	<s n="1">Pourrais-je condamner des sentiments si justes ? </s>
+	<s n="2">Vous devez à Clerval vos biens, votre rang, votre père.</s>
+</p>
+                        <stage type="toward">À Dorimond.</stage>
+                        <p n="24">
+	<s n="1">Monsieur, en lui donnant ma fille, je ne m'acquitte pas de tout ce que je lui dois.</s>
+</p>
+                    </sp><!--@who="DORSAINVILLE"-->
+<sp who="#clerval">
+                        <speaker>CLERVAL.</speaker>
+                        <p n="25">
+	<s n="1">Cénie... </s>
+	<s n="2">Madame... </s>
+	<s n="3">Mon oncle en me rendant heureux, laisserez vous à mon frère le malheur affreux de votre disgrâce ?</s>
+</p>
+                    </sp><!--@who="CLERVAL"-->
+<sp who="#dorimond">
+                        <speaker>DORIMOND.</speaker>
+                        <p n="26">
+	<s n="1">Je lui donnerai de quoi vivre dans le grand monde sa patrie : mais je ne le verrais pas. </s>
+	<s n="2">Allons, vivons tous ensemble, et que la mort seule nous sépare.</s>
+</p>
+                    </sp><!--@who="DORIMOND"-->
+<sp who="#orphise">
+                        <speaker>ORPHISE.</speaker>
+                        <p n="27">
+	<s n="1">Jouissez, Monsieur, du bonheur que vous répandez sur tout ce qui vous environne. </s>
+	<s n="2">Si l'excessive bonté est quelquefois trompée, elle n'est pas moins le première des vertus.</s>
+</p>
+                    </sp><!--@who="ORPHISE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

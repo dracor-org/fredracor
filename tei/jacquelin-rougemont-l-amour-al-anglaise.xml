@@ -1,0 +1,2045 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001709" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">L'Amour à l'Anglaise, Comédie Vaudeville</title>
+                <author>
+                    <persName>
+                        <forename>Jacques-André</forename>
+                        <surname>Jacquelin,</surname>
+                    </persName>
+                </author>
+                <author>
+                    <persName>Michel-Nicolas Balisson de Rougemont</persName>
+                </author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/JACQUELIN-ROUGEMONT_AMOURALANGLAISE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/JACQUELIN-ROUGEMONT_AMOURALANGLAISE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k58435599</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="frontin" sex="MALE">
+                        <persName>Frontin</persName>
+                    </person>
+                    <person xml:id="finette" sex="FEMALE">
+                        <persName>Finette</persName>
+                    </person>
+                    <person xml:id="julie" sex="FEMALE">
+                        <persName>Julie</persName>
+                    </person>
+                    <person xml:id="dolsey" sex="MALE">
+                        <persName>Dolsey</persName>
+                    </person>
+                    <person xml:id="jourdain" sex="MALE">
+                        <persName>Jourdain</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie Vaudeville</term>
+                    <term>prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1803">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+<front>
+	<docTitle>
+	    <titlePart type="main">L'AMOUR À L'ANGLAISE</titlePart>
+		<titlePart type="sub">COMÉDIE VAUDEVILLE EN 1 ACTE EN PROSE</titlePart> 
+		<titlePart type="sub">Représentée pour la première fois, à Paris, sur le théâtre des Jeunes Élèves de la rue de Thionville, le 5 Ventôse an II de la République.</titlePart> 
+		<titlePart type="sub">Prix : 24 sols.</titlePart> 
+	</docTitle>
+   <docDate when="1803">AN XI - 1803.</docDate>
+   <docAuthor>Par Mrs J.-A. JACQUELIN et ROUGEMONT.</docAuthor>
+	<div type="docImprint">
+		<!--TODO: handling of editor name at this place unclear <editor id="HUGUET">Chez HUGUET, Imprimeur, rue des Fossés-St.-Jacques, n°4, près l'Estrapade, Division de l'Observatoire.</editor>-->
+	</div>
+	<div type="copyright">
+		<p>Nous déclarons avoir cédé au citoyen Hugelet, imprimeur, la pièce ayant pour titre : l'Amour à l'anglaise, Comédie en un acte ; laquelle pièce il peut imprimer, vendre et faire vendre en tel nombre d'exemplaires qu'il lui plaira ; nous réservant les droits d'auteur par chaque représentation qu'on pourra donner sur les théâtres de la République.</p>
+		<p>Paris, ce 6 Ventôse, an II.</p>
+		<p>Signé JACQUELIN et ROUGEMONT.</p>
+		<p>Je déclare que je poursuivrai tous contrefacteurs et distributeurs d'éditions contrefaites, et qui ne porteraient pas le fleuron qui est au frontispice, lequel représente les lettres initiales de mon nom.</p>
+		<p>S.-A. HUGELET</p>
+	</div>
+	<div type="annonce">
+                <head>COUPLET D'ANNONCE.</head>
+		<p>AIR : Du Vaudeville de Florian.</p>
+		<l>L'amour de plus d'une flocon</l>
+		<l>Pour les femmes nous intéresse ;</l>
+		<l>L'allemand aime avec, raison</l>
+		<l>Et l'espagnol, avec noblesse ; </l>
+		<l>Le caprice est assez souvent</l>
+		<l>En amour la mode française</l>
+		<l>Mais, en faveur du sentiment</l>
+		<l>Traitez bien l'amour à l'anglaise.</l>
+	</div>
+	<castList>
+                <head>PERSONNAGES. ACTEURS.</head>
+		<castItem>
+                    <role corresp="#dolsey">DOLSEY</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour=""-->, Milord M. St-EDME.</castItem>
+		<castItem>
+                    <role corresp="#frontin">FRONTIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet de chambre"--><!--@age="A"--><!--@stat_amour=""-->, Valet-de-chambre français. M. DESPRÉS.</castItem>
+		<castItem>
+                    <role corresp="#jourdain">JOURDAIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="chirurgien"--><!--@age="A"--><!--@stat_amour=""-->, Chirurgien. M. ISIDOR.</castItem>
+		<castItem>
+                    <role corresp="#julie">JULIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, jeune Veuve Mlle ALDÉGONDE.</castItem>
+		<castItem>
+                    <role corresp="#finette">FINETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="suivante"--><!--@age="A"--><!--@stat_amour=""-->, sa Suivante. Mlle BOULOGNE. et ensuite Mlle VIRGINIE.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XXème" gps="48.856614, 2.352222">La Scène se passe dans un hôtel garni, et le théâtre représente un salon , deux cabinets, une table, des papiers, des plumes.</set>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>L'AMOUR A L'ANGLAISE.</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Frontin, Finette, entrant chacun d'un côté.</head>
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="1">
+	<s n="1">Bon ! </s>
+	<s n="2">Je te cherchais.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="2">
+	<s n="1">Et moi aussi.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="3">
+	<s n="1">Ah ! </s>
+	<s n="2">Ah !... </s>
+	<s n="3">Je voulais te parler de mon maître.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="4">
+	<s n="">Je voulais l'entretenir de ma maîtresse.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="5">
+	<s n="1">Depuis que milord_Dolsey a vu Julie, il ne boit ni ne mange, d'où je conclus qu'il est amoureux.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="6">
+	<s n="1">Depuis que cet anglais est venu se loger dans cet hôtel garni, ma maîtresse ne songe plus du tout à sa toilette ; donc elle eu le coeur pris.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="7">
+	<s n="1">Ta sagacité est en défaut ; il faut qu'un anglais soit amoureux fou pour cesser de boire et de manger. </s>
+	<s n="2">Mais une femme amoureuse et française surtout, n'en est que plus coquette ; et tiens, j'ai remarqué, Finette, que depuis que tu n'aimes tu te mets cent fois mieux qu'auparavant.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="8">
+	<s n="1">Moi j'ai remarqué, Frontin, que ma chère maîtresse en tient.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="9">
+	<s n="1">Pour mon maître ? </s>
+	<s n="2">Tant mieux. Milord est immensément riche, il l'épouse, me garde à son service, la maîtresse en fait autant pour toi nous allons tous quatre passer l'été dans une superbe maison de campagne que milord achète à Julie ; l'hiver, nous venons nous établir à Paris et nous ne pensons plus qu'à manger, boire, dormir et à faire l'amour.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="10">
+	<s n="1">Doucement, monsieur_Frontin, nous n'en sommes pas encore tout à fait là ; supposé même que milord ait su plaire à Julie, rien n'est moins certain que son mariage avec elle.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="11">
+	<s n="1">Tu m'étonnes !</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <stage type="title">AIR : Chacun avec moi l'avouera.</stage>
+                        <l n="1">Ma maîtresse lit tous les jours</l>
+                        <l n="2">Des romans et des aventures ; </l>
+                        <l n="3">Aussi, je crois que ses amours</l>
+                        <l n="4">Sont dans le goût de ses lectures ;</l>
+                        <stage type="bis">Bis.</stage>
+                        <l n="5">Croyant assurer son bonheur</l>
+                        <l n="6">D'une constante et vive ardeur,</l>
+                        <l n="7">Elle exige avant tout des preuves,</l>
+                        <l n="8">Enfin, pour aller à son coeur !</l>
+                        <l n="9">Il faut passer par mille épreuves. </l>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="12">
+	<s n="1">N'est-ce que cela ? </s>
+	<s n="2">Mon maître est anglais, il est amoureux, aucun obstacle ne saurait l'épouvanter.</s>
+ </p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="13">
+	<s n="1">Tu le crois donc sérieusement épris de Julie ? </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="14">
+	<s n="1">Sérieusement est le mot, et pour lui prouver son amour, il n'est point de folies dont il ne soit capable.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="15">
+	<s n="1">En vérité ? </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="16">
+	<s n="1">Même de l'aimer sans en être aimé.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="17">
+	<s n="1">Je parierais bien, coquin, que tu ne lui ressembles pas ? </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="18">
+	<s n="1">Tu gagnerais ; mon amour n'est jamais désintéressé, beaucoup d'hommes pensent comme moi là-dessus.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="19">
+	<s n="1">Et beaucoup de femmes sont de leur avis. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="20">
+	<s n="1">Une autre façon de penser de mon maître qui n'est pas commune, c'est celle ci: « Oui, Frontin, assuré une fois de l'amour de Julie par le simple aveu qu'elle voudrait bien m'en faire, moi n'aimer jamais qu'elle, quand bien même, elle viendrait à en aimer un autre ; le tombeau serait alors mon ressource. »</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="21">
+	<s n="">Tu ne lui ressembles pas encore de ce côté là, je parie ? </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="22">
+	<s n="1">Ne parie pas, tu gagnerais une seconde fois. </s>
+</p>
+                        <stage type="get/show">Il tire un flacon de sa poche.</stage>
+                        <stage type="title">AIR : De Sophie.</stage>
+                        <l n="10">Je rends hommage à la beauté</l>
+                        <l n="11">Mais ma tendresse est fort badine,</l>
+                        <l n="12">Quand j'aime, c'est avec gaîté</l>
+                        <l n="13">Fi ! D'un amour qui me chagrine,</l>
+                        <stage type="show">Lui faisant voir que son flacon est vide.</stage>
+                        <l n="14">Tiens, vois ma bouteille à présent ;</l>
+                        <l n="15">Moi, je traite ainsi ma bergère</l>
+                        <l n="16">Je l'abandonne, au même instant</l>
+                        <l n="17">Lorsque je vois qu'elle est légère.</l>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="23">
+	<s n="1">Tu fais bien de m'averTir. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="24">
+	<s n="1">Oh ! </s>
+	<s n="2">Ce que j'en dis n'est que pour plaisanter et tu sais trop bien friponnette, qu'un minois comme celui là est capable de me faire manquer à mes principes.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="25">
+	<s n="1">Les principes de monsieur Frontin ! </s>
+	<s n="2">Je dois te dire que j'en ai aussi des principes et que ce sont ceux de Julie. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="26">
+	<s n="1">Comment ! </s>
+	<s n="2">Tu lis des romans ?</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="27">
+	<s n="1">Point du tout.</s>
+</p>
+                        <stage type="title">AIR : De la Chimène.</stage>
+                        <l n="18">Mais je veux, imitant ma maîtresse</l>
+                        <l n="19">Mons Frontin, éprouver votre amour.</l>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <l n="20">Peux-tu bien douter de ma tendresse ?</l>
+                        <l n="21">Exige de moi tout en ce jour.</l>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <l n="22">En ce cas, Te sens-tu capable</l>
+                        <l n="23">Pour moi du plus sublime effort ? </l>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <l n="24">Non doute pas, ma toute aimable ;</l>
+                        <l n="25">Si tu veux, demande ma mort.</l>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <l n="26">Non pas : renonce au jus de la treille</l>
+                        <l n="27">Et Finette embellit ton destin.</l>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN, avec fierté.</speaker>
+                        <l n="28">Pour toi je renonce à la bouteille !</l>
+                        <stage type="aparte">À part.</stage>
+                        <l n="29">Mais je ne renonce pas au vin.</l>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="28">
+	<s n="1">À la bonne heure, me voilà réconciliée avec foi, mais songe bien à ta  promesse.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN, l'embrassant.</speaker>
+                        <p n="29">
+	<s n="1">Crois en mon amour...</s>
+</p>
+                    </sp><!--@stage="kiss"--><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="30">
+	<s n="1">Allons, monsieur FronTin, soyez sage ; j'aperçois ma maîtresse.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Frontin, Finette, Julie en peignoir.</head>
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="1">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Finette, que faites-vous là depuis si longtemps ? </s>
+	<s n="3">Faut-il que je fasse ma toilette moi-même ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="2">
+	<s n="1">Madame, c'est que Frontin...</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="3">
+	<s n="1">Eh, bien ! </s>
+	<s n="2">Frontin ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="4">
+	<s n="1">M'entretenait de l'amour du son maître...</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="5">
+	<s n="1">De l'amour de son maître ! </s>
+	<s n="2">Pour qui ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="6">
+	<s n="1">Pour une jeune et jolie veuve que j'ai l'honneur de servir.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#julie">
+                        <speaker>JULIE, avec fierté.</speaker>
+                        <p n="7">
+	<s n="1">Pour moi ? </s>
+</p>
+                    </sp><!--@stage="proud"--><!--@who="JULIE"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="8">
+	<s n="">Aussi lui disais-je, que vous rendre sensible n'était pas chose aisée ; que vingt prétendants l'avaient tenté sans succès et que milord_Dolsey ferait bien d'y renoncer, qu'il le devait même, s'il ne voulait pas se l'entendre prescrire de votre bouche.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="9">
+	<s n="1">Et qui vous a chargée d'être mon interprète ? </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="10">
+	<s n="1">Vous m'avez dit cent fois que tels étaient vos sentiments, et que le veuvage vous paraissait un état préférable à celui du mariage.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="11">
+	<s n="1">Sans doute, mais vous aurez commis quelque gaucherie ; vous aurez annoncé brusquement au valet de milord_Dolsey.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="12">
+	<s n="1">Oh ! </s>
+	<s n="2">Mon_Dieu ! </s>
+	<s n="3">Oui, Madame, comme vous dites là tout brusquement. </s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="13">
+	<s n="1">C'est qu'en vérité, on n'est pas de cette mal adresse ; laissez moi, je vais essayer de réparer votre sottise, en m'expliquant moi-même avec ce garçon.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#finette">
+                        <speaker>FINETTE, à part.</speaker>
+                        <p n="14">
+	<s n="1">Cette femme là en tient où je ne m'y connais pas.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="FINETTE"-->
+<sp who="#julie">
+                        <speaker>JULIE, à Finette qui sort.</speaker>
+                        <p n="15">
+	<s n="1">Préparez tout ce qu'il faut pour m'habiller. </s>
+</p>
+                    </sp><!--@stage="toward/exit"--><!--@who="JULIE"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="16">
+	<s n="1">Oui, madame.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN, à part.</speaker>
+                        <p n="17">
+	<s n="1">Bravo ! </s>
+	<s n="2">Monsieur mon maître, bravo ; on ne vous voit pas du tout avec indifférence.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="FRONTIN"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Frontin, Julie.</head>
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="1">
+	<s n="1">Eh, bien! que vous disait Finette ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN, à part.</speaker>
+                        <p n="2">
+	<s n="1">Plaidons le faux pour savoir le vrai. </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="3">
+	<s n="1">Ah ! </s>
+	<s n="2">Madame, elle m'a vraiment épouvanté. </s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="FRONTIN"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="4">
+	<s n="1">Et comment ? </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="5">
+	<s n="1">Par ses discours sur vous, par l'aversion que, dit elle, vous avez pour tous les hommes.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#julie">
+                        <speaker>JULIE, riant.</speaker>
+                        <p n="6">
+	<s n="1">Par mon aversion pour tous les hommes ? </s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="JULIE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="7">
+	<s n="1">Si Finette ne ment pas, cela est bien malheureux pour eux et surtout pour quelqu'un de ma connaissance !....
+</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="8">
+	<s n="1">Comment, elle prétendait ?....</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="9">
+	<s n="1">Oui, Madame ; elle ajoutait même qu'il suffisait que l'on vous parlât d'amour pour vous mettre dans un courroux épouvantable, je crains que beaucoup d'hommes ne soient tentés de mériter votre colère !</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="10">
+	<s n="1">vous ajoutiez foi aux propos de Finette ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="11">
+	<s n="1">Moi, madame ? </s>
+	<s n="2">Pas entièrement. </s>
+	<s n="3">Comment est-il possible que Julie ; excusez, Madame, c'est à Finette que je parle ; comment est-il possible, (lui disais-je) que ta maîtresse qui a tant d'attraits, prétende empêcher quelqu'un (milord_Dolsey par exemple) de l'aimer, de l'adorer, puisqu'il ne peut pas s'en empêcher lui même ? </s>
+	<s n="4">Vous me croirez si vous voulez Madame, eh bien, Finette me donnait raison.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="12">
+	<s n="1">Vous n'aviez pas positivement tort ; mais puis-je bien éprouver de la tendresse pour milord_Dolsey et croire à son amour pour moi lorsque, je sais... de lui-même qu'il n'a jamais aimé.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="13">
+	<s n="1">Dans son pays, oui, mais dans celui ci, oh ! </s>
+	<s n="2">C'est bien différent.</s>
+</p>
+                        <stage type="toward">AIR : Du vaudeville de l'Asthénie.</stage>
+                        <l n="30">Ah ! S'il a toujours conservé</l>
+                        <l n="31">Pour l'amour un coeur inflexible</l>
+                        <l n="32">C'est qu'il vous était réservé</l>
+                        <l n="33">De rendre son âme sensible ;</l>
+                        <l n="34">Pouvait-il former un désir</l>
+                        <l n="35">Au près de ses froides anglaises?</l>
+                        <l n="36">Quand la gaîté, quand le plaisir</l>
+                        <l n="37">N'habitent que chez les françaises.</l>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, dans la coulisse.</speaker>
+                        <p n="14">
+	<s n="1">Où est-il, le maraud, le pendard ? </s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="DOLSEY"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="15">
+	<s n="1">Mon maître m'appelle, il me battrait si je tardais plus longtemps ; Madame, permettez.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, de même.</speaker>
+                        <p n="16">
+	<s n="1">Je parie que le scélérat il s'amuse à boire où à babiller avec son Finette, plutôt que de battre mon habit, si je trouve lui je lui casse bras et jambes.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN, tremblant à Julie.</speaker>
+                        <p n="17">
+	<s n="1">Je vous disais bien, Madame, qu'il fallait me retirer.</s>
+</p>
+                    </sp><!--@stage="frighten"--><!--@who="FRONTIN"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="18">
+	<s n="1">Ne craignez rien.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Frontin, Julie, Dolsey, en robe de  chambre.</head>
+<sp who="#dolsey">
+                        <speaker>DOLSEY, s'échauffant.</speaker>
+                        <p n="1">
+	<s n="1">Où est-il le coquin que je tue lui.</s>
+</p>
+                        <stage type="watch">Apercevant Julie. </stage>
+                        <p n="2">
+	<s n="1">Ah ! </s>
+	<s n="2">Pardon, Milady, pardon ; ce n'est pas contre vous que je suis en colère considérablement beaucoup fort.</s>
+</p>
+                        <stage type="watch">Voyant Frontin.</stage>
+                        <p n="3">
+	<s n="1">C'est contre ce misérable valet. </s>
+</p>
+                    </sp><!--@stage="nervous"--><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="4">
+	<s n="1">Ne le maltraitez pas, milord, vous ne pouvez pas avoir de sujet plus intelligent ; il me répondait sur une question que je venais de lui faire.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="5">
+	<s n="1">Oui, milord, c'était au sujet de votre amour et je disais a madame...</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="6">
+	<s n="1">Je parlerai bien moi-même à présent puisque voilà moi ; vas t'en battre mon habit, où !...</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="7">
+	<s n="1">Milord !....</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="8">
+	<s n="1">Soyez tranquille, Milady, à votre considération je ne lui ferai rien de mal.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="9">
+	<s n="1">Mais, Monsieur...</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="10">
+	<s n="1">Qu'est-ce à dire monsieur, je suis un monsieur, moi ?</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="11">
+	<s n="1">Ah ! </s>
+	<s n="2">Pardon, milord, il est nécessaire que je vous dise...</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="12">
+	<s n="1">Goddem ! </s>
+	<s n="2">Il me fait enrager !... </s>
+	<s n="3">Veux-tu bien aller battre mon habit, il faut que je sorte dans le minute.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN, à part.</speaker>
+                        <p n="13">
+	<s n="1">Je n'en crois rien. </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="14">
+	<s n="1">Milord, je vous obéis. </s>
+</p>
+                        <stage type="exit">Il sort.</stage>
+                    </sp><!--@stage="aparte"--><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="15">
+	<s n="1">Et tu fais bien, maraud.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Julie, Dolsey.</head>
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="1">
+	<s n="1">Eh ! </s>
+	<s n="2">Bien, Milady, ce garçon il vous disait que moi aimer vous, passionnément tout à fait ?</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE, en riant.</speaker>
+                        <p n="2">
+	<s n="1">Oui, milord. </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="3">
+	<s n="1">Et vous avez répondu ? </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="4">
+	<s n="1">Eh ! </s>
+	<s n="2">Mais, savez-vous bien que vous devenez pressant ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="5">
+	<s n="1">Pressant ? </s>
+	<s n="2">Oui, moi pressé de savoir le réponse de vous ; vous peut être déjà aimer quelqu'un autre que moi.</s>
+</p>
+                        <stage type="title">AIR: Du vaudeville de Florian.</stage>
+                        <l n="38">Chacun il sait qu'en tous les temps,</l>
+                        <l n="39">En France comme en Angleterre,</l>
+                        <l n="40">La dette de femme, à vingt ans</l>
+                        <l n="42">Est de savoir aimer et plaire ;</l>
+                        <l n="43">Daignez répondre avec bonté</l>
+                        <l n="44">Au doute affreux qui m'inquiète,</l>
+                        <l n="45">N'avez-vous encore acquitté</l>
+                        <l n="46">Que le moitié de votre dette ? </l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="6">
+	<s n="1">Avant de vous répondre, puis-je être certaine de vous avoir inspiré de l'amour ? </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="7">
+	<s n="1">Ah ! </s>
+	<s n="2">Milady, je vous aime... </s>
+	<s n="3">Je ne vous aime pas, je vous adore ; non, je ne vous adore pas, je vous idolâtre, et c'est à vos genoux que Dolsey.</s>
+</p>
+                        <stage type="stand">Il se relève tout à coup. </stage>
+                        <p n="8">
+	<s n="1">Mais je m'aperçois que je suis en robe de chambre, souffrez que je vous quitte ; Frontin, il m'a appris le langue et le politesse françaises , ce garçon il aura battu mon habit, je vais le mettre et je reviens vous adorer.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE, riant.</speaker>
+                        <p n="9">
+	<s n="1">Restez, restez ; ne suis-je point en peignoir ? </s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="10">
+	<s n="1">Puisque vous me le permettez, je demeure et j'en reviens tout de suite à mon tendresse pour vous ; voulez-vous, Milady, que je vous dise une réflexion que j'ai faite à cet sujet.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="11">
+	<s n="1">Très volontiers. </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="12">
+	<s n="1">C'est que j'ai remarqué que dans cet pays, l'amour il ne se fait pas comme en Angleterre. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="13">
+	<s n="1">Vous croyez ? </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="14">
+	<s n="1">J'en suis certain ; chez nous, Milady...</s>
+</p>
+                        <stage type="title">AIR : L'Amour aura soin de t'instruire.</stage>
+                        <l n="47">Ce n'est qu'en perdant l'existence</l>
+                        <l n="48">Que l'on cesse de s'adorer </l>
+                        <l n="49">L'amour est plus léger en France, </l>
+                        <l n="50">Mais on sait bien mieux l'inspirer ;</l>
+                        <l n="51">Si les femmes en Angleterre,</l>
+                        <l n="52">Savent mieux chérir que charmer ;</l>
+                        <l n="53">Française , vous m'avez su plaire,</l>
+                        <l n="54">Soyez anglaise pour m'aimer.</l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="15">
+	<s n="1">Comment, donc ! </s>
+	<s n="2">Des madrigaux ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="16">
+	<s n="1">Je ne suis pas ce que c'est que des madrigaux, ce que je vous dis est la vérité. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="17">
+	<s n="1">Vous voulez plaisanter, Milord ; puis-je croire à un amour aussi prompt ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="18">
+	<s n="1">Pas si prompt, depuis quinze jours que je suis dans ce hôtel garni ; moi aimer vous dès le second jour. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="19">
+	<s n="1">En vérité, dès le second jour ? </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="20">
+	<s n="1">Foi de milord_Dolsey ! </s>
+	<s n="2">Je vous assure que je vous aime.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE, à part.</speaker>
+                        <p n="21">
+	<s n="1">Éprouvons si cet amour est aussi vif et aussi sincère qu'il le dit.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="22">
+	<s n="1">Qu'est-ce que vous dites là toute seule ? </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="23">
+	<s n="1">Je réfléchissais à un obstacle insurmontable qui s'élève entre nous deux. </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="24">
+	<s n="1">Quel obstacle ? </s>
+	<s n="2">Mon âge ? </s>
+	<s n="3">J'ai la figure sérieuse, mais je ne suis pas vieux du tout, je n'ai pas encore quarante ans. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="25">
+	<s n="1">Ce n'est pas votre âge qui m'arrête.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="26">
+	<s n="1">Mon grande fortune ? </s>
+	<s n="2">Il est vrai que je possède deux ou trois misérables millions ; mais, si par délicatesse, ils vous empêchaient d'épouser moi, j'en distribue demain les trois quarts et demi aux malheureux. </s>
+	<s n="3">Je trouverai bien dans Paris à placer mon argent.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE, à part.</speaker>
+                        <p n="27">
+	<s n="1">Que d'amour et de générosité. </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="28">
+	<s n="1">Je ne vois comme vous dans l'opulence que le plaisir de soulager l'infortune ; ce n'est donc pas votre fortune qui m'empêche de vous accorder ma main.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="29">
+	<s n="1">Goddem ! </s>
+	<s n="2">Et qu'est-ce donc ?</s>
+</p>
+                        <stage type="slap">Se frappant le front.</stage>
+                        <p n="30">
+	<s n="1">J'y suis, vous êtes mariée.</s>
+</p>
+                        <stage>Sans lui donner le temps de répondre.</stage>
+                        <p n="31">
+	<s n="1">C'est très mal à vous, Milady, de ne pas prévenir ; je vais être obligé de me brûler le cervelle !</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="32">
+	<s n="1">Calmez-vous ; je suis maîtresse de disposer de moi.</s>
+</p>
+                        <stage type="aparte">À part.</stage>
+                        <p n="33">
+	<s n="1">Les hommes sont trompeurs dans tons les pays ; éprouvons mon anglais.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="34">
+	<s n="1">Je suis anglais, dites-vous ? </s>
+	<s n="2">Cela il ne fait rien à la chose ; si je vous conviens, je suis français.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="35">
+	<s n="1">Je vois, Milord, qu'il faut vous avouer un, secret important, et que jusqu'ici je n'ai révélé à personne.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="36">
+	<s n="1">Parlez vite ; vous m'effrayez beaucoup fort.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="37">
+	<s n="1">Il y a quelques années... </s>
+	<s n="2">Mais vous allez cesser de m'aimer. </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="38">
+	<s n="1">Moi, pas capable jamais. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="39">
+	<s n="1">Il y a quelques années, dans une promenade à cheval, je fis une chute. </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="40">
+	<s n="1">Eh, bien ! </s>
+	<s n="2">Après ? </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="41">
+	<s n="1">J'en fus blessée dangereusement, il n'y eut qu'un moyen d'arrêter les progrès effrayants du mal et de me sauver la vie, ce fut... de me couper la jambe.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, la regardant.</speaker>
+                        <p n="42">
+	<s n="1">Goddem ! </s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="43">
+	<s n="1">Depuis ce temps là je porte une jambe de bois. </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="44">
+	<s n="1">Je ne m'en suis jamais aperçu.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE, à part.</speaker>
+                        <p n="45">
+	<s n="1">Je le crois bien.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="46">
+	<s n="1">Nous avons chez nous des gens d'une grande habileté.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, avec orgueil.</speaker>
+                        <p n="47">
+	<s n="1">Et en Angleterre aussi. </s>
+</p>
+                    </sp><!--@stage="proud"--><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="48">
+	<s n="1">D'après l'événement terrible que votre amour seul a pu m'engager à vous confier, vous voyez que je ne puis être à vous, je craindrais qu'une fois mon époux, la réflexion, le dégoût ne détruisissent bientôt dans votre coeur l'amour que vous auriez pour moi. </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="49">
+	<s n="1">Qu'est-ce que vous dites donc ? </s>
+	<s n="2">Votre jambe de bois vous empêche-t-il d'être jolie, aimable et spirituelle comme vous l'êtes ? </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="50">
+	<s n="1">Il ne me reste que le regret de vous avoir connu ; adieu, milord, il faut nous séparer pour toujours.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, l'empêchant de sortir.</speaker>
+                        <p n="51">
+	<s n="1">C'est seulement ce maudit jambe de bois qui vous empêche de nous marier ensemble ?</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="52">
+	<s n="1">Je vous l'ai dit, milord, c'est la seule raison et je la crois suffisante.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="53">
+	<s n="1">Eh ! </s>
+	<s n="2">Bien, Milady, je vous quitte ; avant une heure je vous reverrai et vous n'aurez plus rien à m'opposer... que votre ingratitude, si ce doit être le récompense de mon tendresse.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="54">
+	<s n="1">Quel est votre dessein ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, entrant brusquement.</speaker>
+                        <p n="55">
+	<s n="1">Dans peu vous le saurez.</s>
+</p>
+                    </sp><!--@stage="abrupt"--><!--@who="DOLSEY"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI.</head>
+<sp who="#julie">
+                        <speaker>JULIE, seule.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Oui ; Dolsey m'aime, je n'en saurais douter, tout jusqu'à son emportement sert à m'en convaincre mais pourquoi continuer ma ruse avec lui ? </s>
+	<s n="3">J'ai commencé, il faut achever et m'assurer pour la vie de son amour.</s>
+</p>
+                        <stage type="title">RONDEAU.</stage>
+                        <stage type="title">AIR Nouveau d'Alex. Piccini.</stage>
+                        <l n="55">Il faut recourir à la ruse</l>
+                        <l n="56">En tendresse, comme aux combats ;</l>
+                        <l n="57">L'expérience est mon excuse ;</l>
+                        <l n="58">La ruse fait tout ici bas.</l>
+                        <l n="59">C'est par la toilette</l>
+                        <l n="60">Que femme coquette</l>
+                        <l n="61">De mainte conquête</l>
+                        <l n="62">Excite l'ardeur,</l>
+                        <l n="63">Et la plus novice</l>
+                        <l n="64">Fait avec malice</l>
+                        <l n="65">Servir l'artifice</l>
+                        <l n="66">Pour gagner un coeur ; </l>
+                        <l n="67">Il faut recourir, etc.</l>
+                        <l n="68">Souvent à la guerre</l>
+                        <l n="69">Elle est nécessaire ; </l>
+                        <l n="70">Et le militaire</l>
+                        <l n="71">Lui doit son laurier.</l>
+                        <l n="72">Lorsqu'avec adresse</l>
+                        <l n="73">Esprit et souplesse</l>
+                        <l n="74">Lorsqu'avec finesse, .</l>
+                        <l n="75">Il sait l'employer.</l>
+                        <l n="76">Il faut recourir, etc.</l>
+                        <p n="2">
+	<s n="1">Mais ne perdons pas de vue Dolsey un seul instant ; il est capable de tout ; j'aperçois Finette ; recommandons lui bien de ne pas sortir de cet appartement et de veiller sur toutes les issues de concert avec Frontin ; moi, de mon côté, observons exactement les moindres démarches de mon anglais et assurons-nous des suites de mon entretien avec lui.</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="JULIE"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Julie, Finette.</head>
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="1">
+	<s n="1">Madame, vous m'avez renvoyée dans votre cabinet de toilette, tout y est près depuis une heure.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="2">
+	<s n="1">Il n'était pas question de cela pour le moment ; garde toi bien, Finette, de quitter cet appartement ; charge Frontin de t'instruire de tous les desseins, de toutes les actions de son maître, et viens aussitôt me dire ce qu'il t'aura appris.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII.</head>
+<sp who="#finette">
+                        <speaker>FINETTE, seule.</speaker>
+                        <p n="1">
+	<s n="1">Que signifie l'agitation de ma maîtresse ? </s>
+	<s n="2">Est-ce amour, est-ce jalousie ? </s>
+	<s n="3">Si c'est l'un, c'est l'autre, ils marchent ordinairement ensemble ; ne serait-ce pas plutôt chez elle le désir de quelque aventure extraordinaire ? </s>
+	<s n="4">Je ne sais que penser. </s>
+	<s n="5">Ma foi, tout bien calculé, je crois qu'avec ses finesses ma chère maîtresse en tient pour milord_Dolsey, et cependant leur âge leur caractère sont bien opposés, bizarrerie ordinaire de l'amour.</s>
+</p>
+                        <stage type="title">AIR : Du vaudeville de Jean Monet.</stage>
+                        <l n="77">Oui, le dieu de la tendresse</l>
+                        <l n="78">Est un dieu capricieux ; </l>
+                        <l n="79">Par lui ma folle maîtresse.</l>
+                        <l n="80">Aime un anglais sérieux ;</l>
+                        <l n="81">Quel destin !</l>
+                        <l n="82">Ce Frontin</l>
+                        <l n="83">Qui, chaque matin</l>
+                        <l n="84">Se grise,</l>
+                        <l n="85">Faut-il, que j'en sois éprise ?</l>
+                        <l n="86">Moi qui n'aime pas le vin.</l>
+                        <stage type="ter">Ter.</stage>
+                        <p n="1">
+	<s n="1">Mais c'est lui qui vient ici je crois. </s>
+	<s n="2">Justement, il est dans d'heureuses dispositions.</s>
+</p>
+                    </sp><!--@stage="alone"--><!--@who="FINETTE"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Finette, Frontin, en 'gailé , son flacon à la main.</head> 
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <stage type="title">AIR : Quand je suis saoul dès le matin,</stage>
+                        <l n="86">Oui, je veux moi, soir et matin</l>
+                        <l n="87">Boire à longs traits de ce bon vin,</l>
+                        <l n="88">L'oubli des maux, tel est enfin</l>
+                        <l n="90">Mou caractère ; </l>
+                        <l n="91">Mais la paresse étant contraire, </l>
+                        <stage type="bis">Bis.</stage>
+                        <stage type="drink">Buvant un coup.</stage>
+                        <l n="92">Je travaille ainsi sans chagrin.</l>
+                        <l n="93">Celui qui ne fait rien sur la terre</l>
+                        <l n="94">N'est pas éloigné de mal faire.</l>
+                        <stage type="bis">Bis.</stage>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="1">
+	<s n="1">Belle occupation et sur tout fort utile !</s>
+</p>
+                        <stage type="toward">À Frontin.</stage>
+                        <p n="2">
+	<s n="1">Voilà donc ce que tu m'as promis. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="3">
+	<s n="1">Qu'est-ce que je l'ai promis, Finette, voyons ?</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="4">
+	<s n="1">De ne boire de ta vie, et cela il n'y a pas une heure. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="5">
+	<s n="1">C'est pour m'habituer à m'en déshabituer. </s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="6">
+	<s n="1">Si tu m'aimais un tant soit peu, aurais-tu si vite oublié que tu ne dois m'obtenir qu'en renonçant à boire ? </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="7">
+	<s n="1">Tiens, Finette, c'est au contraire parce que je t'adore que je bois. </s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="8">
+	<s n="1">Tu auras de la peine à me prouver cela, par exemple. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="9">
+	<s n="1">Point du tout.</s>
+</p>
+                        <stage type="title">AIR : Vive le vin, vive l'amour.</stage>
+                        <l n="95">Sans le vin a dit un savant,</l>
+                        <l n="96">L'amour est toujours languissant ;</l>
+                        <l n="97">Le vin embellit nos maîtresses,</l>
+                        <l n="98">Le vin augmente nos tendresses</l>
+                        <l n="99">Je te le prouve sans retard.</l>
+                        <l n="100">Avec le vin, l'amour est plus gaillard</l>
+                        <l n="101">Et les femmes sont moins tigresses. </l>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE, à part.</speaker>
+                        <p n="10">
+	<s n="1">Le coquin dit vrai, je n'ai pas la force de me fâcher contre lui.</s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="11">
+	<s n="1">Tiens, Frontin, je le préviens que si tu ne changes pas...</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN, l'interrompant.</speaker>
+                        <p n="12">
+	<s n="1">Auprès de toi peut-on changer.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="13">
+	<s n="1">Que si tu ne changes pas de conduite, je me brouille tout à fait avec toi. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="14">
+	<s n="1">Ce mot va m'empêcher de boire, je te jure. </s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="15">
+	<s n="1">Ne jure pas ; j'aime mieux entrer en composition avec toi ; écoute-moi bien : si d'ici à ce soir seulement, tu ne te grises pas là ce qui s'appelle complètement, demain je suis à toi. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="16">
+	<s n="1">Ah ! </s>
+	<s n="2">Finette, que me proposes tu ? </s>
+	<s n="3">C'est me faire injure ainsi qu'à toi même, prends huit jours je t'en prie , les attraits valent bien cela.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE, riant.</speaker>
+                        <p n="17">
+	<s n="1">Non, non, un tel sacrifice serait au-dessus de ton courage et je ne veux pas courir le risque de te perdre.</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="18">
+	<s n="1">Ah ! </s>
+	<s n="2">Cet aveu de ta flamme mérite une récompensé, il faut que je t'embrasse encore.</s>
+</p>
+                        <stage type="kiss">Il l'embrasse.</stage>
+                    </sp><!--@who="FRONTIN"-->
+</div><!--@stage="carry"-->
+<div type="scene" n="10">
+                    <head>SCÈNE X. Finette, Frontin, Dolsey.</head>
+<sp who="#dolsey">
+                        <speaker>DOLSEY, apercevant Frontin.</speaker>
+                        <p n="1">
+	<s n="">Toujours à faire l'amour ou à boire.</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="DOLSEY"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="2">
+	<s n="1">Il me semble que c'est ce qu'on peut faire de mieux.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="3">
+	<s n="1">Fort bien , mais pour le moment, il s'agit d'autre chose. </s>
+	<s n="2">Écoute.</s>
+</p>
+                        <stage type="watch">Apercevant Finette qui prête l'oreille. </stage>
+                        <p n="4">
+	<s n="1">Mais je ne veux pas que Finette il m'entende ; viens avec moi j'expliquerai à toi dans mon chambre, ce qu'il faut que toi fasses à l'instant. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="5">
+	<s n="1">Ne manque pas de venir m'instruire de tout. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="6">
+	<s n="1">C'est convenu. </s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="7">
+	<s n="1">Come here, come here wrecth !</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI.</head>
+<sp who="#finette">
+                        <speaker>FINETTE, seule.</speaker>
+                        <p n="1">
+	<s n="1">Pourquoi tout ce mystère ? </s>
+	<s n="2">Quel est le projet de ce sombre milord ? </s>
+	<s n="3">Avec sa mine loup-garou il n'annonce rien de gai ; attendons le retour de Frontin et courons instruire Julie de ce qu'il m'apprendra ; ma maîtresse a raison de se délier de son amant, il est homme à lui prouver son amour d'une manière vraiment épouvantable.</s>
+</p>
+                        <stage type="title">AIR : du vaudeville de Comment faire.</stage>
+                        <l n="101">Combien n'a-t-on pas vu d'Anglais</l>
+                        <l n="102">Amoureux fous d'une cruelle,</l>
+                        <l n="103">Pour rendre hommage à ses attraits</l>
+                        <l n="104">Se brûler gaiement la cervelle ?</l>
+                        <l n="105">Ils sont plus sages nos Français !</l>
+                        <l n="106">Quand la beauté fait leur conquête, </l>
+                        <l n="107">Ce n'est point par des pistolets</l>
+                        <l n="108">Qu'elle leur fait perdre la tête ;</l>
+                        <l n="109">Leur amour n'est pas aussi noir.</l>
+                        <l n="110">Car nous voyons ces bons apôtres</l>
+                        <l n="111">Haïs d'une, par désespoir,</l>
+                        <l n="112">En aimer aussitôt deux autres.</l>
+                    </sp><!--@stage="alone"--><!--@who="FINETTE"-->
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Finette, Frontin accourant.</head>
+<sp who="#frontin">
+                        <speaker>FRONTIN, très vite.</speaker>
+                        <p n="1">
+	<s n="1">Milord vient de m'ordonner d'aller chez Monsieur_Jourdain le chirurgien, qui demeure ici près et de lui enjoindre de venir tout de suite avec ses instruments.</s>
+</p>
+                    </sp><!--@stage="quick"--><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="2">
+	<s n="1">Avec ses instruments ?... </s>
+	<s n="2">Tu m'effraies ! </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="3">
+	<s n="1">Mon maître était sur mes talons, s'il me trouvait avec toi, il me chasserait, je ne puis l'en dire davantage. </s>
+	<s n="2">Adieu. </s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="4">
+	<s n="1">Milord vient ici ; il me parait soucieux ; courons avertir ma maîtresse de ce qui se passe.</s>
+</p>
+                        <stage type="exit">Elle entre chez Julie.</stage>
+                    </sp><!--@who="FINETTE"-->
+</div>
+<div type="scene" n="13">
+                    <head>SCÈNE XIII.</head>
+<sp who="#dolsey">
+                        <speaker>DOLSEY, seul, habillé, entrant avec un air pensif, une bourse d'une main et de l'autre un pistolet.</speaker>
+                        <p n="1">
+	<s n="1">Frontin il m'a dit que Julie était sortie, tant mieux, elle ne pourra s'opposer à l'exécution de mon projet. </s>
+	<s n="2">Mettons ce bourse et cette pistolet sur ce table. </s>
+	<s n="3">Ce chambre il vaut mieux que le mien pour ce que je veux faire. </s>
+	<s n="4">Julie et moi occupons seuls ce corps de logis, en fermant la porte, je ne serai vu ni entendu de personne ; le chirurgien il va venir, allons ferme, du courage Milord ! </s>
+	<s n="4">Fi donc moi jamais avoir peur !</s>
+</p>
+                        <stage type="title">AIR : Voilà bien ces lâches mortels ( de Sterne. )</stage>
+                        <l n="113">En France on tient de beaux discours</l>
+                        <l n="114">Aux filles, aux femmes, aux veuves,</l>
+                        <l n="115">On leur promet d'aimer toujours</l>
+                        <l n="116">Sans jamais en donner de preuves ;</l>
+                        <l n="117">Pour parler l'anglais n'est pas fort,</l>
+                        <l n="118">lI n'aime point avec folie,</l>
+                        <l n="119">Mais il sait se donner la mort</l>
+                        <l n="120">Pour être aimé de son amie.</l>
+                        <l n="121">Quoique anglais, ne nous tuons pas ;</l>
+                        <l n="122">En y réfléchissant je pense,</l>
+                        <l n="123">Qu'on ne peut après son trépas </l>
+                        <l n="124">En obtenir la récompense ;</l>
+                        <l n="125">Faisons un accommodement,</l>
+                        <l n="126">Ôtons nous, point du tout la vie, </l>
+                        <l n="127">Mais une jambe seulement</l>
+                        <l n="128">Pour être aimé de mon amie.</l>
+                        <p n="2">
+	<s n="1">Je le remplace aussitôt par un jambe de bois ; Julie et moi nous n'avons plus rien a nous reprocher l'un à l'autre et elle est forcée de m'épouser ; on vient c'est monsieur_Jourdain ; dans un instant je serai le plus heureux des hommes.</s>
+</p>
+                    </sp><!--@stage="alone/carry"--><!--@who="DOLSEY"-->
+</div>
+<div type="scene" n="14">
+                    <head>SCÈNE XIV. Dolsey, Jourdain.</head>
+<sp who="#dolsey">
+                        <speaker>DOLSEY, fermant la porte après lui.</speaker>
+                        <p n="1">
+	<s n="1">Bonjour, docteur ; excusez, c'est une précaution indispensable.</s>
+</p>
+                    </sp><!--@stage="close"--><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN, avec crainte à part.</speaker>
+                        <p n="2">
+	<s n="1">Quel est donc son projet ?</s>
+</p>
+                    </sp><!--@stage="frighten/aparte"--><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="3">
+	<s n="1">Dites moi, docteur ; avez vous tous vos instruments de chirurgie ? </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="4">
+	<s n="1">Non ; mais j'en ai une partie.</s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, avec humeur.</speaker>
+                        <p n="5">
+	<s n="1">Frontin cependant a dû vous recommander...</s>
+</p>
+                    </sp><!--@stage="stress"--><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="6">
+	<s n="1">Ne vous fâchez pas, j'ai sans doute ce qu'il vous faut. J'ai là bistouri, sonde, lancette , scalpel....</s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="7">
+	<s n="1">Je crois que c'est celui-ci qui m'est nécessaire.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="8">
+	<s n="1">Comment ! </s>
+	<s n="2">Vous voulez vous faire disséquer tout vif ? </s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="9">
+	<s n="1">Pas tout-à-fait ; c'est donc un autre, mais vous le saurez mieux qui moi lorsque je vous aurez expliqué ce que je veux. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="10">
+	<s n="1">Ah ! </s>
+	<s n="2">J'entends : vous voulez être saigné ; en effet, vous me paraissez en avoir besoin ; mettez vous dans ce fauteuil ce sera fait en une minute. </s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="11">
+	<s n="1">Ce n'est pas pour cette opération que je vous ai fait appeler.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="12">
+	<s n="1">Pour la première fois, je me trompais, vous êtes mille fois plus malade, vous avez un abcès interne.</s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="13">
+	<s n="1">Oh ! </s>
+	<s n="2">Le maudit bavard ! </s>
+	<s n="3">Avec ses conjectures.</s>
+</p>
+                        <stage type="toward">À Jourdain.</stage>
+                        <p n="14">
+	<s n="1">Pour en finir, je vais vous dire ce dont il est question ; pour la premier fois de ma vie je suis amoureux, mais amoureux comme un diable je n'ai qu'un moyen de me faire aimer. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="15">
+	<s n="1">Quel est il ? </s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="16">
+	<s n="1">Le voici.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN, soulevant la bourse.</speaker>
+                        <p n="17">
+	<s n="1">Pour celui là, je le crois sans peine.</s>
+</p>
+                    </sp><!--@stage="carry"--><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="18">
+	<s n="1">Vous n'y êtes pas du tout : il y a cent guinées dans ce bourse et trois balles dans cette pistolet, non je me trompe il n'y en a que deux. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="19">
+	<s n="1">Il y en a bien assez pour se tuer lorsqu'on en a envie, mais ce n'est sans doute pas pour vous rendre cet office que vous m'avez envoyé chercher ? </s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="20">
+	<s n="1">Non, non, moi savoir que ce n'est pas de ce manière que vous tuez le monde, voici ce que c'est. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="21">
+	<s n="1">Je vous écoute avec la plus grande tranquillité.</s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <stage type="title">AIR : Des Tentations de St Antoine.</stage>
+                        <l n="129">Docteur au même instant, s'il vous plait,</l>
+                        <l n="130">Entre ce bourse et cet pistolet,</l>
+                        <l n="131" part="I">Choisissez ! </l><!--@syll="3"-->
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="131" part="F">Mon choix est bientôt fait ;</l><!--@syll="6"-->
+                        <l n="132" part="I">La bourse a pour moi plus d'attraits. </l><!--@syll="8"-->
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="132" part="F">Mais </l><!--@syll="1"-->
+                        <l n="133">Je prétends que vous m'obéissiez</l>
+                        <l n="134">Que vous me coupiez</l>
+                        <l n="135">Cette jambe que vous voyez. </l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="136">Pour quelles raisons ?</l>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="137">Ah ! Finissons ! </l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN, à part.</speaker>
+                        <l n="138">Ce fou j'en réponds,</l>
+                        <l n="139">Quitte les petites maisons. </l>
+                    </sp><!--@stage="aparte"--><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="140">Docteur au même instant s'il vous plait,</l>
+                        <l n="141">Entre ce bourse et cet pistolet.</l>
+                        <l n="142" part="I">Choisissez ! </l><!--@syll="3"-->
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="142" part="F">Mon choix est déjà fait, </l><!--@syll="6"-->
+                        <l n="143" part="I">la bourse a pour moi plus d'attraits. </l><!--@syll="8"-->
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="143" part="F">Mais</l><!--@syll="1"-->
+                        <l n="144">Surtout ne me faites pas souffrir. </l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="145">Dans votre loisir</l>
+                        <l n="146">Bah ! Vous vouiez vous divertir ?</l>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="147">Sachez qu'un anglais,</l>
+                        <l n="148">Ne rit jamais.</l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="149">Vous ne riez pas. </l>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="150">Je ne ris pas. </l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN, à part.</speaker>
+                        <l n="151">Quel embarras.</l>
+                    </sp><!--@stage="aparte"--><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, avec plus de force,</speaker>
+                        <l n="152">Allons donc, à l'instant, s'il vous plaît.</l>
+                        <l n="153">Entre ce bourse et cet pistolet</l>
+                        <l n="154" part="I">Choisissez ! </l><!--@syll="3"-->
+                    </sp><!--@stage="srong"--><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN, prenant la bourse.</speaker>
+                        <l n="154" part="F">Mon choix est bientôt fait.</l><!--@syll="6"-->
+                        <l n="155" part="I">Et votre argent devient mon bien. </l><!--@syll="9"-->
+                    </sp><!--@stage="get"--><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="155" part="F">Bien.</l><!--@syll="1"-->
+                    </sp><!--@who="DOLSEY"-->
+</div>
+<div type="scene" n="15">
+                    <head>SCÈNE XV. Dolsey, Jourdain, Julie sort de chez elle à petit bruit et observe; elle doit être habillée. Dolsey s'assied. </head>
+<sp who="#dolsey">
+                        <speaker>DOLSEY, montrant sa jambe au chirurgien.</speaker>
+                        <stage type="title">AIR : Chantez, dansez, amusez-vous.</stage>
+                        <l n="156">Allons, Monsieur, coupez-la moi.</l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="157">Comment, il faut que je l'ampute ?</l>
+                        <l n="158">Mais que je sache au moins pourquoi,</l>
+                        <l n="159">Auriez vous donc fait une chute ?</l>
+                        <l n="160">Si votre pied n'est que démis</l>
+                        <l n="161">Monsieur il peut être remis.</l>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <stage type="title">AIR : Si Pauline est dans l'indigence,</stage>
+                        <l n="162">Ce n'est point le pied qui m'effraye</l>
+                        <l n="163">Et me cause de la douleur. </l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="164">Eh ! Mais, où donc est votre plaie ? </l>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="165">Elle est dans le fond de mon coeur. </l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="166">Pour opérer semblable cure </l>
+                        <l n="167">À moi pouvez vous recourir ?</l>
+                        <l n="168">Celle qui vous fil la blessure</l>
+                        <l n="169">Est seule en droit de la guérir. </l>
+                        <stage type="bis">Bis.</stage>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="1">
+	<s n="1">C'est justement pour cela, que je veux que vous m'ôtiez ce jambe, si vous aime mieux me couper la droite, cela m'est égal ; une fois, l'affaire finie je vous prierai de me trouver le jambe de bois le mieux faite, alors rien ne s'opposera plus à mon bonheur et mon amante deviendra mon femme ; allons, docteur, faites votre devoir aussi bien que je ferai le mien.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="1">
+	<s n="1">Mon devoir, Monsieur, n'est pas de vous couper la jambe, quand vous vous portez bien.</s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#julie">
+                        <speaker>JULIE, à part.</speaker>
+                        <p n="2">
+	<s n="1">Je crois qu'il est temps de me montrer </s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="JULIE"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN, à part.</speaker>
+                        <p n="3">
+	<s n="1">Je ne sais plus quelle défaite lui donner. </s>
+</p>
+                        <stage type="loud">Haut.</stage>
+                        <p n="4">
+	<s n="1">Je n'ai pas l'instrument nécessaire pour cette opération ; souffrez, milord, que j'aille jusques chez moi le chercher.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, le retenant et Vajustant avec le pUlolet.</speaker>
+                        <stage type="title">AIR : de la Fanfare de S. Cloud.</stage>
+                        <l n="170">Je suis beaucoup dans l'attente,</l>
+                        <l n="171">Terminez donc vos discours. </l>
+                    </sp><!--@stage="pull/threat"--><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN, détournant le pistolet.</speaker>
+                        <l n="172">Prenez garde à la détente,</l>
+                        <l n="173">Ou c'en est fait de mes jours. </l>
+                    </sp><!--@stage="quiet"--><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="174">Ah ! Quelle lenteur extrême</l>
+                        <l n="175">Voulez vous bien en finir ?</l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="176">Je m'en vais à l'instant même</l>
+                        <l n="177">Vous procurer ce plaisir.</l>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="5">
+	<s n="1">Allons, Monsieur, je vous attends.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN, à part.</speaker>
+                        <p n="6">
+	<s n="1">Je n'ai pas d'autre parti que la fuite.</s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, courant après lui.</speaker>
+                        <p n="7">
+	<s n="1">Oh ! </s>
+	<s n="2">La porte est fermée, vous ne m'échapperez pas. </s>
+</p>
+                        <stage type="location">Il se trouve vis-à-vis Julie.</stage>
+                        <p n="8">
+	<s n="1">C'est vous, Milady, dans ce chambre ? </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="9">
+	<s n="1">Oui, Dolsey ; depuis noire dernier entretien je ne vous ai pas perdu de vue un seul instant, j'ai été témoin de tous vos débats avec monsieur et je ne puis résister à la preuve que vous vouliez me donner de votre amour. </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="10">
+	<s n="1">Si vous voulez permettre, il est encore temps. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="11">
+	<s n="1">Oh ! </s>
+	<s n="2">Non ; et je ne puis répondre dignement à l'excès de votre tendresse qu'en vous accordant et mon coeur et ma main.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY, lui baisant la main.</speaker>
+                        <p n="12">
+	<s n="1">L'ai-je bien entendu ? </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Milady ; moi trop heureux !</s>
+</p>
+                    </sp><!--@stage="kiss"--><!--@who="DOLSEY"-->
+</div>
+<div type="scene" n="16">
+                    <head>SCÈNE XVI. Dolsey, Jourdain, Julie, Finette.</head>
+<sp who="#finette">
+                        <speaker>FINETTE, à part.</speaker>
+                        <p n="1">
+	<s n="1">Je m'en étais douté, ma maîtresse est émue ; l'anglais lui baise la main, voilà un mariage de fait. </s>
+</p>
+                    </sp><!--@stage="aparte"--><!--@who="FINETTE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="2">
+	<s n="1">Je veux mériter mou bonheur, et avec la permission de Milady, Monsieur_Jourdain va me couper la jambe absolument ; je vous ressemblerai au moins, mon charmante Julie, en quelque chose et je ne pourrai faire un pas sans me rappeler mon tendresse pour vous.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="3">
+	<s n="1">Vous ne vous couperez ni bras ni jambes et vous épouserez ma maîtresse qui n'a pas plus de jambe de bois que vous et moi.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="4">
+	<s n="1">Que dit votre Finette, je vous prie ? </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="5">
+	<s n="1">La vérité. </s>
+	<s n="2">Ma chute, ma jambe de bois qu'en était la suite...</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="6">
+	<s n="1">Eh bien ?</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="7">
+	<s n="1">Eh ! </s>
+	<s n="2">Bien, tout cela n'était qu'une épreuve que je chéris maintenant puisqu'elle m'a fourni un témoignage assuré de votre amour pour moi, mais que la chose n'aille pas plus loin ; plus, de jambe de bois ou je me brouille avec vous. </s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="8">
+	<s n="1">Puisque vous le voulez je garderai les deux jambes que j'ai. </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="9">
+	<s n="1">J'aurais été fâché de gagner votre argent. </s>
+	<s n="2">Voici votre bourse.</s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="10">
+	<s n="1">Non, gardez-la ; je veux que chacun partage aujourd'hui mon bonheur. </s>
+</p>
+                        <stage type="knock/noise">On entend frapper à coups redoublés à la porte du fond. </stage>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="11">
+	<s n="1">Quel est donc ce tapage ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="12">
+	<s n="1">C'est sûrement Frontin, j'avais fermé la porte de peur d'être dérangé ; tiens, Finette, voici le clef, ouvre lui. </s>
+</p>
+                        <stage type="open">Finette va ouvrir.</stage>
+                    </sp><!--@who="DOLSEY"-->
+</div>
+<div type="scene" n="17">
+                    <head>SCÈNE XVII et dernière. Les Précédents, Frontin, ivre. </head>
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="1">
+	<s n="1">Le voilà dans un bel état. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="2">
+	<s n="1">Eh, bien ! </s>
+	<s n="2">Milord, avez-vous recule chirurgien que je vous ai envoyé ?</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="3">
+	<s n="1">Oui : c'est monsieur.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="4">
+	<s n="1">Malgré cela vous avez conservé tous vos membres ; j'en étais sûr d'avance ; j'avais fait prévenir Madame par Finette de votre dessein extravagant.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="5">
+	<s n="1">Comment ! </s>
+	<s n="2">Maraud ? </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="6">
+	<s n="1">Et en réjouissance de ce que vous conserviez votre jambe j'ai été boire un coup à votre santé ; j'en ai bu un, j'en ai bu deux, j'en ai bu trois... </s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="7">
+	<s n="1">Et tu t'es rendu malade parce que je me portais bien ?</s>
+</p>
+                        <stage type="laugh">Riant de ce qu'il vient de dire. </stage>
+                        <p n="8">
+	<s n="1">Cet Frontin il m'amuse c'est pourquoi je le garderai toujours à mon service.</s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="9">
+	<s n="1">Qu'est-ce que c'est que malade, Milord ? </s>
+	<s n="2">Je ne suis pas malade du tout, à la bonne heure si j'avais été quelque temps entre les mains </s>
+</p>
+                        <stage type="hit">Frappant sur le ventre de Jourdain. </stage>
+                        <p n="10">
+	<s n="1">de Monsieur_Jourdain.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <p n="11">
+	<s n="1">Ce coquin me manque, je crois.</s>
+</p>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <note type="L">Dulciter : latin qui signifie doucement, et qui est pris avec ce sens dans le style badin et moqueur. [L]</note>
+                        <p n="12">
+	<s n="1">Dulciter monsieur de la lancette !</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="13">
+	<s n="1">Monsieur Frontin se rappelle nos conditions ?</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="14">
+	<s n="1">Quelles conditions ?</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="15">
+	<s n="1">Pour te donner de la mémoire je le préviens que tu peux épouser qui tu voudras mais ce ne sera pas moi.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="16">
+	<s n="1">Ah ! </s>
+	<s n="2">Finette, je suis ferme sur mes jambes.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE. </speaker>
+                        <p n="17">
+	<s n="1">Pas mal.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <p n="18">
+	<s n="1">Il est un des causes de mon félicité ; Finette épouse-le ; trente mille francs que je lui donne réparent bien des petits défauts, n'est-ce pas ? </s>
+</p>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="19">
+	<s n="1">Et même de grands. </s>
+	<s n="2">Je pardonne à celui qu'il a, en faveur de la bonne qualité que vous lui donnez et surtout en faveur du penchant que je ne puis m'empêcher d'avoir pour ce mauvais sujeT-là.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="20">
+	<s n="1">Voilà ce qui s'appelle parler, oh ! </s>
+	<s n="2">Pour cet aveu, viens que je t'embrasse, que je te croque.</s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="21">
+	<s n="1">Pas tant d'amour pour commencer, la flamme pourrait ne pas durer longtemps. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="22">
+	<s n="1">Ah ! </s>
+	<s n="2">Qu'est ce que tu dis là ? </s>
+	<s n="3">Une fois ton mari je veux être dans une ivresse perpétuelle </s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="23">
+	<s n="1">Oh ! </s>
+	<s n="2">Je le crois. </s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <p n="24">
+	<s n="1">Dans une ivresse perpétuelle de tes charmes. </s>
+</p>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <p n="25">
+	<s n="1">Je n'en crois plus rien.</s>
+</p>
+                    </sp><!--@who="FINETTE"-->
+</div><!--@stage="drunk"-->
+<div type="vaudeville" n="18">
+                    <head>VAUDEVILLE.</head>
+<stage type="title">AIR : de l'Anglaise,</stage>
+<sp who="#frontin">
+                        <speaker>FRONTIN.</speaker>
+                        <l n="178">L'amour n'est pas un jeu ;</l>
+                        <l n="179">Auprès de toi ma belle,</l>
+                        <l n="180">Je le serai fidèle,</l>
+                        <l n="181">J'en mets ma jambe au feu.</l>
+                    </sp><!--@who="FRONTIN"-->
+<sp who="#finette">
+                        <speaker>FINETTE.</speaker>
+                        <l n="182">Quand vous aimez c'est pour un jour,</l>
+                        <l n="183">Pour prendre des leçons d'amour,</l>
+                        <l n="184">Messieurs les amoureux français,</l>
+                        <l n="185">Allez chez les anglais.</l>
+                    </sp><!--@who="FINETTE"-->
+<sp who="#dolsey">
+                        <speaker>DOLSEY.</speaker>
+                        <l n="186">Plus d'un français, je crois,</l>
+                        <l n="187">Voudrait prés de Julie,</l>
+                        <l n="188">La voyant si jolie !</l>
+                        <l n="189">En faire autant que moi.</l>
+                    </sp><!--@who="DOLSEY"-->
+<sp who="#jourdain">
+                        <speaker>JOURDAIN.</speaker>
+                        <l n="190">Pour un objet rempli d'appas</l>
+                        <l n="191">Sacrifier jambes ou bras !</l>
+                        <l n="192">C'est la mode que les français</l>
+                        <l n="193">Laisseront aux anglais.</l>
+                    </sp><!--@who="JOURDAIN"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <l n="194">Puisque l'on voit en paix</l>
+                        <l n="195">La France et l'Angleterre</l>
+                        <l n="196">Ne faites pas la guerre</l>
+                        <l n="197">À notre amant anglais ?</l>
+                        <l n="198">Puisque l'on, etc...</l>
+                    </sp><!--@who="JULIE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

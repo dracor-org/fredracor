@@ -1,0 +1,335 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001663" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">L'Impoli</title>
+                <author>
+      <idno type="isni">0000000121452784</idno>
+      <idno type="wikidata">Q51107</idno>
+      <persName>
+        <forename>Georges</forename>
+        <surname>Courteline</surname>
+      </persName>
+    </author><!--Georges COURTELINE (1858-1929)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/COURTELINE_IMPOLI.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/COURTELINE_IMPOLI.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k11580090</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="tirpied" sex="MALE">
+                        <persName>Tirpied</persName>
+                    </person>
+                    <person xml:id="la-concierge" sex="FEMALE">
+                        <persName>La Concierge</persName>
+                    </person>
+                    <person xml:id="les-agents" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Les Agents</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1894">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">L'IMPOLI</titlePart>
+		</docTitle> 
+		<docDate when="1894">1894. Tous droits réservés.</docDate>
+		<docAuthor>de GEORGES COURTELINE.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, ERNEST FLAMMARION, ÉDITEUR, 26, rue RACINE, près l'Odéon.</editor>-->
+			<div type="printer">
+                    <p>ÉMILE COLIN - Imprimerie de Lagny.</p>
+                </div><!--@id="COLIN"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES..</head>
+			<castItem>
+                    <role corresp="#tirpied">TIRPIED</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#la-concierge">LA CONCIERGE</role><!--@sex="2"--><!--@type="H"--><!--@statut="concierge"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#agents">AGENTS</role><!--@sex="1"--><!--@type="H"--><!--@statut="policier"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de COURTELINE, Georges, "Ombres parisiennes", Paris, Ernest Flammarion, 1894. pp 139-146</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>L'IMPOLI</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#tirpied">
+                        <speaker>TIRPIED, carillonnant à toute volée à la porte de sa maison.</speaker>
+                        <p n="1">
+	<s n="1">Dix-huit fois que je sonne !... </s>
+	<s n="2">Dix-neuf... </s>
+	<s n="3">Vingt... </s>
+	<s n="4">Cré saleté de piplette qui ne veut pas m'ouvrir !... </s>
+	<s n="5">Vingt-et-un... </s>
+	<s n="6">Vingt-deux... </s>
+	<s n="7">Vingt-trois..</s>
+</p>
+                        <stage type="furious/hit">Furieux-vous de pied dans la poste cochère.</stage>
+                        <p n="2">
+	<s n="1">Voulez-vous me tirer le cordon, vieille rosse !... </s>
+	<s n="2">Vingt-quatre... </s>
+	<s n="3">Vingt-cinq... </s>
+	<s n="4">Vingt-six... </s>
+	<s n="5">C'est trop fort ! </s>
+</p>
+                        <stage type="noise/entrance/location/costume">Bruit d'espagnolette. Apparition, à la fenêtre de la loge, de la concierge en bonnet de nuit.</stage>
+                    </sp><!--@stage=""--><!--@who="TIRPIED"-->
+<sp who="#la-concierge">
+                        <speaker>LA CONCIERGE.</speaker>
+                        <p n="3">
+	<s n="1">Pas la peine de vous fatiguer. </s>
+	<s n="2">Vous avez insulté mon chier et je ne vous ouvrirai la porte que si vous lui faites des excuses. </s>
+	<s n="3">Voulez-vous lui faire des excuses ?</s>
+</p>
+                    </sp><!--@who="LA CONCIERGE"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="4">
+	<s n="1">En bois.</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#la-concierge">
+                        <speaker>LA CONCIERGE.</speaker>
+                        <p n="5">
+	<s n="1">Soit. </s>
+	<s n="2">Vous resterez dehors.</s>
+</p>
+                    </sp><!--@who="LA CONCIERGE"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="6">
+	<s n="1">Des excuses !... </s>
+	<s n="2">Non, mais elle est bonne !... </s>
+	<s n="3">Des excuses au chien de Madame !... </s>
+	<s n="4">Pourquoi pas, pendant que vous y êtes, une réparation par les armes !... </s>
+	<s n="5">Encore une fois, voulez-vous m'ouvrir, vieille toquée ?</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#la-concierge">
+                        <speaker>LA CONCIERGE.</speaker>
+                        <p n="7">
+	<s n="1">Des excuses ?</s>
+</p>
+                    </sp><!--@who="LA CONCIERGE"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="8">
+	<s n="1">En bois, je vous dis !</s>
+</p>
+                        <stage type="closer/toward">À quelques passants attardés et qui se sont approchés au bruit.</stage>
+                        <p n="9">
+	<s n="1">Vraiment, Messieurs, a-t-on jamais vu chose pareille ?... </s>
+	<s n="2">Une concierge qui refuse de m'ouvrir, je ne veux pas faire des excuses à son chien.</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#la-concierge">
+                        <speaker>LA CONCIERGE.</speaker>
+                        <note type="L">Havanais : sorte de bichon venant de la Havane.</note>
+                        <p n="10">
+	<s n="1">Messieurs, je vous prends à témoins si j'ai raison oui ou non et si Monsieur est un impoli. </s>
+	<s n="2">Il faut vous dire que j'ai un chien, un bijou de petit havanais gros à peu près comme mes deux poings et joli comme les amours.</s>
+</p>
+                    </sp><!--@who="LA CONCIERGE"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <note type="L">Cagouince : petit chien.</note>
+                        <p n="11">
+	<s n="1">Une saleté de cagouince, Messieurs, qui empeste toute la maison et qui engueule les locataires.</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#la-concierge">
+                        <speaker>LA CONCIERGE.</speaker>
+                        <p n="12">
+	<s n="1">Messieurs, ne croyez pas cet homme !... </s>
+	<s n="2">Un charmant animal, Messieurs, une véritable pelote_de_laine !... même que je l'avais appelé « mouton ».</s>
+</p>
+                    </sp><!--@who="LA CONCIERGE"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="13">
+	<s n="1">Vous nous rasez ! Fermez votre boîte...</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#la-concierge">
+                        <speaker>LA CONCIERGE.</speaker>
+                        <p n="14">
+	<s n="1">Donc...</s>
+</p>
+                    </sp><!--@who="LA CONCIERGE"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="15">
+	<s n="1">Et ouvrez la porte, ma bonne ; ça vaudra mieux.</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#la-concierge">
+                        <speaker>LA CONCIERGE, poursuivant.</speaker>
+                        <p n="16">
+	<s n="1">... Donc, je l'avais appelé « mouton ». </s>
+	<s n="2">C'est très bien. </s>
+	<s n="3">Or, est-ce que Monsieur, histoire de faire un jeu de mots, n'imagine pas de l'appeler « crouton » ? </s>
+	<s n="4">Parfaitement, Messieurs, « crouton » !... </s>
+	<s n="5">À preuve qu'il ne passait plus devant la loge sans crier : « Te voilà, Crouton » et sans cracher par terre en signe de mépris !... </s>
+	<s n="6">À la fin, comme cela faisait rire les gens et qu'on commençait, dans le quartier, à n'appeler « mouton » que « crouton », je pris le parti de le débaptiser et je lui donnai le nom de « fidèle », pensant ainsi couper court aux plaisanteries de ce vilain homme. </s>
+	<s n="7">Ouat !... </s>
+	<s n="8">Le jour même,monsieur profitait du moment où ma loge était pleine de monde pour venir se camper devant la porte et crier à Fidèle : « Bidel ! te voilà, sacré sale Bidel !... » </s>
+	<s n="9">Le lendemain, pour toute la maison, « fidèle » était devenu « bidel »et je recevais de Monsieur_Bidel lui-même l'ordre de retirer à mon chien un nom qui lui appartenait. </s>
+	<s n="10">Je dus m'incliner, et une troisième fois chercher à une petite bête un nom. </s>
+	<s n="11">Celui de « finette » me séduisit et je me décidai à le lui octroyer. </s>
+	<s n="12">Depuis lors, savez-vous, Messieurs, 'il l'appelle Monsieur_Trépied l'appelle ?... </s>
+	<s n="13">Messieurs, il l'appelle « tinette »</s>
+</p>
+                        <stage type="offended">Indignée.</stage>
+                        <p n="17">
+	<s n="1">Tinette... </s>
+	<s n="2">Tinette !.. </s>
+	<s n="3">Mais c'est votre âme, mauvais homme, qui en est une, de Tinette :....</s>
+</p>
+                    </sp><!--@stage=""--><!--@who="LA CONCIERGE"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="18">
+	<s n="1">Pour la dernière fois, voulez-vous me tirer le cordon ?</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#la-concierge">
+                        <speaker>LA CONCIERGE.</speaker>
+                        <p n="19">
+	<s n="1">Dites que vous retirez « tinette » et faites des excuses.</s>
+</p>
+                    </sp><!--@who="LA CONCIERGE"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="20">
+	<s n="1">Zut ; zut !zut ! </s>
+	<s n="2">Je vais me faire ouvrir de force. </s>
+</p>
+                        <stage type="entrance/toward">À des gardiens de la paix qui passent.</stage>
+                        <p n="21">
+	<s n="1">S'il vous plaît, Messieurs les agents !...</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#les-agents">
+                        <speaker>LES AGENTS, qui s'approchent.</speaker>
+                        <p n="22">
+	<s n="1">Qu'est ce qu'il y a ?</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="LES AGENTS"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="23">
+	<s n="1">Il y a que ma concierge refuse de m'ouvrir la porte.</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#les-agents">
+                        <speaker>LES AGENTS.</speaker>
+                        <p n="24">
+	<s n="1">Pourquoi ça !</s>
+</p>
+                    </sp><!--@who="LES AGENTS"-->
+<sp who="#la-concierge">
+                        <speaker>LA CONCIERGE.</speaker>
+                        <p n="25">
+	<s n="1">Parce que Monsieur est une espèce d'impoli.</s>
+</p>
+                    </sp><!--@who="LA CONCIERGE"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="26">
+	<s n="1">Vous constatez, n'est-il pas vrai, que Madame ne veut pas m'ouvrir ? </s>
+	<s n="2">Vous le constatez, de visu.</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#les-agents">
+                        <speaker>LES AGENTS.</speaker>
+                        <p n="27">
+	<s n="1">Des visus !</s>
+</p>
+                    </sp><!--@who="LES AGENTS"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="28">
+	<s n="1">Mais...</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#les-agents">
+                        <speaker>LES AGENTS.</speaker>
+                        <p n="29">
+	<s n="1">Vous dites que nous sommes des visus ?...</s>
+</p>
+                    </sp><!--@who="LES AGENTS"-->
+<sp who="#tirpied">
+                        <speaker>TIRPIED.</speaker>
+                        <p n="30">
+	<s n="1">Permettez !</s>
+</p>
+                    </sp><!--@who="TIRPIED"-->
+<sp who="#les-agents">
+                        <speaker>LES AGENTS, qui l'empoignent.</speaker>
+                        <p n="31">
+	<s n="1">Au poste ! </s>
+	<s n="2">Au poste !... </s>
+	<s n="3">Que vous soyez impoli avec la concierge, c'est très bien ; mais que vous le soyez avec nous, non !... </s>
+	<s n="4">Ah ! </s>
+	<s n="5">Nous sommes des visus ?... </s>
+	<s n="6">A-t-on jamais vu chose pareille... </s>
+	<s n="7">Un gaillard qui traite les personnes de visus et qui l'est peut-être plus que les autres !...</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="LES AGENTS"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

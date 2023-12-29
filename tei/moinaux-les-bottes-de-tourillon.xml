@@ -1,0 +1,237 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001731" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Les Bottes de Tourillon.</title>
+                <author>
+                    <persName>
+                        <forename>Jules</forename>
+                        <surname>Moinaux</surname>
+                    </persName>
+<!--ISNI not found in Wikidata-->
+                    <idno type="isni">0000000106548120</idno>
+                </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_BOTTESDETOURILLON.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_BOTTESDETOURILLON.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="l-avocat" sex="MALE">
+                        <persName>L'Avocat</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                    <person xml:id="tourillon" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Tourillon</persName>
+                    </person>
+                    <person xml:id="le-prevenu" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Prevenu</persName>
+                    </person>
+                    <person xml:id="l-amant" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L Amant</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LES BOTTES DE TOURILLON.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#l-avocat">L'AVOCAT</role><!--@sex="1"--><!--@type="H"--><!--@statut="avocat"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#rimonot">RIMONOT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#julie">LE TÉMOIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->, Julie.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 351-354</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LES BOTTES DE TOURILLON.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#l-avocat">
+                        <speaker>L'AVOCAT.</speaker>
+                        <p n="1">
+	<s n="1">Il ne manque pas de gens, dans une certaine position_sociale, qui n'ont pas autant de connaissances qu'en a Tourillon ; on s'en fera une idée rien que par le placement de quatre-vingt-dix billets à dix_centimes, d'une loterie qu'il a organisée, et comme chacun des amateurs du lot à gagner a pris un seul billet, Tourillon compté donc déjà quatre-vingt-dix amis en état de dépenser deux sous pour répondre à son invitation. </s>
+	<s n="2">Plus d'un homme du monde serait embarrassé pour arriver comme lui à un aussi complet résultat. </s>
+	<s n="3">Il est vrai qu'on ne trouve que dans le monde de Tourillon des gens à qui l'objet à gagner peut faire envie. </s>
+	<s n="4">Notre homme est renvoyé en police_correctionnelle pour le délit que Monsieur_le_président va lui faire connaître.</s>
+</p>
+                    </sp><!--@who="L'AVOCAT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="2">
+	<s n="1">Vous êtes prévenu d'avoir tenu une loterie sans autorisation.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#tourillon">
+                        <speaker>TOURILLON.</speaker>
+                        <p n="3">
+	<s n="1">C'étaient mes bottes, mon président.</s>
+</p>
+                    </sp><!--@who="TOURILLON"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="4">
+	<s n="1">N'importe l'objet, vous n'aviez pas le droit de faire une loterie.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#tourillon">
+                        <speaker>TOURILLON.</speaker>
+                        <p n="5">
+	<s n="1">J'en suis dans une surprise véritablement abondante, que, permettant la loterie_espagnole, le gouvernement ne permette pas mes bottes.</s>
+</p>
+                    </sp><!--@who="TOURILLON"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="6">
+	<s n="1">La loterie dont vous parlez est autorisée.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#tourillon">
+                        <speaker>TOURILLON.</speaker>
+                        <p n="7">
+	<s n="1">Je ne demande pas autre chose que, moi aussi, on autorise la mienne, car même on met franco à la loterie_espagnole et on fait payer vingt sous le billet, dont même vingt-cinq_sous chez les marchands de tabac, moi, mes bottes, j'ai jamais mis franco, j'ai dit : c'est deux sous.</s>
+</p>
+                    </sp><!--@who="TOURILLON"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="8">
+	<s n="1">D'où provenaient ces bottes ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="9">
+	<s n="1">C'est Manicot qui me les a recédées pour trois_francs, vu qu'elles lui donnaient des cors.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#l-amant">
+                        <speaker>UNE VOIX DANS L'AUDITOIRE. </speaker>
+                        <p n="10">
+	<s n="1">C'est vrai.</s>
+</p>
+                    </sp><!--@who="L'AMANT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="11">
+	<s n="1">Qui est-ce qui parle là ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#l-amant">
+                        <speaker>UN INDIVIDU, s'avançant.</speaker>
+                        <p n="12">
+	<s n="1">C'est moi, Monsieur_le_Président.</s>
+</p>
+                    </sp><!--@stage="closer"--><!--@who="L'AMANT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="13">
+	<s n="1">Qui êtes-vous ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#tourillon">
+                        <speaker>TOURILLON.</speaker>
+                        <p n="14">
+	<s n="1">C'est l'amant de ma femme.</s>
+</p>
+                        <stage type="toward">À l'inconnu. </stage>
+                        <p n="15">
+	<s n="1">Ça va bien ?</s>
+</p>
+                    </sp><!--@who="TOURILLON"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="16">
+	<s n="1">Retirez-vous ! </s>
+	<s n="2">Le tribunal condamne Tourillon à vingt-cinq_francs d'amende.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#tourillon">
+                        <speaker>TOURILLON.</speaker>
+                        <p n="17">
+	<s n="1">Comment, vingt-cinq_francs ? </s>
+	<s n="2">Les bottes ne m'ont rapporté que neuf_francs !</s>
+</p>
+                    </sp><!--@who="TOURILLON"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="18">
+	<s n="1">Retirez-vous !</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#tourillon">
+                        <speaker>TOURILLON, sortant.</speaker>
+                        <p n="19">
+	<s n="">On permet la loterie_espagnole, et moi... malheur !</s>
+</p>
+                    </sp><!--@stage="exit"--><!--@who="TOURILLON"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

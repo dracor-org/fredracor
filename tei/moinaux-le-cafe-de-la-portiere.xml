@@ -1,0 +1,288 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001733" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Café de la Portière.</title>
+                <author>
+                    <persName>
+                        <forename>Jules</forename>
+                        <surname>Moinaux</surname>
+                    </persName>
+<!--ISNI not found in Wikidata-->
+                    <idno type="isni">0000000106548120</idno>
+                </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_CAFEDELAPORTIERE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_CAFEDELAPORTIERE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-narrateur" sex="MALE">
+                        <persName>Le Narrateur</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                    <person xml:id="madame-groisil" sex="FEMALE">
+                        <persName>Madame Groisil</persName>
+                    </person>
+                    <person xml:id="madame-binoche" sex="FEMALE">
+                        <persName>Madame Binoche</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LE CAFÉ DE LA PORTIÈRE.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="narrateur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#madame-groisil">MADAME GROISIL</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#madame-binoche">MADAME BINOCHE</role><!--@sex="2"--><!--@type="H"--><!--@statut="portière"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 237-241</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LE CAFÉ DE LA PORTIÈRE.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#le-narrateur">
+                        <speaker>LE NARRATEUR.</speaker>
+                        <p n="1">
+	<s n="1">L'acte le plus important de la vie d'une portière, c'est la préparation de son café_au_lait. C'est par là qu'elle commence sa journée ; quand elle a pris son café, elle soigne son merle, son chat, et son mari en dernier. </s>
+	<s n="2">Ne demandez rien à une portière qui a son café sur le feu ; tenant la queue de la casserole d'une main crispée par la crainte, elle couve d'un oeil plein de sollicitude le lait, dont la surface ridée et boursouflée annonce qu'il va monter. </s>
+	<s n="3">En cet instant, la portière est indifférente à tout ce qui se passe sur la terre ; l'arrivée de son journal, que le facteur lui jette par le vasistas, n'a pas même le pouvoir de la distraire de sa préoccupation, et quand on la voit assise près de son réchaud, comme Marius su les ruines de Carthage, l'oeil fixe et l'esprit tendu vers une pensée unique, comme le vainqueur Jugurtha, on comprend ce mot d'une dame du cordon à la nouvelle, d'un tremblement de terre : « Ah ! mon_Dieu ! </s>
+	<s n="4">Et ceux qui avaient leur café sur le feu ! » </s>
+	<s n="5">Malheur donc à l'importun qui, par une arrivée intempestive, cause la fuite du lait en ébullition d'une portière ; Madame_Groisil en sait quelque chose et ce qu'il lui en a coûté, elle va le raconter au tribunal devant lequel comparaît Madame_Binoche, concierge. </s>
+	<s n="6">Madame_Binoche, pour paraître devant ses juges, a revêtu ses plus beaux atours. Elle a coiffé sa tête d'un chapeau orné de coquelicots, qui n'humilient pas sensiblement un nez dont la nuance ne peut être due à l'abus du café au lait ; le reste de sa toilette est composé avec la même recherche, et le langage même de Madame_Binoche (expressions et inflexions de voix) respire un apprêt dé circonstance. </s>
+	<s n="7">Ses révérences accompagnées de sourires,tout en elle, enfin, trahit sa pensée d'exercer une séduction sur ses juges.</s>
+</p>
+                        <p n="2">
+	<s n="1">Messieurs, dit-elle, vous m'en voyez tout évaporée de me retrouver en compact avec Madame ; que ma scène à son égard m'a si tellement fait de mal, que je n'en suis pas remise d'avoir été humiliée par cette personne-là devant la domesticité de la maison, moi qui suis névralgique comme une épileuse.</s>
+</p>
+                    </sp><!--@who="LE NARRATEUR"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="3">
+	<s n="1">Tout à l'heure vous, vous expliquerez.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-groisil">
+                        <speaker>MADAME GROISIL.</speaker>
+                        <p n="4">
+	<s n="1">Madame, qui me traite de cette personne, fait la bonne apôtre à présent ; que si vous aviez vu sa précipitation sur moi comme un lion ravissant...</s>
+</p>
+                    </sp><!--@who="MADAME GROISIL"-->
+<sp who="#madame-binoche">
+                        <speaker>MADAME BINOCHE.</speaker>
+                        <p n="5">
+	<s n="1">Ah ! </s>
+	<s n="2">Seigneur ! </s>
+	<s n="3">Et vous qui m'avez porté un coup dans le sein, Madame ; que si mon mari, n'était pas si ombrageur de jalousie, j'aurais fait dresser, un certificat par le pharmacien ; mais ces choses-là, c'est si délicat pour une dame...</s>
+</p>
+                    </sp><!--@who="MADAME BINOCHE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT, à la plaignante. </speaker>
+                        <p n="6">
+	<s n="1">À propos de quoi cette femme vous a-t-elle frappée ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-groisil">
+                        <speaker>MADAME GROISIL.</speaker>
+                        <p n="7">
+	<s n="1">À propos, Monsieur, que, quand madame a son café sur le feu, il semblerait que c'est le sort de la France.</s>
+</p>
+                    </sp><!--@who="MADAME GROISIL"-->
+<sp who="#madame-binoche">
+                        <speaker>MADAME BINOCHE.</speaker>
+                        <p n="8">
+	<s n="1">Madame, ce que vous dites là est si tellement d'une stupidité, qu'on n'en voit pas le nombre.</s>
+</p>
+                        <stage type="laugh">Rires.</stage>
+                    </sp><!--@who="MADAME BINOCHE"-->
+<sp who="#madame-groisil">
+                        <speaker>MADAME GROISIL.</speaker>
+                        <p n="9">
+	<s n="1">Alors, Messieurs, que j'ai eu le malheur de venir lui parler dans ce moment-là pour lui réclamer de l'argent qu'elle me doit depuis des temps mémorables... qu'elle m'en doit... peuh ! </s>
+	<s n="2">Je ne sais combien... au moins ! </s>
+	<s n="3">Ce qui est la vraie cause que son café s'a renversé.</s>
+</p>
+                    </sp><!--@who="MADAME GROISIL"-->
+<sp who="#madame-binoche">
+                        <speaker>MADAME BINOCHE.</speaker>
+                        <p n="10">
+	<s n="1">Si vous croyez... </s>
+	<s n="2">Une femme à_jeun, dont je l'étais généralement.</s>
+</p>
+                    </sp><!--@who="MADAME BINOCHE"-->
+<sp who="#madame-groisil">
+                        <speaker>MADAME GROISIL.</speaker>
+                        <p n="11">
+	<s n="1">Oh ! </s>
+	<s n="2">À_jeun !... </s>
+	<s n="3">Il est au vu et au su de tout le quartier que vous buvez votre goutte en vous levant, et je crois que ce matin-là vous en aviez bu plusieurs, sans vous offenser, Madame.</s>
+</p>
+                    </sp><!--@who="MADAME GROISIL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT, à la prévenue.</speaker>
+                        <p n="12">
+	<s n="">Reconnaissez-vous avoir porté des coups à la plaignante ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-binoche">
+                        <speaker>MADAME BINOCHE, pleurant.</speaker>
+                        <p n="13">
+	<s n="1">Repoussée du simple coude, Monsieur le Président, parce qu'elle me faisait en aller mon café ; là-dessus, elle m'a agonie de mots infectueux devant toute la domesticité, et que, Dieu merci, son argent, je lui ai offert dix fois.</s>
+</p>
+                    </sp><!--@stage="cry"--><!--@who="MADAME BINOCHE"-->
+<sp who="#madame-groisil">
+                        <speaker>MADAME GROISIL. </speaker>
+                        <p n="14">
+	<s n="1">Oh ! </s>
+	<s n="2">Quel faux.</s>
+</p>
+                    </sp><!--@who="MADAME GROISIL"-->
+<sp who="#madame-binoche">
+                        <speaker>MADAME BINOCHE, s'oubliant.</speaker>
+                        <p n="15">
+	<s n="1">Que que tu dis ?</s>
+</p>
+                        <stage type="sweet">Radoucie.</stage>
+                        <p n="16">
+	<s n="1">Messieurs, comme v'là le Saint Soleil de Dieu qui nous éclaire, devant Dieu et devant les hommes.</s>
+</p>
+                        <stage type="laugh/rain">Rires. Il pleut à versé.</stage>
+                    </sp><!--@who="MADAME BINOCHE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="17">
+	<s n="1">Le tribunal n'a pas à s'occuper de cela.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-binoche">
+                        <speaker>MADAME BINOCHE.</speaker>
+                        <p n="18">
+	<s n="1">Non, mais c'est parce qu'elle dit... </s>
+	<s n="2">Mais, Monsieur, à preuve que je lui ai demandé sa note.</s>
+</p>
+                    </sp><!--@who="MADAME BINOCHE"-->
+<sp who="#madame-groisil">
+                        <speaker>MADAME GROISIL.</speaker>
+                        <p n="19">
+	<s n="1">Je vous l'avais donnée.</s>
+</p>
+                    </sp><!--@who="MADAME GROISIL"-->
+<sp who="#madame-binoche">
+                        <speaker>MADAME BINOCHE.</speaker>
+                        <p n="20">
+	<s n="1">Ça, une note ? </s>
+	<s n="2">Un bout de papier tout enchifrené ; on n'y voyait que des chiffres et le reste impossible à lire ; si bien que je lui ai dit : « Madame, je vais faire taxer votre mémoire. »</s>
+</p>
+                    </sp><!--@who="MADAME BINOCHE"-->
+<sp who="#madame-groisil">
+                        <speaker>MADAME GROISIL.</speaker>
+                        <p n="21">
+	<s n="1">Taxer de l'argent prêté !</s>
+</p>
+                    </sp><!--@who="MADAME GROISIL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="22">
+	<s n="1">En voilà assez !</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-binoche">
+                        <speaker>MADAME BINOCHE.</speaker>
+                        <note type="C">On lit "trope" en fin de ligne, nous remplaçons par "trop".</note>
+                        <p n="23">
+	<s n="1">Monsieur a raison ; en voilà même trop.</s>
+</p>
+                    </sp><!--@who="MADAME BINOCHE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="24">
+	<s n="1">Taisez-vous !</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-binoche">
+                        <speaker>MADAME BINOCHE.</speaker>
+                        <p n="25">
+	<s n="1">Monsieur, je n'étais pas née pour être dans la conciergerie ; je suis d'une bonne famille : mon père faisait les eaux-de-vie en gros.</s>
+</p>
+                    </sp><!--@who="MADAME BINOCHE"-->
+<sp who="#madame-groisil">
+                        <speaker>MADAME GROISIL.</speaker>
+                        <p n="26">
+	<s n="1">Oui, et vous les buvez en détail.</s>
+</p>
+                        <stage>Le tribunal condamne Madame_Binoche à 50 francs d'amende.</stage>
+                    </sp><!--@who="MADAME GROISIL"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

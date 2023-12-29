@@ -1,0 +1,319 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001755" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Oreste et Pylade.</title>
+                <author>
+                    <persName>
+                        <forename>Jules</forename>
+                        <surname>Moinaux</surname>
+                    </persName>
+<!--ISNI not found in Wikidata-->
+                    <idno type="isni">0000000106548120</idno>
+                </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_ORESTEPYLADE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_ORESTEPYLADE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-narrateur" sex="MALE">
+                        <persName>Le Narrateur</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                    <person xml:id="garancier" sex="MALE">
+                        <persName>Garancier</persName>
+                    </person>
+                    <person xml:id="le-temoin" sex="MALE">
+                        <persName>Le Prévenu</persName>
+                    </person>
+                    <person xml:id="fondant" sex="MALE">
+                        <persName>Fondant</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">ORESTE ET PYLADE.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="narrateur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#garancier">GARANCIER</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-temoin">LE PRÉVENU</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#fondant">FONDANT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 253-257</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>ORESTE ET PYLADE.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#le-narrateur">
+                        <speaker>LE NARRATEUR.</speaker>
+                        <note type="C">Paglion : Petit fleuve niçois qui coule en ville, son nom actuel est le Paillon.</note>
+                        <p n="1">
+	<s n="1">Si nous ne disons pas que Fondant et Garancier s'aimaient comme Castor et Pollux, c'est qu'au rebours de ces deux frères, on ne les voit jamais ensemble. </s>
+	<s n="2">À cela près, du reste, amis depuis le jour où, ivres-morts, ils s'étaient réveillés chez un marchand de vin dans les bras l'un de l'autre. </s>
+</p>
+                        <l n="1">On aime à retrouver l'ami. </l>
+                        <l n="2">Qu'on a rencontré sous la table,</l>
+                        <p n="2">
+	<s n="1">dit la chanson. </s>
+	<s n="2">Un jour donc, Fondant et Garancier se retrouvaient dans la rue : « Te v'là, me vlà ; allons prendre un verre ! » </s>
+	<s n="3">Ce dont ils avaient, d'ailleurs, autant besoin qu'une rivière a besoin d'eau, exception, faite du Paglion, à qui il ne manque que cela pour qu'on puisse dire qu'il coule à Nice. </s>
+	<s n="4">Étant donné l'état dans lequel étaient nos deux amis avant de prendre un nouveau verre, on devine sans peine ce qu'ils étaient après, l'avoir pris, accompagné de plusieurs autres. Disons pourtant que Fondant était encore assez solide de la tête pour concevoir l'idée de prendre le porte-monnaie de Garancier et assez solide des jambes pour mettre son plan à exécution.</s>
+</p>
+                        <p n="3">
+	<s n="1">Nous parlons d'après la prévention. </s>
+	<s n="2">Nous verrons tout à l'heure si elle est suffisamment établie. </s>
+	<s n="3">Donc, Fondant est traduit en police_correctionnelle pour vol au poivrier. </s>
+	<s n="4">Le poivrier, c'est Garancier, et voici les seuls renseignements que celui-ci peut donner au tribunal :</s>
+</p>
+                        <p n="4">
+	<s n="1">Ayant pris plusieurs consommations, nous deux Fondant, que nous en avions déjà pas mal avant, dont c'est moi qui ai régalé pomme lui n'ayant pas rien de rien dans sa poche, je veux tout de même aller à mon travail qui était donc rue_du_Mail et qu'il me fait un bout de conduite. </s>
+	<s n="2">Pour lors, en route, nous nous reposons chez plusieurs marchands_de_vin, si bien qu'arrivé rue_Pagevin, j'étais si tellement ivre-mort que Fondant me dépose à l'entrée d'une allée. </s>
+	<s n="3">Pour ce qui est à partir de ce moment-là, je ne me rappelle pas ce qui me tiendrait dans l'oeil ; seulement que je l'ai bien senti tout de même qui farfouillait dans ma poche et que je lui ai même dit : Ce que tu fais là, c'est une saleté à mon égard. Voilà tout ce, que je sais.</s>
+</p>
+                    </sp><!--@who="LE NARRATEUR"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="5">
+	<s n="1">Il savait que vous aviez de l'argent ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#garancier">
+                        <speaker>GARANCIER.</speaker>
+                        <p n="6">
+	<s n="1">C'est sûr et certain comme ayant vu ma monnaie quand j'ai payé les consommations, dont il me restait bien une bonne pièce ronde de 14_francs_et_8_sous au moins.</s>
+</p>
+                        <p n="7">
+	<s n="1">Un témoin est entendu : Passant rue_Pagevin, dit-il, je vois du monde amassé autour d'un homme ivre, qui était allongé sur le trottoir.</s>
+</p>
+                    </sp><!--@who="GARANCIER"-->
+<sp who="#garancier">
+                        <speaker>GARANCIER, de sa place.</speaker>
+                        <p n="8">
+	<s n="1">C'était moi.</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="GARANCIER"-->
+<sp who="#le-temoin">
+                        <speaker>LE TÉMOIN (se retournant). —</speaker>
+                        <p n="9">
+	<s n="1">Ah !... </s>
+	<s n="2">Possible, je ne vous reconnais pas.</s>
+</p>
+                    </sp><!--@who="LE TÉMOIN"-->
+<sp who="#garancier">
+                        <speaker>GARANCIER.</speaker>
+                        <p n="10">
+	<s n="1">Oui, mais moi, je me reconnais.</s>
+</p>
+                    </sp><!--@who="GARANCIER"-->
+<sp who="#le-temoin">
+                        <speaker>LE TÉMOIN.</speaker>
+                        <p n="11">
+	<s n="1">Auprès de lui était celui-ci (le prévenu) qui fouillait l'ivrogne.</s>
+</p>
+                    </sp><!--@who="LE TÉMOIN"-->
+<sp who="#garancier">
+                        <speaker>GARANCIER, froissé.</speaker>
+                        <p n="12">
+	<s n="1">Ivrogne !</s>
+</p>
+                    </sp><!--@stage="offended"--><!--@who="GARANCIER"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="13">
+	<s n="1">Taisez-vous donc !</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-temoin">
+                        <speaker>LE TÉMOIN.</speaker>
+                        <p n="14">
+	<s n="1">Le pochard, si vous aimez mieux.</s>
+</p>
+                    </sp><!--@who="LE TÉMOIN"-->
+<sp who="#garancier">
+                        <speaker>GARANCIER.</speaker>
+                        <p n="15">
+	<s n="1">J'aime mieux ça.</s>
+</p>
+                    </sp><!--@who="GARANCIER"-->
+<sp who="#le-temoin">
+                        <speaker>LE TÉMOIN.</speaker>
+                        <p n="16">
+	<s n="1">J'interpelle l'individu ; il me répond qu'il est l'ami de l'ivrogne.</s>
+</p>
+                    </sp><!--@who="LE TÉMOIN"-->
+<sp who="#garancier">
+                        <speaker>GARANCIER.</speaker>
+                        <p n="17">
+	<s n="1">Encore !</s>
+</p>
+                    </sp><!--@who="GARANCIER"-->
+<sp who="#le-temoin">
+                        <speaker>LE TÉMOIN.</speaker>
+                        <p n="18">
+	<s n="1">Du pochard, pardon, et il ajoute qu'il allait lui chercher une voiture pour le porter chez lui. On lui dit : « Il y a des voitures sur la place des Victoires. » </s>
+	<s n="2">Alors, il y va, je le suis et je le vois qui fait semblant de parler à un cocher.</s>
+</p>
+                    </sp><!--@who="LE TÉMOIN"-->
+<sp who="#fondant">
+                        <speaker>LE PRÉVENU. </speaker>
+                        <p n="19">
+	<s n="1">Comment, semblant ?</s>
+</p>
+                    </sp><!--@who="FONDANT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="20">
+	<s n="1">Vous vous expliquerez tout à l'heure.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-temoin">
+                        <speaker>LE TÉMOIN.</speaker>
+                        <p n="21">
+	<s n="1">De là, il s'en va du côté des Petits-Pères ; alors je l'ai signalé à un sergent_de_ville qui l'a arrêté.</s>
+</p>
+                    </sp><!--@who="LE TÉMOIN"-->
+<sp who="#fondant">
+                        <speaker>FONDANT.</speaker>
+                        <p n="22">
+	<s n="1">J'allais place_des_Petits-Pères pour chercher un autre cocher, vu que sur la place_des_Victoires... </s>
+	<s n="2">Voilà comme c'est arrivé : étant primo, d'abord, très loin de la rue_du_Mail ; il y avait loin... heu... </s>
+	<s n="3">Oh ! </s>
+	<s n="4">De là à la rue_du_Mail il y avait la distance au moins de trente marchands_de_vin.</s>
+</p>
+                    </sp><!--@who="FONDANT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="23">
+	<s n="1">Voyons, passons les marchands_de_vin.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#fondant">
+                        <speaker>FONDANT.</speaker>
+                        <note type="C">Rue Pagevin : Rue de Paris, qui allait de la Place des Victoires à la rue Jean-Jacques Rousseau. Elle fut supprimée pour la rue Étienne Marcel et le nouvel Hôtel des postes.</note>
+                        <p n="24">
+	<s n="1">Alors, ça ira plus vite. </s>
+	<s n="2">Finalement que mon ami, arrivé rue_Pagevin, ne peut plus aller et qu'il se couche sur le trottoir. </s>
+	<s n="3">Je le pose à l'entrée d'une allée et je vas dans la maison demander un verre d'eau pour mon ami, mais il n'en a pas voulu. Alors, je prends son porte-monnaie dans sa poche, au vu et au su de la société qui était présente.</s>
+</p>
+                    </sp><!--@who="FONDANT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT, au témoin précédent.</speaker>
+                        <p n="24">
+	<s n="1">Est-ce qu'il prenait le porte-monnaie ostensiblement ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-temoin">
+                        <speaker>LE TÉMOIN.</speaker>
+                        <p n="25">
+	<s n="1">Oh ! </s>
+	<s n="2">Parfaitement ; il a même compté ce qu'il y avait dedans.</s>
+</p>
+                    </sp><!--@who="LE TÉMOIN"-->
+<sp who="#garancier">
+                        <speaker>GARANCIER.</speaker>
+                        <p n="26">
+	<s n="1">14_francs_8_sous.</s>
+</p>
+                    </sp><!--@who="GARANCIER"-->
+<sp who="#fondant">
+                        <speaker>FONDANT.</speaker>
+                        <p n="27">
+	<s n="1">9_francs_et_11_sous; c'est donc de là que je vas place des Victoires et que, quand je dis au cocher pourquoi c'était, il me répond qu'il ne veut pas d'ivrognes dans sa voiture.</s>
+</p>
+                    </sp><!--@who="FONDANT"-->
+<sp who="#garancier">
+                        <speaker>GARANCIER.</speaker>
+                        <p n="28">
+	<s n="1">Ivrogne !</s>
+</p>
+                    </sp><!--@who="GARANCIER"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="29">
+	<s n="1">Mais faites donc taire cet homme !</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#fondant">
+                        <speaker>FONDANT.</speaker>
+                        <p n="30">
+	<s n="1">Alors tous les autres cochers ayant également récalcitré à emporter mon ami, j'allais donc place des Petits-Pères, quand on m'a arrêté. </s>
+	<s n="2">V'là comme c'est arrivé, qui est un fait réel.</s>
+</p>
+                        <stage type="explicit">Est-ce exact ? Le tribunal, après délibération, n'a pas estimé que la preuve contraire fût suffisamment faite et il a acquitté Fondant de sa tentative de vol sur l'ivrogne... pardon, bon Garancier, sur le pochard.</stage>
+                    </sp><!--@who="FONDANT"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

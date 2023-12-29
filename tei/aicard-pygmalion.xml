@@ -1,0 +1,797 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001567" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Pygmalion</title>
+                <title type="sub">Poème Dramatique en un Acte</title>
+                <author>
+                    <persName>
+                        <forename>Jean</forename>
+                        <surname>Aicard</surname>
+                    </persName><!--Wikidata label: Jean Aicard-->
+                    <idno type="wikidata">Q726967</idno>
+                    <idno type="isni">0000000108909137</idno>
+                </author><!--Jean AICARD (1848-1921)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/AICARD_PYGMALION.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/AICARD_PYGMALION.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k30601010</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-serviteur" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Serviteur</persName>
+                    </person>
+                    <person xml:id="la-femme" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>La Femme</persName>
+                    </person>
+                    <person xml:id="le-statuaire" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Statuaire</persName>
+                    </person>
+                    <person xml:id="choeur-des-jeunes-paysannes" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Choeur des Jeunes Paysannes</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Poème dramatique</term>
+                    <term>vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1872">
+                <desc/>
+            </event>
+            <event type="premiere" when="1879-06-02">
+                <desc>Représentations de la Comédie Française le 2 juin 1879, À GAIETY-THEATRE</desc>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">PYGMALION</titlePart>
+			<titlePart type="sub">POÈME DRAMATIQUE EN UN ACTE</titlePart>
+		</docTitle> 
+		<docDate when="1872">1872</docDate>
+		<docAuthor>JEAN AICARD</docAuthor>
+		
+		<div type="docImprint">
+			<div type="printer">
+                    <p>IMPRIMÉ LE 28 MAI MIL HUIT CENT SOIXANTE-DOUZE. PAR J. CLAYE POUR A. LEMERRE, LIBRAIRE À PARIS.</p>
+                </div><!--@id="CLAYE"-->
+			<!--TODO: handling of editor name at this place unclear <editor id="LEMIERRE">PARIS, ALPHONSE LEMIERRE, ÉDITEUR, 47, PASSAGE CHOISEUL, 47.</editor>-->
+		</div>
+		<performance>
+			<ab type="premiere">Représentations de la Comédie Française le 2 juin 1879, À GAIETY-THEATRE</ab><!--@date="1879-06-02"--><!--@location="Gaiety-Theatre"-->
+		</performance>
+	<div type="preface">
+                <head>AU LECTEUR</head>
+		<l>Ces vers sont ce qu'ils sont : et je pourrais moi-même</l>
+		<l>Te dire tel passage où ma main a tremblé,</l>
+		<l>Lecteur ; mais il tremblait aussi, mon coeur troublé,</l>
+		<l>Lorsque, une nuit d'été, j'écrivis ce poème.</l>
+		<p>...</p>
+		<l>Lequel vaut mieux, la vie ou l'art ?... ô vieux problème !</l>
+		<l>Ô combat ancien que j'ai renouvelé !...</l>
+		<l>Je conclus simplement qu'un soir il m'a semblé</l>
+		<l>Que rien ne vaut la lèvre ardente qui dit : j'aime !</l>
+		<p>...</p>
+		<l>Songe bien que ces vers furent d'abord chantés</l>
+		<l>Dans les pins odorants, près des flots argentés,</l>
+		<l>Sous un ciel tout pareil au ciel chaud de la Grèce ;</l>
+		<p>...</p>
+		<l>Que fixement deux yeux me hantaient,deux beaux yeux ;</l>
+		<l>Et ne vois en ce rêve où passe ma jeunesse</l>
+		<l>Qu'une aspiration vers la femme et les dieux.</l>
+		<p>Paris, 1872.</p>
+	</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#une-femme">UNE FEMME</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#un-statuaire">UN STATUAIRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="statuaire"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#une-statue">UNE STATUE</role><!--@sex="9"--><!--@type="A"--><!--@statut="statue"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#un-serviteur">UN SERVITEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="serviteur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#choeur-de-jeunes-paysannes">CHOEUR INVISIBLE DE JEUNES PAYSANNES</role><!--@sex="2"--><!--@type="H"--><!--@statut="paysan"--><!--@age="J"--><!--@stat_amour="néant"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222"/>-->
+	</front>
+<body>
+<div type="acte" n="1">
+                <head>PYGMALION</head>
+<stage>Le théâtre représente un atelier de statuaire. Çà et là, en désordre,
+quelques outils. Des sièges. A droite, debout sur un piédestal bas, â
+demi-cachée sous un rideau bleu, une statue de femme. A gauche, une
+porte fermée par une draperie; au fond, des arcades; au delà des
+arcades, la balustrade d'une petite terrasse; au delà encore, des col
+lines, la mer, le ciel. C'est la fin du jour. — Au lever du rideau, la
+portière, à gauche, s'agite.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. La Statue, La Femme, Le Serviteur.</head>
+<sp who="#le-serviteur">
+                        <speaker>LE SERVITEUR, à la femme encore invisible.</speaker>
+                        <l n="1">Non !... Mon maître défend qu'on passe cette porte !</l>
+                        <l n="2" part="I">Ce seuil m'est à moi-même interdit.</l><!--@syll="9"-->
+                    </sp><!--@who="LE SERVITEUR"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="2" part="F">Eh ! Qu'importe !</l><!--@syll="3"-->
+                        <l n="3" part="I">J'entrerai, je le veux.</l><!--@syll="6"-->
+                        <stage type="entrance">La femme apparaît.</stage>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-serviteur">
+                        <speaker>LE SERVITEUR.</speaker>
+                        <l n="3" part="M">Dieux !</l><!--@syll="1"-->
+                    </sp><!--@who="LE SERVITEUR"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="3" part="F">Surveille avec soin</l><!--@syll="5"-->
+                        <l n="4">Le retour de ton maître ; aperçois-le de loin</l>
+                        <l n="5">Et reviens aussitôt m'avertir. Va, te dis-je.</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-serviteur">
+                        <speaker>LE SERVITEUR, à part.</speaker>
+                        <l n="6">J'obéis ; malgré moi je fais ce qu'elle exige.</l>
+                    </sp><!--@stage="aparte"--><!--@who="LE SERVITEUR"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. La Femme, La Statue.</head>
+<sp who="#la-femme">
+                        <speaker>LA FEMME. </speaker>
+                        <stage type="HURRY">Elle s'avance vivement vers la droite et, devant la statue ; s'arrête ; elle la contemple un moment en silence, puis :</stage>
+                        <l n="7">Te voilà donc, statue, ô marbre froid et dur,</l>
+                        <l n="8">Debout dans ta beauté sous un rideau d'azur,</l>
+                        <l n="9">Ainsi qu'une déesse au fond d'un sanctuaire,</l>
+                        <l n="10">Dans un temple où peut seul entrer ton statuaire.</l>
+                        <stage type="silence">Un silence.</stage>
+                        <l n="11">Ô souvenir poignant ! quand tu n'étais encor</l>
+                        <l n="12">Qu'un bloc_de_marbre informe acheté pour de l'or,</l>
+                        <l n="13">Au sculpteur hésitant je servis de modèle...</l>
+                        <l n="14">Et c'est de ma beauté qu'il t'a faite si belle !</l>
+                        <l n="15">Hélas ! quand il m'eut pris mon charme, à_son_insu,</l>
+                        <l n="16">Lorsque de mon amour secret, il eut reçu</l>
+                        <l n="17">La fièvre de créer son oeuvre dans la joie,</l>
+                        <l n="18">Il me chassa bien loin de lui, comme on renvoie</l>
+                        <l n="19">Le valet qui n'est plus utile à la maison,...</l>
+                        <l n="20">Puis un immense orgueil égarant sa raison,</l>
+                        <l n="21">Le coeur palpitant d'aise et l'ivresse dans l'âme,</l>
+                        <l n="22">Il aima la statue au lieu d'aimer la femme !</l>
+                        <l n="23">Depuis ce temps, il est tombé comme un vaincu ;</l>
+                        <l n="24">L'artiste meurt en lui, l'homme n'a plus vécu ;</l>
+                        <l n="25">Il laisse, oisif et seul, s'éteindre son génie,</l>
+                        <l n="26">Faute de cet amour qui me brûle, et qu'il nie !</l>
+                        <l n="27">Tu souris, toi, pendant que je pleure sur lui,</l>
+                        <l n="28">Comme si tu pouvais comprendre mon ennui !...</l>
+                        <l n="29">Qu'es-tu donc pour oser lutter avec la femme,</l>
+                        <l n="30">Toi, corps vide d'esprit, regard vide de flamme !</l>
+                        <l n="31">Qu'es-tu, fragile corps ? que pourrais-tu sur moi ?</l>
+                        <l n="32">Rien !... Mon orgueil est juste et grandit près de toi !</l>
+                        <l n="33">Un seul de mes cheveux, un soupir de ma bouche,</l>
+                        <l n="34">Mon regard qui te voit ou ma main qui te touche,</l>
+                        <l n="35">Sont beaucoup plus que toi, froide immobilité !</l>
+                        <l n="36">Je peux, moi, le sais-tu ? déformer ta beauté,</l>
+                        <l n="37">Briser d'un coup ces pieds, ces bras, ces mains, ce torse,</l>
+                        <l n="38">Ce front ! — qui sont soumis au vouloir de ma force.</l>
+                        <stage type="enthousiasm/">Exaltée, elle saisit un marteau.</stage>
+                        <l n="39">Tiens ! Sous le marteau lourd, croule en mille débris !</l>
+                        <stage type="stop">Elle s'arrête au moment de frapper.</stage>
+                        <l n="40">Mais non ! Reste debout ;... Assez tôt j'ai compris</l>
+                        <l n="41">Que j'allais me frapper dans ma beauté moi-même.</l>
+                        <l n="42">En t'aimant, malgré lui, c'est un peu moi qu'il aime !</l>
+                        <l n="43">Et puis, l'art est divin, l'art est grand ! Après moi,</l>
+                        <l n="44">Après la vie en fleurs, les dieux, l'amour, la foi,</l>
+                        <l n="45">C'est toi le but sacré : tu marches la seconde,</l>
+                        <l n="46">Et nous berçons le rêve et la douleur du monde !</l>
+                        <l n="47">Ô chef-d'oeuvre de l'art, sous la splendeur du jour,</l>
+                        <l n="48">Toutes deux avons droit à notre part d'amour ;</l>
+                        <l n="49">Tu m'as ravi la mienne, et je te la réclame :</l>
+                        <l n="50">Tu garderas l'esprit ; je veux le coeur et l'âme !</l>
+                    </sp><!--@who="LA FEMME"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. La Statue, La femme, La Serviteur.</head>
+<sp who="#le-serviteur">
+                        <speaker>LE SERVITEUR.</speaker>
+                        <l n="51">Le maître est là ; fuyez ! J'ai peur ; fuyez, fuyez !</l>
+                    </sp><!--@who="LE SERVITEUR"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME, les yeux toujours fixés sur la statue.</speaker>
+                        <l n="52">Je vais le voir verser tout son coeur à tes pieds.</l>
+                        <stage type="hide/location">Elle se dissimule derrière un pli de draperie.</stage>
+                    </sp><!--@who="LA FEMME"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. La Statue, La statuaire, La Femme cachés.</head>
+<sp who="#le-statuaire">
+                        <speaker>LE STATUAIRE. </speaker>
+                        <stage type="dream/sad/walk/slow">Il arrive, rêveur, un peu triste ; il marche lentement vers la statue.</stage>
+                        <l n="53">Immuable splendeur, ô sereine harmonie,</l>
+                        <l n="54">Ode en marbre éclatant que sculpta mon génie,</l>
+                        <l n="55">Fière déesse à qui je donne tant d'amour,</l>
+                        <l n="56">Pourquoi ne me rends-tu que froideur en retour ?</l>
+                        <l n="57">Ton créateur pourtant veut être ton esclave,</l>
+                        <l n="58">Enchaîner son génie à ta grâce suave,</l>
+                        <l n="59">T'avoir pour seul triomphe et t'avoir pour seul bien ;</l>
+                        <l n="60">La richesse n'est rien ; la puissance n'est rien !</l>
+                        <l n="61">Et quand je te contemple ici, seul et sans gloire,</l>
+                        <l n="62">L'univers méprisé s'en va de ma mémoire !</l>
+                        <l n="63">Comme est belle ta tête ! et beau le mouvement</l>
+                        <l n="64">De tes bras souverains arrondis doucement !</l>
+                        <l n="65">Comme ton sein pourrait vivre et bondir à l'aise !</l>
+                        <l n="66">A peine sur le sol si ton pied léger pèse,</l>
+                        <l n="67">Et le pli de ton voile, aux hanches retenu,</l>
+                        <l n="68">Trahit tous les secrets de ton corps chaste et nu !</l>
+                        <l n="69">Oh ! si le sang du coeur soulevait ta poitrine,</l>
+                        <l n="70">Si je pouvais en toi souffler l'âme divine,</l>
+                        <l n="71">Quel éblouissement me ferait chanceler !</l>
+                        <l n="72">Si, plus léger encor, pouvait se desceller</l>
+                        <l n="73">Du marbre qui le tient ton pied, la grâce même !</l>
+                        <l n="74">Si je voyais ta bouche éclore et dire : « J'aime ! »</l>
+                        <l n="75">Et si tu descendais vers moi, tendant les bras,</l>
+                        <l n="76" part="I">Lente et me souriant, oh !...</l><!--@syll="7"-->
+                        <stage type="entrance">La femme paraît.</stage>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="76" part="F">Ne blasphème pas !</l><!--@syll="5"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LE STATUAIRE, sans la voir.</speaker>
+                        <l n="77">Ciel ! Qui donc a parlé ! Les dieux, les dieux eux-mêmes.</l>
+                        <l n="78">Ayant pris mes regrets pour autant de blasphèmes,</l>
+                        <l n="79">Les dieux m'ont-ils donné cet avertissement ?</l>
+                        <l n="80">Non ! les dieux sont muets autant que sourds, vraiment !</l>
+                        <l n="81" part="I">Quelqu'un doit être ici !</l><!--@syll="6"-->
+                    </sp><!--@stage="watch"--><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="81" part="F">Moi ! Calme ta colère.</l><!--@syll="6"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="82">C'est toi dans ma maison ! toi ! toi ! qu'y viens-tu faire ?</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="83" part="I">Calme donc ce courroux.</l><!--@syll="6"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="83" part="F">Que veux-tu ? Va-t'en, fuis !</l><!--@syll="6"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="84">Je ne m'en irai pas ; tu sauras qui je suis.</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="85" part="I">Je ne l'ignore point.</l><!--@syll="6"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="85" part="F">Tu te trompes toi-même :</l><!--@syll="6"-->
+                        <l n="86" part="I">Mon nom ?</l><!--@syll="2"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="86" part="M">Va-t'en.</l><!--@syll="2"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="86" part="F">Je suis une femme qui t'aime.</l><!--@syll="8"-->
+                        <stage type="wave/sad">Le statuaire fait un geste de suprême ennui.</stage>
+                        <l n="87">C'est tout ce que tu sais ; l'oubli t'a pris mon nom ;</l>
+                        <l n="88" part="I">Mais l'amour, sais-tu bien ce qu'est l'amour ?</l><!--@syll="10"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="88" part="M">Oui.</l><!--@syll="1"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="88" part="F">Non !</l><!--@syll="1"-->
+                        <l n="89" part="I">Non ! Tu ne sais donc pas qui je suis !</l><!--@syll="9"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="89" part="F">Va-t'en, femme !</l><!--@syll="3"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="90">Eh bien ! C'est moi la vie et l'amour, Psyché, l'âme !</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="91" part="I">Je ne te connais point.</l><!--@syll="6"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="91" part="F">Donc, tu me connaîtras !</l><!--@syll="6"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="92" part="I">J'ai mes dieux.</l><!--@syll="3"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="92" part="M">De faux dieux.</l><!--@syll="3"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="92" part="M">Va-t'en !</l><!--@syll="2"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="92" part="F">Tu m'entendras !</l><!--@syll="6"-->
+                        <l n="93">J'ai pitié de l'erreur, et je te trouve à plaindre</l>
+                        <l n="94">D'aimer un être froid qui ne sait pas étreindre ;</l>
+                        <l n="95">Un jour tu me chassas ; je reviens aujourd'hui.</l>
+                        <l n="96">Quand l'homme fuit l'amour, l'amour s'attache à lui :</l>
+                        <l n="97">Me voici de nouveau, j'arrive et je m'impose :</l>
+                        <l n="98">Je veux lutter avec la beauté d'une chose !</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LE STATUAIRE, regardant la statue.</speaker>
+                        <l n="99" part="I">Son triomphe est certain.</l><!--@syll="6"-->
+                    </sp><!--@stage="watch"--><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="99" part="M">Tu le crois ?</l><!--@syll="3"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="99" part="F">Je le crois.</l><!--@syll="3"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="100">Eh bien ! ouvre les yeux de ton esprit, et vois !</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="101">Femme, va-t'en d'ici ; va-t'en ; tu perds ta peine ;</l>
+                        <l n="102">Tes reproches sont vains et ta constance est vaine ;</l>
+                        <l n="103">J'ai, te dis-je, mes dieux, mon rêve, mon amour ;</l>
+                        <l n="104">D'espoir et de regrets j'ai mon lot chaque jour,</l>
+                        <l n="105">Si lourd qu'à le porter mon courage chancelle.</l>
+                        <l n="106">Regarde. J'ai créé cette forme immortelle.</l>
+                        <l n="107">Elle est à moi, de moi. Si tu peux, apprends-moi</l>
+                        <l n="108">Un espoir plus profond, un plus terrible effroi</l>
+                        <l n="109">Que ceux que j'ai sentis quand, la main sur la pierre,</l>
+                        <l n="110">Je recherchais au fond d'une ébauche première</l>
+                        <l n="111">Les seuls et vrais contours de ma divinité</l>
+                        <l n="112">Qui gisaient, incertains, dans le bloc tourmenté.</l>
+                        <l n="113">Mon amour et mes dieux, c'est l'art ; c'est elle encore.</l>
+                        <l n="114">Oui, je t'aime, Beauté !... Déesse, je t'adore !</l>
+                        <l n="115">N'est-ce pas toi la vie ? — Est-ce mon propre coeur,</l>
+                        <l n="116">Ou, quand tu jaillissais sous mon ciseau vainqueur,</l>
+                        <l n="117">N'ai-je pas entendu, sous ta mamelle gauche,</l>
+                        <l n="118">Un battement de coeur vague comme une ébauche</l>
+                        <l n="119">Et se gonfler ton sein d'insensibles soupirs ?</l>
+                        <l n="120">Oh ! c'est toi le seul but digne de mes désirs :</l>
+                        <l n="121">Tu ne trahis pas, toi, du moins ! L'être qui t'aime</l>
+                        <l n="122">Te retrouve toujours belle, toujours la même,</l>
+                        <l n="123">Immutable et debout, pure éternellement,</l>
+                        <l n="124">Et tu grandis celui qui devient ton amant !</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="125">Non ! car loin d'animer d'un feu nouveau ton âme,</l>
+                        <l n="126">Elle a de ton génie éteint l'ancienne flamme,</l>
+                        <l n="127">Et te voilà vaincu, faible, gisant, dompté,</l>
+                        <l n="128">Et replié sur toi dans ta stérilité.</l>
+                        <l n="129">Ah ! tu te réjouis de n'avoir pour souffrance</l>
+                        <l n="130">Rien que ton vain regret et ta fausse espérance,</l>
+                        <l n="131">Imaginaire mal et factice douleur</l>
+                        <l n="132">Qui blessent ton esprit sans effleurer ton coeur !</l>
+                        <l n="133">Eh bien ! sache-le donc, apprends-le de ma bouche,</l>
+                        <l n="134">Ton mal est volontaire et n'a rien qui me touche ;</l>
+                        <l n="135">Il ne te grandit pas ; un homme doit subir</l>
+                        <l n="136">Une grande souffrance au coeur s'il veut grandir !</l>
+                        <l n="137">Il faut, les yeux noyés de larmes, qu'il gémisse,</l>
+                        <l n="138">Qu'il emporte partout avec lui son supplice,</l>
+                        <l n="139">Et l'art sublime essuie alors avec sa main</l>
+                        <l n="140">Les pleurs jamais taris de ce malheur humain !</l>
+                        <l n="141">Tu n'es pas le premier dans ce vieux monde (écoute !)</l>
+                        <l n="142">Qui sur tant de chemins se soit trompé de route ;</l>
+                        <l n="143">Tu n'es pas le premier qui las de tant souffrir</l>
+                        <l n="144">Pour sa chimère ainsi se soit laissé mourir !...</l>
+                        <l n="145">Un statuaire épris d'une femme de pierre,</l>
+                        <l n="146">Fatiguait vainement les dieux de sa prière ;</l>
+                        <l n="147">Il obsédait le temple, il obsédait le ciel ;</l>
+                        <l n="148">Il usait à genoux les marches de l'autel,</l>
+                        <l n="149">Il levait des regards pleins de pleurs aux étoiles,</l>
+                        <l n="150">Et quand il écartait les plis pesants des voiles</l>
+                        <l n="151">Qui dérobaient à tous le marbre bien-aimé,</l>
+                        <l n="152">Il retrouvait toujours du marbre inanimé ;</l>
+                        <l n="153">Toujours les mêmes yeux regardaient sans prunelle,</l>
+                        <l n="154">Immobiles et froids, sa douleur éternelle ;</l>
+                        <l n="155">Toujours les mêmes bras se tendant sans désir</l>
+                        <l n="156">Lui donnaient le refus obstiné de saisir,</l>
+                        <l n="157">Et la même hauteur et le même silence</l>
+                        <l n="158">Inexorablement niaient son espérance.</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="159">Écrasantes douleurs de l'impossible amour,</l>
+                        <l n="160" part="I">Hélas ! je vous connais, je vous connais !</l><!--@syll="10"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="160" part="F">Un jour,</l><!--@syll="2"-->
+                        <l n="161">Elle s'émut enfin, la déesse sans âme ;</l>
+                        <l n="162">Les flammes du baiser en firent une femme.</l>
+                        <l n="163">Le souffle de l'amour, le toucher de l'amant</l>
+                        <l n="164">Si lentement vainqueur triompha brusquement,</l>
+                        <l n="165">Et plus grand, plus heureux du moins que Prométhée,</l>
+                        <l n="166">Pygmalion donna la vie à Galathée.</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="167">Ô moment savoureux, indicible, inouï,</l>
+                        <l n="168">Où la lèvre naguère immobile dit : « oui ! »,</l>
+                        <l n="169">Ô vous, puissant appel d'un rêve qui s'anime,</l>
+                        <l n="170">Attrait fatal des bras ouverts comme un abîme,</l>
+                        <l n="171">Vous avez donc un jour empli l'âme et les yeux</l>
+                        <l n="172">D'un homme chancelant de l'ivresse des dieux !...</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="173">Tel, cet amant marcha vers la beauté suprême,</l>
+                        <l n="174">Muet, et tout son corps jetait un cri : « Je t'aime ! »</l>
+                        <l n="175">La femme n'avait pas quitté son piédestal,</l>
+                        <l n="176">Et quand ce chercheur crut qu'il tenait l'idéal,</l>
+                        <l n="177">Quand il crut, ce mortel, qu'il inventait la vie,</l>
+                        <l n="178">Avant que de sa joie il eût l'âme assouvie,</l>
+                        <l n="179">La femme redevint statue, et, lentement,</l>
+                        <l n="180">Dans ses bras refermés étouffa son amant.</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LE STATUAIRE, se jetant aux pieds de la statue.</speaker>
+                        <l n="181">Eh bien ! J'accepte. Allons, anime-toi, statue !</l>
+                        <l n="182">Vis, parle, et donne-moi ce grand baiser qui tue !</l>
+                        <l n="183">Vivre après ce moment ne me serait plus rien !</l>
+                        <l n="184">Mourir par toi sera sublime !... Je veux bien !</l>
+                    </sp><!--@stage="kneel"--><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="185">Que parles-tu de mort désirée et sublime ?</l>
+                        <l n="186">Que parlais-tu de bras ouverts comme un abîme !</l>
+                        <l n="187">N'es-tu pas mort, dis-moi ? Ne t'es-tu pas jeté</l>
+                        <l n="188">Dans cet embrassement fatal de la beauté ?</l>
+                        <l n="189">Certes ! elle n'a pas replié, ta statue,</l>
+                        <l n="190">Ses deux bras frémissants de qui l'étreinte tue !</l>
+                        <l n="191">Elle n'est pas vivante, elle ne vivra pas ;</l>
+                        <l n="192">Mais toi, tu l'as si fort serrée entre tes bras</l>
+                        <l n="193">Que t'anéantissant complètement en elle,</l>
+                        <l n="194">Hélas ! Hélas ! Ta propre étreinte t'est mortelle.</l>
+                        <l n="195">Tu ne vis plus. Tu n'es qu'une ombre de vivant,</l>
+                        <l n="196">Mort pour tous, mort pour moi, mort pour l'art décevant !</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="197">Je ne te comprends pas. Quoi ! toute ma pensée</l>
+                        <l n="198">Sur le beau rayonnant sans relâche fixée !</l>
+                        <l n="199">Sa clarté réfléchie en mes yeux éperdus ;</l>
+                        <l n="200">Quoi ! mon coeur pris par lui ! mes bras vers lui tendus !</l>
+                        <l n="201">Quoi donc ! c'est là la mort ! quoi ! ce n'est pas la vie !</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="202">Le souffle créateur t'échappe, âme asservie !</l>
+                        <l n="203" part="I">Ce n'est plus l'Idéal...</l><!--@syll="6"-->
+                        <stage type="show">Montrant la statue.</stage>
+                        <l n="203" part="F">C'est elle qui te plaît.</l><!--@syll="6"-->
+                        <l n="204">Elle, fragment chétif, idéal incomplet,</l>
+                        <l n="205">Elle, frêle unité dans le nombre des formes,</l>
+                        <l n="206">Faible nombre, parmi les légions énormes</l>
+                        <l n="207">Des formes de la vie et des choses qui sont !</l>
+                        <l n="208">Tu peux douter, et dans tes mains prendre ton front,</l>
+                        <l n="209" part="I">C'est là le vrai, crois-moi...</l><!--@syll="6"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="209" part="F">Qui ? Moi ! Que je te croie !</l><!--@syll="6"-->
+                        <l n="210">Toi qui veux m'enlever mon espoir et ma joie !</l>
+                        <l n="211">M'arracher à l'autel que je tiens embrassé,</l>
+                        <l n="212">Et sur le vide enfin fermer mon bras lassé !</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="213">Je veux croiser tes bras : ce n'est pas sur le vide !</l>
+                        <l n="214">Et ce que je voudrais prendre à ton coeur avide</l>
+                        <l n="215">C'est la fausse espérance et le bonheur qui ment.</l>
+                        <l n="216">As-tu jamais, dis-moi, vu mes yeux seulement ?</l>
+                        <l n="217">Quand j'étais là, debout pour toi, tremblante et nue</l>
+                        <l n="218">Devant toi qui cherchais une forme inconnue</l>
+                        <l n="219">Dans l'argile trop molle ou le marbre trop dur,</l>
+                        <l n="220">As-tu vu dans mes yeux se refléter l'azur,</l>
+                        <l n="221">Et ma douleur frémir en pleurs à ma paupière ?</l>
+                        <l n="222">Non ! parce qu'impuissant à fixer dans ta pierre</l>
+                        <l n="223">La douleur des regards, comme l'azur des deux,</l>
+                        <l n="224">Tu n'as pas songé même à regarder mes yeux !</l>
+                        <l n="225">Et pourtant aujourd'hui que voudrais-tu pour elle ?</l>
+                        <l n="226">La vie ! Ainsi tu sens qu'elle en serait plus belle !</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LE STATUAIRE, pieusement, à la statue.</speaker>
+                        <l n="227">Oui, j'ai rêvé de voir palpiter ton contour ;</l>
+                        <l n="228">D'un vil espoir humain j'ai souillé mon amour,</l>
+                        <l n="229">Et d'effleurer tes pieds mes lèvres sont indignes.</l>
+                        <l n="230">Oh ! Ne dérange pas la beauté de tes lignes !</l>
+                        <l n="231">De grâce, par pitié, ne me tends pas les bras !</l>
+                        <l n="232">Reste-moi belle ainsi ! ne vis pas ! ne vis pas !</l>
+                    </sp><!--@stage="toward"--><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="233">Elle ne vivra pas, artiste, sois tranquille !</l>
+                        <l n="234">Et vous jouerez sans fin votre muette idylle</l>
+                        <l n="235">Pendant que les printemps émus vivront la leur !</l>
+                        <l n="236">Va, reste, si tu veux, ployé dans ton malheur ;</l>
+                        <l n="237">Quelque autre m'aimera. Suis-je pas jeune et belle ?</l>
+                        <l n="238">Quelque autre à mon amour ne sera pas rebelle,</l>
+                        <l n="239">Avec qui nous irons, entrelaçant nos mains,</l>
+                        <l n="240">Au printemps qui renaît, par les joyeux chemins.</l>
+                        <l n="241">Va ! je t'aurais donné la science suprême,</l>
+                        <l n="242">La science des dieux que l'on sait lorsqu'on aime !</l>
+                        <l n="243">Ta pensée eût, plus haut, pris un plus large essor.</l>
+                        <l n="244">Et je t'aurais donné d'autres chefs_d_oeuvre encor !</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LE STATUAIRE, à lui-même.</speaker>
+                        <l n="245" part="I">D'autres chefs_d_oeuvre !</l><!--@syll="6"-->
+                    </sp><!--@stage="toward"--><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="245" part="F">Enfant ! La vie est si féconde</l><!--@syll="6"-->
+                        <l n="246">En elle, coule à flots la beauté sur le monde :</l>
+                        <l n="247">L'artiste est le voleur divin qui la lui prend ;</l>
+                        <l n="248">C'est par elle et non point par soi que l'on est grand !</l>
+                        <l n="249">Homme, triste orgueilleux, souviens-toi que la femme</l>
+                        <l n="250">A le secret profond de raviver ton âme ;</l>
+                        <l n="251">Que rien qu'en dénouant mes cheveux d'or soyeux</l>
+                        <l n="252">Je ferais rayonner des flammes dans tes yeux !</l>
+                        <l n="253">Que, sous ma fraîche peau, la couleur de mes veines</l>
+                        <l n="254">Seule, peut, après tout, rendre tes luttes vaines...</l>
+                        <l n="255">Va, sur ton coeur d'ennuis et de tendresse empli,</l>
+                        <l n="256">J'ai le droit de victoire et j'ai le don d'oubli !...</l>
+                        <l n="257" part="I">Mais adieu ! Je renonce à toi.</l><!--@syll="8"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="257" part="F">Non ! Reste encore !...</l><!--@syll="4"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <stage type="aparte">À part.</stage>
+                        <l n="258" part="I">Il s'est troublé !</l><!--@syll="4"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="258" part="F">Je veux savoir ce que j'ignore ;</l><!--@syll="8"-->
+                        <l n="259">Ton secret me tourmente et je veux le savoir.</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <stage type="aparte">À part.</stage>
+                        <l n="260" part="I">Il est à moi !</l><!--@syll="4"-->
+                        <stage type="loud">Haut.</stage>
+                        <l n="260" part="F">- Vois donc, vois la splendeur du soir.</l><!--@syll="8"-->
+                        <stage type="pull/location">Elle l'entraîne vers la terrasse.</stage>
+                        <l n="261">Là-bas, à l'occident, vois, vois, que de lumière !</l>
+                        <l n="262">La dernière heure est là, semblable à la première ;</l>
+                        <l n="263">( Puisse aussi pur en toi le vrai jour se lever ! )</l>
+                        <l n="264">Quoi ! tu ne vins jamais t'accouder et rêver,</l>
+                        <l n="265">À ce moment du soir, devant ce large espacer</l>
+                        <l n="266">Vois ce chevreuil qui court... ce nuage qui passe !</l>
+                        <l n="267">Écoute tous les bruits, vois toutes les clartés !</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="268" part="I">Un trouble naît en moi !</l><!--@syll="6"-->
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="268" part="F">Vois, vois, que de beautés !</l><!--@syll="6"-->
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="269">Quels parfums dans le vent ! Comme l'ombre s'apprête !</l>
+                        <l n="270">L'air doux fait palpiter mes cheveux sur ma tête !</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <l n="271">Regarde. Le soleil a disparu ; la nuit</l>
+                        <l n="272">S'avance gravement ; une étoile la suit,</l>
+                        <l n="273">Deux, trois, et des milliers, — et des milliers encore</l>
+                        <l n="274">Qui font l'obscurité douce comme une aurore.</l>
+                        <l n="275">Les bruyères en fleurs, les cyprès, les roseaux,</l>
+                        <l n="276">Ondulent avec bruit comme les vastes eaux</l>
+                        <l n="277">De la mobile mer qui là-bas se fait sombre ;</l>
+                        <l n="278">Voici l'heure des dieux : ils se pressent dans l'ombre ;</l>
+                        <l n="279">Ils viennent préparer la moindre éclosion ;</l>
+                        <l n="280">Ils viennent présider à la création ;</l>
+                        <l n="281">Ils viennent dans le vent, les parfums, la rosée,</l>
+                        <l n="282">Consolant du soleil la poussière embrasée</l>
+                        <l n="283">Ainsi que du réel le travailleur qui dort,</l>
+                        <l n="284">Élaborer la vie au creuset de la mort.</l>
+                        <l n="285">C'est l'heure de l'amour mystérieux ; regarde :</l>
+                        <l n="286">Sous ces arbres lointains un couple se hasarde</l>
+                        <l n="287">Sans crainte des sentiers profonds et ténébreux ;</l>
+                        <l n="288">Ils ont senti les dieux cachés passer sur eux,</l>
+                        <l n="289">Et comprenant qu'ils sont aimés par toute chose,</l>
+                        <l n="290">Par la fleur endormie et par l'étoile éclose,</l>
+                        <l n="291">Par la lune qui met sur leurs fronts sa clarté,</l>
+                        <l n="292">Ils marchent, souriants, dans leur nubilité.</l>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="293">Je vois. Ils sont heureux : ils vivent dans leur rêve,</l>
+                        <l n="294">Et vers les astres, dans les vents, leur coeur s'élève.</l>
+                        <l n="295">Ils suivent une loi commune à l'univers :</l>
+                        <l n="296">Ils s'aiment. Les ramiers, au fond des myrtes verts,</l>
+                        <l n="297">Les loups dans les forêts, connaissent cette joie.</l>
+                        <l n="298">Moi, j'ai dit, en marchant triste et seul dans ma voie :</l>
+                        <l n="299">« C'est par moi que le Beau resplendit radieux ;</l>
+                        <l n="300">Je corrige l'erreur dans l'ouvrage des dieux !... »</l>
+                        <l n="301">Et, leur faisant la guerre avec leurs blocs_de_marbre,</l>
+                        <l n="302">J'ai laissé frissonner les colombes dans l'arbre,</l>
+                        <l n="303">Les loups dans la forêt, les amoureux aux champs,</l>
+                        <l n="304">Et les arbres, les airs, les flots dire leurs chants.</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME.</speaker>
+                        <stage type="aparte">À part.</stage>
+                        <l n="305" part="I">Il fléchit par degrés. Il m'appartient !</l><!--@syll="10"-->
+                        <stage type="noise/toward">Ici on entend le chant d'une flûte, lointain, mais pur et distinct. Au statuaire :</stage>
+                        <l n="305" part="F">Écoute !</l><!--@syll="2"-->
+                        <l n="306">Un piéton attardé chante en suivant sa route ;</l>
+                        <l n="307">Un petit rouge-gorge, en quête d'un buisson,</l>
+                        <l n="308">Une dernière fois dit sa grêle chanson,</l>
+                        <l n="309">Et, noir sur le ciel pourpre, un rossignol prélude ;</l>
+                        <l n="310">Une immense rumeur pleine de quiétude</l>
+                        <l n="311">Monte du sein des flots, des forêts et des monts ;</l>
+                        <l n="312">Toute cette rumeur immense dit : aimons !</l>
+                        <l n="313">Et les couples dansants des nymphes, des sirènes,</l>
+                        <l n="314">Sur l'humide prairie ou sur les eaux sereines</l>
+                        <l n="315">Tournent au bruit que fait la flûte du pasteur,</l>
+                        <l n="316">La flûte aux sept roseaux d'inégale hauteur ;</l>
+                        <l n="317">C'est la flûte de Pan, c'est la flûte champêtre</l>
+                        <l n="318">Qui rappelle le bruit doux et profond de l'Être,</l>
+                        <l n="319">Le bruit de la nature, orgue à mille tuyaux</l>
+                        <l n="320">Qu'emplit le grand dieu Pan de souffles inégaux ;</l>
+                        <l n="321">Et voici qu'imitant la nymphe, au clair de lune.</l>
+                        <l n="322">Leste, et d'un pied joyeux, la paysanne brune.</l>
+                        <l n="323">Sur l'aire où tombera demain l'épi de blé.</l>
+                        <l n="324">Danse, lassant un peu le pasteur essoufflé.</l>
+                        <stage n="laugh.sing">Le son de la flûte expire ; on entend de joyeux éclats de rire qui s'éparpillent dans la nuit ; puis le choeur des jeunes filles s'élève.</stage>
+                    </sp><!--@who="LA FEMME"-->
+<sp who="#choeur-des-jeunes-paysannes">
+                        <speaker>CHOEUR DES JEUNES PAYSANNES.</speaker>
+                        <l n="325">Dansons en choeur, dansons autour de l'aire ronde ;</l>
+                        <l n="326">Nous étions au travail dès la pointe du jour ;</l>
+                        <l n="327">Les Jeunes Gens m'ont dit que le repos du monde</l>
+                        <l n="328">C'est la nuit et l'amour.</l>
+                        <l n="329">Dansons en choeur, dansons autour de l'aire ronde ;</l>
+                        <l n="330">Nous étions au travail dès la pointe du jour ;</l>
+                        <l n="331">Les Rossignols m'ont dit que le bonheur du monde</l>
+                        <l n="332">C'est la nuit et l'amour.</l>
+                        <l n="333">Dansons, dansons en choeur autour de l'aire ronde ;</l>
+                        <l n="334">Nous étions au travail dès la pointe du jour ;</l>
+                        <l n="335">Les étoiles m'ont dit que la beauté du monde</l>
+                        <l n="336">C'est la nuit et l'amour.</l>
+                        <stage type="sing">Le chant des jeunes filles s'apaise et meurt.</stage>
+                        <stage type="silence">Un silence.</stage>
+                    </sp><!--@who="CHOEUR DES JEUNES PAYSANNES"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="337">Le frisson de l'azur a passé dans mon être !...</l>
+                        <l n="338">...Ton souffle tout à coup me touche et me pénètre,</l>
+                        <l n="339">Grand dieu que j'ignorais, amour ! amour ! amour,</l>
+                        <l n="340">Toi qui fais l'ombre plus féconde que le jour !...</l>
+                        <l n="341">Magnifique, la nuit glisse sur la campagne ;</l>
+                        <l n="342">Le rythme universel la berce et l'accompagne</l>
+                        <l n="343">Plus lent que lorsqu'il suit la marche du soleil.</l>
+                        <l n="344">Ô vie ! Ô mouvement ! Ô sommeil, Ô réveil,</l>
+                        <l n="345">Je vous comprends soudain, éternelle jeunesse !</l>
+                        <l n="346">Je respire à longs flots un bonheur qui m'oppresse !</l>
+                        <l n="347">Ô cheveux dénoués ! Caresses dans les soirs</l>
+                        <l n="348">Au fond de la forêt, parmi les arbres noirs !</l>
+                        <l n="349">Femme ! Source d'amour d'où l'idéal ruisselle !</l>
+                        <l n="350">Amour, joie et douleur, ô vie universelle,</l>
+                        <l n="351">Si je vous ai compris, mes chefs_d_oeuvre vivront</l>
+                        <l n="352">Sous ce grand ciel lointain que je touche du front !</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#choeur-des-jeunes-paysannes">
+                        <speaker>REPRISE DU CHOEUR, affaibli et lointain.</speaker>
+                        <l n="353">Les Étoiles m'ont dit que la beauté du monde</l>
+                        <l n="354">C'est la nuit et l'amour.</l>
+                    </sp><!--@stage="sing"--><!--@who="CHOEUR DES JEUNES PAYSANNES"-->
+<sp who="#le-statuaire">
+                        <speaker>LA STATUAIRE.</speaker>
+                        <l n="355">Sur le fin croissant passe un nuage ; il fait l'ombre</l>
+                        <l n="356">Plus confuse, et je vois les étoiles sans nombre</l>
+                        <l n="357">Fourmiller comme au ciel dans les flots miroitants</l>
+                        <l n="358">De la mouvante mer et des calmes étangs ;</l>
+                        <l n="359">Sous d'obscures clartés, des formes indécises,</l>
+                        <l n="360">Dans la plaine debout, — sur les coteaux assises,</l>
+                        <l n="361">Sont sans doute les bois, les rochers, les maisons.</l>
+                        <l n="362">Les nuances du noir marquent les horizons...</l>
+                        <l n="363">Fixe donc en ton marbre ou fixe sur la toile</l>
+                        <l n="364">Le frisson du bois sombre ou les feux de l'étoile,</l>
+                        <l n="365">Artiste souverain qui fais la guerre aux dieux,</l>
+                        <l n="366">Ou brise enfin l'orgueil de ton coeur envieux !</l>
+                        <l n="367">Ô nuit sacrée, ô nuit, quel poète superbe</l>
+                        <l n="368">Répétera la voix du vent qui court dans l'herbe,</l>
+                        <l n="369">Et quel musicien notera les accords</l>
+                        <l n="370">De tes parfums puissants et doux, subtils et forts ?</l>
+                        <l n="371">Oh ! Venez, prenez-moi, parfums inénarrables,</l>
+                        <l n="372">Vierges senteurs des pins_résineux, des érables,</l>
+                        <l n="373">Des lianes flottant dans les souffles épars ;</l>
+                        <l n="374">Venez à moi parfums et sons, de toutes parts,</l>
+                        <l n="375">Vous par qui les mortels ne sont pas solitaires,</l>
+                        <l n="376">Vous des secrets des dieux profonds dépositaires,</l>
+                        <l n="377">Venez autour de moi, parlez tous à la fois</l>
+                        <l n="378">Parfum du feu, parfum des eaux, parfum des bois,</l>
+                        <l n="379">Emportez-moi bien haut, sur vos vibrantes ailes,</l>
+                        <l n="380">Jusqu'au rêve parfait des formes les plus belles,</l>
+                        <l n="381">Vous, les inspirateurs éternels de l'amour !</l>
+                    </sp><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME, respectueuse avec amour, et inclinée.</speaker>
+                        <l n="382">Maître, vous dominez enfin, à votre tour !</l>
+                    </sp><!--@stage="slow/wave"--><!--@who="LA FEMME"-->
+<sp who="#le-statuaire">
+                        <speaker>LE STATUAIRE, 1'entourant de ses bras.</speaker>
+                        <l n="383">Femme, dans tes yeux purs resplendit ta prunelle,</l>
+                        <l n="384">Comme l'étoile d'or dans la nuit solennelle ;</l>
+                        <l n="385">Je t'aime, car c'est toi l'âme de la Beauté !</l>
+                        <stage type="narration">La femme et le statuaire se tiennent embrassés. En ce moment, la lumière douce de la lune les enveloppe. Le groupe amoureux apparaît encadré par la haute architecture des pleins-cintres, qui laissent voir la nuit immense et pâlissante, la silhouette des collines baignées par la mer, et la traînée miroitante du reflet lunaire sur les eaux sans fond.</stage>
+                    </sp><!--@stage="hugh"--><!--@who="LE STATUAIRE"-->
+<sp who="#la-femme">
+                        <speaker>LA FEMME, dans les bras du statuaire, se détournant à demi et montrant la statue.</speaker>
+                        <l n="386">Regarde !... Elle sourit avec sérénité.</l>
+                    </sp><!--@stage="show"--><!--@who="LA FEMME"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

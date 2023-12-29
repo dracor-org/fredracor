@@ -1,0 +1,798 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001800" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Wihlem-Tell</title>
+                <title type="sub">Prix : 2 francs</title>
+                <author>
+      <persName>
+        <forename>P.</forename>
+        <forename>Ludow</forename>
+        <surname>Vigé</surname>
+      </persName>
+    </author><!--VIGÉ, P. Ludow-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/VIGE_WILHEM-TELL.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/VIGE_WILHEM-TELL.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5723065h</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-recitant" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Recitant</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Monologue</term>
+                    <term>vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1864">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">WIHLEM-TELL</titlePart>
+			<titlePart type="sub">Prix : 2 francs</titlePart>
+			</docTitle> 
+		<docDate when="1864">1864.</docDate>
+		<docAuthor>P. LUDOW VIGÉ</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor>EN VENTE À SAINT-ÉTIENNE CHEZ LES PRINCIPAUX LIBRAIRES.</editor>-->
+			<div type="printer">
+                    <p>SAINT-ÉTIENNE. IMPRIMERIE DE VEUVE THÉOLIER et Cie.Place de l'Hôtelde Ville et du Marché.</p>
+                </div><!--@id="BONNE"-->
+		</div>
+	<div type="dedicace">
+		<p>À mon excellent ami</p>
+		<p>M. FERDINAND COURALLY.</p>
+	</div>
+	<div type="préface">
+                <head>AUX LECTEURS</head>
+		<p>Sous le titre de WAHLALLA(1) je commence aujourd'hui une série de portraits en vers, choisis parmi les héros dont les noms résument les efforts les plus généreux tentés pour l'affranchissement des peuples, les sentiments privés les plus impérieux de l'âme et les effets les plus étranges de la fatalité sur la vie humaine. C'est ainsi que dans ma galerie se trouveront réunis les révolutionnaires fameux, les novateurs et les fatalistes que le génie littéraire et l'histoire ont immortalisés, comme : Wilhem-Tell, Fiesque, Egmont, Maxaniello, Rienzi, Marino Faliero, Savonarole, Michel Servet, Jacques Artewehl, Othello, Roméo, Manfred, Foscaro, Hamlet, Carle Moor, etc.</p>
+		<p>C'est une oeuvre de longue haleine que j'entreprends, mais si obstinément caressée dans les rares loisirs que m'ont laissés, depuis quinze ans, les soins absorbants du journalisme, que j'ai la confiance de la conduire à bonne fin, si l'accueil du publie m'est favorable.</p> 
+		<p>Je commence par Wilhem-Tell, dont Grasser et Voltaire ont, après certain curé de Berne, contesté l'existence, parce que l'oeuvre du célèbre uranien fut des plus mémorables dans les fastes de la civilisation et aussi parce que depuis longtemps j'ai conçu la pensée de restaurer cette grande figure, mutilée sous le brillant travestissement dont l'ont recouverte les librettistes du chef-d'oeuvre de Rossini : MM. Jouy et Hippolyte Bis.</p>
+		<p>L'illustre Schiller, en Allemagne ; Lamartine, en France, et J,-S, Knowles, en Angleterre, ont élevé d'impérissables monuments au souvenir de Wilhem-Tell. Je viens, à leur suite, rendre un modeste hommage au libérateur de l'Helvétie, sans d'autre prétention que celle de ne rien devoir aux maîtres qui m'ont devancé dans cette pieuse commémoration.</p>
+		<p>J'ai fait suivre le court poème dans lequel Wilhem-Tell, à qui j'ai cru devoir restituer son nom helvétien, raconte lui-même les événements de sa vie, de notes historiques sur toutes les phases de cette merveilleuse rédemption d'un peuple qui commence dans le « chemin creux » de Kussnacht, au moment où Gessler tombe sous la flèche de Tell, se continue à travers l'insurrection des cantons et s'accomplit, en 1316, par le pacte fédéral de Brunnem, établissant que l'Helvétie prendra désormais le nom de Suisse et que le choix des fédérés devra être unanime s'il est jamais besoin de recourir à une protection étrangère. Le pacte de Brunnem fut la conséquence politique de la victoire de Morgarten remportée, un an auparavant, sur les troupes du duc Léopold, et qui rendit les Helvétiens redoutables à tous leurs voisins.</p>
+		<p>J'aipuisé mes renseignements, pour cet opuscule, comme pour ceux qui le suivront, aux sources authentiques. J'ai consulté l'Histoire de la confédération suisse de Jean de Mulle, la Chronique de Klinginbert, Le Livre de Merlchior de Lucerne, la Chronique d'EglofEsterlin, Le Voyage en Suisse du docteir Coxe, Guillaume-Tell et la Révolution de 1307, de M.J. Hisely, etc. En un mot, je n'ai rien négligé pour restituer au paysans sublime de Bürglen sa véritable personnalité et ses droits légitimes à l'admiration des peuples libres.</p>
+		<p>Puisse l'empressement des lecteurs me prouver bientôt que j'ai réussi</p>
+		<p>Saint-Étienne, janvier 1864.</p>
+		<p>(1) Voir les notes à la fin du volume.</p>
+	</div>
+
+	<castList>
+                <head>PERSONNAGES</head>
+	<castItem>
+                    <role corresp="#un-recitant">UN RÉCITANT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XIXème" gps="(N/A)"/>-->
+	<note>Publié dans « Walhalla : poèmes dramatiques par P. LUDOW VIGÉ, I WILHEM-TELL, ÉDITON RÉSERVÉE »</note>
+</front>
+<body>
+<div type="act" n="1">
+                <head>WILHLEM-TELL</head>
+<div type="scene" n="1">
+                    <head>MONOLOGUE.</head>
+<sp who="#le-recitant">
+                        <speaker>LE RÉCITANT.</speaker>
+                        <stage type="decor/costume/proud">La scène représente le «chemin creux » de Kussnacht (Die Hohle Gasse) qui conduit au château de Gessler nommé par lui-même Bride-Urie (Zwing-Uri). C'est un défilé entre deux rocs de granit dont l'un offre une large brèche, à travers laquelle apparaît le lac des Quatre-Cantons. Williem-Tell, assis sur Un tronc de sapin, semble absorbé dans ses réflexions. Son regard, profondément mélancolique, fixe dans le lointain les tours d'Altorf qu'on aperçoit à l'extrême horizon. Sa main gauche serre convulsivement son arc sur sa poitrine, tandis que la droite soutient sa tête. Il se lève, explore d'un long regard le site désert qu'il semble lentement reconnaître, et, dressant sa tête énergique, commence ainsi :</stage>
+                        <l n="1">Plaines et monts, grands lacs, abîmes et sommets ;</l>
+                        <l n="2">Vents qui soufflez du ciel, voix sombres des forêts,</l>
+                        <l n="3">Je vous prends à témoin de ses crimes. Nuages</l>
+                        <l n="4">Qui passez sur mon front, vous vîtes ses outrages.</l>
+                        <l n="5">Soleil, voile la face ardente : il ne faut pas</l>
+                        <l n="6">Que tes rayons divins éclairent son trépas.</l>
+                        <l n="7">Un tyran doit mourir dans la honte et dans l'ombre ;</l>
+                        <l n="8">Je voudrais que d'un pôle à l'autre, tout fût sombre.</l>
+                        <l n="9">Pour demain, astre-dieu, réserve tes clartés :</l>
+                        <l n="10">Aujourd'hui, nous pleurons toutes nos libertés.</l>
+                        <l n="11">Nos libertés ! L'antique cl pieux héritage</l>
+                        <l n="12">Que nos aïeux avaient augmenté d'âge en âge,</l>
+                        <l n="13">Ce trésor précieux d'honneur immaculé,</l>
+                        <note type="L">Rhétiens voir note 2.</note>
+                        <l n="14">Qui, depuis les Rhétiens, s'était accumulé ;</l>
+                        <l n="15">Oui, la gloire et l'orgueil de l'Helvétie, un traître,</l>
+                        <note type="L">Gessler : note 3.</note>
+                        <note type="L">Habsbourg : note 4</note>
+                        <l n="16">Gessler, pour les Habsbourg, s'en est rendu le maître.</l>
+                        <l n="17">Ô fils aîné de Dieu, Soleil, tu vis jadis</l>
+                        <note type="L">Note 5.</note>
+                        <l n="18">Les légions de Rome envahir ce pays.</l>
+                        <l n="19">De César, le Géant, et de sa grande armée,</l>
+                        <l n="20">Tu vis, sur nos rochers, pâlir la renommée.</l>
+                        <l n="21">Souviens-toi ! le ruisseau, pour féconder son champ,</l>
+                        <l n="22">Au lieu d'eau, charria de la chair et du sang ;</l>
+                        <l n="23">Souviens-toi ! Lors du choc de la dernière attaque,</l>
+                        <l n="24">Quand le sol ne fui plus qu'un immonde cloaque,</l>
+                        <l n="25">Où vainqueurs et vaincus trébuchaient, énervés ;</l>
+                        <l n="26">Quand les derniers Rhétiens tombèrent, bras levés ;</l>
+                        <l n="27">On entendit, au loin, les voix de leurs compagnes,</l>
+                        <l n="28">Accourant en chantant l'hymne de nos montagnes,</l>
+                        <l n="29">Et le vainqueur, surpris, s'enfuit, épouvanté</l>
+                        <note type="L">Note 6</note>
+                        <l n="30">Par ces femmes de coeur chantant la liberté.</l>
+                        <stage type="sad/quiet">Avec une tristesse calme :</stage>
+                        <l n="31">C'est d'un passé splendide une page entre mille !</l>
+                        <l n="32">De nos jours, bon soleil, l'Helvétie est débile.</l>
+                        <l n="33">Un orgueilleux laquais, Gessler, donne des lois</l>
+                        <l n="34">À ceux qui tenaient tête aux Romains d'autrefois,</l>
+                        <l n="35">Et les derniers Rhétiens marchent, chargés de chaînes,</l>
+                        <l n="36">Conduits par les valets des milices germaines.</l>
+                        <l n="37" part="I">Quelle honte !</l><!--@syll="3"-->
+                        <stage type="strong">Avec énergie :</stage>
+                        <l n="37" part="F">Et demain, tu nous verrais encor</l><!--@syll="9"-->
+                        <l n="38">Soumis, humiliés par ces fats couverts d'or ?</l>
+                        <l n="39">Bonshommes de velours, coeurs et cervelles vides ?</l>
+                        <l n="40">Non, soleil généreux. Parmi les plus stupides,</l>
+                        <l n="41">J'ai choisi le plus lâche et le plus criminel,</l>
+                        <l n="42">Gessler ! Et son arrêt est descendu du ciel.</l>
+                        <l n="43">Je vais, dans un instant, auprès de cette brèche,</l>
+                        <l n="44">L'envoyer en enfer traversé d'une flèche.</l>
+                        <stage type="stop/listen">Il s'arrête, il écoute du côté du lac :</stage>
+                        <l n="45">Les échos du vallon s'éveillent sous leurs pas,</l>
+                        <l n="46">Mais j'ai Dieu pour complice, ils ne m'atteindront pas.</l>
+                        <stage type="enthousiasm">Avec enthousiasme :</stage>
+                        <note type="L">Note 7</note>
+                        <l n="47">Conjurés du Grulli, fiers esprits, bras robustes,</l>
+                        <l n="48">L'oeuvre marche ! Élevez vers Dieu vos fronts augustes.</l>
+                        <l n="49">Furst, Melchtald, Stauffacher, vaillante trinité,</l>
+                        <l n="50">Le ciel compatissant nous rend la liberté.</l>
+                        <l n="51">Frères, c'est le Très-Haut qui, pour sauver la Suisse,</l>
+                        <l n="52">M'a retiré vivant du fond du précipice,</l>
+                        <l n="53">Et m'a conduit ici libre, armé, seul, mais fort,</l>
+                        <l n="54">Pour attendre Gessler et le frapper de mort.</l>
+                        <stage type="listen">Écoutant encore :</stage>
+                        <l n="55" part="I">Ils montent lentement, mais ils montent.</l><!--@syll="9"-->
+                        <stage type="pray">Pieusement :</stage>
+                        <l n="55" part="F">Ô patrie !</l><!--@syll="3"-->
+                        <l n="56">Ô terre de héros par l'étranger flétrie,</l>
+                        <l n="57">Tu vas être vengée ! - Ô mère des aïeux,</l>
+                        <l n="58">Helvétie, avec nous, tourne-toi vers les cieux.</l>
+                        <l n="59">C'est là qu'est le secours, c'est là qu'est la puissance ;</l>
+                        <l n="60">C'est Dieu qui par mon bras t'offre la délivrance.</l>
+                        <l n="61">Suisse esclave, à genoux ! Enfants, tendez les bras :</l>
+                        <l n="62">La sainte Liberté va descendre ici bas.</l>
+                        <stage type="think">Réfléchissant :</stage>
+                        <l n="63">J'ai pris beaucoup d'avance, et la meute en déroule</l>
+                        <l n="64">S'attarde à me chercher aux angles de la route ;</l>
+                        <l n="65">H faut que mort ou vif on me trouve. - Tyran,</l>
+                        <l n="66">Ton glas funèbre sonne à l'éternel cadran ;</l>
+                        <l n="67">Abandonne la proie et viens mourir ; c'est l'heure !</l>
+                        <l n="68">11 faut, comme l'agneau, qu'à son tour le loup meure.</l>
+                        <stage type="ironic">Avec ironie :</stage>
+                        <l n="69">Il s'obstine à m'avoir ; il fouille chaque coin.</l>
+                        <l n="70">Vous prenez, Monseigneur, un inutile soin,</l>
+                        <l n="71">Celui que vous cherchez vous attend. — Venez vite.</l>
+                        <l n="72">Un chasseur noble, fi ! Prendre le lièvre au gitc?</l>
+                        <stage type="happy">Joyeusement :</stage>
+                        <l n="73">Cette fois, c'est bien lui, je reconnais sa voix.</l>
+                        <l n="74">Mon coeur bondit d'espoir et de crainte, à la fois.</l>
+                        <stage type="stop/think">Tell s'arrête et semble consulter ses souvenirs :</stage>
+                        <note type="L">Note 8</note>
+                        <l n="75">Donc, je n'ai pas rêvé : - la barque, la tempête...?</l>
+                        <l n="76">Gessler devait ce soir faire tomber ma tête ?</l>
+                        <note type="L">Note 9</note>
+                        <l n="77">Il me faisait conduire à Kussnacht, en bateau,</l>
+                        <l n="78">Quand la main du Seigneur a fait soulever l'eau ?</l>
+                        <stage type="title">Récit :</stage>
+                        <l n="79">L'éclair brille, la foudre éclate et l'onde arrive</l>
+                        <l n="80">Furieuse, poussant le bateau sur la rive.</l>
+                        <l n="81">Je n'entends que des pleurs : Gessler crie, au secours !</l>
+                        <l n="82">Mais l'orage redouble et les rochers sont sourds.</l>
+                        <l n="83">La barque, au gré des flots, monte de cime en cime,</l>
+                        <l n="84">Puis, descend en plongeant, rapide, vers l'abîme.</l>
+                        <l n="85">Gessler est pâle ; il tremble, il souffre mille morts ;</l>
+                        <l n="86">C'est l'heure où le méchant compte avec le remords.</l>
+                        <l n="87">Sa suite de soudards, de courtisans infâmes,</l>
+                        <l n="88">Se croient déjà livrés aux éternelles flammes.</l>
+                        <l n="89">De l'unique rameur, les bras insuffisants</l>
+                        <l n="90">Ne sauraient conjurer le péril des brisants.</l>
+                        <l n="91">C'en est fait ! - Une voix s'élève de la foule,</l>
+                        <l n="92">Qui domine le bruit lugubre de la houle :</l>
+                        <l n="93">— « En Suisse, dit la voix, il n'est qu'un homme, un seul,</l>
+                        <l n="94">« Qui nous puisse arracher au funèbre linceul.</l>
+                        <l n="95">— « Quel est-il ? » dit Gessler, que l'épouvante atterre.</l>
+                        <l n="96" part="I">La voix répond : « C'est Tell. »</l><!--@syll="6"-->
+                        <l n="96" part="F">— « Eh bien, qu'on le déferre. »</l><!--@syll="6"-->
+                        <stage type="pause/sigh">Il fait une courte pause et, soupirant :</stage>
+                        <l n="97">J'étouffais sous leurs pieds et j'entendais leurs voix,</l>
+                        <l n="98">Couvert de triples fers dont j'ignore le poids.</l>
+                        <stage type="narration">Reprenant le récit :</stage>
+                        <l n="99">Alors, Gessler, sur moi, penchant sa face blême,</l>
+                        <l n="100">De ses fiévreuses mains me déferra lui-même.</l>
+                        <l n="101">Je fus libre ! Et celui qui lit au fond des coeurs</l>
+                        <l n="102">Me permit de cacher mes haineuses ardeurs,</l>
+                        <l n="103">Lorsque, maître, à mon tour, de Gessler, de sa vie,</l>
+                        <l n="104">De mourir avec lui, j'eus un instant l'envie.</l>
+                        <l n="105">Ce ne fut qu'un instant. - Je sentis dans mon sein,</l>
+                        <l n="106">Sous l'oeil de Dieu, germer un immense dessein.</l>
+                        <l n="107">Mourir, quand l'Helvétie attend qu'une main ferme,</l>
+                        <l n="108">A l'oeuvre des bourreaux vienne enfin mettre un terme ?</l>
+                        <l n="109">Mourir avec Gessler ? Entraîner le vautour,</l>
+                        <l n="110">Mais laisser les corbeaux se gorger à leur tour ?</l>
+                        <l n="111">Mourir esclave, moi, Wilhem-Tell ? Impossible !</l>
+                        <stage type="search">Tell cherche à dompter l'irritation qui le gagne ; il dit gravement les vers qui suivent :</stage>
+                        <l n="112">Hermann Gessler de Brunck, Dieu, le maître invisible,</l>
+                        <l n="113">Dieu, souverain seigneur des plus grands potentats,</l>
+                        <l n="114">Pour qui peuples et rois sont égaux ici-bas ;</l>
+                        <l n="115">Dieu ne veut pas, tyran, que, veuve et spoliée,</l>
+                        <l n="116">Sur le gibet germain, la Suisse soit liée.</l>
+                        <stage type="disgust">Avec dégoût :</stage>
+                        <l n="117">Gessler ! Quel flot de sang s'épanche à ce nom-là.</l>
+                        <l n="118">Des tyrans d'autrefois, Néron, Caligula,</l>
+                        <l n="119">Entretenaient, dit-on, d'insatiables bêtes,</l>
+                        <l n="120">Qu'à grands frais on gardait pour les horribles fêtes,</l>
+                        <l n="121">Où les martyrs chrétiens, aux yeux du peuple-roi,</l>
+                        <l n="122">Sur le sable du cirque, expiraient pour leur foi.</l>
+                        <note type="L">Stalle : Dans une église, sièges de bois dont le fond se lève et se baisse, et qui sont autour du choeur. [L]</note>
+                        <l n="123">Quand la bête était lasse, on voyait, de sa stalle,</l>
+                        <l n="124">L'empereur, vers l'arène, abaisser son front pâle ;</l>
+                        <l n="125">C'était l'ordre. Aussitôt, un homme, armé d'un trait,</l>
+                        <l n="126">Excitait l'animal, et le chrétien mourait.</l>
+                        <l n="127">Les Romains dégradés riaient à pleine gorge.</l>
+                        <stage type="offended">Indignation croissante :</stage>
+                        <l n="128">L'empereur d'Allemagne a ses bêtes, qu'il gorge.</l>
+                        <note type="L">Note 10</note>
+                        <l n="129">Un jour, le duc_Albert, l'assassin de Nassau,</l>
+                        <l n="130">Comme il manquait d'un tigre, a fait choix d'un bourreau</l>
+                        <l n="131">Qui, plus cruel, cent fois, que la bête sauvage,</l>
+                        <l n="132">Est aussi plus ardent et plus âpre au carnage.</l>
+                        <l n="133">Ce bourreau, non, ce tigre affamé, c'est Gessler !</l>
+                        <stage type="continue">Reprenant le ton du récit :</stage>
+                        <l n="134">Chaque jour de sa vie est mauvais. Stauffacher, —</l>
+                        <l n="135">Un des trois du Grûtli, - dont la voix inspirée,</l>
+                        <l n="136">Sert de code et de juge à toute une contrée ;</l>
+                        <l n="137">Dont le nom respecté, résume, avec éclat, </l>
+                        <l n="138">L'honneur le plus constant et le plus délicat ;</l>
+                        <l n="139">Stauffacher et les siens, assis devant leur porte,</l>
+                        <l n="140">Devisaient, quand Gessler, suivi de son escorte,</l>
+                        <l n="141">Vint à passer. - « À qui cette maison? » dit-il.</l>
+                        <l n="142">Stauffacher, qui ne peut soupçonner le péril,</l>
+                        <l n="143">Lui répond simplement : — « Gouverneur, c'est la mienne. »</l>
+                        <l n="144">— « C'est la tienne, vilain, hurle Gessler, la tienne !</l>
+                        <l n="145">« Eh bien, je m'en empare, au nom de l'Empereur !</l>
+                        <l n="146">« Entends-tu, je la prends et te fais trop d'honneur.</l>
+                        <l n="147">« C'est risible, vraiment, que semblables canailles</l>
+                        <l n="148">« Se puissent abriter derrière des murailles.</l>
+                        <l n="149">« Quand vous voudrez dormir, vous creuserez des trous</l>
+                        <l n="150">« Dans les bois, comme font les renards et les loups. »</l>
+                        <l n="151">Et comme le bailli passait pour un office :</l>
+                        <l n="152">« Bailli, je ne veux plus que le peuple bâtisse. »</l>
+                        <l n="153">Puis, lançant son cheval au galop, il partit.</l>
+                        <l n="154">Stauffacher l'a suivi des yeux, mais n'a rien dit !</l>
+                        <l n="155">Il sait, l'homme de Schwitz, ce que vaut le silence,</l>
+                        <l n="156">Quand on trame en son coeur un projet de vengeance.</l>
+                        <stage type="enthousiasm">Avec entrain :</stage>
+                        <l n="157">Chacun n'est pas ainsi silencieux, discret,</l>
+                        <l n="158">Et pouvant dévorer un affront en secret.</l>
+                        <note type="C">Note 11</note>
+                        <l n="159">Baumgarten, par exemple, un homme à la main prompte,</l>
+                        <l n="160">À qui sa femme, un jour, vint déclarer sa honte,</l>
+                        <note type="C">Note 12</note>
+                        <l n="161">Et comment le bailli de Rosberg, un barbon,</l>
+                        <l n="162">Avait déshonoré son honnête maison.</l>
+                        <l n="163">Baumgarten, dès qu'il sut de qui venait la tâche,</l>
+                        <l n="164">S'habilla prestement, et, s'armant d'une hache,</l>
+                        <l n="165">S'en alla, tout d'un trait, tuer le suborneur,</l>
+                        <l n="166">Sans le moindre souci des gens du gouverneur.</l>
+                        <l n="167">« Tu m'as déshonoré, bailli, moi, je t'assomme. »</l>
+                        <l n="168">Il est bien entendu qu'on fit poursuivre l'homme.</l>
+                        <l n="169">C'était un bûcheron, un pauvre hère, un rien ;</l>
+                        <l n="170">Fallait-il se gêner pour lui prendre son bien ?</l>
+                        <l n="171">Et le droit du Seigneur ? On l'oublierait, peut-être.</l>
+                        <l n="172">Rien ne nous appartient, tout appartient au maître,</l>
+                        <l n="173">Gens et choses ; cela, pour de bonnes raisons :</l>
+                        <l n="174">Gessler prêche d'exemple en volant les maisons.</l>
+                        <stage type="sweet">Avec une commisération familière :</stage>
+                        <l n="175">Ce pauvre Baumgarten ! On était sur sa trace ;</l>
+                        <l n="176">Les soldats l'allaient prendre au moment ou je passe.</l>
+                        <l n="177">C'était au bord du lac ; je détache un bateau.</l>
+                        <l n="178">J'y pousse Baumgarten et gagne la pleine eau,</l>
+                        <l n="179">Par un temps infernal de vent et de tonnerre.</l>
+                        <l n="180">Baumgarten était sauf quand je revins à terre.</l>
+                        <stage type="contempt">Avec un mépris calculé :</stage>
+                        <l n="181">Gessler m'a réclamé Baumgarten ce matin :</l>
+                        <l n="182">Il manquait une proie aux crocs de l'assassin.</l>
+                        <stage type="stop/nervous">Après un repos ; d'un ton irrité :</stage>
+                        <l n="183">L'aigle noir d'Allemagne est un monstre à deux têtes.</l>
+                        <l n="184">Il faut deux estomacs à de pareilles bêtes ;</l>
+                        <note type="L">Note 13</note>
+                        <l n="185">Gessler et Landenberg ! Deux estomacs sans fond,</l>
+                        <l n="186">Où l'or du maître avec notre sang se confond.</l>
+                        <l n="187">Landenberg et Gessler font la même besogne :</l>
+                        <l n="188">Voler, piller, tuer, sans la moindre vergogne.</l>
+                        <l n="189">Voici le dernier trait du seigneur d'Unterwald :</l>
+                        <stage n="think">Ici, Wilhem-Tell semble se recueillir un moment comme s'il hésitait devant l'horreur de son récit :</stage>
+                        <l n="190">Landenberg, traversant les champs d'Henri Melchtald,</l>
+                        <l n="191">Du vieux Melchlald, le saint, l'honneur de la patrie,</l>
+                        <l n="192">Que les quatre cantons ont en idolâtrie ;</l>
+                        <l n="193">Landenberg, traversant ses champs, vit, dans les blés,</l>
+                        <l n="194">Deux boeufs blonds, grands et gras, côte à côte attelés</l>
+                        <l n="195">- « Voici, par l'empereur ! Un superbe attelage.</l>
+                        <l n="196" part="I">À qui sont ces boeufs-là ? »</l><!--@syll="6"-->
+                        <l n="196" part="F">Melchtald quittant l'ouvrage,</l><!--@syll="6"-->
+                        <l n="197">On faisait la moisson, s'avance avec respect :</l>
+                        <l n="198" part="I">- « Seigneur, ils sont à moi. »</l><!--@syll="6"-->
+                        <l n="198" part="F">- « Toi, ver de terre abject,</l><!--@syll="6"-->
+                        <l n="199">Tu possèdes ces boeufs ? Tu mens, je les confisque. »</l>
+                        <l n="200">Melchtald ne répond rien ; il sait ce que l'on risque</l>
+                        <l n="201">À braver Landdnberg. - Le tyran d'Unterwald</l>
+                        <l n="202">Prend les boeufs et s'en va ; mais le fils de Melchlald,</l>
+                        <note type="C">Note 14</note>
+                        <l n="203">Erni, coeur valeureux, tête ardente, âme fière,</l>
+                        <l n="204">Arrivait pour mener les boeufs à la litière,</l>
+                        <l n="205">Quand il les aperçoit, Landenber get ses gens,</l>
+                        <l n="206">Qui, près du grand chemin, s'avancent à pas lents.</l>
+                        <l n="207">Il comprend tout. D'un bond, il court à la charrue,</l>
+                        <l n="208">En arrache le soc, sur le voleur se rue,</l>
+                        <l n="209">Frappe au bras le valet qui retenait les boeufs,</l>
+                        <l n="210">Et, tirant le collier, les ramène tous deux.</l>
+                        <l n="211">Une telle action, si vaillante soit-elle,</l>
+                        <l n="212">Où l'Autriche commande, est cent fois criminelle :</l>
+                        <l n="213">Landenberg et Gessler condamnèrent Melchlald.</l>
+                        <stage type="stop/hesitate">Williem-Tell s'arrête, oppressé, hésitant :</stage>
+                        <l n="214">La suite de l'histoire est sinistre. Unterwald,</l>
+                        <l n="215">Dans un siècle d'ici, refusera d'y croire,</l>
+                        <l n="216">Et c'est la vérité, cependant, c'est notoire.</l>
+                        <l n="217">Landenberg, ne pouvant atteindre Erni qui fuit,</l>
+                        <l n="218">Au logis de Melchtald se transporta la nuit.</l>
+                        <l n="219">Gessler, qui le suivait, fit rougir des tenailles.</l>
+                        <l n="220">L'horreur de ce récit me glace les entrailles !</l>
+                        <l n="221">Lorsque le fer fut rouge, on prit le pauvre vieux,</l>
+                        <l n="222">Et, sans compassion, on arracha ses yeux !</l>
+                        <stage type="pain/cry/anger">La douleur suffoque Tell, il sanglote, et continue à travers ses larmes jusqu'à ce que la colère prenne le dessus et succède à son afflictions.</stage>
+                        <l n="223">Bon Melchtald ! Chaque nuit, surgit dans les ténèbres,</l>
+                        <l n="224">Ce spectre préféré de mes songes funèbres.</l>
+                        <l n="225">Il m'éveille, il me montre, avec ses doigts tremblants,</l>
+                        <l n="226">De ses yeux arrachés les orbites sanglants.</l>
+                        <l n="227">On arracha ses yeux ! Quel animal féroce</l>
+                        <l n="228">Eut l'instinct monstrueux de ce supplice atroce ?</l>
+                        <l n="229" part="I">Dieu n'en à pas créé.</l><!--@syll="6"-->
+                        <stage type="furious">Avec une fureur croissante :</stage>
+                        <l n="229" part="F">Lorsque vous trouverez</l><!--@syll="6"-->
+                        <l n="230">Des cadavres meurtris, mutilés, déchirés,</l>
+                        <l n="231">Portant, en traits hideux, la trace épouvantable</l>
+                        <l n="232">D'un supplice étonnant, d'un tourment effroyable ;</l>
+                        <l n="233">Si vous cherchez le monstre, auteur de tels forfaits,</l>
+                        <l n="234">Retournez vers Altorf vos regards stupéfaits,</l>
+                        <note type="L">Note 15</note>
+                        <l n="235">Entrez à Zwing-Uri, suivez les cris de joie,</l>
+                        <l n="236">Les refrains des chansons ; sous l'or et sous la soie,</l>
+                        <l n="237">Parmi les grands seigneurs, vous le reconnaîtrez :</l>
+                        <l n="238">C'est leur chef, c'est Gessler, tigre, à la face près.</l>
+                        <l n="239">S'il est minuit, c'est l'heure où l'ogre se transforme ;</l>
+                        <l n="240">Sa face est violette et son ventre est énorme ;</l>
+                        <l n="241">L'ogre ronfle à crever son pourpoint de velours ;</l>
+                        <l n="242">C'est ainsi qu'il prélude à ses fauves amours.</l>
+                        <note type="L">Goule : Génie dévorant, d'après les superstitions du Levant, les corps morts dans les cimetières. [L]</note>
+                        <l n="243">Minuit ! L'heure où la goule au vampire se livre,</l>
+                        <l n="244">C'est l'heure du bonheur pour Gessler, il est ivre !</l>
+                        <l n="245">Il chante que la mort est sa maîtresse. II rit ?</l>
+                        <l n="246">C'est qu'il rêve en dormant que le monde finit.</l>
+                        <l n="247">11 rit plus fort ? Alors, c'est que sans doute, en songe,</l>
+                        <l n="248">Il voit nos lacs en sang et se croit une éponge.</l>
+                        <stage type="furious/sad">La fureur de Tell est arrivée au paroxysme, elle tombe ; il dit les vers suivants avec une sombre amertume :</stage>
+                        <l n="249">Est-ce un homme ? Non. Dieu, pour punir les méchants,</l>
+                        <l n="250">Dans un jour décolère, inventa les tyrans.</l>
+                        <l n="251">Il mêla, dans leur coeur, la folie et la rage,</l>
+                        <l n="252">Et par pure pitié les fit à son image.</l>
+                        <l n="253">Mais on les reconnaît à des signes certains :</l>
+                        <l n="254">Ils sont lâches et-faux, cruels et libertins.</l>
+                        <l n="255">Un homme, lui, Gessler ? Est-ce qu'il est un homme ;</l>
+                        <l n="256">Ayant l'instinct pervers de placer une pomme</l>
+                        <l n="257">Sur la tête d'un fils, et puis, qui forcerait</l>
+                        <l n="258">Le père de l'enfant à l'enlever d'un trait ?</l>
+                        <stage type="anger">Au souvenir qu'il vient de réveiller, la colère de Tell, un instant contenue, se ranime :</stage>
+                        <l n="259">Ah ! Tu me fais attendre. Eh bien, tant mieux, vampire.</l>
+                        <l n="260">Je n'ai pas encor dit tout ce que je veux dire,</l>
+                        <l n="261">Et puisque Dieu m'a mis ici de faction,</l>
+                        <l n="262">J'allégerai mon coeur de son affliction.</l>
+                        <l n="263">Je dirai tout. - Va donc, cherche de fente en fente ;</l>
+                        <l n="264">Cours, des sapins aux rocs, poussant ta meule ardente.</l>
+                        <l n="265">Le récit sera long, mais quand je me tairai,</l>
+                        <l n="266">Ce sera le signal, Gessler, je te tuerai.</l>
+                        <stage type="sit">Tell s'assied :</stage>
+                        <l n="267">Oui, les tyrans sont faits de rage et de folie.</l>
+                        <l n="268">L'orgueil s'y mêle-t-il, la mesure est remplie.</l>
+                        <l n="269">Avec mon fils Walter, dans Altorf, ce matin,</l>
+                        <l n="270">Je passais, quand je fus surpris, dans mon chemin,</l>
+                        <l n="271">Par une foule immense et de tous lieux venue,</l>
+                        <l n="272">Des soldais de Gessler escortant la cohue.</l>
+                        <l n="273">Le bourreau de la ville, assisté du bailli,</l>
+                        <l n="274">Précédait le cortège et j'en ai tressailli :</l>
+                        <l n="275">J'ai cru qu'il s'agissait d'un nouveau sacrifice.</l>
+                        <l n="276">Même, il me semblait voir l'instrument du supplice.</l>
+                        <l n="277">J'allais fuir, consterné, quand j'entendis ceci :</l>
+                        <l n="278">« Gens d'Uri, gens d'Altorf, la toque que voici,</l>
+                        <l n="279">Au bout de cette perche où je viens de la mettre,</l>
+                        <l n="280">Est celle du seigneur Gessler, noire bon maître,</l>
+                        <l n="281">Emblème précieux de la fidélité</l>
+                        <l n="282">Que le canton d'Uri doit à l'autorité.</l>
+                        <l n="283">Quiconque passera devra lui rendre hommage,</l>
+                        <l n="284">Sous les peines du fouet, des fers et du pillage, »</l>
+                        <stage type="shout/stand">Avec véhémence, en se levapl :</stage>
+                        <l n="285">L'ai-je bien entendu ? Quoi, la toque, un chiffon !</l>
+                        <l n="286">Un lambeau de velours sur le bout d'un bâton !</l>
+                        <l n="287">Abjection d'un peuple, offense, ignominie !</l>
+                        <l n="288">Démence d'un tyran, insolence, ironie !</l>
+                        <l n="289">Et le peuple passait : vieillards, femmes, enfants,</l>
+                        <l n="290">Puis les hommes, et tous courbaient leurs fronts tremblants.</l>
+                        <l n="291">Des hommes, descendus des femmes héroïques</l>
+                        <l n="292">Qui bravèrent César avec leurs fiers cantiques ;</l>
+                        <l n="293">Des Suisses, que Dieu lit dans les généreux flancs</l>
+                        <l n="294">Des Rhétiens, redoutés des Romains et des Francs !</l>
+                        <l n="295" part="I">Lièvres nés de lions.</l><!--@syll="6"-->
+                        <stage type="desperate">Avec découragement :</stage>
+                        <l n="295" part="F">Quel peuple que le nôtre !</l><!--@syll="6"-->
+                        <stage type="quiet">Simplement.</stage>
+                        <l n="296">Mon arc dans une main, prenant mon fils de l'autre,</l>
+                        <l n="297">Je vais droit à la perche et passe. Deux soldats</l>
+                        <l n="298">M'arrêtent ; d'un revers de main je les abats.</l>
+                        <l n="299">L'officier stupéfait ; Sarnem, crie à la garde !</l>
+                        <l n="300">Le peuple qui fuyait se ravise, il regarde,</l>
+                        <l n="301">Il fait cercle, il s'arrête, il attend. Le bourreau</l>
+                        <l n="302">Est avec le bailli debout près du poteau.</l>
+                        <l n="303">Tous deux sont interdits, muets, cloués sur place ;</l>
+                        <l n="304">Ils semblent implorer de loin la populace.</l>
+                        <l n="305">Celle-ci se rapproche et murmure. Parmi</l>
+                        <l n="306">Ceux qui sont le plus près, j'aperçois un ami,</l>
+                        <note type="L">Note 18</note>
+                        <l n="307">Walther Furst. — Au Grütli, c'est lui qui lut le pacte.</l>
+                        <l n="308">D'un signe, il m'a compris. Vers la foule compacte,</l>
+                        <l n="309">Tournant son bon regard tout plein de loyauté,</l>
+                        <l n="310">11 commande le calme à ce peuple irrité.</l>
+                        <l n="311">Le peuple, avec respect, se retire à son geste,</l>
+                        <l n="312">Et s'en va, maudissant les soldats qu'il déteste,</l>
+                        <l n="313">Dont il entend au loin accourir un troupeau.</l>
+                        <l n="314">Moi, s'en m'inquiéter, j'arrache le poteau,</l>
+                        <l n="315">L'élève vers le peuple et puis je le secoue</l>
+                        <l n="316">Jusqu'à ce que la toque ait roulé dans la boue.</l>
+                        <l n="317">Un long cri retentit : À bas Gessler ! J'ai fait,</l>
+                        <l n="318">Ardemment, dans mon coeur, chorus à ce souhait ;</l>
+                        <l n="319">Mais ceux qui le formaient ne savaient pas, sans doute,</l>
+                        <l n="320">Que Gessler, dès ce soir, passerait sur ma route,</l>
+                        <l n="321">Et que la même main qui loucha le poteau</l>
+                        <l n="322">Coucherait l'oppresseur de la Suisse au tombeau,</l>
+                        <stage n="quiet">Tell semble se complaire dans cette partie de son monologue :</stage>
+                        <l n="323">Sarnem et ses soldats vinrent... faire justice.</l>
+                        <l n="324">Reptiles achetés pour effrayer la Suisse,</l>
+                        <l n="325">Ils viennent en tournant, rampant, sournois, honteux.</l>
+                        <l n="326">J'ai combattu des loups doublement plus nombreux ;</l>
+                        <l n="327">J'aurais pu me défendre et prolonger la lutte ;</l>
+                        <l n="328">Je ne l'ai pas voulu. Que mon sort s'exécute !</l>
+                        <l n="329">J'ai présenté mes bras à leurs liens de fer,</l>
+                        <l n="330">Et je les ai suivis dans l'antre de Gessler.</l>
+                        <l n="331" part="I">Tell, m'a dit le tyran, d'où viens-tu ? »</l><!--@syll="9"-->
+                        <l n="331" part="F">- « Des montagnes.</l><!--@syll="3"-->
+                        <l n="332">Veux-tu que je t'en parle, ainsi que des campagnes ? »</l>
+                        <l n="333" part="I">Il a blêmi ; mais moi, j'ai poursuivi ;</l><!--@syll="10"-->
+                        <l n="333" part="F">« Tyran,</l><!--@syll="2"-->
+                        <l n="334">Nos montagnes n'ont plus frayeur de l'ouragan. »</l>
+                        <l n="335">Les vents tempétueux leur parlent de tes crimes;</l>
+                        <l n="336">L'écho de tes forfaits atteint jusqu'à leurs cimes ;</l>
+                        <l n="337">Et les rocs et les monts, s'ils avaient une voix,</l>
+                        <l n="338">Remercieraient le Ciel d'échapper à tes lois.</l>
+                        <l n="339" part="I">Quant aux plaines... »</l><!--@syll="3"-->
+                        <l n="339" part="F">- « Tais-toi ! Que l'on double ses chaînes. »</l><!--@syll="9"-->
+                        <l n="340" part="I">On a doublé mes fers. Moi, toujours :</l><!--@syll="9"-->
+                        <l n="340" part="F">- « Quant aux plaines,</l><!--@syll="3"-->
+                        <l n="341">Elles ont oublié que dans leur sein fécond</l>
+                        <l n="342">Dieu mit la grappe pourpre auprès de l'épi blond :</l>
+                        <l n="343">On néglige partout la moisson, la vendange ;</l>
+                        <l n="344" part="I">On n'a qu'un seul désir. »</l><!--@syll="6"-->
+                        <l n="344" part="M">- Lequel? »</l><!--@syll="2"-->
+                        <l n="344" part="F">- « Que Dieu nous venge,</l><!--@syll="4"-->
+                        <l n="345">Et fasse enfin tomber sur ton front criminel,</l>
+                        <l n="346">Pour nos droits dérobés, la justice du Ciel. »</l>
+                        <l n="347">Gessler, dissimulant sa rage contenue :</l>
+                        <l n="348">- « Tu parles à ravir, Wilhem-Tell, continue. »</l>
+                        <l n="349" part="I">Or, j'ai continué gravement :</l><!--@syll="8"-->
+                        <l n="349" part="F">- « Sans pudeur,</l><!--@syll="3"-->
+                        <l n="350">Tu t'es fait des Habsbourg l'assassin, le voleur.</l>
+                        <l n="351">Tu prends la femme aux uns et la maison aux autres</l>
+                        <l n="352">Dans le sang et le vin tout à tour tu te vautres</l>
+                        <l n="353">Et, comme échange infâme à notre liberté,</l>
+                        <l n="354">Tu sèmes, en tous lieux, ton immortalité.</l>
+                        <l n="355">Mais la mesure est comble et la victime est lasse.</l>
+                        <l n="356">Vainement tu voudrais imposer par l'audace.</l>
+                        <l n="357">Ce peuple presque éteint retrouve un vieux reflet,</l>
+                        <l n="358">Et, tantôt, sur la place il criait ton arrêt.</l>
+                        <l n="359">La main du roi des rois a mis dans sa balance</l>
+                        <l n="360">Tes crimes d'un côté, de l'autre, la vengeance.</l>
+                        <l n="361">On forme contre toi des conspirations.</l>
+                        <l n="362">Sur nos lacs, à l'abri des l'oeil des espions ;</l>
+                        <l n="363">Dans les trous désertés par les ours des montagnes.</l>
+                        <l n="364">Des hommes, chaque nuit, parcourent les campagnes, </l>
+                        <l n="365">Et vont, dans le silence et dans l'obscurité ;</l>
+                        <l n="366">Préparer le réveil de notre liberté.</l>
+                        <l n="367">Vieillards, femmes, enfants, tous sont de la partie.</l>
+                        <l n="368">La Suisse a secoué sa mortelle apathie.</l>
+                        <l n="369">N'es-tu pas entendu crier : Mort au tyran !</l>
+                        <l n="370">L'heure a sonné. Requin, retourne à l'océan ;</l>
+                        <l n="371">Loup, reviens à ton bois ; tigre, entre en ta caverne.</l>
+                        <l n="372">Laisse nous vivre en paix ; ton nom seul nous consterne.</l>
+                        <l n="373">Va-t'en ! Nous sommes nés libres et forts. Va-t'en !</l>
+                        <l n="374">Tout un peuple te chasse et le démon t'attend. </l>
+                        <l n="375">Gessler, j'ai dit. Tu peux m'immoler. Que m'importe !</l>
+                        <l n="376">La justice divine est debout à ta porte. »</l>
+                        <stage type="think/touched">Tell se recueille un instant. Avec émotion :</stage>
+                        <l n="377">L'ogre allait se montrer ; sa poitrine haletait.</l>
+                        <l n="378">On eût dit qu'il mâchait une proie ; il parlait :</l>
+                        <l n="379">« - Cet homme est éloquent, Sarnem, je le répète.</l>
+                        <l n="380">On ferait grand dommage à lui prendre sa tète ;</l>
+                        <l n="381">Qu'il la garde. Mais, dis, mon brave Sarnem, dis :</l>
+                        <l n="382">Cet enfant rose et blond, serait-ce pas son fils ? »</l>
+                        <stage type="terrify">Avec une explosion de terreur subite.</stage>
+                        <l n="383">Mon fils ! Walther ! Mon fils ! Grand Dieu ! Qu'en veut-il faire ?</l>
+                        <stage type="imitate">Reprenant le ton hypocrite du langage de Gessler ;</stage>
+                        <l n="384">« - Sarnem, je m'en doutais, à son air débonnaire.</l>
+                        <l n="385" part="I">Tell, tu dois bien aimer cet enfant. »</l><!--@syll="9"-->
+                        <l n="385" part="F">- « Dieu puissant,</l><!--@syll="3"-->
+                        <l n="386">« Se peut-il qu'un chrétien n'aime pas son enfant ! »</l>
+                        <l n="387">Le tigre, en m'écoutant, ne peut cacher sa joie,</l>
+                        <l n="388">Et tourne sur Walther son oeil rond qui flamboie.</l>
+                        <stage type="tender">Avec tendresse :</stage>
+                        <l n="389">« Si j'aime mon enfant, Gessler, je n'ai que lui,</l>
+                        <l n="390">Et sa mère, après moi trouvera son appui.</l>
+                        <l n="391">Si j'aime mon Walther ! Seigneur, j'ai pour demeure,</l>
+                        <note type="L">Note 19</note>
+                        <l n="392">Près d'Altorf, un vieux chaume où ma femme nous pleure,</l>
+                        <l n="393">Où mes anciens sont morts. Leurs tombes sont auprès,</l>
+                        <l n="394">Sous des saules-pleureurs mêlés à des cyprès.</l>
+                        <l n="395">C'est mon trésor ; les morts, l'enfant, le chaume, Hedwige.</l>
+                        <l n="396">Or, que Dieu courroucé, de veuvage m'afflige ;</l>
+                        <l n="397">Qu'on arrache mes morts au repos éternel ;</l>
+                        <l n="398">Sur leurs os dispersés, que l'en sème du sel ;</l>
+                        <l n="399">Que l'on brûle mon chaume et qu'on prenne mon âme ;</l>
+                        <l n="400">Mais toucher à mon fils ! Ah ! quel qu'il soit l'infâme</l>
+                        <l n="401">Qui prendrait à Walther un cheveu, roi, bourreau,</l>
+                        <l n="402">Je le tuerais ainsi qu'un loup tue un agneau ! »</l>
+                        <stage type="stop/continue">Après un moment de repos, Tell continue :</stage>
+                        <l n="403">Plus pâle qu'un cadavre, alors, Gessler se lève ;</l>
+                        <l n="404">Il rit d'un air farouche, et moi, comme en un rêve,</l>
+                        <l n="405">Je vois qu'on prend l'enfant, qu'un soldat le conduit</l>
+                        <l n="406">À cent pas, où Gessler, toujours riant, le suit.</l>
+                        <l n="407">À cent pas, c'est Gessler qui les compte lui-même</l>
+                        <l n="408">Avec soin, lentement, du premier au centième.</l>
+                        <l n="409">Et, quand il a fini, se retournant vers moi :</l>
+                        <l n="410">— « Je veux vérifier ce que l'on dit de toi.</l>
+                        <l n="411">« Dans les quatre cantons, Wilhem-Tell, on m'assure</l>
+                        <l n="412">Qu'il n'est pas un archer dont la main soit plus sûre</l>
+                        <l n="413">Pour diriger un trait vers un but désigné.</l>
+                        <l n="414">À cent pas, ce n'est point un but trop éloigné</l>
+                        <l n="415">Pour un tireur qu'ainsi tout un peuple renomme,</l>
+                        <l n="416">On va placer ton fils ; sur sa tête, une pomme ;</l>
+                        <l n="417">Et d'un trait, mais d'un seul, Tell, lu l'enlèveras,</l>
+                        <l n="418">Ou sinon, à l'instant, avec lui, lu mourras. »</l>
+                        <l n="419">Une pomme ? Walther ? Est-ce une voix humaine,</l>
+                        <l n="420">Cette voix que j'entends ? Je sens que l'on m'entraîne,</l>
+                        <l n="421">Où suis-je ? Ma raison, l'ai-je encor ? Je ne sais.</l>
+                        <l n="422">Le peuple, les soldats pressent leurs rangs épais.</l>
+                        <l n="423">Je vois Gessler, sur moi, darder ses yeux avides.</l>
+                        <l n="424">Les miens sont pleins de sang et mes veines sont vides.</l>
+                        <l n="425">Malgré mes triples fers, si lourds, que leur fardeau</l>
+                        <l n="426">Jusqu'aux pieds du boucher courberait un taureau,</l>
+                        <l n="427">Jo bondis sur Gessler... On m'entoure. Misère !</l>
+                        <l n="428">Ils sont mille contre un ; mille hommes contre un père</l>
+                        <l n="429">À qui l'on prend son fils, à la face du Ciel,</l>
+                        <l n="430">Et Dieu laisse accomplir cet infernal duel.</l>
+                        <l n="431">— « Qu'on attache l'enfant, » dit Gessler impassible,</l>
+                        <l n="432">Un cri sort de mon sein, immense, ardent, terrible :</l>
+                        <l n="433">« Arrêtez! » — Et Gessler, par Sarnem abrité,</l>
+                        <l n="434">Fait un signe et m'écoute avec avidité,</l>
+                        <l n="435">— « Gessler, ce n'est pas Dieu qui t'a fait, c'est le diable.</l>
+                        <l n="436">Ce forfait met le comble à ta vie exécrable.</l>
+                        <l n="437">Tu me vois à tes pieds, abattu, terrassé.</l>
+                        <l n="438">Que sur ton front maudit tombe le sang versé.</l>
+                        <l n="439" part="I">Je suis prêt. Rendez-moi mon arc... »</l><!--@syll="8"-->
+                        <stage type="watch/stop">Comme regardant encore ses lourdes chaînes, les soldats, et succombant à son impuissance :</stage>
+                        <l n="439" part="F">« Fais-moi la grâce</l><!--@syll="4"-->
+                        <l n="440">De voir au moins mon fils ; permets que je l'embrasse.</l>
+                        <l n="441" part="I">Le veux-tu ? »</l><!--@syll="3"-->
+                        <l n="441" part="F">- « Soit ! Surtout, Ne sois pas trop longtemps. »</l><!--@syll="9"-->
+                        <stage type="tender">Avec attendrissement :</stage>
+                        <l n="442">L'on m'amène Walther ; je le vois, je l'entends.</l>
+                        <l n="443">Il est brave, il sourit. Moi, je pense à sa mère</l>
+                        <l n="444">Qui pleure sur nous deux, seule, dans la chaumière.</l>
+                        <l n="445">Mon coeur se rassénère en regardant mon fils.</l>
+                        <l n="446">Je m'enivre à le voir, et j'oublie où je suis.</l>
+                        <l n="447">Du peuple, des soldats la foule est interdite.</l>
+                        <l n="448">Tout coeur helvétien avec le mien palpite.</l>
+                        <l n="449">Gessler s'impatiente et Sarnem, en tremblant,</l>
+                        <l n="450" part="I">S'approche :</l><!--@syll=""-->
+                        <l n="450" part="F">- « Wilhem-Tell, on réclame l'enfant. »</l><!--@syll=""-->
+                        <l n="451">- « Encore une minute, encore une seconde,</l>
+                        <l n="452">Sarnem ; je veux bénir sa belle tête blonde.</l>
+                        <l n="453">Es-tu père, Sarnem ? Alors, tu me comprends.</l>
+                        <l n="454">Je veux prier le Ciel et puis je vous le rends.</l>
+                        <l n="455">Je veux avec mon fils confondre ma prière ;</l>
+                        <l n="456">Tu le permets, Sarnem. Si c'était la dernière ! »</l>
+                        <l n="457">Sarnem ne répond pas. Il regarde Walther ;</l>
+                        <l n="458">Il pleure.... Dieu puissant ! Sarnem pleure. Gessler</l>
+                        <l n="459">Hurle que c'est assez attendre. On me déchaîne.</l>
+                        <l n="460">Walther, tournant vers moi sa figure sereine,</l>
+                        <l n="461">Me rend tout mon courage en un dernier baiser,</l>
+                        <l n="462">Et, les mains sur le coeur, au but va se poser.</l>
+                        <stage type="strong">Tell, avec vivacité :</stage>
+                        <l n="463">J'ai visé, j'ai tiré, j'ai vu tomber la pomme ;</l>
+                        <l n="464">Mais le père a trahi le courage de l'homme.</l>
+                        <l n="465">Quandj'ai revu Wallher vivant, épanoui,</l>
+                        <l n="466">Je suis tombé par terre, inerte, évanoui ;</l>
+                        <l n="467">Je n'ai rien entendu, rien vu. La foule, en masse,</l>
+                        <l n="468">Bousculant les soldats, court vers moi ; l'on m'enlace ;</l>
+                        <l n="469">On me porte en triomphe en face de Gessler,</l>
+                        <l n="470">Qui, nous enveloppant d'un long sourire amer,</l>
+                        <l n="471">M'a dit: - « Tell, j'ai promis de t'accorder la vie,</l>
+                        <l n="472">Vous l'aurez tous les deux. Mais, quelle étrange envie</l>
+                        <l n="473">T'a donc pris de choisir deux traits pour un ? Dis-moi,</l>
+                        <l n="474" part="I">À quoi bon le second ? »</l><!--@syll="6"-->
+                        <l n="474" part="F">- « Tyran, c'était pour toi ! »</l><!--@syll="6"-->
+                        <stage type="enthousiasme">Avec conviction, et brandissant le trait qu'il a pris avec son arc en quittant la barque :</stage>
+                        <l n="475">Je n'ai jamais menti. Je tiendrai ma promesse,</l>
+                        <l n="476">Pourvu que le Seigneur seconde mon adresse.</l>
+                        <l n="477">Le second trait, je l'ai, le voici. Viens, Gessler,</l>
+                        <l n="478">La pointe est barbelée et la hampe est de fer,</l>
+                        <l n="479">Ma main ne fut jamais plus tranquille et plus sûre ;</l>
+                        <l n="480" part="I">Viens !</l><!--@syll="1"-->
+                        <stage type="closer">Tell se rapproche de la brèche; il écoute, et, tout à coup :</stage>
+                        <l n="480" part="F">C'est lui ! C'est Gessler ; j'entends sa voix impure.</l><!--@syll="11"-->
+                        <l n="481">À moi, mon arc ! - Ensemble ils montent par ici.</l>
+                        <stage type="declamate">Invocation :</stage>
+                        <l n="482">Sublimes compagnons, descendez du Grütli ;</l>
+                        <l n="483">Venez ! C'est l'heure sainte aux victimes promise.</l>
+                        <l n="484">Le pacte fraternel, enfin, se réalise.</l>
+                        <l n="485">Le tyran va mourir. Furst, Stauffacher, Melchlald,</l>
+                        <l n="486">Je vous vois dans mon ombre. Uri, Schwilz, Unterwald,</l>
+                        <note type="C">Note 20</note>
+                        <l n="487">Ralliez vos drapeaux, courez à la victoire.</l>
+                        <l n="488">Peuple régénéré, chante le jour de gloire.</l>
+                        <l n="489">Pour que la liberté soit pure en vos hameaux,</l>
+                        <l n="490">Amis, le vautour mort, dispersez les corbeaux.</l>
+                        <l n="491">Sus ! Aux fils de l'Autriche, enfants de l'Helvétie ;</l>
+                        <l n="492">Brisez le joug sanglant de l'aristocratie ;</l>
+                        <note type="L">Ranz : Ranz des vaches, nom donné à des airs suisses ayant un caractère particulier, que les bergers et les bouviers jouent sur leur cornemuse en gardant leurs troupeaux dans les montagnes, et qui se répercutent d'échos en échos. [L]</note>
+                        <l n="493">Entonnez le vieux ranz par les aïeux chanté.</l>
+                        <stage type="fight/kill">À ce moment, sur la brèche, parait Gessler. — Tell vise, tire, voit tomber le tyran et s'écrie :</stage>
+                        <l n="494">Frères, Gessler est mort. Vive la liberté !</l>
+                    </sp><!--@who="LE RÉCITANT"-->
+</div>
+</div>
+</body>
+<back>
+<div type="annexe" n="1">
+                <head>ANNEXE</head>
+<div type="notes" n="1">
+                    <head>NOTES DE L'AUTEUR</head>
+	<p>(1) Walhalla, Valhalla ou Vaxhalla,</p>
+	<p>On donnait ce non, dans la mythologie Scandinave, au paradis d'Odin. C'était une sorte de palais céleste où toutes les splendeurs imaginables étaient réunies. L'entrée n'en était permise qu'aux héros morts en combattant. Le maître des dieux, sorte de Jupiter hyperboréen, présidant à la fois aux batailles et à la science universelle, entretenait ses élus dans des luttes continuelles, afin de les tenir toujours prêts à défendre l'entrée du Ciel aux Géants qui menaceraient de l'escalader. </p>
+	<p>À chaque aurore nouvelle, les cinq cent quarante portes du Walhalla s'ouvraient devant les guerriers, qui, se dispersant dans l'immensité de l'Empyrée, revêtus d'armures d'or et d'argent, se livraient à une mêlée qui inondait de sang les plaines de ce singulier olympe. Mais l'heure des repas arrivant, chacun remontait sur son coursier et la foule, invulnérable, rentrait dans le palais où Odin leur faisait distribuer, par trois déesses nommùoj Valûmes, la chair d'un sanglier merveilleux arrosée de bière et surtout d'hydromel, mélange de miel, d'eau, de vin blanc et d'alcool, dont les peuples du Nord sont encore très friands de nos jours.</p> 
+	<p>En 1843, le roi de Bavière, Louis, fit bâtir, près de Donaustauf, sur le Salvatorberg, une espèce de Panthéon (Salle des Élus), appelé aussi Walhalla, et destiné à recevoir les effigies de tous les grands hommes de l'Allemagne.</p>
+		<l>Ce trésor précieux d'honneur immaculé,</l>
+		<l>Qui, depuis les Rhétiens, etc.</l>
+
+	<p>(2) La Rhétie comprenait, dans la géographie ancienne, à peu près le territoire occupé aujourd'hui par le canton des Grisons, situé entre les cantons de Saint-Gall, de Glaris, d'Uri, du Tessin et le royaume lombardo-vénitien, et par la partie occidentale du Tyrol. Du temps des Romains, la Rhétie et l'Helvétie opposèrent aux vainqueurs des Gaules la résistance la plus énergique. L'Helvétie faisait partie de la Gaule, ainsi que le Vallis Pennina ou Valais, et était rattachée a la province Maxima Septanorum, dont Vesontio, aujourd'hui Besançon, était la capitale.</p> 
+		<l>Oui, la gloire et l'honneur de l'Helvétie, un traître, </l>
+		<l>Gessler, etc.</l>
+		
+	<p>(3) Hermamn Gessler de Brunck était un gentillâtre de l'Argau. La tradition nous a gardé de lui un portrait des plus défavorables ; elle nous le montre cruel, hautain, lâche et cupide ; il était le plat valet de ses maîtres, les comtes souverains de Habsbourg, au nom desquels il exerçait un dur bailliage sur le canton d'Uri. Les archives d'Alfort n'ont gardé aucune trace de sa tyrannique administration, ce qui a autorisé l'incrédulité dont certain curé de Berne, et, après lui, Grasser et Voltaire,ont fait preuve, pour tout ce qui est relatif à la légende de Wilhem-Tell.</p>
+		<l>... pour les Habsbourg, etc.</l>
+
+	<p>(4) C'est le nom patronymique d'une illustre maison d'Allemagne qui remonte au VIIe siècle et tire son nom du château de Habsbourg, en Argovie. Les uns la font descendre d'Kthico, duc d'Alsace, né vers 626, mort vers 690. Sa chronologie ne commence à être certaine qu'à partir de Gontram-le-Riche, comte d'Alsace, vers 950. Radeboto, son petit-fils, bâtit le château de Habsbourg en 1200, et Werner II, un des fils de Radebolo, prit, le premier, le titre de comte de Habsbourg.</p>
+		<l>... Soleil, tu vis, jadis,</l>
+		<l>Les légions de Rome envahir ce pays.</l>
+
+	<p>(5) Les Rhétiens et les Helvétiens furent les premiers peuples que César eût à combattre pour entrer dans les Gaules.</p>
+		<l>Et le vainqueur, surpris, s'enfuit, épouvanté</l>
+		<l>Par ces femmes de coeur chantantla liberté.</l>
+
+	<p>(6) Battus par l'armée romaine, les Rhétiens et les Helvétiens, après s'être défendus avec une énergie surhumaine, pliaient sous le nombre, et les survivants d'une des plus sanglantes défaites dont l'histoire ait gardé le souvenir, battaient en retraite vers le pays des Eduens, situé entre la Loire, la Saône et le Rhône, quand, rapporte César lui-même, on entendit, tout à coup, un bruit assourdissant de chants et de cris. C'étaient les femmes rhétiennes qui accouraient, les seins nus, tenant leurs enfants sur leur tète, chantant le ranz national et venant se précipiter sur les piques romaines teintes du sang de leurs époux.</p> 
+		<p n="v">Conjurés du Grùlli. etc.</p>
+
+	<p>(7) Le Grûtli était un promontoire sur le lac des Quatre-Cantons, cultivé en prairie, entouré d'eau sur trois côtés. C'est là que le 17 novembre 1307, Verner Stauffacher, de Schwitz, Waltor Furst, d'Uri, et Arnold Melchtald, d'Unterwald, se réunirent nuitamment et firent serment de délivrer les cantons des bois ( Waldstoetten) de l'oppression allemande.</p>
+	
+		<l>Donc, je n'ai pas rêvé : la barque, la tempêtr... ?</l>
+
+	<p>(8) C'est à Fluelen, petit port de pêcheurs sur la rive occidentale du Lac des Quatre-Cantons, que Gessler s'embarqua avec Willtem-Tell, captif, qu'il conduisait dans la citadelle redoutée de Kussnacht. La traversée, d'abord paisible, fut bientôt troublée par les signes précurseurs d'une violente tempête. Lorsque la  	barque arrivait devant le cap Achsen, en face de Grütli, c'est-à-dire à l'endroit le plus profond du lac, le vent du midi souffla des gorges de Saint-Gothard, et malgré les efforts du batelier et des soldats, le naufrage était imminent, Tell, accroupi sous ses lourdes chaînes, paraissait insensible à la révolte des éléments, quand un des officiers de la suite de Gessler, se rappelant que l'archer uranien était aussi le nautounier le plus habile des Waldstoetten, attira l'attention du gouverneur sur le secours inespéré qui s'offrait à eux, Wilhem-Tell, débarassé de ses chaînes, prit le gouvernail et mit hardiment le cap sur le mont Righi, au-dessous du château de Kussnacht. Au moment où le bateau, poussé par les courants, suivait avec une vitesse vertigineuse la route tracée par l'habileté calculée du vigoureux rameur, et passait devant les plateaux granitiques de la base du Rigbi, Tell, profitant de l'épouvante de ses gardiens, saisit son arc et l'unique flèche qui lui restait, et s'élança brusquement à terre, laissant Gessler et sa suite stupéfaits de cette fuite aussi audacieuse qu'inattendue.</p>
+	<l>Il avait déjà disparu derrière les anfractuosités du rocher, quand le batelier put aborder.</l>
+		<l>Il me fesait conduire à Kussnacht, etc.</l>
+
+	<p>(9) La citadellede Kussnacht appartenaità l'empereur cl èlait située au sommet du mont Uighî.</p>
+
+	<l>Un jour, le duc Albert, l'assassin de Nassau.</l>
+	
+	<p>(10) Albert I, comte de Habsbourg, duc d'Autriche, empereur d'Allemagne, a été classé parmi les souverains les plus odieux. Il était né en 1248 et avait, par conséquent, cinquante-neuf ans au moment de la révolte des cantons. Il était fils de ce Rodolphe de Habsbourg qui, pendant l'interrègne qui suivit la mort de Frédéric II, parvint à se frayer un passage jusqu'au trône de Charlemagne et fonda la dynastie, encore régnante de nos jours, en Autriche.</p>
+	<p>À la mort de Frédéric II, son fils Albert eut pour compétiteur à l'empire Adolphe de Nassau, qu'il vainquit et tua à la bataille de Gelheim, d'aucuns disent de Spire, le 2 juillet 1298. Il eut de longs démêlés avec le pape Boniface VIII et périt, en 1308, assassiné par des mécontents de sa cour, dont le chef était son propre neveu, Jean de Souabe, qu'il avait dépouillé de son patrimoine. C'est Albert 1 qui conçut la folle idée de faire des trois cantons de Schwitz, Uri et Untervald un apanage du duché d'Autriche, en les privant de leurs franchises. Les cantons s'insurgèrent et les Bernois se joignirent à eux. La nuit du 1er janvier 1308 avait été choisie pour l'accomplissement des projets de révolte. Les quatre cantons unis se soulevèrent, s'emparèrent des châteaux et, sept jours plus tard, jurèrent une alliance perpétuelle. C'était le pacte du Grütli qui recevait son exécution. Un an après, en 1309, l'empereur Henri VII rétablit les trois cantons des Waldstoetten dans leurs anciennes prérogatives.</p>
+		<l>Baumgarten, par exemple, etc.</l>
+
+	<p>(11) L'épisode de Baumgarten, comme celui de Stauffacher, comme celui de Melchtald, se retrouve dans toutes les légendes relatives au libérateur de l'Helvétie. Dans une chapelle construite, dès le XIVe siècle, au pied du mont Righi, sur le chemin de Knssnacht, l'histoire du héros uranien est reproduite dans douze tableaux d'un style si naïf qu'on ne peut en contester l'authenticité. Du reste, chacun d'eux porte la date de 1308. Dans le douzième tableau se trouvent reproduits les épisodes du bûcheron Conrad Baumgatten, tuant, d'un coup de hache, dans un bain, le bailli de Rosberg, Wolffenschissen, qui attentait à l'honneur de la vertueuse bûcheronne, et du bailli d'Unterwal, Landenberg, faisant arracher les yeux à Henri Melchtald. - L'épisode de Gessler confisquant la maison de Stauffacher est l'objet de la première de ces curieuses peintures.</p> 		
+
+		<p>Et comment le bailli de Roslierg, etc.</p>
+
+	<p>(12) Le bailli de Rosberg, collaborateur de Gessler et de Lendeneorg dans les hautes-oeuvres de tyrannie et d'oppression du duc d'Autriche, ne parait pas avoir été aussi maltraité que ses collègues par le jugement de la postérité. Wolffenschissen nous apparait comme un débauché hautain et orgueilleux, aimant le luxe, les femmes et la benne chère, mais non comme un bourreau. </p>
+		<l>Gessler et Landenberg, etc.</l>
+		
+	<p>(13) Bérenger Landenberg, gouverneur du canton d'Unterwald, pour l'empereur, était le digne émule de Gessler. L'horrible supplice auquel ils condamnèrent le vieux Melchtald est une preuve qu'en fait de cruauté ils n'avaient rien à s'envier mutuellement.</p>
+
+		<l>Erni, coeur généreux, etc.</l>
+
+	<p>(14) Le jeune héros que les librettistes du chef-d'oeuvre de Rossini appellent Arnold, sans doute par euphonie, s'appelait, de son véritable nom, Erni Ander Halden.</p>
+	
+		<l>Entrez à Zwing-Uri, etc.</l>
+
+	<p>(15) C'est le nom do la forteresse que Gessler s'était fait bâtir au-dessus d'Altorf. Il l'avait ainsi nommée pour narguer la fierté des Uraniens et, dit un légendaire : « Comme pour les pousser à la révolte par l'idée d'une insulte continuelle. » — La traduction française du nom de celte citadelle signifie : Bride-Uri.</p>
+		<l>....... la toque que voici, etc.</l>
+
+	<p>(16) Gessler, en forçant les Uraniens à saluer sa toque, ne voulait que les humilier et leur faire sentir tout le poids de son despotisme. Le temps a fait justice de cet acte insensé et aujourd'hui, le chapeau, qui a succédé à la toque, dans l'habillement de la plupart des peuples civilisés, est un emblème de liberté dans les cantons suisses et certaines provinces de la Hollande.</p>
+		<l>L'officier stupéfait, Sarnem, etc.</l>
+
+	<p>(17) La plupart des auteurs qui se sont occupés de la légende de Wilhem-Tell ont accepté Sarnem comme étant le nom du confident de Gessler, du chef de ses gardes, de son lieutenant, Knowles, notamment, qui lui attribue, dans son admirable drame, un rôle très important. J'ai cru devoir suivre leur exemple, bien qu'il me soit prouvé que ce nom était celui d'un village des environs d'Alfort et en même temps celui d'un château fort.</p>
+		<l>..... Au Grutli, c'est lui qui lut le pacte.</l>
+
+	<p>(18) Voici sommairement les termes de cet acte qui doit rester célèbre, puisqu'il a servi de base à cette admirable confédération helvétique qui compte aujourd'hui vingt-deux cantons : </p>
+	<p>« Nous jurons devant Dieu que dans l'entreprise dont nous « posons cette nuit les loyales conventions, aucun des cantons « confédérés n'agira selon ses propres inspirations ni ne se séparera des deux autres. Chacun de nous, pris comme chef du mouvement cantonal, devra se soumettre au conseil commun et maintenir le peuple injustement opprimé dont il jure de poursuivre la rédemption dans l'esprit et la pratique des anciennes franchises, de manière que notre contrat d'union puisse profiter à tous les Suisses de la Waldstoetten. La liberté que nous ont léguée les aïeux, nous jurons de la transmettre à nos descendante. »</p>
+		<l>Seigneur, j'ai pour demeure,</l>
+		<l>Près d'Altorf, un vieux chaume où ma femme nous pleure.</l>
+
+	<p>(19) C'est en effet à Burglen, à l'entrée de la vallée de Schoeken, aux portes d'Altorf, sur les bords du lac des Quatre-Cantons, aujourd'hui de Lucerne, que se trouvait la modeste maison entourée d'un champ, d'une pièce de vignes et d'un jardin, dont Wilhem-Tell avait hérité de ses pères. C'est là, entre sa femme Hedwige et son fils Walther, que le rédempteur futur de l'Helvetie vivait dans la paix et dans l'amour, labourant son champ, cultivant sa vigne, soignant son verger et, souvent, oubliant son patrimoine, pour aller, avant l'aube, ensemencer en cachette les terres de ses voisins plus indigents que lui.</p>
+	
+	<p>Le portrait qu'on a conservé de Tell et que, d'après le Voyage en Suisse du docteur Coxe, on voit encore à Altorf, au-dessus du fauteuil du président du Conseil cantonal d'Uri, le représente vêtu de son costume d'arbalétrier. Il est de grande taille, fortement charpenté, et sa figure porte l'empreinte remarquable de la beauté et de la pureté de son âme. Sa barbe blonde, drue et fine, donne à sa figure un cachet particulier de distinction. L'ensemble de sa physionomie respire à la fois l'énergie et la bonté. </p>
+	<p>Ce paysan sublime doit apparaître comme une des plus pures incarnations du patriotisme naturel et désintéressé. Son oeuvre accomplie, la légende le montre revenant modestement à son humble chaumière de Burglen, loin du bruit de la ville. Il semble fuir la reconnaissance de tout un peuple affranchi, et s'il accepte les fonctions d'administrateur de son pauvre village, comme le prouve, notamment, le pèlerinage fondé par lui, en 1308, en commémoration de la délivrance des cantons, c'est qu'il pense encore être utile à ses compatriotes ; c'est qu'il espère, surtout, que son autorité lui servira à étendre le champ de sa bienfaisance.</p>
+	<p>On ne doit rien hasarder quand il s'agit d'une existence si glorieuse pour l'humanité. - La biographie reste presque constamment muette sur les détails de ses dernières années et l'on ignore jusqu'à la date précise de sa mort. — Quant à moi, j'ai vainement cherché, je n'ai rien trouvé ; mais je suis prêt à croire à la version populaire qui fait mourir Wilhem-Tell victime de son courage et de son dévouement.</p>
+	
+	<p>On a écrit qu'après l'hiver de 1351, - un hiver terrible par les neiges accumulées sur toutes les montagnes, - le dégel ayant trompé toutes les précautions prises, une inondation subite envahit une partie du canton d'Uri. L'avalanche se fit torrent et en moins de quelques heures emporta dans ses ondes impétueuses les maisons, les bestiaux, des sapins gigantesques et des blocs énormes de rochers. C'était la nuit. Une clameur sinistre vint éveiller le vénérable Tell dans sa maison providentiellement épargnée. Il est déjà dans sa barque, - mais ce n'est plus le robuste archer de 1307. - La neige des années a blanchi sa longue barbe, de profondes rides sillonnent son front large et haut, ses membres accusent la débilité de la vieillesse et les Ilots envahisseurs résistent à ses généreux efforts. - Et cependant, l'âme est toujours brave et forte. Là, dans le gouffre, une barque, montée par trois personnes, tourbillonne déjà sur l'abîme prêt à l'engloutir. Tell n'hésite pas. En vain, la vieille Hedwige se lamente et veut le retenir :</p>
+	
+		<p>« Les dangers sont bien grands, mais le pilote est là! » </p>
+		<l>Il montre le Ciel et s'élance... Il disparait ! </l>
+		
+	<p>Le dernier survivant de la postérité masculine de Wilhem-Tell, Jean-Martin Tell d'Attinghausen, est mort à Burglen en IGSi. Ralliez vos drapeaux, etc.</p>
+
+	<p>(20) La bannière de Schwitz, — c'est le canton qui a donné son nom à la Suisse, — représentait une croix, dont le symbole est facile à saisir : In hoc signo vinces ; celle d'Uri, une tête de taureau avec les courroies brisées du joug flottant sur l'encolure ; celle d'Unterwald, deux clefs, celles qui allaient ouvrir le temple delà patrie affranchie devant les Suisses impatients d'y célébrer le retour de leur liberté.</p>
+</div>
+<div type="" n="2">
+                    <head>ERRATUM.</head>
+	<p>À La page 18, 3ème vers, au lieu de : Sa poitrine haletait,</p>
+	<p>Il faut lire : sa gorge haletait.</p>
+</div>
+</div>
+</back>
+</text>
+</TEI>

@@ -1,0 +1,536 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001795" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Ruelle Mal Assortie, Dialogue</title>
+                <author>
+                    <persName>
+                        <forename>Charles</forename>
+                        <surname>Sorel</surname>
+                    </persName><!--Wikidata label: Charles Sorel, sieur de Souvigny-->
+                    <idno type="wikidata">Q633302</idno>
+                    <idno type="isni">0000000118337670</idno>
+                </author><!--Charles SOREL (1582-1674)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/SOREL_RUELLEMALASSORTIE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/SOREL_RUELLEMALASSORTIE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k715706</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="uranie" sex="FEMALE">
+                        <persName>Uranie</persName>
+                    </person>
+                    <person xml:id="le-cavalier-gascon" sex="MALE">
+                        <persName>Le Cavalier Gascon</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Dialogue</term>
+                    <term>prose</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1644">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+<front>
+	<docTitle>
+	 <titlePart type="main">LA RUELLE MAL ASSORTIE</titlePart>
+ 	<titlePart type="sub">ou ENTRETIENS AMOUREUX D'UNE DAME ÉLOQUENTE</titlePart>
+		<titlePart type="sub">avec un cavalier gascon, plus beau de corps que d'esprit, et qui a autant d'ignorance comme elle a de savoir.</titlePart>		
+	</docTitle>
+ <docDate when="1644">M. DC. XLIIII. Avec Privilège du Roi.</docDate>
+  
+	<div type="docImprint">
+		<div type="printer">
+                    <p>À PARIS, Chez NICOLAS DE SERCY, au palais, en la galerie Dauphine, à la Bonne-Foi couronnée.</p>
+                </div><!--@id="PRAULT_FILS"-->
+		<div type="privilege">
+                    <head>EXTRAIT DU PRIVILÈGE DU ROI</head>
+			<p>Par lettres patentes du Roi données à Paris le 2 juin 1642 signées, par le Roi en son conseil, Renouard, et scellées du grand sceau de cire jaune : Il est permis à Nicolas de Sercy Marchand Libraire à Paris, d'imprimer ou faire imprimer un livre intitulé "Nouveau recueil des pièces les plus agréables de ce temps, ou troisième partie de la Maison des Jeux", où il se raconte plusieurs histoires, tant Françaises qu'étrangères, par manière de Jeu et d'honnêtes divertissements, en tels volumes et caractères que bon lui semblera, et ce durant le temps de sept ans ; et défenses sont faites à tous autres de l'imprimer ou faire imprimer, à peine de trois mille livres d'amende, à compter du jour que chaque volume sera achevé d'imprimer.</p>
+		</div>
+		<div type="acheveImprime">
+                    <p>Achevé d'imprimer le 15 janvier 1644.</p>
+                </div>
+	</div>
+	<castList>
+                <head>ACTEURS</head>
+		<castItem>
+                    <role corresp="#uranie">URANIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+ 	<castItem>
+                    <role corresp="#le-cavalier-gascon">LE CAVALIER GASCON</role><!--@sex="1"--><!--@type="H"--><!--@statut="chevalier"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+ </castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps=""/>-->
+	<note>Extrait "Nouveau recueil des pièces les plus agréables de ce temps, ensuite des jeux de l'inconnu et de la maison des jeux., pp. 95-119</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LA RUELLE MAL ASSORTIE</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="1">
+	<s n="1">Ha Dieu vous garde, beau Soleil que veut dire qu'aujourd'hui, plus tard qu'à l'accoutumée vous avez éclairé mes yeux.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="2">
+	<s n="1">Je ne sais.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="3">
+	<s n="1">Comment je ne sais ? </s>
+	<s n="2">Vos désirs, vos souhaits, et toutes vos actions ne tendent-elle pas à me plaire, et ne savez vous point qu'absente de vous, et en attente continuelle que vous me rameniez le jour ?</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="4">
+	<s n="1">Je biens quand bous me mandez de benir.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="5">
+	<s n="1">Et si je ne vous envoyais jamais quérir vous ne viendriez donc point, et me laisseriez consommer parmi mes ennemis ; je vous apprend qu'un vrai amant doit être toujours en impatience, brûlant de désir de voir la chose aimée, et n'attendre point de message, de semonce, ni d'heure comme vous.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="6">
+	<s n="1">Je suis captif, et de dépens que de bos bolontés.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="7">
+	<s n="1">Vous appelez donc captivité ma prison au lieu d'un Paradis de délices, et trouvez une grande contrainte de dépendre de mes volontés. </s>
+	<s n="2">Je veux désormais être un peu plus rigoureuse si je puis, afin que vous sachiez quel il fait quand je suis de mauvaise humeur.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="8">
+	<s n="1">Je prendrai patience en mon tourment.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="9">
+	<s n="1">Ô Dieu ! </s>
+	<s n="2">Quelle réponse ! </s>
+	<s n="3">Mais laissons ce discours. </s>
+	<s n="4">Vous êtes aujourd'hui trop beau pour se mettre en colère contre vous : que vos cheveux sont bien frisés, et que votre rabat est bien mis.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="10">
+	<s n="1">Bous me défrisez et, mauatez toute ma routonde.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="11">
+	<s n="1">Elle en fera mieux toute la journée, puisque ces belles mains ont passé par dessus ; mais parlons un petit, n'auriez-vous point quelque nouveau dessein ? </s>
+	<s n="2">Ces dames sur qui vous tournez si souvent les yeux, vous auraient elles point donné dans la vue ? </s>
+	<s n="3">Répondez, je sais bien ce que peut un nouvel objet sur une âme inconstante.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="12">
+	<s n="1">Ce sont toujours de bon oupinions.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="13">
+	<s n="1">Mais il le faut savoir ; en vain auriez vous pris aujourd'hui cette bonne mine ; il est croyable que vous avez quelque nouvel Oracle à consulter.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="14">
+	<s n="1">Cela, moi, rien nullement quelconque.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="15">
+	<s n="1">Mais dites sans mentir, petit rusé, qui devez vous voir aujourd'hui.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="16">
+	<s n="1">Je ne pense à boir que bous.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="17">
+	<s n="1">Qui moi ? </s>
+	<s n="2">Je vous ai donc semblé plus belle qu'à l'accoutumée ; çà, mon miroir, qu'en dites vous ? </s>
+	<s n="3">Certes il me témoigne qu'il en est quelque chose, encore que ma perruque soit toute défrisés, et mon rabat bien noir, que vous ensemble, n'ai-je pas de quoi donner de la passion à un honnête_homme ?</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="18">
+	<s n="1">Vous me semblez la velle Bénus.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="19">
+	<s n="1">Et vous me semblez son petit Adonis bien plus douillet et coffeté qu'il n'était, mais bien moins amoureux que lui, qu'en est-il ? </s>
+	<s n="2">Dois-je croire que vous m'aimiez, et que les démonstrations que vous en faites soient à mon occasion, ou bien pour l'amour de vous-mêmes ? </s>
+	<s n="3">Car les jeunes gens de ce temps ont beaucoup de considérations en leurs desseins, et cette douce Philafrie a un grand pouvoir sur leur âme.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="20">
+	<s n="1">Que veut dire Filaferie ?</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <note type="L">Peton : petit pied ou petit en général.</note>
+                        <p n="21">
+	<s n="1">Ce sont des mots dont on ne déjeune point en votre pays, demandez-le à ces sottes que vous aimez si fort ; je crois qu'elle vous l'interpréteront promptement, mais mon pecon, quand je vous regarde je vous trouve fort bien vêtu, et faut dire qu'à la vérité ces couleurs claires donnent un grand lustre au visage, et les bas d'attache agencent fort une belle taille.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="22">
+	<s n="1">Ils contraignent vien en récompenses.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="23">
+	<s n="1">Ho je vois bien que c'est, vous voudriez que je vous laissasse porter des vanités pour être à votre aise ; il n'en sera pas ainsi, il vous faut des bas entiers, une fraise, une plume, une épée, et savoir parler, si vous voulez ressembler un homme.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="24">
+	<s n="1">Il m'est bien abis que je suis fait comme un homme.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="25">
+	<s n="1">Vous vous imaginez d'en ressembler quand personne ne vous y contredit ; mais considérez vous bien ; quand vous ne dites mot, qui est le plus souvent et vous verrez combien il y a de différence entre vous et une statue.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="26">
+	<s n="1">J'en bois vien d'autres qui ne parlent point.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="27">
+	<s n="1">Ainsi voit-on faire quelques oiseaux et quelques perroquets, qui ne voulant pas parler donnent plus d'envie de les entendre : plus la chose est rare plus elle est désirée, mêmement de moi qui suis enfin de l'humeur des belettes et des colombes, et qui prends plaisir comme elles à faire l'amour du bec.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="28">
+	<s n="1">Non pas toujours non.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="29">
+	<s n="1">C'est donc pour satisfaire à vos brutaux désirs, et pour complaire au corps de je ne sais quoi dont il a besoin ; car mon inclination ne tend qu'à ces petites voluptés qui préviennent des yeux et de la parole, qui sont sans comparaison d'un goût plus savoureux et de plus de durée que ces plaisirs que nous avons communs avec les bêtes.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="30">
+	<s n="1">Je prends plaisir à faire la vête moi.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="31">
+	<s n="1">Vous avez raison, car c'est sans contrainte et sans y prendre grande peine, croyez qu'il faut bien vu l'antipathie de nos humeurs, la discordance de nos génies, et dissemblance de nos idées, qu'i y ait quelqu'autre vertu secrète et inconnue qui agisse pour vous, car autrement à vous bien prendre, vous êtes plutôt digne de ma haine que de mon affection. </s>
+	<s n="2">Quoi, vous me répondez des épaules, et sacrifiez au silence plutôt qu'aux grâces ? </s>
+	<s n="3">N'entendez vous point ce langage, avez-vous si peu profité de moi, et si peu retenu les préceptes d'amour que vous en ignoriez les principes ?</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="32">
+	<s n="1">Yé bous aime vien sans tant filousoufer.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="33">
+	<s n="1">Mais mon mignon ne sauriez vous à tout le moins répondre pour me contenter, que vous connaissez en moi de nouvelles grâces qui augmentent votre amour ; que cette amour vous cause des désirs si insupportables ; que vous êtes contraint d'avoir recours à ma miséricorde, et que si vous ne la pouvez mériter, vous aimez mieux la mort qu'une vie si ennuyeuse ?</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="34">
+	<s n="1">La bue en découbre le fait.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <note type="C">Marius AEquicola : Bel esprit italien du XVIème siècle, auteur, autre autres, De la Nature de l'Amour.</note>
+                        <note type="C">Léon l'Hébreu : Médecin portugais du XVIème qui migra en Italie, auteur d'un "Dialogies de l'Amour". </note>
+                        <p n="35">
+	<s n="1">La vue peut errer, car vos soupirs peuvent aussitôt provenir de quelque difficulté survenue aux conduits de la respiration, comme pour le trop attentif arrêt que vous ait causé la contemplation de mes beautés ; votre couleur blême peut naître aussitôt de quelque indisposition cachée, comme de ce que le sang qui devrait colorer votre teint, est accouru au secours du coeur qui palpite à mon occasion, quant aux larmes qu'on voit prendre origine en la propre source d'amour outre qu'elle peuvent être aussitôt feintes que véritables, elles ne sont pas moins d'indices d'un coeur colère, dépit et malicieux, que d'un coeur traitable, doux et bénin. </s>
+	<s n="2">Je vous ai tant de fois dit que vous feriez bien mieux d'employer le temps à lire Marius-AEquicola, Léon_Hébreu, ou les oeuvres de nos poètes, qu'en l'entretien de ces coquettes qui parlent toujours, et ne disent rien qui vaille. </s>
+	<s n="3">Ô que je suis lasse de vous tant crier.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="36">
+	<s n="1">Bous ne me donnez pas le loisir de dormir.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="37">
+	<s n="1">Vous le savez bien prendre pour entretenir vos maîtresses : je sais vos heures, vos réduits, et les bons tours que vous y jouez, et si je le souffre, c'est que je vous dédaigne, et que je ne désire pas vous punir autrement que de vous voir en mauvaise compagnie.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="38">
+	<s n="1">Mon réduit est une chambre ou bous me tenez toujours enfermé.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <note>Tour d'airain d'Acrise : Dans la mythologie grecque, Tour où est enfermée Danaé par Acrisios pour déjoué un oracle néfaste.</note>
+                        <p n="39">
+	<s n="1">L'amour est maître des inventions ; les ailes lui sont données pour aller partout ; le tour_d_airain_d_Ascrise est mieux fermée que votre chambre, et toutefois il entre dedans : tout est rempli de Jupiter, et puis où est-ce qu'un beau soleil comme vous n'entre point ? </s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="40">
+	<s n="1">Ne direz bous onques vien d'aucunes femmes ?</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="41">
+	<s n="1">Je ne blâme point celles qui se contentent d'être servies d'un honnête homme, et lorsqu'il s'agit que d'une honnête conversation de la parole et du regard ; j'en blâme seulement l'effusion de sang, et ceux qui comme vous sont gladiateurs à outrance.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="42">
+	<s n="1">Sans cela le reste est jû de petits enfants.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="43">
+	<s n="1">Ainsi le tiennent des grossiers et [les] ignorants tels que vous, qui comme vrais satyre, et n'ayant pas de quoi continuer longuement un discours veulent aussitôt venir aux prises, interrompant mille petites délicatesses qui s'éprouvent dans l'entretien et la communication des esprits.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="44">
+	<s n="1">J'aime vien autant le corps que l'esprit.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="45">
+	<s n="1">L'esprit pourtant est bien plus à aimer ; c'est celui qui tient le coeur quand la beauté l'a pris : mais il faut malgré la raison que chacun aime son semblable ; et pour vous sans tant subtiliser, la cause en est que vous êtes tout corps ; et ne sauriez juger de vraies voluptés en tant qu'elles proviennent de l'âme par raison et science, mais ouï bien des fausses voluptés, parce qu'elles procèdent des sens extérieurs, et encore en jugez vous bien mal le plus souvent, lorsque vous vous laissez coiffer à toutes les laides qui se présentent.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <note>Coiffé : Fig. Infatué. [L]</note>
+                        <p n="46">
+	<s n="1">Aussi bray ye ne suis coiffé que de bous.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="47">
+	<s n="1">Il paraît du contraire en vos yeux pleins d'inquiétude et d'impatience, qui sont toujours en quête de nouvelle proie, et qui semblent aller chantants avec Ronsard,  </s>
+</p>
+                        <l n="1">Qu'il n'y a rien si sot qu'elle vielle amitié ;</l>
+                        <p n="48">
+	<s n="1">Mais je suis encore plus sotte de m'en soucier, comme si vous en valiez bien la peine, moi sous qui tout fléchit, moi coutumière de donner des lois à qui bon me semble, moi qui n'obéis qu'à moi-même. </s>
+	<s n="2">Vraiment je l'aimerais de vous, Monsieur l'ignorant, de me faire servir de couverture, vous que j'ai élevé de la poussière, et du limon de la terre : vous que j'ai fait naître en une nuit, sot, niais, fâcheux, mélancolique, et bref, pour le dire en un mot, le plus grossier gascon qui soit jamais sorti de son pays : avez vous point encore reconnu que ce que j'en ai fait était pour me moquer de vous, et pour vous précipiter en même temps que vous auriez commencer d'espérer ; apprenez si vous ne le savez que je ne puis ni ne veux aimer un sot en un ignorant.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="49">
+	<s n="1">Si vous poubiez pis, bous le diriez.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="50">
+	<s n="1">Je suis comme les soldats de Philippe qui nommaient toutes choses par leur nom ; tant que vous persisterez en vos folles amours, vous n'aurez autre nom de moi que de sot, et tant que vous serez sans savoir parler je vous nommerai ignorant.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="51">
+	<s n="1">Si yé ne suis sabant patience.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="52">
+	<s n="1">Si crois-je qu'en votre âge le temps et la peine pourraient enfin faire quelque chose de bon de vous, et qu'ainsi que d'un champ fertile j'en retirerais quelque moisson utile : mais je m'aperçois bien que votre terroir est stérile par votre faute, qu'en vain j'y sème, puis que votre rude naturel ne s'est pu défricher et changer. </s>
+	<s n="2">Voyez-vous pas que l'extase vous tient, et qu'aussi muet qu'un poisson, vous êtes le symbole du silence ? </s>
+	<s n="3">Êtes vous empierré ? </s>
+	<s n="4">L'objet présent est-il si peu digne de vos regards et de vos paroles, que vous teniez ainsi la bouche close, et les yeux fermés ? </s>
+	<s n="5">Coupez ce filet de grâce, et ne soyez plus si longtemps disciple de Pythagore. </s>
+	<s n="5">La Pie Romaine après avoir médité quelques jours, savait imiter les sons qu'elle avait entendus : c'est enfin faire son profit des leçons qu'e l'on a ouïes, de parler après s'être tû : sachons donc en un mot, pourquoi ne parlez vous point ?</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="53">
+	<s n="1">Bous en êtes la cause.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <note type="L">Laconisme : Manière de parler en peu de paroles. [L]</note>
+                        <p n="54">
+	<s n="1">Comment en serai-je la cause, ne vous conviai-je pas assez de parler, et ne vous en donnai-je pas assez le sujet ? </s>
+	<s n="2">Expliquez votre laconisme, ou bien permettez moi que je joue deux personnages, et que je réponde pour vous. </s>
+	<s n="3">Est-ce qu'offensé de mes vérités, et de ce que je me moque ordinairement de vous, la colère et le mal que vous m'en voulez vous ôtent l'envie de rien dire, ou bien est-ce que naturellement fort et honteux, vous ne sachiez ni proférer ni exprimer vos conceptions ; ou peut-être que le trop d'amour lie votre langue, et occupe vos sens, de façon que ce qu'un autre moins amoureux emploierait à dire, vous l'employez à désirer ?</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="55">
+	<s n="1">Boilà la pure berité.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="56">
+	<s n="1">Si j'en crois rien que sur bons gages, toutefois cette petite rosée qui distille le long de vos joues, veut que j'y ajoute quelque foi ; ça, que je la ramasse dans ce mouchoir, et que j'en arrose l'autel de ma vanité. </s>
+	<s n="2">Mais avouez aussi qu'il n'y a que ces belles mains qui soient dignes de cette offrande. </s>
+	<s n="3">Voyez les bien, et encore que je ne les aient point décrassées depuis huit jours, gageons qu'elle effacent les vôtres, et que toutes mal soignées qu'elles sont, elle leur font perdre leur lustre. </s>
+	<s n="4">Causons, causons, je ne veux plus vous fâcher.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="57">
+	<s n="1">Yé bous en aimerai dabantage.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="58">
+	<s n="1">C'est tout ce que je demande de vous, car imitant les Dieux, j'aime beaucoup mieux obéissance que sacrifice, et me plaisant ainsi qu'eux à mes oeuvres, je voudrais vous pouvoir rendre tel que j'eusse de l'honneur à ma nourriture, et par même moyen me payer par mes mains de ma peine, avec le plaisir que je tirerais de votre parlante conversation. </s>
+	<s n="2">Ça donc venez à l'adoration de tant de beautés, et baisant ces mains que je vous présente, écoutez et retenez ce que vous me devriez dire.</s>
+</p>
+                        <p n="59">
+	<s n="1">Pourquoi ne voulez vous pas belle reine de mes pensées fortifier mon coeur contre tant d'appréhensions qui l'assaillent ; affermissant en telle sorte ma félicité, que je puisse désormais vivre sans crainte d'être dépossédé ? </s>
+	<s n="2">Pourquoi consentez vous que le doute continuel où je suis de vous perdre, rende ma vie moins contente, mon aise moins accompli, et ma gloire moins parfaite. </s>
+	<s n="3">Suis-je pas cet adorateur de vos grâces, qui ne respire que votre nom, et qui étant en action perpétuelle de désirer ce que je vois, et d'admirer tout ce que j'ois, suis ravi de tant de merveilles que je ne sais lequel élire, ou d'être tout yeux pour vous regarder, ou vous vous ouïr tout oreille ?</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="60">
+	<s n="1">Bous me labez ôté de la vouche.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="61">
+	<s n="1">À la vérité c'est tout votre style : mais voyons comme vous me l'eussiez dit, et avec quelle grâce vous savez proportionner vos paroles à votre passion. </s>
+	<s n="2">Dites.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+<sp who="#le-cavalier-gascon">
+                        <speaker>LE CAVALIER GASCON.</speaker>
+                        <p n="62">
+	<s n="1">Porquoi velle reine de mes menues pensée, ne frutifiez bous mon coeur d'appréhensions, assaillant et affermissant en sorte la mienne félicité, qui puisse bibre sans être possédé ? </s>
+	<s n="2">Pourquoi consentez bous que doute continuel de bous perdre rende contente ma bie, gloire parfaite et moins accomplie ? </s>
+	<s n="3">Suis-je pas cet adorateur de bos Dieu grâces ? </s>
+	<s n="4">Qui empire botre renom en perpétuel désirer ce que yé bois, ruiner ce que j'ois, qui ravi de merbeilles né sait lequel lire, ou d'être tous yeux pour bous ouïr, ou pour bous regarder tout oreilles.</s>
+</p>
+                    </sp><!--@who="LE CAVALIER GASCON"-->
+<sp who="#uranie">
+                        <speaker>URANIE.</speaker>
+                        <p n="63">
+	<s n="1">Voilà bon galimatias, et faut confesser qu'il n'y a pas grande peine à vous faire déclarer une bête, avouant que j'ai tort de vous faire parler, puisque vous avez meilleure grâce à vous taire. </s>
+	<s n="2">Il faut donc employer désormais cette belle bouche à un autre usage, et en retirer quelque autre sorte de plaisir, pardonnant à la nature qui employant tout à polir le corps, n'a pu rien réserver pour l'esprit : gardez ce beau langage pour vos autres maîtresses, et tandis que cette ruelle est vide de ces fâcheux qui viendrons bientôt interrompre nos contentements, je veux tirer quelque satisfaction de cette muette qui ne répond point, et n'en pouvant arracher des paroles, je veux au moins en tirer quelqu'autre douceur. </s>
+	<s n="3">Approchez vous donc mon mignon, car vous êtes mieux près que loin ; et puis vous êtes plus propre pour satisfaire au goût qu'à ouïe. </s>
+	<s n="4">Recherchons d'entre un nombre infini de baisers celui qui sera la plus savoureux pour le continuer. </s>
+	<s n="5">Ô qu'ils sont doux et bien assaisonnés. </s>
+	<s n="6">Cela ma revit, n'y a si petite petite partie en moi qui n'y participe, et où ne furette et n'arrive quelque petite étincelle de volupté ! </s>
+	<s n="7">Mais il en faut mourir : j'en suis toute émue, et en rougis jusques dans les cheveux. </s>
+	<s n="8">Ha, vous excédez votre permission et quelqu'un s'apercevra de votre privauté. </s>
+	<s n="9">Hé bien, vous voilà dans votre élément et où vous paraissez plus qu'en toute autre chose. </s>
+	<s n="10">Ha ! </s>
+	<s n="11">J'en suis hors d'haleine, je ne m'en puis ravoir, et il faut (n'en déplaire à la parole) avouer que pour beau que soit le discours, cet ébattement le surpasse ; et peut on bien dire sans se tromper que rien ne se trouverait de si doux, si cela n'était point si cher.</s>
+</p>
+                    </sp><!--@who="URANIE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>
