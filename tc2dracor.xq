@@ -6,6 +6,7 @@ import module namespace tcf = "http://dracor.org/ns/exist/titlecase-french"
 declare namespace functx = "http://www.functx.com";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
+declare namespace sparql = "http://www.w3.org/2005/sparql-results#";
 
 (: XML document mapping original file names to DraCor IDs :)
 declare variable $id-map := doc('ids.xml');
@@ -63,6 +64,89 @@ declare function functx:change-element-ns-deep (
   else if ($node instance of document-node()) then
     functx:change-element-ns-deep($node/node(), $newns, $prefix)
   else $node
+};
+
+declare function local:split-name ($content as xs:string) as element(tei:persName) {
+  (: remove possible year part :)
+  let $name := tokenize($content, " \([0-9]")[1]
+  let $parts := tokenize(normalize-space($name), " ")
+  return
+    <persName xmlns="http://www.tei-c.org/ns/1.0">
+    {if (count($parts) = 2) then (
+      <forename>{$parts[1]}</forename>,
+      <surname>{tcf:convert($parts[2])}</surname>
+    ) else tcf:convert(normalize-space($name))}
+    </persName>
+};
+
+(: Query Wikidata SPARQL for the Wikidata ID matching a given ISNI :)
+declare function local:wikidata-by-isni ($isni as xs:string) as map()? {
+  let $query :=
+    'SELECT ?author ?authorLabel WHERE {?author wdt:P213 "'
+    || $isni ||
+    '". SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }}'
+  let $url := "https://query.wikidata.org/sparql?query=" || xmldb:encode-uri($query)
+  let $response := hc:send-request(<hc:request method="get"/>, $url)
+
+  let $id := $response[2]//sparql:binding[@name="author"]/sparql:uri/string()
+    => substring-after("http://www.wikidata.org/entity/")
+  let $name := $response[2]//sparql:binding[@name="authorLabel"]/sparql:literal
+    => normalize-space()
+
+  return if ($id) then map {"id": $id, "name": $name} else ()
+};
+
+(: Add new entry to authors.xml :)
+declare function local:update-authors ($entry) {
+  update insert $entry into $author-map/authors
+};
+
+declare function local:make-authors ($doc) {
+  (: FIXME: use more specific XPath to find author :)
+  for $author in $doc//*:author
+    let $content := normalize-space($author)
+    let $isni := normalize-space($author/@ISNI)
+    let $normalized :=
+      $author-map//author[isni eq $isni or name eq $content]/tei:author
+
+    return if ($normalized) then (
+      $normalized,
+      comment {$content}
+    ) else (
+      let $tei-author := if ($isni) then (
+        let $map := local:wikidata-by-isni($isni)
+        return
+          <author xmlns="http://www.tei-c.org/ns/1.0">
+            {
+              if (count($map)) then (
+                local:split-name($map?name),
+                <idno type="wikidata">{$map?id}</idno>
+              ) else (
+                local:split-name($content),
+                "&#xA;",
+                comment {'ISNI not found in Wikidata'}
+              )
+            }
+            <idno type="isni">{replace($isni, ' ', '')}</idno>
+          </author>
+      ) else (
+        <author xmlns="http://www.tei-c.org/ns/1.0">
+          {local:split-name($content)}
+        </author>
+      )
+
+      let $author-entry :=
+        <author>
+          {$tei-author}
+          <name>{$content}</name>
+          {if ($isni) then <isni>{$isni}</isni> else ()}
+        </author>
+
+      return (
+        $tei-author,
+        local:update-authors($author-entry)
+      )
+    )
 };
 
 (: Prepare document before actual transformation :)
@@ -803,25 +887,7 @@ declare function local:construct-tei (
       else $title-part/text()
     }
 
-  let $author :=
-      for $author in $doc//*:author
-      let $content := normalize-space($author)
-      let $isni := normalize-space($author/@ISNI)
-      let $normalized :=
-        $author-map//author[isni eq $isni or name eq $content]/tei:author
-
-      return if ($normalized) then (
-        $normalized,
-        comment {$content}
-      ) else (
-        let $key := if ($isni) then
-          attribute key {"isni:" || replace($isni, "\s", "")} else ()
-        return
-          element {QName('http://www.tei-c.org/ns/1.0', 'author')} {
-              $key,
-              $content
-          }
-      )
+  let $authors := local:make-authors($doc)
 
   let $genre := lower-case($doc//*:SourceDesc/*:genre)
   let $class-codes := (
@@ -962,7 +1028,7 @@ declare function local:construct-tei (
         <titleStmt>
           {$title}
           {$subtitle}
-          {$author}
+          {$authors}
           {$editor}
         </titleStmt>
         <publicationStmt>
