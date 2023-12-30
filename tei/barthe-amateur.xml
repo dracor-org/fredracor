@@ -1,0 +1,1819 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001586" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">L'Amateur</title>
+                <title type="sub">Comédie en vers et un Acte</title>
+                <title type="sub">Représentée pour la première fois par les Comédiens François Ordinaires du Roi, le 3 Mars 1764.</title>
+                <title type="sub">Decepimur specie. Horace..</title>
+                <title type="sub">Prix 24 sols.</title>
+                <author>
+      <persName>
+        <forename>Nicolas-Thomas</forename>
+        <surname>Barthe</surname>
+      </persName><!--Wikidata label: Nicolas Thomas Barthe-->
+      <idno type="wikidata">Q3340819</idno>
+      <idno type="isni">000000008154136X</idno>
+    </author><!--Nicolas-Thomas BARTHE (1736-1785)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/BARTHE_AMATEUR.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/BARTHE_AMATEUR.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k58085553</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="damon" sex="MALE">
+                        <persName>Damon</persName>
+                    </person>
+                    <person xml:id="constance" sex="FEMALE">
+                        <persName>Constance</persName>
+                    </person>
+                    <person xml:id="pasquin" sex="MALE">
+                        <persName>Pasquin</persName>
+                    </person>
+                    <person xml:id="valere" sex="MALE">
+                        <persName>Valère</persName>
+                    </person>
+                    <person xml:id="le-laquais" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Laquais</persName>
+                    </person>
+                    <person xml:id="celiante" sex="FEMALE">
+                        <persName>Céliante</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>vers</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1764">
+                <desc/>
+            </event>
+            <event type="premiere" when="1785">
+                <desc>Représenté pour la première fois au théâtre des Variété Amusantes.</desc>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">L'AMATEUR</titlePart>
+			<titlePart type="sub">COMÉDIE EN VERS ET UN ACTE</titlePart>
+			<titlePart type="sub">Représentée pour la première fois par les Comédiens François Ordinaires du Roi, le 3 Mars 1764.</titlePart>
+			<titlePart type="sub">Decepimur specie. Horace..</titlePart>
+			<titlePart type="sub">Prix 24 sols.</titlePart>
+		</docTitle> 
+		<docDate when="1764">M. DCC. LXIV. Avec Approbation et Privilège du Roi.</docDate>
+		<docAuthor>Par Mr BARTHE, de l'Académie des Belles-Lettres de Marseille.</docAuthor>
+		<div type="docImprint">
+			<div type="approbation">
+                    <head>APPROBATION.</head>
+				<p>J'ai lu par ordre de Monseigneur le Vice-ChanceIier, l'Amateur, Comédie, et je crois qu'on peut en permettre l'impression, à Paris ce 16 Mars 1764 MARIN.</p>
+				<p>Le Privilège et l'Enregistrement se trouvent au nouveau Théâtre Français et Italien.</p>
+			</div>
+			<!--TODO: handling of editor name at this place unclear <editor>À PARIS, Chez Duchesne, Libraire, rue S. Jacques, au-dessous de la Fontaine S. Benoît, au Temple du Goût.</editor>-->
+		</div>
+		<performance>
+			<ab type="premiere">Représenté pour la première fois au théâtre des Variété Amusantes.</ab><!--@date="1785"--><!--@location="Théâtre des Variétés amusantes"-->
+		</performance>
+	<castList>
+                <head>ACTEURS</head>
+		<castItem>
+                    <role corresp="#valere">VALÈRE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, Amateur. M. Molé.</castItem>
+		<castItem>
+                    <role corresp="#damon">DAMON</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgois"--><!--@age="A"--><!--@stat_amour="néant"-->, Ami de Valère. M. Grandval.</castItem>
+		<castItem>
+                    <role corresp="#constance">CONSTANCE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, fille de Damon. Mlle. Doligni</castItem>
+		<castItem>
+                    <role corresp="#celiante">CÉLIANTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgrois"--><!--@age="A"--><!--@stat_amour="néant"-->. Mde. Préville.</castItem>
+		<castItem>
+                    <role corresp="#pasquin">PASQUIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, Valet de Valère. M. Préville.</castItem>
+		<castItem>
+                    <role corresp="#laquais">PLUSIEURS LAQUAIS</role><!--@sex="1"--><!--@type="H"--><!--@statut="laquais"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La scène est à Paris, dans une Maison commune à Valère et à Damon.</set>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>L'AMATEUR</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Damon, Constance.</head>
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="1">Te voilà triste et bien rêveuse.</l>
+                        <l n="2">Et tu quittais hier le couvent sans douleur ! </l>
+                        <l n="3">Tu me parus même joyeuse ; </l>
+                        <l n="4">Tu m'embrassais de si bon coeur !</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="5">Ah ! Vous ne m'aimez plus, mon père.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="6" part="I">Moi, je ne t'aime plus !</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="6" part="F">Je n'en saurais douter. </l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="7">Qui pourrait donc t'inquiéter !</l>
+                        <l n="8" part="I">Je t'aime, mon enfant.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="8" part="F">N'aviez-vous pas fait faire.... </l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="9" part="I">Quoi ?</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="9" part="F">Ma Statue en marbre : oh ! Pour lors vous m'aimiez,</l><!--@syll="11"-->
+                        <l n="10">De mon absence vous disiez </l>
+                        <l n="11">Qu'elle vous consolait ; Eh bien ! Je l'ai cherchée </l>
+                        <l n="12">Dans toute la maison, et j'ai perdu mes pas.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="13">Que je te serre dans mes bras. </l>
+                        <l n="14">Le reproche me plaît, mais ne sois point fâché ?</l>
+                        <stage type="laugh">Il rit.</stage>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="15" part="I">Quoi ! Vous riez !</l><!--@syll="4"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="15" part="F">Je ris de ton étonnement, </l><!--@syll="8"-->
+                        <l n="16">Et plus encor de ma folie.</l>
+                        <l n="17">Tu connais Valère ? Au couvent, </l>
+                        <l n="18">Nous nous entretenions de Valère souvent.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="19">Lorsqu'il partait pour l'Italie, </l>
+                        <l n="20">Je m'en souviens, je le vis un moment.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="21">On t'embrassait encor : tu n'étais qu'une enfant.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="22" part="I">Mais j'avais bien dix ans.</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="22" part="F">Et dis-moi, je te prie, </l><!--@syll="6"-->
+                        <l n="23">Tu ne te souviens point qu'il te trouva jolie ?</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="24" part="I">J'ai bien changé depuis.</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="24" part="F">Assez pour mon dessein.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, souriant.</speaker>
+                        <l n="25">Je l'ai, je vous l'avoue, aperçu ce matin.</l>
+                    </sp><!--@stage="smile"--><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="26">Quoi ! Malgré ma défense ! Et t'a-t-il aperçue ?</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="27" part="I">Non.</l><!--@syll="1"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="27" part="F">Tant mieux.</l><!--@syll="2"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="27" part="F">Pourquoi donc ? Et quel rapport enfin</l><!--@syll="9"-->
+                        <l n="28">Entre Valère et ma statue ?</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="29">Laisse, laisse-moi faire : Oh ! J'ai quelque raison.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="30">Pourquoi me la cacher ? Et quel est ce mystère ?</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="31">J'avais résolu de le taire </l>
+                        <l n="32">Mais il faut te céder. Eh bien, tu sauras donc </l>
+                        <l n="33">Qu'il aime tous les Arts ; qu'il est fou de Peintures,</l>
+                        <l n="34">D'Architecture, de Sculpture.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="35">Serait-ce un de ces gens qu'on appelle amateurs ?</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="36">Je ne le confonds pas avec la populace</l>
+                        <l n="37">De ces modernes protecteurs, </l>
+                        <l n="38">Qui des talents divers osent marquer la place,</l>
+                        <l n="39">Des Artistes sont les tuteurs, </l>
+                        <l n="40">Se forment une Cour où leur grave manie ;</l>
+                        <l n="41">Daigne corriger le génie ; </l>
+                        <l n="42">Qui jugent et peinture, et la prose et les vers,</l>
+                        <l n="43">Et qui jugent tout de travers.</l>
+                        <l n="44">Il n'est pas, lui, de cette espèce : </l>
+                        <l n="45">Il critique sans air, il loue avec finesse ;</l>
+                        <l n="46">Sait manier avec adresse, </l>
+                        <l n="47">Le pinceau, le burin ; il use noblement</l>
+                        <l n="48">Surtout de ses grandes richesses. </l>
+                        <l n="49">Il saura secourir un Artiste indigent, </l>
+                        <l n="50">L'animer, le produire et cacher ses largesses.</l>
+                        <l n="51">Je crois que l'on peur estimer </l>
+                        <l n="52">Un Amateur si jeune et de ce caractère. </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="53">Je crois même qu'on peut l'aimer.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="54">Oui, l'aimer, c'est mieux dit, et j'aime fort Valère.</l>
+                        <l n="55">Aussi je lui prépare une bonne-leçon. </l>
+                        <l n="56">Il est gâté par l'Italie, </l>
+                        <l n="57">Charmant, mais un peu fou ; c'est une maladie,</l>
+                        <l n="58">Que indiscrète passion, </l>
+                        <l n="59" part="I">Dont... tu dois le guérir.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="59" part="F">Mais il ne m'a pas vue.</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="60">Et c'est bien mon intention </l>
+                        <l n="61">Qu'il ne te sache pas même dans la maison.</l>
+                        <l n="62">De ses gens tu n'es point connue.</l>
+                        <l n="63">Mais il te verra, sans te voir.</l>
+                        <l n="64">Je lui fais vendre ta statue Pour une Antique. </l>
+                        <l n="65">Eh bien ! Sens-tu tout le pouvoir, </l>
+                        <l n="66">Tout l'effet d'une Antique ? </l>
+                        <l n="67">Elle aura son suffrage, </l>
+                        <l n="68">Elle passe pour Grecque. </l>
+                        <l n="69">Heureusement pour nous, </l>
+                        <l n="70">La mode est pour le Grec ; nos meubles, nos bijoux,</l>
+                        <l n="71">Étoffe, coiffure, équipage, </l>
+                        <l n="72">Tout est Grec, excepté nos âmes ; et d'ailleurs, </l>
+                        <l n="73">Ta Statue a trompé jusqu'à des Connaisseurs. </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="74">Cela me réjouit d'avance. </l>
+                        <l n="75">Pour lui je serai donc une Antique ? Je pense </l>
+                        <l n="76">Qu'il sera bien surpris. Mais ne craignez-vous pas, </l>
+                        <l n="77">De le blesser, de lui déplaire ?</l>
+                        <l n="78">Les hommes, m'a-t-on dit, sont tous si délicats </l>
+                        <l n="79">Sur l'amour-propre ! et c'est se moquer de Valère, </l>
+                        <l n="80" part="I">Il ne faut point.</l><!--@syll="4"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON, d'un ton ironique.</speaker>
+                        <l n="80" part="F">Le pauvre enfant !</l><!--@syll="4"-->
+                        <l n="81">En effet, je le plains, et j'aime ton scrupule,</l>
+                        <stage type="strong">Avec vivacité.</stage>
+                        <l n="82">Je te le dis encor, je veux absolument</l>
+                        <l n="83">Le corriger d'un ridicule. </l>
+                        <l n="84">C'est un enthousiaste ! Ennuyé de Paris, </l>
+                        <l n="85">Il brûle d'habiter l'Italie un pays, </l>
+                        <l n="86">Où tout charme, dit-il, mes yeux et mes oreilles, </l>
+                        <l n="87">Où je marche entouré des plus rares merveilles. </l>
+                        <l n="88">Il n'a point de lien qui puisse l'arrêter. </l>
+                        <l n="89">Feu son père, au retour de ce premier voyage,</l>
+                        <l n="90">Se proposait de lui faire accepter </l>
+                        <l n="91">Céliante, une veuve, et coquette et volage, </l>
+                        <l n="92">Très bon parti du reste ; il cherche à l'éviter. </l>
+                        <l n="93">Il faut avoir l'honneur de le fixer en France. </l>
+                    </sp><!--@stage="ironic"--><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="94">Mais avez-vous quelque espérance ? </l>
+                        <l n="95" part="I">Pour moi, je ne crois point.</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="95" part="F">Ma fille, il faudra voir. </l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="96">Mais quelle impression peut faire une statue ? </l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="97">C'est-là ce que je veux savoir. </l>
+                        <l n="98">Je l'attends : laisse-moi. Je t'ai bien entendue ? </l>
+                        <l n="99">Et nous nous reverrons dans peu.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="100">Mon père, en vérité, cela passe le jeu.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON, seul.</speaker>
+                        <l n="101">De quoi s'alarme-t-elle ? Ah ! bon, je vois paraître Pasquin.</l>
+                    </sp><!--@stage="alone"--><!--@who="DAMON"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Damon, Pasquin.</head>
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="102">Oh ! Pour le coup, Monsieur, voilà mon maître </l>
+                        <l n="103">Épris, épris d'une Beauté ! </l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="104">Comment donc ! Quelle nouveauté ! </l>
+                        <l n="105" part="I">Valère est amoureux ?</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="105" part="F">Oui, Valère lui-même, </l><!--@syll="6"-->
+                        <l n="106" part="I">Amoureux.... sans rivaux.</l><!--@syll="6"-->
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="106" part="F">Tu m'étonnes. Qui ? lui ! </l><!--@syll="6"-->
+                        <l n="107" part="I">Mais depuis quand ?</l><!--@syll="4"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="107" part="M">D'aujourd'hui. </l><!--@syll="3"-->
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="107" part="F">D'aujourd'hui ! </l><!--@syll="3"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="108">C'est une passion subite mais extrême.</l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="109">L'objet a donc bien des appas ?</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="110">Une merveille incomparable ! </l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="111" part="I">Comment la nomme-t-on ?</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <stage type="hesitate">Après avoir hésité.</stage>
+                        <l n="111" part="F">On ne la nomme pas.</l><!--@syll="6"-->
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="112">Son nom est un secret ? Tu me fais une fable. </l>
+                        <l n="113" part="I">Est-elle jeune ?</l><!--@syll="4"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="113" part="F">Oh ! Non ; mais sa beauté ! </l><!--@syll="6"-->
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="114">Dis-moi du moins sa qualité.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="115">Sa qualité ! Vraiment, c'est ce qui le captive, </l>
+                        <l n="116">Ce qui rend son ardeur et si prompte et si vive.</l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="117">Lui ! par la qualité se laisser éblouir ! </l>
+                        <l n="118">Qui l'aurait soupçonné d'une telle faiblesse ? </l>
+                        <l n="119" part="I">Doit-il bientôt conclure ?</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="119" part="F">Il conclut, il se presse, </l><!--@syll="6"-->
+                        <l n="120">Il est ardent, il veut jouir.</l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="121" part="I">Mais quelle est-elle enfin ?</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="121" part="F">Monsieur... c'est... une Antique. </l><!--@syll="6"-->
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="122" part="I">Une Antique !</l><!--@syll="4"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="122" part="F">Oui, Monsieur, la chose était comique, </l><!--@syll="8"-->
+                        <l n="123">J'en ris encor ; cela faisait tableau. </l>
+                        <l n="124">Par je ne sais quel homme il se laisse conduire </l>
+                        <l n="125">Chez l'heureux possesseur de ce rare morceau.</l>
+                        <l n="126">À peine on vient de l'introduire ;</l>
+                        <l n="127">Tout-à-coup un objet nouveau, </l>
+                        <l n="128">Le frappe, le saisit ; (ce n'est qu'une Statue,)</l>
+                        <l n="129">Toute son âme est dans ses yeux ; </l>
+                        <l n="130">Il se tait, il admire, il est rêveur, joyeux, </l>
+                        <l n="131">Questionne, interrompt, et pour en juger mieux</l>
+                        <l n="132">Change vingt fois de point de vue.</l>
+                        <l n="133">Oh ! Ce Marchand est un nigaud, </l>
+                        <l n="134">Si, dans ce moment même, elle n'est pas vendue</l>
+                        <l n="135">Quatre fois plus qu'elle ne vaut.</l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="136">Elle lui plaît cette statue ?</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN, d'un air important.</speaker>
+                        <l n="137">Elle me plaît aussi ; car elle n'est pas mal : </l>
+                        <l n="138">Je l'estime un original.</l>
+                    </sp><!--@stage="proud"--><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="139">J'en crois Pasquin ; Pasquin doit s'y connaître.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="140">Ma foi, je m'y connais, autant que lui peut-être ;</l>
+                        <l n="141">Mais sans en perdre le sommeil, </l>
+                        <l n="142" part="I">Comme lui.</l><!--@syll="3"-->
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="142" part="F">Tout de bon ? Ton Maître.. ....</l><!--@syll="5"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="143">Vous n'avez rien vu de pareil ; </l>
+                        <l n="144">Sans cesse il m'étourdit des Beaux-Arts, du génie. </l>
+                        <l n="145">Oh ! Si je vous contais nos exploits d'Italie ? </l>
+                        <l n="146">Au milieu d'une rue il s'arrêtait souvent,</l>
+                        <l n="147">Pour lorgner, d'un oeil immobile,</l>
+                        <l n="148">Une façade, un péristyle. </l>
+                        <l n="149">Il n'apercevait pas tout un peuple ignorant,</l>
+                        <l n="150">Qui le regardait en riant.</l>
+                        <l n="151">Quelquefois, surveillant utile, </l>
+                        <l n="152">Mes deux bras sans respect l'ont remué, poussé, </l>
+                        <l n="153">Au moment où mon homme, admirateur tranquille,</l>
+                        <l n="154">Sous une voiture incivile </l>
+                        <l n="155">Impitoyablement eût été renversé. </l>
+                        <l n="156">Et dans Herculanum ! Ô l'abîme effroyable !</l>
+                        <l n="157">Il y faisait un froid du Diable.</l>
+                        <l n="158">J'enrageais. Lui, charmé de ce lieu souterrain, </l>
+                        <l n="159">Tout occupé du beau, tout rempli de l'histoire </l>
+                        <l n="160">Il oubliait de manger et de boire,</l>
+                        <l n="161">Et s'étonnait que j'eusse faim. </l>
+                    </sp><!--@who="PASQUIN"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Damon, Valère, Pasquin.</head>
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <stage type="toward">À Damon.</stage>
+                        <l n="162" part="I">Un moment, cher ami ; pardon. </l><!--@syll="8"-->
+                        <stage type="toward">À Pasquin.</stage>
+                        <l n="162" part="F">Comment, coquin !</l><!--@syll="4"-->
+                        <l n="163">Oses-tu t'offrir à ma vue ?</l>
+                        <l n="164">Dois-je te retrouver céans ? </l>
+                        <l n="165">Je t'ai dit d'appeler deux ou trois de mes gens,</l>
+                        <l n="166">Pour transporter cette Statue. </l>
+                        <l n="167" part="I">Faut-il te le redire ?</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON, jouant l'étonné.</speaker>
+                        <l n="167" part="M">Une statue ?</l><!--@syll="4"-->
+                    </sp><!--@stage="estonish"--><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="167" part="F">À moi !</l><!--@syll="2"-->
+                        <l n="168">Le prodige de la sculpture ! </l>
+                        <stage type="toward">À Pasquin.</stage>
+                        <l n="169">Va donc, cours, et prends garde à toi, </l>
+                        <l n="170">Prends garde, si je vois la moindre égratignure. </l>
+                        <l n="171" part="I">Je te....</l><!--@syll="2"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="171" part="F">C'est un morceau, ma foi, </l><!--@syll="6"-->
+                        <l n="172">Si précieux, de ce fini que j'aime.</l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="173">Hé ! ne bavarde pas ; je t'attends ici même. </l>
+                        <stage type="run/follow">En courant après lui.</stage>
+                        <l n="174">Écoute ; reviens vite au moins, </l>
+                        <l n="175">Ne te hâte point trop, cependant : j'appréhende.... </l>
+                        <l n="176">Entends bien, conçois bien que la chose demande</l>
+                        <l n="177">De bons yeux, du zèle et des soins.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="178">Oh ! Je le conçois à merveille.</l>
+                        <l n="179">Monsieur, j'ai la tête et l'oreille </l>
+                        <l n="180">Assez bonnes ; et puis, la Grèce... le respect...</l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="181" part="I">Allons, veux-tu partir ?</l><!--@syll="6"-->
+                        <stage type="exit">Pasquin sort.</stage>
+                    </sp><!--@who="VALÈRE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Damon, Valère.</head>
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="181" part="F">Je suis comblé de joie, </l><!--@syll="6"-->
+                        <l n="182" part="I">Félicitez-moi donc.</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="182" part="F">Il faut que je la voie.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="183">Quoi ! Mon suffrage est-il suspect ? </l>
+                        <l n="184">Et, sur le transport qui m'enflamme,</l>
+                        <l n="185">Craignez-vous d'admirer ? Monsieur est circonspect.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="186">C'est donc une bien belle femme ?</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="187" part="I">Belle ! Vous la verrez.</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="187" part="F">Tant de morceaux exquis, </l><!--@syll="6"-->
+                        <l n="188" part="I">Dont votre cabinet...</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="188" part="F">Le premier de Paris, </l><!--@syll="6"-->
+                        <l n="189">J'en conviens, pour le choix : mais ma beauté nouvelle</l>
+                        <l n="190">Sera son plus bel ornement. </l>
+                        <l n="191">Cette beauté fut un modèle !... </l>
+                        <l n="192" part="I">Ces Grecs étaient heureux !</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="192" part="M">Elle est Grecque !</l><!--@syll="3"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="192" part="F">Oui vraiment.</l><!--@syll="3"-->
+                        <l n="193">Nous nous y connaissons ; je la garantis telle. </l>
+                        <l n="194">Jugez de mon enchantement ; </l>
+                        <stage type="kiss">Il embrasse Damon.</stage>
+                        <l n="195">Une Antique, mon cher !</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="196">C'est votre bonne étoile. </l>
+                        <l n="197">Mais si vous vous trompiez et si le temps dévoile...</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="198">Et le coin de l'antiquité ! Oui, quoique des ans respecté,</l>
+                        <l n="199">Ce marbre même atteste une vieillesse auguste.</l>
+                        <l n="200">Par intérêt pour moi ne soyez pas injuste.</l>
+                        <l n="201">On ne me trompe point. Le moderne ciseau </l>
+                        <l n="202">Rend-il ce simple, ce vrai beau,</l>
+                        <l n="203">Ce moelleux des contours, ces attitudes fières ? </l>
+                        <note type="L">Boulingrin : Parterre de gazon pour l'ornement d'un jardin. [L]</note>
+                        <l n="204">Nos Boulingrins et nos bosquets </l>
+                        <l n="205">Sont remplis d'ébauches grossières, </l>
+                        <l n="206">De vases, de colifichets :</l>
+                        <l n="207">Rien de grand, rien de fort, nul choix dans les effets.</l>
+                        <l n="208">Nous avons des Amours, de petites Laitières, </l>
+                        <l n="209">Et surtout de jolis corsets. Nous excellons dans les misères.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON, ironiquement.</speaker>
+                        <l n="210">Il est vrai, nous vivons dans de malheureux temps. </l>
+                        <l n="211">Pigall[e] peut-il être un grand homme ? </l>
+                        <l n="212">Rien n'est beau, s'il n'a deux mille ans, </l>
+                        <l n="213">Et s'il ne vient ou d'Athènes ou de Rome. </l>
+                        <l n="214">Girardon et Puget n'étaient que des enfants.</l>
+                        <l n="215">Votre statue est Grecque, et du siècle peut-être</l>
+                        <l n="216" part="I">De... Le nom de l'Artiste ?</l><!--@syll="6"-->
+                    </sp><!--@stage="ironic"--><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="216" part="F">Oh ! Je ne le sais pas, </l><!--@syll="6"-->
+                        <l n="217">C'est un morceau si vieux ! mais il est d'un grand Maître :</l>
+                        <l n="218">Il est de Praxitèle, ou bien de Phidias ; </l>
+                        <l n="219" part="I">Oui, oui... de Phidias.</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="219" part="F">Je pourrai donc connaître</l><!--@syll="6"-->
+                        <l n="220">Du Phidias ? parbleu j'en suis ravi. </l>
+                        <l n="221">Mais d'où vient-il, ce marbre ?</l>
+                        <l n="222">Il faut être éclairci : </l>
+                        <l n="223">Car sans parler de ce qu'il coûte.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE, impatienté.</speaker>
+                        <l n="224">Dans un Château royal, maintenant en oubli,</l>
+                        <l n="225">(Ce marbre était enseveli ;)</l>
+                        <l n="226">C'est quelqu'un de nos Rois, François_premier, sans doute... </l>
+                        <l n="227" part="I">Ce Prince aimait les Arts.</l><!--@syll="6"-->
+                    </sp><!--@stage="impatient"--><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="227" part="F">Et les femmes aussi.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="228">Oh ! Les Arts, les beaux Arts. Doux charmes de la vie,</l>
+                        <l n="229">C'est vous qui faites les heureux ; </l>
+                        <l n="230">Vous êtes seuls dignes d'envie, </l>
+                        <l n="231">Trésors des esprits généreux.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="232">L'enthousiasme vous inspire. </l>
+                        <l n="233">Je le respecte et me retire. </l>
+                        <l n="234" part="I">Je reviendrai tantôt admirer.</l><!--@syll="9"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="234" part="F">Admirer,</l><!--@syll="3"-->
+                        <l n="235">C'est le mot.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON, à part.</speaker>
+                        <l n="236">Le voilà dans une erreur profonde, </l>
+                        <l n="237">Jusqu'à présent tout me seconde : </l>
+                        <l n="238">Le charme, opère, il faut le laisser opérer.</l>
+                    </sp><!--@stage="aparte"--><!--@who="DAMON"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp who="#valere">
+                        <speaker>VALÈRE, seul.</speaker>
+                        <l n="239">Il se moque de moi ; mais il ne l'a pas vue.</l>
+                        <l n="240">Je veux que bientôt ma Statue </l>
+                        <l n="241">Me venge du railleur ; qu'il en soit enchanté.</l>
+                        <stage type="silence">Après un silence.</stage>
+                        <l n="242">Du temps de ma Divinité, </l>
+                        <l n="243">La Grèce avait peut-être cent mortelles </l>
+                        <l n="244">Aussi belles, presqu'aussi belles ? </l>
+                        <l n="245">Où trouver en Europe une telle beauté ?</l>
+                        <l n="246">A cette heure même on l'apporte. </l>
+                        <l n="247">Mais une roue, un choc peut faire chanceler, </l>
+                        <l n="248">Mettre en pièces !... Moi-même il y fallait aller, </l>
+                        <l n="249">J'entends du bruit à cette porte : </l>
+                        <l n="250">C'est elle enfin, c'est elle apparemment.</l>
+                    </sp><!--@stage="alone"--><!--@who="VALÈRE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Valère, Pasquin, plusieurs Laquais qui portent la Statut. </head>
+<sp who="#valere">
+                        <speaker>VALÈRE, courant à eux.</speaker>
+                        <l n="251">Là doucement, Messieurs. Avancez. Doucement. </l>
+                        <l n="252">Mes amis, que chacun se tienne sur ses gardes.</l>
+                        <stage n="hurt/drop">Pasquin fait exprès un faux pas et laisse presque tomber la Statue.</stage>
+                        <l n="253">Ah ! Malheureux, tu me poignardes ! </l>
+                    </sp><!--@stage="run/closer"--><!--@who="VALÈRE"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="254">Je ne suis point blessé ; n'ayez aucun effroi. </l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="255">Maraud, je pense bien à toi ! </l>
+                        <l n="256" part="I">Je tremble pour elle.</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="256" part="F">Ah ! Je vous en remercie. </l><!--@syll="6"-->
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#valere">
+                        <speaker>VALÈRE, à ses gens.</speaker>
+                        <l n="257" part="I">Sortez, sortez donc.</l><!--@syll="5"-->
+                        <stage n="">Pasquin renvoie les autres Laquais d'un coup de main, impérieux, comme s'il leur disait : Sortez ignorants. Il va ensuite se placer vis-à-vis la statue et l'admire.</stage>
+                        <l n="257" part="F">Que d'amour </l><!--@syll="3"-->
+                        <l n="258">Elle dût inspirer, et que de jalousie !</l>
+                        <stage type="watch">Apercevant Pasquin qui gesticule.</stage>
+                        <l n="259" part="I">Encore ? Que fais-tu là ?</l><!--@syll="6"-->
+                    </sp><!--@stage="toward"--><!--@who="VALÈRE"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="259" part="F">Mais j'admire à mon tour. </l><!--@syll="6"-->
+                        <l n="260">Notre voyage d'Italie </l>
+                        <l n="261">M'a bien formé le goût ! elle est, elle est jolie !</l>
+                        <stage type="proud">D'un ton de connaisseur.</stage>
+                        <l n="262">La mollesse des chairs, les formes, le contour.</l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="263" part="I">Paix.</l><!--@syll="1"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="263" part="F">Vous voyez pourtant que l'on n'est pas si bête. </l><!--@syll="11"-->
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="264" part="I">Puis-je être seul ?</l><!--@syll="4"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="264" part="F">Monsieur veut être en tête à tête.</l><!--@syll="8"-->
+                        <stage type="aparte">À part.</stage>
+                        <l n="265">Je pourrais aller boire ou dormir tout le jour.</l>
+                    </sp><!--@who="PASQUIN"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII.</head>
+<sp who="#valere">
+                        <speaker>VALÈRE, seul.</speaker>
+                        <l n="266">Ce drôle me gênait. Ah ! Quels sens et quelle âme ! </l>
+                        <l n="267">Cela ne voit qu'un marbre, et je vois une femme,</l>
+                        <l n="268">Telle qu'il n'en est plus.</l>
+                        <l n="269">Il considère la statue de la tête aux pieds.</l>
+                        <l n="270">Quel souris gracieux !</l>
+                        <l n="271">C'est la candeur d'une bergère</l>
+                        <l n="272">Le port de la Reine des Dieux. </l>
+                        <l n="273">Comme la taille est noble, élégante et légère ! </l>
+                        <l n="274">Les belles chairs ! Le sang y paraît circuler.</l>
+                        <l n="275">Et la bouche ! Elle va parler. </l>
+                        <l n="276">O Sculpteur immortel, à qui je rends hommage, </l>
+                        <l n="277">Que de fois le ciseau dût tomber de ta main !</l>
+                        <l n="278">Surtout en formant ce beau sein, </l>
+                        <l n="279">Oui, tu devais toi-même adorer ton ouvrage. </l>
+                        <stage>Après un silence.</stage>
+                        <l n="280">Ce marbre me semble animé. </l>
+                        <l n="281">Grecque charmante ! Ah , si j'avais pu naître</l>
+                        <l n="282">Dans son temps ! Que sait on ? Peut-être..... </l>
+                        <l n="283">Mais combien de rivaux dont le coeur enflammé</l>
+                        <l n="284">M'aurait disputé sa conquête .... </l>
+                        <l n="285">Elle ne m'entend point... Elle a sans doute aimé, </l>
+                        <l n="286">Car, avec ces appas, le moyen ?... Quelle tête !</l>
+                    </sp><!--@stage="alone"--><!--@who="VALÈRE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Valère, Damon.</head>
+<sp who="#damon">
+                        <speaker>DAMON, à part.</speaker>
+                        <l n="287">Quelle tête ! Il a bien raison.</l>
+                    </sp><!--@stage="toward"--><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE, se croyant seul.</speaker>
+                        <l n="288">On parle d'un Pygmalion</l>
+                        <l n="289">Qui fut l'amant de la Statue.</l>
+                        <l n="290">C'est une fable, nous dit-on. </l>
+                        <l n="291">Oui, pour les esprits froids c'est une fiction ; </l>
+                        <l n="292">Mais moi, je sens combien l'on âme était émue. </l>
+                        <l n="293">Ce n'était pas un fou que ce Pygmalion, </l>
+                        <l n="294" part="I">Si la sienne égalait...</l><!--@syll="7"-->
+                    </sp><!--@stage="alone"--><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON, éclatant de rire.</speaker>
+                        <l n="294" part="F">L'éloge que vous</l><!--@syll="5"-->
+                        <l n="295" part="I">Est modéré.</l><!--@syll="4"-->
+                    </sp><!--@stage="laugh"--><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="295" part="F">Comment ! Vous étiez là ?</l><!--@syll="6"-->
+                        <l n="296" part="I">Et vous avez entendu...</l><!--@syll="7"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <note type="L">Fleurette : Fig. Propos galant. [L]</note>
+                        <l n="296" part="F">Vos fleurettes. </l><!--@syll="3"-->
+                        <l n="297">Vous êtes éloquent pour cette beauté-là.</l>
+                        <l n="298" part="I">Voilà donc le chef_d_oeuvre ?</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="298" part="F">Oui, Monsieur, le voilà.</l><!--@syll="6"-->
+                        <l n="299" part="I">Ai-je tort ?</l><!--@syll="3"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="299" part="M">Elle est bien.</l><!--@syll="3"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="299" part="F">Elle est bien ! Ah ! Barbare ! </l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="300">Est-ce donc, après tout, une beauté si rare ? </l>
+                        <l n="301">Pour vous plaire, faut-il en parler comme vous ?</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="302">Vous n'aimez pas les Arts, cher Damon, comme nous.</l>
+                        <l n="303">Que n'avez-vous mes yeux pour saisir cet ensemble,</l>
+                        <l n="304">Ces beaux détails ? Ce bras ! Ce pied ! Que vous en semble ?</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON, à part.</speaker>
+                        <l n="305">Ho ! Ho ! Serait-il près de devenir amant ? </l>
+                        <l n="306">Ceci passe le jeu, comme disait Constance.</l>
+                    </sp><!--@stage="aparte"--><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="307">Il ne regarde pas. Quel flegme ! Quel silence !</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="308">Parlons sans nous fâcher et sérieusement. </l>
+                        <l n="309">Ces beaux Arts, dont votre âme est sans cesse occupée,</l>
+                        <l n="310">Devraient au plus vous amuser. </l>
+                        <l n="311">Ne peut-on vous désabuser ? </l>
+                        <l n="312">Vous n'avez-là qu'une poupée.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="313">Soit ; à vos traits malins je veux bien m'exposer ; </l>
+                        <l n="314">Mais ma poupée au moins ne peut m'être infidèle. </l>
+                        <l n="315">Je ne serai jamais contrarié par elle. </l>
+                        <l n="316">On me parle de femme, en ai-je besoin, moi ?</l>
+                        <l n="317">J'ai des mortelles, des Déesses,</l>
+                        <l n="318">J'ai des Phrynés et des Lucrèces ;</l>
+                        <l n="319">Je suis Amant, Époux et Roi ; </l>
+                        <l n="320">Je suis même confiant pour toutes ces maîtresses : </l>
+                        <l n="321">Ce que j'aimais hier, je l'adore aujourd'hui. </l>
+                        <l n="322">Mon goût n'est pas de ceux qu'éteint la jouissance.</l>
+                        <l n="323">L'esprit, l'esprit qui sent, qui pense </l>
+                        <l n="324">A des plaisirs divins et qui ne sont qu'à lui.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="325">D'accord, mais, mon ami, pourriez-vous méconnaître,</l>
+                        <l n="326">Ces noms, ces liens si flatteurs, </l>
+                        <l n="327">Premiers plaisirs, les seuls peut-être,</l>
+                        <l n="328">Chers dans tous les climats, sentis par tous les coeurs ?</l>
+                        <l n="329">Vos plaisirs, de l'esprit douce et vaine imposture,</l>
+                        <l n="330">Valent-ils ces épanchements, </l>
+                        <l n="331">Ces transports de l'amour que le devoir épure, </l>
+                        <l n="332">Le souris d'une épouse et ceux de ses enfants,</l>
+                        <l n="333">Tous ces délicieux moments, </l>
+                        <l n="334">Qu'aux malheureux humains ménagea la nature ? </l>
+                        <l n="335">Quelque temps avant de mourir </l>
+                        <l n="336">Feu votre père allait vous établir.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE, fâché.</speaker>
+                        <l n="337">Je le sais : il avoir de ces goûts-là, mon père ; </l>
+                        <l n="338" part="I">Il s'était marié.</l><!--@syll="6"-->
+                    </sp><!--@stage="offended"--><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="338" part="F">Mais, Monsieur l'Antiquaire, </l><!--@syll="6"-->
+                        <l n="339">Si vous l'étiez vous-même un jour ? </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="340">L'amour m'a guéri de l'amour. </l>
+                        <l n="341" part="I">Aime-t-on aujourd'hui ?</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="341" part="F">Mais vous faites la cour</l><!--@syll="6"-->
+                        <l n="342" part="I">Je pense, à Céliante ?</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="342" part="F">À cette jeune folle,</l><!--@syll="6"-->
+                        <l n="343">Jouant l'étourderie, et la joie et l'humeur !</l>
+                        <l n="344">Même aux yeux du grand monde ; elle paraît frivole.</l>
+                        <l n="345">Elle sourit aux mots de génie et de coeur ;</l>
+                        <l n="346">Va, sur tous les objets semant la parodie ;</l>
+                        <l n="347">Juge un homme sur l'air, les grâces, le bon ton ; </l>
+                        <l n="348">A tout son esprit en jargon,</l>
+                        <l n="349">Et ne peut, sans vapeurs, voir une Tragédie. </l>
+                        <l n="350">Pour qu'il songeât à ce parti, </l>
+                        <l n="351">Qu'avais-je donc fait à mon père ?</l>
+                        <l n="352">On sait que de ce choix il s'était repenti.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="353">Céliante, il est vrai, ne va point à Valère, </l>
+                        <l n="354">Et je la trouve folle aussi. </l>
+                        <l n="355">Mais vous ne vous en devez guère : </l>
+                        <l n="356">Il est tant de façons d'être fou, mon ami.</l>
+                    </sp><!--@who="DAMON"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Valère, Damon, Un Laquais.</head>
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="357" part="I">Que veux-tu ?</l><!--@syll="3"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#le-laquais">
+                        <speaker>LE LAQUAIS.</speaker>
+                        <l n="357" part="M">Céliante.</l><!--@syll="3"-->
+                    </sp><!--@who="LE LAQUAIS"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="357" part="M">Ô Ciel !</l><!--@syll="2"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="357" part="F">Pour se voir peindre,</l><!--@syll="4"-->
+                        <l n="358">Elle arrive fort à propos. </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="359"> Toujours, toujours du monde et jamais de repos !</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="360">Une femme à la mode ; et vous osez vous plaindre ! </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="361">Ce n'est pas moi qu'elle vient voir ; </l>
+                        <l n="362" part="I">C'est mon Cabinet.</l><!--@syll="6"-->
+                        <stage type="dream">Il est quelque temps rêveur.</stage>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="362" part="F">Mais ; allez la recevoir.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X.</head>
+<sp who="#damon">
+                        <speaker>DAMON, seul.</speaker>
+                        <l n="363">Il me plaît, il m'étonne ; et plus je l'envisage, </l>
+                        <l n="364">Plus je vois qu'il n'a point d'égal.</l>
+                        <l n="365">Peut-il être amené de l'amour de l'image </l>
+                        <l n="366">À l'amour de l'original ?</l>
+                        <l n="367">N'en désespérons point ; c'est ma fille qu'il aime </l>
+                        <l n="368">Dans ce marbre à des yeux si beau. </l>
+                        <l n="369">Mais il peut se tromper lui-même ;</l>
+                        <l n="370">S'il n'aimait qu'une Grecque, et que l'art du ciseau ? </l>
+                        <l n="371">Saisissons ce moment de pénétrer Constance ;</l>
+                        <l n="372">Et voyons si son coeur, ainsi que je le crois, </l>
+                        <l n="373">Avec Valère un jour sera d'intelligence.</l>
+                        <stage type="location">Il va du côte opposé à l'appartement de Valère.</stage>
+                        <l n="374">Holà ! Quelqu'un.</l>
+                    </sp><!--@stage="alone"--><!--@who="DAMON"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. Damon, Constance.</head>
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="375">Hé ! Ma fille, c'est toi. </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="376">On a fait bien du bruit ; sans doute la Statue </l>
+                        <l n="377" part="I">Est dans la maison ?</l><!--@syll="5"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON, d'un air triste.</speaker>
+                        <l n="377" part="M">Oui.</l><!--@syll="1"-->
+                    </sp><!--@stage="sad"--><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="377" part="F">Valère l'a-t'il vue ? </l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="378" part="I">Oui.</l><!--@syll="1"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="378" part="M">L'a trouvée... Antique ?</l><!--@syll="5"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="378" part="M">Oui.</l><!--@syll="1"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="378" part="F">Vous semblez chagrin, </l><!--@syll="5"-->
+                        <l n="379">Mon père, Eh quoi ! Votre dessein </l>
+                        <l n="380" part="I">Ne réussit pas ?</l><!--@syll="5"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="380" part="F">Au contraire ;</l><!--@syll="3"-->
+                        <l n="381" part="I">Il a bien réussi. </l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="381" part="F">Valère</l><!--@syll="2"-->
+                        <l n="382" part="I">Est donc content ?</l><!--@syll="4"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="382" part="F">Mais, oui ; du ciseau, du sculpteur.</l><!--@syll="8"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="383">Je vous entends ; je n'ai pas le bonheur... </l>
+                        <l n="384">La figure n'a point le bonheur de lui plaire.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="385">Je ne dis pas cela ; mais je t'ai peint Valère </l>
+                        <l n="386">Ne voyant que les arts, ivre de sa chimère. </l>
+                        <l n="387" part="I">Tu parais triste !</l><!--@syll="4"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="387" part="F">Oh ! Non, eh ! Que m'importe à moi </l><!--@syll="8"-->
+                        <l n="388" part="I">Le succès d'une Antique ?</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="388" part="F">Aussi de bonne foi, </l><!--@syll="6"-->
+                        <l n="389">Je t'ai conté comment la chose s'est passée. </l>
+                        <l n="390">Il a loué le marbre et le costume ancien.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="391">Il a loué le marbre ? Où l'a-t'il donc placée ? </l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="392">La voici. Tu ne dis plus rien. </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="393">Trouvez-vous qu'elle me ressemble ? </l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="394">Parfaitement : les détails et l'ensemble, </l>
+                        <l n="395" part="I">Tout cela me paraît assez bien.</l><!--@syll="9"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="395" part="F">Assez bien, </l><!--@syll="3"-->
+                        <l n="396">Si vous voulez ; mais il me semble </l>
+                        <l n="397">Que cet air là n'est pas le mien. </l>
+                        <l n="398">Je n'ai point ces traits, ce maintiens, </l>
+                        <l n="399">C'est mieux que moi, j'en suis persuadée </l>
+                        <l n="400">Mais, en un mot, ce n'est pas moi.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON, riant.</speaker>
+                        <l n="401">Tant pis, car si Valère allait changer d'idée,</l>
+                        <l n="402" part="I">Cela serait fâcheux. </l><!--@syll="6"-->
+                    </sp><!--@stage="laugh"--><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="402" part="F">Pourquoi ? </l><!--@syll="2"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="403">Parce qu'il la trouve charmante.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="404">Lui !.. je n'ai pas besoin que vous me consoliez ? </l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="405">Je le crois ; mais enfin tu dois être contente : </l>
+                        <l n="406" part="I">J'ai voulu t'intriguer.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="406" part="F">Eh ! Quoi, vous badiniez ?</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="407" part="I">Oui ; car il t'aime fort.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="407" part="F">Vous me trompez peut-être </l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="408">Non ; tu pourras bientôt connaître </l>
+                        <l n="409">Qu'il est, qu'il est presque amoureux </l>
+                        <l n="410">De son Antique ; il admire, il adore. </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <stage type="aparte">À part.</stage>
+                        <l n="411" part="I">Ah !... </l><!--@syll="1"-->
+                        <stage type="loud">Haut.</stage>
+                        <l n="411" part="F">Mais il peut venir, je dois craindre ses yeux </l><!--@syll="11"-->
+                        <l n="412" part="I">Et je vais m'éloigner.</l><!--@syll="6"-->
+                        <stage type="away">Elle fait quelques pas.</stage>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="412" part="F">Tu peux rester encore. </l><!--@syll="6"-->
+                        <l n="413">Céliante avec lui parcourt son cabinet.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, revenant avec un air d'inquiétude.</speaker>
+                        <l n="414" part="I">Quoi ! Céliante !</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="414" part="F">Oui ; cela te déplaît ! </l><!--@syll="6"-->
+                        <l n="415">Qu'a de fâcheux cette nouvelle ?</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="416">Rien. Ne disiez-vous pas, mon père, qu'il devait... </l>
+                        <l n="417" part="I">L'épouser ?</l><!--@syll="3"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="417" part="F">Ta mémoire est bien fidèle. </l><!--@syll="7"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="418">Mon père, vous la connaissez : </l>
+                        <l n="419" part="I">N'est-elle pas jolie ?</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="419" part="F">Assez ;</l><!--@syll="2"-->
+                        <l n="420">Et dans Paris on la cite pour belle. </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="421">Si je pouvais l'apercevoir ! </l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="422" part="I">Tu la crains ?</l><!--@syll="3"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="422" part="F">Je serais bien aise de la voir. </l><!--@syll="9"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="423">Allons, retire-toi bien vite ; </l>
+                        <l n="424" part="I">Ils approchent tous deux.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Céliante, Damon, Valère.</head>
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="424" part="F">Bonjour, Damon, j'irrite,</l><!--@syll="6"-->
+                        <l n="425">Je désespère votre ami.</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="426">Il n'a pas l'air fort réjoui.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="427">Il est excellent votre ami. </l>
+                        <l n="428">De son Cabinet magnifique </l>
+                        <l n="429">A peine ai-je vu la moitié. </l>
+                        <l n="430">Pour me montrer je ne sais quelle Antique, </l>
+                        <l n="431">Il m'en a fait sortir. C'est un homme noyé, </l>
+                        <l n="432">S'il continue. Avec quelle grave importance, </l>
+                        <l n="433">S'il vous montre en détail ses marbres ses tableaux !</l>
+                        <l n="434">Il s'arrête avec complaisance </l>
+                        <l n="435">Sur des chiffons qu'il trouve beaux. </l>
+                        <l n="436">Si vous n'admirez pas les plus petits morceaux, </l>
+                        <l n="437">Il pétille d'impatience.</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="438">Ce Cabinet pourtant lui fait honneur. </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="439">Le Cabinet d'un Amateur ! </l>
+                        <l n="440">Où je n'ai pu m'asseoir ; pas un meuble commode, </l>
+                        <l n="441">Pas un des bijoux à la mode.</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="442">Hé ! n'avez-vous pas vu les chefs_d_oeuvre de l'Art ?</l>
+                        <stage type="low/toward">Bas à Damon.</stage>
+                        <l n="443" part="I">Mais elle ne voit point.</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="443" part="F">Les chefs_d_oeuvre de l'Art ! </l><!--@syll="6"-->
+                        <l n="444">Dites moi, ces grands mots nous viennent d'Italie. </l>
+                        <l n="445">À son âge, jouer le rôle d'un vieillard ! </l>
+                        <l n="446">Depuis... trois jours entiers vous n'êtes nulle part.</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="447">Lui, Madame ! il passe sa vie </l>
+                        <l n="448">Dans une auguste compagnie. </l>
+                        <l n="449">N'a-t-il pas près de lui des Catons, des Césars ?</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="450">Et puis toute la Cour céleste. </l>
+                        <l n="451">Sans doute une Vénus sourit à ses regards </l>
+                        <l n="452">De quelque Diane modeste </l>
+                        <l n="453">N'êtes-vous pas l'Endymion ?</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="454">Oh ! oui, j'ai tout l'Olimpe en ma possession. </l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="455">Mais il vous manque un Dieu de cette Cour suprême. </l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="456" part="I">Quel Dieu ?</l><!--@syll="2"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="456" part="F">Pouvez-vous l'ignorer ?</l><!--@syll="6"-->
+                        <l n="457" part="I">C'est l'Hymen. </l><!--@syll="3"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE, à Céliante.</speaker>
+                        <stage type="watch/anger">Après avoir lancé un regard de colère sur Damon.</stage>
+                        <l n="457" part="F">Ah ! L'Hymen ! Je le dois honorer. </l><!--@syll="9"-->
+                        <l n="458">J'ai su que mon père lui-même </l>
+                        <l n="459">En voulait orner mon séjour ; </l>
+                        <l n="460">Et l'Hymen... avec vous.... aurait été... l'Amour.</l>
+                    </sp><!--@stage="toward"--><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="461">Vous êtes trop galant : il est vrai votre père... </l>
+                        <l n="462">Son amitié m'était bien chère.</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE, l'interrompant.</speaker>
+                        <l n="463">Voici quelque chose de mieux</l>
+                        <l n="464">Que tout mon Cabinet ; voyez : la belle Femme !</l>
+                    </sp><!--@stage="interrupt"--><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="465">Cela me semble à moi bien vieux. </l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="466">C'est une Antique, une Grecque, Madame. </l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="467">Elle a l'air étranger. Vous aimez ce minois ?</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="468">Je lui trouve cet air qui plaît d'abord, qui touche. </l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="469">C'est être prévenu. La bouche...</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="470">Ah ! La bouche ! Lorsque sa voix... </l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="471" part="I">Vous l'avez entendue ? </l><!--@syll="6"-->
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="471" part="F">Heureux qui put l'entendre ! </l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="472">Les yeux ne disent rien du tout.</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="473">Moi, je suis étonné que le marbre ait pu rendre.....</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE, d'un ton railleur.</speaker>
+                        <stage type="toward">À Damon.</stage>
+                        <l n="474">Pardon. Nous n'avons pas son goût. </l>
+                        <l n="475">Jugez-nous, Damon, je suis sûre </l>
+                        <l n="476">Que vous êtes de mon avis, </l>
+                        <l n="477">Que vous trouvez cette figure </l>
+                        <l n="478">Commune, ridicule, et laide en tout pays.</l>
+                    </sp><!--@stage="ironic"--><!--@who="CÉLIANTE"-->
+<sp who="#damon">
+                        <speaker>DAMON, déconcerté.</speaker>
+                        <l n="479" part="I">La taille... n'est point mal.</l><!--@syll="6"-->
+                    </sp><!--@stage="lost"--><!--@who="DAMON"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="479" part="F">Oui, pas mal. Quant aux grâces, </l><!--@syll="6"-->
+                        <l n="480">Je n'en vois point les plus légères traces : </l>
+                        <l n="481" part="I">Cela n'en eut jamais.</l><!--@syll="6"-->
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="481" part="F">Des grâces, dites-vous ? </l><!--@syll="6"-->
+                        <l n="482">Des grâces ! Elle en est pétrie ; </l>
+                        <l n="483">Ah ! C'est peut-être l'Aspasie </l>
+                        <l n="484">Qui sut charmer Socrate et vit à ses genoux </l>
+                        <l n="485">Le Dieu de la Philosophie.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="486">Mais l'homme le plus sage eût été des plus fous...</l>
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#damon">
+                        <speaker>DAMON. à part.</speaker>
+                        <l n="487" part="I">Il sera furieux. </l><!--@syll="5"-->
+                        <stage type="loud/laugh">Haut en riant.</stage>
+                        <l n="487" part="F">Elle naquit en Grèce.</l><!--@syll="5"-->
+                    </sp><!--@stage="aparte"--><!--@who="DAMON"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE, sérieusement.</speaker>
+                        <l n="488">Elle fit bien ; car jamais cette espèce </l>
+                        <l n="489" part="I">N'eut fait fortune en France.</l><!--@syll="6"-->
+                    </sp><!--@stage="serious"--><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="489" part="F">Avec quelle rigueur...</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="490">Il n'en parlèrent pas avec plus de chaleur, </l>
+                        <l n="491">S'il défendait une maîtresse. </l>
+                        <l n="492">La défendez-vous pour l'honneur </l>
+                        <l n="493">De votre goût et de la Grèce ?</l>
+                        <l n="494">Comme elle tient sa tête ! Ah ! Dieu ! Quelle raideur !</l>
+                        <stage type="hit/hugh">Elle lui donne un coup d'éventail : Valère se jette entre la S[t]atue et Céliante.</stage>
+                        <l n="495">Il est son Chevalier. J'en ris de tout mon coeur.</l>
+                        <l n="496">Ne rougissez-vous point d'un pareil personnage,</l>
+                        <l n="497">De renoncer au monde ? un nouvel équipage, </l>
+                        <l n="498">Des bals, des soupers, des plaisirs, </l>
+                        <l n="499">De l'amour sans fades soupirs, </l>
+                        <l n="500">Et de l'esprit sans étalage,</l>
+                        <l n="501">D'un homme tel que vous, c'est là l'heureux partage,</l>
+                        <l n="502" part="I">Je dis plus, le devoir.</l><!--@syll="6"-->
+                    </sp><!--@who="CÉLIANTE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="502" part="F">Dans vos cercles brillants </l><!--@syll="6"-->
+                        <l n="503">Qu'irais-je donc trouver ? L'oubli des grands talents,</l>
+                        <l n="504">L'air du plaisir et non le plaisir même, </l>
+                        <l n="505">Les efforts que l'on fait pour paraître amusé. </l>
+                        <l n="506">Les tristes lieux communs d'un bel esprit usé, </l>
+                        <l n="507">Des sots que l'on caresse et peu de gens qu'on aime. </l>
+                        <l n="508">Chez moi je goûte un calme purs </l>
+                        <l n="509">Je vis heureux, je vis obscur ; </l>
+                        <l n="510">Loin des froides plaisanteries, </l>
+                        <l n="511">Des airs d'un fat titré, des riens, des flatteries ;</l>
+                        <l n="512">Je suis de vingt siècles divers ; </l>
+                        <l n="513">Et, de mon Cabinet, je parcours l'univers.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#celiante">
+                        <speaker>CÉLIANTE.</speaker>
+                        <l n="514">Son extravagance est unique. </l>
+                        <l n="515">Adieu, je vais revoir cet Opéra-comique </l>
+                        <l n="516">Dont tout Paris déjà répète les couplets. </l>
+                        <l n="517">Monsieur n'y viendra point, il est à son Antique. </l>
+                        <l n="518">Revenu d'Italie, il doit à ses progrès </l>
+                        <l n="519">D'estimer peu notre musique. </l>
+                        <l n="520" part="I">Adieu donc ; aimez-la cette Grecque.</l><!--@syll="10"-->
+                        <stage type="closer/silence">Valère oublie de l'accompagner. Damon lui fait signe. Valère l'accompagne en silence et d'un air embarrassé. Elle sort avec des éclats de rire forcés.</stage>
+                    </sp><!--@who="CÉLIANTE"-->
+</div>
+<div type="scene" n="13">
+                    <head>SCÈNE XIII. Valère, Damon.</head>
+<sp who="#valere">
+                        <speaker>VALÈRE, fort ému.</speaker>
+                        <l n="520" part="F">Monsieur, </l><!--@syll="2"-->
+                        <l n="521">Veut-il encore que j'épouse ? </l>
+                        <l n="522">Vous avez vu cette fureur jalouse. </l>
+                        <l n="523" part="I">Les femmes !</l><!--@syll="3"-->
+                    </sp><!--@stage="stress"--><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="523" part="F">C'est une noirceur. </l><!--@syll="5"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <stage n="turn/location/exit">Se retournant vers la porte par laquelle Céliante vient de sortir.</stage>
+                        <l n="523" part="F">Je suis charmé de vous le dire,</l><!--@syll="8"-->
+                        <l n="524">Madame, je l'aime, l'admire ;</l>
+                        <l n="525">Elle est bien plus belle que vous.</l>
+                        <stage type="toward">À la statue.</stage>
+                        <l n="526">Tu peux braver sa haine et ses propos jaloux.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="527" part="I">Vous, la consolez bien.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="527" part="F">Oh ! J'abhorre l'envie.</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="528">Sa gloire en est peut-être à vos yeux affaiblie.</l>
+                        <l n="529" part="I">Les traits de Céliante....</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="529" part="F">Ils me l'ont embellie. </l><!--@syll="6"-->
+                        <l n="530">Ce prodige, une espèce ! Une espèce est fort bon. </l>
+                        <l n="531">Je veux l'ôter de ce salon. </l>
+                        <l n="532">Je veux, loin des yeux du vulgaire, </l>
+                        <l n="533">Dans mon Cabinet solitaire, </l>
+                        <l n="534">Dès aujourd'hui la placer de ma main, </l>
+                        <l n="535">Mais quand j'y songe, tout est plein. </l>
+                        <l n="536">Je vois cependant une espace </l>
+                        <l n="537">Où je puis la placer avantageusement ;</l>
+                        <l n="538">Mais j'ai mis là précisément </l>
+                        <l n="539">Vénus... ma foi, Vénus lui cédera la place...</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="540">Vous serez bientôt de retour ?</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="541">Si vous veniez m'aider et juger de la grâce, </l>
+                        <l n="542" part="I">De l'effet...</l><!--@syll="3"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="542" part="F">Je veux bien, ce jour est un grand jour. </l><!--@syll="9"-->
+                        <stage type="alone">Seul.</stage>
+                        <l n="543">Monsieur le Connaisseur verra dans ma famille </l>
+                        <l n="544">Le modèle de Phidias. </l>
+                        <stage type="follow/watch">Il veut suivre Valère, il aperçoit Constance.</stage>
+                    </sp><!--@who="DAMON"-->
+</div>
+<div type="scene" n="14">
+                    <head>SCÈNE XIV. Damon, Constance.</head>
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="545" part="I">Pourquoi donc reparaître ?</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="545" part="M">Il est sorti. </l><!--@syll="4"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="545" part="F">Ma fille</l><!--@syll="2"-->
+                        <l n="546" part="I">Vous écoutiez.</l><!--@syll="4"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, riant.</speaker>
+                        <l n="546" part="F">Vénus a pour lui moins d'appas ; </l><!--@syll="8"-->
+                        <l n="547">Et contre Céliante il m'a bien défendue.</l>
+                    </sp><!--@stage="laugh"--><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="548" part="I">Elle a dit bien du mal.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="548" part="F">Lui plairait-elle moins. </l><!--@syll="6"-->
+                        <l n="549" part="I">S'il là croyait moderne ?</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="549" part="F">Oh ! Tu prends trop de soins.</l><!--@syll="6"-->
+                        <l n="550">Je ris de ta peur ingénue. </l>
+                        <l n="551" part="I">Que t'importe après tout ?</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="551" part="F">Mon père, en me voyant, </l><!--@syll="6"-->
+                        <l n="552">S'il aimait mieux une statue ?</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="553">Le choix ne serait point plaisant.</l>
+                        <l n="554">Crois-moi, l'original vaut au moins la copie.</l>
+                        <l n="555">Mais tu me retiens ; il m'attend,</l>
+                        <l n="556" part="I">Hâte-toi de rentrer.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+</div>
+<div type="scene" n="15">
+                    <head>SCÈNE XV.</head>
+<sp who="#constance">
+                        <speaker>CONSTANCE, seul.</speaker>
+                        <l n="556" part="F">Demeurons un instant,</l><!--@syll="6"-->
+                        <l n="557" part="I">Rien qu'un instant.</l><!--@syll="6"-->
+                        <stage type="closer">Elle s'approche de la statue.</stage>
+                        <l n="557" part="F">Est-elle en effet si jolie ? </l><!--@syll="6"-->
+                        <l n="558">Mes yeux la trouvent bien ; mon coeur n'est pas content.</l>
+                        <l n="559">Il est sûr qu'une femme... est bien plus animée.</l>
+                        <l n="560">Par exemple, sans vanité, </l>
+                        <l n="561">Mes yeux doivent avoir plus de vivacité.</l>
+                        <l n="562">Oh ! L'âme n'est pas exprimée</l>
+                        <l n="563">Sur un marbre ; jamais. Ce marbre cependant </l>
+                        <l n="564">Peut-être est-il heureux de n'être pas sensible : </l>
+                        <l n="565">Car, s'il cessait un jour de plaire c'est possible, </l>
+                        <l n="566">Cela ne lui fait rien ; et moi, c'est différent. </l>
+                        <l n="567">Il faut sortir ...On vient ; c'est lui ; je suis perdue ; </l>
+                        <l n="568" part="I">Je ne puis l'éviter.</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+</div>
+<div type="scene" n="16">
+                    <head>SCÈNE XVI. Constance, Valère.</head>
+<sp who="#valere">
+                        <speaker>VALÈRE, sans voir Constance, et près de la statue.</speaker>
+                        <l n="569">Bientôt tout sera prêt. </l>
+                        <l n="570">Pour recevoir ma nouvelle Statue,</l>
+                        <l n="571">On change tout mon Cabinet. </l>
+                        <l n="572">Elle va bien l'orner ; c'est le premier objet </l>
+                        <l n="573">Qui d'abord en entrant viendra frapper ma vue. </l>
+                        <l n="574">D'autres rangés plus bas composeront sa Cour.</l>
+                        <l n="575">Je veux que de la tête entière </l>
+                        <l n="576">Elle les passe tous ; les premiers feux du jour</l>
+                        <l n="577">L'embelliront d'une douce lumière. </l>
+                        <stage type="aparte">À part.</stage>
+                    </sp><!--@stage="watch"--><!--@who="VALÈRE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="578">Comme il parle de moi !... Je ne sais par où fuir.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="579">Allons... Mais Ciel ! Que vois-je ? </l>
+                        <l n="580">Ô surprise ! Ô plaisir !</l>
+                        <l n="581">Je ne me trompe pas ; c'est elle, c'est bien elle. </l>
+                        <l n="582">De mon Antique, vous, vous êtes le modèle.</l>
+                        <l n="583">Quel prodige ! Vous existez ! </l>
+                        <l n="584">Je suis de votre siècle ! On me trompait.... restez. </l>
+                        <l n="585">Vous détournez les yeux ! Dites, daignez me dire.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="586">Monsieur !... Quel embarras ! À peine je respire. </l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="587">Quel son de voix !... Comment ? Vous, dans cette maison ! </l>
+                        <l n="588">Puis-je demander votre nom ? </l>
+                        <l n="589">Et vos heureux parents ? Voilà votre Statue ; </l>
+                        <l n="590">Elle est à moi ; mais vous !... Parlez ; vous l'aviez vue.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="591">Oui, même ce matin je la croyais perdue.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="592" part="I">Je l'avais. </l><!--@syll="3"-->
+                        <stage type="run">Il court vers le Cabinet.</stage>
+                        <l n="592" part="M">Ah ! Damon ! </l><!--@syll="3"-->
+                        <stage type="back">Il revient.</stage>
+                        <l n="592" part="M">Le connaissez-vous ?</l><!--@syll="5"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE, souriant.</speaker>
+                        <l n="592" part="F">Oui.</l><!--@syll="1"-->
+                    </sp><!--@stage="smile"--><!--@who="CONSTANCE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="593">Il ne m'en parlait pas ! Le cruel ! Est-ce lui ?.... </l>
+                        <l n="594" part="I">Oh, c'est lui, je vois tout.</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="594" part="F">Monsieur, pourriez-vous croire ...</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="595">Je crois qu'il me trompait. Il en aura la gloire ; </l>
+                        <l n="596">Aurai-je le bonheur de ... de vous plaire ? Non, </l>
+                        <l n="597" part="I">Je n'ose l'espérer.</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+</div>
+<div type="scene" n="17">
+                    <head>SCÈNE XVII et dernière. Les Acteurs précédents, Damon et Pasquin qui sortent du Cabinet.</head>
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="597" part="F">Cher ami, cher Damon. </l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON, apercevant sa fille.</speaker>
+                        <l n="598">Ciel ! </l>
+                    </sp><!--@stage="watch"--><!--@who="DAMON"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="599">Oh diable, voilà la Statue animée.</l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="600">Dites-moi, de quel nom doit-elle être nommée ?</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="601">Je vous fais compliment. Nouveau Pygmalion,</l>
+                        <l n="602">Vous aurez invoqué l'Amour, Vénus sa mère ; </l>
+                        <l n="603">Vous aurez dit fatal amour, cruel vainqueur !</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="604">Ce sont les mêmes traits. Damon, l'heureuse erreur ! </l>
+                        <l n="605" part="I">Le coupable, c'est vous ?</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="605" part="F">Je crains votre colère.</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="606">Vous m'obéissez joliment, </l>
+                        <l n="607" part="I">Mademoiselle.</l><!--@syll="4"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="607" part="F">Il est venu subitement ; </l><!--@syll="6"-->
+                        <l n="608" part="I">J'allais me retirer.</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="608" part="F">Comment !</l><!--@syll="2"-->
+                        <l n="609" part="I">Vous paraissez le craindre !</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="609" part="F">Oui, Monsieur, c'est mon père. </l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="610">Se peut-il ? Votre père ! Ô jour ! Ô doux moment ! </l>
+                        <l n="611" part="I">Voilà donc de vos tours, Monsieur.</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="611" part="F">Oui, c'est mon père</l><!--@syll="6"-->
+                        <l n="612" part="I">Qui lui seul a voulu....</l><!--@syll="6"-->
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE, à Damon.</speaker>
+                        <l n="612" part="F">Vous cachiez tant d'appas ! </l><!--@syll="6"-->
+                        <stage type="toward">À Constance.</stage>
+                        <l n="613">Il m'a joué. Vous que j'adore, </l>
+                        <l n="614">Jouissez de mon embarras ; </l>
+                        <l n="615">Je n'ose m'applaudir encore : </l>
+                        <l n="616" part="I">J'étais si près de vous !</l><!--@syll="6"-->
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="616" part="F">Mais vous n'y pensez pas ; </l><!--@syll="6"-->
+                        <l n="617" part="I">Ce n'est qu'une Française.</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="617" part="F">Il n'est pas temps de rire. </l><!--@syll="6"-->
+                        <l n="618">De l'Amour, de l'Hymen je redoutais l'empire : </l>
+                        <l n="619">Je ne l'avais pas vue ; elle eut changé mon coeur. </l>
+                        <l n="620">Sans l'Hymen, disiez-vous, il n'est point de bonheur,</l>
+                        <stage type="toward">À Constance.</stage>
+                        <l n="621" part="I">Les pères ont raison ; </l><!--@syll="6"-->
+                        <stage type="toward">À Damon.</stage>
+                        <l n="621" part="F">Et je commence à croire </l><!--@syll="6"-->
+                        <l n="622">Que le mien... Vous étiez unis. </l>
+                        <l n="623">Si vous chérissez sa mémoire, </l>
+                        <l n="624">Prouvez-le, en adoptant son fils.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="625">Ce changement tient du miracle. </l>
+                        <l n="626">Qui ! vous ! Vous parlez d'épouser ! </l>
+                        <l n="627">À des plus grands destins pourquoi vous refuser ;</l>
+                        <l n="628">D'ailleurs, je vois plus d'un obstacle.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="629">Il s'amuse de ma douleur. </l>
+                        <stage type="toward">À Constance.</stage>
+                        <l n="630">Par l'ami le plus cher me serez-vous ravie ? </l>
+                        <l n="631">Cette Statue eut fait le bonheur de ma vie ; </l>
+                        <l n="632">Elle va faire mon malheur.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="633">Allons, je vois qu'il faudra bien se rendre.</l>
+                        <stage type="kiss">Valère est prêt à l'embrasser. </stage>
+                        <l n="634" part="I">Oui, dans deux ou trois ans...</l><!--@syll="6"-->
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE, effrayé.</speaker>
+                        <l n="634" part="F">Deux ou trois ! Puis-je attendre  </l><!--@syll="6"-->
+                        <l n="635">Trois siècles ? Songez donc ...Je serai votre gendre : </l>
+                        <l n="636">Vous m'aimez ; on le sait : dois-je craindre un refus ? </l>
+                        <stage type="toward">À Constance.</stage>
+                        <l n="637">Vos voeux sont-ils pour moi ?... Vous gardez le silence. </l>
+                        <l n="638">Votre timidité m'offense ; </l>
+                        <l n="639">Mais non, c'est un charme de plus.</l>
+                    </sp><!--@stage="frighten"--><!--@who="VALÈRE"-->
+<sp who="#constance">
+                        <speaker>CONSTANCE.</speaker>
+                        <l n="640">De votre erreur mon père a fait un badinage ;</l>
+                        <l n="641">Pour moi, ce n'était pas un jeu. </l>
+                        <l n="642">Je ne sais si j'ai tort de faire cet aveu,</l>
+                        <l n="643">Mais j'ai tremblé pour mon image.</l>
+                    </sp><!--@who="CONSTANCE"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="644">À ce quelle inspirait combien vous ajoutez !</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON en riant.</speaker>
+                        <l n="645">Et ton goût pour les Arts, si vif et si fidèle ?</l>
+                    </sp><!--@stage="laugh"--><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="646">En ce moment, les Arts sont éclipsés par elle.</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#damon">
+                        <speaker>DAMON.</speaker>
+                        <l n="647">Qui nous eut dit à tous les trois, </l>
+                        <l n="648">Que ce jour fût celui de votre mariage ? </l>
+                        <stage type="low/toward">Bas, à Valère.</stage>
+                        <l n="649">Dans de certains moments, assez doux à ton âge, </l>
+                        <l n="650">Vous rirez tous deux quelquefois, </l>
+                        <l n="651">Au souvenir de ta folie.</l>
+                    </sp><!--@who="DAMON"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <l n="652">Volontiers ! Oh ! Souvent. Je suis donc votre fils ?</l>
+                    </sp><!--@who="VALÈRE"-->
+<sp who="#pasquin">
+                        <speaker>PASQUIN.</speaker>
+                        <l n="653">Monsieur, n'allons-nous pas partir pour l'Italie ?</l>
+                    </sp><!--@who="PASQUIN"-->
+<sp who="#valere">
+                        <speaker>VALÈRE.</speaker>
+                        <stage type="toward">À Pasquin.</stage>
+                        <l n="654">Tais-toi, faquin. Je suis guéri d'une manie...</l>
+                        <stage type="toward">À Damon.</stage>
+                        <l n="655">Et voilà comme il faut corriger ses amis.</l>
+                    </sp><!--@who="VALÈRE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

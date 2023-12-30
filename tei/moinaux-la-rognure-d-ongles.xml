@@ -1,0 +1,355 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001758" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Rognure D'Ongles.</title>
+                <author>
+      <persName>
+        <forename>Jules</forename>
+        <surname>Moinaux</surname>
+      </persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000106548120</idno>
+    </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_ROGNUREDONGLES.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_ROGNUREDONGLES.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="narrateur" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Narrateur</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                    <person xml:id="le-prevenu" sex="MALE">
+                        <persName>Le Prévenu</persName>
+                    </person>
+                    <person xml:id="l-agent" sex="MALE">
+                        <persName>L'Agent</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LA ROGNURE D'ONGLES.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="narrateur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-prevenu">LE PRÉVENU</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#l-agent">L'AGENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="policier"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 375-379</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LA ROGNURE D'ONGLES.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#narrateur">
+                        <speaker>NARRATEUR.</speaker>
+                        <p n="1">
+	<s n="1">La locution « justice paternelle » ne peut jamais avoir qu'un sens restreint ; un père pardonne, la justice, elle, est tenue d'appliquer la loi ; elle le fait avec plus_ou_moins d'indulgence et c'est ainsi qu'elle est plus ou moins paternelle. Pour Jarreton, on comprend qu'elle l'ait d'abord été plus et qu'elle soit amenée à l'être de moins en moins envers cet abonné de la police_correctionnelle, qui n'est certes pas un grand malfaiteur, mais qui finit par devenir agaçant ; on ne voit que lui sur le banc des prévenus et c'est à peu près le seul moment où il ne soit pas ivre ; il a du reste, pour cela, cette excellente raison qu'au dépôt on ne lui à pas offert « un verre » ; un, est une façon de parler, bien. qu'il prétende ne jamais dépasser cette modeste ration, et, aujourd'hui, pour expliquer l'état d'ivresse dans lequel il était lorsqu'on l'a arrêté, il dit : « Je ne sais pas ce qu'on m'a mis dans mon verre. »</s>
+</p>
+                    </sp><!--@who="NARRATEUR"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="2">
+	<s n="1">Du vin probablement.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <note type="L">Quille à Mayeux : a-peu-près pour quille aux maillets, jeu de quilles en bois.</note>
+                        <p n="3">
+	<s n="1">Mon Président, il paraît que de la rognure d'ongles, ça vous abat un homme comme la quille_à_Mayeux ; je tiens ça d'un herboriste de première classe.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="4">
+	<s n="1">Et vous pensez que vos amis se sont rogné les ongles dans votre verre ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="5">
+	<s n="1">Je ne crois pas qu'ils se rognent jamais les ongles, mais c'est un autre qui m'aura fait une farce.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="6">
+	<s n="1">Vous avez été arrêté en état d'ivresse manifeste.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="7">
+	<s n="1">Ah ! </s>
+	<s n="2">M'en parlez pas ; le vin ! </s>
+	<s n="3">L'horrible vin !</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="8">
+	<s n="1">Pourquoi en buvez-vous ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="9">
+	<s n="1">Parce que je l'aime.</s>
+</p>
+                        <stage type="laugh">Rires.</stage>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="10">
+	<s n="1">Vous avez déjà été condamné dix-sept fois.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="11">
+	<s n="1">Le vin ! </s>
+	<s n="2">L'horrible vin !</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="12">
+	<s n="1">Oh ! </s>
+	<s n="2">Pas seulement pour ivresse.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="13">
+	<s n="1">Trois fois pour sergents de ville.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="14">
+	<s n="1">Pour outrage à des agents.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="15">
+	<s n="1">Pour le simple mot de mufles ; jamais autre chose, Messieurs les agents peuvent le dire.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="16">
+	<s n="1">Vous avez été condamné aussi pour vagabondage.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <note type="L">Liard : Petite monnaie de cuivre qui valait trois deniers, le quart d'un sou, et un peu plus qu'un centime. [L]</note>
+                        <p n="17">
+	<s n="">Mon président, ça c'est pas un crime ; c'est simplement un citoyen qui se trouve être sans ouvrage et qu'on a renvoyé de son garni ; c'est malheureux, mais ça n'empêche pas les sentiments ; je suis un homme qui ne peut pas se reprocher d'avoir pris un liard sur la tête de personne.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="18">
+	<s n="1">Pardon, vous avez été condamné pour filouterie.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="19">
+	<s n="1">Oh ! </s>
+	<s n="2">Jamais. </s>
+	<s n="3">Un filou et moi, ça fait deux.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="20">
+	<s n="">Vous n'êtes pas allé dîner chez un marchand de vin, sans argent pour payer ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="21">
+	<s n="1">Ah ! </s>
+	<s n="2">Si.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="22">
+	<s n="1">Eh bien, c'est une filouterie.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="23">
+	<s n="1">C'est pas de la filouterie, c'est de la faim.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="24">
+	<s n="1">Vous avez outragé l'agent qui vous a arrêté.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="25">
+	<s n="1">Simplement mufle, comme les autres fois.</s>
+</p>
+                        <stage type="explicit">L'agent est entendu : Le prévenu, dit-il, se battait...</stage>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="26">
+	<s n="1">Avec qui ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="27">
+	<s n="1">Avec personne ; je me fichais une pile à moi-même.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#l-agent">
+                        <speaker>L'AGENT.</speaker>
+                        <p n="28">
+	<s n="1">En effet, il était seul dans la rue à une_heure_et_demie_du_matin ; il s'arrachait les cheveux, trépignait sur sa casquette...</s>
+</p>
+                    </sp><!--@who="L'AGENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <note type="L">Bougival : Commune du département des Yvelines, à l'ouest de Paris et au nord de Versailles.</note>
+                        <p n="29">
+	<s n="1">Et que je me criblais de gifle qu'on les aurait entendues de Bougival...</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#l-agent">
+                        <speaker>L'AGENT.</speaker>
+                        <p n="30">
+	<s n="1">Voyant cet homme complètement ivre, je l'ai conduit au poste : il m'a traité de mufle.</s>
+</p>
+                    </sp><!--@who="L'AGENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="31">
+	<s n="1">Vous voyez !... </s>
+	<s n="2">J'y fais pas dire.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="32">
+	<s n="1">Ah çà ! </s>
+	<s n="2">Vous étiez donc fou ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="33">
+	<s n="1">Je décolérais pas de rage contre moi, d'avoir encore pris un verre où y avait de la rognure d'ongles ; c'est donc de là que je me tapais dessus, en disant : Tiens ! crapule, pochard, pignouf, mufle !... </s>
+	<s n="2">Monsieur l'agent peut le dire.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="34">
+	<s n="">Jusqu'ici, on s'est montré très indulgent pour vous ; les renseignements vous présentent comme un brave homme, qu'un verre de vin met en état d'ivresse.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="35">
+	<s n="1">Si n'y avait pas de rognures d'ongles...</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="36">
+	<s n="">Vous n'avez jusqu'ici été condamné qu'à de faibles amendes et à quelques jours de prison ; le tribunal sera forcé de se montrer sévère.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="37">
+	<s n="1">Eh bien, mon président, il aura raison.</s>
+</p>
+                        <stage type="explicit">Le tribunal condamne Jarreton à vingt jours de prison.</stage>
+                    </sp><!--@who="LE PRÉVENU"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

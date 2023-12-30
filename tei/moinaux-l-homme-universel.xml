@@ -1,0 +1,246 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001750" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">L'Homme Universel.</title>
+                <author>
+      <persName>
+        <forename>Jules</forename>
+        <surname>Moinaux</surname>
+      </persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000106548120</idno>
+    </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_HOMMEUNIVERSEL.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_HOMMEUNIVERSEL.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-narrateur" sex="MALE">
+                        <persName>Le Narrateur</persName>
+                    </person>
+                    <person xml:id="le-prevenu" sex="MALE">
+                        <persName>Le Prévenu</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">L'HOMME UNIVERSEL.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="narrateur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-prevenu">LE PRÉVENU</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 283-285</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>L'HOMME UNIVERSEL.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#le-narrateur">
+                        <speaker>LE NARRATEUR.</speaker>
+                        <p n="1">
+	<s n="1">Le 14_juillet, une jeune ouvrière était sur le balcon de ses patrons, lequel est placé au-dessus d'un établissement où des consommateurs se rafraîchissaient ; l'ouvrière a fait partir des pétards, les pétards ont fait partir les consommateurs, ce qui a fait partir des injures de la bouche du chef de l'établissement, et voilà une affaire en police_correctionnelle.</s>
+</p>
+                        <p n="2">
+	<s n="1">La demoiselle fait connaître les injures dont elle se plaint, et son adversaire, est invité à s'expliquer : </s>
+</p>
+                    </sp><!--@who="LE NARRATEUR"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="3">
+	<s n="">Depuis le matin, Messieurs, les pétards ne cessaient pas, ce qui renvoyait mes clients.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="4">
+	<s n="">Qu'est-ce que c'étaient que vos clients ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="5">
+	<s n="1">Mes consommateurs.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="6">
+	<s n="1">Vous êtes donc limonadier ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="7">
+	<s n="">Oui, Monsieur ; alors, pendant que j'étais à retirer mes gaufres du moule....</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="8">
+	<s n="1">Vous êtes donc pâtissier ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="9">
+	<s n="1">Je fais des gaufres, seulement pour manger avec la bière ; pour lors, voilà un pétard qui tombe sur la montre d'un de mes clients qui regardait l'heure ; il lâche sa montre en jurant et il me dit : « Elle est arrêtée, il y a quelque chose de cassé ; c'est dégoûtant, ça ! » </s>
+	<s n="2">Je lui dis : « Donnez, je vais voir ce que c'est. »</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="10">
+	<s n="1">Vous êtes donc horloger ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="11">
+	<s n="1">Je l'ai, été autrefois ; pour lors, je regarde la montre ; c'était un petit rouage qui était dérangé ; je dis au client : « Il n'y a pas de mal. » </s>
+	<s n="2">À ce moment-là, ma femme que les pétards embêtaient rudement aussi, m'apporte mon cornet_à_piston et me dit : « Embête-les avec ça, jusqu'à ce qu'ils cessent leurs pétards. »</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="12">
+	<s n="1">Vous êtes donc musicien ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="13">
+	<s n="1">J'ai tenu, dans le temps, un bal ; alors, je me mets à souffler de toutes mes forces dans mon piston ; pan ! </s>
+	<s n="">Un autre pétard qui tombe sur le paletot d'un client et y fait une brûlure. </s>
+	<s n="2">Le client était furieux ; moi je regarde le trou que ça avait fait et je dis : « Il ne faut pas plus de dix_minutes pour arranger ça, ça ne se verra pas ; je vas vous faire la réparation tout de suite. »</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="14">
+	<s n="1">Vous êtes donc tailleur ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="15">
+	<s n="1">Je travaille dans ma loge.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="16">
+	<s n="1">Dans votre loge ? </s>
+	<s n="2">Vous êtes donc concierge ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="17">
+	<s n="1">Ma femme ; moi, je suis simplement limonadier.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="18">
+	<s n="1">Oh ! </s>
+	<s n="2">simplement.... </s>
+	<s n="3">Enfin reconnaissez-vous avoir injurié cette demoiselle ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="19">
+	<s n="1">Je ne me rappelle pas ce que je lui ai dit... </s>
+	<s n="2">Pensez ! </s>
+	<s n="3">J'étais si en colère... </s>
+	<s n="4">Je trouve d'autant plus dégoûtant de la part de mademoiselle d'avoir tiré des pétards sachant qu'elle me faisait tort, que, chaque fois qu'elle va au bal, je la coiffe gratis.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="20">
+	<s n="1">Vous êtes donc coiffeur ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="21">
+	<s n="1">On m'avait tait apprendre cet état-là, mais je l'ai quitté.</s>
+</p>
+                        <stage type="explicit">Le tribunal prononce une amende de SEIZE francs et voilà le prévenu condamné ; c'est cela de plus à ajouter à tout ce qu'il a déjà.</stage>
+                    </sp><!--@who="LE PRÉVENU"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

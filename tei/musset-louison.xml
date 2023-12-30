@@ -1,0 +1,2365 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001771" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Louison</title>
+                <title type="sub">Comédie en deux actes et en vers</title>
+                <title type="sub">Représentée pour la première fois au Théâtre-Français le 22 février 1849, publiée en 1850.</title>
+                <author>
+      <idno type="isni">0000000121334059</idno>
+      <idno type="wikidata">Q179680</idno>
+      <persName>
+        <forename>Alfred</forename>
+        <nameLink>de</nameLink>
+        <surname>Musset</surname>
+      </persName>
+    </author><!--Alfred MUSSET (1810-1857)-->
+                <editor>Paul FIEVRE avril 2023.</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MUSSET_LOUISON.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MUSSET_LOUISON.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k57790346</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="lisette" sex="FEMALE">
+                        <persName>Lisette</persName>
+                    </person>
+                    <person xml:id="le-duc" sex="MALE">
+                        <persName>Le Duc</persName>
+                    </person>
+                    <person xml:id="berthaud" sex="MALE">
+                        <persName>Berthaud</persName>
+                    </person>
+                    <person xml:id="bert2haud" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Bert2haud</persName>
+                    </person>
+                    <person xml:id="la-duchesse" sex="FEMALE">
+                        <persName>La Duchesse</persName>
+                    </person>
+                    <person xml:id="la-marechale" sex="FEMALE">
+                        <persName>La Maréchale</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>vers</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1876">
+                <desc/>
+            </event>
+            <event type="premiere" when="1849-02-22">
+                <desc>Représentée pour la première fois au Théâtre-Français le 22 février 1849, publiée en 1850</desc>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LOUISON</titlePart>
+			<titlePart type="sub">Comédie en deux actes et en vers</titlePart>
+			<titlePart type="sub">Représentée pour la première fois au Théâtre-Français le 22 février 1849, publiée en 1850.</titlePart>
+		</docTitle> 
+		<docDate when="1876">M. DCC LXXVI.</docDate>
+		<docAuthor>D'ALFRED DE MUSSET</docAuthor><!--@bio="muset"-->
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="LEMERRE">PARIS ALPHONSE LEMERRE, ÉDITEUR, 27-31 PASSAGE CHOISEUL.</editor>-->
+			<div type="printer">
+                    <p>IMPRIMÉ PAR J. CLAYE.</p>
+                </div><!--@id="CLAYE"-->
+		</div>
+		<performance>
+			<ab type="premiere">Représentée pour la première fois au Théâtre-Français le 22 février 1849, publiée en 1850</ab><!--@date="1849-02-22"--><!--@location="Théâtre-Français"-->
+		</performance>
+		<div type="dedicace">
+                <opener>
+                    <salute>À MADEMOISELLE ANAÏS</salute>
+                </opener>
+			<head>RONDEAU</head>
+			<l>Que rien ne puisse en liberté</l>
+			<l>Passer sous le sacré portique</l>
+			<l>Sans être quelque peu heurté</l>
+			<l>Par les bornes de la critique,</l>
+			<l>C'est un axiome authentique.</l>
+			<l>Pourquoi tant de sévérité ?</l>
+			<l>Grétry disait avec gaîté :</l>
+			<l>« J'aime mieux un peu de musique</l>
+			<l>Que rien. »</l>
+			<l>À ma Louison ce mot s'applique.</l>
+			<l>Sur le théâtre elle a jeté</l>
+			<l>Son petit bouquet poétique.</l>
+			<l>Pourvu que vous l'ayez porté,</l>
+			<l>Le reste est moins, en vérité,</l>
+			<l>Que rien.</l>
+		</div>
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#louison">LOUISON</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+			<castItem>
+                    <role corresp="#le-duc">LE DUC</role><!--@sex="1"--><!--@type="H"--><!--@statut="duc"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+			<castItem>
+                    <role corresp="#berthaud">BERTHAUD</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+			<castItem>
+                    <role corresp="#la-marechale">LA MARÉCHALE</role><!--@sex="2"--><!--@type="H"--><!--@statut="maréchal"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+			<castItem>
+                    <role corresp="#la-duchesse">LA DUCHESSE</role><!--@sex="2"--><!--@type="H"--><!--@statut="duc"--><!--@age="V"--><!--@stat_amour=""-->.</castItem>
+			<castItem>
+                    <role corresp="#lisette">LISETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="servente"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+			<castItem>
+                    <role corresp="#valets">VALETS</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+			<castItem>
+                    <role corresp="#une-femme">UNE FEMME</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222">Costumes du temps de Louis XVI.</set>-->
+		<note>Texte issu de "OEuvres d'Alfred de Musset, tome V. Comédies et proverbes", Paris : Alphonse Lemerre 1876.- pp. 325-404</note>
+	</front>
+<body>
+<div type="acte" n="1">
+                <head>ACTE PREMIER</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE, seule.</speaker>
+                        <l n="1">Me voilà bien chanceuse ; il n'en faut plus qu'autant.</l>
+                        <l n="2">Le sort est, quand il veut, bien impatientant.</l>
+                        <l n="3">Que les honnêtes gens se mettent à ma place,</l>
+                        <l n="4">Et qu'on me dise un peu ce qu'il faut que je fasse.</l>
+                        <l n="5">Voici tantôt vingt ans que je vivais chez nous ;</l>
+                        <l n="6">Dieu m'a faite pour rire et pour planter des choux.</l>
+                        <l n="7">J'avais pour précepteur le curé du village ;</l>
+                        <l n="8">J'appris ce qu'il savait, même un peu davantage.</l>
+                        <l n="9">Je vivais sur parole, et je trouvais moyen</l>
+                        <l n="10">D'avoir des amoureux sans qu'il m'en coûtât rien.</l>
+                        <l n="11">Mon père était fermier ; j'étais sa ménagère.</l>
+                        <l n="12">Je courais la maison, toujours brave et légère,</l>
+                        <l n="13">Et j'aurais de grand coeur, pour obliger nos gens,</l>
+                        <l n="14">Mené les vaches paître ou les dindons aux champs.</l>
+                        <l n="15">Un beau jour on m'embarque, on me met dans un coche,</l>
+                        <l n="16">Un paquet sous le bras, dix écus dans ma poche,</l>
+                        <l n="17">On me promet fortune et la fleur des maris,</l>
+                        <l n="18">On m'expédie en poste, et je suis à Paris.</l>
+                        <l n="19">Aussitôt, de paniers largement affublée,</l>
+                        <l n="20">De taffetas vêtue et de poudre aveuglée,</l>
+                        <l n="21">On m'apprend que je suis gouvernante céans.</l>
+                        <l n="22">Gouvernante de quoi ? monsieur n'a pas d'enfants.</l>
+                        <l n="23">Il en fera plus tard. - On meuble une chambrette ;</l>
+                        <l n="24">On me dit : Désormais, tu t'appelles Lisette.</l>
+                        <l n="25">J'y consens, et mon rôle est de régner en paix</l>
+                        <l n="26">Sur trois filles de chambre et neuf ou dix laquais.</l>
+                        <l n="27">Jusque-là mon destin ne faisait pas grand'peine.</l>
+                        <l n="28">La maréchale m'aime ; au fait, c'est ma marraine.</l>
+                        <l n="29">Sa bru, notre duchesse, a l'air fort innocent.</l>
+                        <l n="30">Mais monseigneur le duc alors était absent ;</l>
+                        <l n="31">Où ? je ne sais pas trop, à la noce, à la guerre.</l>
+                        <l n="32">Enfin, ces jours derniers, comme on n'y pensait guère,</l>
+                        <l n="33">Il écrit qu'il revient, il arrive, et, ma foi,</l>
+                        <l n="34">Tout juste, en arrivant, tombe amoureux de moi.</l>
+                        <l n="35">Je vous demande un peu quelle étrange folie !</l>
+                        <l n="36">Sa femme est sage et douce autant qu'elle est jolie.</l>
+                        <l n="37">Elle l'aime, Dieu sait ! et ce libertin-là</l>
+                        <l n="38">Ne peut pas bonnement s'en tenir à cela ;</l>
+                        <l n="39">Il m'écrit des poulets, me conte des fredaines,</l>
+                        <l n="40">Me donne des rubans, des noeuds et des mitaines ;</l>
+                        <l n="41">Puis enfin, plus hardi, pas plus tard qu'à présent,</l>
+                        <l n="42">Du brillant que voici veut me faire présent.</l>
+                        <l n="43">Un diamant, à moi ! la chose est assez claire.</l>
+                        <l n="44">Hors de l'argent comptant, que diantre en puis-je faire ?</l>
+                        <l n="45">Je ne suis pas duchesse, et ne puis le porter.</l>
+                        <l n="46">Ainsi, tout simplement, monsieur veut m'acheter.</l>
+                        <l n="47">Voyons, me fâcherai-je ? - Il n'est pas très commode</l>
+                        <l n="48">De les heurter de front, ces tyrans à la mode,</l>
+                        <l n="49">Et la prison est là, pour un oui, pour un non,</l>
+                        <l n="50">Quand sur un talon rouge on glisse à Trianon.</l>
+                        <l n="51">Faut-il être sincère et tout dire à Madame ?</l>
+                        <l n="52">C'est lui mettre, d'un mot, bien du chagrin dans l'âme,</l>
+                        <l n="53">Troubler une maison, peut-être pour toujours,</l>
+                        <l n="54">Et pour un pur caprice en chasser les amours.</l>
+                        <l n="55">Vaut-il pas mieux agir en personne discrète,</l>
+                        <l n="56">Et garder dans le coeur cette injure secrète ?</l>
+                        <l n="57">Oui, c'est le plus prudent. - Ah ! que j'ai de souci !</l>
+                        <l n="58">Ce brillant est gentil... et monseigneur aussi.</l>
+                        <l n="59">Je vais lui renvoyer sa bague à l'instant même,</l>
+                        <l n="60">Ici, dans ce papier. - Ma foi, tant pis s'il m'aime !</l>
+                    </sp><!--@stage="alone"--><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Lisette, Le Duc.</head>
+<sp who="#le-duc">
+                        <speaker>LE DUC, à part.</speaker>
+                        <l n="61">Personne encore ici ? - L'on va souper, je crois.</l>
+                        <l n="62">C'est Lisette. - Elle écrit. - Bon ! c'est sans doute à moi.</l>
+                        <l n="63">Les femmes ont vraiment un instinct que j'admire,</l>
+                        <l n="64">D'écrire bravement ce qu'elles n'osent dire.</l>
+                        <l n="65">Tu te défends, ma belle ? Oh ! j'en triompherai !</l>
+                        <l n="66">J'en ai fait la gageure, et je la gagnerai.</l>
+                        <stage type="loud">Haut.</stage>
+                        <l n="67">Le souper est-il prêt ? Bonsoir, belle Lisette.</l>
+                    </sp><!--@stage="aparte"--><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, se levant.</speaker>
+                        <l n="68" part="I">Monseigneur...</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="68" part="F">Qu'as-tu donc ? Tu sembles inquiète,</l><!--@syll="9"-->
+                        <l n="69">Troublée, oui, sur l'honneur. Qu'est-ce ? quoi ? tu rêvais ?</l>
+                        <l n="70" part="I">Et que faisais-tu là ?</l><!--@syll="6"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="70" part="F">Monseigneur, j'écrivais.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="71">À qui donc, par hasard ? À quelque amant, petite ?</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="72" part="I">À vous-même ; tenez.</l><!--@syll="6"-->
+                        <stage type="give">Elle lui donne la lettre et veut sortir.</stage>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="72" part="F">Et tu t'en vas si vite ?</l><!--@syll="6"-->
+                        <l n="73">Non, parbleu ! Reste là. Que veut dire ceci ?</l>
+                        <l n="74">Que vois-je ? Mon anneau que tu me rends ainsi ?</l>
+                        <stage type="read">Il lit.</stage>
+                        <p n="1">
+	<s n="1">« Monseigneur, vous me dites que vous m'aimez... »</s>
+</p>
+                        <l n="75">Oui, certes, je le dis, le fait est véritable.</l>
+                        <l n="76">Penses-tu que je trompe, et m'en crois-tu capable ?</l>
+                        <stage type="read">Il lit.</stage>
+                        <p n="2">	
+	<s n="1">« Vous me dites que vous m'aimez, mais cela est bien difficile à croire, car, pour aimer une personne, il faut, j'imagine, commencer par la connaître, et toute servante que je suis... »</s>
+</p>
+                        <l n="77">Servante ! que dis-tu ? Fi donc ! Tu ne l'es point.</l>
+                        <l n="78">Servante ! Ce mot-là me choque au dernier point.</l>
+                        <stage type="read">Il lit.</stage>
+                        <p n="3">	
+	<s n="1">« Toute servante que je suis, vous me connaissez assurément bien peu si vous me croyez intéressée, et si vous avez pensé, Monseigneur, qu'on pouvait payer un amour qui refuse de se donner. »</s>
+</p>
+                        <l n="79">Qu'est-ce à dire, payer ? Moi, te payer, ma belle ?</l>
+                        <l n="80">Quoi ! pour un simple anneau, pour une bagatelle,</l>
+                        <l n="81">Pour un hochet d'enfant qui plaît à voir briller,</l>
+                        <l n="82">Tu me crois assez sot pour vouloir te payer ?</l>
+                        <l n="83">Si tel était mon but, si j'osais l'entreprendre,</l>
+                        <l n="84">Si l'amour de Lisette était jamais à vendre,</l>
+                        <l n="85">Pour payer dignement de semblables appas,</l>
+                        <l n="86">Mes biens y passeraient et n'y suffiraient pas.</l>
+                        <l n="87">Est-ce donc une offense à la personne aimée,</l>
+                        <l n="88">Et s'en doit-elle au fond croire moins estimée,</l>
+                        <l n="89">Si l'on veut la parer, sans pouvoir l'embellir,</l>
+                        <l n="90">D'un pauvre diamant que ses yeux font pâlir ?</l>
+                        <l n="91">Comment ! mettre une bague aux plus beaux doigts du monde,</l>
+                        <stage type="touch">Il lui remet la bague au doigt.</stage>
+                        <l n="92">Poser quelques bijoux sur cette épaule ronde,</l>
+                        <l n="93">Sur ce coeur qui palpite un céladon changeant,</l>
+                        <l n="94">Serrer ce petit pied dans un réseau d'argent,</l>
+                        <l n="95">Entourer la beauté, dans sa fleur et sa grâce,</l>
+                        <l n="96">Des prestiges de l'art qu'elle égale et surpasse,</l>
+                        <l n="97">Ce serait donc, ma chère, un grand crime à tes yeux ?</l>
+                        <l n="98">Payer ! efface donc ; ce mot est odieux.</l>
+                        <l n="99">Oublions ce billet, n'y songeons plus, Lisette.</l>
+                        <l n="100">On paie un intendant, un rustre, une grisette ;</l>
+                        <l n="101">Mais, dans ce monde-ci, je ne sais pas encor</l>
+                        <l n="102">Qu'on se soit avisé de payer un trésor,</l>
+                        <l n="103">Et ton coeur est sans prix, quand tu serais moins belle.</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="104" part="I">Mais, monseigneur, pourtant...</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="104" part="F">Fi ! tu fais la cruelle,</l><!--@syll="6"-->
+                        <stage type="open">On ouvre la porte du fond.</stage>
+                        <l n="105">Deux mots : - on va souper ; les gens ouvrent déjà.</l>
+                        <l n="106">Écoute : - nous allons au bal de l'Opéra ;</l>
+                        <l n="107">Mais je reviendrai seul, et grâce à la cohue,</l>
+                        <l n="108">À peine entré, je sors et regagne la rue.</l>
+                        <l n="109">Tu seras seule aussi, mes laquais ne voient rien ;</l>
+                        <l n="110">Accorde-moi, de grâce, un moment d'entretien,</l>
+                        <l n="111">Un seul instant, pour moi, Lisette, et pour toi-même.</l>
+                        <l n="112">Ce n'est pas un amant, c'est un ami qui t'aime,</l>
+                        <l n="113" part="I">Songes-y.</l><!--@syll="3"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="113" part="M">Mais vraiment...</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="113" part="F">Je comprends ton souci.</l><!--@syll="6"-->
+                        <l n="114">Je voudrais de grand coeur te voir ailleurs qu'ici,</l>
+                        <l n="115">Et, dans quelque retraite aux bavards inconnue,</l>
+                        <l n="116">Tu me rendrais bien mieux ma liberté perdue.</l>
+                        <l n="117">Ce n'est assurément mon goût ni ma façon</l>
+                        <l n="118">De donner au plaisir cet air de trahison.</l>
+                        <l n="119">Mais, dans ce triste hôtel toujours emprisonnée,</l>
+                        <l n="120">Tu n'en saurais sortir sans être soupçonnée.</l>
+                        <l n="121">Chez moi, seuls, en secret, nous trompons tous les yeux.</l>
+                        <l n="122">À quatre pas d'ici nous serions odieux.</l>
+                        <l n="123">Telle est la loi du monde ; il en faut être esclave.</l>
+                        <l n="124">Facile à qui s'en rit, sévère à qui le brave,</l>
+                        <l n="125">Débonnaire et terrible, il ne compte pour rien</l>
+                        <l n="126">Qu'on se moque de lui, si l'on s'en moque bien.</l>
+                        <l n="127">Tout s'excuse ici-bas, hormis la maladresse.</l>
+                        <l n="128" part="I">Bonsoir, Louison.</l><!--@syll="4"-->
+                    </sp><!--@who="LE DUC"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE, seule.</speaker>
+                        <l n="128" part="F">Bonsoir ! Quelle étrange faiblesse !</l><!--@syll="8"-->
+                        <l n="129">Il me trompe, il me raille, il ment comme un païen ;</l>
+                        <l n="130">Comment arrive-t-il que je ne dise rien ?</l>
+                        <l n="131">Nous serons seuls, dit-il. Que c'est d'une belle âme</l>
+                        <l n="132">D'aller chez le voisin pour y laisser sa femme,</l>
+                        <l n="133">Et revenir gaîment sur la pointe du pied,</l>
+                        <l n="134">Sitôt que dans la foule il se croit oublié !</l>
+                        <l n="135">Ah ! Quand j'étais Louison avant d'être Lisette,</l>
+                        <l n="136">Au lieu d'un pouf en l'air quand j'avais ma cornette,</l>
+                        <l n="137">Si j'avais rencontré ces diseurs de grands mots,</l>
+                        <l n="138">Je leur aurais au nez jeté mes deux sabots.</l>
+                        <l n="139">- Mais avec tout cela, je n'ai su que répondre.</l>
+                        <l n="140">Que faire s'il revient ? Le laisser se morfondre ?</l>
+                        <l n="141">M'enfermer dans ma chambre et sous deux bons verrous...</l>
+                        <l n="142">Ouais ! Il faut y songer ; monseigneur n'est pas doux.</l>
+                        <l n="143">Avec ses airs badins et sa cajolerie,</l>
+                        <l n="144">Je ne sais trop comment il prend la raillerie.</l>
+                        <l n="145">Ne faut-il pas plutôt l'attendre bravement,</l>
+                        <l n="146">Lui donner mes raisons, l'écouter un moment ?</l>
+                        <l n="147">N'est-il donc pas possible ?... Ah ! Louison, malheureuse !</l>
+                        <l n="148">Est-ce qu'un grand seigneur va te rendre amoureuse ?</l>
+                        <l n="149" part="I">Est-ce que ?... Qui vient là ?</l><!--@syll="6"-->
+                    </sp><!--@stage="alone"--><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Lisette, Berthaud.</head>
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="149" part="M">C'est moi.</l><!--@syll="2"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="149" part="M">Qui, toi ?</l><!--@syll="2"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="149" part="F">Berthaud.</l><!--@syll="2"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="150" part="I">Berthaud ? Que nous veux-tu ?</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="150" part="M">Moi ? Rien.</l><!--@syll="2"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="150" part="F">Tu n'es qu'un sot.</l><!--@syll="4"-->
+                        <l n="151">On n'entre pas ainsi que l'on ne vous appelle.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="152">Oh ! Mam'selle Louison, comme vous êtes belle !</l>
+                        <l n="153">Comme vous voilà propre et de bonne façon !</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="154">Que dis-tu donc, l'ami ? - Je connais ce garçon.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="155">Quels beaux tire-bouchons vous avez aux oreilles !</l>
+                        <l n="156">Quelle robe ! On dirait d'une ruche d'abeilles.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="157" part="I">Tu te nommes, dis-tu ?</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="157" part="F">Berthaud. Quel gros chignon !</l><!--@syll="6"-->
+                        <l n="158">Et ces souliers tout blancs, ça doit vous coûter bon ;</l>
+                        <l n="159">Pas moins, vous devez bien être un brin empêtrée.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="160">M'as-tu de_pied_en_cap assez considérée ?</l>
+                        <l n="161" part="I">Hé ! Mais, c'est toi, Lucas !</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="161" part="F">Vous me reconnaissez ?</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="162" part="I">Oui certes ; et d'où viens-tu ?</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="162" part="F">Par ma foi, je ne sais.</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="163" part="I">Bon !</l><!--@syll="1"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="163" part="F">Pour venir ici, j'ai pris par tant de rues,</l><!--@syll="11"-->
+                        <l n="164">J'en ai l'esprit tout bête et les jambes fourbues.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="165" part="I">Assieds-toi.</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="165" part="F">Que non pas ! je suis bien trop courtois.</l><!--@syll="9"-->
+                        <l n="166">Quand j'ai mon habit neuf, jamais je ne m'assois.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="167">Fort bien, cela pourrait gâter ta broderie.</l>
+                        <l n="168">Tu n'es donc plus berger dans notre métairie ?</l>
+                        <l n="169">Mais tu viens du pays ? Comment va-t-on chez nous ?</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="170">Je n'en sais rien non plus ; moi, j'ai fait comme vous.</l>
+                        <l n="171">Oh ! je ne garde plus les vaches ! - Au contraire,</l>
+                        <l n="172">C'est Jean qui les conduit, et Suzon les va traire.</l>
+                        <l n="173">Oh ! ce n'est plus du tout comme de votre temps.</l>
+                        <l n="174">C'est la grande Nanon qui fait de l'herbe aux champs.</l>
+                        <l n="175">Pierrot est sacristain, et Thomas fait la guerre ;</l>
+                        <l n="176" part="I">Catherine est nourrice, et Nicole...</l><!--@syll="9"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="176" part="F">Et mon père ?</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="177">Votre père, pardine ! Il ne lui manque rien.</l>
+                        <l n="178">On est sûr, celui-là, qu'il mange et qu'il dort bien.</l>
+                        <l n="179">Ceux qui vivent chez lui n'ont pas la clavelée.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="180">Mais, toi, par quel hasard as-tu pris ta volée ?</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="181">Voyez-vous, quand j'ai vu que vous étiez ici,</l>
+                        <l n="182">Et que votre départ vous avait réussi,</l>
+                        <l n="183">Je me suis dit : Paris, ça n'est pas dans la lune.</l>
+                        <l n="184">J'avais comme un instinct de faire ma fortune,</l>
+                        <l n="185">Et puis je m'ennuyais avec mes animaux ;</l>
+                        <l n="186">Et puis je vous aimais, pour tout dire en trois mots.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="187" part="I">Toi, Lucas ?</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="187" part="F">Moi, Lucas. En êtes-vous fâchée ?</l><!--@syll="9"-->
+                        <l n="188" part="I">Un chien regarde bien...</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="188" part="F">Non, non, j'en suis touchée.</l><!--@syll="6"-->
+                        <l n="189">Tu te nommes Berthaud ? d'où te vient ce nom-là ?</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="190">C'est mon nom de famille ; à Paris, il faut ça.</l>
+                        <l n="191" part="I">Quand on va dans le monde...</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="191" part="F">Et tu vis bien, j'espère ?</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#bert2haud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="192">Vingt-six livres par mois, et presque rien à faire.</l>
+                        <l n="193">Quand on a de l'esprit, l'emploi ne manque pas.</l>
+                    </sp><!--@who="BERT2HAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="194">Sans doute ; et ton chemin s'est donc fait à grands pas ?</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="195" part="I">Je crois bien, je suis clerc.</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="195" part="F">Ah ! ah ! chez un notaire ?</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="196" part="I">Non.</l><!--@syll="1"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="196" part="M">Chez un procureur ?</l><!--@syll="5"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="196" part="F">Chez un apothicaire.</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="197">Peste ! Voilà de quoi mettre en jeu tes talents.</l>
+                        <l n="198">Eh bien ! Monsieur_Berthaud, que voulez-vous céans ?</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="199">Ah ! Dame ! En arrivant, j'avais bien une idée ;</l>
+                        <l n="200">J'ai l'imaginative un tant soit peu bridée :</l>
+                        <l n="201">Je ne m'attendais pas à tous vos affiquets.</l>
+                        <l n="202">Jarni ! Vos jupons courts étaient bien plus coquets ;</l>
+                        <l n="203">Vous étiez bien plus leste, et bien plus féminine.</l>
+                        <l n="204">On ne vous voit plus rien, qu'un peu dans la poitrine.</l>
+                        <l n="205">Pourtant, malgré vos noeuds et vos mignons souliers,</l>
+                        <l n="206">Je vous épouserais encor, si vous vouliez.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="207" part="I">Toi ?</l><!--@syll="1"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="207" part="F">Mon père est fermier, pas si gros que le vôtre ;</l><!--@syll="11"-->
+                        <l n="208">Mais enfin, dans ce monde, on vit l'un portant l'autre.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="209">Tu crois donc que ma main serait digne de toi ?</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="210">Dame ! si vous vouliez, il ne tiendrait qu'à moi.</l>
+                        <l n="211">Écoutez, puisqu'enfin la parole est lâchée,</l>
+                        <l n="212">Et puisqu'à votre avis vous n'êtes point fâchée.</l>
+                        <l n="213">Vous êtes bien gentille, on le sait, on voit clair ;</l>
+                        <l n="214">Mais, moi, je ne suis pas si laid que j'en ai l'air.</l>
+                        <l n="215">Si la grosse Margot n'était point tant fautive,</l>
+                        <l n="216">J'en aurais vu le tour, oui, sans crier qui vive,</l>
+                        <l n="217">Et dans la rue aux Ours, où je loge à présent,</l>
+                        <l n="218">On ne remarque pas que je sois déplaisant.</l>
+                        <l n="219">Je sais signer moi-même, et je lis dans des livres.</l>
+                        <l n="220">Je viens de vous conter que j'avais vingt-six livres,</l>
+                        <l n="221">Mais il est des secrets qu'on peut vous confier ;</l>
+                        <l n="222">Mon maître, au jour de l'an, va me gratifier.</l>
+                        <l n="223">C'est déjà quelque chose. À présent, autre idée :</l>
+                        <l n="224">Ma tante Labalue est presque décédée.</l>
+                        <l n="225">Elle a dans ses tiroirs, qu'il soit dit entre nous,</l>
+                        <l n="226">Pour plus de cent écus en joyaux et bijoux.</l>
+                        <l n="227">On ne sait pas les grains qu'elle amassait chez elle,</l>
+                        <l n="228">Ni les hardes qu'elle a sans compter sa vaisselle.</l>
+                        <l n="229">Elle a mis trois quarts d'heure à faire un testament,</l>
+                        <l n="230">Et j'hérite de tout universellement.</l>
+                        <l n="231">Ça commence à sourire. Encore une autre histoire :</l>
+                        <l n="232">Thomas donc est soldat, embarqué pour la gloire.</l>
+                        <l n="233">Moi, j'aurais à sa place épousé Jeanneton ;</l>
+                        <l n="234">Mais il ne lui faudrait qu'un coup de mousqueton.</l>
+                        <l n="235">C'est mon cousin germain ; que le ciel le protège !</l>
+                        <l n="236">Ce métier-là, toujours, n'est pas blanc comme neige.</l>
+                        <l n="237">Vous voyez que je suis un assez bon parti ;</l>
+                        <l n="238">Nous pourrions faire un couple un peu bien assorti.</l>
+                        <l n="239">Contre la pharmacie avez-vous à reprendre ?</l>
+                        <l n="240">On n'est point obligé d'y goûter pour en vendre.</l>
+                        <l n="241">Mon pourparler vous semble un peu risible et sot ;</l>
+                        <l n="242">Vous avez l'esprit riche et vous visez de haut,</l>
+                        <l n="243">Mais, voyez-vous, le tout est d'être ou de paraître.</l>
+                        <l n="244">Vous portez du clinquant, mais c'est à votre maître.</l>
+                        <l n="245">Que l'on vous remercie, il ne vous reste rien ;</l>
+                        <l n="246">Moi je n'ai qu'un habit, d'accord, mais c'est le mien.</l>
+                        <l n="247">J'ai lu dans les écrits de monsieur de Voltaire</l>
+                        <l n="248">Que les mortels entre eux sont égaux sur la terre.</l>
+                        <l n="249">Sur ce proverbe-là j'ai beaucoup médité,</l>
+                        <l n="250">Et j'ai vu de mes yeux que c'est la vérité.</l>
+                        <l n="251">Il ne faut mépriser personne dans la vie,</l>
+                        <l n="252">Car tout le monde peut mettre à la loterie.</l>
+                        <l n="253">Ce grand homme l'a dit, c'est son opinion,</l>
+                        <l n="254">Et c'est pourquoi, jarni ! j'ai de l'ambition.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="255">Je t'écoute, Lucas ; ta rhétorique est forte.</l>
+                        <l n="256" part="I">Changeras-tu d'avis ?</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="256" part="F">Non, le diable m'emporte.</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="257">Eh bien ! Reste à l'hôtel, et ne t'éloigne pas.</l>
+                        <l n="258">Observe monseigneur, et suis bien tous ses pas.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="259" part="I">Oui.</l><!--@syll="1"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="259" part="F">Si tu le vois seul, mets-toi sur son passage.</l><!--@syll="11"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="260" part="I">Bien !</l><!--@syll="1"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="260" part="F">Dis-lui tes projets pour notre mariage !</l><!--@syll="11"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="261" part="I">Bon !</l><!--@syll="1"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="261" part="F">Dis-lui que c'est moi qui le prie instamment</l><!--@syll="11"-->
+                        <l n="262">D'y prêter sa faveur et son consentement.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="263" part="I">Mais vous consentez donc ?</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="263" part="F">Sans doute. - Le temps presse ;</l><!--@syll="6"-->
+                        <l n="264" part="I">Va-t'en.</l><!--@syll="2"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="264" part="M">Vous consentez ?</l><!--@syll="4"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="264" part="F">On vient, c'est la duchesse.</l><!--@syll="6"-->
+                        <l n="265" part="I">Dépêche, hors d'ici.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="265" part="F">Vous consentez, Louison !</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="266">Va, ne bavarde pas surtout dans la maison.</l>
+                    </sp><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. La Maréchale, Le Duc, La Duchesse, Lisette, dans le fond.</head>
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="267">Vous ne venez donc pas à l'Opéra, ma chère ?</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="268" part="I">Non, monsieur, pas ce soir.</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="268" part="M">Pourquoi pas ?</l><!--@syll="3"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="268" part="F">Pour quoi faire ?</l><!--@syll="3"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="269">C'est une fête où va tout ce qui touche au roi.</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="270" part="I">Une fête ? pour qui ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="270" part="M">Pour nous.</l><!--@syll="2"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="270" part="F">Non pas pour moi.</l><!--@syll="4"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="271">Vos querelles, mon fils, me font mourir de rire.</l>
+                        <stage type="toward/toward">À Lisette, qui veut sortir.</stage>
+                        <l n="272">Lisette, demeurez ; j'ai deux mots à vous dire.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="273">Riez, si vous voulez, Madame, à vous permis ;</l>
+                        <l n="274">Vous ne me ferez pas du tout changer d'avis.</l>
+                        <l n="275">Non, je ne conçois pas, sur quoi que l'on se fonde,</l>
+                        <l n="276">Cette obstination à s'exiler du monde,</l>
+                        <l n="277">Cette rage de vivre au fond d'un vieil hôtel,</l>
+                        <l n="278">De bouder le plaisir comme un péché mortel,</l>
+                        <l n="279">Et de rester à coudre une tapisserie,</l>
+                        <l n="280">Quand tout Paris se masque, et quand je vous en prie.</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="281">Je ne veux rien qui soit contre votre désir ;</l>
+                        <l n="282">Monsieur, je suis souffrante, et je ne puis sortir.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="283">Bon ! souffrante, c'est là votre excuse ordinaire.</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="284" part="I">Mais s'il est vrai, mon fils...</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="284" part="F">Il n'en est rien, ma mère.</l><!--@syll="6"-->
+                        <l n="285">Souffrante ! voilà bien le grand mot féminin.</l>
+                        <l n="286">Mais l'étiez-vous hier ? le serez-vous demain ?</l>
+                        <l n="287">Non, vous l'êtes ce soir, et qu'avez-vous, de grâce ?</l>
+                        <l n="288">Un mal qui vous arrive aussi vite qu'il passe,</l>
+                        <l n="289">Des vapeurs, sûrement. La belle invention !</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="290" part="I">L'exigez-vous, Monsieur ? J'obéis.</l><!--@syll="9"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="290" part="F">Mon_Dieu, non.</l><!--@syll="3"-->
+                        <l n="291">Exiger ! - Obéir ! - Le bon Dieu vous bénisse !</l>
+                        <l n="292">Dirait-on pas vraiment qu'on vous traîne au supplice ?</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE, au Duc.</speaker>
+                        <l n="293">Ne la chagrinez pas. - Pour l'égayer un peu,</l>
+                        <l n="294">Nous ferons un piquet ce soir au coin du feu.</l>
+                    </sp><!--@stage="toward"--><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="295" part="I">Permettez-vous, monsieur ?</l><!--@syll=""-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="295" part="M">Certainement.</l><!--@syll="4"-->
+                        <stage type="aparte">À part.</stage>
+                        <l n="295" part="F">J'enrage.</l><!--@syll="2"-->
+                        <l n="296">Voila mes projets morts. - Quel ennui ! Quel dommage !</l>
+                        <l n="297">Lisette, j'en suis sûr, en a le coeur navré ;</l>
+                        <l n="298">Mais, avant de sortir, je la retrouverai.</l>
+                        <l n="299">Le diable est donc logé dans la tête des femmes !</l>
+                        <stage type="loud">Haut.</stage>
+                        <l n="300">Allons ! J'irai donc seul. - À votre jeu, Mesdames.</l>
+                        <l n="301">Holà ! Jasmin ! Lafleur ! Des cartes, des flambeaux !</l>
+                        <l n="302">Vite ! - Je vous souhaite un millier de capots,</l>
+                        <l n="303">De pics et de repics, et de quintes_majeures.</l>
+                        <l n="304">Combien un si beau jeu doit abréger les heures !</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="305">Un bon piquet, mon fils, n'est point à dédaigner ;</l>
+                        <l n="306" part="I">Le roi l'aime.</l><!--@syll="4"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="306" part="F">Le roi... ferait mieux de régner.</l><!--@syll="8"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="307">On joue aussi, monsieur, quelquefois chez la reine.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="308">Jouez donc. Mais, morbleu ! ce n'est guère la peine</l>
+                        <l n="309">D'avoir un nom, du bien, de l'esprit et vingt ans,</l>
+                        <l n="310">Et ce visage-là, pour perdre ainsi son temps.</l>
+                        <l n="311">Vraiment la patience en devient malaisée.</l>
+                        <l n="312">Pourquoi donc, s'il vous plaît, vous avoir épousée ?</l>
+                        <l n="313">Pourquoi donc êtes-vous jeune et faite à ravir ?</l>
+                        <l n="314">À quoi bon tout cela, pour ne pas s'en servir ?</l>
+                        <l n="315">Que faites-vous d'avoir cent mille écus de rente,</l>
+                        <l n="316">Et, comme Trissotin, un carrosse amarante,</l>
+                        <l n="317">Et quatre grands chevaux qui se meurent d'ennui,</l>
+                        <l n="318">Pour vivre hier, demain, toujours, comme aujourd'hui ?</l>
+                        <l n="319">À quoi bon, dites-moi, cette taille élégante,</l>
+                        <l n="320">Cet air et ce regard ?... car vous seriez charmante !</l>
+                        <l n="321">Je suis votre mari, mais, quand c'est arrivé,</l>
+                        <l n="322">J'avais sur votre compte étrangement rêvé ;</l>
+                        <l n="323">Oui, ne vous en déplaise, et je vous le confesse.</l>
+                        <l n="324">Le feu roi dans sa cour montrait bien sa maîtresse,</l>
+                        <l n="325">Et de ses courtisans un murmure flatteur</l>
+                        <l n="326">Parfois, n'en doutez pas, lui fit plaisir au coeur.</l>
+                        <l n="327">Moi, duc, et votre époux, n'ai-je donc pu me croire,</l>
+                        <l n="328">En vous montrant aussi, le droit d'en tirer gloire ?</l>
+                        <l n="329">Quand de m'appartenir vous m'avez fait l'honneur,</l>
+                        <l n="330">Ne puis-je donc avoir l'orgueil de mon bonheur ?</l>
+                        <l n="331">Vous étiez belle et noble, et je vous tiens pour telle.</l>
+                        <l n="332">À quoi sert d'être noble, à quoi sert d'être belle,</l>
+                        <l n="333">Si vous ne savez pas marcher avec fierté</l>
+                        <l n="334">Et dans cette noblesse et dans cette beauté ?</l>
+                        <l n="335">Si vous ne savez pas monter dans votre chaise,</l>
+                        <l n="336">Dans un panier doré vous étendre à votre aise,</l>
+                        <l n="337">Et, lorsque devant vous l'huissier crie un grand nom,</l>
+                        <l n="338">Le bonnet sur l'oreille entrer à Trianon ?</l>
+                        <l n="339">Ma foi, je vous croyais d'un autre caractère ;</l>
+                        <l n="340">Je croyais sans déchoir, qu'on pouvait daigner plaire ;</l>
+                        <l n="341">Je vous jugeais moins sage, et ne m'attendais pas</l>
+                        <l n="342">Qu'en me donnant la main vous compteriez vos pas.</l>
+                        <l n="343" part="I">Je m'en vais me vêtir ; adieu.</l><!--@syll="8"-->
+                        <stage type="toward">À sa mère.</stage>
+                        <l n="343" part="F">Bonsoir, Madame.</l><!--@syll="4"-->
+                    </sp><!--@who="LE DUC"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. La Maréchale, La Duchesse, Lisette.</head>
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="344" part="I">Lucile, vous souffrez ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="344" part="F">Jusques au fond de l'âme.</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="345" part="I">Qu'avez-vous, dites-moi ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="345" part="F">Je suis triste à mourir.</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="346" part="I">On vous tourmente un peu.</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="346" part="F">Je devrais obéir.</l><!--@syll="6"-->
+                        <l n="347">Je devrais, - pardonnez, - je ne sais pas moi-même.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="348" part="I">Lisette, laissez-nous.</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, en sortant.</speaker>
+                        <l n="348" part="F">Mon_Dieu, comme elle l'aime !</l><!--@syll="6"-->
+                    </sp><!--@stage="exit"--><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. La Maréchale, La Duchesse.</head>
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="349">Quoi ! vous prenez au grave un propos si léger ?</l>
+                        <l n="350">Faites-vous un chagrin d'un ennui passager ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="351">Madame, il a raison. - J'ai tort, je suis coupable...</l>
+                        <l n="352">Je devrais obéir,... et j'en suis incapable.</l>
+                        <l n="353">Tout ce qu'il dit est vrai ; la faute en est à moi.</l>
+                        <l n="354">Je le blesse, le fâche, et je ne sais pourquoi.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="355">Vous sentez, dites-vous, qu'il faut qu'on obéisse,</l>
+                        <l n="356">Et vous ne savez pas d'où vous vient un caprice ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="357">Non ; lorsque mon coeur parle, il raisonne bien mal.</l>
+                        <l n="358">Je ne sais quel effroi, quel sentiment fatal,</l>
+                        <l n="359">Né de ce triste coeur ou dans ma pauvre tête,</l>
+                        <l n="360">Près de lui par moments me saisit et m'arrête.</l>
+                        <l n="361">Je voudrais lui complaire et sortir avec lui,</l>
+                        <l n="362">Songer à ma parure, oublier mon ennui,</l>
+                        <l n="363">Puisqu'il le veut, enfin, essayer d'être belle,</l>
+                        <l n="364">Et tout cela me cause une frayeur mortelle.</l>
+                        <l n="365">Je sens trembler ma main quand je lui prends le bras...</l>
+                        <l n="366">Quelqu'un est entre nous, que je ne connais pas.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="367">Ma belle, y songez-vous ? quelle est votre pensée ?</l>
+                        <l n="368">Parlez-vous, à votre âge, en femme délaissée ?</l>
+                        <l n="369">Avez-vous un reproche à faire à votre époux ?</l>
+                        <l n="370" part="I">Qu'est-ce donc ?</l><!--@syll="3"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="370" part="F">Je ne sais.</l><!--@syll="3"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="370" part="F">Quelqu'un est entre vous ?</l><!--@syll="6"-->
+                        <l n="371">Une femme, à coup sûr ; vous est-elle connue ?</l>
+                        <l n="372" part="I">Parlez.</l><!--@syll="2"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="372" part="F">Je n'en sais rien, mais j'en suis convaincue.</l><!--@syll="10"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="373">Ainsi, pour quatre mots, vous vous désespérez,</l>
+                        <l n="374">Et ce qui vous chagrine, au fond, vous l'ignorez.</l>
+                        <l n="375">Dirait-on pas vraiment, à voir votre tristesse,</l>
+                        <l n="376">Qu'un grand secret bien noir vous trouble et vous oppresse ?</l>
+                        <l n="377">Et c'est un bal manqué qui produit tout cela !</l>
+                        <l n="378">J'en avais, à vingt ans, de ces gros chagrins-là.</l>
+                        <l n="379">Ne vous en plaignez pas ! Vos pleurs me font envie.</l>
+                        <l n="380">Quand vous saurez un jour ce que c'est que la vie,</l>
+                        <l n="381">Ces pleurs, si doucement et sitôt répandus,</l>
+                        <l n="382">Vous les regretterez, et n'en verserez plus.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="383">Oui, si cela vous plaît, vous en pouvez sourire ;</l>
+                        <l n="384">Mais en sont-ils moins vrais, Madame, et peut-on dire,</l>
+                        <l n="385">Quand la souffrance est là, qu'on souffre sans raison ?</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="386">Tout aveu d'une peine aide à sa guérison.</l>
+                        <l n="387">Laissez-vous être vraie, et sachons ce mystère.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="388">Je n'ai point de secret. Que puis-je dire ou taire ?</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="389">Bah ! quand ce ne serait qu'un caprice d'enfant,</l>
+                        <l n="390">Est-ce que près de moi votre coeur se défend ?</l>
+                        <l n="391">Qui vous fait hésiter et manquer de courage ?</l>
+                        <l n="392">Est-ce la défiance ? est-ce mon rang, mon âge ?</l>
+                        <l n="393">Est-ce mon amitié dont vous vous éloignez ?</l>
+                        <l n="394">Est-ce la maréchale ou moi que vous craignez ?</l>
+                        <l n="395" part="I">De grâce, allons.</l><!--@syll="4"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="395" part="F">Je sais combien vous êtes bonne,</l><!--@syll="8"-->
+                        <l n="396" part="I">Mais je ne puis parler.</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="396" part="F">Alors, je vous l'ordonne.</l><!--@syll="6"-->
+                        <l n="397">Votre mère, Lucile, à son dernier soupir,</l>
+                        <l n="398">Vous a léguée à moi. - Vous devez obéir.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="399">J'obéirai toujours, et de toute mon âme ;</l>
+                        <l n="400">Mais, encore une fois, je ne sais rien, Madame,</l>
+                        <l n="401">Si ce n'est ma souffrance, et mon amour pour lui.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="402" part="I">S'il est vrai, mon enfant...</l><!--@syll="6"-->
+                        <stage type="toward/entrance">À Lisette qui entre.</stage>
+                        <l n="402" part="F">Qui vous amène ici ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Lisette, La Maréchale, La Duchesse.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE, à la Duchesse.</speaker>
+                        <l n="403">Votre marchande est là, Madame ; on m'a chargée...</l>
+                    </sp><!--@stage="toward"--><!--@who="LISETTE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="404" part="I">Pas ce soir, - qu'on revienne.</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="404" part="F">Allons, chère affligée,</l><!--@syll="6"-->
+                        <l n="405">Qu'est-ce qui vous arrive ? une robe de bal ?</l>
+                        <l n="406">Eh bien ! essayez-la ; - ce n'est pas un grand mal.</l>
+                        <l n="407">Tantôt, s'il m'en souvient, vous l'aviez demandée.</l>
+                        <l n="408">Rien qu'en changeant de robe on peut changer d'idée.</l>
+                        <l n="409">- Comme vous pâlissez ! Qu'avez-vous, mon enfant ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="410">Oui,... cette femme-là ; ... sa vue,... en ce moment...</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="411">Mais cette femme-là, ma belle, c'est Lisette.</l>
+                        <l n="412">Entrons chez vous. - Venez faire un peu de toilette.</l>
+                        <l n="413">Plaisons d'abord, petite, et le reste est à nous.</l>
+                        <l n="414" part="I">Allons, courage, allons.</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="414" part="F">Je m'abandonne à vous.</l><!--@syll="6"-->
+                        <l n="415">Devant votre bonté ma volonté s'incline :</l>
+                        <l n="416">Vous m'avez rappelé que j'étais orpheline.</l>
+                        <l n="417">Je vous dirai mes maux, mes craintes, mon tourment,</l>
+                        <l n="418">Tout, et vous comprendrez, Madame, assurément,</l>
+                        <l n="419">Qu'un pauvre coeur blessé, cherchant qui le soutienne,</l>
+                        <l n="420">Ait besoin d'une mère, ayant perdu la sienne.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+</div>
+</div>
+<div type="acte" n="2">
+                <head>ACTE DEUXIÈME</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#berthaud">
+                        <speaker>BERTHAUD, seul.</speaker>
+                        <l n="421">Comme ces grands seigneurs sont longs à s'habiller !</l>
+                        <note type="L">Lambin : Celui qui ne fait que lambiner ; agir lentement. [L]</note>
+                        <l n="422">Le monde est si lambin que ça m'en fait bâiller.</l>
+                        <l n="423">Louison m'a dit d'attendre et de guetter son maître,</l>
+                        <l n="424">Pour lui glisser mon mot sitôt qu'il va paraître.</l>
+                        <l n="425">Je suis depuis tantôt caché dans le grenier.</l>
+                        <l n="426">Il lui faut plus de temps, rien que pour un soulier,</l>
+                        <l n="427">Qu'à moi pour ma perruque. On le peigne, on le frise ;</l>
+                        <l n="428">Ses bas sur ses talons, sa veste à moitié mise,</l>
+                        <l n="429">Un coiffeur par derrière, un tailleur par devant,</l>
+                        <l n="430">Une houppe à la main, il se mire en rêvant.</l>
+                        <l n="431">Et du blanc, et du rouge, et du musc, et de l'ambre,</l>
+                        <l n="432">Des tourbillons de poudre à ravager la chambre ;</l>
+                        <l n="433">Pouah ! - s'il faut pour un duc faire ce métier-là,</l>
+                        <l n="434">Autant vaut être femme, ou danseur d'Opéra.</l>
+                        <l n="435">Je voudrais bien savoir ce que dirait mon père</l>
+                        <l n="436">Si je m'enfarinais d'une telle manière,</l>
+                        <l n="437">Lui qui savait si bien me pousser par le dos</l>
+                        <l n="438">Lorsque je m'attardais derrière nos troupeaux.</l>
+                        <l n="439">Ce n'est pas moi, du moins, avec mon humeur leste,</l>
+                        <l n="440">Qu'on verrait perdre une heure à boutonner ma veste.</l>
+                        <l n="441">Être vif et gaillard fut toujours ma vertu ;</l>
+                        <l n="442">Il me semble pourtant que je suis bien vêtu.</l>
+                        <l n="443">Voyons ; j'avais tantôt préparé ma harangue.</l>
+                        <l n="444">Il ne faut point ici s'entortiller la langue.</l>
+                        <l n="445">Que vais-je dire au duc ? - Je dirai : Monseigneur...</l>
+                        <l n="446">Oui, monseigneur, d'abord ; c'est juste et c'est flatteur.</l>
+                        <l n="447">Or, mam'selle Louison... Non, je dirai : Lisette.</l>
+                        <l n="448">C'est son nom de gala ; respectons l'étiquette.</l>
+                        <l n="449">Lisette donc et moi, nous sommes résolus...</l>
+                        <l n="450">Non,... nous sommes enclins... Ce n'est pas ça non plus.</l>
+                        <l n="451">Reprenons : Monseigneur... C'est vexant quand j'y pense ;</l>
+                        <l n="452">Tantôt, dans le grenier, j'étais plein d'éloquence.</l>
+                        <l n="453">Et dire qu'un bon mot peut tout enjoliver !</l>
+                        <l n="454">Oui-da, j'ai vu la chose au théâtre arriver.</l>
+                        <l n="455">Si je me rappelais, dans quelque comédie,</l>
+                        <l n="456">Une attitude heureuse, une phrase arrondie ?</l>
+                        <l n="457">- Monseigneur, si les dieux,... si le ciel,... les enfers...</l>
+                        <l n="458">J'y suis. - Si les héros qui purgeaient l'univers...</l>
+                        <l n="459">Est-ce bien ces gens-là qu'il convient que j'invoque ?</l>
+                        <l n="460">Non, pour un pharmacien, ça prête à l'équivoque.</l>
+                        <l n="461">- Monseigneur, si les rois, si les ducs ont aimé...</l>
+                        <l n="462">Je ne trouverai rien, je suis trop enrhumé.</l>
+                        <stage type="ring">On entend une sonnette.</stage>
+                        <l n="463">On a sonné là-bas. - C'est Louison qu'on appelle.</l>
+                    </sp><!--@stage="alone"--><!--@who="BERTHAUD"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Berthaud, Lisette, portant une robe sur le bras.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="464" part="I">Que fais-tu là, Lucas ?</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="464" part="F">Hé ! Je fais sentinelle.</l><!--@syll="6"-->
+                        <l n="465">Me m'avez-vous pas dit de rester aux_aguets ?</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="466">Oui, mais tu trouveras quelque honnête laquais</l>
+                        <l n="467">Qui, très discrètement, va te mettre à la porte.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="468" part="I">Ouais ! - qu'est-ce que cela ?</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="468" part="F">Des hardes que j'apporte.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="469">Encor des ornements ! des objets féminins ?</l>
+                        <l n="470">Mais vous en avez donc ici des magasins ?</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="471">On vient de ce côté ; c'est monseigneur sans doute.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="472" part="I">Bon, je vais lui parler.</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="472" part="F">Oui, pourvu qu'il t'écoute.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="473">Oh ! J'ai dans le grenier préparé mon discours.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="474">Songe que les meilleurs sont toujours les plus courts.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="475">Le mien est admirable, et j'en fais mon affaire.</l>
+                        <l n="476">Il est vrai qu'à présent je ne m'en souviens guère.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="477">Je te quitte, on m'attend ; mais je vais revenir.</l>
+                    </sp><!--@who="LISETTE"-->
+</div><!--@stage="carry"-->
+<div type="scene" n="3">
+                    <head>SCÈNE III. Le Duc, Lisette, Berthaud.</head>
+<sp who="#le-duc">
+                        <speaker>LE DUC, habillé.</speaker>
+                        <l n="478">Eh bien ! Lisette, eh bien ! mon aspect te fait fuir ?</l>
+                        <l n="479" part="I">Suis-je à ton gré, dis-moi ?</l><!--@syll="6"-->
+                        <stage type="watch/furniture">Il se mire dans une glace.</stage>
+                    </sp><!--@stage="dress"--><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="479" part="M">Toujours.</l><!--@syll="2"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="479" part="F">Quel est cet homme ?</l><!--@syll="4"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD, saluant à plusieurs reprises.</speaker>
+                        <l n="480">Monseigneur,... Monseigneur,... C'est Berthaud qu'on me nomme.</l>
+                        <l n="481" part="I">Je suis venu...</l><!--@syll="4"-->
+                    </sp><!--@stage="wave"--><!--@who="BERTHAUD"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="481" part="M">Va-t'en.</l><!--@syll="2"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="481" part="M">Monseigneur, je...</l><!--@syll="4"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="481" part="F">Va-t'en.</l><!--@syll="2"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="482" part="I">Monseigneur...</l><!--@syll="3"-->
+                        <stage type="exit/wave">Il se retire en saluant.</stage>
+                    </sp><!--@who="BERTHAUD"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Le Duc, Lisette.</head>
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="482" part="M">Toi, viens çà.</l><!--@syll="3"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="482" part="F">Ma maîtresse m'attend.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="483">Eh ! qu'elle attende ! Elle a ses femmes, je suppose.</l>
+                        <l n="484">Elle boude ce soir, mais, pour si peu de chose,</l>
+                        <l n="485">Crois-tu du rendez-vous l'espoir abandonné ?</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="486">Monseigneur, c'est vous seul qui vous l'étiez donné.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="487" part="I">Je te le donne encor.</l><!--@syll="6"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="487" part="M">Permettez...</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="487" part="F">Point d'affaire.</l><!--@syll="3"-->
+                        <l n="488">Écoute ; la duchesse est là, près de ma mère ;</l>
+                        <l n="489">Sur mon compte, sans doute, on jase en ce moment :</l>
+                        <l n="490">Vas-y. - Je sortirai par cet appartement.</l>
+                        <l n="491">Je serai rêveur, sombre, et d'une humeur atroce ;</l>
+                        <l n="492">Mais, dès qu'on entendra le bruit de mon carrosse,</l>
+                        <l n="493">Compte qu'après avoir dûment délibéré,</l>
+                        <l n="494">Dit quelque mal de moi, peut-être un peu pleuré,</l>
+                        <l n="495">La duchesse pourra changer de fantaisie.</l>
+                        <l n="496">Ses caprices ne sont qu'un peu de jalousie.</l>
+                        <l n="497">Elle prétend, au vrai, détester l'Opéra ;</l>
+                        <l n="498">Elle n'y viendrait pas, mais elle m'y suivra.</l>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="499" part="I">De grâce, écoutez-moi.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="499" part="F">J'y gagerais ma tête !</l><!--@syll="6"-->
+                        <l n="500">Déjà dans ce dessein sans doute elle s'apprête.</l>
+                        <l n="501">Sois sûre qu'elle va demander ses chevaux,</l>
+                        <l n="502">Choisir le plus coquet parmi ses dominos,</l>
+                        <l n="503">Et, les yeux aveuglés sous un capuchon rose,</l>
+                        <l n="504">D'un petit mal bien clair chercher bien loin la cause.</l>
+                        <l n="505">Puisse-t-elle à ce bal trouver beaucoup d'appas !</l>
+                        <l n="506">Quant à moi, tu sais bien que je n'y reste pas.</l>
+                        <l n="507">Tu sais que je reviens. - Ainsi tu vois, ma belle,</l>
+                        <l n="508">Que lever tout obstacle est une bagatelle.</l>
+                        <l n="509">Je vais faire, au hasard, une visite ou deux,</l>
+                        <l n="510">Perdre quelques louis, peut-être, à leurs sots jeux,</l>
+                        <l n="511">Dépenser ma soirée à parler sans rien dire ;</l>
+                        <l n="512">Le jour est aux ennuis, et le reste à Zaïre.</l>
+                        <stage type="ring">On sonne.</stage>
+                        <l n="513" part="I">On t'appelle. - Au revoir.</l><!--@syll="6"-->
+                    </sp><!--@who="LE DUC"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp who="#berthaud">
+                        <speaker>BERTHAUD, seul.</speaker>
+                        <l n="513" part="F">Quelle horreur ! J'ai tout vu.</l><!--@syll="6"-->
+                        <l n="514">C'est dit, je suis berné, - je suis presque... Ô vertu !</l>
+                        <l n="515">Aurait-on supposé tant de scélératesse ?</l>
+                        <l n="516">Le duc parle assez clair, - Louison est sa maîtresse.</l>
+                        <l n="517">Je ne l'ai pas rêvé ; - j'en suis sûr, - j'étais là ;</l>
+                        <l n="518">Traîtresse ! Épousez donc des tendrons comme ça !</l>
+                        <l n="519">Cassez-vous donc la tête à chercher, pour lui plaire,</l>
+                        <l n="520">Des mots mieux compilés que dans une grammaire,</l>
+                        <l n="521">Pour trouver que l'objet de tous vos sentiments,</l>
+                        <l n="522">Même avant qu'on l'épouse, a déjà des amants !</l>
+                        <l n="523">Et tu crois que je vais, comme un mari crédule,</l>
+                        <l n="524">Avaler bonnement ta malsaine pilule ?</l>
+                        <l n="525">Nenni, ma belle enfant, tu ne m'y prendras pas.</l>
+                        <l n="526">Je verrai la duchesse, et j'y vais de ce pas.</l>
+                        <l n="527">J'irai, je lui dirai... - Voyons, que lui dirai-je ?</l>
+                        <l n="528">Madame, si jamais... - Non, il faut que j'abrège.</l>
+                        <l n="529">Madame... - Ô ciel ! je sens mon sang-froid s'altérer.</l>
+                        <l n="530">En l'état où je suis, je crains de m'égarer ;</l>
+                        <l n="531">Je vais aller plutôt trouver la maréchale.</l>
+                        <l n="532">La voici justement qui traverse la salle ;</l>
+                        <l n="533">Je vais tout dévoiler. - Allons ! ferme ! du coeur !</l>
+                    </sp><!--@stage="alone"--><!--@who="BERTHAUD"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. La Maréchale, Berthaud.</head>
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="534" part="I">Madame...</l><!--@syll="3"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="534" part="M">Que veut-on ?</l><!--@syll="3"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="534" part="F">Madame, j'ai l'honneur...</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="535" part="I">Que voulez-vous, l'ami ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="535" part="F">Madame, je me nomme...</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="536" part="I">Hé bien ! qu'est-ce ?</l><!--@syll="4"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="536" part="M">Berthaud.</l><!--@syll="2"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="536" part="F">Retirez-vous, brave homme.</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="537" part="I">Madame, je venais...</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="537" part="M">Laissez-moi.</l><!--@syll="3"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD, à part.</speaker>
+                        <l n="537" part="F">Grand merci !</l><!--@syll="3"-->
+                        <l n="538">Il paraît que l'on a l'oreille dure ici.</l>
+                        <stage type="loud">Haut.</stage>
+                        <l n="539" part="I">S'il se pouvait pourtant, Madame...</l><!--@syll="8"-->
+                    </sp><!--@stage="aparte"--><!--@who="BERTHAUD"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="539" part="F">Allez, vous dis-je.</l><!--@syll="4"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD, saluant.</speaker>
+                        <l n="540" part="I">Je sors.</l><!--@syll="2"-->
+                        <stage type="aparte">À part.</stage>
+                        <l n="540" part="F">En vérité, cela tient du prodige.</l><!--@syll="10"-->
+                        <l n="541">Oh ! Mon heure viendra. - Je vais, dans mon grenier,</l>
+                        <l n="542">Retoucher mon discours pour me désennuyer.</l>
+                    </sp><!--@stage="wave"--><!--@who="BERTHAUD"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII.</head>
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE, seule.</speaker>
+                        <l n="543">Il n'en faut plus douter, la duchesse est jalouse.</l>
+                        <l n="544">Mon fils a méconnu sa bonne et tendre épouse ;</l>
+                        <l n="545">Lisette a fait le mal, je le dois arrêter.</l>
+                        <l n="546">Lucile doute encore et voudrait hésiter.</l>
+                        <l n="547">Faible contre elle-même et contre ses alarmes,</l>
+                        <l n="548">Ses regards indécis sont voilés par les larmes.</l>
+                        <l n="549">Elle ne saurait croire à cette cruauté,</l>
+                        <l n="550">Donnant si bien son coeur, de le voir rejeté ;</l>
+                        <l n="551">Elle croit aimer trop pour n'être point aimée.</l>
+                        <l n="552">Mais, bien qu'à tout soupçon son âme soit fermée,</l>
+                        <l n="553">La souffrance l'emporte, elle y résiste en vain ;</l>
+                        <l n="554">Je la sens me parler, rien qu'en pressant sa main.</l>
+                        <l n="555">Qui sait, tel qu'est mon fils, dans la folle jeunesse,</l>
+                        <l n="556">Où pourrait l'entraîner un instant de faiblesse ?</l>
+                        <l n="557">Le hasard, d'un seul pas, va si vite et si loin !</l>
+                        <l n="558">C'est à moi d'y songer ; - j'en veux prendre le soin.</l>
+                    </sp><!--@stage="alone"--><!--@who="LA MARÉCHALE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. La Maréchale, Lisette.</head>
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="559">Lisette, où courez-vous d'une telle vitesse ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="560">Madame, on a coiffé Madame_la_Duchesse ;</l>
+                        <l n="561">Je vais chercher là-bas un de ses dominos.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="562">Elle va donc se mettre en masque ? À quel propos ?</l>
+                        <l n="563" part="I">Veut-elle aller au bal ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="563" part="F">Madame, je le pense.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="564" part="I">C'est étrange. Et mon fils ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="564" part="F">Il est parti d'avance.</l><!--@syll=""-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="565" part="I">Seul ?</l><!--@syll="1"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="565" part="M">Tout seul.</l><!--@syll="2"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="565" part="F">Et ma bru va donc le retrouver ?</l><!--@syll="9"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="566">Je ne sais ; sa toilette a peine à s'achever.</l>
+                        <l n="567">Telle robe lui plaît qui bientôt l'importune ;</l>
+                        <l n="568">Elle en regarde dix avant d'en choisir une.</l>
+                        <l n="569">Elle a presque grondé ses femmes, et je crois</l>
+                        <l n="570">Être grondée aussi pour la première fois.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="571">Faites qu'en ce moment une autre vous remplace.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, ouvrant la porte du fond.</speaker>
+                        <l n="572" part="I">Holà ! Quelqu'un ! Marton !</l><!--@syll="6"-->
+                    </sp><!--@stage="open"--><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="572" part="F">Faites aussi qu'on passe</l><!--@syll="6"-->
+                        <l n="573" part="I">Par la grand'salle.</l><!--@syll="4"-->
+                        <stage type="entrance">Une des femmes paraît, Lisette lui parle bas ; la femme sort par le fond.</stage>
+                        <l n="573" part="M">Eh bien ?</l><!--@syll="2"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="573" part="F">Madame, me voici.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="574">Louison, c'est grâce à moi que vous êtes ici.</l>
+                        <l n="575">Votre père est chez nous fermier dans un domaine ;</l>
+                        <l n="576">Vos parents sont à moi ; je suis votre marraine.</l>
+                        <l n="577">J'ai pris grand soin de vous dès vos plus jeunes ans,</l>
+                        <l n="578">Et je vous ai reçue enfant chez mes enfants.</l>
+                        <l n="579" part="I">M'aimez-vous ?</l><!--@syll="3"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="579" part="F">Dieu merci, plus que je ne puis dire.</l><!--@syll="9"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="580" part="I">Votre coeur parle franc ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="580" part="F">Aussi vrai qu'il respire.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="581">Si, par obéissance ou par nécessité,</l>
+                        <l n="582">Il fallait devant moi celer la vérité</l>
+                        <l n="583">(La crainte d'un péril ôte celle du blâme),</l>
+                        <l n="584" part="I">S'il vous fallait mentir ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="584" part="F">Je me tairais, Madame.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="585" part="I">Mais si vous le deviez ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="585" part="F">Personne ne le doit.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="586">D'où vous vient le brillant que vous avez au doigt ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, à part.</speaker>
+                        <l n="587" part="I">Ah ! Malheureuse !</l><!--@syll="4"-->
+                    </sp><!--@stage="aparte"--><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="587" part="F">Eh bien ! Vous gardez le silence ?</l><!--@syll="8"-->
+                        <l n="588">Songez que, me voyant avertie à l'avance,</l>
+                        <l n="589">Votre silence parle, et peut en dire assez.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="590" part="I">Ce brillant... m'appartient.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="590" part="M">D'où vient-il ?</l><!--@syll="3"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="590" part="F">Je ne sais.</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="591" part="I">Prenez garde, Louison !</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="591" part="F">Madame, il se peut faire</l><!--@syll="6"-->
+                        <l n="592">Qu'on soit, je le répète, obligée à se taire.</l>
+                        <l n="593">Si ma bouche est muette et doit ainsi rester,</l>
+                        <l n="594">De mon respect pour vous est-ce donc m'écarter ?</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="595">Lisette peut se taire alors que je commande,</l>
+                        <l n="596">Mais Louison doit parler si je le lui demande.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="597" part="I">On m'appelle Lisette.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="597" part="F">Oui, dans cette maison.</l><!--@syll="6"-->
+                        <l n="598">A-t-on changé le coeur aussi bien que le nom ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="599">De grâce excusez-moi ; je me sens si confuse...</l>
+                        <l n="600" part="I">Ce coeur voudrait s'ouvrir, mais...</l><!--@syll="8"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="600" part="F">Mais il s'y refuse ?</l><!--@syll="3"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="601">Non, Madame, hésiter quand vous parlez ainsi,</l>
+                        <l n="602">C'est trop souffrir pour moi ; cette bague... est à lui.</l>
+                        <stage type="kneel">Elle se met à genoux.</stage>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="603">Mon fils ? Je le savais. - Levez-vous donc, ma chère.</l>
+                        <l n="604">Vous avez, en tout cas, mieux fait que de vous taire.</l>
+                        <l n="605" part="I">Mais que prétendez-vous ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, se levant.</speaker>
+                        <l n="605" part="M">Rien au monde.</l><!--@syll="3"-->
+                    </sp><!--@stage="stand"--><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="605" part="F">Et pourquoi,</l><!--@syll="3"-->
+                        <l n="606">Puisque votre secret s'échappe devant moi,</l>
+                        <l n="607">Cette sorte d'audace avec cette imprudence ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="608">On parle comme on peut, on agit comme on pense.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="609">Pensez-vous que le duc soit pour vous un amant,</l>
+                        <l n="610">Et qu'on puisse, à son gré, trahir impunément ?</l>
+                        <l n="611">Vous croyez-vous assez pour être une maîtresse ?...</l>
+                        <l n="612">Ma question vous choque et votre orgueil s'en blesse ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="613">Je viens de m'incliner, Madame, devant vous.</l>
+                        <l n="614">Mon orgueil tout entier est encore à genoux.</l>
+                        <l n="615">Il peut, sans murmurer, souffrir qu'on m'humilie,</l>
+                        <l n="616">Mais non pas qu'on m'outrage ou qu'on me calomnie ;</l>
+                        <l n="617">On ne doit m'accuser d'aucune trahison !</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="618">Oui, cela porte atteinte à l'honneur de Louison !</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="619">À mon honneur, Madame ? Et pourquoi non, de grâce ?</l>
+                        <l n="620">Un brin d'herbe au soleil, comme on dit, a sa place.</l>
+                        <l n="621">Pourquoi n'aurais-je pas la mienne, s'il vous plaît ?</l>
+                        <l n="622">Le monde est assez grand pour tout ce que Dieu fait.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="623">Vous parlez haut, Lisette, et changez de langage.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="624">Ma foi, Madame, c'est celui de mon village.</l>
+                        <l n="625">Mon père s'en servait, et je l'ai toujours pris</l>
+                        <l n="626">Lorsque sur mon chemin j'ai trouvé le mépris.</l>
+                        <l n="627">Certes, lorsque l'honneur s'unit à la noblesse,</l>
+                        <l n="628">C'est un bien beau hasard qu'il trouve la richesse ;</l>
+                        <l n="629">Mais s'il est dans le coeur des gens qui ne sont rien,</l>
+                        <l n="630">On devrait le laisser à qui l'a pour tout bien.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="631">Mais, dans cette maison, à jaser de la sorte,</l>
+                        <l n="632" part="I">Songez-vous qu'il se peut...</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="632" part="F">Qu'il se peut que j'en sorte ?</l><!--@syll="6"-->
+                        <l n="633">Je ne le sais que trop, et c'est ce triste pas</l>
+                        <l n="634">Qui m'a fait hésiter, je ne m'en défends pas.</l>
+                        <l n="635">Dire adieu tout à coup, d'abord à vous, Madame,</l>
+                        <l n="636">Puis à tant de bienfaits, à tant de bonté d'âme,</l>
+                        <l n="637">Perdre tout d'un seul mot, le présent, l'avenir,</l>
+                        <l n="638">Oui, c'est là ce qui fait que j'ai failli mentir.</l>
+                        <l n="639">Mais je le dis encor, même étant accusée,</l>
+                        <l n="640">Je ne puis supporter de me voir méprisée.</l>
+                        <l n="641">Quand m'a-t-on jamais vue ou tromper ou trahir ?</l>
+                        <l n="642">Qu'on m'apprenne mon crime, avant de m'en punir.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="643">Vous venez à l'instant de l'avouer vous-même.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="644">Est-ce ma faute, à moi, si le duc dit qu'il m'aime ?</l>
+                        <l n="645">Si de tristes présents, à regret acceptés,</l>
+                        <l n="646" part="I">Ses discours importuns, son caprice...</l><!--@syll="9"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="646" part="F">Arrêtez.</l><!--@syll="3"-->
+                        <l n="647">Je ne saurais vouloir ni de vos confidences,</l>
+                        <l n="648">Ni certes, et moins encor, de vos impertinences.</l>
+                        <l n="649">Votre maîtresse est là ; pas un mot de ceci.</l>
+                        <l n="650">Mon fils dit qu'il vous aime, - éloignez-vous d'ici.</l>
+                        <l n="651">Puisque votre vertu se croit calomniée,</l>
+                        <l n="652">Vous la verrez sans peine ainsi justifiée.</l>
+                        <l n="653">Vous avez tant d'esprit ! trouvez quelque raison ;</l>
+                        <l n="654">Inventez un prétexte, et quittez la maison.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="655" part="I">Mais je ne l'aime pas, Madame !</l><!--@syll="8"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="655" part="F">Toi, Lisette !</l><!--@syll="4"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="656">Non, je l'écoute dire, et je reste muette.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="657">Je perdrais patience à voir ainsi mentir.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="658">Je perdrais patience à plus longtemps souffrir.</l>
+                        <l n="659">Ainsi vous me chassez ? Est-il vraiment possible</l>
+                        <l n="660">Qu'un franc aveu vous trouve à tel point insensible ?</l>
+                        <stage type="exit">La maréchale va pour sortir.</stage>
+                        <l n="661">Hé quoi ! Sans un regret ! Sans laisser à mes yeux</l>
+                        <l n="662">Ce regard qu'on accorde aux plus tristes adieux !</l>
+                        <l n="663">Et mon père, Madame ?... Est-ce donc bien sa fille,</l>
+                        <l n="664">Louison, l'honnête enfant d'une honnête famille,</l>
+                        <l n="665">Louison, qui, par votre ordre et contre son désir,</l>
+                        <l n="666">Est venue à Paris obéir et servir,</l>
+                        <l n="667">Et qu'on verra demain, seule et désespérée,</l>
+                        <l n="668">Sous notre pauvre toit rentrer déshonorée ?</l>
+                        <l n="669">Qu'ai-je fait ? votre fils, riche, aimé, tout-puissant,</l>
+                        <l n="670">Me marchande au hasard et m'achète en passant ;</l>
+                        <l n="671">Sûr qu'un peu d'or suffit, et qu'un mot fait qu'on aime,</l>
+                        <l n="672">Il s'écoute, il se plaît, et se répond lui-même.</l>
+                        <l n="673">Et moi, lorsque je parle à force de tourments,</l>
+                        <l n="674">Au lieu de m'écouter on me dit que je mens !</l>
+                        <l n="675">Soit ! - Il me souviendra d'avoir été sincère.</l>
+                        <l n="676">Justice des heureux et des grands de la terre !</l>
+                        <l n="677">Qu'importe un peu de mal, pourvu que dans un coin</l>
+                        <l n="678">La victime oubliée aille pleurer plus loin,</l>
+                        <l n="679">Et qu'en marchant sur nous, la vanité blasée</l>
+                        <l n="680">N'entende pas gémir la souffrance écrasée !</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="681">Ne te fais pas trop vite un chagrin sans raison.</l>
+                        <l n="682">Nous en reparlerons demain ; - bonsoir, Louison.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE, seule.</speaker>
+                        <l n="683">Demain ! Elle est partie. - Un accent de colère</l>
+                        <l n="684">N'a point accompagné sa parole dernière.</l>
+                        <l n="685">Peut-être elle me plaint, tout en me condamnant.</l>
+                        <l n="686">Mais que me reste-t-il ? que faire maintenant ?</l>
+                        <l n="687">Demain, a-t-elle dit. - Jamais ! c'est impossible.</l>
+                        <l n="688">Le mal est trop réel, le soupçon trop horrible.</l>
+                        <l n="689">Quand demain sa pitié voudrait me retenir,</l>
+                        <l n="690">Je suis de trop ici ; - mais comment en sortir ?</l>
+                    </sp><!--@stage="alone"--><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Lisette, La Duchesse, habillée en domino ouvert, un masque à la main.</head>
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="691">Ma mère n'est pas là ? Que fais-tu donc, Lisette ?</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="692">Je savais que Madame achevait sa toilette.</l>
+                        <l n="693">J'attendais, pour entrer, qu'on voulût bien de moi.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="694">Mais, ma chère, en effet, j'ai grand besoin de toi.</l>
+                        <l n="695">Tantôt j'étais souffrante, inquiète, et peut-être</l>
+                        <l n="696">J'ai laissé devant toi quelque souci paraître.</l>
+                        <l n="697">Un mot dit au hasard ne doit pas t'occuper ;</l>
+                        <l n="698">Tu me connais assez pour ne t'y pas tromper.</l>
+                        <l n="699">Voici ma main ; oublie un instant de caprice.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, baisant la main de la duchesse.</speaker>
+                        <l n="700" part="I">Ah ! Madame !</l><!--@syll="3"-->
+                    </sp><!--@stage="kiss"--><!--@who="LISETTE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="700" part="F">Il s'agit de me rendre un service.</l><!--@syll="9"-->
+                        <l n="701">Le duc est cette nuit au bal de l'Opéra.</l>
+                        <l n="702">Je voudrais bien un peu voir ce qu'il y fera ;</l>
+                        <l n="703">Mais je suis malgré moi si triste et si maussade</l>
+                        <l n="704">Que je n'ai pas le coeur à cette mascarade.</l>
+                        <l n="705">Maintenant que les gens me viennent avertir,</l>
+                        <l n="706">Le courage me manque au moment de partir.</l>
+                        <l n="707" part="I">Vas-y, Louison ; veux-tu ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="707" part="M">Moi, Madame ?</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="707" part="F">Oui, par grâce.</l><!--@syll="3"-->
+                        <l n="708">Prends ce domino-là, qui m'étouffe et me lasse.</l>
+                        <stage type="cive/costume">Elle lui donne son domino et son masque.</stage>
+                        <l n="709">Tâche d'entendre un peu, de beaucoup regarder.</l>
+                        <l n="710">Si tu vois le duc seul, tu pourras l'aborder,</l>
+                        <l n="711">L'intriguer au besoin, - sans qu'il te reconnaisse ;</l>
+                        <l n="712">Mais s'il est en conquête avec quelque déesse,</l>
+                        <l n="713">Du ciel de l'Opéra descendue un moment,</l>
+                        <l n="714">Tu me comprends, ma chère ? écoute seulement.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="715">Se peut-il qu'à ce point ce bal vous inquiète ?</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="716">Non, mais vas-y toujours. - Reviens bientôt, Lisette.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+</div><!--@stage="costume"-->
+<div type="scene" n="11">
+                    <head>SCÈNE XI.</head>
+<sp who="#lisette">
+                        <speaker>LISETTE, seule.</speaker>
+                        <l n="717">Le sort prend-il plaisir à se jouer de moi ?</l>
+                        <l n="718">Dois-je rester ? partir ? aller au bal ? pourquoi ?</l>
+                        <l n="719">- Et pourquoi pas ? - Peut-être aurais-je dû tout dire.</l>
+                        <l n="720">Comment briser le coeur, quand la main vous attire ?</l>
+                        <l n="721">Non, non, la maréchale est seule à m'accuser ;</l>
+                        <l n="722">C'est elle seule aussi qu'il faut désabuser,</l>
+                        <l n="723" part="I">Et jamais un seul mot...</l><!--@syll="6"-->
+                    </sp><!--@stage="alone"--><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Lisette, Berthaud.</head>
+<sp who="#berthaud">
+                        <speaker>BERTHAUD, d'un ton froid.</speaker>
+                        <l n="723" part="F">Bonjour, Mademoiselle.</l><!--@syll="6"-->
+                    </sp><!--@stage="cold"--><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="724">C'est encor toi, Lucas ? eh bien ! quelle nouvelle ?</l>
+                        <l n="725" part="I">Et qu'as-tu fait ?</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="725" part="F">Je viens prendre congé de vous.</l><!--@syll="6"-->
+                        <l n="726">Vous voyez un ami, mais non plus un époux.</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="727">Vraiment ? et d'où te vient ce visage tragique ?</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="728" part="I">Ne m'interrogez pas.</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="728" part="F">Quand on part, on s'explique.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="729" part="I">Ce n'est pas malaisé. - Je sais tout.</l><!--@syll="9"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="729" part="F">Que sais-tu ?</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="730" part="I">Vous l'osez demander ? - J'ai tout vu.</l><!--@syll="9"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="730" part="F">Qu'as-tu vu ?</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="731">Vos délits, vos horreurs, monstre affreux, crocodile,</l>
+                        <l n="732" part="I">Serpent Python !</l><!--@syll="4"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="732" part="F">Hé quoi ! Jusqu'à cet imbécile !</l><!--@syll="8"-->
+                        <l n="733">Tout est donc aujourd'hui contre moi déclaré ?</l>
+                        <l n="734">Ma foi, pour rire un peu, j'ai bien assez pleuré.</l>
+                        <stage type="laugh">Elle éclate de rire.</stage>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="735">Vous riez ? vous joignez l'astuce à l'artifice ?</l>
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, lui faisant tenir le domino.</speaker>
+                        <l n="736" part="I">Tiens, nigaud, prends ceci.</l><!--@syll="6"-->
+                    </sp><!--@stage="carry"--><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="736" part="F">Que je me travestisse ?</l><!--@syll="6"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="737">Hé ! non, c'est pour m'aider. Viens, marchons de ce pas.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="738" part="I">Où ?</l><!--@syll="1"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="738" part="M">Je te le dirai.</l><!--@syll="5"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="738" part="M">Comment ?</l><!--@syll="2"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="738" part="F">Tu le sauras.</l><!--@syll="4"-->
+                    </sp><!--@who="LISETTE"-->
+</div>
+<div type="scene" n="13">
+                    <head>SCÈNE XIII. La Duchesse, La Maréchale.</head>
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="739">Oui, Madame, je reste, et Louison prend ma place.</l>
+                        <l n="740">Le chagrin me poursuit, quelque effort que je fasse ;</l>
+                        <l n="741">Je lutte en vain, le coeur me manque à chaque pas.</l>
+                        <l n="742">Cette pauvre Louison, vous l'aimez, n'est-ce pas ?</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="743" part="I">Sans doute.</l><!--@syll="2"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="743" part="F">Ai-je mal fait de lui dire ma peine ?</l><!--@syll="10"-->
+                        <l n="744">Puisque j'en souffre tant, j'en veux être certaine.</l>
+                        <l n="745">J'étais bien aise aussi de réparer mes torts,</l>
+                        <l n="746">Car j'ai failli tantôt mettre Louison dehors.</l>
+                        <l n="747">Oui, je ne sais pourquoi, cette méchante envie</l>
+                        <l n="748">M'a durant tout le jour malgré moi poursuivie.</l>
+                        <l n="749">Je prenais du dépit contre elle à tout moment ;</l>
+                        <l n="750">Je l'ai même grondée, et bien injustement.</l>
+                        <l n="751">Qu'il est cruel à nous, n'est-il pas vrai, Madame,</l>
+                        <l n="752">De maltraiter ces gens, de les blesser dans l'âme,</l>
+                        <l n="753">Eux qui passent leur vie à nous servir ainsi,</l>
+                        <l n="754">Parce que nous avons un instant de souci !</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="755">Et Lisette, en partant, n'a rien dit, je suppose ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="756">Non. - Est-ce qu'elle avait à dire quelque chose ?</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="757">Elle aurait pu d'abord vous demander pardon.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="758">À moi ? de quelle faute, hélas ! et pourquoi donc ?</l>
+                        <l n="759">C'est à moi bien plutôt qu'il faut que l'on pardonne.</l>
+                        <l n="760">Dès qu'aux soupçons jaloux mon esprit s'abandonne,</l>
+                        <l n="761">On ne croirait jamais, Madame, à quel excès</l>
+                        <l n="762">Ils peuvent m'égarer si je leur donne accès.</l>
+                        <l n="763">Mille rêves affreux s'offrent à ma pensée ;</l>
+                        <l n="764">J'ai beau me répéter que je suis insensée,</l>
+                        <l n="765">Rien ne peut m'en distraire, ils sont plus forts que moi.</l>
+                        <l n="766">Ma raison me trahit et se change en effroi.</l>
+                        <l n="767">Comme d'un voile épais je suis enveloppée ;</l>
+                        <l n="768">Je me vois méconnue, et je me vois trompée,</l>
+                        <l n="769">Fâcheuse à mon époux, inutile ici-bas...</l>
+                        <l n="770" part="I">Je me vois laide.</l><!--@syll="4"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="770" part="F">Au vrai, l'on ne vous croirait pas.</l><!--@syll="8"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="771">Et lui, Madame, hélas ! c'est bien tout le contraire.</l>
+                        <l n="772">Le ciel a pris plaisir à le former pour plaire.</l>
+                        <l n="773">De son luxe élégant si l'oeil est ébloui,</l>
+                        <l n="774">On croit voir sa parure, et l'on ne voit que lui.</l>
+                        <l n="775">Et cet esprit si fin, tant de délicatesse,</l>
+                        <l n="776">Cette grâce qui semble ignorer sa noblesse !...</l>
+                        <l n="777">Est-ce que j'y vois mal, Madame, et, sur ce point,</l>
+                        <l n="778">Me direz-vous encor qu'on ne me croirait point ?</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="779">Je puis malaisément vous répondre, ma chère.</l>
+                        <l n="780" part="I">Si vous êtes sa femme...</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="780" part="M">Eh bien ?</l><!--@syll="2"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="780" part="F">Je suis sa mère.</l><!--@syll="4"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="781">Si nous n'étions que deux à le trouver charmant !</l>
+                        <l n="782">Mais tout le monde l'aime, et c'est là mon tourment.</l>
+                        <l n="783">Puis-je, le croyez-vous, garder un coeur tranquille,</l>
+                        <l n="784">À le voir comme il est, par la cour et la ville,</l>
+                        <l n="785">Au milieu d'un fracas de jeunes étourdis,</l>
+                        <l n="786">Au jeu comme à cheval passant les plus hardis,</l>
+                        <l n="787">Poursuivre, en se jouant, de regards infidèles,</l>
+                        <l n="788">Ces heureuses beautés qui savent être belles ?</l>
+                        <l n="789">Ah ! c'est là que je sens, à mon mortel ennui,</l>
+                        <l n="790">Combien je dois sembler peu de chose pour lui !</l>
+                        <l n="791">Combien de qualités ne me sont point données</l>
+                        <l n="792">Que peut-être à ma place une autre eût devinées,</l>
+                        <l n="793">Et combien il est vrai que, sur un tel chemin,</l>
+                        <l n="794">Il faudra tôt ou tard qu'il me quitte la main !</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="795">Je vous l'ai déjà dit, c'est une crainte folle.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="796">Oui, j'ai tort de pleurer, c'est ce qui me désole.</l>
+                        <l n="797">L'autre jour, par exemple, à ce bal chez le roi,</l>
+                        <l n="798">Madame_de_Versel a passé près de moi.</l>
+                        <l n="799">Vous savez ses grands airs, et combien elle est belle.</l>
+                        <l n="800">Un flot d'admirateurs murmurait autour d'elle,</l>
+                        <l n="801">S'écartant toutefois, de peur de la toucher,</l>
+                        <l n="802">Sitôt que par hasard elle daignait marcher.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="803">Oui, c'est une superbe et sotte créature.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="804">Un noeud qu'elle portait tomba de sa coiffure.</l>
+                        <l n="805">Ces messieurs l'ayant vu, je vous laisse à penser</l>
+                        <l n="806">Si chacun s'élança, prêt à le ramasser.</l>
+                        <l n="807">Le duc fut le plus prompt ; mais au lieu de le rendre,</l>
+                        <l n="808">Il défia tout haut qu'on s'en vînt le lui prendre.</l>
+                        <l n="809">Sur quoi cette marquise, au lieu de s'étonner,</l>
+                        <l n="810">Le prit en souriant, mais pour le lui donner.</l>
+                        <l n="811">Je sais bien là-dessus ce que vous m'allez dire,</l>
+                        <l n="812">Mais je me suis senti pâlir de ce sourire.</l>
+                        <l n="813">C'est un jeu, j'en conviens, c'est un propos de bal,</l>
+                        <l n="814">Tout ce qu'il vous plaira, mais cela fait bien mal.</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="815">Je ne vous blâme pas d'être un peu trop sensible.</l>
+                        <l n="816">Prenez quelque repos, enfant, s'il est possible.</l>
+                        <l n="817">Laissez là vos chagrins, et la dame aux grands airs.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="818">Grâce pour mes chagrins, Madame, ils me sont chers.</l>
+                        <l n="819">Au couvent, l'an passé, quand j'appris de l'abbesse</l>
+                        <l n="820">Que j'avais un époux et que j'étais duchesse,</l>
+                        <l n="821">Le coeur me battait bien un peu, mais pas bien fort.</l>
+                        <l n="822">On fit ce mariage, et je n'y vis d'abord</l>
+                        <l n="823">Qu'un jeune grand seigneur, plein de galanterie,</l>
+                        <l n="824">Qui me donnait gaiement son nom, son rang, sa vie.</l>
+                        <l n="825">Tous ces biens me semblaient si doux à partager</l>
+                        <l n="826">Que je ne pensais pas qu'un tel sort pût changer.</l>
+                        <l n="827">Si c'est là le bonheur, disais-je, il est bizarre</l>
+                        <l n="828">Qu'à le voir si facile on le trouve si rare.</l>
+                        <l n="829">Mais lorsqu'après un an de ce charmant sommeil,</l>
+                        <l n="830">Arriva par degrés le moment du réveil ;</l>
+                        <l n="831">Quand le duc, fatigué d'une paix importune,</l>
+                        <l n="832">Rougissant tout à coup d'oublier sa fortune,</l>
+                        <l n="833">Voulut, en m'entraînant, la rejoindre à grands pas,</l>
+                        <l n="834">Je compris que si loin je ne le suivrais pas.</l>
+                        <l n="835">Alors prenant pour moi son aspect véritable,</l>
+                        <l n="836">Apparut à mes yeux ce spectre redoutable,</l>
+                        <l n="837">Le monde... Ses plaisirs, ses attraits, ses dangers,</l>
+                        <l n="838">L'air enivrant des cours et leurs bruits passagers,</l>
+                        <l n="839">Il me fallut tout voir ; - alors la méfiance</l>
+                        <l n="840">M'enseigna lentement sa froide expérience.</l>
+                        <l n="841">Je vis le duc fêté, bienvenu près du roi,</l>
+                        <l n="842">Joyeux, heureux partout,... excepté près de moi.</l>
+                        <l n="843">Mon coeur, qui d'un soutien s'était fait l'habitude,</l>
+                        <l n="844">Pour la première fois connut la solitude.</l>
+                        <l n="845">Puis je devins jalouse, et je me dis un jour :</l>
+                        <l n="846">Ce n'est plus le bonheur que je sens, c'est l'amour !</l>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="847" part="I">Qu'est-ce à dire ?</l><!--@syll="3"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="847" part="F">Oui, l'amour ! - À l'âge où tout s'ignore,</l><!--@syll="9"-->
+                        <l n="848">En prononçant ce mot sans le comprendre encore,</l>
+                        <l n="849">On ne voit qu'un beau rêve, une douce amitié,</l>
+                        <l n="850">Où d'un commun trésor chacun a la moitié ;</l>
+                        <l n="851">On croit qu'aimer, enfin, c'est le bonheur suprême...</l>
+                        <l n="852">Non. Aimer, c'est douter d'un autre et de soi-même,</l>
+                        <l n="853">C'est se voir tour à tour dédaigner ou trahir,</l>
+                        <l n="854">Pleurer, veiller, attendre ;... avant tout, c'est souffrir !</l>
+                        <stage type="cry">Elle pleure.</stage>
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="855">Je ne vous blâme point, je vous l'ai dit, Lucile.</l>
+                        <l n="856">Vous voulez qu'on vous aime, et rien n'est plus facile.</l>
+                        <l n="857">Je vous en prie encor, prenez quelque repos.</l>
+                        <l n="858">Je veux, en vous quittant, vous répondre en deux mots.</l>
+                        <l n="859">Vous vous imaginez que le duc vous délaisse :</l>
+                        <l n="860">Votre tort, c'est la crainte, et le sien, sa jeunesse.</l>
+                        <l n="861">Mon fils est vain, léger, frivole en ses discours ;</l>
+                        <l n="862">Mais, s'il aime jamais, il aimera toujours ;</l>
+                        <l n="863">Et c'est vous, j'en réponds, qu'il aimera, ma chère.</l>
+                        <l n="864">Rappelez-vous ceci, que vous dit une mère.</l>
+                        <stage type="kiss">Elle l'embrasse.</stage>
+                        <l n="865">Marton est là, je crois, je vais vous l'envoyer.</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="866" part="I">Pas encore.</l><!--@syll="3"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="866" part="M">Adieu donc.</l><!--@syll="3"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+</div>
+<div type="scene" n="14">
+                    <head>SCÈNE XIV.</head>
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE, seule.</speaker>
+                        <l n="866" part="F">Rester seule à veiller !</l><!--@syll="6"-->
+                        <l n="867">C'est mon rôle à présent. - Ah ! je me sens brisée.</l>
+                        <stage type="sit">Elle s'assoit sur un sofa.</stage>
+                        <l n="868">Mon_Dieu, quel triste jour ! ma force est épuisée.</l>
+                        <l n="869">Louison ne revient pas ; - que font-ils à ce bal ?</l>
+                        <l n="870">Singulier passe-temps que ce plaisir banal !</l>
+                        <l n="871">Déguiser son visage et sa voix, - pour quoi faire ?</l>
+                        <l n="872">Si ce qu'on dit est mal, autant vaudrait le taire.</l>
+                        <l n="873">S'il en est autrement, à quoi bon s'en cacher ?</l>
+                        <l n="874">Mais quoi ! c'est l'Inconnu qu'ils vont tous y chercher.</l>
+                        <l n="875">Le sommeil, malgré moi, m'accable ; - ma pensée</l>
+                        <l n="876">M'échappe, puis revient, puis s'arrête lassée.</l>
+                        <l n="877" part="I">Voyons, tâchons de lire un peu.</l><!--@syll="8"-->
+                        <stage type="get/open/drop/furniture">Elle prend un livre, l'ouvre, puis le remet sur la table.</stage>
+                        <l n="877" part="F">C'est encor pis,</l><!--@syll="4"-->
+                        <l n="878">Un roman, juste ciel ! - mes yeux sont assoupis.</l>
+                        <l n="879" part="I">Quel ennui que l'attente !</l><!--@syll="6"-->
+                        <stage type="get">Elle tire sa montre.</stage>
+                        <l n="879" part="F">Hélas ! pauvre petite,</l><!--@syll="6"-->
+                        <l n="880">Je puis du bout du doigt te faire aller plus vite ;</l>
+                        <l n="881">Je puis briser aussi ton rouage léger ; </l>
+                        <l n="882">- Mais le temps ! - Toi ni moi n'y pouvons rien changer.</l>
+                        <stage type="sleep">Elle s'endort.</stage>
+                    </sp><!--@stage="alone"--><!--@who="LA DUCHESSE"-->
+</div>
+<div type="scene" n="15">
+                    <head>SCÈNE XV. La Duchesse, endormie, Le Duc.</head>
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="883">Non, l'on ne vit jamais pareille extravagante.</l>
+                        <l n="884">Se voir apostropher au bal par sa servante !</l>
+                        <l n="885">C'est un peu plus qu'étrange. Était-ce bien Louison ?</l>
+                        <l n="886">Il faut que cette fille ait perdu la raison.</l>
+                        <l n="887">Je lui donne ici même un rendez-vous fort tendre ;</l>
+                        <l n="888">La chose est convenue : elle n'a qu'à m'attendre ;</l>
+                        <l n="889">J'entre au bal par hasard, et qu'est-ce que je voi ?</l>
+                        <l n="890">Mon rendez-vous qui passe, et va souper sans moi.</l>
+                        <l n="891">Et ce monsieur Berthaud, son chapeau sur la tête,</l>
+                        <l n="892">D'un air victorieux promenant sa conquête,</l>
+                        <l n="893">Devant un poulet froid en train de se griser,</l>
+                        <l n="894">M'annonçant bravement qu'il la veut épouser !</l>
+                        <l n="895">J'ai fait là, sur mon âme, une belle trouvaille !</l>
+                        <l n="896">Morbleu ! si de mes jours jamais je m'encanaille,</l>
+                        <l n="897">Je consens... Qu'est-ce donc ? - Ma femme seule ici ?</l>
+                        <l n="898" part="I">Elle dort, sauvons-nous. - </l><!--@syll="6"-->
+                        <stage type="exit/stop">Il va pour sortir et s'arrête.</stage>
+                        <l n="898" part="F">Elle est gentille ainsi.</l><!--@syll="6"-->
+                        <l n="899">Que faisait-elle là ? - Dort-elle en conscience ?</l>
+                        <l n="900">Qui sait ? J'en veux un peu faire l'expérience.</l>
+                        <l n="901">Hé, duchesse ! - Elle dort et très profondément.</l>
+                        <l n="902">Je ne suis qu'un mari. - Si j'étais un amant !</l>
+                        <l n="903">En semblable rencontre on pourrait, sans mensonge,</l>
+                        <l n="904">Essayer, comme on dit, de passer pour un songe.</l>
+                        <l n="905">Je ne l'ai jamais vue ainsi ; - mais c'est charmant.</l>
+                        <l n="906">Qu'a-t-elle dans la main ? Sa montre ? Hé, oui vraiment.</l>
+                        <l n="907">Que fait-elle, en dormant, d'une chose pareille ?</l>
+                        <l n="908">On sait l'heure qu'il est, tout au plus, quand on veille.</l>
+                        <l n="909">A-t-elle donc veillé ce soir ? - par quel hasard ?</l>
+                        <stage type="watch">Il regarde à la montre de la duchesse.</stage>
+                        <l n="910">Une heure du matin ! - on prétend que c'est tard.</l>
+                        <l n="911">Veiller ! - Pourquoi veiller ? pour moi ? bon ! quelle idée !</l>
+                        <l n="912">Elle avait de ce bal la tête possédée ;</l>
+                        <l n="913">Son dessein n'était pas de rester à dormir, </l>
+                        <l n="914">- Mais peut-être était-il de me voir revenir ?</l>
+                        <l n="915">Oui ; pourquoi chercherais-je à me tromper moi-même ?</l>
+                        <l n="916">Si ma femme est jalouse, il faut donc qu'elle m'aime.</l>
+                        <l n="917">Je ne lui vis jamais faux-semblant ni détour.</l>
+                        <l n="918">C'est moi qu'elle attendait, c'est clair comme le jour.</l>
+                        <l n="919">Ma foi, je suis bien bon d'aller à l'aventure</l>
+                        <l n="920">Chercher, sous un sot masque, une sotte figure,</l>
+                        <l n="921">Pour rencontrer en somme, à ce triste Opéra,</l>
+                        <l n="922">Quoi ? rien de ce qu'on veut, et tout ce qu'on voudra !</l>
+                        <l n="923">Beau métier d'écouter, au bruit des ritournelles,</l>
+                        <l n="924">Trois morceaux de carton jasant sous leurs dentelles !</l>
+                        <l n="925">De me faire berner par Javotte ou Louison,</l>
+                        <l n="926">Quand la grâce et l'amour sont là, dans ma maison !</l>
+                        <l n="927">Faut-il que nous ayons la cervelle assez folle</l>
+                        <l n="928">Pour fuir ce qui nous plaît, nous charme et nous console,</l>
+                        <l n="929">Pour chercher le bonheur où son ombre n'est pas,</l>
+                        <l n="930">Et lui tourner le dos quand il nous tend les bras !</l>
+                        <l n="931">Pauvre duchesse, hélas ! si jeune et si jolie,</l>
+                        <l n="932">Avec sa patience et sa mélancolie,</l>
+                        <l n="933">Je devrais l'adorer ; mais non, je vais plutôt</l>
+                        <l n="934">Me faire obscurément le rival de Berthaud !</l>
+                        <l n="935">Quelle pitié, grand Dieu ! quelle pauvreté d'âme !</l>
+                        <l n="936">Il est de mauvais goût d'oser aimer sa femme.</l>
+                        <l n="937">Les bavards sont fâchés si l'on ne vit comme eux,</l>
+                        <l n="938">Et l'on est ridicule à vouloir être heureux !</l>
+                        <stage>En en moment, la duchesse s'éveille, puis écoute, en feignant de dormir.</stage>
+                        <l n="939">Hé quoi ! suis-je donc fait pour suivre leur méthode ?</l>
+                        <l n="940">Je puis mettre un chiffon, une veste à la mode,</l>
+                        <l n="941">Pour une broderie on se règle sur moi,</l>
+                        <l n="942">Et, dans mon propre coeur, les sots me font la loi !</l>
+                        <l n="943">Si je voulais pourtant, quoi qu'ils en puissent dire,</l>
+                        <l n="944">En leur montrant ce coeur, les défier d'en rire ?</l>
+                        <l n="945">Oui, l'on peut, quand on hait, cacher la vérité ;</l>
+                        <l n="946">Renier ce qu'on aime est une lâcheté.</l>
+                        <l n="947">Si j'osais les braver et m'en passer l'envie ?</l>
+                        <l n="948">Leur dire : Je suis las de votre sotte vie ;</l>
+                        <l n="949">J'ai, dans votre cohue, erré jusqu'à ce jour,</l>
+                        <l n="950">Mais la honte m'en chasse et me rend à l'amour !</l>
+                        <l n="951">Que me répondraient-ils, ces roués en peinture,</l>
+                        <l n="952">S'ils voyaient cette belle et noble créature</l>
+                        <l n="953">M'accompagner, et moi la couvrant en chemin</l>
+                        <l n="954">De mon manteau d'hermine, une épée à la main ?</l>
+                        <l n="955">Et si je leur disais : Cette fière duchesse,</l>
+                        <l n="956">C'est ma soeur, mon enfant, ma femme et ma maîtresse ;</l>
+                        <l n="957">Ma vie est dans son coeur, ma place est à ses pieds !</l>
+                        <stage type="kneel/entrance/location">Il se met à genoux ; la maréchale paraît dans le fond de la scène.</stage>
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="958" part="I">Dans mes bras, mon ami.</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="958" part="F">Comment ! vous m'écoutiez ?</l><!--@syll="6"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="959" part="I">Valait-il mieux dormir ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC, à la Maréchale.</speaker>
+                        <l n="959" part="F">Et vous aussi, ma mère ?</l><!--@syll="6"-->
+                        <l n="960" part="I">J'ai donc parlé bien haut ?</l><!--@syll="6"-->
+                    </sp><!--@stage="toward"--><!--@who="LE DUC"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="960" part="F">Valait-il mieux vous taire ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="961">Non. Je me croyais seul, et je rends grâce aux cieux</l>
+                        <l n="962">D'avoir eu pour témoins ce que j'aime le mieux.</l>
+                        <stage type="laugh/location">On entend rire dans la coulisse.</stage>
+                        <l n="963" part="I">Qu'est ceci ?</l><!--@syll="3"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="963" part="M">C'est Louison.</l><!--@syll="3"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="963" part="F">Que Dieu la tienne en joie !</l><!--@syll="6"-->
+                        <l n="964" part="I">Vous savez qu'elle part ?</l><!--@syll="6"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE.</speaker>
+                        <l n="964" part="F">Non pas. Qui la renvoie ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA DUCHESSE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="965">Elle-même. Elle vient, ce soir, à l'Opéra,</l>
+                        <l n="966">De tout me déclarer, jusqu'au mari qu'elle a.</l>
+                        <l n="967" part="I">Eh ! Tenez, les voici.</l><!--@syll="6"-->
+                    </sp><!--@who="LE DUC"-->
+</div>
+<div type="scene" n="16">
+                    <head>SCÈNE XVI. La Maréchale, La Duchesse, Le Duc, Louison,</head> Berthaud.
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="967" part="F">Que nous dit-on, Lisette ?</l><!--@syll="6"-->
+                        <l n="968">Vous voulez nous quitter sans qu'on vous le permette ?</l>
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="969">Je venais demander cette permission.</l>
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE.</speaker>
+                        <l n="970" part="I">Vous épousez... Monsieur ?</l><!--@syll="6"-->
+                    </sp><!--@who="LA MARÉCHALE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="970" part="F">C'est une passion.</l><!--@syll="6"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="971" part="I">Oh ! oui.</l><!--@syll="2"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="971" part="F">Non, Monseigneur, ce n'est qu'un honnête homme,</l><!--@syll="10"-->
+                        <l n="972" part="I">Fils d'un de vos fermiers.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD, à la duchesse.</speaker>
+                        <l n="972" part="F">Oui, Madame, on me nomme...</l><!--@syll="6"-->
+                    </sp><!--@stage="toward"--><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="973" part="I">Tais-toi.</l><!--@syll="2"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="973" part="F">Pour quoi donc faire ? On me parle.</l><!--@syll="8"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="973" part="F">Tais-toi.</l><!--@syll="2"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#la-duchesse">
+                        <speaker>LA DUCHESSE, à Lisette.</speaker>
+                        <l n="974" part="I">Il n'est pas beau, Louison.</l><!--@syll="6"-->
+                    </sp><!--@stage="toward"--><!--@who="LA DUCHESSE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, à la Duchesse.</speaker>
+                        <l n="974" part="F">Il l'est assez pour moi.</l><!--@syll="6"-->
+                    </sp><!--@stage="TOWARD"--><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="975">Parbleu ! Monsieur_Berthaud, vous ne vous gênez guères</l>
+                        <l n="976">De venir à Paris braconner sur nos terres,</l>
+                        <l n="977">Et nous ravir ainsi les coeurs en un moment.</l>
+                        <l n="978" part="I">Vous êtes un fripon.</l><!--@syll="6"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD, à Louison.</speaker>
+                        <l n="978" part="F">Ce seigneur est charmant.</l><!--@syll="6"-->
+                    </sp><!--@stage="toward"--><!--@who="BERTHAUD"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="979">Et votre poulet froid, sans compter la bouteille,</l>
+                        <l n="980" part="I">Vous en trouvez-vous bien ?</l><!--@syll="6"-->
+                    </sp><!--@who="LE DUC"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="980" part="F">Monseigneur, à merveille ;</l><!--@syll="6"-->
+                        <l n="981" part="I">Je...</l><!--@syll="1"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="981" part="M">Tais-toi donc.</l><!--@syll="3"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#berthaud">
+                        <speaker>BERTHAUD.</speaker>
+                        <l n="981" part="F">Encor ? Toujours se taire ici !</l><!--@syll="8"-->
+                        <l n="982" part="I">Je me rattraperai chez nous.</l><!--@syll="8"-->
+                    </sp><!--@who="BERTHAUD"-->
+<sp who="#lisette">
+                        <speaker>LISETTE, à la Maréchale.</speaker>
+                        <l n="982" part="F">Et vous aussi,</l><!--@syll="2"-->
+                        <l n="983">Madame, riez-vous de mon futur ménage ?</l>
+                    </sp><!--@stage="toward"--><!--@who="LISETTE"-->
+<sp who="#la-marechale">
+                        <speaker>LA MARÉCHALE, l'attirant à part.</speaker>
+                        <l n="984">Non, Louise, j'ai compris, et je vois ton courage.</l>
+                        <l n="985">Si j'ai peine, à présent, à te laisser partir,</l>
+                        <l n="986">Tu n'auras pas du moins lieu de t'en repentir.</l>
+                        <l n="987">Ta dot, bien entendu, me regarde, et j'espère</l>
+                        <l n="988">Rendre aussi ton retour agréable à ton père.</l>
+                        <l n="989" part="I">Quant à ton prétendu...</l><!--@syll="6"-->
+                    </sp><!--@stage="pull"--><!--@who="LA MARÉCHALE"-->
+<sp who="#lisette">
+                        <speaker>LISETTE.</speaker>
+                        <l n="989" part="F">Vous m'avez dit tantôt</l><!--@syll="6"-->
+                        <l n="990" part="I">De trouver un prétexte.</l><!--@syll="6"-->
+                    </sp><!--@who="LISETTE"-->
+<sp who="#le-duc">
+                        <speaker>LE DUC.</speaker>
+                        <l n="990" part="F">Allons, Monsieur_Berthaud,</l><!--@syll="6"-->
+                        <l n="991">Aimez bien votre femme ; elle est bonne et jolie.</l>
+                        <l n="992">C'est encore ici-bas la plus sage folie.</l>
+                    </sp><!--@who="LE DUC"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

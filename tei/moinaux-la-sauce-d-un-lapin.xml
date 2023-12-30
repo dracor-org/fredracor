@@ -1,0 +1,266 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001759" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Sauce d'un Lapin.</title>
+                <author>
+      <persName>
+        <forename>Jules</forename>
+        <surname>Moinaux</surname>
+      </persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000106548120</idno>
+    </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_SAUCEDUNLAPIN.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_SAUCEDUNLAPIN.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-narrateur" sex="MALE">
+                        <persName>Le Narrateur</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                    <person xml:id="madame-boutonnier" sex="FEMALE">
+                        <persName>Madame Boutonnier</persName>
+                    </person>
+                    <person xml:id="le-prevenu" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Le Prevenu</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LA SAUCE D'UN LAPIN.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="narrateur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#monsieur-boutonnier">MONSIEUR BOUTONNIER</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#madame-boutonnier">MADAME BOUTONNIER</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 287-291</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LA SAUCE D'UN LAPIN.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#le-narrateur">
+                        <speaker>LE NARRATEUR.</speaker>
+                        <p n="1">
+	<s n="1">Une dissertation sur les effets et les causes nous entraînerait bien loin ; _Scribe a fait, d'ailleurs, là-dessus la charmante comédie du Verre d'eau ; on pourrait peut-être faire un pendant intitulé le Lapin, mais ça ne pourrait guère aller au Théâtre-Français, et bien que, depuis l'Ami_Fritz, surnommé Fritz_Poulet, on soit sorti des pâtés de carton, on n'a pas encore mangé de lapin dans la maison_de_Molière.</s>
+</p>
+                        <p n="2">
+	<s n="">Donc, Boutonnier a gagné un lapin à une fête de banlieue, et cet homme doux, sobre, travailleur, de plus, tranquille, comme ce Baptiste complètement inconnu, bien qu'il ait donné lieu à un proverbe, Boutonnier, ce jour-là, s'est mis au niveau de « Mes_Bottes » et de « Bibi_la_Grillade » les héros de Monsieur_Zola ; il a stupéfait son portier par sa rentrée, nocturne, il a cassé de la vitrerie, crevé des casseroles ; battu sa femme et mis le voisinage sens dessus dessous.</s>
+</p>
+                        <p n="3">
+	<s n="1">Tout cela, parce que, le jour de la paie, il s'est laissé entraîner par des godailleurs à la fête en question, laissant sa femme à la maison et les enfants à leur mère, comme on laisse les roses aux rosiers. </s>
+	<s n="2">Le lapin gagné, on est allé le faire fricasser chez un marchand de vin. </s>
+	<s n="3">Toute la paie y passe... et la raison aussi, et voilà Boutonnier en police_correctionnelle. </s>
+	<s n="4">Mais il a gagné un lapin : aux petites causes les grands effets, comme nous disions en commençant, sans compter que l'homme au lapin n'est pas près d'obtenir son pardon de Madame_Boutonnier, habituée à porter la culotté, et pour cela, d'autant plus irritée contre son mari: « Il n'y a que le premier pas qui coûte. » dit-elle avec raison ; et le premier pas de Boutonnier dans la voie de l'inconduite lui ayant coûté trente-cinq_francs, on comprend que Madame_Boutonnier redoute les autres.</s>
+</p>
+                        <p n="4">
+	<s n="1">« Avec des manières comme ça, dit-elle au tribunal, une femme et des enfants sont appelés aux fonctions de mourir de faim. </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Messieurs, faudrait une loi contre les mauvaises coteries, les gouapeurs qui entraînent les hommes tranquilles de leur ménage ; mais il n'y en a pas, et une loi ne se fait pas toute seule comme le pot-au-feu : qu'on en fasse une ! »</s>
+</p>
+                    </sp><!--@who="LE NARRATEUR"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="5">
+	<s n="1">Il ne s'agit pas de tout cela, Madame ; dites ce dont vous vous plaignez.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-boutonnier">
+                        <speaker>MADAME BOUTONNIER.</speaker>
+                        <p n="6">
+	<s n="1">Comment, Monsieur, de quoi je me plains ? </s>
+	<s n="2">Un homme qui m'a levé la main dessus, et le pied ; cassé tout son intérieur, et que la robe dont j'étais investie est bonne à en faire des linges à barbe que c'est un n'haillon, et toute sa paie qu'il a mangée : trente-cinq_francs !</s>
+</p>
+                    </sp><!--@who="MADAME BOUTONNIER"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="7">
+	<s n="">Joséphine, j'en ai versé diverses larmes bien amères ; je ne demande rien que l'agrément de ton estime.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#madame-boutonnier">
+                        <speaker>MADAME BOUTONNIER. </speaker>
+                        <p n="8">
+	<s n="1">Taisez-vous, homme monstrueux ! </s>
+	<s n="2">Enfin, messieurs, qu'il était si tellement extraordinaire de fureur, que j'ai sorti de ses yeux, vu qu'il m'aurait radicalement extirpé par la fenêtre.</s>
+</p>
+                    </sp><!--@who="MADAME BOUTONNIER"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="9">
+	<s n="1">En voilà assez, taisez-vous !</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-boutonnier">
+                        <speaker>MADAME BOUTONNIER. </speaker>
+                        <p n="10">
+	<s n="1">Comment ! </s>
+	<s n="2">Que je me taise ?</s>
+</p>
+                    </sp><!--@who="MADAME BOUTONNIER"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="11">
+	<s n="">Tiens-toi donc mobile, puisque Monsieur te le dit ; tu fais un tapage insignifiant.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#madame-boutonnier">
+                        <speaker>MADAME BOUTONNIER. </speaker>
+                        <p n="12">
+	<s n="1">Un homme qui s'est mis dans un état d'ivre-mort, qu'il est resté plongé pendant huit heures dans une insomnie qu'on ne pouvait pas l'en extraire, et que, quand il est venu se coucher à côté de moi, qu'il jouissait d'un sommeil agité en m'envoyant des grandissimes coups de pied que j'aurais mieux aimé coucher avec un cheval.</s>
+</p>
+                    </sp><!--@who="MADAME BOUTONNIER"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="13">
+	<s n="1">Voyons, allez vous asseoir.</s>
+</p>
+                        <stage type="toward">Au prévenu.</stage>
+                        <p n="14">
+	<s n="1">Qu'avez-vous à dire ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="15">
+	<s n="1">Mon président, mon opinion est que je ne me rappelle de rien du tout que du lapin.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#madame-boutonnier">
+                        <speaker>MADAME BOUTONNIER. </speaker>
+                        <p n="16">
+	<s n="1">Oui, un lapin qui t'a coûté...</s>
+</p>
+                    </sp><!--@who="MADAME BOUTONNIER"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="17">
+	<s n="1">Voulez-vous vous taire !</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>LE PRÉVENU.</speaker>
+                        <p n="18">
+	<s n="1">Que tu es ennuyeuse, Joséphine, par les interruptions que tu nous procures ; que même t'as un fichu caractère, et que t'aurais affaire à un autre homme qu'il te changerait contre un quarteron de tabac.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="19">
+	<s n="1">Asseyez-vous.</s>
+</p>
+                        <stage type="explicit">Le tribunal délibère.</stage>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>BOUTONNIER.</speaker>
+                        <p n="20">
+	<s n="1">Joséphine, demande ma grâce.</s>
+</p>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#madame-boutonnier">
+                        <speaker>MADAME BOUTONNIER.</speaker>
+                        <p n="21">
+	<s n="1">Je te méprise, voilà ce que tu es, t'as besoin d'une leçon ; la prison n'est pas faite pour les dromadaires.</s>
+</p>
+                    </sp><!--@who="MADAME BOUTONNIER"-->
+<sp who="#le-prevenu">
+                        <speaker>BOUTONNIER, au tribunal.</speaker>
+                        <p n="22">
+	<s n="1">Je demande à dire un mot.</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="LE PRÉVENU"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="23">
+	<s n="1">Quel mot ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-prevenu">
+                        <speaker>BOUTONNIER.</speaker>
+                        <p n="24">
+	<s n="1">Le mot que je suis prêt à signer que ça ne m'arrivera plus, si on veut me donner tous les matériaux pour écrire, et que si ma femme veut me pardonner, nous ne parlerons jamais de ça à qui que ce suit dans la nature humaine.</s>
+</p>
+                        <stage type="explicit">Le tribunal condamne Boutonnier à quarante-huit_heures de prison.</stage>
+                    </sp><!--@who="LE PRÉVENU"-->
+<sp who="#madame-boutonnier">
+                        <speaker>MADAME BOUTONNIER. </speaker>
+                        <p n="25">
+	<s n="1">Je n'en demande pas plus ; mais que si tu recommences, il y aura quarante-deux_lieues entre toi et moi, toujours en montant.</s>
+</p>
+                    </sp><!--@who="MADAME BOUTONNIER"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

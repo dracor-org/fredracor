@@ -1,0 +1,216 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001747" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Les Gueuletons d'une Débitrice.</title>
+                <author>
+      <persName>
+        <forename>Jules</forename>
+        <surname>Moinaux</surname>
+      </persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000106548120</idno>
+    </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_GUEULETONSDUNEDEBITRICE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_GUEULETONSDUNEDEBITRICE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-narrateur" sex="MALE">
+                        <persName>Le Narrateur</persName>
+                    </person>
+                    <person xml:id="la-blanchisseuse" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>La Blanchisseuse</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                    <person xml:id="la-prevenue" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>La Prevenue</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LES GUEULETONS D'UNE DÉBITRICE.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="narrateur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#madame-gousselon">MADAME GOUSSELON</role><!--@sex="2"--><!--@type="H"--><!--@statut="portier"--><!--@age="A"--><!--@stat_amour="néant"-->, portière et prévenue.</castItem>
+			<castItem>
+                    <role corresp="#le-plaignante">LE PLAIGNANTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="blanchisseuse"--><!--@age="A"--><!--@stat_amour="néant"-->, créancière et blanchisseuse.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 359-362</note>
+</front>3
+<body>
+<div type="acte" n="1">
+                <head>LES GUEULETONS D'UNE DÉBITRICE.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#le-narrateur">
+                        <speaker>LE NARRATEUR.</speaker>
+                        <note type="C">Monsieur Dimanche: personnage d'un créancier de Molière dans Don Juan.</note>
+                        <p n="1">
+	<s n="1">Qu'un créancier ne reçoive pas son dû et se retire pacifiquement devant les habiles paroles de son débiteur, rien de plus naturel ; mais qu'au lieu de son argent il reçoive des injures et des coups, c'est ce que Monsieur_Dimanche lui-même n'aurait pas toléré.</s>
+</p>
+                        <p n="2">
+	<s n="1">Madame_Gousselon, portière, commence, il est vrai, par donner des explications et ne recourt aux moyens violents qu'à la dernière extrémité ; mais enfin, les extrémités arrivant, la mauvaise débitrice gâte tout à fait ses affaires.</s>
+</p>
+                        <p n="3">
+	<s n="1">Madame_Gousselon est, paraît-il, criblée de dettes criardes. Aux fournisseurs qui viennent chaque jour la relancer, elle répond que la misère est grande, que les locataires sont tous des pingres qui se chauffent au gaz pour ne pas donner la bûche au portier, qui se refusent à payer l'amende quand ils rentrent après minuit, et qui lésinent de plus en plus sur les étrennes.</s>
+</p>
+                        <p n="4">
+	<s n="1">À sa blanchisseuse aussi, elle donne ces raisons ; mais comme elle lui donne aussi son linge, la blanchisseuse voit sur les serviettes des traces qui trahissent des habitudes de ripaille. </s>
+	<s n="2">Or, au reproche par elle adressé à Madame_Gousselon, relativement à ces habitudes, la concierge a répondu comme les généraux de la garde, qui aiment mieux mourir que de se rendre. </s>
+	<s n="4">De là une avanie des voies de fait et un procès_correctionnel dans lequel Madame_Gousselon est prévenue. </s>
+	<s n="5">« C'est tout de même un peu drôle, dit-elle à la plaignante, qu'à présent on vienne fourrer le nez dans la subsistance du monde. </s>
+	<s n="6">D'ailleurs, m'en avez-vous vu manger de l'oie ? »</s>
+</p>
+                    </sp><!--@who="LE NARRATEUR"-->
+<sp who="#la-blanchisseuse">
+                        <speaker>LA PLAIGNANTE.</speaker>
+                        <p n="5">
+	<s n="1">Avec ça que vous venez me chercher ces jours-là ! </s>
+	<s n="2">Monsieur le juge, je viens me plaindre de la brutalité de Madame, que, d'abord, je ne sais pas dans quelle écurie elle a été élevée.</s>
+</p>
+                    </sp><!--@who="LA BLANCHISSEUSE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="6">
+	<s n="1">Épargnez-vous les réflexions ; la prévenue vous a frappée ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-blanchisseuse">
+                        <speaker>LA BLANCHISSEUSE.</speaker>
+                        <note type="C">Castrolle : casserolle.</note>
+                        <p n="7">
+	<s n="1">Oui, monsieur le juge, d'un coup de castrolle qu'elle avait à la main, et ça parce que je lui disais : « Madame, quand on doit des mille et des cent à sa blanchisseuse...».</s>
+</p>
+                    </sp><!--@who="LA BLANCHISSEUSE"-->
+<sp who="#la-prevenue">
+                        <speaker>LA PRÉVENUE.</speaker>
+                        <p n="8">
+	<s n="1">Oh ! </s>
+	<s n="2">Sept_francs_seize_sous. </s>
+</p>
+                    </sp><!--@who="LA PRÉVENUE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="9">
+	<s n="1">N'interrompez pas.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-blanchisseuse">
+                        <speaker>LA BLANCHISSEUSE.</speaker>
+                        <p n="10">
+	<s n="1">Que je lui dis : « On ne se gave pas tous les jours que Dieu fait, de volailles, comme vous en abusez, au vu et connu de toute la maison et des voisins, au point que vos serviettes sont pleines de graisse. »</s>
+</p>
+                    </sp><!--@who="LA BLANCHISSEUSE"-->
+<sp who="#la-prevenue">
+                        <speaker>LA PRÉVENUE.</speaker>
+                        <p n="11">
+	<s n="1">Faudrait peut-être manger des queues_de_lapin.</s>
+</p>
+                    </sp><!--@who="LA PRÉVENUE"-->
+<sp who="#la-blanchisseuse">
+                        <speaker>LA BLANCHISSEUSE.</speaker>
+                        <p n="12">
+	<s n="1">La chose n'est pas à mon égard que vous mangiez ce que vous voudrez. Si ça vous fait plaisir, mangez de l'oie, du dindon, du rhinocéros, du veau_marin, vous pouvez vous en bourrer, ça m'est égal, pourvu que vous me payiez. </s>
+	<s n="2">Quand on a plus de dettes, criantes sur la tête qu'on n'a des cheveux dans le dos... non... je veux dire... au contraire... ça ne fait rien, on ne se fourre pas des oies à chaque instant, que vous êtes connue pour votre bec fin.</s>
+</p>
+                    </sp><!--@who="LA BLANCHISSEUSE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="13">
+	<s n="1">Voyons, femme_Gousselon, reconnaissez-vous avoir frappé la plaignante ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-prevenue">
+                        <speaker>LA PRÉVENUE.</speaker>
+                        <p n="14">
+	<s n="1">Je suis incapable de mentir ; d'ailleurs il y avait plus de cinquante personnes à la porte. </s>
+	<s n="2">Je ne le renie pas, mais, Seigneur ! </s>
+	<s n="3">Si vous aviez vu la scène que madame m'a faite !</s>
+</p>
+                    </sp><!--@who="LA PRÉVENUE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="15">
+	<s n="1">Enfin, vous convenez du fait, c'est bien ; taisez-vous.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-prevenue">
+                        <speaker>LA PRÉVENUE.</speaker>
+                        <p n="16">
+	<s n="1">Qu'on me condamne, j'irai dans les bois manger des glands, des marrons d'Inde, des champignons venimeux pour faire plaisir à madame.</s>
+</p>
+                        <stage type="explicit">Le tribunal condamne l'épicurienne portière à huit jours de prison et seize francs d'amende. Et voilà comment l'oie, qui a sauvé Rome, a perdu une portière. Il est vrai qu'ici il s'agit de la graisse.</stage>
+                    </sp><!--@who="LA PRÉVENUE"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

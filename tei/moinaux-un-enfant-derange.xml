@@ -1,0 +1,341 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001740" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Un Enfant Dérangé.</title>
+                <author>
+      <persName>
+        <forename>Jules</forename>
+        <surname>Moinaux</surname>
+      </persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000106548120</idno>
+    </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_ENFANTDERANGE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_ENFANTDERANGE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-narrateur" sex="MALE">
+                        <persName>Le Narrateur</persName>
+                    </person>
+                    <person xml:id="adolphe" sex="MALE">
+                        <persName>Adolphe</persName>
+                    </person>
+                    <person xml:id="la-mere-brechot" sex="FEMALE">
+                        <persName>La Mère Bréchot</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                    <person xml:id="le-temoin" sex="MALE">
+                        <persName>Le Témoin</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">UN ENFANT DÉRANGÉ.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="narrateur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#adolphe">ADOLPHE</role><!--@sex="1"--><!--@type="H"--><!--@statut="artisan"--><!--@age="J"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#la-mere-brechot">LA MÈRE BRÉCHOT</role><!--@sex="2"--><!--@type="H"--><!--@statut="artisan"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-temoin">LE TÉMOIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 269-273</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>UN ENFANT DÉRANGÉ.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#le-narrateur">
+                        <speaker>LE NARRATEUR.</speaker>
+                        <p n="1">
+	<s n="1">Si la manne dont les Hébreux se nourrirent dans le désert eût été semblable à celle qui est aujourd'hui l'une des branches importantes du commerce de droguerie, les malheureux auraient inauguré singulièrement leur entrée sur la terre, de Chanaan, à en juger par le jeune Bréchot, qui a fait usage de cette substance pendant une quinzaine de jours seulement.</s>
+</p>
+                        <p n="2">
+	<s n="1">Un droguiste, entendu, déclare que dans cet espace de temps Bréchot lui a volé au moins 12_livres de manne, dans des tonnes placées sous un hangar, au fond de la cour de sa maison, laquelle a pour locataires Madame_Bréchot et son fils Adolphe.</s>
+</p>
+                        <p n="3">
+	<s n="1">La brave dame, naturellement, vient demander au tribunal, de lui rendre son héritier : Voyez-vous, messieurs, dit-elle, c'est un garçon plein de bonnes qualités, gentil comme tout, mais d'une gourmandise qui lui fera bien du tort quand il sera à son à-part. </s>
+	<s n="2">Je lui dis ça sans détours, devant vous, pour à seule fin que vous le voyiez rougir.</s>
+</p>
+                        <stage type="cry">Adolphe fond en larmes.</stage>
+                        <p n="4">
+	<s n="1">Ah ! </s>
+	<s n="2">Quand tu pleureras, c'est pas ça qui rendra la manne au Monsieur, que tu lui as volée, gouliaffre ! </s>
+	<s n="3">Sans coeur ! </s>
+	<s n="4">En voilà-ti pourtant un joli régal, de manger les purgations du monde !</s>
+</p>
+                        <stage type="strong">Avec sévérité :</stage>
+                        <p n="5">
+	<s n="1">Quand on veut manger des purgations ou autre chose, on en achète, Monsieur !</s>
+</p>
+                        <stage type="laugh">Rires dans l'auditoire.</stage>
+                    </sp><!--@who="LE NARRATEUR"-->
+<sp who="#adolphe">
+                        <speaker>ADOLPHE, sanglotant.</speaker>
+                        <p n="6">
+	<s n="1">J'avais pas.... aaas.... d'argent.</s>
+</p>
+                    </sp><!--@stage="cry"--><!--@who="ADOLPHE"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT. </speaker>
+                        <p n="7">
+	<s n="1">T'as les 40_sous que ton oncle t'a donnés ; c'est la vérité que je te les aurais pas laissé prendre pour acheter de la manne ; mais si j'aurais su que tu aurais voulu en voler, j'aurais encore mieux préféré que tu en dépenses là dedans que de me couvrir de déshonneur, ainsi que ton oncle et ton parrain.</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT. </speaker>
+                        <p n="8">
+	<s n="1">Nous allons entendre le témoin, allez vous asseoir.</s>
+</p>
+                        <stage type="closer">Le témoin s'avance.</stage>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="9">
+	<s n="1">Aussi c'est bien imprudent à un homme instruit comme Monsieur, qui est droguiste, de laisser des friandises dans une cour.</s>
+</p>
+                        <stage type="laugh">Rires.</stage>
+                        <p n="10">
+	<s n="1">À même un tonneau défoncé, à la portée des enfants.</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="11">
+	<s n="1">Allez vous asseoir, Madame.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#le-temoin">
+                        <speaker>LE TÉMOIN.</speaker>
+                        <p n="12">
+	<s n="1">De la manne, vous appelez cela des friandises ? </s>
+	<s n="2">Est-ce que je pouvais supposer...</s>
+</p>
+                    </sp><!--@who="LE TÉMOIN"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="13">
+	<s n="">Levez la main.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT, revenant.</speaker>
+                        <p n="14">
+	<s n="1">Chacun son goût ; le goût de c't'enfant-là c'est d'aimer tout...</s>
+</p>
+                    </sp><!--@stage="back"--><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="15">
+	<s n="">Allez vous asseoir.</s>
+</p>
+                        <stage type="explicit">Le témoin dépose du fait que l'on sait.</stage>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="16">
+	<s n="1">Demandez à Monsieur si je l'ai payé.</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#le-temoin">
+                        <speaker>LE TÉMOIN.</speaker>
+                        <p n="17">
+	<s n="1">En effet, Madame m'a indemnisé.</s>
+</p>
+                    </sp><!--@who="LE TÉMOIN"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="18">
+	<s n="1">Enfin, Madame_Bréchot, vous réclamez votre fils et vous vous engagez à le surveiller ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="19">
+	<s n="1">Ah ! </s>
+	<s n="2">Seigneur, les jours, les nuits, je ne ferai que ça.</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="20">
+	<s n="1">Il est en apprentissage ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="21">
+	<s n="1">Oh ! </s>
+	<s n="2">Je crois bien ; il travaille avec moi.</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="22">
+	<s n="1">Avec vous ? </s>
+	<s n="2">De quelle profession ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="23">
+	<s n="1">Dans les visières.</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="24">
+	<s n="1">Dans quoi ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="25">
+	<s n="1">Les visières de casquettes.</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="26">
+	<s n="1">Est-il travailleur ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="27">
+	<s n="1">Oh ! </s>
+	<s n="2">Comme un petit cheval. </s>
+	<s n="3">Cependant ça m'étonnait tant de le voir quitter à chaque instant son travail, des dix ou douze fois par jour, que je me disais : « Est-ce qu'il se dérangerait ? »</s>
+</p>
+                        <stage type="laugh">Rires.</stage>
+                        <p n="28">
+	<s n="1">Et une figure fatiguée !... </s>
+	<s n="2">Je ne me doutais pas de ce que c'était.</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="29">
+	<s n="1">Enfin le tribunal va vous le rendre ; mais surveillez-le mieux.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="30">
+	<s n="1">Je vous dis : c'est un enfant qui n'a qu'un défaut, qu'il ne faut rien lui laisser sous la main de ce qui se mange.</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="31">
+	<s n="1">C'est entendu.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="32">
+	<s n="1">Si je vous disais que quand je suis malade, il m'avale mes...</s>
+</p>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="33">
+	<s n="1">Mais, Madame, taisez-vous donc !</s>
+</p>
+                        <stage type="explicit">Le tribunal délibère.</stage>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT.</speaker>
+                        <p n="34">
+	<s n="1">Mes médecines ; il mange le mou du chat, le colifichet du serin, les carottes crues...</s>
+</p>
+                        <stage type="explicit">Le tribunal ordonne que le jeune Bréchot sera rendu à sa mère.</stage>
+                    </sp><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#la-mere-brechot">
+                        <speaker>LA MÈRE BRÉCHOT, les mains jointes.</speaker>
+                        <p n="35">
+	<s n="1">Grâce ! </s>
+	<s n="2">Messieurs, grâce !</s>
+</p>
+                    </sp><!--@stage="pray"--><!--@who="LA MÈRE BRÉCHOT"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="36">
+	<s n="1">Mais votre fils est acquitté, Madame ; retirez-vous et allez le chercher demain matin.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

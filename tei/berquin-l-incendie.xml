@@ -1,0 +1,1651 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001603" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">L'Incendie</title>
+                <author>
+      <persName>
+        <forename>Arnaud</forename>
+        <surname>Berquin</surname>
+      </persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000121450471</idno>
+    </author><!--Arnaud BERQUIN (1747-1791)-->
+                <editor>Paul Fièvre octobre 2021</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/BERQUIN_INCENDIE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/BERQUIN_INCENDIE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5619184j</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="adrien" sex="MALE">
+                        <persName>Adrien</persName>
+                    </person>
+                    <person xml:id="lubin" sex="MALE">
+                        <persName>Lubin</persName>
+                    </person>
+                    <person xml:id="jeanne" sex="FEMALE">
+                        <persName>Jeanne</persName>
+                    </person>
+                    <person xml:id="suzette" sex="FEMALE">
+                        <persName>Suzette</persName>
+                    </person>
+                    <person xml:id="thomas" sex="MALE">
+                        <persName>Thomas</persName>
+                    </person>
+                    <person xml:id="godefroi" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Godefroi</persName>
+                    </person>
+                    <person xml:id="monsieur-de-cressac" sex="MALE">
+                        <persName>Monsieur de Cressac</persName>
+                    </person>
+                    <person xml:id="madame-de-cressac" sex="FEMALE">
+                        <persName>Madame de Cressac</persName>
+                    </person>
+                    <person xml:id="julie" sex="FEMALE">
+                        <persName>Julie</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1873">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">L'INCENDIE</titlePart>
+		</docTitle> 
+		<docDate when="1873">1873. TOUS DROITS RÉSERVÉS.</docDate>
+		<docAuthor>tirés de BERQUIN</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="HACHETTE">PARIS LIBRAIRIE DE L. HACHETTE ET Cie, rue Pierre Sarrazin, n°14.</editor>-->
+			<div type="printer">
+                    <p>PARIS. - TYPOGRAPHIE DE CH. LAHURE ET Cie, rue des Flaurs, 9 et de l'Ouest 21.</p>
+                </div><!--@id="LAHURE"-->
+		</div>
+	<castList>
+                <head>PERSONNAGES.</head>
+		<castItem>
+                    <role corresp="#monsieur-de-cressac">MONSIEUR DE CRESSAC</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#madame-de-cressac">MADAME DE CRESSAC</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#adrien">ADRIEN</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, leur enfant.</castItem>
+		<castItem>
+                    <role corresp="#julie">JULIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->, leur enfant.</castItem>
+		<castItem>
+                    <role corresp="#thomas">THOMAS</role><!--@sex="1"--><!--@type="H"--><!--@statut="fermier"--><!--@age="A"--><!--@stat_amour="néant"-->, riche fermier.</castItem>
+		<castItem>
+                    <role corresp="#jeanne">JEANNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="fermier"--><!--@age="A"--><!--@stat_amour="néant"-->, sa femme.</castItem>
+		<castItem>
+                    <role corresp="#suzette">SUZETTE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, leur enfant.</castItem>
+		<castItem>
+                    <role corresp="#lubin">LUBIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, leur enfant.</castItem>
+		<castItem>
+                    <role corresp="#godefroy">GODEFROY</role><!--@sex="1"--><!--@type="H"--><!--@statut="palefrenier"--><!--@age="A"--><!--@stat_amour="néant"-->, palefrenier de Monsieur de Cressac.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Campagne" country="France" periode="XVIIIème" gps="">La scène est tour à tour dans un appartement du château, sur la terrasse du jardin, et dans une forêt contiguë.</set>-->
+	<note>Texte extrait de "Choix de petits drames et de contes tirés de Berquin, illustrée de 36 vignettes" par Foulquié et Forest, Paris, Librairie de L. Hachette et Cie, 1861. pp 141-167.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>L'INCENDIE</head>
+<stage type="decor">La scène est à l'entrée d'un village. Le théâtre représente, dans l'enfoncement, une forêt à travers laquelle on voit s'élever par intervalles, dans le lointain, des tourbillons, de flammes. Sur l'un des côtés du théâtre est une ferme, et tout auprès une fontaine ; de l'autre côté est une colline au pied de laquelle tourne le chemin du village.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#adrien">
+                        <speaker>ADRIEN, arrive en courant sur la scène par le détour de la colline. Ses vêtements et sa chevelure sont en désordre. Il jette les yeux sur le fond du théâtre, que la colline masquait à sa vue. L'incendie éclate en ce moment dans toute sa fureur.</speaker>
+                        <p n="1">
+	<s n="1">Bon Dieu ! </s>
+	<s n="2">Bon Dieu ! </s>
+	<s n="3">Tout brûle encore ! </s>
+	<s n="4">Quels gros tourbillons de fumée et de flammes ! </s>
+	<s n="5">Ô mon papa ! </s>
+	<s n="6">Maman ! </s>
+	<s n="7">Ma petite soeur Julie, qu'êtes-vous devenus ! </s>
+	<s n="8">Ne suis-je plus qu'un malheureux orphelin ? </s>
+	<s n="9">Seigneur, mon_Dieu, prends pitié de moi ! </s>
+	<s n="10">Tu m'as déjà tout enlevé ; laisse-moi mes parents. </s>
+	<s n="11">Ils sont pour moi plus que tout au monde.</s>
+</p>
+                    </sp><!--@stage="entrance/run"--><!--@who="ADRIEN"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="2">
+	<s n="1">Que deviendrais-je sans eux ? </s>
+</p>
+                        <stage type="tired/pain/open/entrance/carry">Accablé de fatigue et de douleur, il pose sa main contre un arbre et appuie sa tête dessus. Au même instant la ferme s'ouvre, et il en sort un petit paysan, tenant à la main son déjeuner.</stage>
+                    </sp><!--@who="ADRIEN"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Adrien, Lubin, petit paysan.</head>
+<sp who="#lubin">
+                        <speaker>LUBIN, sans voir Adrien. </speaker>
+                        <p n="1">
+	<s n="1">Il ne finit donc pas, ce feu d'enfer ? </s>
+	<s n="2">À quoi pensait mon père, d'aller s'enfourner là-dedans avec ses chevaux ? </s>
+	<s n="3">Mais voici le jour. </s>
+	<s n="4">Il ne tardera pas à revenir. </s>
+	<s n="5">Je vais m'asseoir ici pour l'attendre.</s>
+</p>
+                        <stage type="closer/watch">Il marche vers l'arbre, et voit Adrien.</stage>
+                        <p n="2">
+	<s n="1">Eh ! </s>
+	<s n="2">Mon petit joli monsieur, que venez-vous faire de si bonne heure dans le village ?</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="LUBIN"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="3">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon ami, je ne sais ni où je suis ni où je vais.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="4">
+	<s n="1">Comment ? </s>
+	<s n="2">Est-ce que vous seriez de la ville qui brûle ?</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="5">
+	<s n="1">Hélas ! </s>
+	<s n="2">Oui. </s>
+	<s n="3">Je me suis échappé du milieu des flammes.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="6">
+	<s n="1">Le feu a-t-il déjà pris à votre maison ?</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="7">
+	<s n="1">C'est dans notre rue qu'il a commencé. </s>
+	<s n="2">J'étais au lit, et je dormais tranquillement. </s>
+	<s n="3">Mon papa est venu m'en arracher. </s>
+	<s n="4">On m'a habillé a la hâte, et on m'a emporté à travers les charbons de feu qui pleuvaient sur nous.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#lubin">
+                        <speaker>LUBIN, avec un cri de frayeur. </speaker>
+                        <p n="8">
+	<s n="1">Ô mon_Dieu !</s>
+</p>
+                        <stage type="shout">On entend une voix qui crie de l'intérieur de la ferme : « Lubin ! Lubin ! » Lubin, tout troublé, n'entend pas.</stage>
+                    </sp><!--@stage="frighten/shout"--><!--@who="LUBIN"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Jeanne, Suzette, Adrien, Lubin.</head>
+<sp who="#jeanne">
+                        <speaker>JEANNE, en entrant, à Suzette. </speaker>
+                        <p n="1">
+	<s n="1">Je crains que le drôle ne m'ait échappé pour courir au feu. </s>
+	<s n="2">N'ai-je donc pas assez de trembler pour son père ?</s>
+</p>
+                    </sp><!--@stage="entrance/toward"--><!--@who="JEANNE"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="2">
+	<s n="1">Non, ma mère, le voici. </s>
+	<s n="2">Ha ! ha ! </s>
+	<s n="3">Il parle à un petit monsieur.</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE, à Lubin. </speaker>
+                        <p n="3">
+	<s n="1">Pourquoi ne pas me répondre ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="JEANNE"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="4">
+	<s n="1">Je ne vous ai pas entendue. </s>
+	<s n="2">Je n'entendais que ce malheureux enfant. </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Ma mère, il vous aurait donné le frisson comme à moi.</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="5">
+	<s n="1">Que lui est-il donc arrivé ?</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="6">
+	<s n="1">D'être, peu s'en faut, brûlé vif. </s>
+	<s n="2">Sa maison était tout en feu lorsqu'il s'en est échappé.</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="7">
+	<s n="1">Dieu de bonté ! </s>
+	<s n="2">Comme le voilà pâle ! </s>
+	<s n="3">Vous êtes si petit ! </s>
+	<s n="4">Comment avez-vous donc fait pour vous sauver ?</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="8">
+	<s n="1">Notre palefrenier m'a pris sur ses épaules, et mon papa lui a dit de m'emporter dans un village où j'ai été nourri ; mais on l'a arrêté dans la rue pour le faire travailler. Je pleurais de me voir tout seul. </s>
+	<s n="2">Une bonne femme m'a pris par la main et m'a conduit jusqu'à la porte de la ville. </s>
+	<s n="3">Elle m'a dit d'aller tout droit devant moi sur le grand chemin, que c'était le premier village que je trouverais ; et m'y voici.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="9">
+	<s n="1">Et savez-vous le nom de votre père_nourricier ?</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="10">
+	<s n="1">Ma petite soeur de lait s'appelait Suzette.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE, avec un cri de joie. </speaker>
+                        <p n="11">
+	<s n="1">Ah ! Ma mère, si c'était Adrien ?</s>
+</p>
+                    </sp><!--@stage="happy/shout"--><!--@who="SUZETTE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="12">
+	<s n="1">Eh ! </s>
+	<s n="2">Oui, c'est moi.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="13">
+	<s n="1">Vous, le fils de Monsieur_de_Cressac ?</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN. </speaker>
+                        <p n="14">
+	<s n="1">Ô ma bonne nourrice ! </s>
+	<s n="2">Je te reconnais bien à présent. </s>
+	<s n="3">Et voilà ma chère Suzette, et voilà Lubin.</s>
+</p>
+                        <stage type="hugh/touch">Suzette se jette à son cou, Lubin lui prend la main.</stage>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE, l'élevant dans ses bras et l'embrassant. </speaker>
+                        <p n="15">
+	<s n="1">Ô mon_Dieu, que je suis heureuse ! </s>
+	<s n="2">Je ne pensais qu'à toi dans toutes ces flammes. </s>
+	<s n="3">Mon mari a couru pour te sauver. </s>
+	<s n="4">Mais comme le voilà grandi ! </s>
+	<s n="5">L'aurais-tu reconnu, Suzette ?</s>
+</p>
+                    </sp><!--@stage="wave/kiss"--><!--@who="JEANNE"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="16">
+	<s n="1">Non, pas tout de suite, ma mère. </s>
+	<s n="2">Mais j'ai bien senti que mon coeur battait près de lui. </s>
+	<s n="3">Nous avons été si longtemps sans le voir !</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="17">
+	<s n="1">C'est que j'étais au collège ! </s>
+	<s n="2">Il y a trois jours que j'en suis sorti, pour passer les fêtes à la maison. </s>
+	<s n="3">Pourquoi y suis-je venu ? </s>
+	<s n="4">Ô mon papa, maman, ma petite soeur Julie !</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="18">
+	<s n="1">Tranquillise-toi, mon ami. </s>
+	<s n="2">Thomas est à la ville. </s>
+	<s n="3">Je le connais. </s>
+	<s n="4">Il les sauverait tous, fussent-ils dans un brasier. </s>
+	<s n="5">Mais toi, tu as couru toute la nuit. </s>
+	<s n="6">Tu dois avoir faim. Veux-tu manger ?</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="18">
+	<s n="1">Tenez, Monsieur_Adrien, voici une tartine que j'avais faite pour moi.</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="19">
+	<s n="1">Tu me disais lu autrefois, Lubin.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#lubin">
+                        <speaker>LUBIN, lui passant un bras autour du cou. </speaker>
+                        <p n="20">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Adrien, prends donc mon déjeuner.</s>
+</p>
+                    </sp><!--@stage="hugh"--><!--@who="LUBIN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="21">
+	<s n="1">Quelque chose d'un peu chaud lui vaudra mieux. </s>
+	<s n="2">Je vais lui chercher ma soupe au lait, qui chauffe sur le fourneau.</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="22">
+	<s n="1">Non, mes amis, je vous remercie. </s>
+	<s n="2">Je ne mangerai rien que je n'aie vu mon père, ma mère et ma soeur. </s>
+	<s n="3">Je veux m'en retourner, je veux les voir.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="23">
+	<s n="1">Y penses-tu ? </s>
+	<s n="2">Aller courir dans les flammes !</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="24">
+	<s n="1">C'est là que je les ai laissés ! </s>
+	<s n="2">Oh ! </s>
+	<s n="3">C'est bien malgré moi. </s>
+	<s n="4">Je ne voulais pas me séparer d'eux ! </s>
+	<s n="5">Mon papa l'a voulu. </s>
+	<s n="6">Lui qui est la douceur même, il m'a menacé, il m'a repoussé. </s>
+	<s n="7">Il a bien fallu lui obéir, de peur de le mettre en colère. </s>
+	<s n="8">Mais je ne peux plus y tenir; il faut que je retourne le chercher.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="25">
+	<s n="1">Je ne te lâche point. </s>
+	<s n="2">Viens avec nous à la maison.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="26">
+	<s n="1">Vous avez une maison ! </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Je n'en ai plus.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="27">
+	<s n="1">La nôtre n'est-elle pas à toi ? </s>
+	<s n="2">Je t'ai nourri de mon lait : je te nourrirai bien de mon pain.</s>
+</p>
+                        <stage type="hugh/carry/toward">Elle le prend entre ses bras et l'emporte, malgré sa résistance, dans la ferme. À Lubin.</stage>
+                        <p n="">
+	<s n="">Toi, reste ici pour voir venir de plus loin ton père et nous en avertir. Mais ne va pas au feu, je te le défends.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV.</head>
+<sp who="#lubin">
+                        <speaker>LUBIN, seul.</speaker>
+                        <p n="1">
+	<s n="1">Je meurs pourtant d'envie d'y courir. </s>
+	<s n="2">Quelle belle fournaise cela doit faire ! </s>
+	<s n="3">Je ne sais ; mais il me semble que je ne vois plus là-bas ce haut clocher qui grimpait dans les nuages, avec un coq doré sur sa pointe. </s>
+	<s n="4">Les pauvres gens, que je les plains ! </s>
+	<s n="5">Il ne faut pas cependant que cela m'empêche de déjeuner.</s>
+</p>
+                        <stage type="eat">Il mord dans son pain.</stage>
+                    </sp><!--@stage="alone"--><!--@who="LUBIN"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCENE V. Lubin, Suzette, qui sort de la ferme tenant à la main un verre.</head>
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Ma soeur, tu es une bien bonne enfant de me porter ainsi à boire !</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="2">
+	<s n="1">Oh ! </s>
+	<s n="2">Ce n'est pas pour toi. </s>
+	<s n="3">C'est pour Adrien que je viens chercher un verre d'eau fraîche. </s>
+	<s n="4">Il ne veut prendre ni une tasse de lait ni une goutte de vin. </s>
+	<s n="5">« Mes parents, dit-il, souffrent peut-être en ce moment la faim et la soif ; et moi, je pourrais prendre quelque chose pour me régaler ! </s>
+	<s n="6">Non, non. Je ne veux qu'un peu d'eau pour me rafraîchir le gosier. »</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="3">
+	<s n="1">Il faut être bien tendre, au moins, pour ne vouloir pas prendre un peu de lait, parce qu'on ne sait pas où est son père ?</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="4">
+	<s n="1">N'est-ce pas ? </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Je te connais. </s>
+	<s n="4">Ta soeur pourrait brûler toute vive, que tu n'en perdrais pas un coup de dent. </s>
+	<s n="5">Pour moi, je serais bien comme Adrien. </s>
+	<s n="6">Je n'aurais guère envie de manger, si notre cabane brûlait et si je ne savais où trouver mon père et ma mère, ou toi-même, Lubin.</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="5">
+	<s n="1">Et moi aussi, si je n'avais pas faim.</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="6">
+	<s n="1">Est-ce qu'on a faim, alors ? </s>
+	<s n="2">Tiens, je n'ai pas le moindre appétit, rien que de voir seulement pleurer ce petit malheureux.</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="7">
+	<s n="1">Ainsi donc tu ne toucheras pas à ta soupe ?</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="8">
+	<s n="1">Tu voudrais bien qu'elle te restât, après avoir mangé la tienne, et encore un gros chiffon de pain au beurre ?</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="9">
+	<s n="1">Non. </s>
+	<s n="2">C'est pour empêcher qu'elle ne se perde, si Adrien ou toi n'en voulez pas manger. </s>
+	<s n="3">Donne-moi toujours le verre, que je boive en attendant.</s>
+</p>
+                        <stage type="give/get/drink">Suzette lui donne le verre ; Lubin puise de l'eau à la fontaine et boit.</stage>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="10">
+	<s n="1">Dépêche-toi donc ; mon pauvre Adrien meurt de soif.</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="11">
+	<s n="1">Attends, je vais le remplir.</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="12">
+	<s n="1">Que fais-tu ? </s>
+	<s n="2">Sans le rincer ?</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="13">
+	<s n="1">Crois-tu que j'aie du poison dans la bouche ?</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="14">
+	<s n="1">Vraiment ce serait bien propre avec les miettes de pain qui sont encore sur le bord ! </s>
+	<s n="2">Je veux le rincer moi-même. </s>
+	<s n="3">Les enfants comme lui sont accoutumés à la propreté ; et je veux qu'il se trouve chez nous comme dans sa maison.</s>
+</p>
+                        <stage type="wash/pour/exit">Elle rince le verre, le remplit, et rentre dans la ferme.</stage>
+                    </sp><!--@who="SUZETTE"-->
+</div><!--@stage="exit"-->
+<div type="scene" n="6">
+                    <head>SCÈNE VI.</head>
+<sp who="#lubin">
+                        <speaker>LUBIN, seul.</speaker>
+                        <p n="1">
+	<s n="1">Voilà mon déjeuner fini. </s>
+	<s n="2">Si je courais à présent voir le feu ! </s>
+	<s n="3">Quelques tapes de plus ou de moins ne sont pas grand'chose. </s>
+	<s n="4">Je vais toujours avancer un peu sur le chemin. </s>
+	<s n="5">Allons, allons.</s>
+</p>
+                        <stage type="run/location/closer">Il se met à courir. Au détour de la colline, il rencontre son père.</stage>
+                    </sp><!--@stage="alone"--><!--@who="LUBIN"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Thomas, Lubin.</head>
+<stage type="carry/walk/tired">Thomas porte une cassette sous son bas. Il marche d'un
+pas harassé, et paraît ne respirer qu'avec peine.</stage>
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Vous voilà, mon père. </s>
+	<s n="3">Je courais devant vous.</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#thomas">
+                        <speaker>THOMAS, avec empressement. </speaker>
+                        <p n="2">
+	<s n="1">Adrien est-il ici ?</s>
+</p>
+                    </sp><!--@stage="hurry"--><!--@who="THOMAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="3">
+	<s n="1">Oui, oui ; il vient d'arriver.</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#thomas">
+                        <speaker>THOMAS, posant la cassette à terre et levant ses bras vers le ciel. </speaker>
+                        <p n="4">
+	<s n="1">Je te remercie, ô mon_Dieu ! </s>
+	<s n="2">Toute cette honnête famille est donc sauvée !</s>
+</p>
+                        <stage type="sit">Il s'assied sur la cassette. </stage>
+                        <p n="5">
+	<s n="1">Que je respire !</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="6">
+	<s n="1">Ne voulez-vous pas entrer ?</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#thomas">
+                        <speaker>THOMAS. </speaker>
+                        <p n="7">
+	<s n="1">Non, non ; j'ai besoin d'être en plein air pour me remettre. </s>
+	<s n="2">Va dire à ta mère que je suis ici.</s>
+</p>
+                        <stage type="run/location/hurry">Lubin court vers la ferme et s'y élance.</stage>
+                    </sp><!--@who="THOMAS"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Thomas, essuyant la sueur de son front et les larmes de ses yeux.</head>
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="1">
+	<s n="1">Je ne mourrai donc point sans l'avoir obligé à mon tour !</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Thomas, Jeanne, Adrien, Suzette, Lubin.</head>
+<stage type="run/carry/folow">Jeanne accourt de la ferme, portant un petit enfant dans ses bras. Adrien, Suzette et Lubin la suivent.</stage>
+<sp who="#jeanne">
+                        <speaker>JEANNE, se jetant au cou de Thomas. </speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon cher ami, quelle joie de te revoir!</s>
+</p>
+                    </sp><!--@stage="hugh"--><!--@who="JEANNE"-->
+<sp who="#thomas">
+                        <speaker>THOMAS, l'embrassant tendrement. </speaker>
+                        <p n="2">
+	<s n="1">Ma chère femme !</s>
+</p>
+                        <stage type="get/hugh/kiss">Il prend l'enfant qu'elle tient sur son sein et qui lui tend les bras ; il le serre dans les siens, l'embrasse et le rend à sa mère.</stage>
+                        <p n="3">
+	<s n="1">Mais Adrien, où est-il ? </s>
+	<s n="2">Que je le voie !</s>
+</p>
+                    </sp><!--@stage="kiss/tender"--><!--@who="THOMAS"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, courant à lui. </speaker>
+                        <p n="4">
+	<s n="1">Me voici, mon père_nourricier, me voici. </s>
+</p>
+                        <stage type="watch">Il regarde de tous cotés.</stage>
+                        <p n="5">
+	<s n="1">Vous êtes seul ? </s>
+	<s n="2">Mon papa, maman, ma petite soeur Julie, où sont-ils ?</s>
+</p>
+                    </sp><!--@stage="run/closer"--><!--@who="ADRIEN"-->
+<sp who="#thomas">
+                        <speaker>THOMAS, avec transport.</speaker>
+                        <p n="6">
+	<s n="1">En sûreté, mon fils. </s>
+	<s n="2">Embrasse-moi.</s>
+</p>
+                    </sp><!--@stage="enthousiasm"--><!--@who="THOMAS"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, se jetant dans ses bras. </speaker>
+                        <p n="7">
+	<s n="1">Oh ! </s>
+	<s n="2">Quelle joie !</s>
+</p>
+                    </sp><!--@stage="hush"--><!--@who="ADRIEN"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="8">
+	<s n="1">Nous étions bien en peine. </s>
+	<s n="2">Tous les autres gens du village sont déjà de retour.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="9">
+	<s n="1">Ils n'avaient pas leur bienfaiteur à sauver !</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="10">
+	<s n="1">Mais au moins tout est-il éteint à présent ?</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="11">
+	<s n="1">Éteint, ma femme ? </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Ce n'est plus une maison, une rue ; c'est la ville tout entière embrasée ! </s>
+	<s n="4">Si tu voyais cette désolation ! </s>
+	<s n="5">Les femmes courant échevelées et vous demandant à grands cris leurs maris et leurs enfants ! </s>
+	<s n="6">Le son des cloches, le bruit des chariots et des pompes, le fracas épouvantable des maisons qui s'écroulent ! </s>
+	<s n="7">Les chevaux furieux et les flots de peuple effrayé qui vous renversent ! </s>
+	<s n="8">Les flammes qui vous poursuivent et se croisent devant vous ! </s>
+	<s n="9">Les poutres brûlantes qui tombent sur la foule et l'écrasent... </s>
+	<s n="10">Je ne sais comment j'en suis revenu.</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="12">
+	<s n="1">Tu me glaces le sang dans les veines.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="13">
+	<s n="1">Ah ! </s>
+	<s n="2">Ma mère, voyez ses sourcils, ses cheveux tout brûlés !</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="14">
+	<s n="1">Et mon bras encore ! </s>
+	<s n="2">Mais qu'est-ce que tout cela ? </s>
+	<s n="3">Trop heureux d'en sortir la vie sauve ! </s>
+	<s n="4">Je ne l'aurais pas marchandée.</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="15">
+	<s n="1">Que me dis-tu, mon ami ?</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="16">
+	<s n="1">Quoi ! </s>
+	<s n="2">Ma femme, pour notre bienfaiteur ? </s>
+	<s n="3">N'est-ce pas lui qui a fait notre mariage ? </s>
+	<s n="4">N'est-ce pas à lui que nous devons cette ferme et tout ce que nous possédons ? </s>
+	<s n="5">N'as-tu pas nourri son enfant ? </s>
+</p>
+                        <stage type="hugh">Adrien passe ses bras autour du corps de sa nourrice.</stage>
+                        <p n="17">
+	<s n="1">Ah ! </s>
+	<s n="2">J'aurais eu mille vies que je les aurais toutes risquées.</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE, avec attendrissement. </speaker>
+                        <p n="18">
+	<s n="1">Tu l'as donc pu secourir ?</s>
+</p>
+                    </sp><!--@stage="tender"--><!--@who="JEANNE"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="19">
+	<s n="1">Oui, j'ai eu ce bonheur. </s>
+	<s n="2">Lui, sa femme et sa fille étaient à peine, sortis de leur maison tout en flammes, lorsqu'une charpente embrasée est tombée à leurs pieds. </s>
+	<s n="3">Pleureusement je n'étais encore qu'à vingt pas. </s>
+	<s n="4">Tout le monde les croyait écrasés et fuyait. </s>
+	<s n="5">J'ai entendu leurs cris : je me suis précipité au milieu des ruines brûlantes, et je les en ai retirés. </s>
+	<s n="6">J'avais déjà sauvé la cassette que voici, et mon chariot est chargé de leurs effets les plus précieux.</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, se jetant dans ses bras. </speaker>
+                        <p n="20">
+	<s n="1">Ô mon père_nourricier ! </s>
+	<s n="2">Sois sûr d'en être bien récompensé.</s>
+</p>
+                    </sp><!--@stage="hugh"--><!--@who="ADRIEN"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="21">
+	<s n="1">Je le suis déjà, mon ami. </s>
+	<s n="2">Ton père ne comptait peut-être pas sur moi, et je l'ai secouru ; me voilà mieux payé qu'il n'est en son pouvoir de le faire. </s>
+	<s n="3">Mais ce n'est pas tout.-Il ne tardera pas sans doute avenir avec sa famille et ses gens.</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="22">
+	<s n="1">Oh ! </s>
+	<s n="2">Je vais donc les revoir !</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="23">
+	<s n="1">Cours, ma femme ; va tirer de notre excellent vin vieux ; fais traire nos vaches ; prépare nos meilleures provisions ; qu'on mette des draps blancs au grand lit; nous irons coucher dans l'étable.</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="24">
+	<s n="1">Oui, j'y vole, mon ami.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Thomas, Adrien, Suzette, Lubin.</head>
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="1">
+	<s n="1">Et moi je vais ranger le foin dans la grange, pour faire place aux malheureux qui viendront me demander un asile. </s>
+	<s n="2">Hélas ! </s>
+	<s n="3">Toute la plaine en est couverte. </s>
+	<s n="4">Je crois les voir encore, les uns, muets et insensibles de douleur, s'arrêter comme des bornes dans les grands chemins, en regardant brûler leurs maisons, ou tomber évanouis de frayeur, de fatigue ou d'épuisement ; les autres courant çà et là comme des forcenés, tordant leurs bras, s'arrachant les cheveux et voulant rentrer avec des cris horribles dans la ville enflammée, à travers les piques des soldats qui les repoussent. </s>
+	<s n="5">J'aurai toute ma vie cette peinture devant les yeux.</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="2">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon pauvre Adrien, si tu l'étais trouvé là, on t'aurait foulé sous les pieds.</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="3">
+	<s n="1">Aussitôt que mes chevaux seront revenus, j'irai ; je veux ramasser tout ce je que pourrai d'enfants, de femmes et de vieillards pour les conduire ici. </s>
+	<s n="2">J'étais le plus pauvre du village; j'en suis devenu le plus riche : c'est à moi qu'appartiennent tous les malheureux.</s>
+</p>
+                        <stage type="down/get">Il se baisse pour prendre la cassette.</stage>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#lubin">
+                        <speaker>LUBIN.</speaker>
+                        <p n="4">
+	<s n="1">Mon père, que je vous aide à la porter. </s>
+	<s n="2">Vous êtes si las !</s>
+</p>
+                    </sp><!--@who="LUBIN"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="5">
+	<s n="1">Non, non ; prends garde, elle est trop lourde pour toi. </s>
+	<s n="2">Elle te casserait les jambes, si elle échappait de mes mains. </s>
+	<s n="3">Va plutôt dire à la vieille Michelle de venir chauffer notre four et fourbir nos marmites des vendanges ; puis tu courras chez le meunier pour qu'il nous apporte de la farine. </s>
+	<s n="4">Que ces pauvres incendiés trouvent au moins de quoi satisfaire leurs besoins les plus pressants. </s>
+	<s n="5">Je ne suis pas, grâce à Dieu, dans l'aisance pour qu'on meure de faim autour de moi. </s>
+	<s n="6">Je donnerais jusqu'à mon dernier morceau de pain.</s>
+</p>
+                        <stage type="exit">Il sort avec Lubin.</stage>
+                    </sp><!--@who="THOMAS"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. Suzette, Adrien.</head>
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="1">
+	<s n="1">Oh ! </s>
+	<s n="2">Je partagerai aussi toujours avec toi. </s>
+	<s n="3">Mon pauvre Adrien, qui m'aurait dit que je te verrais un jour si à plaindre ?</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="2">
+	<s n="1">Ah ! </s>
+	<s n="2">Ma chère Suzette ! </s>
+	<s n="3">C'est bien cruel aussi de tout perdre dans une nuit !</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE. </speaker>
+                        <p n="3">
+	<s n="1">Console-toi, mon ami. </s>
+	<s n="2">Ne te souviens-tu pas combien nous avons été heureux ici, quand nous étions encore plus petits que nous ne le sommes, tiens, pas plus hauts que ce buisson là-bas ? </s>
+	<s n="3">Eh bien ! </s>
+	<s n="4">Nous le serons encore. </s>
+	<s n="5">Crains-tu que rien te manque, autant que j'en aurai ?</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, lui prenant la main. </speaker>
+                        <p n="4">
+	<s n="1">Non, je ne le crains pas. </s>
+	<s n="2">Mais c'était moi qui devais un jour te mettre à ton aise, te marier lorsque tu serais grande, et prendre soin de tes enfants comme des miens.</s>
+</p>
+                    </sp><!--@stage="get"--><!--@who="ADRIEN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="5">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Ce sera mon affaire, au lieu d'être la tienne : quand on s'aime, c'est toujours la même chose. Je te donnerai les plus belles fleurs de notre jardin ; tous les plus beaux fruits que je pourrai cueillir, je te les apporterai ; je te donnerai aussi mon lit, et je dormirai à terre auprès de toi.</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, se jetant à son cou. </speaker>
+                        <p n="6">
+	<s n="1">Mon_Dieu ! </s>
+	<s n="2">Mon_Dieu ! </s>
+	<s n="3">Ma chère Suzette ! </s>
+	<s n="4">Combien je dois l'aimer!</s>
+</p>
+                    </sp><!--@stage="hugh"--><!--@who="ADRIEN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="7">
+	<s n="1">Tu verras aussi comme j'aurai soin de ta petite Julie ! </s>
+	<s n="2">Je serai toujours entre vous deux. </s>
+	<s n="3">Quand on s'est nourri du même lait, n'est-ce pas comme si l'on était frère et soeur ?</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="8">
+	<s n="1">Oui, tu seras toujours la mienne ; et je ne sais laquelle j'aimerais le plus, de Julie ou de toi. </s>
+	<s n="2">Je te présenterai à mon papa et à maman, pour que tu sois aussi leur fille. </s>
+	<s n="3">Mais, mon_Dieu ! </s>
+	<s n="4">Quand reviendront-ils ?</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="9">
+	<s n="1">Pourquoi l'inquiéter ? </s>
+	<s n="2">Tu sais bien que mon père les a mis hors de danger ?</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="10">
+	<s n="1">C'est que mon papa est comme le tien. </s>
+	<s n="2">Il aura aussi voulu sauver à son tour ses amis. </s>
+	<s n="3">Il se sera peut-être rejeté au milieu des flammes. </s>
+	<s n="4">Je tremblerai toujours pour lui jusqu'à ce que je le revoie. </s>
+	<s n="5">J'entends du bruit derrière la colline. </s>
+	<s n="6">Oh ! </s>
+	<s n="7">Si c'était lui !</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Godefroi, Adrien, Suzette.</head>
+<sp who="#adrien">
+                        <speaker>ADRIEN, courant à Godefroi d'un air joyeux. </speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Godefroi !</s>
+</p>
+                    </sp><!--@stage="run/happy/choser"--><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI. </speaker>
+                        <p n="2">
+	<s n="1">Vous voilà, Monsieur_Adrien ?</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="3">
+	<s n="1">C'est bien de moi qu'il s'agit ! </s>
+	<s n="2">Où est mon papa ? </s>
+	<s n="3">Où est ma maman ? </s>
+	<s n="4">Où est ma soeur Julie ? </s>
+	<s n="5">Sont-ils ici ?</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI, d'un air hébété. </speaker>
+                        <p n="4">
+	<s n="1">Ici ! </s>
+	<s n="2">Où donc ?</s>
+</p>
+                    </sp><!--@stage="estonish"--><!--@who="GODEFROI"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="5">
+	<s n="1">Derrière toi.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="6">
+	<s n="1">Derrière moi ?</s>
+</p>
+                        <stage type="utrn">Il se retourne.</stage>
+                        <p n="7">
+	<s n="1">Je ne les vois pas.</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="8">
+	<s n="1">Tu ne les as donc pas accompagnés ?</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="9">
+	<s n="1">Ils ne sont donc pas ici ?</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, d'un ton d'impatience. </speaker>
+                        <p n="10">
+	<s n="1">C'est ici que tu viens les chercher?</s>
+</p>
+                    </sp><!--@stage="impatient"--><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI, d'un air troublé. </speaker>
+                        <p n="11">
+	<s n="1">Vous me faites, frissonner de la tête aux pieds.</s>
+</p>
+                        <stage type="stress">Adrien pâlit.</stage>
+                        <p n="12">
+	<s n="1">Ne vous effrayez donc pas. </s>
+</p>
+                        <stage type="embarrassed">Avec consternation.</stage>
+                        <p n="13">
+	<s n="1">Ils ne sont pas ici ?</s>
+</p>
+                    </sp><!--@stage="embarrassed"--><!--@who="GODEFROI"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="14">
+	<s n="1">Il n'est venu personne que mon frère Adrien.</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="15">
+	<s n="1">Pourquoi y suis-je venu ?</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="16">
+	<s n="1">Écoutez, écoutez-moi. </s>
+	<s n="2">Une heure après qu'on vous eut arraché de mes bras pour me faire travailler, je trouvai le moyen de m'esquiver dans la foule. </s>
+	<s n="3">Tranquillisez-vous ; mais j'ai couru de tous côtés pour chercher vos parents ; je ne les ai pas trouvés. </s>
+	<s n="4">J'ai demandé de leurs nouvelles à tout le monde ; personne ne les avait vus, personne n'en avait entendu parler.</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, d'un ton plaintif. </speaker>
+                        <p n="17">
+	<s n="1">Ô Dieu ! </s>
+	<s n="2">Ayez pitié de moi ! </s>
+	<s n="3">Mon papa, maman, où êtes-vous ?</s>
+</p>
+                    </sp><!--@stage="pain"--><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="18">
+	<s n="1">Ce n'est pas tout. </s>
+	<s n="2">Écoutez. </s>
+	<s n="3">Ne vous effrayez pas seulement. </s>
+	<s n="4">Voici le pire de l'histoire.</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="19">
+	<s n="1">Hélas ! </s>
+	<s n="2">Mon_Dieu ! </s>
+	<s n="3">Qu'est-ce donc?</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="20">
+	<s n="1">Comment voulez-vous que je vous le dise, si vous allez prendre l'épouvante ?</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="21">
+	<s n="1">Eh ! </s>
+	<s n="2">Dis, dis toujours. </s>
+	<s n="3">Tu me fais mourir.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="22">
+	<s n="1">Eh bien donc, le bruit court qu'un homme, une femme et une petite fille ont été écrasés dans notre rue par une charpente qui est tombée toute en feu.</s>
+</p>
+                        <stage type="pain">Adrien tombe évanoui.</stage>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="23">
+	<s n="1">Bon Dieu ! </s>
+	<s n="2">Bon Dieu ! </s>
+	<s n="3">À notre secours ! </s>
+	<s n="4">Adrien qui se meurt !</s>
+</p>
+                        <stage type="hurry/closer">Elle se précipite sur lui.</stage>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="24">
+	<s n="1">Mais qu'a-t-il donc ? </s>
+	<s n="2">Il n'en est rien, peut-être. </s>
+	<s n="3">Ce n'est qu'un ouï-dire, et on ne sait pas qui c'est.</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="25">
+	<s n="1">La frayeur l'a saisi tout_à_coup. </s>
+	<s n="2">Il oublie que mon père les a sauvés.</s>
+</p>
+                    </sp><!--@who="SUZETTE"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI, tâtant le front d'Adrien. </speaker>
+                        <p n="26">
+	<s n="1">Ô mon doux Sauveur ! </s>
+	<s n="2">Il est froid comme un glaçon !</s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="GODEFROI"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE, se relevant à demi.</speaker>
+                        <p n="27">
+	<s n="1">Que veniez-vous faire ici ? </s>
+	<s n="2">C'est vous, c'est vous qui l'avez tué.</s>
+</p>
+                    </sp><!--@stage="stand"--><!--@who="SUZETTE"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="28">
+	<s n="1">Je lui avais pourtant bien dit de se tranquilliser.</s>
+</p>
+                        <stage type="stand">Il le soulève.</stage>
+                        <p n="29">
+	<s n="1">Monsieur Adrien ! </s>
+</p>
+                        <stage type="fall">Il le laisse retomber.</stage>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE.</speaker>
+                        <p n="30">
+	<s n="1">Laissez-le donc. </s>
+	<s n="2">Vous allez l'achever, s'il n'est pas mort encore. </s>
+	<s n="3">Ô mon cher Adrien ! </s>
+	<s n="4">Mon frère ! </s>
+	<s n="5">Où trouver à présent mon père et ma mère pour lui envoyer du secours ?</s>
+</p>
+                        <stage type="away/back/exit/location">Elle va vers plusieurs endroits du théâtre, incertaine, de quel coté elle doit sortir. Elle sort enfin par une coulisse au-dessus delà ferme.</stage>
+                    </sp><!--@who="SUZETTE"-->
+</div>
+<div type="scene" n="13">
+                    <head>SCÈNE XIII. Adrien, toujours évanoui ; Godefroi, appliquant son oreille au nez d'Adrien.</head>
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="1">
+	<s n="1">Non, non ; il n'est pas encore mort ; il renifle. </s>
+	<s n="2">Oh ! </s>
+	<s n="3">S'il était mort, j'irais me jeter dans le premier puits.</s>
+</p>
+                        <stage type="shout">Il lui crie dans l'oreille.</stage>
+                        <p n="2">
+	<s n="1">Adrien ! </s>
+	<s n="2">Monsieur Adrien !... </s>
+	<s n="3">Si je savais comment le faire revenir !</s>
+</p>
+                        <stage type="blow">Il lui souffle sur le visage.</stage>
+                        <p n="3">
+	<s n="1">Bah ! </s>
+	<s n="2">J'y perdrais mes poumons.... </s>
+	<s n="3">C'était bien bête aussi de ma part ; mais c'est encore plus bête de la sienne. </s>
+	<s n="4">Je lui disais de ne pas s'effrayer. </s>
+	<s n="5">Tous ces enfants de grands seigneurs sont comme des boules de savon qui crèvent de rien.... </s>
+	<s n="6">Adrien ! </s>
+	<s n="7">Monsieur Adrien ! </s>
+	<s n="8">Il ne m'entend pas. </s>
+	<s n="9">Ma femme est morte, et j'en ai eu bien du regret ; mais mourir parce qu'un autre est mort, il n'y a pas de raison à cela.</s>
+</p>
+                        <stage type="shake">Il le secoue encore.</stage>
+                        <p n="4">
+	<s n="1">Il ne revient pas, cependant ! </s>
+</p>
+                        <stage type="watch">Il tourne la vue de tous côtés.</stage>
+                        <p n="5">
+	<s n="1">Ah, bon ! </s>
+	<s n="2">Voici une fontaine ! je vais y puiser de l'eau dans mon chapeau. Je lui ferai une aspersion qui le fera bien revenir.</s>
+</p>
+                        <stage type="run/srop/shout">Il court à la fontaine. En même temps, arrive d'un autre coté Monsieur de Cressac, donnant le bras à sa femme et tenant Julie par la main. Godefroi l'aperçoit, et, de frayeur, laisse tomber son chapeau plein d'eau. Il s'arrête un moment confus et stupéfait ; puis il court à toutes jambes vers l'autre côté de la colline, en s'écriant.</stage>
+                        <p n="6">
+	<s n="1">Ah ! </s>
+	<s n="2">Dieu me pardonne ! </s>
+	<s n="3">S'il va trouver son fils mort, me voilà à tous les diables.</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+</div>
+<div type="scene" n="14">
+                    <head>SCÈNE XIV. Monsieur de Cressac, Madame de Cressac, Julie, Adrien, toujours évanoui.</head>
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC.</speaker>
+                        <p n="1">
+	<s n="1">Mais c'est Godefroi, je pense.</s>
+</p>
+                        <stage type="call">Il l'appelle.</stage>
+                        <p n="2">
+	<s n="1">Godefroi ! </s>
+	<s n="2">Où vas-tu donc ? </s>
+	<s n="3">Où est Adrien ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#madame-de-cressac">
+                        <speaker>MADAME DE CRESSAC. </speaker>
+                        <p n="3">
+	<s n="1">Il fuit ! </s>
+	<s n="2">Qu'a-t-il fait de mon fils ?</s>
+</p>
+                    </sp><!--@who="MADAME DE CRESSAC"-->
+<sp who="#julie">
+                        <speaker>JULIE, voyant un corps étendu, à terre. </speaker>
+                        <p n="4">
+	<s n="">Que vois-je ? Qui est couché là ?</s>
+</p>
+                        <stage type="low/watch">Elle se baisse pour le considérer ; elle reconnaît Adrien, et se jette sur lui.</stage>
+                        <p n="5">
+	<s n="1">Dieu ! </s>
+	<s n="2">Mon frère ! </s>
+	<s n="3">Il est mort !</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="JULIE"-->
+<sp who="#madame-de-cressac">
+                        <speaker>MADAME DE CRESSAC.</speaker>
+                        <p n="6">
+	<s n="1">Que dis-tu ? </s>
+</p>
+                        <stage type="away/closer">Elle s'arrache du bras de Monsieur de Cressac et se précipite à corps perdu de l'autre côté.</stage>
+                        <p n="7">
+	<s n="1">Mon fils ! </s>
+	<s n="2">Adrien !</s>
+</p>
+                    </sp><!--@who="MADAME DE CRESSAC"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC.</speaker>
+                        <p n="8">
+	<s n="1">Il manquait encore quelque chose à notre malheur !</s>
+</p>
+                        <stage type="kneel/wave">Il tombe à genoux auprès d'Adrien et le soulève. Adrien fait un léger mouvement.</stage>
+                        <p n="9">
+	<s n="1">Dieu soit loué ! </s>
+	<s n="2">Il respire. </s>
+	<s n="3">Ma femme, ton fils a besoin de toi. </s>
+	<s n="4">Garde tes forces pour le secourir. </s>
+	<s n="5">Assieds-toi.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#madame-de-cressac">
+                        <speaker>MADAME DE CRESSAC, avec un cri douloureux.</speaker>
+                        <p n="10">
+	<s n="1">Mon fils ! </s>
+	<s n="2">Mon fils ! </s>
+</p>
+                        <stage type="fall/faint">Elle tombe presque évanouie.</stage>
+                    </sp><!--@stage="pain/shout"--><!--@who="MADAME DE CRESSAC"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="11">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon pauvre frère ! </s>
+	<s n="3">Que les flammes eussent plutôt tout dévoré ! </s>
+	<s n="4">Réveille-toi, réveille-toi.</s>
+</p>
+                        <stage type="stand/hugh/kiss">Pendant ces paroles de Julie, Monsieur de Cressac relève Madame de Cressac sur son séant et remet Adrien dans ses bras, en sorte que la tête de l'enfant porte sur le sein de sa mère, qui le couvre de baisers.</stage>
+                    </sp><!--@who="JULIE"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC. </speaker>
+                        <p n="12">
+	<s n="1">Ne perdons pas un moment. </s>
+	<s n="2">As-tu des sels sur toi ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#madame-de-cressac">
+                        <speaker>MADAME DE CRESSAC. </speaker>
+                        <p n="13">
+	<s n="1">Je ne sais ; je suis toute troublée. </s>
+	<s n="2">Après tant de frayeurs, une encore qui les surpasse toutes ! </s>
+	<s n="3">Je donnerais tout ce qui nous reste pour quelques gouttes d'eau.</s>
+</p>
+                        <stage type="watch/away/run">Monsieur de Cressac regarde autour de lui, aperçoit la fontaine et y vole.</stage>
+                    </sp><!--@who="MADAME DE CRESSAC"-->
+<sp who="#julie">
+                        <speaker>JULIE, fouillant dans le tablier de sa mère. </speaker>
+                        <p n="14">
+	<s n="1">Maman, voici votre éther.</s>
+</p>
+                        <stage type="open/hugh">Elle ouvre le flacon ; Madame de Cressac le saisit avec transport et le fait respirer à son fils.</stage>
+                    </sp><!--@stage="search"--><!--@who="JULIE"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="15">
+	<s n="1">Mon frère, reviens à toi, si tu ne veux pas que je meure à ton côté. </s>
+	<s n="2">Adrien ! </s>
+	<s n="3">Mon cher Adrien !</s>
+</p>
+                        <stage type="awake">Adrien paraît un peu se ranimer.</stage>
+                        <p n="16">
+	<s n="1">Ciel ! </s>
+	<s n="2">Il respire, il m'entend ! </s>
+</p>
+                        <stage type="run/closer">Elle court à son père. </stage>
+                        <p n="17">
+	<s n="1">Venez, venez, mon papa. </s>
+</p>
+                        <stage type="back/carry/pour">Monsieur de Cressac revient, portant de l'eau dans le creux de sa main. Il y trempe le bout de son mouchoir, bassine le front et les tempes d'Adrien, puis lui jette quelques gouttes d'eau sur le visage du bout de ses doigts.</stage>
+                    </sp><!--@who="JULIE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, les yeux encore fermés, agite un peu ses bras et pousse des soupirs à demi étouffés.</speaker>
+                        <p n="18">
+	<s n="1">Hélas ! </s>
+	<s n="2">Hélas ! </s>
+	<s n="3">Mon papa !</s>
+</p>
+                    </sp><!--@stage="sleep/sigh"--><!--@who="ADRIEN"-->
+<sp who="#madame-de-cressac">
+                        <speaker>MADAME DE CRESSAC.</speaker>
+                        <p n="19">
+	<s n="1">Mon cher Adrien !</s>
+</p>
+                    </sp><!--@who="MADAME DE CRESSAC"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, comme dans un songe. </speaker>
+                        <p n="20">
+	<s n="1">Il est donc mort ?</s>
+</p>
+                    </sp><!--@stage="dream"--><!--@who="ADRIEN"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC.</speaker>
+                        <p n="21">
+	<s n="1">Il me croit mort ! </s>
+	<s n="2">C'est cet imbécile de Godefroi qui l'aura effrayé.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#julie">
+                        <speaker>JULIE, avec transport. </speaker>
+                        <p n="22">
+	<s n="1">Ciel ! </s>
+	<s n="2">Il entrouvre les yeux !</s>
+</p>
+                    </sp><!--@stage="enthousiasm"--><!--@who="JULIE"-->
+<sp who="#madame-de-cressac">
+                        <speaker>MADAME DE CRESSAC.</speaker>
+                        <p n="23">
+	<s n="1">Mon fils ! </s>
+	<s n="2">Ne nous reconnais-tu pas ?</s>
+</p>
+                    </sp><!--@who="MADAME DE CRESSAC"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC. </speaker>
+                        <p n="24">
+	<s n="1">Adrien ! </s>
+	<s n="2">Adrien !</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="25">
+	<s n="1">Mon frère ! </s>
+	<s n="2">C'est moi.</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN, comme s'il se réveillait d'un profond sommeil, regarde en silence autour de lui.</speaker>
+                        <p n="26">
+	<s n="1">Suis-je vivant ? </s>
+	<s n="2">Où suis-je ?</s>
+</p>
+                        <stage type="stand/hugh">Il se relève tout_à_coup, et se jette au cou de sa mère.</stage>
+                        <p n="27">
+	<s n="1">Maman !</s>
+</p>
+                    </sp><!--@stage="awake"--><!--@who="ADRIEN"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC.</speaker>
+                        <p n="28">
+	<s n="1">Mon fils, tu vis encore !</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN se retourne, et, se jette dans les bras de son père.</speaker>
+                        <p n="29">
+	<s n="1">Et vous aussi, mon papa !</s>
+</p>
+                    </sp><!--@stage="turn/hugh"--><!--@who="ADRIEN"-->
+<sp who="#julie">
+                        <speaker>JULIE l'embrasse, suspendu comme il l'est au cou de son père.</speaker>
+                        <p n="30">
+	<s n="1">Mon Adrien ! </s>
+	<s n="2">Mon frère, je crois revivre comme toi !</s>
+</p>
+                    </sp><!--@stage="kiss"--><!--@who="JULIE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN. </speaker>
+                        <p n="31">
+	<s n="1">Ô quelle joie, ma soeur, de te revoir !</s>
+</p>
+                        <stage type="turm">Il se tourne vers sa mère. </stage>
+                        <p n="32">
+	<s n="1">Ah ! </s>
+	<s n="2">Maman ! </s>
+	<s n="3">C'est votre douce voix qui m'a rendu la vie.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC. </speaker>
+                        <p n="33">
+	<s n="1">Je déplorais mon malheur ! </s>
+	<s n="2">Je vois maintenant que je pouvais perdue bien plus encore que je n'ai perdu.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#madame-de-cressac">
+                        <speaker>MADAME DE CRESSAC.</speaker>
+                        <p n="34">
+	<s n="1">N'y pensons plus, mon ami.</s>
+</p>
+                    </sp><!--@who="MADAME DE CRESSAC"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC. </speaker>
+                        <p n="35">
+	<s n="1">Je n'y pense que pour me réjouir. </s>
+	<s n="2">Je vous vois tous sauvés ; je ne regrette rien. </s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#julie">
+                        <speaker>JULIE.</speaker>
+                        <p n="36">
+	<s n="1">Mais que t'est-il donc arrivé, mon frère ?</s>
+</p>
+                    </sp><!--@who="JULIE"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="37">
+	<s n="1">C'est cet étourdi de Godefroi...</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC.</speaker>
+                        <p n="38">
+	<s n="1">Ne l'ai-je pas dit ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="39">
+	<s n="1">Il me disait que vous étiez ensevelis sous les flammes.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#julie">
+                        <speaker>JULIE, montrant la colline. </speaker>
+                        <p n="40">
+	<s n="1">Ah ! </s>
+	<s n="2">Le voilà là-haut !</s>
+</p>
+                        <stage type="watch/away">Tous le regardent ; Godefroi retire sa tête, qu'il avançait entre les arbres.</stage>
+                    </sp><!--@stage="show/location"--><!--@who="JULIE"-->
+</div>
+<div type="scene" n="15">
+                    <head>SCÈNE XV. Monsieur de Cressac, Madame de Cressac, Adrien, Julie, Godefroi.</head>
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC.</speaker>
+                        <p n="1">
+	<s n="1">Godefroi ! </s>
+	<s n="2">Godefroi ! </s>
+	<s n="3">Cet imbécile ! </s>
+	<s n="4">Il craint sans doute... </s>
+	<s n="5">Appelle-le toi-même, Adrien.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="2">
+	<s n="1">Godefroi, viens donc. </s>
+	<s n="2">Ne crains rien, je suis encore vivant.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI, du haut de la colline. </speaker>
+                        <p n="3">
+	<s n="1">Est-ce bien vrai, au moins ?</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="4">
+	<s n="1">As-tu jamais entendu parler les morts ?</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI, accourant à toutes jambes, puis s'arrêtant tout_à_coup.</speaker>
+                        <p n="5">
+	<s n="1">Vous n'allez pas me renvoyer, Monsieur ! </s>
+	<s n="2">Sans quoi ce ne serait pas la peine de m'avancer.</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC. </speaker>
+                        <p n="6">
+	<s n="1">Vois, malheureux, l'effet de ta bêtise.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#madame-de-cressac">
+                        <speaker>MADAME DE CRESSAC. </speaker>
+                        <p n="7">
+	<s n="1">Tu as failli me tuer mon fils.</s>
+</p>
+                    </sp><!--@who="MADAME DE CRESSAC"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="8">
+	<s n="1">Pardonnez-lui, je vous prie, ce n'est pas sa faute.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#godefroi">
+                        <speaker>GODEFROI.</speaker>
+                        <p n="9">
+	<s n="1">Sûrement, je lui disais de ne pas s'effrayer.</s>
+</p>
+                        <stage type="touch">Adrien lui tend la main. </stage>
+                        <p n="10">
+	<s n="1">Je suis bien aise que vous ne m'en vouliez pas de mal. </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Je ne dirai plus une autre fois que les gens sont morts, à moins de les avoir vus à dix pieds sous terre.</s>
+</p>
+                    </sp><!--@who="GODEFROI"-->
+</div>
+<div type="scene" n="16">
+                    <head>SCÈNE XVI. Monsieur de Cressac, Madame de Cressac, Julie, Adrien, Thomas, Jeanne, Suzette, Lubin.</head>
+<sp who="#thomas">
+                        <speaker>THOMAS, courant.</speaker>
+                        <p n="1">
+	<s n="1">Ah ! </s>
+	<s n="2">Le malheureux ! </s>
+	<s n="3">Où est-il ? </s>
+	<s n="4">Où est-il ?</s>
+</p>
+                    </sp><!--@stage="run"--><!--@who="THOMAS"-->
+<sp who="#suzette">
+                        <speaker>SUZETTE, montrant Godefroi.</speaker>
+                        <p n="2">
+	<s n="1">Tenez, mon père, le voilà. </s>
+</p>
+                        <stage type="frighten">Godefroi épouvanté se relire derrière Monsieur de Cressac.</stage>
+                    </sp><!--@stage="show"--><!--@who="SUZETTE"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="3">
+	<s n="1">Que vois-je ?</s>
+</p>
+                        <stage type="run/closer/show/touch/kiss">Suzette et Lubin courent vers Adrien, qui les présente à Julie. Jeanne se précipite sur la main de Madame de Cressac et la baise. Thomas se jette aux genoux de Monsieur de Cressac et les tient embrassés.</stage>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC, relevant Thomas.</speaker>
+                        <p n="4">
+	<s n="1">Que fais-tu, mon ami ? </s>
+	<s n="2">À mes pieds ? </s>
+	<s n="3">Toi, mon sauveur, le sauveur de toute ma famille !</s>
+</p>
+                    </sp><!--@stage="help"--><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="5">
+	<s n="1">Oui, Monsieur, c'est une nouvelle grâce que vous me faites après tant d'autres. </s>
+	<s n="2">J'ai pu vous prouver combien je suis reconnaissant de tous vos bienfaits.</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC. </speaker>
+                        <p n="6">
+	<s n="1">Tu as fait pour moi plus que je n'ai fait, plus que je ne pourrai faire de toute ma vie.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#thomas">
+                        <speaker>THOMAS.</speaker>
+                        <p n="7">
+	<s n="1">Que dites-vous ? </s>
+	<s n="2">C'est un service d'un moment ; et moi, il y a plus de huit ans que je vis heureux par vos bontés. </s>
+	<s n="3">Voyez ces champs, cette ferme, c'est de vous que je les tiens. </s>
+	<s n="4">Vous avez tout perdu, souffrez que je vous les rende. </s>
+	<s n="5">Je vivrai assez heureux du souvenir de n'avoir pas été ingrat envers mon bienfaiteur.</s>
+</p>
+                    </sp><!--@who="THOMAS"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC. </speaker>
+                        <p n="8">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Mon ami, je les reprends, mais pour te donner des champs dix fois plus vastes et plus fertiles. </s>
+	<s n="3">La cassette que tu m'as sauvée contient la meilleure partie de ma fortune, et je te la dois. </s>
+	<s n="4">N'ayant plus de logement à la ville, je vais habiter mes terres, tu m'y suivras. </s>
+	<s n="5">Nous y vivrons tous ensemble. </s>
+	<s n="6">Tes enfants seront les miens.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#adrien">
+                        <speaker>ADRIEN.</speaker>
+                        <p n="9">
+	<s n="1">Ah ! </s>
+	<s n="2">Mon papa, j'allais vous en prier. </s>
+	<s n="3">Voici ma soeur de lait Suzette, voilà Lubin. </s>
+	<s n="4">Si vous saviez toutes les amitiés qu'ils m'ont faites ! </s>
+	<s n="5">Je serais peut-être mort aussi sans leur secours.</s>
+</p>
+                    </sp><!--@who="ADRIEN"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC, serrant la main de Jeanne.</speaker>
+                        <p n="10">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Nous ne ferons tous qu'une famille heureuse de s'aimer. </s>
+</p>
+                    </sp><!--@stage="touch"--><!--@who="MONSIEUR DE CRESSAC"-->
+<sp who="#jeanne">
+                        <speaker>JEANNE.</speaker>
+                        <p n="11">
+	<s n="1">Venez, en attendant, prendre quelque repos. </s>
+	<s n="2">Excusez-nous si nous ne vous recevons pas comme nous l'aurions désiré.</s>
+</p>
+                    </sp><!--@who="JEANNE"-->
+<sp who="#thomas">
+                        <speaker>THOMAS, regardant du côté de la colline. </speaker>
+                        <p n="12">
+	<s n="1">Voici le chariot qui arrive, et des malheureux qui le suivent. </s>
+	<s n="2">Permettez-vous que j'aille leur offrir quelque secours ?</s>
+</p>
+                    </sp><!--@stage="watch"--><!--@who="THOMAS"-->
+<sp who="#monsieur-de-cressac">
+                        <speaker>MONSIEUR DE CRESSAC.</speaker>
+                        <p n="13">
+	<s n="1">Ah ! </s>
+	<s n="2">Je vais avec toi les consoler. </s>
+	<s n="3">Je suis trop intéressé dans l'événement cruel qui cause leurs peines. </s>
+	<s n="4">Ô jour que je croyais si malheureux ! </s>
+	<s n="5">Tu me rends bien plus que tu ne me fais perdre. </s>
+	<s n="6">Pour quelques biens que tu m'enlèves, tu me donnes une nouvelle famille et des amis dignes de mon coeur.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE CRESSAC"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

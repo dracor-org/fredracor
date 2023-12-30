@@ -1,0 +1,298 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001746" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Le Grenouille à Queue.</title>
+                <author>
+      <persName>
+        <forename>Jules</forename>
+        <surname>Moinaux</surname>
+      </persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000106548120</idno>
+    </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_GRENOUILLEAQUEUE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_GRENOUILLEAQUEUE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-narrateur" sex="MALE">
+                        <persName>Le Narrateur</persName>
+                    </person>
+                    <person xml:id="madame-mirail" sex="FEMALE">
+                        <persName>Madame Mirail</persName>
+                    </person>
+                    <person xml:id="la-prevenue" sex="FEMALE">
+                        <persName>La Prévenue</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LE GRENOUILLE À QUEUE.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="narrateur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#pageon">PAGEON</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#madame-mirail">MADAME MIRAIL</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, plaignante.</castItem>
+			<castItem>
+                    <role corresp="#la-prevenue">LA PRÉVENUE</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, concierge.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 293-297</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LA GRANOUILLE À QUEUE.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#le-narrateur">
+                        <speaker>LE NARRATEUR.</speaker>
+                        <p n="1">
+	<s n="1">Il faut qu'un animal ait une queue ou qu'il n'en ait pas ; ainsi l'a décidé dans sa sagesse le_Créateur de toutes choses, à part, bien entendu, la maxime que la sagesse de Monsieur_de_la_Palisse ou de Monsieur_Prudhomme eût suffi à proclamer.</s>
+</p>
+                        <p n="2">
+	<s n="1">Madame_veuve_Mirail, qui, comme toutes les veuves âgées, comble sur ses vieux jours le vide laissé par le défunt avec la société d'animaux domestiques, ne peut pas venir à bout d'avoir des animaux avec ou sans queue. </s>
+	<s n="2">Ses explications vont faire comprendre ce qu'on ne comprendrait pas sans cela.</s>
+</p>
+                        <p n="3">
+	<s n="1">Elle a cité sa concierge en police_correctionnelle pour mutilation d'animaux domestiques.</s>
+</p>
+                    </sp><!--@who="LE NARRATEUR"-->
+<sp who="#madame-mirail">
+                        <speaker>LE PLAIGNANTE.</speaker>
+                        <p n="4">
+	<s n="1">Figurez-vous, messieurs, dit-elle, que c'est une horreur des abominations que cette femme-là ; voyez-vous, faut que ça n'ait pas plus de sensibilité qu'un rhinocéros sauvage.</s>
+</p>
+                    </sp><!--@who="MADAME MIRAIL"-->
+<sp who="#la-prevenue">
+                        <speaker>LA PRÉVENUE.</speaker>
+                        <p n="5">
+	<s n="1">On me laisse traiter comme la plus vile des turpitudes et que ça n'est pas vrai, messieurs, ce que dit cette dame.</s>
+</p>
+                    </sp><!--@who="LA PRÉVENUE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="6">
+	<s n="">Vous vous expliquerez tout à l'heure.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-prevenue">
+                        <speaker>LA PRÉVENUE.</speaker>
+                        <p n="7">
+	<s n="1">C'est tout expliqué ; c'est pas moi.</s>
+</p>
+                    </sp><!--@who="LA PRÉVENUE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="8">
+	<s n="">Voulez-vous vous taire ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-mirail">
+                        <speaker>LA PLAIGNANTE.</speaker>
+                        <p n="9">
+	<s n="1">Messieurs, j'avais un chien joli, que c'était l'admiration de tout le. monde, qu'il y a même un Anglais... ou un Espagnol... je ne sais pas au juste, seulement je sais qu'il a comme un accent gascon, eh bien, messieurs, il m'en a offert cent-vingt_francs. </s>
+	<s n="2">Une queue ! </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Si vous aviez vu, un panache ! </s>
+</p>
+                        <stage type="laugh">Rires.</stage>
+                    </sp><!--@who="MADAME MIRAIL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="10">
+	<s n="1">Arrivez au fait.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-mirail">
+                        <speaker>LA PLAIGNANTE.</speaker>
+                        <p n="11">
+	<s n="1">Eh bien ! </s>
+	<s n="2">Messieurs, la pauvre bête, qui avait l'habitude de descendre dans la cour, revient... </s>
+	<s n="3">Ah ! </s>
+	<s n="4">Messieurs, plus de queue ! coupée net, rasibus....et il saignait, la pauvre bête.... </s>
+	<s n="5">Ça m'a fait tant de peine que, ne pouvant plus le voir en face, je m'en suis défaite. </s>
+	<s n="6">Alors,voilà qu'on me donne un angora... </s>
+	<s n="7">Ah ! </s>
+	<s n="8">Un manchon, un bonnet à poil... et une queue !...</s>
+</p>
+                        <stage type="laugh">Rires bruyants.</stage>
+                    </sp><!--@who="MADAME MIRAIL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="12">
+	<s n="1">Voyons, abrégeons ; on a encore coupé la queue à votre chat ? </s>
+</p>
+                        <stage type="laugh">Nouveaux rires.</stage>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-mirail">
+                        <speaker>LA PLAIGNANTE.</speaker>
+                        <p n="13">
+	<s n="1">Comme à mon chien, au ras ; on ne lui a pas laissé ce qui me tiendrait dans l'oeil.</s>
+</p>
+                    </sp><!--@who="MADAME MIRAIL"-->
+<sp who="#la-prevenue">
+                        <speaker>LA PRÉVENUE.</speaker>
+                        <p n="14">
+	<s n="1">Mais est-ce que ça me regarde, tout ça ; est-ce que c'est moi ?</s>
+</p>
+                    </sp><!--@who="LA PRÉVENUE"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT, à la plaignante. </speaker>
+                        <p n="15">
+	<s n="1">C'est tout ?</s>
+</p>
+                    </sp><!--@stage="toward"--><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-mirail">
+                        <speaker>LA PLAIGNANTE.</speaker>
+                        <p n="16">
+	<s n="1">Pour les queues coupées, oui, mais vous allez voir plus fort ; je me dis : puisque je ne peux pas conserver des animaux avec leur queue, je vais m'en procurer un sans queue, je serai sûre qu'on ne la lui coupera pas.</s>
+</p>
+                        <stage type="laugh">Rires bruyants.</stage>
+                        <p n="17">
+	<s n="1">Ne pouvant, plus voir mon chat en face sans sa queue, je lui donne la volée.</s>
+</p>
+                        <stage type="laugh">Nouveaux rires.</stage>
+                        <p n="18">
+	<s n="1">Et j'achète une grosse grenouille verte dans un bocal. </s>
+	<s n="2">Je me dis : Celle-là, on ne lui coupera pas la queue. </s>
+	<s n="3">Un jour, en rentrant, j'ouvre ma fenêtre, je vais voir ma grenouille, pour savoir le temps qu'il fera le lendemain, vu que chacun sait que quand la grenouille monte, c'est que....</s>
+</p>
+                    </sp><!--@who="MADAME MIRAIL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="19">
+	<s n="1">Bien, bien, terminez.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-mirail">
+                        <speaker>LA PLAIGNANTE.</speaker>
+                        <p n="20">
+	<s n="1">Eh bien, Monsieur, je la vois sur le dos, dans le fond de l'eau, qui battait ses petits flancs. </s>
+	<s n="2">Je regarde ce qu'elle pouvait avoir, et qu'est-ce que je vois ? </s>
+	<s n="3">Une grande queue en plume qu'on lui avait plantée, si bien que ça lui avait perforé le tempérament... </s>
+</p>
+                        <stage type="laugh/loud">Hilarité bruyante et prolongée.</stage>
+                    </sp><!--@who="MADAME MIRAIL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="21">
+	<s n="1">Enfin, vous imputez toutes ces méchancetés à votre concierge ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-mirail">
+                        <speaker>LA PLAIGNANTE.</speaker>
+                        <p n="22">
+	<s n="1">Monsieur, elle s'en est vantée.</s>
+</p>
+                    </sp><!--@who="MADAME MIRAIL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="23">
+	<s n="1">À qui ?... </s>
+	<s n="2">Où sont les témoins ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#la-prevenue">
+                        <speaker>LA PRÉVENUE.</speaker>
+                        <p n="24">
+	<s n="">Oui, ou sont-ils les témoins ?</s>
+</p>
+                    </sp><!--@who="LA PRÉVENUE"-->
+<sp who="#madame-mirail">
+                        <speaker>LA PLAIGNANTE.</speaker>
+                        <p n="25">
+	<s n="1">Vous les avez dépravés en leur payant du café et des cerises_à_l_eau-de-vie quand vous ayez su que je voulais vous traîner sur les bancs de la magistrature ; alors, ils disent qu'ils ne savent rien, mais je lève la main qu'ils me l'ont dit, même que pour la grenouille, ils ont raconté, comme je demeure au premier sur le derrière, que vous aviez monté jusqu'à ma fenêtre avec une échelle, pour la martyriser la pauvre bête, en y mettant une queue dont elle est morte.</s>
+</p>
+                    </sp><!--@who="MADAME MIRAIL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="26">
+	<s n="1">Enfin, madame, vous n'avez pas de témoins, votre concierge nie le fait...</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#madame-mirail">
+                        <speaker>LA PLAIGNANTE.</speaker>
+                        <p n="27">
+	<s n="1">Une vengeance, monsieur, parce que madame a l'habitude que les locataires aillent lui souhaiter sa fête et lui porter des lichonneries, et moi pas qui garde mon quant à soi.</s>
+</p>
+                    </sp><!--@who="MADAME MIRAIL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="28">
+	<s n="1">Tout cela est bien possible ; mais, encore une fois, nous ne pouvons pas condamner sans preuves.</s>
+</p>
+                        <stage type="explicit">Dans ces circonstances, la concierge a été renvoyée des fins de la plainte.</stage>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

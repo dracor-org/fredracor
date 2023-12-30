@@ -1,0 +1,204 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001739" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Deux Amateurs de Saucisson.</title>
+                <author>
+      <persName>
+        <forename>Jules</forename>
+        <surname>Moinaux</surname>
+      </persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000106548120</idno>
+    </author><!--Jules MOINAUX (1815-1895)-->
+                <editor>Paul FIÈVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/MOINAUX_DEUXAMATEURSDESAUCISSONS.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/MOINAUX_DEUXAMATEURSDESAUCISSONS.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5718390w</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="le-narrateur" sex="MALE">
+                        <persName>Le Narrateur</persName>
+                    </person>
+                    <person xml:id="le-marchand" sex="MALE">
+                        <persName>Le Marchand</persName>
+                    </person>
+                    <person xml:id="monsieur-le-president" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur le President</persName>
+                    </person>
+                    <person xml:id="chapal" sex="MALE">
+                        <persName>Chapal</persName>
+                    </person>
+                    <person xml:id="lorin" sex="MALE">
+                        <persName>Lorin</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Saynète</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1881">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">DEUX AMATEURS DE SAUCISSON.</titlePart>
+		</docTitle> 
+		<docDate when="1881">1881. Tous droits réservés.</docDate>
+		<docAuthor>par JULES MOINEAUX, rédacteur de la Gazette des Tribunaux.</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ALBIN MICHEL">PARIS, CHEVALIER-MARESCQ ÉDITEUR, 20 rue SOUFFLOT, 20.</editor>-->
+			<div type="printer">
+                    <p>8517. - Paris. Imprimerie de Ch. Noblet, 13 rue Cujas. - 1881</p>
+                </div><!--@id="NOBLET"-->
+		</div>		
+		<castList>
+                <head>PERSONNAGES.</head>
+			<castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="narrateur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-president">LE PRÉSIDENT</role><!--@sex="1"--><!--@type="H"--><!--@statut="président du tribunal"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#le-marchand">LE MARCHAND</role><!--@sex="1"--><!--@type="H"--><!--@statut="comerçant"--><!--@age="A"--><!--@stat_amour="néant"-->, prévenu.</castItem>
+			<castItem>
+                    <role corresp="#lorin">LORIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="voleur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#chapal">CHAPAL</role><!--@sex="1"--><!--@type="H"--><!--@statut="voleur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+		<note>Extrait de MOINAUX, Jules, "Les tribunaux comiques", Paris, Chevalier-Marescq éditeur, 1881. pp 319-322</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>DEUX AMATEURS DE SAUCISSON.</head>
+<div type="scene" n="1">
+                    <head/>
+<sp who="#le-narrateur">
+                        <speaker>LE NARRATEUR.</speaker>
+                        <p n="1">
+	<s n="1">Voici une manière de voler du saucisson qui est assez coquette ; le saucisson, était, à l'ail, mais il serait sans ail, que le procédé n'en serait pas moins applicable ; les deux inventeurs sont les nommés Lorin et Chapal.</s>
+</p>
+                    </sp><!--@who="LE NARRATEUR"-->
+<sp who="#le-marchand">
+                        <speaker>LE MARCHAND DE COMESTIBLES, victime du vol raconte ainsi le fait :</speaker>
+                        <p n="2">
+	<s n="1">« J'étais dans ma boutique, ces messieurs entrent, regardent la marchandise, comme pour choisir quelque chose, puis celui-ci (Lorin) prend un grand saucisson entamé, à l'ail, le passe sous son bras, comme ça...</s>
+</p>
+                        <stage type="wave">Le témoin fait le geste.</stage>
+                        <p n="3">
+	<s n="1">... et me dit : - Combien ?... </s>
+	<s n="2">Et il fait celle de fouiller dans son gousset. </s>
+	<s n="3">- Combien ? que je lui dis ; il faut que je pèse, je ne sais pas combien il y en a. </s>
+	<s n="4">- Non, non, qu'il me dit, c'est pas la peine ; combien, à vue de nez ? </s>
+	<s n="5">- Mais, que je réplique, je ne vends pas à vue de nez. </s>
+	<s n="6">- Qu'est-ce que ça fait  ? À l'hasard. </s>
+	<s n="7">Alors, je rumine un peu ce que le saucisson pouvait peser ; je me dis : Il doit en rester de trois à quatre livres ; sur ce, je dis à monsieur : </s>
+	<s n="8">- Eh bien, ça fera six_francs_cinquante. </s>
+	<s n="9">- Comment ! Six_francs_cinquante ? qu'il me dit ; vous vous fichez de moi. </s>
+	<s n="10">Là-dessus, nous nous chamaillons, moi prétendant que le saucisson pesait au moins quatre livres, lui soutenant qu'il n'en pesait pas la moitié ; si bien qu'il finit par retirer le saucisson de dessous son bras et qu'il le jette sur le comptoir en disant : </s>
+	<s n="11">- Au fait, vous m'embêtez avec votre saucisson ; tenez, je n'en veux plus du tout. </s>
+	<s n="12">Et il s'en va avec son ami.</s>
+</p>
+                        <p n="4">
+	<s n="1">Je vas pour reprendre mon saucisson, et je reste ébaubi en voyant qu'il était bien plus court que je ne l'avais vu ; me doutant d'une filouterie, je cours vivement dans la rue, je vois mes deux gaillards qui filaient ; j'appelle un sergent de ville, et je les fais arrêter ; on les fouille, et on trouve dans la poche de celui-ci (Chapal) un morceau de saucisson d'une livre_et_demie. »</s>
+</p>
+                    </sp><!--@who="LE MARCHAND"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="5">
+	<s n="1">Chapal, c'est vous qui avez coupé la moitié du saucisson pendant que Lorin l'avait sous son bras et feignait de le marchander ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#chapal">
+                        <speaker>CHAPAL.</speaker>
+                        <p n="6">
+	<s n="1">Mon président, simple charge.</s>
+</p>
+                    </sp><!--@who="CHAPAL"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="7">
+	<s n="1">Ah ! </s>
+	<s n="2">Vous appelez ça une charge ? </s>
+	<s n="3">Eh bien, la prévention appelle cela un vol.</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#chapal">
+                        <speaker>CHAPAL.</speaker>
+                        <p n="8">
+	<s n="1">Nous étions un peu gris, vous savez... des hommes qu'a bu...</s>
+</p>
+                    </sp><!--@who="CHAPAL"-->
+<sp who="#lorin">
+                        <speaker>LORIN.</speaker>
+                        <p n="9">
+	<s n="1">Si bien une farce, mon président, que le saucisson était à l'ail, et que je ne l'aime pas, à preuve.</s>
+</p>
+                        <stage type="explicit">Le tribunal délibère.</stage>
+                    </sp><!--@who="LORIN"-->
+<sp who="#lorin">
+                        <speaker>LORIN.</speaker>
+                        <p n="10">
+	<s n="1">Je demande la remise à huitaine.</s>
+</p>
+                    </sp><!--@who="LORIN"-->
+<sp who="#monsieur-le-president">
+                        <speaker>MONSIEUR LE PRÉSIDENT.</speaker>
+                        <p n="11">
+	<s n="1">Pourquoi faire ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR LE PRÉSIDENT"-->
+<sp who="#lorin">
+                        <speaker>LORIN.</speaker>
+                        <p n="12">
+	<s n="1">Pour faire assigner des témoins qui diront que je ne peux pas souffrir le saucisson à l'ail.</s>
+</p>
+                        <stage type="explicit">La demandé a été rejetée, et les prévenus condamnés à chacun quinze jours de prison.</stage>
+                    </sp><!--@who="LORIN"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

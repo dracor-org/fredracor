@@ -1,0 +1,536 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001722" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Molière et les Deux Thalies, Dialogue</title>
+                <author>
+      <persName>
+        <forename>Aimé</forename>
+        <surname>Leroy</surname>
+      </persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000397728681</idno>
+    </author><!--Aimé LEROY (1793-1848)-->
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/LEROY_MOLIEREDEUXTHALIES.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/LEROY_MOLIEREDEUXTHALIES.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k65175596</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="moliere" sex="FEMALE">
+                        <persName>Molière</persName>
+                    </person>
+                    <person xml:id="la-vieille-thalie" sex="MALE">
+                        <persName>Le Vieille Thalie</persName>
+                    </person>
+                    <person xml:id="la-jeune-thalie" sex="MALE">
+                        <persName>La Jeune Thalie</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Dialogue</term>
+                    <term>vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1816">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+<front>
+	<docTitle>
+	    <titlePart type="main">MOLIÈRE ET LES DEUX THALIES</titlePart>
+		<titlePart type="sub">DIALOGUE EN VERS</titlePart> 
+	</docTitle>
+   <docDate when="1816">1816.</docDate>
+   <docAuthor>PAR AIMÉ LEROY.</docAuthor>
+	<div type="docImprint">
+		<!--TODO: handling of editor name at this place unclear <editor id="PILLE, DELAUNAYS">À PARIS, CHEZ PILLET, IMPRIMEUR-LIBRAIRE, RUE CHRISTINE, N° 5. ET DELAUNAY, LIBRAIRE, PALAIS-ROYAL. </editor>-->
+	</div>
+	<castList>
+                <head>PERSONNAGES</head>
+		<castItem>
+                    <role corresp="#moliere">MOLIÈRE</role><!--@sex="2"--><!--@type="H"--><!--@statut="auteur"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+		<castItem>
+                    <role corresp="#la-jeune-thalie">LA JEUNE THALIE</role><!--@sex="1"--><!--@type="H"--><!--@statut="muse"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+		<castItem>
+                    <role corresp="#la-vieille-thalie">LE VIEILLE THALIE</role><!--@sex="1"--><!--@type="H"--><!--@statut="muse"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XXème" gps="48.856614, 2.352222"/>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>MOLIÈRE ET LES DEUX THALIES.</head>
+<div type="scene" n="1">
+                    <head>Molière.</head>
+<sp who="#moliere">
+                        <speaker>MOLIÈRE, seul.</speaker>
+                        <l n="1">Puisque j'ai pu quitter un moment les enfers,</l>
+                        <l n="2">Que n'ai-je le loisir d'observer les travers</l>
+                        <l n="3">Dont ce siècle, sans doute, autant qu'un autre abonde !</l>
+                        <l n="4">Les abus finiront quand finira le monde ;</l>
+                        <l n="5">Et sur ce grand théâtre on verra, de tout temps,</l>
+                        <l n="6">Des méchants et des sots, des sots et des méchants.</l>
+                        <l n="7">Un misanthrope aigri vainement en murmure ;</l>
+                        <l n="8">Ce sont vices unis à l'humaine nature :</l>
+                        <l n="9">J'ai fait de vains efforts, croyant les corriger,</l>
+                        <l n="10">Le masque est différent, l'homme n'a pu changer.</l>
+                        <l n="11">Mais c'est trop m'arrêter, le temps fuit, et j'oublie</l>
+                        <l n="12">Que je viens visiter l'une et l'autre Thalie.</l>
+                        <l n="13">Est-il vrai que l'aînée, en son triste dédain,</l>
+                        <l n="14">Fasse un indigne accueil à mon pauvre Dandin,</l>
+                        <note type="C">[1]</note>
+                        <l n="15">A mon vieux Harpagon, à mes autres ouvrages ?</l>
+                        <l n="16">Aurait-elle du temps éprouvé les outrages ?</l>
+                        <l n="17">Son humeur, son esprit serait-il donc changé ?</l>
+                        <l n="18">Tant pis ; car à ce prix je serais trop vengé</l>
+                        <l n="19">Mais que ne puis-je, au gré de mon impatience,</l>
+                        <l n="20">La voir sans différer ! Un dieu, par sa puissance,</l>
+                        <l n="21">Sans doute, en ce moment, y vient exaucer mes voeux.</l>
+                        <l n="22">Le temple de Thalie apparaît à mes yeux ;</l>
+                        <l n="23">Je n'en saurais douter, je la vois elle-même.</l>
+                        <l n="24">Elle pleure, je crois ! Ma surprise est extrême !</l>
+                    </sp><!--@stage="alone"--><!--@who="MOLIÈRE"-->
+</div>
+<div type="scene" n="2">
+                    <head>Molière, La vieille Thalie.</head>
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="25">Thalie, est-ce bien vous ? Ne me trompé-je point ?</l>
+                        <l n="26">Se peut-il que vos traits soient changés à ce point ?</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="27">En ce monde, Monsieur, que venez-vous donc faire ?</l>
+                        <l n="28">Par votre ton bourgeois croyez-vous encor plaire ?</l>
+                        <l n="29" part="I">Vous seriez aujourd'hui mal reçu.</l><!--@syll="9"-->
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="29" part="F">Je le vois.</l><!--@syll="3"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="30">Je vous parais changée, à ce que j'aperçois ?</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="31">Oui, je ne sais comment je vous ai reconnue,</l>
+                        <l n="32">A cet air triste et froid. Bon Dieu !qu'est devenue</l>
+                        <l n="33">Cette franche gaîté qui plaisait tant jadis ?</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="34">Fi ! Le ton exécrable, horrible ! Est-il permis</l>
+                        <l n="35">De vanter maintenant votre gaîté grossière ?</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="36" part="I">Mais on ne rit donc plus ?</l><!--@syll="6"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="36" part="F">Fi ! Vous dis-je, Molière ;</l><!--@syll="6"-->
+                        <l n="37">Fi ! Je déteste trop la trivialité ;</l>
+                        <l n="38">Je souris quelquefois, mais avec dignité.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="39">Oh ! Oh ! Quel changement ! Dites-moi, je vous prie,</l>
+                        <l n="40">Vous avez une soeur, la petite Thalie, 1</l>
+                        <l n="41" part="I">Dont Picard est le père ?</l><!--@syll="6"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="41" part="F">Ah ! Ne me parlez pas</l><!--@syll="6"-->
+                        <l n="42">De ce Picard, avec sa gaîté, ses éclats !</l>
+                        <l n="43">De Marivaux jamais il n'aura la finesse,</l>
+                        <l n="44">La grâce de Dorat, et sa délicatesse ;</l>
+                        <l n="45">Surtout ce goût exquis, cette fleur de bon ton.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="46">Je veux être pendu, si j'entends ce jargon !</l>
+                        <l n="47">Le bon ton ! Qu'est-ce donc en langage vulgaire ?</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="48">C'est ce qu'on n'avait pas, quand vous crûtes me plaire.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="49">Mais Regnard et Dancourt, Brueys et Palaprat ?</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="50">Ah, dieux ! Quels gens grossiers ! Qu'ils sont loin de Dorat !</l>
+                        <l n="51">Quelle horreur ! Quel scandale ! Et quel goût détestable !.</l>
+                        <l n="52">C'est à n'y pas tenir, tant c'est épouvantable !</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="53">Miséricorde ! Oh ciel ! Pauvre Thalie, hélas !</l>
+                        <l n="54">On me l'avait bien dit, je ne le croyais pas,</l>
+                        <l n="55">Qu'on aurait pu changer votre heureux caractère.</l>
+                        <l n="56">À cet air précieux, à cette mine austère,</l>
+                        <l n="57">Qui vous reconnaîtrait ? Vous prude ! Ah ! Quel malheur !</l>
+                        <l n="58">Vous n'aviez point jadis cette farouche humeur ;</l>
+                        <l n="59" part="I">Et, soit dit entre nous.</l><!--@syll="6"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="59" part="F">Quoi ? Parlez, qu'est-ce à dire ?</l><!--@syll="6"-->
+                        <note type="C">[2]</note>
+                        <l n="60">Je sais bien que de moi l'on se plaît à médire.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="61">On a tort ; et d'ailleurs vous avez dû changer ;</l>
+                        <l n="62">Vous êtes femme : eh bien, loin de vous corriger,</l>
+                        <l n="63">Changez encore ; des ans pour réparer l'injure,</l>
+                        <l n="64">Votre sexe a besoin de fard et de parure ;</l>
+                        <l n="65" part="I">Je le sais.</l><!--@syll="3"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="65" part="M">Quoi ? Monsieur.</l><!--@syll="3"-->
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="65" part="F">Un moment ; écoutez :</l><!--@syll="6"-->
+                        <l n="66">Vous pouvez vous passer de brillants empruntés ;</l>
+                        <l n="67">Vous êtes belle encore ; à quoi bon l'étalage</l>
+                        <l n="68">De ces grands airs qu'affecte une prude sauvage ?</l>
+                        <l n="69">Il est toujours bien temps d'embrasser ce parti,</l>
+                        <l n="70">Lorsque de la beauté l'éclat est amorti ;</l>
+                        <l n="71">Vous n'en êtes point là ; non, croyez-en Molière,</l>
+                        <l n="72">Reprenez votre humeur, vous pourrez longtemps, plaire</l>
+                        <l n="73">Et par le naturel et par la vérité ;</l>
+                        <l n="74">Laissez là ce maintien, ce langage affecté ;</l>
+                        <l n="75">Laissez ce style faux dont le bon sens murmure,</l>
+                        <l n="76">Car ce n'est pas ainsi que parle la nature.</l>
+                        <l n="77">Si vous croyez encor m'avoir sous votre loi,</l>
+                        <l n="78">Donnez-moi des rivaux qui soient dignes de moi.</l>
+                        <l n="79">Mais non ; pour vous prouver que mon coeur froid, paisible,</l>
+                        <l n="80">De sentiments jaloux ne vit plus susceptible,</l>
+                        <l n="81">Après avoir exclu Dorat et Marivaux,</l>
+                        <l n="82">Quittez ce fier dédain pour vos amants nouveaux ;</l>
+                        <l n="83">J'ose vous en prier : plusieurs, quoi qu'on en dise,</l>
+                        <l n="84">Sont dignes de Thalie ; à tort on les déprise.</l>
+                        <l n="85">Quelques-uns, je le sais, captant votre faveur,</l>
+                        <l n="86">Se sont trop conformés à votre triste humeur ;</l>
+                        <l n="87">Mais ils voulaient vous plaire ; ils sont bien excusables :</l>
+                        <l n="88">Vous pleuriez, ils ont pris des mines lamentables ;</l>
+                        <l n="89">Riez, et vous verrez qu'ils essuieront leurs pleurs.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="90">Non, ils chérissent trop les tragiques douleurs.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="91">Les tragiques douleurs ! Est-ce votre domaine P</l>
+                        <l n="92">Renvoyez ces pleureurs auprès de Melpomène.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="93">À ma soeur ? La superbe a déjà trop d'orgueil !</l>
+                        <l n="94">Je voudrais bien savoir d'où vient le froid accueil</l>
+                        <l n="95">Qu'on me fait aujourd'hui, tandis qu'on la préfère.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="96">C'est que vous préférez vous-même un somnifère,</l>
+                        <l n="97">Un jargon précieux, à la franche gaîté ;</l>
+                        <l n="98">C'est que vous aimez mieux, en brillant comité,</l>
+                        <l n="99">Vous ennuyer, bâiller, ouïr quelque fadaise,</l>
+                        <l n="100">Qu'en dépit du bon ton rire tout à votre aise.</l>
+                        <l n="101">N'en accusez que vous, si vos admirateurs</l>
+                        <l n="102">Ont le goût dépravé ; vos goûts forment les leurs :</l>
+                        <l n="103">Ils sont habitués aux manières charmantes</l>
+                        <l n="104">De votre cher Dorât, à ses phrases brillantes.</l>
+                        <l n="105">Si quelque bon esprit, gai, naturel et rond</l>
+                        <l n="106">Ose vous faire rire, on crie au mauvais ton ;</l>
+                        <l n="107">Et ses discours trop vrais excitent le scandale.</l>
+                        <l n="108">Eh ! Messieurs les badauds, ayez moins de morale</l>
+                        <l n="109">Et plus de moeurs. Pour être en tout plus pointilleux,</l>
+                        <l n="110">Vous croyez-vous au fond meilleurs que vos aïeux ?</l>
+                        <l n="111">Croyez-vous avoir seuls connu la bienséance ?</l>
+                        <l n="112">Mon siècle n'était point celui de l'indécence,</l>
+                        <l n="113">Et pourtant il osa, sans s'être compromis,</l>
+                        <l n="114">Rire de tous les traits que vous avez honnis.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="115">Ah ! Ah ! De cette humeur je devine la cause ;</l>
+                        <l n="116">On est toujours fâché, du moins je le suppose,</l>
+                        <l n="117">Quoique insensible et froid, d'avoir été sifflé ;</l>
+                        <l n="118" part="I">Car vous savez, je vois.</l><!--@syll="6"-->
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="118" part="F">Et j'en suis consolé.</l><!--@syll="6"-->
+                        <l n="119">J'avouerai toutefois qu'un peu de vaine gloire</l>
+                        <l n="120">Au récit qu'on m'en fit me défendit de croire.</l>
+                        <l n="121">Pour m'en assurer mieux, je vins donc, je vous vis,</l>
+                        <l n="122">Et d'un pareil affront je ne fus plus surpris.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="123">Je vous ai donc paru, Monsieur,bien singulière ?</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="124">Oui, je ne flatte point, vous connaissez Molière ;</l>
+                        <l n="125">Mais votre air triste et sombre, autrefois si riant.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="126" part="I">Voulez-vous m'empêcher de pleurer ?</l><!--@syll="9"-->
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="126" part="F">Nullement.</l><!--@syll="3"-->
+                        <l n="127" part="I">Mais pourquoi pleurez-vous ?</l><!--@syll="6"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="127" part="F">Monsieur, cela m'amuse.</l><!--@syll="6"-->
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="128">C'est différent : au moins, vous avez une excuse ;</l>
+                        <l n="129">Pleurez ; mais, croyez-moi, le rire vous va mieux :</l>
+                        <l n="130">Laissez à Melpomène injurier les dieux,</l>
+                        <l n="131">Apostropher le ciel d'une plainte importune,</l>
+                        <l n="132">Quereller les destins et braver la fortune ;</l>
+                        <l n="133">Vous, peignez la nature et l'homme tel qu'il est ;</l>
+                        <l n="134">Qu'il s'amuse en voyant son bizarre portrait ;</l>
+                        <l n="135">Tâchez de corriger, mais surtout faites rire ;</l>
+                        <l n="136">Rien ne vaut la gaieté ; l'espèce humaine en tire</l>
+                        <l n="137">Des plaisirs toujours sûrs ;bien souvent la santé,</l>
+                        <l n="138">Et presque autant de biens que de la Faculté</l>
+                        <l n="139">L'on peut tirer de maux ; c'est dire assez, sans doute.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="140">Chacun plaide pour soi ; mais, quoi qu'il vous en coûte,</l>
+                        <l n="141">Convenez que les pleurs sont bien intéressants ;</l>
+                        <l n="142">Surtout dans notre sexe, ils sont si séduisants !</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="143">Oui, c'est un grand ressort pour émouvoir les âmes,</l>
+                        <l n="144">Et qui fut, j'en conviens, mis en jeu par les femmes,</l>
+                        <l n="145">Toujours avec succès. Melpomène pourtant</l>
+                        <l n="146" part="I">Pourrait se plaindre.</l><!--@syll="4"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="146" part="F">Eh ! Quoi, lorsqu'elle en fait autant ;</l><!--@syll="8"-->
+                        <l n="147" part="I">Qu'elle usurpe mes droits.</l><!--@syll="6"-->
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="147" part="F">Comment ! Elle fait rire ?</l><!--@syll="6"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="148" part="I">Trop souvent.</l><!--@syll="3"-->
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="148" part="F">En ce cas, je n'ai plus rien à dire,</l><!--@syll="9"-->
+                        <l n="149">Et vous avez raison, vous, de faire pleurer ;</l>
+                        <l n="150">Puis, c'est votre plaisir, il faut vous y livrer.</l>
+                        <l n="151">Quant au genre ennuyeux, vous n'avez plus d'excuse,</l>
+                        <l n="152">À moins que cependant l'ennui ne vous amuse ; Alors.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="153">Qu'entendez-vous, s'il vous plaît, par l'ennui ?</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="154">Mais j'entends ce bon ton. là. ce ton d'aujourd'hui,</l>
+                        <l n="155">Qui n'aime que le faux, du moins je le soupçonne :</l>
+                        <l n="156">L'ennui, c'est Marivaux ou Dorat en personne ;</l>
+                        <l n="157">M'y voilà ! L'on ne peut, je crois, mieux définir.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="158">Brisons là, s'il vous plaît, il est temps d'en finir ;</l>
+                        <l n="159">Nos goûts sont différents ; je ne saurais qu'y faire.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="160" part="I">Ainsi, vous me chassez ?</l><!--@syll="6"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="160" part="F">Moi, Monsieur ? Au contraire r</l><!--@syll="6"-->
+                        <l n="161">Je ne chasse personne ; et vous, et Marivaux,</l>
+                        <l n="162">Et mes anciens amis et mes amis nouveaux</l>
+                        <l n="163">Serez reçus chez moi sans nulle différence.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="164">Je vous suis obligé de tant de déférence.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="165">Quand avec vous pourtant je reprends ma gaîté,</l>
+                        <l n="166">Que ce soit entre nous , en petit comité.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="167">Fort bien ! Et voilà donc, voilà comme on me traite !</l>
+                        <l n="168">J'irai me présenter à votre soeur cadette.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="169">Eh bien ! Monsieur, allez ! Justement la voici.</l>
+                        <l n="170">Que me veut-elle donc ? et qui l'amène ici ?</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+</div>
+<div type="scene" n="3">
+                    <head>Molière, La jeune Thalie, La vieille Thalie.</head>
+<sp who="#la-jeune-thalie">
+                        <speaker>LA JEUNE THALIE.</speaker>
+                        <l n="171">Haute et puissante dame, illustre douairière</l>
+                        <l n="172">De vos anciens amants et surtout de Molière,</l>
+                        <l n="173">Ayant seule hérité, je ne sais trop pourquoi,</l>
+                        <l n="174">Daignerez-vous enfin partager avec moi</l>
+                        <l n="175">Ce domaine riant que vous laissez en friche </l>
+                        <l n="176">Je ne vous blâme point, ma soeur, vous êtes riche, </l>
+                        <l n="177">Il faut vous reposer vous et vos chers enfants,</l>
+                        <l n="178">Vivre avec quelques morts, vous moquer des vivants,</l>
+                        <l n="179">Et d'un bien superflu m'abandonner l'usage.</l>
+                        <l n="180">Vous ne connaissez pas vos richesses, je gage ?</l>
+                    </sp><!--@who="LA JEUNE THALIE"-->
+<sp who="#la-vieille-thalie">
+                        <speaker>LA VIEILLE THALIE.</speaker>
+                        <l n="181">Je ne les connais pas ! Eh bien ! Vous n'aurez rien,</l>
+                        <l n="182">J'aime mieux l'enterrer que vous donner mon bien.</l>
+                    </sp><!--@who="LA VIEILLE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="183">L'enterrer ! Ah pardon ! Souffrez que je réplique ;</l>
+                        <l n="184">Je ne vous ai point fait ma légataire unique.</l>
+                        <l n="185">Il faut que chacun vive ; et puisque Marivaux,</l>
+                        <l n="186">Monsieur Lanoue, enfin, mes illustres rivaux,</l>
+                        <l n="187">Vous nourrissent si bien de leurs vers, de leur prose,</l>
+                        <l n="188">De madrigaux glacés, de fadeurs à la rose,</l>
+                        <l n="189">De petits riens sucrés et de pavot confit,</l>
+                        <l n="190">Vous aimez le repos, tout cela vous suffit.</l>
+                        <l n="191">Laissez donc, croyez-moi, mon modeste héritage,</l>
+                        <l n="192">Ou souffrez tout au moins qu'une autre le partage.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-jeune-thalie">
+                        <speaker>LA JEUNE THALIE.</speaker>
+                        <l n="193">Quoi ! Vous êtes Molière ! Ah Dieux ! Je m'en doutais !</l>
+                        <l n="194">Mon père, ce me semble, a plusieurs de vos traits ;</l>
+                        <l n="195">Ainsi que vous d'ailleurs c'est un excellent homme.</l>
+                        <l n="196">Le père des auteurs, c'est ainsi qu'on le nomme,</l>
+                        <l n="197">Du vrai talent toujours le modèle et l'appui :</l>
+                        <l n="198">Vous sympathiseriez, j'en suis sûre, avec lui.</l>
+                    </sp><!--@who="LA JEUNE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="199" part="I">Souvent Collin m'en parle.</l><!--@syll="6"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-jeune-thalie">
+                        <speaker>LA JEUNE THALIE.</speaker>
+                        <l n="199" part="F">À ses nombreux ouvrages</l><!--@syll="6"-->
+                        <l n="200">Molière ne pourrait refuser ses suffrages.</l>
+                    </sp><!--@who="LA JEUNE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="201" part="I">Je voudrais les connaître.</l><!--@syll="6"-->
+                    </sp><!--@who="MOLIÈRE"-->
+<sp who="#la-jeune-thalie">
+                        <speaker>LA JEUNE THALIE.</speaker>
+                        <l n="201" part="F">Eh bien ! Passez les ponts.</l><!--@syll="6"-->
+                        <l n="202">Je demeure un peu loin ; mais,je vous en réponds,</l>
+                        <l n="203">Vous rirez, et dès lors ma cure est achevée.</l>
+                        <l n="204">Depuis assez longtemps de drames abreuvée,</l>
+                        <l n="205">Je vivais de mes pleurs ; rien n'est moins étonnant,</l>
+                        <l n="206">J'avais perdu mon père ; il revient maintenant,</l>
+                        <l n="207">Et bientôt avec lui ma gaîté naturelle.</l>
+                    </sp><!--@who="LA JEUNE THALIE"-->
+<sp who="#moliere">
+                        <speaker>MOLIÈRE.</speaker>
+                        <l n="208">Et vos joyeux amants reviendront avec elle.</l>
+                        <l n="209">Quant à moi (votre soeur dût s'en formaliser)</l>
+                        <l n="210">J'aimerais tout autant près de vous m'amuser,</l>
+                        <note type="C">[3]</note>
+                        <l n="211">Que de bâiller chez elle avec cérémonie,</l>
+                        <l n="212">Avec Messieurs Imbert, Lanoue et compagnie.</l>
+                        <note type="C">[4]</note>
+                        <l n="213">Je serais mieux sans doute entre vous et Picard (4),</l>
+                        <l n="214">Et, maître de mon bien,je vous en ferais part ;</l>
+                        <l n="215">Mais vous avez un prince éclairé, grand et juste,</l>
+                        <l n="216">Digne de son aïeul, mon protecteur auguste ;</l>
+                        <l n="217">Adressez-vous à lui ; vous lui plairez, je crois.</l>
+                        <stage type="toward">À la vieille Thalie :</stage>
+                        <l n="218">Pour vous, qui sur Molière aurez toujours des droits ;</l>
+                        <l n="219">Quand vous désirerez qu'avec vous je renoue,</l>
+                        <l n="220">Vous oublierez Dorat, Marivaux et Lanoue.</l>
+                    </sp><!--@who="MOLIÈRE"-->
+</div>
+</div>
+</body>
+<back>
+<div type="annexe" n="1">
+                <head>ANNEXES</head>
+<div type="note" n="1">
+                    <head>NOTES</head>
+	<p>(1) Il n'y a pas longtemps que Georges Dandin a été sifflé. L'Avare, l'Ecole des Maris, l'Ecole des Femmes, etc., sont joués dans le désert ; le Légataire, les Etourdis, les Héritiers, dédaignés des gens du bon ton ; mais la Coquette corrigée, le Jaloux sans amour, la Feinte par amour, les Jeux de l'Amour, etc., voilà ce qui doit plaire éternellement !</p>
+	<p>(2) Les reproches que l'on fait à Thalie d'avoir été souvent trop libre dans ses manières ne sont malheureusement que trop fondés ; mais ne tombe-t-elle pas aujourd'hui dans un excès contraire ? Semblable à cette femme qui, dans la fleur de l'âge, après s'être signalée par ses travers, finit sur le déclin des ans par affecter tous les scrupules de la pruderie, elle conserve bien le même fonds d'humeur ; mais elle a changé les dehors ; elle ne désire point être plus réservée, plus sage, mais elle veut le paraître.</p>
+	<l>Elle fait des tableaux couvrir les nudités ;</l>
+	<l>Mais elle a de l'amour pour les réalités.</l>
+	<p>Voilà notre muse comique. Présentez-lui des pièces telles que Figaro, les Femmes, Heureusement ; étalez ses yeux les scènes les plus licencieuses, les images les plus indécentes, pourvu qu'elles paraissent voilées d'une gaze légère et transparente, elle n'en sera point effarouchée ; mais prononcez devant elle un mot trop nu, quoique innocent, vous la ferez crier au scandale, à l'horreur. Molière aurait pu lui reprocher de n'avoir plus aujourd'hui que les oreilles chastes.</p>
+	<p>(3) Ce trait (ainsi que quelques autres) ne saurait atteindre les grands talenTs, ornemenTs de la scène française  ; et, pour ne parler que de la comédie, si Molière lui-même y voyait représenter certains ouvrages qu'il n'a pu que lire sur les tristes bords du Léthé, ne ferait-il point grâce à Marivaux et à Lanoue en faveur de leurs interprètes ?</p>
+	<p>(4) Rarement sommes-nous justes envers nos contemporains : Par un jaloux orgueil toujours les rabaissant, Nous croyons nous hausser en les rapetissant. Il est aussi dans notre nature d'estimer les choses à proportion qu'elles s'éloignent de nous, major è longinquo reverentia. Ce sentiment seul sans doute a pu faire comparer Dancourt à M.Picard. Assurément Dancourt est un comique très distingué ; son dialogue plein de franchise et de vivacité, quoique un peu trop libre, plaira toujours aux connaisseurs. Mais , je le demande à tout homme impartial et qui n'a pas juré de sacrifier éternellement les vivants aux morts, trouverait-on dans tout le théâtre de Dancourt des ouvrages tels que Médiocre et Rampant, le Collatéral, l'Entree dans le monde, Duhautcours, les Ricochets, les Marionnettes, la petite et la grande Ville, la Vieille Tante, etc. ? Non, sans doute : comme peintre de moeurs (et c'est là le grand mérite de M. Picard), je ne lui connais de rival dans le dernier siècle que Lesage, dont les romans sont aussi des comédies, comme l'a fort bien observé l'auteur des deux Gendres. Quel que soit le peu d'importance de mon opinion, je crois devoir prévenir le lecteur que, pour l'émettre, je n'ai cédé qu'au sentiment d'une juste admiration. Je n'ai pas l'honneur de connaître M. Picard ; mais ayant à retracer dans un ouvrage que je me propose de publier incessamment les moeurs d'une époque qu'il a si bien peinte dans tous les siens, j'ai dû faire de son théâtre surtout une étude particulière, et c'est en l'approfondissant que j'ai de plus en plus apprécié l'excellence d'un talent fait pour honorer notre siècle.</p>
+</div>
+</div>
+</back>
+</text>
+</TEI>
