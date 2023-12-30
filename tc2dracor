@@ -39,6 +39,24 @@ log () {
     && echo "Detailed log in $logfile"
 }
 
+fetch_authors () {
+  for port in ${PORTS[@]}; do
+    update_file=authors.update.$port.xml
+    # we prepend the xml declaration and append a newline since these seen to be
+    # stripped by eXist
+    echo '<?xml version="1.0" encoding="UTF-8"?>' > $update_file
+    curl -s -o >(cat >> $update_file) \
+      http://admin:@localhost:$port/exist/rest/db/tc2dracor/authors.xml
+    echo "" >> $update_file
+    if cmp -s authors.xml $update_file; then
+      # no difference
+      rm $update_file
+    else
+      echo "Updated author file: $update_file"
+    fi
+  done
+}
+
 stopContainer () {
   # remove containers
   for c in ${CONTAINERS[@]}; do
@@ -318,6 +336,7 @@ wait > /dev/null
 [ -z $VERBOSE ] || echo "$(date +'%T') :: transformation done"
 
 # terminate
+fetch_authors
 log
 stopContainer
 

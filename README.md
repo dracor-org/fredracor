@@ -93,7 +93,7 @@ instances can be started in parallel using either [Podman](https://podman.io) or
 
 1. start one or more pods (or containers) running eXist-db
 2. loading the transformation XQuery [`tc2dracor.xq`](tc2dracor.xq) and
-   auxiliary files ([authors.xml](authors.xml), [ids.xml](ids.xml)) to the
+   auxiliary files ([authors.xml](#authorsxml), [ids.xml](ids.xml)) to the
    database(s)
 3. process each source file by posting it to the transformation XQuery and
    storing the output to the [tei](tei) directory
@@ -168,6 +168,36 @@ podman logs -f $(cat $(ls -rtd /tmp/tc2dracor-* | tail -1)/containers)
 For debugging purposes the logs of all containers are also stored in a temporary
 working directory after the transformation has finished. Use the `-v` option to
 see the exact location of these files at the end of the script run.
+
+### authors.xml
+
+The transformation process uses the file [authors.xml](authors.xml) to unify
+and enrich author information within FreDraCor. The entries in this file provide
+a canonical `tei:author` element for each author together with the matching
+author string in the source documents (in the  `name` elements), e.g.:
+
+```xml
+<author>
+  <author xmlns="http://www.tei-c.org/ns/1.0">
+    <persName>
+      <forename>Charles</forename>
+      <surname>Collé</surname>
+    </persName>
+    <idno type="isni">0000000121258527</idno>
+    <idno type="wikidata">Q2404425</idno>
+  </author>
+  <name>Charles COLLÉ (1709-1783)</name>
+  <name>COLLE, Charles</name>
+  <isni>0000 0001 2125 8527</isni>
+</author>
+```
+
+When the transformation script discovers an author that does not yet have an
+entry in authors.xml, trying to properly identify the name parts and also
+looking up the Wikidata ID if the source TEI provides an ISNI. The new entries
+are written to the file `authors.update.xxxx.xml` (where 'xxxx' is the eXist DB
+port number used to run the transformation). This file should be merged manually
+into `authors.xml`.
 
 ## TODO
 
