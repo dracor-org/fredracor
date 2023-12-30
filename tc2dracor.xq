@@ -101,7 +101,7 @@ declare function local:update-authors ($entry) {
   update insert $entry into $author-map/authors
 };
 
-declare function local:make-authors ($doc) {
+declare function local:make-authors ($doc, $filename) {
   (: FIXME: use more specific XPath to find author :)
   for $author in $doc//*:author
     let $content := normalize-space($author)
@@ -137,6 +137,7 @@ declare function local:make-authors ($doc) {
 
       let $author-entry :=
         <author>
+          {comment {'Source: ' || $filename}}
           {$tei-author}
           <name>{$content}</name>
           {if ($isni) then <isni>{$isni}</isni> else ()}
@@ -887,7 +888,7 @@ declare function local:construct-tei (
       else $title-part/text()
     }
 
-  let $authors := local:make-authors($doc)
+  let $authors := local:make-authors($doc, $orig-name)
 
   let $genre := lower-case($doc//*:SourceDesc/*:genre)
   let $class-codes := (
