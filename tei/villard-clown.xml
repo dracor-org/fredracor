@@ -4,18 +4,11 @@
             <titleStmt>
                 <title type="main">Le Clown</title>
                 <author>
-      <idno type="isni">0000000044571148</idno>
-      <idno type="wikidata">Q454246</idno>
-      <persName>
-        <forename>Anne-Marie</forename>
-        <surname>Gaillard</surname>
-      </persName>
-      <persName>
-        <forename>Nina</forename>
-        <nameLink>de</nameLink>
-        <surname>Villard</surname>
-      </persName>
-    </author><!--GAILLARD, Anne-Marie (Nina de Villard)-->
+                    <persName>Nina de Villard</persName>
+<!--ISNI not found in Wikidata-->
+                    <idno type="isni">0000000044571148</idno>
+                </author>
+                <editor>Paul FIEVRE</editor>
             </titleStmt>
             <publicationStmt>
                 <publisher xml:id="dracor">DraCor</publisher>
@@ -39,7 +32,7 @@
                         </licence>
                     </availability>
                     <bibl type="originalSource">
-                        <idno type="URL">http://gallica.bnf.fr/ark:/12148/bpt6k207939j</idno>
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k207939j</idno>
                     </bibl>
                 </bibl>
             </sourceDesc>
@@ -67,7 +60,7 @@
     </teiHeader>
     <standOff>
         <listEvent>
-            <event type="print" when="1881">
+            <event type="print" when="1882">
                 <desc/>
             </event>
         </listEvent>
@@ -77,28 +70,28 @@
 		<docTitle>
 			<titlePart type="main">LE CLOWN</titlePart>
 		</docTitle> 
-		<docDate when="1881">1881.</docDate>
-		<docAuthor>PAR NINA DE VILLARD</docAuthor><!--@bio="villard"-->
+		<docDate when="1882">1882. Tous droits réservés.</docDate>
+		<docAuthor>Par Melle NINA DE VILLARD</docAuthor>
 		<div type="docImprint">
-			<div type="privilege"/><!--@id=""-->
-			<div type="acheveImprime">
-                    <p/>
-                </div><!--@id=""-->
-			<!--TODO: handling of editor name at this place unclear <editor id="BRIASSON">À PARIS, TRESSE, Galerie du Théâtre Français, PALAIS-ROYAL.</editor>-->
+			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORFF, ÉDITEUR, 28 bis, RUE DE RICHELIEU.</editor>-->
+			<div type="printer">
+                    <p>F. AUREAU - Imprimerie Lagny.</p>
+                </div><!--@id=""-->		
+			
 		</div>
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#le-clown">LE CLOWN</role><!--@sex="1"--><!--@type="H"--><!--@statut="comédien"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
+                    <role corresp="#le-clown">LE CLOWN</role><!--@sex="1"--><!--@type="H"--><!--@statut="clown"--><!--@age="A"--><!--@stat_amour="néant"-->. M. COQUELIN-CADET.</castItem> 
 	</castList>
-<!--TODO: usage of set in correct place but with unknown attributes <set location="(Lieu indéterminé)" country="France" periode="(indéterminé)" gps="(N/A)"/>-->
-<note>Paru dans "Saynètes et monologues", Troisième série, Paris, Tresse Editeur, 1881. pp. 25-29</note>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
+	<note>Tiré de "Théâtre de Campagne. Huitième série". 1882.  pp 1-11.</note>
 </front>
 <body>
-<div type="act" n="1">
+<div type="acte" n="1">
                 <head>LE CLOWN</head>
 <div type="scene" n="1">
-                    <head>SCÈNE PREMIÈRE.</head>
+                    <head/>
 <sp who="#le-clown">
                         <speaker>LE CLOWN.</speaker>
                         <stage type="dedicace">À Coquelin-Cadet.</stage>
@@ -106,24 +99,27 @@
                         <l n="2">Me trouvant ce soir libre et correctement mis,</l>
                         <l n="3">Pour vous dire en deux mots ma singulière histoire.</l>
                         <l n="4">J'ai commencé mes tours au bord d'un écritoire,</l>
-                        <l n="5">Ah ! Dame, vous savez, on commence où l'on peut ;</l>
+                        <l n="5">Ah ! Dame, vous savez, on commence où l'on peut</l>
                         <l n="6">J'ai fait beaucoup de vers dont on se souvient peu,</l>
                         <l n="7">J'ai célébré l'éther, l'Océan, la mouette,</l>
                         <l n="8">La forêt, l'arc-en-ciel, l'amour: j'étais poète !</l>
                         <l n="9">Vous aurez feuilleté mes livres sur les quais,</l>
-                        <l n="10">Ils sont tous entassés sur le quai Malaquais ;</l>
-                        <l n="11">J'ai rêvé des sommets altiers, les fières cimes</l>
+                        <note type="L">Quai Malaquais : Quai de Paris longeant la Seine entre le Pont du Caroussel et le pont des Arts.</note>
+                        <l n="10">Ils sont tous entassés sur le quai_Malaquais ;</l>
+                        <l n="11">J'ai rêvé des sommets altiers, Les fières cimes</l>
                         <l n="12">Qu'on peut escalader sur les ailes des rimes,</l>
                         <l n="13">De ma jeunesse en fleur tel fut le clair matin.</l>
+                        <stage type="blanck"> . . . . . . . . . . </stage>
                         <l n="14">Mais la vie est un rink où souvent le patin</l>
                         <l n="15">Nous emporte bien loin du but erreur fatale !</l>
                         <l n="16">J'ai traîné l'habit noir du solliciteur pâle</l>
                         <l n="17">Qui cache un manuscrit lourd, j'ai connu l'horreur</l>
                         <l n="18">De l'antichambre où l'on attend qu'un directeur</l>
                         <l n="19">Ait fini de causer avec des ingénues.</l>
-                        <l n="20">J'ai vu naitre et mourir bien des jeunes revues,</l>
+                        <l n="20">J'ai vu naître et mourir bien des jeunes revues,</l>
                         <l n="21">Et j'ai noctambulé triste, hagard, crotté,</l>
                         <l n="22">Vêtu pendant l'hiver de jaquettes d'été,</l>
+                        <note type="L">Ulster : Pardessus en forme de robe de chambre dont la mode nous est venue d'Angleterre vers 1872. [L]</note>
                         <l n="23">Et d'ulsters poussiéreux pendant la canicule.</l>
                         <l n="24">Mais un jour, lassé d'être un martyr ridicule,</l>
                         <l n="25">Pour dompter le public il faut, me suis-je dit,</l>
@@ -131,28 +127,32 @@
                         <l n="27">Alors j'ai dédaigné les ornières connues,</l>
                         <l n="28">Que suivaient les anciens pour aller jusqu'aux nues ;</l>
                         <l n="29">Et, pour mieux m'écarter des vulgaires chemins,</l>
-                        <l n="30">A la postérité j'ai marché sur les mains.</l>
+                        <l n="30">À la postérité j'ai marché sur les mains.</l>
+                        <stage type="blanck"> . . . . . . . . . . </stage>
                         <l n="31">Je suis le clown moderne et froid, ma jambe maigre,</l>
                         <l n="32">Comme un piment confit longtemps dans du vinaigre,</l>
                         <l n="33">À d'étranges zigzags où le songeur se plaît ;</l>
                         <l n="34">Je sais poser mon front pensif sur mon mollet,</l>
                         <l n="35">En faisant de petits bonjours de ma bottine</l>
+                        <note type="L">Veloutine : Poudre de riz. [L]</note>
                         <l n="36">À la brune ambrée, aux senteurs de veloutine,</l>
+                        <note type="L">Promenoir : Partie d'un édifice libre et couverte ou d'un jardin destinée à la promenade. [L]</note>
                         <l n="37">Qui profile son galbe aimable aux promenoirs.</l>
                         <l n="38">Je vois s'illuminer les yeux verts, bleus ou noirs,</l>
                         <l n="39">Quand, au son du hautbois, de mon orteil senestre</l>
                         <l n="40">Je mouche élégamment le nez du chef d'orchestre.</l>
                         <l n="41">Je porte une perruque écarlate, un maillot</l>
                         <l n="42">Tout zébré de dessins fantasques, dernier mot</l>
-                        <l n="43">Des gommeux du tremplin ; mon sourcil circonflexe</l>
+                        <l n="43">Des gommeux du tremplin; mon sourcil circonflexe</l>
                         <l n="44">Abrite mon regard qui trouble l'autre sexe.</l>
-                        <l n="45">Je suis le roi des désossés ; comble de l'art,</l>
+                        <l n="45">Je suis le roi des désossés . comble de l'art,</l>
                         <l n="46">Je rase une table en faisant le grand écart,</l>
+                        <note type="L">Périssoire : Embarcation très légère, mise en mouvement à l'aide d'une pagaie à double palette que l'on plonge alternativement à droite et à gauche. [L]</note>
                         <l n="47">Comme un rameur véloce en une périssoire,</l>
                         <l n="48">J'improvise des pas sur une balançoire ;</l>
                         <l n="49">Les applaudissements gantés me sont acquis,</l>
                         <l n="50">Quand je jongle avec les couteaux, d'un air exquis.</l>
-                        <l n="51">BriUant d'une gaité féroce et japonaise,</l>
+                        <l n="51">Brillant d'une gaîté féroce et japonaise,</l>
                         <l n="52">Tantôt guépard, tantôt boa, toujours à l'aise,</l>
                         <l n="53">Je sais bondir, ramper, m'aplatir chaque soir,</l>
                         <l n="54">Et ce qui sert aux autres hommes à s'asseoir</l>
@@ -160,12 +160,13 @@
                         <l n="56">Pour ma chanson sans mots, sans notes, mais câline.</l>
                         <l n="57">C'est alors que je plane - et je reprends mon rang</l>
                         <l n="58">De descendant direct du père orang-outang.</l>
+                        <stage type="blanck"> . . . . . . . . . . </stage>
                         <l n="59">D'être son petit-fils je sens si peu la honte</l>
                         <l n="60">Que vers ce grand aïeul fièrement je remonte.</l>
                         <l n="61">Loin de répudier sa haute parenté,</l>
                         <l n="62">Je le prends pour modèle, et c'est ma vanité,</l>
                         <l n="63">Qu'on dise quand, rasé, ganté de frais, le linge</l>
-                        <l n="64">Éclatant de blancheur, je parais : « Tiens, un singe ! »</l>
+                        <l n="64">Éclatant de blancheur, je parais: « Tiens, un singe ! »</l>
                     </sp><!--@who="LE CLOWN"-->
 </div>
 </div>

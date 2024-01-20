@@ -201,6 +201,6 @@ into `authors.xml`.
 
 ## TODO
 
-As of now, 122 documents do not comply to the TEI-All schema yet. See the
+As of now, 119 documents do not comply to the TEI-All schema yet. See the
 [list of open issues](https://github.com/dracor-org/fredracor/issues) for
 details on this and possible other enhancements.

@@ -39,28 +39,28 @@
         <profileDesc>
             <particDesc>
                 <listPerson>
-                    <person xml:id="subtil" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                    <person xml:id="subtil" sex="MALE">
                         <persName>Subtil</persName>
                     </person>
-                    <person xml:id="caton" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                    <person xml:id="caton" sex="MALE">
                         <persName>Caton</persName>
                     </person>
-                    <person xml:id="torquatus" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                    <person xml:id="torquatus" sex="MALE">
                         <persName>Torquatus</persName>
                     </person>
-                    <person xml:id="scevola" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Scevola</persName>
+                    <person xml:id="scevola" sex="MALE">
+                        <persName>Scévola</persName>
                     </person>
-                    <person xml:id="aristide" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                    <person xml:id="aristide" sex="MALE">
                         <persName>Aristide</persName>
                     </person>
-                    <person xml:id="blaise" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                    <person xml:id="blaise" sex="MALE">
                         <persName>Blaise</persName>
                     </person>
                     <person xml:id="tous" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Tous</persName>
                     </person>
-                    <person xml:id="dorcy" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                    <person xml:id="dorcy" sex="MALE">
                         <persName>Dorcy</persName>
                     </person>
                     <person xml:id="millefort" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
@@ -116,21 +116,21 @@
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#empty-string">DORCY</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Tautin.</castItem>
+                    <role corresp="#dorcy">DORCY</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Tautin.</castItem>
 		<castItem>
-                    <role corresp="#empty-string">MULEFORT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, le Roi.</castItem>
+                    <role corresp="#mulefort">MULEFORT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, le Roi.</castItem>
 		<castItem>
-                    <role corresp="#empty-string">BLAISE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Beaulieu.</castItem>
+                    <role corresp="#blaise">BLAISE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Beaulieu.</castItem>
 		<castItem>
-                    <role corresp="#empty-string">TORQUATUS</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Tiercelin.</castItem>
+                    <role corresp="#torquatus">TORQUATUS</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Tiercelin.</castItem>
 		<castItem>
-                    <role corresp="#empty-string">CATON</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Genest.</castItem>
+                    <role corresp="#caton">CATON</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Genest.</castItem>
 		<castItem>
-                    <role corresp="#empty-string">SCÉVOLA</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Delaporte.</castItem>
+                    <role corresp="#scevola">SCÉVOLA</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Delaporte.</castItem>
 		<castItem>
-                    <role corresp="#empty-string">ARISTIDE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Guibert.</castItem>
+                    <role corresp="#aristide">ARISTIDE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Guibert.</castItem>
 		<castItem>
-                    <role corresp="#empty-string">SUBTIL</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Fréderick.</castItem>
+                    <role corresp="#subtil">SUBTIL</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour=""-->, Fréderick.</castItem>
 	</castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="(N/A)">La scène est dans une place publique.</set>-->
 </front>
@@ -685,7 +685,7 @@
 <sp who="#subtil">
                         <speaker>SUBTIL.</speaker>
                         <p n="14">
-	<s n="1">Ah mon dieu, il faut que c'diable de merlan m'ait pris le mien, car je ne m'en sens plus du tout.</s>
+	<s n="1">Ah mon_Dieu, il faut que c'diable de merlan m'ait pris le mien, car je ne m'en sens plus du tout.</s>
 </p>
                         <stage type="title">Subtil tire un mouchoir blanc de sa poche, et est prêt de se moucher.</stage>
                     </sp><!--@who="SUBTIL"-->
@@ -879,7 +879,7 @@
 	<s n="1">Après ça, elle ne peut pas me refuser, et puis le contrat, et puis les accords, et puis la noce.</s>
 </p>
                         <stage type="title">AIR : Colinette au bois s'en alla.</stage>
-                        <l n="117">Mon dieu, mon dieu, j'voudrais déjà</l>
+                        <l n="117">Mon_Dieu, mon_Dieu, j'voudrais déjà</l>
                         <l n="118">Qu'ça soit après d'main ce jour-là</l>
                         <l n="119">Tralà deri dera , tralà deri dera, </l>
                         <l n="120">Et puis un gros bouquet sera</l>
@@ -907,7 +907,7 @@
                         <note type="C">Le 3 et 4 pririal, tentative de d'attentat contre Robespierre et Collot d'Herbois.</note>
                         <p n="1">
 	<s n="1">Ah ! </s>
-	<s n="2">Mon dieu, mon dieu, c'est ce diable de Dorcy... </s>
+	<s n="2">Mon_Dieu, mon_Dieu, c'est ce diable de Dorcy... </s>
 	<s n="3">Je m'souviens encor comme il m'a rossé à l'affaire du quatre Prairial... </s>
 	<s n="4">Où me cacher.</s>
 </p>
@@ -1179,7 +1179,7 @@ troupe de citoyens armés de bâtons.</head>
                         <speaker>LES JACOBINS.</speaker>
                         <p n="6">
 	<s n="1">Ah ! </s>
-	<s n="2">Mon dieu, mon dieu.</s>
+	<s n="2">Mon_Dieu, mon_Dieu.</s>
 </p>
                     </sp><!--@who="LES JACOBINS"-->
 <sp who="#dorcy">
@@ -1244,7 +1244,7 @@ troupe de citoyens armés de bâtons.</head>
                         <speaker>LES JACOBINS, apercevant la force armée.</speaker>
                         <p n="7">
 	<s n="1">Ah ! </s>
-	<s n="2">Mon dieu, nous sommes perdus.</s>
+	<s n="2">Mon_Dieu, nous sommes perdus.</s>
 </p>
                     </sp><!--@stage="watch"--><!--@who="LES JACOBINS"-->
 <sp who="#scevola">

@@ -66,9 +66,6 @@
                     <person xml:id="le-commissaire" sex="MALE">
                         <persName>Le Commissaire</persName>
                     </person>
-                    <person xml:id="une-voix" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Une Voix</persName>
-                    </person>
                     <person xml:id="la-voix" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>La Voix</persName>
                     </person>
@@ -77,9 +74,6 @@
                     </person>
                     <person xml:id="le-chevalier" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Le Chevalier</persName>
-                    </person>
-                    <person xml:id="un-chevalier" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Un Chevalier</persName>
                     </person>
                     <person xml:id="un-autre-chevalier" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Un Autre Chevalier</persName>
@@ -128,7 +122,7 @@
 		<castItem>
                     <role corresp="#arlequin">ARLEQUIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="empereur"--><!--@age="A"--><!--@stat_amour="néant"-->, Empereur dans la Lune.</castItem>
 		<castItem>
-                    <role corresp="#le-docteur">LE DOCTEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="doxteur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#le-docteur">LE DOCTEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="docteur"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
                     <role corresp="#scaramouche">SCARAMOUCHE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
@@ -142,7 +136,7 @@
 		<castItem>
                     <role corresp="#eularia">EULARIA</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, Nièce du Docteur.</castItem>
 		<castItem>
-                    <role corresp="#colombine">COLOMBINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="servente"--><!--@age="A"--><!--@stat_amour="néant"-->, servante du Docteur.</castItem>
+                    <role corresp="#colombine">COLOMBINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="servante"--><!--@age="A"--><!--@stat_amour="néant"-->, servante du Docteur.</castItem>
 		<castItem>
                     <role corresp="#pierrot">PIERROT</role><!--@sex="1"--><!--@type="H"--><!--@statut="valet"--><!--@age="A"--><!--@stat_amour="néant"-->, Valet du Docteur.</castItem>
 
@@ -1963,12 +1957,12 @@ DU VOYAGE D'ARLEQUIN DANS LA LUNE, Le Docteur, Arlequin.</head>
 	<s n="19">Des guitares ?...</s> 
 </p>
                     </sp><!--@who="LE DOCTEUR"-->
-<sp who="#arlequin-a-chaque-instrument-que-le-docteur-nomme,-repond-toujours">
-                        <speaker>ARLEQUIN à chaque Instrument que le Docteur nomme, répond toujours.</speaker>
+<sp who="#arlequin">
+                        <speaker>ARLEQUIN, à chaque Instrument que le Docteur nomme, répond toujours.</speaker>
                         <p n="47">
 	<s n="1">Non.</s>
 </p>
-                    </sp><!--@who=""-->
+                    </sp><!--@stage="toward"--><!--@who="ARLEQUIN"-->
 <sp who="#le-docteur">
                         <speaker>LE DOCTEUR.</speaker>
                         <p n="48">
@@ -2089,12 +2083,12 @@ DU VOYAGE D'ARLEQUIN DANS LA LUNE, Le Docteur, Arlequin.</head>
 	<s n="3">Mais si vous vouliez lui ordonner qu'il me donnât six louis d'or pour mes peines, je vous serais bien obligé, Monseigneur.</s>
 </p>
                     </sp><!--@who="ARLEQUIN"-->
-<sp who="#une-voix">
+<sp who="#la-voix">
                         <speaker>UNE VOIX se fait entendre, qui dit. </speaker>
                         <p n="67">
 	<s n="1">Docteur, donne six Louis d'or à Arlequin, c'est l'Empereur de la Lune qui te l'ordonne.</s> 
 </p>
-                    </sp><!--@who="UNE VOIX"-->
+                    </sp><!--@who="LA VOIX"-->
 <sp who="#le-docteur">
                         <speaker>LE DOCTEUR, étonné. </speaker>
                         <p n="68">
@@ -2758,12 +2752,12 @@ DU VOYAGE D'ARLEQUIN DANS LA LUNE, Le Docteur, Arlequin.</head>
 </p>
                         <stage>Les Tambours et les Trompettes recommencent à jouer, Arlequin, le Docteur et Scaramouche s'arment, se battent et sont vaincus. </stage>
                     </sp><!--@who="LE CHEVALIER"-->
-<sp who="#un-chevalier">
+<sp who="#le-chevalier">
                         <speaker>UN CHEVALIER, à Arlequin qui est à terre.</speaker>
                         <p n="15">
 	<s n="1">Arrenditi o sei morto?</s>
 </p>
-                    </sp><!--@stage="down"--><!--@who="UN CHEVALIER"-->
+                    </sp><!--@stage="down"--><!--@who="LE CHEVALIER"-->
 <sp who="#arlequin">
                         <speaker>ARLEQUIN.</speaker>
                         <p n="16">

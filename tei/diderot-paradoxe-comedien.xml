@@ -102,12 +102,12 @@
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#premier-interlocuteur">PREMIER INTERLOCUTEUR</role><!--@sex="1"--><!--@statut="bourgeois"--><!--@age="A"-->.</castItem>
+                    <role corresp="#premier-interlocuteur">PREMIER INTERLOCUTEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"-->.</castItem>
 		<castItem>
-                    <role corresp="#second-interlocuteur">SECOND INTERLOCUTEUR</role><!--@sex="1"--><!--@statut="bourgeois"--><!--@age="A"-->.</castItem>
+                    <role corresp="#second-interlocuteur">SECOND INTERLOCUTEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"-->.</castItem>
 	</castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
-	<note>Les note présentes dans l'édition de 1830 sont notées. [NdE]</note>
+	<note>Les notes présentes dans l'édition de 1830 sont notées. [NdE]</note>
 </front>
 <body>
 <div type="acte" n="1">
@@ -927,7 +927,7 @@
 	<s n="3">Je n'en crois rien, ni vous non plus. </s>
 	<s n="4">Si vous demandiez à cet homme célèbre, qui lui seul mériterait autant qu'on fît le voyage d'Angleterre que tous les restes de Rome méritent qu'on fasse le voyage d'Italie ; si vous lui demandiez, dis-je, la scène du Petit Garçon pâtissier, il vous la jouait ; si vous lui demandiez tout de suite la scène d'Hamlet, il vous la jouait, également prêt à pleurer la chute de ses petits pâtés et à suivre dans l'air le chemin d'un poignard. </s>
 	<s n="5">Est-ce qu'on rit, est-ce qu'on pleure à discrétion ? </s>
-	<s n="6">On en fait la grimace plus ou moins fidèle, plus ou moins trompeuse, selon qu'on est ou qu'on n'est pas Garrick.</s>
+	<s n="6">On en fait la grimace plus_ou_moins fidèle, plus_ou_moins trompeuse, selon qu'on est ou qu'on n'est pas Garrick.</s>
 </p>
                         <p n="119">
 	<s n="1">Je persifle quelquefois, et même avec assez de vérité, pour en imposer aux hommes du monde les plus déliés. </s>
@@ -1150,10 +1150,10 @@ De saint Grizel, de saint Billard. [NdE]</note>
                     </sp><!--@who="SECOND INTERLOCUTEUR"-->
 <sp who="#premier-interlocuteur">
                         <speaker>PREMIER INTERLOCUTEUR.</speaker>
-                        <note>Nous savons que Diderot avait servi d'expert pour la vente du cabinet de M. de Thiers à l'impératrice. Voyez t. I, p. LIII, note 2.</note>
+                        <note type="C">Nous savons que Diderot avait servi d'expert pour la vente du cabinet de M. de Thiers à l'impératrice. Voyez t. I, p. LIII, note 2.</note>
                         <p n="143">
 	<s n="1">C'est qu'il est impossible que le développement d'une machine aussi compliquée qu'un corps animal soit régulier. </s>
-	<s n="2">Allez aux Tuileries ou aux Champs-Elysées un beau jour de fête ; considérez toutes les femmes qui rempliront les allées, et vous n'en trouverez pas une seule qui ait les deux coins de la bouche parfaitement semblables. </s>
+	<s n="2">Allez aux Tuileries ou aux Champs-Élysées un beau jour de fête ; considérez toutes les femmes qui rempliront les allées, et vous n'en trouverez pas une seule qui ait les deux coins de la bouche parfaitement semblables. </s>
 	<s n="3">La Danaé du Titien est un portrait ; l'Amour, placé au pied de sa couche, est idéal. </s>
 	<s n="4">Dans un tableau de Raphaël, qui a passé de la galerie de M. </s>
 	<s n="5">de Thiers dans celle de Catherine II, le saint Joseph est une nature commune ; la Vierge est une belle femme réelle ; l'enfant Jésus est idéal. </s>
@@ -1236,7 +1236,7 @@ De saint Grizel, de saint Billard. [NdE]</note>
                     </sp><!--@who="SECOND INTERLOCUTEUR"-->
 <sp who="#premier-interlocuteur">
                         <speaker>PREMIER INTERLOCUTEUR.</speaker>
-                        <note>Voir une note sur Montménil, ou Montmeny, comme on écrivait alors, dans la Lettre sur les sourds-muets, t. I, p. 300. Il en est encore question plus loin.</note>
+                        <note type="C">Voir une note sur Montménil, ou Montmeny, comme on écrivait alors, dans la Lettre sur les sourds-muets, t. I, p. 300. Il en est encore question plus loin.</note>
                         <p n="155">
 	<s n="1">Et peut-être est-ce parce qu'il n'est rien qu'il est tout par excellence, sa forme particulière ne contrariant jamais les formes étrangères qu'il doit prendre.</s>
 </p>
@@ -1384,7 +1384,6 @@ De saint Grizel, de saint Billard. [NdE]</note>
                     </sp><!--@who="PREMIER INTERLOCUTEUR"-->
 <sp who="#second-interlocuteur">
                         <speaker>SECOND INTERLOCUTEUR.</speaker>
-                        <note>Épicure.</note>
                         <p n="171">
 	<s n="1">L'âme d'un grand comédien a été formée de l'élément subtil dont notre philosophe remplissait l'espace qui n'est ni froid, ni chaud, ni pesant, ni léger, qui n'affecte aucune forme déterminée, et qui, également susceptible de toutes, n'en conserve aucune.</s>
 </p>
@@ -2270,8 +2269,8 @@ pas acceptée.</s>
 	<s n="11">Est-ce qu'un excellent instrument ?... </s>
 	<s n="12">... Je vous entends ; il y aura toujours, entre celui qui contrefait la sensibilité et celui qui sent, la différence de l'imitation à la chose. </s>
 	<s n="13">... Et tant mieux, tant mieux, vous dis-je. </s>
-	<s n="14">Dans le premier cas, le comédien n'aura pas à se séparer de lui-même, il se portera tout à coup et de plein saut à la hauteur du modèle idéal. </s>
-	<s n="15">... Tout à coup et de plein saut ! </s>
+	<s n="14">Dans le premier cas, le comédien n'aura pas à se séparer de lui-même, il se portera tout_à_coup et de plein saut à la hauteur du modèle idéal. </s>
+	<s n="15">... Tout_à_coup et de plein saut ! </s>
 	<s n="16">... Vous me chicanez sur une expression. </s>
 	<s n="17">Je veux dire que, n'étant jamais ramené au petit modèle qui est en lui, il sera aussi grand, aussi étonnant, aussi parfait imitateur de la sensibilité que de l'avarice, de l'hypocrisie, de la duplicité et de tout autre caractère qui ne sera pas le sien, de toute autre passion qu'il n'aura pas. </s>
 	<s n="18">La chose que le personnage naturellement sensible me montrera sera petite ; l'imitation de l'autre sera forte ; ou s'il arrivait que leurs copies fussent également fortes, ce que je ne vous accorde pas, mais pas du tout, l'un, parfaitement maître de lui-même et jouant tout à fait d'étude et de jugement, serait tel que l'expérience journalière le montre, plus un que celui qui jouera moitié de nature, moité d'étude, moitié d'après un modèle, moitié d'après lui-même. </s>
@@ -2288,7 +2287,7 @@ pas acceptée.</s>
                         <p n="299">
 	<s n="1">Ici l'homme au paradoxe se tut. </s>
 	<s n="2">Il se promenait à grands pas sans regarder où il allait ; il eût heurté de droite et de gauche ceux qui venaient à sa rencontre s'ils n'eussent évité le choc. </s>
-	<s n="3">Puis, s'arrêtant tout à coup, et saisissant son antagoniste fortement par le bras, il lui dit d'un ton dogmatique et tranquille : Mon ami, il y a trois modèles, l'homme de la nature, l'homme du poète, l'homme de l'acteur. </s>
+	<s n="3">Puis, s'arrêtant tout_à_coup, et saisissant son antagoniste fortement par le bras, il lui dit d'un ton dogmatique et tranquille : Mon ami, il y a trois modèles, l'homme de la nature, l'homme du poète, l'homme de l'acteur. </s>
 	<s n="4">Celui de la nature est moins grand que celui du poète, et celui-ci moins grand encore que celui du grand comédien, le plus exagéré de tous. </s>
 	<s n="5">Ce dernier monte sur les épaules du précédent, et se renferme dans un grand mannequin d'osier dont il est l'âme ; il meut ce mannequin d'une manière effrayante, même pour le poète qui ne se reconnaît plus, et il nous épouvante, comme vous l'avez fort bien dit, ainsi que les enfants s'épouvantent les uns les autres en tenant leurs petits pourpoints courts élevés au-dessus de leur tête, en s'agitant, et en imitant de leur mieux la voix rauque et lugubre d'un fantôme qu'ils contrefont. </s>
 	<s n="6">Mais, par hasard, n'auriez-vous pas vu des jeux d'enfants qu'on a gravés 1 ? </s>
