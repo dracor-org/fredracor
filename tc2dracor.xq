@@ -83,7 +83,7 @@ declare function local:split-name ($content as xs:string) as element(tei:persNam
 declare function local:wikidata-by-isni ($isni as xs:string) as map()? {
   let $query :=
     'SELECT ?author ?authorLabel WHERE {?author wdt:P213 "'
-    || $isni ||
+    || replace($isni, ' ', '') ||
     '". SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }}'
   let $url := "https://query.wikidata.org/sparql?query=" || xmldb:encode-uri($query)
   let $response := hc:send-request(<hc:request method="get"/>, $url)
