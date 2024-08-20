@@ -1,0 +1,1531 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001905" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">L'Oublieux.</title>
+                <title type="sub">Petite Comédie en Trois Actes.</title>
+                <title type="sub">Publiée pour la première fois, avec une petits introduction et des notes par M. Hippolyte Lucas de la Bibliothèque de l'Arsenal.</title>
+                <author>
+      <persName>
+        <forename>Charles</forename>
+        <surname>Perrault</surname>
+      </persName>
+      <idno type="isni">0000000121272484</idno>
+    </author><!--Charles PERRAULT (1628-1703)-->
+                <editor>Paul FIEVRE mai 2024</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/PERRAULT_OUBLIEUX.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/PERRAULT_OUBLIEUX.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">https://gallica.bnf.fr/ark:/12148/bpt6k5821623v</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="mademoiselle-de-l-etang" sex="FEMALE">
+                        <persName>Mademoiselle de l'Etang</persName>
+                    </person>
+                    <person xml:id="mademoiselle-dupre" sex="FEMALE">
+                        <persName>Mademoiselle Dupré</persName>
+                    </person>
+                    <person xml:id="monsieur-de-l-etang" sex="MALE">
+                        <persName>Monsieur de l'Etang</persName>
+                    </person>
+                    <person xml:id="babet" sex="FEMALE">
+                        <persName>Babet</persName>
+                    </person>
+                    <person xml:id="monsieur-duvivier" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur Duvivier</persName>
+                    </person>
+                    <person xml:id="monsieur-jerome" sex="MALE">
+                        <persName>Monsieur Jérôme</persName>
+                    </person>
+                    <person xml:id="monsieur-deslandes" sex="MALE">
+                        <persName>Monsieur Deslandes</persName>
+                    </person>
+                    <person xml:id="mademoiselle-manon" sex="FEMALE">
+                        <persName>Mademoiselle Manon</persName>
+                    </person>
+                    <person xml:id="mademoiselle-louison" sex="FEMALE">
+                        <persName>Mademoiselle Louison</persName>
+                    </person>
+                    <person xml:id="l-oublieux" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L Oublieux</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Comédie</term>
+                    <term>prose</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1691">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">L'OUBLIEUX.</titlePart>
+			<titlePart type="sub">PETITE COMÉDIE EN TROIS ACTES.</titlePart>
+			<titlePart type="sub">Publiée pour la première fois, avec une petits introduction et des notes par M. Hippolyte Lucas de la Bibliothèque de l'Arsenal.</titlePart>
+		</docTitle> 
+		<docDate when="1691">(1691)</docDate>
+		<docAuthor>DE CH. PERRAULT de l'Académie française</docAuthor>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="ACADÉMIE DES BIBLIOPHILES">PARIS, ACADÉMIE DES BIBLIOPHILES.</editor>-->
+			<div type="acheveImprime">
+                    <p>Achevé d'imprimer pour L'ACADÉMIE DES BIBLIOPHILES PAR D. JOUAUST, IMPRIMEUR DE LA COMPAGNIE ACADÉMIE DES BIBLIOPHILES.</p>
+                </div>
+		</div>
+		<div>
+                <head>DÉCLARATION.</head>
+			<p>« Chaque ouvrage appartient à son auteur-éditeur. La Compagnie entend dégager sa responsabilité collective des publications de ses membres. »</p>
+			<p>(Extrait de l'article IV des Statuts.)</p>
+			<p>TIRÉ A TROIS CENT CINQUANTE EXEMPLAIRES SUR PAPIER DE HOLLANDE.</p>
+		</div>
+
+		<castList>
+                <head>PERSONNAGES</head>
+			<castItem>
+                    <role corresp="#monsieur-jerome">MONSIEUR JÉRÔME</role><!--@sex="1"--><!--@type="A"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="(néant)"-->, bon bourgeois de Paris.</castItem>
+			<castItem>
+                    <role corresp="#monsieur-deslandes">MONSIEUR DESLANDES</role><!--@sex="1"--><!--@type="A"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="(néant)"-->, son fils aîné.</castItem>
+			<castItem>
+                    <role corresp="#monsieur-duviv1er">MONSIEUR DUVIV1ER</role><!--@sex="1"--><!--@type="A"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="(néant)"-->, son jeune fils.</castItem>
+			<castItem>
+                    <role corresp="#monsieur-de-l-etang">MONSIEUR DE L'ÉTANG</role><!--@sex="1"--><!--@type="A"--><!--@statut="avocat"--><!--@age="A"--><!--@stat_amour="(néant)"-->, avocat.</castItem>
+			<castItem>
+                    <role corresp="#mademoiselle-de-l-etang">MADEMOISELLE DE L'ÉTANG</role><!--@sex="2"--><!--@type="A"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="(néant)"-->, sa soeur.</castItem>.
+			<castItem>
+                    <role corresp="#mademoiselle-dupre">MADEMOISELLE DUPRÉ</role><!--@sex="2"--><!--@type="A"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="(néant)"-->, cousine de Monsieur de l'Étang.</castItem>
+			<castItem>
+                    <role corresp="#babet">BABET</role><!--@sex="2"--><!--@type="A"--><!--@statut="servante"--><!--@age="J"--><!--@stat_amour="(néant)"-->, petite servante de Mademoiselle de l'Étang.</castItem>
+			<castItem>
+                    <role corresp="#mademoiselle-manon">MADEMOISELLE MANON</role><!--@sex="2"--><!--@type="A"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="(néant)"-->, voisine de Mademoiselle de l'Étang.</castItem> 
+			<castItem>
+                    <role corresp="#mademoiselle-louison">MADEMOISELLE LOUISON</role><!--@sex="2"--><!--@type="A"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="(néant)"-->, voisine de Mademoiselle de l'Étang.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIème" gps="48.856614, 2.352222">La scène se passe dans la salle de Monsieur de l'Etang.</set>-->
+		<note>Cette édition originale d'Hippolyte Lucas est de 1878.</note>
+</front>
+<body>
+<div type="acte" n="1">
+                <head>ACTE PREMIER</head>
+<div type="scene" n="1">
+                    <head>SCÈNE I. Mlle DE L'ÉTANG, Mlle DUPRÉ.</head>
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="1">
+	<s n="1">Je crois que cet homme-là me fera déserter la maison.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="2">
+	<s n="1">Il est vrai que cet amant est un peu incommode.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="3">
+	<s n="1">Comment incommode ? </s>
+	<s n="2">Il fut hier céans toute l'après-dînée, il y revint après souper, et aujourd'hui, à peine sommes-nous levées qu'il vient nous rendre visite.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="4">
+	<s n="1">Que veux-tu ? </s>
+	<s n="2">C'est qu'il t'aime.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="5">
+	<s n="1">J'ai bien affaire qu'il m'aime pour me venir rompre la tête. </s>
+	<s n="2">As-tu jamais vu une conversation comme la sienne ? </s>
+	<s n="3">Il va ramasser toutes les méchantes nouvelles du Palais et du Luxembourg, toutes celles des Halles et de la Place_Maubert, et il vient me les redire toutes, sans m'en faire grâce d'une seule.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="6">
+	<s n="1">Tu me surprends, car je t'ai ouï dire que tu ne le haïssais pas.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="7">
+	<s n="1">Cela est vrai, et il y a des temps ou j'en suis très contente ; mais depuis quelques jours il m'a tellement fatiguée de ses sottes nouvelles, que, s'il continue encore sur le même ton, je lui donnerai nettement son congé.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="8">
+	<s n="1">Cela serait un peu violent.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="9">
+	<s n="1">Tant violent qu'il te plaira ; je n'aime point d'être obsédée. </s>
+	<s n="2">Cela est fort plaisant d'avoir toujours un homme devant soi !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Monsieur de L'Étang, Mademoiselle de L'Étang, Mademoiselle Dupré.</head>
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="1">
+	<s n="1">Quelle dispute avez-vous là, que vous me semblez si émues ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="2">
+	<s n="1">Le sujet en est assez extraordinaire : ma cousine se plaint d'avoir un amant qui est trop assidu auprès d'elle, et veut que je la plaigne de ce malheur.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="3">
+	<s n="1">Voilà qui est horrible ! </s>
+	<s n="2">Vous êtes, ma cousine, bien inhumaine de ne pas prendre beaucoup de part à une telle affliction.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="4">
+	<s n="1">Que je hais les mauvais plaisants ! </s>
+	<s n="2">Je vous dis que rien n'est plus fatigant que la présence continuelle d'un homme, tel qu'il puisse être.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="5">
+	<s n="1">Voilà, ma pauvre soeur, ce que c'est que d'avoir tant de mérite et tant de charmes. </s>
+	<s n="2">Ce sont de grands avantages, mais ces avantages ont de grandes incommodités. </s>
+	<s n="3">On a le déplaisir d'entendre dire à tous moments qu'on est belle, qu'on est aimable, et de l'entendre dire en cent manières différentes, et encore par des gens dont on est aimée. </s>
+	<s n="4">Cela est bien douloureux : il faut une grande vertu pour soutenir généreusement et de bonne grâce le poids d'une si grande affliction.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="6">
+	<s n="1">Réjouissez-vous tant qu'il vous plaira, mais cela ne me réjouit point.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="7">
+	<s n="1">Tu te plains fort mal à propos. </s>
+	<s n="2">Monsieur_Duvivier est un fort honnête homme, qui a beaucoup de bien et de très beau bien, qui a de l'esprit à sa manière et qui sait toujours mille nouvelles.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="8">
+	<s n="1">Il n'en sait que trop pour mon repos.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="9">
+	<s n="1">Son frère aîné, Monsieur_Deslandes, est d'une humeur bien opposée : c'est un loup-garou qui ne voit personne, qui n'a nulle curiosité pour tout ce qui se fait aujourd'hui, et qui n'a d'autre passion que de savoir les curiosités les plus cachées de la fable bu de l'histoire la plus ancienne. </s>
+	<s n="2">Il était dernièrement dans une joie inconcevable d'avoir trouvé le nom de la nourrice d'Hector et celui de la femme de chambre qui rognait les ongles à Cléopâtre. </s>
+	<s n="3">Il était encore ravi d'avoir appris que les pantoufles du roi Priam étaient doublées en peau de louve.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="10">
+	<s n="1">Où est-ce que Monsieur_Jérôme a péché ces deux enfants-là ? </s>
+	<s n="2">Ils ne lui ressemblent point du tout. </s>
+	<s n="3">Monsieur_Jérôme est un bon homme qui ne s'informe guère de tout ce qui se passe, et que je ne crois pas non plus un fort grand docteur, quoiqu'il dise des mots de latin assez souvent.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="11">
+	<s n="1">Monsieur_Jérôme est, comme vous le dites, un fort bon homme, qui a bon sens et qui a amassé beaucoup de bien dans son négoce. </s>
+	<s n="2">On le tient riche de plus de trois cent mille livres. Il est vrai aussi qu'il ne s'est jamais beaucoup mis en peine de l'antiquité. </s>
+	<s n="3">Si quelquefois il dit du latin, c'est par la seule raison qu'il n'en sait guère. </s>
+	<s n="4">C'est du côté de leur mère que ces enfants tiennent les caractères dont ils sont. </s>
+	<s n="5">Leur mère était une bonne femme, fort avare, qui ramassait tous les chiffons et toutes les guenilles de son grenier, dont elle se passait, et qu'elle mettait en oeuvre avec plus de soin et plus de joie qu'elle n'aurait fait de belles étoffes bien riches et toutes neuves, et c'est de là qu'on croit que son fils aîné tient l'amour qu'il a pour les antiquailles. </s>
+	<s n="6">On dit aussi qu'elle savait et débitait fort bien toutes les petites histoires de son quartier, et que de là vient l'inclination qu'a son jeune fils à dire des nouvelles.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="12">
+	<s n="1">Quoi qu'il en soit, ces deux enfants-là sont bien différents l'un de l'autre.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="13">
+ 	<s n="1">Pas trop. </s>
+	<s n="2">Je les trouve en quelque façon de la même espèce, c'est-à-dire tous deux épris de bagatelles, dont l'un les aime quand elles sont bien nouvelles, et l'autre quand elles sont bien vieilles. </s>
+	<s n="3">Ils avaient une soeur qui était la vraie humeur du père : une bonne enfant, blanche et vermeille, et de gros yeux qui ne disaient rien. </s>
+	<s n="4">Elle trouvait tout bon, et tous ceux qui l'allaient voir étaient les plus honnêtes gens du monde. </s>
+	<s n="5">Je me souviens toujours d'une anagramme que je fis pour elle, dont elle était ravie. </s>
+	<s n="6">Elle s'appelait Marie-Guillaume, et l'anagramme était Miracle_de_beauté. </s>
+	<s n="7">Il est vrai qu'il y manquait beaucoup de lettres ; mais, quand je lui eus répondu que c'était en cela particulièrement que consistait la beauté de l'anagramme, que c'était une chose trop aisée quand toutes les lettres s'y rencontraient d'elles-mêmes, et que la difficulté était de les y trouver quand elles n'y étaient pas, elle fut très contente de ma réponse et de son anagramme.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="14">
+	<s n="1">J'aurais bien aimé cette bonne fille. </s>
+	<s n="2">Pour ce qui est des deux frères, je crois que celui qui aime les nouvelles a plus de raison que celui qui aime les antiquailles, car je ne crois pas qu'il y ait rien de plus inutile et de plus ridicule.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="15">
+	<s n="1">Comme vous parlez ! </s>
+	<s n="2">Savez-vous qu'il n'y a que ceux qui ressemblent à Monsieur_Deslandes qu'on regarde aujourd'hui comme de vrais savants, et que tous les auteurs en ius, soit d'Allemagne, soit de Hollande, ne donnent ce titre honorable qu'à ceux de son caractère, surtout s'ils ont fait réimprimer de vieux livres avec des notes ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="16">
+	<s n="1">J'en ai bien de la joie, car j'ai beaucoup d'estime pour Monsieur_Deslandes, tout loup-garou qu'il est, parce que c'est un véritable homme d'honneur.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="17">
+	<s n="1">Je voudrais qu'il t'eût épousée : il a du bien, et tu serais bien à ton aise. </s>
+	<s n="2">Pour vous, ma soeur, contraignez-vous un peu, et ne vous lamentez pas si fort d'avoir un amant trop passionné.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="18">
+	<s n="1">De l'humeur dont vous êtes, qui est pour le moins aussi vive que la mienne, il vous ferait beau voir si vous étiez obsédé de quelque personne dont la présence trop assidue vous chagrinât.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="19">
+	<s n="1">Je ne suis jamais fâché que l'on m'aime, et j'aurai toujours de l'obligation à ceux qui voudront m'honorer de leur compagnie. </s>
+	<s n="2">Adieu jusqu'à revoir. </s>
+	<s n="3">À propos, j'oubliais de vous dire que nous aurions à souper nos belles petites voisines.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="20">
+	<s n="1">Mademoiselle_Louison et Mademoiselle_Manon ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="21">
+	<s n="1">Elles-mêmes, et elles nous donneront leur petit concert.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="22">
+	<s n="1">J'en ai bien de la joie. </s>
+	<s n="2">Elles chantent comme des anges. </s>
+	<s n="3">C'est tout autre chose que ce n'était il y a six mois.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="23">
+	<s n="1">Mademoiselle_Louison m'a fait promettre que je lui donnerais l'Oublieux.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="24">
+	<s n="1">Cela sera bien avisé.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="25">
+	<s n="1">Ayez donc soin de tout. </s>
+	<s n="2">Adieu.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Mlle DUPRÉ, M11" DE L'ÉTANG.</head>
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="1">
+	<s n="1">Si tu me crois, tu te contraindras un peu sur le chapitre de Monsieur_Duvivier. </s>
+	<s n="2">Ce ne serait point une mauvaise affaire pour toi que de l'épouser, ni pour moi d'épouser Monsieur_Deslandes. </s>
+	<s n="3">Nous sommes jeunes toutes deux; mais nous ne le serons pas toujours. </s>
+	<s n="4">Quand on devient sur l'âge, c'est une belle chose de se trouver la femme d'un homme riche, surtout quand on a aussi peu de bien que nous en avons.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="2">
+	<s n="1">Ce que tu dis est le plus beau du monde, mais...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCENE IV. Monsieur Duvivier, Monsieur de L'ÉTANG, Mlle  DUPRÉ, Babet.</head>
+<sp who="#babet">
+                        <speaker>BABET.</speaker>
+                        <p n="1">
+	<s n="1">C'est Monsieur_Duvivier qui vient pour avoir l'honneur de vous voir.</s>
+</p>
+                    </sp><!--@who="BABET"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="2">
+	<s n="1">Quoi ! </s>
+	<s n="2">Le voilà encore !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="3">
+	<s n="1">Oh ! </s>
+	<s n="2">Oh ! </s>
+	<s n="3">Monsieur, qui vous fait revenir si tôt ? </s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-duvivier">
+                        <speaker>MONSIEUR DUVIVIER.</speaker>
+                        <p n="4">
+	<s n="1">Je viens de recevoir une lettre d'un de mes amis qui est à Rouen, et je n'ai pas voulu tarder plus longtemps à vous en faire part. </s>
+	<s n="2">Il me mande qu'on y a pendu cette semaine, trois voleurs_de_grand_chemin ; qu'on y a donné la fleur de lys à deux coupeurs_de_bourse, et qu'il y est arrivé trois barques chargées de morues. </s>
+	<s n="3">Il m'envoie en même temps le nom de toutes les cloches de la ville de Rouen, avec le nom de leurs parrains et de leurs marraines.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DUVIVIER"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="5">
+	<s n="1">Voilà une belle curiosité !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-duvivier">
+                        <speaker>MONSIEUR DUVIVIER.</speaker>
+                        <p n="6">
+	<s n="1">Est-ce que vous savez déjà tout cela ? </s>
+	<s n="2">Je gagerais bien que non. </s>
+	<s n="3">Vous savez peut-être que la grosse cloche de la cathédrale s'appelle Georges_d_Amboise, qu'elle a été tenue par Alphonse-Ferdinand_de_Marinville et Jeanne-Charlotte-Eléonor_de_Valincour, en l'année mille_quatre_cent_quatre-vingt-dix_huit ; mais je suis sûr que vous ne savez point le nom de toutes les cloches des vingt-sept paroisses et des trente-deux couvents qu'il y a dans cette ville. </s>
+	<s n="4">Savez-vous, par exemple, que la grosse moyenne des Cordeliers s'appelle Françoise, que celle des Carmes s'appelle Thérèse, que celle des...</s>
+</p>
+                    </sp><!--@who="MONSIEUR DUVIVIER"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="7">
+	<s n="1">N'en dites pas davantage, s'il vous plaît ; il me semble que j'ai déjà toutes les cloches de Rouen dans la tête.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-duvivier">
+                        <speaker>MONSIEUR DUVIVIER.</speaker>
+                        <p n="8">
+	<s n="1">J'en demeurerai là, puisque vous me l'ordonnez ; mais assurément, lorsque j'aurai achevé mon recueil de toutes les cloches de France, ce sera un ouvrage très curieux ; il y a déjà vingt libraires qui me le demandent. </s>
+	<s n="2">Cependant, je vois bien que vous n'avez pas de goût pour ces sortes de curiosités ; mais, pour vous faire voir que j'ai plus d'un talent, je veux bien vous dire que j'ai deviné l'énigme du dernier Mercure.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DUVIVIER"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="9">
+	<s n="1">Ah ! </s>
+	<s n="2">Ah ! </s>
+	<s n="3">C'est autre chose. </s>
+	<s n="4">Voilà un titre incontestable de bel esprit.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-duvivier">
+                        <speaker>MONSIEUR DUVIVIER.</speaker>
+                        <p n="10">
+	<s n="1">Ce peut bien être un titre de bel esprit d'avoir deviné l'énigme, puisque c'en est un de ne pas l'avoir devinée. </s>
+	<s n="2">Pourvu qu'on ait dit quelque chose qui en approche, l'auteur du Mercure n'oserait manquer à mettre le nom de tous ceux qui lui ont envoyé leur explication, quelle qu'elle soit.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DUVIVIER"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="11">
+	<s n="1">Cela n'est pas possible !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-duvivier">
+                        <speaker>MONSIEUR DUVIVIER.</speaker>
+                        <p n="12">
+	<s n="1">Cela est si vrai que, si vous voulez, je vais vous nommer tous ceux qui n'ont pas deviné celle du dernier Mercure.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DUVIVIER"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="13">
+	<s n="1">Je serais bien aise de savoir le nom de ces beaux esprits-là.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-duvivier">
+                        <speaker>MONSIEUR DUVIVIER.</speaker>
+                        <p n="14">
+	<s n="1">Il y a Monsieur_Trébuchet d'Auxerre, le maître clerc sans barbe de la Place_Maubert, l'avocat du Roi du Pont-Audemer, la belle Nanon du Pont-au-Change, le solitaire de la rue_Trousse-Vache, et vingt autres encore qui ne me reviennent pas dans la mémoire. </s>
+	<s n="2">Le mot de l'énigme était le Soleil ; quelques-uns l'avaient expliquée du Phoenix, quelques autres du girusol (tournesol), d'autres d'une lanterne, d'autres d'un tournebroche, d'autres... que sais-je, moi ? </s>
+	<s n="3">Je ne puis me souvenir de tout.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DUVIVIER"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="15">
+	<s n="1">Rien n'est plus plaisant que ces devineurs et non devineurs d'énigmes.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="16">
+	<s n="1">Vous êtes bien heureuse, ma cousine, de vous divertir à si peu de frais. </s>
+	<s n="2">Pour moi, cela ne me divertit point du tout, et Monsieur_Duvivier me ferait un extrême plaisir de ne m'honorer plus de ses trop fréquentes et ennuyeuses visites.</s>
+</p>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Monsieur Duvivier, Madamoiselle DUPRÉ.</head>
+<sp who="#monsieur-duvivier">
+                        <speaker>MONSIEUR DUVIVIER.</speaker>
+                        <p n="1">
+	<s n="1">Je suis bien malheureux de déplaire si fort à votre belle et cruelle cousine.Ne m'abandonnez pas, s'il vous plaît, ma chère demoiselle; je ne dirai plus mot si elle veut, ou je ne l'entretiendrai que de choses qui sont de son goût quand je serai assez heureux de le bien connaître.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DUVIVIER"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="2">
+	<s n="1">Vous avez tort, et depuis le temps que vous la voyez, n'avez-vous pas dû remarquer qu'elle a une aversion insurmontable pour certaines choses qui divertissent la plupart du monde ? </s>
+	<s n="2">Je veux vous donner des marques de mon amitié. </s>
+	<s n="3">Quelque chemin que vous preniez pour lui plaire, vous n'en viendrez jamais à bout que vous ne preniez celui que je vais vous dire. </s>
+	<s n="4">Attachez-vous uniquement à faire votre cour à son frère, qui peut tout sur elle ; mais que ce soit avec une continuelle assiduité. </s>
+	<s n="5">Quoiqu'il vous témoigne que vos honnêtetés le fatiguent, poursuivez toujours, car c'est alors qu'il est plus aise qu'on le caresse. </s>
+	<s n="6">La persévérance à vous attacher à lui le gagnera immanquablement, après quoi ce ne sera plus une affaire d'avoir les bonnes grâces de la soeur.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-duvivier">
+                        <speaker>MONSIEUR DUVIVIER.</speaker>
+                        <p n="3">
+	<s n="1">Vous me redonnez la vie, ma chère demoiselle, et je vais profiter de vos bons conseils.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DUVIVIER"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="4">
+	<s n="1">Votre rupture vient le plus mal à propos du monde ; nous avons ce soir un concert que vous auriez été ravi d'entendre. </s>
+	<s n="2">Nos belles petites voisines viennent souper céans, et Monsieur_de_l_Étang doit faire venir un oublieux pour les divertir.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-duvivier">
+                        <speaker>MONSIEUR DUVIVIER.</speaker>
+                        <p n="5">
+	<s n="1">Je n'ai point de regret à tous ces plaisirs là dans l'ennui où je suis. Cependant, je vous remercie de l'avis que vous me donnez : je pourrai bien en faire mon profit. </s>
+	<s n="2">Adieu, faites ma paix, je vous en conjure.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DUVIVIER"-->
+</div>
+</div>
+<div type="acte" n="2">
+                <head>ACTE SECOND</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Monsieur Jérôme, Monsieur Deslandes.</head>
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="1">
+	<s n="1">Je n'ai garde de blâmer l'application que tu as à l'étude, elle fait une de mes plus grandes joies, car, quoique je n'aie jamais étudié, je ne laisse pas d'aimer avec ardeur et la science et les savants. </s>
+	<s n="2">Ce m'est une grande consolation que de deux enfants que Dieu m'a donnés, l'un se soit appliqué à connaître tout ce que l'antiquité a de plus curieux, et que l'autre se plaise à recueillir jusques aux moindres circonstances de ce qui se fait parmi nous. </s>
+	<s n="3">Je me vois par là comme en possession de ce qui s'est passé dans tous les siècles. </s>
+	<s n="4">Cependant, comme il n'y a point d'excès qui ne soit vicieux, et qu'il peut y avoir de l'intempérance, selon le sentiment d'un ancien, dans l'usage des meilleures choses, je voudrais que tu misses quelques bornes à l'application que tu donnes à l'étude. Je voudrais que l'usage du monde, les visites des honnêtes gens joignissent un peu de politesse à la science que tu as acquise.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#monsieur-deslandes">
+                        <speaker>MONSIEUR DESLANDES.</speaker>
+                        <p n="2">
+	<s n="1">Est-ce que vous croyez, mon père, qu'il se trouve de vraie politesse dans le siècle où nous sommes ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DESLANDES"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="3">
+	<s n="1">Je le crois assurément. </s>
+	<s n="2">Il n'y a qu'à aller à la Cour, ou voir le beau monde de Paris, pour en être persuadé.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#monsieur-deslandes">
+                        <speaker>MONSIEUR DESLANDES.</speaker>
+                        <p n="4">
+	<s n="1">La manière dont le beau monde vit à Paris, à la vérité, n'est pas tout à fait si barbare que celle des Goths et des Huns, dont nous descendons, mais elle ne ressemble pas à l'élégance d'allures, ni à l'urbanité de Rome ; ainsi, mon père, soyez persuadé que je me forme plus l'esprit et que je le polis davantage dans la lecture d'un seul chapitre d'Aulu-Gelle ou de Macrobe que dans les visites que je pourrais faire.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DESLANDES"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="5">
+	<s n="1">Je n'en crois rien. Regarde comme te voilà bâti. </s>
+	<s n="2">Ta cravate est toute de travers, ton juste-au-corps est si mal boutonné qu'il pend d'un côté quatre doigts plus que de l'autre. </s>
+	<s n="3">Regarde comme tes bas sont roulés. </s>
+	<s n="4">Ôte-moi tes gants : Quelles mains ! Quels ongles bordés de noir ! </s>
+	<s n="5">Voilà un jeune homme bien poli ! </s>
+	<s n="6">Tu as beau lire, tu ne seras jamais qu'un malpropre et qu'un sauvage si tu ne hantes compagnie. J'ai donc résolu de te faire faire connaissance avec Monsieur_de_l_Étang, très habile avocat, avec mademoiselle sa soeur, et une de leurs parentes qui demeure avec eux. Ce sont deux demoiselles de beaucoup de mérite, et qu'il n'est pas que tu n'aies vues passer plusieurs fois devant chez nous. Elles sont belles toutes deux.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#monsieur-deslandes">
+                        <speaker>MONSIEUR DESLANDES.</speaker>
+                        <p n="6">
+	<s n="1">Elles sont belles comme les autres.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DESLANDES"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="7">
+	<s n="1">Est-ce que tu prétends encore qu'il n'y a plus au monde de belles femmes, comme il n'y a plus de vraie politesse ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#monsieur-deslandes">
+                        <speaker>MONSIEUR DESLANDES.</speaker>
+                        <p n="8">
+	<s n="1">Comme il n'y a plus d'Alexandres ni de Césars, qu'on ne voit plus de Thémistocles, de Périclès ni d'Épaminondas, est-il étrange qu'il ne se trouve plus d'Hélènes, d'Iphigénies, de Cléopâtres, de Pulcheries, et d'autres beautés de la même force.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DESLANDES"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="9">
+	<s n="1">Du moins les trouveras-tu un peu jolies.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#monsieur-deslandes">
+                        <speaker>MONSIEUR DESLANDES.</speaker>
+                        <p n="10">
+	<s n="1">Elles le sont assurément, mais pourtant quelle différence entre la plus aimable des demoiselles de ce temps-ci et la moindre Glicerium des beaux siècles de l'antiquité ! </s>
+	<s n="2">Mea_Glicerium, mea_Tertulla, mea_Lycea, mea_Leucothée : combien de charmes dans ces noms-là seulement, et peut-on, quand on y est accoutumé, entendre parler de Nanons, de Margots, de Fanchons, de Javottes ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DESLANDES"--> <sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="">
+	<s n="1">Tu ne sais ce que tu dis. </s>
+	<s n="2">Quand tu les connaîtras ces Javottes et ces Nanons, elles te feront bien changer de langage. </s>
+	<s n="3">Quoi qu'il en soit, je veux te présenter à ces belles voisines. </s>
+	<s n="4">Je serais bien aise que tu pusses gagner les bonnes grâces de Mademoiselle_de_l_Étang, ou de sa cousine, pour en faire ta femme. </s>
+	<s n="5">Elles n'ont pas beaucoup de bien, mais elles ont beaucoup de vertu et de mérite ; comme Dieu a béni mon travail au delà de mes espérances, je suis persuadé qu'il te serait plus avantageux d'épouser une fille avec peu de bien, mais bonne ménagère, que d'en prendre une qui eût beaucoup de bien et qui dépensât le double de ce qu'elle t'aurait apporté. </s>
+	<s n="6">J'ai passé ma vie à vendre des étoffes, et pendant que je m'en suis mêlé, j'ai vu tant de femmes qui ont ruiné leurs maris, en belles jupes et en beaux manteaux, par la seule raison qu'elles avaient eu beaucoup de bien en mariage, que je n'oserais penser à te donner une fille qui soit un peu riche. </s>
+	<s n="6">Je connais la famille de ces demoiselles-ci ; j'ai connu particulièrement leurs pères et leurs mères, c'étaient de bonnes gens et leurs enfants leur ressemblent; ainsi je serais sûr de n'être pas trompé. </s>
+	<s n="7">Suis-moi et allons leur faire la révérence.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Monsieur Jérôme, Monsieur Deslandes, Babet.</head>
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="1">
+	<s n="1">La belle enfant, n'êtes-vous pas à Mademoiselle_de_l_Étang ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#babet">
+                        <speaker>BABET.</speaker>
+                        <p n="2">
+	<s n="1">Oui, monsieur, pour vous rendre service.</s>
+</p>
+                    </sp><!--@who="BABET"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="3">
+	<s n="1">Je vous prie de savoir si nous ne l'incommoderions point de lui faire la révérence.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#babet">
+                        <speaker>BABET.</speaker>
+                        <p n="4">
+	<s n="1">Votre nom, s'il vous plaît, Monsieur ?</s>
+</p>
+                    </sp><!--@who="BABET"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="5">
+	<s n="1">Vous lui direz que c'est Monsieur_Jérôme et son fils qui souhaiteraient fort avoir l'honneur de la voir.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#babet">
+                        <speaker>BABET.</speaker>
+                        <p n="6">
+	<s n="1">Monsieur Jérôme ?</s>
+</p>
+                    </sp><!--@who="BABET"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="7">
+	<s n="1">Oui, ma fille.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Monsieur Jérôme, Monsieur</head> Deslandes.
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="1">
+	<s n="1">Oh ça, mon fils, il faut s'acquitter de ceci en galant homme, c_est_à_dire avec une honnête hardiesse mêlée de respect et de civilité. Comme tu tiens ton,chapeau ! </s>
+	<s n="2">Tiens-toi droit, tourne tes pieds en dehors. </s>
+	<s n="3">Allons, voici qu'on vient.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Monsieur Jérôme, Monsieur Deslandes,
+Madamoiselle de L'Étang, Mademoiselle Dupré, Babet.</head>
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="1">
+	<s n="1">Mademoiselle, votre très humble et très obéissant serviteur. </s>
+	<s n="2">Nous venons nous acquitter de nos devoirs et user de la liberté que donne le voisinage. </s>
+	<s n="3">Voici mon fils que je vous amène. </s>
+	<s n="4">C'est un jeune homme qui n'a pas vu encore beaucoup de monde et à qui il sera très avantageux d'avoir le bien de votre connaissance. </s>
+	<s n="5">Il a de l'étude, il a des lettres ; mais il lui manque cette agréable politesse qu'on ne trouve qu'auprès des dames, et des dames d'un mérite comme le vôtre. </s>
+	<s n="6">C'est un coeur tout neuf et tout entier, et qui n'a encore brûlé d'aucune flamme. </s>
+	<s n="7">Avancez, mon fils... </s>
+	<s n="8">Mais, qu'est il devenu ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#babet">
+                        <speaker>BABET.</speaker>
+                        <p n="2">
+	<s n="1">Il s'est enfui.</s>
+</p>
+                    </sp><!--@who="BABET"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="3">
+	<s n="1">Permettez-moi, Mademoiselle, d'aller voir ce qu'il est devenu.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Mademoiselle de L'Étang, Mademoiselle Dupré.</head>
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="1">
+	<s n="1">On nous l'avait bien dit que les deux fils de Monsieur_Jérôme étaient d'une humeur aussi opposée. </s>
+	<s n="2">On ne peut se défaire du cadet et on ne peut retenir l'aîné. </s>
+	<s n="3">Voilà une assez plaisante aventure !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG, riant.</speaker>
+                        <p n="2">
+	<s n="1">Voir ce bonhomme qui court après son fils, est-ce quelque chose d'incomparable ! </s>
+	<s n="2">« Voilà mon fils que je vous amène ; avancez, mon fils... » </s>
+	<s n="3">Et puis, néant ! </s>
+	<s n="4">Si ce bonhomme revient, comment nous empêcher de lui rire au nez ?</s>
+</p>
+                    </sp><!--@stage="laugh"--><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="3">
+	<s n="1">Gardons-nous-en bien, ni de faire semblant que cela nous étonne.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="4">
+	<s n="1">« Voilà mon fils que je vous amène..., </s>
+	<s n="2">« Avancez mon fils... »</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="5">
+	<s n="1">Ris tant que tu voudras présentement, mais prends ton sérieux, je t'en prie, quand il viendra.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="6">
+	<s n="1">J'y ferai mon possible, mais je ne réponds de rien.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="7">
+	<s n="1">Tu serais folle à mettre aux Petites-Maisons. </s>
+	<s n="2">Tout ceci est peut-être de plus grande conséquence que tu ne crois. </s>
+	<s n="3">Soyons sages, je t'en conjure, et ne gâtons rien. Le voici qui revient à nous.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Monsieur Jérôme, Mademoiselle de L'Étang, Mademoiselle Dupré.</head>
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="1">
+	<s n="1">Je l'ai trouvé dans son cabinet avec sa robe_de_chambre et qui lisait dans un gros livre comme si de rien n'eût été. </s>
+	<s n="2">Je vous avoue que cette humeur sauvage là me déplaît beaucoup.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="2">
+	<s n="1">Cela ne m'étonne point, vous lui aviez donné un personnage difficile à faire. </s>
+	<s n="2">Il fallait s'avancer avec des révérences bien compassées, nous saluer l'une après l'autre, et nous faire à chacune un petit compliment. </s>
+	<s n="3">C'était une espèce d'entrée de ballet qu'il faut avoir répétée plus d'une fois pour la bien faire. </s>
+	<s n="4">Je sais un moyen excellent pour remédier à ce petit désordre, qui, franchement, ne nous déplaît pas, parce qu'il marque une certaine crainte respectueuse dont on n'est pas fâchée d'être la cause. </s>
+	<s n="5">Ce soir nos petites voisines qui chantent si bien viendront souper céans et y faire concert. </s>
+	<s n="6">Vous n'avez, Monsieur, qu'à nous faire l'honneur d'être de la partie et de l'amener avec Monsieur_Duvivier, qui est de nos bons amis il y a longtemps. </s>
+	<s n="7">À la faveur du concert et de la bonne compagnie qu'il y aura, nous ferons petit à petit connaissance.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="3">
+	<s n="1">Cela est le mieux pensé du monde, mais ce serait prendre trop de liberté d'en user si familièrement pour la première fois.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="4">
+	<s n="1">Monsieur, c'est sans façons ; vous nous ferez un vrai plaisir à mon frère, à ma cousine et à moi.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="5">
+	<s n="1">Je me rends à vos offres, elles sont faites de si bonne grâce qu'on ne peut pas les refuser.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="6">
+	<s n="1">Je suis persuadée, Monsieur, que vous n'étiez pas si farouche que cela dans votre jeune temps.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="7">
+	<s n="1">Non, assurément, mademoiselle. </s>
+	<s n="2">J'ai toujours fait profession d'estimer, d'aimer et d'honorer le beau sexe et de rendre aux dames tous les services dont j'étais capable. </s>
+	<s n="3">Vous en direz ce qu'il vous plaira, mais les hommes étaient, de mon temps, plus civils, plus honnêtes et plus galants qu'ils ne sont aujourd'hui. </s>
+	<s n="4">J'ai été pendant dix ans d'une société aussi jolie qu'il y en eût à Paris. </s>
+	<s n="5">Madame_Morineau en était, la belle Madame_Trousser, Mademoiselle_Belin, fille d'esprit, s'il y en eût jamais, Monsieur_Oudry, monsieur,... monsieur... </s>
+	<s n="6">Hé, là ! </s>
+	<s n="7">Le secrétaire de ce Maître_des_Requêtes qui était si riche, dont le fils a épousé la fille de monsieur... </s>
+	<s n="8">Aidez moi... </s>
+	<s n="9">Ce gros partisan, qui a une si belle maison ici auprès de Paris... </s>
+	<s n="10">Eh ! </s>
+	<s n="11">Mon Dieu, à ce village où tout le monde va se promener ?...</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="8">
+	<s n="1">À Auteuil ?... </s>
+	<s n="2">À Saint-Cloud?...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="9">
+	<s n="1">Non, c'est ce village où on mange de si bonnes fraises.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="10">
+	<s n="1">À Montreuil?...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="11">
+	<s n="1">Non.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="12">
+	<s n="1">À Nogent sous le bois ?...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="13">
+	<s n="1">Non.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="14">
+	<s n="1">À Bagnolet ?...</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="15">
+	<s n="1">Justement. </s>
+	<s n="2">Il n'est pas que vous n'ayez vu cette maison-là ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="16">
+	<s n="1">C'est une maison où il y a quantité de fontaines et un grand bois de haute_futaie ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="17">
+	<s n="1">C'est cette maison-là même.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="18">
+	<s n="1">Nous y avons été plus de vingt fois. </s>
+	<s n="2">C'est une promenade que nous aimons plus qu'aucune autre. </s>
+	<s n="3">Nous nous y sommes bien diverties.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="19">
+	<s n="1">Il nous arriva une fois l'aventure du monde la plus plaisante par la bêtise d'un laquais... </s>
+	<s n="2">Mais où en étions-nous, et par où sommes-nous venus dans cette maison de campagne ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="20">
+	<s n="1">Je n'en sais rien.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="21">
+	<s n="1">Ni moi non plus. </s>
+	<s n="2">Ah ! </s>
+	<s n="3">Je me souviens ! </s>
+	<s n="4">C'est que cette maison appartenait au beau-père du fils du Maître_des_Requêtes, dont un galant homme de notre société était le secrétaire. </s>
+	<s n="5">Quoi qu'il en soit, nous passions le temps comme des rois, et je n'ai point regret à ma jeunesse. </s>
+	<s n="6">Je veux vous entretenir ce soir des bons tours que nous faisions, puisque vous voulez bien que mes enfants et moi ayons l'honneur de souper avec vous. </s>
+	<s n="7">Ainsi, je vais vous dire adieu jusqu'au revoir.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="22">
+	<s n="1">Nous vous attendrons, monsieur, et votre compagnie, avec impatience.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+</div>
+</div>
+<div type="acte" n="3">
+                <head>ACTE TROISIÈME</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Mademoiselle de L'Étang, Mademoiselle Dupré.</head>
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="1">
+	<s n="1">Est-il possible que tu n'aIes pu voir encore le pauvre Duvivier pour lui faire des excuses de ma brusquerie ? </s>
+	<s n="2">Je t'avoue qu'il m'a fait pitié et que je suis inconsolable du chagrin que je lui ai donné.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="2">
+	<s n="1">Tu es bien fille ! </s>
+	<s n="2">Ce matin tu ne le pouvais souffrir, et te voilà toute inquiète de ne pas le voir. </s>
+	<s n="3">Que veux-tu que je te dise ? </s>
+	<s n="4">Il était outré de douleur, et je ne crois pas qu'il remette jamais les pieds céans.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="3">
+	<s n="1">J'en serais au désespoir, car il faut que je te dise la vérité, le chagrin que j'avais contre lui ne venait point tant du peu d'agrément de sa conversation que de ce qu'on m'avait dit qu'il en aimait une autre ; mais je viens d'apprendre qu'il n'y a rien de plus faux et qu'on avait pris plaisir à me donner cette alarme.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="4">
+	<s n="1">Je te promets que je n'oublierai rien pour le faire revenir et vous remettre tous deux bien ensemble. </s>
+	<s n="2">Mais écoute ce qui m'est arrivé. </s>
+	<s n="4">J'étais sortie pour faire une visite dans le quartier ; deux hommes, à quatre_pas de moi, ont mis l'épée à la main pour se battre ; je me suis jetée à corps perdu dans la première maison que j'ai rencontrée, c'était justement la maison de Monsieur_Jérôme, où j'ai trouvé d'abord, face à face, Monsieur_Deslandes qui accourait au bruit qu'on faisait dans la rue. </s>
+	<s n="5">Il a tressailli en me voyant, et je crois qu'il a été aussi effrayé de me voir que je l'ai été de voir des épées nues ; cependant, comme le plus fort en était fait, et qu'il n'était plus question de compliments ni de révérences, il s'est un peu remis et m'a dit fort galamment qu'il ne pouvait être fâché de cet accident, quelque frayeur qu'il m'eût donnée, parce_qu'il était cause du bonheur qu'il avait de me voir. </s>
+	<s n="6">Je suis la plus trompée du monde si je ne lui ai touché le coeur.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="5">
+	<s n="1">Si tu en es bien persuadée, cela est vrai. </s>
+	<s n="2">Mais ne nous trompons point là-dessus. </s>
+	<s n="3">On nous fait plaisir quand on nous dit qu'on nous aime ; mais pour l'ordinaire on ne nous apprend rien de nouveau.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="6">
+	<s n="1">Je lui ai dit que nous faisions notre compte de l'avoir ce soir à souper. </s>
+	<s n="2">Il m'a dit que son père l'en avait averti et qu'il en avait la plus grande joie du monde.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="7">
+	<s n="1">Tu peux te vanter d'avoir fait un miracle, car n'en est-ce pas un d'avoir fait, en moins d'un quart d'heure, d'un homme fort sauvage un homme fort galant ? </s>
+	<s n="2">Tu dois être fière d'une telle métamorphose.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="8">
+	<s n="1">Il faut voir ce que cela deviendra.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Monsieur de L'Étang, Mademoiselle de L'Étang, Mademoiselle Dupré.</head> 
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="1">
+	<s n="1">Je ne sais pas à qui en veut Monsieur_Duvivier, il s'est acharné sur moi de la plus étrange manière du monde... </s>
+	<s n="2">Il ne m'a pas abandonné un moment depuis que je vous ai quittées. </s>
+	<s n="3">Il n'y a rien que je n'aie essayé pour m'en défaire, mais inutilement. </s>
+	<s n="4">Je suis entré chez un de mes amis, feignant d'avoir quelque chose d'importance à lui dire, en sortant j'ai trouvé Monsieur_Duvivier sur le pas de la porte qui m'attendait et qui a recommencé à me fatiguer de ses nouvelles et surtout de ses protestations d'amitié qu'il a réitérées plus de cent fois et en cent manières différentes ; je l'ai eu sur le corps toute la journée.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="2">
+	<s n="1">Voilà, mon frère, ce que c'est que d'être si aimable : le grand mérite a ses incommodités aussi bien que ses avantages. </s>
+	<s n="2">Il est bien fâcheux assurément de s'entendre louer sans cesse et de se voir accablé de marques d'amitié, de respect et d'estime. </s>
+	<s n="3">Il faut une grande vertu pour soutenir courageusement et de bonne grâce le poids d'une telle affliction.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="3">
+	<s n="1">Oh ! </s>
+	<s n="2">Oh ! </s>
+	<s n="3">J'entends la raillerie et j'avoue franchement que je l'ai bien méritée ; mais raillerie à part, nous avons tous deux tort. </s>
+	<s n="4">Monsieur_Duvivier est un fort honnête homme qui s'est donné à nous, qui fait tous ses efforts pour nous plaire et pour gagner notre amitié ; et nous, parce que ses manières ne reviennent pas aux nôtres qui sont peut-être pires que les siennes, car nous avons l'un et l'autre un air fier et une brusquerie qui, apparemment, ne plaisent pas à bien du monde, nous le traitons du haut en bas et nous nous fâchons de ce qu'il nous aime. Nous ferions bien de nous corriger de cette impertinence et de cette injustice.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="4">
+	<s n="1">Mademoiselle votre soeur n'est pas moins repentante que vous du péché dont vous vous accusez ; mais il y a un moyen de réparer tout : Monsieur_Jérôme, Monsieur_Deslandes et Monsieur_Duvivier viennent souper céans aujourd'hui.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="5">
+	<s n="1">Monsieur_Jérôme ! </s>
+	<s n="2">Et par quelle aventure vient il souper céans ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="6">
+	<s n="1">Il est venu nous voir cette après-dînée, on s'est mis à parler de nos aimables petites voisines, Monsieur_Jérôme a témoigné une si grande envie de les entendre, que ma cousine, ayant dit qu'elles venaient souper céans, en a aussi prié Monsieur_Jérôme et sa famille, ce qu'il a accepté avec sa franchise ordinaire.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="7">
+	<s n="1">J'en ai bien de la joie : mais avez-vous bien donné ordre à tout ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="8">
+	<s n="1">Nous avons le plus joli souper du monde, vous en serez content. </s>
+	<s n="2">La compagnie n'a qu'à venir quand il lui plaira.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="9">
+	<s n="1">Surtout un Oublieux, Mademoiselle_Louison ne me le pardonnerait pas.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Monsieur de L'Étang, Mademoiselle de L'étang, Mademoiselle Dupré, Mademoiselle Manon, Mademoiselle Louison.</head>
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="1">
+	<s n="1">La voilà elle-même et mademoiselle sa soeur.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="2">
+	<s n="1">Soyez les très bienvenues, mes belles demoiselles. </s>
+	<s n="2">Nous vous sommes bien obligés, et à madame votre bonne maman qui a bien voulu vous laisser venir. </s>
+	<s n="3">Asseyons-nous, s'il vous plaît. </s>
+	<s n="4">J'ai chanté toute la nuit le petit air à boire que vous chantâtes hier au soir.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="3">
+	<s n="1">Il est admirable. </s>
+	<s n="2">Je n'ai jamais rien ouï qui m'ait tant plu.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="4">
+	<s n="1">Ce qui me charme, c'est d'entendre Mademoiselle_Louison chanter la basse.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-manon">
+                        <speaker>MADEMOISELLE MANON.</speaker>
+                        <p n="5">
+	<s n="1">Si vous voulez, nous vous la chanterons tout à l'heure.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE MANON"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="6">
+	<s n="1">Vous ne sauriez nous faire un plus grand plaisir.</s>
+</p>
+                        <stage type="sing">Elles chantent un air à boire.</stage>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Babet, Monsieur de L'Étang, etc.</head>
+<sp who="#babet">
+                        <speaker>BABET, à Monsieur de l'Étang.</speaker>
+                        <p n="1">
+	<s n="1">Madame_la_Marquise_de_Bergerac est là bas dans son carrosse qui vous prie de vouloir bien descendre.</s>
+</p>
+                    </sp><!--@who="BABET"-->
+<sp who="#monsieur-de-l-etang">
+                        <speaker>MONSIEUR DE L'ÉTANG.</speaker>
+                        <p n="2">
+	<s n="1">Je suis bien misérable ! </s>
+	<s n="2">Je commence à prendre un peu de plaisir, et cette maudite chicaneuse vient m'en arracher impitoyablement. </s>
+	<s n="3">Il n'y a que moi au monde à qui cela arrive. </s>
+	<s n="4">Je reviendrai bientôt ou je ne pourrai.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="3">
+	<s n="1">Nous ne l'aurons d'une heure. </s>
+	<s n="2">C'est une vieille plaideuse qui prend plus de plaisir à entendre parler de procès que nous n'en prenons à entendre de la musique. </s>
+	<s n="3">Cependant ne laissons pas de continuer. </s>
+	<s n="4">Recommençons, s'il vous plaît, le petit air à boire.</s>
+</p>
+                        <stage type="sing">Elles chantent.</stage>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Monsieur Jérôme, Monsieur Deslandes,
+Mademoiselle Dupré, etc.</head>
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="1">
+	<s n="1">Nous voici, Mademoiselle, rendus à vos ordres.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="2">
+	<s n="1">Et où est Monsieur_Duvivier ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="3">
+	<s n="1">C'est un libertin qui n'est presque jamais chez moi. </s>
+	<s n="2">J'ai donné ordre que s'il revenait on l'envoyât ici.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="4">
+	<s n="1">Si vous voulez bien prendre des sièges et donner audience, vous entendrez quelque chose qui vous plaira assurément. </s>
+	<s n="2">Mesdemoiselles, le petit air que vous chantiez, s'il vous plaît.</s>
+</p>
+                        <stage type="sing">Elles chantent.</stage>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="5">
+	<s n="1">Cela est beau, cela est harmonieux. </s>
+	<s n="2">J'admire la nature qui a bien voulu donner à cette jeune demoiselle ce qu'elle n'accorde qu'aux mâles les plus mâles. </s>
+	<s n="3">On est agréablement surpris de voir sortir d'une belle petite bouche une voix qui ne sort d'ordinaire que d'une bouche bien grande et bien barbue. </s>
+	<s n="4">Cela me ravit.</s>
+</p>
+                        <stage type="sing">Elles continuent à chanter.</stage>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-louison">
+                        <speaker>MADEMOISELLE LOUISON.</speaker>
+                        <p n="6">
+	<s n="1">J'entends un Oublieux.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE LOUISON"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="7">
+	<s n="1">Écoutons.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#l-oublieux">
+                        <speaker>L'OUBLIEUX, derrière le théâtre.</speaker>
+                        <p n="8">
+	<s n="1">Oublies ! </s>
+	<s n="2">Oublies ! </s>
+	<s n="3">Ho ! </s>
+	<s n="4">Ho ! </s>
+	<s n="5">Ho ! </s>
+	<s n="6">Hay!</s>
+</p>
+                    </sp><!--@stage="location"--><!--@who="L'OUBLIEUX"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="9">
+	<s n="1">C'est l'Oublieux lui-même, il le faut appeler... </s>
+	<s n="2">Babet !</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#babet">
+                        <speaker>BABET.</speaker>
+                        <p n="10">
+	<s n="1">Plaît-il, Mademoiselle ?</s>
+</p>
+                    </sp><!--@who="BABET"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="11">
+	<s n="1">Allez appeler l'Oublieux. </s>
+	<s n="2">Eh bien, Mademoiselle_Louison, vous allez voir un Oublieux.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-louison">
+                        <speaker>MADEMOISELLE LOUISON.</speaker>
+                        <p n="12">
+	<s n="1">Je n'en ai point vu encore. </s>
+	<s n="2">Je les entends tous les soirs qui crient : Où sont-ils ? </s>
+	<s n="3">Où sont-ils ? </s>
+	<s n="4">Ho, ho, hay ! </s>
+	<s n="5">Ils me font peur quelquefois ; mais je crois que je n'aurai pas peur en si bonne compagnie.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE LOUISON"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Les mêmes. Monsieur Duvivier, habillé en Oublieux, entre sur le théâtre.</head>
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="1">
+	<s n="1">Oh ! Oh ! Voilà un joli Oublieux. </s>
+	<s n="2">C'est un vrai Oublieux pour les dames. </s>
+	<s n="3">Tu es bien propre, mon ami ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#l-oublieux">
+                        <speaker>L'OUBLIEUX.</speaker>
+                        <p n="2">
+	<s n="1">Pargué, Monsieur, il faut bien que je soyons un peu propre, puisque j'avons l'honneur de hanter quelquefois les bonnes compagnies, comme par exemple. </s>
+	<s n="2">Je ne sommes pas magnifique, mais, comme dit l'autre, pauvres gens ne sont pas riches.</s>
+</p>
+                    </sp><!--@who="L'OUBLIEUX"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="3">
+	<s n="1">Gagne-t-on encore sa vie au métier d'Oublieux?</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#l-oublieux">
+                        <speaker>L'OUBLIEUX.</speaker>
+                        <p n="4">
+	<s n="1">Là, là, tellement, quellement. </s>
+	<s n="2">Il faut bien que tout le monde vive, larrons et autres. </s>
+	<s n="3">Il y a toujours des provinciaux, des clercs de procureur et de notaire, des garçons_de_boutique. </s>
+	<s n="4">J'allons aussi dans les auberges, où il y a toujours des Allemands de toute sorte de pays.</s>
+</p>
+                    </sp><!--@who="L'OUBLIEUX"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="5">
+	<s n="1">Que veux-tu dire, des Allemands de toute sorte de pays ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#l-oublieux">
+                        <speaker>L'OUBLIEUX.</speaker>
+                        <p n="6">
+	<s n="1">Il y en a d'Angleterre, de Pologne, de Danemark, que sais-je, moi ? </s>
+	<s n="2">Je n'entends point leur baragouin, mais ils ont de bonnes pièces de quinze_sols et de trente_sols que je boutons fort bien dans notre escarcelle.</s>
+</p>
+                    </sp><!--@who="L'OUBLIEUX"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="7">
+	<s n="1">Tu es grand causeur, mon ami.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#l-oublieux">
+                        <speaker>L'OUBLIEUX.</speaker>
+                        <p n="8">
+	<s n="1">Dame, l'on me demande et je réponds.</s>
+</p>
+                    </sp><!--@who="L'OUBLIEUX"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <note type="L">Corbillon : Sorte de petite corbeille. [L]</note>
+                        <p n="9">
+	<s n="1">Ton corbillon est-il plein ?</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#l-oublieux">
+                        <speaker>L'OUBLIEUX.</speaker>
+                        <p n="10">
+	<s n="1">Il est si plein qu'il s'en va par dessus.</s>
+</p>
+                    </sp><!--@who="L'OUBLIEUX"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="11">
+	<s n="1">Il faut que Mademoiselle_Louison joue contre l'Oublieux.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-louison">
+                        <speaker>MADEMOISELLE LOUISON.</speaker>
+                        <p n="12">
+	<s n="1">Je ne sais pas le jeu.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE LOUISON"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="13">
+	<s n="1">Je vous dirai quand vous aurez gagné. Vous n'avez qu'à bien remuer les dés.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME, à Mademoiselle Duprê.</speaker>
+                        <p n="14">
+	<s n="1">Vous êtes là en grande conférence avec mon fils, vous l'avez bien apprivoisé ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="15">
+	<s n="1">Je lui suis bien obligée de la complaisance qu'il a de vouloir bien s'entretenir avec moi.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="16">
+	<s n="1">Je ne sais s'il a eu la force de vous dire les sentiments qu'il a pour vous, mais je sais qu'il vous estime infiniment, il me l'a déclaré tantôt ; je souhaiterais bien, Mademoiselle, que vous pussiez avoir quelque bonne volonté pour lui.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="17">
+	<s n="1">Ce me sera toujours beaucoup d'honneur et un grand avantage d'avoir quelque part dans les bonnes grâces de Monsieur_Deslandes.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-deslandes">
+                        <speaker>MONSIEUR DESLANDES.</speaker>
+                        <p n="18">
+	<s n="1">Mon père me fait bien du plaisir de parler comme il fait, et jamais il ne m'a été si bon père.</s>
+</p>
+                    </sp><!--@who="MONSIEUR DESLANDES"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="19">
+	<s n="1">Voyez comme il est devenu galant auprès de vous. </s>
+	<s n="2">Or ça, Mademoiselle, il n'y a qu'un mot qui sert. </s>
+	<s n="3">Vous savez ma franchise. </s>
+	<s n="4">Peut-il espérer de vous être agréable ? </s>
+	<s n="5">C'est une affaire faite si vous le voulez bien.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="20">
+	<s n="1">Avec la même franchise je vous dirai, Monsieur, que rien ne me saurait être plus agréable, pourvu que mon cousin, qui est mon tuteur, comme vous savez, le veuille bien.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="21">
+	<s n="1">Je suis sûr qu'il ne vous en dédira pas, et que...</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="22">
+	<s n="1">L'Oublieux est un galant homme ; il nous a vidé tout son corbillon et il nous donne encore des macarons par dessus.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="23">
+	<s n="1">Cela est fort bien, mais ce n'est pas assez ; il faut qu'il dise la chanson.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#l-oublieux">
+                        <speaker>L'OUBLIEUX.</speaker>
+                        <p n="24">
+	<s n="1">Qu'à ça ne tienne. </s>
+	<s n="2">Je ne l'ai jamais chantée de si bon coeur que je vais la chanter. Il me faut un plat et une assiette.</s>
+</p>
+                        <stage type="carry/sing">On apporte un plat à l'Oublieux et il chante.</stage><!--<poem>-->
+                        <ab type="chanson">
+<lg n="1">
+	<l n="1">Quand une dame est bien jolie,</l>
+	<l n="2">Je me laisse aussitôt charmer,</l>
+	<l n="3">Et pour peu qu'elle me veuille aimer</l>
+	<l n="4">Jamais je ne l'oublie.</l>
+	<l n="5">Oublies, oublies ! ho! ho ! ho ! hay !</l>
+	<l n="6">Charlotte, m'appelez-vous ?</l>
+</lg>
+<lg n="2">
+	<l n="7">Bien souvent c'est une folie</l>
+	<l n="8">De laisser prendre ainsi son coeur;</l>
+	<l n="9">Mais pour peu qu'elle ait eu de douceur</l>
+	<l n="10">Jamais je ne l'oublie.</l>
+	<l n="11">Oublies, oublies! ho! ho ! ho! hay ! etc.</l>
+</lg>
+</ab><!--</poem>-->
+                    </sp><!--@who="L'OUBLIEUX"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="25">
+	<s n="1">J'oubliais, Monsieur, à vous dire que je ne puis accepter l'offre que vous me faites, que vous ne m'ayez accordé une chose que je vais vous demander.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="26">
+	<s n="1">Vous n'avez qu'à dire : si elle est en mon pouvoir, je ne vous refuserai pas assurément.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="27">
+	<s n="1">Elle est tout à fait en votre pouvoir. </s>
+	<s n="2">C'est que vous trouviez bon que l'Oublieux que voilà épouse ma cousine.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="28">
+	<s n="1">Voilà deux choses que je ne comprends pas, l'une que votre cousine épouse un Oublieux, et l'autre qu'elle ait besoin pour cela de mon consentement. </s>
+	<s n="2">Expliquez-vous, s'il vous plaît.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="29">
+	<s n="1">Il n'est pas nécessaire que je m'explique, il ne s'agit que de vouloir bien que ma cousine épouse l'Oublieux.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="30">
+	<s n="1">Je le veux de tout mon coeur, si elle le veut bien. </s>
+	<s n="2">Voilà un ragoût bien étrange pour une demoiselle, que de vouloir épouser un Oublieux. </s>
+	<s n="3">Mais quoi, il y a des fantaisies de toutes les couleurs, et comme dit le proverbe espagnol : de_gustibus_non_est_disputandum.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="31">
+	<s n="1">Il est bon, Monsieur, que vous connaissiez l'Oublieux, qui vous a tant d'obligation. </s>
+	<s n="2">Regardez-le bien de près, et voyez s'il ne vous souvient point de l'avoir vu quelque part.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="32">
+	<s n="1">Que vois-je ! </s>
+	<s n="2">C'est mon fils. </s>
+	<s n="3">Que veux-tu dire, malheureux, de te déguiser de la sorte ?</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="33">
+	<s n="1">Ne le querellez point, s'il vous plaît. </s>
+	<s n="2">Il aime ma cousine, il y a déjà longtemps. </s>
+	<s n="3">Elle lui avait défendu de la voir pour des raisons qui ne valent guères, et lui, pour la voir sans contrevenir ouvertement à ses ordres, il s'est avisé de se travestir en Oublieux.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#monsieur-jerome">
+                        <speaker>MONSIEUR JÉRÔME.</speaker>
+                        <p n="34">
+	<s n="1">Je lui sais bon gré, et il ne tiendra qu'à Mademoiselle que tout le monde ne soit content.</s>
+</p>
+                    </sp><!--@who="MONSIEUR JÉRÔME"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="35">
+	<s n="1">Si tu en es d'accord, nous épouserons aujourd'hui les deux fils de monsieur, toi le cadet et moi l'aîné.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#mademoiselle-de-l-etang">
+                        <speaker>MADEMOISELLE DE L'ÉTANG.</speaker>
+                        <p n="36">
+	<s n="1">Si mon frère y consent, comme je n'en doute pas, j'en suis très satisfaite.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DE L'ÉTANG"-->
+<sp who="#mademoiselle-dupre">
+                        <speaker>MADEMOISELLE DUPRÉ.</speaker>
+                        <p n="37">
+	<s n="1">Allons souper, il en est temps. </s>
+	<s n="2">Monsieur_de_l_Étang sera revenu avant que nous soyons à table. </s>
+	<s n="3">Entrez, s'il vous plaît, Monsieur, nous vous suivons.</s>
+</p>
+                    </sp><!--@who="MADEMOISELLE DUPRÉ"-->
+<sp who="#l-oublieux">
+                        <speaker>L'OUBLIEUX, en prenant la main de sa maîtresse, chante :</speaker>
+                        <l n="12">Et pour peu qu'elle me veuille aimer</l>
+                        <l n="13">Jamais je ne l'oublie.</l>
+                        <l n="14">Oublies, oublies ! ho ! ho ! ho ! hay! etc.</l>
+                    </sp><!--@stage="touch:sing"--><!--@who="L'OUBLIEUX"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>

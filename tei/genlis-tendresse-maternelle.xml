@@ -64,9 +64,6 @@
                     <person xml:id="marguerite" sex="FEMALE">
                         <persName>Marguerite</persName>
                     </person>
-                    <person xml:id="help" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Help</persName>
-                    </person>
                 </listPerson>
             </particDesc>
             <textClass>
@@ -112,11 +109,11 @@
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#marquise-de-roxanne">LA MARQUISE DE ROXANNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="maquis"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
+                    <role corresp="#marquise-de-roxanne">LA MARQUISE DE ROXANNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="marquis"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
 		<castItem>
                     <role corresp="#le-commandeur-de-roxanne">LE COMMANDEUR DE ROXANNE</role><!--@sex="1"--><!--@type="H"--><!--@statut="commandeur"--><!--@age="A"--><!--@stat_amour=""-->, Beau-frère de la Marquise.</castItem> 
 		<castItem>
-                    <role corresp="#la-vicomtesse-de-blemont">LA VICOMTESSE DE BLEMONT</role><!--@sex="2"--><!--@type="H"--><!--@statut="maquise"--><!--@age="A"--><!--@stat_amour=""-->, Cousine de la Marquise. </castItem>
+                    <role corresp="#la-vicomtesse-de-blemont">LA VICOMTESSE DE BLEMONT</role><!--@sex="2"--><!--@type="H"--><!--@statut="marquis"--><!--@age="A"--><!--@stat_amour=""-->, Cousine de la Marquise. </castItem>
 		<castItem>
                     <role corresp="#l-abbe-durand">L'ABBÉ DURAND</role><!--@sex="1"--><!--@type="H"--><!--@statut="abbé"--><!--@age="A"--><!--@stat_amour=""-->, Précepteur du Comte de Roxanne, fils de la Marquise.</castItem> 
 		<castItem>
@@ -320,7 +317,7 @@
 	<s n="2">Elle s'entend à tourner les têtes. </s>
 	<s n="3">Monsieur_le_Comte_de_Rozanne pourrait en dire des nouvelles...</s>
 </p>
-                    </sp><!--@who=""-->
+                    </sp><!--@stage="laugh"--><!--@who=""-->
 <sp who="#l-abbe">
                         <speaker>L'ABBÉ.</speaker>
                         <p n="29">
@@ -344,7 +341,7 @@
 	<s n="1">Allons, je vais l'attendre ici... </s>
 	<s n="2">Victoire, je vous en prie, donnez-moi un fauteuil, je suis lasse à mourir.</s>
 </p>
-                    </sp><!--@who="LA VICOMTESSE"-->
+                    </sp><!--@stage="location"--><!--@who="LA VICOMTESSE"-->
 <sp who="#victoire">
                         <speaker>VICTOIRE.</speaker>
                         <p n="2">
@@ -751,7 +748,7 @@
 	<s n="6">Mais j'entends un carrosse... </s>
 	<s n="7">Oh, pour le coup, c'est sûrement Madame.</s>
 </p>
-                    </sp><!--@who="VICTOIRE"-->
+                    </sp><!--@stage="alone"--><!--@who="VICTOIRE"-->
 </div>
 <div type="scene" n="4">
                     <head>SCÈNE IV.  Victoire, l'Abbé, [la Marquise].</head>
@@ -1427,7 +1424,7 @@
 	<s n="17">Ta destinée fera la mienne.</s>
 </p>
                         <stage type="fall/hide">Elle tombe le visage caché par ses mains et par son mouchoir, et les coudes appuyés sur une table qui doit être à côté d'elle.</stage>
-                    </sp><!--@stage=""--><!--@who="LA MARQUISE"-->
+                    </sp><!--@stage="alone"--><!--@who="LA MARQUISE"-->
 </div>
 <div type="scene" n="7">
                     <head>SCÈNE VII.  La Marquise, Victoire. </head>
@@ -1437,7 +1434,7 @@
 	<s n="1">Qui vient ? </s>
 	<s n="2">Que me veut-on ?</s>
 </p>
-                    </sp><!--@who="LA MARQUISE"-->
+                    </sp><!--@stage="stand/hurry"--><!--@who="LA MARQUISE"-->
 <sp who="#victoire">
                         <speaker>VICTOIRE.</speaker>
                         <p n="2">
@@ -1759,13 +1756,13 @@
 </p>
                     </sp><!--@stage="stand"--><!--@who="LA MARQUISE"-->
 <sp who="#marguerite">
-                        <speaker>MARGUERITE, en s'en allant, (à part). </speaker>
+                        <speaker>MARGUERITE, en s'en allant, à part.</speaker>
                         <p n="3">
 	<s n="1">Ô mon_Dieu ! </s>
 	<s n="2">Vous êtes juste, sauvez son fils...</s>
 </p>
                         <stage type="exit">Elle sort.</stage>
-                    </sp><!--@who="MARGUERITE"-->
+                    </sp><!--@stage="away"--><!--@who="MARGUERITE"-->
 <sp who="#le-commandeur">
                         <speaker>LE COMMANDEUR.</speaker>
                         <p n="4">
@@ -2017,12 +2014,12 @@
 	<s n="2">Ma soeur...</s>
 </p>
                     </sp><!--@who="LE COMMANDEUR"-->
-<sp who="#help">
+<sp who="#victoire">
                         <speaker>VICTOIRE, lui prenant le bras.</speaker>
                         <p n="10">
 	<s n="1">Elle est sans connaissance.</s>
 </p>
-                    </sp><!--@who="help"-->
+                    </sp><!--@stage="touch"--><!--@who="VICTOIRE"-->
 <sp who="#l-abbe">
                         <speaker>L'ABBÉ.</speaker>
                         <p n="11">

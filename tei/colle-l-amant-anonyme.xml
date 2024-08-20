@@ -115,9 +115,9 @@
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#leontine">LÉONTINE</role><!--@sex="2"--><!--@type="H"--><!--@statut=""--><!--@age="J"--><!--@stat_amour=""-->, jeune Veuve.</castItem>
+                    <role corresp="#leontine">LÉONTINE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour=""-->, jeune Veuve.</castItem>
 		<castItem>
-                    <role corresp="#dorothee">DOROTHÉE</role><!--@sex="2"--><!--@type="H"--><!--@statut=""--><!--@age="J"--><!--@stat_amour=""-->, amie de Léontine. </castItem>
+                    <role corresp="#dorothee">DOROTHÉE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="J"--><!--@stat_amour=""-->, amie de Léontine. </castItem>
 		<castItem>
                     <role corresp="#le-vicomte-de-clemengis">LE VICOMTE DE CLEMENGIS</role><!--@sex="1"--><!--@type="H"--><!--@statut="vicomte"--><!--@age="A"--><!--@stat_amour=""-->.</castItem>
 		<castItem>
@@ -1252,7 +1252,7 @@
 	<s n="2">Oui, c'est de lui, sans doute.</s>
 </p>
                         <stage type="open/read/low">Elle l'ouvre, et lit tout bas.</stage>
-                    </sp><!--@who="LÉONTINE"-->
+                    </sp><!--@stage="stress"--><!--@who="LÉONTINE"-->
 <sp who="#rosalie">
                         <speaker>ROSALIE.</speaker>
                         <p n="5">
@@ -1293,7 +1293,7 @@
 	<s n="1">Ma foi, si j'étais à votre place, il n'aurait pas fait tant de chemin  inutilement.</s>
 </p>
                         <stage type="exit">Elle sort.</stage>
-                    </sp><!--@who="ROSALIE"-->
+                    </sp><!--@stage="carry/away"--><!--@who="ROSALIE"-->
 </div>
 <div type="scene" n="5">
                     <head>SCÈNE V. Léontine, Le Vicomte.</head>
@@ -1302,7 +1302,7 @@
                         <p n="1">
 	<s n="1">Eh bien, Madame, il est donc ici ?</s>
 </p>
-                    </sp><!--@who="LE VICOMTE"-->
+                    </sp><!--@stage="silence"--><!--@who="LE VICOMTE"-->
 <sp who="#leontine">
                         <speaker>LÉONTINE.</speaker>
                         <p n="2">
@@ -1945,7 +1945,7 @@
 	<s n="1">Avancez donc.</s>
 </p>
                         <stage type="show/sign">Le Notaire présente le contrat à Léontine. Elle le signe.</stage>
-                    </sp><!--@who="ROSALIE"-->
+                    </sp><!--@stage="toward"--><!--@who="ROSALIE"-->
 <sp who="#colin">
                         <speaker>COLIN, à Jeannette.</speaker>
                         <p n="26">
@@ -1961,7 +1961,7 @@
 	<s n="1">Eh bien, vous l'entendez ; c'est pourtant Colin qui parle. </s>
 	<s n="2">Cela vaut, pour le moins, la réponse de Jeannette.</s>
 </p>
-                    </sp><!--@who="DOROTHÉE"-->
+                    </sp><!--@stage="toward"--><!--@who="DOROTHÉE"-->
 <sp who="#leontine">
                         <speaker>LÉONTINE.</speaker>
                         <p n="28">
@@ -2374,7 +2374,7 @@
 	<s n="2">Comme le coeur me bat !</s>
 </p>
                         <stage type="music/danse/sit/silence">On entend une musique champêtre. Alors les Villageois forment des danses et des pantomimes sur les différents airs, exécutés par la symphonie ; ensuite ils vont en dansant prendre Jeannette et Colin, et les amènent au siège de gazon, où Léontine est assise. La musique cesse.</stage>
-                    </sp><!--@who="ROSALIE"-->
+                    </sp><!--@stage="toward"--><!--@who="ROSALIE"-->
 <sp who="#dorothee">
                         <speaker>DOROTHÉE.</speaker>
                         <p n="17">
@@ -3039,12 +3039,11 @@
 </p>
                     </sp><!--@who="LÉONTINE"-->
 <sp who="#le-vicomte">
-                        <speaker>LE VICOMTE, sortant de l'arbre avec précipitation ; 
-et courant se jeter aux pieds de Léontine, qui, dans le premier mouvement de surprise, tombe dans les bras de Dorothée.</speaker>
+                        <speaker>LE VICOMTE, sortant de l'arbre avec précipitation ;  et courant se jeter aux pieds de Léontine, qui, dans le premier mouvement de surprise, tombe dans les bras de Dorothée.</speaker>
                         <p n="117">
 	<s n="1">Connaissez donc enfin celui qui vous adore : vous le voyez, Madame.</s>
 </p>
-                    </sp><!--@who="LE VICOMTE"-->
+                    </sp><!--@stage="entrance/hurry/kneel/suprise/fall"--><!--@who="LE VICOMTE"-->
 <sp who="#dorothee">
                         <speaker>DOROTHÉE.</speaker>
                         <p n="118">
@@ -3625,7 +3624,7 @@ et courant se jeter aux pieds de Léontine, qui, dans le premier mouvement de su
 	<s n="1">Courons porter au Vicomte cette excellente nouvelle.</s>
 </p>
                         <stage type="exit">Il sort.</stage>
-                    </sp><!--@who="OPHÉMON"-->
+                    </sp><!--@stage="aparte/away"--><!--@who="OPHÉMON"-->
 </div>
 <div type="scene" n="3">
                     <head>SCÈNE III.</head>

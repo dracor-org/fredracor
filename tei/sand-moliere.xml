@@ -266,7 +266,7 @@
 <stage type="decor">Arbres et rochers sur une hauteur. - Chemin creux au fond.</stage>
 <div type="scene" n="1">
                     <head>SCÈNE PREMIÈRE. DUPARC, puis BRÉCOURT.</head>
-<stage>Brécourt est dans une carriole-fourgon traînée par un cheval, qu'il arrête sur le théâtre.</stage>
+<stage type="location/vehicule/stop">Brécourt est dans une carriole-fourgon traînée par un cheval, qu'il arrête sur le théâtre.</stage>
 <sp who="#brecourt">
                         <speaker>BRÉCOURT, descendant du fourgon.</speaker>
                         <p n="1">
@@ -299,7 +299,7 @@
                         <p n="4">
 	<s n="1">Pourquoi faire ?</s>
 </p>
-                    </sp><!--@who="DUPARC"-->
+                    </sp><!--@stage="help/exit/furniture"--><!--@who="DUPARC"-->
 <sp who="#brecourt">
                         <speaker>BRÉCOURT.</speaker>
                         <p n="5">
@@ -363,7 +363,7 @@
                         <p n="1">
 	<s n="1">Allons, mesdemoiselles, soyez belles et sages, et n'allez point courir dans les blés pour y gâter vos beaux habits.</s>
 </p>
-                    </sp><!--@who="PIERRETTE"-->
+                    </sp><!--@stage="entrance/location/toward"--><!--@who="PIERRETTE"-->
 <sp who="#brecourt">
                         <speaker>BRÉCOURT, à part, et l'observant du fond du théâtre.</speaker>
                         <p n="2">
@@ -390,7 +390,7 @@
                         <p n="4">
 	<s n="1">« Une grande sotte qui a seize ans et qui ne sait rien de rien ! » </s>
 </p>
-                        <stage>Reprenant sa voix.</stage>
+                        <stage type="voice">Reprenant sa voix.</stage>
                         <p n="5">
 	<s n="1">Oh ! </s>
 	<s n="2">Oui-da ! </s>
@@ -647,7 +647,7 @@
 	<s n="1">Oui, mes oies, qui sont par là, le long des blés.</s>
 </p>
                         <stage type="exit">Elle sort avec Brécourt.</stage>
-                    </sp><!--@who="PIERRETTE"-->
+                    </sp><!--@stage="show/location/entrance"--><!--@who="PIERRETTE"-->
 <sp who="#armande">
                         <speaker>ARMANDE, riant.</speaker>
                         <p n="10">
@@ -802,13 +802,13 @@
                         <p n="8">
 	<s n="1">Parlez-vous sérieusement, Madeleine ?</s>
 </p>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="moved"--><!--@who="MOLIÈRE"-->
 <sp who="#madeleine">
                         <speaker>MADELEINE, émue, mais se contenant.</speaker>
                         <p n="9">
 	<s n="1">Je vous le jure par notre amitié même.</s>
 </p>
-                    </sp><!--@who="MADELEINE"-->
+                    </sp><!--@stage="moved/quiet"--><!--@who="MADELEINE"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
                         <p n="10">
@@ -1086,7 +1086,7 @@
 	<s n="1">Doucement, mon ami ! </s>
 	<s n="2">J'ai faim, j'ai soif, je suis pressé, j'ai de l'argent ; je récompense qui m'oblige, je tue qui me dérange.</s>
 </p>
-                    </sp><!--@who="LE CAVALIER"-->
+                    </sp><!--@stage="get"--><!--@who="LE CAVALIER"-->
 <sp who="#brecourt">
                         <speaker>BRÉCOURT, tirant sa rapière.</speaker>
                         <p n="4">
@@ -1143,7 +1143,7 @@
 	<s n="1">Halte-là, messieurs !... </s>
 	<s n="2">Brécourt, qu'est-ce donc ?</s>
 </p>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="hit"--><!--@who="MOLIÈRE"-->
 <sp who="#brecourt">
                         <speaker>BRÉCOURT.</speaker>
                         <p n="2">
@@ -1585,7 +1585,7 @@
 	<s n="2">Hé ! </s>
 	<s n="3">Votre chevau que vous avez laissé la bride sur le cou, saute à cette heure comme un beau diable, et veut manger les autres.</s>
 </p>
-                    </sp><!--@stage="entrance/tired"--><!--@who="PIERRETTE"-->
+                    </sp><!--@stage="entrance/breathless"--><!--@who="PIERRETTE"-->
 <sp who="#le-cavalier">
                         <speaker>LE CAVALIER.</speaker>
                         <p n="68">
@@ -1604,7 +1604,7 @@ Duparc, Brécourt.</head>
                         <p n="1">
 	<s n="1">Qu'est-ce donc que cet homme-là qui n'a point du tout l'air de penser comme vous ?</s>
 </p>
-                    </sp><!--@who="ARMANDE"-->
+                    </sp><!--@stage="toward"--><!--@who="ARMANDE"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
                         <p n="2">
@@ -1973,7 +1973,7 @@ Duparc, Brécourt.</head>
 	<s n="5">Mordi ! </s>
 	<s n="6">Je ne me souviens déjà plus de ce qu'il m'a dit de vous dire.</s>
 </p>
-                    </sp><!--@who="PIERRETTE"-->
+                    </sp><!--@stage="toward"--><!--@who="PIERRETTE"-->
 <sp who="#armande">
                         <speaker>ARMANDE, prenant la bague.</speaker>
                         <p n="2">
@@ -2328,7 +2328,7 @@ Duparc, Brécourt.</head>
 	<s n="1">Elle veut me plaire ? </s>
 	<s n="2">Que dis-tu là ?</s>
 </p>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="frighten"--><!--@who="MOLIÈRE"-->
 <sp who="#pierrette">
                         <speaker>PIERRETTE.</speaker>
                         <p n="20">
@@ -3000,7 +3000,7 @@ Duparc, Brécourt.</head>
 	<s n="1">Ouais ! </s>
 	<s n="2">Voilà un bon coeur bien aimant !</s>
 </p>
-                        <stage>Haut.</stage>
+                        <stage type="loud">Haut.</stage>
                         <p n="15">
 	<s n="1">Allons, allons, mon cher Baron, un peu de courage, surtout devant les gens ! </s>
 	<s n="2">Vous laissez trop voir vos sentiments pour moi, et Molière finira par s'en apercevoir.</s>
@@ -3011,7 +3011,7 @@ Duparc, Brécourt.</head>
                         <p n="16">
 	<s n="1">Vous craignez donc Molière ?</s>
 </p>
-                    </sp><!--@who="BARON"-->
+                    </sp><!--@stage="frighten"--><!--@who="BARON"-->
 <sp who="#armande">
                         <speaker>ARMANDE.</speaker>
                         <p n="17">
@@ -3198,7 +3198,7 @@ Duparc, Brécourt.</head>
 	<s n="2">Ah ! </s>
 	<s n="3">Mon_Dieu !</s>
 </p>
-                    </sp><!--@who="ARMANDE"-->
+                    </sp><!--@stage="recognize"--><!--@who="ARMANDE"-->
 <sp who="#conde">
                         <speaker>CONDÉ.</speaker>
                         <p n="3">
@@ -3331,7 +3331,7 @@ Duparc, Brécourt.</head>
 	<s n="2">Allez-vous donc mettre le soupçon dans son coeur et lui montrer ma lettre ? </s>
 	<s n="3">Brûlez-la, oubliez-la, Mademoiselle, je vous en supplie !</s>
 </p>
-                    </sp><!--@who="BARON"-->
+                    </sp><!--@stage="entrance/hurry"--><!--@who="BARON"-->
 <sp who="#armande">
                         <speaker>ARMANDE.</speaker>
                         <p n="2">
@@ -3356,7 +3356,7 @@ Duparc, Brécourt.</head>
 	<s n="2">Le vainqueur de Nordlingue et de Rocroy s'est souvenu de Molière et l'a voulu serrer dans ses bras, pour l'amour de la morale et de la vérité. </s>
 	<s n="3">Je ne demandais point au ciel d'autre récompense du peu de bien que j'ai pu faire, que l'approbation du plus grand capitaine et du plus honnête homme de son siècle.</s>
 </p>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="entrance/together"--><!--@who="MOLIÈRE"-->
 <sp who="#conde">
                         <speaker>CONDÉ.</speaker>
                         <p n="2">
@@ -3540,7 +3540,7 @@ Duparc, Brécourt.</head>
                         <p n="10">
 	<s n="1">Et qui donc aimez-vous, Molière ?</s>
 </p>
-                    </sp><!--@stage=""--><!--@who="ARMANDE"-->
+                    </sp><!--@stage="sweet"--><!--@who="ARMANDE"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, avec humeur.</speaker>
                         <p n="11">
@@ -3617,13 +3617,13 @@ Duparc, Brécourt.</head>
 	<s n="1">Vous moquez-vous, Armande ? </s>
 	<s n="2">Et voulez-vous faire la prude avec un homme qui se rend trop de justice pour donner lieu à vos méfiances ?</s>
 </p>
-                    </sp><!--@stage=""--><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="stress"--><!--@who="MOLIÈRE"-->
 <sp who="#armande">
                         <speaker>ARMANDE, avec aplomb.</speaker>
                         <p n="21">
 	<s n="1">Si vous appelez pruderie la vertu, alors, Molière, il ne me reste plus qu'à vous quitter pour toujours.</s>
 </p>
-                    </sp><!--@who="ARMANDE"-->
+                    </sp><!--@stage="serious"--><!--@who="ARMANDE"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, avec douleur.</speaker>
                         <p n="22">
@@ -3633,7 +3633,7 @@ Duparc, Brécourt.</head>
 	<s n="4">Ah !... </s>
 	<s n="5">Elle me rendra fou !</s>
 </p>
-                    </sp><!--@stage=""--><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="pain"--><!--@who="MOLIÈRE"-->
 <sp who="#armande">
                         <speaker>ARMANDE.</speaker>
                         <p n="23">
@@ -3649,7 +3649,7 @@ Duparc, Brécourt.</head>
                         <p n="24">
 	<s n="1">Et avec qui, s'il vous plaît, avez-vous résolu de vous marier ?</s>
 </p>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="frighten"--><!--@who="MOLIÈRE"-->
 <sp who="#armande">
                         <speaker>ARMANDE.</speaker>
                         <p n="25">
@@ -3713,7 +3713,7 @@ Duparc, Brécourt.</head>
 	<s n="1">Mais au fait... que lui importe ? </s>
 	<s n="2">Parlez donc, Molière !</s>
 </p>
-                    </sp><!--@who="MADELEINE"-->
+                    </sp><!--@stage="stress/aparte"--><!--@who="MADELEINE"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE, faisant un effort sur lui-même.</speaker>
                         <p n="6">
@@ -3862,7 +3862,7 @@ Duparc, Brécourt.</head>
 	<s n="3">Mon amour ! </s>
 	<s n="4">Ma femme !</s>
 </p>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="stand/entousiasm/hugh"--><!--@who="MOLIÈRE"-->
 <sp who="#armande">
                         <speaker>ARMANDE.</speaker>
                         <p n="8">
@@ -3899,7 +3899,7 @@ Duparc, Brécourt.</head>
 	<s n="3">Le roi... le roi qui vient !</s>
 </p>
                         <stage type="open/entrance/costume">Les portes du fond s'ouvrent, Louis XIV paraît, déguisé en Égyptien, avec une suite qui reste sur le seuil.</stage>
-                    </sp><!--@who="PIERRETTE"-->
+                    </sp><!--@stage="run"--><!--@who="PIERRETTE"-->
 </div>
 <div type="scene" n="17">
                     <head>SCÈNE XVII. Les Mêmes, Le Roi.</head>
@@ -4002,7 +4002,7 @@ Duparc, Brécourt.</head>
 	<s n="1">Ah ! </s>
 	<s n="2">Tu es là, mon enfant ?</s>
 </p>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="repeat/speak"--><!--@who="MOLIÈRE"-->
 <sp who="#baron">
                         <speaker>BARON.</speaker>
                         <p n="3">
@@ -4319,7 +4319,7 @@ Duparc, Brécourt.</head>
 	<s n="7">Cette splendeur de la vie !... </s>
 	<s n="8">J'ai vu sa mère presque comme cela !</s>
 </p>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="stand/location"--><!--@who="MOLIÈRE"-->
 <sp who="#pierrette">
                         <speaker>PIERRETTE.</speaker>
                         <p n="10">
@@ -4519,7 +4519,7 @@ Duparc, Brécourt.</head>
                         <p n="17">
 	<s n="1">Tout ce que monsieur dit du roi et de lui, ça me tire toujours des larmes, parce que c'est toute mon histoire avec monsieur !</s>
 </p>
-                    </sp><!--@stage=""--><!--@who="PIERRETTE"-->
+                    </sp><!--@stage="wipe"--><!--@who="PIERRETTE"-->
 <sp who="#moliere">
                         <speaker>MOLIÈRE.</speaker>
                         <p n="18">
@@ -4850,7 +4850,7 @@ Duparc, Brécourt.</head>
                         <p n="35">
 	<s n="1">Pardonnez-moi, vous resterez, Baron.</s>
 </p>
-                    </sp><!--@who="ARMANDE"-->
+                    </sp><!--@stage="strong"--><!--@who="ARMANDE"-->
 <sp who="#baron">
                         <speaker>BARON.</speaker>
                         <p n="36">
@@ -5238,7 +5238,7 @@ Duparc, Brécourt.</head>
 	<s n="3">Il faut songer au Tartufe.</s>
 </p>
                         <stage type="entrance/kiss">Pierrette entre et lui amène sa fille, qu'il embrasse avec effusion.</stage>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="stress"--><!--@who="MOLIÈRE"-->
 </div>
 </div>
 <div type="act" n="4">
@@ -6510,7 +6510,7 @@ Si je le veux ?</s>
                         <p n="35">
 	<s n="1">Ils ne méritent point...</s>
 </p>
-                    </sp><!--@who="LE BEL ESPRIT"-->
+                    </sp><!--@stage="frighten"--><!--@who="LE BEL ESPRIT"-->
 <sp who="#conde">
                         <speaker>CONDÉ, lui arrachant les vers et les lisant.</speaker>
                         <l n="1">Molière est dans la fosse noire ;</l>
@@ -6525,7 +6525,7 @@ Si je le veux ?</s>
 	<s n="5">Molière est encore debout, et plaise au ciel qu'il soit là dans vingt ans, pour me faire voire épitaphe, quelque indigne de lui que soit le sujet !</s>
 </p>
                         <stage type="tear/frighten/escape">Il froisse les vers et les lui jette à la figure. Le bel esprit, épouvanté, prend la fuite.</stage>
-                    </sp><!--@who="CONDÉ"-->
+                    </sp><!--@stage="get/read"--><!--@who="CONDÉ"-->
 </div>
 <div type="scene" n="2">
                     <head>SCÈNE II. Brécourt, Condé, Pierrette, les Ouvriers.</head>
@@ -7282,7 +7282,7 @@ Si je le veux ?</s>
                         <p n="1">
 	<s n="1">Eh bien, rentrons-nous à la fin ?</s>
 </p>
-                    </sp><!--@who="ARMANDE"-->
+                    </sp><!--@stage="zentrance/location/search"--><!--@who="ARMANDE"-->
 <sp who="#baron">
                         <speaker>BARON.</speaker>
                         <p n="2">
@@ -8068,7 +8068,7 @@ Si je le veux ?</s>
                         <p n="9">
 	<s n="1">Prince, veuillez dire au roi que Molière se meurt et n'a plus de maître ici-bas !</s>
 </p>
-                    </sp><!--@who="MOLIÈRE"-->
+                    </sp><!--@stage="awake"--><!--@who="MOLIÈRE"-->
 <sp who="#madeleine">
                         <speaker>MADELEINE.</speaker>
                         <p n="10">
@@ -8132,7 +8132,7 @@ Si je le veux ?</s>
 	<s n="5">Vos sens ne m'entendent plus et je ne puis me justifier, et vous allez mourir en me maudissant...</s>
 </p>
                         <stage type="cry">Il sanglote.</stage>
-                    </sp><!--@who="BARON"-->
+                    </sp><!--@stage="give"--><!--@who="BARON"-->
 <sp who="#duparc">
                         <speaker>DUPARC.</speaker>
                         <p n="17">

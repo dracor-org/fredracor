@@ -117,19 +117,19 @@
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#repin">RÉPIN</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#repin">RÉPIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#gaillardon">GAILLARDON</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#gaillardon">GAILLARDON</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#malahieude">MALAHIEUDE</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#malahieude">MALAHIEUDE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#madame-repin">MADAME RÉPIN</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#madame-repin">MADAME RÉPIN</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#henriette">HENRIETTE</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#henriette">HENRIETTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#marie">MARIE</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#marie">MARIE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 		<castItem>
-                    <role corresp="#augustine">AUGUSTINE</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#augustine">AUGUSTINE</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
     </castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Province" country="France" periode="XIXème" gps="">À la gare d'une petite ville.</set>-->
 </front>
@@ -177,7 +177,7 @@
                         <p n="6">
 	<s n="1">Avec qui donc ?</s>
 </p>
-                    </sp><!--@who="MADAME RÉPIN"-->
+                    </sp><!--@stage="slow"--><!--@who="MADAME RÉPIN"-->
 <sp who="#gaillardon">
                         <speaker>GAILLARDON.</speaker>
                         <p n="7">
@@ -586,7 +586,7 @@
                         <p n="5">
 	<s n="1">Une quoi ?</s>
 </p>
-                    </sp><!--@who="MADAME RÉPIN"-->
+                    </sp><!--@stage="estonish"--><!--@who="MADAME RÉPIN"-->
 <sp who="#repin">
                         <speaker>RÉPIN.</speaker>
                         <p n="6">
@@ -684,7 +684,7 @@
 	<s n="3">Mon Henriette ! </s>
 	<s n="4">Tant mieux !</s>
 </p>
-                    </sp><!--@who="MARIE"-->
+                    </sp><!--@stage="happy"--><!--@who="MARIE"-->
 <sp who="#repin">
                         <speaker>RÉPIN, s'asseyant et passant un mouchoir sur son crâne lisse.</speaker>
                         <p n="21">
@@ -724,7 +724,7 @@
 	<s n="2">Il suffit que tu sois à prendre pour qu'on ne veuille plus de toi. </s>
 	<s n="3">Ça arrive.</s>
 </p>
-                    </sp><!--@who="RÉPIN"-->
+                    </sp><!--@stage="happy"--><!--@who="RÉPIN"-->
 <sp who="#marie">
                         <speaker>MARIE.</speaker>
                         <p n="27">
@@ -1166,7 +1166,7 @@
                         <p n="12">
 	<s n="1">Il t'a rien dit ?</s>
 </p>
-                    </sp><!--@who="RÉPIN"-->
+                    </sp><!--@stage="toward"--><!--@who="RÉPIN"-->
 <sp who="#henriette">
                         <speaker>HENRIETTE.</speaker>
                         <p n="13">
@@ -1215,7 +1215,7 @@
 	<s n="2">La soupe refroidit.</s>
 </p>
                         <stage type="walk/together">Gaillardon, Madame_Répin et Marie descendent.</stage>
-                    </sp><!--@who="RÉPIN"-->
+                    </sp><!--@stage="location"--><!--@who="RÉPIN"-->
 <sp who="#augustine">
                         <speaker>AUGUSTINE.</speaker>
                         <p n="20">
@@ -1287,7 +1287,7 @@
 	<s n="11">Comment faire ?... </s>
 	<s n="12">Qu'est-ce que tu en penses, toi, ma Marie ?</s>
 </p>
-                    </sp><!--@who="MADAME RÉPIN"-->
+                    </sp><!--@stage="count"--><!--@who="MADAME RÉPIN"-->
 <sp who="#marie">
                         <speaker>MARIE.</speaker>
                         <p n="29">
@@ -1528,7 +1528,7 @@
 	<s n="3">Tenez, la dernière fois, c'était à l'exposition_agricole. </s>
 	<s n="4">Il m'a dit en toutes lettres : « Monsieur_Répin, vos produits sont superbes ; superbes, vous entendez, Monsieur_Répin ? »</s>
 </p>
-                    </sp><!--@who="RÉPIN"-->
+                    </sp><!--@stage="proud"--><!--@who="RÉPIN"-->
 <sp who="#gaillardon">
                         <speaker>GAILLARDON.</speaker>
                         <p n="65">
@@ -1542,7 +1542,7 @@
 	<s n="1">Oui, Monsieur_Gaillardon, je lui ai répondu ! </s>
 	<s n="2">Je lui ai répondu : « Monsieur le préfet est bien bon... Vous êtes bien bon, monsieur le préfet. »</s>
 </p>
-                    </sp><!--@who="RÉPIN"-->
+                    </sp><!--@stage="proud"--><!--@who="RÉPIN"-->
 <sp who="#gaillardon">
                         <speaker>GAILLARDON.</speaker>
                         <p n="67">
@@ -1682,7 +1682,7 @@
 	<s n="2">Gaillardon ne va guère tarder à rentrer. Faut qu'il se trouve seul avec notre Henriette. </s>
 	<s n="3">Alors, tout à l'heure, il t'a rien dit, mon Henriette ?</s>
 </p>
-                    </sp><!--@who="RÉPIN"-->
+                    </sp><!--@stage="stress"--><!--@who="RÉPIN"-->
 <sp who="#henriette">
                         <speaker>HENRIETTE.</speaker>
                         <p n="90">
@@ -1849,7 +1849,7 @@
                         <p n="8">
 	<s n="1">Il m'a rien dit.</s>
 </p>
-                    </sp><!--@who="HENRIETTE"-->
+                    </sp><!--@stage="low/toward"--><!--@who="HENRIETTE"-->
 <sp who="#repin">
                         <speaker>RÉPIN.</speaker>
                         <p n="9">
@@ -1900,11 +1900,11 @@
 	<s n="2">Je n'osais pas le dire, mais, sans reproche, depuis la soupe, je commençais à trouver le temps long. </s>
 	<s n="3">Toutefois, on est bien éduqué ou on ne l'est pas.</s>
 </p>
-                    </sp><!--@who="GAILLARDON"-->
+                    </sp><!--@stage="drop/toward"--><!--@who="GAILLARDON"-->
 <sp who="#repin">
                         <speaker>RÉPIN.</speaker>
                         <p n="16">
-	<s n="1">Très bien alors, prenons le 27 octobre. </s>
+	<s n="1">Très bien alors, prenons le 27_octobre. </s>
 	<s n="2">Ça vous va-t-il ?</s>
 </p>
                     </sp><!--@who="RÉPIN"-->
@@ -2102,7 +2102,7 @@
                         <p n="9">
 	<s n="1">Merci.</s>
 </p>
-                    </sp><!--@who="MALAHIEUDE"-->
+                    </sp><!--@stage="get/sit/location"--><!--@who="MALAHIEUDE"-->
 <sp who="#repin">
                         <speaker>RÉPIN.</speaker>
                         <p n="10">
@@ -2140,7 +2140,7 @@
 	<s n="3">Ah ben ! </s>
 	<s n="4">Elle est bonne !</s>
 </p>
-                    </sp><!--@who="RÉPIN"-->
+                    </sp><!--@stage="laugh"--><!--@who="RÉPIN"-->
 <sp who="#malahieude">
                         <speaker>MALAHIEUDE, se levant, à Répin.</speaker>
                         <p n="15">
@@ -2213,7 +2213,7 @@
 	<s n="1">Quoi ? </s>
 	<s n="2">Quoi ?</s>
 </p>
-                    </sp><!--@who="MADAME RÉPIN"-->
+                    </sp><!--@stage="stress"--><!--@who="MADAME RÉPIN"-->
 <sp who="#repin">
                         <speaker>RÉPIN.</speaker>
                         <p n="4">
@@ -2361,7 +2361,7 @@
 	<s n="2">Je ne vous dirai pas que je suis surpris, je suis étonné... profondément étonné. </s>
 	<s n="3">Mais, après tout, rien n'est fait, et, du moment que vous reprenez votre parole, nous vous la rendons !</s>
 </p>
-                    </sp><!--@who="RÉPIN"-->
+                    </sp><!--@stage="serious"--><!--@who="RÉPIN"-->
 <sp who="#gaillardon">
                         <speaker>GAILLARDON.</speaker>
                         <p n="25">
@@ -2416,7 +2416,7 @@
 	<s n="1">Si, si... je le sais depuis longtemps... </s>
 	<s n="2">Mais, vois-tu, j'aime mieux attendre encore un petit peu.</s>
 </p>
-                    </sp><!--@who="HENRIETTE"-->
+                    </sp><!--@stage="cry/pray"--><!--@who="HENRIETTE"-->
 <sp who="#gaillardon">
                         <speaker>GAILLARDON.</speaker>
                         <p n="33">

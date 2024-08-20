@@ -72,7 +72,7 @@
                     <person xml:id="taher" sex="MALE">
                         <persName>Taher</persName>
                     </person>
-                    <person xml:id="isabelle" sex="UNKNOWN">
+                    <person xml:id="isabelle" sex="FEMALE">
                         <persName>Isabelle</persName>
                     </person>
                     <person xml:id="arlequin-et-taher" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
@@ -130,11 +130,11 @@
 		<castItem>
                     <role corresp="#ali">ALI</role><!--@sex="1"--><!--@type="H"--><!--@statut="esclave"--><!--@age="A"--><!--@stat_amour="néant"-->, esclave de Taher. HIPPOLYTE.</castItem>
 		<castItem>
-                    <role corresp="#carle">CARLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="sclave"--><!--@age="A"--><!--@stat_amour="néant"-->, esclave français. CARLE.</castItem>
+                    <role corresp="#carle">CARLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="esclave"--><!--@age="A"--><!--@stat_amour="néant"-->, esclave français. CARLE.</castItem>
 		<castItem>
-                    <role corresp="#isabelle">ISABELLE</role><!--@sex="Z"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->, esclave de Taher. Melle RIVIÈRE.</castItem>
+                    <role corresp="#isabelle">ISABELLE</role><!--@sex="2"--><!--@type="H"--><!--@statut="esclave"--><!--@age="A"--><!--@stat_amour="néant"-->, esclave de Taher. Melle RIVIÈRE.</castItem>
 		<castItem>
-                    <role corresp="#esclaves-français">ESCLAVES FRANÇAIS</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#esclaves-français">ESCLAVES FRANÇAIS</role><!--@sex="1"--><!--@type="H"--><!--@statut="esclave"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
 	</castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Constantinople" country="Turquie" periode="XVIIIème" gps="41.008238, 28.978359">À Sculati, pris Constantinople.</set>-->
 	<note>Texte extrait de "Proverbes et Nouvelles par Eugène Scribe", Paris Gosselin, 1861. pp. 316-323.</note>
@@ -647,7 +647,7 @@
                         <p n="15">
 	<s n="1">Il est vrai ; je suis bien un peu coupable.</s>
 </p>
-                    </sp><!--@who="ALI"-->
+                    </sp><!--@stage="rependant"--><!--@who="ALI"-->
 <sp who="#arlequin">
                         <speaker>ARLEQUIN, avec colère.</speaker>
                         <p n="16">
@@ -733,7 +733,7 @@
                         <p n="27">
 	<s n="1">A sans doute résolu de s'en défaire.</s>
 </p>
-                    </sp><!--@who="LÉLIO"-->
+                    </sp><!--@stage="happy"--><!--@who="LÉLIO"-->
 <sp who="#ali">
                         <speaker>ALI.</speaker>
                         <p n="28">
@@ -1385,7 +1385,7 @@
 	<s n="5">Par Mahomet! </s>
 	<s n="6">Il n'y aura pas pour nous de supplice assez grand.</s>
 </p>
-                    </sp><!--@who="ARLEQUIN"-->
+                    </sp><!--@stage="quick"--><!--@who="ARLEQUIN"-->
 <sp who="#lelio">
                         <speaker>LÉLIO.</speaker>
                         <p n="11">
@@ -1521,7 +1521,7 @@
                         <l n="201">Entrez dans cette enceinte !</l>
                         <l n="202">Entrez ! Entrez sans crainte.</l>
                         <stage type="together">Ensemble.</stage>
-                    </sp><!--@who="LÉLIO, ARLEQUIN et TAHER"-->
+                    </sp><!--@stage="together"--><!--@who="LÉLIO, ARLEQUIN et TAHER"-->
 <sp who="#taher">
                         <speaker>TAHER.</speaker>
                         <l n="203">Mahomet, exauce mes voeux !</l>
@@ -1916,7 +1916,7 @@
 <sp who="#isabelle">
                         <speaker>ISABELLE, à part.</speaker>
                         <l n="248">C'est bien là, c'est bien son portrait.</l>
-                    </sp><!--@who="ISABELLE"-->
+                    </sp><!--@stage="aparte"--><!--@who="ISABELLE"-->
 <sp who="#lelio">
                         <speaker>LÉLIO.</speaker>
                         <l n="249">Il était modeste et discret.</l>
@@ -2309,7 +2309,7 @@
 	<s n="5">C'est bien naturel. </s>
 	<s n="6">Comment, je suis aimé, mignonne ?</s>
 </p>
-                    </sp><!--@who="TAHER"-->
+                    </sp><!--@stage="watch"--><!--@who="TAHER"-->
 <sp who="#isabelle">
                         <speaker>ISABELLE.</speaker>
                         <p n="10">
@@ -2441,11 +2441,11 @@
                         <stage type="exit">On entre à gauche dans la grotte où l'on a posé la table et où Isabelle est entrée.</stage>
                     </sp><!--@stage="aparte"--><!--@who="ARLEQUIN"-->
 <sp who="#taher">
-                        <speaker>TAHER, bas a Lélio vivement.</speaker>
+                        <speaker>TAHER, bas à Lélio vivement.</speaker>
                         <p n="8">
 	<s n="1">Mais ils vont trouver Isabelle !</s>
 </p>
-                    </sp><!--@who="TAHER"-->
+                    </sp><!--@stage="low/toward"--><!--@who="TAHER"-->
 <sp who="#lelio">
                         <speaker>LÉLIO, froidement.</speaker>
                         <p n="9">

@@ -1,0 +1,1323 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001869" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Antigone</title>
+                <title type="sub">Tragédie en Trois Actes</title>
+                <title type="sub">Représentée au Theatre-Français.</title>
+                <author>
+      <persName>Doigny du Ponceau</persName>
+      <!--ISNI not found in Wikidata-->
+      <idno type="isni">0000000054880753</idno>
+    </author><!--Doigny Du PONCEAU (1750-1830)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/DOIGNYDUPONCEAU_ANTIGONE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/DOIGNYDUPONCEAU_ANTIGONE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="ismene" sex="FEMALE">
+                        <persName>Ismène</persName>
+                    </person>
+                    <person xml:id="antigone" sex="FEMALE">
+                        <persName>Antigone</persName>
+                    </person>
+                    <person xml:id="hemon" sex="MALE">
+                        <persName>Hémon</persName>
+                    </person>
+                    <person xml:id="creon" sex="MALE">
+                        <persName>Créon</persName>
+                    </person>
+                    <person xml:id="l-officier" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L Officier</persName>
+                    </person>
+                    <person xml:id="tiresias" sex="MALE">
+                        <persName>Tirésias</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Tragédie</term>
+                    <term>vers</term>
+                </keywords>
+                <classCode scheme="http://www.wikidata.org/entity/">Q80930</classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1820">
+                <desc/>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">ANTIGONE</titlePart>
+			<titlePart type="sub">TRAGÉDIE EN TROIS ACTES</titlePart>
+			<titlePart type="sub">REPRÉSENTÉE AU THEATRE-FRANÇAIS.</titlePart>
+		</docTitle> 
+		<docDate when="1820">M. DCCC. XX.</docDate>
+		 
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor>À PARIS CHEZ ANTH° BOUCHER, IMPRIMEUR-LIBRAIRE, RUE DES BONS-ENFANTS, n°34 ; ET TOUS LES MARCHANDS DE NOUVEAUTÉS.</editor>-->
+			<div type="printer">
+                    <p>DE L'IMPRIMERIE D'ANTH° BOUCHER, SUCCESSEUR DE L. G, MICHAUD, RUE DES BONS-ENFANTS, n°34.</p>
+                </div><!--@id="BOUCHER"-->		
+		</div>
+
+		<castList>
+                <head>PERSONNAGES</head>
+			<castItem>
+                    <role corresp="#creon">CRÉON</role><!--@sex="1"--><!--@type="H"--><!--@statut="roi"--><!--@age="A"--><!--@stat_amour="néant"-->, roi de Thèbes.</castItem>
+			<castItem>
+                    <role corresp="#hemon">HÉMON</role><!--@sex="1"--><!--@type="H"--><!--@statut="prince"--><!--@age="A"--><!--@stat_amour="néant"-->, fils de Créon.</castItem>
+			<castItem>
+                    <role corresp="#antigone">ANTIGONE</role><!--@sex="2"--><!--@type="H"--><!--@statut="prince"--><!--@age="A"--><!--@stat_amour="néant"-->, fille d'OEdipe.</castItem>
+			<castItem>
+                    <role corresp="#ismene">ISMÈNE</role><!--@sex="2"--><!--@type="H"--><!--@statut="prince"--><!--@age="A"--><!--@stat_amour="néant"-->, soeur d'Antigone.</castItem>
+			<castItem>
+                    <role corresp="#officier-du-palais">UN OFFICIER DU PALAIS DU CRÉON</role><!--@sex="1"--><!--@type="H"--><!--@statut="officier"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#grands-de-thebes">GRANDS DE THÈBES</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#peuple-thebain">PEUPLE THÉBAIN</role><!--@sex="9"--><!--@type="H"--><!--@statut="peuple"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#soldats-thebains">SOLDATS THÉBAINS</role><!--@sex="1"--><!--@type="H"--><!--@statut="soldat"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#tiresias">TIRÉSIAS</role><!--@sex="1"--><!--@type="H"--><!--@statut="prophète"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#un-enfant">UN ENFANT</role><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="E"--><!--@stat_amour="néant"-->, gui de Tirésias.</castItem>
+			<castItem>
+                    <role corresp="#un-officier-de-l-armee-de-creon">UN OFFICIER DE L'ARMÉE DE CRÉON</role><!--@sex="1"--><!--@type="H"--><!--@statut="officier"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+			<castItem>
+                    <role corresp="#empty-string"/><!--@sex="1"--><!--@type="H"--><!--@statut=""--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		</castList>
+		<!--TODO: usage of set in correct place but with unknown attributes <set location="Thèbes" country="Grèce" periode="XVIème" gps="51.507, -0.127"/>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>ACTE PREMIER.</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<stage type="light">Le jour est à sa fin et la nuit commence insensiblement.</stage>
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Quand je veux, Antigone, adoucir vos alarmes,</l>
+                        <l n="">Je n'entends que vos1 cris, je ne vois qué vos larmes.</l>
+                        <l n="">Avez-vous oublié qu'il vous reste mon coeur?</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Hélas ! nous succombons sous la même infortune !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE</speaker>
+                        <l n="">Nous traînons toutes deux une vie importune ;</l>
+                        <l n="">Ma soeur, quels sont les traits du céleste courroux</l>
+                        <l n="">Que le sort conjuré n'épuise pas sur nous ?</l>
+                        <l n="">Ces remparts, ce palais m'offrent toujours la trace</l>
+                        <l n="">Des malheurs renaissans d'OEdipe et de sa race.</l>
+                        <l n="">Chère Ismène, combien notre aspect douloureux,</l>
+                        <l n="">D'un père inconsolable attendrit les adieux !</l>
+                        <l n="">Je crois le voir encor de sa main meurtrière</l>
+                        <l n="">Dans ses yeux tout sanglans éteindre la lumière ;</l>
+                        <l n="">J'ai vu ma mère, hélas ! s'enfermant au cercueil,</l>
+                        <l n="">D'un crime involontaire ensevelir le deuil .</l>
+                        <l n="">OEdipe, se penchant sur mon bras tutélaire,</l>
+                        <l n="">A cherché pour mourir une terre étrangère :</l>
+                        <l n="">Pour le suivre partout j'ai quitté mon berceau ;</l>
+                        <l n="">Je voulais m'enchaîner au pied de son tombeau ;</l>
+                        <l n="">Et lorsqu'en m'embrassant au terme de sa vie,</l>
+                        <l n="">Il veut que je retourne au sein de ma patrie,</l>
+                        <l n="">Mes frères, n'écoutant qu'un coupable transport,</l>
+                        <l n="">L'un contre l'autre armés vont se donner la mort,</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Le vertueux Hémon qui, dans cette journée,</l>
+                        <l n="">Doit conduire Antigone aux autels d'hyménée,</l>
+                        <l n="">Hémon, que votre coeur a nommé votre époux,</l>
+                        <l n="">De ces rivaux cruels arrêtera les coups.</l>
+                        <l n="">Il promit à vos pieds d'éteindre ces querelles,</l>
+                        <l n="">Ce flambeau malheureux des haines fraternelles,</l>
+                        <l n="">Qui jusqu'en nos foyers, de moment en moment,</l>
+                        <l n="">A porté la fureur de son embrasement .</l>
+                        <l n="">Polynice, Etéocle, en déposant les armes,</l>
+                        <l n="">Vont rendre le repos à Thèbes en alarmes ;</l>
+                        <l n="">Qui, nous verrons, ma soeur, refleurir à jamais</l>
+                        <l n="">Sur ses murs attristés l'olive de la paix.</l>
+                        <l n="">Eh !</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">pour se disputer un sanglant héritage,</l>
+                        <l n="">D'un trône dégradé le dangereux partage,</l>
+                        <l n="">Par combien de revers, par combien d'attentats</l>
+                        <l n="">Polynice, Etéocle ont-ils marqué leurs pas !</l>
+                        <l n="">Polynice, si cher à mes jeunes années,</l>
+                        <l n="">Auprès de qui j'ai vu croître mes destinées,</l>
+                        <l n="">Avec sa soeur porté dans le flanc maternel,</l>
+                        <l n="">Lui que j'aimai le plus, est le plus criminel .</l>
+                        <l n="">De drapeaux étrangers assiégeant ses murailles,</l>
+                        <l n="">Polynice a couvert Thèbes de fúnérailles .</l>
+                        <l n="">Notre deuil solitaire et l'autel de nos dieux.</l>
+                        <l n="">Et que notre famille, en forfaits si féconde,</l>
+                        <l n="">Doit</l>
+                        <l n="">pour les expier disparaître du monde .</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Que craignez - vous aux lieux où commande Créon</l>
+                        <l n="">Le frère de Jocaste et le père d'Hémon,</l>
+                        <l n="">Créon qui, dans l'horreur des guerres intestines,</l>
+                        <l n="">Du trône de Laïus répare les ruines ?</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Créon de Polynice a juré le trépas.</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">C'est à votre bonheur que Créon sacrifie</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Eh bien, quand je verrai mes frères s'embrasser,</l>
+                        <l n="">Je pourrai croire alors que mes maux vont cesser .</l>
+                        <l n="">Apprends, Ismène, apprends quelle sainte promesse</l>
+                        <l n="">Au sort de Polynice attache ma tendresse !</l>
+                        <l n="">Qui, des plus chers objets quand on est séparé,,</l>
+                        <l n="">Nous fait vivre avec eux en pleurant sur leur cendre,</l>
+                    </sp><!--@who="ANTIGONE"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE II.
+ANTIGONE, ISMÈNE, HÉMON.</head>
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Hémon ! parlez ; mes frères...</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Ma voix a suspendu leurs fureurs sanguinaires .</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Ah ! vous rendez la vie à mon coeur désolé.</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Des deux côtés déjà la mort avait volé ;</l>
+                        <l n="">» Et marcher sur les corps de vos concitoyens !</l>
+                        <l n="">» Les voilà ces remparts qu'habita votre enfance,</l>
+                        <l n="">» Ces temples où des dieux réside la présence .»</l>
+                        <l n="">Égalez ses vertus pour mériter le trône !</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Ce coeur, où vous versez des sentimens si doux</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">D'un éternel lien que l'amour nous unisse.</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Je suis fille d'OEdipe et soeur de Polynice .</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Ces noms à mes regards t'ennoblissent encore.</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Peut-être que ces noms sont l'arrêt de ma mort.</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">O dieux qui m'écoutez ! dieux ! que votre colère</l>
+                        <l n="">Ne trouble point le jour d'un hymen si prospère !</l>
+                        <l n="">Les enfans de Laïus ont trop long- temps porté</l>
+                        <l n="">Le joug impérieux de la fatalité.</l>
+                    </sp><!--@who="HÉMON"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE III.
+ANTIGONE, ISMENE, HÉMON, CRÉON,
+Grands de l'état, Vieillards, Soldats, Thébains
+qui portent des trophées.
+</head>
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Relevez, ô Thébains ! vos timides regards ;</l>
+                        <l n="">Un astre plus propice éclaire vos remparts ;</l>
+                        <l n="">Le bras de Jupiter a brisé la puissance</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Mes frères le demandent.</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Non, ce n'est pas au trône où leurs mânes prétendent..</l>
+                        <l n="">Mes frères !...</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Ne sont plus .</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Ciel !</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE, se laissant tomber sur un siége.</speaker>
+                        <l n="">J'expire !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Ma soeur !</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE, en revenant à elle, à Hémon et
+à Ismène.</speaker>
+                        <l n="">Tous deux vous me faisiez espérer le bonheur !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Nous avions embrassé le plus heureux présage,</l>
+                        <l n="">Et la paix descendait sur le champ du carnage ;</l>
+                        <l n="">Argiens et Thébains, long-temps si désunis,</l>
+                        <l n="">Ne se regardaient plus comme des ennemis</l>
+                        <l n="">Polynice, Étéocle, en un sombre silence,</l>
+                        <l n="">Semblaient, l'oeil abattu, dompter leur violence ;</l>
+                        <l n="">Mais leur abattement est ce calme trompeur</l>
+                        <l n="">Des éclats de la foudre affreux avant- coureur ;</l>
+                        <l n="">Ils s'agitent : soudain le feu qui les consume,</l>
+                        <l n="">La haine forcenée en leurs veines s'allume,</l>
+                        <l n="">Ils ont dit à-la-fois, dans leur brûlant transport :</l>
+                        <l n="">«  Guerriers, c'est trop longtemps chercher pour nous la mort; » </l>
+                        <l n="">A nos longs différends que notre bras suffise,</l>
+                        <l n="">l'un par </l>
+                        <l n="">Ils se portent tous deux des coups précipités.</l>
+                        <l n="">Leur sang coule à grands flots sans que leur front pâlisse ;</l>
+                        <l n="">Leur soufflant des poisons, combattaient avec eux.</l>
+                        <l n="">Étéocle, plus souple et penché vers la terre,</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Vous ne me parlez point, Seigneur, de Polynice !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Polynice ! qu'ici sa mémoire périsse !</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">De ses concitoyens l'exécrable bourreau,</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">A la cendre des morts que le courroux pardonne !</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Polynice est mon frère et celui d'Antigone.</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">A force de forfaits ce tigre ne l'est plus ;</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Dans un gouffre profond qu'ils soient plongés vivans !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#un-thebain">
+                        <speaker>UN THEBAIN.</speaker>
+                        <l n="">Nous les y traînerons, fussent-ils nos enfans.</l>
+                    </sp><!--@who=""-->
+<sp who="#plusieurs-ensemble">
+                        <speaker>PLUSIEURS ENSEMBLE.</speaker>
+                        <l n="">Tous nous le promettons.</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON, à Antigone.</speaker>
+                        <l n="">Veut par votre hymenée assurer son destin.</l>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. CRÉON, HÉMON, Soldats, Grands, Peuple.</head>
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Dignes Thébains, allez ; et que vos chants nocturnes</l>
+                        <l n="">Je vais bientôt vous suivre au milieu des tombeaux</l>
+                        <l n="">Où vous allez porter les cendres d'un héros .</l>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. CRÉON, HÉMON.</head>
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Mon fils, unique espoir que chérit ma vieillesse,</l>
+                        <l n="">Tu détournes tes yeux obscurcis de tristesse ;</l>
+                        <l n="">Tu portes dans ton sein un chagrin dévorant,</l>
+                        <l n="">Lorsque tu vas monter au trône qui t'attend !</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Ce trône est teint de sang.</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Que ta vertu l'épure.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Ce trône fait frémir le ciel et la nature .</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Le ciel et la nature aujourd'hui dans tes mains</l>
+                        <l n="">Tu peux des immortels espérer la justice.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">L'espoir sur des débris arrosés de nos pleurs !</l>
+                        <l n="">On ne peut espérer que de nouveaux malheurs.</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Que dis-tu? viens, mon fils ; jette-toi dans mes bras ;</l>
+                        <l n="">La douleur et l'effroi ne t'y poursuivront pas .</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Mon père ! vous savez que j'adore Antigone ;</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">C'est moi qui te la donne .</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Quand vous me la donnez c'est pour me la ravir.</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Je t'enchaîne à son sort. Qui peut vous désunir ?</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Ce corps abandonné qui crie au ciel vengeance,</l>
+                        <l n="">Croyez-vous qu'une soeur, qui gémit en silence,</l>
+                        <l n="">Du respect filial le modèle pieux,</l>
+                        <l n="">Qui seule épure l'air qu'on respire en ces lieux,</l>
+                        <l n="">Qui d'un sexe timide oubliant la faiblesse</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Ainsi de mon arrêt vous blâmez la rigueur ?</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Cet arrêt... ah ! je sens qu'il me glace d'horreur !</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Les grands l'ont approuvé ; pourrait- il vous déplaire ?</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Mon père, pardonnez, si, malgré mes efforts,</l>
+                        <l n="">Je n'ai pu de mon coeur retenir les transports !</l>
+                        <l n="">Plus que tout autre un fils doit à votre puissance</l>
+                        <l n="">Et sa soumission et son obéissance ;</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Menecée !</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON, avec égarement.</speaker>
+                        <l n="">Dans le fond de mon coeur j'entends ses cris funèbres ;</l>
+                        <l n="">M'arrachant au sommeil, je le vois sur mes pas</l>
+                        <l n="">Qui lentement s'avance en me tendant les brass ;</l>
+                        <l n="">Du coup qui l'a percé portant la cicatrice,</l>
+                        <l n="">Il me montre la place où frappa Polynice .</l>
+                        <l n="">Sur le champ de la mort des siens abandonné,</l>
+                        <l n="">Sans bûcher, sans cercueil, il fut trois jours traîné...</l>
+                        <l n="">Barbare, tu paieras un si sensible outrage !</l>
+                        <l n="">Pourquoi, dieux des enfers qui secondez ma rage,</l>
+                        <l n="">Un tourment plus affreux ne peut-il exister ?</l>
+                        <l n="">Mon coeur pour Polynice aurait su l'inventer.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Ah ! Seigneur, mon amour vous a rendu mon frère !</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Ce monstre l'eût frappé dans les bras de ton père .</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Je vis et suis heureux d'être né votre fils .</l>
+                        <l n="">Craignez de soulever de nouveaux ennemis ;</l>
+                        <l n="">Adraste qui, cédant à l'amour de sa fille,</l>
+                        <l n="">Fit entrer Polynice au sein de sa famille,</l>
+                        <l n="">Ne repoussera point une veuve à genoux</l>
+                        <l n="">Qui lui demandera les cendres d'un époux ;</l>
+                        <l n="">Adraste, dont ces lieux ont senti la présence,</l>
+                        <l n="">De la Grèce assemblée échauffant la vengeance,</l>
+                        <l n="">Va venir de la guerre apportant le flambeau,</l>
+                        <l n="">A son gendre lui-même élever un tombeau .</l>
+                    </sp><!--@who="HÉMON"-->
+</div>
+</div>
+<div type="acte" n="">
+                <head>ACTE II</head>
+<stage>Le Théâtre représente la sépulture des rois de Thèbes. Au milieu des tombeaux on remarque sur le devant de la scène ceux de Jocaste et de Polynice.</stage>
+<div type="scene" n="">
+                    <head>SCÈNE PREMIÈRE. CRÉON, HÉMON, Peuple, Soldats autour du tombeau d'Étéocle.</head>
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Héros dont en ces lieux nous consacrons la gloire,</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Nous te jurons ici que l'ombre de ton frère,</l>
+                        <l n="">Que la guerre et la haine éteignant leurs flambeaux</l>
+                        <l n="">Cessent de profaner ces augustes tombeaux.</l>
+                    </sp><!--@who="ANTIGONE"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE II. LES MÊMES, UN OFFICIER DU PALAIS .</head>
+<sp who="#l-officier">
+                        <speaker>L'OFFICIER.</speaker>
+                        <l n="">Ah ! Seigneur, apprenez un horrible mystère ...</l>
+                        <l n="">Polynice ! ...</l>
+                    </sp><!--@who="L'OFFICIER"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Parlez .</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#l-officier">
+                        <speaker>L'OFFICIER.</speaker>
+                        <l n="">Que ne puis-je me taire !</l>
+                        <l n="">A peine un faible jour peut éclairer nos pas,</l>
+                        <l n="">Seigneur, nous courons tous dans le champ des combats</l>
+                        <l n="">Rendre à des morts chéris un douloureux service :</l>
+                        <l n="">Nous ne retrouvons point le corps de Polynice ;</l>
+                    </sp><!--@who="L'OFFICIER"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Vous m'en répondrez tous, même sur votre tête .</l>
+                        <stage type="exit">L'Officier sort.</stage>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE III. Créon, Hémon.</head>
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Du ciel vous le voyez s'annoncent les desseins ;</l>
+                        <l n="">Il veille sur le sort des malheureux humains.</l>
+                        <l n="">De la main de nos dieux reconnaissons l'empreinte,</l>
+                        <l n="">Qui, lorsqu'en votre cour tout respire la crainte,</l>
+                        <l n="">Veulent nous enseigner par leur autorité</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Les dieux n'honorent point la cendre d'un perfide</l>
+                        <l n="">Qui, la flamme à la main, dans sa rage homicide,</l>
+                        <l n="">S'arma pour les chasser de leurs temples déserts .</l>
+                        <l n="">La patrie et les lois sont les dieux que je sers.</l>
+                        <l n="">Que l'erreur à genoux enfante des miracles :</l>
+                        <l n="">Dans les conseils des rois il faut d'autres oracles.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Quel qu'il soit, aux dépens de sa vie</l>
+                        <l n="">Songez qu'il remplissait la loi la plus chérie</l>
+                        <l n="">Écrite dans son coeur.</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Quoi ! vous le défendez !...</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON, éperdu.</speaker>
+                        <l n="">Qui, mon père ?...</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Si soudain le coupable ici ne m'est livré,</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Mon coeur est déchiré.</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Quand par cet attentat ma puissance est bravée,</l>
+                        <l n="">Vous devez me venger.</l>
+                        <stage>(A Créon. )</stage>
+                        <l n="">Antigone est sauvée.</l>
+                        <l n="">Le criminel, c'est moi : répandez tout mon sang.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Que de mon propre fils je déchire le flanc !</l>
+                        <l n="">Retirer de son sein ma main ensanglantée !</l>
+                        <l n="">La nature en mon coeur se glace épouvantée .</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Sous ces voûtes soudain quel bruit vient retentir !</l>
+                        <l n="">Qu'entends-je ? malgré moi je me sens attendrir.</l>
+                    </sp><!--@who="HÉMON"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE IV. LES MÊMES, ANTIGONE, ISMÈNE .</head>
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">O Jocaste reçois ce don tendre et funeste ;</l>
+                        <l n="">Reçois de notre sang le plus malheureux reste !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Antigone ici !</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Dieux ! que venez-vous m'offrir ?</l>
+                        <l n="">C'est donc là le séjour qui doit nous réunir !</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON, à Antigone.</speaker>
+                        <l n="">Vous tenez un dépôt que votre main révère :</l>
+                        <l n="">Quel est-il ?</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Regardez la tombe de ma mère .</l>
+                        <l n="">L'urne de Polynice !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<!--ERROR:  <sp who="CRÉON"><speaker>CRÉON.</speaker>
+</sp>-->
+<!--ERROR:  <sp who="ANTIGONE"><speaker>ANTIGONE, mettant la main sur le tombeau.</speaker>
+</sp>-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Mon fils dit que lui seul il voulut entreprendre...</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">J'allumai le bûcher ; j'en apporte la cendre.</l>
+                        <l n="">Non, ne la croyez pas .</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Eh ! pourquoi me ravir</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">L'honneur d'un dévoûment qui doit m'appartenir !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Vous braviez un monarque et méprisiez ses lois !</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">J'obéissais aux dieux, plus puissans que les rois ;</l>
+                        <l n="">Les dieux m'ont enseigné ces lois inviolables</l>
+                        <l n="">Qui, descendant du ciel et comme eux immuables</l>
+                        <l n="">Gravant dans tous les coeurs leurs décrets éternels,</l>
+                        <l n="">Avant qu'il fût des rois régnaient sur les mortels.</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Le ciel m'en a fait juge, et ce juge est le vôtre.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">La nature est mon juge, et je n'en veux point d'autre .</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Redoutez un arrêt qu'il vous faudra subir.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Mon frère est au cercueil, et je pourrais frémir !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Antigone ! êtes -vous la seule criminelle ?</l>
+                        <l n="">La seule.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Moi, je suis sa compagne fidèle ;</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Avez-vous inhumé le corps de Polynice !</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Ne me disputez point tous les droits d'une soeur.</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">O spectacle touchant ! ô combat magnanime !</l>
+                        <l n="">La tendresse devient un dévoûment sublime.</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">C'est moi seule ; écoutez : un Dieu fit dans mon sein</l>
+                        <l n="">Descendre le transport de ce hardi dessein.</l>
+                        <l n="">A pas pressés j'accours sur le champ des batailles</l>
+                        <l n="">Qui de tant de héros portait les funérailles .</l>
+                        <l n="">Partout je vais chercher les traces de ce sang,</l>
+                        <l n="">De ce sang malheureux qui circule en mon flanc.</l>
+                        <l n="">Des gardes imprimant le respect et la crainte,</l>
+                        <l n="">Enfermaient Polynice en leur terrible enceinte :</l>
+                        <l n="">Je leur dis : « Ah ! laissez la fille de vos rois</l>
+                        <l n="">&gt;&gt; Voir son frère, le voir pour la dernière fois ! &gt;&gt;</l>
+                        <l n="">Les gardes contemplant mes larmes suppliantes,</l>
+                        <l n="">Abaissent devant moi leurs lances effrayantes ;</l>
+                        <l n="">Mes larmes ont coulé dans leurs âmes d'airain,</l>
+                        <l n="">Et jusqu'à Polynice ils m'ouvrent un chemin.</l>
+                        <l n="">Il respirait encore ; et soit que ma présence</l>
+                        <l n="">Lui donnât pour me voir un moment d'existence,</l>
+                        <l n="">Il soulève sa tête et reconnaît sa soeur.</l>
+                        <l n="">« Antigone ! est- ce toi ? viens fermer ma paupière ; </l>
+                        <l n="">Viens, daigne m'accorder une grâce dernière :</l>
+                        <l n="">Que l'honneur du tombeau, par toi m'étant rendu,</l>
+                        <l n="">&gt;Me console du trône où j'étais attendu ! »</l>
+                        <l n="">Il expire : je veux rendre à ses tristes restes</l>
+                        <l n="">Ces soins pour une soeur si chers et si funestes ;</l>
+                        <l n="">Mais la garde repousse un si tendre devoir,</l>
+                        <l n="">Forte de ma douleur et de mon désespoir,</l>
+                        <l n="">J'ose appeler des dieux les fureurs véngeresses ;</l>
+                        <l n="">Je prodigue les cris, les plaintes, les</l>
+                        <l n="">L'or, par qui tant de fois l'homme fut corrompu,</l>
+                        <l n="">L'or, sortant de mes mains, commande la vertu .</l>
+                        <l n="">« Soldats, que craignez-vous ? Adraste vous appelle :</l>
+                        <l n="">Ce monarque en son camp va payer votre zèle. »</l>
+                        <l n="">Tout-à- coup, éprouvant un sentiment nouveau,</l>
+                        <l n="">Dans cet instant l'un d'eux me remet un flambeau ;</l>
+                        <l n="">Ils partent, et de loin regardent avec joie</l>
+                        <l n="">La flamme du bûcher qui déjà se deploie.</l>
+                        <l n="">J'en dérobe la cendre à l'inhumanité ;</l>
+                        <l n="">Dans l'ivresse du zèle et de la piété, promesses ;</l>
+                        <l n="">Au temple de Pallas je me rend's, et j'y laisse</l>
+                        <l n="">Ce dépôt si sacré, trésor de ma tendresse .</l>
+                        <l n="">Je l'embrasse ; et bientôt, précipitant mes pas,</l>
+                        <l n="">Tranquille, je reviens mériter le trépas .</l>
+                        <stage>(A Hémon. )</stage>
+                    </sp><!--@who="ANTIGONE"-->
+<!--ERROR:  <sp who="HÉMON"><speaker>HÉMON, sejetant à ses pieds.</speaker>
+</sp>-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Tous deux vous m'outragez ! ô jour que je déteste !</l>
+                        <l n="">Eh bien ! j'imiterai la colère céleste .</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Mon père !...</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">De ses mains que cette urne arrachée</l>
+                        <l n="">Ma soeur, que la faiblesse en impose au pouvoir ;</l>
+                        <l n="">la tombe.)</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON, les bras tendus vers la tombe.</speaker>
+                        <l n="">Jocaste, lève-toi ; vous, héros, sa famille,2</l>
+                        <l n="">Sortez de la poussière et reprenez vos droits .</l>
+                        <l n="">Faites à notre oreille entendre votre voix :</l>
+                        <l n="">Quiconque vous honore est ici sacrilége ! .....</l>
+                        <l n="">Tonnez, de vos tombeaux vengez le privilége .</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON, aux soldats.</speaker>
+                        <l n="">Soldats ! Obéissez .</l>
+                        <stage type="carry/location">On emporte l'urne.</stage>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE V. LES MÊMES, excepté les Soldats qui ont  emporté l'urne.</head>
+<sp who="#antigone">
+                        <speaker>ANTIGONE,</speaker>
+                        <l n="">Toi, frère de Jocaste, et qui dans sa présence</l>
+                        <l n="">Écrase ses enfants d'une injuste puissance ;</l>
+                    </sp><!--@who="ANTIGONE"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE VI. LES MÊMES, UN OFFICIER.</head>
+<sp who="#l-officier">
+                        <speaker>L'OFFICIER.</speaker>
+                        <l n="">Adraste reparaît au pied de ces murailles,</l>
+                        <l n="">Rebelles à vos lois, fuyant votre courroux,</l>
+                        <l n="">Ont dans le camp d'Adraste apporté la nouvelle</l>
+                        <l n="">Que son gendre subit une injure cruelle ;</l>
+                    </sp><!--@who="L'OFFICIER"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Allez ; qu'on se prépare à le combattre encore.</l>
+                        <stage type="exit">L'officier sort.</stage>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Les mêmes, excepté L'Officier.</head>
+<sp who="#antigone">
+                        <speaker>ANTIGONE, se levant et reprenant courage.</speaker>
+                        <l n="">Le ciel se justifie, et ma voix qui l'implore</l>
+                        <l n="">Du pied de ce cercueil a monté jusqu'à lui .</l>
+                        <l n="">A ma plainte timide il prête son appui .</l>
+                        <l n="">Je puis donc te braver, je puis me montrer fière</l>
+                        <l n="">Du devoir qu'a rempli mon âme tout entière :</l>
+                        <l n="">Accourez, accourez ; venez, digne vengeur</l>
+                        <l n="">Venez rendre à ces murs leur première splendeur .</l>
+                    </sp><!--@stage="stand"--><!--@who="ANTIGONE"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Va, ce double forfait a condamné ta vie.</l>
+                        <l n="">C'est donc toi qui, d'Adraste excitant la furie,</l>
+                        <l n="">Veux couvrir tes foyers de carnage et de morts,</l>
+                        <l n="">Et nous immoler tous à tes fougueux transports .</l>
+                        <l n="">Gardes, que de sa soeur elle soit séparée,</l>
+                        <l n="">Qu'elle soit en ce jour au supplice livrée .</l>
+                        <l n="">Je ne la quitte point.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Arrêtez ...</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#hemon">
+                        <speaker>HÉMON, furieux.</speaker>
+                        <l n="">Non, n'écoutez que moi.</l>
+                        <l n="">Songe, Hémon, que ton père est ton roi.</l>
+                        <l n="">Arrêtez, arrêtez .</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Que cette criminelle</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Soit mise dans les fers, que l'on veille sur elle .</l>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. CRÉON, HÉMON .</head>
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">A quelle extrémité l'ingrate me réduit !</l>
+                        <l n="">Une seconde fois Adraste me poursuit ;</l>
+                        <l n="">Une seconde fois il vient dans ma patrie</l>
+                        <l n="">Et vous qui, dans ces jours marqués par des malheurs,</l>
+                        <l n="">De la soeur d'un barbare excitez les clameurs,</l>
+                        <l n="">Hémon, vous jouissez des publiques alarmes ...</l>
+                        <l n="">Vous ne répondez pas !</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Qu'on me donne des armes .</l>
+                        <l n="">Venez sur ces remparts où le devoir m'appelle,</l>
+                        <l n="">Venez voir votre fils malheureux, mais fidèle,</l>
+                        <l n="">Du monarque d'Argos repoussant tous les coups,</l>
+                        <l n="">Le chasser de ces murs, vaincre ou mourir pour vous.</l>
+                    </sp><!--@who="HÉMON"-->
+</div>
+</div>
+<div type="acte" n="3">
+                <head>ACTE III</head>
+<stage>Le Théâtre représente une place publique ; le palais de Créon ; l'autel d'Apollon à la porte de ce palais ; les deux temples de Pallas . On voit dans le fond une caverne, et à l'entrée une pierre qui doit servir pour la fermer.</stage>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#creon">
+                        <speaker>CRÉON, seul.</speaker>
+                        <l n="">Adraste a vu tomber sa fortune et sa gloire !</l>
+                        <l n="">C'est au bras de mon fils que je dois la victoire ;</l>
+                        <l n="">Double faveur du ciel qu'aujourd'hui je reçois !</l>
+                        <l n="">Hémon veut me parler ; plus soumis à mes lois</l>
+                        <l n="">Il va sacrifier un moment de délire</l>
+                    </sp><!--@stage="alone"--><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Créon, Hémon.</head>
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Embrasse-moi, mon fils ; partage mes transports.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Seigneur, honorez moins mon zèle et mes efforts .</l>
+                        <l n="">Vous me permettez donc de vous nommer mon père !</l>
+                    </sp><!--@who="HÉMON"-->
+<!--ERROR:  <sp who="CRÉON"><speaker>CRÉON.</speaker>
+</sp>-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Vous ne m'avez offert un rayon de bonheur</l>
+                        <l n="">Que pour m'envelopper d'une nuit de douleur .</l>
+                        <l n="">De tous les Argiens l'audace est terrassée ;</l>
+                        <l n="">Adraste, consterné de sa grandeur passée,</l>
+                        <l n="">Ils se retraceront dans leur âme indignée</l>
+                        <l n="">De tous les souverains la gloire profanée .</l>
+                        <l n="">Un instant de pitié peut surprendre leur coeur,</l>
+                        <l n="">Et la pitié soudain se changer en fureur .</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Que m'importent les cris, les plaintes du vulgaire ?</l>
+                        <l n="">Apprends que des sujets empressés à nous plaire,</l>
+                        <l n="">Ne sont que l'instrument des volontés des rois .</l>
+                        <l n="">Antigone est coupable, elle a bravé mes lois .</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Qui n'aurait pas voulu commettre son offense ?</l>
+                        <l n="">Qui n'aurait pas voulu prendre ici sa défense ?</l>
+                        <l n="">Malheureux !</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Oui, tu l'es de franchir les limites</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Et cet objet si cher, dont la noble douleur</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Je plaindrais Antigone</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Antigone périr !</l>
+                        <l n="">Que vous m'aviez vous-même ordonné de chérir ! ...</l>
+                        <l n="">Dans cet affreux abîme Antigone enfermée,</l>
+                        <l n="">Vos bras du haut des cieux peuvent m'anéantir :</l>
+                        <l n="">Ma cendre, malgré vous, vivra pour la chérir.</l>
+                        <l n="">Accordez -moi, touchés de ma peine mortelle,</l>
+                        <l n="">A la place du trône une tombe auprès d'elle !</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Mon fils !</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Oui, je le suis, et je tombe à vos pieds,</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Jamais...</l>
+                    </sp><!--@who="CRÉON"-->
+<!--ERROR:  <sp who="ANTIGONE"><speaker>ANTIGONE,</speaker>
+(Se relevant. )
+HÉMON .
+Antigone !...ô fureur ...
+Vous m'aimez, dites- vous, et vous brisez mon coeur !
+CRÉON .
+Quel désespoir farouche en tes yeux étincelle ?
+</sp>-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Aux dieux, à mon pays j'ai promis son trépas</l>
+                        <l n="">Qui pourrait à son sort la soustraire ?</l>
+                        <l n="">O ciel!</l>
+                    </sp><!--@who="CRÉON"-->
+<!--ERROR:  <sp who="HÉMON"><speaker>HÉMON.</speaker>
+CRÉON.
+</sp>-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Mon bras !</l>
+                        <l n="">Vous avez vu cette élite intrépide</l>
+                        <l n="">Croyez-vous aujourd'hui que leur zèle abattu</l>
+                        <l n="">Refuse d'obéir pour sauver la vertu ?</l>
+                        <l n="">J'ai payé de mon coeur la dette respectable ;</l>
+                        <l n="">Maintenant je me dois au malheur qu'on accable .</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Où vas-tu ?</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Rassembler des amis généreux .</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">C'en est trop qu'on l'arrête .</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Ah ! je vous devrai tout, si mon trépas s'apprête .</l>
+                        <stage>(Il sort. )</stage>
+                    </sp><!--@who="HÉMON"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE III.</head>
+<sp who="#creon">
+                        <speaker>CRÉON, seul.</speaker>
+                        <l n="">Fils ingrat et cruel ! ah ! qu'il m'en a coûté</l>
+                        <l n="">Pour condamner mon coeur à la sévérité !</l>
+                        <l n="">Allons ; il faut hâter le trépas d'Antigone :</l>
+                        <l n="">Prévenons les excès où mon fils s'abandonne.</l>
+                        <l n="">Quand son fatal amour perdra tout son espoir,</l>
+                        <l n="">Mes yeux verront mon fils rentrer dans son devoir .</l>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE IV. CRÉON, L'OFFICIER DU PALAIS.</head>
+<sp who="#l-officier">
+                        <speaker>L'OFFICIER.</speaker>
+                        <l n="">Seigneur, en ce moment un vieillard se présente ;</l>
+                        <l n="">Ses yeux privés du jour, sa démarche imposante,</l>
+                        <l n="">Son front majestueux de rides sillonné,</l>
+                        <l n="">Il veut vous révéler un secret important</l>
+                        <l n="">Dont, dit-il, aujourd'hui votre bonheur dépend .</l>
+                    </sp><!--@who="L'OFFICIER"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Qu'il vienne ; dans ces lieux vous pouvez l'introduire .</l>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V.</head>
+<sp who="#creon">
+                        <speaker>CRÉON, seul.</speaker>
+                        <stage>( L'Officier sort. ).</stage>
+                        <l n="">Mais que prétend- il donc ? et que vient-il me dire ?...</l>
+                        <l n="">Pourrait-il étouffer dans ce coeur éperdu</l>
+                        <l n="">Le lamentable cri du fils que j'ai perdu.</l>
+                        <l n="">Malheureux Ménecée ! ombre terrible et chère,</l>
+                        <l n="">Te venger est pour moi le seul bien que j'espère .</l>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. Créon, Tirésias, conduit par un enfant, L'OFFICIER.</head>
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS, s'arrêtant au fond du théâtre, une main appuyée sur une colonne du palais.</speaker>
+                        <l n="">Séjour que je chéris ! palais pour moi perdu !</l>
+                        <l n="">En entrant dans ces murs, ô lieu de ma naissance !</l>
+                        <l n="">Par un charme secret j'ai senti ta présence !</l>
+                        <l n="">Dieux ! laissez mes regards de ténèbres couverts !</l>
+                        <l n="">Que voir autour de moi ? des crimes, des revers .</l>
+                        <l n="">Hélas ! pourquoi faut-il que ma bouche prononce</l>
+                        <l n="">Un oracle fatal que mon aspect annonce !</l>
+                    </sp><!--@stage="stop/location"--><!--@who="TIRÉSIAS"-->
+<sp who="#l-officier">
+                        <speaker>L'OFFICIER,</speaker>
+                        <l n="">Approcher c'est le roi.</l>
+                        <l n="">Tirésias ! ...</l>
+                    </sp><!--@who="L'OFFICIER"-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Vieillard, que me veux-tu ?</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias,">
+                        <speaker>TIRÉSIAS,</speaker>
+                        <l n="">Lui-même .</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">A ce nom, éperdu ...</l>
+                        <l n="">De quelque grand revers ici viens-tu m'instruire ?</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">Oui, jusqu'en ton palais je viens te le prédire.</l>
+                        <l n="">Je fuis l'éclat des rois, je me rapproche d'eux</l>
+                        <l n="">Lorsque le ciel les frappe et qu'ils sont malheureux .</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Qui t'a donné le droit de franchir l'intervalle,</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">La vérité. Les dieux, dans ma calamité,</l>
+                        <l n="">A mon âme ont daigné rendre cette clarté</l>
+                        <l n="">Qu'ils avaient arrachée à ma faible paupière.</l>
+                        <l n="">C'est aux rayons qu'en moi jette cette lumière</l>
+                        <l n="">Que les décrets du sort viennent se découvrir,</l>
+                        <l n="">Que je lis dans les coeurs et perce en l'avenir .</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Tu dis vrai ; je suis un imposteur</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">Ta main de Polynice insulta la dépouille .</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Thèbes l'a rejetée, et son aspect la souille.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">Antigone au cercueil doit tomber aujourd'hui .</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Qui révère un coupable est flétri comme lui.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">Écoute-moi : frémis . Le plus sinistre augure</l>
+                        <l n="">Est venu m'effrayer dans ma demeure obscure</l>
+                        <l n="">Lorsque pour mon pays mon coeur formait des voeux.</l>
+                        <l n="">Au- dessus de mon toit, battu d'un bruit affreux,</l>
+                        <l n="">Des oiseaux de la nuit les ailes prophétiques</l>
+                        <l n="">M'ont annoncé l'horreur des misères publiques .</l>
+                        <l n="">Dans un temple voisin je porte mes terreurs ;</l>
+                        <l n="">J'immole une victime et la couvre de fleurs ;</l>
+                        <l n="">D'un feu sombre et mourant la victime enflammée,</l>
+                        <l n="">Se dessèche bientôt en cendres consumée ;</l>
+                        <l n="">Et long-temps fatigué de mes embrassemens,</l>
+                        <l n="">L'inexorable autel rejette mon encens.</l>
+                        <l n="">Je sentis cet effroi, lorsque dans la Phocide</l>
+                        <l n="">Laïus reçut la mort d'une main parricide ;</l>
+                        <l n="">Je sentis cet effroi quand sa femme, en ces lieux,</l>
+                        <l n="">A son fils vint offrir son lit incestueux.</l>
+                        <stage>( Dans un accès prophétique. )</stage>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON, éperdu.</speaker>
+                        <l n="">La voix de ce vieillard et m'émeut et m'étonne ;</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">L'hymen a dans le sang plongé son noir flambeau .</l>
+                        <l n="">Eh ! pour qui donc encore ouvre-t-on ce tombeau ?</l>
+                        <l n="">Un jeune homme, un héros vers le trépas s'avance :</l>
+                        <l n="">Le ciel a sur son front imprimé sa naissance .</l>
+                        <stage>(Il tombe sur un siége, excédé de douleur et de fatigue. )</stage>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Reviens à toi.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">Créon !...</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Eh bien</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">Frémis, frémis !</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Qu'aurais-je à redouter ?</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#tiresias,-se-relevant-et-ramassant-toutes-ses-forces">
+                        <speaker>TIRÉSIAS, se relevant et ramassant toutes ses forces.</speaker>
+                        <l n="">N'as-tu donc pas un fils ?</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">On vient : cachons l'effroi de mes sens interdits,</l>
+                        <stage>(Il sort. )</stage>
+                    </sp><!--@who="CRÉON"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE VII. TIRÉSIAS, L'ENFANT, grande foule de Peuple.</head>
+<sp who="#---">
+                        <speaker>****</speaker>
+                        <l n="">Sur le trône il n'est plus qu'un bourreau sanguinaire</l>
+                        <l n="">Que le ciel vous donna dans des jours de colère .</l>
+                        <l n="">Le pur sang de Laïus que vous deviez chérir :</l>
+                        <l n="">Vous chassâtes vos rois du sein de vos murailles,</l>
+                        <l n="">Il vous manquait encor d'arracher leurs entrailles .</l>
+                        <l n="">Thébains, écoutez - moi ; de cet affreux serment</l>
+                        <l n="">Qu'ont prononcé la haine et le ressentiment,</l>
+                        <l n="">Des autels d'Apollon croyez le témoignage,</l>
+                        <l n="">Ma voix de ce serment aujourd'hui vous dégage .</l>
+                    </sp><!--@who=""-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE VIII. LES MÊMES, ISMÈNE.</head>
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Tombe cet appareil de l'inhumanité !</l>
+                        <l n="">Retrouvant ses honneurs avec sa liberté,</l>
+                        <l n="">Ma soeur ici bientôt recevra des hommages,</l>
+                        <l n="">Du respect qu'on lui doit éclatans témoignages .</l>
+                        <l n="">Que vous allez rougir de l'avoir condamné</l>
+                        <l n="">Cet objet aussi cher qu'il est infortuné !</l>
+                        <l n="">D'une foule cruelle en silence escortée,</l>
+                        <l n="">J'ai vu ma triste soeur dans une tour jetée.</l>
+                        <l n="">J'ai voulu pénétrer dans son séjour affreux,</l>
+                        <l n="">Et lui porter mes pleurs, seul bien des malheureux ;</l>
+                        <l n="">La foule me repousse, et craint que ma prière</l>
+                        <l n="">Ne puisse à ses liens ravir sa prisonnière ...</l>
+                        <l n="">Mais j'entends retentir : « Hémon est libre, Hémon</l>
+                        <l n="">A vu briser ses fers . » Je renais à ce nom ;</l>
+                    </sp><!--@who="ISMÈNE"-->
+</div>
+<div type="scene" n="">
+                    <head>SCÈNE IX. LES MEMES, ANTIGONE, conduite par des soldats.</head>
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Ah! ma soeur va périr, et mes soins superflus ...</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Ismène ! ... elle est ma soeur, et d'OEdipe la fille ;</l>
+                        <l n="">Ne la punissez point d'être de ma famille .</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#ismene">
+                        <speaker>ISMÈNE.</speaker>
+                        <l n="">Comme elle j'ai, bravant un ordre injurieux,</l>
+                        <l n="">Déposé Polynice auprès de ses aïeux .</l>
+                    </sp><!--@who="ISMÈNE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE au peuple.</speaker>
+                        <l n="">Un vieillard faible, aveugle ! OEdipe en ces climats !</l>
+                        <l n="">Sors-tu de ton cercueil pour pleurer mon trépas ?</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">Je ne suis point OEdipe, et veux être ton père.</l>
+                        <l n="">Je voudrais de ce peuple enchaîner la colère ;</l>
+                        <l n="">Mais qui peut résister à la fatalité</l>
+                        <stage type="toward">Aux deux soeurs.</stage>
+                        <l n="">Quand je ne puis vous voir, ô filles si chéries !</l>
+                        <l n="">Retrace à votre coeur sa douloureuse image ;</l>
+                        <l n="">Qui dans ces yeux fermés à la clarté des cieux,</l>
+                        <l n="">Retrouve encor des pleurs qu'il répand sur vous deux .</l>
+                        <stage type="toward">Au peuple.</stage>
+                        <l n="">Vous n'êtes point émus : sa jeunesse, ses larmes</l>
+                        <l n="">A vos yeux vainement ont déployé leurs charmes ! ...</l>
+                    </sp><!--@who=""-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Peuple ! Eh quoi, tu veux donc devenir mon bourreau ?</l>
+                        <l n="">Ma mère ! Je la vois s'asseoir sur mon tombeau !</l>
+                        <l n="">Toi, Polynice aussi ! Mon frère, ta présence</l>
+                        <l n="">Offre à mon coeur déjà sa douce récompense !</l>
+                        <l n="">Pour toi je vais mourir ; hélas ! sans notre amour</l>
+                        <l n="">Ce gouffre eût- il été mon éternel séjour ?</l>
+                        <l n="">Puisque ma soeur encor jouit de la lumière,</l>
+                        <l n="">Des victimes du sort que je sois la dernière !</l>
+                        <l n="">Il est temps d'étouffer des regrets superflus ;</l>
+                        <l n="">Ma soeur, embrassez-moi, vous ne me verrez plus .</l>
+                        <stage>Elle s'approche de la caverne.</stage>
+                        <l n="">Barbares ! vous osez l'arracher de mes mains !</l>
+                        <l n="">N'ai-je donc pas le droit de subir ses destins ?</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE.</speaker>
+                        <l n="">Adieux !</l>
+                        <stage type="location">Elle descend dans la caverne ; avant de disparaître elle lève les yeux et les mains vers le ciel, et jette un dernier soupir; une haie de soldats ferme l'entrée de la caverne.</stage>
+                    </sp><!--@who="ANTIGONE"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. LES MÊMES, HÉMON, s'élançant sur la scène à la tête de ses amis.</head> 
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Qu'on la rende à la vie !</l>
+                        <l n="">Mais je ne la vois point, me l'auriez-vous ravie ?</l>
+                        <l n="">Et vous ne craignez pas, ô tigres inhumains,</l>
+                        <l n="">Que dans des flots de sang je ne trempe mes mains,</l>
+                        <l n="">Et ne venge sur vous l'hymen et la nature.</l>
+                        <l n="">S'anéantir vos murs, prisons de l'innocence,</l>
+                        <l n="">La place où parmi vous je reçus la naissance,</l>
+                        <l n="">Le trône où les forfaits couronnent le pouvoir,</l>
+                        <l n="">Où j'ai trop de vertu pour prétendre m'asseoir :</l>
+                        <l n="">Je hais jusqu'à vos dieux puisqu'ils sont vos complices</l>
+                        <l n="">Et qu'ils ne troublent point vos affreux sacrifices .</l>
+                        <l n="">Qu'en a-t-on fait, cruels ?</l>
+                        <l n="">Hémon ! ô ciel ! c'est vous !</l>
+                        <l n="">Ah ! j'ai senti du sort les plus terribles coups .</l>
+                        <l n="">Antigone !</l>
+                    </sp><!--@who="HÉMON"-->
+<sp who="#antigone">
+                        <speaker>ANTIGONE, se soulevant et paraissant à l'entrée de la caverne tenant un poignard dont elle s'est percée.</speaker>
+                        <l n="">Ce poignard ...</l>
+                    </sp><!--@who="ANTIGONE"-->
+<sp who="#hemon">
+                        <speaker>HÉMON, prenant le poignard.</speaker>
+                        <l n="">****************</l>
+                    </sp><!--@who="HÉMON"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI ET DERNIÈRE. Les mêmes, Créon, arrivant au bruit du tonnerre.</head>
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <l n="">Le ciel se fait entendre, adorons sa justice :</l>
+                        <l n="">Mes mains ont honoré l'urne de Polynice.</l>
+                    </sp><!--@who="CRÉON"-->
+<sp who="#hemon">
+                        <speaker>HÉMON.</speaker>
+                        <l n="">Qu'il soit brisé le saint noeud qui nous lie !</l>
+                        <l n="">Ma main va vous payer ma malheureuse vie .</l>
+                    </sp><!--@who=""-->
+<sp who="#creon">
+                        <speaker>CRÉON.</speaker>
+                        <stage type="suicide">Il se tue.</stage>
+                        <l n="">Frappez, Thébains, frappez votre malheureux roi ;</l>
+                        <l n="">Au défaut de leurs bras, cieux, exterminez-moi !</l>
+                        <l n="">Quel spectacle ! tout fuit, tout recule à ma vue !</l>
+                        <l n="">Je ne suis plus qu'une ombre aux enfers attendue :</l>
+                        <l n="">C'est moi qui, dans ces murs rassemblant tous les maux,</l>
+                        <l n="">Des enfants de Laïus ai creusé les tombeaux.</l>
+                    </sp><!--@who=""-->
+<sp who="#tiresias">
+                        <speaker>TIRÉSIAS.</speaker>
+                        <l n="">Apprenez, ô Thébains ! par cet exemple affreux,</l>
+                        <l n="">A toujours honorer la nature et les dieux.</l>
+                    </sp><!--@who="TIRÉSIAS"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>
