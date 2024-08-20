@@ -64,6 +64,12 @@
                     <person xml:id="m-et-mlle-de-kerkabon" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>M et Mlle de Kerkabon</persName>
                     </person>
+                    <person xml:id="monsieur" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Monsieur</persName>
+                    </person>
+                    <person xml:id="madamoiselle-de-kerkabon" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Madamoiselle de Kerkabon</persName>
+                    </person>
                     <person xml:id="ensemble" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Ensemble</persName>
                     </person>
@@ -462,7 +468,7 @@
 <sp who="#mlle-de-saint-yves">
                         <speaker>MADEMOISELLE DE SAINT YVES, avec impatience.</speaker>
                         <l n="135" part="F">Ah ! Laissez-nous.</l><!--@syll="4"-->
-                    </sp><!--@who="MLLE DE SAINT-YVES"-->
+                    </sp><!--@stage="impatient"--><!--@who="MLLE DE SAINT-YVES"-->
 <sp who="#le-huron">
                         <speaker>LE HURON.</speaker>
                         <l n="136">Les lièvres sont vivants. Comme ils n'avaient point d'ailes,</l>
@@ -954,10 +960,10 @@
                         <speaker>LE HURON.</speaker>
                         <l n="306">Ah ! Quel bonheur ! Je suis François.</l>
                     </sp><!--@who="LE HURON"-->
-<sp who="#m-et-mlle-de-kerkabon #mlle-de-saint-yves">
+<sp who="#monsieur #madamoiselle-de-kerkabon #mlle-de-saint-yves">
                         <speaker>MONSIEUR et MADEMOISELLE DE KERKABON, et MADEMOISELLE DE SAINT-YVES.</speaker>
                         <l n="307">Ah ! Quel bonheur ! Il est François.</l>
-                    </sp><!--@who="M. et MLLE DE KERKABON, MLLE DE SAINT-YVES"-->
+                    </sp><!--@stage="toward"--><!--@who="MONSIEUR, MADAMOISELLE DE KERKABON, MLLE DE SAINT-YVES"-->
 <sp who="#mlle-de-saint-yves">
                         <speaker>MADEMOISELLE DE SAINT-YVES.</speaker>
                         <l n="308">Oui, ce sont les traits</l>
@@ -989,7 +995,7 @@
 <sp who="#mlle-de-kerkabon">
                         <speaker>MADEMOISELLE DE KERKABON, se rétractant.</speaker>
                         <l n="321">Ah ! Oui. Ce sont les yeux de sa mère.</l>
-                    </sp><!--@who="MLLE DE KERKABON"-->
+                    </sp><!--@stage="away"--><!--@who="MLLE DE KERKABON"-->
 <sp who="#kerkabon">
                         <speaker>MONSIEUR DE KERKABON.</speaker>
                         <l n="322">Ce sont les traits de son père.</l>
@@ -1208,7 +1214,7 @@
 <sp who="#mlle-de-kerkabon">
                         <speaker>MADEMOISELLE DE KERKABON, d'un ton ironique.</speaker>
                         <l n="402" part="F">Vous ne l'aimez donc pas ?</l><!--@syll="6"-->
-                    </sp><!--@who="MLLE DE KERKABON"-->
+                    </sp><!--@stage="ironic"--><!--@who="MLLE DE KERKABON"-->
 <sp who="#mlle-de-saint-yves">
                         <speaker>MADEMOISELLE DE SAINT-YVES.</speaker>
                         <l n="403" part="I">Et si je l'aimais ?</l><!--@syll="5"-->
@@ -1790,7 +1796,7 @@
                         <speaker>MONSIEUR DE SAINT-YVES, à part à Monsieur de Kerkabon.</speaker>
                         <l n="656">Je le souhaite. Allons, me voilà décidé :</l>
                         <l n="657" part="I">Venez.</l><!--@syll="2"-->
-                    </sp><!--@who="SAINT-YVES"-->
+                    </sp><!--@stage="aparte/toward"--><!--@who="SAINT-YVES"-->
 </div>
 <div type="scene" n="7">
                     <head>SCÈNE VII. Mademoiselle de Kerkabon, Le Huron.</head>

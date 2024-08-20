@@ -5,11 +5,13 @@
                 <title type="main">Le Normand et la Gascon</title>
                 <title type="sub">Comédie en un Acte.</title>
                 <author>
-                    <persName>
-                        <forename>Gabriel</forename>
-                        <surname>Liquier</surname>
-                    </persName>
-                </author>
+      <persName>
+        <forename>Gabriel</forename>
+        <surname>Liquier</surname>
+      </persName>
+      <idno type="wikidata">Q47925802</idno>
+      <idno type="isni">0000000122792641</idno>
+    </author><!--Gabriel LIQUIER (1843-1887)-->
                 <editor>Paul FIEVRE</editor>
             </titleStmt>
             <publicationStmt>
@@ -80,7 +82,6 @@
 		<docDate when="1882">1882. Tous droits réservés.</docDate>
 		<docAuthor>Par M. GABRIEL LIQUIER</docAuthor>
 		<div type="docImprint">
-			<!--TODO: handling of editor name at this place unclear <editor id="BOUNET">.</editor>-->
 			<div type="printer">
                     <p>ÉVREUX. IMPRIMERIE DE CHARLES HÉRISSEY.</p>
                 </div><!--@id="BOUNET"-->
@@ -90,8 +91,9 @@
 		<castItem>
                     <role corresp="#arsene-ginginet">ARSÈNE GINGINET</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, M. F. GALIPAUX, du Palais-Royal..</castItem>
 		<castItem>
-                    <role corresp="#celeste-jolival">CÉLESTE JOLIVAL</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, Mlle ROSAMOND, de la Comédie-Française..</castItem>
+                    <role corresp="#celeste-jolival">CÉLESTE JOLIVAL</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="J"--><!--@stat_amour="néant"-->, Mlle ROSAMOND, de la Comédie-Française.		</castItem>
 	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="En province" country="France" periode="XIXème" gps="43.32, -1.03"/>-->
 <note>Texte tiré de "Théâtre de campagne, Huitième série". Paris : Paul Ollendorff éditeur, 1882.  pp 13-36.</note>
 </front>
 <body>
@@ -185,7 +187,7 @@
 	<s n="2">Le tocsin !... </s>
 </p>
                         <stage type="ring">Elle sonne en arpentant la scène.</stage>
-                    </sp><!--@who="CÉLESTE"-->
+                    </sp><!--@stage="entrance/location/costume"--><!--@who="CÉLESTE"-->
 </div>
 <div type="scene" n="3">
                     <head>SCÈNE TROISIÈME. Arsène, Céleste.</head>
@@ -445,7 +447,7 @@
                         <p n="38">
 	<s n="1">Un homme qui m'appelait son ange adoré... qui me baptisait : petit lapin rose !...</s>
 </p>
-                    </sp><!--@who="CÉLESTE"-->
+                    </sp><!--@stage="continue"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
                         <p n="39">
@@ -545,14 +547,14 @@
                         <p n="53">
 	<s n="1">Je vous en prie.</s>
 </p>
-                    </sp><!--@who="CÉLESTE"-->
+                    </sp><!--@stage="sit"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, de même.</speaker>
                         <p n="54">
 	<s n="1">Enfin, il y a deux mois, un télégraphe nous fut octroyé. </s>
 	<s n="2">Et comme les télégraphes de province, ça ne marche pas tout seul... généralement... le gouvernement, toujours paternel, nous expédia une employée... du sexe aimable.</s>
 </p>
-                    </sp><!--@who="ARSÈNE"-->
+                    </sp><!--@stage="sit"--><!--@who="ARSÈNE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE.</speaker>
                         <p n="55">
@@ -596,7 +598,7 @@
 	<s n="4">Être aimée ainsi !...</s>
 </p>
                         <stage type="get/shake">Elle se lève, prend machinalement la sonnette et la secoue.</stage>
-                    </sp><!--@who="CÉLESTE"-->
+                    </sp><!--@stage="aparte"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE, se levant.</speaker>
                         <p n="60">
@@ -637,7 +639,7 @@
 	<s n="2">Je prends un de ces petits papiers que le gouvernement, toujours paternel, met à la disposition du public, et j'écris bravement ceci : « Vous ai vue. Vous adore. Ai jamais aimé que vous. Dites qu'adoration déplaît pas. Signé : Arsène. » </s>
 	<s n="3">Puis, je m'approche du guichet, et, m'adressant à Célestine, je lui dis furtivement : « Amour et mystère ! Dépêche pour vous ! »</s>
 </p>
-                    </sp><!--@who="CÉLESTE"-->
+                    </sp><!--@stage="wipe"--><!--@who="CÉLESTE"-->
 <sp who="#celeste">
                         <speaker>CÉLESTE, se levant.</speaker>
                         <p n="66">
@@ -948,7 +950,7 @@
                         <p n="5">
 	<s n="1">Lui !</s>
 </p>
-                    </sp><!--@who="CÉLESTE"-->
+                    </sp><!--@stage="watch"--><!--@who="CÉLESTE"-->
 <sp who="#arsene">
                         <speaker>ARSÈNE.</speaker>
                         <p n="6">

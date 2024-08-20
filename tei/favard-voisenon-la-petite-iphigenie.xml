@@ -1,0 +1,1753 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001875" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Petite Iphigénie</title>
+                <title type="sub">Parodie de la Grande</title>
+                <title type="sub">Représentée pour la Première fois, par les Comédiens Italiens Ordinaires du Roi, en Juillet, 1757.</title>
+                <author>
+      <idno type="isni">0000000121266500</idno>
+      <idno type="wikidata">Q981902</idno>
+      <persName>
+        <forename>Charles-Simon</forename>
+        <surname>Favart</surname>
+      </persName>
+    </author><!--Charles-Simon FAVART (1710-1792)-->
+                <author>
+      <persName>
+        <forename>Claude-Henri</forename>
+        <nameLink>de</nameLink>
+        <surname>Fusée</surname>
+        <nameLink>de</nameLink>
+        <surname sort="1">Voisenon</surname>
+      </persName>
+      <idno type="wikidata">Q2976734</idno>
+      <idno type="isni">000000011019680X</idno>
+    </author><!--Claude-Henri de Fusée de VOISENON (1708-1775)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/FAVARD-VOISENON_PETITEIPHIGENIE.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/FAVARD-VOISENON_PETITEIPHIGENIE.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL"/>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="iphigenie" sex="FEMALE">
+                        <persName>Iphigénie</persName>
+                    </person>
+                    <person xml:id="ismenie" sex="FEMALE">
+                        <persName>Isménie</persName>
+                    </person>
+                    <person xml:id="eumene" sex="MALE">
+                        <persName>Eumène</persName>
+                    </person>
+                    <person xml:id="thoas" sex="MALE">
+                        <persName>Thoas</persName>
+                    </person>
+                    <person xml:id="oreste" sex="MALE">
+                        <persName>Oreste</persName>
+                    </person>
+                    <person xml:id="pilade" sex="MALE">
+                        <persName>Pilade</persName>
+                    </person>
+                    <person xml:id="l-esclave" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>L Esclave</persName>
+                    </person>
+                    <person xml:id="ensemble" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Ensemble</persName>
+                    </person>
+                    <person xml:id="arbas" sex="MALE">
+                        <persName>Arbas</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Parodie</term>
+                    <term>vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1758">
+                <desc/>
+            </event>
+            <event type="premiere" when="1757">
+                <desc>Représentée pour la Première fois, par les Comédiens Italiens Ordinaires du Roi, en Juillet, 1757.</desc>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+	<front>
+		<docTitle>
+			<titlePart type="main">LA PETITE IPHIGÉNIE</titlePart>
+			<titlePart type="sub">PARODIE DE LA GRANDE</titlePart>
+			<titlePart type="sub">Représentée pour la Première fois, par les Comédiens Italiens Ordinaires du Roi, en Juillet, 1757.</titlePart>
+		</docTitle> 
+		<docDate when="1758">M D CC LVIII.</docDate>
+		<docAuthor>[par FAVART et l'ABBÉ DE VOISENON.]</docAuthor>
+		<performance>
+			<ab type="premiere">Représentée pour la Première fois, par les Comédiens Italiens Ordinaires du Roi, en Juillet, 1757.</ab><!--@date="1757"--><!--@location="Comédiens Italiens"-->
+		</performance>
+		<div type="docImprint">
+			<!--TODO: handling of editor name at this place unclear <editor id="NEAULME">À LA HAYE, Chez JEAN NUEALME.</editor>-->			
+		</div>
+	<castList>
+                <head>ACTEURS</head>
+		<castItem>
+                    <role corresp="#iphigenie">IPHIGÉNIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="prince"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#ismenie">ISMÉNIE</role><!--@sex="2"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#eumene">EUMÈNE</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#oreste">ORESTE</role><!--@sex="1"--><!--@type="H"--><!--@statut="roi"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#pilade">PILADE</role><!--@sex="1"--><!--@type="H"--><!--@statut="confident"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#thoas">THOAS</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#un-esclave">UN ESCLAVE</role><!--@sex="1"--><!--@type="H"--><!--@statut="esclave"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#arbas">ARBAS</role><!--@sex="1"--><!--@type="H"--><!--@statut="aristocrate"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+		<castItem>
+                    <role corresp="#pretresses">PRÊTRESSES</role><!--@sex="1"--><!--@type="H"--><!--@statut="prêtre"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Tauride" country="Ukraine" periode="Temps mythologiques" gps="44.5, 33.5">La scène se passe dans le Temple de Diane.</set>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LA PETITE IPHIGÉNIE</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, seule.</speaker>
+                        <l n="1">Un songe cause en moi de sinistres pensées</l>
+                        <l n="2">Je n'ai rêvé la nuit que de glaces cassées</l>
+                        <l n="3">Ce terrible accident qui m'afflige beaucoup ;</l>
+                        <l n="4">Me menace aujourd'hui de quelque mauvais coup.</l>
+                    </sp><!--@stage="alone"--><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="2">
+                    <head>SCÈNE II. Iphigénie, Isménie.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="5">Est-ce toi que je vois ! Ô ma chère Isménie !</l>
+                        <l n="6">Viens-tu pour consoler la triste Iphigénie ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="7">Ce jour pour vous, Madame, est un jour solennel ?</l>
+                        <l n="8">Le Roi vient de trouver un malheureux mortel,</l>
+                        <l n="9">Sans mouvement, sans force, étendu sur le sable,</l>
+                        <l n="10">Thoas prend de ses jours un foin inconcevable,</l>
+                        <l n="11">Il cherche à ranimer cet homme languissant</l>
+                        <l n="12">Par les bonnes façons d'un coeur reconnaissant,</l>
+                        <l n="13">Pour le mettre en état qu'on lui coupe la gorge.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="14">Jouet infortuné des terreurs qu'il se forge,</l>
+                        <l n="15">Il ne cherche qu'à voir couler le sang humain,</l>
+                        <l n="16">Et moi je suis contrainte à lui prêter ma main.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="17">Il fallait supposer dans l'emploi qu'on vous donne,</l>
+                        <l n="18">Que vous n'avi[e]z encor sacrifié personne.</l>
+                        <l n="19">Peut-on être touché du sort d'une beauté.</l>
+                        <l n="20">Qui plonge dans les coeurs son bras ensanglanté !</l>
+                        <l n="21">On aurait pu sauver cette image effrayante,</l>
+                        <l n="22">Vous en auriez été bien plus intéressante.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="23">Diane, devais-tu me transporter ainsi</l>
+                        <l n="24">Pour me faire jouer un pareil rôle ici !</l>
+                        <l n="25">Je n'ai pas un coeur fait pour dépeupler le monde.</l>
+                        <l n="26">Un songe met le comble à ma douleur profonde.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="27">Mettez-le donc en chant si vous le racontez ;</l>
+                        <l n="28">Vos rêves sont plus beaux lorsque vous les chantez.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="29">Tu sauras le dernier en lisant les mensonges</l>
+                        <l n="30">Dans le Dictionnaire à l'usage des songes.</l>
+                        <l n="31">Éclairs, mugissements, spectres, pâles flambeaux</l>
+                        <l n="32">Gémissements, terreur, lieux funèbres, tombeaux,</l>
+                        <l n="33">Horreur, bruit souterrain, la terre qui s'entrouvre,</l>
+                        <l n="34">Un fantôme sortant de l'enfer qu'on découvre</l>
+                        <l n="35">Abîme, accents plaintifs, poignards, lambeaux sanglants,</l>
+                        <l n="36">Ombre, crime, remords, effroi, g[e]noux tremblants,</l>
+                        <l n="37">Autel, temple, cyprès, coupable encens, idole,</l>
+                        <l n="38">Ou père, ou mère, ou soeur, ou frère qu'on immole ;</l>
+                        <l n="39">Voilà quel est mon songe, et tu reconnais-là,</l>
+                        <l n="40">L'histoire de tous ceux que l'on a faits déjà.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Iphigénie, Isménie, Eumène.</head>
+<sp who="#eumene">
+                        <speaker>EUMENE.</speaker>
+                        <l n="41">Madame, dans ces lieux le tyran va paraître.</l>
+                        <l n="42">Il sent une frayeur dont il n'est pas le maître.</l>
+                        <l n="43">N'est pas hardi qui veut ; le croiriez-vous ? Il craint</l>
+                        <l n="44">Cet étranger mourant qui ne doit qu'être plaint,</l>
+                        <l n="45">Et vient comme un devoir presser le sacrifice.</l>
+                    </sp><!--@who="EUMENE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="46">Grands Dieux ! Si cette loi vous semble une injustice,</l>
+                        <l n="47">Faites- moi triompher du farouche Thoas ;</l>
+                        <l n="48">Que ce tyran sensible à mes faibles appas</l>
+                        <l n="49">Ne fasse plus du meurtre un auguste mystère</l>
+                        <l n="50">Et puisse en me voyant désirer le contraire.</l>
+                        <l n="51">Inspirez-moi ces tours et ces mots caressants</l>
+                        <l n="52">Qui séduisent l'esprit et captivent les sens,</l>
+                        <l n="53">Répandez dans mes yeux cette mélancolie</l>
+                        <l n="54">Qui ne blesse les coeurs que pour donner la vie.</l>
+                        <l n="55">Et qu'en vous honorant, mes pacifiques mains</l>
+                        <l n="56">Ne fervent déformais qu'au bonheur des humains.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="57">Thoas vient, vous pourrez parler des Dieux ensemble.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV. Thoas, Iphigénie, Isménie, Eumène.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="58">Si je viens vous trouver c'est parce que je tremble</l>
+                        <l n="59" part="I">Madame,</l><!--@syll="3"-->
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="59" part="F">C'est un mal où vous êtes sujet.</l><!--@syll="9"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="60">Ou dormant ou veillant quelque sinistre objet</l>
+                        <l n="61">À mon coeur effrayé vient donner des secousses ;</l>
+                        <l n="62">Je crois à chaque instant voir l'enfer à mes trousses ;</l>
+                        <l n="63">J'entends dans ma cave on roule des tonneaux ;</l>
+                        <l n="64">Lorsque je fuis couché, l'on tire mes rideaux</l>
+                        <l n="65">Des fantômes hideux croyant faire merveilles,</l>
+                        <l n="66">Viennent dès que je dors, me crier aux oreilles.</l>
+                        <l n="67">Vous qui savez parler à tout ce monde-là,</l>
+                        <l n="68">Il faut absolument faire cesser cela.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="69">Seigneur, ces esprits font les mortels qu'on immole.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="70">Qu'ils se plaignent plus bas, leur concert me désole ;</l>
+                        <l n="71">Mais il faut immoler le nouvel étranger.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="72">D'un si funeste emploi daignez me dégager.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="73">Je me connais, Madame, en physionomie,</l>
+                        <l n="74">Ce n'est qu'un garnement, de fort mauvaise vie ;</l>
+                        <l n="75">Cet homme-là m'effraye, et mon coeur alarmé</l>
+                        <l n="76" part="I">Se glace en le voyant.</l><!--@syll="6"-->
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="76" part="F">Il est donc bien armé ?</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="77">Non, il est garrotté, mais il n'aime qu'à mordre,</l>
+                        <l n="78">On voit dans ses discours un esprit en désordre,</l>
+                        <l n="79">-Je le crois querelleur, il fait à tous moments</l>
+                        <l n="80">Aux hommes comme aux Dieux de vilains compliments.</l>
+                        <l n="81">J'ai remarqué surtout qu'au sort de sa colère</l>
+                        <l n="82">Bien souvent il s'écrie : Hélas ! Ma chère mère !</l>
+                        <l n="83">On dit que des démons, sans_cesse autour de lui</l>
+                        <l n="84">L'entourent de serpents pour le rendre poli.</l>
+                        <l n="85">J'ai cru, pour dissiper fa noire extravagance,</l>
+                        <l n="86">Devoir lui demander son nom et sa naissance</l>
+                        <l n="87" part="I">Il garde le secret.</l><!--@syll="6"-->
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="87" part="F">Je pense qu'il fait bien :</l><!--@syll="6"-->
+                        <l n="88">Pour le faire mourir son nom ne sert à rien.</l>
+                        <l n="89" part="I">Est-il jeune ?</l><!--@syll="3"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="89" part="M">Oui vraiment.</l><!--@syll="3"-->
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="89" part="F">Sa mort me désespère.</l><!--@syll="6"-->
+                        <l n="90">Ô ciel ! Est-ce donc là ce que j'en devrais faire ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="91">Ah ! Je me lasse enfin d'être tant combattu,</l>
+                        <l n="92">Adorer et frapper, voilà votre vertu.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="93">Par ces vers convaincants vous m'avez décidée</l>
+                        <l n="94">Oui, par la cruauté ma piété guidée,</l>
+                        <l n="95">Va trouver désormais ce sacrifice beau,</l>
+                        <l n="96">Et l'on va sur l'autel apporter le couteau.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="97">Un changement si prompt marque peu de scrupule.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="98">Pouvez-vous à ma voix ne pas être crédule ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="99">Je suis né défiant, cependant vous verrez</l>
+                        <l n="100">Si j'empêcherai rien de ce que vous ferez.</l>
+                        <l n="101">Vous pourrez me tromper sans avoir de l'adresse,</l>
+                        <l n="102">Je ne reparaîtrai que pour finir la pièce.</l>
+                    </sp><!--@who="THOAS"-->
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. Iphigénie, Isménie, Eumène.</head>
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="103">Vous avez carte blanche, il faut en profiter.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="104">Je ne fais pas d'où vient il se fait déteSter,</l>
+                        <l n="105">Ce tyran est au fond une bonne personne ;</l>
+                        <l n="106">LorSqu'il fait le méchant, c'est un air qu'il se donne.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#eumene">
+                        <speaker>EUMENE.</speaker>
+                        <l n="107">Mais vous avez promis d'exercer votre emploi,</l>
+                        <l n="108">Et vous allez enfin agir de bonne foi :</l>
+                        <l n="109">Dans votre ministère il faut de la droiture.</l>
+                    </sp><!--@who="EUMENE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="110">Ah ! Mon coeur fuit toujours la voix de la nature.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="111">Moi, c'est ce que je fais, c'est ma Divinité.</l>
+                        <l n="112">Ses lois furent toujours les Dieux de la Beauté.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="113">J'entends quelqu'un hurler, Prêtresse de Diane</l>
+                        <l n="114">Je dois avec prudence éviter tout profane ;</l>
+                        <l n="115">Les hommes sont pour nous des danger[s] trop certains,</l>
+                        <l n="116">Nous reviendrons pourtant leur délier les mains.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI.</head>
+<sp who="#oreste">
+                        <speaker>ORESTE, seul.</speaker>
+                        <l n="117">Je deviens furieux, Destin, quand je te nomme !</l>
+                        <l n="118">Tu ne fais qu'un coquin souvent d'un honnête homme</l>
+                        <l n="119">Mon exemple en fournit une affr[e]use leçon :</l>
+                        <l n="120">Je suis un misérable, et suis né bon garçon ;</l>
+                        <l n="121">Je suis doux, et souvent je me mets encore ;</l>
+                        <l n="122">J'adore mes parents, et j'ai tué ma mère ;</l>
+                        <l n="123">Je cours les champs, portant en mon coeur le remord</l>
+                        <l n="124">Et je rencontre un chien enragé qui me mord ;</l>
+                        <l n="125">Je le deviens moi-même, et répands l'épouvante ;</l>
+                        <l n="126">Pilade, d'une humeur sensible et prévenante</l>
+                        <l n="127">Veut bien m'aimer malgré ce petit défaut-là ;</l>
+                        <l n="128">Mais le destin m[aud]it n'approuve pas cela.</l>
+                        <l n="129">Par l'ordre d'Apollon je viens sur ce rivage,</l>
+                        <l n="130">Je cours toutes les m[e]rs pour avoir une image,</l>
+                        <l n="131">Et je perds mon ami d'abord en arrivant.</l>
+                        <l n="132">Mon infortune, ô Ciel ! t'amuse trop souvent ;</l>
+                        <l n="133">Mais ces carreaux sont teints et cette colonnade !</l>
+                        <l n="134">Je me connais au sang, c'est celui de Pilade ;</l>
+                        <l n="135">Les Dieux sans doute ont cru qu'avec de l'amitié,</l>
+                        <l n="136">Le malheur ne pouvait m'accabler qu'à moitié.</l>
+                    </sp><!--@stage="alone"--><!--@who="ORESTE"-->
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE VII. Pilade, Oreste.</head>
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="137" part="I">Retrouve ton ami.</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="137" part="F">Je ne t'attendais guère.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="138">Ton étoile et les Dieux m'ont taillé des croupières,</l>
+                        <l n="139">Je fuis tombé dans l'eau, cela me porte au coeur,</l>
+                        <l n="140">L'amitié s'affadit avec cette liqueur.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="141">Je te revois, Pilade, et ma joie est fi tendre</l>
+                        <l n="142">Qu'à l'instant mon accès de rage va me prendre.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="143" part="I">Sauve qui peut.</l><!--@syll="4"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="143" part="F">Je vois tout l'enfer fous mes pas.</l><!--@syll="8"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="144" part="I">La belle vue !</l><!--@syll="4"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="144" part="F">Ô Ciel je sens entre mes bras,</l><!--@syll="8"-->
+                        <l n="145">Un serpent venimeux qui me pique et me glace.</l>
+                        <l n="146">Quelle femme, Grands Dieux, me fait donc la grimace</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="147" part="I">Tu lui rends bien.</l><!--@syll="4"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="147" part="F">Un spectre est là pour l'appuyer</l><!--@syll="8"-->
+                        <l n="148">C'est Egiste, oui c'est lui qui lui sert d'écuyer ;</l>
+                        <l n="149">Mais quel objet hideux m'embarrasse et m'arrête !</l>
+                        <l n="150">Il gémit... Ah ! Qu'il a de cornes à la tête !</l>
+                        <l n="151" part="I">Que vois-je ! C'est mon père !</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="151" part="F">Il n'est donc pas changé ?</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="152">Dans quel nouveau revers me trouvai-je plongé !</l>
+                        <l n="153">Ô désespoir ! Je suis accablé Pilade,</l>
+                        <l n="154" part="I">Il me fuit.</l><!--@syll="3"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="154" part="F">Au contraire, et je fuis, camarade.</l><!--@syll="9"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="155">Je n'avais qu'un ami, qu'un seul, je l'ai perdu.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="156" part="I">Je suis ici.</l><!--@syll="4"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="156" part="M">Viens donc.</l><!--@syll="2"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="156" part="F">Je crains d'être mordu.</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="157">Ainsi tout l'Univers craint et fuit ma présence.</l>
+                        <l n="158" part="I">Ma fureur s'en accroît.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="158" part="F">La Prêtresse s'avance ;</l><!--@syll="6"-->
+                        <l n="159">Cessez d'être en colère, on vient vous égorger.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="160">Tu m'avertis à temps, et je vais m'arranger.</l>
+                    </sp><!--@who="ORESTE"-->
+</div>
+<div type="scene" n="8">
+                    <head>SCÈNE VIII. Iphigénie, Oreste, Pilade, Prêtresses.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="161">Votre sang va bientôt couler pour la Déesse,</l>
+                        <l n="162">Je viens vous immoler ; mais avec politesse.</l>
+                        <l n="163">Ici les étrangers dans mes mains sont remis,</l>
+                        <l n="164">Et c'est moi qui leur fais les honneurs du pays.</l>
+                        <l n="165">Prêtresses, à l'instant je veux qu'on les déchaîne ;</l>
+                        <l n="166">Je dois agir ainsi pour que rien ne les gêne.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="167">J'ai de l'esprit, Madame, et je vous entends bien.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="168">Nous pouvons à présent commencer l'entretien :</l>
+                        <l n="169">Votre sort m'intéresse, et je suis affligée</l>
+                        <l n="170">De vous faire mourir ; mais j'y suis obligée.</l>
+                        <l n="171">Mon coeur est la victime, et mon bras l'instrument.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="172">Hom ! Cet instrument-là ne me plaît nullement.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="173">Laissez-moi donc parler à votre camarade,</l>
+                        <l n="174" part="I">Il est triste.</l><!--@syll="3"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="174" part="M">Il a tort.</l><!--@syll="3"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="174" part="M">Qu'a-t-il ?</l><!--@syll="2"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="174" part="F">Il est... malade</l><!--@syll="4"-->
+                        <l n="175" part="I">D'esprit</l><!--@syll="2"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, à Oreste.</speaker>
+                        <l n="175" part="M">Puis-je savoir ?...</l><!--@syll="4"-->
+                    </sp><!--@stage="toward"--><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="175" part="F">Vous saurez qu'aujourd'hui...</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="176">Vous avez la fureur de répondre pour lui ;</l>
+                        <l n="177" part="I">C'est lui que j'interroge.</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="177" part="F">Eh ! Maugrebleu, Madame,</l><!--@syll="6"-->
+                        <l n="178" part="I">Tuez-nous sans rien dire.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="178" part="F">Il a glacé mon âme.</l><!--@syll="6"-->
+                        <l n="179">Cet enfant-là paraît assez mal élevé.</l>
+                        <l n="180">à ce pauvre garçon qu'est-il donc arrivé ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="181">Madame, s'il n'a pas la réplique gentille,</l>
+                        <l n="182">C'est qu'il a maintenant des chagrins de famille.</l>
+                        <l n="183">Tout le monde n'est pas en place comme vous.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="184">Oui, j'exerce un emploi bien amusant bien doux.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="185">Vous nous faites languir, quel sujet vous arrête ?</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="186">Cela viendra, Seigneur ; mais soyez plus honnête.</l>
+                        <l n="187">Vous êtes tous deux Grecs, si j'en crois vos habits ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="188" part="I">Oui.</l><!--@syll="1"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="188" part="F">Venez m'embrasser, c'est aussi mon pays.</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="189" part="I">Ah ! Quel plaisir !</l><!--@syll="4"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="189" part="F">Allons, contez-moi des histoires</l><!--@syll="8"-->
+                        <l n="190">Agamemnon jouit du fruit de ses Victoires.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="191" part="I">Il ne vit plus.</l><!--@syll="4"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="191" part="F">De quoi le pauvre homme est-il mort ?</l><!--@syll="8"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="192" part="I">Il se portait fort bien.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="192" part="F">Ah ! Vous m'étonnez fort.</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="193" part="I">Un cruel assassin...</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="193" part="F">Quelle main sanguinaire</l><!--@syll="6"-->
+                        <l n="194" part="I">A fait ce mauvais coup ?</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="194" part="F">Son épouse adultère.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="195">On peut, lorsqu'on eSt belle, avoir quelques amanTs</l>
+                        <l n="196">Mais tuer les maris, ils sont si bonnes gens !</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="197">Ciel, Clytemnestre ! Oreste a-t-il bien pris la chose</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="198">Vous deviez sur ce nom avoir la bouche close.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="199">On voyait dans son air, étant encor enfant</l>
+                        <l n="200">Qu'un jour il pourrait être un fort mauvais plaisant.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="201" part="I">Il est l'horreur du monde.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="201" part="F">Eh ! Qu'a-t-il donc pu faire ?</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="202">Madame, il en agit fort mal avec sa mère.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="203">Fi, ce garçon doit faire une mauvaise fin.</l>
+                        <l n="204" part="I">Que cherche-t-il ?</l><!--@syll="4"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="204" part="F">La mort qu'il a trouvée enfin.</l><!--@syll="8"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, à part.</speaker>
+                        <l n="205">Ô ciel ! Qu'entends-je ! Oreste est privé de la vie !</l>
+                        <l n="206">Mon unique ressource, hélas, m'est donc ravie !</l>
+                        <l n="207">Remettons-nous s'il faut reprendre mon discours :</l>
+                        <stage type="loud">Haut.</stage>
+                        <l n="208" part="I">Électre, que fait-elle ?</l><!--@syll="6"-->
+                    </sp><!--@stage="aparte"--><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="208" part="F">Elle pleure toujours.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="209">Cela compoSe au moins une aimable famille</l>
+                        <l n="210" part="I">Bien gaie.</l><!--@syll="2"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, à part à une Prêtresse.</speaker>
+                        <l n="210" part="F">Ô désespoir ! Approchez-vous, ma fille</l><!--@syll="10"-->
+                        <l n="211">Menez ces étrangers dans l'endroit préparé</l>
+                        <l n="212">Où celui qu'on immole est toujours bien paré.</l>
+                    </sp><!--@stage="low/toward"--><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="213">En voyant ces soins-là ma tristesse est complète,</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="214">Je vais faire aujourd'hui ma dernière toilette.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="9">
+                    <head>SCÈNE IX. Iphigénie, Isménie, Eumène.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="215" part="I">Ô Ciel ! Oreste est mort !</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="215" part="F">Ce n'était qu'un vaurien.</l><!--@syll="6"-->
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="216">Il serait devenu peut-être homme de bien.</l>
+                        <l n="217">Halas ! En ce moment que mon malheur te touche ;</l>
+                        <l n="218">Mais, as-tu remarqué ce grec dur et farouche ?</l>
+                        <l n="219">Pour cet infortuné qui brave le trépas,</l>
+                        <l n="220">J'éprouve un sentiment que je ne connais pas :</l>
+                        <l n="221">Quoiqu'il ait l'air d'un fou, cet homme sait me plaire.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="222">Il me paraît avoir un joli caractère.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="223" part="I">Sauvons celui que j'aime.</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="223" part="F">On peut le hasarder.</l><!--@syll="6"-->
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="224" part="I">Mais enfin l'autre eSt homme.</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="224" part="F">Il faut donc le garder.</l><!--@syll="6"-->
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="225">Non, qu'ils partent tous deux ; mais il faut du mystère.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="226">Pour bien mener cela, fiez-vous à mon père.</l>
+                        <l n="227">Mon père roturier, sans rang, sans dignité,</l>
+                        <l n="228">Les enveloppera dans son obscurité.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="229">Ton père est ennuyeux, je crains qu'il ne paraisse.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="230">On ne le verra pas ; j'en parlerai sans_cesse,</l>
+                        <l n="231">Et cependant jamais on ne saura son nom,</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="232">Va donc trouver Thoas et dis- lui pour raison</l>
+                        <l n="233">Que ces deux étrangers ont l'âme trop profane</l>
+                        <l n="234">Pour avoir l'honneur d'être immolés à Diane</l>
+                        <l n="235">Et que je juge avant de les sacrifier,</l>
+                        <l n="236">Qu'il faut avoir grand foin de les purifier.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#eumene">
+                        <speaker>EUMENE.</speaker>
+                        <l n="237" part="I">C'est une menterie.</l><!--@syll="6"-->
+                    </sp><!--@who="EUMENE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="237" part="F">Oui ; mais c'est une adresse</l><!--@syll="6"-->
+                        <l n="238">Un privilège acquis qu'approuve la sagesse,</l>
+                        <l n="239">Et ce motif m'excuse en cette extrémité :</l>
+                        <l n="240">Qui sert les malheureux sert la Divinité.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="10">
+                    <head>SCÈNE X. Oreste, Pilade, Iphigénie.</head>
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="241">Suivant de ces climats les funestes maximes,</l>
+                        <l n="242">Vous aviez commandé qu'on parât les victimes,</l>
+                        <l n="243">Et nous reparaissons ainsi que nous étions,</l>
+                        <l n="244">Libres de nous sauver, si nous le souhaitions.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="245">Venez à cet autel de meurtre et de vengeance,</l>
+                        <l n="246">Venez-y concevoir un rayon d'espérance.</l>
+                        <l n="247">Mes bienfaisantes mains épargnant votre sang</l>
+                        <l n="248">Ne vous plongeront pas un coUteau dans le flanc.</l>
+                        <l n="249">Vous irez tous les deux revoir votre Patrie.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="250">Madame, en vérité, vous êtes bien polie.</l>
+                    </sp><!--@who="PILADE"-->
+</div>
+<div type="scene" n="11">
+                    <head>SCÈNE XI. Isménie, Acteurs précédents.</head>
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="251">Madame, je voudrais vous parler en secret.</l>
+                        <l n="252" part="I">Éloignez-vous.</l><!--@syll="4"-->
+                    </sp><!--@who="ISMÉNIE"-->
+<stage type="exit">Oreste et Pilade se retirent au fond du théâtre.</stage>
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="252" part="F">Je viens vous dire avec regret</l><!--@syll="8"-->
+                        <l n="253">Qu'à les sauver tous deux il ne faut pas prétendre.</l>
+                        <l n="254">Thoas aime le sang, il veut en voir répandre ;</l>
+                        <l n="255">Il faut que de ces Grecs l'un périsse en effet ;</l>
+                        <l n="256">Mais si vous m'en croyez, délivrez le mieux fait.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, à Oreste et à Pilade.</speaker>
+                        <l n="257">Rapprochez- vous. Les Di[e]ux ont fait tourner la chance,</l>
+                        <l n="258">Ils se font irrités de ma condescendance.</l>
+                        <l n="259">Un de vous deux mourra, le choix m'en est remis,</l>
+                        <stage type="toward">À Oreste.</stage>
+                        <l n="260">Et pour être sauvé, c'est vous que j'ai choisi.</l>
+                    </sp><!--@stage="toward"--><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="261" part="I">Miséricorde ! Ô meurtre !</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, à Pilade.</speaker>
+                        <l n="261" part="F">Ah ! Je vois votre joie ;</l><!--@syll="6"-->
+                        <l n="262">Je vous laisse un instant, pour qu'elle se déploie.</l>
+                        <l n="263">Ma main avec douceur remplira mon devoir.</l>
+                        <stage type="toward">À Oreste.</stage>
+                        <l n="264">Vous, vous regagnerez votre pays ce soir,</l>
+                        <l n="265">Je vous en suis garant ; mais daignez me permettre</l>
+                        <l n="266">D'aller écrire avant un petit mot de lettre.</l>
+                        <l n="267">Vous serez bien exact à la remettre au moins.</l>
+                        <stage type="toward">À Pilade.</stage>
+                        <l n="268">Ensuite, mon enfant, Vous aurez tous mes soins.</l>
+                        <stage type="exit">Elle sort.</stage>
+                    </sp><!--@stage="toward"--><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="12">
+                    <head>SCÈNE XII. Oreste, Pilade.</head>
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="269">AInsi, nous voilà donc aux petits soins ensemble.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="270" part="I">M'aimes-tu ?</l><!--@syll="3"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="270" part="F">Quand tu dis que tu m'aimes, je tremble</l><!--@syll="9"-->
+                        <l n="271">La Prêtresse au contraire, au lieu de menacer</l>
+                        <l n="272">En m'annonçant la mort, semble me caresser.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="273">Parle donc, je te trouve un plaisant personnage</l>
+                        <l n="274" part="I">De prétendre mourir.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="274" part="F">Ce n'est pas mon usage.</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="275">Je t'ai toujours connu pour un ambitieux.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="276">Est-ce ma faute à moi ? Va ne t'en prend qu'aux Dieux.</l>
+                        <l n="277">Pourquoi m'envierais-tu ma petite fortune ?</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="278">La vie est un fardeau dont le poids m'importune</l>
+                        <l n="279">Je demande la mort, c'est à moi qu'on la doit,</l>
+                        <l n="280">Et tu veux aujourd'hui me faire un passe-droit.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="281">À l'honneur qu'on me sait, ami, je suis sensible ;</l>
+                        <l n="282">Mais je t'aime et voudrais, s'il était bien possible,</l>
+                        <l n="283">Tout à l'heure te voir à l'autel attaché.</l>
+                        <l n="284">Va, je te céderais ma place à bon marché.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="285">Tu m'aimes ! ah, j'en prends tous les Dieux pour arbitres.</l>
+                        <l n="286">Tu veux être immolé, parle quels sont tes titres ?</l>
+                        <l n="287">As-tu dix fois par jour le transport au cerveau ?</l>
+                        <l n="288">Tout l'univers pour toi devient-il un tombeau ?</l>
+                        <l n="289">Des Spectres viennent-ils te tenir compagnie ?</l>
+                        <l n="290">As-tu jamais rossé personne dans ta vie</l>
+                        <l n="291">Es-tu né comme Oreste, insensé, forcené</l>
+                        <l n="292">Et vois-tu sur tes pas tout l'Enfer déchaîné ?</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="293">On ne peut pas avoir tous les biens en ce monde.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="294">Eh, dis-moi donc sur quoi ta vanité se sonde ?</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="295">Pour me laisser mourir, j'embrasse tes genoux</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="296">Et je me jette aux tiens pour un bonheur si doux.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="297" part="I">Non, je ne le veux point.</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="297" part="M">Un refus de la sorte</l><!--@syll=""-->
+                        <l n="298">Agite tous mes sens, le courroux me transporte,</l>
+                        <l n="299" part="I">Je m'en vais t'assommer.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="299" part="F">Oh ! Ne badinons point,</l><!--@syll="6"-->
+                        <l n="300">Tu traites l'amitié toujours à coups de poing.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="301">Je veux aimer ainsi. Je vais à la Prêtresse</l>
+                        <l n="302" part="I">Déclarer qui je suis.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="302" part="F">Ah ! Ton cerveau se blesse.</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="303">Et si sa main balance, ô Terre ! Entrouvre-toi.</l>
+                        <l n="304">Et vous qui m'écoutez, ô Ci[e]ux écrasez-moi,</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="305">Je sais OEdipe. Aussi vos victimes sont prêtes</l>
+                        <l n="306">Ô monts écrasez-nous, Cieux, tomb[e]z sur nos têtes.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <stage type="together">Ensemble.</stage>
+                        <l n="307">Si tu reçois la mort, si je puis le souffrir,</l>
+                        <l n="308">Je dis qui m'a sait naître et qui j'ai fait mourir.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="309">L'amitié, l'amitié, voilà ce qui m'enivre,</l>
+                        <l n="310">Je ne suis pas sorti de mon pays pour vivre.</l>
+                    </sp><!--@who="PILADE"-->
+</div>
+<div type="scene" n="13">
+                    <head>SCÈNE XIII. Iphigénie, Oreste, Pilade.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="311">Peut-on savoir pourquoi vous avez tant crié ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="312">Madame, ce n'était qu'un débat d'amitié.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="313">Il parlait doucement avec son camarade.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="314">Ce commerce du moins ne me paraît pas fade.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="315">Pour parler franchement, je suis jaloux de lui,</l>
+                        <l n="316">Je vous le dis tout net et s'il meurt aujourd'hui</l>
+                        <l n="317">Je ne me charge pas de rendre votre lettre.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="318">Dans vos fidèles mains je venais la remettre :</l>
+                        <l n="319">Eh, quoi vouloir mourir ! Seigneur, que pensez-vous ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="320">Madame, il serait mal de disputer des goûts.</l>
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, à Oreste.</speaker>
+                        <l n="321">Vous pouvez préférer une mort rigoureuse</l>
+                        <l n="322">Au soin de me servir et de me rendre heureuse</l>
+                        <l n="323">Vous n'êtes pas galant, et c'est me faire tort.</l>
+                    </sp><!--@stage="toward"--><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="324" part="I">Il n'aime point le Sexe.</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="324" part="F">Il mérite la mort ;</l><!--@syll="6"-->
+                        <l n="325">Je ne puis y penser sans en être saisie.</l>
+                        <stage type="toward">À Pilade.</stage>
+                        <l n="326">Mais ne sentez -vous pas un peu de jalousie</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="327" part="I">Non.</l><!--@syll="1"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, à Oreste.</speaker>
+                        <l n="327" part="F">Pour payer l'honneur qu'il daigne vous céder ;</l><!--@syll="11"-->
+                        <l n="328">Dites-lui, s'il se peut, adieu, sans le gronder.</l>
+                    </sp><!--@stage="toward"--><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="329">Adieu, mon cher ami, pardonne mes reproches.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE, bas.</speaker>
+                        <l n="330">Je n'aurai pas toujours mes deux mains dans mes poches,</l>
+                        <l n="331">Laisse-moi faire, va je te délivrerai.</l>
+                        <stage type="aparte">À part.</stage>
+                        <l n="332">Je ne sais pas pourtant comme je m'y pendrai.</l>
+                    </sp><!--@stage="low"--><!--@who="PILADE"-->
+</div>
+<div type="scene" n="14">
+                    <head>SCÈNE XIV. Iphigénie, Pilade, L'Esclave.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="333">Pour sortir de ces lieux, il ne saut pas attendre..</l>
+                        <l n="334">Électre est la personne à qui vous devez rendre</l>
+                        <l n="335" part="I">Ce Billet important.</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="335" part="F">Par quel hasard heureux</l><!--@syll="6"-->
+                        <l n="336" part="I">La connaissez-vous donc ?</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="336" part="F">Vous êtes curieux !</l><!--@syll="6"-->
+                        <l n="337">Esclave, prenez soin de conserver sa vie ;</l>
+                        <l n="338">Vous savez les chemins, et je vous le confie.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="339">Vous le verrez bientôt, c'est un garçon d'esprit,</l>
+                        <l n="340">Qui reviendra vous faire un bien joli récit.</l>
+                    </sp><!--@who="PILADE"-->
+</div>
+<div type="scene" n="15">
+                    <head>SCÈNE XV. Iphigénie, Isménie.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="341">Je conçois pour ce Grec, un malheureux présage,</l>
+                        <l n="342">Et j'ai peur qu'il ne fasse un bien mauvais voyage,</l>
+                        <l n="343">Je ne saurai jamais quand il s'embarquera.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="344">Sans être remarqué, croyez qu'il partira.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="345">Je crains qu'il ne s'égare, ou bien qu'on ne l'arrête.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="346" part="I">Pourquoi ?</l><!--@syll="2"-->
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="346" part="F">Son conducteur m'a l'air d'être un peu bête.</l><!--@syll="6"-->
+                        <l n="347">J'ai remis l'étranger en de mauvaises mains.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="348">Faut-il donc tant d'esprit pour savoir les chemins</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="349">Mais, je vais être instruite enfin ; je vois Eumène.</l>
+                        <l n="350" part="I">Le Grec est-il parti ?</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="16">
+                    <head>SCÈNE XVI. Eumène, Iphigénie, Isménie.</head>
+<sp who="#eumene">
+                        <speaker>EUMENE.</speaker>
+                        <l n="350" part="F">Vous m'en voyez en pEine ;</l><!--@syll="6"-->
+                        <l n="351">On l'attend au vaisseau, personne n'est venu.</l>
+                    </sp><!--@who="EUMENE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="352">Ah ! Je n'en doute point, mon projet est connu.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="353">À de vaines frayeurs, pourquoi livrer votre âme ?</l>
+                        <l n="354">Vous connaissez Thoas, rassurez-vous, Madame,</l>
+                        <l n="355">Thoas est soupçonneux, et n'approfondit rien.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="356" part="I">Il est vrai ; mais on vient ; ah c'est l'Esclave.</l><!--@syll="10"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="17">
+                    <head>SCÈNE XVII. L'Esclave, Iphigénie, Isménie.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="356" part="F">Hé bien ?</l><!--@syll="2"-->
+                        <l n="357">Ce Grec dont je vous ai confié la conduite</l>
+                        <l n="358">N'a-t-il point rencontré d'obstacles dans sa suite ?</l>
+                        <l n="359">Vogue-t-il sur les eaux ? Et le vent est-il bon ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#l-esclave">
+                        <speaker>L'ESCLAVE.</speaker>
+                        <l n="360">Il est plus avancé, Madame, il est au fond.</l>
+                    </sp><!--@who="L'ESCLAVE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="361" part="I">Adieu ma lettre.</l><!--@syll="4"-->
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#l-esclave">
+                        <speaker>L'ESCLAVE.</speaker>
+                        <l n="361" part="F">Un bruit et de chevaux et d'armes</l><!--@syll="8"-->
+                        <l n="362">Nous a sait sans raison concevoir des alarmes,</l>
+                        <l n="363">Et quoique nous sussions tous deux hommes de coeur,</l>
+                        <l n="364">J'avouerai franchement que nous avons eu peur.</l>
+                        <note type="L">Aucun vers ne rime avec "sauvage".</note>
+                        <l n="365">Nous nous sommes cachés dans un antre sauvage,</l>
+                        <l n="366">Où les flots en courroux viennent briser leurs cours</l>
+                        <l n="367">Qui, sans doute, du Grec ont absorbé les jours.</l>
+                        <l n="368">L'appelant vainement, j'ai cru devoir conclure</l>
+                        <l n="369">Qu'il fallait regarder, malgré la nuit obscure</l>
+                        <l n="370">Je n'ai rien aperçu, je me suis effrayé</l>
+                        <l n="371">Ainsi vous voyez bien que notre homme est noyé.</l>
+                    </sp><!--@who="L'ESCLAVE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="372">Ah, je n'en doute pas, la preuve en est trop claire,</l>
+                        <l n="373">Et les Dieux par ce trait m'annoncent leur colère.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="374">Pour fuir la mort, Madame, un Grec prend bien des soins,</l>
+                        <l n="375">Et revient dans l'instant qu'on y pense le moins.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+<sp who="#eumene">
+                        <speaker>EUMENE.</speaker>
+                        <l n="376">Voilà tout mon espoir, qu'il soit aussi le vôtre.</l>
+                    </sp><!--@who="EUMENE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="377">Puisque cet homme est mort, qu'on m'aille chercher l'autre.</l>
+                        <l n="378">On l'amène. Sortez. Voici le beau morceau,</l>
+                        <l n="379">Qui serait plus touchant, s'il était plus nouveau.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="18">
+                    <head>SCÈNE XVIII. Oreste, Iphigénie.</head>
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="380">Pour me percer le coeur, m'appelez-vous ? J'arrive.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE chante.</speaker>
+                        <l n="381">C'est au pied du Rocher qui défend cette rive.</l>
+                    </sp><!--@stage="sing"--><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="382">C'est l'Opéra tout pur, et nous nous égarons.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="383">Allez, allez toujours, nous nous retrouverons.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="384">Oui, la scène a trente ans plus que la tragédie,</l>
+                        <l n="385">On l'a toujours chantée, ainsi la Parodie</l>
+                        <l n="386" part="I">Doit l'être tout de même.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="386" part="F">Oui, c'est là mon projet,</l><!--@syll="6"-->
+                        <l n="387">Et cela vaudra mieux pour le fond du sujet.</l>
+                        <stage type="title">AIR : La mort de mon cher père.</stage>
+                        <l n="388">Mon petit ministère</l>
+                        <l n="389">Vous sera du chagrins</l>
+                        <l n="390">Je crains de vous déplaire</l>
+                        <l n="391">En vous perçant le sein.</l>
+                        <l n="392">Que ne suis-je maîtresse</l>
+                        <l n="393">Des climats où je suis !</l>
+                        <l n="394">Les gens de votre espèce</l>
+                        <l n="395">N'y seraient pas détruits.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <stage type="title">AIR : Contre un engagement.</stage>
+                        <l n="396">D'un propos gracieux</l>
+                        <l n="397">Vous serez le contraire.</l>
+                        <l n="398">Loin d'apaiser les Dieux,</l>
+                        <l n="399">Redoutez leur colère :</l>
+                        <l n="400">À votre âge, ma chère</l>
+                        <l n="401">Lorsqu'on veut bien agir,</l>
+                        <l n="402">On ne doit jamais faire</l>
+                        <l n="403">Mourir que de plaisir.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <stage type="title">AIR : Un mouvement de curiosité.</stage>
+                        <l n="404">De vous sauver, j'aurais beaucoup d'envie</l>
+                        <l n="405">Si ce bienfait pouvait se pardonner</l>
+                        <l n="406">Tuer un homme ! Ah quelle barbarie !</l>
+                        <l n="407">À cet emploi pourquoi me destiner ?</l>
+                        <l n="408">C'est mon devoir d'ôter ici la vie,</l>
+                        <l n="409">Il me serait plus doux de la donner.</l>
+                        <stage type="title">AIR : Adieu donc, Dame Française.</stage>
+                        <l n="410">Eh pourquoi, bonne Prêtresse,</l>
+                        <l n="411">Me traiter si rudement ?</l>
+                        <l n="412">Avec ce regard charmant,</l>
+                        <l n="413">Auriez-vous l'âme traîtresse !</l>
+                        <l n="414">Ah ! Dans un si doux moment</l>
+                        <l n="415">La nature vous dément.</l>
+                        <l n="416">Eh ! Pourquoi, bonne Prêtresse,</l>
+                        <l n="417">Me traiter si rudement ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, tendrement.</speaker>
+                        <stage type="title">AIR : Musette du Ballet de la Fontaine de Jouvence.</stage>
+                        <l n="418">C'est assez ; je trains de vous entendre</l>
+                        <l n="419">La pitié pourrait me surprendre,</l>
+                        <l n="420">Oui, je cours trop de danger.</l>
+                        <l n="421">Par égard pour une âme trop tendre,</l>
+                        <l n="422">Ah ! Permettez-moi de vous égorger.</l>
+                    </sp><!--@stage="tender"--><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <stage type="title">AIR : Je sens un certain je ne sais quoi.</stage>
+                        <l n="423">Vous m'en priez trop galamment.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, à part.</speaker>
+                        <l n="424">Que son sort m'intéresse !</l>
+                    </sp><!--@stage="aparte"--><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="425">Tuez-moi donc par sentiment.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="426">Je plains votre jeunesse..</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="427">En vous voyant, belle Prêtresse,</l>
+                        <l n="428">Mon coeur se trouble malgré moi.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="429">Je sens un certain je ne sais qu'est-ce.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="430">Je sens un certain je ne sais quoi.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <stage type="title">AIR : Elle est morte la vache à panier</stage>
+                        <l n="431">Que dit-on chez vous d'Iphigénie ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="432">Ah ! Son sort doit me faire trembler,</l>
+                        <l n="433">On l'a tuée en cérémonie,</l>
+                        <l n="434">Elle est morte, il n'en saut plus parler.</l>
+                        <l n="435">Je n'y puis songer</l>
+                        <l n="436">Sans m'affliger,</l>
+                        <l n="437">Sans me troubler ;</l>
+                        <l n="438">Elle est morte, la pauvre Iphigénie,</l>
+                        <l n="439">Elle est morte, il n'en saut plus parler.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <stage type="title">AIR : Un jour sur la fougère.</stage>
+                        <l n="440">Diane sut propice,</l>
+                        <l n="441">Et vint à son secours.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="442">On sait qu'un sacrifice</l>
+                        <l n="443">A termine ses jours,</l>
+                        <l n="444">Mon âme désolée</l>
+                        <l n="445">Gémit de son trépas,</l>
+                        <l n="446">La pauvre enfant fut immolée.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="447">La pauvre enfant n'en mourut pas,</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <stage type="title">AIR : Allons la voir à Saint Cloud.</stage>
+                        <l n="448">Puisqu'elle respire encor</l>
+                        <l n="449">Mon destin est moins funeste.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="450">D'où peut naître ce transport ?</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="451">Ah ! Quel plaisir pour Oreste.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="452">Vous m'aviez dit qu'il était mort.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="453">Madame, je n'avais pas tort,</l>
+                        <l n="454">Ce n'était qu'une adresse</l>
+                        <l n="455">Pour faire durer la pièce.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <stage type="title">AIR : Monsieur la Palisse est mort.</stage>
+                        <l n="456">Il n'a pas fini son sort ?</l>
+                        <l n="457">Ah ! Que j'en serais ravie !</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="458">La preuve qu'il n'est pas mort,</l>
+                        <l n="459">C'est qu'il est encore en vie.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <stage type="title">AIR. Chant de l'Opera.</stage>
+                        <l n="460" part="I">Expliquez-vous.</l><!--@syll="4"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="460" part="F">Hélas !</l><!--@syll="2"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="461">Achevez, je vous prie.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="462">Vous voyez mon trouble et mes pleurs.</l>
+                        <l n="463">Reconnaissez Oreste à sa folie</l>
+                        <l n="464">Et plus encore à ses malheurs.</l>
+                        <stage type="together">ENSEMBLE</stage>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="465">Quoi je te revois, mon frère,</l>
+                        <l n="466">Mon frère, mon frère.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="467">Quoi je te revois, ma chère,</l>
+                        <l n="468">Ma chère, ma chère.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#ensemble">
+                        <speaker>ENSEMBLE.</speaker>
+                        <l n="469">Quel plaisir pour moi !</l>
+                        <l n="470">Chère soeur, c'est toi !</l>
+                        <l n="471">Mon frère, c'est toi !</l>
+                        <l n="472">Le sort ne m'est plus contraire.</l>
+                    </sp><!--@who="ENSEMBLE"-->
+<sp who="#ensemble">
+                        <speaker>ENSEMBLE.</speaker>
+                        <stage type="title">AIR : Ah ! Madame Anroux.</stage>
+                        <l n="473">Sautons-nous au cou.</l>
+                    </sp><!--@who="ENSEMBLE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="474">Ah, si je suis fou,</l>
+                        <l n="475">À présent c'est d'aise.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="476">Je retrouve un sou</l>
+                        <l n="477">Mais je pâme d'aise.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#ensemble">
+                        <speaker>ENSEMBLE.</speaker>
+                        <l n="478">Sautons-nous au cou.</l>
+                    </sp><!--@who="ENSEMBLE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="479">À présent c'est d'aise,</l>
+                        <l n="480">Que ton frère est fou.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="481">Je me pâme d'aise,</l>
+                        <l n="482">Quoi que tu sois sou.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="483">Je vais tout préparer pour nous sauver tous deux.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="484" part="I">Allez.</l><!--@syll="2"-->
+                        <stage type="exit">Oreste sort.</stage>
+                    </sp><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="19">
+                    <head>SCÈNE XIX.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, seule.</speaker>
+                        <l n="484" part="F">Ça, reprenons le ton majestueux,</l><!--@syll="10"-->
+                        <l n="485">Mon frère est retrouvé, c'est toujours quelque chose,</l>
+                        <l n="486">Je regrette à présent l'autre Grec et pour cause ;</l>
+                        <l n="487">Mais je vais avant peu me voir dans mon pays,</l>
+                        <l n="488">Je suis en âge encor d'y faire des amis.</l>
+                    </sp><!--@stage="alone"--><!--@who="IPHIGÉNIE"-->
+</div>
+<div type="scene" n="20">
+                    <head>SCÈNE XX. Iphigénie, Isménie.</head>
+<sp who="#ismenie">
+                        <speaker>ISMÉNIE.</speaker>
+                        <l n="489">Madame, attendez-vous au sort le plus contraire,</l>
+                        <l n="490">Au cou le plus affreux rien ne peut vous soustraire,</l>
+                        <l n="491">Vos desseins sont connus du barbare Thoas,</l>
+                        <l n="492">Le malheureux Oreste est dans les mains d'Arbas.</l>
+                    </sp><!--@who="ISMÉNIE"-->
+</div>
+<div type="scene" n="21">
+                    <head>SCÈNE XXI. Iphigenie, Ismenie, Thoas, et suite.</head>
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="493">Ah ! Ah ! Vous voilà donc, Prêtresse dégourdie,</l>
+                        <l n="494">Vraiment votre conduite est tout à fait jolie,</l>
+                        <l n="495">J'apprends en ce moment comme vous en usez</l>
+                        <l n="496">C'est aux dépens des Dieux que vous vous amusez.</l>
+                        <l n="497">Au lieu de les tuer, vous retenez les hommes.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="498">Hélas, dans mon pays, voilà comme nous sommes</l>
+                        <l n="499">La nature eut toujours un grand pouvoir sur moi.</l>
+                        <l n="500">Son agréable étude est mon unique emploi,</l>
+                        <l n="501">C'est la première Loi, c'est la seule peut-être,</l>
+                        <l n="502">C'est la seule du moins qui se fasse connaître,</l>
+                        <l n="503">Elle est de tous les temps, elle est de tous les lieux ;</l>
+                        <l n="504">Elle règle à la fois les hommes et les Dieux.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="505">Une telle morale avec votre état jure,</l>
+                        <l n="506">Prêtresse, vous citez trop souvent la nature.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="507" part="I">On cite ce qu'on aime.</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="507" part="F">On m'a sort bien instruit,</l><!--@syll="6"-->
+                        <l n="508">Vous tramiez des complots, vous en perdez le fruit.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="509">Je n'ai jamais formé de complots sur la vie,</l>
+                        <l n="510">La défiance marche avec la tyrannie ;</l>
+                        <l n="511">Guéris-toi, s'il se peut, des soupçons que tu prends.</l>
+                        <l n="512">Je voulais seulement écrire à mes parents.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="513">La chose est toute simple ; était-il nécessaire</l>
+                        <l n="514">D'avoir tant de finesse et d'en faire un mystère ?</l>
+                        <l n="515">J'aurais, si vous m'eussiez dit vos petits secrets,</l>
+                        <l n="516">Pris soin de vous donner un courrier tout exprès ;</l>
+                        <l n="517">Mais sur ces étrangers j'ai des droits légitimes ;</l>
+                        <l n="518">Et vous devez tous deux les prendre pour victimes.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="519">Monsieur, vous tenez là de sort mauvais propos.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="520">Où sont ces étrangers ? Répondez en deux mots.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="521">Tu devrais le savoir, un vil tyran qui tremble</l>
+                        <l n="522">Devrait en espions être mieux ce me semble.</l>
+                        <l n="523">Un des deux dans ce Temple est encor retenu,</l>
+                        <l n="524">L'autre est déjà parti, ce fait là t'est connu.</l>
+                        <l n="525">Tu devais l'empêcher ; mais chez toi tu demeures</l>
+                        <l n="526" part="I">Pourquoi faire ? Dis moi.</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="526" part="F">J'ai dormi vingt-quatre_heures.</l><!--@syll="6"-->
+                        <l n="527">Mais que cet étranger paraisse sans tarder.</l>
+                        <l n="528">Je le vois ; à mes yeux il faut le poignarder.</l>
+                    </sp><!--@who="THOAS"-->
+</div>
+<div type="scene" n="22">
+                    <head>SCÈNE XXII. Oreste, suivi des prêtresses et  les acteurs précédents.</head>
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="529">Qui ? Moi le poignarder ! Apprends qu'il est mon frère.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="530">Eh ! Quand cela serait, il ne m'importe guère.</l>
+                        <l n="531">Obéissez, Madame, et qu'il saute le pas.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="532">Ô ciel, vous l'entendez et vous ne tonnez pas !</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="533">Ton âme à mon aspect, d'effroi n'est pas atteinte !</l>
+                        <l n="534">De mon sang, sur mon front vois la Majesté peinte ;</l>
+                        <l n="535">Au nom d'Agamemnon, Tyran, baisse les yeux.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="536">Oui, c'est un nom vraiment bien beau, bien précieux,</l>
+                        <l n="537">Qu'une race où le crime eSt une maladie.</l>
+                        <l n="538">La femme, le mari, le fils, tout s'expédie.</l>
+                        <l n="539">Moi, je vais te traiter de la même façon</l>
+                        <l n="540">Que j'avais l'honneur d'être de ta maison.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="541">Tu n'es qu'un plat tyran dont la fureur oisive,</l>
+                        <l n="542">Joint à l'emportement une action tardive ;</l>
+                        <l n="543">Tu menaces toujours sans rien effectuer.</l>
+                        <l n="544" part="I">Dis, pourquoi reviens- tu ?</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="544" part="F">Pour le faire tuer.</l><!--@syll="6"-->
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="545">Madame, doucement, cela vous plaît à dire,</l>
+                        <l n="546">Mais je veux avant moi que l'étranger expire</l>
+                        <l n="547">Que la Religion conduise votre main,</l>
+                        <l n="548">Armez-vous du couteau, plongez-le dans son sein.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="549">Paresseux, ne peux tu faire cela toi-même ?</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="550">Cela compromettrait la puissance suprême.</l>
+                        <l n="551">Pour servir mon courroux, Gardes obéissez.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="552">Qu'allez-vous faire, ô ciel ! Profanes, frémissez</l>
+                        <l n="553">Quoi ! L'on a donc ici d'assez vilaines âmes</l>
+                        <l n="554">Pour y faire périr les hommes par les femmes !</l>
+                        <l n="555">Et moi je souffrirais un pareil contre-sens !</l>
+                        <l n="556">Non, vous m'en puniriez Dieux justes, Dieux puissants,</l>
+                        <l n="557">Qu'oses-tu commander dans ton aveugle rage ?</l>
+                        <l n="558">L'excès de mon malheur me rend tout mon courage.</l>
+                        <l n="559">Prêtresses, avec soin gardez ce garçon-là,</l>
+                        <l n="560">Dans votre solitude il vous désennuiera</l>
+                        <l n="561">Et mes attentions seront bien reconnues.</l>
+                        <l n="562">Si quelque frère un jour peut vous tomber des nues,</l>
+                        <l n="563">Vous me le céderez, l'arrangement est doux,</l>
+                        <l n="564">Je le prendrai pour moi ; prenez le mien pour vous.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="565">Mais qui peut faire ici cet affreux tintamarre ?</l>
+                    </sp><!--@who="THOAS"-->
+</div>
+<div type="scene" n="23">
+                    <head>SCÈNE XXIII. Arbas, Les Acteurs précédents.</head>
+<sp who="#arbas">
+                        <speaker>ARBAS.</speaker>
+                        <l n="566">Sauvez-vous, s'il se peut, Seigneur, de la bagarre.</l>
+                        <l n="567">Ce Palais est rempli de farouches soldats.</l>
+                    </sp><!--@who="ARBAS"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="568" part="I">D'où diable sortent-ils ?</l><!--@syll="6"-->
+                    </sp><!--@who="THOAS"-->
+<sp who="#arbas">
+                        <speaker>ARBAS.</speaker>
+                        <l n="568" part="F">Je ne le comprends pas.</l><!--@syll="6"-->
+                    </sp><!--@who="ARBAS"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="569">Avant de réprimer cette révolte impie,</l>
+                        <l n="570">Moi-même à l'étranger je vais ôter la vie.</l>
+                    </sp><!--@who="THOAS"-->
+</div>
+<div type="scene" n="24">
+                    <head>SCÈNE XXIV. Pilade, sa suite et les susdits.</head>
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="571">Je viens à point nommé punir tes cruautés,</l>
+                        <l n="572" part="I">Reconnais un héros ; meurs, Tyran.</l><!--@syll="9"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="572" part="F">Arrêtez</l><!--@syll="3"-->
+                        <l n="573">Parce que je suis bon, faut-il que l'on me tue ?</l>
+                        <l n="574">Tenez, arrangeons-nous, emportez la statue,</l>
+                        <l n="575">Laissez-moi vivre en paix ; partez, tout est d'accord,</l>
+                        <l n="576">Ensanglanter la scène, oh ! C'est un peu trop sort.</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="577">Mais à mes noirs transports je ne suis plus en proie ;</l>
+                        <l n="578">Je me trouve moins sou, ma tête se nettoie ;</l>
+                        <l n="579">Ma soeur, je vais cesser d'être un objet d'effroi</l>
+                        <l n="580">Et les diables je pense ont pris congé de moi.</l>
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="581" part="I">Comment c'est là ta soeur ?</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#oreste">
+                        <speaker>ORESTE.</speaker>
+                        <l n="581" part="F">Oui, c'est Iphigénie.</l><!--@syll="6"-->
+                    </sp><!--@who="ORESTE"-->
+<sp who="#pilade">
+                        <speaker>PILADE.</speaker>
+                        <l n="582">Tant mieux pour moi, vraiment ; peste, qu'elle est jolie !</l>
+                        <l n="583" part="I">Elle part avec nous ?</l><!--@syll="6"-->
+                    </sp><!--@who="PILADE"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE.</speaker>
+                        <l n="583" part="F">Rendons grâces aux Dieux,</l><!--@syll="6"-->
+                        <l n="584">La Loi de la Nature est donc la Loi des Cieux.</l>
+                        <stage type="toward">AU PUBLIC.</stage>
+                        <l n="585">Messieurs, loin de vouloir, dans cette Parodie</l>
+                        <l n="586">Lancer des traits méchants contre la Tragédie,</l>
+                        <l n="587">Nous respectons l'auteur dont le brillant pinceau</l>
+                        <l n="588">A placé l'amitié dans un cadre si beau,</l>
+                        <l n="589">Qui malgré les succès, échappant à l'ivresse</l>
+                        <l n="590">Pour les mieux mériter, a corrigé sa pièce ;</l>
+                        <l n="591">Et qui, comme un prodige, offre à tous ses rivaux</l>
+                        <l n="592">Un auteur triomphant qui connut ses défauts.</l>
+                        <l n="593">Les larmes du public consacrent sa victoire</l>
+                        <l n="594">L'actrice inimitable en partage la gloire.</l>
+                        <l n="595">Trop heureux le théâtre, où l'auteur et l'acteur,</l>
+                        <l n="596">Par des talents égaux, charment le spectateur.</l>
+                        <l n="597">D'un mérite si rare admirateurs modestes,</l>
+                        <l n="598">En les parodiant, nous ramassons leurs têtes.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<stage type="explicit">Fin de la piéce.</stage>
+<stage type="title">TRIO.</stage>
+<sp who="#oreste #iphigenie">
+                        <speaker>ORESTE, IPHIGÉNIE.</speaker>
+                        <l n="599">Embarquons-nous</l>
+                        <l n="600">Jouissons tous,</l>
+                        <l n="601">D'un sort plus tranquille,</l>
+                        <l n="602">Bien nous en prend</l>
+                        <l n="603">Que le tyran</l>
+                        <l n="604">Soit bon et facile,</l>
+                        <l n="605">Tout sert nos voeux.</l>
+                        <l n="606">À vivre heureux</l>
+                        <l n="607">Tout enfin nous exhorte ;</l>
+                        <l n="608">Faisons gaiement</l>
+                        <l n="609">Le dénouement.</l>
+                        <l n="610">Le plaisir me transporte.</l>
+                    </sp><!--@who="ORESTE, IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS.</speaker>
+                        <l n="611">Prince des fous</l>
+                        <l n="612">Embarquez-vous,</l>
+                        <l n="613">Laissez-moi tranquille.</l>
+                        <l n="614">Dans vos propos,</l>
+                        <l n="615">Dans vos complots,</l>
+                        <l n="616">Je suis inutile.</l>
+                        <l n="617">Tout sert vos voeux</l>
+                        <l n="618">Soyez heureux,</l>
+                        <l n="619">Mais que d'ici l'on sorte</l>
+                        <l n="620">Faites gaiement</l>
+                        <l n="621">Le dénouement.</l>
+                        <l n="622">Que le Diable vous emporte</l>
+                    </sp><!--@who="THOAS"-->
+<sp who="#iphigenie">
+                        <speaker>IPHIGÉNIE, à Oreste.</speaker>
+                        <l n="623">Hélas ! Mon cher,</l>
+                        <l n="624">Que j'ai souffert</l>
+                        <l n="625">Dans ce lieu funeste !</l>
+                        <l n="626">J'ai malgré moi</l>
+                        <l n="627">Fait un emploi,</l>
+                        <l n="628">Que mon coeur déteste.</l>
+                        <l n="629">Mais dès ce jour,</l>
+                        <l n="630">Envers l'amour</l>
+                        <l n="631">J'expierai mon crime,</l>
+                        <l n="632">Loi de ces lieux,</l>
+                        <l n="633">J'aimerais mieux</l>
+                        <l n="634">Moi-même être victime.</l>
+                    </sp><!--@who="IPHIGÉNIE"-->
+<sp who="#thoas">
+                        <speaker>THOAS, seul.</speaker>
+                        <l n="635">Prince des sous</l>
+                        <l n="636">Embarquez-vous.</l>
+                        <l n="637">Adieu, triste Oreste.</l>
+                        <l n="638">Dans ces climats</l>
+                        <l n="639">Laissez Thoas,</l>
+                        <l n="640">Il saut qu'il y reste.</l>
+                        <l n="641">Si j'étais mort,</l>
+                        <l n="642">Pourrais-je encor :</l>
+                        <l n="643">Régner en Tauride ?</l>
+                        <l n="644">Je dois céans,</l>
+                        <l n="645">Régner longtemps,</l>
+                        <l n="646">Et l'histoire en décide.</l>
+                        <stage type="repeat">On reprend le Trio.</stage>
+                    </sp><!--@who="THOAS"-->
+</div>
+</div>
+</body>
+</text>
+</TEI>
