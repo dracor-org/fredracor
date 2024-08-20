@@ -22,7 +22,7 @@ The corpus can be explored at [**dracor.org/fre**](https://dracor.org/fre).
 
 … we suggest the following:
 
-* French Drama Corpus (FreDraCor): A TEI P5 Version of Paul Fièvre's "Théâtre Classique" Corpus. Edited by Carsten Milling, Frank Fischer and Mathias Göbel. Hosted on GitHub, 2021–. https://github.com/dracor-org/fredracor
+- French Drama Corpus (FreDraCor): A TEI P5 Version of Paul Fièvre's "Théâtre Classique" Corpus. Edited by Carsten Milling, Frank Fischer and Mathias Göbel. Hosted on GitHub, 2021–. https://github.com/dracor-org/fredracor
 
 ## Changes, corrections and additions we have made
 
@@ -77,7 +77,7 @@ schema run `./validate` from the root of the repo. (You will need to have
 In fact, this script can be used to validate any directory of TEI documents.
 Just pass the directory as the first argument. For instance, if you have
 [gerdracor](https://github.com/dracor-org/gerdracor) checked out next to
-*fredracor*, try:
+_fredracor_, try:
 
 ```bash
 ./validate ../gerdracor/tei
@@ -117,7 +117,7 @@ repository:
 ./tc2dracor ../theatre-classique/xml/*.{xml,XML}
 ```
 
-__NOTE:__ The `dracor` branch of the `theatre-classique` repo contains
+**NOTE:** The `dracor` branch of the `theatre-classique` repo contains
 corrections and amendments to the original source files which the conversion
 script relies on but have not (yet) been adopted upstream.
 
@@ -174,7 +174,7 @@ see the exact location of these files at the end of the script run.
 The transformation process uses the file [authors.xml](authors.xml) to unify
 and enrich author information within FreDraCor. The entries in this file provide
 a canonical `tei:author` element for each author together with the matching
-author string in the source documents (in the  `name` elements), e.g.:
+author string in the source documents (in the `name` elements), e.g.:
 
 ```xml
 <author>
