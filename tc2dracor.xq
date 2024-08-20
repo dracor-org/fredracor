@@ -108,6 +108,7 @@ declare function local:make-authors ($doc, $filename) {
     let $isni := normalize-space($author/@ISNI)
     let $normalized :=
       $author-map//author[isni eq $isni or name eq $content]/tei:author
+    where $content ne ""
 
     return if ($normalized) then (
       $normalized,
