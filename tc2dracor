@@ -16,6 +16,7 @@ OPTIONS:
   -n, --num N       number of exist containers to spin up (default: 2)
   -p, --port N      port number of eXist database to use
   -o, --output DIR  directory to write files to (default: ./tei)
+  -f, --force       overwrite uncommitted local changes
   -D, --docker      use docker even when podman is available
   -P, --progress    enable a progress bar
   -v, --verbose     show more detailed output
@@ -141,6 +142,10 @@ while (( "$#" )); do
       PROGRESS=yes
       shift
       ;;
+    -f|--force)
+      FORCE=yes
+      shift
+      ;;
     -v|--verbose)
       VERBOSE=yes
       shift
@@ -224,7 +229,8 @@ fi
 # check git status of OUT_DIR
 cd $OUT_DIR
 dotgit=$(git rev-parse --git-dir 2> /dev/null)
-if [[ -n "$dotgit" ]] && \
+if [[ -z "$FORCE" ]] && \
+   [[ -n "$dotgit" ]] && \
    [[ $(git status --porcelain --untracked-files=no .) != '' ]]
 then
   echo
