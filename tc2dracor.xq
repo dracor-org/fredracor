@@ -707,30 +707,6 @@ declare function local:transform($nodes) {
             local:transform($node/node())
         }
 
-      case element(castList) return
-        if($node/following::*:castItem)
-        then
-          element {QName('http://www.tei-c.org/ns/1.0', 'castList')} {
-            $node/@*,
-            local:transform($node/node()),
-            $node/following::*:castItem => local:transform()
-          }
-        else
-          element {QName('http://www.tei-c.org/ns/1.0', 'castList')} {
-            $node/@*,
-            local:transform($node/node())
-          }
-
-      case element(castItem) return
-        if(not($node/parent::*:castList))
-        then ()
-          (: do nothing as we includ the castItem outside of castList via the castList instruction :)
-        else
-          element {QName('http://www.tei-c.org/ns/1.0', 'castItem')} {
-            $node/@*,
-            local:transform($node/node())
-          }
-
   default return
     element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
       $node/@* except ($node/@type, $node/@id, $node/@xml.lang),
