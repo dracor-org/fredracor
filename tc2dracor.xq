@@ -367,7 +367,7 @@ declare function local:transform($nodes) {
                                     )
                 return
                 (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                $node/@* except ($exceptionsId, $exceptionsPart, $exceptionsEtc),
+                $node/@* except ($exceptionsId, $exceptionsPart, $exceptionsEtc, $node/@type),
                     if(not($exceptionsId)) then () else
                 attribute n { $exceptionsId ! string(.) },
                 $exceptionsPart !
