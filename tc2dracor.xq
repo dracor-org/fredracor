@@ -226,84 +226,29 @@ declare function local:transform($nodes) {
             case processing-instruction() return $node
 
             case element(div1) return
-                (: @id (numbering) removed :)
+                (: @id (numbering) and @stage removed :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
                 if ($node/@type[. != '']) then attribute type { local:fix-type($node/@type) } else (),
                 $node/@*[. != ''] except ($node/@stage, $node/@id, $node/@type),
                 local:transform($node/node())
-            }, $node/@stage ! local:attribute-to-comment(.))
+              }, $node/@stage ! local:attribute-to-comment(.))
 
             case element(div2) return
-                let $exceptionsType := (
-                                    $node/@type,
-                                    $node/@tpe,
-                                    $node/@typ,
-                                    $node/@typê,
-                                    $node/@typE
-                                    )
-                return
                 (: @id (numbering) removed :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-                $exceptionsType[. != ''] ! attribute type { local:fix-type(.) },
-                $node/@*[. != ''] except ($node/@stage, $node/@id, $exceptionsType),
+                $node/@type[. != ''] ! attribute type { local:fix-type(.) },
+                $node/@*[. != ''] except ($node/@stage, $node/@id, $node/@type),
                 local:transform($node/node())
             }, $node/@stage ! local:attribute-to-comment(.))
 
             case element(div) return
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-                    $node/@* except ($node/@id, $node/@typê, $node/@typ, $node/@type),
-                    ($node/@typê, $node/@typ, $node/@type)[. != ''] ! attribute type { local:fix-type(.) },
+                    $node/@* except ($node/@id, $node/@type),
+                    $node/@type[. != ''] ! attribute type { local:fix-type(.) },
                     local:transform($node/node())
             }, ($node/@stage, $node/@id) ! local:attribute-to-comment(.))
 
             case element(sp) return
-                let $exceptionsStage := (
-                                $node/@stage,
-                                $node/@stag,
-                                $node/@styage,
-                                $node/@stgae,
-                                $node/@qtage,
-                                $node/@sstage,
-                                $node/@dtage,
-                                $node/@stgage,
-                                $node/@swardtage,
-                                $node/@wardstage,
-                                $node/@owardstage,
-                                $node/@corstage,
-                                $node/@satge,
-                                $node/@s6tage,
-                                $node/@stahe,
-                                $node/@stagae,
-                                $node/@stge,
-                                $node/@sage,
-                                $node/@sgage,
-                                $node/@stagge,
-                                $node/@wtage,
-                                $node/@syage,
-                                $node/@stagee,
-                                $node/@wstage,
-                                $node/@tstage,
-                                $node/@stahge,
-                                $node/@sttage,
-                                $node/@astage,
-                                $node/@stange,
-                                $node/@stand,
-                                $node/@stagle,
-                                $node/@stagek,
-                                $node/@sgtage,
-                                $node/@staage,
-                                $node/@sytage,
-                                $node/@strage,
-                                $node/@smtage,
-                                $node/@oward,
-                                $node/@syahe,
-                                $node/@stageward,
-                                $node/@rtestage,
-                                $node/@stagepull,
-                                $node/@age,
-                                $node/@get,
-                                $node/@chstage
-                                )
                 let $exceptionsWho := (
                                 $node/@who,
                                 $node/@stwho,
@@ -315,9 +260,11 @@ declare function local:transform($nodes) {
                                 $node/@w4ho
                                 )
                 return
-                if( not(exists($node/* except $node/*:speaker)) ) then comment { 'ERROR: ', serialize($node)} else (: nearly empty sp in corneillet-geolierdesoismeme.xml :)
+                if( not(exists($node/* except $node/*:speaker)) )
+                then comment { 'ERROR: ', serialize($node)}
+                else
                 (element {QName('http://www.tei-c.org/ns/1.0', 'sp')} {
-                $node/@* except ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward, $node/@ge, $node/@syll, $node/@class, $node/@aparte), (: typo in ancelot-arago-papillotes.xml, bernardt-mystere.xml  :)
+                $node/@* except ($node/@stage, $exceptionsWho, $node/@type),
                 attribute who {
                     let $easy := tokenize(string-join($exceptionsWho, ' '), $who-tokenize-pattern)
                                      ! ('#' || local:translate(.))
@@ -330,7 +277,7 @@ declare function local:transform($nodes) {
                 (: FIXME: this should be changed in theatre-classique#dracor :)
                 (: there is text within sp audiffret-albertdurer.xml :)
                 local:transform($node/node() except $node/text())
-            }, ($exceptionsStage, $exceptionsWho, $node/@type, $node/@toward, $node/@ge, $node/@syll, $node/@aparte) ! local:attribute-to-comment(.) ) (: @class was used a single time, so we do not take the effort to write it to a comment :)
+            }, ($exceptionsWho, $node/@type) ! local:attribute-to-comment(.) )
 
             case element(s) return
                 (: minor correction to prevent multiple usage of an ID :)
@@ -386,14 +333,6 @@ declare function local:transform($nodes) {
                 }
 
             case element(p) return
-                let $exceptionsType := (
-                                $node/@type,
-                                $node/@tyep,
-                                $node/@typee,
-                                $node/@tyope,
-                                $node/@tpe,
-                                $node/@class)
-
                 let $exceptionsId := (
                                 $node/@id,
                                 $node/@i,
@@ -403,26 +342,18 @@ declare function local:transform($nodes) {
                                 $node/@if,
                                 $node/@n) (: put @n here, to integrate in new created @n by a single instruction :)
 
-                (: move tei:p[@type='v'] to tei:l as it represents vers. distinction unclear. :)
-                let $vers := ('v', 'vers')
-                let $isVers :=
-                            ($node/@type = $vers)
-                            or ($node/@tyep = $vers)
-                            or ($node/@typee = $vers)
-                            or ($node/@tyope = $vers)
-                            or ($node/@class = $vers)
-
                 return
-                    if($isVers)
+                (: move tei:p[@type='v'] to tei:l as it represents vers. distinction unclear. :)
+                if($node/@type = ('v', 'vers'))
                 then
                     element {QName('http://www.tei-c.org/ns/1.0', 'l')} {
-                    $node/@* except ($exceptionsId, $exceptionsType),
+                    $node/@* except ($exceptionsId, $node/@type),
                     $exceptionsId ! attribute n {string(.)},
                     local:transform($node/node())
                 }
                 else
                     (element {QName('http://www.tei-c.org/ns/1.0', $node/local-name())} {
-                    $node/@* except ($exceptionsId, $exceptionsType),
+                    $node/@* except ($exceptionsId, $node/@type),
                     $exceptionsId ! attribute n {string(.)},
                     local:transform($node/node())
                 }, ($node/@class) ! local:attribute-to-comment(.) )
@@ -472,10 +403,6 @@ declare function local:transform($nodes) {
         :)
             case element(docImprint) return
                 (: remove unknown element :)
-                (: FIXME: this looses the following text node in in
-                   boyer-jeune-marius:
-                   "À PARIS, Chez GABRIEL QUINET, au Palais, dans la Galerie des Prisonniers, à l'Ange Gabriel"
-                :)
                 element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
                 $node/@* except $node/@type,
                 attribute type {'docImprint'},
@@ -630,36 +557,10 @@ declare function local:transform($nodes) {
                     () (: remove this element, when it has no or whitespace only text inside :)
 
             case element(note) return
-                let $exceptionsType := (
-                                    $node/@typ,
-                                    $node/@typr,
-                                    $node/@typr,
-                                    $node/@typpe,
-                                    $node/@typee,
-                                    $node/@typep,
-                                    $node/@tyep,
-                                    $node/@tyê,
-                                    $node/@tyype,
-                                    $node/@tpe,
-                                    $node/@tye,
-                                    $node/@tyepe,
-                                    $node/@tyope,
-                                    $node/@typz,
-                                    $node/@ytpe,
-                                    $node/@tppe,
-                                    $node/@typp,
-                                    $node/@typoe,
-                                    $node/@tyhpe,
-                                    $node/@Type,
-                                    $node/@stage, (: used as @type in schelandre-tyrsidon-i.xml :)
-                                    $node/@id, (: used as @type in campistron-tachmas.xml :)
-                                    $node/@note
-                                    )
-                return
                 (: rename attribute typ to type :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'note')} {
-                    $node/@*[. != ''] except ($exceptionsType), (: empty @type in anonyme-chapelaindecoiffe.xml :)
-                    $exceptionsType[. != ''] ! attribute type { local:fix-type(.) },
+                    $node/@*[. != ''] except ($node/@type), (: empty @type in anonyme-chapelaindecoiffe.xml :)
+                    $node/@type[. != ''] ! attribute type { local:fix-type(.) },
                     local:transform($node/node())
                 }, $node/@note ! local:attribute-to-comment(.) )
 
@@ -729,18 +630,8 @@ declare function local:transform($nodes) {
 
 
             case element(stage) return
-                let $exceptionsType := (
-                                    $node/@tye,
-                                    $node/@typ,
-                                    $node/@tyepe,
-                                    $node/@ype,
-                                    $node/@tyep,
-                                    $node/@typpe,
-                                    $node/@typr,
-                                    $node/@type
-                                    )
                 let $newType :=
-                    ($exceptionsType)[. != ''] ! attribute type { local:fix-type(.) }
+                    ($node/@type)[. != ''] ! attribute type { local:fix-type(.) }
 
                 return
 
@@ -749,13 +640,13 @@ declare function local:transform($nodes) {
                 then
                     (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
                         (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
-                            $node/@* except ($node/@stage, $exceptionsType),
+                            $node/@* except ($node/@stage, $node/@type),
                             local:transform($node/node())
                         }, $node/@stage ! local:attribute-to-comment(.))
                     })
                 else
                 (element {QName('http://www.tei-c.org/ns/1.0', 'stage')} {
-                $node/@* except ($node/(@id|@stage|@decor), $exceptionsType),
+                $node/@* except ($node/(@id|@stage|@decor), $node/@type),
                 $newType,
                 $node/@id ! attribute n {string(.)},
                 local:transform($node/node())
