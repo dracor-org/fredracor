@@ -188,6 +188,41 @@ declare function local:fix-type ($value) as xs:string {
   string($value) => normalize-space() => replace(" ", "_")
 };
 
+declare function local:to-div-with-type ($node, $type) {
+  if (normalize-space($node) = ('', '.', '. .')) then
+    (: Sometimes an element skeleton can contain periods. We consider those to
+      be empty and skip them :)
+    ()
+  else
+    element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
+    if ($type) then attribute type {$type} else (),
+    if ($node/element()) then
+      local:transform(
+        $node/node() except $node/element()[normalize-space(.) = '']
+      )
+    else
+      element {QName('http://www.tei-c.org/ns/1.0', 'p')} {
+        local:transform($node/node())
+      }
+  }
+};
+
+declare function local:to-div-with-type ($node) {
+  local:to-div-with-type($node, local-name($node))
+};
+
+declare function local:to-div ($node) {
+    local:to-div-with-type($node, ())
+};
+
+declare function local:to-elem ($node, $elem) {
+  if (normalize-space($node) = ('', '.')) then ()
+  else
+    element {QName('http://www.tei-c.org/ns/1.0', $elem)} {
+      local:transform($node/node())
+    }
+};
+
 declare function local:transform($nodes) {
   for $node in $nodes
   return
@@ -399,126 +434,75 @@ declare function local:transform($nodes) {
           local:transform($node/node())
         }
 
-  (: BEGIN
-      rename unknown or wrong used elements to div
-      and preserve usage as @type
-  :)
       case element(docImprint) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except $node/@type,
-          attribute type {'docImprint'},
-          local:transform($node/node())
-        }
+        (:
+          The docImprint element in TC typically aggregates information from
+          various parts of the original source, such as:
+          1. the actual imprint line, often marked up with made up elements like
+             'editeur', 'printer', 'imprimeur'
+          2. whole sections like prefaces, royal privileges etc.
+          3. other smaller texts like copyright statements or related notes
 
-      case element(privilege) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-        $node/@* except ($node/@id, $node/@date, $node/@value),
-          attribute type {'privilege'},
-          $node/text()[matches(., '\S')]
-            ! element {QName('http://www.tei-c.org/ns/1.0', 'head')} { . },
-          local:transform($node/node() except $node/text()[matches(., '\S')])
-        }
-
-      case element(editeur) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-        $node/@* except $node/@id,
-        attribute type {'editeur'},
-        element {QName('http://www.tei-c.org/ns/1.0', 'p')}{
-            local:transform($node/node())}
-        }
-
-      case element(imprimeur) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-        $node/@* except $node/@id,
-        attribute type {'imprimeur'},
-        element {QName('http://www.tei-c.org/ns/1.0', 'p')}{
-              local:transform($node/node())}
-        }
-
-      case element(acheveImprime) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except ($node/@id, $node/@value),
-          attribute type {'acheveImprime'},
-          element {QName('http://www.tei-c.org/ns/1.0', 'p')} {
+          While we can not put these sections back to their original places, we
+          try to disentangle them separating acual docImprint lines from other
+          material.
+        :)
+        if (normalize-space($node) = '') then
+          (: often the docImprint is just a skeleton of empty element, let's
+            ignore them from the start :)
+          ()
+        else if (
+          (: if docImprint has mixed content or contains only TEI standard
+            conformant children we simply render it's content inside a
+            docImprint element :)
+          count($node/text()[normalize-space(.) != ''])
+          or
+          count(
+            $node/* except (
+              $node/*:publisher, $node/*:pubPlace, $node/*:docDate, $node/*:rs
+            )
+          ) = 0
+        ) then
+          element {QName('http://www.tei-c.org/ns/1.0', 'docImprint')} {
             local:transform($node/node())
           }
-        }
+        else (
+          (: here we separate the docImprint texts form other things :)
+          comment {"<docImprint>"},
+          for $n in $node/(
+            *:p|*:publisher|*:editor|*:editeur|*:printer|*:imprimeur
+          )[normalize-space(.) != '']
+          return
+            element {QName('http://www.tei-c.org/ns/1.0', 'docImprint')} {
+              normalize-space($n)
+            },
 
-      case element(copyright) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except ($node/@id, $node/@type, $node/@value),
-          attribute type {'copyright'},
-          $node/@type ! local:attribute-to-comment(.),
-          element {QName('http://www.tei-c.org/ns/1.0', 'p')} {
-            local:transform($node/node())
-          }
-        }
+          for $n in $node/(*:copyright|*:tirage)[normalize-space(.) != '']
+          return
+            element {QName('http://www.tei-c.org/ns/1.0', 'p')} {
+              normalize-space($n)
+            },
 
-      case element(printer) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except ($node/@id, $node/@type, $node/@value),
-          attribute type {'printer'},
-          $node/@type ! local:attribute-to-comment(.),
-          element {QName('http://www.tei-c.org/ns/1.0', 'p')} {
-              local:transform($node/node())
-          }
-        }
+          for $n in $node/(
+            *:div|*:approbation|*:privilege|*:bookstore|*:enregistrement|
+            *:acheveImprime|*:acheveImprimer
+          )
+          return
+            local:to-div-with-type($n),
 
-      case element(approbation) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except ($node/@id, $node/@value, $node/@date),
-          attribute type {'approbation'},
-          local:transform($node/node())
-        }
+          comment {"</docImprint>"}
+        )
 
-      case element(enregistrement) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except $node/@id,
-          attribute type {'enregistrement'},
-          local:transform($node/node())
-        }
-
-      case element(postface) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except $node/@id,
-          attribute type {'postface'},
-          local:transform($node/node())
-        }
-
-      case element(epitre) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except $node/@id,
-          attribute type {'epitre'},
-          local:transform($node/node())
-        }
-
-      case element(errata) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except $node/@id,
-          attribute type {'errata'},
-          local:transform($node/node())
-        }
-
-      case element(preface) return
-        (: remove unknown element :)
-        element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-          $node/@* except $node/@id,
-          attribute type {'preface'},
-          local:transform($node/node())
-        }
-      (: END :)
+      (: transform TC custom elements to proper TEI ones :)
+      case element(printer) return local:to-elem($node, 'docImprint')
+      case element(privilege) return local:to-div-with-type($node)
+      case element(approbation) return local:to-div-with-type($node)
+      case element(preface) return local:to-div-with-type($node)
+      case element(postface) return local:to-div-with-type($node)
+      case element(acheveImprime) return local:to-div-with-type($node)
+      case element(enregistrement) return local:to-div-with-type($node)
+      case element(errata) return local:to-div-with-type($node)
+      case element(epitre) return local:to-div-with-type($node)
 
       case element(poem) return
         (: transform poem into ab :)
