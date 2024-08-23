@@ -110,17 +110,15 @@
 		<docDate when="1879">M D CCC LXXIX.</docDate>
 		 
 		<div type="docImprint">
-			<div type="printer">
-                    <p>À PARIS DES PRESSES DE D. JOUAUST, imprimeur breveté, rue SAINT-HONORÉ, 338</p>
-                </div><!--@id="JOUAUST"-->
-			<!--TODO: handling of editor name at this place unclear <editor id="LIBRAIRIE DES BIBLIOPHILES">À PARIS, LIBRAIRIE DES BIBLIOPHILES, rue Saint-Honoré, 338. </editor>-->
-			<print>
-                    <head>TIRAGE</head>
-				<p>300 exemplaires sur papier vergé (Nos 41 à 340).</p>
-				<p>20 sur papier de Chine (Nos , à 20).</p>
-				<p>20 sur papier Whatman (Nos 21 à40).</p>
-				<p>340 exemplaires, numérotés. N°187</p>
-			</print>
+			<publisher>À PARIS, LIBRAIRIE DES BIBLIOPHILES, rue Saint-Honoré, 338. </publisher><!--@id="LIBRAIRIE DES BIBLIOPHILES"-->
+		</div>
+		<!-- NB: in the original source this appears before the title page -->
+		<div>
+			<head>TIRAGE</head>
+			<p>300 exemplaires sur papier vergé (Nos 41 à 340).</p>
+			<p>20 sur papier de Chine (Nos , à 20).</p>
+			<p>20 sur papier Whatman (Nos 21 à40).</p>
+			<p>340 exemplaires, numérotés. N°187</p>
 		</div>
 	<div type="preface">
                 <head>PRÉFACE</head>
@@ -3408,5 +3406,11 @@
 </div>
 </div>
 </body>
+<back>
+	<div type="docImprint">
+		<pubPlace>À PARIS</pubPlace> <publisher>DES PRESSES DE D. JOUAUST, imprimeur breveté, rue SAINT-HONORÉ, 338</publisher>
+		<docDate when="1879">M D CCC LXXIX</docDate>
+	</div>
+</back>
 </text>
 </TEI>
