@@ -592,13 +592,12 @@ declare function local:transform($nodes) {
         (: END :)
 
             case element(poem) return
-                (: move poem to ab, preserve via comments :)
-                (comment { '<poem>' },
+                (: transform poem into ab :)
                 element {QName('http://www.tei-c.org/ns/1.0', 'ab')} {
-                    $node/@*[. != ''] except $node/@tpe,
+                    attribute type { if($node/@type[. != '']) then local:fix-type($node/@type) else 'poem' },
+                    comment {'<poem>'},
                     local:transform($node/node())
-                },
-                comment { '</poem>' })
+                }
             case element(sonnet) return
                 element {QName('http://www.tei-c.org/ns/1.0', 'lg')} {
                     $node/@* except $node/@type,
@@ -608,7 +607,7 @@ declare function local:transform($nodes) {
             case element(stanza) return
                 element {QName('http://www.tei-c.org/ns/1.0', 'lg')} {
                     $node/@* except $node/@type,
-                    attribute type { if($node/@type[. != '']) then local:fix-type($node/@type) else 'stanza'},
+                    attribute type { if($node/@type[. != '']) then local:fix-type($node/@type) else 'stanza' },
                     local:transform($node/node())
                 }
 
