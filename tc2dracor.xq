@@ -184,6 +184,10 @@ declare function local:translate($string as xs:string) as xs:string {
         else $work
 };
 
+declare function local:fix-type ($value) as xs:string {
+  string($value) => normalize-space() => replace(" ", "_")
+};
+
 declare function local:transform($nodes) {
     for $node in $nodes
     return
@@ -224,12 +228,14 @@ declare function local:transform($nodes) {
             case element(div1) return
                 (: @id (numbering) removed :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-                $node/@* except ($node/@stage, $node/@id),
+                if ($node/@type[. != '']) then attribute type { local:fix-type($node/@type) } else (),
+                $node/@*[. != ''] except ($node/@stage, $node/@id, $node/@type),
                 local:transform($node/node())
             }, $node/@stage ! local:attribute-to-comment(.))
 
             case element(div2) return
                 let $exceptionsType := (
+                                    $node/@type,
                                     $node/@tpe,
                                     $node/@typ,
                                     $node/@typê,
@@ -238,15 +244,15 @@ declare function local:transform($nodes) {
                 return
                 (: @id (numbering) removed :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
-                $node/@* except ($node/@stage, $node/@id, $exceptionsType),
-                $exceptionsType ! attribute type { string(.)},
+                $exceptionsType[. != ''] ! attribute type { local:fix-type(.) },
+                $node/@*[. != ''] except ($node/@stage, $node/@id, $exceptionsType),
                 local:transform($node/node())
             }, $node/@stage ! local:attribute-to-comment(.))
 
             case element(div) return
                 (element {QName('http://www.tei-c.org/ns/1.0', 'div')} {
                     $node/@* except ($node/@id, $node/@typê, $node/@typ, $node/@type),
-                    ($node/@typê, $node/@typ, $node/@type)[. != ''] ! attribute type { string(.)},
+                    ($node/@typê, $node/@typ, $node/@type)[. != ''] ! attribute type { local:fix-type(.) },
                     local:transform($node/node())
             }, ($node/@stage, $node/@id) ! local:attribute-to-comment(.))
 
@@ -589,7 +595,7 @@ declare function local:transform($nodes) {
                 (: move poem to ab, preserve via comments :)
                 (comment { '<poem>' },
                 element {QName('http://www.tei-c.org/ns/1.0', 'ab')} {
-                    $node/@* except $node/@tpe,
+                    $node/@*[. != ''] except $node/@tpe,
                     local:transform($node/node())
                 },
                 comment { '</poem>' })
@@ -602,14 +608,14 @@ declare function local:transform($nodes) {
             case element(stanza) return
                 element {QName('http://www.tei-c.org/ns/1.0', 'lg')} {
                     $node/@* except $node/@type,
-                    attribute type { if($node/@type) then $node/@type else 'stanza'},
+                    attribute type { if($node/@type[. != '']) then local:fix-type($node/@type) else 'stanza'},
                     local:transform($node/node())
                 }
 
             case element(q) return
                 (element {QName('http://www.tei-c.org/ns/1.0', 'q')} {
                     $node/@* except $node/@direct,
-                    attribute type { if($node/@type) then $node/@type else 'stanza'},
+                    attribute type { if($node/@type[. != '']) then local:fix-type($node/@type) else 'stanza'},
                     local:transform($node/node())
             }, $node/@direct ! local:attribute-to-comment(.) )
 
@@ -654,7 +660,7 @@ declare function local:transform($nodes) {
                 (: rename attribute typ to type :)
                 (element {QName('http://www.tei-c.org/ns/1.0', 'note')} {
                     $node/@*[. != ''] except ($exceptionsType), (: empty @type in anonyme-chapelaindecoiffe.xml :)
-                    $exceptionsType ! attribute type {string( . )},
+                    $exceptionsType[. != ''] ! attribute type { local:fix-type(.) },
                     local:transform($node/node())
                 }, $node/@note ! local:attribute-to-comment(.) )
 
@@ -662,7 +668,7 @@ declare function local:transform($nodes) {
                 (: rename attribute part to type :)
                 element {QName('http://www.tei-c.org/ns/1.0', 'titlePart')} {
                     $node/@* except $node/@part,
-                    $node/@part ! attribute type {string( $node/@part )},
+                    $node/@part ! attribute type {local:fix-type($node/@part)},
                     local:transform($node/node())
                 }
 
@@ -735,7 +741,7 @@ declare function local:transform($nodes) {
                                     $node/@type
                                     )
                 let $newType :=
-                    ($exceptionsType)[. != ''] ! attribute type { string(.) }
+                    ($exceptionsType)[. != ''] ! attribute type { local:fix-type(.) }
 
                 return
 
@@ -882,7 +888,7 @@ declare function local:construct-tei (
 
   let $subtitle := for $title-part in $doc//*:titlePart[@type="sub"] return
     element {QName('http://www.tei-c.org/ns/1.0', "title")} {
-      attribute type {"sub"},
+      attribute type {'sub'},
       (: title case only when there is significant uppercase :)
       if ($title-part => matches('[A-Z]{3}'))
       then local:titlecase($title-part)
