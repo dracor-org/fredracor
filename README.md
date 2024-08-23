@@ -7,9 +7,10 @@ Based on the extensive work of Paul Fièvre, we have been working on a
 version of [Théâtre Classique](https://www.theatre-classique.fr/index.html).
 FreDraCor is intended to be a valid TEI P5 resource.
 
-By now, the 1560 files from the source have been structurally cleaned and
-converted. We copied some information from the `castList` to the `particDesc`
-section and tried to preserve as much as possible.
+By now, the 1926 files from the source have been structurally cleaned and
+converted. All documents are **valid against the TEI-All schema**. We copied
+some information from the `castList` to the `particDesc` section and tried to
+preserve as much as possible.
 
 Besides the fact that all texts are out of copyright, the files (including
 intellectual work represented as markup) is – according to the source files –
@@ -201,6 +202,5 @@ into `authors.xml`.
 
 ## TODO
 
-As of now, 140 documents do not comply to the TEI-All schema yet. See the
-[list of open issues](https://github.com/dracor-org/fredracor/issues) for
-details on this and possible other enhancements.
+See the [list of open issues](https://github.com/dracor-org/fredracor/issues)
+for possible future enhancements.
