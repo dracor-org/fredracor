@@ -843,7 +843,9 @@ declare function local:construct-tei (
     - CORNEILLEP_MENTEUR.xml has two docDates, one without @value
     - MOLIERE_MEDICINVOLANT.xml has a second docDate with an empty @value
   :)
-  let $doc-date := $doc//*:docDate[matches(@value, '^\d{4}$')][1]
+  let $doc-date := $doc//*:docDate[
+    matches(@when, '^\d{4}$') or matches(@value, '^\d{4}$')
+  ][1]/(@when|@value)/string()
   let $print-date := if (count($print) = 2) then
     element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
       attribute type {'print'},
@@ -860,7 +862,7 @@ declare function local:construct-tei (
   else if ($doc-date) then
     element {QName('http://www.tei-c.org/ns/1.0', 'event')} {
       attribute type {'print'},
-      attribute when {string($doc-date/@value)},
+      attribute when {$doc-date},
       element {QName('http://www.tei-c.org/ns/1.0', 'desc')} {""}
     }
   else ()
