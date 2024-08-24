@@ -716,6 +716,40 @@ declare function local:transform($nodes) {
     }
 };
 
+declare function local:make-particDesc ($doc as element()) as node()* {
+  let $whos := ($doc//*:text//*:sp/tokenize(./@who || ./@ho || ./@w4ho, $who-tokenize-pattern) => distinct-values())
+  let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
+  return if (count($whos)) then
+    element {QName('http://www.tei-c.org/ns/1.0', 'particDesc')} {
+      element {QName('http://www.tei-c.org/ns/1.0', 'listPerson')} {
+
+        for $who in (($whos) ! local:translate(.) => distinct-values())
+        where $who (: do not parse empty @who :)
+        (: inconsistent usage of @id with @who. we have to translate/normalize to match. :)
+        let $castItem := $doc//*:role[local:translate(@id) eq $who]/parent::*
+        let $sex := switch (string($castItem[1]/*:role[1]/@sex))
+          case "1" return "MALE"
+          case "2" return "FEMALE"
+          default return "UNKNOWN"
+        let $comment :=
+          if($castItem[2])
+          then comment {'WARNING: multiple roles/castItems found in source, may result of local:translate#1'}
+          else ()
+
+        let $persName := local:titlecase($castItem[1]/*:role)
+        let $persName :=
+          if($persName eq '') then
+            local:titlecase(translate($who, '-', ' ')) else $persName
+        return
+          <person xml:id="{$who}" sex="{$sex}">{if(not($castItem)) then comment { 'WARNING: no castItem found for reference in @who' } else ()}
+            <persName>{$persName}</persName>
+          </person>
+
+      }
+    }
+  else ()
+};
+
 (: Construct DraCor TEI from original document :)
 declare function local:construct-tei (
   $doc as element(),
@@ -921,35 +955,7 @@ declare function local:construct-tei (
         </sourceDesc>
       </fileDesc>
       <profileDesc>
-        <particDesc>
-          <listPerson>
-  {
-    let $whos := ($doc//*:text//*:sp/tokenize(./@who || ./@ho || ./@w4ho, $who-tokenize-pattern) => distinct-values())
-    let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
-    for $who in (($whos) ! local:translate(.) => distinct-values())
-    where $who (: do not parse empty @who :)
-    (: inconsistent usage of @id with @who. we have to translate/normalize to match. :)
-    let $castItem := $doc//*:role[local:translate(@id) eq $who]/parent::*
-    let $sex := switch (string($castItem[1]/*:role[1]/@sex))
-      case "1" return "MALE"
-      case "2" return "FEMALE"
-      default return "UNKNOWN"
-    let $comment :=
-      if($castItem[2])
-      then comment {'WARNING: multiple roles/castItems found in source, may result of local:translate#1'}
-      else ()
-
-    let $persName := local:titlecase($castItem[1]/*:role)
-    let $persName :=
-      if($persName eq '') then
-        local:titlecase(translate($who, '-', ' ')) else $persName
-    return
-      <person xml:id="{$who}" sex="{$sex}">{if(not($castItem)) then comment { 'WARNING: no castItem found for reference in @who' } else ()}
-        <persName>{$persName}</persName>
-      </person>
-  }
-          </listPerson>
-        </particDesc>
+        {local:make-particDesc($doc)}
         <textClass>
           <keywords scheme="http://theatre-classique.fr">{' '}
             {comment {'extracted from "genre" and "type" elements'}}
