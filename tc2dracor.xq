@@ -284,24 +284,13 @@ declare function local:transform($nodes) {
         }
 
       case element(sp) return
-        let $exceptionsWho := (
-          $node/@who,
-          $node/@stwho,
-          $node/@givewho,
-          $node/@towardwho,
-          $node/@embarrassedwho,
-          $node/@breakwho,
-          $node/@ho,
-          $node/@w4ho
-        )
-        return
         if( not(exists($node/* except $node/*:speaker)) )
         then comment { 'ERROR: ', serialize($node)}
         else
         element {QName('http://www.tei-c.org/ns/1.0', 'sp')} {
-          $node/@* except ($node/@stage, $exceptionsWho, $node/@type),
+          $node/@* except ($node/@stage, $node/@who, $node/@type),
           attribute who {
-            let $easy := tokenize(string-join($exceptionsWho, ' '), $who-tokenize-pattern)
+            let $easy := tokenize(string-join($node/@who, ' '), $who-tokenize-pattern)
                               ! ('#' || local:translate(.))
             return
               if(string($easy[1]) != '')
@@ -717,7 +706,7 @@ declare function local:transform($nodes) {
 };
 
 declare function local:make-particDesc ($doc as element()) as node()* {
-  let $whos := ($doc//*:text//*:sp/tokenize(./@who || ./@ho || ./@w4ho, $who-tokenize-pattern) => distinct-values())
+  let $whos := ($doc//*:text//*:sp/tokenize(./@who, $who-tokenize-pattern) => distinct-values())
   let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
   return if (count($whos)) then
     element {QName('http://www.tei-c.org/ns/1.0', 'particDesc')} {
