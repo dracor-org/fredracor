@@ -80,16 +80,13 @@
 		</docTitle> 
 		<docDate when="1901">1901</docDate>
 		<docAuthor>CHARLES SAMSON</docAuthor>
-		<div type="docImprint">
-			<!--TODO: handling of editor name at this place unclear <editor id="BARBRÉ">PARIS, BARBRÉ, ÉDITEUR, 12, BOULEVARD SAINT-MARTIN, 12</editor>-->
-			<div type="printer">
-                    <p>IMP. F. JOURDAN, 36-38, ru de la GOUTTE-D'OR. - PARIS</p>
-                </div><!--@id="JOURDAN"-->
-		</div>		
+		<!--<docImprint>-->
+            <docImprint>PARIS, BARBRÉ, ÉDITEUR, 12, BOULEVARD SAINT-MARTIN, 12</docImprint>
+            <docImprint>IMP. F. JOURDAN, 36-38, ru de la GOUTTE-D'OR. - PARIS</docImprint><!--</docImprint>-->		
 		<castList>
                 <head>PERSONNAGES.</head>
 			<castItem>
-                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->, HENRY MAYER</castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role>, HENRY MAYER</castItem>
 	</castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
@@ -100,8 +97,8 @@
                     <head/>
 <sp who="#le-narrateur">
                         <speaker/>
-                        <stage type="dedicace">À ma petite amie MANETTE JOURDAN.</stage><!--<poem>-->
-                        <ab type="quatrains">
+                        <stage type="dedicace">À ma petite amie MANETTE JOURDAN.</stage>
+                        <ab type="quatrains"><!--<poem>-->
 <lg n="1">
 	<l n="1">Qui donc a dit que les printemps</l>
 	<l n="2">N'étaient jolis qu'à la campagne ?</l>
@@ -217,8 +214,8 @@
 	<l n="75">Ceux de Paris sont éclatants,</l>
 	<l n="76">Capiteux comme du Champagne.</l>
 </lg>
-</ab><!--</poem>-->
-                    </sp><!--@who="LE NARRATEUR"-->
+</ab>
+                    </sp>
 </div>
 </div>
 </body>

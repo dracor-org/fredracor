@@ -82,13 +82,9 @@
 		</docTitle> 
 		<docDate when="1876">1876</docDate>
 		<docAuthor>de LOUIS CHALMETON, DE L'ACADÉMIE DE CLERMONT, DE LA SOCIÉTÉ DES GENS DE LETTRES.</docAuthor>
-		<div type="docImprint">
-			<!--TODO: handling of editor name at this place unclear <editor type="COLLAY">CLERMONT-FERRAND IMPIRMERIE FERDINAND THIBAUD, LIBRAIRE, rue Saint-Genès, 8-10</editor>-->
-			<div type="printer">
-                    <p>CLERMONT, Typ. FERD. THIBAUD.
-			</p>
-                </div><!--@id="VIGOT"-->
-		</div>		
+		<!--<docImprint>-->
+            <docImprint>CLERMONT-FERRAND IMPIRMERIE FERDINAND THIBAUD, LIBRAIRE, rue Saint-Genès, 8-10</docImprint>
+            <docImprint>CLERMONT, Typ. FERD. THIBAUD.</docImprint><!--</docImprint>-->		
 		<div type="dedicace">
                 <opener>
                     <salute>A. BARDOUX</salute>
@@ -97,10 +93,10 @@
 			<p>Ces vers sont affectueusement dédiés par l'Auteur</p>
 		</div>
 		<performance>
-			<ab type="premiere">Lu à l'Académie de Clermont le 6 janvier  µ1876.</ab><!--@location="Académie de Clermont"--><!--@date="1876-01-06"-->
+			<ab type="premiere">Lu à l'Académie de Clermont le 6 janvier  µ1876.</ab>
 		</performance>
 	<div type="dedicace">
-		<destinataire>À JULES SIMON, DE L'ACADÉMIE FRANÇAISE.</destinataire>
+		<p>À JULES SIMON, DE L'ACADÉMIE FRANÇAISE.</p>
 	</div>
 	<div type="preface">
                 <head>AVANT-PROPOS</head>
@@ -129,9 +125,9 @@
 		<castList>
                 <head>PERSONNAGES.</head>
 			<castItem>
-                    <role corresp="#l-homme">L'HOMME</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#l-homme">L'HOMME</role>.</castItem>
 			<castItem>
-                    <role corresp="#la-mort">LA MORT</role><!--@sex="9"--><!--@type="F"--><!--@statut="mort"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#la-mort">LA MORT</role>.</castItem>
 	</castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps=""/>-->
 </front>
@@ -144,20 +140,20 @@
 <stage type="entrance">La mort paraît. - Robe traînante et long voile noir.</stage>
 <sp who="#l-homme">
                         <speaker>L'HOMME, apercevant la Mort.</speaker>
-                        <l n="1" part="I">Ô sombre Mort ! Qu'es-tu ?</l><!--@syll="6"-->
+                        <l n="1" part="I">Ô sombre Mort ! Qu'es-tu ?</l>
                         <stage type="toward">À la Tombe.</stage>
-                        <l n="1" part="F">Mystérieuse tombe,</l><!--@syll="6"-->
+                        <l n="1" part="F">Mystérieuse tombe,</l>
                         <l n="2">Quel est ton dernier mot ? L'homme, quand il y tombe,</l>
                         <l n="3">Trouve-t-il, dans ta nuit, les rayons d'un soleil?</l>
                         <l n="4">Son immobilité froide a-t-elle un réveil?</l>
                         <l n="5">Ou bien, d'ombre vêtu, couché dans une bière,</l>
                         <l n="6">Son corps doit-il rester à tout jamais poussière ?</l>
                         <l n="7">Au ver livré, n'avoir pour but que le néant,</l>
-                        <l n="8" part="I">Et mourir tout entier?</l><!--@syll="6"-->
-                    </sp><!--@stage="watch"--><!--@who="L'HOMME"-->
+                        <l n="8" part="I">Et mourir tout entier?</l>
+                    </sp>
 <sp who="#la-mort">
                         <speaker>LA MORT.</speaker>
-                        <l n="8" part="F">Non... ! Un mot effrayant</l><!--@syll="6"-->
+                        <l n="8" part="F">Non... ! Un mot effrayant</l>
                         <l n="9">Mais que tu comprends mal ! - Un nuage qui passe</l>
                         <l n="10">Et ne fait qu'obscurcir ! - Une main qui n'efface</l>
                         <l n="11">Les choses du présent que pour les remplacer,</l>
@@ -192,46 +188,46 @@
                         <l n="40">Dieu, c'est-à-dire, tout ! Le présent, l'avenir,</l>
                         <l n="41">Le passé, Dieu la loi, Dieu la force des choses !</l>
                         <l n="42">Dieu, le rayon du ciel, Dieu, le parfum des roses !...</l>
-                    </sp><!--@who="LA MORT"-->
+                    </sp>
 <sp who="#l-homme">
                         <speaker>L'HOMME, l'interrompant.</speaker>
-                        <l n="43" part="I">Mais la matière meurt !</l><!--@syll="6"-->
-                    </sp><!--@stage="interrupt"--><!--@who="L'HOMME"-->
+                        <l n="43" part="I">Mais la matière meurt !</l>
+                    </sp>
 <sp who="#la-mort">
                         <speaker>LA MORT.</speaker>
-                        <l n="43" part="F">Non, non, grâce à l'esprit</l><!--@syll="6"-->
+                        <l n="43" part="F">Non, non, grâce à l'esprit</l>
                         <l n="44">Ce condiment divin, d'elle rien ne périt !</l>
                         <l n="45">Le corps paraît tomber, mais l'esprit le relève.</l>
-                    </sp><!--@who="LA MORT"-->
+                    </sp>
 <sp who="#l-homme">
                         <speaker>L'HOMME, indiquant la tombe.</speaker>
-                        <l n="46" part="I">Une pierre le couvre !</l><!--@syll="6"-->
-                    </sp><!--@stage="show"--><!--@who="L'HOMME"-->
+                        <l n="46" part="I">Une pierre le couvre !</l>
+                    </sp>
 <sp who="#la-mort">
                         <speaker>LA MORT.</speaker>
-                        <l n="46" part="F">Une main la soulève</l><!--@syll="6"-->
+                        <l n="46" part="F">Une main la soulève</l>
                         <l n="47">Et mêlée aux lueurs vivantes d'un flambeau,</l>
                         <l n="48">Une céleste voix réveille le tombeau !...</l>
-                    </sp><!--@who="LA MORT"-->
+                    </sp>
 <sp who="#l-homme">
                         <speaker>L'HOMME, rêveur.</speaker>
-                        <l n="49" part="I">Une voix ?...</l><!--@syll="3"-->
-                    </sp><!--@satge="dream"--><!--@who="L'HOMME"-->
+                        <l n="49" part="I">Une voix ?...</l>
+                    </sp>
 <sp who="#la-mort">
                         <speaker>LA MORT, tendrement.</speaker>
-                        <l n="49" part="F">Tes douleurs sont par elle apaisées !</l><!--@syll="9"-->
-                    </sp><!--@stage="sweet"--><!--@who="LA MORT"-->
+                        <l n="49" part="F">Tes douleurs sont par elle apaisées !</l>
+                    </sp>
 <sp who="#l-homme">
                         <speaker>L'HOMME.</speaker>
                         <l n="50">Oui !... Quelquefois, souvent, je livre à mes pensées</l>
                         <l n="51">L'infini, l'inconnu, l'invisible !... Une voix</l>
                         <l n="52">Bienfaisante, alors, vient me révéler les lois</l>
-                        <l n="53" part="I">D'un monde surhumain ?...</l><!--@syll="6"-->
-                    </sp><!--@who="L'HOMME"-->
+                        <l n="53" part="I">D'un monde surhumain ?...</l>
+                    </sp>
 <sp who="#la-mort">
                         <speaker>LA MORT.</speaker>
-                        <l n="53" part="F">Et cette voix, qu'est elle ?</l><!--@syll="6"-->
-                    </sp><!--@who="LA MORT"-->
+                        <l n="53" part="F">Et cette voix, qu'est elle ?</l>
+                    </sp>
 <sp who="#l-homme">
                         <speaker>L'HOMME.</speaker>
                         <l n="54">Je l'ignore !.. Pourtant, je l'entends qui m'appelle</l>
@@ -260,22 +256,22 @@
                         <stage type="desperate">Avec désespoir.</stage>
                         <l n="76">Triste erreur !... Oui le corps, en dissolution,</l>
                         <l n="77">Reste à la terre, au ver, dont il est la pâture !</l>
-                        <l n="78" part="I">... Rien de plus !...</l><!--@syll="3"-->
-                    </sp><!--@who="L'HOMME"-->
+                        <l n="78" part="I">... Rien de plus !...</l>
+                    </sp>
 <sp who="#la-mort">
                         <speaker>LA MORT.</speaker>
-                        <l n="78" part="F">Quoi ! Déjà la plainte, le murmure ?</l><!--@syll="9"-->
+                        <l n="78" part="F">Quoi ! Déjà la plainte, le murmure ?</l>
                         <l n="79">Homme oublieux !... Ainsi la révélation</l>
                         <l n="80">Qui te charmait hier, ... n'est qu'une illusion</l>
                         <l n="81">Et le sombre néant reprend, dans ta pensée,</l>
                         <l n="82">Son droit au désespoir et sa place insensée !</l>
-                    </sp><!--@who="LA MORT"-->
+                    </sp>
 <sp who="#l-homme">
                         <speaker>L'HOMME, avec emportement.</speaker>
                         <l n="83">Le néant ? Le néant ?... Cruelle..., mais en toi</l>
                         <l n="84">Que pourrais-je donc voir qui ne soit pas sa loi ?</l>
                         <l n="85">La mort n'est-elle pas la nuit et le silence ?</l>
-                    </sp><!--@stage="nervous"--><!--@who="L'HOMME"-->
+                    </sp>
 <sp who="#la-mort">
                         <speaker>LA MORT.</speaker>
                         <l n="86">Non !... Jette donc les yeux sur l'univers immense ;</l>
@@ -317,14 +313,14 @@
                         <l n="121">Que rien ne meurt, pas plus l'esprit que la matière !....</l>
                         <stage type="happy">Victorieusement.</stage>
                         <l n="122">Et c'est moi qui, pour toi, viens jeter la lumière</l>
-                        <l n="123" part="I">Sur ces grands horizons de l'homme ?...</l><!--@syll="8"-->
-                    </sp><!--@who="LA MORT"-->
+                        <l n="123" part="I">Sur ces grands horizons de l'homme ?...</l>
+                    </sp>
 <sp who="#l-homme">
                         <speaker>L'HOMME, avec effusion.</speaker>
-                        <l n="123" part="F">Oh, je te crois !</l><!--@syll="4"-->
+                        <l n="123" part="F">Oh, je te crois !</l>
                         <l n="124">Tu me parles, ainsi que me parlait la voix !</l>
                         <l n="125">Oui !... Mais l'esprit, qu'est-il ? La matière qu'est-elle ?</l>
-                    </sp><!--@stage="enthousiasm"--><!--@who="L'HOMME"-->
+                    </sp>
 <sp who="#la-mort">
                         <speaker>LA MORT.</speaker>
                         <l n="126">La matière et l'esprit ?... Question éternelle !</l>
@@ -363,11 +359,11 @@
                         <l n="159">De là l'âme ou l'instinct ; mais en somme l'esprit,</l>
                         <l n="160">Ce grand condensateur, grâces auquel tout vit,</l>
                         <l n="161">Car sa source immortelle est l'union des choses</l>
-                        <l n="162" part="I">Autrement dit : Dieu ?</l><!--@syll="6"-->
-                    </sp><!--@who="LA MORT"-->
+                        <l n="162" part="I">Autrement dit : Dieu ?</l>
+                    </sp>
 <sp who="#l-homme">
                         <speaker>L'HOMME.</speaker>
-                        <l n="162" part="F">Mais de ces métamorphoses</l><!--@syll="6"-->
+                        <l n="162" part="F">Mais de ces métamorphoses</l>
                         <l n="163">De l'univers, dont l'homme est le brillant sommet</l>
                         <l n="164">De la loi par laquelle il naît, meurt et renaît,</l>
                         <l n="165">De cette liberté, son apanage auguste,</l>
@@ -379,7 +375,7 @@
                         <l n="171">Quand nous en sortirons, quel sera notre sort?</l>
                         <l n="172">Par l'orage battus, atteindrons-nous le port?</l>
                         <l n="173">Dieu séparera-t-il le bon grain de l'ivraie ?</l>
-                    </sp><!--@who="L'HOMME"-->
+                    </sp>
 <sp who="#la-mort">
                         <speaker>LA MORT, avec foi.</speaker>
                         <l n="174">De ce problème obscur, pour que rien ne t'effraie,</l>
@@ -409,7 +405,7 @@
                         <l n="198">Qu'ils prendront tous enfin ; car le Mort c'est la vie !</l>
                         <stage type="away">La mort s'éloigne. - L'homme tend les bras vers elle.</stage>
                         <stage type="date">18 septembre 1873</stage>
-                    </sp><!--@stage="enthousiasm"--><!--@who="LA MORT"-->
+                    </sp>
 </div>
 </div>
 </body>

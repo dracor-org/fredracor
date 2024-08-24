@@ -79,19 +79,14 @@
 		</docTitle> 
 		<docDate when="1886">1886</docDate>
 		<docAuthor>par PAUL CROISET</docAuthor>
-		<div type="docImprint">
-			<!--TODO: handling of editor name at this place unclear <editor type="GOBERT">PARIS E. GOBERT, ÉDITEUR, BOULEVARD SAINT-MICHEL, 9.</editor>-->
-			<div type="printer">
-                    <p>IMP. F. JOURDAN, 36, 38, rue de la Goutte d'Or, PARIS/</p>
-                </div><!--@id="PICHAT"-->
-			<div type="copyright">
-                    <p>Tous de reproduction et de traduction et de représentation réservés.</p>
-                </div>
-		</div>		
+		<!--<docImprint>-->
+            <docImprint>PARIS E. GOBERT, ÉDITEUR, BOULEVARD SAINT-MICHEL, 9.</docImprint>
+            <docImprint>IMP. F. JOURDAN, 36, 38, rue de la Goutte d'Or, PARIS/</docImprint>
+            <p>Tous de reproduction et de traduction et de représentation réservés.</p><!--</docImprint>-->		
 		<castList>
                 <head>PERSONNAGES.</head>
 			<castItem>
-                    <role corresp="#le-narrateur">LE NARRATEUR</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem>
+                    <role corresp="#le-narrateur">LE NARRATEUR</role>.</castItem>
 	</castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
@@ -101,8 +96,8 @@
 <div type="scene" n="1">
                     <head/>
 <sp who="#le-narrateur">
-                        <speaker/><!--<poem>-->
-                        <ab type="strophes">
+                        <speaker/>
+                        <ab type="strophes"><!--<poem>-->
 <lg n="1">
 	<l n="1">J'dis à Hortense, un' veill' de fête :</l>
 	<l n="2">- La bourgeois', j' t'emmèn' voir la mer.</l>
@@ -257,8 +252,8 @@
 	<l n="119">Dans six mois, j' s'rai pèr' d'un s'cond mioche</l>
 	<l n="120">L'air de la mer...</l>
 </lg>
-</ab><!--</poem>-->
-                    </sp><!--@who="LE NARRATEUR"-->
+</ab>
+                    </sp>
 </div>
 </div>
 </body>

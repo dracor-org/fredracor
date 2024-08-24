@@ -94,15 +94,13 @@
 		</docTitle>
  		<docDate when="1769">M. DCC. LXIX.</docDate>
 		<docAuthor>Par M. de MOISSY.</docAuthor>
-		<div type="docImprint">
-			<!--TODO: handling of editor name at this place unclear <editor id="FAGES">Chez Bailly, Libraire, Quai des Augustins, à l'Occasion.</editor>-->
-			<div type="approbation">
-                    <head>APPROBATION.</head>
+		<!--<docImprint>-->
+            <docImprint>Chez Bailly, Libraire, Quai des Augustins, à l'Occasion.</docImprint>
+            <div type="approbation">
+                <head>APPROBATION.</head>
 				<p>J'ai lu par ordre de Monseigneur le Chancelier, un Manuscrit intitulé les Jeux de la petite Thalie ; et je n'y ai rien trouvé qui m'ait paru devoir en empêcher l'impression. À Paris, ce treize Juin mille sept cens soixante-neuf.</p>
 				<p>CRÉBILLON.</p>
-			</div>
-
-		</div>
+			</div><!--</docImprint>-->
 		<div type="preface">
                 <head>DISCOURS PRÉLIMINAIRE.</head>
 			<p>L'éducation si précieuse à l'Humanité, ne peut être regardée sous trop d'aspects, et il serait à souhaiter que tous les auteurs, même les plus accrédités voulussent bien ne pas trouver au-dessous d'eux les ouvrages qu'ils tendraient à ouvrir à cette éducation, quelques routes plus utiles et plus agréables que celles qui sont connues.</p>
@@ -215,13 +213,13 @@
 <castList>
 	<head>ACTEURS de LES DEUX MÉDECINES.</head>
 		<castItem>
-                    <role corresp="#madame-dusault">MADAME DUSAULT</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="(néant)"-->, veuve riche.</castItem>
+                    <role corresp="#madame-dusault">MADAME DUSAULT</role>, veuve riche.</castItem>
 		<castItem>
-                    <role corresp="#le-petit-dusault">LE PETIT DUSAULT</role><!--@sex="1"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="E"--><!--@stat_amour="(néant)"-->, enfant de Madame Dusault, âgé de huit ans.</castItem>
+                    <role corresp="#le-petit-dusault">LE PETIT DUSAULT</role>, enfant de Madame Dusault, âgé de huit ans.</castItem>
 		<castItem>
-                    <role corresp="#la-petite-dusault">LA PETITE DUSAULT</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="E"--><!--@stat_amour="(néant)"-->, enfant de Madame Dusault, âgés à neuf ans.</castItem>
+                    <role corresp="#la-petite-dusault">LA PETITE DUSAULT</role>, enfant de Madame Dusault, âgés à neuf ans.</castItem>
 		<castItem>
-                    <role corresp="#mademoiselle-dubois">MADEMOISELLE DUBOIS</role><!--@sex="2"--><!--@type="H"--><!--@statut="bourgeois"--><!--@age="A"--><!--@stat_amour="(néant)"-->, gouvernante des deux enfants.</castItem>
+                    <role corresp="#mademoiselle-dubois">MADEMOISELLE DUBOIS</role>, gouvernante des deux enfants.</castItem>
 </castList>	
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XVIIIème" gps="(N/A)">La scène est dans une chambre où il y a deux petits Lits à rideaux, l'un à un bout de la Chambre, et l'autre au bout opposé. L'action se passe à six heures du matin.</set>-->	
 </front>
@@ -239,7 +237,7 @@
                         <p n="2">
 	<s n="1">Dusault, Dusault ; allons, voilà votre médecine.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT, se réveille.</speaker>
                         <p n="3">
@@ -247,27 +245,27 @@
 	<s n="2">Allons, ma bonne, me voilà tout prêt. </s>
 </p>
                         <stage type="sit/quick">Il se met sur son séant avec vivacité.</stage>
-                    </sp><!--@stage="awake"--><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="4">
 	<s n="1">Mon petit ami, vous l'allez donc prendre comme un grand garçon ? </s>
 	<s n="2">Tenez, voilà un petit morceau de pâte d'abricot que je vous donnerai après, pour vous en ôter le goût.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT.</speaker>
                         <note type="L">Noeud d'épée : Rosette de ruban dont on orne la poignée d'une épée. [L]</note>
                         <p n="5">
 	<s n="1">Ma Bonne, vous savez bien que Maman m'a promis un beau Noeud-d'Épée d'argent, si je prenais ma médecine joliment, ainsi vous lui direz comme vous allez me la voir prendre : donnez.</s>
 </p>
-                    </sp><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="6">
 	<s n="1">La voilà, tenez bien, et prenez garde à répandre.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT, prend le gobelet. (Impromptu).</speaker>
                         <p n="7">
@@ -280,26 +278,26 @@
 	<s n="3">Ma Bonne, n'ai-je pas bien mérité le Noeud-d'Épée ?</s>
 </p>
                         <stage type="eat">Il mange la pâte d'abricot.</stage>
-                    </sp><!--@stage="impromptu/get"--><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="9">
 	<s n="1">Oh ! Sûrement, et je le dirai à votre Maman, aussitôt qu'elle sera levée.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT (Impromptu).</speaker>
                         <note type="L">Simagrée : Manières qu'on affecte pour duper ou faire illusion.</note>
                         <p n="10">
 	<s n="1">Les enfants font cinquante simagrées quand il faut prendre une médecine, parce qu'ils ne se font pas une raison que cela est nécessaire à leur santé, et puis ils la flairent, et puis ils la goutent, et puis ils ne peuvent plus la prendre, et puis on les gronde au lieu de leur donner des Noeuds-d'Épée, et c'est bienfait, n'est-ce pas ma bonne ?</s>
 </p>
-                    </sp><!--@stage="impromptu"--><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="11">
 	<s n="1">Vous avez raison.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT (Impromptu).</speaker>
                         <p n="12">
@@ -307,46 +305,46 @@
 	<s n="2">Comme elle a fait l'enfant, ma Bonne ! </s>
 	<s n="3">Maman lui a aussi promis un éventail, si elle prenait bien sa médecine.</s>
 </p>
-                    </sp><!--@stage="impromptu"--><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="13">
 	<s n="1">Oui, mais j'ai bien peur qu'elle ne le gagne pas, car je serai obligée de dire la vérité.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT.</speaker>
                         <p n="14">
 	<s n="1">Savez-vous ce qu'il faut faire, pour l'engager à prendre sa médecine sans faire de façon ?</s>
 </p>
-                    </sp><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="15">
 	<s n="1">Non : qu'est-ce qu'il faut faire ?</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT. (Impromptu.)</speaker>
                         <p n="16">
 	<s n="1">Il faut lui dire que j'ai fait beaucoup de grimaces, beaucoup de façons pour prendre la mienne, malgré l'air résolu que j'avais hier au soir, quand Maman nous en a parlé ; cela piquera ma soeur ; elle veut passer pour mieux faire que moi tout ce que nous faisons ensemble. </s>
 	<s n="2">Vous verres, ma Bonne, si je n'imagine pas bien cela, vous verrez.</s>
 </p>
-                    </sp><!--@stage="impromptu"--><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="17">
 	<s n="1">Mon petit ami, votre idée est excellente ; elle dort encore, je m'en vais chercher sa médecine ; pendant que je rengagerai à la prendre, vous ferez semblant de dormir, vos rideaux fermés et vous entendrez tout ce que je lui dirai,</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT.</speaker>
                         <p n="18">
 	<s n="1">Oui, ma bonne, je serai le dormeur, allez vite.</s>
 </p>
                         <stage type="exit">Mademoiselle Dubois sort.</stage>
-                    </sp><!--@who="LE PETIT DUSAULT"-->
-</div><!--@stage="decor"-->
+                    </sp>
+</div>
 <div type="scene" n="2">
                     <head>SCÈNE II.</head>
 <sp who="#le-petit-dusault">
@@ -355,7 +353,7 @@
 	<s n="1">Oh ! </s>
 	<s n="2">Je m'en vais bien m'amuser ; m'en voilà quitte moi ; j'aurai un Noeud- d'épée, mais ma soeur... ma soeur n'aura pas son éventail, à moins qu'elle ne se pique d'honneur, comme j'ai dit : oh ! nous allons bien rire.</s>
 </p>
-                    </sp><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 </div>
 <div type="scene" n="3">
                     <head>SCÈNE III. Mademoiselle Dubois, le Petit Dusault, la Petite Dusault dormant toujours.</head>
@@ -365,13 +363,13 @@
                         <p n="1">
 	<s n="1">Voilà ía médecine de votre soeur, allons cachez-vous dans vos rideaux, et faites bien le dormeur.</s>
 </p>
-                    </sp><!--@stage="carry"--><!--@who="MADEMOISELLE DUSAULT"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT.</speaker>
                         <p n="2">
 	<s n="1">Oui, ma Bonne, je ne soufflerai pas, jusqu'à ce que vous me disiez de m'éveiller.</s>
 </p>
-                    </sp><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="3">
@@ -391,32 +389,32 @@
 	<s n="3">Voulez-vous bien vous mettre sur votre séant, et prendre votre médecine ? </s>
 	<s n="4">Elle va se refroidir.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT.</speaker>
                         <p n="6">
 	<s n="1">Ma Bonne, il est trop matin, je n'ai pas assez dormi, et cela me fera mal.</s>
 </p>
-                    </sp><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="7">
 	<s n="1">Mademoiselle, il est l'heure à laquelle votre maman a dit que vous la prissiez ; allons, ne faites pas l'enfant, vous savez bien qu'elle vous a promis un bel éventail, si vous la prenez comme une grande personne : allons donc.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT. ( Impromptu ).</speaker>
                         <p n="8">
 	<s n="1">Bon, je me soucie bien d'un éventail, pour prendre une vilaine médecine : voyons-la donc, ma Bonne.</s>
 </p>
                         <stage type="get">Elle prend le gobelet.</stage>
-                    </sp><!--@stage="impromptu"--><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="9">
 	<s n="1">Allons, prenez-la tout de suite ; cela sera bientôt fait, si vous voulez.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT regarde et flaire la Médecine. {Impromptu).</speaker>
                         <p n="10">
@@ -425,13 +423,13 @@
 	<s n="3">Comme ça sent mauvais ! </s>
 	<s n="4">Mais en voilà trop, je ne pourrai jamais avaler tout.</s>
 </p>
-                    </sp><!--@stage="impromptu/watch/smell"--><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="11">
 	<s n="1">Il n'y en a point trop : allons, mais allons donc ; voilà un bon morceau de conserve de fleurs d'oranges que vous aimez, qui vous attend.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT.</speaker>
                         <p n="12">
@@ -439,25 +437,25 @@
 	<s n="2">Eh bien ! </s>
 	<s n="3">Ma Bonne, partageons ; prenez la médecine, et moi je mangerai la fleur d'oranges.</s>
 </p>
-                    </sp><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="13">
 	<s n="1">Oui, voilà de beaux contes que vous faites là : savez-vous bien que je m'impatienterai à la fin, et que si vous continuez, je vous forcerai de la prendre ; vous n'aurez pas d'éventail, mais à la place je vous régalerai d'une bonne poignée de verges...</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT.</speaker>
                         <p n="14">
 	<s n="1">Mais, ma Bonne, aussi pourquoi commencez-vous par moi ? Mon frère n'a pas pris la sienne.</s>
 </p>
-                    </sp><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="15">
 	<s n="1">Si, Mademoiselle, il l'a prise... et il dort maintenant.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT.</speaker>
                         <p n="16">
@@ -465,7 +463,7 @@
 	<s n="2">Eh bien ! </s>
 	<s n="3">L'a-t-il prise, comme il disait hier, sans faire de façons ?</s>
 </p>
-                    </sp><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="17">
@@ -473,7 +471,7 @@
 	<s n="2">Pour lui, j'en suis encore plus mécontente que je ne le serai de vous, j'espère ; en tout cas, je lui ai bien assuré qu'il n'aurait pas de Noeud-d'Épée... </s>
 	<s n="3">Il m'a tant impatienté...</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT. ( Impromptu ).</speaker>
                         <p n="18">
@@ -482,7 +480,7 @@
 	<s n="3">Je suis bien aise de savoir ça, ma Bonne ; oh bien ! </s>
 	<s n="4">Pour me moquer de lui, vous allez voir comme je vais prendre ma médecine moi ; donnez.</s>
 </p>
-                    </sp><!--@stage="impromptu"--><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="19">
@@ -490,7 +488,7 @@
 	<s n="2">La petite Dusault avale la médecine. </s>
 	<s n="3">Voilà qui est fait.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="20">
@@ -499,7 +497,7 @@
 	<s n="3">Ah ! </s>
 	<s n="4">Votre frère sera bien attrapé.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT. ( Impromptu ).</speaker>
                         <p n="21">
@@ -508,39 +506,39 @@
 	<s n="3">Comme je m'en vais me moquer de lui ! </s>
 	<s n="4">Il n'aura pas de Noeud-d'Épée, et moi j'aurai un bel éventail, n'est-ce pas, ma Bonne ?</s>
 </p>
-                    </sp><!--@stage="impromptu"--><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT, ouvre ses rideaux.</speaker>
                         <p n="22">
 	<s n="1">Qu'est-ce que tu dis donc, ma Soeur ?</s>
 </p>
-                    </sp><!--@stage="open"--><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT. ( Impromptu ).</speaker>
                         <p n="23">
 	<s n="1">Je dis, mon Frère, que tu fais bien le brave le soir d'une médecine, et que tu es pis qu'un enfant de quatre jours quand il faut la prendre ; car je sais de tes nouvelles : mais demande à ma bonne comme j'ai pris la mienne ?</s>
 </p>
-                    </sp><!--@stage="impromptu"--><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="24">
 	<s n="1">Oh ! </s>
 	<s n="2">Il est sûr qu'il y a bien de la différence.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT.</speaker>
                         <p n="25">
 	<s n="1">Quoi ! </s>
 	<s n="2">Ma Soeur, tu n'as pas fait de façons du tout, du tout ?</s>
 </p>
-                    </sp><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT.</speaker>
                         <p n="26">
 	<s n="1">N'est-il pas vrai, ma Bonne, que je l'ai prise tout de fuite, et que j'aurai l'éventail ?</s>
 </p>
-                    </sp><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#le-petit-dusault">
                         <speaker>LE PETIT DUSAULT. (Impromptu)</speaker>
                         <p n="27">
@@ -548,13 +546,13 @@
 	<s n="2">J'aì entendu bien des choses... </s>
 	<s n="3">Enfin, si tu as l'éventail, j'espère aussi avoir mon Noeud-d'Épée, n'est-ce pas, ma Bonne ?</s>
 </p>
-                    </sp><!--@stage="impromptu"--><!--@who="LE PETIT DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="28">
 	<s n="1">Allez, allez, tranquillisez -vous tous deux, on arrangera cela pour le mieux.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 </div>
 <div type="scene" n="4">
                     <head>SCÈNE IV. Madame Dusault, Le Petit, La Petite Dusault,
@@ -565,7 +563,7 @@ Mademoiselle Dubois.</head>
 	<s n="1">Eh bien ! </s>
 	<s n="2">Ces deux médecines sont-elles prises, Mademoiselle, et m'en coûtera- t-il un Noeud-d'épée et un éventail ?</s>
 </p>
-                    </sp><!--@stage="toward"--><!--@who="MADAME DUSAULT"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT.</speaker>
                         <p n="2">
@@ -573,20 +571,20 @@ Mademoiselle Dubois.</head>
 	<s n="2">Maman, il vous en coûtera un éventail. </s>
 	<s n="3">Pour le Noeud-d'Épée, ce ne sont pas mes affaires, demandez à ma bonne ; mon frère est bien courageux la veille d'une médecine, mais...</s>
 </p>
-                    </sp><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="3">
 	<s n="1">Mais... </s>
 	<s n="2">Mademoiselle, ne tirez pas sur Monsieur votre frère, comme vous faites, ça n'est pas bien, et pour vous en corriger, je suis obligée de dire à Madame la vérité, que sans votre frère, votre médecine ne serait peut-être pas encore prise.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#madame-dusault">
                         <speaker>MADAME DUSAULT.</speaker>
                         <p n="4">
 	<s n="1">Comment cela ?</s>
 </p>
-                    </sp><!--@who="MADAME DUSAULT"-->
+                    </sp>
 <sp who="#mademoiselle-dubois">
                         <speaker>MADEMOISELLE DUBOIS.</speaker>
                         <p n="5">
@@ -594,7 +592,7 @@ Mademoiselle Dubois.</head>
 	<s n="2">Voilà le vrai, Madame. </s>
 	<s n="3">Malgré cela, je crois que vous ne pouvez pas vous dispenser de donner l'éventail, pour faire passer la médecine : à l'égard du Noeud-d'épée, il ne saurait être trop beau.</s>
 </p>
-                    </sp><!--@who="MADEMOISELLE DUBOIS"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT. (Impromptu).</speaker>
                         <p n="6">
@@ -603,21 +601,21 @@ Mademoiselle Dubois.</head>
 	<s n="3">Mon Frère, tu m'as joué là d'un bon tour, mais je t'en remercie. </s>
 	<s n="4">Ma Bonne, vous êtes bien maligne, mais je ne vous en veux point, car vous m'avez fait trouver la médecine fort bonne.</s>
 </p>
-                    </sp><!--@stage="impromptu"--><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>MADAME DUSAULT, à la petite.</speaker>
                         <p n="7">
 	<s n="1">Eh bien ! </s>
 	<s n="2">Mademoiselle, vous voyez que quand on veut, on est maîtresse de vaincre cette répugnance qu'on a pour une médecine : venez à présent faire l'enfant, quand il faudra que vous en preniez.</s>
 </p>
-                    </sp><!--@stage="toward"--><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#la-petite-dusault">
                         <speaker>LA PETITE DUSAULT.</speaker>
                         <p n="8">
 	<s n="1">Oh ! </s>
 	<s n="2">Non, Maman, je ne serai plus de façon, et j'en prendrai tant que vous voudrez.</s>
 </p>
-                    </sp><!--@who="LA PETITE DUSAULT"-->
+                    </sp>
 <sp who="#madame-dusault">
                         <speaker>MADAME DUSAULT, à son Fils.</speaker>
                         <p n="9">
@@ -628,7 +626,7 @@ Mademoiselle Dubois.</head>
 	<s n="1">Et vous, Mademoiselle, je vous donnerai aussi l'éventail, quoique, selon l'histoire, vous ne la méritiez guère ; mais la promesse que vous venez de me faire que cela ne vous arrivera plus, me radoucit. </s>
 	<s n="2">Vous pouvez bien dire que vous l'avez échappé belle, et c'est ce qu'on appelle...</s>
 </p>
-                    </sp><!--@stage="toward"--><!--@who="MADAME DUSAULT"-->
+                    </sp>
 </div>
 </div>
 </body>

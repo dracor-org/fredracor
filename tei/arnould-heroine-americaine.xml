@@ -44,9 +44,6 @@
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-            <particDesc>
-                <listPerson/>
-            </particDesc>
             <textClass>
                 <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
                     <term>Pantomime</term>
@@ -77,19 +74,16 @@
 		</docTitle>
  		<docDate when="1786">M. DCC. LXXXVI.</docDate>
 		<docAuthor>Par M. ARNOULD.</docAuthor>
-		<div type="docImprint">
-			<!--TODO: handling of editor name at this place unclear <editor id="GUILLOT">À PARIS, Chez GUILLOT, Libraire de MONSIEUR, frère du Roi, rue Saint—Jacques, vis-à-vis celle des Mathurins.</editor>-->
-			<div type="printer">
-                    <p>De l'imprimerie de la Veuve BALLARD et Fils ; rue des Mathurins.</p>
-                </div><!--@id="GUILLOT"-->
-			<div type="approbation">
-                    <head>APPROBATION.</head>
+		<!--<docImprint>-->
+            <docImprint>À PARIS, Chez GUILLOT, Libraire de MONSIEUR, frère du Roi, rue Saint—Jacques, vis-à-vis celle des Mathurins.</docImprint>
+            <docImprint>De l'imprimerie de la Veuve BALLARD et Fils ; rue des Mathurins.</docImprint>
+            <div type="approbation">
+                <head>APPROBATION.</head>
 				<p>Lu et approuvé pour la représentation de la Pantomime et l'impression du programme, le 4 Mars 1786.</p>
 				<p>STUARD.</p>
 				<p>Vu l'approbation, permis d'imprimer. À Paris, de 4 mars 1786.</p>
 				<p>DE CROSNE</p>
-			</div>
-		</div>
+			</div><!--</docImprint>-->
 		<div type="avertissement">
                 <head>AVERTISSEMENT</head>
 			<p>Le trait suivant, rapporté dans l'Histoire Philosophique et Politique des Établissements et du Commerce des Européens dans les deux Indes, a fourni le sujet de cette Pantomime. Voyez tome V , page 271. « Des Anglais débarqués sur les côtes du Continent pour y faire des esclaves, furent découverts par les Caraïbes qui servaient de butin à leurs courses. Ces Sauvages fondirent sur la troupe ennemie, qu'ils mirent à mort ou en fuite. Un jeune homme, longtemps poursuivi, se jeta, dans un bois. Une Indienne l'ayant rencontré, sauva ses jours, le nourrit secrètement, et le reconduisit après quelque temps sur les bords de la mer. Ses Compagnons y attendaient à l'ancre ceux qui s'étaient égarés : la chaloupe vint le prendre. Sa libératrice voulut le suivre au vaisseau. Dès qu'ils furent arrivés à la Barbade, le monstre vendit celle qui lui avait conservé la vie, qui lui avait donné son coeur avec tous les sentiments et tous les trésors de l'amour. Pour réparer l'honneur de la Nation Anglaise , un de ses poètes a dévoué lui-même à l'horreur de la postérité ce monument infâme d'avarice et de perfidie. Plusieurs langues l'ont fait détester des Nations. »</p>
@@ -100,23 +94,23 @@
                 <head>PERSONNAGES.</head>
 
 	<castItem>
-                    <role corresp="#inkle">INKLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="soldat"--><!--@age="A"--><!--@stat_amour="(néant)"-->. le sieur Talon.</castItem>
+                    <role corresp="#inkle">INKLE</role>. le sieur Talon.</castItem>
 	<castItem>
-                    <role corresp="#un-capitaine-de-vaisseau">UN CAPITAINE de Vaisseau Anglais</role><!--@sex="1"--><!--@type="H"--><!--@statut="capitaine"--><!--@age="A"--><!--@stat_amour="(néant)"-->, Le Sr. Jaimon.</castItem>
+                    <role corresp="#un-capitaine-de-vaisseau">UN CAPITAINE de Vaisseau Anglais</role>, Le Sr. Jaimon.</castItem>
 	<castItem>
-                    <role corresp="#jarika">JARIKA</role><!--@sex="2"--><!--@type="H"--><!--@statut="sauvage"--><!--@age="A"--><!--@stat_amour="(néant)"-->, La Dlle Julie.</castItem>
+                    <role corresp="#jarika">JARIKA</role>, La Dlle Julie.</castItem>
 	<castItem>
-                    <role corresp="#chef-de-sauvages">UN CHEF DE SAUVAGES</role><!--@sex="1"--><!--@type="H"--><!--@statut="sauvage"--><!--@age="A"--><!--@stat_amour="(néant)"-->, Le Sr Varennes.</castItem>
+                    <role corresp="#chef-de-sauvages">UN CHEF DE SAUVAGES</role>, Le Sr Varennes.</castItem>
 	<castItem>
-                    <role corresp="#troupe-de-soldats">TROUPE DE SOLDATS ANGLAIS</role><!--@sex="1"--><!--@type="H"--><!--@statut="soldat"--><!--@age="A"--><!--@stat_amour="(néant)"-->.</castItem>
+                    <role corresp="#troupe-de-soldats">TROUPE DE SOLDATS ANGLAIS</role>.</castItem>
 	<castItem>
-                    <role corresp="#troupe-de-sauvages">TROUPE DE SAUVAGES</role><!--@sex="1"--><!--@type="H"--><!--@statut="sauvage"--><!--@age="A"--><!--@stat_amour="(néant)"-->.</castItem>
+                    <role corresp="#troupe-de-sauvages">TROUPE DE SAUVAGES</role>.</castItem>
 
 </castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Amérique" country="Amérique" periode="XVIIIème" gps="(N/A)">La scène est en Amérique</set>-->
 </front>
 <body>
-<div type="act" n="">
+<div type="act">
                 <head>ACTE PREMIER</head>
 <stage type="decor">Le Théâtre représente une forêt. Dans le fond, et sur le côté gauche, est une cabane.</stage>
 <div type="scene" n="1">
@@ -314,7 +308,7 @@
 </p>
 </div>
 </div>
-<div type="act" n="">
+<div type="act">
                 <head>ACTE III</head>
 <stage type="decor">Même décoration qu'au second acte.</stage>
 <div type="scene" n="1">
@@ -340,7 +334,7 @@
 	<s n="5">Le Capitaine hésite.</s>
 </p>
 </div>
-<div type="scene" n="">
+<div type="scene">
                     <head>SCÈNE III.</head>
 <p n="1">
 	<s n="1">Inkle revient sur ses pas. </s>
@@ -350,7 +344,7 @@
 	<s n="5">Le soldat saisit cet instant pour passer, avec beaucoup de précaution, un anneau de la chaîne au bras de Jarika, dans la crainte de l'éveiller.</s>
 </p>
 </div>
-<div type="scene" n="">
+<div type="scene">
                     <head>SCÈNE IV.</head>
 <p n="1">
 	<s n="">Le Chef des Sauvages paraît sur le haut d'un rocher, et examine avec l'attention la plus marquée ce qui se passe. </s>
@@ -431,7 +425,7 @@
 	<s n="2">Il la leur promet, et se retire avec eux.</s>
 </p>
 </div>
-<div type="scene" n="">
+<div type="scene">
                     <head>SCÈNE XIV.</head>
 <p n="1">
 	<s n="1">Jarika réduite au désespoir par la perfidie de son amant, quitte les femmes qui tâchaient d'adoucir ses chagrins, et vient chercher quelque endroit  écarté où elle puisse, en liberté, se livrer tout entière à sa douleur.</s>
@@ -440,7 +434,7 @@
 	<s n="1">Une fête bruyante qui s'annonce au loin, et qui paraît s'approcher, l'oblige à se retirer.</s>
 </p>
 </div>
-<div type="scene" n="">
+<div type="scene">
                     <head>SCÈNE XV.</head>
 <p n="1">
 	<s n="1">Marche composée de Sauvages, hommes et femmes. </s>

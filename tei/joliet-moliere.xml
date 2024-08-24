@@ -83,20 +83,17 @@
 		</docTitle> 
 		<docDate when="1879">1879. Tous droits réservés.</docDate>
 		<docAuthor>CHARLES JOLIET</docAuthor>
-		<div type="docImprint">
-			<div type="printer">
-                    <p>6412. – Imp. Jouaust.</p>
-                </div><!--@id="JOUAUST"-->
-			<!--TODO: handling of editor name at this place unclear <editor id="OLLENDORF">PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, Rue de Richelieu 28 bis.</editor>-->
-		</div>
+		<!--<docImprint>-->
+            <docImprint>6412. – Imp. Jouaust.</docImprint>
+            <docImprint>PARIS, PAUL OLLENDORF, ÉDITEUR, 28 bis, Rue de Richelieu 28 bis.</docImprint><!--</docImprint>-->
 	<castList>
                 <head>PERSONNAGES</head>
 		<castItem>
-                    <role corresp="#le-buste-de-moliere">LE BUSTE DE MOLIÈRE</role><!--@sex="1"--><!--@type="A"--><!--@statut="statue"--><!--@age="A"--><!--@stat_amour="néant"-->.</castItem> 
+                    <role corresp="#le-buste-de-moliere">LE BUSTE DE MOLIÈRE</role>.</castItem> 
 		<castItem>
-                    <role corresp="#la-comedie-legere">LA COMÉDIE LÉGÈRE</role><!--@sex="2"--><!--@type="A"--><!--@statut="allégorie"--><!--@age="A"--><!--@stat_amour="néant"-->, Mme SARAH-BERNHARDT.</castItem> 
+                    <role corresp="#la-comedie-legere">LA COMÉDIE LÉGÈRE</role>, Mme SARAH-BERNHARDT.</castItem> 
 		<castItem>
-                    <role corresp="#la-grande-comedie">LA GRANDE COMÉDIE</role><!--@sex="2"--><!--@type="A"--><!--@statut="allégorie"--><!--@age="A"--><!--@stat_amour="néant"-->, Mme LLOYD.</castItem> 
+                    <role corresp="#la-grande-comedie">LA GRANDE COMÉDIE</role>, Mme LLOYD.</castItem> 
 	</castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XIXème" gps="48.856614, 2.352222"/>-->
 </front>
@@ -106,8 +103,8 @@
 <div type="scene" n="1">
                     <head/>
 <sp who="#la-grande-comedie">
-                        <speaker>LA GRANDE COMÉDIE.</speaker><!--<poem>-->
-                        <ab type="stances">
+                        <speaker>LA GRANDE COMÉDIE.</speaker>
+                        <ab type="stances"><!--<poem>-->
 <lg n="1">
 	<l n="1">Tous les ans, nous venons, au même anniversaire,</l>
 	<l n="2">Saluer ta grande ombre en ce jour fortuné ;</l>
@@ -150,12 +147,12 @@
 	<l n="29">Et reçois ma couronne à la porte d' ivoire</l>
 	<l n="30">Des temples éternels.</l>
 </lg>
-</ab><!--</poem>-->
+</ab>
                         <stage type="drop/location">La grande Comédie dépose sur le socle du buste de Molière sa couronne de laurier d'or</stage>
-                    </sp><!--@who="LA GRANDE COMÉDIE"-->
+                    </sp>
 <sp who="#la-comedie-legere">
-                        <speaker>LA COMÉDIE LÉGÈRE.</speaker><!--<poem>-->
-                        <ab type="stances">
+                        <speaker>LA COMÉDIE LÉGÈRE.</speaker>
+                        <ab type="stances"><!--<poem>-->
 <lg n="1">
 	<l n="31">Me voici comme l'hirondelle</l>
 	<l n="32">Au nid désert de ses amours,</l>
@@ -216,9 +213,9 @@
 	<l n="69">Comme on voit les lis et les roses</l>
 	<l n="70">Former ma couronne d'amour.</l>
 </lg>
-</ab><!--</poem>-->
+</ab>
                         <stage type="kiss/location">La Comédie légère embrasse le buste de Molière.</stage>
-                    </sp><!--@who="LA COMÉDIE LÉGÈRE"-->
+                    </sp>
 </div>
 </div>
 </body>

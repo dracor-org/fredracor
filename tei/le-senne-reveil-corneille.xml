@@ -90,13 +90,12 @@
 			</docTitle> 
 		<docDate when="1916">M. DC. XLVI. Avec Privilège du Roi. </docDate>
 		 
-		<div type="docImprint">
-			<!--TODO: handling of editor name at this place unclear <editor value="EDITION ET LIBRAIRIE">PARIS, ÉDITIONS ET LIBRAIRIE, 40, rue de Seine, 40. </editor>-->
-			<div type="printer">
-                    <p>TOURS, Imprimerie E. ARRAULT et Cie. </p>
-                </div><!--@value="ARRAULT"-->
-		</div>
-		<ab type="premiere">Représenté pour la première fois sur la scène de l'École des Hautes Études Sociales, le 8 Mai 1916, pour le 310e Anniversaire de Pierre Corneille.</ab><!--@date="1916-05-08"-->
+		<!--<docImprint>-->
+            <docImprint>PARIS, ÉDITIONS ET LIBRAIRIE, 40, rue de Seine, 40.</docImprint>
+            <docImprint>TOURS, Imprimerie E. ARRAULT et Cie.</docImprint><!--</docImprint>-->
+		<performance>
+			<ab type="premiere">Représenté pour la première fois sur la scène de l'École des Hautes Études Sociales, le 8 Mai 1916, pour le 310e Anniversaire de Pierre Corneille.</ab>
+		</performance>
 	<div>
                 <head>DU MÊME AUTEUR</head>
 		<p>ROMANS</p>
@@ -111,11 +110,11 @@
 		<castList>
                 <head>PERSONNAGES.</head>
 			<castItem>
-                    <role corresp="#la-muse-des-gloires">LA MUSE DES GLOIRES</role><!--@sex="2"--><!--@type="D"--><!--@statut="muse"--><!--@age="A"--><!--@stat_amour="néant"--> Melle MARGÈS, de l'Odéon.</castItem>
+                    <role corresp="#la-muse-des-gloires">LA MUSE DES GLOIRES</role> Melle MARGÈS, de l'Odéon.</castItem>
 			<castItem>
-                    <role corresp="#la-muse-des-deuils">LA MUSE DES DEUILS</role><!--@sex="2"--><!--@type="D"--><!--@statut="muse"--><!--@age="A"--><!--@stat_amour="néant"--> Melle GUINA-RUDEL.</castItem>
+                    <role corresp="#la-muse-des-deuils">LA MUSE DES DEUILS</role> Melle GUINA-RUDEL.</castItem>
 			<castItem>
-                    <role corresp="#pierre-corneille">PIERRE CORNEILLE</role><!--@sex="1"--><!--@type="H"--><!--@statut="écrivain"--><!--@age="A"--><!--@stat_amour="néant"--> M. PIERRE MATHIEU.</castItem>
+                    <role corresp="#pierre-corneille">PIERRE CORNEILLE</role> M. PIERRE MATHIEU.</castItem>
 		</castList>
 		<!--TODO: usage of set in correct place but with unknown attributes <set location="Lieu imaginaire" country="Pays imaginaire" periode="XXème" gps="(N/A)"/>-->
 	</front>
@@ -128,19 +127,19 @@
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="1">La Voix m'a dit: « Descends, car le Père t'appelle. »</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <l n="2">« Monte, m'a dit la Voix, car le Père t'attend, »</l>
                         <l n="3">Et je viens joindre ici, ô ma soeur immortelle,</l>
                         <l n="4">Les pavots de ma nuit aux fleurs de ton printemps.</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES, près du fauteuil de Corneille.</speaker>
                         <l n="5">Il dort, mais d'un sommeil que le souci dévore,</l>
                         <l n="6">Car les morts voient aussi de troublantes aurores</l>
                         <l n="7">Qui viennent de la terre et causent leur tourment.</l>
-                    </sp><!--@stage="location"--><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <l n="8">S'il ne faut pour bercer sa peine</l>
@@ -150,7 +149,7 @@
                         <l n="11">Je possède tous les dictames :</l>
                         <l n="12">Quand je me penche sur les âmes,</l>
                         <l n="13">La douleur s'endort dans mes bras.</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="14">Connais mieux, faible soeur, le maître d'énergie.</l>
@@ -162,7 +161,7 @@
                         <l n="20">Que pour quelques instants il revoie la lumière</l>
                         <l n="21">Et je lui verserai le breuvage des forts.</l>
                         <stage type="touch">Elle étend la main.</stage>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#corneille">
                         <speaker>CORNEILLE.</speaker>
                         <l n="22">Que voulez-vous, pâleurs voilées,</l>
@@ -172,7 +171,7 @@
                         <l n="26">Pourquoi, dans la muette pénombre.</l>
                         <l n="27">Venez-vous ravir à mon omBre</l>
                         <l n="28">Le divin bienfait du sommeil ?</l>
-                    </sp><!--@who="CORNEILLE"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <note type="L">Asphodèle : Terme de botanique. Plante de la famille des liliacées, à laquelle appartient l'asphodèle rameux, dont le bulbe a été employé contre la gale. [L]</note>
@@ -207,7 +206,7 @@
                         <l n="56">Car ici-bas le deuil ne doit jamais mourir,</l>
                         <l n="57">Mais, sur mon front pâli, j'ai gardé le mystère</l>
                         <l n="58">De la douleur sans fin qui ne veut pas guérir.</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="59">Je suis, moi, la Muse des gloires,</l>
@@ -235,7 +234,7 @@
                         <l n="81">Qu'à pleines mains là-haut tous deux nous cueillions,</l>
                         <l n="82">Et si le vent du soir se glissait sous mes voiles,</l>
                         <l n="83">De mes cheveux épars jailliraient des rayons.</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#corneille">
                         <speaker>CORNEILLE.</speaker>
                         <l n="84">Je vous reconnais bien, douces soeurs que j'aimais.</l>
@@ -247,11 +246,11 @@
                         <l n="88">Mais la vie est finie et son triste mensonge.</l>
                         <l n="89">Pourquoi, toutes les deux interrompre le songe</l>
                         <l n="90">De mon repos sans lendemain ?</l>
-                    </sp><!--@who="CORNEILLE"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <l n="91">Tu souffres, et mon âme est soeur de ta souffrance.</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="92">Tu gémis et ma voix éveille l'espérance ;</l>
@@ -259,49 +258,49 @@
                         <l n="94">Lorsque la brume se soulève</l>
                         <l n="95">Le cauchemar devient le rêve.</l>
                         <l n="96">Père, confie-nous tes douleurs.</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#corneille">
                         <speaker>CORNEILLE.</speaker>
                         <l n="97">Dans mon songe éveillé, j'entendais, soeurs fidèles,</l>
                         <l n="98">Sans relâche passer un grand battement d'ailes.</l>
-                    </sp><!--@who="CORNEILLE"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <l n="99">Père, c'était le cri rauque de la mitraille,</l>
                         <l n="100">La clameur effarée des tonnantes batailles.</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="101">Père, c'était le vol auguste des victoires,</l>
                         <l n="102">Inscrivant nos héros au temple de mémoire.</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#corneille">
                         <speaker>CORNEILLE.</speaker>
                         <l n="103">Pour répondre à l'appel de ce fracas d'alarmes,</l>
                         <l n="104">Je ne vois plus qu'enfants et que vieillards, sans armes.</l>
                         <l n="105">Où donc sont les vaillants, les mâles, les aînés ?</l>
-                    </sp><!--@who="CORNEILLE"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <l n="106">Ils sont là-bas, dans l'ombre, à la tâche enchaînés.</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="107">Sur les talus croulants, au penchant des ravines,</l>
                         <l n="108">Ils sortent pour dresser le mur de leurs poitrines.</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <l n="109">C'est la guerre des loups, la guerre des terriers.</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="110">Des entrailles du sol surgit le vert laurier.</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <l n="111">On combat dans la glaise et dans la boue immonde.</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="112">Le sacrifice obscur rayonne sur le monde.</l>
@@ -313,7 +312,7 @@
                         <l n="117">Ils combattaient ainsi, d'un noble sang prodigues,</l>
                         <l n="118">Père, les compagnons sublimes de Rodrigue,</l>
                         <l n="119">Les soldats invaincus du Cid Campéador.</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#corneille">
                         <speaker>CORNEILLE.</speaker>
                         <l n="120">Oui, combien de grands faits ravis au Livre d'or !</l>
@@ -328,7 +327,7 @@
                         <l n="129">Dans sa première fleur espérance fauchée.</l>
                         <l n="130">Du moins ses yeux ouverts n'ont pas connu l'effroi.</l>
                         <l n="131">Et Corneille est tombé pour la France et son roi.</l>
-                    </sp><!--@who="CORNEILLE"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="132">Non, père, il vit toujours le vaillant de ta race</l>
@@ -363,7 +362,7 @@
                         <l n="161">La gloire de tes fils sonne au même beffroi.</l>
                         <l n="162">La Meuse inviolée vaut le Rhin qu'on traverse;</l>
                         <l n="163">Le laurier de Verdun est celui de Rocroy.</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <note type="L">Hunnique : qui appartient aux Huns.</note>
@@ -379,10 +378,10 @@
                         <l n="173">Le suprême reflet des peuples prosternés</l>
                         <l n="174">Les murs déshonorés ne sont plus qu'un décombre</l>
                         <l n="175">Où gît sous les débris l'idéal profané.</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
-                        <speaker>LA MUSE DES GLOIRES.</speaker><!--<poem>-->
-                        <ab type="strophes">
+                        <speaker>LA MUSE DES GLOIRES.</speaker>
+                        <ab type="strophes"><!--<poem>-->
 <lg n="1">
 	<l n="176">Elles resurgiront les hautes cathédrales !</l>
 <note type="L">Voussure : Terme d'architecture. Courbure et élévation d'une voûte, d'une arcade. [L]</note>
@@ -432,7 +431,7 @@
 	<l n="210">Et que dans vos beffrois la cloche d'airain sonne</l>
 	<l n="211">L'angélus de l'humanité.</l>
 </lg>
-</ab><!--</poem>-->
+</ab>
                         <l n="212">Et toi, la plus noble victime,</l>
                         <l n="213">Témoin martyrisé du crime</l>
                         <l n="214">Qu'ordonna le César germain,</l>
@@ -457,7 +456,7 @@
                         <l n="233">Car notre France à nous, c'est la France éternelle</l>
                         <l n="234">Qui ne sépare pas dans son culte fidèle</l>
                         <l n="235">Les vaillants d'aujourd'hui des héros d'autrefois.</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS.</speaker>
                         <l n="236">Si tu nous rends un jour la maison de prière,</l>
@@ -488,10 +487,10 @@
                         <l n="261">Étalent le squelette aride de leurs flancs...</l>
                         <l n="262">S'il n'est plus de forêts, où chantera la brise ?</l>
                         <l n="263">Et s'il n'est plus d'oiseaux, que seront les printemps ?</l>
-                    </sp><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
-                        <speaker>LA MUSE DES GLOIRES, à la Muse des Deuils.</speaker><!--<poem>-->
-                        <ab type="strophes">
+                        <speaker>LA MUSE DES GLOIRES, à la Muse des Deuils.</speaker>
+                        <ab type="strophes"><!--<poem>-->
 <lg n="1">
 	<l n="264">Douce compagne, soeur meurtrie,</l>
 	<l n="265">Ostensoir des âmes flétries,</l>
@@ -581,8 +580,8 @@
 	<l n="328">Et les deux nobles soeurs sublimes</l>
 	<l n="329">Sont les oiseaux du bois sacré.</l>
 </lg>
-</ab><!--</poem>-->
-                    </sp><!--@stage="toward"--><!--@who="LA MUSE DES GLOIRES"-->
+</ab>
+                    </sp>
 <sp who="#la-muse-des-deuils">
                         <speaker>LA MUSE DES DEUILS, à Corneille.</speaker>
                         <l n="330">Père, écoute la voix qui crie</l>
@@ -604,10 +603,10 @@
                         <l n="346">La terre des vaillants, des forts,</l>
                         <l n="347">La France des aînés, la sublime patrie,</l>
                         <l n="348">Et ses flancs dévastés n'enfantent que la mort.</l>
-                    </sp><!--@stage="toward"--><!--@who="LA MUSE DES DEUILS"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
-                        <speaker>LA MUSE DES GLOIRES.</speaker><!--<poem>-->
-                        <ab type="strophes">
+                        <speaker>LA MUSE DES GLOIRES.</speaker>
+                        <ab type="strophes"><!--<poem>-->
 <lg n="1">	<l n="349">Ils enfantent aussi le levain des batailles.</l>
 	<l n="350">Au fond de chaque trou fouillé par la mitraille,</l>
 	<l n="351">Dans le gouffre béant des entonnoirs tressaille</l>
@@ -637,8 +636,8 @@
 	<l n="371">Au plus profond du sol a creusé le cratère</l>
 	<l n="372">Qui vomira l'envahisseur.</l>
 </lg>
-</ab><!--</poem>-->
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+</ab>
+                    </sp>
 <sp who="#corneille">
                         <speaker>CORNEILLE, à la Muse des Deuils qui s'est agenouillée près de lui.</speaker>
                         <l n="373">Ô Muse des douleurs, ô Muse des détresses,</l>
@@ -672,7 +671,7 @@
                         <l n="400">Parmi les sphères étoilées</l>
                         <l n="401">J'apporte l'écho des mêlées</l>
                         <l n="402">Et des bataillons frémissants !</l>
-                    </sp><!--@stage="kneel"--><!--@who="CORNEILLE"-->
+                    </sp>
 <sp who="#la-muse-des-gloires">
                         <speaker>LA MUSE DES GLOIRES.</speaker>
                         <l n="403">Père, sois obéi! sur ton front qui se penche</l>
@@ -697,7 +696,7 @@
                         <l n="422">Et dis enfin au vieil Horace</l>
                         <l n="423">Que, derniers enfants de sa race,</l>
                         <l n="424">Nous n'avons pas dégénéré !</l>
-                    </sp><!--@who="LA MUSE DES GLOIRES"-->
+                    </sp>
 </div>
 </div>
 </body>
