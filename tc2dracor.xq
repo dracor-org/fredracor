@@ -706,8 +706,13 @@ declare function local:transform($nodes) {
 };
 
 declare function local:make-particDesc ($doc as element()) as node()* {
-  let $whos := ($doc//*:text//*:sp/tokenize(./@who, $who-tokenize-pattern) => distinct-values())
-  let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
+  let $whos := (for $sp in $doc//*:text//*:sp
+    return if ($sp/@who != '') then
+      tokenize($sp/@who, $who-tokenize-pattern)
+    else if ($sp/*:speaker[matches(., '\p{L}')]) then
+      replace($sp/*:speaker, "([-\p{L}' ]+).*", '$1')
+    else ()) => distinct-values()
+
   return if (count($whos)) then
     element {QName('http://www.tei-c.org/ns/1.0', 'particDesc')} {
       element {QName('http://www.tei-c.org/ns/1.0', 'listPerson')} {
