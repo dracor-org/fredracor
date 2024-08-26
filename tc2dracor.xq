@@ -14,7 +14,7 @@ declare variable $id-map := doc('ids.xml');
 (: XML document mapping original author info to normalized author names :)
 declare variable $author-map := doc('authors.xml');
 
-declare variable $who-tokenize-pattern := '/|,';
+declare variable $who-tokenize-pattern := '\s*(/|,|_)\s*';
 
 declare variable $comedy-genres := (
   "comédie ballet",
@@ -170,18 +170,10 @@ declare function local:attribute-to-comment($node as attribute()+) {
 };
 
 declare function local:translate($string as xs:string) as xs:string {
-  let $work :=
-    translate(lower-case($string), "*[]’' áàâéèêíìîóòôúùû", '------aaaeeeiiiooouuu')
-    => replace('\.', '')
-    => replace('^\-', '')
-    => replace('^(\d)', 'num') (: FIXME: this can effectively createe the same ID for different characters :)
-    => replace('^[|]$', '')
-    => replace('&#xfffd;', '')
-  return
-    (: quality assurance :)
-    if($work => matches('^\s*?$'))
-    then 'empty-string'
-    else $work
+  translate(lower-case($string), "_*[]’' áàâéèêíìîóòôúùû", '-------aaaeeeiiiooouuu')
+  => replace('\.', '')
+  => replace('^\-', '')
+  => replace('^(\d+(?:e|nde?|eme?|ere?)?)-(.+)$', '$2-$1')
 };
 
 declare function local:fix-type ($value) as xs:string {
@@ -708,7 +700,7 @@ declare function local:transform($nodes) {
 declare function local:make-particDesc ($doc as element()) as node()* {
   let $whos := (for $sp in $doc//*:text//*:sp
     return if ($sp/@who != '') then
-      tokenize($sp/@who, $who-tokenize-pattern)
+      tokenize(normalize-space($sp/@who), $who-tokenize-pattern)
     else if ($sp/*:speaker[matches(., '\p{L}')]) then
       replace($sp/*:speaker, "([-\p{L}' ]+).*", '$1')
     else ()) => distinct-values()
