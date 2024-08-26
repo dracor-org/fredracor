@@ -103,7 +103,7 @@ declare function local:update-authors ($entry) {
 
 declare function local:make-authors ($doc, $filename) {
   (: FIXME: use more specific XPath to find author :)
-  for $author in $doc//*:author
+  for $author in $doc//*:titleStmt/*:author
     let $content := normalize-space($author)
     let $isni := normalize-space($author/@ISNI)
     let $normalized :=
