@@ -220,29 +220,6 @@ declare function local:transform($nodes) {
   return
     typeswitch ( $node )
 
-      (:  👇 the incredible typo hack  :)
-      case element(SPEAKER) return
-        element {QName('', 'speaker')} {
-        $node/node()} => local:transform()
-      case element(P) return
-        element {QName('', 'p')} {
-        $node/node()} => local:transform()
-      case element(acheverImprimer) return
-        element {QName('', 'acheveImprime')} {
-        $node/node()} => local:transform()
-      case element(achevedImprime) return
-        element {QName('', 'acheveImprime')} {
-        $node/node()} => local:transform()
-      case element(acheveImprimer) return
-        element {QName('', 'acheveImprime')} {
-        $node/node()} => local:transform()
-      case element(appobation) return
-        element {QName('', 'approbation')} {
-        $node/node()} => local:transform()
-      case element(pinter) return
-        element {QName('', 'printer')} {
-        $node/node()} => local:transform()
-
       case text() return
         (: replace occurrences of 'quart_d_heure' :)
         (: see https://github.com/dracor-org/theatre-classique/commit/0e1f871dea95f4343895dad7e648de750c6dcf91 :)
