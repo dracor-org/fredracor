@@ -52,14 +52,11 @@
                     <person xml:id="isabelle" sex="FEMALE">
                         <persName>Isabelle</persName>
                     </person>
-                    <person xml:id="villebrequin" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Villebrequin</persName>
+                    <person xml:id="villebrequin" sex="MALE">
+                        <persName>Monsieur Villebrequin</persName>
                     </person>
-                    <person xml:id="cassandre" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Cassandre</persName>
-                    </person>
-                    <person xml:id="cassandre-et-villebrequin" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Cassandre et Villebrequin</persName>
+                    <person xml:id="cassandre" sex="MALE">
+                        <persName>Monsieur Cassandre</persName>
                     </person>
                 </listPerson>
             </particDesc>
@@ -108,9 +105,9 @@
 		<castItem>
                     <role corresp="#isabelle">ISABELLE</role>, amante de Léandre.</castItem>
 		<castItem>
-                    <role corresp="#monsieur-villebrequin">MONSIEUR VILLEBREQUIN</role>, vieillard.</castItem>
+                    <role corresp="#villebrequin">MONSIEUR VILLEBREQUIN</role>, vieillard.</castItem>
 		<castItem>
-                    <role corresp="#monsieur-cassandre">MONSIEUR CASSANDRE</role>, vieillard.</castItem>
+                    <role corresp="#cassandre">MONSIEUR CASSANDRE</role>, vieillard.</castItem>
 	</castList>
 	<!--TODO: usage of set in correct place but with unknown attributes <set location="France" country="France" periode="XVIIIème" gps="(N/A)"/>-->
 	<note>Tiré de "Théâtre des Boulevards ou Recueil des parades. Tome premier" pp 51-73</note>
@@ -892,7 +889,7 @@
 	<s n="1">Qui va là ?</s>
 </p>
                     </sp>
-<sp who="#cassandre-et-villebrequin">
+<sp who="#cassandre #villebrequin">
                         <speaker>CASSANDRE et VILLEBREQUIN, en même temps.</speaker>
                         <p n="4">
 	<s n="1">C'est moi, charmante Isabelle...</s>
@@ -904,7 +901,7 @@
 	<s n="1">Qui vous ?</s>
 </p>
                     </sp>
-<sp who="#cassandre-et-villebrequin">
+<sp who="#cassandre #villebrequin">
                         <speaker>CASSANDRE et VILLEBREQUIN, en même temps.</speaker>
                         <p n="6">
 	<s n="1">Vous ? </s>
@@ -982,7 +979,7 @@
 	<s n="1">Quel bruit est-ce que j'entends donc là ?</s>
 </p>
                     </sp>
-<sp who="#cassandre-et-villebrequin">
+<sp who="#cassandre #villebrequin">
                         <speaker>CASSANDRE et VILLEBREQUIN, en même temps.</speaker>
                         <p n="2">
 	<s n="1">Ce n'est pas moi, c'est ce vieux fou... </s>
