@@ -14,7 +14,7 @@ declare variable $id-map := doc('ids.xml');
 (: XML document mapping original author info to normalized author names :)
 declare variable $author-map := doc('authors.xml');
 
-declare variable $who-tokenize-pattern := '/|,';
+declare variable $who-tokenize-pattern := '\s*(/|,|_)\s*';
 
 declare variable $comedy-genres := (
   "comédie ballet",
@@ -170,18 +170,10 @@ declare function local:attribute-to-comment($node as attribute()+) {
 };
 
 declare function local:translate($string as xs:string) as xs:string {
-  let $work :=
-    translate(lower-case($string), "*[]’' áàâéèêíìîóòôúùû", '------aaaeeeiiiooouuu')
-    => replace('\.', '')
-    => replace('^\-', '')
-    => replace('^(\d)', 'num') (: FIXME: this can effectively createe the same ID for different characters :)
-    => replace('^[|]$', '')
-    => replace('&#xfffd;', '')
-  return
-    (: quality assurance :)
-    if($work => matches('^\s*?$'))
-    then 'empty-string'
-    else $work
+  translate(lower-case($string), "_*[]’' áàâéèêíìîóòôúùû", '-------aaaeeeiiiooouuu')
+  => replace('\.', '')
+  => replace('^\-', '')
+  => replace('^(\d+(?:e|nde?|eme?|ere?)?)-(.+)$', '$2-$1')
 };
 
 declare function local:fix-type ($value) as xs:string {
@@ -228,29 +220,6 @@ declare function local:transform($nodes) {
   return
     typeswitch ( $node )
 
-      (:  👇 the incredible typo hack  :)
-      case element(SPEAKER) return
-        element {QName('', 'speaker')} {
-        $node/node()} => local:transform()
-      case element(P) return
-        element {QName('', 'p')} {
-        $node/node()} => local:transform()
-      case element(acheverImprimer) return
-        element {QName('', 'acheveImprime')} {
-        $node/node()} => local:transform()
-      case element(achevedImprime) return
-        element {QName('', 'acheveImprime')} {
-        $node/node()} => local:transform()
-      case element(acheveImprimer) return
-        element {QName('', 'acheveImprime')} {
-        $node/node()} => local:transform()
-      case element(appobation) return
-        element {QName('', 'approbation')} {
-        $node/node()} => local:transform()
-      case element(pinter) return
-        element {QName('', 'printer')} {
-        $node/node()} => local:transform()
-
       case text() return
         (: replace occurrences of 'quart_d_heure' :)
         (: see https://github.com/dracor-org/theatre-classique/commit/0e1f871dea95f4343895dad7e648de750c6dcf91 :)
@@ -284,24 +253,13 @@ declare function local:transform($nodes) {
         }
 
       case element(sp) return
-        let $exceptionsWho := (
-          $node/@who,
-          $node/@stwho,
-          $node/@givewho,
-          $node/@towardwho,
-          $node/@embarrassedwho,
-          $node/@breakwho,
-          $node/@ho,
-          $node/@w4ho
-        )
-        return
         if( not(exists($node/* except $node/*:speaker)) )
         then comment { 'ERROR: ', serialize($node)}
         else
         element {QName('http://www.tei-c.org/ns/1.0', 'sp')} {
-          $node/@* except ($node/@stage, $exceptionsWho, $node/@type),
+          $node/@* except ($node/@stage, $node/@who, $node/@type),
           attribute who {
-            let $easy := tokenize(string-join($exceptionsWho, ' '), $who-tokenize-pattern)
+            let $easy := tokenize(string-join($node/@who, ' '), $who-tokenize-pattern)
                               ! ('#' || local:translate(.))
             return
               if(string($easy[1]) != '')
@@ -717,8 +675,13 @@ declare function local:transform($nodes) {
 };
 
 declare function local:make-particDesc ($doc as element()) as node()* {
-  let $whos := ($doc//*:text//*:sp/tokenize(./@who || ./@ho || ./@w4ho, $who-tokenize-pattern) => distinct-values())
-  let $whos := if(string($whos[1]) != '') then $whos else (($doc//*:speaker/string(.)) => distinct-values())
+  let $whos := (for $sp in $doc//*:text//*:sp
+    return if ($sp/@who != '') then
+      tokenize(normalize-space($sp/@who), $who-tokenize-pattern)
+    else if ($sp/*:speaker[matches(., '\p{L}')]) then
+      replace($sp/*:speaker, "([-\p{L}' ]+).*", '$1')
+    else ()) => distinct-values()
+
   return if (count($whos)) then
     element {QName('http://www.tei-c.org/ns/1.0', 'particDesc')} {
       element {QName('http://www.tei-c.org/ns/1.0', 'listPerson')} {

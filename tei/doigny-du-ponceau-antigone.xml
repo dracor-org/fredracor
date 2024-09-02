@@ -54,6 +54,12 @@
                     <person xml:id="creon" sex="MALE">
                         <persName>Créon</persName>
                     </person>
+                    <person xml:id="un-thebain" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Un Thebain</persName>
+                    </person>
+                    <person xml:id="plusieurs-ensemble" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Plusieurs Ensemble</persName>
+                    </person>
                     <person xml:id="l-officier" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>L Officier</persName>
                     </person>
@@ -120,8 +126,6 @@
                     <role corresp="#un-enfant">UN ENFANT</role>, gui de Tirésias.</castItem>
 			<castItem>
                     <role corresp="#un-officier-de-l-armee-de-creon">UN OFFICIER DE L'ARMÉE DE CRÉON</role>.</castItem>
-			<castItem>
-                    <role corresp="#empty-string"/>.</castItem>
 		</castList>
 		<!--TODO: usage of set in correct place but with unknown attributes <set location="Thèbes" country="Grèce" periode="XVIème" gps="51.507, -0.127"/>-->
 </front>
@@ -1055,7 +1059,7 @@ CRÉON.
                         <speaker>CRÉON.</speaker>
                         <l n="">Vieillard, que me veux-tu ?</l>
                     </sp>
-<sp who="#tiresias,">
+<sp who="#tiresias">
                         <speaker>TIRÉSIAS,</speaker>
                         <l n="">Lui-même .</l>
                     </sp>
@@ -1155,7 +1159,7 @@ CRÉON.
                         <speaker>CRÉON.</speaker>
                         <l n="">Qu'aurais-je à redouter ?</l>
                     </sp>
-<sp who="#tiresias,-se-relevant-et-ramassant-toutes-ses-forces">
+<sp who="#tiresias">
                         <speaker>TIRÉSIAS, se relevant et ramassant toutes ses forces.</speaker>
                         <l n="">N'as-tu donc pas un fils ?</l>
                     </sp>

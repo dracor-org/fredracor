@@ -45,23 +45,20 @@
         <profileDesc>
             <particDesc>
                 <listPerson>
-                    <person xml:id="mademoiselle-raimond" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Mademoiselle Raimond</persName>
+                    <person xml:id="mademoiselle-raimond" sex="FEMALE">
+                        <persName>Mlle. Raimond</persName>
                     </person>
-                    <person xml:id="l-acteur" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>L Acteur</persName>
+                    <person xml:id="l-acteur" sex="MALE">
+                        <persName>Un Acteur</persName>
                     </person>
-                    <person xml:id="le-procureur" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Le Procureur</persName>
+                    <person xml:id="le-procureur" sex="MALE">
+                        <persName>Un Procureur</persName>
                     </person>
-                    <person xml:id="le-gascon" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Le Gascon</persName>
+                    <person xml:id="le-gascon" sex="MALE">
+                        <persName>Un Gascon</persName>
                     </person>
                     <person xml:id="monsieur-clamart" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
                         <persName>Monsieur Clamart</persName>
-                    </person>
-                    <person xml:id="tous-deux" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
-                        <persName>Tous Deux</persName>
                     </person>
                     <person xml:id="la-critique" sex="FEMALE">
                         <persName>La Critique</persName>
@@ -124,15 +121,13 @@
 		<castList>
                 <head>ACTEURS.</head>
 			<castItem>
-                    <role corresp="#empty-string">JULIE</role>.</castItem>
+                    <role corresp="#mademoiselle-raimond">MLLE. RAIMOND</role>.</castItem>
 			<castItem>
-                    <role corresp="#empty-string">RAIMOND</role>.</castItem>
+                    <role corresp="#l-acteur">UN ACTEUR</role>.</castItem>
 			<castItem>
-                    <role corresp="#empty-string">UN ACTEUR</role>.</castItem>
+                    <role corresp="#le-procureur">UN PROCUREUR</role>.</castItem>
 			<castItem>
-                    <role corresp="#empty-string">UN PROCUREUR</role>.</castItem>
-			<castItem>
-                    <role corresp="#un-gascon">UN GASCON</role>.</castItem>
+                    <role corresp="#le-gascon">UN GASCON</role>.</castItem>
 			<castItem>
                     <role corresp="#un-medecin">UN MÉDECIN</role>.</castItem>
 			<castItem>
@@ -148,7 +143,7 @@
 	<note>Texte tiré de "Théâtre et Oeuvres diverses de M. Panard", Paris, Duschene, 1763. pp 259-298.</note>
 </front>
 <body>
-<div type="cte" n="1">
+<div type="acte" n="1">
                 <head>LA CRITIQUE À L'OPÉRA-COMIQUE</head>
 <div type="scene" n="1">
                     <head>SCÈNE PREMIÈRE. Mademoiselle Raimond, Un acteur.</head>
@@ -798,7 +793,7 @@
                         <l n="135">Soulagez la tristesse</l>
                         <l n="136">Qui nous accable tous. </l>
                     </sp>
-<sp who="#tous-deux">
+<sp who="#mademoiselle-raimond #l-acteur">
                         <speaker>TOUS DEUX.</speaker>
                         <l n="137">Déesse, Déesse,</l>
                         <l n="138">Nous languissons sans vous.</l>
