@@ -1,0 +1,796 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="fre001941" xml:lang="fre">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Mort du Boeuf Gras</title>
+                <title type="sub">Tragédie Comique Suivie d'un Divertissement</title>
+                <title type="sub">Représentée pour la première fois à la Foire Saint-Germain, le 26 février 1767.</title>
+                <author>
+      <persName>
+        <forename>Toussaint-Gaspard</forename>
+        <surname>Taconet</surname>
+      </persName>
+      <idno type="wikidata">Q3535636</idno>
+      <idno type="isni">000000004667954X</idno>
+    </author><!--Toussaint-Gaspard TACONET (1730-1774)-->
+                <editor>Paul FIEVRE</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher xml:id="dracor">DraCor</publisher>
+                <idno type="URL">https://dracor.org</idno>
+                <availability>
+                    <licence>
+                        <ab>CC BY-NC-SA 4.0</ab>
+                        <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="digitalSource">
+                    <name>Théâtre Classique</name>
+                    <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/TACONET_MORTDUBOEUFGRAS.xml</idno>
+                    <idno type="URL">http://theatre-classique.fr/pages/documents/TACONET_MORTDUBOEUFGRAS.xml</idno>
+                    <availability>
+                        <licence>
+                            <ab>CC BY-NC-SA 4.0</ab>
+                            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Licence</ref>
+                        </licence>
+                    </availability>
+                    <bibl type="originalSource">
+                        <idno type="URL">http://catalogue.bnf.fr/ark:/12148/bpt6k5761069n</idno>
+                    </bibl>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="monsieur-merlin" sex="MALE">
+                        <persName>Monsieur Merlin</persName>
+                    </person>
+                    <person xml:id="monsieur-poissi" sex="MALE">
+                        <persName>Monsieur Poissi</persName>
+                    </person>
+                    <person xml:id="brulelavette" sex="FEMALE">
+                        <persName>Brulelavette</persName>
+                    </person>
+                    <person xml:id="l-echaudoir" sex="MALE">
+                        <persName>L'Echaudoir</persName>
+                    </person>
+                    <person xml:id="dosdane" sex="UNKNOWN"><!--WARNING: no castItem found for reference in @who-->
+                        <persName>Dosdane</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textClass>
+                <keywords scheme="http://theatre-classique.fr"> <!--extracted from "genre" and "type" elements-->
+                    <term>Tragédie comique</term>
+                    <term>vers</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change when="2020-12-04">(mg) file conversion from source</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <standOff>
+        <listEvent>
+            <event type="print" when="1767">
+                <desc/>
+            </event>
+            <event type="premiere" when="1767-02-26">
+                <desc>Représentée pour la première fois à la Foire Saint-Germain, le 26 février 1767.</desc>
+            </event>
+        </listEvent>
+    </standOff>
+    <text>
+		<front>
+			<docTitle>
+				<titlePart type="main">LA MORT DU BOEUF GRAS</titlePart>
+				<titlePart type="sub">TRAGÉDIE COMIQUE suivie d'un divertissement</titlePart>
+				<titlePart type="sub">Représentée pour la première fois à la Foire Saint-Germain, le 26 février 1767.</titlePart>
+			</docTitle>
+			<docDate when="1767">M.DCC. LXVII. Avec Approbation et Permission.</docDate>
+			<docAuthor>PAR M. TACONET.</docAuthor>
+			<!--<docImprint>-->
+            <docImprint>À PARIS, chez CLAUDE HÉRISSANT, Imprimeur-Libraire, rue neuve Notre-Dame.</docImprint>
+            <div type="approbation">
+					<p>Lu par ordre de M. le Lieutenant-général de Police, et approuvé pour être représenté fur le Théâtre de la Foire Saint-Germain et pour être imprimé. À Paris ce 26 Janvier 1767. MARIN.</p>
+					<p>Vu l'Approbation. Permis de représenter et d'imprimer, ce 4 Février 1767. DE SARTINE.</p>
+				</div><!--</docImprint>-->
+			<performance>
+				<ab type="premiere">Représentée pour la première fois à la Foire Saint-Germain, le 26 février 1767.</ab>		
+			</performance>
+			<div>
+				<epigraph>
+					<cit>
+						<quote>La grenouille vit un boeuf Qui lui sembla de belle taille...</quote>
+						<bibl>La Fontaine, Fable III.</bibl>
+					</cit>
+				</epigraph>
+			</div>
+	<div type="dedicace">
+                <head>ÉPITRE DÉDICATOIRE</head>
+		<opener>
+                    <salute>A MON BOUCHER.</salute>
+                </opener>
+		<l>Ô vous, qui des Bouchers êtes le moins bouché ;</l>
+		<l>Qui sur le bel esprit restez toujours perché, </l>
+		<l>Qui fécond en bon mots, de Paris jusqu'à Rome, </l>
+		<l>Passez pour un savant dont le mérite assomme. </l>
+		<l>Continuez, mon cher ; oui, tuez , égorgez : </l>
+		<l>Mais ne m'oubliez pas, du moins quand vous mangez :</l>
+		<l>Laissez-moi m'arranger avec votre servante. </l>
+		<l>Je vois sur le sapin d'une table ambulante </l>
+		<l>Vendre vos restes frais, et parmi des graillons </l>
+		<l>Vous livrez sans égard l'auteur de vos bouillons. </l>
+		<l>Souvenez-vous de moi. Que Messieurs vos Confrères</l>
+		<p>Fassent fructifier mes veilles littéraires :</p>
+		<p>Donnez-leur rendez-vous, dites-leur qu'à tous prix </p>
+		<p>Notre petit spectacle égaye les esprits. </p>
+		<p>Dites-leur d'y pleurer, afin de contredire</p>
+		<p>L'Auteur qui les veut tous faire crever de rire.</p>
+	</div>
+	<castList>
+                <head>NOMS DES ACTEURS</head>
+    	<castItem>
+                    <role corresp="#monsieur-merlin">MONSIEUR MERLIN</role>, Maître Boucher.</castItem>
+    	<castItem>
+                    <role corresp="#monsieur-poissi">MONSIEUR POISSI</role>, Marchand de boeufs.</castItem>
+    	<castItem>
+                    <role corresp="#dosdasne">DOSDASNE</role>, Etalier.</castItem>
+    	<castItem>
+                    <role corresp="#l-echaudoir">L'ÉCHAUDOIR</role>, premier garçon Boucher, Amant de Brulelavette.</castItem>
+    	<castItem>
+                    <role corresp="#brulelavette">BRULELAVETTE</role>, servante de M. Merlin.</castItem> 
+    	<castItem>
+                    <role corresp="#garçons-bouchers">GARÇONS BOUCHERS</role>.</castItem>
+	</castList>
+	<!--TODO: usage of set in correct place but with unknown attributes <set location="Paris" country="France" periode="XVIIIème" gps="48.856614, 2.352222">La Scène est à la Boucherie du Faubourg Saint-Germain.</set>-->
+</front>
+<body>
+<div type="acte" n="1">
+                <head>LA MORT DU BOEUF-GRAS.</head>
+<div type="scene" n="1">
+                    <head>SCÈNE PREMIÈRE. Monsieur Merlin, Monsieur Poissi.</head>
+<sp who="#monsieur-merlin">
+                        <speaker>MONSIEUR MERLIN.</speaker>
+                        <l n="1">Vous me priez en vain ; l'arrêt est confirmé. </l>
+                        <l n="2">Le boeuf gras est coupable, et doit être assommé.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI. </speaker>
+                        <l n="3">Le boeuf_gras assommé ! Pourquoi ? Quel est son crime ?</l>
+                    </sp>
+<sp who="#monsieur-merlin">
+                        <speaker>MONSIEUR MERLIN. </speaker>
+                        <note>Vers 4, on lit "excrime" nous préférons "escrime".</note>
+                        <l n="4">Avec les autres boeufs on sait comme il s'escrime ; </l>
+                        <l n="5">La portion de trois n'est qu'un morceau pour lui : </l>
+                        <l n="6">Vaches, veaux et moutons, tout se plaint aujourd'hui.</l>
+                        <l n="7">Je veux faire cesser leur trop juste murmure ;</l>
+                        <l n="8">Et le boeuf_gras chez moi va laisser fa fressure.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI. </speaker>
+                        <l n="9">Ah, Dieux, quel triste arrêt ! Eh quoi vous en croirez</l>
+                        <l n="10">Vaches, veaux et moutons contre lui conjurés ?</l>
+                        <l n="11">Eux dont la jalousie en tous temps est sans bornes, </l>
+                        <l n="12">Leur sacrifieriez-vous les deux plus belles cornes, </l>
+                        <l n="13">Vous que cet ornement a toujours décoré, </l>
+                        <l n="14">Et qui de vos voisins êtes le mieux paré ?</l>
+                        <l n="15">Songez, Seigneur Merlin, songez à cette affaire,</l>
+                        <l n="16">Et montrez-nous un coeur un peu moins sanguinaire. </l>
+                        <l n="17">Que dira-t-on de vous au marché_de_Poissi,</l>
+                        <l n="18">Quand de cet attentat on vous verra noirci ? </l>
+                        <l n="19">Je sais bien qu'à Paris on en fera des fêtes ;</l>
+                        <l n="20">Mais vous aimez le sang, et nous aimons nos bêtes.</l>
+                        <l n="21">De ces bêtes, Seigneur, soyez plutôt l'appui, </l>
+                        <l n="22">Et prenez pour mon boeuf votre coeur par autrui.</l>
+                        <l n="23">Que vous aurait-il fait, lui qui dès son enfance </l>
+                        <l n="24">N'étant encore que veau montrait tant de prudence ? </l>
+                        <l n="25">C'est moi qui sans reproches, et même avec regret, </l>
+                        <l n="26">Vous l'ai vendu cent francs dont j'ai votre billet. </l>
+                        <l n="27">Je n'en disconviens pas ; la somme est bien modique : </l>
+                        <l n="28">Mais si j'ai lâché pied, c'est pour votre pratique ; </l>
+                        <l n="29">Le boeuf_gras n'est pas moins un boeuf du plus haut prix, </l>
+                        <l n="30">Et les Marchands_Bouchers en étaient tous épris. </l>
+                        <l n="31">Il a des partisans, on connaît son mérite ; </l>
+                        <l n="32">Et vous ne l'avez pas encor dans la marmite. </l>
+                        <l n="33">Seigneur, songez-y bien : le tonnerre en éclats </l>
+                        <l n="34">Pourrait venger sur vous la race des boeufs-gras.</l>
+                    </sp>
+<sp who="#monsieur-merlin">
+                        <speaker>MONSIEUR MERLIN. </speaker>
+                        <l n="35">J'ai beaucoup de respect pour l'éclat du tonnerre ; </l>
+                        <l n="36">Mais pour vous, cher ami, ma foi je n'en ai guère.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI. </speaker>
+                        <l n="37">Vous me bravez, Seigneurs vous le pouvez ici:</l>
+                        <note type="C">Allusion à un vers du Siège de Calais.</note>
+                        <l n="38">Tu n'aurais pas vaincu dans les champs de Poissi.</l>
+                    </sp>
+<sp who="#monsieur-merlin">
+                        <speaker>MONSIEUR MERLIN.</speaker>
+                        <l n="39">J'aurais vaincu partout pour servir la patrie ;</l>
+                        <l n="40">Je connais mon devoir en fait de boucherie, </l>
+                        <l n="41">Et n'attends pas de vous des avis dont l'effet </l>
+                        <l n="42">Peut vous servir ici comme un clou à soufflet. </l>
+                        <l n="43">Veillez, Seigneur, veillez sur vos boeufs et vos vaches ; </l>
+                        <l n="44">Mais pour m'en imposer, eh ! Non pas que je sache. </l>
+                        <l n="45">Que vous ai-je promis qui puisse m'engager </l>
+                        <l n="46">À conserver un bien que chacun veut manger ? </l>
+                        <l n="47">De vos desseins les miens seront-ils les esclaves ? </l>
+                        <l n="48">Je ferai du boeuf gras ou des choux ou des raves</l>
+                        <l n="49">C'est à vous de vous taire ; et si vous raisonnez, </l>
+                        <l n="50">Vous aurez du boeuf_gras les tripes par le nez.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI. </speaker>
+                        <l n="51">Barbare, tigre, chat, cancer que rien ne touche,</l>
+                        <l n="52">Puisse la viande crue écumer dans ta bouche ! </l>
+                        <note type="L">Égueulé : cassé.</note>
+                        <l n="53">Et que d'une écumoire égueulée et sans trous, </l>
+                        <l n="54">On te fasse un bouillon qui va[il]le tes cinq sous !</l>
+                        <l n="55">Tu veux donner la mort à qui soutient ta vie ?</l>
+                        <l n="56">Prends tout ; mais tu rendras, je te le certifie.</l>
+                    </sp>
+<sp who="#monsieur-merlin">
+                        <speaker>MONSIEUR MERLIN. </speaker>
+                        <l n="57">Je ferai ce qu'il faut, rouge ou blanc ; apprenez </l>
+                        <l n="58">Que ce n'est pas à vous d'y fourrer votre nez.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI. </speaker>
+                        <l n="59">Mais au moins dites-moi, quand voulez-vous qu'il meure ?</l>
+                        <l n="60">Pourrai-je l'embrasser avant sa dernière heure ?</l>
+                    </sp>
+<sp who="#monsieur-merlin">
+                        <speaker>MONSIEUR MERLIN. </speaker>
+                        <l n="61">« Seigneur, quand je me tais, c'est que je ne dis rien.</l>
+                        <l n="62">Boeuf gras ignore encor quel sert fera le sien,</l>
+                        <l n="63">Et quand il sera temps que le merlin l'accoste,</l>
+                        <l n="64">Vous rapprendrez aussi par la petite poste. »</l>
+                    </sp>
+<sp who="#monsieur-merlin">
+                        <speaker>MONSIEUR MERLIN.</speaker>
+                        <l n="65" part="I">Oh funeste nouvelle !</l>
+                    </sp>
+</div>
+<div type="scene" n="2">
+                    <head>SCENE II. Monsieur Merlin, Poissi, Brulelavette.</head>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="65" part="F">Ah, Seigneur, paroisses : </l>
+                        <l n="66">Vingt carreaux dans l'instant viennent d'être cassés. </l>
+                        <l n="67">Le boeuf gras a brisé la fenêtre, la porte ; </l>
+                        <l n="68">Il va tout achever, si vous n'avez main forte.</l>
+                    </sp>
+<sp who="#monsieur-merlin">
+                        <speaker>MONSIEUR MERLIN. </speaker>
+                        <l n="69">Doucement,point d'éclat. Eh ! gardes, écoutez... </l>
+                        <stage type="entrance">Quatre garçons bouchers entrent armés de bataboeufs.</stage>
+                        <note type="C">Merlin, gros marteau avec lequel on assomme les boeufs.</note>
+                        <l n="70">Mais non, n'écoutez pas, je radote : sortez. </l>
+                        <stage type="exit">Ils sortent à Monsieur_Poissi.</stage>
+                        <l n="71">Le voilà le boeuf_gras dont vous êtes l'intime : </l>
+                        <l n="72">Vous voyez sa douceur, et comme il nous abîme.</l>
+                        <l n="73">Me viendrez-vous encor parler en sa faveur ?</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI. </speaker>
+                        <l n="74">Seigneur, excusez-le, c'est qu'il a de l'humeur. </l>
+                        <l n="75">On en aurait à moins : et ce qu'on lui destine, </l>
+                        <l n="76">Vous ferait comme lui faire mauvaise mine. </l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE, à Monsieur Merlin. </speaker>
+                        <l n="77">Seigneur, faites-lui donc entendre la raison ; </l>
+                        <l n="78">Il vous écoute mieux qu'aucun de la maison.</l>
+                        <l n="79">Pour moi j'en ai si peur, que je n'ose rien dire ; </l>
+                        <l n="80">Je l'ai chassé de loin, mais il n'en fait que rire.</l>
+                    </sp>
+<sp who="#monsieur-merlin">
+                        <speaker>MONSIEUR MERLIN.</speaker>
+                        <l n="81">Je m'en vais lui parler : vous, Seigneur_de_Poissi, </l>
+                        <l n="82">Dans une heure au plus tard ne soyez plus ici.</l>
+                    </sp>
+</div>
+<div type="scene" n="3">
+                    <head>SCÈNE III. Monsieur Poissi, Brulelavette.</head>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI.</speaker>
+                        <l n="83">Cher boeuf_gras... C'en est fait, et sa perte est certaine ; </l>
+                        <l n="84">Brulelavette aussi le traite en inhumaine. </l>
+                        <note type="L">Étalier : Celui qui tient un étal au compte d'un maître boucher. [L]</note>
+                        <l n="85">L'étalier, les garçons de lui se font un jeu : </l>
+                        <l n="86">Ses membres dispersés feront le pot-au-feu. </l>
+                        <l n="87">Princesse, je le vois, vous voulez sa ruine : </l>
+                        <l n="88">Ce n'est pas à servante à haïr la cuisine : </l>
+                        <l n="89">Mais on devrait du moins avoir quelques égards </l>
+                        <l n="90">Pour un boeuf qui cent fois affronta les hasards. </l>
+                        <l n="91">Je l'ai vu contre quatre étalant son courage, </l>
+                        <l n="92">Leur donner de la corne au travers du visage, </l>
+                        <l n="93">Et les mettant en fuite en illustre vainqueur, </l>
+                        <l n="94">Les regarder de loin avec un air moqueur;</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="95">Nous allons lui montrer à se moquer des autres. </l>
+                        <l n="96">S'il a beaucoup d'amis, nous trouverons les nôtres ; </l>
+                        <l n="97">Et nous vous ferons voir s'il aura des raisons </l>
+                        <l n="98">Pour casser ma vaisselle et verser mes bouillons. </l>
+                        <l n="99">Je voudrais bien savoir, si dans votre cuisine</l>
+                        <l n="100" part="I">On allait tout briser</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI.</speaker>
+                        <l n="100" part="F">J'aurais l'humeur lutine ;</l>
+                        <l n="101">Je n'en disconviens pas, et je pourrais crier :</l>
+                        <l n="102">Mais sans tuer les gens, je les ferais payer.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="103">Faire payer ! D'accord ; mais avec quelles pièces ?</l>
+                        <l n="104">Monsieur votre Boeuf_gras a-t-il bien des espèces ?</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI. </speaker>
+                        <l n="105">Je saurai lui prêter ce qu'il aura besoin. </l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="106">Pour la dernière fois portez-lui donc du soin.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI. </speaker>
+                        <l n="107">Oui, je vais le soigner, et d'une âme attendrie </l>
+                        <l n="108">Tâcher au moins qu'il vive étant encor en vie.</l>
+                    </sp>
+</div>
+<div type="scene" n="4">
+                    <head>SCÈNE IV.</head>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="109">Il a beau s'empresser et faire l'esprit fort ; </l>
+                        <l n="110">Avant qu'il soit ce soir, le Boeuf_gras sera mort. </l>
+                        <l n="111">C'est en vain qu'il me traite en ces lieux d'inhumaine; </l>
+                        <l n="112">Oui je veux du Boeuf_gras voir souffler la bedaine. </l>
+                        <l n="113">Depuis huit jours ici c'est à crier : Hola ! </l>
+                        <l n="114">On ne peut se parler qu'en disant : Qui va là ? </l>
+                        <l n="115">Notre premier garçon, qui m'adore dans l'âme ; </l>
+                        <l n="116">Oui, mon cher L_Échaudoir dont je serai la femme, </l>
+                        <l n="117">Ne peut plus me parler, depuis qu'il faut soigner</l>
+                        <l n="118">Ce gros vilain Boeuf_gras que l'on devrait saigner. </l>
+                        <l n="119">Si nous sommes ensemble au grenier, à la cave, </l>
+                        <l n="120">C'est un bruit dans la cour... on dirait que l'on pave. </l>
+                        <note type="L">Moraillon : Pièce de fer qui sert à la fermeture d'une malle, d'une porte, etc. en laissant passer, dans une lunette qui s'y trouve formée, un anneau destiné à recevoir un cadenas. [L]</note>
+                        <l n="121">Le Boeuf_gras, en brisant cordes et moraillons, </l>
+                        <l n="122">Galope comme un diable, et fait ses carillons :</l>
+                        <l n="123">Mais j'entends L_Échaudoir, c'est pour moi qu'il arrive. </l>
+                        <l n="124">Dieux ! Frappez le Boeuf_gras, mais que mon amant vive.</l>
+                    </sp>
+</div>
+<div type="scene" n="5">
+                    <head>SCÈNE V. L'Echaudoir, Brulelavette. </head>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR, en habit de travail.</speaker>
+                        <l n="125">Princesse, à vos genoux vous voyez un amant, </l>
+                        <l n="126">Qui remplit sa promesse, et non pas son serment. </l>
+                        <l n="127">Non, je n'ai point juré de vous erre fidèle,</l>
+                        <l n="128">Je n'ai fait que promettre, et c'est assez, ma belle : </l>
+                        <l n="129">Soyez sûre d'un coeur qui pour vous est tout un. </l>
+                        <l n="130">On sait dans mon état si j'ai le sens commun.</l>
+                        <l n="131">Quand je dirais ici dans l'ardeur la plus forte, </l>
+                        <l n="132">Que la peste m'étouffe, ou le diable m'emporte, </l>
+                        <l n="133">Je sais mieux m'expliquer sous votre aimable loi : </l>
+                        <l n="134">J'en jure foi de boeuf, foi de veau, foi de moi, </l>
+                        <l n="135">Et sans aller chercher de porte de derrière, </l>
+                        <l n="136">Que du premier garçon vous serez la première.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="137">Oh , que ce titre est doux à mon coeur ébaubi ! </l>
+                        <l n="138">J'oublie en ce moment la broche et le rôti, </l>
+                        <l n="139">Pour ne plus m'occuper que du sort qui me touche.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="140">Princesse, tout de bon l'eau vous vient à la bouche. </l>
+                        <l n="141">Quoi ! Vous pourriez me voir avec un coeur actif ? </l>
+                        <l n="142">Ce coeur soupire-t-il ? Ou bien s'il est poussif ? </l>
+                        <l n="143">Car je l'entends souffler plus sort qu'un tuyau d'orgue.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="144">Ah ! Vous n'entendez rien, ce n'est que de la drogue : </l>
+                        <l n="145">Quand vous êtes présent, je soupire tout bas ; </l>
+                        <l n="146">Mais je gueule partout, quand je ne vous vois pas.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="147">Oh miracle d'amour ! Oh douce destinées </l>
+                        <l n="148">Quand pourrons-nous tous deux sous votre cheminée </l>
+                        <l n="149">Nous parler à notre aise, et faire tout de bon </l>
+                        <l n="150">Ce qu'en termes bourgeois on nomme réveillon ?</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="151">Autant que vous et plus je souhaite là chose : </l>
+                        <l n="152">Je me vois encor fille, et n'en suis point la cause. </l>
+                        <l n="153">Ma ch[ère] mère en tout temps combattit mon espoir ;</l>
+                        <l n="154">Mais ô coup de fortune ! ô mon cher L_Échaudoir ! </l>
+                        <l n="155">Cette mère si dure, en allant à la halle </l>
+                        <l n="156">Pour l'emploi de porteuse où son nom se signale,</l>
+                        <l n="157">A tombé sous le poids de sa hotte, et soudain </l>
+                        <note type="L">Sacré chien : Populairement, de l'eau-de-vie très forte. [L]</note>
+                        <l n="158">Elle est morte en buvant un coup de sacré-chien.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="159">Oh bonheur qui me comble et d'amour et de joie !</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="160">J'ai le coeur si serré, que la rate et le foie</l>
+                        <l n="161" part="I">S'en ressentent tous deux. </l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="161" part="F">Vous pleurez, mon trognon ? </l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="162">Non, non, c'est que je viens d'éplucher de l'oignon.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="163">Ah, Princesse, excusez : je croyais voir des larmes </l>
+                        <l n="164">Obscurcir la beauté des attraits de vos charmes ; </l>
+                        <l n="165">Mais vous ne pleurez pas, et cela me suffit : </l>
+                        <l n="166">Il faut dans ce moment mettre tout à profit. </l>
+                        <l n="167">Vous voila libre enfin ; vous n'avez plus de père, </l>
+                        <l n="168">Et la mort du trépas enlève votre mère.</l>
+                        <l n="169" part="I">Qu'attendez-vous ?</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="169" part="F">Mais vous, mon cher L_Échaudoir, </l>
+                        <l n="170">Vos parents voudront-ils que nous puissions nous voir ?</l>
+                        <l n="171">Peut-être votre mère, en imitant la mienne, </l>
+                        <l n="172">Va-t-elle me chasser comme une mendienne,</l>
+                        <l n="173" part="I">Et votre père aussi.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="173" part="F">Doucement, jugez mieux ;</l>
+                        <l n="174">En recherchant ma main connaissez mes aïeux.</l>
+                        <l n="175">De ma mère, il est vrai, je crains quelque chicane ;</l>
+                        <l n="176">Mais pour sortir d'affaire, il ne faut pas être âne, </l>
+                        <l n="177">Et je ne le suis pas, soit dit sans vanité. </l>
+                        <l n="178">À l'égard de mon père, il n'est rien d'arrêté ; </l>
+                        <l n="179">On ne le connaît pas, et j'ai su de ma mère </l>
+                        <l n="180">Que le premier venu pouvait être mon père.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="181">Ah Prince, à ce discours que mon coeur prend de part ! </l>
+                        <l n="182">Dieux ! Serait-il bien vrai ? Quoi vous seriez bâtard ? </l>
+                        <l n="183">On dit qu'ils sont heureux, et que tout leur prospère.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="184">Si l'on a du bonheur quand on n'a pas de père, </l>
+                        <l n="185">Le plus heureux mortel vous était réservé.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="186" part="I">Où vîtes-vous le jour ?</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR.</speaker>
+                        <l n="186" part="F">Je suis enfant trouvé.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="187" part="I">Avez-vous bien tété ?</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR.</speaker>
+                        <l n="187" part="F">Ah ! Je vous le proteste :</l>
+                        <l n="188">Ma nourrice jamais n'avait de lait de reste</l>
+                        <note type="L">Goulu : Qui aime à manger, qui mange avec avidité. [L]</note>
+                        <l n="189">J'étais un gros goulu qui ne lui ne laissais rien, </l>
+                        <l n="190" part="I">J'aimai toujours le lait.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE. </speaker>
+                        <l n="190" part="F">Seigneur, on le voit bien ; </l>
+                        <l n="191">Vous en avez un reste empreint sur la figure,</l>
+                        <l n="192">Qui fait voir qu'on vous a fait la bonne mesure.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="193">Princesse, vous flattez un trop heureux amant,</l>
+                        <l n="194">Qui voudrait bien pouvoir vous en lâcher autant ; </l>
+                        <l n="195">Mais pour des compliments je ne sais pas en faire.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="196" part="I">Pourquoi vous taisez-vous ?</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR.</speaker>
+                        <l n="196" part="F">C'est que je dois me taire : </l>
+                        <l n="197">Car qu'irais-je nommer pour louer vos appas ? </l>
+                        <l n="198">Le monde en est instruit, chacun ne sait-il pas </l>
+                        <l n="199">Que vous fûtes toujours sage à double couture ?</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="200">Seigneur, si je vous plais, c'est un don dé nature, </l>
+                        <l n="201">Je n'ai rien négligé pour atteindre à ce but.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR.</speaker>
+                        <l n="202">Vous ne fûtes jamais Princesse de rebut : </l>
+                        <l n="203">Votre mérite éclate aux deux bouts de la ville ; </l>
+                        <l n="204">Vous soignez, comme on dit, l'agréable à l'utile.</l>
+                        <l n="205" part="I">Souffrez que d'un genou...</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="205" part="F">Prince, que faites vous ?</l>
+                        <l n="206" part="I">Qu'un genou ?</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="206" part="F">Ah ! j'ai tort : souffrez qu'à deux genoux...</l>
+                        <stage type="kneel">Il se jette à terre à deux genoux.</stage>
+                    </sp>
+</div>
+<div type="scene" n="6">
+                    <head>SCÈNE VI. L'Echaudoir, Brulelavette.</head>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI, tenant un bâton à crosse avec quoi on amène les boeufs.</speaker>
+                        <l n="207">Ho ! ho ! Suis-je trompé ? Non, c'est Brulelavette . </l>
+                        <l n="208">Le Prince L_Échaudoir lui compte fleurette.</l>
+                        <l n="209" part="I">Hola, Monsieur_Merlin, venez.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR.</speaker>
+                        <l n="209" part="M">Seigneur...</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="209" part="F">Hélas !</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI. </speaker>
+                        <l n="210" part="I">Monsieur Merlin.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="210" part="F">Seigneur, je sauve le Boeuf_gras . </l>
+                        <l n="211">Pourvu que vous taisiez votre mauvaise langue.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="212" part="I">Oui, Seigneur, taisez-vous.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI.</speaker>
+                        <l n="212" part="F">Trêve donc de harangue. </l>
+                        <l n="213" part="I">Mais que nous veut Dosdâne ?</l>
+                    </sp>
+</div>
+<div type="scene" n="7">
+                    <head>SCÈNE DERNIÈRE. Dosdane, les précédents.</head>
+<sp who="#dosdane">
+                        <speaker>DOSDÂNE.</speaker>
+                        <l n="213" part="F">Amis, rassurez-vous,</l>
+                        <l n="214">Nous venons de porter les plus terribles coups.</l>
+                        <l n="215">Sans chercher à détruire, on a su tout abattre :</l>
+                        <l n="216" part="I">Boeuf_gras vient d'expirer.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI.</speaker>
+                        <l n="216" part="F">Contre un vous étiez quatre : </l>
+                        <l n="217" part="I">C'est fort vilain à vous.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR.</speaker>
+                        <l n="217" part="F">Quel est l'audacieux </l>
+                        <l n="218">Qui lança sur Boeuf_gras un merlin furieux ?</l>
+                        <l n="219" part="I">Cet honneur m'était dû.</l>
+                    </sp>
+<sp who="#dosdane">
+                        <speaker>DOSDÂNE.</speaker>
+                        <l n="219" part="F">Prince, on vous considère. </l>
+                        <l n="220">Et chacun sait fort bien que c'était votre affaire ; </l>
+                        <l n="221">Mais de ce même honneur un autre sot flatté.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="222" part="I">Quel est ce téméraire ?</l>
+                    </sp>
+<sp who="#dosdane">
+                        <speaker>DOSDÂNE.</speaker>
+                        <l n="222" part="F">Il doit être écouté. </l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="223" part="I">Qui?</l>
+                    </sp>
+<sp who="#dosdane">
+                        <speaker>DOSDÂNE. </speaker>
+                        <l n="223" part="F">C'est Monsieur Merlin, mon bourgeois et le vôtre.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR. </speaker>
+                        <l n="224">Ah ! C'est bien diffèrent, j'assommerais tout autre.</l>
+                    </sp>
+<sp who="#dosdane">
+                        <speaker>DOSDÂNE. </speaker>
+                        <l n="225">Oui, de Monsieur Merlin le bras victorieux </l>
+                        <l n="226">Fera passer son nom à nos derniers neveux ; </l>
+                        <l n="227">La paix régnait partout, et dans chaque écurie </l>
+                        <l n="228">Vaches, veaux et moutons vivaient de compagnie. </l>
+                        <l n="229">La poule et les poulets, le coq et les dindons, </l>
+                        <l n="230">Tous d'un commun accord chantaient suivant leurs tons :</l>
+                        <l n="231">Pluton notre gros chien ronflait tout à son aise, </l>
+                        <l n="232">Et la chatte aux souris était à chercher noise :</l>
+                        <l n="233">Tous enfin jouissaient de la tranquillité,</l>
+                        <l n="234">Quand tout à coup Boeuf_gras paraît en liberté : </l>
+                        <l n="235">Dans ce terrible instant d'un formidable câble </l>
+                        <l n="236">Il venait de braver la grosseur effroyable : </l>
+                        <l n="237">Les fers n'y faisant rien on l'avait garrotté, </l>
+                        <l n="238">Mais tout le brise et cède à sa brutalité. </l>
+                        <l n="239">Tel on voit au combat le taureau dans l'arène </l>
+                        <l n="240">Lutter contre les chiens que sur lui l'on déchaîne</l>
+                        <l n="241">Il est plus furieux, il est plus forcené </l>
+                        <l n="242">Que s'il allait mourir tout caparaçonné. </l>
+                        <l n="243">On se disperse, on fuit : les poules quatre à quatre </l>
+                        <l n="244">Sur les murs des voisins volent et vont s'abattre. </l>
+                        <l n="245">Le coq un peu trop vieux pour suivre ses amis, </l>
+                        <l n="246">En voulant s'élever, va tomber dans le puits. </l>
+                        <l n="247">La chatte par un trou quitte la souricière, </l>
+                        <l n="248">Et pour fuir le danger va gagner la gouttière. </l>
+                        <l n="249">Pluton en brave chien qu'on ne peut effrayer, </l>
+                        <l n="250">S'enroue à pleine gorge à force d'aboyer ; </l>
+                        <l n="251">À ses cris redoublés nos garçons se rassemblent ; </l>
+                        <l n="252">On voit qu'ils ont du coeur, mais cependant ils tremblent : </l>
+                        <l n="253">En face, à droite, à gauche, en arrière en un mot,</l>
+                        <l n="254">Boeuf_gras était en garde, et ruait du sabot ;</l>
+                        <l n="255">Mais fragiles efforts, son heure était venue : </l>
+                        <l n="256">On ouvre brusquement la porte de la rue. </l>
+                        <l n="257">C'était notre héros ; c'était Monsieur_Merlin,</l>
+                        <l n="258">Paraissant avoir bu bien moins d'eau que de vin :</l>
+                        <l n="259">Il entre ; et du fracas sans prendre l'épouvante, </l>
+                        <l n="260">D'un regard assuré s'approche et se présente.</l>
+                        <l n="261">Boeuf_gras aux yeux de qui Merlin était suspect, </l>
+                        <l n="262">Le fixe d'un air doux, et rempli de respect. </l>
+                        <l n="263">À ce prompt changement j'eus peine à le connaître</l>
+                        <l n="264">C'est alors que je vis ce que peut l'oeil du Maître.</l>
+                        <l n="265">Merlin a beaucoup lu de livres de combats,</l>
+                        <l n="266">Comme Richard sans peur, Amadis, Fierabras, </l>
+                        <l n="267">Et mille autres Zéros de la chronique bleue. </l>
+                        <l n="268">Enfin il joint Boeuf_gras, le saisit par la queue, </l>
+                        <l n="269">Et le fait reculer dans la porte : aussitôt </l>
+                        <l n="270">Il enferme la queue en tirant le marteau, </l>
+                        <l n="271">L'entortille dedans, et par là les ruades </l>
+                        <l n="272">N'étaient d'aucun effet sur tous nos camarades. </l>
+                        <l n="273">Le plus adroit d'entre_eux ôtant son tablier, </l>
+                        <l n="274">En aveugle Boeuf_gras que cela fait plier.</l>
+                        <l n="275">Merlin qui sut d'abord bien arrêter la porte,</l>
+                        <l n="276">Va passer par une autre, et fait si bien en sorte</l>
+                        <l n="277">Que Boeuf_gras ne pouvant marcher ni reculer,</l>
+                        <l n="278">Tout à son aise enfin il pourra l'immoler. </l>
+                        <l n="279">Ce que je dis fut fait, la victime était prête, </l>
+                        <l n="280">La corde dans l'anneau faisait baisser la tête :</l>
+                        <l n="281">« Mes amis, dit Merlin d'un air plein de grandeur,</l>
+                        <l n="282">Je veux être aujourd'hui grand Sacrificateur,</l>
+                        <l n="283">Du Prince L_Échaudoir c'est l'ordinaire office ;</l>
+                        <l n="284">Mais voyez si je sais entrer en exercice. »</l>
+                        <l n="285">Il frappe, et le Boeuf_gras tombe tout étourdi.</l>
+                        <l n="286">Un second coup le rend encore plus ahuri : </l>
+                        <l n="287">Un troisième l'accable, et d'un pas il recule ;</l>
+                        <l n="288">Au quatrième enfin il ploie la rotule, </l>
+                        <l n="289">Et tombe en présentant la gorge au fer vainqueur.</l>
+                        <stage type="toward">À L'échaudoir. </stage>
+                        <l n="290">Si vous ne m'en croyez, allez-y voir, Seigneur.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI, a une voix très enrouée. </speaker>
+                        <l n="291" part="I">Il est mort !</l>
+                    </sp>
+<sp who="#dosdane">
+                        <speaker>DOSDÂNE. </speaker>
+                        <l n="291" part="M">Tout est dit.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI.</speaker>
+                        <l n="291" part="F">Il faut que cette crosse </l>
+                        <l n="292">Me fasse sur la tête une mortelle bosse.</l>
+                    </sp>
+<sp who="#dosdane">
+                        <speaker>DOSDÂNE.</speaker>
+                        <l n="293" part="I">Ah ! Seigneur, arrêtez. </l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI.</speaker>
+                        <l n="293" part="F">J'en sois d'avis aussi ;</l>
+                        <l n="294">Car je dois me trouver sur le soir à Poissy</l>
+                        <l n="295">Où j'ai donné parole à deux de mes confrères.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="296">Partez, Seigneur, partez ; et faites vos affaires.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI.</speaker>
+                        <l n="297">C'est bien dit ; mais je veux me venger de Merlin.</l>
+                        <l n="298">Enfants, vous vous aimez , donnez-vous donc la main ;</l>
+                        <l n="299">Merlin qui ne veut pas, enragera dans l'âme.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="300">Si L_Échaudoir le veut, Brulelavette est Dame.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR.</speaker>
+                        <l n="301">Grands dieux ! Et je le veux : pour vous en assurer...</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="302" part="I">Prince, ne jurez pas.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR.</speaker>
+                        <l n="302" part="F">Et moi, je veux jurer,</l>
+                        <l n="303">Et prouver que pour vous un tendre amour me touche :</l>
+                        <l n="304">Un ventre, une tête, un mort n'ont rien qui l'effarouche.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI.</speaker>
+                        <l n="305">Bon, voilà ce qu'il faut ; Merlin va bien crier.</l>
+                        <l n="306">Pour vous, Mon cher Dosdâne, en illustre étalier</l>
+                        <l n="307">Gouvernez bien l'étal pour jusqu'à nouvel ordre :</l>
+                        <l n="308">Dans peu Merlin aura bien du fil à retordre.</l>
+                        <l n="309">Je vous établira : tout lui sera soufflé.</l>
+                    </sp>
+<sp who="#dosdane">
+                        <speaker>DOSDÂNE.</speaker>
+                        <l n="310">Seigneur, c'est un honneur dont je suis tout gonflé.</l>
+                        <l n="311">Daignent les justes Dieux vous rendre le centuple :</l>
+                        <l n="312">Pour moi je ne saurais vous offrir qu'un quadruple.</l>
+                    </sp>
+<sp who="#brulelavette">
+                        <speaker>BRULELAVETTE.</speaker>
+                        <l n="313">De mes gages, Seigneur, je vous offre un quartier.</l>
+                    </sp>
+<sp who="#l-echaudoir">
+                        <speaker>L'ÉCHAUDOIR.</speaker>
+                        <l n="314">D'une tête de veau, des pied et du gésier</l>
+                        <l n="315" part="I">Vous pouvez disposer.</l>
+                    </sp>
+<sp who="#monsieur-poissi">
+                        <speaker>MONSIEUR POISSI.</speaker>
+                        <l n="315" part="F">Gardez votre abattis,</l>
+                        <l n="316">Je vois votre bon coeur, et vous en remercie.</l>
+                        <l n="317">Vous, Prince L_Échaudoir, aimes bien vos enfants,</l>
+                        <l n="318">Dans trois mois au plus tard vous en aurez vivants.</l>
+                        <l n="319">Vous, de la cuisinière écartez tout scrupule :</l>
+                        <l n="320">Dosdâne, enseignez-leur à bien serrer la mule.</l>
+                        <l n="321">Le cher Boeuf_gras est mort, ses malheurs sont réels,</l>
+                        <l n="322">Mais qu'y faire, Messieurs, nous sommes tous mortels.</l>
+                        <stage type="explicit">Divertissement de garçons bouchers et de tripiers.</stage>
+                    </sp>
+</div>
+</div>
+</body>
+</text>
+</TEI>
