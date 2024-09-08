@@ -102,12 +102,13 @@ declare function local:update-authors ($entry) {
 };
 
 declare function local:make-authors ($doc, $filename) {
-  (: FIXME: use more specific XPath to find author :)
   for $author in $doc//*:titleStmt/*:author
     let $content := normalize-space($author)
-    let $isni := normalize-space($author/@ISNI)
+    let $isni := replace(normalize-space($author/@ISNI),' ', '')
     let $normalized :=
-      $author-map//author[isni eq $isni or name eq $content]/tei:author
+      $author-map//author[
+        name eq $content or ($isni and $isni = tei:author/tei:idno[@type="isni"])
+      ]/tei:author
     where $content ne ""
 
     return if ($normalized) then (
@@ -128,7 +129,7 @@ declare function local:make-authors ($doc, $filename) {
                 comment {'ISNI not found in Wikidata'}
               )
             }
-            <idno type="isni">{replace($isni, ' ', '')}</idno>
+            <idno type="isni">{$isni}</idno>
           </author>
       ) else (
         <author xmlns="http://www.tei-c.org/ns/1.0">
@@ -141,7 +142,6 @@ declare function local:make-authors ($doc, $filename) {
           {comment {'Source: ' || $filename}}
           {$tei-author}
           <name>{$content}</name>
-          {if ($isni) then <isni>{$isni}</isni> else ()}
         </author>
 
       return (
