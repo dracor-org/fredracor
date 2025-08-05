@@ -68,22 +68,6 @@ Classique documents in [ids.xml](ids.xml). When a new play from Théâtre
 Classique is added to the corpus a new ID needs to be assigned and added to
 `ids.xml`.
 
-## Validation
-
-To check the current validation status of the corpus against the
-[tei_all](https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng)
-schema run `./validate` from the root of the repo. (You will need to have
-[Jing](https://relaxng.org/jclark/jing.html) installed for this to work.)
-
-In fact, this script can be used to validate any directory of TEI documents.
-Just pass the directory as the first argument. For instance, if you have
-[gerdracor](https://github.com/dracor-org/gerdracor) checked out next to
-_fredracor_, try:
-
-```bash
-./validate ../gerdracor/tei
-```
-
 ## How to rebuild from source
 
 For building the FreDraCor documents from the Théâtre Classique sources a
