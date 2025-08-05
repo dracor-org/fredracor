@@ -60,6 +60,14 @@ made on the
 [`dracor` branch of the theatre-classique](https://github.com/dracor-org/theatre-classique/tree/dracor)
 repository and the [tc2dracor.xq](tc2dracor.xq) transformation script.
 
+### Enhancing FreDraCor
+
+Future corrections of typos or sporadic markup mistakes should be added to the
+[`dracor` branch of the source repository](https://github.com/dracor-org/theatre-classique/tree/dracor).
+
+For more general changes to the markup structure or the transformation workflow
+the [transformation script](tc2dracor.xq) needs to be modified.
+
 ## DraCor IDs
 
 Each FreDraCor play is given a DraCor ID (e.g.
