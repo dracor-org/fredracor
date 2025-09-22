@@ -899,15 +899,15 @@ declare function local:construct-tei (
         </publicationStmt>
         <sourceDesc>
           <bibl type="digitalSource">
-            <name>Théâtre Classique</name>
-            <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/{$orig-name}</idno>
-            <idno type="URL">http://theatre-classique.fr/pages/documents/{$orig-name}</idno>
+            <ref target="http://theatre-classique.fr/pages/documents/{$orig-name}">Théâtre Classique</ref>
             <availability>
               <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
             </availability>
-            <bibl type="originalSource">
-              <idno type="URL">{string($doc//*:permalien)}</idno>
-            </bibl>
+            {if ($doc//*:permalien[not(normalize-space() eq '')]) then
+              <bibl type="originalSource">
+                <ref target="{string($doc//*:permalien[1])}">{string($doc//*:permalien[1])}</ref>
+              </bibl>
+            else ()}
           </bibl>
         </sourceDesc>
       </fileDesc>
