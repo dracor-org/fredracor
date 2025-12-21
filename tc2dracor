@@ -114,12 +114,14 @@ process_slice () {
       echo "$instance $i $file_name -> $OUT_DIR/$dracor_name"
     fi
 
+    echo '<?xml version="1.0" encoding="utf-8"?>' > $OUT_DIR/$dracor_name
     curl -s -X POST \
       -H 'Content-Type: application/xml' \
       -H "X-Filename: $file_name" \
-      -o $OUT_DIR/$dracor_name \
       --data-binary @$file \
-      http://admin:@localhost:$port/exist/rest/db/tc2dracor/tc2dracor.xq
+      http://admin:@localhost:$port/exist/rest/db/tc2dracor/tc2dracor.xq \
+      >> $OUT_DIR/$dracor_name
+    echo >> $OUT_DIR/$dracor_name
   done
 }
 
