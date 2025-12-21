@@ -881,7 +881,7 @@ declare function local:construct-tei (
   else ()
 
   let $tei :=
-  <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$id}" xml:lang="fre">
+  <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$id}" xml:lang="fr">
     <teiHeader>
       <fileDesc>
         <titleStmt>
