@@ -726,7 +726,6 @@ declare function local:construct-tei (
   let $premiere := tokenize($id-entry/@premiere, '-')
 
   let $title := element {QName('http://www.tei-c.org/ns/1.0', 'title')} {
-    attribute type {'main'},
     local:titlecase(
       if ($doc//*:titlePart/@type="main") then
         $doc//*:titlePart[@type="main"]
