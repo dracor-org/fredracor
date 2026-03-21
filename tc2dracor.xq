@@ -908,6 +908,16 @@ declare function local:construct-tei (
               <idno type="URL">{string($doc//*:permalien)}</idno>
             </bibl>
           </bibl>
+          {if ($wikidata-id) then
+            <bibl type="wikidata"><idno>{$wikidata-id}</idno></bibl>
+          else ()}
+          {if ($written-date or $premiere-date or $print-date) then
+            <listEvent>
+              {$written-date}
+              {$print-date}
+              {$premiere-date}
+            </listEvent>
+          else ()}
         </sourceDesc>
       </fileDesc>
       <profileDesc>
@@ -927,18 +937,6 @@ declare function local:construct-tei (
         </listChange>
       </revisionDesc>
     </teiHeader>
-    {if ($list-relation or $written-date or $premiere-date or $print-date) then
-      <standOff>
-        {$list-relation}
-        {if ($written-date or $premiere-date or $print-date) then
-          <listEvent>
-            {$written-date}
-            {$print-date}
-            {$premiere-date}
-          </listEvent>
-        else ()}
-      </standOff>
-    else ()}
   {
     local:transform($doc/*:text)
   }
