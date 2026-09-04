@@ -879,6 +879,11 @@ declare function local:construct-tei (
     }
   else ()
 
+  let $permalien :=
+    if (starts-with($doc//*:permalien, ('http://', 'https://'))) then
+      normalize-space($doc//*:permalien[1])
+    else ()
+
   let $tei :=
   <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$id}" xml:lang="fr">
     <teiHeader>
@@ -898,16 +903,32 @@ declare function local:construct-tei (
         </publicationStmt>
         <sourceDesc>
           <bibl type="digitalSource">
-            <name>Théâtre Classique</name>
-            <idno type="URL">http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/{$orig-name}</idno>
-            <idno type="URL">http://theatre-classique.fr/pages/documents/{$orig-name}</idno>
+            <ref target="http://theatre-classique.fr/pages/documents/{$orig-name}">Théâtre Classique</ref>
             <availability>
               <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
             </availability>
-            <bibl type="originalSource">
-              <idno type="URL">{string($doc//*:permalien)}</idno>
-            </bibl>
           </bibl>
+          <bibl type="html">
+            <ref target="http://theatre-classique.fr/pages/programmes/edition.php?t=../documents/{$orig-name}">Théâtre Classique (HTML)</ref>
+          </bibl>
+
+          {if ($permalien) then
+            <bibl type="originalSource">
+              <ref target="{$permalien}">{$permalien}</ref>
+            </bibl>
+          else ()}
+
+          {if ($wikidata-id) then
+            <bibl type="wikidata"><idno>{$wikidata-id}</idno></bibl>
+          else ()}
+
+          {if ($written-date or $premiere-date or $print-date) then
+            <listEvent>
+              {$written-date}
+              {$print-date}
+              {$premiere-date}
+            </listEvent>
+          else ()}
         </sourceDesc>
       </fileDesc>
       <profileDesc>
@@ -927,18 +948,6 @@ declare function local:construct-tei (
         </listChange>
       </revisionDesc>
     </teiHeader>
-    {if ($list-relation or $written-date or $premiere-date or $print-date) then
-      <standOff>
-        {$list-relation}
-        {if ($written-date or $premiere-date or $print-date) then
-          <listEvent>
-            {$written-date}
-            {$print-date}
-            {$premiere-date}
-          </listEvent>
-        else ()}
-      </standOff>
-    else ()}
   {
     local:transform($doc/*:text)
   }
